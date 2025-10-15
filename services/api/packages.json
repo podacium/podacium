@@ -1,0 +1,9 @@
+{
+  "name": "api",
+  "private": true,
+  "scripts": {
+    "dev": "uvicorn app.main:app --reload",
+    "build": "echo 'No build needed for Python'",
+    "test": "pytest"
+  }
+}
