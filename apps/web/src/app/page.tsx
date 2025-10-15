@@ -1089,6 +1089,7 @@ interface ButtonProps {
   loading?: boolean
   className?: string
   href?: string
+  type?: 'button' | 'submit' | 'reset'
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -1099,7 +1100,8 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   loading = false,
   className = '',
-  href
+  href,
+  type
 }) => {
   const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-4'
   
@@ -1132,12 +1134,12 @@ const Button: React.FC<ButtonProps> = ({
       </Link>
     )
   }
-  
   return (
     <button
       className={classes}
       onClick={onClick}
       disabled={disabled || loading}
+      type={typeof type !== 'undefined' ? type : 'button'}
     >
       {loading && (
         <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-current" fill="none" viewBox="0 0 24 24">
@@ -1155,13 +1157,14 @@ interface CardProps {
   className?: string
   hover?: boolean
   padding?: 'sm' | 'md' | 'lg'
+  onClick?: () => void
 }
-
 const Card: React.FC<CardProps> = ({
   children,
   className = '',
   hover = false,
-  padding = 'md'
+  padding = 'md',
+  onClick
 }) => {
   const paddingClasses = {
     sm: 'p-4',
@@ -1173,7 +1176,13 @@ const Card: React.FC<CardProps> = ({
   const hoverClasses = hover ? 'transition-all duration-300 hover:shadow-2xl hover:-translate-y-1' : ''
   
   return (
-    <div className={`${baseClasses} ${paddingClasses[padding]} ${hoverClasses} ${className}`}>
+    <div
+      className={`${baseClasses} ${paddingClasses[padding]} ${hoverClasses} ${className}`}
+      onClick={onClick}
+      style={onClick ? { cursor: 'pointer' } : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      role={onClick ? 'button' : undefined}
+    >
       {children}
     </div>
   )
@@ -2841,7 +2850,7 @@ const PricingCTA: React.FC = () => {
                 
                 <div className="mt-6">
                   <span className="text-4xl font-bold text-gray-900">
-                    ${billingPeriod === 'monthly' ? tier.price.monthly : tier.price.yearly / 12}
+                    ${billingPeriod === 'monthly' ? tier.price.monthly : (tier.price.yearly / 12).toFixed(2)}
                   </span>
                   <span className="text-gray-600">/month</span>
                   
