@@ -1,6 +1,7 @@
 {
   "name": "podacium",
   "private": true,
+  "packageManager": "npm@10.9.0",
   "version": "1.0.0",
   "workspaces": [
     "apps/*",

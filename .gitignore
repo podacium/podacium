@@ -7,3 +7,4 @@ services/api/venv/
 __pycache__/
 .DS_Store
 Thumbs.db
+.vercel

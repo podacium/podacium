@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
+import { motion, AnimatePresence } from 'framer-motion'
 
 // =============================================================================
 // TYPES AND INTERFACES
@@ -100,10 +101,24 @@ interface Project {
 }
 
 interface FAQ {
-  id: string
-  question: string
-  answer: string
-  category: 'general' | 'billing' | 'technical' | 'accounts'
+  id: string | number;
+  question: string;
+  answer: string;
+  category:
+    | 'general'
+    | 'billing'
+    | 'technical'
+    | 'accounts'
+    | 'scheduling'
+    | 'integration'
+    | 'security'
+    | 'customization'
+    | 'collaboration'
+    | 'mobile'
+    | 'automation'
+    | 'analytics'
+    | 'support'
+    | string; // allows future expansion
 }
 
 interface PricingTier {
@@ -118,6 +133,7 @@ interface PricingTier {
   cta: string
   popular: boolean
   pillar: 'all' | 'learn' | 'bi' | 'hub'
+  badge?: string
 }
 
 interface TeamMember {
@@ -738,131 +754,221 @@ const MOCK_PROJECTS: Project[] = [
 ]
 
 const MOCK_FAQS: FAQ[] = [
+  // ---- Podacium Core ----
   {
-    id: '1',
+    id: 1,
     question: 'What is Podacium and how does it work?',
-    answer: 'Podacium is an integrated AI-driven platform that combines learning, business intelligence, and talent matching in one ecosystem. It uses advanced AI to provide personalized learning paths, data analysis insights, and connects businesses with skilled freelancers.',
+    answer:
+      'Podacium is an integrated AI-driven platform that combines learning, business intelligence, and talent matching in one ecosystem. It uses advanced AI to provide personalized learning paths, data insights, and connects businesses with skilled freelancers.',
     category: 'general'
   },
   {
-    id: '2',
+    id: 2,
     question: 'How much does Podacium cost?',
-    answer: 'We offer flexible pricing plans starting from free basic access to premium enterprise solutions. Each pillar (Learn, BI, Hub) has its own pricing structure, with significant discounts for bundled access across all platforms.',
+    answer:
+      'We offer flexible pricing plans starting from free basic access to premium enterprise solutions. Each pillar (Learn, BI, Hub) has its own pricing structure, with discounts for bundled access.',
     category: 'billing'
   },
   {
-    id: '3',
+    id: 3,
     question: 'Can I integrate Podacium with my existing tools?',
-    answer: 'Yes, Podacium offers extensive integration capabilities with popular data sources, learning management systems, and project management tools through our API and pre-built connectors.',
+    answer:
+      'Yes, Podacium integrates with popular data sources, LMS platforms, and project management tools through APIs and pre-built connectors.',
     category: 'technical'
   },
   {
-    id: '4',
-    question: 'How does the AI matching in Hub work?',
-    answer: 'Our AI matching algorithm analyzes project requirements, freelancer skills, past performance, and compatibility factors to recommend the best matches. It continuously learns from successful collaborations to improve recommendations.',
+    id: 4,
+    question: 'How does AI matching in the Hub work?',
+    answer:
+      'Our AI analyzes project requirements, freelancer skills, and collaboration history to suggest optimal matches, improving over time based on performance data.',
     category: 'technical'
   },
   {
-    id: '5',
+    id: 5,
     question: 'What kind of support do you offer?',
-    answer: 'We provide 24/7 chat support for all users, dedicated account management for enterprise clients, comprehensive documentation, and community forums for peer-to-peer assistance.',
+    answer:
+      'We provide 24/7 chat support for all users, account management for enterprise clients, and a knowledge base for self-service help.',
     category: 'general'
   },
   {
-    id: '6',
-    question: 'Can I cancel my subscription anytime?',
-    answer: 'Yes, you can cancel your subscription at any time. We offer prorated refunds for annual plans and immediate cancellation for monthly subscriptions.',
-    category: 'billing'
-  },
-  {
-    id: '7',
+    id: 6,
     question: 'How secure is my data on Podacium?',
-    answer: 'We implement enterprise-grade security measures including encryption at rest and in transit, SOC 2 compliance, regular security audits, and strict access controls to protect your data.',
+    answer:
+      'We apply enterprise-grade security: encryption in transit and at rest, SOC 2 compliance, routine audits, and strict access control policies.',
     category: 'technical'
   },
   {
-    id: '8',
+    id: 7,
     question: 'Do you offer team or enterprise plans?',
-    answer: 'Yes, we offer specialized team and enterprise plans with additional features like centralized billing, admin controls, custom reporting, and dedicated support.',
+    answer:
+      'Yes, we offer enterprise plans with advanced admin controls, centralized billing, and team analytics.',
     category: 'accounts'
   },
   {
-    id: '9',
-    question: 'What programming languages are supported in Learn courses?',
-    answer: 'Our courses cover a wide range of technologies including Python, R, SQL, JavaScript, and more. Each course clearly lists the required technical background and tools.',
+    id: 8,
+    question: 'What programming languages are covered in Learn?',
+    answer:
+      'Courses include Python, R, SQL, JavaScript, and more, all tailored for real-world data science and business applications.',
     category: 'general'
   },
   {
-    id: '10',
+    id: 9,
     question: 'How do payments work in the Hub marketplace?',
-    answer: 'We use an escrow system where clients fund projects upfront. Payments are released upon milestone completion, ensuring security for both clients and freelancers.',
+    answer:
+      'We use an escrow system where clients deposit funds before project start. Payments are released after milestone completion for security.',
+    category: 'billing'
+  },
+
+  // ---- Scheduling / General SaaS ----
+  {
+    id: 10,
+    question: 'How does AI scheduling work?',
+    answer:
+      'Our AI analyzes your calendar usage, meeting history, and preferences to suggest optimal times, improving over time with each interaction.',
+    category: 'scheduling'
+  },
+  {
+    id: 11,
+    question: 'What calendar integrations are supported?',
+    answer:
+      'We support Google Calendar, Microsoft Outlook, Apple Calendar, and any CalDAV-compliant system with two-way synchronization.',
+    category: 'integration'
+  },
+  {
+    id: 12,
+    question: 'Can I customize booking or dashboard interfaces?',
+    answer:
+      'Yes! You can add branding, custom colors, domains, and even CSS overrides for full customization.',
+    category: 'customization'
+  },
+  {
+    id: 13,
+    question: 'What analytics are available?',
+    answer:
+      'Our analytics dashboards provide real-time insights into performance, engagement, conversion rates, and user activity across your workspace.',
+    category: 'analytics'
+  },
+  {
+    id: 14,
+    question: 'Is there a mobile app?',
+    answer:
+      'Yes, our mobile apps for iOS and Android include all core features, with offline support and push notifications.',
+    category: 'mobile'
+  },
+  {
+    id: 15,
+    question: 'What integrations are available?',
+    answer:
+      'We integrate with 100+ tools including Google Analytics, Salesforce, MySQL, and cloud providers like AWS, GCP, and Azure.',
+    category: 'integration'
+  },
+  {
+    id: 16,
+    question: 'Can I cancel or change plans anytime?',
+    answer:
+      'Yes, you can upgrade, downgrade, or cancel your plan anytime. Annual plans receive prorated refunds.',
+    category: 'billing'
+  },
+  {
+    id: 17,
+    question: 'Is my data private?',
+    answer:
+      'All user data is encrypted end-to-end and stored in secure data centers with continuous monitoring and strict privacy policies.',
+    category: 'security'
+  },
+  {
+    id: 18,
+    question: 'Can I export my data?',
+    answer:
+      'Yes, you can export your course progress, BI dashboards, or scheduling data as CSV, JSON, or PDF at any time.',
+    category: 'technical'
+  },
+  {
+    id: 19,
+    question: 'Do you offer free trials?',
+    answer:
+      'Yes, we offer a 14-day free trial giving you full access to all Professional features. No credit card required.',
     category: 'billing'
   }
-]
+];
 
 const MOCK_PRICING_TIERS: PricingTier[] = [
   {
     id: 'starter',
     name: 'Starter',
-    description: 'Perfect for individuals and small teams getting started with data',
+    description: 'Perfect for individuals and small teams getting started with data and AI.',
     price: {
-      monthly: 29,
-      yearly: 290
+      monthly: 19,
+      yearly: 190
     },
     features: [
-      'Access to basic courses',
-      '5 dashboard creations',
+      'Access to essential courses and tutorials',
+      'Up to 5 dashboards per month',
       'Community support',
-      'Basic AI features',
-      '1 project posting per month'
+      'Basic AI assistance',
+      '1 project posting per month',
+      'Email support'
     ],
-    cta: 'Get Started',
+    cta: 'Get Started with Podacium',
     popular: false,
-    pillar: 'all'
+    pillar: 'all',
+    badge: 'For Beginners & Learners'
   },
   {
     id: 'professional',
     name: 'Professional',
-    description: 'Ideal for growing businesses and serious learners',
+    description: 'Ideal for growing businesses and serious learners integrating BI, AI, and freelancing.',
     price: {
-      monthly: 79,
-      yearly: 790
+      monthly: 49,
+      yearly: 490
     },
     features: [
-      'All courses and certifications',
-      'Unlimited dashboards',
-      'Priority support',
-      'Advanced AI features',
+      'All Podacium courses and certifications',
+      'Unlimited dashboards & analytics reports',
+      'Priority support & AI recommendations',
       '10 project postings per month',
-      'API access',
-      'Custom branding'
+      'API access & export tools',
+      'Team collaboration & shared workspaces',
+      'Advanced analytics & AI insights',
+      'Custom branding options',
+      '20GB storage',
+      'Access to Podacium community projects',
+      '15-day trial — signup only (no credit card)'
     ],
-    cta: 'Start Free Trial',
+    cta: 'Start Your Podacium Journey',
     popular: true,
-    pillar: 'all'
+    pillar: 'all',
+    badge: 'Best Value for Professionals'
   },
   {
     id: 'enterprise',
     name: 'Enterprise',
-    description: 'For organizations needing full platform capabilities',
+    description: 'For organizations needing full customization, scalability, and dedicated support.',
     price: {
-      monthly: 199,
-      yearly: 1990
+      monthly: 129,
+      yearly: 1290
     },
     features: [
       'Everything in Professional',
-      'Unlimited team members',
+      'Unlimited team members & permissions',
       'Dedicated account manager',
-      'SLA guarantee',
-      'Custom integrations',
-      'On-premise deployment option',
-      'Advanced security features'
+      'SLA guarantee & security compliance',
+      'Custom integrations & BI connectors',
+      'On-premise or hybrid deployment options',
+      '1TB storage',
+      '24/7 priority support',
+      'Custom training sessions',
+      'SSO, API extensions, and data governance tools',
+      '15-day trial — signup only (no credit card)',
+      'Tailored pricing by client needs'
     ],
-    cta: 'Contact Sales',
+    cta: 'Contact Podacium Sales',
     popular: false,
-    pillar: 'all'
+    pillar: 'all',
+    badge: 'For Large Teams & Enterprises'
   }
 ]
+
 
 const MOCK_TEAM_MEMBERS: TeamMember[] = [
   {
@@ -1375,113 +1481,15 @@ const Slider: React.FC<SliderProps> = ({
 // SECTION COMPONENTS
 // =============================================================================
 
-const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { user } = useAuth()
-  
+import Navbar from '../components/Navbar'
+
+// ... rest of your page component
+function Home() {
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link href="/" className="flex-shrink-0 flex items-center">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-lg">P</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">Podacium</span>
-            </Link>
-            
-            <div className="hidden md:ml-8 md:flex md:space-x-6">
-              <Link href="/learn" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                Learn
-              </Link>
-              <Link href="/bi" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                BI
-              </Link>
-              <Link href="/hub" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                Hub
-              </Link>
-              <Link href="/pricing" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                Pricing
-              </Link>
-            </div>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-4">
-            {user ? (
-              <>
-                <Link href="/dashboard" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                  Dashboard
-                </Link>
-                <Button variant="outline" size="sm">
-                  Logout
-                </Button>
-              </>
-            ) : (
-              <>
-                <Link href="/login" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                  Sign In
-                </Link>
-                <Button variant="primary" size="sm" href="/signup">
-                  Get Started
-                </Button>
-              </>
-            )}
-          </div>
-          
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-            >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-            <Link href="/learn" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-              Learn
-            </Link>
-            <Link href="/bi" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-              BI
-            </Link>
-            <Link href="/hub" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-              Hub
-            </Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-              Pricing
-            </Link>
-            <div className="pt-4 border-t">
-              {user ? (
-                <>
-                  <Link href="/dashboard" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-                    Dashboard
-                  </Link>
-                  <Button variant="outline" size="sm" className="w-full justify-center mt-2">
-                    Logout
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <Link href="/login" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-                    Sign In
-                  </Link>
-                  <Button variant="primary" size="sm" className="w-full justify-center mt-2" href="/signup">
-                    Get Started
-                  </Button>
-                </>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
-    </nav>
+    <>
+      <Navbar />
+      {/* Rest of your page content */}
+    </>
   )
 }
 
@@ -1509,7 +1517,7 @@ const Hero: React.FC = () => {
                 Start Free Trial
               </Button>
               <Button variant="outline" size="xl" href="/demo">
-                Watch Demo
+                Schedule Demo
               </Button>
             </div>
             
@@ -1646,7 +1654,7 @@ const LearnOverview: React.FC = () => {
                   <div className="w-full h-48 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                     {course.title}
                   </div>
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-semibold">
+                  <div className="absolute top-4 right-4 bg-white bg-opacity-90 text-gray-800 rounded-full px-3 py-1 text-xs font-semibold">
                     {course.level}
                   </div>
                   {course.price.discounted && (
@@ -2262,7 +2270,7 @@ const HubOverview: React.FC = () => {
                 <p className="text-blue-100 mb-4">
                   Get instant freelancer recommendations for your project
                 </p>
-                <Button variant="primary" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Button variant="primary" className="bg-neutral-800/20 text-blue-600 hover:bg-white/20">
                   Start Matching
                 </Button>
               </div>
@@ -2412,127 +2420,130 @@ const AISection: React.FC = () => {
   
   const currentAI = aiFeatures[activeAIType as keyof typeof aiFeatures]
   
-  return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
-            Podacium Intelligence
-          </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Our advanced AI systems work across all platforms to enhance learning, analysis, and collaboration
-          </p>
-        </div>
-        
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <Card 
-            className={`text-center p-6 cursor-pointer transition-all ${
-              activeAIType === 'tutor' ? 'ring-2 ring-blue-500 shadow-xl' : ''
+return (
+  <section className="bg-gradient-to-b from-neutral-50 to-white py-24">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      
+      {/* Header */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          Podacium Intelligence Suite
+        </h2>
+        <p className="mt-4 text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
+          Elevate your productivity with cutting-edge AI tailored for learning, insights, and collaboration.
+        </p>
+      </div>
+
+      {/* AI Selector Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        {[
+          {
+            type: 'tutor',
+            icon: '🎓',
+            title: 'Tutor AI',
+            desc: 'Accelerated learning with a personalized assistant.',
+            ring: 'ring-indigo-400',
+          },
+          {
+            type: 'analyst',
+            icon: '📊',
+            title: 'Analyst AI',
+            desc: 'Automated insights with powerful data analysis.',
+            ring: 'ring-zinc-400',
+          },
+          {
+            type: 'matchmaker',
+            icon: '🤝',
+            title: 'Matchmaker AI',
+            desc: 'Seamless matchmaking for better collaborations.',
+            ring: 'ring-slate-400',
+          },
+        ].map(({ type, icon, title, desc, ring }) => (
+          <div
+            key={type}
+            className={`group border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer bg-white hover:bg-gray-50 ${
+              activeAIType === type ? `ring-2 ${ring}` : ''
             }`}
-            onClick={() => setActiveAIType('tutor')}
-            hover
+            onClick={() => setActiveAIType(type)}
           >
-            <div className="text-4xl mb-4">🎓</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Tutor AI</h3>
-            <p className="text-gray-600 text-sm">
-              Personalized learning assistant for accelerated skill development
-            </p>
-          </Card>
+            <div className="text-4xl mb-4">{icon}</div>
+            <h3 className="text-xl font-semibold text-slate-900 mb-2 group-hover:text-indigo-600 transition">
+              {title}
+            </h3>
+            <p className="text-sm text-slate-600">{desc}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Details Panel */}
+      <div className="relative bg-white rounded-3xl shadow-xl p-10 lg:p-14 border border-gray-100">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
-          <Card 
-            className={`text-center p-6 cursor-pointer transition-all ${
-              activeAIType === 'analyst' ? 'ring-2 ring-green-500 shadow-xl' : ''
-            }`}
-            onClick={() => setActiveAIType('analyst')}
-            hover
-          >
-            <div className="text-4xl mb-4">📊</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Analyst AI</h3>
-            <p className="text-gray-600 text-sm">
-              Advanced data analysis and automated insight generation
+          {/* Info Side */}
+          <div>
+            <h3 className="text-3xl font-bold text-slate-900 mb-4">
+              {currentAI.title}
+            </h3>
+            <p className="text-lg text-slate-600 mb-6">
+              {currentAI.description}
             </p>
-          </Card>
-          
-          <Card 
-            className={`text-center p-6 cursor-pointer transition-all ${
-              activeAIType === 'matchmaker' ? 'ring-2 ring-purple-500 shadow-xl' : ''
-            }`}
-            onClick={() => setActiveAIType('matchmaker')}
-            hover
-          >
-            <div className="text-4xl mb-4">🤝</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Matchmaker AI</h3>
-            <p className="text-gray-600 text-sm">
-              Intelligent talent matching for successful collaborations
-            </p>
-          </Card>
-        </div>
-        
-        <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-4">
-                {currentAI.title}
-              </h3>
-              <p className="text-lg text-gray-600 mb-6">
-                {currentAI.description}
-              </p>
-              
-              <div className="space-y-4">
-                {currentAI.features.map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className={`flex-shrink-0 w-6 h-6 bg-${currentAI.color}-100 rounded-full flex items-center justify-center mt-1`}>
-                      <svg className={`w-4 h-4 text-${currentAI.color}-600`} fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <div className="ml-4">
-                      <p className="text-gray-700">{feature}</p>
-                    </div>
+
+            <div className="space-y-4">
+              {currentAI.features.map((feature, idx) => (
+                <div key={idx} className="flex items-start">
+                  <div className={`flex-shrink-0 w-6 h-6 bg-${currentAI.color}-100 text-${currentAI.color}-600 rounded-full flex items-center justify-center mt-1`}>
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
                   </div>
-                ))}
+                  <p className="ml-4 text-slate-700 text-sm">{feature}</p>
+                </div>
+              ))}
+            </div>
+
+            <Button variant="primary" size="lg" className="mt-8">
+              Try {currentAI.title}
+            </Button>
+          </div>
+
+          {/* Demo Panel */}
+          <div className="relative border border-dashed border-gray-300 rounded-xl p-8 bg-gray-50">
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-indigo-500 to-slate-600 text-white text-2xl font-bold rounded-full flex items-center justify-center">
+                AI
               </div>
-              
-              <Button variant="primary" size="lg" className="mt-8">
-                Try {currentAI.title}
+              <h4 className="text-xl font-semibold text-slate-800 mb-2">
+                {currentAI.title} Demo
+              </h4>
+              <p className="text-sm text-slate-600 mb-6">
+                Experience the AI’s capability in real-time
+              </p>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+                <p className="text-xs text-gray-500 mb-2">Suggested Topics:</p>
+                <div className="space-y-2">
+                  {currentAI.features.slice(0, 2).map((f, i) => (
+                    <div key={i} className="text-left p-2 bg-gray-100 rounded-md text-sm text-slate-700">
+                      {f}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <Button variant="outline" size="sm" className="w-full">
+                Start Conversation
               </Button>
             </div>
-            
-            <div className="relative">
-              <Card className="p-6">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
-                    AI
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">
-                    {currentAI.title} Demo
-                  </h4>
-                  <p className="text-gray-600 mb-6">
-                    Experience the power of AI in action
-                  </p>
-                  
-                  <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                    <div className="text-sm text-gray-500 mb-2">Ask me anything about...</div>
-                    <div className="space-y-2">
-                      {currentAI.features.slice(0, 2).map((feature, index) => (
-                        <div key={index} className="text-left p-3 bg-white rounded-lg border border-gray-200 text-sm">
-                          {feature}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <Button variant="outline" size="sm" className="w-full">
-                    Start Conversation
-                  </Button>
-                </div>
-              </Card>
-            </div>
           </div>
+
         </div>
       </div>
-    </section>
-  )
+
+    </div>
+  </section>
+);
+
+
 }
 
 const Features: React.FC = () => {
@@ -2711,189 +2722,398 @@ const Newsletter: React.FC = () => {
     e.preventDefault()
     subscribe(email)
   }
-  
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setEmail('')
+    }
+  }
+
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
-          Stay Updated with Podacium
-        </h2>
-        <p className="text-xl text-blue-100 mb-8">
-          Get the latest news, feature updates, and data insights delivered to your inbox
-        </p>
-        
-        {success ? (
-          <Card className="max-w-md mx-auto p-8">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Welcome to Podacium!</h3>
-            <p className="text-gray-600">
-              Thank you for subscribing. We've sent a confirmation email to your inbox.
-            </p>
-          </Card>
-        ) : (
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                required
-              />
-              <Button
-                type="submit"
-                variant="primary"
-                size="lg"
-                loading={loading}
-                className="bg-white text-blue-600 hover:bg-gray-100 whitespace-nowrap"
-              >
-                Subscribe
-              </Button>
-            </div>
-            
-            {error && (
-              <p className="mt-2 text-red-200 text-sm">{error}</p>
-            )}
-            
-            <p className="mt-4 text-blue-200 text-sm">
-              By subscribing, you agree to our Privacy Policy and consent to receive updates from Podacium.
-            </p>
-          </form>
-        )}
-        
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-white">15K+</div>
-            <div className="text-blue-200">Newsletter Subscribers</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-white">Weekly</div>
-            <div className="text-blue-200">Updates</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-white">0 Spam</div>
-            <div className="text-blue-200">We respect your inbox</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-white">Unsubscribe</div>
-            <div className="text-blue-200">Anytime</div>
-          </div>
+    <section 
+      className="relative py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 overflow-hidden"
+      aria-labelledby="newsletter-heading"
+    >
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-black/10"></div>
+      <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
+      <div className="absolute bottom-10 right-10 w-32 h-32 bg-purple-400/20 rounded-full blur-2xl"></div>
+      
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 
+            id="newsletter-heading"
+            className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+          >
+            Stay Updated with{' '}
+            <span className="bg-gradient-to-r from-amber-300 to-amber-400 bg-clip-text text-transparent">
+              Podacium
+            </span>
+          </h2>
+          <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            Get exclusive insights, feature updates, and data-driven podcast recommendations delivered weekly
+          </p>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          {success ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card className="max-w-md mx-auto p-8 bg-white/95 backdrop-blur-sm border-0 shadow-2xl">
+                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg 
+                    className="w-10 h-10 text-green-600" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path 
+                      fillRule="evenodd" 
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" 
+                      clipRule="evenodd" 
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">
+                  Welcome to Podacium!
+                </h3>
+                <p className="text-gray-600 text-center mb-4">
+                  Thank you for subscribing! We've sent a confirmation email to{' '}
+                  <strong className="text-gray-900">{email}</strong>.
+                </p>
+                <div className="text-sm text-gray-500 text-center">
+                  Check your spam folder if you don't see it within 5 minutes.
+                </div>
+              </Card>
+            </motion.div>
+          ) : (
+            <motion.form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            >
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex-1 relative">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                    placeholder="Enter your best email address"
+                    className="w-full px-6 py-4 text-lg rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-sm text-white placeholder-blue-200 focus:outline-none focus:ring-4 focus:ring-white/30 focus:border-white/40 transition-all duration-200"
+                    required
+                    disabled={loading}
+                    aria-describedby={error ? "email-error" : "email-description"}
+                    aria-required="true"
+                  />
+                  {email && (
+                    <button
+                      type="button"
+                      onClick={() => setEmail('')}
+                      className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white/60 hover:text-white transition-colors"
+                      aria-label="Clear email"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  )}
+                </div>
+<Button
+  type="submit"
+  variant="primary"
+  size="lg"
+  loading={loading}
+  disabled={loading}
+  className={`
+    relative
+    px-8 py-4
+    rounded-2xl
+    font-semibold text-lg
+    bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-500
+    text-white
+    shadow-[0_4px_20px_rgba(59,130,246,0.4)]
+    hover:shadow-[0_8px_28px_rgba(59,130,246,0.6)]
+    hover:from-indigo-500 hover:to-blue-600
+    active:from-blue-700 active:to-indigo-600
+    transition-all duration-300 ease-out
+    transform hover:scale-[1.04] active:scale-[0.97]
+    focus:outline-none focus:ring-4 focus:ring-blue-300/50
+    disabled:opacity-60 disabled:cursor-not-allowed
+    disabled:transform-none disabled:hover:scale-100
+  `}
+>
+  {loading ? (
+    <span className="flex items-center justify-center gap-2">
+      <svg
+        className="animate-spin h-5 w-5 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        />
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        />
+      </svg>
+      Subscribing...
+    </span>
+  ) : (
+    'Subscribe Now'
+  )}
+</Button>
+
+              </div>
+              
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  className="flex items-center gap-2 text-red-200 bg-red-500/20 px-4 py-3 rounded-lg"
+                  role="alert"
+                  id="email-error"
+                >
+                  <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm font-medium">{error}</span>
+                </motion.div>
+              )}
+
+              <div id="email-description">
+                <p className="text-blue-200/90 text-sm text-center leading-relaxed">
+                  By subscribing, you agree to our{' '}
+                  <a href="/privacy" className="text-white font-semibold underline hover:no-underline">
+                    Privacy Policy
+                  </a>{' '}
+                  and consent to receive updates from Podacium. Unsubscribe at any time.
+                </p>
+              </div>
+            </motion.form>
+          )}
+        </div>
+
+        {/* Stats Section */}
+        <motion.div 
+          className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
+          {[
+            { number: '15K+', label: 'Active Subscribers' },
+            { number: 'Weekly', label: 'Curated Updates' },
+            { number: '0 Spam', label: 'Quality Content Only' },
+            { number: '1-Click', label: 'Unsubscribe Anytime' }
+          ].map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              className="text-center group"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="text-3xl font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">
+                {stat.number}
+              </div>
+              <div className="text-blue-200/80 group-hover:text-blue-100 transition-colors">
+                {stat.label}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Trust indicators */}
+        <div className="mt-12 text-center">
+          <p className="text-blue-200/70 text-sm flex items-center justify-center gap-2">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            Trusted by podcast enthusiasts worldwide
+          </p>
         </div>
       </div>
     </section>
   )
 }
 
-const PricingCTA: React.FC = () => {
-  const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('yearly')
-  
+const PricingSection: React.FC = () => {
+  const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly')
+
+  const toggleBillingCycle = () => {
+    setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')
+  }
+
+  const calculateSavings = (monthlyPrice: number, yearlyPrice: number) => {
+    const yearlyTotal = monthlyPrice * 12
+    const savings = yearlyTotal - yearlyPrice
+    const percentage = Math.round((savings / yearlyTotal) * 100)
+    return { savings, percentage }
+  }
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Simple, Transparent Pricing
           </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose the plan that works best for you and your team. All plans include access to all three pillars.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Choose the plan that fits your goals. All tiers include access to all three Podacium pillars — Education, BI, and Freelancing.
           </p>
         </div>
-        
-        <div className="mt-8 flex justify-center">
-          <div className="bg-gray-100 rounded-lg p-1 inline-flex">
-            <button
-              onClick={() => setBillingPeriod('monthly')}
-              className={`px-6 py-3 rounded-md font-medium transition-all ${
-                billingPeriod === 'monthly'
-                  ? 'bg-white text-gray-900 shadow-sm'
-                  : 'text-gray-600 hover:text-gray-900'
+
+        {/* Billing Toggle */}
+        <div className="flex justify-center items-center mb-12 space-x-4">
+          <span
+            className={`text-lg ${
+              billingCycle === 'monthly' ? 'text-gray-900 font-medium' : 'text-gray-500'
+            }`}
+          >
+            Monthly
+          </span>
+          <button
+            onClick={toggleBillingCycle}
+            className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            <span
+              className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                billingCycle === 'yearly' ? 'translate-x-6' : 'translate-x-1'
               }`}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setBillingPeriod('yearly')}
-              className={`px-6 py-3 rounded-md font-medium transition-all ${
-                billingPeriod === 'yearly'
-                  ? 'bg-white text-gray-900 shadow-sm'
-                  : 'text-gray-600 hover:text-gray-900'
-              }`}
-            >
-              Yearly <span className="text-green-600 ml-1">Save 20%</span>
-            </button>
-          </div>
+            />
+          </button>
+          <span
+            className={`text-lg ${
+              billingCycle === 'yearly' ? 'text-gray-900 font-medium' : 'text-gray-500'
+            }`}
+          >
+            Yearly
+          </span>
+          <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+            Save up to 20%
+          </span>
         </div>
-        
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {MOCK_PRICING_TIERS.map((tier) => (
-            <Card 
-              key={tier.id} 
-              className={`relative p-8 ${tier.popular ? 'ring-2 ring-blue-500 shadow-xl' : ''}`}
-              hover
-            >
-              {tier.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-                    Most Popular
-                  </span>
-                </div>
-              )}
-              
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900">{tier.name}</h3>
-                <p className="mt-2 text-gray-600">{tier.description}</p>
-                
-                <div className="mt-6">
-                  <span className="text-4xl font-bold text-gray-900">
-                    ${billingPeriod === 'monthly' ? tier.price.monthly : (tier.price.yearly / 12).toFixed(2)}
-                  </span>
-                  <span className="text-gray-600">/month</span>
-                  
-                  {billingPeriod === 'yearly' && (
-                    <div className="text-sm text-gray-500 mt-1">
-                      Billed annually (${tier.price.yearly})
+
+        {/* Pricing Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {MOCK_PRICING_TIERS.map((tier) => {
+            const { savings, percentage } = calculateSavings(tier.price.monthly, tier.price.yearly)
+            const price = billingCycle === 'monthly' ? tier.price.monthly : tier.price.yearly
+            const period = billingCycle === 'monthly' ? 'month' : 'year'
+
+            return (
+              <motion.div
+                key={tier.id}
+                className={`relative ${tier.popular ? 'scale-105 z-10' : ''}`}
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+              >
+
+              <div className="relative pt-4 overflow-visible"> {/* More top padding, allow overflow */}
+                {/* Badge Section */}
+                {tier.id === 'professional' ? (
+                  // Two badges for the Professional plan
+                  <div className="absolute top-2 left-0 w-full flex justify-between px-8">
+                    <span className="bg-green-100 text-green-800 px-4 py-1 rounded-full text-xs font-semibold shadow-sm max-w-[45%] text-center truncate">
+                      {tier.badge ?? 'Best Value for Professionals'}
+                    </span>
+                    <span className="bg-purple-600 text-white px-4 py-1 rounded-full text-xs font-semibold shadow-sm max-w-[45%] text-center truncate">
+                      Most Popular
+                    </span>
+                  </div>
+                ) : (
+                  // Single centered badge for other plans
+                  tier.badge && (
+                    <div className="absolute top-2 left-1/2 -translate-x-1/2 transform">
+                      <span className="bg-green-100 text-green-800 px-4 py-1 rounded-full text-xs font-semibold shadow-sm max-w-[80%] text-center truncate">
+                        {tier.badge}
+                      </span>
                     </div>
-                  )}
-                </div>
-                
-                <ul className="mt-8 space-y-4">
-                  {tier.features.map((feature, index) => (
-                    <li key={index} className="flex items-center">
-                      <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <Button
-                  variant={tier.popular ? 'primary' : 'outline'}
-                  size="lg"
-                  className="w-full mt-8"
-                  href="/signup"
-                >
-                  {tier.cta}
-                </Button>
+                  )
+                )}
               </div>
-            </Card>
-          ))}
+
+                <Card
+                  className={`h-full p-8 transition-all ${
+                    tier.popular
+                      ? 'border-2 border-blue-500 shadow-2xl'
+                      : 'border border-gray-200 hover:shadow-lg'
+                  }`}
+                >
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.name}</h3>
+                    <p className="text-gray-600">{tier.description}</p>
+                  </div>
+
+                  <div className="text-center mb-8">
+                    <div className="flex items-baseline justify-center mb-2">
+                      <span className="text-4xl font-bold text-gray-900">${price}</span>
+                      <span className="text-gray-600 ml-2">/{period}</span>
+                    </div>
+                    {billingCycle === 'yearly' && savings > 0 && (
+                      <div className="text-green-600 text-sm font-medium">
+                        Save ${savings} ({percentage}%)
+                      </div>
+                    )}
+                  </div>
+
+                  <ul className="space-y-4 mb-8">
+                    {tier.features.map((feature, index) => (
+                      <li key={index} className="flex items-center text-gray-700">
+                        <svg
+                          className="w-5 h-5 text-green-500 mr-3 flex-shrink-0"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button
+                    variant={tier.popular ? 'primary' : 'outline'}
+                    size="lg"
+                    className="w-full"
+                    href={tier.id === 'enterprise' ? '/contact' : '/signup'}
+                  >
+                    {tier.cta}
+                  </Button>
+                </Card>
+              </motion.div>
+            )
+          })}
         </div>
-        
-        <div className="mt-16 text-center">
-          <div className="bg-gray-50 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Enterprise Solutions
+
+        {/* Enterprise CTA */}
+        <div className="mt-20 text-center">
+          <div className="bg-gray-50 rounded-2xl p-10 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              Need Something More Custom?
             </h3>
             <p className="text-gray-600 mb-6">
-              Need custom features, dedicated support, or on-premise deployment? Our enterprise team will work with you to create the perfect solution.
+              Get a tailored enterprise solution with dedicated support, on-premise deployment, and advanced integrations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button variant="primary" size="lg" href="/enterprise">
                 Contact Sales
               </Button>
@@ -2908,93 +3128,121 @@ const PricingCTA: React.FC = () => {
   )
 }
 
-const FAQ: React.FC = () => {
-  const [openItems, setOpenItems] = useState<Set<string>>(new Set())
-  
-  const toggleItem = (id: string) => {
+const FAQSection: React.FC = () => {
+  const [openItems, setOpenItems] = useState<Set<string | number>>(new Set())
+  const [activeCategory, setActiveCategory] = useState<string>('general') // Default changed to 'general'
+
+  const categories = [
+    { id: 'general', name: 'General' },
+    { id: 'billing', name: 'Billing & Plans' },
+    { id: 'technical', name: 'Technical' },
+    { id: 'accounts', name: 'Accounts' },
+  ]
+
+  const toggleItem = (id: string | number) => {
     const newOpenItems = new Set(openItems)
-    if (newOpenItems.has(id)) {
-      newOpenItems.delete(id)
-    } else {
-      newOpenItems.add(id)
-    }
+    newOpenItems.has(id) ? newOpenItems.delete(id) : newOpenItems.add(id)
     setOpenItems(newOpenItems)
   }
-  
-  const categories = ['general', 'billing', 'technical', 'accounts'] as const
-  
-  const faqsByCategory = categories.map(category => ({
-    category,
-    faqs: MOCK_FAQS.filter(faq => faq.category === category)
-  }))
-  
+
+  const filteredFAQs = MOCK_FAQS.filter(faq => faq.category === activeCategory)
+
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
+    <section className="py-16 bg-gray-50"> {/* Reduced top/bottom padding */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"> {/* Slightly narrower max width */}
+        {/* Header */}
+        <div className="text-center mb-10">
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-3">
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-xl text-gray-600">
-            Find answers to common questions about Podacium and how it can help you
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Find answers to common questions about Podacium’s platform, pricing, and features.
           </p>
         </div>
-        
-        <div className="mt-12 space-y-8">
-          {faqsByCategory.map(({ category, faqs }) => (
-            <div key={category}>
-              <h3 className="text-xl font-bold text-gray-900 mb-6 capitalize">
-                {category} Questions
-              </h3>
-              
-              <div className="space-y-4">
-                {faqs.map((faq) => (
-                  <Card key={faq.id} className="p-6">
-                    <button
-                      onClick={() => toggleItem(faq.id)}
-                      className="flex items-center justify-between w-full text-left"
-                    >
-                      <h4 className="text-lg font-semibold text-gray-900 pr-4">
-                        {faq.question}
-                      </h4>
-                      <svg
-                        className={`w-5 h-5 text-gray-500 transform transition-transform ${
-                          openItems.has(faq.id) ? 'rotate-180' : ''
-                        }`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                    
-                    {openItems.has(faq.id) && (
-                      <div className="mt-4 text-gray-600">
-                        {faq.answer}
-                      </div>
-                    )}
-                  </Card>
-                ))}
-              </div>
-            </div>
+
+        {/* Category Filter */}
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
+          {categories.map(category => (
+            <button
+              key={category.id}
+              onClick={() => setActiveCategory(category.id)}
+              className={`px-4 py-2 rounded-md font-medium transition-all ${
+                activeCategory === category.id
+                  ? 'bg-blue-600 text-white shadow'
+                  : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+              }`}
+            >
+              {category.name}
+            </button>
           ))}
         </div>
-        
-        <div className="mt-12 text-center">
-          <Card className="p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+
+        {/* FAQ List */}
+        <div className="space-y-2"> {/* Reduced spacing between cards */}
+          {filteredFAQs.map(faq => (
+            <Card
+              key={faq.id}
+              className="rounded-xl shadow-sm border border-gray-200 transition-all duration-200"
+            >
+              <button
+                onClick={() => toggleItem(faq.id)}
+                className="w-full text-left flex justify-between items-center px-4 py-4 sm:px-5 sm:py-4 hover:bg-gray-50 transition-colors"
+              >
+                <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                  {faq.question}
+                </h3>
+                <svg
+                  className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${
+                    openItems.has(faq.id) ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <AnimatePresence>
+                {openItems.has(faq.id) && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="overflow-hidden"
+                  >
+                    <div className="px-4 sm:px-5 pb-4 pt-2 border-t border-gray-200">
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </Card>
+          ))}
+        </div>
+
+        {/* Still Have Questions */}
+        <div className="text-center mt-14">
+          <Card className="p-8 max-w-3xl mx-auto shadow-md rounded-xl">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Still have questions?
             </h3>
-            <p className="text-gray-600 mb-6">
-              Our support team is here to help you get the most out of Podacium
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+              Our support team is here to help you get the most out of Podacium — whether it’s
+              technical help, pricing, or integration guidance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" href="/contact">
+              <Button variant="primary" size="lg" href="/contact">
                 Contact Support
               </Button>
-              <Button variant="outline" href="/documentation">
-                View Documentation
+              <Button variant="outline" size="lg" href="/community">
+                Join Community
               </Button>
             </div>
           </Card>
@@ -3004,104 +3252,7 @@ const FAQ: React.FC = () => {
   )
 }
 
-const Footer: React.FC = () => {
-  const [language, setLanguage] = useState('EN')
-  
-  return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center mb-6">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-lg">P</span>
-              </div>
-              <span className="text-xl font-bold">Podacium</span>
-            </div>
-            <p className="text-gray-400 mb-6">
-              Empowering individuals and organizations with AI-driven data education, analytics, and collaboration tools.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                </svg>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.042-3.441.219-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.017 12.014 0 12.017 0z"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Platform</h3>
-            <ul className="space-y-3">
-              <li><a href="/learn" className="text-gray-400 hover:text-white transition-colors">Learn</a></li>
-              <li><a href="/bi" className="text-gray-400 hover:text-white transition-colors">BI</a></li>
-              <li><a href="/hub" className="text-gray-400 hover:text-white transition-colors">Hub</a></li>
-              <li><a href="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="/features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Company</h3>
-            <ul className="space-y-3">
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/careers" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-              <li><a href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="/press" className="text-gray-400 hover:text-white transition-colors">Press</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Support</h3>
-            <ul className="space-y-3">
-              <li><a href="/help" className="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="/documentation" className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="/community" className="text-gray-400 hover:text-white transition-colors">Community</a></li>
-              <li><a href="/status" className="text-gray-400 hover:text-white transition-colors">Status</a></li>
-              <li><a href="/security" className="text-gray-400 hover:text-white transition-colors">Security</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-400 text-sm">
-            © 2024 Podacium. All rights reserved.
-          </div>
-          
-          <div className="flex items-center space-x-6 mt-4 md:mt-0">
-            <div className="flex items-center space-x-2">
-              <select 
-                value={language}
-                onChange={(e) => setLanguage(e.target.value)}
-                className="bg-gray-800 text-white border border-gray-700 rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                <option value="EN">English</option>
-                <option value="FR">Français</option>
-              </select>
-            </div>
-            
-            <div className="flex space-x-6 text-sm">
-              <a href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy</a>
-              <a href="/terms" className="text-gray-400 hover:text-white transition-colors">Terms</a>
-              <a href="/cookies" className="text-gray-400 hover:text-white transition-colors">Cookies</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  )
-}
+import Footer from "../components/Footer";
 
 // =============================================================================
 // FLOATING CHATBOT COMPONENT
@@ -3211,80 +3362,6 @@ const FloatingChatbot: React.FC = () => {
           </div>
         </div>
       )}
-    </>
-  )
-}
-
-// =============================================================================
-// MAIN HOMEPAGE COMPONENT
-// =============================================================================
-
-export default function HomePage() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
-  
-  // Mock structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Podacium",
-    "url": "https://podacium.com",
-    "logo": "https://podacium.com/logo.png",
-    "description": "AI-powered platform for data education, business intelligence, and talent matching",
-    "sameAs": [
-      "https://twitter.com/podacium",
-      "https://linkedin.com/company/podacium"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-555-123-4567",
-      "contactType": "customer service"
-    }
-  }
-  
-  return (
-    <>
-      <Head>
-        <title>Podacium - AI-Powered Data Education, Analytics & Talent Platform</title>
-        <meta name="description" content="Master data skills with AI-powered learning, transform insights with business intelligence tools, and connect with top data talent through Podacium's integrated platform." />
-        <meta name="keywords" content="data science, machine learning, business intelligence, data analytics, online courses, freelancers, AI education" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Podacium - AI-Powered Data Education, Analytics & Talent Platform" />
-        <meta property="og:description" content="Master data skills, build intelligence, and grow your career with Podacium's integrated AI-driven platform." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://podacium.com" />
-        <meta property="og:image" content="https://podacium.com/og-image.jpg" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Podacium - AI-Powered Data Platform" />
-        <meta name="twitter:description" content="Learn data skills, analyze business insights, and connect with talent through AI." />
-        <meta name="twitter:image" content="https://podacium.com/twitter-image.jpg" />
-        
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
-      
-      <div className={`min-h-screen ${theme === 'dark' ? 'dark bg-gray-900' : 'bg-white'}`}>
-        <Navbar />
-        <main>
-          <Hero />
-          <LearnOverview />
-          <BIPreview />
-          <HubOverview />
-          <AISection />
-          <Features />
-          <Testimonials />
-          <Newsletter />
-          <PricingCTA />
-          <FAQ />
-        </main>
-        <Footer />
-        <FloatingChatbot />
-      </div>
     </>
   )
 }
@@ -3605,19 +3682,58 @@ const TeamSection: React.FC = () => {
   )
 }
 
-// Final export with all components
-export { 
-  Hero, 
-  LearnOverview, 
-  BIPreview, 
-  HubOverview, 
-  Testimonials, 
-  Newsletter, 
-  PricingCTA, 
-  FAQ, 
-  Footer,
-  HeroVariation1,
-  HeroVariation2,
-  AdditionalFeaturesSection,
-  TeamSection
+// ✅ Default export for Next.js
+export default function HomePage() {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Podacium",
+    "url": "https://podacium.com",
+    "logo": "https://podacium.com/logo.png",
+    "description": "AI-powered platform for data education, business intelligence, and talent matching",
+    "sameAs": [
+      "https://twitter.com/podacium",
+      "https://linkedin.com/company/podacium"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-555-123-4567",
+      "contactType": "customer service"
+    }
+  }
+
+  return (
+    <>
+      <Head>
+        <title>Podacium - AI-Powered Data Education, Analytics & Talent Platform</title>
+        <meta
+          name="description"
+          content="Master data skills with AI-powered learning, transform insights with business intelligence tools, and connect with top data talent through Podacium's integrated platform."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </Head>
+
+      <div className={`min-h-screen ${theme === 'dark' ? 'dark bg-gray-900' : 'bg-white'}`}>
+        <Navbar />
+        <main>
+          <Hero />
+          <LearnOverview />
+          <BIPreview />
+          <HubOverview />
+          <AISection />
+          <Features />
+          <Testimonials />
+          <Newsletter />
+          <PricingSection />
+          <FAQSection />
+        </main>
+        <Footer />
+        <FloatingChatbot />
+      </div>
+    </>
+  )
 }
