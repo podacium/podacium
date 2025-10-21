@@ -549,104 +549,257 @@ const Section: React.FC<{
 // =============================================================================
 
 const HeroSection: React.FC = () => {
-  return (
-    <Section className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-700/30 border border-blue-500/30 text-sm">
-                <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-                Trusted by Fortune 500 companies worldwide
-              </div>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Enterprise-Grade
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">
-                  AI Solutions
-                </span>
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed max-w-2xl">
-                Scale your business with secure, compliant, and powerful AI infrastructure. 
-                Built for enterprises with mission-critical requirements and global scale.
-              </p>
-            </div>
-
-<div className="flex flex-col sm:flex-row gap-4">
-  <Button
-    size="lg"
-className="bg-white !text-blue-900 border border-blue-900 hover:bg-blue-900 hover:!text-white transition-colors duration-200"
-    href="../../demo"
-  >
-    Schedule Enterprise Demo
-  </Button>
-
-<Button
-  size="lg"
-  className="bg-blue-900 text-white border border-blue-900 hover:bg-white hover:text-blue-900 transition-colors duration-200"
-  href="#pricing"
-  onClick={(e) => {
+  const handleScrollToPricing = (e: React.MouseEvent) => {
     e.preventDefault();
-
     const element = document.getElementById('pricing');
     if (!element) return;
 
-    const yOffset = -80; // Adjust this offset as needed
+    const yOffset = -80;
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
     window.scrollTo({ top: y, behavior: 'smooth' });
-  }}
->
-  View Pricing Plans
-</Button>
+  };
 
-</div>
+  const handleMouseMove = (e: React.MouseEvent) => {
+    const { clientX, clientY } = e;
+    const elements = document.querySelectorAll('.parallax-element');
+    elements.forEach((element) => {
+      const speed = element.getAttribute('data-speed') || 0.02;
+      const x = (window.innerWidth - clientX * Number(speed)) / 100;
+      const y = (window.innerHeight - clientY * Number(speed)) / 100;
+      (element as HTMLElement).style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  };
 
-
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <div>
-                <div className="text-2xl font-bold">99.9%</div>
-                <div className="text-blue-200 text-sm">Uptime SLA</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold">24/7</div>
-                <div className="text-blue-200 text-sm">Premium Support</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold">SOC 2</div>
-                <div className="text-blue-200 text-sm">Compliant</div>
-              </div>
-            </div>
+  return (
+    <Section 
+      className="relative mt-5 pt-32 pb-2 px-6 sm:px-10 lg:px-16 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white overflow-hidden"
+    >
+      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white/80 to-transparent z-20 pointer-events-none"></div>
+      <div onMouseMove={handleMouseMove}>
+        {/* Enhanced Multi-layer Animated Background */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Primary gradient mesh */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-indigo-900/90 to-purple-900/95 backdrop-blur-[1px] animate-gradient-shift"></div>
+          
+          {/* Dynamic floating orbs */}
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div 
+              className="parallax-element absolute -top-16 -left-16 w-60 h-60 bg-gradient-to-r from-blue-400/20 to-cyan-500/20 rounded-full animate-[float_12s_ease-in-out_infinite]"
+              data-speed="0.03"
+            ></div>
+            <div 
+              className="parallax-element absolute top-1/4 -right-20 w-48 h-48 bg-gradient-to-r from-cyan-400/15 to-blue-500/15 rounded-full animate-[float_10s_ease-in-out_infinite_1.5s]"
+              data-speed="0.02"
+            ></div>
+            <div 
+              className="parallax-element absolute -bottom-20 -left-8 w-72 h-72 bg-gradient-to-r from-indigo-400/15 to-purple-600/15 rounded-full animate-[float_14s_ease-in-out_infinite_2s]"
+              data-speed="0.04"
+            ></div>
           </div>
+          
+          {/* Enhanced grid pattern */}
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_75%_45%_at_50%_50%,black_40%,transparent_70%)] animate-grid-flow"></div>
+          
+          {/* Subtle noise texture */}
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url%28%23noise%29%22 opacity=%220.02%22/%3E%3C/svg%3E')]"></div>
+        </div>
 
-          <div className="relative">
-            <div className="relative z-10 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="grid gap-4">
-                <div className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                  <div className="text-white">Real-time AI Processing</div>
+        {/* Light fade overlay for navbar spacing */}
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white/50 to-transparent z-0 pointer-events-none"></div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Enhanced Content Section */}
+            <div className="space-y-8">
+              {/* Trust Badge with Animation */}
+              <div className="space-y-4">
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer group">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse group-hover:animate-ping"></span>
+                  Trusted by Fortune 500 companies worldwide
                 </div>
-                <div className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
-                  <div className="text-white">Advanced Security Controls</div>
-                </div>
-                <div className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
-                  <div className="w-3 h-3 bg-purple-400 rounded-full"></div>
-                  <div className="text-white">Custom Model Training</div>
-                </div>
-                <div className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg">
-                  <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                  <div className="text-white">Enterprise Integrations</div>
-                </div>
+                
+                {/* Enhanced Headline */}
+                <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+                  Enterprise-Grade
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-cyan-200 to-indigo-200 animate-text-shimmer">
+                    AI Solutions
+                  </span>
+                </h1>
+                
+                {/* Enhanced Description */}
+                <p className="text-xl text-blue-100 leading-relaxed max-w-2xl">
+                  Scale your business with secure, compliant, and powerful AI infrastructure. 
+                  <span className="block mt-2 text-blue-200/90">
+                    Built for enterprises with mission-critical requirements and global scale.
+                  </span>
+                </p>
+              </div>
+
+              {/* Enhanced CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  size="lg"
+                  className="group relative bg-white !text-blue-900 border border-white hover:bg-blue-900 hover:!text-white ..."
+                  href="../../demo"
+                >
+                  <div className="button-shine absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                  <div className="relative flex items-center justify-center gap-2">
+                    <svg className="w-4 h-4 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    Schedule Enterprise Demo
+                  </div>
+                </Button>
+
+                <Button
+                  size="lg"
+                  className="group border border-white/60 text-white bg-transparent hover:bg-white/10 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  href="#pricing"
+                  onClick={handleScrollToPricing}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    <svg className="w-4 h-4 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                    </svg>
+                    View Pricing Plans
+                  </div>
+                </Button>
+              </div>
+
+              {/* Enhanced Stats Grid */}
+              <div className="grid grid-cols-3 gap-8 pt-8">
+                {[
+                  { value: '99.9%', label: 'Uptime SLA', color: 'from-green-400 to-emerald-400' },
+                  { value: '24/7', label: 'Premium Support', color: 'from-blue-400 to-cyan-400' },
+                  { value: 'SOC 2', label: 'Compliant', color: 'from-purple-400 to-indigo-400' }
+                ].map((stat, index) => (
+                  <div 
+                    key={index}
+                    className="text-center transform transition-all duration-300 hover:scale-110 cursor-pointer group"
+                  >
+                    <div className={`text-2xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent group-hover:animate-pulse`}>
+                      {stat.value}
+                    </div>
+                    <div className="text-blue-200 text-sm group-hover:text-white transition-colors">{stat.label}</div>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-500 rounded-full blur-xl opacity-50"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500 rounded-full blur-xl opacity-50"></div>
+
+            {/* Enhanced Features Card */}
+            <div className="relative">
+              <div className="relative z-10 bg-white/10 backdrop-blur-2xl rounded-2xl p-8 border border-white/20 shadow-2xl transform perspective-1000 hover:rotate-y-2 transition-all duration-500 hover:shadow-3xl">
+                {/* Card Header */}
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-white/30 to-white/10 rounded-xl flex items-center justify-center shadow-lg border border-white/20">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-white text-sm bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                        Enterprise AI Platform
+                      </h3>
+                      <p className="text-xs text-blue-200/80 font-medium">Powered by Advanced Intelligence</p>
+                    </div>
+                  </div>
+                  <div className="relative">
+                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
+                  </div>
+                </div>
+
+                {/* Enhanced Features List */}
+                <div className="grid gap-4">
+                  {[
+                    { text: 'Real-time AI Processing', color: 'bg-green-400', icon: '⚡' },
+                    { text: 'Advanced Security Controls', color: 'bg-blue-400', icon: '🔒' },
+                    { text: 'Custom Model Training', color: 'bg-purple-400', icon: '🧠' },
+                    { text: 'Enterprise Integrations', color: 'bg-yellow-400', icon: '🔗' }
+                  ].map((feature, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer group"
+                    >
+                      <div className="relative">
+                        <div className={`w-3 h-3 ${feature.color} rounded-full animate-pulse group-hover:animate-ping`}></div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-sm opacity-70 group-hover:opacity-100 transition-opacity">{feature.icon}</span>
+                        <div className="text-white group-hover:text-blue-100 transition-colors">{feature.text}</div>
+                      </div>
+                      <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Performance Metrics */}
+                <div className="grid grid-cols-3 gap-4 pt-6 mt-6 border-t border-white/20">
+                  {[
+                    { value: '256-bit', label: 'Encryption', color: 'from-blue-300 to-cyan-300' },
+                    { value: '50ms', label: 'Latency', color: 'from-green-300 to-emerald-300' },
+                    { value: '99.99%', label: 'Accuracy', color: 'from-purple-300 to-pink-300' }
+                  ].map((metric, index) => (
+                    <div 
+                      key={index}
+                      className="text-center transform transition-all duration-300 hover:scale-110 cursor-pointer group"
+                    >
+                      <div className={`text-sm font-bold bg-gradient-to-r ${metric.color} bg-clip-text text-transparent`}>
+                        {metric.value}
+                      </div>
+                      <div className="text-[10px] text-blue-200/80 group-hover:text-white transition-colors">{metric.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Background Effects */}
+              <div className="parallax-element absolute -z-10 top-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-400/15 to-cyan-500/15 rounded-full blur-2xl animate-pulse" data-speed="0.02"></div>
+              <div className="parallax-element absolute -z-10 -bottom-4 -left-4 w-20 h-20 bg-gradient-to-r from-indigo-400/10 to-purple-500/10 rounded-full blur-2xl animate-pulse delay-1000" data-speed="0.03"></div>
+            </div>
           </div>
         </div>
+
+        {/* Additional CSS Animations */}
+        <style>{`
+          @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+          }
+          @keyframes grid-flow {
+            0% { background-position: 0 0; }
+            100% { background-position: 60px 60px; }
+          }
+          @keyframes text-shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+          }
+          .animate-gradient-shift {
+            background-size: 200% 200%;
+            animation: gradient-shift 8s ease infinite;
+          }
+          .animate-grid-flow {
+            animation: grid-flow 20s linear infinite;
+          }
+          .animate-text-shimmer {
+            background-size: 200% auto;
+            animation: text-shimmer 3s ease-in-out infinite;
+          }
+          .perspective-1000 {
+            perspective: 1000px;
+          }
+          .button-shine {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+          }
+        `}</style>
       </div>
     </Section>
-  )
-}
+  );
+};
 
 const FeaturesSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all')

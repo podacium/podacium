@@ -8,151 +8,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { signIn } from "next-auth/react";
 
 // =============================================================================
-// TYPES AND INTERFACES
-// =============================================================================
-
-interface BenefitCard {
-  id: string
-  title: string
-  description: string
-  icon: string
-  color: string
-  features: string[]
-}
-
-// =============================================================================
-// MOCK DATA
-// =============================================================================
-
-
-const BENEFITS: BenefitCard[] = [
-  {
-    id: '1',
-    title: 'Learning & Certification',
-    description: 'Personalized learning with AI and industry-recognized certifications to validate your skills and boost your career.',
-    icon: '🎯',
-    color: 'blue',
-    features: [
-      'Smart course recommendations',
-      'Adaptive difficulty',
-      'Personalized feedback',
-      'Progress tracking',
-      'Industry recognition',
-      'Digital badges'
-    ]
-  },
-  {
-    id: '2',
-    title: 'Data & Infrastructure',
-    description: 'Powerful analytics tools and scalable infrastructure to handle complex data workloads effortlessly.',
-    icon: '📊',
-    color: 'green',
-    features: [
-      'Interactive dashboards',
-      'Real-time data',
-      'Predictive analytics',
-      'Custom reporting',
-      'Auto-scaling',
-      '99.9% uptime'
-    ]
-  },
-  {
-    id: '3',
-    title: 'Talent & Community',
-    description: 'Connect with top talent and a thriving expert community to share knowledge and grow together.',
-    icon: '🤝',
-    color: 'purple',
-    features: [
-      'AI-powered matching',
-      'Skill verification',
-      'Community forums',
-      'Expert Q&A',
-      'Networking events'
-    ]
-  },
-  {
-    id: '4',
-    title: 'Collaboration & Integration',
-    description: 'Work seamlessly with your team and integrate with your existing tools and workflows.',
-    icon: '👥',
-    color: 'orange',
-    features: [
-      'Real-time collaboration',
-      'Version control',
-      'Team permissions',
-      'Commenting system',
-      '100+ integrations',
-      'REST API'
-    ]
-  },
-  {
-    id: '5',
-    title: 'Enterprise Security',
-    description: 'Bank-level security with full compliance and robust data protection measures.',
-    icon: '🔒',
-    color: 'red',
-    features: [
-      'SOC 2 compliant',
-      'End-to-end encryption',
-      'Access controls',
-      'Audit logs'
-    ]
-  },
-  {
-    id: '6',
-    title: 'Continuous Updates',
-    description: 'Monthly updates with new features, courses, and community-driven improvements.',
-    icon: '🔄',
-    color: 'indigo',
-    features: [
-      'Monthly feature releases',
-      'Platform enhancements',
-      'New course content',
-      'Community feedback'
-    ]
-  },
-  {
-    id: '7',
-    title: 'Dedicated Support',
-    description: 'Reliable support and comprehensive resources to help you every step of the way.',
-    icon: '💬',
-    color: 'amber',
-    features: [
-      '24/7 support',
-      'Dedicated managers',
-      'Comprehensive docs',
-      'Video tutorials'
-    ]
-  },
-  {
-    id: '8',
-    title: 'Customizable Platform',
-    description: 'Tailor the platform to your needs with flexible APIs, webhooks, and custom connectors.',
-    icon: '🔌',
-    color: 'yellow',
-    features: [
-      'Custom connectors',
-      'Webhooks',
-      'Extensive API access',
-      'Flexible workflows'
-    ]
-  }
-]
-
-
-// =============================================================================
 // CUSTOM HOOKS
 // =============================================================================
 
-const useSignupForm = () => {
+const useLoginForm = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
     email: '',
     password: '',
-    confirmPassword: '',
-    plan: 'professional',
-    acceptTerms: false,
-    newsletter: true
+    rememberMe: false
   })
   
   const [errors, setErrors] = useState<Record<string, string>>({})
@@ -162,10 +25,6 @@ const useSignupForm = () => {
   const validateForm = () => {
     const newErrors: Record<string, string> = {}
     
-    if (!formData.fullName.trim()) {
-      newErrors.fullName = 'Full name is required'
-    }
-    
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required'
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
@@ -174,16 +33,6 @@ const useSignupForm = () => {
     
     if (!formData.password) {
       newErrors.password = 'Password is required'
-    } else if (formData.password.length < 8) {
-      newErrors.password = 'Password must be at least 8 characters'
-    }
-    
-    if (formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = 'Passwords do not match'
-    }
-    
-    if (!formData.acceptTerms) {
-      newErrors.acceptTerms = 'You must accept the terms and conditions'
     }
     
     setErrors(newErrors)
@@ -201,10 +50,10 @@ const useSignupForm = () => {
     
     // Simulate API call
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      await new Promise(resolve => setTimeout(resolve, 1500))
       setSuccess(true)
     } catch (error) {
-      setErrors({ submit: 'Something went wrong. Please try again.' })
+      setErrors({ submit: 'Invalid email or password. Please try again.' })
     } finally {
       setLoading(false)
     }
@@ -225,37 +74,6 @@ const useSignupForm = () => {
     success,
     handleChange,
     handleSubmit
-  }
-}
-
-const useNewsletter = () => {
-  const [email, setEmail] = useState('')
-  const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  
-  const subscribe = async (email: string) => {
-    setLoading(true)
-    setError(null)
-    
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1500))
-      setSuccess(true)
-      setEmail('')
-    } catch (err) {
-      setError('Subscription failed. Please try again.')
-    } finally {
-      setLoading(false)
-    }
-  }
-  
-  return {
-    email,
-    setEmail,
-    loading,
-    success,
-    error,
-    subscribe
   }
 }
 
@@ -492,12 +310,12 @@ const Checkbox: React.FC<CheckboxProps> = ({
 // SECTION COMPONENTS
 // =============================================================================
 
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
+import Navbar from '../../../components/Navbar'
+import Footer from '../../../components/Footer'
 
-const SignupHero: React.FC = () => {
+const LoginHero: React.FC = () => {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-hidden pt-40">
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]"></div>
       
       {/* Background decorations */}
@@ -513,7 +331,7 @@ const SignupHero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Start Your <span className="text-blue-600 mt-2">Data Journey</span>
+            Welcome Back to <span className="text-blue-600 mt-2">Podacium</span>
           </motion.h1>
           
           <motion.p 
@@ -522,8 +340,7 @@ const SignupHero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Join professionals, teams, and organizations using Podacium to master data skills.
-            Build intelligent solutions, and accelerate careers.
+            Continue your data transformation journey. Access your courses, projects, and community.
           </motion.p>
           
           <motion.div 
@@ -537,19 +354,19 @@ const SignupHero: React.FC = () => {
                 <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                14-day free trial
+                Secure login
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                No credit card required
+                24/7 Access
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                Cancel anytime
+                Instant support
               </div>
             </div>
           </motion.div>
@@ -559,8 +376,8 @@ const SignupHero: React.FC = () => {
   )
 }
 
-const SignupFormSection: React.FC = () => {
-  const { formData, errors, loading, success, handleChange, handleSubmit } = useSignupForm()
+const LoginFormSection: React.FC = () => {
+  const { formData, errors, loading, success, handleChange, handleSubmit } = useLoginForm()
   const [activeTab, setActiveTab] = useState<'email' | 'social'>('email')
 
   if (success) {
@@ -573,16 +390,16 @@ const SignupFormSection: React.FC = () => {
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Welcome to Podacium!</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Welcome Back!</h2>
             <p className="text-gray-600 mb-6">
-              Your account has been created successfully. We've sent a confirmation email to <strong>{formData.email}</strong>.
+              You have successfully logged in. Redirecting you to your dashboard...
             </p>
             <div className="space-y-4">
               <Button href="/dashboard" variant="primary" size="lg">
                 Go to Dashboard
               </Button>
               <Button href="/learn" variant="outline" size="lg">
-                Start Learning
+                Continue Learning
               </Button>
             </div>
           </Card>
@@ -595,13 +412,13 @@ const SignupFormSection: React.FC = () => {
     <section className="py-16 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Create Your Account</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Log In to Your Account</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Choose your preferred signup method below, and start TODAY.
+            Welcome back! Sign in to continue your data journey with Podacium.
           </p>
         </div>
 
-        <Card className="max-w-2xl mx-auto">
+        <Card className="max-w-md mx-auto">
           {/* Tab Navigation */}
           <div className="flex border-b border-gray-200 mb-8">
             <button
@@ -612,7 +429,7 @@ const SignupFormSection: React.FC = () => {
                   : 'border-transparent text-gray-500 hover:text-gray-700'
               }`}
             >
-              Email Signup
+              Email Login
             </button>
             <button
               onClick={() => setActiveTab('social')}
@@ -622,25 +439,14 @@ const SignupFormSection: React.FC = () => {
                   : 'border-transparent text-gray-500 hover:text-gray-700'
               }`}
             >
-              Social Signup
+              Social Login
             </button>
           </div>
 
           {activeTab === 'email' && (
-            <form onSubmit={handleSubmit} className="space-y-8">
-            {/* --- Name and Email --- */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input
-                label="Full Name"
-                type="text"
-                value={formData.fullName}
-                onChange={(value) => handleChange('fullName', value)}
-                error={errors.fullName}
-                placeholder="Enter your full name"
-                required
-                autoComplete="name"
-                />
-                <Input
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Email Input */}
+              <Input
                 label="Email Address"
                 type="email"
                 value={formData.email}
@@ -649,70 +455,40 @@ const SignupFormSection: React.FC = () => {
                 placeholder="Enter your email"
                 required
                 autoComplete="email"
-                />
-            </div>
+              />
 
-            {/* --- Password and Confirm Password --- */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input
+              {/* Password Input */}
+              <Input
                 label="Password"
                 type="password"
                 value={formData.password}
                 onChange={(value) => handleChange('password', value)}
                 error={errors.password}
-                placeholder="Create a password"
+                placeholder="Enter your password"
                 required
-                autoComplete="new-password"
-                tooltip="Must be at least 8 characters, including uppercase, lowercase, and a number."
-                />
-                <Input
-                label="Confirm Password"
-                type="password"
-                value={formData.confirmPassword}
-                onChange={(value) => handleChange('confirmPassword', value)}
-                error={errors.confirmPassword}
-                placeholder="Re-enter your password"
-                required
-                autoComplete="new-password"
-                />
-            </div>
+                autoComplete="current-password"
+              />
 
-            {/* --- Checkboxes --- */}
-            <div className="space-y-4">
+              {/* Remember Me & Forgot Password */}
+              <div className="flex items-center justify-between">
                 <Checkbox
-                label={
-                    <span>
-                    I agree to the{' '}
-                    <Link href="/terms" className="text-blue-600 hover:underline">
-                        Terms of Service
-                    </Link>{' '}
-                    and{' '}
-                    <Link href="/privacy" className="text-blue-600 hover:underline">
-                        Privacy Policy
-                    </Link>
-                    </span>
-                }
-                checked={formData.acceptTerms}
-                onChange={(value) => handleChange('acceptTerms', value)}
-                error={errors.acceptTerms}
-                required
+                  label="Remember me"
+                  checked={formData.rememberMe}
+                  onChange={(value) => handleChange('rememberMe', value)}
                 />
+                <Link href="reset" className="text-sm text-blue-600 hover:underline">
+                  Forgot password?
+                </Link>
+              </div>
 
-                <Checkbox
-                label="Subscribe to our newsletter for product updates, tips, and special offers"
-                checked={formData.newsletter}
-                onChange={(value) => handleChange('newsletter', value)}
-                />
-            </div>
-
-            {/* --- Submission error --- */}
-            {errors.submit && (
+              {/* Submission error */}
+              {errors.submit && (
                 <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-                <p className="text-red-600 text-sm">{errors.submit}</p>
+                  <p className="text-red-600 text-sm">{errors.submit}</p>
                 </div>
-            )}
+              )}
 
-              {/* --- Submit Button --- */}
+              {/* Submit Button */}
               <Button
                 type="submit"
                 variant="primary"
@@ -721,185 +497,94 @@ const SignupFormSection: React.FC = () => {
                 disabled={loading}
                 className="w-full"
               >
-                Create Account
+                Log In
               </Button>
 
-              {/* --- Directing line --- */}
-              <p className="mt-4 text-center text-sm text-gray-600">
-                Already have an account?{' '}
-                <Link href="/login" className="text-blue-600 hover:underline">
-                  Sign In
-                </Link>
-              </p>
-
+              {/* Sign Up Link */}
+              <div className="text-center pt-4 border-t border-gray-200">
+                <p className="text-gray-600 text-sm">
+                  Don't have an account?{' '}
+                  <Link href="/auth/signup" className="text-blue-600 hover:underline font-medium">
+                    Sign up here
+                  </Link>
+                </p>
+              </div>
             </form>
-
           )}
 
-        {activeTab === 'social' && (
-        <div className="flex justify-center">
-            <div className="w-full max-w-md space-y-8">
-            {/* --- Social Buttons --- */}
-            <div className="space-y-4">
+          {activeTab === 'social' && (
+            <div className="space-y-6">
+              {/* Social Buttons */}
+              <div className="space-y-4">
                 <button
-                type="button"
-                onClick={() => signIn("google")}
-                className="w-full flex items-center gap-3 px-5 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
+                  type="button"
+                  onClick={() => signIn("google")}
+                  className="w-full flex items-center gap-3 px-5 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
                 >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                     <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
                     <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                     <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-                </svg>
-                <span className="flex-1 text-sm text-gray-800 font-medium text-left">Continue with Google</span>
+                  </svg>
+                  <span className="flex-1 text-sm text-gray-800 font-medium text-left">Continue with Google</span>
                 </button>
 
                 <button
-                type="button"
-                onClick={() => signIn("linkedin")}
-                className="w-full flex items-center gap-3 px-5 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
+                  type="button"
+                  onClick={() => signIn("linkedin")}
+                  className="w-full flex items-center gap-3 px-5 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
                 >
-                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-                <span className="flex-1 text-sm text-gray-800 font-medium text-left">Continue with LinkedIn</span>
+                  </svg>
+                  <span className="flex-1 text-sm text-gray-800 font-medium text-left">Continue with LinkedIn</span>
                 </button>
 
                 <button
-                type="button"
-                onClick={() => signIn("github")}
-                className="w-full flex items-center gap-3 px-5 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
+                  type="button"
+                  onClick={() => signIn("github")}
+                  className="w-full flex items-center gap-3 px-5 py-3 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
                 >
-                <svg className="w-5 h-5 text-gray-800" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-5 h-5 text-gray-800" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                <span className="flex-1 text-sm text-gray-800 font-medium text-left">Continue with GitHub</span>
+                  </svg>
+                  <span className="flex-1 text-sm text-gray-800 font-medium text-left">Continue with GitHub</span>
                 </button>
-            </div>
+              </div>
 
-            {/* Divider */}
-            <div className="relative">
+              {/* Divider */}
+              <div className="relative">
                 <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-200"></div>
+                  <div className="w-full border-t border-gray-200"></div>
                 </div>
                 <div className="relative flex justify-center text-sm">
-                <span className="px-3 bg-white text-gray-500">Or sign up with email</span>
+                  <span className="px-3 bg-white text-gray-500">Or log in with email</span>
                 </div>
-            </div>
+              </div>
 
-            {/* Fallback Email Button */}
-            <Button
+              {/* Fallback Email Button */}
+              <Button
                 variant="outline"
                 size="lg"
                 className="w-full"
                 onClick={() => setActiveTab('email')}
-            >
+              >
                 Use Email Instead
-            </Button>
+              </Button>
+
+              {/* Sign Up Link */}
+              <div className="text-center pt-4 border-t border-gray-200">
+                <p className="text-gray-600 text-sm">
+                  Don't have an account?{' '}
+                  <Link href="/auth/signup" className="text-blue-600 hover:underline font-medium">
+                    Sign up here
+                  </Link>
+                </p>
+              </div>
             </div>
-        </div>
-        )}
-
-
+          )}
         </Card>
-      </div>
-    </section>
-  )
-}
-
-const BenefitsSection: React.FC = () => {
-  return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Section Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-            Why Choose Podacium?
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Discover the powerful features and benefits that make Podacium the preferred choice for data professionals worldwide.
-          </p>
-        </div>
-
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {BENEFITS.map((benefit, index) => (
-            <motion.div
-              key={benefit.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <Card hover className="h-full p-6 flex flex-col justify-between">
-                <div className="text-center">
-                  
-                  {/* Icon */}
-                  <div
-                    className={`w-16 h-16 rounded-2xl bg-${benefit.color}-100 text-${benefit.color}-600 text-2xl flex items-center justify-center mx-auto mb-4`}
-                  >
-                    {benefit.icon}
-                  </div>
-
-                  {/* Title & Description */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{benefit.title}</h3>
-                  <p className="text-gray-600 mb-4 text-sm">{benefit.description}</p>
-
-                  {/* Feature List */}
-                  <ul className="space-y-2 text-left">
-                    {benefit.features.slice(0, 3).map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-center text-sm text-gray-700"
-                      >
-                        <svg
-                          className="w-4 h-4 text-green-500 mr-2 flex-shrink-0"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-const FinalCTASection: React.FC = () => {
-  return (
-    <section className="py-16 bg-gradient-to-br from-blue-600 to-purple-700">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl font-bold text-white mb-6">
-          Ready to Transform Your Data Journey?
-        </h2>
-        <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          Join thousands of data professionals who have already discovered the power of Podacium. 
-          Start your 14-day free trial today and experience the difference.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button href="../demo" size="xl" className="bg-transparent border border-white text-white hover:bg-white hover:text-blue-600 transition-colors duration-200">
-              Schedule a Demo
-          </Button>
-        </div>
-        
-        <div className="mt-8 text-blue-200 text-sm">
-          No credit card required • Free for 14 days • Cancel anytime
-        </div>
       </div>
     </section>
   )
@@ -909,26 +594,31 @@ const FinalCTASection: React.FC = () => {
 // MAIN PAGE COMPONENT
 // =============================================================================
 
-export default function SignupPage() {
+const LoginPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Sign Up | Podacium - Data Learning Platform</title>
-        <meta name="description" content="Join Podacium to master data skills, build intelligent solutions, and accelerate your career. Start your 14-day free trial today." />
+        <title>Log In | Podacium - Data Transformation Platform</title>
+        <meta name="description" content="Log in to your Podacium account to continue your data transformation journey. Access courses, projects, and community features." />
+        <meta name="keywords" content="login, podacium, data transformation, courses, community, data platform" />
+        <meta property="og:title" content="Log In | Podacium - Data Transformation Platform" />
+        <meta property="og:description" content="Log in to your Podacium account to continue your data transformation journey." />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="min-h-screen bg-white">
         <Navbar />
         
         <main>
-          <SignupHero />
-          <SignupFormSection />
-          <BenefitsSection />
-          <FinalCTASection />
+          <LoginHero />
+          <LoginFormSection />
         </main>
-        
+
         <Footer />
       </div>
     </>
   )
 }
+
+export default LoginPage

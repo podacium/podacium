@@ -249,17 +249,17 @@ const navigation: NavItem[] = [
         children: []
       },
       {
+        name: 'Enterprise',
+        href: '/enterprise',
+        icon: '🏛️',
+        description: 'Solutions for large organizations',
+        children: []
+      },
+      {
         name: 'Notifications',
         href: '/notifications',
         icon: '🔔',
         description: 'Stay updated with alerts',
-        children: []
-      },
-      {
-        name: 'Billing & Plans',
-        href: '/billing',
-        icon: '💳',
-        description: 'Manage your subscription',
         children: []
       },
       {
@@ -271,6 +271,7 @@ const navigation: NavItem[] = [
       }
     ]
   },
+  
   {
     name: 'Learning',
     href: '/learn',
@@ -285,17 +286,24 @@ const navigation: NavItem[] = [
         children: []
       },
       {
-        name: 'Documentation',
-        href: '/docs',
-        icon: '📚',
-        description: 'Comprehensive technical docs',
+        name: 'Paths',
+        href: '/learn/paths',
+        icon: '🛤️',
+        description: 'Guided learning paths',
+        children: []
+      },
+      {
+        name: 'Courses',
+        href: '/learn/courses',
+        icon: '📖',
+        description: 'Individual courses to deepen knowledge',
         children: []
       },
       {
         name: 'Documentation',
-        href: '/documentation',
+        href: '/docs',
         icon: '📚',
-        description: 'Additional technical docs',
+        description: 'Comprehensive technical docs',
         children: []
       },
       {
@@ -304,23 +312,10 @@ const navigation: NavItem[] = [
         icon: '⭐',
         description: 'Explore platform capabilities',
         children: []
-      },
-      {
-        name: 'Help & Support',
-        href: '/help',
-        icon: '❓',
-        description: 'Get help when you need it',
-        children: []
-      },
-      {
-        name: 'Blog',
-        href: '/blog',
-        icon: '✍️',
-        description: 'Latest news and insights',
-        children: []
       }
     ]
   },
+
   {
     name: 'Developer Hub',
     href: '/hub',
@@ -361,6 +356,13 @@ const navigation: NavItem[] = [
         icon: '📢',
         description: 'Latest company announcements',
         children: []
+      },
+      {
+        name: 'Blog',
+        href: '/blog',
+        icon: '✍️',
+        description: 'Latest news and insights',
+        children: []
       }
     ]
   },
@@ -378,10 +380,24 @@ const navigation: NavItem[] = [
         children: []
       },
       {
+        name: 'Billing & Plans',
+        href: '/billing',
+        icon: '💳',
+        description: 'Manage your subscription',
+        children: []
+      },
+      {
         name: 'System Status',
         href: '/status',
         icon: '🟢',
         description: 'Check our service status',
+        children: []
+      },
+      {
+        name: 'Contact',
+        href: '/contact',
+        icon: '📞',
+        description: 'Get in touch with us',
         children: []
       }
     ]
@@ -407,20 +423,6 @@ const navigation: NavItem[] = [
         children: []
       },
       {
-        name: 'Contact',
-        href: '/contact',
-        icon: '📞',
-        description: 'Get in touch with us',
-        children: []
-      },
-      {
-        name: 'Enterprise',
-        href: '/enterprise',
-        icon: '🏛️',
-        description: 'Solutions for large organizations',
-        children: []
-      },
-      {
         name: 'Security & Trust',
         href: '/security',
         icon: '🔒',
@@ -438,6 +440,13 @@ const navigation: NavItem[] = [
           { name: 'Cookie Policy', href: '/cookies' },
           { name: 'Affiliate Program', href: '/affiliate' }
         ]
+      },
+      {
+        name: 'Help & Support',
+        href: '/help',
+        icon: '❓',
+        description: 'Get help when you need it',
+        children: []
       }
     ]
   }
@@ -550,29 +559,6 @@ const openDropdown = (name: string) => {
       }`}
       aria-label="Primary Navigation"
     >
-      {/* Enhanced Announcement Bar with gradient animation */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse"></div>
-        <div className="max-w-8xl mx-auto px-8 py-3 flex justify-between items-center text-white text-sm font-semibold relative z-10">
-          <div className="flex items-center space-x-3">
-            <span className="flex w-2 h-2 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-            </span>
-            <p className="flex items-center space-x-2">
-              <span>🚀</span>
-              <span>New: AI-powered analytics with real-time insights!</span>
-            </p>
-          </div>
-          <Link 
-            href="/ai-analytics" 
-            className="group flex items-center space-x-1 underline hover:text-indigo-200 transition-colors duration-200"
-          >
-            <span>Explore now</span>
-            <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
-          </Link>
-        </div>
-      </div>
 
       {/* Main Navbar Container */}
       <div className="max-w-8xl mx-auto px-8 py-2 flex items-center justify-between">
@@ -651,8 +637,7 @@ const openDropdown = (name: string) => {
                         <div className="grid gap-1">
                           {item.children.map((child) => (
                             <Link
-                              key={child.name}
-                              href={child.href}
+                              key={`${child.name}-${child.href}`} href={child.href}
                               className="group flex items-start space-x-4 p-3 rounded-xl hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 transition-all duration-200 border border-transparent hover:border-indigo-100"
                               onClick={closeDropdown}
                             >
@@ -836,14 +821,14 @@ const openDropdown = (name: string) => {
           ) : (
             <>
               <Link
-                href="/login"
+                href="/auth/login"
                 className="px-6 py-3 text-gray-700 hover:text-indigo-700 font-semibold rounded-2xl hover:bg-white/80 hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Sign In
               </Link>
 
               <Link
-                href="/signup"
+                href="/auth/signup"
                 className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-2xl shadow-lg shadow-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/50 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Get Started Free
@@ -1022,7 +1007,7 @@ const openDropdown = (name: string) => {
               ) : (
                 <div className="grid grid-cols-2 gap-2">
                   <Link
-                    href="/login"
+                    href="/auth/login"
                     className="flex items-center justify-center space-x-2 py-4 bg-white border border-gray-300 text-gray-700 font-semibold rounded-2xl hover:border-gray-400 hover:shadow-lg transition-all duration-300 text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -1030,7 +1015,7 @@ const openDropdown = (name: string) => {
                     <span>Sign In</span>
                   </Link>
                   <Link
-                    href="/signup"
+                    href="/auth/signup"
                     className="flex items-center justify-center space-x-2 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-2xl shadow-lg shadow-indigo-500/40 hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >

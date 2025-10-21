@@ -6,31 +6,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 import { motion, AnimatePresence } from 'framer-motion'
+// /app/page.tsx
+import { LEARNING_MODULES as MOCK_COURSES, type LearningModule } from './learn/page';
 
 // =============================================================================
 // TYPES AND INTERFACES
 // =============================================================================
 
-interface Course {
-  id: string
-  title: string
-  description: string
-  thumbnail: string
-  rating: number
-  duration: string
-  level: 'Beginner' | 'Intermediate' | 'Advanced'
-  students: number
-  lessons: number
-  instructor: string
-  category: string
-  tags: string[]
-  price: {
-    original: number
-    discounted: number | null
-  }
-  features: string[]
-  progress?: number
-}
+type Course = LearningModule;
 
 interface Dashboard {
   id: string
@@ -166,237 +149,6 @@ interface NewsItem {
 // =============================================================================
 // MOCK DATA - EXTENSIVE DATASETS
 // =============================================================================
-
-const MOCK_COURSES: Course[] = [
-  {
-    id: '1',
-    title: 'Data Analytics Fundamentals',
-    description: 'Master the basics of data analysis and visualization with hands-on projects and real-world datasets. Learn to extract insights and make data-driven decisions.',
-    thumbnail: '/courses/analytics-fundamentals.jpg',
-    rating: 4.8,
-    duration: '6 hours',
-    level: 'Beginner',
-    students: 1247,
-    lessons: 24,
-    instructor: 'Dr. Sarah Chen',
-    category: 'Data Analytics',
-    tags: ['Excel', 'SQL', 'Visualization', 'Statistics'],
-    price: {
-      original: 199,
-      discounted: 149
-    },
-    features: ['Lifetime Access', 'Certificate', 'Exercises', 'Community Access']
-  },
-  {
-    id: '2',
-    title: 'Machine Learning for Business',
-    description: 'Learn how to apply ML algorithms to solve real business problems with Python and scikit-learn. From regression to classification and clustering.',
-    thumbnail: '/courses/ml-business.jpg',
-    rating: 4.9,
-    duration: '8 hours',
-    level: 'Intermediate',
-    students: 892,
-    lessons: 32,
-    instructor: 'Marcus Rodriguez',
-    category: 'Machine Learning',
-    tags: ['Python', 'Scikit-learn', 'Business Cases', 'MLOps'],
-    price: {
-      original: 299,
-      discounted: 249
-    },
-    features: ['Real Projects', 'Mentor Support', 'Code Templates', 'Deployment Guide']
-  },
-  {
-    id: '3',
-    title: 'Advanced BI Dashboard Design',
-    description: 'Create professional dashboards that drive business decisions using Power BI, Tableau, and custom visualization libraries.',
-    thumbnail: '/courses/bi-dashboard.jpg',
-    rating: 4.7,
-    duration: '10 hours',
-    level: 'Advanced',
-    students: 567,
-    lessons: 28,
-    instructor: 'Priya Patel',
-    category: 'Business Intelligence',
-    tags: ['Power BI', 'Tableau', 'Dashboard', 'Visualization'],
-    price: {
-      original: 349,
-      discounted: 299
-    },
-    features: ['Design System', 'Templates', 'Best Practices', 'Performance Optimization']
-  },
-  {
-    id: '4',
-    title: 'Python for Data Science',
-    description: 'From basics to advanced data manipulation with Python, pandas, numpy, and matplotlib. Comprehensive coverage of data science workflows.',
-    thumbnail: '/courses/python-ds.jpg',
-    rating: 4.8,
-    duration: '12 hours',
-    level: 'Beginner',
-    students: 2156,
-    lessons: 42,
-    instructor: 'David Kim',
-    category: 'Data Science',
-    tags: ['Python', 'Pandas', 'Numpy', 'Data Analysis'],
-    price: {
-      original: 249,
-      discounted: 199
-    },
-    features: ['Jupyter Notebooks', 'Datasets', 'Code Review', 'Career Guidance']
-  },
-  {
-    id: '5',
-    title: 'Predictive Analytics with ARIMA',
-    description: 'Master time series forecasting for business planning and decision making using statistical models and machine learning approaches.',
-    thumbnail: '/courses/arima.jpg',
-    rating: 4.9,
-    duration: '7 hours',
-    level: 'Intermediate',
-    students: 734,
-    lessons: 26,
-    instructor: 'Dr. James Wilson',
-    category: 'Time Series',
-    tags: ['ARIMA', 'Forecasting', 'Statistics', 'Business Planning'],
-    price: {
-      original: 279,
-      discounted: 229
-    },
-    features: ['Case Studies', 'Model Templates', 'Industry Data', 'Expert Feedback']
-  },
-  {
-    id: '6',
-    title: 'SQL Mastery: From Query to Insight',
-    description: 'Comprehensive SQL training covering basic queries to advanced analytics functions and database optimization techniques.',
-    thumbnail: '/courses/sql-mastery.jpg',
-    rating: 4.7,
-    duration: '9 hours',
-    level: 'Beginner',
-    students: 1892,
-    lessons: 35,
-    instructor: 'Maria Garcia',
-    category: 'Database',
-    tags: ['SQL', 'Database', 'Query', 'Optimization'],
-    price: {
-      original: 229,
-      discounted: 179
-    },
-    features: ['Practice Database', 'Query Exercises', 'Performance Tips', 'Interview Prep']
-  },
-  {
-    id: '7',
-    title: 'Deep Learning with TensorFlow',
-    description: 'Build and deploy neural networks using TensorFlow and Keras. Covering CNNs, RNNs, and modern architectures for various applications.',
-    thumbnail: '/courses/deep-learning.jpg',
-    rating: 4.9,
-    duration: '14 hours',
-    level: 'Advanced',
-    students: 423,
-    lessons: 48,
-    instructor: 'Alex Thompson',
-    category: 'Deep Learning',
-    tags: ['TensorFlow', 'Neural Networks', 'Keras', 'AI'],
-    price: {
-      original: 399,
-      discounted: 349
-    },
-    features: ['GPU Support', 'Model Zoo', 'Deployment', 'Research Papers']
-  },
-  {
-    id: '8',
-    title: 'Data Visualization with D3.js',
-    description: 'Create stunning, interactive data visualizations using D3.js and modern web technologies. From basic charts to complex custom visualizations.',
-    thumbnail: '/courses/d3-visualization.jpg',
-    rating: 4.6,
-    duration: '8 hours',
-    level: 'Intermediate',
-    students: 678,
-    lessons: 30,
-    instructor: 'Sophie Martin',
-    category: 'Visualization',
-    tags: ['D3.js', 'JavaScript', 'Interactive', 'Web'],
-    price: {
-      original: 269,
-      discounted: 219
-    },
-    features: ['Code Library', 'Design Assets', 'Interaction Patterns', 'Mobile Responsive']
-  },
-  {
-    id: '9',
-    title: 'Business Metrics and KPIs',
-    description: 'Learn to define, track, and analyze key business metrics across different departments and industries for better decision making.',
-    thumbnail: '/courses/business-metrics.jpg',
-    rating: 4.5,
-    duration: '5 hours',
-    level: 'Beginner',
-    students: 945,
-    lessons: 20,
-    instructor: 'Robert Chen',
-    category: 'Business Analytics',
-    tags: ['KPIs', 'Metrics', 'Dashboard', 'Reporting'],
-    price: {
-      original: 189,
-      discounted: 149
-    },
-    features: ['KPI Library', 'Industry Templates', 'Calculation Guide', 'Reporting Framework']
-  },
-  {
-    id: '10',
-    title: 'Cloud Data Engineering with AWS',
-    description: 'Build scalable data pipelines and infrastructure on AWS. Covering data lakes, ETL processes, and cloud-native data architecture.',
-    thumbnail: '/courses/cloud-data.jpg',
-    rating: 4.8,
-    duration: '11 hours',
-    level: 'Advanced',
-    students: 512,
-    lessons: 38,
-    instructor: 'Michael Brown',
-    category: 'Data Engineering',
-    tags: ['AWS', 'Data Pipeline', 'ETL', 'Cloud'],
-    price: {
-      original: 379,
-      discounted: 329
-    },
-    features: ['AWS Credits', 'Architecture Templates', 'Best Practices', 'Cost Optimization']
-  },
-  {
-    id: '11',
-    title: 'Statistical Analysis for Business',
-    description: 'Apply statistical methods to solve business problems. Hypothesis testing, regression analysis, and experimental design for decision makers.',
-    thumbnail: '/courses/statistical-analysis.jpg',
-    rating: 4.7,
-    duration: '7 hours',
-    level: 'Intermediate',
-    students: 823,
-    lessons: 28,
-    instructor: 'Dr. Lisa Wang',
-    category: 'Statistics',
-    tags: ['Statistics', 'Hypothesis Testing', 'Regression', 'Business'],
-    price: {
-      original: 259,
-      discounted: 209
-    },
-    features: ['Statistical Software', 'Case Studies', 'Data Sets', 'Interpretation Guide']
-  },
-  {
-    id: '12',
-    title: 'Data Storytelling and Communication',
-    description: 'Learn to communicate data insights effectively through storytelling, visualization, and persuasive presentation techniques.',
-    thumbnail: '/courses/data-storytelling.jpg',
-    rating: 4.6,
-    duration: '4 hours',
-    level: 'Beginner',
-    students: 1102,
-    lessons: 16,
-    instructor: 'Emily Johnson',
-    category: 'Communication',
-    tags: ['Storytelling', 'Presentation', 'Visualization', 'Communication'],
-    price: {
-      original: 179,
-      discounted: 139
-    },
-    features: ['Presentation Templates', 'Story Framework', 'Practice Exercises', 'Feedback Sessions']
-  }
-]
 
 const MOCK_DASHBOARDS: Dashboard[] = [
   {
@@ -1085,7 +837,7 @@ const useAuth = () => {
 }
 
 const useCourses = () => {
-  const [courses, setCourses] = useState<Course[]>([])
+  const [courses, setCourses] = useState<Course[]>(MOCK_COURSES)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   
@@ -1264,6 +1016,8 @@ interface CardProps {
   hover?: boolean
   padding?: 'sm' | 'md' | 'lg'
   onClick?: () => void
+  onMouseEnter?: () => void
+  onMouseLeave?: () => void
 }
 const Card: React.FC<CardProps> = ({
   children,
@@ -1513,7 +1267,7 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="primary" size="xl" href="/signup">
+              <Button variant="primary" size="xl" href="/auth/signup">
                 Start Free Trial
               </Button>
               <Button variant="outline" size="xl" href="/demo">
@@ -1597,185 +1351,504 @@ const Hero: React.FC = () => {
 const LearnOverview: React.FC = () => {
   const { courses, loading } = useCourses()
   const [selectedCategory, setSelectedCategory] = useState('All')
+  const [hoveredCourse, setHoveredCourse] = useState<string | null>(null)
+  const [displayedCourses, setDisplayedCourses] = useState<Course[]>([])
   
-  const categories = ['All', 'Data Analytics', 'Machine Learning', 'Data Science', 'Business Intelligence', 'Database', 'Time Series', 'Visualization', 'Data Engineering', 'Statistics', 'Communication']
-  
-  const filteredCourses = selectedCategory === 'All' 
-    ? courses.slice(0, 6)
-    : courses.filter(course => course.category === selectedCategory).slice(0, 6)
-  
+  const categories = ['All', 'Data & AI', 'Technology', 'Business & Strategy', 'Collaboration', 'Applied Practice']
+
+  // Get random 9 courses when category changes or component mounts
+  useEffect(() => {
+    if (courses.length > 0) {
+      const filtered = selectedCategory === 'All' 
+        ? courses 
+        : courses.filter(course => course.category === selectedCategory)
+      
+      // Shuffle and take 9 courses
+      const shuffled = [...filtered].sort(() => 0.5 - Math.random())
+      setDisplayedCourses(shuffled.slice(0, 9))
+    }
+  }, [courses, selectedCategory])
+
+  const getLevelColor = (level: string) => {
+    switch (level) {
+      case 'Beginner': return 'bg-gradient-to-r from-green-500 to-emerald-600 text-white'
+      case 'Intermediate': return 'bg-gradient-to-r from-yellow-500 to-amber-600 text-white'
+      case 'Advanced': return 'bg-gradient-to-r from-red-500 to-rose-600 text-white'
+      default: return 'bg-gradient-to-r from-gray-500 to-gray-700 text-white'
+    }
+  }
+
+  const getLevelIcon = (level: string) => {
+    switch (level) {
+      case 'Beginner': return '🟢'
+      case 'Intermediate': return '🟡'
+      case 'Advanced': return '🔴'
+      default: return '⚪'
+    }
+  }
+
+  const getCategoryIcon = (category: string) => {
+    const icons: { [key: string]: string } = {
+      'Data Analytics': '📊',
+      'Machine Learning': '🤖',
+      'Data Science': '🔬',
+      'Business Intelligence': '💼',
+      'Database': '🗄️',
+      'Time Series': '⏰',
+      'Visualization': '📈',
+      'Data Engineering': '⚙️',
+      'Statistics': '📐',
+      'Communication': '💬',
+      'All': '🎯'
+    }
+    return icons[category] || '📚'
+  }
+
+  const formatPrice = (price: number) => {
+    return price === 0 ? 'Free' : `$${price}`
+  }
+
+  const calculateDiscount = (original: number, discounted: number | null) => {
+    if (!discounted) return 0
+    return Math.round((1 - discounted / original) * 100)
+  }
+
+  const getEnrollmentStatus = (students: number) => {
+    if (students > 10000) return { text: 'Highly Enrolled', color: 'text-green-600', bg: 'bg-green-100' }
+    if (students > 5000) return { text: 'Well Enrolled', color: 'text-blue-600', bg: 'bg-blue-100' }
+    if (students > 1000) return { text: 'Popular', color: 'text-purple-600', bg: 'bg-purple-100' }
+    return { text: 'New', color: 'text-gray-600', bg: 'bg-gray-100' }
+  }
+
   return (
-    <section id="learn" className="py-20 bg-white">
+    <section id="learn" className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
         <div className="text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
-            Learn Data Skills with AI
-          </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Master in-demand data skills through interactive courses, real-world projects, and personalized AI tutoring
+          <div className="inline-flex items-center px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-200/50 text-blue-700 text-lg font-semibold mb-8 backdrop-blur-sm">
+            <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mr-3 animate-pulse"></div>
+            AI-Powered Learning Platform
+            <div className="ml-3 px-2 py-1 bg-white/80 rounded-lg text-sm font-medium">
+              {courses.length}+ Courses
+            </div>
+          </div>
+          
+          <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 tracking-tight">
+            Learn <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600">Data Skills</span>
+          </h1>
+          
+          <p className="mt-8 text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+            Master in-demand data skills through interactive courses, real-world projects, and personalized AI tutoring. 
+            Start your journey to becoming an expert today.
           </p>
+
         </div>
-        
-        <div className="mt-12">
+
+        {/* Categories Filter */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Explore by <span className="text-blue-600">Category</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Browse through our carefully curated categories to find the perfect course for you
+            </p>
+          </div>
+          
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-3 rounded-full font-medium transition-all ${
+                className={`group relative px-8 py-4 rounded-2xl font-semibold transition-all duration-500 transform hover:scale-105 min-w-[140px] ${
                   selectedCategory === category
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-2xl shadow-blue-500/30'
+                    : 'bg-white text-gray-700 hover:bg-gray-50 shadow-lg hover:shadow-xl border border-gray-200/80'
                 }`}
               >
-                {category}
+                <div className="flex flex-col items-center space-y-2">
+                  <span className="text-2xl">{getCategoryIcon(category)}</span>
+                  <span className="text-sm">{category}</span>
+                </div>
+                
+                {/* Hover effect */}
+                {selectedCategory !== category && (
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                )}
               </button>
             ))}
           </div>
         </div>
-        
+
+        {/* Courses Grid */}
         {loading ? (
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[...Array(6)].map((_, i) => (
-              <Card key={i} className="animate-pulse">
-                <div className="h-48 bg-gray-200 rounded-lg mb-4"></div>
-                <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
-                <div className="h-3 bg-gray-200 rounded w-1/2 mb-4"></div>
-                <div className="h-3 bg-gray-200 rounded w-full mb-2"></div>
-                <div className="h-3 bg-gray-200 rounded w-5/6"></div>
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...Array(9)].map((_, i) => (
+              <Card key={i} className="animate-pulse overflow-hidden border-0 shadow-xl">
+                <div className="p-6 space-y-6">
+                  {/* Header */}
+                  <div className="flex justify-between items-start">
+                    <div className="space-y-2 flex-1">
+                      <div className="h-6 bg-gray-200 rounded w-3/4"></div>
+                      <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                    </div>
+                    <div className="h-8 bg-gray-200 rounded-2xl w-20"></div>
+                  </div>
+                  
+                  {/* Description */}
+                  <div className="space-y-3">
+                    <div className="h-4 bg-gray-200 rounded w-full"></div>
+                    <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+                    <div className="h-4 bg-gray-200 rounded w-4/6"></div>
+                  </div>
+
+                  {/* Stats */}
+                  <div className="flex justify-between pt-4">
+                    <div className="space-y-2">
+                      <div className="h-4 bg-gray-200 rounded w-16"></div>
+                      <div className="h-4 bg-gray-200 rounded w-12"></div>
+                    </div>
+                    <div className="space-y-2 text-right">
+                      <div className="h-4 bg-gray-200 rounded w-20"></div>
+                      <div className="h-4 bg-gray-200 rounded w-16"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Button */}
+                  <div className="h-12 bg-gray-200 rounded-xl"></div>
+                </div>
               </Card>
             ))}
           </div>
         ) : (
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredCourses.map((course) => (
-              <Card key={course.id} hover className="group">
-                <div className="relative overflow-hidden rounded-lg mb-4">
-                  <div className="w-full h-48 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                    {course.title}
-                  </div>
-                  <div className="absolute top-4 right-4 bg-white bg-opacity-90 text-gray-800 rounded-full px-3 py-1 text-xs font-semibold">
-                    {course.level}
-                  </div>
-                  {course.price.discounted && (
-                    <div className="absolute top-4 left-4 bg-red-500 text-white rounded-full px-2 py-1 text-xs font-bold">
-                      SAVE {Math.round((1 - course.price.discounted / course.price.original) * 100)}%
-                    </div>
-                  )}
-                </div>
-                
-                <h3 className="font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors">
-                  {course.title}
+          <>
+            <div className="mt-16 flex items-center justify-between">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  {selectedCategory === 'All' ? 'Featured Courses' : `${selectedCategory} Courses`}
                 </h3>
-                <p className="mt-2 text-gray-600 text-sm line-clamp-2">
-                  {course.description}
+                <p className="text-gray-600 mt-2">
+                  Showing {displayedCourses.length} of {selectedCategory === 'All' ? courses.length : courses.filter(c => c.category === selectedCategory).length} courses
                 </p>
-                
-                <div className="mt-4 flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                      <span className="text-sm font-medium text-gray-700 ml-1">{course.rating}</span>
-                    </div>
-                    <span className="text-gray-400">•</span>
-                    <span className="text-sm text-gray-500">{course.students.toLocaleString()} students</span>
-                  </div>
-                  
-                  <div className="text-right">
-                    {course.price.discounted ? (
-                      <div>
-                        <span className="text-lg font-bold text-gray-900">${course.price.discounted}</span>
-                        <span className="text-sm text-gray-500 line-through ml-2">${course.price.original}</span>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div className="text-sm text-gray-500">
+                  🎲 Randomly selected
+                </div>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={() => {
+                    const filtered = selectedCategory === 'All' 
+                      ? courses 
+                      : courses.filter(course => course.category === selectedCategory)
+                    const shuffled = [...filtered].sort(() => 0.5 - Math.random())
+                    setDisplayedCourses(shuffled.slice(0, 9))
+                  }}
+                  className="flex items-center space-x-2"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  <span>Shuffle</span>
+                </Button>
+              </div>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {displayedCourses.map((course) => (
+                <Card 
+                  key={course.id} 
+                  className="group relative overflow-hidden border-0 bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+                  onMouseEnter={() => setHoveredCourse(course.id)}
+                  onMouseLeave={() => setHoveredCourse(null)}
+                >
+                  {/* Course Header */}
+                  <div className="p-6 pb-4">
+                    <div className="flex justify-between items-start mb-4">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2 pr-4">
+                          {course.title}
+                        </h3>
+                        <p className="mt-2 text-gray-600 text-sm leading-relaxed line-clamp-3">
+                          {course.description}
+                        </p>
                       </div>
-                    ) : (
-                      <span className="text-lg font-bold text-gray-900">${course.price.original}</span>
+                      
+                      {/* Level Badge */}
+                      <div className={`${getLevelColor(course.level)} rounded-2xl px-3 py-1 text-xs font-bold whitespace-nowrap flex items-center space-x-1`}>
+                        <span>{getLevelIcon(course.level)}</span>
+                        <span>{course.level}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course Details */}
+                  <div className="px-6 pb-6">
+                    {/* Progress Bar (if enrolled) */}
+                    {course.progress !== undefined && (
+                      <div className="mb-4">
+                        <div className="flex justify-between text-sm text-gray-600 mb-2">
+                          <span>Your progress</span>
+                          <span className="font-semibold">{course.progress}%</span>
+                        </div>
+                        <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                          <div
+                            className="bg-gradient-to-r from-green-400 to-green-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                            style={{ width: `${course.progress}%` }}
+                          ></div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Stats Grid */}
+                    <div className="grid grid-cols-2 gap-4 mb-4">
+                      <div className="flex items-center space-x-2 text-sm text-gray-600">
+                        <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                          <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <div className="font-semibold text-gray-900">{course.duration}</div>
+                          <div className="text-xs">Duration</div>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center space-x-2 text-sm text-gray-600">
+                        <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                          <svg className="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <div className="font-semibold text-gray-900">{course.lessons} lessons</div>
+                          <div className="text-xs">Content</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Tags & Features */}
+                    <div className="space-y-3">
+                      <div className="flex flex-wrap gap-2">
+                        {course.tags.slice(0, 3).map((tag) => (
+                          <span 
+                            key={tag} 
+                            className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium hover:bg-gray-200 transition-colors cursor-default border border-gray-200/50"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                        {course.tags.length > 3 && (
+                          <span className="px-3 py-1 bg-gray-100 text-gray-500 rounded-full text-xs font-medium border border-gray-200/50">
+                            +{course.tags.length - 3}
+                          </span>
+                        )}
+                      </div>
+                      
+                      <div className="flex flex-wrap gap-3">
+                        {course.features.slice(0, 2).map((feature, index) => (
+                          <div key={index} className="flex items-center text-xs text-gray-600">
+                            <div className="w-4 h-4 bg-green-100 rounded-full flex items-center justify-center mr-2">
+                              <svg className="w-2 h-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Price & Enrollment */}
+                    <div className="mt-6 flex items-center justify-between">
+                      <div className="flex items-center space-x-3">
+                        <div className="text-right">
+                          {course.price.discounted ? (
+                            <div className="flex items-center space-x-2">
+                              <span className="text-2xl font-bold text-gray-900">
+                                {formatPrice(course.price.discounted)}
+                              </span>
+                              <span className="text-sm text-gray-500 line-through">
+                                {formatPrice(course.price.original)}
+                              </span>
+                              <span className="px-2 py-1 bg-red-100 text-red-600 rounded-full text-xs font-bold">
+                                -{calculateDiscount(course.price.original, course.price.discounted)}%
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="text-2xl font-bold text-gray-900">
+                              {formatPrice(course.price.original)}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      
+                      <div className={`px-3 py-1 rounded-full text-xs font-medium ${getEnrollmentStatus(course.students).bg} ${getEnrollmentStatus(course.students).color}`}>
+                        {getEnrollmentStatus(course.students).text}
+                      </div>
+                    </div>
+
+                    {/* Action Button */}
+                    <Button 
+                      variant="primary" 
+                      className={`w-full mt-6 group relative overflow-hidden ${
+                        course.progress !== undefined 
+                          ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700'
+                          : 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700'
+                      } shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300`}
+                      href={course.progress !== undefined ? `/learn/courses/${course.id}/continue` : `/learn/courses/${course.id}`}
+                    >
+                      <span className="relative z-10 flex items-center justify-center space-x-2">
+                        {course.progress !== undefined ? (
+                          <>
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Continue Learning</span>
+                          </>
+                        ) : (
+                          <>
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                            <span>Enroll Now</span>
+                          </>
+                        )}
+                      </span>
+                      <div className="absolute inset-0 bg-white bg-opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                    </Button>
+                  </div>
+
+                  {/* Popular/New Badges */}
+                  <div className="absolute top-4 left-4 flex flex-col space-y-2">
+                    {course.isPopular && (
+                      <div className="bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-full px-3 py-1 text-xs font-bold shadow-lg flex items-center space-x-1">
+                        <span>🔥</span>
+                        <span>Popular</span>
+                      </div>
+                    )}
+                    {course.isNew && (
+                      <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full px-3 py-1 text-xs font-bold shadow-lg flex items-center space-x-1">
+                        <span>🆕</span>
+                        <span>New</span>
+                      </div>
                     )}
                   </div>
-                </div>
-                
-                <div className="mt-4 flex items-center justify-between text-sm text-gray-500">
-                  <div className="flex items-center">
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    {course.duration}
-                  </div>
-                  <div className="flex items-center">
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                    </svg>
-                    {course.lessons} lessons
-                  </div>
-                </div>
-                
-                <div className="mt-4 pt-4 border-t border-gray-100">
-                  <div className="flex flex-wrap gap-2">
-                    {course.tags.slice(0, 3).map((tag) => (
-                      <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-600 rounded-md text-xs">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                
-                <Button variant="primary" className="w-full mt-6" href={`/learn/courses/${course.id}`}>
-                  Enroll Now
-                </Button>
-              </Card>
-            ))}
-          </div>
+                </Card>
+              ))}
+            </div>
+          </>
         )}
-        
-        <div className="mt-12 text-center">
-          <Button variant="outline" size="lg" href="/learn">
-            View All Courses
+
+        {/* View All Courses */}
+        <div className="mt-16 text-center">
+          <Button 
+            variant="primary" 
+            size="lg" 
+            href="/learn"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 px-12 py-4 rounded-2xl text-lg font-semibold"
+          >
+            Explore All Courses
+            <svg className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </Button>
         </div>
-        
-        <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <Card className="text-center p-8">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">AI-Powered Tutor</h3>
-            <p className="text-gray-600">
-              Get personalized learning recommendations and instant answers to your questions with our AI tutor
+
+        {/* Features Section */}
+        <div className="mt-24">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Why Learn With <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Our Platform</span>?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Experience the future of data education with cutting-edge AI technology and industry-proven methodologies
             </p>
-          </Card>
-          
-          <Card className="text-center p-8">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Hands-on Projects</h3>
-            <p className="text-gray-600">
-              Apply your skills with real-world projects and build a portfolio that showcases your expertise
-            </p>
-          </Card>
-          
-          <Card className="text-center p-8">
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Industry Certifications</h3>
-            <p className="text-gray-600">
-              Earn recognized certifications that validate your skills and boost your career prospects
-            </p>
-          </Card>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-blue-50 to-indigo-100/50 shadow-2xl group hover:shadow-3xl transition-all duration-500">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-200/20 rounded-full -translate-y-16 translate-x-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-200/20 rounded-full translate-y-12 -translate-x-12"></div>
+              
+              <div className="relative p-8 text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">AI-Powered Tutor</h3>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  Get personalized learning recommendations and instant answers to your questions with our advanced AI tutor. 
+                  Adaptive learning paths tailored to your progress and goals.
+                </p>
+                <div className="mt-6 inline-flex items-center text-blue-600 font-semibold text-lg">
+                  Learn more
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Card>
+            
+            <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-green-50 to-emerald-100/50 shadow-2xl group hover:shadow-3xl transition-all duration-500">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-200/20 rounded-full -translate-y-16 translate-x-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-teal-200/20 rounded-full translate-y-12 -translate-x-12"></div>
+              
+              <div className="relative p-8 text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Hands-on Projects</h3>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  Apply your skills with real-world projects and build a portfolio that showcases your expertise. 
+                  Work with real datasets and industry-standard tools.
+                </p>
+                <div className="mt-6 inline-flex items-center text-green-600 font-semibold text-lg">
+                  Learn more
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Card>
+            
+            <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-purple-50 to-violet-100/50 shadow-2xl group hover:shadow-3xl transition-all duration-500">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-200/20 rounded-full -translate-y-16 translate-x-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-pink-200/20 rounded-full translate-y-12 -translate-x-12"></div>
+              
+              <div className="relative p-8 text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Industry Certifications</h3>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  Earn recognized certifications that validate your skills and boost your career prospects. 
+                  Get certified in the most in-demand data technologies and methodologies.
+                </p>
+                <div className="mt-6 inline-flex items-center text-purple-600 font-semibold text-lg">
+                  Learn more
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
   )
 }
+
 
 const BIPreview: React.FC = () => {
   const [activeDashboard, setActiveDashboard] = useState(0)
@@ -3094,7 +3167,7 @@ const PricingSection: React.FC = () => {
                     variant={tier.popular ? 'primary' : 'outline'}
                     size="lg"
                     className="w-full"
-                    href={tier.id === 'enterprise' ? '/contact' : '/signup'}
+                    href={tier.id === 'enterprise' ? '/contact' : '/auth/signup'}
                   >
                     {tier.cta}
                   </Button>
@@ -3390,7 +3463,7 @@ const HeroVariation1: React.FC = () => {
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="primary" size="xl" href="/signup">
+              <Button variant="primary" size="xl" href="/auth/signup">
                 Start Learning Free
               </Button>
               <Button variant="outline" size="xl" href="/demo">
@@ -3490,7 +3563,7 @@ const HeroVariation2: React.FC = () => {
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="primary" size="xl" href="/signup">
+              <Button variant="primary" size="xl" href="/auth/signup">
                 Get Started Free
               </Button>
               <Button variant="outline" size="xl" href="/demo">
