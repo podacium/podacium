@@ -6,11 +6,11 @@
     <em>Algeria's integrated EdTech, Freelancing & Business Intelligence platform</em>
   </p>
   <p>
-    <a href="https://podacium.dz"><strong>podacium.dz</strong></a>
+    <a href="https://podacium.com"><strong>podacium.com</strong></a>
   </p>
   <p>
     <a href="https://github.com/podacium"><img src="https://img.shields.io/badge/GitHub-podacium-2ea44f" alt="GitHub"></a>
-    <a href="https://podacium.dz"><img src="https://img.shields.io/badge/Launch-July_15,_2026-ff6b35" alt="Launch Date"></a>
+    <a href="https://podacium.com"><img src="https://img.shields.io/badge/Launch-July_15,_2026-ff6b35" alt="Launch Date"></a>
     <a href="https://github.com/podacium/podacium"><img src="https://img.shields.io/badge/Label-Projet_Innovant-0055a4" alt="Projet Innovant"></a>
   </p>
 </div>
@@ -75,12 +75,12 @@ Algeria's digital economy lacks an integrated platform connecting learning to ea
 
 ## 👥 Team
 
-| Role | Name |
-|------|------|
-| **CEO / CTO** | Zakarya ROUBHI |
-| **COO** | Mohamed Redha HABIB |
-| **CDO / DPO** | Ahmed MERHAB |
-| **CMO / CFO** | Adem Idris OULD AMER |
+| Role | Name | Background |
+|------|------|-----------|
+| **CEO / CTO** | Zakarya ROUBHI | Data Science for Business & Economics — ESE Oran |
+| **COO** | Mohamed Redha HABIB | Data Science for Business & Economics — ESE Oran |
+| **CDO / DPO** | Ahmed MERHAB | Data Science for Business & Economics — ESE Oran |
+| **CMO / CFO** | Adem Idris OULD AMER | Data Science for Business & Economics — ESE Oran |
 
 Founded by four Master's graduates in **Data Science for Business & Economics** from the **Higher School of Economics, Oran (ESE Oran)** — promotion 2025–2026.
 
@@ -96,7 +96,7 @@ Founded by four Master's graduates in **Data Science for Business & Economics** 
 
 | Phase | Date | Milestone |
 |-------|------|-----------|
-| **Launch** | Jul 15, 2026 | Public launch at podacium.dz (World Youth Skills Day) |
+| **Launch** | Jul 15, 2026 | Public launch at podacium.com (World Youth Skills Day) |
 | **Freelancing Beta** | Oct 1, 2026 | Invite-only marketplace with escrow & dispute resolution |
 | **BI Pilot** | Jan 1, 2027 | Closed pilot with 5 SMEs |
 | **Regional Expansion** | 2027–2028 | Morocco, Tunisia → Francophone Africa (400M+) |
@@ -105,9 +105,9 @@ Founded by four Master's graduates in **Data Science for Business & Economics** 
 
 ## 📬 Contact
 
-- **Website**: [podacium.dz](https://podacium.dz)
+- **Website**: [podacium.com](https://podacium.com)
 - **GitHub**: [github.com/podacium](https://github.com/podacium)
-- **Email**: contact@podacium.dz _(coming soon)_
+- **Email**: [podacium@podacium.com](mailto:podacium@podacium.com)
 
 ---
 
