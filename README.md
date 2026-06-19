@@ -602,40 +602,53 @@
 <table align="center" style="max-width:800px;">
   <tr>
     <td align="center" style="padding:24px 16px;width:25%;">
-      <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#8236fc,#6366f1);">
-        <img src="https://github.com/podacium.png" width="96" height="96" alt="Zakarya ROUBHI" style="border-radius:50%;display:block;">
-      </div>
+      <a href="https://linkedin.com/in/zakaryaroubhi" target="_blank">
+        <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#8236fc,#6366f1);">
+          <img src="https://avatars.githubusercontent.com/u/171706924?v=4" width="96" height="96" alt="Zakarya ROUBHI" style="border-radius:50%;display:block;">
+        </div>
+      </a>
       <br>
       <p style="font-size:1.05em;font-weight:700;margin:0;color:#1e222b;">Zakarya ROUBHI</p>
       <p style="font-size:0.85em;color:#8236fc;font-weight:600;margin:4px 0;">CEO / CTO</p>
       <p style="font-size:0.8em;color:#777;margin:4px 0;">Data Science for Business & Economics — ESE Oran</p>
+      <a href="https://linkedin.com/in/zakaryaroubhi" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
+      <a href="https://github.com/zuikre" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github" alt="GitHub"></a>
     </td>
     <td align="center" style="padding:24px 16px;width:25%;">
-      <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#2563eb,#4f46e5);">
-        <img src="https://github.com/podacium.png" width="96" height="96" alt="Mohamed Redha HABIB" style="border-radius:50%;display:block;">
-      </div>
+      <a href="https://linkedin.com/in/mohamed-redha-habib-7885962a3" target="_blank">
+        <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#2563eb,#4f46e5);">
+          <img src="https://ui-avatars.com/api/?name=Mohamed+Redha+HABIB&background=2563eb&color=fff&size=96&bold=true" width="96" height="96" alt="Mohamed Redha HABIB" style="border-radius:50%;display:block;">
+        </div>
+      </a>
       <br>
       <p style="font-size:1.05em;font-weight:700;margin:0;color:#1e222b;">Mohamed Redha HABIB</p>
       <p style="font-size:0.85em;color:#2563eb;font-weight:600;margin:4px 0;">COO</p>
       <p style="font-size:0.8em;color:#777;margin:4px 0;">Data Science for Business & Economics — ESE Oran</p>
+      <a href="https://linkedin.com/in/mohamed-redha-habib-7885962a3" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
     <td align="center" style="padding:24px 16px;width:25%;">
-      <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);">
-        <img src="https://github.com/podacium.png" width="96" height="96" alt="Ahmed MERHAB" style="border-radius:50%;display:block;">
-      </div>
+      <a href="https://linkedin.com/in/ahmed-merhab-60b04a336" target="_blank">
+        <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);">
+          <img src="https://ui-avatars.com/api/?name=Ahmed+MERHAB&background=10b981&color=fff&size=96&bold=true" width="96" height="96" alt="Ahmed MERHAB" style="border-radius:50%;display:block;">
+        </div>
+      </a>
       <br>
       <p style="font-size:1.05em;font-weight:700;margin:0;color:#1e222b;">Ahmed MERHAB</p>
       <p style="font-size:0.85em;color:#10b981;font-weight:600;margin:4px 0;">CDO / DPO</p>
       <p style="font-size:0.8em;color:#777;margin:4px 0;">Data Science for Business & Economics — ESE Oran</p>
+      <a href="https://linkedin.com/in/ahmed-merhab-60b04a336" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
     <td align="center" style="padding:24px 16px;width:25%;">
-      <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);">
-        <img src="https://github.com/podacium.png" width="96" height="96" alt="Adem Idris OULD AMER" style="border-radius:50%;display:block;">
-      </div>
+      <a href="https://linkedin.com/in/adem-idris-ould-amer-aa7452259" target="_blank">
+        <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);">
+          <img src="https://ui-avatars.com/api/?name=Adem+Idris+OULD+AMER&background=f59e0b&color=fff&size=96&bold=true" width="96" height="96" alt="Adem Idris OULD AMER" style="border-radius:50%;display:block;">
+        </div>
+      </a>
       <br>
       <p style="font-size:1.05em;font-weight:700;margin:0;color:#1e222b;">Adem Idris OULD AMER</p>
       <p style="font-size:0.85em;color:#f59e0b;font-weight:600;margin:4px 0;">CMO / CFO</p>
       <p style="font-size:0.8em;color:#777;margin:4px 0;">Data Science for Business & Economics — ESE Oran</p>
+      <a href="https://linkedin.com/in/adem-idris-ould-amer-aa7452259" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
   </tr>
 </table>
