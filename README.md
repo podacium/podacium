@@ -638,18 +638,6 @@
       <p style="font-size:0.8em;color:#777;margin:4px 0;">Data Science for Business & Economics — ESE Oran</p>
       <a href="https://linkedin.com/in/ahmed-merhab-60b04a336" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
     </td>
-    <td align="center" style="padding:24px 16px;width:25%;">
-      <a href="https://linkedin.com/in/adem-idris-ould-amer-aa7452259" target="_blank">
-        <div style="display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);">
-          <img src="https://ui-avatars.com/api/?name=Adem+Idris+OULD+AMER&background=f59e0b&color=fff&size=96&bold=true" width="96" height="96" alt="Adem Idris OULD AMER" style="border-radius:50%;display:block;">
-        </div>
-      </a>
-      <br>
-      <p style="font-size:1.05em;font-weight:700;margin:0;color:#1e222b;">Adem Idris OULD AMER</p>
-      <p style="font-size:0.85em;color:#f59e0b;font-weight:600;margin:4px 0;">CMO / CFO</p>
-      <p style="font-size:0.8em;color:#777;margin:4px 0;">Data Science for Business & Economics — ESE Oran</p>
-      <a href="https://linkedin.com/in/adem-idris-ould-amer-aa7452259" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
-    </td>
   </tr>
 </table>
 
