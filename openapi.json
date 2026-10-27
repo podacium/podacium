@@ -2434,7 +2434,8 @@
         "tags": [
           "Startups & Simulation",
           "startups",
-          "simulation"
+          "simulation",
+          "venture-core"
         ],
         "summary": "List Startups",
         "description": "Explore curated Algerian startups in the discovery and simulation pipeline.\nFilter by economic sector, wilaya (1-58), or ASF (Algerian Startup Fund) label.",
@@ -2538,6 +2539,66 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Create Startup",
+        "description": "Onboard a new startup into the TamWheel Venture OS.\nValidates wilaya (1-58), sector taxonomy, and verifies official Executive Decree 20-254 / ASF label.",
+        "operationId": "create_startup_api_v1_startups_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StartupCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StartupResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/v1/startups/{startup_id}": {
@@ -2545,7 +2606,8 @@
         "tags": [
           "Startups & Simulation",
           "startups",
-          "simulation"
+          "simulation",
+          "venture-core"
         ],
         "summary": "Get Startup",
         "description": "Retrieve comprehensive startup profile including active simulation campaign and hype telemetry.",
@@ -2583,6 +2645,288 @@
             }
           }
         }
+      },
+      "put": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Update Startup",
+        "description": "Update startup profile information, branding, or regulatory credentials.\nGuarded: only the startup founder or an admin may execute updates.",
+        "operationId": "update_startup_api_v1_startups__startup_id__put",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StartupUpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StartupResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/startups/{startup_id}/cap-table/simulate": {
+      "post": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Simulate Cap Table",
+        "description": "Model and simulate equity financing round, dilution, convertible instruments (BSA-AIR / SAFE),\nand fractional nominee allocations under Algerian Commercial Code (Law 22-09 SPAS).\nGuarantees indivisible legal share allocation via the Hamilton-Hare Largest Remainder Method (Art. 715 bis 30).",
+        "operationId": "simulate_cap_table_api_v1_startups__startup_id__cap_table_simulate_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapTableSimulateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapTableSimulateResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/startups/{startup_id}/campaigns": {
+      "post": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Create Campaign",
+        "description": "Initialize a new fundraising campaign in DRAFT state under COSOB Regulation 23-01 CIP rules.\nEnforces statutory target cap of 20,000,000 DZD and minimum ticket sizing.",
+        "operationId": "create_campaign_api_v1_startups__startup_id__campaigns_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CampaignCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CampaignResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/campaigns/{campaign_id}/transition": {
+      "post": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Transition Campaign Status",
+        "description": "Execute a formal lifecycle transition for a venture campaign:\n`DRAFT` -> `PENDING_REVIEW` -> `ACTIVE_SIMULATION` -> `FUNDED_SIMULATION` -> `CLOSED`.\nEnforces strict role permissions and compliance gates.",
+        "operationId": "transition_campaign_status_api_v1_campaigns__campaign_id__transition_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "campaign_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Campaign Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CampaignTransitionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CampaignResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/v1/campaigns/{campaign_id}/pledge": {
@@ -2590,10 +2934,11 @@
         "tags": [
           "Startups & Simulation",
           "startups",
-          "simulation"
+          "simulation",
+          "venture-core"
         ],
         "summary": "Pledge To Campaign",
-        "description": "Execute a virtual investment pledge in the TamWheel Simulation League.\nSimulates equity crowdfunding commitments under COSOB 23-01 CIP compliance rules.",
+        "description": "Execute an investment commitment in the TamWheel Simulation League.\nGoverned by COSOB Regulation 23-01 CIP compliance rules:\n- Minimum ticket verification (>= 5,000 DZD default)\n- 20% retail investor campaign allocation cap\n- 150% campaign overfunding cap\n- Mandatory biometric/national KYC verification for high-ticket commitments (>= 145,000 DZD)\n- Enforces statutory 4-day reflection period flag (droit de r\u00e9tractation)",
         "operationId": "pledge_to_campaign_api_v1_campaigns__campaign_id__pledge_post",
         "security": [
           {
@@ -2655,15 +3000,275 @@
         }
       }
     },
+    "/api/v1/startups/{startup_id}/data-room": {
+      "post": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Upload Data Room Document",
+        "description": "Upload a pitch deck, financial audit report, patent filing, or legal statute into the Due Diligence Virtual Data Room.\nGuarded: only the startup founder or an admin may upload.",
+        "operationId": "upload_data_room_document_api_v1_startups__startup_id__data_room_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataRoomDocumentUploadRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataRoomDocumentResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "List Data Room Documents",
+        "description": "List verified due diligence documents in the startup's Virtual Data Room.\nRespects access levels: PUBLIC, INVESTOR_GATED (unlocked after pledge), and CONFIDENTIAL_ADMIN.",
+        "operationId": "list_data_room_documents_api_v1_startups__startup_id__data_room_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DataRoomDocumentResponse"
+                  },
+                  "title": "Response List Data Room Documents Api V1 Startups  Startup Id  Data Room Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/data-room/{document_id}/verify": {
+      "post": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Verify Data Room Document",
+        "description": "Admin verification of a Virtual Data Room document (financial audit, patent validity, etc.).",
+        "operationId": "verify_data_room_document_api_v1_data_room__document_id__verify_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "document_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Document Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataRoomDocumentVerifyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataRoomDocumentResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/data-room/{document_id}": {
+      "delete": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Delete Data Room Document",
+        "description": "Delete a document from the Virtual Data Room.",
+        "operationId": "delete_data_room_document_api_v1_data_room__document_id__delete",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "document_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Document Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/startups/{startup_id}/score": {
       "post": {
         "tags": [
           "Startups & Simulation",
           "startups",
-          "simulation"
+          "simulation",
+          "venture-core"
         ],
         "summary": "Submit Community Score",
-        "description": "Submit crowd wisdom due diligence scoring for a startup across Market, Team, and Traction vectors.",
+        "description": "Submit crowd wisdom due diligence scoring for a startup across Market, Team, and Traction vectors.\nRecalculates reputation-weighted Hype Score with anti-brigading protection.",
         "operationId": "submit_community_score_api_v1_startups__startup_id__score_post",
         "security": [
           {
@@ -2730,22 +3335,109 @@
         "tags": [
           "Startups & Simulation",
           "startups",
-          "simulation"
+          "simulation",
+          "venture-core"
         ],
         "summary": "Get Simulation Leaderboard",
         "description": "Retrieve current top-ranking investors & community scouts in the TamWheel Fantasy Venture League.",
         "operationId": "get_simulation_leaderboard_api_v1_simulation_leaderboard_get",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "weekly",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Filter for current weekly gameweek",
+              "default": false,
+              "title": "Weekly"
+            },
+            "description": "Filter for current weekly gameweek"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful Response",
             "content": {
               "application/json": {
                 "schema": {
+                  "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/LeaderboardEntryResponse"
                   },
-                  "type": "array",
                   "title": "Response Get Simulation Leaderboard Api V1 Simulation Leaderboard Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/simulation/wallet": {
+      "get": {
+        "tags": [
+          "Startups & Simulation",
+          "startups",
+          "simulation",
+          "venture-core"
+        ],
+        "summary": "Get Simulation Wallet",
+        "description": "Retrieve user's simulation wallet balance, active pledges, calculated venture ROI, and analyst badge.",
+        "operationId": "get_simulation_wallet_api_v1_simulation_wallet_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
                 }
               }
             }
@@ -2758,7 +3450,8 @@
         "tags": [
           "Startups & Simulation",
           "startups",
-          "simulation"
+          "simulation",
+          "venture-core"
         ],
         "summary": "Submit Financial Quiz",
         "description": "Record results of the Darija Financial Literacy curriculum module.",
@@ -2797,6 +3490,237 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/FinancialQuizResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/curriculum/modules": {
+      "get": {
+        "tags": [
+          "Financial Literacy & Curriculum",
+          "Financial Literacy & Curriculum"
+        ],
+        "summary": "List Modules",
+        "description": "Retrieve all 5 Darija Financial Literacy curriculum modules with user completion status.",
+        "operationId": "list_modules_api_v1_curriculum_modules_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModuleResponse"
+                  },
+                  "title": "Response List Modules Api V1 Curriculum Modules Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/curriculum/modules/{module_index}": {
+      "get": {
+        "tags": [
+          "Financial Literacy & Curriculum",
+          "Financial Literacy & Curriculum"
+        ],
+        "summary": "Get Module Detail",
+        "description": "Retrieve module contents and quiz questions for learning and verification.",
+        "operationId": "get_module_detail_api_v1_curriculum_modules__module_index__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "module_index",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Module Index"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/curriculum/quiz": {
+      "post": {
+        "tags": [
+          "Financial Literacy & Curriculum",
+          "Financial Literacy & Curriculum"
+        ],
+        "summary": "Submit Curriculum Quiz",
+        "description": "Submit and automatically grade a Financial Literacy module quiz.\nUpon passing all 5 modules, automatically promotes analyst tier to SCOUT.",
+        "operationId": "submit_curriculum_quiz_api_v1_curriculum_quiz_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuizSubmissionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QuizSubmissionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/curriculum/label-diagnostic": {
+      "post": {
+        "tags": [
+          "Financial Literacy & Curriculum",
+          "Financial Literacy & Curriculum"
+        ],
+        "summary": "Evaluate Startup Label Diagnostic",
+        "description": "Startup Label Readiness Diagnostic based on Executive Decree 20-254 (National Startup Label).\nPillars: Innovation (30%), Scalability (25%), Team (20%), IP (15%), Traction (10%).",
+        "operationId": "evaluate_startup_label_diagnostic_api_v1_curriculum_label_diagnostic_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LabelDiagnosticRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LabelDiagnosticResponse"
                 }
               }
             }
@@ -33425,6 +34349,194 @@
         }
       }
     },
+    "/api/v1/sharia/screen": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Run programmatic AAOIFI Sharia compliance screen",
+        "description": "Performs algorithmic AAOIFI Shariah Standard No. 21 screening: debt-to-market-cap (<33%), interest-bearing deposits (<33%), and non-permissible revenue (<5%), along with prohibited sector detection and required purification (Tathir) calculation.",
+        "operationId": "screen_startup_sharia_api_v1_sharia_screen_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancialStatement"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ShariaScreeningResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/sharia/istihaq/calculate": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Calculate dynamic Istihaq sweat-equity vesting",
+        "description": "Calculates dynamic milestone-based sweat-equity allocations under the Istihaq protocol. Verifies contribution proof, computes fair tokenized share allocation against post-money valuation, and generates cryptographic legal warrant payloads under SPAS Nominee governance (Law 22-09).",
+        "operationId": "calculate_istihaq_allocation_api_v1_sharia_istihaq_calculate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IstihaqCalculationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstihaqCalculationResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/swarm/analyze": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Run multi-agent AI due diligence analysis",
+        "description": "Executes a multi-agent evaluation across Founder Co-Pilot (Al-Mu'assis), Due Diligence Analyst (Al-Muhaqqiq), Milestone & Escrow Agent (Al-Muqawil), and Tournament Referee (Al-Mizan). Computes the Al-Jadara Index (0-100), valuation sanity check, and risk flags.",
+        "operationId": "analyze_startup_with_swarm_api_v1_swarm_analyze_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StartupProfileInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SwarmAnalysisResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/swarm/negotiate": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Simulate autonomous AI-to-AI term sheet negotiation",
+        "description": "Simulates autonomous bilateral term sheet negotiation between Founder and Investor agents using Multi-Attribute Utility Theory (MAUT) and Nash Bargaining Solution along the Pareto frontier.",
+        "operationId": "negotiate_term_sheet_with_swarm_api_v1_swarm_negotiate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NegotiationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NegotiationResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
     "/api/v1/billing/webhooks/chargily": {
       "post": {
         "tags": [
@@ -39017,6 +40129,16 @@
         ],
         "title": "AnalystLevel"
       },
+      "AntiDilutionRatchet": {
+        "type": "string",
+        "enum": [
+          "BROAD_BASED_WEIGHTED_AVERAGE",
+          "NARROW_BASED_WEIGHTED_AVERAGE",
+          "FULL_RATCHET",
+          "NONE"
+        ],
+        "title": "AntiDilutionRatchet"
+      },
       "ApiKeyCreate": {
         "properties": {
           "name": {
@@ -40388,6 +41510,48 @@
         ],
         "title": "CalculateTrendingResponse"
       },
+      "CampaignCreateRequest": {
+        "properties": {
+          "targetAmountDzd": {
+            "type": "integer",
+            "maximum": 20000000.0,
+            "minimum": 50000.0,
+            "title": "Targetamountdzd",
+            "description": "Target raise up to 20M DZD statutory cap under COSOB CIP"
+          },
+          "minTicketDzd": {
+            "type": "integer",
+            "minimum": 1000.0,
+            "title": "Minticketdzd",
+            "description": "Minimum investment ticket size (COSOB default 5,000 DZD)",
+            "default": 5000
+          },
+          "startDate": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Startdate"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Enddate",
+            "description": "Campaign deadline"
+          }
+        },
+        "type": "object",
+        "required": [
+          "targetAmountDzd",
+          "endDate"
+        ],
+        "title": "CampaignCreateRequest"
+      },
       "CampaignResponse": {
         "properties": {
           "id": {
@@ -40448,6 +41612,29 @@
         ],
         "title": "CampaignStatus"
       },
+      "CampaignTransitionRequest": {
+        "properties": {
+          "newStatus": {
+            "$ref": "#/components/schemas/CampaignStatus"
+          },
+          "adminNotes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Adminnotes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "newStatus"
+        ],
+        "title": "CampaignTransitionRequest"
+      },
       "Camt053ParseRequest": {
         "properties": {
           "xml_content": {
@@ -40498,6 +41685,130 @@
         },
         "type": "object",
         "title": "CancelSubscriptionRequest"
+      },
+      "CapTableSimulateRequest": {
+        "properties": {
+          "preMoneyValuationDzd": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Premoneyvaluationdzd"
+          },
+          "investmentAmountDzd": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Investmentamountdzd"
+          },
+          "preMoneyShares": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Premoneyshares",
+            "default": 100000
+          },
+          "shareClass": {
+            "$ref": "#/components/schemas/ShareClassType",
+            "default": "ORDINAIRE"
+          },
+          "convertibles": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/ConvertibleInstrumentItem"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Convertibles"
+          },
+          "pledges": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/PledgeItem"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pledges"
+          }
+        },
+        "type": "object",
+        "required": [
+          "preMoneyValuationDzd",
+          "investmentAmountDzd"
+        ],
+        "title": "CapTableSimulateRequest"
+      },
+      "CapTableSimulateResponse": {
+        "properties": {
+          "preMoneyValuationDzd": {
+            "type": "integer",
+            "title": "Premoneyvaluationdzd"
+          },
+          "investmentAmountDzd": {
+            "type": "integer",
+            "title": "Investmentamountdzd"
+          },
+          "postMoneyValuationDzd": {
+            "type": "integer",
+            "title": "Postmoneyvaluationdzd"
+          },
+          "sharePriceDzd": {
+            "type": "number",
+            "title": "Sharepricedzd"
+          },
+          "newSharesIssued": {
+            "type": "integer",
+            "title": "Newsharesissued"
+          },
+          "postRoundTotalShares": {
+            "type": "integer",
+            "title": "Postroundtotalshares"
+          },
+          "investorEquityPct": {
+            "type": "number",
+            "title": "Investorequitypct"
+          },
+          "founderDilutionFactor": {
+            "type": "number",
+            "title": "Founderdilutionfactor"
+          },
+          "convertibleConversions": {
+            "items": {
+              "$ref": "#/components/schemas/ConvertibleConversionItem"
+            },
+            "type": "array",
+            "title": "Convertibleconversions"
+          },
+          "nomineeAllocation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/NomineeAllocationResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "preMoneyValuationDzd",
+          "investmentAmountDzd",
+          "postMoneyValuationDzd",
+          "sharePriceDzd",
+          "newSharesIssued",
+          "postRoundTotalShares",
+          "investorEquityPct",
+          "founderDilutionFactor",
+          "convertibleConversions"
+        ],
+        "title": "CapTableSimulateResponse"
       },
       "CertificatePurchaseRequest": {
         "properties": {
@@ -41986,6 +43297,77 @@
         "title": "ConversationType",
         "description": "Conversation types for different business pillars"
       },
+      "ConvertibleConversionItem": {
+        "properties": {
+          "instrumentType": {
+            "type": "string",
+            "title": "Instrumenttype"
+          },
+          "principalAmountDzd": {
+            "type": "integer",
+            "title": "Principalamountdzd"
+          },
+          "conversionPriceDzd": {
+            "type": "number",
+            "title": "Conversionpricedzd"
+          },
+          "sharesIssued": {
+            "type": "integer",
+            "title": "Sharesissued"
+          },
+          "dilutionPct": {
+            "type": "number",
+            "title": "Dilutionpct"
+          }
+        },
+        "type": "object",
+        "required": [
+          "instrumentType",
+          "principalAmountDzd",
+          "conversionPriceDzd",
+          "sharesIssued",
+          "dilutionPct"
+        ],
+        "title": "ConvertibleConversionItem"
+      },
+      "ConvertibleInstrumentItem": {
+        "properties": {
+          "instrumentType": {
+            "type": "string",
+            "title": "Instrumenttype",
+            "default": "BSA_AIR"
+          },
+          "principalAmountDzd": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Principalamountdzd"
+          },
+          "valuationCapDzd": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Valuationcapdzd"
+          },
+          "discountRate": {
+            "type": "number",
+            "maximum": 0.5,
+            "minimum": 0.0,
+            "title": "Discountrate",
+            "default": 0.2
+          }
+        },
+        "type": "object",
+        "required": [
+          "principalAmountDzd"
+        ],
+        "title": "ConvertibleInstrumentItem"
+      },
       "CorporateDocumentResponse": {
         "properties": {
           "id": {
@@ -42453,6 +43835,185 @@
           "message"
         ],
         "title": "DataObjectionResponse"
+      },
+      "DataRoomAccessLevel": {
+        "type": "string",
+        "enum": [
+          "PUBLIC",
+          "INVESTOR_GATED",
+          "CONFIDENTIAL_ADMIN"
+        ],
+        "title": "DataRoomAccessLevel"
+      },
+      "DataRoomCategory": {
+        "type": "string",
+        "enum": [
+          "PITCH_DECK",
+          "FINANCIAL_AUDIT",
+          "PATENT_FILING",
+          "LEGAL_STATUTES",
+          "TECHNICAL_SPEC"
+        ],
+        "title": "DataRoomCategory"
+      },
+      "DataRoomDocumentResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "category": {
+            "$ref": "#/components/schemas/DataRoomCategory"
+          },
+          "fileUrl": {
+            "type": "string",
+            "title": "Fileurl"
+          },
+          "fileSizeBytes": {
+            "type": "integer",
+            "title": "Filesizebytes"
+          },
+          "fileSha256": {
+            "type": "string",
+            "title": "Filesha256"
+          },
+          "accessLevel": {
+            "$ref": "#/components/schemas/DataRoomAccessLevel"
+          },
+          "verificationStatus": {
+            "$ref": "#/components/schemas/DocumentVerificationStatus"
+          },
+          "uploadedBy": {
+            "type": "integer",
+            "title": "Uploadedby"
+          },
+          "uploadedAt": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Uploadedat"
+          },
+          "verifiedBy": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verifiedby"
+          },
+          "verifiedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verifiedat"
+          },
+          "verificationNotes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verificationnotes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "startupId",
+          "title",
+          "category",
+          "fileUrl",
+          "fileSizeBytes",
+          "fileSha256",
+          "accessLevel",
+          "verificationStatus",
+          "uploadedBy",
+          "uploadedAt"
+        ],
+        "title": "DataRoomDocumentResponse"
+      },
+      "DataRoomDocumentUploadRequest": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "maxLength": 150,
+            "minLength": 3,
+            "title": "Title"
+          },
+          "category": {
+            "$ref": "#/components/schemas/DataRoomCategory"
+          },
+          "fileUrl": {
+            "type": "string",
+            "title": "Fileurl"
+          },
+          "fileSizeBytes": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Filesizebytes"
+          },
+          "fileSha256": {
+            "type": "string",
+            "maxLength": 64,
+            "minLength": 64,
+            "title": "Filesha256"
+          },
+          "accessLevel": {
+            "$ref": "#/components/schemas/DataRoomAccessLevel",
+            "default": "INVESTOR_GATED"
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "category",
+          "fileUrl",
+          "fileSizeBytes",
+          "fileSha256"
+        ],
+        "title": "DataRoomDocumentUploadRequest"
+      },
+      "DataRoomDocumentVerifyRequest": {
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/DocumentVerificationStatus"
+          },
+          "verificationNotes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verificationnotes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "DataRoomDocumentVerifyRequest"
       },
       "DeletionRequestCreate": {
         "properties": {
@@ -42947,6 +44508,73 @@
         ],
         "title": "DisconnectIntegrationResponse"
       },
+      "DocumentVerificationStatus": {
+        "type": "string",
+        "enum": [
+          "PENDING",
+          "VERIFIED",
+          "REJECTED"
+        ],
+        "title": "DocumentVerificationStatus"
+      },
+      "DueDiligenceSynthesis": {
+        "properties": {
+          "agent_name": {
+            "type": "string",
+            "title": "Agent Name",
+            "default": "Al-Muhaqqiq (\u0627\u0644\u0645\u062d\u0642\u0642 - Due Diligence Analyst)"
+          },
+          "ltv_to_cac_ratio": {
+            "type": "number",
+            "title": "Ltv To Cac Ratio"
+          },
+          "payback_period_months": {
+            "type": "number",
+            "title": "Payback Period Months"
+          },
+          "burn_multiple": {
+            "type": "number",
+            "title": "Burn Multiple"
+          },
+          "valuation_sanity_verdict": {
+            "type": "string",
+            "title": "Valuation Sanity Verdict"
+          },
+          "implied_arr_multiple": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Implied Arr Multiple"
+          },
+          "benchmark_multiple_range": {
+            "type": "string",
+            "title": "Benchmark Multiple Range",
+            "default": "5.0x - 12.0x ARR"
+          },
+          "risk_flags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Risk Flags"
+          }
+        },
+        "type": "object",
+        "required": [
+          "ltv_to_cac_ratio",
+          "payback_period_months",
+          "burn_multiple",
+          "valuation_sanity_verdict",
+          "implied_arr_multiple",
+          "risk_flags"
+        ],
+        "title": "DueDiligenceSynthesis"
+      },
       "EscrowApproveRequest": {
         "properties": {
           "approvalNotes": {
@@ -43431,6 +45059,109 @@
           "completedAt"
         ],
         "title": "FinancialQuizResponse"
+      },
+      "FinancialStatement": {
+        "properties": {
+          "total_assets_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Total Assets Dzd",
+            "description": "Total balance sheet assets in DZD"
+          },
+          "market_cap_dzd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Market Cap Dzd",
+            "description": "Market cap or fair implied valuation in DZD"
+          },
+          "total_debt_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Total Debt Dzd",
+            "description": "Total interest-bearing debt in DZD",
+            "default": 0.0
+          },
+          "interest_bearing_deposits_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Interest Bearing Deposits Dzd",
+            "description": "Cash and interest-bearing deposits in DZD",
+            "default": 0.0
+          },
+          "total_revenue_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Total Revenue Dzd",
+            "description": "Gross annualized revenue in DZD"
+          },
+          "non_permissible_revenue_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Non Permissible Revenue Dzd",
+            "description": "Revenue derived from non-compliant sources in DZD",
+            "default": 0.0
+          },
+          "business_sectors": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Business Sectors",
+            "description": "Primary and secondary industry sectors"
+          },
+          "business_description": {
+            "type": "string",
+            "title": "Business Description",
+            "description": "Executive summary of operations and products",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_assets_dzd",
+          "total_revenue_dzd"
+        ],
+        "title": "FinancialStatement"
+      },
+      "FounderCopilotSynthesis": {
+        "properties": {
+          "agent_name": {
+            "type": "string",
+            "title": "Agent Name",
+            "default": "Al-Mu'assis (\u0627\u0644\u0645\u0624\u0633\u0633 - Founder Co-Pilot)"
+          },
+          "growth_narrative": {
+            "type": "string",
+            "title": "Growth Narrative"
+          },
+          "market_opportunity": {
+            "type": "string",
+            "title": "Market Opportunity"
+          },
+          "localized_gtm_strategy": {
+            "type": "string",
+            "title": "Localized Gtm Strategy"
+          },
+          "asf_regulatory_readiness": {
+            "type": "string",
+            "title": "Asf Regulatory Readiness"
+          }
+        },
+        "type": "object",
+        "required": [
+          "growth_narrative",
+          "market_opportunity",
+          "localized_gtm_strategy",
+          "asf_regulatory_readiness"
+        ],
+        "title": "FounderCopilotSynthesis"
       },
       "FreelancerProfileUpdate": {
         "properties": {
@@ -44121,6 +45852,136 @@
         ],
         "title": "InvitationResponse"
       },
+      "IstihaqCalculationRequest": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "post_money_valuation_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Post Money Valuation Dzd",
+            "description": "Startup valuation base in DZD"
+          },
+          "total_tokenized_shares": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Tokenized Shares",
+            "description": "Total authorized cap-table shares",
+            "default": 1000000
+          },
+          "sweat_equity_pool_pct": {
+            "type": "number",
+            "maximum": 50.0,
+            "exclusiveMinimum": 0.0,
+            "title": "Sweat Equity Pool Pct",
+            "description": "Max S4E pool reservation %",
+            "default": 10.0
+          },
+          "allocated_shares_so_far": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Allocated Shares So Far",
+            "description": "Shares already issued from S4E pool",
+            "default": 0
+          },
+          "milestones": {
+            "items": {
+              "$ref": "#/components/schemas/MilestoneDeliverable"
+            },
+            "type": "array",
+            "title": "Milestones"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "post_money_valuation_dzd",
+          "milestones"
+        ],
+        "title": "IstihaqCalculationRequest"
+      },
+      "IstihaqCalculationResult": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "post_money_valuation_dzd": {
+            "type": "number",
+            "title": "Post Money Valuation Dzd"
+          },
+          "share_price_dzd": {
+            "type": "number",
+            "title": "Share Price Dzd"
+          },
+          "total_shares_allocated": {
+            "type": "integer",
+            "title": "Total Shares Allocated"
+          },
+          "equity_percentage_earned": {
+            "type": "number",
+            "title": "Equity Percentage Earned"
+          },
+          "monetary_equivalent_dzd": {
+            "type": "number",
+            "title": "Monetary Equivalent Dzd"
+          },
+          "vested_shares": {
+            "type": "integer",
+            "title": "Vested Shares"
+          },
+          "unvested_shares": {
+            "type": "integer",
+            "title": "Unvested Shares"
+          },
+          "sweat_equity_pool_cap_shares": {
+            "type": "integer",
+            "title": "Sweat Equity Pool Cap Shares"
+          },
+          "remaining_pool_shares": {
+            "type": "integer",
+            "title": "Remaining Pool Shares"
+          },
+          "pool_utilization_pct": {
+            "type": "number",
+            "title": "Pool Utilization Pct"
+          },
+          "milestones_summary": {
+            "items": {
+              "$ref": "#/components/schemas/MilestoneAllocation"
+            },
+            "type": "array",
+            "title": "Milestones Summary"
+          },
+          "warrant_issuance": {
+            "$ref": "#/components/schemas/LegalWarrantPayload"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "post_money_valuation_dzd",
+          "share_price_dzd",
+          "total_shares_allocated",
+          "equity_percentage_earned",
+          "monetary_equivalent_dzd",
+          "vested_shares",
+          "unvested_shares",
+          "sweat_equity_pool_cap_shares",
+          "remaining_pool_shares",
+          "pool_utilization_pct",
+          "milestones_summary",
+          "warrant_issuance"
+        ],
+        "title": "IstihaqCalculationResult"
+      },
       "KycReviewRequest": {
         "properties": {
           "user_id": {
@@ -44200,6 +46061,117 @@
         "type": "object",
         "title": "KycSubmitRequest"
       },
+      "LabelDiagnosticRequest": {
+        "properties": {
+          "startupName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Startupname"
+          },
+          "sector": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Sector"
+          },
+          "wilaya": {
+            "type": "integer",
+            "maximum": 58.0,
+            "minimum": 1.0,
+            "title": "Wilaya"
+          },
+          "innovationScore": {
+            "type": "integer",
+            "maximum": 30.0,
+            "minimum": 0.0,
+            "title": "Innovationscore",
+            "description": "Innovation pillar (max 30 pts)"
+          },
+          "scalabilityScore": {
+            "type": "integer",
+            "maximum": 25.0,
+            "minimum": 0.0,
+            "title": "Scalabilityscore",
+            "description": "Scalability pillar (max 25 pts)"
+          },
+          "teamScore": {
+            "type": "integer",
+            "maximum": 20.0,
+            "minimum": 0.0,
+            "title": "Teamscore",
+            "description": "Team complementarity (max 20 pts)"
+          },
+          "ipScore": {
+            "type": "integer",
+            "maximum": 15.0,
+            "minimum": 0.0,
+            "title": "Ipscore",
+            "description": "Patents & INAPI IP (max 15 pts)"
+          },
+          "tractionScore": {
+            "type": "integer",
+            "maximum": 10.0,
+            "minimum": 0.0,
+            "title": "Tractionscore",
+            "description": "Commercial traction & LOIs (max 10 pts)"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupName",
+          "sector",
+          "wilaya",
+          "innovationScore",
+          "scalabilityScore",
+          "teamScore",
+          "ipScore",
+          "tractionScore"
+        ],
+        "title": "LabelDiagnosticRequest"
+      },
+      "LabelDiagnosticResponse": {
+        "properties": {
+          "startupName": {
+            "type": "string",
+            "title": "Startupname"
+          },
+          "totalScore": {
+            "type": "integer",
+            "title": "Totalscore"
+          },
+          "eligibilityStatus": {
+            "type": "string",
+            "title": "Eligibilitystatus"
+          },
+          "isEligibleForDecree20254": {
+            "type": "boolean",
+            "title": "Iseligiblefordecree20254"
+          },
+          "gapAnalysis": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Gapanalysis"
+          },
+          "recommendations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Recommendations"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupName",
+          "totalScore",
+          "eligibilityStatus",
+          "isEligibleForDecree20254",
+          "gapAnalysis",
+          "recommendations"
+        ],
+        "title": "LabelDiagnosticResponse"
+      },
       "LeaderboardEntryResponse": {
         "properties": {
           "userId": {
@@ -44225,6 +46197,17 @@
           "rank": {
             "type": "integer",
             "title": "Rank"
+          },
+          "roiPct": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Roipct"
           }
         },
         "type": "object",
@@ -44257,6 +46240,49 @@
           "new_password"
         ],
         "title": "LegacyChangePasswordRequest"
+      },
+      "LegalWarrantPayload": {
+        "properties": {
+          "warrant_id": {
+            "type": "string",
+            "title": "Warrant Id"
+          },
+          "warrant_hash": {
+            "type": "string",
+            "title": "Warrant Hash"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "total_shares": {
+            "type": "integer",
+            "title": "Total Shares"
+          },
+          "beneficial_holder": {
+            "type": "string",
+            "title": "Beneficial Holder"
+          },
+          "legal_structure": {
+            "type": "string",
+            "title": "Legal Structure",
+            "default": "SPAS Nominee Cap-Table (Law 22-09)"
+          },
+          "issued_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Issued At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "warrant_id",
+          "warrant_hash",
+          "startup_id",
+          "total_shares",
+          "beneficial_holder"
+        ],
+        "title": "LegalWarrantPayload"
       },
       "LightUserResponse": {
         "properties": {
@@ -45539,6 +47565,265 @@
         ],
         "title": "MfaCodeRequest"
       },
+      "MilestoneAllocation": {
+        "properties": {
+          "milestone_id": {
+            "type": "string",
+            "title": "Milestone Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "milestone_type": {
+            "$ref": "#/components/schemas/MilestoneType"
+          },
+          "status": {
+            "$ref": "#/components/schemas/VerificationStatus"
+          },
+          "labor_value_dzd": {
+            "type": "number",
+            "title": "Labor Value Dzd"
+          },
+          "adjusted_labor_value_dzd": {
+            "type": "number",
+            "title": "Adjusted Labor Value Dzd"
+          },
+          "shares_allocated": {
+            "type": "integer",
+            "title": "Shares Allocated"
+          },
+          "vested_shares": {
+            "type": "integer",
+            "title": "Vested Shares"
+          },
+          "unvested_shares": {
+            "type": "integer",
+            "title": "Unvested Shares"
+          },
+          "equity_pct": {
+            "type": "number",
+            "title": "Equity Pct"
+          },
+          "proof_hash": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Proof Hash"
+          }
+        },
+        "type": "object",
+        "required": [
+          "milestone_id",
+          "title",
+          "milestone_type",
+          "status",
+          "labor_value_dzd",
+          "adjusted_labor_value_dzd",
+          "shares_allocated",
+          "vested_shares",
+          "unvested_shares",
+          "equity_pct",
+          "proof_hash"
+        ],
+        "title": "MilestoneAllocation"
+      },
+      "MilestoneDeliverable": {
+        "properties": {
+          "milestone_id": {
+            "type": "string",
+            "title": "Milestone Id"
+          },
+          "contributor_id": {
+            "type": "string",
+            "title": "Contributor Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "milestone_type": {
+            "$ref": "#/components/schemas/MilestoneType",
+            "default": "CODE_PULL_REQUEST"
+          },
+          "complexity_weight": {
+            "type": "number",
+            "maximum": 10.0,
+            "minimum": 0.5,
+            "title": "Complexity Weight",
+            "description": "Effort/complexity multiplier (1-10)",
+            "default": 1.0
+          },
+          "estimated_labor_value_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Estimated Labor Value Dzd",
+            "description": "Estimated fiat market value of labor in DZD"
+          },
+          "verification_status": {
+            "$ref": "#/components/schemas/VerificationStatus",
+            "default": "PENDING_REVIEW"
+          },
+          "proof_hash": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Proof Hash",
+            "description": "Cryptographic SHA256 proof or Git commit hash"
+          },
+          "evidence_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence Url",
+            "description": "GitHub PR, Figma link, or audit report URL"
+          },
+          "verified_by": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verified By",
+            "description": "Oracle node or reviewer identity"
+          }
+        },
+        "type": "object",
+        "required": [
+          "milestone_id",
+          "contributor_id",
+          "title",
+          "estimated_labor_value_dzd"
+        ],
+        "title": "MilestoneDeliverable"
+      },
+      "MilestoneEscrowSynthesis": {
+        "properties": {
+          "agent_name": {
+            "type": "string",
+            "title": "Agent Name",
+            "default": "Al-Muqawil (\u0627\u0644\u0645\u0642\u0627\u0648\u0644 - Milestone & Escrow Agent)"
+          },
+          "technical_feasibility_score": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Technical Feasibility Score"
+          },
+          "suggested_escrow_tranches": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Suggested Escrow Tranches"
+          },
+          "s4e_sweat_equity_recommendation": {
+            "type": "string",
+            "title": "S4E Sweat Equity Recommendation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technical_feasibility_score",
+          "suggested_escrow_tranches",
+          "s4e_sweat_equity_recommendation"
+        ],
+        "title": "MilestoneEscrowSynthesis"
+      },
+      "MilestoneType": {
+        "type": "string",
+        "enum": [
+          "CODE_PULL_REQUEST",
+          "SECURITY_AUDIT",
+          "AI_DATASET_LABELING",
+          "ARCHITECTURE_DESIGN",
+          "REGULATORY_FILING",
+          "GROWTH_MARKETING"
+        ],
+        "title": "MilestoneType"
+      },
+      "ModuleResponse": {
+        "properties": {
+          "index": {
+            "type": "integer",
+            "title": "Index"
+          },
+          "titleAr": {
+            "type": "string",
+            "title": "Titlear"
+          },
+          "titleEn": {
+            "type": "string",
+            "title": "Titleen"
+          },
+          "durationMinutes": {
+            "type": "integer",
+            "title": "Durationminutes"
+          },
+          "descriptionAr": {
+            "type": "string",
+            "title": "Descriptionar"
+          },
+          "descriptionEn": {
+            "type": "string",
+            "title": "Descriptionen"
+          },
+          "prerequisiteTier": {
+            "type": "string",
+            "title": "Prerequisitetier"
+          },
+          "questionsCount": {
+            "type": "integer",
+            "title": "Questionscount"
+          },
+          "passed": {
+            "type": "boolean",
+            "title": "Passed",
+            "default": false
+          },
+          "latestScore": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latestscore"
+          }
+        },
+        "type": "object",
+        "required": [
+          "index",
+          "titleAr",
+          "titleEn",
+          "durationMinutes",
+          "descriptionAr",
+          "descriptionEn",
+          "prerequisiteTier",
+          "questionsCount"
+        ],
+        "title": "ModuleResponse"
+      },
       "Mt940ParseRequest": {
         "properties": {
           "raw_text": {
@@ -45553,6 +47838,227 @@
           "raw_text"
         ],
         "title": "Mt940ParseRequest"
+      },
+      "NegotiationRequest": {
+        "properties": {
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "founder_ask": {
+            "$ref": "#/components/schemas/TermSheetVector"
+          },
+          "investor_offer": {
+            "$ref": "#/components/schemas/TermSheetVector"
+          },
+          "max_rounds": {
+            "type": "integer",
+            "maximum": 10.0,
+            "minimum": 1.0,
+            "title": "Max Rounds",
+            "default": 5
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_name",
+          "founder_ask",
+          "investor_offer"
+        ],
+        "title": "NegotiationRequest"
+      },
+      "NegotiationResponse": {
+        "properties": {
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "status": {
+            "$ref": "#/components/schemas/NegotiationStatus"
+          },
+          "rounds_conducted": {
+            "type": "integer",
+            "title": "Rounds Conducted"
+          },
+          "rounds_history": {
+            "items": {
+              "$ref": "#/components/schemas/NegotiationRound"
+            },
+            "type": "array",
+            "title": "Rounds History"
+          },
+          "agreed_term_sheet": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TermSheetVector"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "equity_stake_pct": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Equity Stake Pct"
+          },
+          "nash_product_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Nash Product Score"
+          },
+          "arbitration_recommendation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Arbitration Recommendation"
+          },
+          "contract_clauses": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Contract Clauses"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_name",
+          "status",
+          "rounds_conducted",
+          "rounds_history",
+          "agreed_term_sheet",
+          "equity_stake_pct",
+          "nash_product_score",
+          "contract_clauses"
+        ],
+        "title": "NegotiationResponse"
+      },
+      "NegotiationRound": {
+        "properties": {
+          "round_number": {
+            "type": "integer",
+            "title": "Round Number"
+          },
+          "founder_offer": {
+            "$ref": "#/components/schemas/TermSheetVector"
+          },
+          "investor_offer": {
+            "$ref": "#/components/schemas/TermSheetVector"
+          },
+          "founder_utility": {
+            "type": "number",
+            "title": "Founder Utility"
+          },
+          "investor_utility": {
+            "type": "number",
+            "title": "Investor Utility"
+          },
+          "concession_summary": {
+            "type": "string",
+            "title": "Concession Summary"
+          }
+        },
+        "type": "object",
+        "required": [
+          "round_number",
+          "founder_offer",
+          "investor_offer",
+          "founder_utility",
+          "investor_utility",
+          "concession_summary"
+        ],
+        "title": "NegotiationRound"
+      },
+      "NegotiationStatus": {
+        "type": "string",
+        "enum": [
+          "AGREED",
+          "DEADLOCK",
+          "IN_PROGRESS"
+        ],
+        "title": "NegotiationStatus"
+      },
+      "NomineeAllocationResponse": {
+        "properties": {
+          "totalNomineeShares": {
+            "type": "integer",
+            "title": "Totalnomineeshares"
+          },
+          "totalNomineeAmountDzd": {
+            "type": "integer",
+            "title": "Totalnomineeamountdzd"
+          },
+          "allocations": {
+            "items": {
+              "$ref": "#/components/schemas/NomineeBeneficialItem"
+            },
+            "type": "array",
+            "title": "Allocations"
+          },
+          "exactZeroLossInvariantVerified": {
+            "type": "boolean",
+            "title": "Exactzerolossinvariantverified"
+          }
+        },
+        "type": "object",
+        "required": [
+          "totalNomineeShares",
+          "totalNomineeAmountDzd",
+          "allocations",
+          "exactZeroLossInvariantVerified"
+        ],
+        "title": "NomineeAllocationResponse"
+      },
+      "NomineeBeneficialItem": {
+        "properties": {
+          "investorId": {
+            "type": "string",
+            "title": "Investorid"
+          },
+          "amountDzd": {
+            "type": "integer",
+            "title": "Amountdzd"
+          },
+          "beneficialUnitsExact": {
+            "type": "number",
+            "title": "Beneficialunitsexact"
+          },
+          "discretizedShares": {
+            "type": "integer",
+            "title": "Discretizedshares"
+          },
+          "ownershipPct": {
+            "type": "number",
+            "title": "Ownershippct"
+          }
+        },
+        "type": "object",
+        "required": [
+          "investorId",
+          "amountDzd",
+          "beneficialUnitsExact",
+          "discretizedShares",
+          "ownershipPct"
+        ],
+        "title": "NomineeBeneficialItem"
       },
       "NotificationAction": {
         "properties": {
@@ -49847,6 +52353,25 @@
         ],
         "title": "PlatformAppealTargetType"
       },
+      "PledgeItem": {
+        "properties": {
+          "investorId": {
+            "type": "string",
+            "title": "Investorid"
+          },
+          "amountDzd": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Amountdzd"
+          }
+        },
+        "type": "object",
+        "required": [
+          "investorId",
+          "amountDzd"
+        ],
+        "title": "PledgeItem"
+      },
       "PresenceHeartbeatRequest": {
         "properties": {
           "thread_id": {
@@ -51443,6 +53968,131 @@
         "title": "PushSubscriptionCreate",
         "description": "Schema for registering a Web Push subscription."
       },
+      "QuizSubmissionRequest": {
+        "properties": {
+          "moduleIndex": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Moduleindex"
+          },
+          "answers": {
+            "anyOf": [
+              {
+                "additionalProperties": {
+                  "type": "integer"
+                },
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Answers",
+            "description": "Dictionary mapping question ID to selected answer index (0-based)"
+          },
+          "directScore": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Directscore",
+            "description": "Direct test score (0-100) if submitted via external proctor"
+          }
+        },
+        "type": "object",
+        "required": [
+          "moduleIndex"
+        ],
+        "title": "QuizSubmissionRequest"
+      },
+      "QuizSubmissionResponse": {
+        "properties": {
+          "moduleIndex": {
+            "type": "integer",
+            "title": "Moduleindex"
+          },
+          "score": {
+            "type": "integer",
+            "title": "Score"
+          },
+          "passed": {
+            "type": "boolean",
+            "title": "Passed"
+          },
+          "completedModulesCount": {
+            "type": "integer",
+            "title": "Completedmodulescount"
+          },
+          "allModulesCompleted": {
+            "type": "boolean",
+            "title": "Allmodulescompleted"
+          },
+          "promotedToScout": {
+            "type": "boolean",
+            "title": "Promotedtoscout"
+          },
+          "analystTier": {
+            "type": "string",
+            "title": "Analysttier"
+          },
+          "feedback": {
+            "type": "string",
+            "title": "Feedback"
+          }
+        },
+        "type": "object",
+        "required": [
+          "moduleIndex",
+          "score",
+          "passed",
+          "completedModulesCount",
+          "allModulesCompleted",
+          "promotedToScout",
+          "analystTier",
+          "feedback"
+        ],
+        "title": "QuizSubmissionResponse"
+      },
+      "RatioScreenResult": {
+        "properties": {
+          "metric_name": {
+            "type": "string",
+            "title": "Metric Name"
+          },
+          "ratio": {
+            "type": "number",
+            "title": "Ratio"
+          },
+          "threshold": {
+            "type": "number",
+            "title": "Threshold"
+          },
+          "passed": {
+            "type": "boolean",
+            "title": "Passed"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          }
+        },
+        "type": "object",
+        "required": [
+          "metric_name",
+          "ratio",
+          "threshold",
+          "passed",
+          "description"
+        ],
+        "title": "RatioScreenResult"
+      },
       "ReactionCreate": {
         "properties": {
           "emoji": {
@@ -51497,6 +54147,43 @@
           "expected_reference"
         ],
         "title": "ReceiptVerifyRequest"
+      },
+      "RefereeTournamentSynthesis": {
+        "properties": {
+          "agent_name": {
+            "type": "string",
+            "title": "Agent Name",
+            "default": "Al-Mizan (\u0627\u0644\u0645\u064a\u0632\u0627\u0646 - Tournament & Referee Agent)"
+          },
+          "jadara_index_score": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Jadara Index Score"
+          },
+          "tier": {
+            "$ref": "#/components/schemas/TournamentTier"
+          },
+          "verdict": {
+            "type": "string",
+            "title": "Verdict"
+          },
+          "score_breakdown": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Score Breakdown"
+          }
+        },
+        "type": "object",
+        "required": [
+          "jadara_index_score",
+          "tier",
+          "verdict",
+          "score_breakdown"
+        ],
+        "title": "RefereeTournamentSynthesis"
       },
       "ReissueInviteResponse": {
         "properties": {
@@ -52858,6 +55545,102 @@
         "type": "object",
         "title": "ServiceUpdate"
       },
+      "ShareClassType": {
+        "type": "string",
+        "enum": [
+          "ORDINAIRE",
+          "PREFERENCE_A",
+          "PREFERENCE_B",
+          "BSPCE",
+          "WARRANT"
+        ],
+        "title": "ShareClassType"
+      },
+      "ShariaScreeningResult": {
+        "properties": {
+          "is_compliant": {
+            "type": "boolean",
+            "title": "Is Compliant"
+          },
+          "verdict": {
+            "$ref": "#/components/schemas/ShariaVerdict"
+          },
+          "standards_reference": {
+            "type": "string",
+            "title": "Standards Reference",
+            "default": "AAOIFI Shariah Standard No. 21"
+          },
+          "debt_to_market_cap_ratio": {
+            "type": "number",
+            "title": "Debt To Market Cap Ratio"
+          },
+          "interest_bearing_deposits_ratio": {
+            "type": "number",
+            "title": "Interest Bearing Deposits Ratio"
+          },
+          "non_permissible_revenue_ratio": {
+            "type": "number",
+            "title": "Non Permissible Revenue Ratio"
+          },
+          "ratio_screens": {
+            "items": {
+              "$ref": "#/components/schemas/RatioScreenResult"
+            },
+            "type": "array",
+            "title": "Ratio Screens"
+          },
+          "prohibited_sectors_detected": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Prohibited Sectors Detected"
+          },
+          "purification_required_dzd": {
+            "type": "number",
+            "title": "Purification Required Dzd"
+          },
+          "purification_percentage": {
+            "type": "number",
+            "title": "Purification Percentage"
+          },
+          "screening_notes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Screening Notes"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "is_compliant",
+          "verdict",
+          "debt_to_market_cap_ratio",
+          "interest_bearing_deposits_ratio",
+          "non_permissible_revenue_ratio",
+          "ratio_screens",
+          "prohibited_sectors_detected",
+          "purification_required_dzd",
+          "purification_percentage",
+          "screening_notes"
+        ],
+        "title": "ShariaScreeningResult"
+      },
+      "ShariaVerdict": {
+        "type": "string",
+        "enum": [
+          "COMPLIANT",
+          "NON_COMPLIANT",
+          "QUESTIONABLE"
+        ],
+        "title": "ShariaVerdict"
+      },
       "SpendPodaPointsRequest": {
         "properties": {
           "feature_key": {
@@ -52988,6 +55771,192 @@
         "type": "object",
         "title": "SsoDomainConfigUpdate"
       },
+      "StartupCreateRequest": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 120,
+            "minLength": 2,
+            "title": "Name"
+          },
+          "tagline": {
+            "type": "string",
+            "maxLength": 255,
+            "minLength": 5,
+            "title": "Tagline"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 20,
+            "title": "Description"
+          },
+          "wilaya": {
+            "type": "integer",
+            "maximum": 58.0,
+            "minimum": 1.0,
+            "title": "Wilaya",
+            "description": "Algerian Wilaya code (1 to 58)"
+          },
+          "sector": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 2,
+            "title": "Sector"
+          },
+          "startupLabelNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Startuplabelnumber",
+            "description": "Executive Decree 20-254 / ASF label number"
+          },
+          "logoUrl": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Logourl"
+          },
+          "pitchDeckUrl": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pitchdeckurl"
+          },
+          "videoPitchUrl": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Videopitchurl"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "tagline",
+          "description",
+          "wilaya",
+          "sector"
+        ],
+        "title": "StartupCreateRequest"
+      },
+      "StartupProfileInput": {
+        "properties": {
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "sector": {
+            "type": "string",
+            "title": "Sector"
+          },
+          "wilaya": {
+            "type": "integer",
+            "maximum": 58.0,
+            "minimum": 1.0,
+            "title": "Wilaya",
+            "description": "Algerian Wilaya code (1-58)",
+            "default": 16
+          },
+          "pitch_summary": {
+            "type": "string",
+            "title": "Pitch Summary"
+          },
+          "arr_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Arr Dzd",
+            "default": 0.0
+          },
+          "mrr_growth_rate_pct": {
+            "type": "number",
+            "title": "Mrr Growth Rate Pct",
+            "description": "Month-over-month growth rate percentage",
+            "default": 0.0
+          },
+          "burn_rate_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Burn Rate Dzd",
+            "description": "Monthly net burn rate in DZD",
+            "default": 0.0
+          },
+          "runway_months": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Runway Months",
+            "description": "Cash runway in months",
+            "default": 12.0
+          },
+          "cac_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Cac Dzd",
+            "description": "Customer acquisition cost in DZD",
+            "default": 15000.0
+          },
+          "ltv_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Ltv Dzd",
+            "description": "Customer lifetime value in DZD",
+            "default": 60000.0
+          },
+          "valuation_ask_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Valuation Ask Dzd",
+            "description": "Founder requested post-money valuation in DZD"
+          },
+          "target_raise_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Target Raise Dzd",
+            "description": "Target investment round in DZD"
+          },
+          "has_asf_label": {
+            "type": "boolean",
+            "title": "Has Asf Label",
+            "description": "National Startup Label (Executive Decree 20-254)",
+            "default": false
+          },
+          "tech_stack": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Tech Stack"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_name",
+          "sector",
+          "pitch_summary",
+          "valuation_ask_dzd",
+          "target_raise_dzd"
+        ],
+        "title": "StartupProfileInput"
+      },
       "StartupResponse": {
         "properties": {
           "id": {
@@ -53099,6 +56068,140 @@
           "updatedAt"
         ],
         "title": "StartupResponse"
+      },
+      "StartupUpdateRequest": {
+        "properties": {
+          "name": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 120,
+                "minLength": 2
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          },
+          "tagline": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 255,
+                "minLength": 5
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tagline"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 20
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description"
+          },
+          "wilaya": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 58.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wilaya"
+          },
+          "sector": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sector"
+          },
+          "startupLabelNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Startuplabelnumber"
+          },
+          "logoUrl": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Logourl"
+          },
+          "pitchDeckUrl": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pitchdeckurl"
+          },
+          "videoPitchUrl": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Videopitchurl"
+          },
+          "hasAsfLabel": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hasasflabel"
+          },
+          "hypeScore": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hypescore"
+          }
+        },
+        "type": "object",
+        "title": "StartupUpdateRequest"
       },
       "StatutoryPrivacyNoticeResponse": {
         "properties": {
@@ -53755,6 +56858,45 @@
         ],
         "title": "SupportChatResponse"
       },
+      "SwarmAnalysisResponse": {
+        "properties": {
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "executive_summary": {
+            "type": "string",
+            "title": "Executive Summary"
+          },
+          "founder_copilot": {
+            "$ref": "#/components/schemas/FounderCopilotSynthesis"
+          },
+          "due_diligence": {
+            "$ref": "#/components/schemas/DueDiligenceSynthesis"
+          },
+          "milestone_escrow": {
+            "$ref": "#/components/schemas/MilestoneEscrowSynthesis"
+          },
+          "referee_verdict": {
+            "$ref": "#/components/schemas/RefereeTournamentSynthesis"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_name",
+          "executive_summary",
+          "founder_copilot",
+          "due_diligence",
+          "milestone_escrow",
+          "referee_verdict"
+        ],
+        "title": "SwarmAnalysisResponse"
+      },
       "TaxDefensePackRequest": {
         "properties": {
           "enterprise_name": {
@@ -53958,6 +57100,48 @@
           "createdAt"
         ],
         "title": "TeamLicensePoolResponse"
+      },
+      "TermSheetVector": {
+        "properties": {
+          "post_money_valuation_dzd": {
+            "type": "number",
+            "title": "Post Money Valuation Dzd"
+          },
+          "investment_amount_dzd": {
+            "type": "number",
+            "title": "Investment Amount Dzd"
+          },
+          "liquidation_preference_multiplier": {
+            "type": "number",
+            "title": "Liquidation Preference Multiplier",
+            "default": 1.0
+          },
+          "board_seats_investor": {
+            "type": "integer",
+            "title": "Board Seats Investor",
+            "default": 1
+          },
+          "veto_rights": {
+            "type": "boolean",
+            "title": "Veto Rights",
+            "default": false
+          },
+          "anti_dilution_ratchet": {
+            "$ref": "#/components/schemas/AntiDilutionRatchet",
+            "default": "BROAD_BASED_WEIGHTED_AVERAGE"
+          },
+          "vesting_schedule_months": {
+            "type": "integer",
+            "title": "Vesting Schedule Months",
+            "default": 48
+          }
+        },
+        "type": "object",
+        "required": [
+          "post_money_valuation_dzd",
+          "investment_amount_dzd"
+        ],
+        "title": "TermSheetVector"
       },
       "ThreadActionRequest": {
         "properties": {
@@ -54207,6 +57391,16 @@
           "secret"
         ],
         "title": "TotpVerifyRequest"
+      },
+      "TournamentTier": {
+        "type": "string",
+        "enum": [
+          "SANDBOX",
+          "SIMULATION_LEAGUE",
+          "PUBLIC_LISTING",
+          "PRIVATE_SYNDICATE"
+        ],
+        "title": "TournamentTier"
       },
       "TransactionResponse": {
         "properties": {
@@ -55801,6 +58995,15 @@
         ],
         "title": "VerificationResponse"
       },
+      "VerificationStatus": {
+        "type": "string",
+        "enum": [
+          "VERIFIED",
+          "PENDING_REVIEW",
+          "REJECTED"
+        ],
+        "title": "VerificationStatus"
+      },
       "VerifyCheckoutRequest": {
         "properties": {
           "checkout_id": {
@@ -55918,6 +59121,16 @@
               }
             ],
             "title": "Equitysharepct"
+          },
+          "reflectionPeriodRequired": {
+            "type": "boolean",
+            "title": "Reflectionperiodrequired",
+            "default": false
+          },
+          "reflectionDays": {
+            "type": "integer",
+            "title": "Reflectiondays",
+            "default": 0
           },
           "createdAt": {
             "type": "string",

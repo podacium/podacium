@@ -20,6 +20,12 @@ os.environ["RATE_LIMIT_ENABLED"] = "false"
 # exercise those services mock the Redis layer themselves.
 os.environ["REDIS_URL"] = ""
 
+# Fallback development environment variables for unit test execution
+if not os.environ.get("DATABASE_URL"):
+    os.environ["DATABASE_URL"] = "postgresql://tamwheel:localdev_only@localhost:5432/tamwheel?schema=public"
+if not os.environ.get("JWT_SECRET_KEY"):
+    os.environ["JWT_SECRET_KEY"] = "tamwheel_production_contract_spec_secret_key_32chars_min"
+
 # ---------------------------------------------------------------------------
 # Shared fake for `app.core.prisma`
 #
@@ -110,6 +116,12 @@ _PRISMA_MODELS = (
     "aitooltrace",
     "aiactionintent",
     "ailog",
+    "startup",
+    "campaign",
+    "virtualpledge",
+    "communityscore",
+    "financialquizresult",
+    "userkyc",
 )
 _PRISMA_MODEL_METHODS = (
     "find_unique",

@@ -52,6 +52,9 @@ from app.routers import (
     mail,
     agent_actions,
     scim,
+    sharia,
+    simulation_ws,
+    curriculum,
 )
 from app.routers import billing_routers
 from app.routers.shared import router as shared_router
@@ -68,6 +71,7 @@ _ROUTERS = [
     (auth.router, "Authentication"),
     (users.router, "Users"),
     (startups.router, "Startups & Simulation"),
+    (curriculum.router, "Financial Literacy & Curriculum"),
     (api_keys.router, "Developer API Keys"),
     (webhooks.router, "Developer Webhooks"),
     (content_moderation.router, "Content Moderation"),
@@ -106,6 +110,7 @@ _ROUTERS = [
     (webhooks_video.router, "Video Webhooks"),
     (ai_support.router, "Support AI Assistant"),
     (mail.router, "Corporate Mail Suite"),
+    (sharia.router, "Sharia & AI Swarms"),
 ]
 
 # In LICENSED_PSP mode, mount custodial payout endpoints
@@ -139,6 +144,7 @@ def register_routes(app: FastAPI) -> None:
 
     # WebSocket (not versioned — protocol-level)
     app.include_router(websocket.router)
+    app.include_router(simulation_ws.router)
 
     # Search (has its own prefix /api/v1/search)
     app.include_router(search.router)

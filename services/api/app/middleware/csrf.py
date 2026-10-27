@@ -80,6 +80,10 @@ CSRF_EXEMPT_PREFIXES = (
     "/api/support/",
     "/api/v1/agent/chat",
     "/api/agent/chat",
+    "/api/v1/sharia/",
+    "/api/sharia/",
+    "/api/v1/swarm/",
+    "/api/swarm/",
     "/ws",
 )
 
