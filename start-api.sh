@@ -1,14 +1,15 @@
 #!/bin/bash
-cd /opt/podacium/services/api
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$DIR/services/api"
 
 # Load env file if present
-if [ -f /opt/podacium/.env.prod ]; then
+if [ -f "$DIR/.env.prod" ]; then
   set -a
-  source /opt/podacium/.env.prod
+  source "$DIR/.env.prod"
   set +a
-elif [ -f /opt/podacium/.env ]; then
+elif [ -f "$DIR/.env" ]; then
   set -a
-  source /opt/podacium/.env
+  source "$DIR/.env"
   set +a
 fi
 
@@ -18,7 +19,7 @@ export REDIS_HOST=127.0.0.1
 
 # Build DATABASE_URL — but only if not already set (e.g. in .env.prod)
 if [ -z "${DATABASE_URL:-}" ]; then
-  export DATABASE_URL="postgresql://${DB_USER:-podacium}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT:-5432}/${DB_NAME:-podacium}?schema=public"
+  export DATABASE_URL="postgresql://${DB_USER:-tamwheel}:${DB_PASSWORD:-localdev_only}@${DB_HOST}:${DB_PORT:-5432}/${DB_NAME:-tamwheel}?schema=public"
 fi
 
 # Fix CORS_ORIGINS: if it's a stringified JSON list, convert to proper JSON array string
@@ -39,9 +40,10 @@ export PYTHONUNBUFFERED=1
 # Resolve Uvicorn binary across common virtual environment locations
 UVICORN_BIN=""
 for path in \
+  "$DIR/services/api/venv/bin/uvicorn" \
+  "$DIR/services/api/podacium/bin/uvicorn" \
   "/opt/podacium/services/api/podacium/bin/uvicorn" \
   "/opt/podacium/services/api/venv312/bin/uvicorn" \
-  "/opt/podacium/services/api/venv/bin/uvicorn" \
   "$(which uvicorn 2>/dev/null)"; do
   if [ -x "$path" ]; then
     UVICORN_BIN="$path"

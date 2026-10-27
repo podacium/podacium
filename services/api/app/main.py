@@ -53,7 +53,7 @@ if str(GENERATED_CLIENT_PATH) not in sys.path:
 
 app = FastAPI(
     title=setting.APP_NAME,
-    description="Multi-module platform for education, freelancing, and business intelligence",
+    description="TamWheel — Sovereign Ethical Agentic Venture & Economic Operating System API",
     version="1.0.0",
     # NEVER enable debug in production — it leaks full Python stack traces to clients.
     # The production guard in startup.py will warn if DEBUG=True, but we force it

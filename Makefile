@@ -140,7 +140,7 @@ security-scan-local: security-scan ## Run all scans including those needing loca
 	bearer scan services/api/ apps/web/ --severity=critical,high 2>/dev/null || echo "  → bearer skipped (install bearer)"
 
 openapi-gen: ## Regenerate openapi.json from source (with servers URL for ZAP)
-	cd services/api && ./podacium/bin/python3 ../../scripts/gen_openapi.py ../../openapi.json
+	cd services/api && ( [ -f ./venv/bin/python3 ] && ./venv/bin/python3 ../../scripts/gen_openapi.py ../../openapi.json || python3 ../../scripts/gen_openapi.py ../../openapi.json )
 
 dast-scan: ## Run OWASP ZAP API scan (requires Docker + openapi.json in project root). Add -S for baseline (passive-only, ~2min)
 	@test -f openapi.json || { echo "ERROR: openapi.json not found. Run 'make openapi-gen' first (needs dev env with DB)."; exit 1; }

@@ -14,12 +14,9 @@ from app.routers import (
     profiles_v2,
     profiles_extras,
     organizations,
-    education,
-    freelancing,
-    portfolio,
+    startups,
     payment,
     files,
-    dashboard,
     settings,
     security,
     notifications,
@@ -43,10 +40,7 @@ from app.routers import (
     waitlist,
     api_keys,
     webhooks,
-    connectors,
-    connector_webhooks,
     subtitles,
-    live_sessions,
     trending,
     health,
     initial_data,
@@ -59,7 +53,6 @@ from app.routers import (
     agent_actions,
     scim,
 )
-from app.routers.bi_routers import bi
 from app.routers import billing_routers
 from app.routers.shared import router as shared_router
 from app.core.config import setting, FinancialMode
@@ -74,22 +67,16 @@ LEGACY = "/api"
 _ROUTERS = [
     (auth.router, "Authentication"),
     (users.router, "Users"),
+    (startups.router, "Startups & Simulation"),
     (api_keys.router, "Developer API Keys"),
     (webhooks.router, "Developer Webhooks"),
-    (connectors.router, "Pillar Connectors"),
-    (connector_webhooks.router, "Inbound Connector Webhooks"),
     (content_moderation.router, "Content Moderation"),
-    (education.router, "Education"),
     (organizations.router, "Organizations"),
     (scim.router, "Enterprise SCIM 2.0 & SAML SSO"),
-    (freelancing.router, "Freelancing"),
-    (portfolio.router, "Portfolio"),
-    (bi.router, "Business Intelligence"),
     (payment.router, "Payments"),
     (invoices.router, "Invoices"),
     (kyc.router, "KYC"),
     (files.router, "Files"),
-    (dashboard.router, "Dashboard"),
     (settings.router, "Settings"),
     (integrations.router, "Integrations"),
     (security.router, "Security"),
@@ -109,7 +96,6 @@ _ROUTERS = [
     (mfa.router, "Multi-Factor Authentication"),
     (newsletter.router, "Newsletter"),
     (waitlist.router, "Waitlist"),
-    (live_sessions.router, "Live Sessions"),
     (trending.router, "Trending"),
     (health.router, "Health"),
     (profiles_v2.router, "Profiles"),
@@ -118,7 +104,6 @@ _ROUTERS = [
     (initial_data.router, "Initial Data"),
     (tus_router.router, "TUS Resumable Uploads"),
     (webhooks_video.router, "Video Webhooks"),
-    (webhooks_video.education_webhook_router, "Education Video Webhooks"),
     (ai_support.router, "Support AI Assistant"),
     (mail.router, "Corporate Mail Suite"),
 ]
@@ -163,9 +148,6 @@ def register_routes(app: FastAPI) -> None:
 
     # Crisp live chat webhook (has its own prefix /api/v1/webhooks/crisp)
     app.include_router(crisp_webhook.router)
-
-    # LiveKit webhook (has its own prefix /api/v1/webhooks/livekit)
-    app.include_router(live_sessions.webhook_router)
 
     # Public shared insights (no auth required — token-based access)
     app.include_router(shared_router, prefix=API_V1, tags=["Shared Insights"])

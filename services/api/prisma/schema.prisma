@@ -51,7 +51,6 @@ model EscrowHold {
   releasedAt         DateTime?
   refundedAt         DateTime?
   releasedAmount     Int           @default(0)
-  contract           Contract      @relation(fields: [contractId], references: [id], onDelete: Cascade)
   wallet             Wallet        @relation(fields: [walletId], references: [id])
   transactions       Transaction[]
 
@@ -85,86 +84,6 @@ model WalletTransaction {
   @@index([walletId, createdAt])
 }
 
-model FreelancerProfile {
-  id                      Int            @id @default(autoincrement())
-  userId                  Int            @unique
-  tier                    FreelancerTier @default(NEW)
-  commissionRate          Decimal        @default(0.0) @db.Decimal(5, 2) // Preserved for future PSP operations
-  completedProjects       Int            @default(0)
-  totalEarned             Int            @default(0) // Preserved for future PSP operations
-  platformFee             Int            @default(0) // Preserved for future PSP operations
-  isVerified              Boolean        @default(false)
-  featured                Boolean        @default(false)
-  featuredBoost           Float          @default(0.0) // decayable boost score (1.0 → 0 over 7d)
-  featuredUntil           DateTime?
-  isPremium               Boolean        @default(false)
-  skillPassportVerified   Boolean        @default(false)
-  skillPassportVerifiedAt DateTime?
-  isAnaeRegistered        Boolean        @default(false) // Loi 22-23 Auto-Entrepreneur status
-  anaeCardNumber          String?
-  ribCcpNumber            String?
-  metadata                Json?
-  createdAt               DateTime       @default(now())
-  updatedAt               DateTime       @updatedAt
-  contracts               Contract[]
-  user                    User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([userId])
-  @@index([tier])
-  @@index([commissionRate])
-  @@index([completedProjects])
-  @@index([isVerified])
-}
-
-model StudentProfile {
-  id                 Int      @id @default(autoincrement())
-  userId             Int      @unique
-  headline           String?
-  learningGoals      String?
-  careerPath         String?
-  totalLearningHours Float    @default(0)
-  completedCourses   Int      @default(0)
-  averageQuizScore   Float?
-  bestSubject        String?
-  badges             Json?
-  wishlist           Int[]    @default([])
-  createdAt          DateTime @default(now())
-  updatedAt          DateTime @updatedAt
-  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([userId])
-}
-
-model InstructorProfile {
-  id                 Int       @id @default(autoincrement())
-  userId             Int       @unique
-  headline           String?
-  totalStudents      Int       @default(0)
-  totalCourses       Int       @default(0)
-  totalCourseHours   Float     @default(0)
-  averageRating      Float?
-  reviewCount        Int       @default(0)
-  responseRate       Float?
-  responseTimeHours  Int?
-  languages          String[]  @default([])
-  credentials        Json?
-  workExperience     Json?
-  publications       Json?
-  teachingCategories String[]  @default([])
-  featuredCourseId   Int?
-  instructorSince    DateTime  @default(now())
-  lastCourseUpdate   DateTime?
-  satisfactionRate   Float?
-  curriculumVitae    String?
-  researchInterests  String[]  @default([])
-  createdAt          DateTime  @default(now())
-  updatedAt          DateTime  @updatedAt
-  user               User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([userId])
-  @@index([averageRating])
-}
-
 model BusinessProfile {
   id                Int      @id @default(autoincrement())
   userId            Int      @unique
@@ -182,57 +101,6 @@ model BusinessProfile {
   user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
-}
-
-model FreelancerService {
-  id                  Int       @id @default(autoincrement())
-  userId              Int
-  title               String
-  description         String
-  category            String
-  subcategory         String?
-  pricingType         String
-  price               Float?
-  basicPrice          Float?
-  basicDescription    String?
-  standardPrice       Float?
-  standardDescription String?
-  premiumPrice        Float?
-  premiumDescription  String?
-  deliveryDays        Int?
-  revisions           Int       @default(0)
-  images              String[]  @default([])
-  video               String?
-  isActive            Boolean   @default(true)
-  isBoosted           Boolean   @default(false)
-  boostExpiresAt      DateTime?
-  orderCount          Int       @default(0)
-  averageRating       Float?
-  reviewCount         Int       @default(0)
-  viewCount           Int       @default(0)
-  tags                String[]  @default([])
-  faq                 Json?
-  requirements        String?
-  createdAt           DateTime  @default(now())
-  updatedAt           DateTime  @updatedAt
-  user                User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([userId, isActive])
-  @@index([category, subcategory])
-  @@index([isActive, isBoosted])
-}
-
-model SkillEndorsement {
-  id         Int      @id @default(autoincrement())
-  skillName  String
-  endorserId Int
-  endorsedId Int
-  createdAt  DateTime @default(now())
-  endorser   User     @relation("Endorser", fields: [endorserId], references: [id])
-  endorsed   User     @relation("EndorsedUser", fields: [endorsedId], references: [id])
-
-  @@unique([skillName, endorserId, endorsedId])
-  @@index([endorsedId, skillName])
 }
 
 model UserFollow {
@@ -318,27 +186,6 @@ model OrgFollow {
   @@index([userId])
 }
 
-model PublicDashboard {
-  id             Int           @id @default(autoincrement())
-  organizationId Int?
-  userId         Int?
-  title          String
-  description    String?
-  thumbnailUrl   String?
-  tags           String[]      @default([])
-  isPublic       Boolean       @default(false)
-  viewCount      Int           @default(0)
-  likeCount      Int           @default(0)
-  embedUrl       String?
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
-  organization   Organization? @relation(fields: [organizationId], references: [id])
-  user           User?         @relation(fields: [userId], references: [id])
-
-  @@index([organizationId, isPublic])
-  @@index([userId, isPublic])
-}
-
 /// Preserved for future licensed PSP operations under Bank of Algeria Regulation 25-02
 model Payout {
   id                Int             @id @default(autoincrement())
@@ -417,36 +264,18 @@ model User {
   deletionRequests          AccountDeletionRequest[]
   advancedSettings          AdvancedSettings?
   authTokens                AuthToken[]
-  certificates              Certificate[]
-  contractsAsClient         Contract[]                @relation("ContractClient")
-  contractsAsFreelancer     Contract[]
-  authoredReviews           ContractReview[]          @relation("AuthoredReviews")
-  receivedReviews           ContractReview[]          @relation("ReceivedReviews")
-  reviewAppeals             ReviewAppeal[]            @relation("ReviewAppeals")
-  reviewReports             ReviewReport[]            @relation("ReviewReports")
   platformAppeals           PlatformAppeal[]          @relation("UserPlatformAppeals")
   resolvedPlatformAppeals   PlatformAppeal[]          @relation("ResolvedPlatformAppeals")
   initiatedAdminActions     PendingAdminAction[]      @relation("InitiatedAdminActions")
   approvedAdminActions      PendingAdminAction[]      @relation("ApprovedAdminActions")
-  courseReviews             CourseReview[]
   conversationParticipants  ConversationParticipant[]
-  dashboards                Dashboard[]
-  dataConnectors            DataConnector[]
   dataExports               DataExport[]
-  datasets                  Dataset[]
-  enrollments               Enrollment[]
   files                     File[]
-  freelancerProfile         FreelancerProfile?
   idempotencyKeys           IdempotencyKey[]
-  insights                  Insight[]
   sentInvitations           Invitation[]              @relation("SentInvitations")
-  lessonProgresses          LessonProgress[]
-  mlModels                  MLModel[]                 @relation("MLModelCreator")
   messages                  Message[]
   messageReactions          MessageReaction[]
   messageReadReceipts       MessageReadReceipt[]
-  instructedModules         Module[]                  @relation("ModuleInstructor")
-  reviewedModules           Module[]                  @relation("ModuleReviewer")
   notifications             Notification[]
   notificationPrefs         NotificationPreferences?
   ownedOrganizations        Organization[]            @relation("OrgOwner")
@@ -455,9 +284,6 @@ model User {
   sentInvites               OrganizationMember[]      @relation("OrgInvites")
   memberships               OrganizationMember[]      @relation("UserMemberships")
   paymentMethods            PaymentMethod[]
-  projects                  Project[]
-  proposals                 Proposal[]
-  quizAttempts              QuizAttempt[]
   securitySettings          SecuritySettings?
   subscriptions             Subscription[]
   transactions              Transaction[]
@@ -480,36 +306,13 @@ model User {
   workflows                 IntegrationWorkflow[]
   skillsDetails             UserSkill[]
   wallet                    Wallet?
-  createdDisputes           Dispute[]                 @relation("DisputeCreator")
-  resolvedDisputes          Dispute[]                 @relation("DisputeResolver")
-  receivedDisputes          Dispute[]                 @relation("DisputeOpponent")
   onboardingAnswer          OnboardingAnswer?
-  biAuditLogs               BiAuditLog[]
-  decisions                 Decision[]
-  decisionHistories         DecisionHistory[]
-  decisionComments          DecisionComment[]
-  reports                   Report[]
-  dashboardTemplates        DashboardTemplate[]
   CrossPillarEvent          CrossPillarEvent[]
   tickets                   Ticket[]                  @relation("UserTickets")
   assignedTickets           Ticket[]                  @relation("AssignedTickets")
   ticketMessages            TicketMessage[]           @relation("TicketMessageSender")
-  liveSessionsCreated       LiveSession[]             @relation("LiveSessionOwner")
-  liveSessionParticipations LiveSessionParticipant[]
-  liveSessionBookings       LiveSessionBooking[]
-  liveSessionCoHosted       LiveSessionCoHost[]
-  liveSessionWaitlists      LiveSessionWaitlist[]
-  hostCoupons               HostCoupon[]
-  liveSessionReviews        LiveSessionReview[]
-  liveSessionChatMessages   LiveSessionChatMessage[]
-  portfolioItems            PortfolioItem[]
   featurePurchases          FeaturePurchase[]         @relation("UserFeaturePurchases")
-  studentProfile            StudentProfile?
-  instructorProfile         InstructorProfile?
   businessProfile           BusinessProfile?
-  freelancerServices        FreelancerService[]
-  skillEndorsementsGiven    SkillEndorsement[]        @relation("Endorser")
-  skillEndorsementsReceived SkillEndorsement[]        @relation("EndorsedUser")
   followers                 UserFollow[]              @relation("Following")
   following                 UserFollow[]              @relation("Followers")
   blockedUsers              UserBlock[]               @relation("Blocker")
@@ -517,12 +320,6 @@ model User {
   usernameHistory           UsernameRedirect[]
   orgReviews                OrgReview[]
   orgFollows                OrgFollow[]
-  publicDashboards          PublicDashboard[]
-  authoredDashboardComments DashboardComment[]        @relation("CommentAuthor")
-  resolvedDashboardComments DashboardComment[]        @relation("CommentResolver")
-  dashboardBookmarks        DashboardBookmark[]
-  dashboardSnapshots        DashboardSnapshot[]
-  dashboardShareLinks       DashboardShareLink[]
   videoUploadSessions       VideoUploadSession[]
   kyc                       UserKyc?
   adminProfile              AdminProfile?             @relation("UserAdminProfile")
@@ -531,6 +328,11 @@ model User {
   aiSessions                AiSession[]               @relation("UserAiSessions")
   aiLogs                    AiLog[]                   @relation("UserAiLogs")
   confirmedAiIntents        AiActionIntent[]          @relation("ConfirmedAiIntents")
+  startups                  Startup[]
+  pledges                   VirtualPledge[]
+  communityScores           CommunityScore[]
+  quizResults               FinancialQuizResult[]
+
 
   @@index([search_vector], map: "user_search_idx", type: Gin)
   @@index([email])
@@ -594,30 +396,19 @@ model Organization {
   city               City                 @default(ALGIERS)
   sector             OrganizationSector   @default(TECHNOLOGY_AND_SOFTWARE)
   country            Country              @default(ALGERIA)
-  dashboards         Dashboard[]
-  datasets           Dataset[]
-  decisions          Decision[]
-  reports            Report[]
-  dashboardTemplates DashboardTemplate[]
   invitations        Invitation[]
   owner              User?                @relation("OrgOwner", fields: [ownerId], references: [id])
   members            OrganizationMember[]
   paymentMethods     PaymentMethod[]
-  projects           Project[]
   subscriptions      Subscription[]
   transactions       Transaction[]
   usageTrackings     UsageTracking[]
   primaryUsers       User[]               @relation("PrimaryUsers")
   wallet             Wallet?
-  biAuditLogs        BiAuditLog[]
   CrossPillarEvent   CrossPillarEvent[]
-  dataConnectors     DataConnector[]
-  semanticModels     SemanticModel[]
-  rowLevelPolicies   RowLevelPolicy[]
   orgProfile         OrgProfile?
   reviews            OrgReview[]
   followers          OrgFollow[]
-  publicDashboards   PublicDashboard[]
   kyb                OrganizationKyb?
   departments        Department[]
   branches           Branch[]
@@ -701,500 +492,6 @@ model OrganizationMember {
   @@index([createdAt])
 }
 
-model Path {
-  id              String        @id
-  title           String
-  description     String?
-  durationMinutes Int?          @default(0)
-  totalLessons    Int?          @default(0)
-  createdAt       DateTime      @default(now())
-  updatedAt       DateTime      @updatedAt
-  deletedAt       DateTime?
-  featured        Boolean       @default(false)
-  price           Json?
-  thumbnailUrl    String?
-  certificates    Certificate[]
-  enrollments     Enrollment[]
-  modules         PathModule[]
-
-  @@index([createdAt])
-  @@index([title])
-  @@index([deletedAt])
-  @@index([featured])
-  @@index([createdAt, featured])
-}
-
-model Module {
-  id               String                  @id
-  title            String
-  description      String?
-  fullDescription  String?
-  durationMinutes  Int?
-  estimatedEffort  String?
-  totalLessons     Int?                    @default(0)
-  level            String?
-  instructorId     Int?
-  status           ModuleStatus            @default(DRAFT)
-  publishedAt      DateTime?
-  reviewedBy       Int?
-  rejectionReason  String?
-  submittedAt      DateTime?
-  createdAt        DateTime                @default(now())
-  updatedAt        DateTime                @updatedAt
-  deletedAt        DateTime?
-  skills           String[]                @default([])
-  tags             String[]                @default([])
-  /// See User.search_vector — maintained by SQL, declared to protect it.
-  search_vector    Unsupported("tsvector")?
-  featured         Boolean                 @default(false)
-  lastUpdated      DateTime?
-  price            Json?
-  thumbnailUrl     String?
-  certificates     Certificate[]
-  enrollments      Enrollment[]
-  lessons          Lesson[]
-  instructor       User?                   @relation("ModuleInstructor", fields: [instructorId], references: [id], onDelete: Restrict)
-  reviewer         User?                   @relation("ModuleReviewer", fields: [reviewedBy], references: [id], onDelete: SetNull)
-  pathLinks        PathModule[]
-  reviews          CourseReview[]
-  liveSessionLinks LiveSessionModuleLink[]
-  mailThreads      MailThread[]            @relation("ModuleMailThreads")
-  mailMessages     MailMessage[]
-
-  @@index([search_vector], map: "module_search_idx", type: Gin)
-  @@index([instructorId])
-  @@index([featured])
-  @@index([createdAt])
-  @@index([level])
-  @@index([tags])
-  @@index([skills])
-  @@index([deletedAt])
-  @@index([title])
-  @@index([status])
-  @@index([instructorId, status])
-  @@index([status, featured])
-  @@index([instructorId, featured])
-  @@index([createdAt, featured])
-}
-
-model PathModule {
-  id       Int    @id @default(autoincrement())
-  pathId   String
-  moduleId String
-  order    Int?
-  module   Module @relation(fields: [moduleId], references: [id])
-  path     Path   @relation(fields: [pathId], references: [id])
-
-  @@unique([pathId, moduleId])
-  @@index([pathId])
-  @@index([moduleId])
-  @@index([order])
-  @@index([pathId, order])
-}
-
-model Lesson {
-  id                      String               @id
-  moduleId                String
-  title                   String
-  description             String?
-  durationMinutes         Int?
-  durationSeconds         Int?
-  type                    String
-  status                  LessonStatus         @default(DRAFT)
-  videoUrl                String?
-  storageProvider         String               @default("supabase")
-  hlsPath                 String?
-  rawPath                 String?
-  transcodingStatus       String?
-  transcript              String?
-  subtitlesPath           String?
-  subtitlesLanguage       String?              @default("ar")
-  subtitlesEnabled        Boolean              @default(true)
-  attachments             Json?
-  quizId                  Int?
-  requiredPassScore       Int?
-  order                   Int
-  thumbnailUrl            String?
-  thumbnailBlurDataURL    String?
-  learningObjectives      String[]             @default([])
-  keyTakeaways            String[]             @default([])
-  instructorNotes         String?
-  estimatedCompletionTime Int?
-  difficulty              String?
-  tags                    String[]             @default([])
-  relatedResources        Json?
-  isPreview               Boolean              @default(false)
-  createdAt               DateTime             @default(now())
-  updatedAt               DateTime             @updatedAt
-  deletedAt               DateTime?
-  videoAssetId            String?
-  videoAsset              VideoAsset?          @relation("LessonVideoAsset", fields: [videoAssetId], references: [id], onDelete: SetNull)
-  uploadSessions          VideoUploadSession[]
-  module                  Module               @relation(fields: [moduleId], references: [id])
-  progresses              LessonProgress[]
-  quiz                    Quiz?
-
-  @@index([moduleId])
-  @@index([order])
-  @@index([type])
-  @@index([status])
-  @@index([difficulty])
-  @@index([isPreview])
-  @@index([createdAt])
-  @@index([moduleId, order])
-  @@index([moduleId, status])
-  @@index([title])
-  @@index([deletedAt])
-  @@index([quizId])
-}
-
-model Enrollment {
-  id            Int          @id @default(autoincrement())
-  userId        Int
-  progress      Float        @default(0)
-  createdAt     DateTime     @default(now())
-  updatedAt     DateTime     @updatedAt
-  completedAt   DateTime?
-  deletedAt     DateTime?
-  moduleId      String?
-  pathId        String?
-  startedAt     DateTime     @default(now())
-  expiresAt     DateTime?
-  transactionId Int?
-  certificateId String?      @unique
-  certificate   Certificate? @relation(fields: [certificateId], references: [certificateId])
-  module        Module?      @relation(fields: [moduleId], references: [id], onDelete: Restrict)
-  path          Path?        @relation(fields: [pathId], references: [id], onDelete: Restrict)
-  transaction   Transaction? @relation(fields: [transactionId], references: [id])
-  user          User         @relation(fields: [userId], references: [id])
-
-  @@unique([userId, moduleId])
-  @@unique([userId, pathId])
-  @@index([userId])
-  @@index([moduleId])
-  @@index([pathId])
-  @@index([progress])
-  @@index([createdAt])
-  @@index([startedAt])
-  @@index([completedAt])
-  @@index([expiresAt])
-  @@index([deletedAt])
-  @@index([transactionId])
-  @@index([userId, moduleId, completedAt])
-  @@index([userId, pathId, completedAt])
-  @@index([moduleId, userId])
-  @@index([pathId, userId])
-}
-
-model LessonProgress {
-  id          Int       @id @default(autoincrement())
-  userId      Int
-  lessonId    String
-  isCompleted Boolean   @default(false)
-  completedAt DateTime?
-  progress    Float     @default(0.0)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  deletedAt   DateTime?
-  lesson      Lesson    @relation(fields: [lessonId], references: [id])
-  user        User      @relation(fields: [userId], references: [id])
-
-  @@unique([userId, lessonId])
-  @@index([userId])
-  @@index([lessonId])
-  @@index([isCompleted])
-  @@index([completedAt])
-  @@index([progress])
-  @@index([createdAt])
-  @@index([userId, isCompleted])
-  @@index([lessonId, isCompleted])
-  @@index([userId, lessonId, completedAt])
-}
-
-model Quiz {
-  id                    Int            @id @default(autoincrement())
-  lessonId              String?        @unique
-  title                 String
-  description           String?
-  passingScore          Int            @default(90)
-  timeLimitMinutes      Int            @default(30)
-  allowRetake           Boolean        @default(true)
-  shuffleQuestions      Boolean        @default(true)
-  createdAt             DateTime       @default(now())
-  updatedAt             DateTime       @updatedAt
-  deletedAt             DateTime?
-  retakeCooldownMinutes Int            @default(60)
-  lesson                Lesson?        @relation(fields: [lessonId], references: [id])
-  attempts              QuizAttempt[]
-  questions             QuizQuestion[]
-
-  @@index([lessonId])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([title])
-}
-
-model QuizQuestion {
-  id            Int              @id @default(autoincrement())
-  quizId        Int
-  question      String
-  questionType  QuizQuestionType @default(MULTIPLE_CHOICE)
-  options       Json?
-  correctAnswer String?
-  explanation   String?
-  points        Int              @default(10)
-  order         Int              @default(0)
-  createdAt     DateTime         @default(now())
-  updatedAt     DateTime         @updatedAt
-  deletedAt     DateTime?
-  quiz          Quiz             @relation(fields: [quizId], references: [id], onDelete: Cascade)
-  userAnswers   QuizUserAnswer[]
-
-  @@index([quizId])
-  @@index([order])
-  @@index([questionType])
-  @@index([points])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([quizId, order])
-}
-
-model QuizAttempt {
-  id          Int              @id @default(autoincrement())
-  userId      Int
-  quizId      Int
-  score       Float
-  isPassed    Boolean          @default(false)
-  timeSpent   Int?
-  startedAt   DateTime         @default(now())
-  completedAt DateTime?
-  createdAt   DateTime         @default(now())
-  updatedAt   DateTime         @updatedAt
-  deletedAt   DateTime?
-  quiz        Quiz             @relation(fields: [quizId], references: [id], onDelete: Cascade)
-  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userAnswers QuizUserAnswer[]
-
-  @@index([userId])
-  @@index([quizId])
-  @@index([score])
-  @@index([isPassed])
-  @@index([startedAt])
-  @@index([completedAt])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([userId, quizId])
-  @@index([userId, isPassed])
-  @@index([quizId, isPassed])
-  @@index([userId, quizId, completedAt])
-}
-
-model QuizUserAnswer {
-  id             Int          @id @default(autoincrement())
-  attemptId      Int
-  questionId     Int
-  selectedAnswer String?
-  isCorrect      Boolean      @default(false)
-  pointsEarned   Float        @default(0)
-  timeSpent      Int?
-  createdAt      DateTime     @default(now())
-  updatedAt      DateTime     @updatedAt
-  deletedAt      DateTime?
-  attempt        QuizAttempt  @relation(fields: [attemptId], references: [id], onDelete: Cascade)
-  question       QuizQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
-
-  @@unique([attemptId, questionId])
-  @@index([attemptId])
-  @@index([questionId])
-  @@index([isCorrect])
-  @@index([pointsEarned])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([attemptId, isCorrect])
-}
-
-model Certificate {
-  id               Int         @id @default(autoincrement())
-  userId           Int
-  moduleId         String?
-  fileUrl          String
-  issuedAt         DateTime    @default(now())
-  metadata         Json?
-  createdAt        DateTime    @default(now())
-  deletedAt        DateTime?
-  pathId           String?
-  certificateId    String      @unique @default(uuid())
-  digitalSignature String?
-  qrCodeUrl        String?
-  revokedAt        DateTime?
-  verificationUrl  String?
-  module           Module?     @relation(fields: [moduleId], references: [id], onDelete: Restrict)
-  path             Path?       @relation(fields: [pathId], references: [id], onDelete: Restrict)
-  user             User        @relation(fields: [userId], references: [id])
-  enrollment       Enrollment?
-
-  @@index([certificateId])
-  @@index([userId])
-  @@index([moduleId])
-  @@index([pathId])
-  @@index([issuedAt])
-  @@index([userId, moduleId])
-  @@index([userId, pathId])
-  @@index([deletedAt])
-  @@index([createdAt])
-  @@index([revokedAt])
-}
-
-model Project {
-  id               Int           @id @default(autoincrement())
-  title            String
-  description      String?
-  createdAt        DateTime      @default(now())
-  updatedAt        DateTime      @updatedAt
-  deletedAt        DateTime?
-  organizationId   Int?
-  ownerId          Int?
-  skills           String[]      @default([])
-  /// See User.search_vector — maintained by SQL, declared to protect it.
-  search_vector    Unsupported("tsvector")?
-  budget           Int?
-  currency         String        @default("DZD")
-  featured         Boolean       @default(false)
-  featuredBoost    Float         @default(0.0) // decayable boost score (1.0 → 0 over 7d)
-  featureExpiresAt DateTime?
-  status           ProjectStatus @default(OPEN)
-  contracts        Contract[]
-  organization     Organization? @relation(fields: [organizationId], references: [id], onDelete: Restrict)
-  owner            User?         @relation(fields: [ownerId], references: [id], onDelete: Restrict)
-  proposals        Proposal[]
-
-  @@index([search_vector], map: "project_search_idx", type: Gin)
-  @@index([status, createdAt])
-  @@index([ownerId, status])
-  @@index([skills])
-  @@index([createdAt])
-  @@index([title, description])
-  @@index([organizationId])
-  @@index([deletedAt])
-  @@index([organizationId, status])
-  @@index([budget])
-}
-
-model Proposal {
-  id           Int            @id @default(autoincrement())
-  projectId    Int
-  freelancerId Int?
-  message      String?
-  amount       Int?
-  createdAt    DateTime       @default(now())
-  updatedAt    DateTime       @updatedAt
-  deletedAt    DateTime?
-  currency     String         @default("DZD")
-  status       ProposalStatus @default(PENDING)
-  freelancer   User?          @relation(fields: [freelancerId], references: [id], onDelete: Restrict)
-  project      Project        @relation(fields: [projectId], references: [id])
-
-  @@index([projectId, status])
-  @@index([freelancerId, status])
-  @@index([status, createdAt])
-  @@index([amount])
-  @@index([projectId, freelancerId])
-  @@index([createdAt])
-  @@index([deletedAt])
-}
-
-model Contract {
-  id                  Int                 @id @default(autoincrement())
-  projectId           Int
-  freelancerId        Int?
-  clientId            Int?
-  terms               String?
-  startDate           DateTime?
-  endDate             DateTime?
-  createdAt           DateTime            @default(now())
-  updatedAt           DateTime            @updatedAt
-  deletedAt           DateTime?
-  amount              Int? // informational only — payment is off-platform
-  currency            String              @default("DZD")
-  freelancerProfileId Int?
-  status              ContractStatus      @default(DRAFT)
-  client              User?               @relation("ContractClient", fields: [clientId], references: [id], onDelete: Restrict)
-  freelancer          User?               @relation(fields: [freelancerId], references: [id], onDelete: Restrict)
-  freelancerProfile   FreelancerProfile?  @relation(fields: [freelancerProfileId], references: [id])
-  project             Project             @relation(fields: [projectId], references: [id])
-  dispute             Dispute?
-  deliveries          Delivery[]
-  milestones          ContractMilestone[]
-  escrowHold          EscrowHold? // @deprecated — preserved for future PSP-backed marketplace
-  transactions        Transaction[]
-  reviews             ContractReview[]
-  mailThreads         MailThread[]        @relation("ContractMailThreads")
-  mailMessages        MailMessage[]
-
-  @@index([freelancerId, status])
-  @@index([clientId, status])
-  @@index([projectId])
-  @@index([status, createdAt])
-  @@index([startDate])
-  @@index([endDate])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([clientId, freelancerId])
-  @@index([projectId, status])
-  @@index([amount])
-  @@index([freelancerProfileId])
-}
-
-model Delivery {
-  id          Int                @id @default(autoincrement())
-  contractId  Int
-  description String?
-  deliveredAt DateTime           @default(now())
-  files       Json?
-  createdAt   DateTime           @default(now())
-  deletedAt   DateTime?
-  contract    Contract           @relation(fields: [contractId], references: [id])
-  milestoneId Int?
-  milestone   ContractMilestone? @relation(fields: [milestoneId], references: [id])
-
-  @@index([contractId])
-  @@index([deliveredAt])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([milestoneId])
-}
-
-model ContractMilestone {
-  id                     Int                 @id @default(autoincrement())
-  contractId             Int
-  title                  String
-  amount                 Int
-  currency               String              @default("DZD")
-  dueDate                DateTime?
-  deliverables           Json?
-  status                 MilestoneStatus     @default(PENDING)
-  order                  Int                 @default(0)
-  createdAt              DateTime            @default(now())
-  updatedAt              DateTime            @updatedAt
-  deliveredAt            DateTime?
-  approvedAt             DateTime?
-  disputedAt             DateTime?
-  contract               Contract            @relation(fields: [contractId], references: [id], onDelete: Cascade)
-  deliveries             Delivery[]
-  dispute                Dispute?            @relation("MilestoneDispute")
-  settlementMethod       SettlementMethod?
-  settlementReference    String?
-  deliverableKeyReleased Boolean             @default(false)
-  releasedAt             DateTime?
-  submissions            ProjectSubmission[]
-
-  @@index([contractId])
-  @@index([status])
-  @@index([order])
-  @@index([dueDate])
-  @@index([settlementReference])
-}
-
 enum MilestoneStatus {
   PENDING
   DELIVERED
@@ -1232,10 +529,8 @@ model Transaction {
   walletId             Int?
   webhookAttempts      Int                 @default(0)
   webhookUrl           String?
-  enrollments          Enrollment[]
   idempotencyKeys      IdempotencyKey[]
   paymentWebhookLogs   PaymentWebhookLog[]
-  contract             Contract?           @relation(fields: [contractId], references: [id])
   escrowHold           EscrowHold?         @relation(fields: [escrowHoldId], references: [id])
   organization         Organization?       @relation(fields: [organizationId], references: [id], onDelete: Restrict)
   parentTransaction    Transaction?        @relation("TransactionChildren", fields: [parentTransactionId], references: [id])
@@ -1243,8 +538,6 @@ model Transaction {
   subscription         Subscription?       @relation(fields: [subscriptionId], references: [id])
   user                 User?               @relation(fields: [userId], references: [id], onDelete: Restrict)
   wallet               Wallet?             @relation(fields: [walletId], references: [id])
-  liveSession          LiveSession?        @relation("LiveSessionTransaction")
-  liveSessionBooking   LiveSessionBooking? @relation("LiveSessionBookingTransaction")
 
   @@index([userId])
   @@index([organizationId])
@@ -1405,518 +698,6 @@ model UserSkill {
   @@index([createdAt])
 }
 
-model DataConnector {
-  id                Int          @id @default(autoincrement())
-  name              String
-  engine            String       @default("postgres")
-  encryptedHost     String
-  port              Int          @default(5432)
-  databaseName      String
-  encryptedUsername String
-  encryptedPassword String
-  ssl               Boolean      @default(false)
-  organizationId    Int
-  createdById       Int
-  createdAt         DateTime     @default(now())
-  updatedAt         DateTime     @updatedAt
-  organization      Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  createdBy         User         @relation(fields: [createdById], references: [id], onDelete: Restrict)
-  datasets          Dataset[]
-
-  @@index([organizationId])
-  @@index([createdById])
-  @@index([engine])
-  @@index([createdAt])
-}
-
-model SemanticModel {
-  id             Int          @id @default(autoincrement())
-  name           String
-  description    String?
-  datasetId      Int
-  organizationId Int
-  config         Json?
-  dimensions     Json?
-  measures       Json?
-  createdAt      DateTime     @default(now())
-  updatedAt      DateTime     @updatedAt
-  dataset        Dataset      @relation(fields: [datasetId], references: [id], onDelete: Cascade)
-  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  widgets        Widget[]
-
-  @@index([datasetId])
-  @@index([organizationId])
-  @@index([createdAt])
-}
-
-model RowLevelPolicy {
-  id             Int          @id @default(autoincrement())
-  name           String
-  datasetId      Int
-  organizationId Int
-  role           String       @default("VIEWER")
-  userAttribute  String?
-  columnName     String
-  operator       String       @default("eq")
-  valuePredicate String
-  isActive       Boolean      @default(true)
-  createdAt      DateTime     @default(now())
-  updatedAt      DateTime     @updatedAt
-  dataset        Dataset      @relation(fields: [datasetId], references: [id], onDelete: Cascade)
-  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-
-  @@index([datasetId])
-  @@index([organizationId])
-  @@index([role])
-  @@index([isActive])
-}
-
-model Dataset {
-  id                 Int                 @id @default(autoincrement())
-  description        String?
-  userId             Int?
-  createdAt          DateTime            @default(now())
-  updatedAt          DateTime            @updatedAt
-  deletedAt          DateTime?
-  filePath           String?
-  storageBucket      String?
-  storageKey         String?
-  connectorId        Int?
-  metadata           Json?
-  name               String
-  organizationId     Int?
-  previewRows        Json?
-  processingStatus   DatasetStatus       @default(PENDING)
-  sourceType         String
-  sourceUrl          String?
-  schema_            Json?
-  columnCount        Int?
-  columns            Json?
-  domain             String?
-  fileSize           Int?
-  format             String?
-  originalFilename   String?
-  processedAt        DateTime?
-  qualityScore       Float?
-  rowCount           Int?
-  status             String?
-  connector          DataConnector?      @relation(fields: [connectorId], references: [id], onDelete: SetNull)
-  dashboardLinks     DashboardDataset[]
-  organization       Organization?       @relation(fields: [organizationId], references: [id], onDelete: Restrict)
-  ownerUser          User?               @relation(fields: [userId], references: [id], onDelete: Restrict)
-  mlModels           MLModel[]
-  qualityIssues      QualityIssue[]
-  qualityAssessments QualityAssessment[]
-  widgets            Widget[]
-  biAuditLogs        BiAuditLog[]
-  decisions          Decision[]
-  semanticModels     SemanticModel[]
-  rowLevelPolicies   RowLevelPolicy[]
-  departmentId       Int?
-  department         Department?         @relation(fields: [departmentId], references: [id], onDelete: SetNull)
-
-  @@index([processingStatus])
-  @@index([userId])
-  @@index([organizationId])
-  @@index([departmentId])
-  @@index([connectorId])
-  @@index([createdAt])
-  @@index([name])
-  @@index([deletedAt])
-  @@index([userId, processingStatus])
-  @@index([domain])
-  @@index([format])
-  @@index([sourceType])
-  @@index([status])
-  @@index([organizationId, status])
-  @@index([organizationId, createdAt])
-}
-
-model Dashboard {
-  id              Int                  @id @default(autoincrement())
-  title           String
-  description     String?
-  createdAt       DateTime             @default(now())
-  updatedAt       DateTime             @updatedAt
-  deletedAt       DateTime?
-  organizationId  Int?
-  ownerId         Int?
-  config          Json?
-  layout          Json?
-  theme           Json?
-  isPublic        Boolean              @default(false)
-  isTemplate      Boolean              @default(false)
-  folderId        Int?
-  refreshInterval Int?
-  tags            String[]             @default([])
-  organization    Organization?        @relation(fields: [organizationId], references: [id], onDelete: Restrict)
-  ownerUser       User?                @relation(fields: [ownerId], references: [id], onDelete: Restrict)
-  datasetLinks    DashboardDataset[]
-  insights        Insight[]
-  widgets         Widget[]
-  reports         Report[]
-  comments        DashboardComment[]
-  bookmarks       DashboardBookmark[]
-  snapshots       DashboardSnapshot[]
-  shareLinks      DashboardShareLink[]
-  departmentId    Int?
-  department      Department?          @relation(fields: [departmentId], references: [id], onDelete: SetNull)
-
-  @@index([organizationId])
-  @@index([departmentId])
-  @@index([ownerId])
-  @@index([createdAt])
-  @@index([title])
-  @@index([deletedAt])
-  @@index([organizationId, ownerId])
-  @@index([organizationId, createdAt])
-}
-
-model DashboardDataset {
-  id          Int       @id @default(autoincrement())
-  dashboardId Int
-  datasetId   Int
-  addedAt     DateTime  @default(now())
-  dashboard   Dashboard @relation(fields: [dashboardId], references: [id])
-  dataset     Dataset   @relation(fields: [datasetId], references: [id])
-
-  @@unique([dashboardId, datasetId])
-  @@index([dashboardId])
-  @@index([datasetId])
-  @@index([addedAt])
-}
-
-model Widget {
-  id              Int                @id @default(autoincrement())
-  dashboardId     Int?
-  datasetId       Int?
-  semanticModelId Int?
-  type            WidgetType
-  config          Json
-  order           Int                @default(0)
-  createdAt       DateTime           @default(now())
-  updatedAt       DateTime           @updatedAt
-  deletedAt       DateTime?
-  description     String?
-  h               Int                @default(4)
-  minH            Int?
-  minW            Int?
-  name            String?
-  w               Int                @default(4)
-  x               Int                @default(0)
-  y               Int                @default(0)
-  dashboard       Dashboard?         @relation(fields: [dashboardId], references: [id], onDelete: Restrict)
-  dataset         Dataset?           @relation(fields: [datasetId], references: [id], onDelete: Restrict)
-  semanticModel   SemanticModel?     @relation(fields: [semanticModelId], references: [id], onDelete: SetNull)
-  comments        DashboardComment[]
-
-  @@index([dashboardId])
-  @@index([datasetId])
-  @@index([semanticModelId])
-  @@index([type])
-  @@index([order])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([dashboardId, order])
-}
-
-model DashboardComment {
-  id           Int       @id @default(autoincrement())
-  dashboardId  Int
-  widgetId     Int?
-  authorId     Int
-  parentId     Int?
-  content      String
-  positionX    Float?
-  positionY    Float?
-  isResolved   Boolean   @default(false)
-  resolvedById Int?
-  resolvedAt   DateTime?
-  metadata     Json?
-  createdAt    DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
-  deletedAt    DateTime?
-
-  dashboard  Dashboard          @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
-  widget     Widget?            @relation(fields: [widgetId], references: [id], onDelete: Cascade)
-  author     User               @relation("CommentAuthor", fields: [authorId], references: [id])
-  resolvedBy User?              @relation("CommentResolver", fields: [resolvedById], references: [id])
-  parent     DashboardComment?  @relation("ThreadReplies", fields: [parentId], references: [id], onDelete: Cascade)
-  replies    DashboardComment[] @relation("ThreadReplies")
-
-  @@index([dashboardId, isResolved])
-  @@index([widgetId])
-  @@index([authorId])
-  @@index([parentId])
-}
-
-model DashboardBookmark {
-  id          Int      @id @default(autoincrement())
-  dashboardId Int
-  userId      Int
-  name        String   @db.VarChar(120)
-  description String?  @db.VarChar(255)
-  isShared    Boolean  @default(false)
-  isDefault   Boolean  @default(false)
-  filterState Json
-  layoutState Json?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  dashboard Dashboard @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
-  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([dashboardId, userId])
-  @@index([dashboardId, isShared])
-}
-
-model DashboardSnapshot {
-  id           Int      @id @default(autoincrement())
-  dashboardId  Int
-  createdById  Int
-  name         String
-  notes        String?
-  filterState  Json
-  frozenData   Json
-  thumbnailUrl String?
-  createdAt    DateTime @default(now())
-
-  dashboard Dashboard @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
-  createdBy User      @relation(fields: [createdById], references: [id])
-
-  @@index([dashboardId, createdAt])
-}
-
-model DashboardShareLink {
-  id             Int       @id @default(autoincrement())
-  dashboardId    Int
-  token          String    @unique @db.VarChar(64)
-  passwordHash   String?   @db.VarChar(255)
-  expiresAt      DateTime?
-  maxViews       Int?
-  viewCount      Int       @default(0)
-  canFilter      Boolean   @default(true)
-  canExport      Boolean   @default(false)
-  defaultFilters Json?
-  isRevoked      Boolean   @default(false)
-  createdById    Int
-  createdAt      DateTime  @default(now())
-  lastAccessedAt DateTime?
-
-  dashboard Dashboard @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
-  createdBy User      @relation(fields: [createdById], references: [id])
-
-  @@index([token, isRevoked])
-  @@index([dashboardId])
-}
-
-model Insight {
-  id          Int       @id @default(autoincrement())
-  dashboardId Int
-  userId      Int?
-  content     String
-  metadata    Json?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  deletedAt   DateTime?
-  dashboard   Dashboard @relation(fields: [dashboardId], references: [id])
-  author      User?     @relation(fields: [userId], references: [id], onDelete: Restrict)
-
-  @@index([dashboardId])
-  @@index([userId])
-  @@index([createdAt])
-  @@index([deletedAt])
-  @@index([dashboardId, userId])
-}
-
-model MLModel {
-  id        Int       @id @default(autoincrement())
-  datasetId Int
-  creatorId Int?
-  name      String
-  type      String
-  modelPath String?
-  metrics   Json?
-  params    Json?
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  deletedAt DateTime?
-  creator   User?     @relation("MLModelCreator", fields: [creatorId], references: [id], onDelete: Restrict)
-  dataset   Dataset   @relation(fields: [datasetId], references: [id])
-
-  @@index([datasetId])
-  @@index([creatorId])
-  @@index([type])
-  @@index([createdAt])
-  @@index([name])
-  @@index([deletedAt])
-  @@index([datasetId, creatorId])
-}
-
-model Decision {
-  id              Int               @id @default(autoincrement())
-  title           String
-  description     String?
-  status          String            @default("draft")
-  impactLevel     String            @default("medium")
-  rationale       String?
-  expectedOutcome String?
-  actualOutcome   String?
-  datasetId       Int?
-  ownerId         Int
-  organizationId  Int
-  tags            String[]
-  createdAt       DateTime          @default(now())
-  updatedAt       DateTime          @updatedAt
-  organization    Organization      @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  owner           User              @relation(fields: [ownerId], references: [id], onDelete: Restrict)
-  dataset         Dataset?          @relation(fields: [datasetId], references: [id], onDelete: SetNull)
-  history         DecisionHistory[]
-  comments        DecisionComment[]
-
-  @@index([organizationId])
-  @@index([ownerId])
-  @@index([status])
-  @@index([datasetId])
-  @@index([createdAt])
-  @@index([organizationId, status])
-  @@index([organizationId, createdAt])
-}
-
-model DecisionHistory {
-  id          Int      @id @default(autoincrement())
-  decisionId  Int
-  status      String
-  changedById Int
-  notes       String?
-  changedAt   DateTime @default(now())
-  decision    Decision @relation(fields: [decisionId], references: [id], onDelete: Cascade)
-  changedBy   User     @relation(fields: [changedById], references: [id], onDelete: Restrict)
-
-  @@index([decisionId])
-  @@index([changedById])
-}
-
-model DecisionComment {
-  id         Int      @id @default(autoincrement())
-  decisionId Int
-  userId     Int
-  content    String
-  createdAt  DateTime @default(now())
-  decision   Decision @relation(fields: [decisionId], references: [id], onDelete: Cascade)
-  user       User     @relation(fields: [userId], references: [id], onDelete: Restrict)
-
-  @@index([decisionId])
-  @@index([userId])
-}
-
-model Report {
-  id               Int          @id @default(autoincrement())
-  name             String
-  description      String?
-  dashboardId      Int?
-  format           String
-  scheduleType     String       @default("manual")
-  scheduleCron     String?
-  scheduleInterval Int?
-  recipients       String[]
-  isActive         Boolean      @default(true)
-  nextRun          DateTime?
-  createdById      Int
-  organizationId   Int
-  createdAt        DateTime     @default(now())
-  updatedAt        DateTime     @updatedAt
-  organization     Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  createdBy        User         @relation(fields: [createdById], references: [id], onDelete: Restrict)
-  dashboard        Dashboard?   @relation(fields: [dashboardId], references: [id], onDelete: SetNull)
-  runs             ReportRun[]
-
-  @@index([organizationId])
-  @@index([createdById])
-  @@index([dashboardId])
-  @@index([isActive])
-  @@index([scheduleType])
-  @@index([createdAt])
-}
-
-model ReportRun {
-  id             Int       @id @default(autoincrement())
-  reportId       Int
-  status         String    @default("pending")
-  startedAt      DateTime  @default(now())
-  completedAt    DateTime?
-  fileUrl        String?
-  fileSize       Int?
-  errorMessage   String?
-  recipientCount Int       @default(0)
-  report         Report    @relation(fields: [reportId], references: [id], onDelete: Cascade)
-
-  @@index([reportId])
-  @@index([status])
-  @@index([startedAt])
-}
-
-model QualityIssue {
-  id           Int       @id @default(autoincrement())
-  datasetId    Int
-  columnName   String?
-  issueType    String
-  severity     String
-  description  String
-  affectedRows Int
-  percentage   Float
-  status       String    @default("open")
-  resolvedAt   DateTime?
-  createdAt    DateTime  @default(now())
-  dataset      Dataset   @relation(fields: [datasetId], references: [id], onDelete: Cascade)
-
-  @@index([datasetId])
-  @@index([issueType])
-  @@index([severity])
-  @@index([status])
-  @@index([createdAt])
-  @@index([datasetId, status])
-  @@index([datasetId, severity])
-}
-
-model QualityAssessment {
-  id           Int      @id @default(autoincrement())
-  datasetId    Int
-  overallScore Float
-  completeness Float?
-  accuracy     Float?
-  consistency  Float?
-  validity     Float?
-  issuesCount  Int?
-  status       String   @default("completed")
-  createdAt    DateTime @default(now())
-  dataset      Dataset  @relation(fields: [datasetId], references: [id], onDelete: Cascade)
-
-  @@index([datasetId])
-  @@index([createdAt])
-}
-
-model DashboardTemplate {
-  id             Int           @id @default(autoincrement())
-  title          String
-  description    String?
-  category       String        @default("general")
-  config         Json?
-  layout         Json?
-  theme          Json?
-  isOfficial     Boolean       @default(false)
-  organizationId Int?
-  createdById    Int?
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
-  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
-  createdBy      User?         @relation(fields: [createdById], references: [id], onDelete: SetNull)
-
-  @@index([category])
-  @@index([organizationId])
-  @@index([isOfficial])
-}
-
 model ScheduledJob {
   id             Int       @id @default(autoincrement())
   jobType        String
@@ -2009,49 +790,6 @@ enum DisputeStatus {
   UNDER_REVIEW
   RESOLVED
   CANCELLED
-}
-
-model Dispute {
-  id         Int @id @default(autoincrement())
-  contractId Int @unique
-  creatorId  Int // User who opened the dispute
-  opponentId Int // The other party
-
-  reason      DisputeReason
-  description String
-  status      DisputeStatus @default(OPEN)
-
-  // Evidence / Metadata
-  metadata Json? // Links to messages, files, etc.
-
-  // Resolution details
-  resolutionNotes  String?
-  resolutionReason String? // Machine-readable reason code (e.g. "AUTO_TIMEOUT", "ADMIN_RULING")
-  resolvedAt       DateTime?
-  resolvedById     Int? // Admin user who resolved it (null = auto-resolved)
-  autoResolvedAt   DateTime? // Set when Celery auto-resolution fires
-  escalatedAt      DateTime? // Set when dispute is escalated to admin
-
-  // Milestone relation
-  milestoneId Int? @unique
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  // Relations
-  contract     Contract           @relation(fields: [contractId], references: [id])
-  creator      User               @relation("DisputeCreator", fields: [creatorId], references: [id])
-  opponent     User               @relation("DisputeOpponent", fields: [opponentId], references: [id])
-  resolvedBy   User?              @relation("DisputeResolver", fields: [resolvedById], references: [id])
-  milestone    ContractMilestone? @relation("MilestoneDispute", fields: [milestoneId], references: [id])
-  mailThreads  MailThread[]       @relation("DisputeMailThreads")
-  mailMessages MailMessage[]
-
-  @@index([status])
-  @@index([contractId])
-  @@index([createdAt])
-  @@index([autoResolvedAt])
-  @@index([milestoneId])
 }
 
 model NotificationDelivery {
@@ -2249,28 +987,10 @@ model UserIntegration {
   connectedAt  DateTime       @default(now())
   updatedAt    DateTime       @updatedAt
   user         User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  logs         ConnectorLog[]
 
   @@unique([userId, provider])
   @@index([userId])
   @@index([provider])
-}
-
-model ConnectorLog {
-  id                Int             @id @default(autoincrement())
-  userIntegrationId Int
-  provider          String
-  action            String
-  status            String          @default("SUCCESS") // "SUCCESS" | "FAILED"
-  requestPayload    Json?
-  responsePayload   Json?
-  durationMs        Int?
-  createdAt         DateTime        @default(now())
-  userIntegration   UserIntegration @relation(fields: [userIntegrationId], references: [id], onDelete: Cascade)
-
-  @@index([userIntegrationId])
-  @@index([provider, action])
-  @@index([createdAt])
 }
 
 model ApiKey {
@@ -3287,56 +2007,6 @@ enum ReviewReportStatus {
   DISMISSED
 }
 
-model ContractReview {
-  id           Int          @id @default(autoincrement())
-  contractId   Int
-  authorId     Int
-  targetId     Int
-  reviewType   ReviewType
-  rating       Float
-  subRatings   Json
-  comment      String?
-  status       ReviewStatus @default(ACTIVE)
-  isPublic     Boolean      @default(false)
-  lastEditedAt DateTime?
-  editCount    Int          @default(0)
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  contract Contract       @relation(fields: [contractId], references: [id])
-  author   User           @relation("AuthoredReviews", fields: [authorId], references: [id])
-  target   User           @relation("ReceivedReviews", fields: [targetId], references: [id])
-  appeals  ReviewAppeal[]
-  reports  ReviewReport[]
-
-  @@unique([contractId, authorId])
-  @@index([contractId])
-  @@index([authorId])
-  @@index([targetId])
-}
-
-model ReviewAppeal {
-  id              Int          @id @default(autoincrement())
-  reviewId        Int
-  appealerId      Int
-  reason          String
-  status          AppealStatus @default(PENDING)
-  evidenceUrls    String[]     @default([])
-  resolutionNotes String?
-  resolvedAt      DateTime?
-  resolvedById    Int?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  review   ContractReview @relation(fields: [reviewId], references: [id])
-  appealer User           @relation("ReviewAppeals", fields: [appealerId], references: [id])
-
-  @@index([reviewId])
-  @@index([status])
-}
-
 enum PlatformAppealTargetType {
   REVIEW
   COURSE_REJECTION
@@ -3373,66 +2043,6 @@ model PlatformAppeal {
   @@index([appealerId])
   @@index([status])
   @@index([createdAt])
-}
-
-model ReviewReport {
-  id         Int                @id @default(autoincrement())
-  reviewId   Int
-  reporterId Int
-  reason     String
-  status     ReviewReportStatus @default(PENDING)
-  adminNotes String?
-  createdAt  DateTime           @default(now())
-  updatedAt  DateTime           @updatedAt
-
-  review   ContractReview @relation(fields: [reviewId], references: [id])
-  reporter User           @relation("ReviewReports", fields: [reporterId], references: [id])
-
-  @@index([reviewId])
-  @@index([reporterId])
-  @@index([status])
-}
-
-model CourseReview {
-  id        Int      @id @default(autoincrement())
-  userId    Int
-  moduleId  String
-  rating    Int
-  comment   String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  module Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
-
-  @@unique([userId, moduleId])
-  @@index([moduleId])
-}
-
-model BiAuditLog {
-  id                  Int          @id @default(autoincrement())
-  datasetId           Int?
-  organizationId      Int
-  userId              Int
-  eventType           String
-  eventData           Json
-  ipAddress           String?
-  userAgent           String?
-  executionDurationMs Int?
-  rowCount            Int?
-  createdAt           DateTime     @default(now())
-  updatedAt           DateTime?    @updatedAt
-  dataset             Dataset?     @relation(fields: [datasetId], references: [id], onDelete: SetNull)
-  organization        Organization @relation(fields: [organizationId], references: [id], onDelete: Restrict)
-  user                User         @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([datasetId])
-  @@index([organizationId])
-  @@index([userId])
-  @@index([eventType])
-  @@index([createdAt])
-  @@index([organizationId, createdAt])
-  @@index([datasetId, createdAt])
 }
 
 model CrossPillarEvent {
@@ -3699,20 +2309,6 @@ enum LessonStatus {
   ARCHIVED
 }
 
-model SharedInsight {
-  id             Int       @id @default(autoincrement())
-  token          String    @unique @default(cuid())
-  organizationId Int
-  type           String    @default("health")
-  locale         String    @default("en")
-  createdBy      Int?
-  createdAt      DateTime  @default(now())
-  expiresAt      DateTime?
-
-  @@index([token])
-  @@index([expiresAt])
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // LIVE EVENTS / LIVE SESSIONS — Phase 1
 // ─────────────────────────────────────────────────────────────────────────────
@@ -3739,226 +2335,6 @@ enum LiveSessionParticipantRole {
   HOST
   CO_HOST
   PARTICIPANT
-}
-
-model LiveSession {
-  id                String                @id @default(cuid())
-  type              LiveSessionType       @default(COURSE)
-  title             String
-  description       String?
-  thumbnailUrl      String?
-  category          String?
-  tags              String[]              @default([])
-  status            LiveSessionStatus     @default(SCHEDULED)
-  visibility        LiveSessionVisibility @default(PUBLIC)
-  ownerId           Int
-  owner             User                  @relation("LiveSessionOwner", fields: [ownerId], references: [id], onDelete: Restrict)
-  scheduledAt       DateTime
-  startedAt         DateTime?
-  endedAt           DateTime?
-  durationMinutes   Int?
-  maxParticipants   Int?                  @default(100)
-  priceAmount       Int?
-  currency          String                @default("DZD")
-  roomName          String?
-  roomSid           String?
-  roomMetadata      Json?
-  recordingEgressId String?
-  recordingUrl      String?
-  replayUrl         String?
-  replayExpiresAt   DateTime?
-  transactionId     Int?                  @unique
-  transaction       Transaction?          @relation("LiveSessionTransaction", fields: [transactionId], references: [id], onDelete: Restrict)
-  moduleId          String?
-  lessonId          String?
-  contractId        Int?
-  orgOnly           Boolean               @default(false)
-  approvedAt        DateTime?
-  rejectedAt        DateTime?
-  rejectionReason   String?
-  createdAt         DateTime              @default(now())
-  updatedAt         DateTime              @updatedAt
-  deletedAt         DateTime?
-
-  participants    LiveSessionParticipant[]
-  bookings        LiveSessionBooking[]
-  waitlistEntries LiveSessionWaitlist[]
-  coHosts         LiveSessionCoHost[]
-  reviews         LiveSessionReview[]
-  chatMessages    LiveSessionChatMessage[]
-  hostCoupons     HostCoupon[]
-  moduleLinks     LiveSessionModuleLink[]
-
-  @@index([ownerId])
-  @@index([type])
-  @@index([status])
-  @@index([scheduledAt])
-  @@index([category])
-  @@index([visibility, status, scheduledAt])
-  @@index([deletedAt])
-}
-
-model LiveSessionModuleLink {
-  id            Int         @id @default(autoincrement())
-  moduleId      String
-  module        Module      @relation(fields: [moduleId], references: [id], onDelete: Cascade)
-  liveSessionId String
-  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
-  order         Int         @default(0)
-  isRequired    Boolean     @default(true)
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
-
-  @@unique([moduleId, liveSessionId])
-  @@index([moduleId])
-  @@index([liveSessionId])
-  @@index([moduleId, order])
-}
-
-model LiveSessionParticipant {
-  id            Int                        @id @default(autoincrement())
-  liveSessionId String
-  liveSession   LiveSession                @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
-  userId        Int
-  user          User                       @relation(fields: [userId], references: [id], onDelete: Restrict)
-  role          LiveSessionParticipantRole @default(PARTICIPANT)
-  joinedAt      DateTime?
-  leftAt        DateTime?
-  attendancePct Float?
-  metadata      Json?
-  createdAt     DateTime                   @default(now())
-  updatedAt     DateTime                   @updatedAt
-  deletedAt     DateTime?
-
-  @@unique([liveSessionId, userId])
-  @@index([userId])
-  @@index([liveSessionId])
-  @@index([liveSessionId, role])
-  @@index([deletedAt])
-}
-
-model LiveSessionBooking {
-  id              Int          @id @default(autoincrement())
-  liveSessionId   String
-  liveSession     LiveSession  @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
-  userId          Int
-  user            User         @relation(fields: [userId], references: [id], onDelete: Restrict)
-  transactionId   Int?         @unique
-  transaction     Transaction? @relation("LiveSessionBookingTransaction", fields: [transactionId], references: [id], onDelete: Restrict)
-  status          String       @default("confirmed")
-  cancelledAt     DateTime?
-  refundProcessed Boolean      @default(false)
-  attended        Boolean?
-  hostCode        String?
-  metadata        Json?
-  createdAt       DateTime     @default(now())
-  updatedAt       DateTime     @updatedAt
-  deletedAt       DateTime?
-
-  @@unique([liveSessionId, userId])
-  @@index([userId])
-  @@index([liveSessionId])
-  @@index([transactionId])
-  @@index([status])
-  @@index([deletedAt])
-}
-
-model LiveSessionWaitlist {
-  id            Int         @id @default(autoincrement())
-  liveSessionId String
-  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
-  userId        Int
-  user          User        @relation(fields: [userId], references: [id], onDelete: Restrict)
-  notified      Boolean     @default(false)
-  createdAt     DateTime    @default(now())
-  deletedAt     DateTime?
-
-  @@unique([liveSessionId, userId])
-  @@index([liveSessionId])
-  @@index([userId])
-  @@index([deletedAt])
-}
-
-model LiveSessionChatMessage {
-  id            Int         @id @default(autoincrement())
-  liveSessionId String
-  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
-  userId        Int
-  user          User        @relation(fields: [userId], references: [id], onDelete: Restrict)
-  message       String
-  messageType   String      @default("chat")
-  createdAt     DateTime    @default(now())
-
-  @@index([liveSessionId, createdAt])
-  @@index([liveSessionId, messageType])
-}
-
-model LiveSessionReview {
-  id            Int         @id @default(autoincrement())
-  liveSessionId String
-  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
-  userId        Int
-  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  rating        Int
-  comment       String?
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
-
-  @@unique([liveSessionId, userId])
-  @@index([liveSessionId])
-  @@index([userId])
-}
-
-model LiveSessionCoHost {
-  id            Int         @id @default(autoincrement())
-  liveSessionId String
-  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
-  userId        Int
-  user          User        @relation(fields: [userId], references: [id], onDelete: Restrict)
-  permissions   String      @default("all")
-  createdAt     DateTime    @default(now())
-  deletedAt     DateTime?
-
-  @@unique([liveSessionId, userId])
-  @@index([liveSessionId])
-  @@index([userId])
-  @@index([deletedAt])
-}
-
-model HostCoupon {
-  id              Int          @id @default(autoincrement())
-  code            String       @unique
-  creatorId       Int
-  creator         User         @relation(fields: [creatorId], references: [id], onDelete: Cascade)
-  liveSessionId   String?
-  liveSession     LiveSession? @relation(fields: [liveSessionId], references: [id], onDelete: SetNull)
-  maxRedemptions  Int          @default(1)
-  redemptionCount Int          @default(0)
-  expiresAt       DateTime?
-  createdAt       DateTime     @default(now())
-  deletedAt       DateTime?
-
-  @@index([creatorId])
-  @@index([code])
-  @@index([liveSessionId])
-  @@index([deletedAt])
-}
-
-model PortfolioItem {
-  id          Int      @id @default(autoincrement())
-  userId      Int
-  title       String
-  description String?
-  mediaUrls   String[] @default([])
-  tags        String[] @default([])
-  links       Json?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([userId])
-  @@index([userId, createdAt])
 }
 
 model PromoCode {
@@ -4080,7 +2456,6 @@ model VideoAsset {
   errorReason        String?
   renditions         VideoRendition[]
   uploadSessions     VideoUploadSession[]
-  lessons            Lesson[]             @relation("LessonVideoAsset")
   metadata           Json?
   createdAt          DateTime             @default(now())
   updatedAt          DateTime             @updatedAt
@@ -4135,7 +2510,6 @@ model VideoUploadSession {
   updatedAt          DateTime            @updatedAt
 
   user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  lesson     Lesson?     @relation(fields: [lessonId], references: [id], onDelete: SetNull)
   videoAsset VideoAsset? @relation(fields: [videoAssetId], references: [id], onDelete: SetNull)
 
   @@index([userId])
@@ -4244,23 +2618,6 @@ model UserKyc {
   @@index([userId])
   @@index([status])
   @@index([anaeCardNumber])
-}
-
-model ProjectSubmission {
-  id                Int               @id @default(autoincrement())
-  milestoneId       Int
-  deliverableUrl    String
-  encryptionKeyHash String?
-  submissionNotes   String?
-  clientFeedback    String?
-  submittedAt       DateTime          @default(now())
-  approvedAt        DateTime?
-  createdAt         DateTime          @default(now())
-  updatedAt         DateTime          @updatedAt
-  milestone         ContractMilestone @relation(fields: [milestoneId], references: [id], onDelete: Cascade)
-
-  @@index([milestoneId])
-  @@index([submittedAt])
 }
 
 // =============================================================================
@@ -4649,10 +3006,7 @@ model MailThread {
   messages    MailMessage[]
 
   ticket   Ticket?   @relation("TicketMailThreads", fields: [ticketId], references: [id], onDelete: SetNull)
-  contract Contract? @relation("ContractMailThreads", fields: [contractId], references: [id], onDelete: SetNull)
-  dispute  Dispute?  @relation("DisputeMailThreads", fields: [disputeId], references: [id], onDelete: SetNull)
   invoice  Invoice?  @relation("InvoiceMailThreads", fields: [invoiceId], references: [id], onDelete: SetNull)
-  module   Module?   @relation("ModuleMailThreads", fields: [moduleId], references: [id], onDelete: SetNull)
 
   @@index([mailAccountId])
   @@index([mailAccountId, lastMessageAt])
@@ -4711,10 +3065,7 @@ model MailMessage {
   attachments MailAttachment[]
 
   ticket   Ticket?   @relation(fields: [ticketId], references: [id], onDelete: SetNull)
-  contract Contract? @relation(fields: [contractId], references: [id], onDelete: SetNull)
-  dispute  Dispute?  @relation(fields: [disputeId], references: [id], onDelete: SetNull)
   invoice  Invoice?  @relation(fields: [invoiceId], references: [id], onDelete: SetNull)
-  module   Module?   @relation(fields: [moduleId], references: [id], onDelete: SetNull)
 
   @@index([mailAccountId])
   @@index([mailboxId])
@@ -5072,8 +3423,6 @@ model Department {
 
   organization Organization         @relation(fields: [organizationId], references: [id], onDelete: Cascade)
   members      OrganizationMember[]
-  datasets     Dataset[]
-  dashboards   Dashboard[]
 
   @@unique([organizationId, slug])
   @@index([organizationId])
@@ -5193,3 +3542,88 @@ model CompanyReview {
   @@index([reviewerId])
 }
 
+
+enum CampaignStatus {
+  DRAFT
+  PENDING_REVIEW
+  ACTIVE_SIMULATION
+  FUNDED_SIMULATION
+  CLOSED
+}
+
+enum AnalystLevel {
+  NOVICE
+  SCOUT
+  ANALYST
+  PARTNER
+}
+
+model Startup {
+  id              String         @id @default(uuid())
+  name            String
+  tagline         String
+  description     String
+  logoUrl         String?
+  pitchDeckUrl    String?
+  videoPitchUrl   String?
+  founderId       Int
+  founder         User           @relation(fields: [founderId], references: [id])
+  wilaya          Int
+  sector          String
+  hasAsfLabel     Boolean        @default(false)
+  campaigns       Campaign[]
+  dueDiligence    CommunityScore[]
+  hypeScore       Float          @default(0.0)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+}
+
+model Campaign {
+  id              String         @id @default(uuid())
+  startupId       String
+  startup         Startup        @relation(fields: [startupId], references: [id])
+  targetAmountDzd Int
+  raisedAmountDzd Int            @default(0)
+  minTicketDzd    Int            @default(5000)
+  status          CampaignStatus @default(ACTIVE_SIMULATION)
+  startDate       DateTime       @default(now())
+  endDate         DateTime
+  pledges         VirtualPledge[]
+}
+
+model VirtualPledge {
+  id              String         @id @default(uuid())
+  campaignId      String
+  campaign        Campaign       @relation(fields: [campaignId], references: [id])
+  userId          Int
+  user            User           @relation(fields: [userId], references: [id])
+  amountDzd       Int
+  equitySharePct  Float?
+  createdAt       DateTime       @default(now())
+}
+
+model CommunityScore {
+  id              String         @id @default(uuid())
+  startupId       String
+  startup         Startup        @relation(fields: [startupId], references: [id])
+  userId          Int
+  user            User           @relation(fields: [userId], references: [id])
+  analystLevel    AnalystLevel   @default(NOVICE)
+  marketScore     Int
+  teamScore       Int
+  tractionScore   Int
+  feedback        String?
+  createdAt       DateTime       @default(now())
+
+  @@unique([startupId, userId])
+}
+
+model FinancialQuizResult {
+  id              String         @id @default(uuid())
+  userId          Int
+  user            User           @relation(fields: [userId], references: [id])
+  moduleIndex     Int
+  score           Int
+  passed          Boolean
+  completedAt     DateTime       @default(now())
+}
