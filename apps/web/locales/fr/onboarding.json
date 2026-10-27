@@ -1,0 +1,104 @@
+{
+    "onboarding": {
+        "title": "Parlez-nous de vous",
+        "subtitle": "Aidez-nous à personnaliser votre expérience",
+        "progress": "Étape {current} sur {total}",
+        "buttons": {
+            "next": "Suivant",
+            "back": "Retour",
+            "skip": "Passer pour le moment",
+            "submit": "Commencer",
+            "submitting": "Mise en place..."
+        },
+        "questions": {
+            "role": {
+                "title": "Quel est votre rôle principal ?",
+                "subtitle": "Cela nous aide à adapter le contenu à vos besoins",
+                "options": {
+                    "student": "Étudiant(e)",
+                    "professional": "Professionnel(le)",
+                    "freelancer": "Freelance",
+                    "entrepreneur": "Entrepreneur(e)",
+                    "researcher": "Chercheur(euse)",
+                    "instructor": "Enseignant(e) / Instructeur(trice)",
+                    "other": "Autre"
+                }
+            },
+            "primaryGoal": {
+                "title": "Quel est votre objectif principal sur Podacium ?",
+                "subtitle": "Nous vous guiderons vers les bonnes fonctionnalités",
+                "options": {
+                    "learn": "Acquérir de nouvelles compétences",
+                    "freelance": "Trouver du travail en freelance",
+                    "hire": "Recruter des talents",
+                    "analyze": "Analyser des données métier",
+                    "teach": "Créer et vendre des cours",
+                    "explore": "Simple découverte"
+                }
+            },
+            "experienceLevel": {
+                "title": "Quel est votre niveau d'expérience ?",
+                "subtitle": "Afin de vous recommander le bon point de départ",
+                "options": {
+                    "beginner": "Débutant(e)",
+                    "intermediate": "Intermédiaire",
+                    "advanced": "Avancé(e)",
+                    "expert": "Expert(e)"
+                }
+            },
+            "fieldOfInterest": {
+                "title": "Quel domaine vous intéresse le plus ?",
+                "subtitle": "Nous mettrons en avant le contenu pertinent",
+                "options": {
+                    "software": "Développement logiciel",
+                    "data": "Data Science et IA",
+                    "design": "Design et Créatif",
+                    "business": "Business et Marketing",
+                    "finance": "Finance et Comptabilité",
+                    "other": "Autre"
+                }
+            },
+            "weeklyTime": {
+                "title": "Combien de temps pouvez-vous y consacrer par semaine ?",
+                "subtitle": "Nous adapterons votre rythme d'apprentissage",
+                "options": {
+                    "lessThan2": "Moins de 2 heures",
+                    "2to5": "2 à 5 heures",
+                    "5to10": "5 à 10 heures",
+                    "moreThan10": "Plus de 10 heures"
+                }
+            },
+            "discoverySource": {
+                "title": "Comment avez-vous découvert Podacium ?",
+                "subtitle": "Cela nous aide à développer notre communauté",
+                "options": {
+                    "search": "Moteur de recherche",
+                    "social": "Réseaux sociaux",
+                    "friend": "Ami(e) ou collègue",
+                    "ad": "Publicité en ligne",
+                    "event": "Conférence ou événement",
+                    "other": "Autre"
+                }
+            },
+            "openAnswer": {
+                "title": "Autre chose à partager ?",
+                "subtitle": "Optionnel — dites-nous ce que vous espérez accomplir",
+                "placeholder": "Partagez vos réflexions..."
+            },
+            "skills": {
+                "title": "Quelles sont vos compétences ?",
+                "subtitle": "Sélectionnez les compétences qui décrivent le mieux votre expertise",
+                "placeholder": "Rechercher des compétences...",
+                "selected": "Sélectionné ({count})"
+            }
+        },
+        "completion": {
+            "title": "Tout est prêt !",
+            "subtitle": "Redirection vers votre tableau de bord..."
+        },
+        "errors": {
+            "submitFailed": "Une erreur s'est produite. Veuillez réessayer.",
+            "skipFailed": "Impossible de passer l'intégration. Veuillez réessayer."
+        }
+    }
+}

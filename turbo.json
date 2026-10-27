@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"],
+      "inputs": ["src/**", "public/**", "next.config.js", "tsconfig.json", "package.json"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "inputs": ["src/**/*.{ts,tsx}", "eslint.config.mjs"],
+      "outputs": []
+    },
+    "test": {
+      "inputs": ["src/**/*.{ts,tsx}", "vitest.config.ts"],
+      "outputs": ["coverage/**"]
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

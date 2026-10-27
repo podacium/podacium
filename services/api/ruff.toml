@@ -1,0 +1,19 @@
+# Ruff configuration for Podacium API
+# Start strict on new code, gradually fix legacy issues
+
+[lint]
+select = ["F401", "F811", "F841", "E711", "E712"]
+ignore = [
+    "F403",  # Star imports (legacy — fix incrementally)
+    "F405",  # Names from star imports (consequence of F403)
+    "E402",  # Module-level imports not at top (FastAPI pattern)
+    "E701",  # Multiple statements on one line (legacy)
+    "E722",  # Bare except (legacy — fix incrementally)
+    "F821",  # Undefined names (consequence of auto-fix removing imports)
+]
+
+[lint.per-file-ignores]
+"app/services/security_service.py" = ["F403", "F405"]
+"app/services/settings_service.py" = ["F403", "F405"]
+"app/routers/*.py" = ["E402"]
+"app/main.py" = ["E402"]

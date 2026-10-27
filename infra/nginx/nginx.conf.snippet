@@ -1,0 +1,5 @@
+# Add this to /etc/nginx/nginx.conf inside the http { ... } block,
+# BEFORE the include /etc/nginx/conf.d/*.conf; line
+
+# Rate Limiting Zone for API Backend (100 req/s per IP)
+limit_req_zone $binary_remote_addr zone=api_limit:10m rate=100r/s;

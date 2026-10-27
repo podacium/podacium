@@ -1,0 +1,12 @@
+.venv/
+venv/
+node_modules/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+build/
+dist/
+services/api/podacium/
+services/api/app/generated/
+apps/web/.next/
+apps/web/node_modules/

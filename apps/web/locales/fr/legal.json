@@ -1,0 +1,1826 @@
+{
+  "terms": {
+    "hero": {
+      "badge": "Documentation Juridique",
+      "title": "Conditions Générales d'Utilisation",
+      "description": "Veuillez lire attentivement ces conditions avant d'utiliser Podacium. En accédant à notre plateforme, vous acceptez d'être lié par ces conditions.",
+      "sections": "Sections",
+      "effectiveDate": "Date d'Entrée en Vigueur",
+      "version": "Version"
+    },
+    "effectiveDate": "Date d'Entrée en Vigueur",
+    "lastUpdated": "Dernière Mise à Jour",
+    "version": "Version",
+    "sections": {
+      "introduction": "1. Introduction et Acceptation",
+      "introductionDesc": "Accord juridique entre vous et Podacium SARL",
+      "definitions": "2. Définitions",
+      "definitionsDesc": "Termes clés utilisés dans ces Conditions Générales",
+      "eligibility": "3. Éligibilité et Comptes Utilisateurs",
+      "eligibilityDesc": "Conditions requises pour créer et utiliser un compte",
+      "services": "4. Services de la Plateforme",
+      "servicesDesc": "Services éducatifs, IA, BI et freelancing fournis",
+      "responsibilities": "5. Droits et Responsabilités des Utilisateurs",
+      "responsibilitiesDesc": "Ce que vous pouvez et ne pouvez pas faire sur notre plateforme",
+      "intellectualProperty": "6. Contenu et Propriété Intellectuelle",
+      "intellectualPropertyDesc": "Droits de propriété et d'utilisation du contenu",
+      "payments": "7. Paiements, Frais et Remboursements",
+      "paymentsDesc": "Tarification, modes de paiement et politiques de remboursement",
+      "dataProtection": "8. Protection des Données et Confidentialité",
+      "dataProtectionDesc": "Comment nous protégeons et traitons vos données",
+      "thirdParty": "9. Services Tiers et Liens",
+      "thirdPartyDesc": "Services externes et leur intégration",
+      "disclaimers": "10. Exclusions de Garantie et Limitation de Responsabilité",
+      "disclaimersDesc": "Limitations et exclusions importantes",
+      "forceMajeure": "11. Cas de force majeure",
+      "forceMajeureDesc": "Événements indépendants de notre volonté",
+      "termination": "12. Suspension et Résiliation de Compte",
+      "terminationDesc": "Comment les comptes peuvent être suspendus ou résiliés",
+      "disputeResolution": "13. Résolution des Litiges",
+      "disputeResolutionDesc": "Comment les litiges sont résolus",
+      "generalProvisions": "14. Dispositions Générales",
+      "generalProvisionsDesc": "Clauses juridiques supplémentaires",
+      "contact": "15. Coordonnées",
+      "contactDesc": "Comment contacter Podacium"
+    },
+    "toc": {
+      "title": "Table des Matières"
+    },
+    "badges": {
+      "important": "Important",
+      "new": "Nouveau",
+      "updated": "Mis à Jour"
+    },
+    "cards": {
+      "bindingAgreement": {
+        "title": "Accord Contraignant",
+        "description": "Ces Conditions constituent un accord juridiquement contraignant entre vous et Podacium SARL"
+      },
+      "governedByAlgerianLaw": {
+        "title": "Droit Algérien",
+        "description": "Toutes les conditions sont régies par le droit et la juridiction algériens"
+      }
+    },
+    "definitions": {
+      "aiServices": {
+        "title": "Services IA",
+        "description": "Fonctionnalités alimentées par l'IA incluant tuteurs, recommandations et génération de contenu"
+      },
+      "biFeatures": {
+        "title": "Fonctionnalités BI",
+        "description": "Tableaux de bord analytiques, suivi des performances et outils de reporting"
+      },
+      "freelancingMarketplace": {
+        "title": "Marketplace Freelancing",
+        "description": "Connecte les freelances avec les clients pour des projets"
+      },
+      "userGeneratedContent": {
+        "title": "Contenu Généré par les Utilisateurs",
+        "description": "Contenu créé et soumis par les utilisateurs incluant devoirs et publications de forum"
+      }
+    },
+    "content": {
+      "introduction": {
+        "aboutTheseTerms": "Ces Conditions Générales d'Utilisation (« Conditions ») constituent un accord juridiquement contraignant entre vous (« Utilisateur », « vous » ou « votre ») et Podacium SARL (« Podacium », « nous », « notre »), une société à responsabilité limitée (Société à Responsabilité Limitée) enregistrée en Algérie.",
+        "acceptanceOfTerms": "En accédant, naviguant, vous inscrivant ou utilisant la plateforme et les services Podacium (collectivement, la « Plateforme »), vous reconnaissez avoir lu, compris et accepté d'être lié par ces Conditions, ainsi que par notre Politique de Confidentialité, Politique de Cookies et Politique de Remboursement, qui sont incorporées par référence.",
+        "acceptanceWarning": "Si vous n'acceptez pas ces Conditions, vous devez immédiatement cesser d'utiliser la Plateforme.",
+        "amendments": "Nous nous réservons le droit de modifier ces Conditions à tout moment. Les modifications importantes seront notifiées aux utilisateurs enregistrés par e-mail et/ou avis visible sur la Plateforme au moins 15 jours avant l'entrée en vigueur des modifications. Votre utilisation continue de la Plateforme après ces modifications constitue l'acceptation des Conditions mises à jour.",
+        "legalContinuity": "Podacium SARL peut convertir sa structure juridique en Société Par Actions Simplifiée (SPAS) à l'avenir. Cette conversion n'affectera pas la validité ou l'applicabilité de ces Conditions. Les utilisateurs seront informés de tout changement de structure juridique."
+      },
+      "definitions": {
+        "intro": "Aux fins de ces Conditions, les définitions suivantes s'appliquent :"
+      },
+      "eligibility": {
+        "ageRequirements": "Pour créer un Compte sur Podacium, vous devez avoir au moins 16 ans. Les utilisateurs âgés de 16 à 18 ans ne peuvent accéder à la Plateforme qu'avec le consentement d'un parent ou tuteur légal, conformément à la loi algérienne applicable.",
+        "parentalConsentProcess": "Processus de Consentement Parental :",
+        "parentalConsentItem1": "Un parent ou tuteur légal doit fournir son consentement en soumettant une pièce d'identité vérifiée",
+        "parentalConsentItem2": "Podacium conserve la preuve du consentement parental de manière sécurisée à des fins d'audit et de conformité",
+        "parentalConsentItem3": "Les parents ou tuteurs peuvent révoquer leur consentement à tout moment en nous contactant",
+        "accountRegistration": "Pour accéder aux fonctionnalités complètes de la Plateforme, vous devez créer un Compte en fournissant votre nom légal complet, une adresse e-mail valide, votre date de naissance et un mot de passe répondant à nos exigences de sécurité.",
+        "accountSecurity": "Vous êtes responsable du maintien de la confidentialité de vos identifiants de Compte et de toutes les activités qui se produisent sous votre Compte. Vous devez nous informer immédiatement de toute utilisation non autorisée ou violation de sécurité.",
+        "accountTypes": "Podacium prend en charge les Comptes Apprenants Individuels, Comptes Freelance, Comptes Entreprise et Comptes Institutionnels, chacun avec des fonctionnalités et exigences spécifiques."
+      },
+      "services": {
+        "educationalServices": "Podacium fournit des services d'apprentissage en ligne incluant des cours vidéo préenregistrés, des exercices interactifs, des parcours d'apprentissage, des certificats de réussite, des supports PDF et un tutorat alimenté par l'IA lorsqu'il est disponible.",
+        "certificatesAndCredentials": "Les certificats délivrés par Podacium représentent la réussite des exigences du cours mais ne sont pas des diplômes académiques formels ou des qualifications accréditées. Ce sont des attestations informelles pour la formation continue.",
+        "aiServices": "Podacium peut utiliser des technologies d'intelligence artificielle pour améliorer les expériences d'apprentissage. Les fonctionnalités IA incluent des tuteurs conversationnels, des recommandations personnalisées, des évaluations automatisées et des outils de génération de contenu. Des exclusions importantes s'appliquent au contenu généré par l'IA.",
+        "biFeatures": "Podacium offre des outils d'analyse Business Intelligence pour les utilisateurs individuels (tableaux de bord de progression d'apprentissage, analyses de performance) et les utilisateurs professionnels/institutionnels (analyses d'apprentissage des employés, tableaux de bord de performance d'équipe, reporting personnalisé)."
+      },
+      "responsibilities": {
+        "licenseToUse": "Sous réserve du respect de ces Conditions, Podacium vous accorde une licence limitée, non exclusive, non transférable et révocable pour accéder et utiliser la Plateforme à des fins personnelles ou professionnelles internes.",
+        "permittedUses": "Vous pouvez accéder aux cours auxquels vous êtes inscrit, participer aux forums de la Plateforme, créer du Contenu Généré par les Utilisateurs conformément à ces Conditions, utiliser les Fonctionnalités BI à des fins d'analyse légitimes et télécharger les supports explicitement désignés comme téléchargeables.",
+        "prohibitedUses": "Vous ne devez pas utiliser la Plateforme à des fins illégales, vous engager dans la malhonnêteté académique, partager les identifiants de Compte, effectuer de l'ingénierie inverse de la Plateforme, utiliser des systèmes automatisés pour collecter des données, contourner les systèmes de paiement, télécharger du code malveillant, harceler d'autres utilisateurs, usurper l'identité d'autrui ou abuser des Services IA."
+      },
+      "intellectualProperty": {
+        "ourIP": "Tout le Contenu de la Plateforme, y compris le code source, les logiciels, les algorithmes, les supports de cours, les modèles IA, la conception de la Plateforme, les marques, les logos et les outils Business Intelligence, appartient à Podacium SARL ou nous est concédé sous licence par des tiers. Tous droits réservés.",
+        "userContentOwnership": "Vous conservez la propriété de tout Contenu Généré par les Utilisateurs que vous créez, y compris les devoirs de cours, les publications de forum, les avis et les livrables de travail freelance.",
+        "licenseToPodacium": "En soumettant du Contenu Généré par les Utilisateurs à la Plateforme, vous accordez à Podacium une licence non exclusive, mondiale, libre de redevances, sous-licenciable et transférable pour afficher, reproduire et distribuer votre contenu sur la Plateforme."
+      },
+      "payments": {
+        "pricing": "Les prix des cours, les frais d'abonnement et les commissions du Marketplace Freelancing sont affichés sur la Plateforme en Dinars Algériens (DZD) ou dans d'autres devises applicables. Les prix peuvent changer à tout moment.",
+        "paymentMethods": "Podacium accepte les paiements via des passerelles de paiement tierces agréées, y compris les cartes bancaires algériennes (CIB, EDAHABIA), le système de paiement SATIM et d'autres processeurs de paiement agréés ou internationaux.",
+        "taxes": "Les prix affichés incluent les taxes algériennes applicables (TVA) sauf indication contraire. Les utilisateurs internationaux peuvent être soumis à des taxes supplémentaires dans leur juridiction.",
+        "refundPolicy": "Les conditions détaillées de remboursement sont fournies dans notre Politique de Remboursement distincte. Les points clés incluent un remboursement intégral de 7 jours pour les achats de cours si aucun contenu n'a été consulté, des remboursements au prorata pour l'achèvement partiel et des circonstances spécifiques non remboursables."
+      },
+      "dataProtection": {
+        "privacyCommitment": "Podacium s'engage à protéger vos données personnelles conformément à la Loi Algérienne 18-07 sur la Protection des Données Personnelles. Les détails complets de nos pratiques en matière de données sont fournis dans notre Politique de Confidentialité.",
+        "userRights": "Vous avez le droit d'accéder à vos données personnelles, de corriger les données inexactes, de supprimer vos données (sous réserve des exigences légales de conservation), de vous opposer à certaines activités de traitement des données, de retirer votre consentement pour le traitement non essentiel des données et de déposer des plaintes auprès de l'Autorité Nationale de Protection des Données Personnelles (ANPDP) d'Algérie.",
+        "dataRetention": "Les données personnelles sont supprimées 6 mois après la suppression du Compte. Les dossiers financiers sont conservés 10 ans sous forme anonymisée. Les certificats de réussite des cours sont conservés indéfiniment à des fins de vérification."
+      },
+      "thirdParty": {
+        "integrations": "Podacium s'intègre avec des services tiers incluant des processeurs de paiement, des fournisseurs de services d'intelligence artificielle, des outils d'analyse, des fournisseurs d'hébergement cloud et des services de communication. Ces services ont leurs propres conditions générales et politiques de confidentialité.",
+        "liability": "Podacium fait des efforts raisonnables pour sélectionner des fournisseurs tiers fiables. Cependant, nous ne sommes pas responsables des défaillances, pannes ou erreurs des services tiers. Nous maintenons des systèmes de sauvegarde dans la mesure du techniquement possible."
+      },
+      "disclaimers": {
+        "educationalDisclaimer": "Podacium ne garantit pas que la réussite des cours entraînera des résultats d'apprentissage spécifiques, un emploi, un crédit académique ou une licence professionnelle. Le succès éducatif dépend de l'effort individuel et de facteurs externes indépendants de notre volonté.",
+        "aiDisclaimer": "Les Services IA peuvent produire des informations incorrectes, incomplètes ou trompeuses. Les recommandations de l'IA ne sont que des suggestions générales et ne constituent pas des conseils professionnels. Consultez des professionnels qualifiés pour les décisions importantes.",
+        "limitationOfLiability": "Dans toute la mesure permise par la loi algérienne, Podacium n'est pas responsable des dommages indirects, accessoires, consécutifs ou punitifs. Lorsque Podacium est jugé responsable, notre responsabilité totale est plafonnée au montant le moins élevé entre les frais payés au cours des 12 mois précédents ou 50 000 Dinars Algériens."
+      },
+      "forceMajeure": {
+        "intro": "Podacium n'est pas responsable des retards ou des manquements à l'exécution des obligations dus à des événements indépendants de notre volonté raisonnable, y compris les catastrophes naturelles, les pandémies, la guerre, les actions gouvernementales, les pannes d'infrastructure Internet, les cyberattaques, les défaillances des fournisseurs de services tiers, les grèves du travail ou les pannes de courant."
+      },
+      "termination": {
+        "byUser": "Vous pouvez supprimer votre Compte à tout moment en utilisant l'option de suppression en libre-service dans les paramètres du Compte ou en contactant le support. Les effets de la suppression incluent la révocation immédiate de l'accès, la suppression des données personnelles dans les 6 mois et la conservation des dossiers financiers pendant 10 ans.",
+        "byPodacium": "Nous pouvons suspendre ou résilier votre Compte immédiatement sans préavis pour violations graves des Conditions (fraude, activité illégale, harcèlement, violation répétée, malhonnêteté académique ou menace à la sécurité de la Plateforme)."
+      },
+      "disputeResolution": {
+        "governingLaw": "Ces Conditions sont régies et interprétées conformément aux lois de l'Algérie, y compris la Loi 18-07 sur la Protection des Données Personnelles, la Loi 18-05 sur le Commerce Électronique, la Loi 09-03 sur la Protection du Consommateur et les Codes Civil et Commercial Algériens.",
+        "jurisdiction": "Tout litige découlant de ou lié à ces Conditions ou à votre utilisation de la Plateforme sera soumis à la compétence exclusive des tribunaux d'Oran, Algérie.",
+        "adr": "Avant d'engager une procédure judiciaire, les parties s'engagent à tenter une résolution par négociation de bonne foi (30 jours) et médiation par un médiateur mutuellement convenu en Algérie. Le règlement alternatif des litiges n'empêche pas l'une ou l'autre partie de demander une réparation injonctive urgente."
+      },
+      "generalProvisions": {
+        "entireAgreement": "Ces Conditions, ainsi que la Politique de Confidentialité, la Politique de Cookies et la Politique de Remboursement, constituent l'accord intégral entre vous et Podacium concernant l'utilisation de la Plateforme, remplaçant tous les accords et ententes antérieurs.",
+        "language": "Ces Conditions sont rédigées en anglais. Une version officielle en arabe sera publiée comme version juridique faisant autorité. Lors de la publication, la version arabe deviendra la version juridiquement contraignante. En cas de conflit entre les traductions, la version officielle en arabe prévaudra."
+      },
+      "contact": {
+        "responseTimes": "Délais de Réponse :",
+        "responseTime1": "Demandes générales : 48 heures",
+        "responseTime2": "Demandes de protection des données : 15 jours",
+        "responseTime3": "Plaintes et avis juridiques : 15 jours"
+      }
+    },
+    "refunds": {
+      "coolingOffPeriod": {
+        "title": "Période de Rétractation de 7 Jours",
+        "description": "Remboursement intégral pour les achats de cours si aucun contenu n'a été consulté dans les 7 jours"
+      },
+      "nonRefundable": {
+        "title": "Non Remboursable",
+        "description": "Résiliation de compte pour violations, cours terminés et certaines transactions"
+      },
+      "consent": {
+        "title": "Consentement",
+        "description": "En acceptant ces Conditions, vous donnez votre consentement explicite au traitement des données"
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 À Propos de Ces Conditions",
+        "section1_2": "1.2 Acceptation des Conditions",
+        "section1_3": "1.3 Modifications",
+        "section1_4": "1.4 Clause de Continuité Juridique"
+      },
+      "eligibility": {
+        "section3_1": "3.1 Exigences d'Âge",
+        "section3_2": "3.2 Inscription au Compte",
+        "section3_3": "3.3 Sécurité du Compte",
+        "section3_4": "3.4 Types de Comptes"
+      },
+      "services": {
+        "section4_1": "4.1 Services Éducatifs",
+        "section4_2": "4.2 Certificats et Accréditations",
+        "section4_3": "4.3 Services d'Intelligence Artificielle",
+        "section4_4": "4.4 Fonctionnalités de Business Intelligence"
+      },
+      "responsibilities": {
+        "section5_1": "5.1 Licence d'Utilisation de la Plateforme",
+        "section5_2": "5.2 Utilisations Autorisées",
+        "section5_3": "5.3 Utilisations Interdites"
+      },
+      "intellectualProperty": {
+        "section6_1": "6.1 Propriété Intellectuelle de Podacium",
+        "section6_2": "6.2 Propriété du Contenu Généré par l'Utilisateur",
+        "section6_3": "6.3 Licence pour Podacium"
+      },
+      "payments": {
+        "section7_1": "7.1 Tarification",
+        "section7_2": "7.2 Modes de Paiement",
+        "section7_3": "7.3 Fiscalité et taxes",
+        "section7_6": "7.6 Politique de Remboursement"
+      },
+      "dataProtection": {
+        "section8_1": "8.1 Engagement de Confidentialité",
+        "section8_2": "8.2 Droits des Utilisateurs Selon la Loi Algérienne",
+        "section8_3": "8.3 Rétention des Données"
+      },
+      "thirdParty": {
+        "section9_1": "9.1 Intégrations Tierces",
+        "section9_3": "9.3 Responsabilité des Tiers"
+      },
+      "disclaimers": {
+        "section10_1": "10.1 Exclusions Éducatives",
+        "section10_2": "10.2 Exclusions IA",
+        "section10_4": "10.4 Limitation de Responsabilité"
+      },
+      "termination": {
+        "section12_1": "12.1 Résiliation par l'Utilisateur",
+        "section12_2": "12.2 Résiliation par Podacium"
+      },
+      "disputeResolution": {
+        "section13_1": "13.1 Droit Applicable",
+        "section13_2": "13.2 Compétence",
+        "section13_3": "13.3 Résolution Alternative des Litiges (RAL)"
+      },
+      "generalProvisions": {
+        "section14_1": "14.1 Accord Intégral",
+        "section14_5": "14.5 Langue"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "Email"
+      },
+      "phone": {
+        "title": "Téléphone"
+      },
+      "address": {
+        "title": "Adresse"
+      },
+      "website": {
+        "title": "Site Web"
+      },
+      "capital": {
+        "title": "Capital"
+      }
+    },
+    "company": {
+      "name": "Podacium SARL",
+      "address": "PC38+5MV, Bir El Djir, Oran, Algérie",
+      "fullAddress": "PC38+5MV, Bir El Djir, Oran, Algérie",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "registeredCompany": "Société à Responsabilité Limitée (SARL) enregistrée en Algérie",
+      "dpo": "Délégué à la Protection des Données (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com",
+      "rc": "RC: En cours d'immatriculation (Tribunal d'Oran)",
+      "nif": "NIF: En cours d'attribution",
+      "ni": "NIS: En cours d'attribution",
+      "capital": "Capital: 100 000 DZD (Souscrit)"
+    },
+    "dates": {
+      "effectiveDate": "1er Janvier 2026",
+      "lastUpdated": "1er Janvier 2026",
+      "version": "1.0",
+      "updatedLabel": "Mis à jour : 1er Jan 2026"
+    },
+    "acknowledgment": {
+      "title": "Reconnaissance",
+      "description": "En utilisant la Plateforme Podacium, vous reconnaissez avoir lu et compris ces Conditions, accepter toutes les dispositions contenues ici, vous conformer à toutes les lois et réglementations applicables, comprendre les exclusions de garantie et limitations de responsabilité, consentir au traitement des données et accepter le droit et la juridiction algériens."
+    },
+    "actions": {
+      "print": "Imprimer les Conditions",
+      "download": "Télécharger le PDF",
+      "viewPrivacy": "Voir la Politique de Confidentialité",
+      "viewRefund": "Voir la Politique de Remboursement",
+      "viewTerms": "Voir les Conditions Générales",
+      "viewCookiePolicy": "Voir la Politique de Cookies",
+      "viewRefundPolicy": "Voir la Politique de Remboursement"
+    },
+    "footer": {
+      "thankYou": "Merci d'avoir choisi Podacium. Nous nous engageons à fournir des services éducatifs de haute qualité et à protéger vos droits en vertu du droit algérien."
+    }
+  },
+  "privacy": {
+    "hero": {
+      "badge": "Confidentialité & Protection des Données",
+      "title": "Politique de Confidentialité",
+      "description": "Découvrez comment Podacium collecte, utilise et protège vos données personnelles conformément à la loi algérienne 18-07 sur la protection des données à caractère personnel.",
+      "sections": "Sections",
+      "effectiveDate": "Date d'Entrée en Vigueur",
+      "version": "Version"
+    },
+    "effectiveDate": "Date d'Entrée en Vigueur",
+    "lastUpdated": "Dernière Mise à Jour",
+    "version": "Version",
+    "sections": {
+      "introduction": "1. Introduction générale",
+      "introductionDesc": "Vue d'ensemble de notre engagement en matière de confidentialité et de portée",
+      "legalBasis": "2. Base Légale du Traitement des Données",
+      "legalBasisDesc": "Fondements du traitement selon la loi algérienne 18-07",
+      "dataCollection": "3. Données Que Nous Collectons",
+      "dataCollectionDesc": "Types de données personnelles collectées par Podacium",
+      "dataUsage": "4. Comment Nous Utilisons Vos Données",
+      "dataUsageDesc": "Finalités du traitement de vos données personnelles",
+      "dataRetention": "5. Conservation des Données",
+      "dataRetentionDesc": "Durée de conservation de vos données personnelles",
+      "dataSharing": "6. Partage et Divulgation des Données",
+      "dataSharingDesc": "Quand et avec qui nous partageons vos données",
+      "crossBorder": "7. Transferts Transfrontaliers de Données",
+      "crossBorderDesc": "Transferts internationaux et garanties",
+      "dataSecurity": "8. Sécurité des Données",
+      "dataSecurityDesc": "Mesures de protection de vos données personnelles",
+      "userRights": "9. Vos Droits Selon la Loi Algérienne",
+      "userRightsDesc": "Droits des personnes concernées selon la loi 18-07",
+      "minorsProtection": "10. Protection des Données des Mineurs",
+      "minorsProtectionDesc": "Protections spéciales pour les utilisateurs de moins de 19 ans",
+      "cookies": "11. Cookies et Technologies de Suivi",
+      "cookiesDesc": "Utilisation des cookies et technologies similaires",
+      "policyChanges": "12. Modifications de Cette Politique de Confidentialité",
+      "policyChangesDesc": "Comment nous mettons à jour cette politique",
+      "internationalUsers": "13. Utilisateurs Internationaux et RGPD",
+      "internationalUsersDesc": "Conformité aux réglementations internationales",
+      "biEnterprise": "14. Clients Entreprises d'Intelligence d'Affaires",
+      "biEnterpriseDesc": "Protections supplémentaires pour les utilisateurs entreprises",
+      "contact": "15. Informations de Contact",
+      "contactDesc": "Comment nous contacter concernant les questions de confidentialité"
+    },
+    "toc": {
+      "title": "Table des Matières"
+    },
+    "badges": {
+      "important": "Important",
+      "new": "Nouveau",
+      "updated": "Mis à Jour"
+    },
+    "cards": {
+      "terms": {
+        "title": "Conditions d'Utilisation",
+        "description": "Accord juridique entre vous et Podacium"
+      },
+      "cookiePolicy": {
+        "title": "Politique des Cookies",
+        "description": "Détails sur les cookies et le suivi"
+      },
+      "refundPolicy": {
+        "title": "Politique de Remboursement",
+        "description": "Informations sur les remboursements et annulations"
+      },
+      "contract": {
+        "title": "Exécution du Contrat",
+        "description": "Traitement nécessaire pour fournir les services"
+      },
+      "legalObligation": {
+        "title": "Obligation Légale",
+        "description": "Traitement requis par la loi algérienne"
+      },
+      "legitimateInterest": {
+        "title": "Intérêt Légitime",
+        "description": "Traitement pour l'amélioration de l'entreprise"
+      },
+      "accountManagement": {
+        "title": "Gestion de Compte",
+        "description": "Créer, maintenir et sécuriser votre compte"
+      },
+      "educationalService": {
+        "title": "Service Éducatif",
+        "description": "Fournir des cours, suivre la progression, délivrer des certificats"
+      },
+      "paymentProcessing": {
+        "title": "Traitement des Paiements",
+        "description": "Traiter les paiements et gérer les transactions"
+      },
+      "platformImprovement": {
+        "title": "Amélioration de la Plateforme",
+        "description": "Analyser l'utilisation et améliorer l'expérience utilisateur"
+      },
+      "securityFraud": {
+        "title": "Sécurité & Prévention de la Fraude",
+        "description": "Protéger contre l'accès non autorisé et la fraude"
+      },
+      "legalCompliance": {
+        "title": "Conformité Légale",
+        "description": "Se conformer aux lois et répondre aux autorités"
+      },
+      "personalData": {
+        "title": "Données Personnelles",
+        "description": "Supprimées dans les 6 mois suivant la suppression du compte"
+      },
+      "financialRecords": {
+        "title": "Dossiers Financiers",
+        "description": "Conservés 10 ans (anonymisés) pour conformité légale"
+      },
+      "certificates": {
+        "title": "Certificats",
+        "description": "Conservés indéfiniment à des fins de vérification"
+      },
+      "encryption": {
+        "title": "Chiffrement",
+        "description": "AES-256 au repos, TLS 1.3 en transit"
+      },
+      "accessControls": {
+        "title": "Contrôles d'Accès",
+        "description": "Accès basé sur les rôles, authentification à deux facteurs"
+      },
+      "infrastructureSecurity": {
+        "title": "Sécurité de l'Infrastructure",
+        "description": "Centres de données sécurisés, surveillance 24/7"
+      },
+      "backupRecovery": {
+        "title": "Sauvegarde & Récupération",
+        "description": "Sauvegardes régulières, plan de reprise d'activité"
+      },
+      "rightAccess": {
+        "title": "Droit d'Accès",
+        "description": "Accéder à vos données personnelles"
+      },
+      "rightRectification": {
+        "title": "Droit de Rectification",
+        "description": "Corriger les données inexactes"
+      },
+      "rightErasure": {
+        "title": "Droit à l'Effacement",
+        "description": "Supprimer vos données personnelles"
+      },
+      "rightPortability": {
+        "title": "Droit à la Portabilité",
+        "description": "Recevoir vos données dans un format lisible par machine"
+      },
+      "rightWithdraw": {
+        "title": "Droit de Retrait",
+        "description": "Retirer votre consentement à tout moment"
+      },
+      "rightComplaint": {
+        "title": "Droit de Déposer une Plainte",
+        "description": "Porter plainte auprès de l'ANPDP en cas de violation de vos droits"
+      }
+    },
+    "definitions": {
+      "dataController": {
+        "title": "Responsable du traitement",
+        "description": "Podacium SARL détermine les objectifs et les moyens du traitement"
+      },
+      "dataProcessor": {
+        "title": "Sous-traitant",
+        "description": "Tiers traitant les données en notre nom"
+      },
+      "personalData": {
+        "title": "Données personnelles",
+        "description": "Toute information relative à une personne identifiée ou identifiable"
+      }
+    },
+    "content": {
+      "introduction": {
+        "ourCommitment": "Podacium SARL (« Podacium », « nous », « notre ») s'engage à protéger la confidentialité et les données personnelles de tous les utilisateurs de notre plateforme éducative (« Plateforme »). Cette Politique de Confidentialité explique comment nous collectons, utilisons, stockons, partageons et protégeons vos informations personnelles conformément à la loi algérienne n° 18-07 du 10 juin 2018 relative à la protection des données à caractère personnel (« Loi 18-07 »).",
+        "scope": "Cette Politique de Confidentialité s'applique à tous les utilisateurs de la Plateforme Podacium, y compris : Les apprenants individuels et étudiants, Les travailleurs indépendants (lors du lancement du Marketplace), Les utilisateurs professionnels et institutionnels, Les visiteurs invités, Les mineurs (avec le consentement parental).",
+        "regulatoryCompliance": "Podacium s'engage à respecter : La loi algérienne 18-07 sur la protection des données à caractère personnel, Les réglementations de l'Autorité Nationale de Protection des Données à Caractère Personnel (ANPDP), Les meilleures pratiques internationales en matière de protection des données. Nous avons déposé (ou déposerons avant le lancement commercial) toutes les déclarations de traitement de données requises auprès de l'ANPDP et obtiendrons les autorisations nécessaires pour les transferts transfrontaliers de données.",
+        "relationshipToPolicies": "Cette Politique de Confidentialité doit être lue conjointement avec : Les Conditions d'Utilisation (qui intègrent les dispositions de consentement à la section 7.8), La Politique des Cookies (détails sur notre utilisation des cookies et technologies de suivi), La Politique de Remboursement."
+      },
+      "legalBasis": {
+        "intro": "Conformément à la Loi 18-07, nous traitons vos données personnelles sur les bases légales suivantes :",
+        "consent": {
+          "main": {
+            "title": "En acceptant nos Conditions d'Utilisation, vous donnez un consentement explicite, éclairé et librement donné à :",
+            "items": [
+              "La collecte et le traitement de vos données personnelles comme décrit dans cette Politique",
+              "L'utilisation des cookies et technologies de suivi comme décrit dans notre Politique des Cookies",
+              "Les communications de Podacium concernant votre Compte et les services",
+              "Le traitement aux fins spécifiées à la section 4 de cette Politique"
+            ]
+          },
+          "withdrawal": "Vous pouvez retirer votre consentement à tout moment en :",
+          "withdrawal1": "Ajustant les paramètres de confidentialité dans le tableau de bord de votre Compte",
+          "withdrawal2": "Nous contactant à podacium@podacium.com",
+          "withdrawal3": "Supprimant votre Compte (voir section 11.1)"
+        }
+      },
+      "dataCollection": {
+        "personalIdentification": {
+          "registration": "Collectées lors de l'inscription :",
+          "items": [
+            "Nom complet légal",
+            "Adresse e-mail",
+            "Date de naissance",
+            "Numéro de téléphone (facultatif)",
+            "Document d'identité pour le consentement parental des mineurs"
+          ]
+        },
+        "authenticationData": "Nom d'utilisateur, Mot de passe (chiffré), Date de création du compte, Date et heure de dernière connexion, Identifiants d'authentification à deux facteurs (si activé), Jetons de connexion sociale (si vous utilisez Google/Facebook).",
+        "usageLearningData": "Activité éducative : Cours inscrits, consultés et terminés ; Temps de visionnage et progression des vidéos ; Soumissions de quiz et devoirs ; Progression du parcours d'apprentissage ; Dossiers de délivrance de certificats. Interaction avec la plateforme : Pages visitées et schémas de navigation ; Temps passé sur la plateforme ; Fonctionnalités utilisées ; Requêtes de recherche ; Téléchargements de contenu.",
+        "technicalDeviceData": "Adresse IP, Type et version du navigateur, Système d'exploitation, Type d'appareil (ordinateur, mobile, tablette), Résolution d'écran, Site web/source référente, Localisation géographique (niveau pays/ville, dérivée de l'IP), Préférences linguistiques, Fuseau horaire.",
+        "communicationData": "Correspondance par e-mail avec l'équipe de support, Messages dans la plateforme, Contenu des tickets de support, Réponses aux enquêtes, Soumissions de commentaires.",
+        "biData": "Pour les utilisateurs individuels : Métriques d'engagement, Analyses d'apprentissage, Tendances de performance. Pour les utilisateurs professionnels/institutionnels : Progression de l'apprentissage des employés, Tableaux de bord de performance d'équipe, Métriques de ROI de formation, Analyses agrégées de la main-d'œuvre. Note : Les clients entreprise d'IA peuvent télécharger des données commerciales confidentielles. Ces données sont soumises à des mesures de sécurité supplémentaires et des accords de non-divulgation (NDA).",
+        "aiInteractionData": "Lors du lancement des services d'IA : Questions posées aux tuteurs IA, Réponses générées par l'IA, Retours sur l'exactitude de l'IA, Recommandations de parcours d'apprentissage IA acceptées/rejetées. Important : Les données d'interaction avec l'IA ne seront utilisées pour la formation de l'IA qu'avec consentement explicite et sous forme agrégée anonymisée.",
+        "paymentData": {
+          "gateway": {
+            "title": "Traitées par des passerelles de paiement tierces (non stockées par Podacium) :",
+            "items": [
+              "Informations de carte de crédit/débit",
+              "Détails de compte bancaire",
+              "Jetons d'autorisation de paiement"
+            ]
+          },
+          "stored": {
+            "title": "Stockées par Podacium :",
+            "items": [
+              "ID et montants des transactions",
+              "Dates et heures des transactions",
+              "Historique d'achat de cours",
+              "Statut d'abonnement",
+              "Dossiers de remboursement",
+              "Factures émises"
+            ]
+          }
+        },
+        "userGeneratedContent": "Devoirs et projets de cours, Publications et commentaires sur le forum, Avis et évaluations, Fichiers téléchargés (dans les limites de la plateforme), Photos de profil (facultatif), Livrables de travail indépendant (lors du lancement du Marketplace).",
+        "dataNotCollected": {
+          "title": "Podacium ne collecte pas :",
+          "items": [
+            "Les numéros de carte d'identité nationale (sauf pour vérification du consentement parental)",
+            "Les données biométriques",
+            "Les informations de santé ou médicales",
+            "Les croyances religieuses ou politiques",
+            "L'appartenance syndicale",
+            "Les données génétiques",
+            "Les antécédents criminels (sauf si requis pour des programmes institutionnels spécifiques)"
+          ]
+        }
+      },
+      "dataUsage": {
+        "communicationMarketing": {
+          "transactional": {
+            "title": "Communications transactionnelles (pas de consentement requis) :",
+            "items": [
+              "Confirmations de commande et reçus",
+              "Notifications d'inscription aux cours",
+              "Délivrance de certificats",
+              "E-mails de réinitialisation de mot de passe",
+              "Alertes de sécurité du compte",
+              "Mises à jour importantes des Conditions/Politiques"
+            ]
+          },
+          "marketing": {
+            "title": "Communications marketing (consentement requis) :",
+            "items": [
+              "Annonces de nouveaux cours",
+              "Offres promotionnelles et remises",
+              "Mises à jour des fonctionnalités de la plateforme",
+              "Recommandations de contenu éducatif",
+              "Newsletters"
+            ]
+          }
+        },
+        "optOut": "Vous pouvez vous désabonner des communications marketing à tout moment via :",
+        "optOut1": "Les liens de désabonnement dans les e-mails",
+        "optOut2": "Le tableau de bord des paramètres du compte",
+        "optOut3": "Un e-mail à podacium@podacium.com",
+        "aiTraining": "Important : Seules des données agrégées anonymisées seront utilisées pour la formation de l'IA, et uniquement avec le consentement explicite de l'utilisateur."
+      },
+      "dataRetention": {
+        "activeAccounts": "Les données sont conservées aussi longtemps que votre compte reste actif et aux fins pour lesquelles elles ont été collectées.",
+        "deletedAccounts": {
+          "intro": "Lors de la suppression du compte : Données d'identification personnelle : Supprimées dans les 6 mois suivant la demande de suppression du compte. Dossiers financiers et de transaction : Conservés 10 ans sous forme anonymisée. Certificats d'achèvement de cours : Conservés indéfiniment à des fins de vérification. Contenu généré par l'utilisateur : Publications publiques sur le forum : Anonymisées (nom de l'auteur supprimé) mais contenu conservé ; Devoirs privés : Supprimés avec le compte."
+        },
+        "backupData": "Les sauvegardes contenant vos données sont supprimées dans les 90 jours suivant la suppression du compte. La conservation des sauvegardes est nécessaire pour la reprise après sinistre et l'intégrité du système."
+      },
+      "dataSharing": {
+        "noSale": "Podacium ne vend, ne loue ni n'échange vos données personnelles à des tiers à des fins marketing.",
+        "serviceProviders": {
+          "title": "Nous partageons des données avec des prestataires de services tiers de confiance qui traitent les données pour notre compte :",
+          "items": [
+            "Processeurs de paiement (CIB, SATIM, EDAHABIA)",
+            "Fournisseurs d'hébergement cloud (centres de données algériens)",
+            "Fournisseurs de services d'IA (futur)",
+            "Fournisseurs d'analytique",
+            "Services de communication"
+          ],
+          "note": "Tous les processeurs tiers signent des accords de traitement des données et se conforment à la loi algérienne 18-07."
+        },
+        "aggregateData": "Nous pouvons partager des données agrégées anonymisées qui ne peuvent pas être utilisées pour identifier des individus avec : Des chercheurs en éducation, Des partenaires industriels, Des agences gouvernementales, Le public (via des rapports et publications). Exemple : « 70 % des utilisateurs terminent les cours dans les 3 mois » ou « Les apprenants algériens préfèrent le contenu vidéo au texte »."
+      },
+      "crossBorder": {
+        "dataLocalization": "Stockage principal des données : Toutes les données personnelles sont stockées sur des serveurs physiquement situés en Algérie.",
+        "internationalTransfers": "Conformément à la Loi 18-07, les transferts transfrontaliers de données personnelles nécessitent une autorisation préalable de l'Autorité Nationale de Protection des Données à Caractère Personnel (ANPDP). Circonstances nécessitant un transfert international : Stockage de sauvegarde sur des serveurs de l'UE (pour la reprise après sinistre), Fournisseurs de services d'IA situés hors d'Algérie, Outils d'analytique internationaux, Processeurs de paiement desservant les utilisateurs internationaux.",
+        "localHosting": {
+          "title": "Hébergement Local des Données",
+          "items": [
+            "Toutes les données personnelles des utilisateurs algériens sont hébergées sur des serveurs physiquement situés en Algérie",
+            "Nous collaborons avec OCCtenium (occidentium.dz), un fournisseur algérien d'infrastructure cloud, pour le stockage principal des données",
+            "L'infrastructure secondaire utilise les installations du centre de données d'Algérie Télécom",
+            "Cela garantit la conformité aux exigences de localisation des données de la Loi 18-07 et aux réglementations de l'ANPDP"
+          ],
+          "note": "Les transferts de données transfrontaliers n'ont lieu qu'avec l'autorisation préalable de l'ANPDP et les garanties appropriées décrites ci-dessus."
+        }
+      },
+      "dataSecurity": {
+        "securityMeasures": {
+          "intro": "Podacium met en œuvre des mesures techniques et organisationnelles standard de l'industrie pour protéger les données personnelles :"
+        },
+        "breachResponse": "En cas de violation de données personnelles : Détection et évaluation (dans les 24 heures), Notification à l'ANPDP (dans les 48-72 heures), Notification aux utilisateurs affectés (dans les 72 heures), Correction, Examen post-incident.",
+        "userResponsibilities": {
+          "title": "Bien que nous mettions en œuvre des mesures de sécurité solides, vous avez également des responsabilités :",
+          "items": [
+            "Gardez votre mot de passe confidentiel et fort",
+            "Activez l'authentification à deux facteurs",
+            "Ne partagez pas les identifiants de compte",
+            "Déconnectez-vous après avoir utilisé des appareils partagés",
+            "Signalez immédiatement toute activité suspecte",
+            "Maintenez vos informations de contact à jour"
+          ],
+          "note": "Nous ne sommes pas responsables des accès non autorisés résultant de votre incapacité à protéger les identifiants de compte."
+        }
+      },
+      "userRights": {
+        "intro": "Vous disposez des droits suivants en vertu de la loi algérienne 18-07 :",
+        "items": [
+          "Droit d'accès — savoir quelles données nous détenons sur vous",
+          "Droit de rectification — corriger les données inexactes",
+          "Droit à l'effacement (« droit à l'oubli »)",
+          "Droit d'opposition — vous opposer à certains traitements",
+          "Droit à la portabilité des données — recevoir vos données dans un format portable",
+          "Droit à la limitation du traitement",
+          "Droit de retirer le consentement à tout moment",
+          "Droit de déposer une plainte auprès de l'ANPDP"
+        ],
+        "responseTimes": "Nous nous engageons à répondre à toutes les demandes de droits : Accusé de réception : Dans les 48 heures, Réponse complète : Dans les 15 jours, Demandes complexes : Jusqu'à 30 jours (avec notification du retard). L'exercice de vos droits est gratuit."
+      },
+      "minorsProtection": {
+        "ageRequirements": "Âge minimum pour créer un compte : 16 ans. Les utilisateurs de moins de 19 ans sont considérés comme mineurs selon la loi algérienne et nécessitent le consentement parental.",
+        "parentalConsent": {
+          "intro": "Pour les utilisateurs âgés de 16 à 18 ans : Consentement vérifiable d'un parent ou tuteur légal requis. Le parent doit fournir : Un document d'identité scanné, OU une vérification du numéro de téléphone via OTP.",
+          "process": "Processus de consentement :",
+          "process1": "Le mineur fournit les informations de contact du parent/tuteur lors de l'inscription",
+          "process2": "Podacium contacte le parent/tuteur pour vérification",
+          "process3": "Le compte est activé uniquement après vérification du consentement"
+        }
+      },
+      "cookies": {
+        "overview": "Podacium utilise des cookies et des technologies de suivi similaires pour améliorer l'expérience utilisateur, analyser l'utilisation de la plateforme et fournir un contenu personnalisé. Les détails complets sont fournis dans notre Politique des Cookies séparée.",
+        "cookieConsent": [
+          {
+            "title": "Première visite :",
+            "items": [
+              "Bannière de cookies affichée",
+              "Options de consentement granulaires (tout accepter, rejeter non essentiel, personnaliser)",
+              "Cookies essentiels placés immédiatement",
+              "Cookies non essentiels placés uniquement après consentement"
+            ]
+          },
+          {
+            "title": "Gestion des préférences :",
+            "items": [
+              "Ajustez les paramètres à tout moment via le tableau de bord du compte",
+              "Utilisez les paramètres du navigateur pour bloquer/supprimer les cookies",
+              "Contactez podacium@podacium.com pour assistance"
+            ]
+          }
+        ]
+      },
+      "policyChanges": {
+        "notificationChanges": "Les modifications importantes seront communiquées via : Notification par e-mail aux utilisateurs enregistrés (au moins 15 jours avant la date d'entrée en vigueur), Avis visible sur la page d'accueil de la plateforme, Notification dans l'application lors de la prochaine connexion.",
+        "consentChanges": "L'utilisation continue de la plateforme après l'entrée en vigueur des modifications constitue l'acceptation de la Politique de Confidentialité mise à jour. Si vous n'acceptez pas les modifications : Cessez d'utiliser la plateforme, Supprimez votre compte avant la date d'entrée en vigueur, Exercez vos droits des personnes concernées (accès, suppression, etc.)."
+      },
+      "internationalUsers": {
+        "currentStatus": {
+          "intro": "Les utilisateurs de l'UE et des États-Unis sont actuellement bloqués géographiquement en attendant la mise en œuvre complète de la conformité.",
+          "items": [
+            "Désignerons un représentant de l'UE",
+            "Respecterons les exigences plus strictes du RGPD en matière de protection des données",
+            "Offrirons tous les droits des personnes concernées du RGPD",
+            "Mettreons en œuvre la notification de violation de données conforme au RGPD (72 heures)"
+          ],
+          "note": "Nous nous préparons activement à l'expansion sur les marchés européens, nord-américains et MENA avec des cadres de conformité en matière de confidentialité spécifiques à chaque région."
+        },
+        "euStatus": "Podacium s'engage à se conformer au RGPD pour les utilisateurs de l'Espace Économique Européen. Nous mettons activement en œuvre les garanties nécessaires, notamment la nomination d'un représentant européen, des clauses contractuelles types pour les transferts de données et un accord de traitement des données. La documentation complète de conformité au RGPD sera disponible avant l'expansion sur les marchés européens.",
+        "ccpaStatus": "Podacium s'engage à se conformer au CCPA pour les utilisateurs de Californie, États-Unis. Nous mettons en œuvre le cadre de droits des consommateurs requis, y compris le droit de savoir, le droit de supprimer, le droit de refuser la vente et la non-discrimination. La conformité complète au CCPA sera finalisée avant l'expansion sur le marché américain.",
+        "ksaPDPL": "Podacium s'engage à se conformer à la loi sur la protection des données personnelles (PDPL) d'Arabie Saoudite et au décret-loi fédéral n° 45 de 2021 des EAU pour les utilisateurs de ces juridictions. Nous suivons activement les développements réglementaires et mettrons en œuvre des cadres de confidentialité spécifiques à chaque région avant de nous développer sur ces marchés.",
+        "expansionContact": "Pour toute question concernant notre conformité internationale en matière de protection des données, veuillez contacter notre Délégué à la Protection des Données."
+      },
+      "biEnterprise": {
+        "additionalProtections": "Les clients entreprise utilisant les fonctionnalités d'IA bénéficient de : Accords de non-divulgation (NDA), Isolement des données (séparation complète des données des autres utilisateurs), Sécurité personnalisée (chiffrement et contrôles d'accès supplémentaires), Support dédié (assistance prioritaire en protection des données).",
+        "clientResponsibilities": "Les clients entreprise sont responsables de : Obtenir les consentements nécessaires des employés, Assurer une base légale pour fournir les données des employés, Respecter les lois du travail et de l'emploi, Minimisation des données (télécharger uniquement les données nécessaires)."
+      },
+      "contact": {
+        "responseTimes": {
+          "intro": "Délais de réponse :",
+          "general": "Demandes générales : 48 heures",
+          "dataRequests": "Demandes de droits des personnes concernées : 15 jours (jusqu'à 30 jours pour les demandes complexes)",
+          "breachNotifications": "Notifications de violation de données : 72 heures",
+          "complaints": "Plaintes : 15 jours"
+        },
+        "anpdpContact": "Autorité Nationale de Protection des Données à Caractère Personnel : 01, Rue Ahmed Ouaked, Dely Ibrahim, Alger, Algérie. Site web : https://www.anpdp.dz, E-mail : contact@anpdp.dz."
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 Notre Engagement en Matière de Confidentialité",
+        "section1_2": "1.2 Portée",
+        "section1_3": "1.3 Informations sur le Responsable du Traitement",
+        "section1_4": "1.4 Conformité Réglementaire",
+        "section1_5": "1.5 Relation avec les Autres Politiques"
+      },
+      "legalBasis": {
+        "section2_1": "2.1 Consentement (Article 4 de la Loi 18-07)"
+      },
+      "dataCollection": {
+        "section3_1": "3.1 Données d'Identification Personnelle",
+        "section3_2": "3.2 Données de Compte et d'Authentification",
+        "section3_3": "3.3 Données d'Utilisation et d'Apprentissage",
+        "section3_4": "3.4 Données Techniques et d'Appareil",
+        "section3_5": "3.5 Données de Communication",
+        "section3_6": "3.6 Données d'Intelligence d'Affaires (BI)",
+        "section3_7": "3.7 Données d'Interaction avec l'IA (Fonctionnalité Future)",
+        "section3_8": "3.8 Données de Paiement et Financières",
+        "section3_9": "3.9 Contenu Généré par l'Utilisateur",
+        "section3_10": "3.10 Données Que Nous NE Collectons PAS"
+      },
+      "dataUsage": {
+        "section4_1": "4.1 Gestion de Compte",
+        "section4_2": "4.2 Prestation de Service Éducatif",
+        "section4_3": "4.3 Traitement des Paiements",
+        "section4_4": "4.4 Amélioration de la Plateforme et Analytique",
+        "section4_5": "4.5 Fonctionnalités d'Intelligence d'Affaires",
+        "section4_6": "4.6 Communication et Marketing",
+        "section4_7": "4.7 Support Client",
+        "section4_8": "4.8 Sécurité et Prévention de la Fraude",
+        "section4_9": "4.9 Conformité Légale",
+        "section4_10": "4.10 Formation des Modèles d'IA (Futur, avec Consentement)"
+      },
+      "dataRetention": {
+        "section5_1": "5.1 Comptes Actifs",
+        "section5_2": "5.2 Comptes Supprimés",
+        "section5_3": "5.3 Suspension pour Litige",
+        "section5_4": "5.4 Données d'Intelligence d'Affaires",
+        "section5_5": "5.5 Données de Sauvegarde"
+      },
+      "dataSharing": {
+        "section6_1": "6.1 Aucune Vente de Données Personnelles",
+        "section6_2": "6.2 Prestataires de Services (Sous-traitants)",
+        "section6_3": "6.3 Accords de Traitement des Données (DPA)",
+        "section6_4": "6.4 Transferts d'Actifs",
+        "section6_5": "6.5 Exigences Légales et Forces de l'Ordre",
+        "section6_6": "6.6 Données Agrégées et Anonymisées",
+        "section6_7": "6.7 Avec Votre Consentement"
+      },
+      "crossBorder": {
+        "section7_1": "7.1 Engagement de Localisation des Données",
+        "section7_2": "7.2 Transferts Internationaux (Autorisation ANPDP Requise)",
+        "section7_3": "7.3 Hébergement Local des Données",
+        "section7_4": "7.4 Utilisateurs de l'UE et Internationaux"
+      },
+      "dataSecurity": {
+        "section8_1": "8.1 Mesures de Sécurité",
+        "section8_2": "8.2 Réponse aux Violations de Données",
+        "section8_3": "8.3 Responsabilités des Utilisateurs",
+        "section8_4": "8.4 Limitations de responsabilité"
+      },
+      "userRights": {
+        "section9_1": "9.1 Droit d'Accès (Article 36)",
+        "section9_2": "9.2 Droit de Rectification (Article 37)",
+        "section9_3": "9.3 Droit à l'Effacement / « Droit à l'Oubli » (Article 38)",
+        "section9_4": "9.4 Droit d'Opposition (Article 39)",
+        "section9_5": "9.5 Droit à la Portabilité des Données (Article 40)",
+        "section9_6": "9.6 Droit à la Limitation du Traitement (Article 41)",
+        "section9_7": "9.7 Droit de Retirer le Consentement",
+        "section9_8": "9.8 Droit de Déposer une Plainte",
+        "section9_9": "9.9 Délais de Réponse",
+        "section9_10": "9.10 Gratuité"
+      },
+      "minorsProtection": {
+        "section10_1": "10.1 Exigences d'Âge",
+        "section10_2": "10.2 Consentement Parental",
+        "section10_3": "10.3 Droits Parentaux",
+        "section10_4": "10.4 Interdictions",
+        "section10_5": "10.5 Découverte d'Utilisateurs Mineurs"
+      },
+      "cookies": {
+        "section11_1": "11.1 Vue d'Ensemble",
+        "section11_2": "11.2 Types de Cookies",
+        "section11_3": "11.3 Consentement aux Cookies",
+        "section11_4": "11.4 Cookies Tiers"
+      },
+      "policyChanges": {
+        "section12_1": "12.1 Droit de Modification",
+        "section12_2": "12.2 Notification des Modifications",
+        "section12_3": "12.3 Consentement aux Modifications",
+        "section12_4": "12.4 Historique des Versions"
+      },
+      "internationalUsers": {
+        "section13_1": "13.1 Statut Actuel",
+        "section13_2": "13.2 Utilisateurs de l'Union Européenne (RGPD)",
+        "section13_3": "13.3 Utilisateurs de Californie (CCPA)",
+        "section13_4": "13.4 Utilisateurs en Arabie Saoudite et aux EAU (PDPL)"
+      },
+      "biEnterprise": {
+        "section14_1": "14.1 Protections Supplémentaires",
+        "section14_2": "14.2 Accords de Traitement des Données",
+        "section14_3": "14.3 Responsabilités des Clients"
+      },
+      "contact": {
+        "section15_1": "15.1 Demandes de Protection des Données",
+        "section15_2": "15.2 Délais de Réponse",
+        "section15_3": "15.3 Contact ANPDP",
+        "section15_4": "15.4 Déclarations Réglementaires"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "E-mail"
+      },
+      "phone": {
+        "title": "Téléphone"
+      },
+      "address": {
+        "title": "Adresse"
+      },
+      "website": {
+        "title": "Site Web"
+      },
+      "capital": {
+        "title": "Capital"
+      }
+    },
+    "company": {
+      "name": "Podacium SARL",
+      "registeredCompany": "Société à Responsabilité Limitée (SARL) immatriculée en Algérie",
+      "rc": "RC: En cours d'immatriculation (Tribunal d'Oran)",
+      "nif": "NIF: En cours d'attribution",
+      "ni": "NIS: En cours d'attribution",
+      "capital": "Capital: 100 000 DZD (Souscrit)",
+      "fullAddress": "PC38+5MV, Bir El Djir, Oran, Algérie",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "dpo": "Délégué à la Protection des Données (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com"
+    },
+    "dates": {
+      "effectiveDate": "1 janvier 2026",
+      "lastUpdated": "1 janvier 2026",
+      "version": "1.0",
+      "updatedLabel": "Mis à jour : 1 janv 2026"
+    },
+    "acknowledgment": {
+      "title": "Reconnaissance et Consentement",
+      "description": "En utilisant la Plateforme Podacium, vous reconnaissez que : Vous avez lu et compris cette Politique de Confidentialité, Vous comprenez comment vos données personnelles seront collectées, utilisées et protégées, Vous consentez au traitement des données tel que décrit ici, Vous comprenez vos droits selon la loi algérienne 18-07, Vous pouvez retirer votre consentement ou exercer vos droits des personnes concernées à tout moment. Si vous êtes mineur (moins de 19 ans) : Votre parent ou tuteur légal a fourni un consentement vérifiable pour votre utilisation de la Plateforme et le traitement de vos données personnelles."
+    },
+    "actions": {
+      "print": "Imprimer la Politique",
+      "download": "Télécharger PDF",
+      "viewTerms": "Voir les Conditions d'Utilisation",
+      "viewCookiePolicy": "Voir la Politique des Cookies",
+      "viewRefundPolicy": "Voir la Politique de Remboursement"
+    },
+    "footer": {
+      "thankYou": "Merci de faire confiance à Podacium pour vos informations personnelles. Nous nous engageons à protéger votre vie privée et à respecter toutes les lois algériennes sur la protection des données."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Préférences de cookies",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience de navigation, vous proposer des publicités ou des contenus personnalisés et analyser notre trafic. En cliquant sur \"Tout accepter\", vous consentez à notre utilisation des cookies.",
+      "customize": "Personnaliser",
+      "rejectAll": "Tout refuser",
+      "acceptAll": "Tout accepter",
+      "arabicDominance": "Priorité à la langue arabe",
+      "essential": "Essentiel",
+      "analytics": "Analytique",
+      "marketing": "Marketing",
+      "savePreferences": "Enregistrer les préférences"
+    },
+    "hero": {
+      "badge": "Politique des Cookies",
+      "title": "Politique des Cookies",
+      "description": "Découvrez comment Podacium utilise les cookies et technologies similaires pour améliorer votre expérience tout en protégeant votre vie privée.",
+      "sections": "Sections",
+      "effectiveDate": "Date d'effet",
+      "version": "Version"
+    },
+    "effectiveDate": "Date d'effet",
+    "lastUpdated": "Dernière mise à jour",
+    "version": "Version",
+    "sections": {
+      "introduction": "1. Introduction générale",
+      "introductionDesc": "Aperçu de nos pratiques en matière de cookies et cadre juridique",
+      "whatAreCookies": "2. Que sont les cookies ?",
+      "whatAreCookiesDesc": "Comprendre les cookies et technologies de suivi",
+      "howWeUseCookies": "3. Comment nous utilisons les cookies et base légale",
+      "howWeUseCookiesDesc": "Finalités et bases légales de l'utilisation des cookies",
+      "yourConsentControl": "4. Votre consentement et contrôle",
+      "yourConsentControlDesc": "Gérer et retirer vos préférences en matière de cookies",
+      "typesOfCookies": "5. Types de cookies que nous utilisons",
+      "typesOfCookiesDesc": "Cookies internes et cookies tiers",
+      "detailedCookieList": "6. Liste détaillée des cookies",
+      "detailedCookieListDesc": "Cookies spécifiques utilisés sur notre plateforme",
+      "dataRetention": "7. Conservation des données",
+      "dataRetentionDesc": "Durée de conservation des données des cookies",
+      "dataTransfers": "8. Transferts de données hors d'Algérie",
+      "dataTransfersDesc": "Conformité des transferts internationaux de données",
+      "minorsPrivacy": "9. Protection des mineurs",
+      "minorsPrivacyDesc": "Protections spéciales pour les utilisateurs de moins de 19 ans",
+      "yourRights": "10. Vos droits en matière de protection des données",
+      "yourRightsDesc": "Vos droits selon la loi algérienne 18-07",
+      "contactInformation": "11. Informations de contact et responsable du traitement",
+      "contactInformationDesc": "Comment nous contacter concernant les cookies",
+      "policyChanges": "12. Modifications de cette politique des cookies",
+      "policyChangesDesc": "Comment nous mettons à jour cette politique"
+    },
+    "toc": {
+      "title": "Table des matières"
+    },
+    "badges": {
+      "important": "Important",
+      "new": "Nouveau",
+      "updated": "Mis à jour"
+    },
+    "cards": {
+      "privacyPolicy": {
+        "title": "Politique de confidentialité",
+        "description": "Pratiques complètes de protection des données"
+      },
+      "termsOfService": {
+        "title": "Conditions d'utilisation",
+        "description": "Accord juridique entre vous et Podacium"
+      },
+      "textFiles": {
+        "title": "Fichiers texte",
+        "description": "Petits fichiers texte placés sur votre appareil"
+      },
+      "websiteEfficiency": {
+        "title": "Efficacité du site",
+        "description": "Rendre les sites efficaces et mémoriser les préférences"
+      },
+      "legalCompliance": {
+        "title": "Conformité légale",
+        "description": "Conformité totale avec la loi algérienne 18-07"
+      },
+      "userConsent": {
+        "title": "Consentement utilisateur",
+        "description": "Consentement préalable, éclairé et explicite requis"
+      },
+      "rightAccess": {
+        "title": "Droit d'accès",
+        "description": "Accéder à vos données personnelles collectées via les cookies"
+      },
+      "rightRectification": {
+        "title": "Droit de rectification",
+        "description": "Corriger les données de cookies inexactes"
+      },
+      "rightErasure": {
+        "title": "Droit à l'effacement",
+        "description": "Supprimer vos données personnelles de cookies"
+      },
+      "rightPortability": {
+        "title": "Droit à la portabilité",
+        "description": "Recevoir les données de cookies dans un format lisible par machine"
+      }
+    },
+    "categories": {
+      "essential": "Essentiel",
+      "analytics": "Analytique",
+      "functional": "Fonctionnel",
+      "marketing": "Marketing"
+    },
+    "table": {
+      "headers": {
+        "cookieName": "Nom du cookie",
+        "provider": "Fournisseur",
+        "purpose": "Finalité",
+        "duration": "Durée",
+        "dataShared": "Données partagées",
+        "category": "Catégorie"
+      }
+    },
+    "usageTable": {
+      "headers": {
+        "purpose": "Finalité",
+        "description": "Description",
+        "legalBasis": "Base légale selon la loi algérienne"
+      },
+      "strictlyNecessary": {
+        "purpose": "Strictement nécessaires",
+        "description": "Essentiels au fonctionnement de la Plateforme. Permettent les fonctionnalités principales comme la connexion utilisateur, la gestion de session, la sécurité et le traitement des paiements.",
+        "legalBasis": "Exécution d'un contrat (Article 5) - Aucun consentement préalable requis"
+      },
+      "performanceAnalytics": {
+        "purpose": "Performance / Analytique",
+        "description": "Aident à comprendre l'interaction avec la Plateforme. Collectent des informations anonymes pour améliorer la structure, le contenu et l'expérience utilisateur.",
+        "legalBasis": "Votre consentement préalable et explicite (Articles 4 & 5)"
+      },
+      "functionality": {
+        "purpose": "Fonctionnalité",
+        "description": "Mémorisent les choix (langue, région) pour fournir des fonctionnalités améliorées et personnalisées.",
+        "legalBasis": "Votre consentement préalable et explicite"
+      },
+      "targeting": {
+        "purpose": "Ciblage / Publicité",
+        "description": "Diffuser des publicités pertinentes et mesurer l'efficacité des campagnes publicitaires.",
+        "legalBasis": "Votre consentement préalable et explicite (Utilisation future uniquement)"
+      }
+    },
+    "providersTable": {
+      "headers": {
+        "serviceProvider": "Fournisseur de service",
+        "purpose": "Finalité",
+        "dataLocation": "Localisation des données et transfert",
+        "yourControl": "Votre contrôle"
+      },
+      "paymentGateways": {
+        "provider": "Passerelles de paiement (CIB, SATIM, EDAHABIA)",
+        "purpose": "Traitement sécurisé des transactions",
+        "dataLocation": "Serveurs en Algérie. Aucune donnée personnelle stockée dans les cookies",
+        "yourControl": "Nécessaire pour le service"
+      },
+      "analyticsProviders": {
+        "provider": "Fournisseurs d'analyses (ex. Google Analytics)",
+        "purpose": "Analyser le trafic et les modèles d'utilisation de la Plateforme",
+        "dataLocation": "Serveurs hors d'Algérie (nécessite l'autorisation de l'ANPDP)",
+        "yourControl": "Soumis à votre consentement explicite via la bannière de cookies"
+      },
+      "aiServiceProviders": {
+        "provider": "Fournisseurs de services d'IA",
+        "purpose": "Améliorer les fonctionnalités de tutorat et de recommandation IA",
+        "dataLocation": "Principalement Algérie. International nécessite l'autorisation de l'ANPDP",
+        "yourControl": "Soumis à votre consentement explicite"
+      },
+      "marketingPlatforms": {
+        "provider": "Plateformes marketing (ex. Facebook Pixel)",
+        "purpose": "Mesurer la performance des publicités et diffuser des publicités pertinentes",
+        "dataLocation": "Serveurs hors d'Algérie (nécessite l'autorisation de l'ANPDP)",
+        "yourControl": "Soumis à votre consentement explicite et granulaire"
+      }
+    },
+    "cookies": {
+      "sessionId": {
+        "purpose": "Maintient votre session utilisateur connecté"
+      },
+      "csrfToken": {
+        "purpose": "Protège contre les attaques de falsification de requête intersite"
+      },
+      "cookieConsent": {
+        "purpose": "Stocke vos choix de préférences de cookies"
+      },
+      "googleAnalytics": {
+        "purpose": "Distinguer les utilisateurs uniques pour l'analyse"
+      },
+      "googleAnalytics24h": {
+        "purpose": "Distinguer les utilisateurs pour l'analyse sur une période de 24 heures"
+      }
+    },
+    "providers": {
+      "googleAnalytics": "Google Analytics (Planifié)"
+    },
+    "durations": {
+      "session": "Session",
+      "oneYear": "1 An",
+      "twoYears": "2 Ans",
+      "twentyFourHours": "24 Heures"
+    },
+    "dataShared": {
+      "none": "Aucune",
+      "google": "Google (Transfert international soumis à l'autorisation de l'ANPDP)"
+    },
+    "content": {
+      "introduction": {
+        "policyExplanation": "Cette Politique des Cookies explique comment Podacium SARL ('Podacium', 'nous', 'notre') utilise les cookies et technologies de suivi similaires sur notre site web et plateforme (collectivement, la 'Plateforme'). Cette politique doit être lue conjointement avec notre Politique de Confidentialité et nos Conditions d'Utilisation.",
+        "complianceCommitment": "Nous nous engageons à protéger votre vie privée et à assurer la transparence de nos pratiques de données en pleine conformité avec la loi algérienne n°18-07 du 10 juin 2018 relative à la protection des personnes physiques dans le traitement des données à caractère personnel."
+      },
+      "whatAreCookies": {
+        "definition": "Les cookies sont de petits fichiers texte placés sur votre appareil (ordinateur, tablette ou mobile) lorsque vous visitez un site web. Ils sont largement utilisés pour rendre les sites web efficaces, mémoriser vos préférences et fournir des informations aux propriétaires des sites.",
+        "trackingTechnologies": "Nous utilisons également des technologies de suivi similaires telles que les web beacons, pixels et stockage local (collectivement appelés 'cookies' dans cette politique)."
+      },
+      "howWeUseCookies": {
+        "intro": "Nous utilisons les cookies pour les finalités suivantes, basées sur les bases légales énoncées dans la loi algérienne 18-07 :"
+      },
+      "yourConsentControl": {
+        "priorConsent": "Conformément à l'article 4 de la loi 18-07, nous exigeons votre consentement libre, spécifique, éclairé et non ambigu avant de placer tout cookie non essentiel sur votre appareil.",
+        "consentFlow": {
+          "intro": "Flux de consentement :",
+          "step1": "Première visite → Bannière de cookies affichée",
+          "step2": "Utilisateur choisit : [Tout accepter] OU [Refuser non essentiels] OU [Personnaliser les préférences]",
+          "step3": "Choix sauvegardé (cookie `cookie_consent` défini pour 1 an)",
+          "step4": "Cookies respectifs placés → L'utilisateur peut modifier son choix à tout moment",
+          "keyPoints": "Points clés :",
+          "point1": "Première visite : Bannière de consentement claire avec options granulaires",
+          "point2": "Contrôle granulaire : Donner ou refuser le consentement indépendamment pour chaque catégorie",
+          "point3": "Pas de consentement implicite : Naviguer sans interaction ≠ consentement valide",
+          "point4": "Stockage du consentement : Préférence stockée dans `cookie_consent` pendant 1 an"
+        },
+        "withdrawConsent": "Vous avez le droit de retirer ou de modifier votre consentement aux cookies à tout moment, avec effet pour l'avenir. Le retrait n'affectera pas les cookies strictement nécessaires requis pour le fonctionnement de la Plateforme.",
+        "manageOptions": {
+          "option1": "Accéder aux 'Préférences de cookies' dans votre tableau de bord Compte",
+          "option2": "Cliquer sur l'icône/le lien cookies dans le pied de page du site",
+          "option3": "Nous contacter pour assistance",
+          "option4": "Effacer les cookies du navigateur (réinitialisera les préférences et nécessitera une reconnexion)"
+        },
+        "rejectionWarning": "Si vous refusez les cookies ou retirez votre consentement, les cookies non essentiels seront supprimés rapidement et cesseront d'être placés lors des visites futures.",
+        "browserSettings": "Vous pouvez également contrôler les cookies via les paramètres de votre navigateur web. La plupart des navigateurs vous permettent de bloquer ou supprimer les cookies, ou de définir des préférences pour certains sites.",
+        "browserGuides": {
+          "chromeTitle": "Navigateur Google Chrome",
+          "firefoxTitle": "Navigateur Mozilla Firefox",
+          "safariTitle": "Safari",
+          "edgeTitle": "Navigateur Microsoft Edge",
+          "chrome": "Gérer les cookies dans les paramètres de Chrome",
+          "firefox": "Configurer les préférences de cookies dans Firefox",
+          "safari": "Contrôler les cookies et données de site dans Safari",
+          "edge": "Supprimer et gérer les cookies dans Microsoft Edge"
+        },
+        "blockingWarning": "Bloquer tous les cookies, surtout ceux strictement nécessaires, affectera gravement votre capacité à utiliser la Plateforme Podacium."
+      },
+      "typesOfCookies": {
+        "firstPartyCookies": "Ces cookies sont placés directement par Podacium sur notre domaine principal (podacium.com) ainsi que nos domaines secondaires (podacium.dz, podacium.com.dz), tous pointant vers le même serveur.",
+        "thirdPartyCookies": "Ceux-ci sont placés par des domaines autres que Podacium, par nos fournisseurs de services de confiance. Leur utilisation est strictement régie par des Accords de Traitement des Données pour assurer la conformité avec la loi algérienne."
+      },
+      "detailedCookieList": {
+        "strictlyNecessaryNote": "Les cookies strictement nécessaires sont essentiels au fonctionnement de la Plateforme et sont placés sans consentement préalable comme requis par l'article 5 de la loi algérienne 18-07.",
+        "analyticsNote": "Les cookies d'analyse ne sont placés qu'avec votre consentement explicite via la bannière de cookies.",
+        "functionalityMarketingNote": "Nous n'utilisons actuellement pas de cookies de fonctionnalité ou marketing. Toute mise en œuvre future sera listée ici et nécessitera votre consentement explicite.",
+        "updateNote": "Ce tableau sera mis à jour immédiatement après un audit complet des cookies et pourra inclure des cookies supplémentaires si nécessaire."
+      },
+      "dataRetention": {
+        "intro": "Les données des cookies ne sont conservées que pendant la durée spécifiée dans le tableau des cookies ci-dessus (les cookies 'Session' sont supprimés lorsque vous fermez votre navigateur).",
+        "privacyPolicyReference": "Les données personnelles collectées via les cookies sont traitées selon les périodes de conservation décrites dans notre Politique de Confidentialité."
+      },
+      "dataTransfers": {
+        "intro": "L'utilisation de certains cookies tiers peut impliquer le transfert de données personnelles vers des serveurs situés en dehors de l'Algérie. Conformément aux articles 31-33 de la loi 18-07, tout transfert transfrontalier de données nécessite l'autorisation préalable de l'Autorité Nationale de Protection des Données à Caractère Personnel (ANPDP).",
+        "ourCommitments": {
+          "intro": "Nous nous engageons à :",
+          "commitment1": "Ne pas activer de service impliquant un transfert international de données via les cookies sans avoir obtenu au préalable l'autorisation requise de l'ANPDP",
+          "commitment2": "Vous informer dans cette politique et via la bannière de cookies de tout transfert international",
+          "commitment3": "Assurer des garanties adéquates via des Accords de Traitement des Données avec tous les fournisseurs tiers"
+        }
+      },
+      "minorsPrivacy": {
+        "intro": "Conformément à nos Conditions d'Utilisation et Politique de Confidentialité, les utilisateurs de moins de 19 ans sont considérés comme Mineurs selon la loi algérienne.",
+        "parentalConsent": "Nous exigeons le consentement parental vérifiable avant de traiter les données personnelles des Mineurs. Le placement de cookies non essentiels sur l'appareil d'un Mineur est conditionné à ce consentement parental."
+      },
+      "yourRights": {
+        "intro": "En plus de vos droits concernant le consentement, vous disposez de l'ensemble des droits des personnes concernées selon la loi algérienne 18-07, comme détaillé dans notre Politique de Confidentialité (Section 9).",
+        "exerciseRights": "Pour exercer ces droits, ou pour toute question concernant cette Politique des Cookies, veuillez nous contacter en utilisant les informations de contact ci-dessous."
+      },
+      "contactInformation": {
+        "dpoNote": "Note : Un Délégué à la Protection des Données (DPD) sera officiellement désigné avant notre lancement commercial. Jusqu'à cette date, toutes les demandes envoyées à l'adresse ci-dessus seront traitées rapidement.",
+        "anpdpContact": "Vous avez le droit de déposer une plainte auprès de l'Autorité Nationale de Protection des Données à Caractère Personnel (ANPDP) si vous estimez que notre traitement de vos données viole la loi algérienne. ANPDP : 01, Rue Ahmed Ouaked, Dely Ibrahim, Alger, Algérie. Site web : https://www.anpdp.dz",
+        "anpdpRegistration": "Numéro d'enregistrement ANPDP : En attente / À ajouter lors de la délivrance"
+      },
+      "policyChanges": {
+        "intro": "Nous pouvons mettre à jour cette Politique des Cookies pour refléter les changements dans nos pratiques, technologie, exigences légales ou services.",
+        "notificationMethod": "Nous vous informerons de tout changement important par email (si vous avez un compte) et/ou en affichant un avis bien visible sur notre Plateforme au moins 15 jours avant l'entrée en vigueur des changements.",
+        "continuedUse": "Votre utilisation continue de la Plateforme après la date d'effet de la politique mise à jour constitue votre acceptation des changements, notamment concernant vos préférences de consentement pour les cookies non essentiels."
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 Explication de la politique",
+        "section1_2": "1.2 Engagement de conformité"
+      },
+      "whatAreCookies": {
+        "section2_1": "2.1 Que sont les cookies ?",
+        "section2_2": "2.2 Technologies de suivi similaires"
+      },
+      "howWeUseCookies": {
+        "section3_1": "3.1 Tableau des bases légales"
+      },
+      "yourConsentControl": {
+        "section4_1": "4.1 Consentement préalable, éclairé et exprès",
+        "section4_2": "4.2 Flux de consentement",
+        "section4_3": "4.3 Retrait ou modification du consentement",
+        "section4_4": "4.4 Gestion des cookies via les paramètres du navigateur"
+      },
+      "typesOfCookies": {
+        "section5_1": "5.1 Cookies internes",
+        "section5_2": "5.2 Cookies tiers"
+      },
+      "detailedCookieList": {
+        "section6_1": "6.1 Cookies strictement nécessaires",
+        "section6_2": "6.2 Cookies de performance/analytique",
+        "section6_3": "6.3 Cookies de fonctionnalité et marketing",
+        "section6_4": "6.4 Mises à jour de la liste des cookies"
+      },
+      "dataRetention": {
+        "section7_1": "7.1 Conservation des données de cookies",
+        "section7_2": "7.2 Référence à la Politique de Confidentialité"
+      },
+      "dataTransfers": {
+        "section8_1": "8.1 Exigences de transfert international",
+        "section8_2": "8.2 Nos engagements"
+      },
+      "minorsPrivacy": {
+        "section9_1": "9.1 Exigences d'âge",
+        "section9_2": "9.2 Exigence de consentement parental"
+      },
+      "yourRights": {
+        "section10_1": "10.1 Vos droits selon la loi 18-07",
+        "section10_2": "10.2 Exercice de vos droits"
+      },
+      "contactInformation": {
+        "section11_1": "11.1 Informations du responsable du traitement",
+        "section11_2": "11.2 Délégué à la Protection des Données (DPD)",
+        "section11_3": "11.3 Autorité de contrôle algérienne",
+        "section11_4": "11.4 Enregistrement ANPDP"
+      },
+      "policyChanges": {
+        "section12_1": "12.1 Droit de modification",
+        "section12_2": "12.2 Notification des changements",
+        "section12_3": "12.3 Utilisation continue comme acceptation"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "Email"
+      },
+      "phone": {
+        "title": "Téléphone"
+      },
+      "address": {
+        "title": "Adresse"
+      },
+      "website": {
+        "title": "Site web"
+      },
+      "capital": {
+        "title": "Capital"
+      }
+    },
+    "company": {
+      "name": "Podacium SARL",
+      "registeredCompany": "Société à Responsabilité Limitée (SARL) enregistrée en Algérie",
+      "rc": "RC: En cours d'immatriculation (Tribunal d'Oran)",
+      "nif": "NIF: En cours d'attribution",
+      "ni": "NIS: En cours d'attribution",
+      "capital": "Capital: 100 000 DZD (Souscrit)",
+      "fullAddress": "PC38+5MV, Bir El Djir, Oran, Algérie",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "dpo": "Délégué à la Protection des Données (DPD)",
+      "dpoEmail": "merhabahmed@podacium.com"
+    },
+    "dates": {
+      "effectiveDate": "1 janvier 2026",
+      "lastUpdated": "1 janvier 2026",
+      "version": "1.0",
+      "updatedLabel": "Mis à jour : 1 janv 2026"
+    },
+    "languageVersion": {
+      "title": "Version linguistique",
+      "description": "La version juridique officielle de ce document est en arabe. Les traductions sont fournies à titre indicatif uniquement. En cas de divergence, la version arabe prévaudra."
+    },
+    "acknowledgment": {
+      "title": "Reconnaissance",
+      "description": "En utilisant la Plateforme Podacium, vous reconnaissez avoir lu et compris cette Politique de Cookies et consentez à l'utilisation de cookies et technologies similaires comme décrit dans le présent document."
+    },
+    "actions": {
+      "print": "Imprimer la politique",
+      "download": "Télécharger PDF",
+      "viewPrivacy": "Voir Politique de confidentialité",
+      "viewTerms": "Voir Conditions d'utilisation",
+      "viewRefund": "Voir Politique de remboursement",
+      "viewCookiePolicy": "Voir la Politique de Cookies",
+      "viewRefundPolicy": "Voir la Politique de Remboursement"
+    },
+    "footer": {
+      "thankYou": "Merci de faire confiance à Podacium. Nous nous engageons à des pratiques transparentes en matière de cookies et à protéger votre vie privée selon les lois algériennes de protection des données."
+    }
+  },
+  "refund": {
+    "hero": {
+      "badge": "Politique de Remboursement",
+      "title": "Politique de Remboursement",
+      "description": "Apprenez nos critères d'éligibilité aux remboursements, périodes de rétractation et conditions pour abonnements et achats uniques.",
+      "sections": "Sections",
+      "effectiveDate": "Date d'Entrée en Vigueur",
+      "version": "Version",
+      "lastUpdated": "Dernière Mise à Jour"
+    },
+    "effectiveDate": "Date d'Entrée en Vigueur",
+    "lastUpdated": "Dernière Mise à Jour",
+    "version": "Version",
+    "sections": {
+      "introduction": "1. Introduction générale",
+      "introductionDesc": "Aperçu et avis linguistique",
+      "generalPrinciples": "2. Principes Généraux de Remboursement",
+      "generalPrinciplesDesc": "Principes fondamentaux régissant tous les remboursements",
+      "educationRefunds": "3. Remboursements Plateforme Éducative",
+      "educationRefundsDesc": "Remboursements pour cours et contenu éducatif",
+      "subscriptionRefunds": "4. Remboursements Services d'Abonnement",
+      "subscriptionRefundsDesc": "Remboursements pour plans d'abonnement",
+      "freelancingRefunds": "5. Remboursements Marché Freelance",
+      "freelancingRefundsDesc": "Remboursements pour services freelance",
+      "technicalIssues": "6. Problèmes Techniques et Indisponibilité Plateforme",
+      "technicalIssuesDesc": "Remboursements pour problèmes techniques",
+      "forceMajeure": "7. Force Majeure et Événements Exceptionnels",
+      "forceMajeureDesc": "Remboursements durant circonstances exceptionnelles",
+      "paymentProcessing": "8. Traitement Paiements et Devise",
+      "paymentProcessingDesc": "Comment les remboursements sont traités",
+      "platformCredits": "9. Crédits Plateforme comme Alternative aux Remboursements",
+      "platformCreditsDesc": "Utiliser crédits au lieu de remboursements en espèces",
+      "fraudPrevention": "10. Prévention Fraude, Abus et Rétrofacturations",
+      "fraudPreventionDesc": "Prévention abus de remboursements",
+      "specialCases": "11. Cas Spéciaux et Exceptions",
+      "specialCasesDesc": "Scénarios de remboursement uniques",
+      "procedures": "12. Procédures Demande Remboursement",
+      "proceduresDesc": "Comment demander un remboursement",
+      "disputeResolution": "13. Résolution Litiges et Recours",
+      "disputeResolutionDesc": "Résoudre litiges de remboursement",
+      "policyUpdates": "14. Mises à Jour et Modifications Politique",
+      "policyUpdatesDesc": "Comment cette politique peut changer",
+      "contact": "15. Informations Contact",
+      "contactDesc": "Comment nous contacter concernant remboursements",
+      "quickReference": "16. Tableau Référence Rapide Remboursements",
+      "quickReferenceDesc": "Résumé éligibilité remboursements",
+      "acknowledgment": "17. Reconnaissance",
+      "acknowledgmentDesc": "Acceptation des conditions"
+    },
+    "toc": {
+      "title": "Table des Matières",
+      "sectionsCount": "{count} rubriques"
+    },
+    "badges": {
+      "important": "Important",
+      "new": "Nouveau",
+      "updated": "Mis à Jour"
+    },
+    "cards": {
+      "languageNotice": {
+        "title": "Avis Linguistique",
+        "description": "La version juridique officielle de ce document est en arabe. Les traductions sont fournies à titre indicatif uniquement. En cas de divergence, la version arabe prévaudra."
+      },
+      "digitalContent": {
+        "title": "Barrière Contenu Numérique",
+        "description": "Contenu consulté considéré livré et consommé"
+      },
+      "consumerRights": {
+        "title": "Droits Protection Consommateurs",
+        "description": "Vos droits sous Loi Algérienne 09-03"
+      },
+      "coolingOff": {
+        "title": "Période Rétractation 7 Jours",
+        "description": "Remboursement intégral si aucun contenu consulté dans 7 jours"
+      },
+      "subscriptionPause": {
+        "title": "Pause Abonnement",
+        "description": "Suspendre abonnement jusqu'à 3 mois"
+      },
+      "escrowProtection": {
+        "title": "Paiements de fonctionnalités sécurisés",
+        "description": "Tous les achats de fonctionnalités sécurisés par le système PodaPoints"
+      },
+      "platformCredits": {
+        "title": "Crédits Plateforme",
+        "description": "Recevez bonus 110-120% en choisissant crédits"
+      },
+      "identityVerification": {
+        "title": "Vérification Identité",
+        "description": "Requis pour remboursements supérieurs à 10.000 DZD"
+      },
+      "mediation": {
+        "title": "Médiation Volontaire",
+        "description": "Résoudre litiges à l'amiable avant action légale"
+      },
+      "grandfathering": {
+        "title": "Clause Droits Acquis",
+        "description": "Achats régis par politique en vigueur au moment achat"
+      },
+      "serviceFees": {
+        "title": "Politique d'achat de fonctionnalités",
+        "description": "Les achats de fonctionnalités sont définitifs une fois activés"
+      },
+      "giftPurchases": {
+        "title": "Achats de Cadeaux",
+        "description": "Les droits au remboursement appartiennent à l'acheteur original"
+      },
+      "duplicatePurchases": {
+        "title": "Achats en Double",
+        "description": "Remboursement intégral pour les doublons accidentels sous 48h"
+      },
+      "accountDeletion": {
+        "title": "Suppression de Compte",
+        "description": "Remboursements au prorata pour les abonnements actifs uniquement"
+      },
+      "deceasedUsers": {
+        "title": "Utilisateurs Décédés",
+        "description": "Remboursements disponibles pour les membres de la famille autorisés"
+      }
+    },
+    "categories": {
+      "fullRefund": "Remboursement Intégral",
+      "conditionalRefund": "Remboursement Conditionnel/Discrétionnaire",
+      "noRefund": "Pas de Remboursement",
+      "alternativeCompensation": "Compensation Alternative"
+    },
+    "table": {
+      "headers": {
+        "productService": "Produit/Service",
+        "scenario": "Scénario",
+        "refundStatus": "Statut Remboursement",
+        "timeline": "Délai"
+      },
+      "scenarios": {
+        "zeroAccessed7Days": "0% consulté, sous 7 jours",
+        "partialAccessed7Days": "1-30% consulté, sous 7 jours",
+        "overConsumedOrTime": ">30% consulté ou >7 jours",
+        "first72HoursNoUsage": "72 premières heures, sans usage",
+        "first30Days": "30 premiers jours",
+        "zeroCompletion": "0% de travail réalisé",
+        "lowDowntime": "<24 heures d'indisponibilité/mois"
+      },
+      "timelines": {
+        "standard": "5-10 jours",
+        "conditional": "10-17 jours",
+        "notApplicable": "N/A",
+        "automatic": "Automatique"
+      },
+      "products": {
+        "individualCourse7Day": "Cours Individuel (Standard)",
+        "individualCourseConditional": "Cours Individuel (Conditionnel)",
+        "individualCourseNoRefund": "Cours Individuel (Non Remboursable)",
+        "subscription72Hours": "Nouvel Abonnement (Délai 72h)",
+        "subscription30Day": "Abonnement (30 Premiers Jours)",
+        "freelancingFeature": "Achat de fonctionnalité Freelance",
+        "technicalDowntime": "Problèmes Techniques / Indisponibilité"
+      }
+    },
+    "content": {
+      "introduction": {
+        "policyExplanation": "Cette Politique de Remboursement régit toutes demandes remboursement produits et services achetés via plateforme Podacium, exploitée par Podacium SARL, société à responsabilité limitée algérienne enregistrée en Algérie.",
+        "languageNotice": "La version juridique officielle de ce document est en arabe. Les traductions sont fournies à titre indicatif uniquement. En cas de divergence, la version arabe prévaudra.",
+        "multiPillarEcosystem": "Podacium opère un écosystème numérique multi-piliers comprenant : Plateforme Éducative (cours en ligne, parcours d'apprentissage), Services d'Abonnement (niveaux étudiants, accès Business Intelligence), Marché Freelance (services par projet avec tarification par fonctionnalité), Système de Portefeuille Numérique (traitement des paiements PodaPoints et achats de fonctionnalités).",
+        "relationshipToTerms": "Cette Politique de Remboursement incorporée et fait partie Conditions Service Podacium. En cas conflit entre cette Politique et Conditions, cette Politique prévaut pour questions spécifiques remboursements."
+      },
+      "generalPrinciples": {
+        "digitalContentBarrier": "Une fois contenu numérique consulté (vidéo regardée, document téléchargé, quiz tenté, leçon terminée), considéré livré et consommé. Remboursements non disponibles pour contenu consulté sauf si contenu matériellement défectueux ou non conforme description publiée.",
+        "servicePerformance": "Les services de la plateforme (accès à l'infrastructure, traitement des paiements, mise en relation des utilisateurs, résolution des litiges) sont distincts du contenu ou des produits achetés. Les frais de service pour les achats de fonctionnalités activées sont non remboursables une fois rendus, indépendamment de la satisfaction de l'utilisateur quant aux résultats.",
+        "consumerProtection": "Rien dans cette Politique de Remboursement n'exclut ni ne limite vos droits obligatoires en vertu de la Loi Algérienne 09-03 sur la Protection des Consommateurs (modifiée par la Loi 18-09), y compris vos droits à : des informations précises sur les produits, des services sûrs et de qualité, un recours pour les services défectueux, et le dépôt de plaintes auprès des autorités de protection des consommateurs.",
+        "withdrawalRight": "En vertu du droit algérien de la consommation (Loi 09-03), les consommateurs disposent d'un droit de rétractation de 14 jours pour les contrats à distance. Cependant, conformément à l'exception pour le contenu numérique (Article 4 du Décret Exécutif 14-134), vous consentez expressément à l'accès immédiat et perdez votre droit de rétractation une fois que le contenu numérique est entièrement exécuté (cours consulté, vidéo diffusée ou certificat émis). Notre fenêtre de remboursement de 7 jours dépasse la période minimale de garantie légale pour la qualité du contenu numérique, et le droit de rétractation de 14 jours ne s'applique pas lorsque vous avez expressément demandé l'exécution avant l'expiration de la période de rétractation."
+      },
+      "educationRefunds": {
+        "individualCourse7Day": "Peut demander remboursement intégral achat cours individuel 7 jours achat si : Pas consulté contenu cours (0% progression), Aucun certificat émis, Demande soumise via canaux officiels.",
+        "individualCourseConditional": "Si consulté 1-30% contenu cours fenêtre 7 jours, remboursement peut accordé discrétion Podacium si prouvez contenu cours diffère matériellement description publiée ou fonctionnalités annoncées manquantes.",
+        "individualCourseNoRefund": "Pas remboursements disponibles si : Consommé plus 30% contenu cours, Plus 7 jours passés depuis achat, Téléchargé matériels cours terminé évaluations, Certificat émis.",
+        "courseBundles": "Packs cours parcours apprentissage vendus produits intégrés prix réduit. Remboursements partiels cours individuels pack non disponibles. Remboursements packs complets suivent règle 7 jours, 0% accès TOUS cours pack.",
+        "liveCoursesBeforeStart": "Cours en direct : Remboursement intégral disponible jusqu'à 48h avant heure début programmée. Pas remboursement 48h avant début engagements planning instructeur capacité.",
+        "liveCoursesAfterStart": "Pas remboursements disponibles une fois première session programmée commencée, service rendu. Exception : Si Podacium ou instructeur annule cours entièrement reprogramme moins 48h préavis, remboursements intégraux automatiquement disponibles.",
+        "certificatesIssued": "Une fois certificat émis : Cours considéré entièrement livré, Pas remboursements disponibles, Révocation certificat donne pas droit remboursement.",
+        "checkpoints": {
+          "zeroAccessed": "0% de progression",
+          "noCertificate": "Aucun certificat émis",
+          "within7Days": "Sous 7 jours",
+          "noRefundAfterCertificate": "Pas de remboursement après émission du certificat"
+        }
+      },
+      "subscriptionRefunds": {
+        "first72Hours": "Premières 72 heures nouvel abonnement ou mise à niveau niveau, peut demander remboursement intégral si : Pas utilisé fonctionnalités ou contenu premium inclus niveau, Premier abonnement ce niveau.",
+        "thirtyDayCommitment": "Premiers 30 jours chaque cycle facturation non remboursables (sauf période rétractation 72 heures). Assure viabilité plateforme prévient cyclage systématique abonnements.",
+        "proRataRefunds": "Après premiers 30 jours cycle facturation, remboursements au prorata périodes inutilisées abonnement peuvent accordés discrétion Podacium, soumis exigences loi algérienne protection consommateurs.",
+        "automaticRenewal": "Abonnements renouvelés automatiquement sauf annulation avant date renouvellement. Podacium envoie avis renouvellement 7 jours avance email notification application.",
+        "failedNoticeProtection": "Si Podacium échoue envoyer avis 7 jours requis, droit remboursement intégral ce cycle renouvellement demande 14 jours charge renouvellement.",
+        "pauseFeature": "Peut suspendre abonnement jusqu'à 3 mois (90 jours) paramètres compte. Suspension pas remboursement – obligation paiement suspendue période suspension. Pas remboursements émis abonnements suspendus."
+      },
+      "freelancingRefunds": {
+        "statusNotice": "Le Marché Freelance utilise un modèle de tarification par fonctionnalité. Il n'y a pas de commissions sur les projets.",
+        "featurePurchaseRefund": "Les achats de fonctionnalités (publications de projets, annonces en vedette, boosts, passeport de compétences) sont non remboursables une fois activés. Si une fonctionnalité n'a pas été activée (ex. projet non encore publié), un remboursement peut être demandé dans les 48 heures suivant l'achat.",
+        "unusedPoints": "Les PodaPoints non utilisés restent dans votre portefeuille et n'expirent pas tant que vous avez une activité de portefeuille dans les 365 jours. Vous pouvez les utiliser pour tout achat futur de fonctionnalité.",
+        "disputeResolution": "Pour les litiges liés aux projets entre clients et freelances, Podacium propose une médiation volontaire. Les achats de fonctionnalités liés à un projet contesté ne sont pas éligibles au remboursement.",
+        "noCommission": "Aucune commission de plateforme n'est facturée sur les paiements de projets. La plateforme est financée par les achats de fonctionnalités et les abonnements."
+      },
+      "technicalIssues": {
+        "downtimeLess24Hours": "Indisponibilité plateforme <24h cumulative mois : Pas remboursements émis, Périodes accès abonnements automatiquement étendues compenser indisponibilité.",
+        "downtimeMore24Hours": "Indisponibilité plateforme >24h cumulative mois : Utilisateurs abonnements crédit au prorata, Utilisateurs non abonnés extension période accès égale durée indisponibilité.",
+        "catastrophicDowntime": "Indisponibilité catastrophique (>7 jours consécutifs) : Remboursements au prorata automatiquement émis, Utilisateurs notifiés email, Abonnements automatiquement suspendus restauration service.",
+        "technicalDefects": "Si contenu acheté défauts techniques (vidéos cassées, fichiers inaccessibles, quiz non fonctionnels) : Signaler 30 jours preuves, Podacium enquête 7 jours, Choisir remboursement intégral, cours remplacement, crédit plateforme 120%.",
+        "contentUnavailability": "Si contenu retiré définitivement plateforme : Cours individuels remboursement au prorata basé temps restant, Abonnements crédit au prorata, Packs remboursement proportionnel basé valeur contenu retiré produit autonome.",
+        "examples": {
+          "brokenVideos": "Vidéos cassées",
+          "nonFunctionalQuizzes": "Quiz non fonctionnels",
+          "corruptDownloads": "Téléchargements corrompus"
+        }
+      },
+      "forceMajeure": {
+        "interruptionsLess14Days": "Interruptions force majeure moins 14 jours consécutifs : Pas remboursements émis, Périodes accès facturation abonnements automatiquement suspendues événement, Temps perdu ajouté période accès.",
+        "interruptionsMore14Days": "Interruptions force majeure dépassant 14 jours consécutifs : Podacium offre extension période accès (2× durée interruption), Crédit portefeuille plateforme (au prorata), Remboursement espèces (au prorata) discrétion Podacium.",
+        "notification": "Podacium notifiera utilisateurs événements force majeure email, avis page d'accueil plateforme, annonces médias sociaux détails événement durée attendue."
+      },
+      "paymentProcessing": {
+        "refundMethod": "Remboursements traités méthode paiement originale sauf : Méthode paiement originale valide, Utilisateur demande explicitement crédit portefeuille plateforme, Processeur paiement supporte pas remboursements.",
+        "processingTime": "Délai standard : 5-10 jours ouvrables approbation disponibilité fonds compte. Remboursements portefeuille : Immédiat (crédité 24h).",
+        "currency": "Utilisateurs algériens : Toutes transactions remboursements Dinars Algériens (DZD). Utilisateurs internationaux : Remboursements devise transaction originale taux change original. Crédits plateforme émis DZD tous utilisateurs.",
+        "taxHandling": "Tous prix incluent Taxe Valeur Ajoutée (TVA) taux algérien courant. Remboursements incluent TVA payée montant remboursé. Podacium émet note crédit tous remboursements conformité fiscale."
+      },
+      "platformCredits": {
+        "creditBonus": "Demandes remboursement éligibles, Podacium peut offrir crédits plateforme alternative remboursements espèces incitations bonus : Bonus crédit 110% remboursements requis loi politique, Bonus crédit 120% remboursements discrétionnaires.",
+        "creditTerms": "Crédits plateforme : Valides 12 mois émission, Peuvent utilisés achats cours, abonnements, services freelance, Peuvent offerts autres utilisateurs Podacium, Convertibles espèces, Expirent 12 mois.",
+        "userChoice": "Crédits toujours optionnels. Peut refuser recevoir remboursement espèces standard (pas bonus).",
+        "conditions": {
+          "valid12Months": "Valide pendant 12 mois",
+          "usageScope": "Utilisé pour tous les services de la plateforme",
+          "giftable": "Peut être offert à d'autres",
+          "nonConvertible": "Non convertible en espèces"
+        }
+      },
+      "fraudPrevention": {
+        "abuseIndicators": "Podacium réserve droit refuser remboursements suspendre comptes abus systématique incluant : Plus 2 demandes remboursement 6 mois, Demandes remboursement plus 30% achats totaux, Consommation contenu élevée avant demande remboursement.",
+        "largeRefundVerification": "Remboursements dépassant 10.000 DZD requièrent vérification identité conformité règlements algériens lutte blanchiment argent, protocoles prévention fraude, exigences conformité fiscale.",
+        "chargebackPolicy": "Rétrofacturations légitimes (transaction non autorisée, erreur facturation, service reçu) : Podacium honore rétrofacturation. Rétrofacturations frauduleuses (service livré consommé) : Podacium peut contester, suspendre compte, bannir méthodes paiement, poursuivre action légale.",
+        "chargebackFees": "Déposer rétrofacturation renonce droit traitement remboursement standard plateforme. Contactez support impliquant banque. La plupart problèmes résolus plus rapidement communication directe."
+      },
+      "specialCases": {
+        "giftPurchases": "Cours abonnements achetés cadeaux : Seul acheteur original peut demander remboursement, Soumis conditions remboursement standard, Bénéficiaire cadeau droits remboursement.",
+        "duplicatePurchases": "Achats dupliqués accidentels : Contacter 48h charge dupliquée, Fournir identifiants transactions, Remboursement intégral charge dupliquée 3-5 jours ouvrables.",
+        "accountDeletion": "Demandes suppression compte : Remboursements au prorata disponibles périodes abonnement inutilisées après minimum 30 jours, Pas remboursements achats cours individuels, Solde portefeuille remboursé compte bancaire.",
+        "deceasedUsers": "Comptes utilisateurs décédés : Membres famille autorisés demander remboursements abonnements actifs soldes portefeuille inutilisés, Documents requis : certificat décès, autorisation légale, preuve relation.",
+        "promotionalPurchases": "Achats prix promotionnels : Remboursements calculés bas montant payé réel (prix réduit), pas prix complet original, Codes réduction remboursés séparément.",
+        "bundleUpgrades": "Mises à niveau niveaux abonnement : Pas remboursement au prorata portion inutilisée niveau inférieur, Coût mise à niveau calculé différence niveaux au prorata cycle restant."
+      },
+      "procedures": {
+        "howToRequest": [
+          {
+            "title": "Demander des remboursements via :",
+            "items": [
+              "Tableau de bord de la plateforme (Paramètres du compte → Historique des achats)",
+              "Email à podacium@podacium.com",
+              "Téléphone pendant les heures de travail (+213 792 913 873)"
+            ]
+          }
+        ],
+        "requiredInformation": "Toutes demandes remboursement doivent inclure : Identifiant transaction numéro commande, Email compte associé achat, Date achat, Nom produit/service, Raison détaillée remboursement, Preuves support (applicable).",
+        "processingTimeline": "Accusé réception : 24-48h, Revue décision : 3-5 jours ouvrables, Enquêtes complexes : 7-14 jours ouvrables, Traitement remboursement : 5-10 jours ouvrables méthode paiement.",
+        "statusTracking": "Suivre statut remboursement via : Notifications email, Section Historique Remboursements Tableau bord compte, Mises à jour système tickets support.",
+        "channels": {
+          "dashboard": "Tableau de Bord",
+          "email": "Support par email",
+          "phone": "Support téléphonique"
+        },
+        "timelineCheckpoints": {
+          "acknowledgment": "Accusé réception : 24-48h",
+          "review": "Révision : 3-5 jours",
+          "complex": "Complexe : 7-14 jours",
+          "processing": "Traitement : 5-10 jours"
+        }
+      },
+      "disputeResolution": {
+        "internalAppeals": "Si demande remboursement rejetée : Soumettre recours 14 jours email, Inclure numéro référence explication détaillée, Examinateur senior évalue recours, Décision finale 7 jours ouvrables.",
+        "externalResolution": "Si satisfait recours interne : Déposer plainte Direction Générale Commerce Algérienne (DGC), Contacter Autorité Nationale Protection Données Caractère Personnel (ANPDP) litiges données, Poursuivre action légale tribunaux algériens.",
+        "voluntaryMediation": "Avant action légale, parties peuvent convenir médiation volontaire : Sélectionner médiateur mutuellement convenu, Coûts partagés équitablement, Généralement conclue 30-45 jours, Non contraignante sauf parties conviennent."
+      },
+      "policyUpdates": {
+        "rightToModify": "Podacium réserve droit modifier Politique Remboursement refléter changements loi algérienne, fonctionnalités plateforme, améliorations opérationnelles, mesures prévention fraude, retours utilisateurs.",
+        "noticeOfChanges": "Changements substantiels (réduisant droits utilisateur) : Notification email 30 jours avant date effet, Notification application, Avis page d'accueil plateforme. Changements non substantiels : Mise à jour date seulement.",
+        "acceptanceOfChanges": "Utilisation continue plateforme après date effet constitue acceptation Politique Remboursement mise à jour. Si pas d'accord : Cesser utilisation avant date effet, Demander remboursements abonnements actifs, Exercer droits personne concernée.",
+        "grandfatheringProvision": "Achats effectués avant changement politique régis politique vigueur moment achat, sauf changement requis légalement, offre protections supérieures, ou parties conviennent nouvelles conditions."
+      },
+      "contact": {
+        "refundSupport": [
+          {
+            "title": "Coordonnées :",
+            "items": [
+              "Email : podacium@podacium.com",
+              "Téléphone : +213 792 913 873",
+              "Heures de travail : Dimanche-Jeudi, 09:00-17:00 Heure Algérie (GMT+1)",
+              "Adresse : Podacium SARL, PC38+5MV, Bir El Djir, Oran, Algérie"
+            ]
+          }
+        ],
+        "responseTime": "Requêtes email : 24-48h, Demandes remboursement : 3-5 jours ouvrables décision, Recours : 7 jours ouvrables, Support téléphone : Immédiat heures travail.",
+        "regulatoryInformation": "Entité légale : Podacium SARL, Loi régissant : Loi Algérienne 09-03 Protection Consommateurs, Juridiction : Tribunaux Oran, Algérie.",
+        "responseTimeCheckpoints": {
+          "email": "Email : 24-48h",
+          "refund": "Décision : 3-5 jours",
+          "appeals": "Recours : 7 jours"
+        },
+        "email": {
+          "title": "Email"
+        },
+        "phone": {
+          "title": "Téléphone"
+        },
+        "address": {
+          "title": "Adresse"
+        },
+        "website": {
+          "title": "Site Web"
+        }
+      },
+      "quickReference": {
+        "legend": "Légende : Remboursement Intégral - Éligibilité automatique, Remboursement Conditionnel/Discrétionnaire - Requiert preuves examen, Pas Remboursement - Non éligible, Compensation Alternative - Extension accès crédit"
+      },
+      "acknowledgment": {
+        "acceptance": "Effectuant achat plateforme Podacium, reconnaissez : Lu compris Politique Remboursement, Acceptez être lié conditions, Comprenez critères éligibilité remboursements, Acceptez certains achats non remboursables spécifiés ici, Comprenez droits consommateur, Acceptez tenter résolution interne d'abord."
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 Explication Politique",
+        "section1_2": "1.2 Avis Linguistique",
+        "section1_3": "1.3 Écosystème Multi-Piliers",
+        "section1_4": "1.4 Relation Conditions Service"
+      },
+      "generalPrinciples": {
+        "section2_1": "2.1 Barrière Consommation Contenu Numérique",
+        "section2_2": "2.2 Performance Service vs Livraison Produit",
+        "section2_3": "2.3 Droits Protection Consommateurs"
+      },
+      "educationRefunds": {
+        "section3_1": "3.1 Achats Cours Individuels",
+        "section3_2": "3.2 Packs Cours Parcours Apprentissage",
+        "section3_3": "3.3 Cours Directs avec Instructeur",
+        "section3_4": "3.4 Certificats Crédits Achèvement"
+      },
+      "subscriptionRefunds": {
+        "section4_1": "4.1 Niveaux Abonnement Couverts",
+        "section4_2": "4.2 Premières 72 Heures (Période Rétractation)",
+        "section4_3": "4.3 Engagement Minimum 30 Jours",
+        "section4_4": "4.4 Remboursements au Prorata (Après 30 Jours - Discrétionnaire)",
+        "section4_5": "4.5 Renouvellement Automatique Avis Préalable",
+        "section4_6": "4.6 Fonctionnalité Pause Abonnement"
+      },
+      "freelancingRefunds": {
+        "section5_1": "5.1 Contrats Protégés Séquestre",
+        "section5_2": "5.2 Contrats Sans Séquestre",
+        "section5_3": "5.3 Commission Plateforme Non Remboursable"
+      },
+      "technicalIssues": {
+        "section6_1": "6.1 Indisponibilité Plateforme",
+        "section6_2": "6.2 Défauts Techniques Contenu",
+        "section6_3": "6.3 Indisponibilité Contenu"
+      },
+      "forceMajeure": {
+        "section7_1": "7.1 Interruptions Moins 14 Jours Consécutifs",
+        "section7_2": "7.2 Interruptions Dépassant 14 Jours Consécutifs",
+        "section7_3": "7.3 Notification Force Majeure"
+      },
+      "paymentProcessing": {
+        "section8_1": "8.1 Méthode Remboursement",
+        "section8_2": "8.2 Délai Traitement Remboursement",
+        "section8_3": "8.3 Devise Taux Change",
+        "section8_4": "8.4 Traitement TVA"
+      },
+      "platformCredits": {
+        "section9_1": "9.1 Programme Bonus Crédits",
+        "section9_2": "9.2 Conditions Générales Crédits"
+      },
+      "fraudPrevention": {
+        "section10_1": "10.1 Prévention Abus Remboursements",
+        "section10_2": "10.2 Vérification Identité Remboursements Importants",
+        "section10_3": "10.3 Politique Rétrofacturations"
+      },
+      "specialCases": {
+        "section11_1": "11.1 Achats Cadeaux",
+        "section11_2": "11.2 Achats Dupliqués Accidentels",
+        "section11_3": "11.3 Demandes Suppression Compte",
+        "section11_4": "11.4 Comptes Utilisateurs Décédés",
+        "section11_5": "11.5 Achats Promotionnels Réduits",
+        "section11_6": "11.6 Mises à Niveau Packs Changements Niveaux"
+      },
+      "procedures": {
+        "section12_1": "12.1 Comment Demander Remboursement",
+        "section12_2": "12.2 Informations Requises",
+        "section12_3": "12.3 Délai Traitement",
+        "section12_4": "12.4 Suivi Statut Remboursement"
+      },
+      "disputeResolution": {
+        "section13_1": "13.1 Processus Recours Interne",
+        "section13_2": "13.2 Résolution Litiges Externe",
+        "section13_3": "13.3 Médiation Volontaire"
+      },
+      "policyUpdates": {
+        "section14_1": "14.1 Droit Modifier",
+        "section14_2": "14.2 Avis Changements",
+        "section14_3": "14.3 Acceptation Changements",
+        "section14_4": "14.4 Clause Droits Acquis",
+        "section14_5": "14.5 Historique Versions"
+      },
+      "contact": {
+        "section15_1": "15.1 Support Remboursements",
+        "section15_2": "15.2 Engagements Temps Réponse",
+        "section15_3": "15.3 Informations Légales Réglementaires"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "Email"
+      },
+      "phone": {
+        "title": "Téléphone"
+      },
+      "address": {
+        "title": "Adresse"
+      },
+      "website": {
+        "title": "Site Web"
+      },
+      "capital": {
+        "title": "Capital"
+      }
+    },
+    "company": {
+      "name": "Podacium SARL",
+      "registeredCompany": "Société à Responsabilité Limitée (SARL) enregistrée Algérie",
+      "rc": "RC: En cours d'immatriculation (Tribunal d'Oran)",
+      "nif": "NIF: En cours d'attribution",
+      "ni": "NIS: En cours d'attribution",
+      "capital": "Capital: 100 000 DZD (Souscrit)",
+      "fullAddress": "PC38+5MV, Bir El Djir, Oran, Algérie",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "dpo": "Délégué Protection Données (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com",
+      "address": "Address"
+    },
+    "dates": {
+      "effectiveDate": "1 janvier 2026",
+      "lastUpdated": "1 janvier 2026",
+      "version": "1.0",
+      "updatedLabel": "Mis à jour : 1 jan 2026"
+    },
+    "languageVersion": {
+      "title": "Version Linguistique",
+      "description": "La version juridique officielle de ce document est en arabe. Les traductions sont fournies à titre indicatif uniquement. En cas de divergence, la version arabe prévaudra."
+    },
+    "actions": {
+      "print": "Imprimer Politique",
+      "download": "Télécharger PDF",
+      "viewPrivacy": "Voir Politique Confidentialité",
+      "viewTerms": "Voir Conditions Service",
+      "viewCookies": "Voir Politique Cookies",
+      "openTOC": "Ouvrir la table des matières",
+      "closeTOC": "Fermer la table des matières",
+      "viewCookiePolicy": "Voir la Politique de Cookies",
+      "viewRefundPolicy": "Voir la Politique de Remboursement"
+    },
+    "footer": {
+      "thankYou": "Merci choisir Podacium. Nous engagés processus remboursement équitables transparents conformément lois algériennes protection consommateurs."
+    },
+    "contentExtras": {
+      "privacyDesc": "Pratiques de protection des données et vie privée",
+      "cookiesDesc": "Politiques d'utilisation des cookies et suivi",
+      "quickReferenceDisclaimer": "Ce tableau est un résumé uniquement. Reportez-vous aux sections spécifiques ci-dessus pour les détails et conditions complets."
+    },
+    "acknowledgment": {
+      "title": "Reconnaissance",
+      "description": "En effectuant un achat sur la plateforme Podacium, vous reconnaissez avoir lu et compris cette politique de remboursement et en accepter les conditions générales."
+    }
+  },
+  "legal": {
+    "toc": {
+      "title": "Table des matières",
+      "sections": "Sections",
+      "sectionsCount": "{count} rubriques",
+      "open": "Ouvrir la table des matières",
+      "close": "Fermer la table des matières"
+    },
+    "cards": {
+      "languageNotice": {
+        "title": "Avis Linguistique",
+        "description": "La version juridique officielle de ce document est en arabe. Les traductions sont fournies à titre indicatif uniquement. En cas de divergence, la version arabe prévaudra."
+      }
+    },
+    "company": {
+      "name": "Podacium SARL",
+      "address": "PC38+5MV, Bir El Djir, Oran, Algérie",
+      "fullAddress": "PC38+5MV, Bir El Djir, Oran, Algérie",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "registeredCompany": "Société à Responsabilité Limitée (SARL) enregistrée en Algérie",
+      "dpo": "Délégué à la Protection des Données (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com",
+      "rc": "RC: En cours d'immatriculation (Tribunal d'Oran)",
+      "nif": "NIF: En cours d'attribution",
+      "ni": "NIS: En cours d'attribution",
+      "capital": "Capital: 100 000 DZD (Souscrit)"
+    },
+    "contact": {
+      "email": {
+        "title": "Email"
+      },
+      "phone": {
+        "title": "Téléphone"
+      },
+      "address": {
+        "title": "Adresse"
+      },
+      "website": {
+        "title": "Site Web"
+      },
+      "capital": {
+        "title": "Capital"
+      }
+    },
+    "dates": {
+      "effectiveDate": "1er Janvier 2026",
+      "lastUpdated": "1er Janvier 2026",
+      "version": "1.0",
+      "updatedLabel": "Mis à jour : 1er Jan 2026"
+    },
+    "effectiveDate": "Date d'Entrée en Vigueur",
+    "lastUpdated": "Dernière Mise à Jour",
+    "version": "Version"
+  }
+}

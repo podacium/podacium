@@ -1,0 +1,123 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podacium-api-canary
+  namespace: podacium
+  labels:
+    app: podacium-api
+    track: canary
+  annotations:
+    description: "Canary deployment -- receives 10% of traffic for validation before full rollout"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: podacium-api
+      track: canary
+  template:
+    metadata:
+      labels:
+        app: podacium-api
+        track: canary
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+    spec:
+      serviceAccountName: podacium-api
+      containers:
+        - name: api
+          image: podacium/api:canary
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: podacium-secrets
+            - configMapRef:
+                name: podacium-config
+          env:
+            - name: CANARY
+              value: "true"
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+            limits:
+              cpu: "1"
+              memory: 512Mi
+          # Startup: slow initialization (DB pool warmup, migration check)
+          startupProbe:
+            httpGet:
+              path: /api/v1/health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 10
+            failureThreshold: 6
+          # Readiness: /health checks DB connectivity
+          readinessProbe:
+            httpGet:
+              path: /api/v1/health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+            timeoutSeconds: 10
+            failureThreshold: 3
+          # Liveness: /healthz is a lightweight process ping
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 20
+            timeoutSeconds: 5
+            failureThreshold: 3
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: podacium-api-canary
+  namespace: podacium
+  labels:
+    app: podacium-api
+    track: canary
+  annotations:
+    service.kubernetes.io/topology-mode: "auto"
+spec:
+  selector:
+    app: podacium-api
+    track: canary
+  ports:
+    - port: 8000
+      targetPort: 8000
+      protocol: TCP
+  type: ClusterIP
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 3600
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: podacium-canary-ingress
+  namespace: podacium
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "10"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - api.podacium.com
+      secretName: podacium-api-tls
+  rules:
+    - host: api.podacium.com
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: podacium-api-canary
+                port:
+                  number: 8000

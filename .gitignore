@@ -1,0 +1,138 @@
+# =============================================================================
+# SECURITY: Environment files — NEVER commit secrets
+# =============================================================================
+# These patterns catch ALL .env variants across the entire repo.
+# Only .env.example files (with placeholders) should be committed.
+.env
+.env.*
+!.env.example
+!.env.prod.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.prod.example
+services/api/.env
+services/api/.env.*
+!services/api/.env.example
+apps/web/.env
+apps/web/.env.*
+!apps/web/.env.example
+
+# === Secrets directory — block all, allow examples ===
+secrets/*
+!secrets/*.example
+!secrets/README.md
+
+# === Caddy (Let's Encrypt certificates + data) ===
+caddy_data/
+caddy_config/
+
+# === Node & Next.js ===
+node_modules/
+.next/
+out/
+dist/
+.vercel/
+
+# === Python / FastAPI ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+services/api/venv/
+services/api/venv312/
+services/api/.venv/
+services/api/podacium/
+venv/
+venv*/
+.venv/
+venv*/
+
+# === System & Editor files ===
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Claude / AI tools ===
+.claude/
+.claude-flow/
+.agent/
+.agent
+
+# === Build artifacts ===
+build/
+coverage/
+*.egg-info/
+*.bak
+
+# === Project-specific ===
+apps/web/.next/
+apps/web/vercel.json
+
+# === Build artifacts & debug files ===
+*.sql
+# But allow Prisma migration SQL files (needed for CHECK constraints, etc.)
+!services/api/prisma/migrations/**/*.sql
+services/api/cov_*.txt
+services/api/coverage_report.txt
+services/api/seed_output.log
+services/api/.coverage
+services/api/htmlcov/
+audit-scorecard.json
+
+# === Prisma engine binaries ===
+services/api/prisma-engine/
+
+# === Runtime files (Render/Heroku artifacts) ===
+runtime.txt
+services/api/runtime.txt
+
+# === Python caches & test artifacts ===
+.hypothesis/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# === Terraform ===
+infra/terraform/.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# === Secrets & credentials ===
+*.pem
+*.key
+.secrets.baseline
+cookies.txt
+**/cookies.txt
+
+# === Misc ===
+*.swp
+*.swo
+*.tmp
+
+dump.rdb
+
+# === Prisma generated client (regenerate with: make db-generate) ===
+# types.py alone is 89 MB — never commit generated code
+services/api/app/generated/
+
+# === Runtime data ===
+ruvector.db
+/uploads/
+services/api/uploads/
+/storage/
+services/api/storage/
+
+# === LaTeX build artifacts ===
+*.aux
+*.out
+*.toc
+*.synctex.gz
+chrome-headless-shell/

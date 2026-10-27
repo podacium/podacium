@@ -1,0 +1,104 @@
+{
+    "onboarding": {
+        "title": "Tell us about yourself",
+        "subtitle": "Help us personalize your experience",
+        "progress": "Step {current} of {total}",
+        "buttons": {
+            "next": "Next",
+            "back": "Back",
+            "skip": "Skip for now",
+            "submit": "Get Started",
+            "submitting": "Setting up..."
+        },
+        "questions": {
+            "role": {
+                "title": "What best describes your role?",
+                "subtitle": "This helps us tailor content to your needs",
+                "options": {
+                    "student": "Student",
+                    "professional": "Working Professional",
+                    "freelancer": "Freelancer",
+                    "entrepreneur": "Entrepreneur",
+                    "researcher": "Researcher",
+                    "instructor": "Teacher / Instructor",
+                    "other": "Other"
+                }
+            },
+            "primaryGoal": {
+                "title": "What's your primary goal on Podacium?",
+                "subtitle": "We'll guide you to the right features",
+                "options": {
+                    "learn": "Learn new skills",
+                    "freelance": "Find freelance work",
+                    "hire": "Hire talent",
+                    "analyze": "Analyze business data",
+                    "teach": "Create and sell courses",
+                    "explore": "Just exploring"
+                }
+            },
+            "experienceLevel": {
+                "title": "What's your experience level?",
+                "subtitle": "So we can recommend the right starting point",
+                "options": {
+                    "beginner": "Beginner",
+                    "intermediate": "Intermediate",
+                    "advanced": "Advanced",
+                    "expert": "Expert"
+                }
+            },
+            "fieldOfInterest": {
+                "title": "What field interests you the most?",
+                "subtitle": "We'll highlight relevant content for you",
+                "options": {
+                    "software": "Software Development",
+                    "data": "Data Science & AI",
+                    "design": "Design & Creative",
+                    "business": "Business & Marketing",
+                    "finance": "Finance & Accounting",
+                    "other": "Other"
+                }
+            },
+            "weeklyTime": {
+                "title": "How much time can you dedicate weekly?",
+                "subtitle": "We'll pace your learning accordingly",
+                "options": {
+                    "lessThan2": "Less than 2 hours",
+                    "2to5": "2 — 5 hours",
+                    "5to10": "5 — 10 hours",
+                    "moreThan10": "More than 10 hours"
+                }
+            },
+            "discoverySource": {
+                "title": "How did you discover Podacium?",
+                "subtitle": "This helps us grow our community",
+                "options": {
+                    "search": "Search engine",
+                    "social": "Social media",
+                    "friend": "Friend or colleague",
+                    "ad": "Online advertisement",
+                    "event": "Conference or event",
+                    "other": "Other"
+                }
+            },
+            "openAnswer": {
+                "title": "Anything else you'd like to share?",
+                "subtitle": "Optional — tell us what you're hoping to achieve",
+                "placeholder": "Share your thoughts..."
+            },
+            "skills": {
+                "title": "What skills do you have?",
+                "subtitle": "Select the skills that best describe your expertise",
+                "placeholder": "Search skills...",
+                "selected": "Selected ({count})"
+            }
+        },
+        "completion": {
+            "title": "You're all set!",
+            "subtitle": "Taking you to your dashboard..."
+        },
+        "errors": {
+            "submitFailed": "Something went wrong. Please try again.",
+            "skipFailed": "Failed to skip onboarding. Please try again."
+        }
+    }
+}

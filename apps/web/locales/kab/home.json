@@ -1,0 +1,696 @@
+{
+  "hero": {
+    "badge": "Tura s tallelt n AI",
+    "headline": {
+      "part1": "Lemmed tazmert.",
+      "part2": "Sbeggen-t s umahil n tidet.",
+      "part3": "Trebḥeḍ idrimen seg Lezzayer."
+    },
+    "subtitle": "Podacium tessemlal talliyin, aḥub n umahil ilelli war tawila, d tfelwiyin n uselkim — akken yal aselkin ad yuɣal d ufaylu n umahil, yal asenfar ad yuɣal d idrimen.",
+    "pillarsAriaLabel": "Tigejda n tsuddest",
+    "trust": {
+      "title": "Yettwaxdem i Lezzayer",
+      "items": {
+        "languages": "Talliyin s taɛrabt, tafransist, tenglizt d teqbaylit",
+        "certificates": "Iselkimen yettwasenqaden, zemren wid ixeddmen ad ten-senqden",
+        "payments": "Ad yettwaxdem s CIB d Dahabia",
+        "commission": "Ulac tawila ɣef ufayen-ik n umahil ilelli"
+      }
+    },
+    "dashboard": {
+      "ariaLabel": "Tamuɣli n tawuri n Podacium: timsirin tirmitin, iselkinen yettwaṣeḥḥan, aselken yettwaḍmen d ufru s DZD",
+      "userTitle": "Amine K. • Amsnefli Full-Stack",
+      "userStatus": "Tawuri tamurmit",
+      "overview": "Tawuri n tmusni",
+      "period": "12 n imalas ineggura",
+      "search": "Nadi timsirin, isenfaren…",
+      "weeklyChart": "Asurif d yidrimen",
+      "currency": "+32% aggur-agi",
+      "topChannels": "Tamusni yettwaṣeḥḥan",
+      "nav": {
+        "learning": "Timsirin-iw",
+        "freelancing": "Isenfaren n yimsaɣen",
+        "bi": "Timusniwin",
+        "hub": "Tazlawt n uselken"
+      },
+      "kpi": {
+        "courses": "Timsirin deg usurif",
+        "learners": "Iselkinen yettwaṣeḥḥan",
+        "earnings": "Yettwaḍmen deg uselken",
+        "satisfaction": "Idrimen yettwafkan"
+      },
+      "sources": {
+        "organic": "Next.js & TypeScript",
+        "referral": "FastAPI & Python",
+        "paid": "PostgreSQL & Prisma",
+        "email": "Docker & Cloud Deploy"
+      },
+      "activity": {
+        "course": "Asuffeɣ n Open Badge v3: Tasegda n Web",
+        "freelancer": "Aselken n usenfar 2/3 yettwaḍmen: App E-Commerce",
+        "project": "Afru yettwakfa ɣer BaridiMob / EDAHABIA"
+      }
+    },
+    "title": "Podacium ad k-iɛiwen ad",
+    "animatedWords": {
+      "learn": "Tlmeḍ.",
+      "earn": "Trebḥeḍ.",
+      "grow": "Tnerniḍ.",
+      "analyze": "Tesleḍeḍ.",
+      "connect": "Teqqneḍ."
+    },
+    "description": "Beddel tarrayt s wayes tlemmdeḍ, tesleḍeḍ u tettemyalleleḍ ɣef yisefta s tensa-nneɣ yettwaseddren.",
+    "cta": {
+      "primary": "Bdu baṭel",
+      "secondary": "Wali amek tetteddu",
+      "startLearning": "Bdu s Ulmad",
+      "learnAboutUs": "Issin Fell-aɣ"
+    },
+    "benefits": {
+      "noCreditCard": "Ulac takarḍa n lbanka i yettwasutren",
+      "freeTrial": "14 n wussan n ukayad baṭel"
+    },
+    "aiEngineActive": "Imsemmi n AI Yermed",
+    "talentSignal": "Asallaf n Tizemmar",
+    "effectStats": [
+      {
+        "label": "Asentem n Tmusni",
+        "before": "64%",
+        "after": "94%",
+        "color": "text-emerald-500"
+      },
+      {
+        "label": "Tuwja i Ulzuz",
+        "before": "C-",
+        "after": "A+",
+        "color": "text-blue-500"
+      },
+      {
+        "label": "Tazmert n Uban deg Umaḍal",
+        "before": "YEBSED",
+        "after": "ARMUD",
+        "color": "text-indigo-500"
+      }
+    ],
+    "pillars": {
+      "title": "Tigejda n Tensa",
+      "learning": "Almad",
+      "freelancing": "Amahil Ililelli",
+      "bi": "Tasleḍt n Tnezzut (BI)",
+      "hub": "Ammas n Yizemran"
+    }
+  },
+  "pillars": {
+    "learn": {
+      "title": "Lmed",
+      "subtitle": "Tansa n Ulmad s Tallelt n IA",
+      "description": "Awi timusniwin n yisefta yettwasutren s tmesras timiddawin, ibriden n ulmad udmawanen d uselmed s IA.",
+      "features": [
+        "Timsirin Timiddawin",
+        "Ibriden n Ulmad Udmawanen",
+        "Aselmad n IA (Deqs kan)",
+        "Akayad n Tmusni"
+      ],
+      "metrics": {
+        "growthRate": "Aswir n Usnerni"
+      },
+      "hubLabel": "Ammas n Yizemran"
+    },
+    "bi": {
+      "title": "BI",
+      "subtitle": "Tusna n Tnezzut & Tasleḍt",
+      "description": "Err isefta d timusniwin tiɣarimin s tesleḍt unzifen, tiseddast tazerfant d tfelwin n uskasi ifazen.",
+      "features": [
+        "Tifelwin n Uskasi Timiddawin",
+        "Tasleḍt Tazerfant",
+        "Ineqqisen Iwurmanen",
+        "Taskant n Yisefta"
+      ],
+      "metrics": {
+        "growthRate": "Aswir n Usnerni"
+      }
+    },
+    "hub": {
+      "title": "Hub",
+      "subtitle": "Azeṭṭa n Yizemran & Ulzuz",
+      "description": "Qqen d yimusnawen ifazen, af isenfaren i k-iwatan u bnu tamahilt-inek s umyallel iṣeḥḥan.",
+      "features": [
+        "Amsasa Amsedday n Yizemran",
+        "Ulzuz n Yisenfaren",
+        "Asenqed n Tmusni",
+        "Ifecka n Umyallel"
+      ],
+      "talentProfiles": [
+        {
+          "skill": "Amsedday"
+        },
+        {
+          "skill": "Amsaslad"
+        },
+        {
+          "skill": "Amsuneɣ"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Asnas Web",
+          "budget": "50,000 DA"
+        },
+        {
+          "title": "Tafelwit n Yisefta",
+          "budget": "35,000 DA"
+        },
+        {
+          "title": "Asnas n Tilifun",
+          "budget": "80,000 DA"
+        },
+        {
+          "title": "Taseddast n IA",
+          "budget": "120,000 DA"
+        }
+      ],
+      "hubLabel": "Ammas n Yizemran"
+    },
+    "cta": {
+      "explore": "Snirem",
+      "clickHint": "Tekki iwakken ad tesnirmeḍ"
+    },
+    "navigation": {
+      "previous": "Tagejdit tezrin",
+      "next": "Tagejdit i d-iteddun"
+    },
+    "autoRotate": {
+      "auto": "Awurman",
+      "manual": "S ufus"
+    },
+    "indicators": {
+      "switchTo": "Beddel ɣer",
+      "goToSlide": "Ruḥ ɣer tugna"
+    },
+    "swipeHint": "Zuɣer iwakken ad tinigeḍ"
+  },
+  "ai": {
+    "comingSoon": "DEQS KAN",
+    "title": {
+      "part1": "Podacium",
+      "part2": "Tanfult n Tmusni n Uzlem"
+    },
+    "description": "Inagrawen ifazen n IA i ulmad, tasleḍt d umyallel. Ttwasedmaren tura akken ad d-ffɣen deg Q2 2027.",
+    "tutor": {
+      "title": "Aselmad AI",
+      "description": "Tamusni n ulmad yemxalafen i uselmed udmawan",
+      "features": [
+        "Tasleḍt n tarrayt n ulmad deg wakud amatu",
+        "Asnulfu n wahil udmawan",
+        "Aḍfar n tezmert n tigzi",
+        "Tifin tawurmant n yixulaf n tmusni"
+      ]
+    },
+    "analyst": {
+      "title": "Amsaslad AI",
+      "description": "Tamusni tazerfant i teɣtasin yebnan ɣef yisefta",
+      "features": [
+        "Tifin tawurmant n tseddarin",
+        "Tiseddasin tizerfanin deg wakud amatu",
+        "Aseqsi ɣef yisefta s tutlayt tagamant",
+        "Asedmer amsuddes n yineqqisen"
+      ]
+    },
+    "matchmaker": {
+      "title": "Amsasa AI",
+      "description": "Tuqqna s uzlem gar yizemran d yisenfaren iwatan",
+      "features": [
+        "Tasleḍt n umsasa n tmusniwin",
+        "Tazrart n urbaḥ n usenfar",
+        "Aselkem n umyallel deg terbaɛt",
+        "Almad imezgi seg yigmaren"
+      ]
+    },
+    "neuralAI": "IA n Uzlem",
+    "progress": {
+      "training": "Asfurret n usileɣ"
+    },
+    "neuralNetwork": "Azeṭṭa n Uzlem",
+    "launchTimeline": "Tuffɣa deg Q2 2027",
+    "neuralCapabilities": "Tizmert n Uzlem",
+    "notifyAtLaunch": "Ad tiliḍ d amezwaru ara yeẓren mi ara d-yeffeɣ",
+    "neuralInterfacePreview": "Taskant n Ugarum n Uzlem",
+    "previewDescription": "Tirmit n usesmel n tezmert n {title}",
+    "sampleInteraction": "Amedya n Umyallel",
+    "sampleQuestion": "Amek ara snefliɣ tazmert-iw deg ulmad?",
+    "systemStatus": "Addad n Unagraw",
+    "trainingActive": "Asileɣ Yermed",
+    "stats": {
+      "neuralTrainingAccuracy": "Tiseddi n Usileɣ n Uzlem",
+      "expectedLaunch": "Afarag 2 2027",
+      "expectedLaunchLabel": "Asenfali n Tuffɣa"
+    }
+  },
+  "combined": {
+    "joinCommunity": "Rnu ɣer Tmetti-nneɣ",
+    "title": {
+      "part1": "Qqim deg Uzwer d",
+      "part2": "Podacium"
+    },
+    "newsletter": "Tabrat n Yisallen",
+    "premiumAccess": "Anekcum Premium",
+    "newsletterCard": {
+      "title": "Jerred deg Tebrat-nneɣ n Yisallen",
+      "description": "Rnu ɣer yimusnawen i d-iṭṭfen timusniwin, isemrasen d ugbur uzzig srid deg tebwaṭ-nsen.",
+      "benefits": [
+        {
+          "title": "Aglam n Dduṛt",
+          "description": "Agbur yettwafernen yal Letnayen"
+        },
+        {
+          "title": "Tugna n Spam Ulac-itt",
+          "description": "Agbur n tɣara kan, sefsex melmi tebɣiḍ"
+        }
+      ],
+      "success": {
+        "title": "Ansuf yis-k yid-nneɣ!",
+        "message": "Senqed e-mail-inek {email} iwakken ad tsentmeḍ ajerred-inek."
+      },
+      "emailLabel": "Tansa E-mail",
+      "emailPlaceholder": "tansa-inek@email.com",
+      "clearEmail": "Sfeḍ e-mail",
+      "subscribing": "Ajerred deg uselkem...",
+      "subscribe": "Jerred deg Tebrat n Yisallen",
+      "privacyNotice": {
+        "part1": "S ujerred, tqebleḍ",
+        "part2": "Tasertit-nneɣ n Tbaḍnit"
+      }
+    },
+    "pricingCard": {
+      "title": "Ldi Akk Tizmert",
+      "description": "Kcem ɣer akk timmad n Podacium rnu-as ifecka n IA unzifen, tasleḍt talemmast d tallelt tamuqrant.",
+      "benefits": [
+        {
+          "title": "Anekcum ɣer kraḍt n tgejda",
+          "description": "Akk isumar-nneɣ seddren dagi"
+        },
+        {
+          "title": "Tasleḍt Tamezwarut",
+          "description": "s Tallelt Tuzzigt"
+        }
+      ],
+      "cta": {
+        "title": "Twejdeḍ ad tnerniḍ?",
+        "button": "Wali Akk Ahilen"
+      },
+      "stats": {
+        "plans": {
+          "count": "3",
+          "label": "Ahilen"
+        },
+        "trial": {
+          "count": "14 n Wussan",
+          "label": "Akayad"
+        },
+        "support": {
+          "count": "24/7",
+          "label": "Tallelt"
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Isteqsiyen i d-Yettuɣalen Aṭas",
+    "description": "Af tiririyin ɣef yisteqsiyen imatuten ɣef tensa Podacium, ssuma d yifecka-s.",
+    "categories": {
+      "all": "Akk Isental",
+      "general": "Amatu",
+      "billing": "Axxalas & Ahilen",
+      "technical": "Atiknik",
+      "accounts": "Imiḍanen"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "D acu-t Podacium u amek i tebded?",
+          "answer": "Podacium d tansa tamezdayt i yesdukklen aselmed s srid, ulzuz n yisenfaren ililelliyen d yifecka n tusna n tnezzut. Inelmaden ṭṭfen timsirin u ttwawellhen s yiselkinen, imselkimen afen isenfaren s uḥraz n uxellas, ma d tkebbaniyin sledent isefta u rent imusnawen — akk deg yiwen n unagraw."
+        },
+        "1": {
+          "question": "Amek i tebded tensa s kraḍt n tgejda?",
+          "answer": "Podacium tesɛa kraḍt n tgejda yettwaseddren: Learn (timsirin s yiselkinen yettwasenqden), Hub (ulzuz n umahil ililelli s PodaPoints mebla tiwsiyin), d BI (tifelwin n uskasi d tesleḍt n yisefta). Asfurret d tmusni tteddun gar tgejda akken aselmed ad iṣeḥḥi amaɣnu-inek ililelli."
+        },
+        "2": {
+          "question": "Ma tella Podacium s Taqbaylit, Taɛrabt, Tafransist d Taglizit?",
+          "answer": "Ih. Tansa Podacium tella s Taglizit, Tafransist, Taɛrabt d Taqbaylit. Tzemreḍ ad tbeddleḍ tutlayt melmi tebɣiḍ, yerna agbur, udem d tallelt ttwaseddren s tarrayt tameɣtut."
+        },
+        "3": {
+          "question": "Anwa i yezmren ad yaf lfayda deg Podacium?",
+          "answer": "Inelmaden d yimusnawen yebɣan ad nerneen deg tmusni, imselkimen ililelliyen yettnadin ɣef yisenfaren, tikbbaniyin yeḥwaǧen izemran d tesleḍt n yisefta — akk afen azal ameqran deg Podacium."
+        },
+        "4": {
+          "question": "Eɛni ḥwaǧeɣ timusniwin titiknikiyin uqbel ad bduɣ?",
+          "answer": "Xati akk. Podacium tettwaglem i yal aswir. Imaynuten zemren ad bdun s tmesras tizmimin, ma d isemrasen udmawanen ad k-ɛiwnen ad tafeḍ abrid iwatan i yiswiyen-inek."
+        },
+        "5": {
+          "question": "Amek i tesxeddim tarrayt n yisemrasen?",
+          "answer": "Anagraw yesselḍ amezruy n ulmad-inek, iswiyen n tmahilt d yirmuden-inek ɣef tensa iwakken ad d-yerr timsirin, isenfaren d yifecka n BI iwatan i usnerni-inek."
+        },
+        "6": {
+          "question": "Zemreɣ ad seqdceɣ Podacium ɣef tilifun?",
+          "answer": "Ih. Podacium temcabi d akk wallalen am tilifunat d tfelwin. Tzemreḍ ad teɣreḍ timsirin, ad twaliḍ isenfaren d tfelwin n BI seg yal allal. Asnas n tilifun yettwaglam tura iwakken ad yili deg uselkem."
+        }
+      },
+      "billing": {
+        "0": {
+          "question": "Acḥal tewwa ssuma n Podacium?",
+          "answer": "Podacium tefka anekcum amezwaru baṭel s tezmert n usali. Ssuma n tmesras tebda seg 500 DA, ijtihadat n Learn seg 1,500 DA deg waggur, ma d BI Pro seg 3,000 DA deg waggur. Ulzuz Hub yesseqdac PodaPoints mebla tiwsiyin ɣef tidrimt-inek. Ahilen n useggas ssenqasen alamma d 25%."
+        },
+        "1": {
+          "question": "Anta tarrayin n uxxalas i tettqabalem?",
+          "answer": "Nettqabal akk tikarḍiwin tidzayriyin n lbanka (CIB / Dahabia), tikarḍiwin tigraɣlanin (Visa, Mastercard), d tarrayin n uxxalas s tilifun. Tikebbaniyin timeqranin zemrent ad xelsent s uceggeɛ n lbanka neɣ s tfakturt."
+        },
+        "2": {
+          "question": "Yella ukayad baṭel?",
+          "answer": "Ih. Iseqdacen imaynuten ṭṭfen 14 n wussan n ukayad baṭel s unekcum ačuran ɣer akk timmad n Pro deg Learn, Hub d BI. Ulac takarḍa i yettwasutren, yerna tzemreḍ ad tsefsqeḍ melmi tebɣiḍ."
+        },
+        "3": {
+          "question": "Zemreɣ ad beddleɣ neɣ ad sefsqeɣ ahil-iw melmi tebɣiḍ?",
+          "answer": "S tidet. Tzemreḍ ad tserfdeḍ, ad tessendreḍ neɣ ad tsefsqeḍ ajerred-inek melmi tebɣiḍ seg yiɣewwaren n umiḍan. Ahilen n waggur ttbeddilen imir-imir, yerna ulac akukru ɣezzifen."
+        },
+        "4": {
+          "question": "Teddum s ssuma n temnaḍt i Lezzayer d tmura n Tefriqt n Ugafa?",
+          "answer": "Ih. Podacium tefka ssuma tudmawant s Dinar Adzayri (DZD) iṣeḥḥan i ulzuz n temnaḍt. Nettqabal CIB d Dahabia, yerna ahilen n useggas ssenqasen 25%."
+        }
+      },
+      "technical": {
+        "0": {
+          "question": "Amek i yetteddu uḍfar n usfurret gar wallalen yemxalafen?",
+          "answer": "Asfurret-inek yettwasuddes s wudem awurman deg wakud amatu gar akk wallalen-inek. Bdu tamsirt deg uselkim, kemmel deg tilifun — amkan n uvidyu, yigmaren n ukayad d tmiwa yekfan dima d imaynuten."
+        },
+        "1": {
+          "question": "Zemreɣ ad awiɣ iselkinen yettwasenqden?",
+          "answer": "Ih. Mi tfukkeḍ tamsirt neɣ abrid n ulmad, ad tafeḍ aselkin yettwasenqden i tzemreḍ ad tebḍuḍ deg LinkedIn neɣ ad ternuḍ ɣer umaɣnu-inek deg Hub."
+        },
+        "2": {
+          "question": "Amek tettwaḥrez tbaḍnit n yisefta-iw deg Podacium?",
+          "answer": "Nesseqdac taɣellist n tkebbaniyin: awelleh seg yixf ar yixf deg tuzna d usekles, asenqed imezgi n tɣellist, d usenqed unzif n unekcum. Isallen-inek d yisefta-inek dima ttwafen deg laman."
+        },
+        "3": {
+          "question": "Zemreɣ ad d-ssuffɣeɣ isefta-iw?",
+          "answer": "Ih. Tzemreḍ ad d-tessuffɣeḍ asfurret n tmesras, iselkinen, tifelwin n BI d yineqqisen s talɣiwin n CSV, PDF neɣ PNG. Isefta nniḍen ttwazdamen s CSV, Excel d JSON."
+        },
+        "4": {
+          "question": "Amek i yetteddu unagraw n uxxalas deg ulzuz n yimahilen?",
+          "answer": "Podacium tesseqdac ssuma yebnan ɣef timmad s PodaPoints. Deg umkan n twisi, tetteɣyeḍ timmad am tuzna n usenfar (200 PodaPoints). Ulac tiwsi n tensa ɣef wayen i d-trebḥeḍ — txellseḍ kan ayen tesseqdceḍ."
+        },
+        "5": {
+          "question": "Eɛni tefka Podacium anekcum ɣer API i tuqqna d yifecka nniḍen?",
+          "answer": "Ih. Podacium tefka REST API i yimneflayen d tkebbaniyin yebɣan ad qqnen timmad n tensa ɣer yibriden-nsen n umahil. Anekcum-a yella deg wahilen yettwaxellsen s tsentemt tameddant."
+        },
+        "6": {
+          "question": "Amek i tettheggi Podacium taɣellist n tensa d uḥraz n yisefta?",
+          "answer": "Taɣellist d azadur deg Podacium. Nessemres awelleh n yisefta, asenqed n tɣellist sɣur idisan uffiɣen, d usefrek n unekcum deg yimmasen n yisefta yettwaḥerzen 24/7."
+        }
+      },
+      "accounts": {
+        "0": {
+          "question": "Amek ara snulfuɣ amiḍan?",
+          "answer": "Tekki ɣef 'Bdu Tura' u jerred s tansa-inek e-mail neɣ s umiḍan Google. Fren tamlilt-inek (Anelmad, Amselkim neɣ Tazeqqa) u kfu amaɣnu-inek. Tarrayt tetteddu deg ddaw n snat n tseddarin, yerna anekcum amezwaru d baṭel."
+        },
+        "1": {
+          "question": "Amek ara beddleɣ awal-iw uffir?",
+          "answer": "Tekki ɣef 'Ttuɣ awal uffir' deg usebter n unekcum, sekcem tansa-inek e-mail, ad k-d-nazen aseysey yettwaḥerzen. Aseysey-a ifecck deffir yiwet n tsaɛet i tɣellist-inek."
+        },
+        "2": {
+          "question": "Zemreɣ ad sɛuɣ aṭas n temlilin deg yiwen n umiḍan?",
+          "answer": "Ih. Tzemreḍ ad tiliḍ d anelmad, d amselkim ililelli yettnadin ɣef yisenfaren, d bab n tnezzut yettqerriɛen izemran — akk seg yiwen n umiḍan. Tafelwit-inek tettbeddil akken i k-yewata."
+        },
+        "3": {
+          "question": "Amek ara ssiwleɣ i tallelt?",
+          "answer": "Tzemreḍ ad tessiwleḍ i terbaɛt-nneɣ n tallelt s usqerdec n srid ɣef yal asebter, s e-mail ɣer support@podacium.com, neɣ deg Wammas n Tallelt. Tikebbaniyin ṭṭfent imḍebbren uzzigen s tiririt tuzwirt."
+        },
+        "4": {
+          "question": "Amek ara kseɣ amiḍan-iw d yisefta-iw i lebda?",
+          "answer": "Tzemreḍ ad tessutreḍ tukksa n umiḍan seg usebter n Yiɣewwaren ddaw n Tbaḍnit. Mi yettwasentem, isallen-inek udmawanen d usfurret ad ttwakksen deg 30 n wussan."
+        },
+        "5": {
+          "question": "Eɛni tetteddu Podacium s usentem s sin n yimeḍranen (2FA)?",
+          "answer": "Ih. Podacium tettqabal 2FA s yisnasen n usentem (Google Authenticator, Authy) d tengalin n SMS. Rmed 2FA iwakken ad trnuḍ taɣellist tameqrant i umiḍan-inek."
+        }
+      }
+    },
+    "contact": {
+      "title": "Mazal tesɛiḍ isteqsiyen?",
+      "description": "Tarbaɛt-nneɣ n tallelt tewjed ad k-tɛiwen ad tesseqdceḍ Podacium akken iwata — ama deg yisental itiknikiyen, deg ssuma neɣ deg tuqqna.",
+      "button": "Ssiwel i Tallelt"
+    }
+  },
+  "variation1": {
+    "title": {
+      "part1": "Ḥrez tarmit-inek",
+      "part2": "Awi tarmit n tidet",
+      "part3": "Simɣer amur-inek"
+    },
+    "description": "Podacium tettbeddil almad ɣer tmuɣli tuzwirt i yimusnawen imaynuten. Lmed, sleḍ u qqen.",
+    "cta": {
+      "startLearning": "Bdu s Ulmad",
+      "learnAboutUs": "Gzu Podacium"
+    },
+    "benefits": {
+      "freeTrial": "14 n wussan n ukayad baṭel",
+      "noCreditCard": "Ulac takarḍa i yettwasutren"
+    },
+    "stats": {
+      "builders": "Tametti n Yimnulfuyen"
+    },
+    "features": {
+      "learn": {
+        "title": "Tansa n Ulmad",
+        "description": "Timsirin d yiselkinen s IA"
+      },
+      "bi": {
+        "title": "Tasleḍt n BI",
+        "description": "Tasleḍt tamuqrant d tfelwin"
+      },
+      "hub": {
+        "title": "Ammas n Yizemran",
+        "description": "Tuqqna n yimselkimen d yisenfaren"
+      },
+      "ai": {
+        "title": "Amɛiwen AI",
+        "description": "Tamusni tamiddawt d uwurman"
+      }
+    }
+  },
+  "video": {
+    "title": "Fhem amek tebded Podacium deg ddaw n 2 n tseddarin",
+    "description": "Issin acuɣer timusniwin weḥd-sent ur d-qɛident ara d wamek nerr isefta d tagnatin.",
+    "play": "Wali tazwart n 2 n tesdidin",
+    "unavailable": "Ar yezmir ara ad yettwaciṛ uvidyu-a dagi tura. Tzemreḍ ad t-twaliḍ srid ɣef Vimeo.",
+    "watchOnVimeo": "Wali ɣef Vimeo",
+    "retry": "Ɛreḍ tikelt-nniḍen",
+    "steps": {
+      "capture": {
+        "title": "Aṭṭaf",
+        "desc": "Isefta n ulmad unzifen."
+      },
+      "validate": {
+        "title": "Asentem",
+        "desc": "Akayad n usenfar yeqqnen ɣer tmusni."
+      },
+      "signal": {
+        "title": "Azen Asallu",
+        "desc": "Tazmert n uskan i ulzuz."
+      }
+    }
+  },
+  "layers": {
+    "education": {
+      "label": "Aswir 01: Aselmed",
+      "features": {
+        "micro": {
+          "title": "Timiwa Tifessasin",
+          "desc": "Timsirin tiwezzlanin yettwasersen i yibriden n umahil."
+        },
+        "paths": {
+          "title": "Ibriden Yettwasuddsen",
+          "desc": "Abrid ibanen seg unelmad amaynut ar umusnaw n ulzuz."
+        },
+        "validation": {
+          "title": "Asentem n Tmusni",
+          "desc": "Ikayaden d yisenfaren imezwura i yeṭṭfen isefta n umahil."
+        }
+      },
+      "stats": {
+        "accuracy": "Tiseddi n Usentem",
+        "behavioral": "Asfurret n tmusniwin deg umahil"
+      },
+      "subtitle": "Tiski n ukcum i yisefka n teɣara talqqayt.",
+      "description": "Almad d tazwart kan. Nettarra yal anermis, akayad d uselkem n usenfar akken ad nebnu tasarut-ik tamusnit tusligt."
+    },
+    "freelancing": {
+      "label": "Aswir 02: Amahil Ililelli",
+      "readiness": {
+        "title": "Tuwja",
+        "desc": "Timusniwin yeqqnen srid ɣer umaɣnu."
+      },
+      "reputation": {
+        "title": "Isem Yelhan",
+        "desc": "I d-iṭeddun srid seg yigmaren n ulmad."
+      },
+      "cta": "Snirem Ammas n Yizemran",
+      "description": "Ur d-nettmudd ara agdez kan; nettmudd-d imskaren n theggi. Isefka-ik n ulmad d-ttaken isenqaren i k-isemyadaden d temhal timyuddsiyin d tmuɣli tuzwirt."
+    },
+    "bi": {
+      "label": "Aswir 03: Tusna n Tnezzut",
+      "features": {
+        "supply": {
+          "title": "Isallan n Tmusniwin",
+          "desc": "Tamuɣli deg wakud amatu ɣef tmusniwin timaynutin deg ulzuz."
+        },
+        "performance": {
+          "title": "Isektiyen n Tmerniwt",
+          "desc": "Isefta iṣeḥḥan yebnan ɣef usmed n tmahalin."
+        },
+        "insights": {
+          "title": "Tigzi n Tuddsiwin",
+          "desc": "Asemgired amatu n tuwja n yizemran deg tkebbanit."
+        }
+      },
+      "infrastructure": {
+        "title": "Tamesgida n Uḥraz n Yizemran",
+        "description": "Aswir-nneɣ n BI yettwabna i uselkem n tkebbaniyin i uḥraz n yimusnawen-nsent.",
+        "dashboard": "Tafelwit n Tuddsiwin (Anekcum Amezwaru)"
+      },
+      "subtitle": "Azal yernan s yisenqaren n useddi.",
+      "description": "Anagraw agtiskawan yesmektay tikli n ulmad d usekfel n twuriwin ɣer tmuɣliwin tuddsanin. Ur nttnadi ara s tecḍaṭ useddi n tmusniwin; nettwali-tent.",
+      "stats": {
+        "connectivity": "Tuqqna n tegrawin",
+        "velocity": "Arured n unnerni n tmusniwin",
+        "retention": "Aselken n uḥerrez"
+      }
+    },
+    "activation": {
+      "title": "Theggaḍ ad tkecmeḍ ɣer tuzzya n tenfalit?"
+    }
+  },
+  "activation": {
+    "cta": {
+      "module": "Bdu Tamsirt-inek Tamezwarut",
+      "docs": "Tasentemt n Tensa",
+      "joinWaitlist": "Rnu ɣer Tabyart n Uraja"
+    },
+    "benefits": {
+      "noCard": "Ulac takarḍa i yettwasutren",
+      "market": "Yettwahegga i Ulzuz Adzayri",
+      "infra": "Tamesgida n waṭas n tmeẓla"
+    }
+  },
+  "variation2": {
+    "title": {
+      "part1": "Beddel Abrid-inek",
+      "part2": "deg Yisefta",
+      "part3": "s Podacium"
+    },
+    "description": "Seg ulmad n tmusniwin tigejdanin ar usefrek n tesleḍt d uqennec ɣer tagnatin — Podacium tefka-yak anagraw ameddud i tmahilt-inek.",
+    "cta": {
+      "getStarted": "Bdu Baṭel",
+      "watchDemo": "Wali Taskant"
+    },
+    "benefits": {
+      "freeTrial": "Akayad baṭel n 14 n wussan",
+      "noCreditCard": "Ulac takarḍa i yeḥwaǧen"
+    },
+    "features": {
+      "learn": {
+        "title": "Lmed & Nnerni",
+        "description": "Tansa n uselmed s tallelt n IA"
+      },
+      "bi": {
+        "title": "Sleḍ & Ffer Teɣtasin",
+        "description": "Ifecka n tusna n tnezzut"
+      },
+      "hub": {
+        "title": "Qqen & Myallel",
+        "description": "Azeṭṭa n yizemran d yisenfaren"
+      },
+      "ai": {
+        "title": "Awurman & Asimɣer",
+        "description": "Tamusni tamiddawt s IA"
+      }
+    }
+  },
+  "features": {
+    "title": "Timmad Tizwaranin",
+    "description": "Seqdec timmad timaynutin yettwaheggan i yibriden n yisefta d umyallel deg terbaɛt",
+    "items": {
+      "collaboration": {
+        "title": "Amyallel deg Wakud Amatu",
+        "description": "Mahelt lwaḥid ɣef tfelwin, ineqqisen d yisenfaren s yifecka n ubeddel d tseddarin imir-imir."
+      },
+      "security": {
+        "title": "Taɣellist n Tkebbaniyin",
+        "description": "Taɣellist n lbankat s uwelleh n yisefta, asenqed imezgi d usefrek unzif n unekcum."
+      },
+      "api": {
+        "title": "Tuqqna s API",
+        "description": "REST API ameddud i tuqqniwin tudmawanin, awurman d usimɣer n tezmert n tensa."
+      }
+    }
+  },
+  "metadata": {
+    "title": "Podacium - Tansa n Ulmad n Yisefta, Tasleḍt d Yizemran s IA",
+    "description": "Awi timusniwin n yisefta s ulmad s IA, beddel isefta d timusniwin s yifecka n BI, u qqen d yimusnawen ifazen deg Podacium.",
+    "organization": {
+      "name": "Podacium",
+      "url": "https://podacium.com",
+      "logo": "https://podacium.com/logo.png",
+      "description": "Tansa yettwaseddren s IA i uselmed n yisefta, tusna n tnezzut d umsasa n yizemran",
+      "social": {
+        "twitter": "https://twitter.com/podacium",
+        "linkedin": "https://linkedin.com/company/podacium"
+      },
+      "contact": {
+        "telephone": "+1-555-123-4567",
+        "contactType": "amezlu n yimsaduren"
+      }
+    }
+  },
+  "postLoginModal": {
+    "title": "Ansuf! D acu i tebɣiḍ ad txedmeḍ?",
+    "subtitle": "Bdu s umaɣnu-inek neɣ s tfelwit n uskasi",
+    "footerNote": "Tzemreḍ dima ad tkecmeḍ ɣer tfernin-a seg umuɣ n umiḍan-inek",
+    "close": "Kra Nniḍen",
+    "options": {
+      "profile": {
+        "title": "Kfu Amaɣnu-inek",
+        "description": "Rnu isallan-inek udmawanen",
+        "ariaLabel": "Ddu ɣer usebter n umaɣnu iwakken ad tkemmleḍ isallan"
+      },
+      "dashboard": {
+        "title": "Ddu ɣer Tfelwit n Uskasi",
+        "description": "Wali asfurret-inek",
+        "ariaLabel": "Ddu ɣer tfelwit n uskasi iwakken ad twaliḍ tiseddast"
+      },
+      "stay": {
+        "title": "Qqim deg Usebter Agejdan",
+        "description": "Kemmel anadi",
+        "ariaLabel": "Mdel tafelwit u qqim deg usebter agejdan"
+      }
+    }
+  },
+  "oauth": {
+    "completingLogin": "Ameddeg n unekcum OAuth...",
+    "pleaseWait": "Ttxil-k arǧu",
+    "loginFailed": "Anekcum OAuth ur yezri ara: {message}",
+    "processingError": "Tuccḍa deg usefrek n OAuth"
+  },
+  "errors": {
+    "subscriptionFailed": "Ajerred ur yezri ara",
+    "subscriptionFailedDetail": "Ajerred ur yezri ara. Ales aɛreḍ tikelt nniḍen.",
+    "animationContextError": "useAnimationContext ilaq ad yettwaseqdec deg AnimationProvider"
+  },
+  "common": {
+    "loading": "Asali deg uselkem...",
+    "cancel": "Sefsex"
+  },
+  "trustHero": {
+    "aiEngineActive": "Amsedday n tussna tagamanit yermed",
+    "talentSignal": "Asenqer n tbaɣurt"
+  }
+}

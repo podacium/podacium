@@ -1,0 +1,1742 @@
+{
+  "previous": "Précédent",
+  "next": "Suivant",
+  "pageOf": "Page {page} sur {total}",
+  "free": "Gratuit",
+  "justNow": "À l'instant",
+  "followUsOn": "Suivez-nous sur {platform}",
+  "toggleSubmenu": "Basculer le sous-menu {name}",
+  "hidePassword": "Masquer le mot de passe",
+  "showPassword": "Afficher le mot de passe",
+  "recent": "Récent",
+  "online": "En ligne",
+  "offline": "Hors ligne",
+  "view": "Voir",
+  "getStarted": "Commencer",
+  "pause": "Pause",
+  "play": "Lecture",
+  "exit": "Quitter",
+  "done": "Terminé",
+  "send": "Envoyer",
+  "nav": {
+    "collapseSidebar": "Réduire la barre latérale",
+    "badgeCount": "{count} éléments",
+    "workspace": "Espace de travail",
+    "learning": "Learning",
+    "hub": "Hub",
+    "bi": "BI",
+    "policies": "Politiques",
+    "pricing": "Tarification",
+    "company": "Entreprise",
+    "learningCenter": "Centre d'Apprentissage",
+    "learningCenterDesc": "Expériences d'apprentissage interactives",
+    "paths": "Parcours",
+    "pathsDesc": "Parcours d'apprentissage guidés",
+    "courses": "Cours",
+    "coursesDesc": "Cours approfondis sur la technologie",
+    "documentation": "Documentation",
+    "documentationDesc": "Documentation technique complète",
+    "hubCenter": "Centre du Hub",
+    "hubCenterDesc": "Le cœur du Hub de Podacium",
+    "freelancer": "Freelance",
+    "freelancerDesc": "Trouver et embaucher les meilleurs freelancers",
+    "projects": "Projets",
+    "projectsDesc": "Trouver ou créer des projets freelance",
+    "forCompanies": "Pour les Entreprises",
+    "forCompaniesDesc": "Embaucher des talents et publier des projets",
+    "businessIntelligence": "Intelligence d'Affaires",
+    "businessIntelligenceDesc": "Vue d'ensemble de l'Intelligence d'Affaires",
+    "biDashboard": "Tableau de Bord",
+    "biDashboardDesc": "Vue d'ensemble de l'Intelligence d'Affaires",
+    "organizations": "Organisations",
+    "organizationsDesc": "Gérer vos organisations",
+    "datasets": "Jeux de Données",
+    "datasetsDesc": "Gérer et analyser les données",
+    "dashboards": "Tableaux de Bord",
+    "dashboardsDesc": "Voir et créer des tableaux de bord",
+    "analytics": "Analytique",
+    "analyticsDesc": "Outils d'analyse approfondie",
+    "aiAnalytics": "Analytique IA",
+    "aiAnalyticsDesc": "Insights et prédictions alimentés par l'IA",
+    "quality": "Qualité",
+    "qualityDesc": "Gestion de la qualité des données",
+    "decisions": "Décisions",
+    "decisionsDesc": "Suivi et gestion des décisions",
+    "reports": "Rapports",
+    "reportsDesc": "Générer et consulter des rapports",
+    "reporting": "Rapports",
+    "reportingDesc": "Visualisations interactives",
+    "securityTrust": "Sécurité & Confiance",
+    "securityTrustDesc": "Notre engagement envers la sécurité",
+    "legalPolicies": "Juridique & Politiques",
+    "legalPoliciesDesc": "Documents et politiques juridiques",
+    "privacyPolicy": "Politique de Confidentialité",
+    "privacyPolicyDesc": "Nos pratiques de confidentialité",
+    "termsService": "Conditions d'Utilisation",
+    "termsServiceDesc": "Nos conditions générales",
+    "cookiePolicy": "Politique de Cookies",
+    "refundPolicy": "Politiques de Remboursement",
+    "refundPolicyDesc": "Nos politiques de remboursement et de retour",
+    "helpSupport": "Aide & Support",
+    "helpSupportDesc": "Obtenir de l'aide quand vous en avez besoin",
+    "pricingPlans": "Forfaits",
+    "pricingPlansDesc": "Choisissez le bon forfait pour vous",
+    "aboutUs": "À propos",
+    "aboutUsDesc": "En savoir plus sur notre entreprise",
+    "partners": "Partenaires",
+    "partnersDesc": "Programmes et ressources partenaires",
+    "careers": "Carrières",
+    "careersDesc": "Rejoignez notre équipe",
+    "contact": "Contact",
+    "contactDesc": "Entrez en contact avec nous",
+    "mega": {
+      "helpTitle": "Besoin d'aide pour commencer ?",
+      "helpSubtitle": "Découvrez nos guides complets et notre documentation"
+    },
+    "badges": {
+      "popular": "Populaire",
+      "new": "Nouveau",
+      "comingSoon": "À venir",
+      "beta": "Bêta"
+    },
+    "comingSoonBadge": "En développement",
+    "comingSoonTitle": "Bientôt disponible - Nous y travaillons !",
+    "home": "Accueil",
+    "profile": "Profil",
+    "login": "Connexion",
+    "create": "Créer",
+    "jobs": "Emplois",
+    "contracts": "Contrats",
+    "myHires": "Recrutements",
+    "teaching": "Enseignement",
+    "admin": "Admin",
+    "ariaMobileNav": "Barre de navigation mobile",
+    "ariaCreateAction": "Créer ou action rapide",
+    "ariaCloseSheet": "Fermer le panneau d'actions",
+    "actions": {
+      "quickActions": "Actions Rapides",
+      "quickActionsSub": "Choisissez une action à créer ou explorer",
+      "postProject": "Projet",
+      "postProjectDesc": "Embauchez des freelancers qualifiés pour votre entreprise",
+      "uploadDataset": "Données",
+      "uploadDatasetDesc": "Analysez les données CSV, Excel ou JSON",
+      "createDashboard": "Tableau",
+      "createDashboardDesc": "Créez des visualisations BI interactives",
+      "createCourse": "Cours",
+      "createCourseDesc": "Partagez votre expertise avec des milliers d'apprenants",
+      "explorePaths": "Parcours",
+      "explorePathsDesc": "Parcours professionnels et programmes structurés",
+      "addLesson": "Leçon",
+      "addLessonDesc": "Ajoutez du contenu vidéo ou quiz à vos cours",
+      "findWork": "Emplois",
+      "findWorkDesc": "Explorez les projets clients correspondant à vos compétences",
+      "viewProposals": "Propositions",
+      "viewProposalsDesc": "Suivez vos candidatures et offres actives",
+      "updatePortfolio": "Portfolio",
+      "updatePortfolioDesc": "Mettez en valeur vos travaux et compétences",
+      "adminUsers": "Utilisateurs",
+      "adminUsersDesc": "Gérer les utilisateurs, vérifications et rôles",
+      "adminAudit": "Audit",
+      "adminAuditDesc": "Journaux d'activité et de sécurité du système",
+      "adminMetrics": "Métriques",
+      "adminMetricsDesc": "Analytique et performance de la plateforme",
+      "studentCourses": "Cours",
+      "studentCoursesDesc": "Accédez à vos cours inscrits et votre progression",
+      "studentPaths": "Parcours",
+      "studentPathsDesc": "Suivez des programmes d'apprentissage structurés",
+      "studentCertificates": "Certificats",
+      "studentCertificatesDesc": "Consultez et partagez vos certificats obtenus",
+      "exploreCourses": "Cours",
+      "exploreCoursesDesc": "Maîtrisez la tech, le business et la création",
+      "hireTalent": "Talents",
+      "hireTalentDesc": "Connectez-vous avec les meilleurs professionnels",
+      "aiInsights": "Analytique",
+      "aiInsightsDesc": "Outils de données interactifs et planification"
+    },
+    "primaryNav": "Navigation principale",
+    "toggleMenu": "Basculer le menu",
+    "dashboard": "Tableau de bord",
+    "courseAuthoring": "Création de cours",
+    "myCourses": "Mes cours",
+    "createCourse": "Créer un cours",
+    "createModule": "Créer un module",
+    "createLesson": "Créer une leçon",
+    "liveSessions": "Sessions en direct",
+    "mySessions": "Mes sessions",
+    "payouts": "Paiements",
+    "freelanceHub": "Espace Freelance",
+    "proposals": "Propositions",
+    "messages": "Messages",
+    "biGovernance": "BI & Gouvernance",
+    "notifications": "Notifications",
+    "myLearning": "Mon apprentissage",
+    "learningPaths": "Parcours d'apprentissage",
+    "certificates": "Certificats",
+    "browseProjects": "Explorer les projets",
+    "postProject": "Publier un projet",
+    "settings": "Paramètres",
+    "clientWork": "Missions clients",
+    "hiring": "Recrutement & Talents",
+    "workspaceTitles": {
+      "student": "Espace d'apprentissage",
+      "studentDesc": "Suivez vos cours, quiz et certificats",
+      "instructor": "Studio Instructeur",
+      "instructorDesc": "Créez des cours, suivez les inscrits et revenus",
+      "freelancer": "Espace Freelance",
+      "freelancerDesc": "Contrats, propositions, messages et revenus",
+      "business": "Espace Entreprise",
+      "businessDesc": "Projets, recrutements et analyses",
+      "admin": "Console Admin",
+      "adminDesc": "Gouvernance et télémétrie système",
+      "account": "Paramètres du compte",
+      "accountDesc": "Gérez vos paramètres et préférences"
+    }
+  },
+  "auth": {
+    "signIn": "Se connecter",
+    "getStarted": "S'inscrire",
+    "signOut": "Se déconnecter",
+    "dashboard": "Tableau de bord",
+    "profile": "Profil",
+    "profileSettings": "Paramètres du profil",
+    "billing": "Facturation",
+    "accountSettings": "Paramètres",
+    "devicesSecurity": "Appareils & Sécurité",
+    "helpSupport": "Aide & Support",
+    "adminPanel": "Panneau d'administration",
+    "instructorDashboard": "Tableau de bord instructeur",
+    "statusActive": "Actif",
+    "roles": {
+      "admin": "Admin",
+      "instructor": "Instructeur",
+      "member": "Membre",
+      "business": "Entreprise",
+      "student": "Étudiant",
+      "freelancer": "Indépendant"
+    },
+    "theme": {
+      "title": "Apparence",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    },
+    "modal": {
+      "title": "Accès Requis",
+      "joinCommunity": "Rejoindre la Communauté",
+      "description": "Débloquez votre profil personnalisé, suivez vos progrès et connectez-vous avec les autres. Connectez-vous pour accéder à votre identité numérique.",
+      "signIn": "Se Connecter pour Continuer",
+      "createAccount": "Créer un Nouveau Compte",
+      "footer": "En continuant, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité"
+    },
+    "userMenu": "Menu utilisateur",
+    "roleGuard": {
+      "accessRestricted": "Accès restreint",
+      "reservedFor": "Cette section est réservée aux comptes {roles}. Votre rôle actuel est {currentRole}.",
+      "returnToOverview": "Retour à l'aperçu"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "new": "nouveau",
+    "noNotifications": "Aucune notification",
+    "loading": "Chargement des notifications...",
+    "markAllRead": "Marquer tout lu",
+    "viewAll": "Voir toutes les notifications",
+    "justNow": "À l'instant",
+    "viewDetails": "Voir les détails",
+    "retry": "Réessayer",
+    "markRead": "Marquer comme lu",
+    "allCaughtUp": "Vous êtes à jour !",
+    "hoursAgo": "Il y a {n}h",
+    "closeNotifications": "Fermer les notifications",
+    "selectNotification": "Sélectionner la notification {id}",
+    "failedToLoad": "Échec du chargement des notifications",
+    "bellLabel": "Notifications",
+    "preferences": {
+      "loading": "Chargement des préférences...",
+      "notLoaded": "Impossible de charger les préférences de notification",
+      "retry": "Réessayer"
+    },
+    "module_approved": {
+      "title": "Module approuvé et publié !",
+      "body": "Votre module \"{moduleTitle}\" a été approuvé et est maintenant disponible pour les étudiants."
+    },
+    "module_rejected": {
+      "title": "Module nécessite des modifications",
+      "body": "Votre module \"{moduleTitle}\" n'a pas été approuvé. Veuillez consulter les commentaires et soumettre à nouveau."
+    },
+    "module_unpublished": {
+      "title": "Module dépublié",
+      "body": "Votre module \"{moduleTitle}\" a été dépublié par un administrateur."
+    },
+    "pushNotSupported": "Les notifications push ne sont pas prises en charge dans ce navigateur",
+    "pushPermissionDenied": "Autorisation de notification refusée"
+  },
+  "search": {
+    "title": "Rechercher sur Podacium",
+    "subtitle": "Trouvez des cours, des projets et des freelances sur Podacium",
+    "placeholder": "Rechercher du contenu...",
+    "openSearch": "Rechercher cours, freelances, projets, commandes...",
+    "searchButton": "Rechercher",
+    "noResults": "Aucun résultat trouvé",
+    "tryDifferent": "Essayez un terme de recherche ou un filtre différent",
+    "resultsCount": "Trouvé",
+    "viewAllResults": "Voir tous les résultats",
+    "recentSearches": "Recherches récentes",
+    "clearRecent": "Tout effacer",
+    "quickJump": "Accès rapide",
+    "courses": "Cours & Modules",
+    "freelancers": "Freelances",
+    "projects": "Projets",
+    "commands": "Commandes",
+    "askTeam": "Vous ne trouvez pas ? Demandez à notre équipe",
+    "viewAll": "Voir tous les résultats pour",
+    "closeSearch": "Fermer la recherche"
+  },
+  "docs": {
+    "view": "Voir la documentation"
+  },
+  "breadcrumbs": {
+    "home": "Podacium",
+    "help": "Centre d'aide",
+    "pricing": "Tarifs",
+    "bi": "BI",
+    "learn": "Apprentissage",
+    "hub": "Hub",
+    "docs": "Documentation",
+    "about": "À propos de Podacium",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "refund": "Politique de remboursement",
+    "cookies": "Politique de cookies",
+    "contact": "Contact",
+    "partners": "Partenaires",
+    "careers": "Carrières"
+  },
+  "footer": {
+    "description": "La plateforme tout-en-un pour l'apprentissage en ligne, le travail freelance et l'intelligence d'affaires.",
+    "badges": {
+      "popular": "Populaire",
+      "new": "Nouveau",
+      "beta": "Bêta"
+    },
+    "sections": {
+      "productSuite": {
+        "title": "Nos services",
+        "learnPlatform": "Plateforme d'apprentissage",
+        "biAnalytics": "Analyse d'Affaires",
+        "aiAnalytics": "Analyse IA",
+        "talentHub": "Hub de Talents"
+      },
+      "companyInfo": {
+        "title": "Informations sur l'entreprise",
+        "about": "À propos",
+        "partners": "Partenaires",
+        "waitlist": "Rejoindre la liste d'attente",
+        "blog": "Blog"
+      },
+      "userSupport": {
+        "title": "Support Utilisateur",
+        "documentation": "Documentation",
+        "helpCenter": "Centre d'Aide",
+        "contactSupport": "Contacter le Support",
+        "status": "État du système"
+      },
+      "resourcesHub": {
+        "title": "Centre de Ressources",
+        "privacyPolicy": "Politique de Confidentialité",
+        "termsOfService": "Conditions d'Utilisation",
+        "cookiePolicy": "Politique de Cookies"
+      }
+    },
+    "trust": {
+      "law1807": "Conforme à la loi 18-07",
+      "soc2": "Sécurité Entreprise",
+      "enterprise": "Prêt pour l'entreprise",
+      "iso": "ISO 27001"
+    },
+    "links": {
+      "privacy": "Confidentialité",
+      "terms": "Conditions",
+      "refund": "Remboursement",
+      "cookies": "Cookies"
+    },
+    "newsletterTitle": "Restez informé",
+    "newsletterPlaceholder": "votre@email.com",
+    "newsletterCta": "S'abonner",
+    "newsletterSuccess": "Vous êtes abonné ! Vérifiez votre boîte.",
+    "newsletterError": "Une erreur est survenue. Réessayez plus tard.",
+    "copyright": "© {year} Podacium. Tous droits réservés.",
+    "socialMedia": "Réseaux sociaux",
+    "newsletterSignup": "Inscription à la newsletter",
+    "footerNavigation": "Navigation du pied de page"
+  },
+  "meta": {
+    "home": {
+      "title": "Podacium — Apprendre. Travailler. Analyser. Évoluer.",
+      "description": "La plateforme tout-en-un pour l'apprentissage en ligne, le travail freelance et l'intelligence d'affaires. Rejoignez des milliers de professionnels à travers la région MENA."
+    },
+    "about": {
+      "title": "À propos — Notre Mission & Vision",
+      "description": "Découvrez comment Podacium transforme l'éducation et le travail à travers la région MENA. Notre mission : autonomiser les professionnels par l'apprentissage et l'analyse de données."
+    },
+    "pricing": {
+      "title": "Tarifs — Plans pour Chaque Professionnel",
+      "description": "Choisissez le plan parfait pour vos besoins. Du gratuit à l'entreprise, débloquez l'apprentissage, le freelance et les outils BI."
+    },
+    "contact": {
+      "title": "Contactez-nous — Nous Sommes Là pour Vous",
+      "description": "Contactez l'équipe Podacium. Que vous ayez des questions sur l'apprentissage, le freelance ou les outils BI, nous sommes prêts à vous aider."
+    },
+    "careers": {
+      "title": "Carrières — Rejoignez Notre Équipe",
+      "description": "Faites partie de l'avenir de l'éducation et du travail. Explorez les postes ouverts chez Podacium."
+    },
+    "partners": {
+      "title": "Partenaires — Opportunités de Collaboration",
+      "description": "Explorez les opportunités de partenariat avec Podacium. Universités, entreprises ou ONG, créons un impact ensemble."
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité — Protection des Données",
+      "description": "Découvrez comment Podacium collecte, utilise et protège vos informations personnelles. La transparence et la sécurité des données sont nos priorités."
+    },
+    "terms": {
+      "title": "Conditions d'Utilisation — Accord Utilisateur",
+      "description": "Lisez les conditions régissant votre utilisation des services d'apprentissage, de freelance et d'intelligence d'affaires de Podacium."
+    },
+    "cookies": {
+      "title": "Politique de Cookies — Utilisation des Cookies",
+      "description": "Comprenez comment Podacium utilise les cookies et technologies similaires pour améliorer votre expérience sur notre plateforme."
+    },
+    "refund": {
+      "title": "Politique de Remboursement — Garantie",
+      "description": "Découvrez la politique de remboursement de Podacium pour les cours, abonnements et services. Nous croyons en des pratiques de facturation justes."
+    },
+    "login": {
+      "title": "Connexion — Accédez à Votre Compte",
+      "description": "Connectez-vous à votre compte Podacium pour accéder aux cours, projets et outils d'analyse."
+    },
+    "signup": {
+      "title": "Créer un Compte — Rejoignez Podacium",
+      "description": "Créez votre compte Podacium gratuit et commencez à apprendre, travailler en freelance ou analyser des données."
+    },
+    "forgotPassword": {
+      "title": "Mot de Passe Oublié — Récupération de Compte",
+      "description": "Réinitialisez votre mot de passe Podacium en toute sécurité. Entrez votre email pour recevoir un lien de réinitialisation."
+    },
+    "resetPassword": {
+      "title": "Réinitialiser le Mot de Passe",
+      "description": "Créez un nouveau mot de passe pour votre compte Podacium."
+    },
+    "verifyEmail": {
+      "title": "Vérification Email",
+      "description": "Vérifiez votre adresse email pour accéder à votre compte Podacium et commencer votre parcours d'apprentissage."
+    },
+    "resendVerification": {
+      "title": "Renvoyer la Vérification",
+      "description": "Renvoyez le lien de vérification d'email pour votre compte Podacium."
+    },
+    "loginFailed": {
+      "title": "Échec de Connexion",
+      "description": "Un problème est survenu lors de la connexion à votre compte. Veuillez réessayer."
+    },
+    "dashboard": {
+      "title": "Tableau de Bord — Votre Espace Podacium",
+      "description": "Votre tableau de bord personnalisé. Suivez votre progression d'apprentissage, gérez vos projets et consultez vos analyses."
+    },
+    "profile": {
+      "title": "Votre Profil — Gérer Votre Compte",
+      "description": "Gérez votre profil Podacium, vos compétences et votre portfolio. Mettez à jour vos informations et paramètres de visibilité."
+    },
+    "settings": {
+      "title": "Paramètres du Compte — Préférences",
+      "description": "Configurez les paramètres de votre compte Podacium, notifications et préférences de confidentialité."
+    },
+    "notifications": {
+      "title": "Notifications — Votre Activité",
+      "description": "Restez informé avec vos notifications Podacium. Mises à jour de cours, messages de projets et alertes système."
+    },
+    "billing": {
+      "title": "Facturation & Abonnements",
+      "description": "Gérez votre abonnement Podacium, vos méthodes de paiement et votre historique de facturation."
+    },
+    "onboarding": {
+      "title": "Bienvenue — Configurez Votre Profil",
+      "description": "Complétez la configuration de votre profil pour obtenir des recommandations de cours personnalisées et des opportunités professionnelles."
+    },
+    "unauthorized": {
+      "title": "Accès Non Autorisé",
+      "description": "Vous n'avez pas la permission d'accéder à cette page. Veuillez vous connecter avec un compte autorisé."
+    },
+    "learn": {
+      "title": "Apprendre — Cours en Ligne & Certifications",
+      "description": "Avancez dans votre carrière avec des cours dirigés par des experts et des certifications reconnues. Apprenez des compétences recherchées."
+    },
+    "learnCourses": {
+      "title": "Parcourir les Cours — Apprendre en Ligne",
+      "description": "Explorez des centaines de cours enseignés par des experts. De la programmation au design, trouvez le cours parfait pour votre carrière."
+    },
+    "learnPaths": {
+      "title": "Parcours d'Apprentissage — Développement de Carrière",
+      "description": "Suivez des parcours d'apprentissage conçus par des experts. Des programmes structurés du débutant au professionnel."
+    },
+    "learnManage": {
+      "title": "Gérer les Cours — Tableau de Bord Instructeur",
+      "description": "Gérez vos cours, suivez la progression des étudiants et mettez à jour le contenu depuis votre tableau de bord instructeur."
+    },
+    "hub": {
+      "title": "Hub — Trouvez du Travail & Recrutez des Talents",
+      "description": "Connectez-vous avec les meilleurs freelances et des projets passionnants sur Podacium Hub. Le marché de référence pour les compétences et opportunités."
+    },
+    "hubProjects": {
+      "title": "Parcourir les Projets — Opportunités Freelance",
+      "description": "Découvrez des projets freelance passionnants en développement, design, marketing et plus. Postulez aux opportunités qui correspondent à vos compétences."
+    },
+    "hubProjectsNew": {
+      "title": "Publier un Projet — Podacium Hub",
+      "description": "Créez et publiez un nouveau projet pour trouver des freelances talentueux sur Podacium Hub."
+    },
+    "hubFreelancers": {
+      "title": "Recruter des Freelances — Top Talents",
+      "description": "Parcourez des freelances qualifiés prêts à réaliser vos projets. Des développeurs aux designers, trouvez le talent parfait."
+    },
+    "hubContracts": {
+      "title": "Contrats — Accords Freelance Sécurisés",
+      "description": "Gérez vos contrats freelance en toute confiance. Paiements par jalons, résolution de litiges et outils de collaboration sécurisés."
+    },
+    "hubMessages": {
+      "title": "Messagerie — Podacium Hub",
+      "description": "Gérez vos conversations avec les clients et freelances. Restez connecté sur Podacium Hub."
+    },
+    "hubProposals": {
+      "title": "Mes Propositions — Podacium Hub",
+      "description": "Suivez et gérez vos propositions de projets et candidatures sur Podacium Hub."
+    },
+    "bi": {
+      "title": "BI — Intelligence d'Affaires & Analytique",
+      "description": "Transformez vos données en insights actionnables. Créez des tableaux de bord, analysez des jeux de données et prenez des décisions basées sur les données."
+    },
+    "biAnalytics": {
+      "title": "Analytique — Visualisation de Données & Insights",
+      "description": "Des outils d'analyse puissants pour visualiser et comprendre vos données. Créez des graphiques, rapports et tableaux de bord interactifs."
+    },
+    "biDashboards": {
+      "title": "Tableaux de Bord — Tableaux de Bord BI Publics",
+      "description": "Explorez les tableaux de bord créés par la communauté et partagez les vôtres. Découvrez des insights à partir de jeux de données publics."
+    },
+    "biDashboardsNew": {
+      "title": "Créer un Tableau de Bord — Podacium BI",
+      "description": "Construisez des tableaux de bord interactifs personnalisés avec des widgets glisser-déposer sur Podacium BI."
+    },
+    "biDatasets": {
+      "title": "Jeux de Données — Données Ouvertes & Ressources",
+      "description": "Accédez et contribuez à notre répertoire de jeux de données publics. Des données propres et organisées pour vos projets d'analyse."
+    },
+    "biDatasetsUpload": {
+      "title": "Télécharger un Jeu de Données — Podacium BI",
+      "description": "Téléchargez vos fichiers CSV, Excel ou JSON pour l'analyse et la visualisation sur Podacium BI."
+    },
+    "biOrganizations": {
+      "title": "Organisations — Communautés d'Analytique",
+      "description": "Connectez-vous avec des organisations qui exploitent les données. Découvrez des équipes d'analyse et des réseaux d'intelligence d'affaires."
+    },
+    "biOrganizationInvitations": {
+      "title": "Invitations d'Organisation — Podacium BI",
+      "description": "Consultez et acceptez les invitations à rejoindre des organisations d'analytique sur Podacium BI."
+    },
+    "biReports": {
+      "title": "Rapports — Insights Basés sur les Données",
+      "description": "Parcourez et partagez des rapports de données de la communauté Podacium. Découvrez des insights, tendances et analyses."
+    },
+    "biQuality": {
+      "title": "Qualité des Données — Nettoyer & Valider",
+      "description": "Assurez-vous que vos données répondent aux normes les plus élevées. Contrôles de qualité automatisés et outils de nettoyage de données."
+    },
+    "biDecisions": {
+      "title": "Aide à la Décision — Décisions Basées sur les Données",
+      "description": "Prenez de meilleures décisions avec des recommandations alimentées par l'IA. Analysez des scénarios et optimisez vos stratégies."
+    },
+    "admin": {
+      "title": "Tableau de Bord Admin — Podacium",
+      "description": "Tableau de bord administratif pour la gestion de la plateforme Podacium. Gérez les utilisateurs, cours et paramètres système."
+    },
+    "adminWaitlist": {
+      "title": "Gestion de la Liste d'Attente — Admin",
+      "description": "Gérez les inscriptions à la liste d'attente, vérifiez les inscriptions et suivez la conversion sur la plateforme Podacium."
+    },
+    "adminUsers": {
+      "title": "Gestion des Utilisateurs — Admin",
+      "description": "Gérez les utilisateurs, rôles et permissions de la plateforme depuis le panneau d'administration."
+    },
+    "adminCourses": {
+      "title": "Gestion des Cours — Admin",
+      "description": "Gérez tous les cours de la plateforme. Créez, modifiez, publiez et archivez des cours."
+    },
+    "adminCoursesNew": {
+      "title": "Créer un Cours — Admin",
+      "description": "Créez un nouveau cours sur la plateforme Podacium."
+    },
+    "adminCoursesEdit": {
+      "title": "Modifier le Cours — Admin",
+      "description": "Modifiez les détails, le contenu et les paramètres du cours."
+    },
+    "adminLessons": {
+      "title": "Gestion des Leçons — Admin",
+      "description": "Gérez toutes les leçons à travers les cours de la plateforme."
+    },
+    "adminLessonsNew": {
+      "title": "Créer une Leçon — Admin",
+      "description": "Créez une nouvelle leçon pour un cours sur la plateforme."
+    },
+    "adminLessonsEdit": {
+      "title": "Modifier la Leçon — Admin",
+      "description": "Modifiez le contenu, les vidéos et les paramètres de la leçon."
+    },
+    "adminPaths": {
+      "title": "Gestion des Parcours — Admin",
+      "description": "Gérez les parcours d'apprentissage. Créez, modifiez et organisez les séquences de cours."
+    },
+    "adminPathsNew": {
+      "title": "Créer un Parcours — Admin",
+      "description": "Créez un nouveau parcours d'apprentissage sur la plateforme."
+    },
+    "adminPathsEdit": {
+      "title": "Modifier le Parcours — Admin",
+      "description": "Modifiez les détails du parcours d'apprentissage et la séquence de cours."
+    },
+    "adminEnrollments": {
+      "title": "Inscriptions — Admin",
+      "description": "Consultez et gérez les inscriptions des étudiants à travers tous les cours."
+    },
+    "adminQuizzes": {
+      "title": "Gestion des Quiz — Admin",
+      "description": "Gérez les quiz et évaluations à travers tous les cours."
+    },
+    "adminSettings": {
+      "title": "Paramètres de la Plateforme — Admin",
+      "description": "Configurez les paramètres globaux de la plateforme."
+    },
+    "adminAnalytics": {
+      "title": "Analytique — Admin",
+      "description": "Consultez les analyses de la plateforme, métriques utilisateurs et rapports de revenus."
+    },
+    "adminActivityLog": {
+      "title": "Journal d'Activité — Admin",
+      "description": "Consultez les journaux d'activité et la piste d'audit des actions administratives."
+    },
+    "adminAppeals": {
+      "title": "Appels — Admin",
+      "description": "Examinez et gérez les appels des utilisateurs et les résolutions de litiges."
+    },
+    "adminContentReview": {
+      "title": "Révision de Contenu — Admin",
+      "description": "Examinez et modérez le contenu soumis en attente d'approbation."
+    },
+    "adminOrganizations": {
+      "title": "Organisations — Admin",
+      "description": "Gérez les organisations et leurs paramètres sur la plateforme."
+    },
+    "adminTickets": {
+      "title": "Tickets de Support — Admin",
+      "description": "Gérez et répondez aux tickets de support des utilisateurs."
+    },
+    "aiAnalytics": {
+      "title": "Insights IA & Analytique",
+      "description": "Exploitez la puissance de l'IA pour analyser votre progression d'apprentissage et votre croissance professionnelle.",
+      "page": {
+        "title": "Analytique IA",
+        "description": "Insights et prédictions alimentés par l'IA pour votre parcours d'apprentissage.",
+        "stats": {
+          "modelsActive": "Modèles Actifs",
+          "modelsActiveValue": "12",
+          "queriesProcessed": "Requêtes Aujourd'hui",
+          "queriesProcessedValue": "2 847",
+          "avgResponseTime": "Temps de Réponse Moyen",
+          "avgResponseTimeValue": "1,2s",
+          "accuracy": "Précision du Modèle",
+          "accuracyValue": "97,8%"
+        },
+        "insights": {
+          "title": "Insights IA",
+          "personalized": {
+            "title": "Recommandations Personnalisées",
+            "description": "Obtenez des recommandations de cours et de carrière adaptées à vos habitudes d'apprentissage."
+          },
+          "progress": {
+            "title": "Prédiction de Progression",
+            "description": "L'IA prédit votre trajectoire d'apprentissage et suggère des parcours d'étude optimaux."
+          },
+          "skills": {
+            "title": "Analyse des Lacunes de Compétences",
+            "description": "Identifiez les compétences manquantes et obtenez des recommandations ciblées."
+          },
+          "career": {
+            "title": "Insights de Carrière",
+            "description": "Découvrez des parcours professionnels qui correspondent à vos compétences et à votre historique d'apprentissage."
+          }
+        },
+        "comingSoon": {
+          "title": "Analytique Avancée Bientôt",
+          "description": "Nous développons des analyses IA plus approfondies. Revenez bientôt pour des modèles prédictifs, la reconnaissance de schémas d'apprentissage et des insights de croissance personnalisés."
+        }
+      }
+    },
+    "docs": {
+      "title": "Documentation — Docs Développeur",
+      "description": "Documentation complète pour les APIs et fonctionnalités de Podacium : Apprentissage, Hub Freelance et Intelligence d'Affaires."
+    },
+    "help": {
+      "title": "Centre d'Aide — Support",
+      "description": "Obtenez de l'aide pour les cours, projets freelance, facturation et outils BI. Parcourez les FAQ et contactez le support Podacium."
+    },
+    "paymentSuccess": {
+      "title": "Paiement Réussi",
+      "description": "Votre paiement a été traité avec succès. Merci pour votre achat sur Podacium."
+    },
+    "paymentFailure": {
+      "title": "Échec du Paiement",
+      "description": "Nous n'avons pas pu traiter votre paiement. Veuillez réessayer ou utiliser un autre moyen de paiement."
+    },
+    "paymentCheckout": {
+      "title": "Paiement — Podacium",
+      "description": "Vérifiez votre commande et finalisez votre achat en toute sécurité sur Podacium."
+    },
+    "live": {
+      "title": "Sessions en Direct — Rejoignez des Experts en Streaming",
+      "description": "Découvrez et rejoignez des sessions en direct avec des créateurs experts. Apprenez en temps réel avec des Q&R interactifs, ateliers et plus."
+    },
+    "liveCreate": {
+      "title": "Créer une Session en Direct | Podacium",
+      "description": "Planifiez et organisez une session de streaming en direct sur Podacium. Configurez les détails, le tarif et lancez-vous."
+    },
+    "liveMySessions": {
+      "title": "Mes Sessions en Direct | Podacium",
+      "description": "Consultez et gérez vos sessions de streaming en direct sur Podacium. Suivez les sessions à venir, en cours et passées."
+    },
+    "liveBookings": {
+      "title": "Mes Réservations | Podacium",
+      "description": "Consultez vos sessions en direct réservées sur Podacium. Gérez vos réservations et accédez à vos événements à venir."
+    },
+    "liveReplays": {
+      "title": "Replays des Sessions | Podacium",
+      "description": "Regardez les replays des sessions en direct enregistrées sur Podacium. Rattrapez les ateliers, webinaires et sessions d'experts passés."
+    },
+    "livePayouts": {
+      "title": "Paiements des Sessions | Podacium",
+      "description": "Suivez vos gains et paiements de sessions en direct sur Podacium. Consultez l'historique des transactions et le statut des paiements."
+    },
+    "liveTransfer": {
+      "title": "Transférer une Réservation | Podacium",
+      "description": "Transférez votre réservation de session en direct à une autre personne sur Podacium."
+    },
+    "liveAcceptTransfer": {
+      "title": "Accepter le Transfert de Réservation | Podacium",
+      "description": "Acceptez une réservation de session en direct qui vous a été transférée sur Podacium."
+    }
+  },
+  "loading": "Chargement...",
+  "loadingScreen": {
+    "brand": "Podacium",
+    "preparingJourney": "Préparation de votre parcours d'apprentissage"
+  },
+  "error": "Une erreur s'est produite",
+  "processing": "Traitement...",
+  "loadingForms": {
+    "loginForm": "Chargement du formulaire de connexion...",
+    "resetForm": "Chargement du formulaire de réinitialisation..."
+  },
+  "errors": {
+    "podaPoints": {
+      "insufficient_points": "PodaPoints insuffisants",
+      "purchase_failed": "Échec de l'achat de PodaPoints",
+      "spend_failed": "Échec de la dépense de PodaPoints",
+      "feature_not_found": "Fonctionnalité introuvable",
+      "feature_already_active": "Fonctionnalité déjà active",
+      "feature.freelancer_boost.already_active": "Le Boost Freelance est déjà actif. Attendez qu'il expire pour racheter.",
+      "feature.freelancer_featured_7d.already_active": "Le Freelancer en vedette est déjà actif. Attendez qu'il expire pour racheter.",
+      "feature_expired": "La fonctionnalité a expiré",
+      "wallet_not_found": "Portefeuille non trouvé",
+      "invalid_amount": "Montant PodaPoints invalide"
+    },
+    "billing": {
+      "wallet_not_found": "Portefeuille non trouvé",
+      "failed_to_get_wallet": "Échec de la récupération des informations du portefeuille",
+      "not_authorized_org_wallet": "Non autorisé à accéder au portefeuille de l'organisation",
+      "not_authorized_wallet": "Non autorisé à accéder à ce portefeuille",
+      "amount_must_be_positive": "Le montant de la transaction doit être positif",
+      "contract_not_found": "Contrat non trouvé",
+      "subscription_not_found": "Abonnement non trouvé",
+      "failed_to_get_subscriptions": "Échec de la récupération des abonnements",
+      "not_authorized_transactions": "Non autorisé à voir ces transactions",
+      "failed_to_initiate_payment": "Échec de l'initialisation du paiement. Veuillez réessayer plus tard.",
+      "failed_to_initiate_subscription": "Échec de l'initialisation de l'abonnement. Veuillez réessayer plus tard.",
+      "no_checkout_url": "La session de paiement sécurisé n'a pas pu être établie."
+    },
+    "admin": {
+      "access_required": "Accès administratif requis"
+    },
+    "auth": {
+      "invalid_credentials": "Identifiants d'authentification invalides",
+      "invalid_token": "Jeton invalide",
+      "invalid_user_id": "ID utilisateur invalide dans le jeton",
+      "database_error": "Erreur de base de données",
+      "user_not_found": "Utilisateur non trouvé",
+      "validation_failed": "Impossible de valider les identifiants",
+      "account_deactivated": "Le compte a été désactivé",
+      "authentication_error": "Erreur d'authentification",
+      "insufficient_permissions": "Permissions insuffisantes",
+      "admin_access_required": "Accès administrateur requis",
+      "terms_required": "Vous devez accepter les conditions générales",
+      "email_exists": "Un utilisateur avec cet email existe déjà",
+      "create_failed": "Échec de la création de l'utilisateur",
+      "login_failed": "Échec de la connexion"
+    },
+    "wallet": {
+      "insufficient_funds": "Fonds insuffisants",
+      "wallet_not_active": "Le portefeuille n'est pas actif",
+      "currency_mismatch": "Devise incompatible entre les portefeuilles",
+      "transfer_failed": "Échec du transfert de fonds",
+      "credit_failed": "Échec du crédit du portefeuille",
+      "debit_failed": "Échec du débit du portefeuille",
+      "hold_failed": "Échec du blocage des fonds",
+      "release_failed": "Échec de la libération des fonds bloqués"
+    },
+    "escrow": {
+      "create_failed": "Échec de la création du séquestre",
+      "hold_not_found": "Séquestre non trouvé",
+      "freelancer_wallet_not_found": "Portefeuille freelance non trouvé",
+      "release_failed": "Échec de la libération du séquestre",
+      "refund_failed": "Échec du remboursement du séquestre"
+    },
+    "payout": {
+      "wallet_not_found": "Portefeuille non trouvé",
+      "wallet_not_active": "Le portefeuille n'est pas actif",
+      "create_failed": "Échec de la création de la demande de paiement",
+      "not_found": "Paiement non trouvé",
+      "cannot_fail_completed": "Impossible d'échouer un paiement terminé",
+      "fail_process_failed": "Échec du traitement de l'échec de paiement"
+    },
+    "subscription": {
+      "user_not_found": "Utilisateur non trouvé",
+      "org_not_found": "Organisation non trouvée",
+      "already_exists": "Un abonnement actif existe déjà",
+      "create_failed": "Échec de la création de l'abonnement",
+      "update_failed": "Échec de la mise à jour de l'abonnement",
+      "not_active": "L'abonnement n'est pas actif",
+      "cancel_failed": "Échec de l'annulation de l'abonnement",
+      "not_paused": "L'abonnement n'est pas suspendu"
+    },
+    "file": {
+      "invalid_category": "Catégorie de fichier invalide",
+      "not_found_or_unauthorized": "Fichier non trouvé ou non autorisé",
+      "upload_failed": "Échec du téléversement du fichier",
+      "upload_not_found": "Fichier téléversé introuvable dans le stockage",
+      "dangerous_extension_detected": "Type de fichier ou extension non sécurisé détecté",
+      "empty_content": "Impossible de téléverser un fichier vide",
+      "save_failed": "Échec de l'enregistrement du fichier dans le stockage"
+    },
+    "webhook": {
+      "invalid_signature": "Signature de webhook invalide",
+      "invalid_payload": "Charge utile JSON invalide",
+      "processing_failed": "Échec du traitement du webhook"
+    },
+    "commission": {
+      "calculation_failed": "Échec du calcul de la commission",
+      "freelancer_not_found": "Profil freelance non trouvé",
+      "update_tier_failed": "Échec de la mise à jour du niveau freelance",
+      "transaction_not_found": "Transaction non trouvée",
+      "record_failed": "Échec de l'enregistrement de la commission",
+      "invalid_rate": "Le taux de commission personnalisé doit être compris entre 0 et 0.20",
+      "enterprise_only": "Taux personnalisés disponibles uniquement pour le niveau ENTERPRISE"
+    }
+  },
+  "errorFallback": {
+    "generic": {
+      "heading": "Une erreur est survenue",
+      "message": "Une erreur inattendue s'est produite. Notre équipe a été notifiée.",
+      "tryAgain": "Réessayer",
+      "goBack": "Retour",
+      "goHome": "Accueil",
+      "digest": "Empreinte de l'erreur : {digest}"
+    },
+    "auth": {
+      "heading": "Erreur d'authentification",
+      "message": "Une erreur est survenue lors de l'authentification. Veuillez réessayer ou contacter le support."
+    },
+    "dashboard": {
+      "heading": "Tableau de bord indisponible",
+      "message": "Impossible de charger votre tableau de bord. Veuillez réessayer."
+    },
+    "learn": {
+      "heading": "Contenu pédagogique indisponible",
+      "message": "Impossible de charger le contenu pédagogique. Veuillez réessayer."
+    },
+    "hub": {
+      "heading": "Hub freelance indisponible",
+      "message": "Impossible de charger le hub freelance. Veuillez réessayer."
+    },
+    "admin": {
+      "heading": "Panneau d'administration indisponible",
+      "message": "Impossible de charger le panneau d'administration. Veuillez réessayer."
+    },
+    "bi": {
+      "heading": "Analyses indisponibles",
+      "message": "Impossible de charger les analyses. Vos données sont en sécurité. Veuillez réessayer."
+    },
+    "payment": {
+      "heading": "Erreur de paiement",
+      "message": "Une erreur est survenue lors du paiement. Votre compte n'a pas été débité. Veuillez réessayer."
+    },
+    "settings": {
+      "heading": "Paramètres indisponibles",
+      "message": "Impossible de charger vos paramètres. Veuillez réessayer."
+    }
+  },
+  "common": {
+    "all": "Tous",
+    "allTopics": "Tous les sujets",
+    "saveChanges": "Enregistrer les modifications",
+    "saving": "Enregistrement en cours...",
+    "saved": "Enregistré avec succès",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour",
+    "save": "Enregistrer",
+    "searchQuestions": "Rechercher des questions ou mots-clés...",
+    "noMatchingQuestions": "Aucune question correspondante trouvée",
+    "noMatchingQuestionsDesc": "Essayez d'autres termes de recherche ou réinitialisez le filtre",
+    "clearSearch": "Effacer la recherche",
+    "wasHelpful": "Cette réponse vous a-t-elle été utile ?",
+    "yes": "Oui",
+    "no": "Non",
+    "thankYouFeedback": "Merci pour votre retour !",
+    "expandAll": "Tout développer",
+    "collapseAll": "Tout réduire",
+    "podaciumLogo": "Logo Podacium",
+    "home": "Accueil Podacium",
+    "navigation": "Navigation",
+    "actionsTitle": "Actions",
+    "navigate": "Naviguer",
+    "select": "Sélectionner",
+    "close": "Fermer",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "pageOf": "Page {page} sur {total}",
+    "loadingMore": "Chargement...",
+    "allLoaded": "Tout est chargé",
+    "refreshing": "Actualisation...",
+    "pullToRefresh": "Tirer pour actualiser",
+    "actions": "Actions",
+    "processed": "Traité",
+    "copied": "Copié",
+    "copy": "Copier",
+    "details": "Détails"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "tabs": {
+      "account": "Paramètres du compte",
+      "appearance": "Apparence & Langue",
+      "integrations": "Applications & Intégrations",
+      "advanced": "Studio Avancé"
+    },
+    "account": {
+      "title": "Paramètres du compte",
+      "subtitle": "Gérez vos informations personnelles, vos coordonnées et vos préférences",
+      "fullName": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "language": "Langue d affichage",
+      "timezone": "Fuseau horaire",
+      "dateFormat": "Format de date",
+      "verifiedStatus": "Compte vérifié",
+      "headline": "Titre professionnel",
+      "headlinePlaceholder": "ex. Ingénieur Full-Stack Senior & Chercheur IA",
+      "bio": "Biographie personnelle / Devise",
+      "bioPlaceholder": "Court résumé professionnel vous concernant...",
+      "detectTimezone": "Détection automatique",
+      "sessionTimeout": "Délai d'expiration de la session",
+      "sessionTimeoutVal": "15 minutes d'inactivité",
+      "languages": {
+        "en": "Anglais (US)",
+        "fr": "Français (France)",
+        "ar": "Arabe (العربية)",
+        "kab": "Kabyle (Tamazight)"
+      },
+      "saveSuccess": "Paramètres enregistrés avec succès !",
+      "saveError": "Échec de la mise à jour des paramètres du compte",
+      "timezones": {
+        "utc": "UTC",
+        "utcFull": "UTC (Temps universel coordonné)"
+      }
+    },
+    "appearance": {
+      "title": "Préférences d'apparence",
+      "subtitle": "Personnalisez l'apparence de Podacium et son adaptation à votre espace",
+      "themeSavedNotice": "Préférences de thème enregistrées (Mode sombre prévu dans la prochaine version v2)",
+      "themeGroup": "Thème de couleur",
+      "light": "Studio Clair",
+      "dark": "Studio Sombre",
+      "system": "Système Auto",
+      "fontSizeGroup": "Échelle de taille de police",
+      "fontSize": {
+        "small": "Petit",
+        "smallLabel": "Aa Petit",
+        "medium": "Moyen",
+        "mediumLabel": "Aa Moyen",
+        "large": "Grand",
+        "largeLabel": "Aa Grand"
+      },
+      "densityGroup": "Densité de l'espacement de l'interface",
+      "density": {
+        "compact": "Compacte",
+        "compactDesc": "Espacement réduit",
+        "comfortable": "Confortable",
+        "comfortableDesc": "Équilibre standard",
+        "spacious": "Aérée",
+        "spaciousDesc": "Espacement large"
+      },
+      "previewTitle": "Aperçu de la mise à l'échelle en direct",
+      "previewCardTitle": "Exemple de carte interactive",
+      "previewMeta": "Police : {font} • Densité : {density}",
+      "previewHeading": "Espace de travail de la plateforme Podacium",
+      "previewText": "Cet aperçu reflète en temps réel la taille de la police et l'espacement sur votre tableau de bord.",
+      "previewPrimaryBtn": "Bouton d'action",
+      "previewSecondaryBtn": "Secondaire",
+      "accessibilityGroup": "Paramètres d'accessibilité",
+      "reducedMotion": "Mouvement réduit",
+      "reducedMotionDesc": "Minimiser les transitions d'affichage et mouvements d'arrière-plan",
+      "highContrast": "Mode contraste élevé",
+      "highContrastDesc": "Maximiser le contraste visuel pour la lisibilité",
+      "saveError": "Échec de l'enregistrement des paramètres d'apparence"
+    },
+    "advanced": {
+      "title": "Studio de la plateforme développeur d'entreprise",
+      "subtitle": "Gérez les clés API de niveau Stripe, les matrices de portées RBAC, les listes blanches IP et les webhooks sortants avec disjoncteurs",
+      "apiKeysGroup": "Clés API programmatiques & Portées",
+      "generateKey": "Générer une nouvelle clé",
+      "noApiKeys": "Aucune clé API active",
+      "webhooksGroup": "Webhooks d'événements & Disjoncteurs",
+      "addWebhook": "Ajouter un endpoint",
+      "noWebhooks": "Aucun endpoint Webhook configuré en temps réel",
+      "dualKeyRotation": "Rotation active double de clés de niveau Stripe",
+      "dualKeyDesc": "Fenêtre de transition de 7 jours avec en-têtes d'avertissement pour rotation sans interruption",
+      "rakScoping": "Portée de clé API restreinte (RAK)",
+      "rakPathDesc": "Restreindre les clés à des chemins HTTP spécifiques et jokers de méthode",
+      "secretRotation": "Rotation de secret sans interruption",
+      "secretRotationDesc": "Faire pivoter les secrets de signature sans interrompre les nouvelles tentatives actives (Doubles signatures v1)",
+      "apiKeys": "Clés API & Jetons d'accès",
+      "webhooks": "Endpoints Webhook",
+      "dataGroup": "Gouvernance des données & Cache",
+      "exportData": "Exporter l archive du compte",
+      "exportDataDesc": "Téléchargez un export JSON lisible par machine de toutes les données personnelles",
+      "clearCache": "Purger le cache client local",
+      "clearCacheDesc": "Invalider les ressources en cache et les sessions locales"
+    },
+    "integrations": {
+      "title": "Moteur d'intégration Podacium Connect",
+      "subtitle": "Connexions OAuth 2.0 PKCE déléguées pour l'EdTech, le Freelance et la Business Intelligence",
+      "pageTitle": "Applications connectées et intégrations",
+      "pageSubtitle": "Gérer les outils tiers, les applications OAuth et les webhooks",
+      "connectors": "Connecteurs",
+      "connectorsHeader": "10 connecteurs sortants",
+      "workflowBuilder": "Générateur visuel de flux DAG",
+      "workflowDesc": "Connecter des nœuds d'automatisation multi-étapes à travers les connecteurs EdTech, Freelance et BI",
+      "wasmPreview": "Aperçu du transformateur WASM isolé",
+      "wasmDesc": "Prévisualiser les transformations de données JavaScript/Rust définies par l'utilisateur dans un environnement WASM isolé",
+      "dlqTitle": "Inspecteur de file d'attente DLQ",
+      "dlqDesc": "Inspecter et mettre en quarantaine les livraisons échouées avec relivraison en 1 clic",
+      "loadError": "Échec du chargement des intégrations connectées",
+      "statusConnected": "Connecté",
+      "statusNotConnected": "Non connecté",
+      "connectBtn": "Connecter le compte",
+      "executeTitle": "Exécuter",
+      "executeDesc": "Déclencher la logique du connecteur API backend pour",
+      "runAction": "Exécuter l action",
+      "connectedMsg": "connecté avec succès",
+      "disconnectedMsg": "déconnecté",
+      "actionSucceeded": "Action du connecteur réussie",
+      "pillar": {
+        "education": "EdTech & Apprentissage",
+        "freelance": "Freelance & Séquestre",
+        "bi": "Informatique décisionnelle"
+      },
+      "google": {
+        "name": "Google Drive et Workspace",
+        "desc": "Importer des devoirs directement depuis Drive et exporter des rapports BI",
+        "action": "Importer un devoir"
+      },
+      "github": {
+        "name": "Moteur Développeur GitHub",
+        "desc": "Vérifier les pull requests des étudiants et synchroniser les commits freelance avec les jalons",
+        "action": "Synchroniser la Pull Request"
+      },
+      "slack": {
+        "name": "Intelligence d'équipe Slack",
+        "desc": "Diffuser des alertes exécutives BI et des notifications de projet freelance dans les canaux",
+        "action": "Publier une alerte BI"
+      },
+      "zoom": {
+        "name": "Salles de classe virtuelles Zoom",
+        "desc": "Planifier automatiquement des webinaires de tutorat et des visioconférences de jalons freelance",
+        "action": "Planifier un webinaire"
+      },
+      "notion": {
+        "name": "Espace de travail Notion",
+        "desc": "Exporter des résumés de cours et des graphiques interactifs BI directement dans des pages Notion",
+        "action": "Exporter vers Notion"
+      },
+      "kaggle": {
+        "name": "Centre de jeux de données Kaggle",
+        "desc": "Extraire des données ouvertes de compétition directement dans le Studio Podacium BI",
+        "action": "Extraire le jeu de données Kaggle"
+      },
+      "huggingface": {
+        "name": "Hub de modèles Hugging Face",
+        "desc": "Synchroniser les cartes de modèles IA et les jeux de données de référence directement dans les pipelines BI",
+        "action": "Synchroniser la carte de modèle HF"
+      },
+      "teams": {
+        "name": "Diffuseur Microsoft Teams",
+        "desc": "Publier des cartes récapitulatives de tableaux de bord BI dans les canaux Microsoft Teams",
+        "action": "Publier une carte Teams"
+      },
+      "calendar": {
+        "name": "Calendrier Google / Outlook",
+        "desc": "Synchroniser les horaires de cours et les jalons d'échéances de contrats freelance",
+        "action": "Ajouter au calendrier"
+      },
+      "chargily": {
+        "name": "Séquestre BaridiMob & Chargily",
+        "desc": "Dépôts sous séquestre par carte CIB / Edahabia et paiements CCP algériens BaridiMob",
+        "action": "Créer un paiement sécurisé"
+      }
+    }
+  },
+  "shared": {
+    "loading": "Chargement de l'aperçu...",
+    "error": {
+      "expired": "Cet aperçu partagé a expiré",
+      "notFound": "Aperçu partagé introuvable",
+      "loadFailed": "Échec du chargement de l'aperçu"
+    },
+    "expired": {
+      "title": "Aperçu expiré",
+      "message": "Cet aperçu partagé n'est plus disponible. Les aperçus partagés sont valides 7 jours.",
+      "askSender": "Demandez à l'expéditeur d'en générer un nouveau."
+    },
+    "notFoundTitle": "Aperçu indisponible",
+    "card": {
+      "title": "Santé de l'entreprise",
+      "subtitle": "Aperçu partagé",
+      "scoreLabel": "Score de santé",
+      "margin": "Marge",
+      "revenue": "Revenus",
+      "expenses": "Dépenses",
+      "debt": "Dette",
+      "buffer": "Réserve",
+      "trend": "Tendance",
+      "trendUp": "Hausse",
+      "trendDown": "Baisse",
+      "trendFlat": "Stable",
+      "sharedOn": "Partagé le",
+      "poweredBy": "Propulsé par Podacium BI",
+      "publicNote": "Ceci est un aperçu publiquement partagé. Toute personne disposant de ce lien peut le consulter.",
+      "shareInsight": "Partager cet aperçu",
+      "shareButton": "Partager"
+    },
+    "labels": {
+      "excellent": "Excellent",
+      "good": "Bon",
+      "average": "Moyen",
+      "critical": "Attention requise"
+    }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "Désolé, nous n'avons pas trouvé la page que vous recherchez. Elle a peut-être été déplacée, supprimée ou l'URL est incorrecte.",
+    "goHome": "Aller à l'accueil",
+    "goBack": "Retour",
+    "tagline": "Podacium — Apprendre. Travailler. Analyser. Grandir."
+  },
+  "visibility": {
+    "inherit": "Hériter",
+    "public": "Public",
+    "followers": "Abonnés uniquement",
+    "connections": "Connexions uniquement",
+    "private": "Privé"
+  },
+  "saveChanges": "Enregistrer les modifications",
+  "save": "Enregistrer",
+  "saving": "Enregistrement...",
+  "retry": "Réessayer",
+  "cancel": "Annuler",
+  "confirm": "Confirmer",
+  "type_to_confirm_instruction": "Veuillez saisir",
+  "type_to_confirm_to_proceed": "pour continuer :",
+  "dismiss": "Ignorer",
+  "default": "Par défaut",
+  "all": "Tous",
+  "submitting": "Ajout de la carte...",
+  "downloadInvoice": "Voir la facture {id}",
+  "add": "Ajouter",
+  "bi": {
+    "copilot": {
+      "title": "PoDalil IA (بودليل)",
+      "versionBadge": "PoDalil v2.4",
+      "subtitle": "Posez des questions d'analyse en langage naturel ou détectez des aperçus automatisés sur vos données en DZD",
+      "autoInsights": "Aperçus Automatiques",
+      "placeholder": "Demander à PoDalil : ex. 'Quelle est notre meilleure wilaya par marge brute ?'",
+      "ask": "Demander",
+      "analyzing": "Analyse...",
+      "suggestions": "Suggestions :",
+      "queryExecSuccess": "Requête d'analyse IA exécutée avec succès",
+      "narrativeTitle": "Synthèse Exécutive IA",
+      "sampleQueries": {
+        "revenueGrowth": "Afficher la croissance trimestrielle des revenus par Wilaya en DZD",
+        "churnAnomalies": "Détecter les anomalies d'attrition dans les abonnements Entreprise",
+        "forecastBookings": "Prédire les réservations freelance du marché au T4",
+        "q1": "Afficher la croissance trimestrielle des revenus par Wilaya en DZD",
+        "q2": "Détecter les anomalies d'attrition dans les abonnements Entreprise",
+        "q3": "Prédire les réservations freelance du marché au T4"
+      }
+    },
+    "datasets": {
+      "domains": {
+        "sales": "Ventes & E-Commerce",
+        "finance": "Finance & Comptabilité",
+        "hr": "Ressources Humaines",
+        "product": "Produit & SaaS",
+        "marketing": "Marketing & Croissance",
+        "operations": "Opérations & Logistique",
+        "other": "Général & Autre",
+        "unknown": "Général & Autre"
+      },
+      "status": {
+        "processed": "PROCESSED",
+        "uploaded": "UPLOADED",
+        "indexed": "INDEXED",
+        "dirty": "DIRTY",
+        "error": "ERROR"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Accueil",
+          "bi": "Centre BI",
+          "datasets": "Jeux de données"
+        }
+      },
+      "detail": {
+        "loading": {
+          "title": "Chargement du jeu de données...",
+          "subtitle": "Analyse de la structure, de la qualité et des données sémantiques."
+        },
+        "errors": {
+          "notFound": "Jeu de données introuvable",
+          "notFoundDesc": "Le jeu de données a peut-être été supprimé ou vous n'y avez pas accès.",
+          "loadFailed": "Échec du chargement des détails du jeu de données",
+          "refreshFailed": "Échec de l'actualisation du jeu de données",
+          "updateFailed": "Échec de la mise à jour",
+          "deleteFailed": "Échec de la suppression du jeu de données"
+        },
+        "actions": {
+          "refreshing": "Actualisation des données...",
+          "refreshed": "Données actualisées avec succès",
+          "retry": "Réessayer",
+          "backToList": "Retour aux jeux de données"
+        },
+        "toast": {
+          "updated": "Métadonnées mises à jour avec succès",
+          "deleted": "Jeu de données supprimé avec succès"
+        },
+        "hero": {
+          "health": "Santé",
+          "smartClean": "Smart Clean 1-Clic",
+          "export": "Exporter",
+          "exportTitle": "Exporter le fichier CSV",
+          "refresh": "Actualiser les données",
+          "delete": "Supprimer le jeu de données",
+          "editDetails": "Modifier les détails",
+          "nameLabel": "Nom du jeu de données",
+          "domainLabel": "Domaine métier",
+          "descriptionLabel": "Description",
+          "cancel": "Annuler",
+          "save": "Enregistrer",
+          "rows": "{count} lignes",
+          "columns": "{count} colonnes",
+          "createdAt": "Créé le {date}",
+          "noDescription": "Aucune description fournie.",
+          "stats": {
+            "rows": "{count} lignes",
+            "columns": "{count} colonnes",
+            "createdOn": "Créé le {date}"
+          },
+          "actions": {
+            "smartClean": "Smart Clean 1-Clic",
+            "export": "Exporter",
+            "refresh": "Actualiser les données",
+            "delete": "Supprimer le jeu de données",
+            "edit": "Modifier les détails"
+          },
+          "editModal": {
+            "title": "Modifier les métadonnées",
+            "nameLabel": "Nom du jeu de données",
+            "domainLabel": "Domaine métier",
+            "descriptionLabel": "Description",
+            "cancel": "Annuler",
+            "save": "Enregistrer"
+          }
+        },
+        "tabs": {
+          "overview": {
+            "title": "Aperçu général",
+            "metrics": {
+              "completeness": "Complétude",
+              "uniqueness": "Unicité",
+              "columns": "Colonnes",
+              "domain": "Domaine"
+            },
+            "info": {
+              "title": "Informations générales",
+              "format": "Format de fichier",
+              "domain": "Domaine",
+              "created": "Date d'importation",
+              "updated": "Dernière mise à jour"
+            },
+            "aiSummary": {
+              "title": "Synthèse Exécutive IA",
+              "narrative": "Ce jeu de données comprend {rows} enregistrements et {columns} colonnes sémantiques. Le score de santé globale est évalué à {score}%. {issuesText}",
+              "description": "Ce jeu de données comprend {rows} enregistrements et {columns} colonnes sémantiques. Le score de santé globale est évalué à {score}%. {issuesText}",
+              "issuesDetected": "{count} alertes de qualité ont été détectées.",
+              "noIssues": "Aucune anomalie majeure n'a été détectée.",
+              "cleanData": "Nettoyer les données",
+              "viewAnalytics": "Voir les analyses IA",
+              "viewAi": "Voir les analyses IA"
+            },
+            "description": {
+              "empty": "Aucune description fournie."
+            }
+          },
+          "data": {
+            "title": "Données & Schéma",
+            "previewTitle": "Aperçu des données",
+            "schemaTitle": "Dictionnaire sémantique & Schéma"
+          },
+          "quality": {
+            "title": "Qualité & Gouvernance",
+            "doctorTitle": "Diagnostic de Qualité IA",
+            "governanceTitle": "Gouvernance & Contrats de Données",
+            "metrics": {
+              "uniqueness": "Unicité"
+            },
+            "scoreSubtitle": "Score global : {score}% — Complétude, unicité, règles de validation et masquage PII.",
+            "globalScore": "Score global : {score}% — Complétude, unicité, règles de validation et masquage PII.",
+            "rulesBtn": "Règles de Qualité",
+            "piiBtn": "Masquage PII",
+            "syntheticBtn": "Données Synthétiques",
+            "completenessVerified": "Taux de complétude vérifié",
+            "completenessDesc": "La plupart des attributs répondent aux critères de qualité et ne comportent pas de taux de vide critique.",
+            "recommendationsTitle": "Recommandations d'optimisation IA",
+            "recommendationsDesc": "Suggestions intelligentes basées sur le profilage et la distribution des données.",
+            "alertsTitle": "Anomalies & Alertes de qualité",
+            "noAnomalies": "Aucune anomalie majeure détectée."
+          },
+          "analytics": {
+            "title": "Analyses & Requêtes SQL",
+            "intelligenceTitle": "Intelligence des données IA",
+            "queryTitle": "Console de requêtes SQL",
+            "businessInsights": "Business Insights IA",
+            "aiInsights": "Analyses IA d'entreprise",
+            "matrixTitle": "Matrice de corrélations statistiques",
+            "matrixDesc": "Corrélations linéaires calculées sur les colonnes numériques.",
+            "correlationMatrix": "Matrice de Correlation",
+            "correlationMatrixTitle": "Matrice de Corrélations Statistique",
+            "correlationMatrixDesc": "Corrélations linéaires calculées sur les colonnes numériques.",
+            "noCorrelation": "Aucune correlation numérique directe détectée."
+          },
+          "settings": {
+            "title": "Sécurité & Paramètres",
+            "securityTitle": "Sécurité des lignes & colonnes",
+            "webhooksTitle": "Alertes & Webhooks",
+            "historyTitle": "Voyage dans le temps & Historique"
+          },
+          "preview": {
+            "title": "Aperçu des données",
+            "search": "Rechercher dans l'échantillon...",
+            "showing": "Affichage de {count} sur {total} lignes ({all} au total dans la base)",
+            "empty": "Aucun enregistrement ne correspond à la recherche."
+          },
+          "schema": {
+            "title": "Dictionnaire sémantique & Schéma",
+            "subtitle": "Modifiez le type de données SQL et le domaine sémantique (Wilaya, Devise, Phone, etc.) pour chaque colonne.",
+            "profilerSubtitle": "Profilage statistique & Distribution des valeurs",
+            "calculatingStats": "Calcul des distributions statistiques en cours...",
+            "totalRows": "Lignes totales",
+            "uniqueValues": "Valeurs uniques",
+            "nullValues": "Manquantes (Nulls)",
+            "semanticType": "Type sémantique",
+            "descriptiveStats": "Statistiques descriptives",
+            "topValues": "Fréquence des valeurs principales",
+            "columnsCount": "{count} Colonnes structurées",
+            "typeUpdated": "Type de colonne mis à jour avec succès",
+            "colName": "Nom de colonne",
+            "sqlType": "Type SQL",
+            "semanticDomain": "Domaine sémantique",
+            "statProfile": "Profil statistique",
+            "actions": "Actions",
+            "edit": "Modifier",
+            "inspect": "Inspecter",
+            "stats": {
+              "min": "Minimum",
+              "max": "Maximum",
+              "mean": "Moyenne arithmétique",
+              "median": "Médiane",
+              "std": "Écart type",
+              "q25_q75": "Percentiles Q25 / Q75"
+            }
+          },
+          "cleanModal": {
+            "title": "Nettoyage intelligent en 1 clic",
+            "subtitle": "Nettoyez, dédupliquez et imputez automatiquement les valeurs du jeu de données",
+            "fillMissing": "Imputer les valeurs manquantes",
+            "fillMissingDesc": "Remplir les cellules nulles en utilisant la stratégie statistique sélectionnée",
+            "strategyLabel": "Stratégie d'imputation",
+            "autoStrategy": "Auto (Médiane pour le numérique, Mode pour le texte)",
+            "meanStrategy": "Moyenne arithmétique",
+            "modeStrategy": "Mode le plus fréquent",
+            "deduplicate": "Dédupliquer les lignes",
+            "deduplicateDesc": "Supprimer les doublons exacts du jeu de données",
+            "trimWhitespace": "Supprimer les espaces superflus",
+            "trimWhitespaceDesc": "Nettoyer les espaces de début et de fin dans les colonnes texte",
+            "cancel": "Annuler",
+            "submit": "Lancer le nettoyage",
+            "cleaning": "Nettoyage des données...",
+            "success": "Jeu de données nettoyé avec succès",
+            "error": "Échec du nettoyage du jeu de données"
+          },
+          "modals": {
+            "dqRules": {
+              "title": "Règles de qualité des données",
+              "subtitle": "Configurer des règles de validation personnalisées",
+              "activeRules": "Règles de qualité actives",
+              "addRule": "Ajouter une règle",
+              "ruleTypes": {
+                "notNull": "Contrainte Non Nul",
+                "range": "Plage de valeurs",
+                "regex": "Modèle Regex"
+              },
+              "close": "Fermer",
+              "testRules": "Tester les règles"
+            },
+            "pii": {
+              "title": "Masquage PII et colonnes sensibles",
+              "subtitle": "Masquer les colonnes sensibles avant partage ou requête",
+              "selectMethod": "Sélectionner la méthode de masquage",
+              "methods": {
+                "hash": "Hachage cryptographique (SHA-256)",
+                "redact": "Masquage total ([REDACTED])",
+                "mask": "Masquage partiel (XX****XX)"
+              },
+              "sensitiveColumns": "Colonnes sensibles ({count})",
+              "applyMasking": "Appliquer le masquage",
+              "close": "Annuler"
+            }
+          },
+          "syntheticModal": {
+            "title": "Générateur de données synthétiques",
+            "subtitle": "Générer des lignes artificielles respectant la confidentialité",
+            "rowsLabel": "Nombre de lignes synthétiques",
+            "close": "Annuler",
+            "submit": "Générer les données",
+            "generating": "Génération en cours..."
+          },
+          "lineage": {
+            "title": "Graphe de lignage & Journal d'audit"
+          },
+          "governance": {
+            "title": "Gouvernance & Contrats",
+            "description": "Contrats de données d'entreprise, SLA, classification de sensibilité et étiquettes de conformité.",
+            "contractTitle": "Contrat de Qualité & SLA",
+            "sensitivity": "Classification de Sensibilité",
+            "compliance": "Cadres de Conformité",
+            "contractSla": "Contrat de Qualité des Données",
+            "verified": "Vérifié & Accepté",
+            "minRows": "Nombre minimum de lignes",
+            "maxMissingPct": "Taux max de valeurs manquantes %",
+            "qualityScore": "Seuil de score de qualité",
+            "tags": "Étiquettes de Classification",
+            "addTag": "Ajouter une étiquette",
+            "newTagPlaceholder": "Nouvelle étiquette (ex: #AUDITED)"
+          },
+          "versioning": {
+            "title": "Voyage dans le temps & Versions",
+            "description": "Instantannés de version immuables, historique des dérives de schéma et restauration en 1-clic.",
+            "createSnapshot": "Créer un instantané de version",
+            "timeline": "Chronologie des versions",
+            "restore": "Restaurer la version",
+            "restoring": "Restauration...",
+            "current": "État actuel",
+            "rows": "Lignes",
+            "columns": "Colonnes",
+            "health": "Score de santé"
+          },
+          "security": {
+            "title": "Sécurité des Lignes & Colonnes",
+            "description": "Configurez les règles de sécurité au niveau des lignes (RLS) et le masquage des colonnes (CLS).",
+            "addPolicy": "Ajouter une politique de sécurité",
+            "activePolicies": "Politiques d'accès actives",
+            "type": "Type de politique",
+            "role": "Rôle",
+            "condition": "Filtre / Condition",
+            "status": "Statut",
+            "rls": "Filtrage des lignes (RLS)",
+            "cls": "Masquage des colonnes (CLS)",
+            "active": "Actif"
+          },
+          "query": {
+            "title": "Console de Requêtes SQL",
+            "description": "Exécutez des requêtes SQL dynamiques, des agrégations et des filtres directement sur les enregistrements.",
+            "runQuery": "Exécuter la requête",
+            "running": "Exécution en cours...",
+            "editorTitle": "Éditeur de requêtes SQL",
+            "top10": "Aperçu des 10 premiers enregistrements",
+            "groupBy": "Regroupement & Distribution",
+            "numericalSummary": "Agrégations et résumé numérique"
+          },
+          "webhooks": {
+            "title": "Alertes & Webhooks",
+            "description": "Abonnements webhooks en temps réel pour les alertes de non-respect du SLA et changements d'état.",
+            "addWebhook": "Enregistrer un point d'accès Webhook",
+            "activeWebhooks": "Webhooks d'alerte actifs",
+            "url": "URL du webhook",
+            "event": "Événement déclencheur",
+            "status": "Statut",
+            "action": "Actions",
+            "test": "Tester le webhook",
+            "testing": "Test en cours..."
+          },
+          "history": {
+            "title": "Journal d'Audit & Historique",
+            "description": "Audit complet des modifications de schéma, nettoyages et transformations du jeu de données."
+          }
+        }
+      }
+    }
+  },
+  "pwa": {
+    "installTitle": "Installer l'application Podacium",
+    "installSubtitle": "Apprentissage et travail plus rapides sur votre écran d'accueil",
+    "installButton": "Installer",
+    "iosGuideTitle": "Installer sur Safari iOS :",
+    "iosStep1": "Appuyez sur le bouton Partager",
+    "iosStep2": "Faites défiler vers le bas et sélectionnez « Ajouter à l'écran d'accueil »",
+    "updateAvailable": "Nouvelle mise à jour Podacium disponible !",
+    "reloadButton": "Recharger",
+    "offlineTitle": "Vous êtes hors ligne",
+    "offlineDesc": "Mode hors ligne actif. Vos modifications seront synchronisées automatiquement dès le rétablissement de la connexion.",
+    "onlineTitle": "De nouveau en ligne",
+    "onlineDesc": "Connexion rétablie. Toutes les modifications sont synchronisées.",
+    "syncingActions": " • Synchronisation des actions hors-ligne...",
+    "remainingToSync": " • {count} restant(s) à synchroniser",
+    "dismissBanner": "Fermer la bannière",
+    "closeNotification": "Fermer la notification"
+  },
+  "robustness": {
+    "settlement": {
+      "modalTitle": "Règlement du Jalon & Coffre-fort Numérique",
+      "p2pNoticeTitle": "Règlement direct P2P protégé par séquestre",
+      "p2pNoticeDesc": "Effectuez le virement BaridiMob ou bancaire vers le RIP ci-dessous en précisant le code référence obligatoire.",
+      "referenceLabel": "Code Référence Obligatoire",
+      "freelancerRipLabel": "RIP BaridiMob du Prestataire",
+      "amountDue": "Montant net à virer :",
+      "dragDropTitle": "Glissez le reçu de virement BaridiMob ou bordereau CCP ici",
+      "dragDropSub": "PNG, JPG, PDF (Max 10 Mo)",
+      "ocrScanning": "Analyse OCR en cours...",
+      "ocrValidated": "Validé",
+      "cancel": "Annuler",
+      "confirmAndUnlock": "Confirmer et Débloquer",
+      "submitting": "Envoi en cours...",
+      "vaultUnlockedTitle": "Livrable Déchiffré & Certifié Conforme",
+      "downloadDecrypted": "Télécharger les Fichiers Déchiffrés (Archive ZIP)",
+      "vaultLockedTitle": "Coffre-fort Verrouillé sous AES-256-GCM",
+      "vaultLockedDesc": "La clé de déchiffrement sera délivrée dès validation de l'attestation de virement ou signature du PV de réception.",
+      "tabPayment": "Détails Paiement",
+      "tabProof": "Preuve & OCR",
+      "tabVault": "Coffre-fort Déchiffré"
+    },
+    "fiscal": {
+      "defensePackButton": "Dossier Fiscal (100% Déductible IBS)",
+      "defensePackTooltip": "Dossier fiscal certifié (Contrat, PV, Facture ANAE, Mémorandum Art. 169 CIDTA) garantissant la déductibilité intégrale à 100% de l'IBS.",
+      "legalNotice": "Loi 22-23 & LF 2024 Art. 282 sexies CIDTA (IFU 0,5% - Exonération de TVA)",
+      "ibsSavings": "Économie d'IBS estimée : {amount} DZD"
+    },
+    "chat_shield": {
+      "activeBanner": "Bouclier Fiscal Actif :",
+      "clientWarning": "Passer hors plateforme vous fait perdre jusqu'à {amount} DZD de déductibilité IBS (Art. 169 CIDTA) et annule la garantie de livraison.",
+      "freelancerWarning": "Les paiements hors plateforme ne constituent pas une preuve de revenu pour vos dossiers de visa, crédits bancaires et affiliation CASNOS.",
+      "learnMore": "En savoir plus",
+      "modalTitle": "Pourquoi rester protégé par Podacium ?",
+      "legalBasisTitle": "Cadre Légal & Fiscal Algérien",
+      "legalBasisDesc": "Conformément à l'Article 169 du CIDTA et à la Loi 22-23 relative à l'Auto-Entrepreneur, Podacium délivre le triptyque documentaire certifié reconnu par la DGI pour la déduction intégrale des charges de prestation du bénéfice imposable (IBS).",
+      "guaranteesTitle": "Garanties exclusives sur la plateforme :",
+      "guaranteeVault": "Séquestre cryptographique garantissant la livraison conforme après acceptation.",
+      "guaranteePack": "Téléchargement immédiat du dossier fiscal pour les commissaires aux comptes.",
+      "guaranteeLoyalty": "0% de commission sur les contrats répétés avec le même client.",
+      "understood": "J'ai compris",
+      "dismiss": "Ignorer l'avertissement"
+    },
+    "reconciliation": {
+      "title": "Synchronisation EDAHABIA / Chargily",
+      "confirmed": "Paiement Confirmé",
+      "pending": "En attente de confirmation",
+      "description": "Si votre compte CCP/banque a été débité mais que la page n'a pas basculé, synchronisez instantanément le statut avec Algérie Poste.",
+      "verifyButton": "Vérifier mon paiement",
+      "disputeButton": "Réclamation Algérie Poste (PDF)"
+    },
+    "auth_2fa": {
+      "title": "Validation de Sécurité Requise (2FA)",
+      "description": "Cette opération administrative sensible nécessite une confirmation OTP.",
+      "errorDigits": "Veuillez saisir les 6 chiffres.",
+      "errorInvalid": "Code de sécurité incorrect ou expiré.",
+      "cancel": "Annuler",
+      "confirm": "Confirmer l'opération"
+    },
+    "dlg": {
+      "encoding": "Encodage Fichier",
+      "delimiter": "Séparateur",
+      "entriesCount": "Lignes Écritures",
+      "balanced": "Équilibré",
+      "unbalanced": "Déséquilibré",
+      "complianceWarnings": "Avertissements de Conformité SCF :",
+      "previewTitle": "Aperçu de la Classification SCF Algérie",
+      "sampleCount": "{count} premières lignes",
+      "accountNumber": "N° Compte",
+      "classification": "Classification SCF",
+      "label": "Libellé Écriture",
+      "debit": "Débit (DZD)",
+      "credit": "Crédit (DZD)",
+      "confirmImport": "Confirmer et Injecter les Données BI"
+    },
+    "reputation": {
+      "title": "Score de Réputation & Fiabilité",
+      "tier0": "Tier 0 — Email Vérifié",
+      "tier1": "Tier 1 — NIN Vérifié",
+      "tier2": "Tier 2 — KYC Biométrique",
+      "tier3": "Tier 3 — Carte Auto-Entrepreneur ANAE",
+      "limitMonthly": "{amount} DZD / mois",
+      "limitUnlimited": "Volume Illimité",
+      "weightedReviews": "{count} avis pondérés (EigenTrust)",
+      "clientDiversity": "Diversité clients",
+      "onTimeDelivery": "Respect des délais",
+      "completedContracts": "Contrats réussis",
+      "anaeVerified": "Carte ANAE vérifiée : émetteur de factures officielles déductibles à 100% de l'IBS pour les entreprises."
+    }
+  },
+  "trending": {
+    "title": "Tendances {entity}",
+    "updatedRecently": "Mis à jour récemment",
+    "loading": "Chargement des éléments tendances",
+    "failedToLoad": "Échec du chargement des tendances",
+    "empty": "Aucun élément tendance pour {entity} disponible pour le moment.",
+    "courses": "Cours",
+    "projects": "Projets",
+    "freelancers": "Freelances"
+  },
+  "profile": "Profil",
+  "progress": "Progression",
+  "showTooltip": "Afficher l'infobulle",
+  "close": "Fermer",
+  "mockCheckout": {
+    "securePayment": "Paiement simulé sécurisé",
+    "testCheckout": "Caisse de test",
+    "amountToPay": "Montant à payer",
+    "selectPaymentMethod": "Sélectionnez le mode de paiement",
+    "edahabia": "Edahabia",
+    "cibCard": "Carte CIB",
+    "cardNumber": "Numéro de carte",
+    "expiry": "Expiration",
+    "cvv": "CVV",
+    "processing": "Traitement en cours...",
+    "simulateSuccess": "Simuler un paiement réussi",
+    "simulateFailed": "Simuler un échec de paiement",
+    "disclaimer": "Ceci est une page de paiement simulée à des fins de test.",
+    "transactionId": "ID de transaction : {id}"
+  },
+  "dangerModal": {
+    "actionIrreversible": "Cette action est irréversible et modifiera définitivement l'état de la plateforme.",
+    "impactList": "Conséquences de cette action :",
+    "typeToConfirm": "Pour confirmer, veuillez saisir",
+    "below": "ci-dessous :",
+    "antiPasteNotice": "Le collage est désactivé pour éviter toute confirmation accidentelle.",
+    "confirm": "Confirmer",
+    "cancel": "Annuler"
+  },
+  "livingCanvas": {
+    "actions": {
+      "translateToDarija": "Traduire en Darija",
+      "applyArticle169TaxShield": "Appliquer le bouclier fiscal Article 169",
+      "apply19Tva": "Appliquer la TVA 19%",
+      "convertToDzd": "Convertir en DZD",
+      "liveVoiceConcierge": "Concierge vocal en direct",
+      "cameraInvoiceScanner": "Scanner de facture par caméra",
+      "workflowDagStepper": "Progression du flux de travail DAG",
+      "apply19TvaTitle": "Appliquer TVA 19% sur cette cellule",
+      "convertToDzdTitle": "Convertir la valeur en DZD",
+      "filterTop5Title": "Filtrer le Top 5 basé sur cette colonne",
+      "filterTop5": "Filtrer Top 5"
+    }
+  },
+  "uiLabels": {
+    "featuresAria": "Fonctionnalités de {title}",
+    "deliverablesAria": "Livrables de {title}",
+    "digestTitle": "Condensat : {hash} — Préc. : {prev}",
+    "lessons": "leçons",
+    "selected": "sélectionné(s)",
+    "rows": "lignes",
+    "columns": "colonnes",
+    "cols": "col.",
+    "columnPrefix": "Colonne :",
+    "companyLogoAlt": "Logo de {name}",
+    "freelancerSingular": "freelance",
+    "freelancerPlural": "freelances",
+    "questions": "questions",
+    "pts": "pts",
+    "resultsFor": "résultats pour",
+    "circuitPrefix": "Circuit :",
+    "min15": "15 minutes (1/4 h)",
+    "min30": "30 minutes (1/2 h)",
+    "hour1": "1 heure",
+    "hours8": "8 heures",
+    "hours24": "24 heures",
+    "trendAria": "Tendance de {label}",
+    "actualPrefix": "Réel :",
+    "budgetPrefix": "Budget :",
+    "goalPrefix": "Objectif :",
+    "vs": "vs",
+    "pushdownActive": "délégation SQL active",
+    "gapPrefix": "Écart :",
+    "simulatedPrefix": "Simulé :",
+    "baselinePrefix": "Référence :",
+    "impactPrefix": "Impact :",
+    "varianceDecomposition": "décomposition de la variance",
+    "updatedTitle": "Mis à jour : {date}",
+    "typeString": "chaîne",
+    "typeInteger": "entier",
+    "typeFloat": "flottant",
+    "typeDatetime": "date/heure",
+    "typeBoolean": "booléen",
+    "widgetPrefix": "Module",
+    "latencyPrefix": "Latence :",
+    "expectedPrefix": "Attendu :",
+    "annotationsCount": "{count} annotations (notes)",
+    "enginePrefix": "Moteur :",
+    "etaPrefix": "Temps restant :",
+    "scopesPrefix": "Portées :",
+    "dispatching": "Envoi en cours...",
+    "nodePrefix": "Nœud :",
+    "podaciumIntroTitle": "Présentation de la plateforme Podacium",
+    "recommendationAria": "Recommandation : {title}",
+    "votes": "votes"
+  }
+}

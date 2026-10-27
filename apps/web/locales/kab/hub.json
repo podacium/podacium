@@ -1,0 +1,1749 @@
+{
+  "hub": {
+    "meta": {
+      "title": "Hub n Ikensiyen | Af-d Isenfaren d Yimusnawen",
+      "description": "Azaɣar amezwaru n yikensiyen deg Lezzayer i yessedkuyen tibbura d yikensiyen imussnawen. Af-d isenfaren, seddu imusnawen, sakin snerni amahil-ik."
+    },
+    "hero": {
+      "badge": "Azaɣar Amezwaru n Yikensiyen deg Lezzayer",
+      "titleLine1": "Af-d Amsetlel-ik",
+      "titleHighlight": "n Ukensi Iwulmen",
+      "description": "Qqen d yimusnawen ifellayen n Lezzayer i yisenfaren-ik, neɣ snerni amahil-ik n ukensi s tlemmiẓin d-yusan seg yimsafagen idiganen d yigraɣlanen.",
+      "welcomeBack": "Ansuf yis-k tikkelt nniḍen, {name}!",
+      "freelancer": "Akensi",
+      "findNext": "Af-d Asenfar-ik",
+      "project": "Asenfar",
+      "freelancerDescription": "Af-d isenfaren icebḥen iwulmen timussniwin-ik sakin snerni amahil-ik deg Lezzayer",
+      "clientDescription": "Qqen d yimusnawen izzayriyen ifellayen i yisenfaren-ik sakin err tiktiwin-ik d tidet"
+    },
+    "stats": {
+      "title": "Tafelwit-ik n Usenqed",
+      "description": "Tamussni tamatut n wurmid-ik n ukensi d useddu deg wakud n tidet",
+      "freelancer": {
+        "activeProposals": "Tisumar Irmeden",
+        "activeProposalsTooltip": "Tisumar yettraǧun tririt n umsafag",
+        "activeContracts": "Iguta Irmeden",
+        "activeContractsTooltip": "Isenfaren yetteddun deg teswiɛt-a",
+        "totalEarnings": "Asemday n Wayen Trebḥeḍ",
+        "totalEarningsTooltip": "Asemday n wagmuḍ seg wakk isenfaren yekfan",
+        "successRate": "Aswir n Lferḥ",
+        "successRateTooltip": "Amḍan n tisumar yettwaqeblen"
+      },
+      "client": {
+        "activeProjects": "Isenfaren Irmeden",
+        "activeProjectsTooltip": "Isenfaren yetteddun deg teswiɛt-a",
+        "openProjects": "Isenfaren Yeldin",
+        "openProjectsTooltip": "Isenfaren iqeeblen tisumar",
+        "totalSpent": "Asemday n Wayen Tessufɣeḍ",
+        "totalSpentTooltip": "Asemday n tedrimt yettwaxellsen ɣef umahil n ukensi",
+        "completionRate": "Aswir n Ukfay",
+        "completionRateTooltip": "Amḍan n yisenfaren yekfan s lferḥ"
+      }
+    },
+    "sections": {
+      "trendingProjects": "Isenfaren Yettwasnen Tura",
+      "trendingProjectsDesc": "Snirem tilemmiẓin timaynutin seg tebbura tizzayriyin",
+      "topFreelancers": "Ikensiyen Izzayriyen Ifellayen",
+      "topFreelancersDesc": "Imussnawen n Podacium theggan i yisenfaren-ik",
+      "howItWorks": "Amek i Iteddu",
+      "howItWorksDesc": "Isurifen ifessasen i wakken ad tebduḍ abrid-ik n ukensi",
+      "recommendedProjects": "Isenfaren Yettwasummen",
+      "recommendedProjectsDesc": "Isenfaren iwulmen timussniwin d termit-ik",
+      "recentActivity": "Urmid Amaynut",
+      "recentActivityDesc": "Isallen imaynuten seg wurmid-ik n ukensi d yisenfaren",
+      "showingFilteredProjects": "Sken {showing} seg {total} n yisenfaren deg \"{category}\"",
+      "trending": "Yettwasnen",
+      "tips": "Tirmitin d Tɣubla"
+    },
+    "categories": {
+      "all": "Akk Taggayin",
+      "webDevelopment": "Asnefli n Web",
+      "uiUxDesign": "Asuneɣ n UI/UX",
+      "digitalMarketing": "Azenz Amḍin",
+      "dataScience": "Tussna n Yisefka",
+      "mobileApps": "Isnasen Izirazen",
+      "devopsCloud": "DevOps d Usigna",
+      "businessConsulting": "Tanezzut d Tussna"
+    },
+    "filters": {
+      "category": "Zizdeg s Taggayt",
+      "showingCount": "Sken {showing} seg {total} n yisenfaren",
+      "matchingProjects": "{count} n yisenfaren iwulmen asizdeg-ik",
+      "apply": "Snes Imsizdigen",
+      "clear": "Sfeḍ Imsizdigen"
+    },
+    "actions": {
+      "browseProjects": "Snirem Isenfaren",
+      "browseProjectsDesc": "Af-d isenfaren iwulmen timussniwin d yiswiyen-ik",
+      "viewProposals": "Ẓer Tisumar",
+      "viewProposalsDesc": "Selken addad n tisumar i tuzneḍ",
+      "completeProfile": "Ččar Amagrad",
+      "completeProfileDesc": "Rnu timussniwin, iselkanen, d umagrad i wakken ad tbaneḍ",
+      "createProject": "Snulfu-d Asenfar",
+      "createProjectDesc": "Sbedd asenfar amaynut sakin af-d akensi iwulmen",
+      "findFreelancers": "Af-d Ikensiyen",
+      "findFreelancersDesc": "Snirem ikensiyen imussnawen i tewwurt-ik",
+      "viewContracts": "Ẓer Iguta",
+      "viewContractsDesc": "Ssefrek iguta-ik irmeden d wayen yettwaselken",
+      "findWork": "Af-d Amahil",
+      "viewAll": "Ẓer Akk",
+      "editProfile": "Ẓreg Amagrad",
+      "getStarted": "Bdu",
+      "browse": "Snirem",
+      "manage": "Ssefrek"
+    },
+    "quickActions": {
+      "title": "Iskaren Ifessasen",
+      "description": "Bdu s yiskaren-a ifessasen yettwasbedden i kečč"
+    },
+    "search": {
+      "findProjects": "Af-d Isenfaren",
+      "findProjectsDesc": "Snirem isenfaren iwulmen timussniwin-ik. Zizdeg s tmussniwin, tadrimt, d tallit.",
+      "findFreelancers": "Af-d Ikensiyen",
+      "findFreelancersDesc": "Af-d ikensiyen imussnawen i usenfar-ik d-iteddun. Zizdeg s tmussniwin, adeg, d usentked."
+    },
+    "roles": {
+      "asFreelancer": "Am Ukensi",
+      "asClient": "Am Umsafag",
+      "primary": "Agejdan"
+    },
+    "buttons": {
+      "startFreelancing": "Bdu Akensi",
+      "hireTalent": "Semres Imusnawen",
+      "browseAllProjects": "Snirem Akk Isenfaren",
+      "browseAllFreelancers": "Snirem Akk Ikensiyen",
+      "clearFilter": "Kkes Amsizdegan",
+      "viewAll": "Ẓer Akk",
+      "viewAllCategoryProjects": "Ẓer Akk Isenfaren n {category}",
+      "exploreAllCategories": "Snirem Akk Taggayin",
+      "getStartedFree": "Bdu Baṭel",
+      "signInToContinue": "Kcem i Wakken ad Tkemmleḍ",
+      "verifyPhone": "Sentked Asawal",
+      "updateRole": "Beddel Tamlilt",
+      "completeProfile": "Ččar Amagrad",
+      "getStarted": "Bdu",
+      "browseProjects": "Snirem Isenfaren",
+      "tryAgain": "Ɛreḍ Tikkelt Nniḍen",
+      "postProject": "Sbedd Asenfar",
+      "learnMore": "Issin Ugar",
+      "viewAllActivity": "Ẓer Akk Urmid",
+      "exploreMore": "Snirem Ugar",
+      "createProject": "Snulfu-d Asenfar",
+      "close": "Mdel"
+    },
+    "badges": {
+      "easySecure": "Afessas & Aɣellis",
+      "newProjects": "{count} d amaynut",
+      "activeProposals": "{count} irmed",
+      "profileScore": "{score}%",
+      "complete": "Yekfa",
+      "availableFreelancers": "{count} yella",
+      "activeContracts": "{count} irmed",
+      "recommended": "Yettwasummen",
+      "live": "Srid",
+      "featured": "Amellal",
+      "verified": "Yettwasentked",
+      "new": "Amaynut",
+      "trending": "Yettwasnen"
+    },
+    "empty": {
+      "noProjectsInCategory": "Ulac Isenfaren Yettwafen deg \"{category}\"",
+      "noProjectsMatchCategory": "Ulac isenfaren iwulmen taggayt-a. Ɛreḍ taggayt nniḍen neɣ snirem akk isenfaren.",
+      "noFreelancersAvailable": "Ulac Ikensiyen Yellan",
+      "checkBackLater": "Uɣal-d sakkin neɣ snirem taggayin nniḍen.",
+      "noProjectsFound": "Ulac Isenfaren Yettwafen",
+      "adjustFilters": "Ur nufi ara isenfaren iwulmen isuturen-ik. Ɛreḍ ad tbeddleḍ imsizdigen neɣ uɣal-d sakkin.",
+      "noFreelancersFound": "Ulac Ikensiyen Yettwafen",
+      "adjustFreelancerFilters": "Ulac ikensiyen iwulmen anadi-ik amiran. Ɛreḍ ad tbeddleḍ imsizdigen neɣ snirem timussniwin nniḍen.",
+      "noRecentActivity": "Ulac Urmid Amaynut",
+      "startJourney": "Bdu abrid-ik n ukensi s usnirem n yisenfaren neɣ s usbeddi n usenfar-ik amezwaru. Urmid-ik ad d-iban da."
+    },
+    "errors": {
+      "loadError": "Asali n yisefka ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+      "searchError": "Anadi ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+      "unableToLoadProjects": "Ur yezmir ara ad d-isali isenfaren",
+      "unableToLoadFreelancers": "Ur yezmir ara ad d-isali ikensiyen"
+    },
+    "verification": {
+      "verificationRequired": "Asentked d Amussnaw",
+      "completeProfileTitle": "Ččar Amagrad-ik i Wakken ad Tawḍeḍ ɣer Hub",
+      "completeProfileDesc": "I wakken ad tawḍeḍ ɣer Hub n Ikensiyen sakin ad tebduḍ, tesriḍ ad:",
+      "phoneVerification": "Asentked n Usawal",
+      "phoneVerificationDesc": "Sentked uṭṭun-ik n usawal i wakken ad tesnerniḍ taɣellist d laman d yimsafagen. D amussnaw i wakk iseqdacen n Hub.",
+      "phoneManualNotice": "Asentked awurman n usawal ur yelli ara deg teswiɛt-a. I usentked n usawal-ik, ttxil ssiweḍ ɣer terbaɛt-nneɣ s yimayl s yisallen n umiḍan-ik.",
+      "contactAdmin": "Ssiweḍ ɣer podacium@podacium.com",
+      "phoneEmailSubject": "Asuter n Usentked n Usawal",
+      "phoneEmailBody": "Azul,\n\nBɣiɣ ad sentkdeɣ uṭṭun-iw n usawal i umiḍan-iw n ukensi.\n\nImayl n umiḍan: {email}\n\nTanemmirt.",
+      "profileCompletion": "Aččari n Umagrad",
+      "profileCompletionDesc": "Rnu timussniwin-ik, amagrad n umahil, d yifulan n umahil i wakken ad tafeḍ tilemmiẓin ifazen.",
+      "studentRestriction": "Inelmaden Ur Zmiren Ara ad Kcmen ɣer Hub",
+      "studentRestrictionDesc": "Hub n Ikensiyen yettwabna i yikensiyen d tebbura. Ma d akensi neɣ d bab n tnezzut i telliḍ, ttxil beddel tamlilt-ik i wakken ad tebduḍ.",
+      "roleRequirement": "Tisutert n Temlilt",
+      "roleRequirementDesc": "Yessefk ad tiliḍ d Akensi neɣ d Bab n Tnezzut i wakken ad tawḍeḍ ɣer Hub.",
+      "accessRequirements": "Isuturen i Wakken ad Tawḍeḍ ɣer Hub",
+      "requirement1": "Ili d Akensi neɣ d Bab n Tnezzut (mačči d Anelmad)",
+      "requirement2": "Sentked uṭṭun-ik n usawal",
+      "requirement3": "Ččar amagrad-ik amussnaw"
+    },
+    "profile": {
+      "completeProfile": "Ččar Amagrad",
+      "completeProfileDesc": "Amagrad-ik yeččur kan s {score}%. Ččar amagrad-ik i wakken ad tafeḍ ugar n yisenfaren sakin ad tnerni tmuɣli-ik.",
+      "completenessScore": "Aket n Tuččra n Umagrad",
+      "scoreIncomplete": "Amagrad-ik ur yeččur ara",
+      "scoreInProgress": "Amagrad-ik iteddu ad yeččar",
+      "scoreComplete": "Amagrad-ik yeččur akken iwata"
+    },
+    "activity": {
+      "contractCompleted": "Agatu Yekfa",
+      "contractCompletedDesc": "Agatu i \"{project}\" yekfa s lferḥ",
+      "newDelivery": "Aselkem Amaynut",
+      "newDeliveryDesc": "Agatu i \"{project}\" yesɛa aselkem amaynut",
+      "proposalSubmitted": "Tasumert Tettwazen",
+      "proposalSubmittedDesc": "Tuzneḍ tasumert i \"{project}\"",
+      "completeProfile": "Ččar Amagrad-ik",
+      "completeProfileDesc": "Amagrad-ik ur yeččur ara. Rnu ifulan i wakken ad tafeḍ tilemmiẓin ifazen.",
+      "now": "Tura",
+      "minutesAgo": "{count} tsd d aya",
+      "hoursAgo": "{count} tsr d aya",
+      "daysAgo": "{count} wss d aya",
+      "weeksAgo": "{count} sml d aya",
+      "project": "asenfar"
+    },
+    "howItWorks": {
+      "step1Title": "Snulfu-d Amagrad-ik",
+      "step1Description": "Jerred sakin bnu amahil-ik s tmura n Podacium, Awi asentked i laman d yimsafagen.",
+      "step2Title": "Af-d Isenfaren",
+      "step2Description": "Snirem agimen n yisenfaren iwulmen timussniwin-ik. Azen tisumar sakin mmeslay srid d yimsafagen.",
+      "step3Title": "Awi Ixellisen s Tɣellist",
+      "step3Description": "Sqedec PodaPoints i urzam n tmura n ssuq. Aɣ timura, isenfaren, d tebdarin — ulac tiqbuct ɣef wayen trebḥeḍ."
+    },
+    "cta": {
+      "title": "Twejdeḍ ad Tebduḍ Abrid-ik n Ukensi?",
+      "description": "Ddu ɣer wagimen n yikensiyen d tebbura tizzayriyin yettnernin tura.",
+      "readyToEarn": "Twejdeḍ ad Tebduḍ Agmuḍ?",
+      "readyToGetStarted": "Twejdeḍ ad Tebduḍ?",
+      "freelancerDescription": "Ddu ɣer wagimen n yikensiyen izzayriyen i yessedkan imuhal-nsen yid-nneɣ. Bdu abrid-ik ass-a.",
+      "clientDescription": "Af-d akensi iwulmen i usenfar-ik sakin err tiktiwin-ik d tidet d yimusnawen ifellayen n Lezzayer."
+    },
+    "tips": {
+      "freelancerTitle": "Tirmitin d Tɣubla i Yikensiyen",
+      "clientTitle": "Tiɣbula d Yisebgranen i Yimsafagen",
+      "description": "Tiɣbula d termitin ifazen i wakken ad trebḥeḍ deg ubrid-ik n ukensi",
+      "freelancer": {
+        "winningProposals": "Tira n Tsumiwin Yettrebḥen",
+        "winningProposalsDesc": "Lmed amek ara taruḍ tisumar d-yettawin isenfaren s lebda. Yesɛa tisekkirin d yimedyaten n tidet.",
+        "pricingStrategies": "Tarrayin n Wazaɣen",
+        "pricingStrategiesDesc": "Sbedd azal iweznen sakin snerni agmuḍ-ik. Issin ɣef wazaɣen yebnan ɣef wazal d useddu.",
+        "securePayments": "Ixellisen d Yiguta Iɣellisen",
+        "securePaymentsDesc": "Ḍmen isiklanen iɣellisen sakin ḥader amahil-ik s yiguta d yiswiren n uxellas iwulmen."
+      },
+      "client": {
+        "writingBriefs": "Tira n Ugzul n Usenfar",
+        "writingBriefsDesc": "Snulfu agzul amellal i usenfar ara d-ijebden ikensiyen iwulmen seg tazwara.",
+        "findingTalent": "Tifin d Usenqed n Yimusnawen",
+        "findingTalentDesc": "Tirmitin i tifin d usenqed n yikensiyen ifellayen. Lmed amek ara twaliḍ imagraden d useddu n tdiwenniyin.",
+        "projectManagement": "Asefrek n Usenfar",
+        "projectManagementDesc": "Ifecka d tarrayin i usefrek n yisenfaren n ukensi akken iwata d uḍman n uselkem yelhan."
+      }
+    },
+    "projectSingular": "asenfar",
+    "projectPlural": "isenfaren",
+    "reviews": {
+      "invalidRating": "Azal n wakat ur iṣeḥḥa ara",
+      "submitFailed": "Tuzna n teẓri ur teddi ara",
+      "rating": "Aket",
+      "comment": "Awennit",
+      "commentPlaceholder": "Bḍu tirmit-ik deg usenfar-a...",
+      "cancel": "Sefsex",
+      "saveChanges": "Sekles Ibeddilen",
+      "submit": "Azen Tiẓri",
+      "timeAgo": {
+        "justNow": "Tura kan",
+        "minutes": "{count} n tesdidt aya",
+        "minutes_plural": "{count} n tesdidin aya",
+        "hours": "{count} n tesragt aya",
+        "hours_plural": "{count} n tesragin aya",
+        "days": "{count} n wass aya",
+        "days_plural": "{count} n wussan aya",
+        "months": "{count} n waggur aya",
+        "months_plural": "{count} n wagguren aya",
+        "years": "{count} n useggas aya",
+        "years_plural": "{count} n yiseggasen aya"
+      },
+      "noReviews": "Ulac tiẓriyin yakan",
+      "anonymousUser": "Uffir",
+      "edited": "(yettwaẓreg)",
+      "editReview": "Ẓreg Tiẓri",
+      "appeal": "Suter Asenqed",
+      "blindReview": "Tiẓri Yeffren",
+      "title": "Isefray d Tmuɣliwin",
+      "leaveReview": "Eǧǧ asefra",
+      "appealReasonPlaceholder": "Ssegzi ayɣer asefra-agi ur iqader ara ilugan neɣ yeqqen ɣer tuccḍa...",
+      "appealSubmitted": "Asuter-inek n ussekyed yettwazen.",
+      "redactedMessage": "Izen-a yettwakkes",
+      "underAppealMessage": "Tiẓri-a tettraǧu asenqed"
+    },
+    "contractPayment": {
+      "title": "Axellas d Tɣellist n Usali",
+      "badge": "Tɣellist n Usali Usrid",
+      "contractInfo": "Agatu #{id} • {title}",
+      "loading": "Asali n ifurac n uxellas...",
+      "loadError": "Ur yezmir ara ad d-yessali agatu",
+      "copiedRef": "Tamselyut n uxellas tettwanɣel!",
+      "copiedRip": "Uṭṭun n RIP / CCP yettwanɣel!",
+      "paymentRecordedSuccess": "Axellas yettwasekles! Anefcal yettwaɛlem akken ad yeqbel asuter.",
+      "statusUpdated": "Addad yettwalqem.",
+      "paymentRecordError": "Ur yezmir ara ad isekles axellas",
+      "fiscalBanner": {
+        "title": "Asider n tebzert i tkebbanin d umtawa n ANAE (Asaduf 22-23)",
+        "description": "S uxellas s temselɣut tuzwirt, tayuga n krad n isemliyen (Agatu yettwasenyan, Aselkin n usali, Tafakturt n ANAE) ad tettwaxleq s wudem awurman. Ayagi yettḍeman asider n IBS s 100% i tkebbanit-ik ddaw n tseddast 169 CIDTA."
+      },
+      "card": {
+        "title": "Talɣut n uxellas usrid",
+        "description": "Azen idrimen srid ɣer umiḍan BaridiMob / CCP / Labank n unefcal.",
+        "referenceLabel": "Tamselyut Tuccilt (Tazmilt n uceggeɛ)",
+        "referenceHint": "Ilaq ad yettwaru deg usentel n uceggeɛ BaridiMob.",
+        "copyRefTitle": "Nɣel tamselyut",
+        "ripLabel": "Uṭṭun n BaridiMob RIP / CCP n unefcal",
+        "ripHint": "Amiḍan yettwasenqed sɣur Podacium • Addad n Umsemres awurman urmid.",
+        "copyRipTitle": "Nɣel RIP",
+        "amountLabel": "Azal n uḥric i wumi ilaq uxellas",
+        "tvaLabel": "TVA Yesran",
+        "tvaExempt": "0% (Yettwaserreḥ s usaduf 22-23)",
+        "confirmButton": "Xellseɣ s BaridiMob"
+      },
+      "ondaNotice": {
+        "title": "Aḥraz d useddu n izerfan n umyaru (Anaḍ uṭṭun 03-05):",
+        "description": "Mi yettwaqbel uxellas, tasarut n userreḥ n ifayluten ad teffeɣ yerna izerfan n tayla ad zrin srid ɣer umsaɣ."
+      },
+      "ocr": {
+        "title": "Asenqed Awurman n Utan (Afran)",
+        "description": "Senteḍ aḍris n yizen n BaridiMob / CCP akken ad yili usenqed awurman imiren.",
+        "placeholder": "Senteḍ aḍris n utan dagi (amd: Algérie Poste BaridiMob ID: BM123456...)",
+        "verifyButton": "Senqed atan",
+        "verifying": "Asenqed iteddu...",
+        "verifiedValid": "Tettuseḥseb trusi! Azal d umkan n ttiɛad d imeɣtiyen.",
+        "validStatus": "Yettuseḥseb",
+        "matchDetails": "Uṭṭun n umhaz: {txn} • Azal: {amount}",
+        "verifyError": "Ur yezmir ara usenqed. Ttxil-k senqed azal d ungal n usekles."
+      },
+      "stepper": {
+        "title": "Angal n urag yettwaḍemnen war aḥraz (Asaḍuf 22-23 ANAE)",
+        "badge": "Ulac aḥraz n tedrimt",
+        "step1Title": "Asrusu d tamsisɣelt",
+        "step1Desc": "Asenkel usrid BaridiMob / CCP s tengalt tasufant",
+        "step2Title": "Asenduq n AES-256",
+        "step2Desc": "Afaylu yettwaffren yers sɣur amuzag",
+        "step3Title": "Agerdas n urmas",
+        "step3Desc": "Asefqed d uzmul uslig n ugerdas",
+        "step4Title": "Aserreḥ n tasarut",
+        "step4Desc": "Tasarut n DEK tettwaserreḥ & Takmut n tebzert Amagrad 169"
+      },
+      "milestonesLabel": "Iswiren n ugatu (Milestones)",
+      "milestoneFallback": "Aswir #{id}"
+    },
+    "taxCenter": {
+      "title": "Ammas n Tebzert n Ut-Umahel (ANAE)",
+      "subtitle": "Ḍfer ayen d-yusan n tedrimt, siḍel tabzert IFU 0.5% d usufeɣ n tladna G50 tuzrigt.",
+      "statuteBadge": "Asaḍuf 22-23 / LF 2024 Amagrad 282 wis-sḍis",
+      "downloadG50": "Sider taladna G50",
+      "loadError": "Ur yezmir ara ad d-yawi aḍris n tebzert G50",
+      "loading": "Asdukel n uzmam n tebzert d usiḍen n IFU...",
+      "banner": {
+        "title": "Addad Azrigan n Ut-Umahel (Asaduf uṭṭun 22-23)",
+        "description": "S lmendad n Usaduf n Tedrimt (LF 2024 Art. 282 sexies CIDTA), imawlan n umahel s yiswi umḍin ttwagellun s tebzert IFU n 0.5% d usuref n TVA alamma d 5 000 000 DZD deg useggas."
+      },
+      "metrics": {
+        "turnover": "Azal n Ubadu Aseggasan (CA)",
+        "turnoverHint": "Asemday i d-yettwabedren i useggas {year}",
+        "ifuTaxDue": "Tabzert n IFU (0.5%)",
+        "ifuTaxHint": "Yettuseḥseb s lmendad n Umagrad 282 sexies CIDTA",
+        "ceiling": "Talast Tunsibt n Useggas",
+        "ceilingLimit": "Talast {limit}"
+      },
+      "schedule": {
+        "title": "Aheyyi n Ukraḍyur n CA d Tebzert",
+        "subtitle": "Abeṭṭu s kraḍyur i tladna DGI Formulaire G50",
+        "quarterLabel": "Akraḍyur {quarter} (K{quarter})",
+        "invoices": "tifaturin",
+        "turnover": "Azal n Ubadu",
+        "ifuDue": "IFU I Yefkan (0.5%)"
+      }
+    },
+    "taxPack": {
+      "title": "Takbabt n Tukksa n Tebzert n Tkebbanit (IBS)",
+      "subtitle": "Sider akraḍ n yagazen d tfaturin ANAE akken ad tekkseḍ 100% n tebzert ɣef tezmert n IBS.",
+      "badge": "Yedda d Umagrad 169 CIDTA",
+      "downloadPack": "Sider Takbabt n Tebzert",
+      "loadError": "Ur yezmir ara ad d-yawi takbabt n tebzert",
+      "loading": "Asdukel n tfaturin yettwakksen...",
+      "banner": {
+        "title": "Aḍman n Tukksa n Tebzert IBS (Amagrad 169 CIDTA)",
+        "description": "Akk talliyin n umahel i yettwaxelsen deg Podacium ṭṭfent tifaturin ANAE d wayen d-ibanen n usekles (PV de Réception), ayen yettaǧǧan takebbanit-inek ad tekkas 100% deg ugemmuḍ n IBS."
+      },
+      "metrics": {
+        "totalDeductible": "Akk Ayen Yettwakksen",
+        "totalDeductibleHint": "Asemday n talliyin n umahel d yiselsa n teɣlamt",
+        "ibsSavings19": "Aselket n IBS Yettwafen (19%)",
+        "ibsSavings19Hint": "Afares / takebbanit n temguri",
+        "ibsSavings26": "Aselket n IBS Yettwafen (26%)",
+        "ibsSavings26Hint": "Tanfa / takebbanit n tnezzut"
+      },
+      "manifest": {
+        "title": "Umuɣ n Tfaturin d Teftarin n Usteɛref",
+        "subtitle": "Umuɣ s lewqam n warraḍen n tdamsa i useggas amiran",
+        "invoicesCount": "Tifaturin",
+        "freelancerType": "Tanazzalt n umahal ilelli",
+        "platformType": "Tazmert n unagraw"
+      }
+    }
+  },
+  "contracts": {
+    "milestones": {
+      "loading": "Asali...",
+      "title": "Ibridiyen",
+      "contractHeader": "Agatu #{id}",
+      "noMilestones": "Ulac ibridiyen yettwasbadun.",
+      "due": "Azemz n usemres: {date}",
+      "status": "Addad:",
+      "markSubmitted": "Rcem d amuddu",
+      "approve": "Qbel",
+      "reject": "Aggi"
+    },
+    "dispute": {
+      "loadError": "Ur yezmir ara ad d-yessali amyenna",
+      "accessDenied": "Anekcum yettwagdel",
+      "provideReasonAndDetails": "Ttxil-k mudd-d tamentilt d telqayt.",
+      "descriptionMinLength": "Aglam ilaq ad yesɛu ɣer kra n 20 n yisekkilen.",
+      "submitSuccess": "Amyenna yeldi s lferḥ.",
+      "submitError": "Ur yezmir ara ad yeldi amyenna.",
+      "loading": "Deg usali n umyenna...",
+      "title": "Asefrek n Yimyennayen",
+      "contractHeader": "Akaṛti #{id} — {title}",
+      "backToContract": "Uɣal ɣer ukaṛti",
+      "openDisputes": "Imyennayen yeldin",
+      "noDisputes": "Ulac amyenna yeldin i ukaṛti-a.",
+      "createdBy": "Yerna-t",
+      "you": "Kečč",
+      "otherParty": "Amasay nniḍen",
+      "reportIssue": "Mudd-d ugur",
+      "reasonLabel": "Tamentilt",
+      "selectReason": "Fren tamentilt",
+      "reasons": {
+        "nonDelivery": "Ulac aslek",
+        "poorQuality": "Taɣara drusit",
+        "incompleteRequirements": "Isuturen ur kimilen ara",
+        "other": "Nniḍen"
+      },
+      "detailsLabel": "Talqayt nniḍen",
+      "detailsPlaceholder": "Glem ugur s telqayt...",
+      "submitting": "Deg tuzna...",
+      "submitDispute": "Ldi Amyenna",
+      "notice": "Alday n umyenna ad iḥbes axellas alamma yefra wugur."
+    },
+    "deliver": {
+      "authError": "Asesteb yettwasra. Ttxil-k qqen-d tikkelt nniḍen.",
+      "notFoundError": "Agatu ur yettwafa ara. Yezmer yettwakkes neɣ ur tesɛiḍ ara tasiregt.",
+      "networkError": "Tuccḍa n uẓeṭṭa. Ttxil-k senqed tuqqna-inek.",
+      "unexpectedError": "Teḍra-d tuccḍa ur nettwaraǧi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+      "descriptionRequired": "Ttxil-k mudd-d aglam i usali-inek",
+      "validUrlRequired": "Ttxil-k sekcem URL ameɣtu ibeddun s http:// neɣ https://",
+      "pageTitle": "Tifranin n Ukaṛti",
+      "deliverable": "Afaris yettwaselken",
+      "submittedOn": "Yettwazen deg {date}",
+      "deliveredStatus": "Yettwaslek",
+      "description": "Aglam",
+      "noDescription": "Ulac aglam i d-yettunefken",
+      "attachedFiles": "Ifayluyen yettwaseddun",
+      "download": "Sider",
+      "approve": "Qbel",
+      "requestRevision": "Suter Aleqqem",
+      "authRequired": "Asentem yettwasuter",
+      "signInTitle": "Kcem i wakken ad twaliḍ tifranin",
+      "signInDesc": "Ilaq ad tkecmeḍ akken ad twaliḍ tifranin n ukaṛti. Ttxil-k kcem i wakken ad tkemmleḍ.",
+      "signInButton": "Kcem",
+      "createAccountButton": "Snulfu-d Amiḍan",
+      "notFoundTitle": "Akaṛti ulac-it",
+      "notFoundHeader": "Akaṛti #{id} ulac-it",
+      "notFoundDesc": "Akaṛti i tettnadiḍ ulac-it neɣ yettwakkes. Yezmer yettwamḥa, neɣ ur tesɛiḍ ara tasureft i wakken ad t-twaliḍ.",
+      "viewContracts": "Ẓer Ikaṛtiyen-ik",
+      "browseProjects": "Snirem Isenfaren",
+      "freelancerSubtitle": "Azen yerna sefrek tifranin-ik i ukaṛti-a",
+      "clientSubtitle": "Ssenqed yerna sefrek tifranin i d-yuzen umasay ilelli",
+      "freelancerView": "Tamuɣli n Umasay Ilelli",
+      "clientView": "Tamuɣli n Umsaɣ",
+      "refreshData": "Smiren Isefka",
+      "backToContract": "Uɣal ɣer Telqayt n Ukaṛti",
+      "submittedDeliverables": "Tifranin Yettwaznen",
+      "freelancerDeliverablesDesc": "Amahil-ik yettwaznen i ukaṛti-a",
+      "clientDeliverablesDesc": "Tifranin i d-yuzen umasay ilelli",
+      "totalBadge": "{count} s umata",
+      "noDeliveriesFreelancerTitle": "Ulac aslek ar tura",
+      "noDeliveriesClientTitle": "Ulac aslek i d-yewwḍen",
+      "noDeliveriesFreelancerDesc": "Azen aslek-ik amezwaru i wakken ad tebḍuḍ amahil-ik d umsaɣ.",
+      "noDeliveriesClientDesc": "Amasay ilelli ur d-yuzin acemma ar tura.",
+      "submitNewDeliverable": "Azen Afaris Amaynut",
+      "shareWorkDesc": "Bḍu amahil-ik d umsaɣ",
+      "formDescriptionLabel": "Aglam *",
+      "formDescriptionPlaceholder": "Glem ayen i d-tettazneḍ, seddu tizemal neɣ tinaḍin...",
+      "fileUrlsLabel": "Iseɣwan n Ifayluyen (Afrayan)",
+      "fileUrlPlaceholder": "Sekcem aseɣwen n ufaylu (amdya: https://example.com/file.pdf)",
+      "fileUrlsHelp": "Mudd-d iseɣwan ɣer yifayluyen neɣ isemliyen icudden ɣer ufaris-a",
+      "submitting": "Deg uselkem...",
+      "submitDeliverable": "Azen Afaris",
+      "contractStatusTitle": "Addad n Ukaṛti",
+      "contractStatusDesc": "Addad amiran n ukaṛti-a",
+      "statusLabel": "Addad",
+      "amountLabel": "Azal",
+      "roleLabel": "Tamhelt-ik",
+      "roleFreelancer": "Amasay Ilelli",
+      "roleClient": "Amsaɣ",
+      "inactiveWarning": "Akaṛti-a ur yermid ara. Ur tezmireḍ ara ad tazneḍ tifranin timaynutin.",
+      "needHelp": "Tesriḍ Tallelt?",
+      "needHelpDesc": "Awi tallelt ɣef tifranin",
+      "contactSupport": "Nermes Tallalt",
+      "messageParty": "Ceyyeɛ izen i {party}",
+      "partyClient": "Amsaɣ",
+      "partyFreelancer": "Amasay Ilelli"
+    },
+    "list": {
+      "negotiable": "Yettwamsawal",
+      "notSet": "Ur yettwasbedd ara",
+      "contractTitle": "Agatu #{id}",
+      "noTermsSpecified": "Ulac ilugan nniḍen yettwabedren",
+      "amount": "Tasmekta",
+      "duration": "Tallit",
+      "flexible": "Afessas",
+      "yourRole": "Tamlilt-ik",
+      "freelancer": "Akensi",
+      "client": "Amsafag",
+      "created": "Yettwasnulfu",
+      "timeline": "Azirig n Wakud",
+      "to": "ɣer",
+      "noFreelancerAssigned": "Ulac akensi yettwamudden",
+      "noClientAssigned": "Ulac amsafag yettwamudden",
+      "viewDetails": "Ẓer Ifulan",
+      "viewContractDetails": "Ẓer Ifulan n Ugatu",
+      "accessDeniedMessage": "Ur tesɛiḍ ara ttesriḥ ɣer yiguta",
+      "accessRestricted": "Anekcum Yettwaḥdeṛ",
+      "accessDenied": "Anekcum Yettwagi",
+      "accessRequiresRoleTitle": "Anekcum ɣer Yiguta Yesra Tamlilt n Ukensi neɣ n Umsafag",
+      "accessRequiresRoleDescription": "I wakken ad twaliḍ tafelwit n yiguta, tesriḍ amiḍan n ukensi neɣ n umsafag. Tabaɣurt-a tella kan i wid yettekan deg yisenfaren n ukensi.",
+      "freelancerAccess": "Ikensiyen zemren ad walin iguta-nsen irmeden d warraten n yisenfaren",
+      "clientAccess": "Imsafagen zemren ad ssefreken iguta n yisenfaren-nsen",
+      "studentNoAccess": "Imiḍanen n yinelmaden ur zmiren ara ad walin asefrek n yiguta",
+      "redirectingIn": "Aseddu deg",
+      "redirectMessage": "Ad k-yawi s wudem awurman ɣer usebter agejdan n Hub",
+      "goToHubNow": "Rzu ɣer Hub Tura",
+      "updateProfile": "Beddel Amagrad",
+      "authenticationRequired": "Asentked d Amussnaw",
+      "signInToAccess": "Kcem i Wakken ad Twaliḍ Iguta",
+      "signInDescription": "Yessefk ad tkecmeḍ i wakken ad twaliḍ sakin ad tessefrekeḍ iguta-ik. Ttxil kcem neɣ snulfu-d amiḍan.",
+      "signIn": "Kcem",
+      "createAccount": "Snulfu-d Amiḍan",
+      "contractManagement": "Asefrek n Yiguta",
+      "your": "Ayla-k",
+      "contracts": "Iguta",
+      "manageDescription": "Ssefrek akk iguta-ik n ukensi deg yiwen n umkan. Ḍfer asurif, ẓer ifulan, sakin mahel s lferḥ.",
+      "freelancerDashboard": "Tafelwit n Ukensi",
+      "clientDashboard": "Tafelwit n Umsafag",
+      "errors": {
+        "authenticationRequired": "Asentked d amussnaw. Ttxil kcem tikkelt nniḍen.",
+        "failedToLoad": "Asali n yiguta ur yeddi ara",
+        "networkError": "Tuccḍa deg tuqqna. Ttxil selken internet-ik.",
+        "unexpectedError": "Tella-d tuccḍa ur nettwaṛǧi ara. Ttxil ɛreḍ tikkelt nniḍen."
+      },
+      "tryAgain": "Ɛreḍ Tikkelt Nniḍen",
+      "contractOverview": "Tamussni Tamatut n Yiguta",
+      "contractOverviewDescription": "Agzul n wurmid d useddu n yiguta-ik",
+      "live": "Srid",
+      "totalContracts": "Asemday n Yiguta",
+      "totalContractsTooltip": "Akk iguta yellan deg umiḍan-ik",
+      "activeContracts": "Iguta Irmeden",
+      "activeContractsTooltip": "Iguta yetteddun deg teswiɛt-a",
+      "completed": "Yekfa",
+      "completedTooltip": "Iguta yekfan s lferḥ",
+      "pendingReview": "Yettraǧu Asenqed",
+      "pendingReviewTooltip": "Iguta yettraǧun aqbal neɣ askar",
+      "manageContracts": "Ssefrek Iguta",
+      "manageContractsDescription": "Nadi, zizdeg, sakin ssefrek iguta-ik akken iwata",
+      "searchPlaceholder": "Nadi iguta s yisem n usenfar, akensi, amsafag, neɣ ilugan...",
+      "refresh": "Smiren",
+      "filterByStatus": "Zizdeg s Waddad",
+      "showingCount": "Sken {showing} seg {total} n yiguta",
+      "allContracts": "Akk Iguta",
+      "active": "Irmed",
+      "pending": "Yettraǧu",
+      "cancelled": "Yettwasefsex",
+      "disputed": "Deg Umennuɣ",
+      "yourContracts": "Iguta-ik",
+      "allContractsDescription": "Akk iguta-ik deg waddaden yemgaraden",
+      "filteredContractsDescription": "Iguta s waddad: {status}",
+      "createNewContract": "Snulfu-d Agatu Amaynut",
+      "noContractsFound": "Ulac Iguta Yettwafen",
+      "noContractsSearch": "Ulac iguta iwulmen anadi-ik \"{query}\". Ɛreḍ imeslayen nniḍen neɣ sfeḍ anadi.",
+      "clearSearch": "Sfeḍ Anadi",
+      "noContractsYet": "Ulac Iguta Yakan",
+      "noContractsMatchFilter": "Ulac Iguta Iwulmen Amsizdegan",
+      "noContractsDescription": "Ur tesɛiḍ ara iguta yakan. Bdu s usbeddi n usenfar neɣ s usuter deg yisenfaren yellan.",
+      "noFilteredContractsDescription": "Ur tesɛiḍ ara iguta s waddad \"{status}\". Ɛreḍ amsizdeg nniḍen.",
+      "browseProjects": "Snirem Isenfaren",
+      "createProject": "Snulfu-d Asenfar",
+      "viewAllContracts": "Ẓer Akk Iguta",
+      "findNewProjects": "Af-d Isenfaren Imaynuten",
+      "contractTipsTitle": "Tirmitin n Usefrek n Yiguta",
+      "contractTipsDescription": "Ilugan ifellayen d tɣubla i usefrek n yiguta-ik akken iwata",
+      "learnMore": "Issin Ugar",
+      "clearDeliverables": "Iselkamen Imellalen",
+      "clearDeliverablesDescription": "Sbedd iselkamen, azirig n wakud, d yilugan n uqbal imellalen deg ugatu i wakken ad trewleḍ i wuguren.",
+      "readGuide": "Ɣer Asebgran",
+      "paymentTerms": "Ilugan n Uxellas",
+      "paymentTermsDescription": "Sbedd ilugan n uxellas, iswiren, d tarrayin timellalin i uḍman n uxellas deg wakud d tɣellist n tedrimt.",
+      "disputeResolution": "Aferru n Yimennuɣen",
+      "disputeResolutionDescription": "Seddu tarrayt n uferru n yimennuɣen deg yiguta-ik i uferru n wuguren s tmusni d tiseddi.",
+      "needHelpTitle": "Tesriḍ Tallelt deg Ugatu?",
+      "needHelpDescription": "Tarbaɛt-nneɣ n tallalt tegga i wakken a k-tɛiwen deg wakk isteqsiyen neɣ uguren n yiguta. Awi tallelt deg yimennuɣen, ibeddilen, neɣ asefrek.",
+      "contactSupport": "Ssiweḍ ɣer Tallalt"
+    },
+    "detail": {
+      "pageTitle": "Ifulan n Ugatu",
+      "header": {
+        "badge": "Ifulan n Ugatu",
+        "title": "Agatu #{id}",
+        "description": "Ẓer sakin ssefrek ifulan n ugatu, iselkamen, d usurif.",
+        "view": {
+          "freelancer": "Tamuɣli n Ukensi",
+          "client": "Tamuɣli n Umsafag",
+          "admin": "Tamuɣli n Umḍebber"
+        },
+        "contractNumber": "#{id}"
+      },
+      "errors": {
+        "authenticationRequired": "Asentked d amussnaw. Ttxil kcem tikkelt nniḍen.",
+        "networkError": "Tuccḍa deg tuqqna. Ttxil selken internet-ik.",
+        "unexpectedError": "Tella-d tuccḍa ur nettwaṛǧi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+        "signInToView": "Kcem i Wakken ad Twaliḍ Agatu",
+        "signInDescription": "Yessefk ad tkecmeḍ i wakken ad twaliḍ ifulan n ugatu. Ttxil kcem i wakken ad tkemmleḍ.",
+        "contractNotFound": "Agatu ur yettwafen ara. Yezmer yettwakkes neɣ ur tesɛiḍ ara ttesriḥ.",
+        "notFoundDescription": "Agatu i tettnadiḍ ur yelli ara neɣ yettwakkes. Yezmer yettwakkes neɣ ur tesɛiḍ ara azerf ad t-twaliḍ.",
+        "accessRestricted": "Anekcum Yettwaḥdeṛ",
+        "accessDenied": "Anekcum Yettwagi",
+        "contractAccessRestricted": "Anekcum ɣer Ugatu Yettwaḥdeṛ",
+        "accessDeniedDescription": "Tzemreḍ kan ad twaliḍ iguta anda telliḍ d akensi neɣ d amsafag. Agatu-a ur yeqqin ara ɣer umiḍan-ik.",
+        "permissionRules": {
+          "freelancers": "Ikensiyen zemren ad walin iguta yettwamudden i nutni",
+          "clients": "Imsafagen zemren ad walin iguta n yisenfaren-nsen",
+          "noAccess": "Ur tezmireḍ ara ad twaliḍ iguta ur nelli ara d ayla-k"
+        },
+        "redirecting": "Aseddu deg",
+        "redirectNotice": "Ad k-yawi s wudem awurman ɣer usebter n yisenfaren",
+        "refreshData": "Smiren Isefka"
+      },
+      "buttons": {
+        "goToProjects": "Rzu ɣer Yisenfaren",
+        "viewYourContracts": "Ẓer Iguta-ik",
+        "browseProjects": "Snirem Isenfaren",
+        "backToContracts": "Uɣal ɣer Yiguta",
+        "createAccount": "Snulfu-d Amiḍan",
+        "signIn": "Kcem"
+      },
+      "sections": {
+        "projectDetails": "Ifulan n Usenfar",
+        "projectDescription": "Isallen ɣef usenfar yeqqnen ɣer ugatu-a",
+        "deliveries": "Iselkamen",
+        "deliveriesDescriptionFreelancer": "Azen amahil-ik sakin ḍfer iselkamen",
+        "deliveriesDescriptionClient": "Selken sakin qbel amahil yettwaselken",
+        "deliveredCount": "{count} yettwaselken",
+        "partiesInvolved": "Imahalen Yellan",
+        "partiesDescription": "Imdanen d temlilin yellan deg ugatu-a",
+        "contractActions": "Iskaren n Ugatu",
+        "actionsDescription": "Ssefrek agatu-a ilmend n temlilt-ik",
+        "needHelp": "Tesriḍ Tallelt?",
+        "helpDescription": "Awi tallalt deg ugatu-a"
+      },
+      "infoCards": {
+        "contractValue": "Azal n Ugatu",
+        "status": "Addad",
+        "project": "Asenfar",
+        "client": "Amsafag"
+      },
+      "delivery": {
+        "delivery": "Aselkem",
+        "deliveredOn": "Yettwaselken deg {date}",
+        "description": "Aglam",
+        "noDescription": "Ulac aglam yettwamudden",
+        "attachedFiles": "Ifuyla Yernan",
+        "download": "Sider",
+        "submitDelivery": "Azen Aselkem",
+        "deliveryModal": {
+          "title": "Azen Aselkem",
+          "description": "Azen amahil-ik i ugatu-a",
+          "deliveryDescription": "Aglam n Uselkem *",
+          "descriptionPlaceholder": "Glem-d acu i d-tuzneḍ, seddu tizmilin neɣ ilugan...",
+          "fileUrls": "Iseɣwan n Yifuyla (ma tebɣiḍ)",
+          "fileUrlsPlaceholder": "Sekcem iseɣwan n yifuyla s tefras (amedya, https://example.com/file1.pdf, https://example.com/file2.zip)",
+          "fileUrlsHelp": "Mudd-d iseɣwan ɣer yifuyla neɣ arraten yeɛnan aselkem-a",
+          "cancel": "Sefsex"
+        },
+        "noDeliveries": {
+          "freelancerTitle": "Ulac Iselkamen Yakan",
+          "clientTitle": "Ulac Iselkamen Yewwḍen-d",
+          "freelancerDescription": "Azen aselkem-ik amezwaru i wakken ad tbḍuḍ amahil-ik d umsafag.",
+          "clientDescription": "Akensi ur d-yuzen ara iselkamen yakan."
+        },
+        "firstDelivery": "Azen Aselkem Amezwaru",
+        "approveDelivery": "Qbel Aselkem",
+        "requestRevision": "Suter Allus n Usenqed"
+      },
+      "project": {
+        "noTitle": "Ulac Azwel n Usenfar",
+        "noDescription": "Ulac aglam n usenfar yellan.",
+        "contractTerms": "Ilugan n Ugatu",
+        "noTerms": "Ulac ilugan usligen yettwasbedden i ugatu-a."
+      },
+      "parties": {
+        "client": "Amsafag",
+        "freelancer": "Akensi",
+        "notAssigned": "Ur yettwamudd ara",
+        "you": "Kečč"
+      },
+      "actions": {
+        "submitDelivery": "Azen Aselkem",
+        "markAsCompleted": "Creq am Yekfa",
+        "completing": "Akfay...",
+        "completeContract": "Kfu Agatu",
+        "confirmComplete": "Sentem Akfay",
+        "messageFreelancer": "Azen Izen i Ukensi",
+        "cancelContract": "Sefsex Agatu",
+        "confirmCancel": "Sentem Asefsex",
+        "cancelling": "Asefsex...",
+        "viewProject": "Ẓer Asenfar",
+        "contactSupport": "Ssiweḍ ɣer Tallalt",
+        "freelancingGuide": "Asebgran n Ukensi",
+        "legalTerms": "Ilugan Isuḍaf"
+      },
+      "status": {
+        "active": "Irmed",
+        "completed": "Yekfa",
+        "cancelled": "Yettwasefsex",
+        "pending": "Yettraǧu",
+        "disputed": "Deg Umennuɣ",
+        "descriptions": {
+          "active": "Agatu-a irmed yerna iteddu deg teswiɛt-a.",
+          "completed": "Agatu-a yekfa s lferḥ.",
+          "cancelled": "Agatu-a yettwasefsex.",
+          "pending": "Agatu-a yettraǧu termedt.",
+          "disputed": "Agatu-a yesɛa amennuɣ yesran aferru."
+        }
+      },
+      "support": {
+        "needHelp": "Tesriḍ ad temmeslayeḍ ɣef ugatu-a?",
+        "needHelpDescription": "Sqedec anagraw-nneɣ n teɣwalt aɣellis i wemsawal d umdan nniḍen, beḍḍu n yifuyla, d uferru n yisteqsiyen.",
+        "openChat": "Ldi Amsawal",
+        "getSupport": "Awi Tallalt"
+      },
+      "confirmation": {
+        "completeTitle": "Kfu Agatu",
+        "completeContract": "Tebɣiḍ s tidet ad tcreqeḍ agatu-a am yekfa? Askar-a ur yezmir ara ad yuɣal ɣer deffir.",
+        "completed": "Agatu yekfa s urebbaḥ",
+        "cancelTitle": "Sefsex Agatu",
+        "cancelContract": "Tebɣiḍ s tidet ad tsefsxeḍ agatu-a? Askar-a ur yezmir ara ad yuɣal ɣer deffir.",
+        "cancelled": "Agatu yettwasefsex s urebbaḥ"
+      },
+      "validation": {
+        "deliveryDescriptionRequired": "Ttxil mudd-d aglam i uselkem-ik"
+      },
+      "milestoneActions": {
+        "approvedSuccess": "Asurif yettwaqbel d uxellas seg useḥbes yeffeɣ-d s liser.",
+        "approveError": "Tuccḍa deg uselken n usurif.",
+        "disputeBlockedCompleted": "Ulamek ad tldiḍ amennuɣ: idrimen ttwaferqen yakan i umguran.",
+        "revisionSubmitted": "Asuter n wallus yettwaṣaweḍ s liser ɣer umguran.",
+        "negotiable": "Yettwamslay",
+        "canvasAnnotationsSaved": "Imerriyen n ugdil ttwasiklsen.",
+        "ipDeedModalTitle": "Asekkan asindisan n uselkem n wayla afellay (Anaḍ 03-05)"
+      },
+      "stageTracker": {
+        "budgetLabel": "Aɣawas n uḥric:",
+        "approvedReleased": "Iqbel & Yeffeɣ-d",
+        "inArbitration": "Deg ufraq",
+        "tacitRule": "Alugen n useqbel s tsusmi (Tanzayt n ukayad n {days} n wussan)",
+        "remainingCountdown": "Ddan {days} n wussan ({hours} n tesragin)",
+        "inspectionNotice": "Ayen yettwaxedmen yettwazen deg {delivered}. Tizi n ukayad tettfakka deg {deadline}. Ma yella ulac kra n tigawt seg tama-k uqbel azemz-agi, idrimen yettwaḥebsen ({amount} DZD) ad ffɣen s wudem awurman srid i useqdac alelli.",
+        "openDispute": "Ldi amgarrad",
+        "requestRevisions": "Suter ibeddilen",
+        "approveReleaseEscrow": "Sentem & Ssuffeɣ-d Escrow",
+        "approvedSuccess": "Aḥric yettwasentem yerna idrimen yettwaḥebsen ffɣen-d akken iwata.",
+        "antiDisputeNotice": "Aḥezzeb mgal amgarrad deffir tuffɣa urmid (Tasunḍa 03-05). Idrimen kfelen.",
+        "ipDeedButton": "Asekkan n usekfel n wayla amezzulan (PDF)",
+        "stages": {
+          "funded": "Aseḥbes n Escrow",
+          "inDevelopment": "Deg usnulfu",
+          "submitted": "Ayen yettwaxedmen yettwazen",
+          "underInspection": "Akayad ({days} n wussan)",
+          "disputed": "Deg umgarrad",
+          "released": "Idrimen ffɣen-d"
+        }
+      },
+      "ipDeed": {
+        "title": "Asekkan asindisan n usekfel n wayla amezzulan",
+        "certifiedBadge": "Yettwaselken sɣur ONDA & ANAE",
+        "subtitle": "Asekkan asindisan n usekfel n yizerfan n wayla amezzulan (Anaḍ 03-05 d Usaḍuf 22-23)",
+        "assignorLabel": "Ameskfal (Ameskar)",
+        "assignorMeta": "Asebtar alelli (Asaḍuf uṭṭun 22-23) • Takarḍa n ANAE: {anae}",
+        "assignorTax": "Angal n IFU 0.5% • Izerfan ilisanen ur nelli ara i usekfel ḥerzen (Maddt 21)",
+        "assigneeLabel": "Amseklef (Amsaɣ)",
+        "assigneeMeta": "Uṭṭun n uguta: PODA-CTR-{contractId}",
+        "assigneeTax": "Ayla azerfan asuf • Yettwakes seg tebzert n IBS (Maddt 169 CIDTA)",
+        "rightsGrantedTitle": "Izerfan izerfanen yettwaskeflen (Maddt 27 & 64):",
+        "rightsGrantedBody": "Izerfan usufen n useqdec, n wallus n usekles, n usedwet, n useznzi d usedger n useɣẓan i umaḍal merra deg teɣzi n tallit tusḍift n umeskar (tudert + 50 n yiseggasen).",
+        "considerationTitle": "Afra fell-as amagdez (Maddt 65):",
+        "considerationBody": "Arraz amagdez n {amount} DZD yettwakellef s lekmal s tuffɣa tagrawant n yidrimen yettwaḥebsen.",
+        "integritySeal": "Izmulen isindisanen & Tallalt n timmad (Asaḍuf uṭṭun 15-04)",
+        "timestampedAt": "Azemz yettwakles deg {date}",
+        "deliverableHash": "Tabbat n yisufar (SHA-256):",
+        "assignorSignature": "Azmul n Umeskfal (Ameskar):",
+        "assigneeSignature": "Azmul n Umseklef (Amsaɣ):",
+        "platformSeal": "Azmul awurman n teṛmist Ed25519:",
+        "copy": "Nɣel",
+        "copied": "Yettwanɣel",
+        "legalNotice": "Tasemlit tusḍift s snat n tutlayin s tezmert n uselken tamellilt.",
+        "downloadPdf": "Sider Asekkan (PDF Yettwasentmen)"
+      },
+      "revisions": {
+        "modalTitle": "Asuter n wallus n usefqed yettwaṣeyyden",
+        "milestoneHeader": "Taseddart #{milestoneId}: {milestoneTitle}",
+        "description": "Isutren n wallus n usefqed yettwasuddsen ttḍemanen aselkem aḥeqqan d umuzzay sɣur usebtar deg umkan n yisalen ur nṣeḥḥa ara. Fren iferdisen tefkeḍ ifatusen-ik.",
+        "pinsAttached": "📌 {count} n talɣut(in) tumlant(in) seg uzennar n usefqed qqnen ɣer tseddart-a.",
+        "criteriaLabel": "Iferdisen yesran aseggem *",
+        "criteria": {
+          "codeQuality": "Taɣara & Tasuddest n Tengalt",
+          "codeQualityDesc": "Ales n useggem yesra, timziregt, tuqqna ɣer yilugan neɣ akayad ixuṣṣen.",
+          "designConformity": "Tuqqna ɣer Tsekkirt & UI/UX",
+          "designConformityDesc": "Amgarad ɣer tsenfaṛt n Figma, tamhelt n usekcem neɣ tasedmirt.",
+          "securityPerformance": "Taɣellist & Tamellilt",
+          "securityPerformanceDesc": "Akud aɣezfan n usekcam, afran n tuccḍiwin neɣ tiɣwitin yettwafen.",
+          "missingRequirements": "Isuturen ixuṣṣen seg wammud n tewwura",
+          "missingRequirementsDesc": "Timhalin i ɣef nemsefham deg tseddart ur ttwaselkem ara neɣ ur kfint ara.",
+          "documentation": "Tasemlit & Isufar Itiknikiyen",
+          "documentationDesc": "Ilugan n usedger, imyifiren n twennaḍt neɣ tasemlit n API ixuṣṣen."
+        },
+        "expectedDetailsLabel": "Iferdisen ibanen n useggem yettwaṛjan:",
+        "detailsPlaceholder": "Amedya: Taqeffalt n usebded deg uziraz (< 375px) teffeɣ seg ufrag...",
+        "generalCommentLabel": "Awennit amatu & Asatal rnu-as (Amsefray)",
+        "generalCommentPlaceholder": "Ilugan imuta neɣ iseɣwan ɣer yisugam...",
+        "cancel": "Semmet",
+        "submitting": "Tuzzna tettddu...",
+        "submit": "Azen Asuter n Wallus",
+        "errorSelectCriterion": "Ttxil-k fren ma drus yiwen n uferdis n useggem.",
+        "errorMinCharacters": "Ttxil-k feg-d asefhem amikwan ma drus 10 n yisekkilen i: \"{criterion}\"."
+      },
+      "reviewCanvas": {
+        "title": "Azennar n usefqed amulan",
+        "toResolve": "{count} yesran asegdel",
+        "prevPage": "Asebtar yezrin (Aneccab azelmaḍ)",
+        "pageIndicator": "Asebtar {current} / {total}",
+        "nextPage": "Asebtar d-iteddun (Aneccab ayeffus)",
+        "zoomOut": "Semẓi (-)",
+        "zoomIn": "Semɣer (+)",
+        "resetZoom": "Ales asemɣer 100% (0)",
+        "hideResolved": "Ffer tid yettwaferun",
+        "showAll": "Sken-d akk",
+        "pinModeActive": "Askar n tsegnatin yemmed",
+        "activatePinMode": "Rmed Askar n Talɣut",
+        "requestRevisions": "Suter Iseggamen",
+        "pdfDocument": "Asekkan PDF: {name}",
+        "pdfInstructions": "Asekkan yewjed i usefqed amikwan. Sit ɣef uzennar akken ad tserseḍ tignatin n talɣut.",
+        "openPdfFullscreen": "Ldi PDF s ugdil aččuran",
+        "previewTitle": "Tamuɣli n yisufar n tseddart #{milestoneId}",
+        "clickToAddPin": "💡 Sit anda tebɣiḍ deg wadeg-a akken ad ternuḍ tasegnit n useggem.",
+        "pinHeader": "Tasegnit #{index} • {author}",
+        "resolved": "Yettwafra",
+        "markResolved": "Rreḍ-it d amafra",
+        "statusResolved": "✓ Yettwafra",
+        "statusPending": "⏳ Yettraǧu",
+        "deletePin": "Kkes",
+        "newAnnotation": "Talɣut Tamaynut",
+        "annotationPlaceholder": "Glem-d s teḥrart asegdel yettwasran deg wadeg-a...",
+        "cancel": "Semmet",
+        "save": "Sekles",
+        "annotationsList": "Tabdart n talɣutin ({count})",
+        "noAnnotationsTitle": "Ulac talɣut",
+        "noAnnotationsDesc": "Sit ɣef tmuɣli n yisufar akken ad temleḍ iseggamen ibanen.",
+        "reviewTipTitle": "Tastiwt n usefqed:",
+        "reviewTipDesc": "Yal tasegnit tḥerrez tignatin-is timikwanin akken ad tsehel amahil i usebtar."
+      }
+    }
+  },
+  "freelancers": {
+    "list": {
+      "badgePremium": "Agraw n Yimusnawen Ifellayen",
+      "badgeBrowse": "Snirem Imusnawen Ifellayen",
+      "title": "Af-d Amsetlel-ik",
+      "titleHighlight": "Akensi",
+      "description": "Qqen d yimusnawen ifellayen n ukensi deg Lezzayer.\nSnirem imussnawen usentkeden deg wakk timussniwin d tiɣula.",
+      "freelancersCount": "Ikensiyen",
+      "projectsCompleted": "Isenfaren Yekfan",
+      "searchPlaceholder": "Nadi ikensiyen s tmussniwin, adeg, neɣ isem...",
+      "searchButton": "Nadi",
+      "searching": "Anadi...",
+      "searchTry": "Ɛreḍ:",
+      "filtersSorting": "Imsizdigen & Asmizzwer",
+      "filtersActive": "Irmed",
+      "browseByCategory": "Snirem s Taggayt",
+      "browseByCategoryDesc": "Af-d ikensiyen yeṭṭfen timussniwin d tiɣula tusligin",
+      "allFreelancers": "Akk Ikensiyen",
+      "webDevelopment": "Asnefli n Web",
+      "uiUxDesign": "Asuneɣ n UI/UX",
+      "mobileApps": "Isnasen Izirazen",
+      "dataScience": "Tussna n Yisefka",
+      "devopsCloud": "DevOps d Usigna",
+      "digitalMarketing": "Azenz Amḍin",
+      "contentWriting": "Tira n Ugbur",
+      "availableFreelancers": "Ikensiyen Yellan",
+      "showingCategory": "Sken {count} n yikensiyen n {category}",
+      "showingTotal": "Sken {showing} seg {total} n yikensiyen",
+      "sortBy": "Smizzwer s:",
+      "sortRelevance": "Tamsalt",
+      "sortRating": "Aket Afellay",
+      "sortProjects": "Tuget n Yisenfaren",
+      "sortRate": "Azal n Tesragt",
+      "sortTrust": "Aket n Laman",
+      "sortNewest": "Amaynut Akk",
+      "viewGrid": "Taseddart",
+      "viewList": "Tabdart",
+      "activeFilters": "Imsizdigen Irmeden",
+      "activeFiltersCount": "{count}",
+      "clearAll": "Sfeḍ Akk",
+      "filterSkills": "Timussniwin: {skills}",
+      "filterRate": "Azal: {min} - {max} DA",
+      "filterLocation": "Adeg: {location}",
+      "filterPhoneVerified": "Asawal Yettwasentked",
+      "filterHasCertifications": "Yesɛa Iselkanen",
+      "filterMinProjects": "Isenfaren Yekfan: {count}+",
+      "filterTrustScore": "Aket n Laman: {score}%+",
+      "sortedBy": "Yettwasmizzwer s: {sort}",
+      "filtersPanel": {
+        "title": "Imsizdigen & Asmizzwer",
+        "sortBy": "Smizzwer s",
+        "skills": "Timussniwin",
+        "clearAll": "Sfeḍ akk",
+        "showingSkills": "Sken {showing} seg {total} n tmussniwin. Nadi timussniwin usligin s ufella.",
+        "hourlyRate": "Azal n Tesragt (DA)",
+        "minimum": "Tadut",
+        "maximum": "Tafellayt",
+        "location": "Adeg",
+        "locationPlaceholder": "Tamdint neɣ tamurt...",
+        "verificationRequirements": "Asentked & Isuturen",
+        "phoneVerifiedOnly": "Asawal Yettwasentked Kan",
+        "hasCertifications": "Yesɛa Iselkanen",
+        "minCompletedProjects": "Isenfaren Yekfan Imectaḥ",
+        "minTrustScore": "Aket n Laman Amezwaru",
+        "viewMode": "Tarrayt n Tmuɣli",
+        "resetAll": "Ales Asebded n Wakk",
+        "applyFilters": "Snes Imsizdigen",
+        "applying": "Asnes..."
+      },
+      "mostInDemandSkills": "Timussniwin Yettwasutren Ddeqs",
+      "mostInDemandSkillsDesc": "Timussniwin yettwasnen aṭas deg teswiɛt-a gar yikensiyen izzayriyen",
+      "skillFreelancers": "{count} n yikensiyen",
+      "popularSkills": "Timussniwin Yettwasnen (sken {showing} seg {total})",
+      "viewAllSkills": "Ẓer Akk {count} n Tmussniwin",
+      "clearSkills": "Sfeḍ Timussniwin",
+      "whyChooseTitle": "Acimi ara Tferneḍ Ikensiyen Izzayriyen?",
+      "whyChooseDesc": "Af-d tinafatin tusligin n umahil d yimusnawen n Lezzayer",
+      "benefits": {
+        "culturalUnderstanding": {
+          "title": "Tussna n Wansayen",
+          "desc": "Tutlayt d twennaḍt tamsadut i teɣwalt d useddu ifazen."
+        },
+        "timeZone": {
+          "title": "Tanagit n Wakud",
+          "desc": "Tisragin n wakud qerbent i wemsawal deg wakud n tidet d yimsafagen n Turuft d Tefriqt."
+        },
+        "costEffective": {
+          "title": "Ssuma Taweznt",
+          "desc": "Amahil afellay s wazaɣen iweznen mgal izudar igraɣlanen."
+        },
+        "verifiedTalent": {
+          "title": "Imusnawen Usentkeden",
+          "desc": "Akk ikensiyen ttwasentkeden s usawal d usentked n tmagit."
+        }
+      },
+      "cta": {
+        "title": "Twejdeḍ ad Tafeḍ Akensi Iwulmen?",
+        "description": "Ddu ɣer wagimen n tebbura i yufan lferḥ d yimusnawen izzayriyen. Snulfu-d amiḍan i wakken ad tebduḍ aselkem ass-a.",
+        "signUpFree": "Jerred Baṭel",
+        "signInToHire": "Kcem i Wakken ad Tesmreseḍ"
+      },
+      "errors": {
+        "loadError": "Asali n yisefka imezwura ur yeddi ara. Ttxil smiren usebter.",
+        "freelancersError": "Asali n yikensiyen ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+        "tryAgain": "Ɛreḍ Tikkelt Nniḍen"
+      },
+      "noResults": {
+        "title": "Ulac Ikensiyen Yettwafen",
+        "description": "Ur nufi ara ikensiyen iwulmen anadi-ik. Ɛreḍ ad tbeddleḍ imsizdigen neɣ imeslayen n unadi.",
+        "resetFilters": "Ales Asebded n Yimsizdigen",
+        "adjustFilters": "Sseggem Imsizdigen"
+      },
+      "pagination": {
+        "showing": "Sken",
+        "to": "ar",
+        "of": "seg",
+        "freelancers": "ikensiyen",
+        "page": "Asebter",
+        "ofPages": "seg"
+      },
+      "loading": {
+        "freelancers": "Asali n Yikensiyen...",
+        "initialData": "Asali n yisefka imezwura...",
+        "searching": "Anadi...",
+        "applyingFilters": "Asnes n yimsizdigen..."
+      }
+    },
+    "detail": {
+      "meta": {
+        "title": "{name} - Amagrad n Ukensi | Podacium",
+        "description": "Ẓer amagrad n ukensi n {name} deg Podacium. Wali timussniwin, amagrad n umahil, tiẓriyin, sakin semres i yisenfaren-ik."
+      },
+      "breadcrumb": {
+        "hub": "Hub",
+        "freelancers": "Ikensiyen",
+        "profile": "Amagrad"
+      },
+      "header": {
+        "verified": "Yettwasentked",
+        "locationNotSpecified": "Adeg ur yettwabder ara"
+      },
+      "stats": {
+        "avgRating": "Alemmas n Wakat",
+        "avgRatingTooltip": "Alemmas n wakat n yimsafagen",
+        "projects": "Isenfaren",
+        "projectsTooltip": "Asemday n yisenfaren yekfan",
+        "onTimeDelivery": "Deg Wakud",
+        "onTimeDeliveryTooltip": "Isenfaren yettwaselken deg wakud",
+        "certificates": "Iselkanen",
+        "certificatesTooltip": "Iselkanen imussnawen yettwaṭṭfen",
+        "high": "Afellay",
+        "onTime": "Deg Wakud"
+      },
+      "tabs": {
+        "overview": "Tamussni Tamatut",
+        "portfolio": "Amagrad n Umahil",
+        "experience": "Tarmit",
+        "reviews": "Tiẓriyin"
+      },
+      "sections": {
+        "aboutMe": {
+          "title": "Fell-i",
+          "defaultBio": "Azul, nekk d {name}, d {title} yeččuren d lḥir."
+        },
+        "skills": {
+          "title": "Timussniwin & Tussna",
+          "description": "Tatiknulujiyin d yifecka igejdanen i s smahleɣ",
+          "noSkills": "Ulac timussniwin yettwabedren yakan."
+        },
+        "portfolio": {
+          "title": "Isenfaren n Tura",
+          "description": "Isenfaren imaynuten i xedmeɣ"
+        },
+        "experience": {
+          "title": "Tarmit",
+          "description": "Tarmit tamussnawt d ubrid n umahil",
+          "professionalSummary": "Agzul Amussnaw",
+          "projectsCompleted": "Isenfaren Yekfan",
+          "certifications": "Iselkanen",
+          "trustScore": "Aket n Laman"
+        },
+        "reviews": {
+          "title": "Tiẓriyin & Iwaliwen",
+          "description": "Ayen d-nnan yimsafagen nniḍen ɣef umahil d {name}"
+        }
+      },
+      "sidebars": {
+        "verification": {
+          "title": "Asentked",
+          "phoneVerified": "Asawal Yettwasentked",
+          "certificatesCount": "{count} n Yiselkanen",
+          "verified": "Yettwasentked",
+          "notVerified": "Ur yettwasentked ara"
+        },
+        "availability": {
+          "title": "Tilin"
+        },
+        "contact": {
+          "title": "Teɣwalt"
+        }
+      },
+      "buttons": {
+        "hireName": "Semres {name}",
+        "sendMessage": "Azen Izen",
+        "hireNow": "Semres Tura",
+        "viewDetails": "Ẓer Ifulan",
+        "processing": "Aseddu..."
+      },
+      "actions": {
+        "viewDetails": "Ẓer Ifulan"
+      },
+      "availability": {
+        "available": "Yella i umahil",
+        "busy": "Yeččur",
+        "away": "Ibeɛɛed",
+        "offline": "Ur yeqqin ara",
+        "availableForNewProjects": "Yella i yisenfaren imaynuten"
+      },
+      "projectsCompleted": "{count} n yisenfaren yekfan",
+      "certificatesCount": "{count} n Yiselkanen",
+      "defaultTitle": "Akensi Amussnaw",
+      "titles": {
+        "dataAnalyst": "Amsleḍ n Yisefka",
+        "frontendDeveloper": "Amsnefli n Zdat",
+        "backendDeveloper": "Amsnefli n Deffir",
+        "fullStackDeveloper": "Amsnefli Ummid (Full Stack)",
+        "uiUxDesigner": "Amsuneɣ n UI/UX",
+        "mobileDeveloper": "Amsnefli Aziraz"
+      },
+      "tooltips": {
+        "shareProfile": "Bḍu amagrad",
+        "saveToFavorites": "Sekles deg yisurifen"
+      },
+      "contactModal": {
+        "title": "Ssiweḍ ɣer {name}",
+        "messageLabel": "Izen-ik",
+        "messagePlaceholder": "Azul {name}, bɣiɣ ad mmeslayeɣ yid-k ɣef yiwen usenfar...",
+        "budgetLabel": "Tadrimt",
+        "budgetPlaceholder": "Amedya, 10,000 - 20,000 DA",
+        "timelineLabel": "Azirig n Wakud",
+        "timelinePlaceholder": "Amedya, 2-4 n yimalasen",
+        "cancel": "Sefsex",
+        "sendMessage": "Azen Izen"
+      },
+      "errors": {
+        "profileUnavailable": "Amagrad Ur Yelli Ara",
+        "profileUnavailableDesc": "Ur nufi ara amagrad n ukensi i tettnadiḍ. Ayagi yezmer ad d-yili ɣef:",
+        "reason1": "Amagrad yettwakkes neɣ yettwaɣleq",
+        "reason2": "Yella wugur deg umeẓlu-nneɣ deg teswiɛt-a",
+        "reason3": "URL ur iṣeḥḥa ara neɣ d aqbur",
+        "browseFreelancers": "Snirem Ikensiyen Ifellayen",
+        "exploreTalentPool": "Snirem Agraw n Yimusnawen",
+        "tryLoadingAgain": "Ɛreḍ Asali Tikkelt Nniḍen",
+        "refreshProfile": "Smiren Amagrad",
+        "needHelp": "Tesriḍ Tallelt?",
+        "getSupport": "Awi Tallalt",
+        "searchFreelancers": "Nadi Ikensiyen"
+      },
+      "emptyStates": {
+        "noProjects": {
+          "title": "Ulac Isenfaren deg Tebdart",
+          "description": "{name} ur d-yerna ara isenfaren ɣer umagrad-is yakan."
+        },
+        "noReviews": {
+          "title": "Ulac Tiẓriyin Yakan",
+          "description": "{name} ur d-yeṭṭif ara tiẓriyin yakan."
+        }
+      },
+      "share": {
+        "title": "{name} - Amagrad n Ukensi",
+        "text": "Ẓer amagrad n {name} deg Podacium"
+      },
+      "cta": {
+        "title": "Twejdeḍ ad Tmahleḍ d {name}?",
+        "description": "Azen izen i wakken ad temmeslayeḍ ɣef yisuturen n usenfar-ik neɣ semres srid i wakken ad tebduḍ."
+      }
+    },
+    "reviews": {
+      "title": "Tiẓriyin & Iwaliwen",
+      "leaveReview": "Mudd-d Tiẓri",
+      "editReview": "Ẓreg Tiẓri",
+      "noReviews": "Ulac tiẓriyin yakan.",
+      "blindReview": "Tiẓri Yeffren - Tettwafer armi d-tefkeḍ tiẓri-ik neɣ ɛeddant 14 n wussan.",
+      "rating": "Aket Amatu",
+      "comment": "Awennit",
+      "submit": "Azen Tiẓri",
+      "submitting": "Tuzna...",
+      "saveChanges": "Sekles Ibeddilen",
+      "appeal": "Suter Asenqed n Teẓri-a",
+      "appealTitle": "Azen Asuter n Usenqed",
+      "appealReason": "Sebba n usuter",
+      "appealReasonPlaceholder": "Segzi acimi tiẓri-a teṭṭef ilugan neɣ ur tṣeḥḥa ara...",
+      "submitAppeal": "Azen Asuter",
+      "appealSubmitted": "Asuter-ik yettwazen.",
+      "invalidRating": "Ttxil fren aket amatu iṣeḥḥan.",
+      "submitFailed": "Tuzna n teẓri ur teddi ara.",
+      "commentPlaceholder": "Bḍu tirmit-ik deg umahil ɣef ugatu-a...",
+      "cancel": "Sefsex",
+      "anonymousUser": "Aseqdac Uffir",
+      "edited": "(Yettwaẓreg)",
+      "redactedMessage": "Tiẓri-a tettwakkes s ɣur yimḍebbren.",
+      "underAppealMessage": "Tiẓri-a tettraǧu asenqed deg teswiɛt-a.",
+      "timeAgo": {
+        "justNow": "tura kan",
+        "minutes": "{count} n tesdidt aya",
+        "minutes_plural": "{count} n tesdidin aya",
+        "hours": "{count} n tesragt aya",
+        "hours_plural": "{count} n tesragin aya",
+        "days": "{count} n wass aya",
+        "days_plural": "{count} n wussan aya",
+        "months": "{count} n waggur aya",
+        "months_plural": "{count} n wagguren aya",
+        "years": "{count} n useggas aya",
+        "years_plural": "{count} n yiseggasen aya"
+      },
+      "reviewSubmitted": "Tanemmirt! Tiẓri-ik tettwazen.",
+      "reviewEdited": "Tiẓri-ik tettwasmiren.",
+      "editWindowExpired": "Tallit n 48 n tesragin i uẓrag n teẓri-a tekfa.",
+      "clientSubRatings": {
+        "requirements_clarity": "Tiseddi n Yisuturen",
+        "communication": "Teɣwalt",
+        "fairness": "Taɣdemt",
+        "payment_promptness": "Zreb n Uxellas"
+      },
+      "freelancerSubRatings": {
+        "work_quality": "Taɣara n Umahil",
+        "communication": "Teɣwalt",
+        "timeliness": "Aqader n Wakud",
+        "professionalism": "Tamussni n Umahil"
+      }
+    }
+  },
+  "projects": {
+    "list": {
+      "badgeBrowse": "Snirem Isenfaren",
+      "title": "Af-d Asenfar-ik",
+      "titleHighlight": "Iwulmen",
+      "description": "Af-d isenfaren n ukensi deg Podacium iwulmen timussniwin-ik.",
+      "filterTip": "Zizdeg s taggayt, tadrimt, d uzirig n wakud i wakken ad tafeḍ ayen iwulmen.",
+      "searchPlaceholder": "Nadi s yisem n usenfar, timussniwin, neɣ awalen igejdanen...",
+      "totalProjects": "Asemday n Yisenfaren",
+      "open": "Yeldi",
+      "inProgress": "Nteddu deg-s",
+      "completed": "Yekfa",
+      "signUpToApply": "Jerred i Wakken ad Tsutreḍ",
+      "filtersTitle": "Imsizdigen",
+      "clearAll": "Sfeḍ Akk",
+      "statusFilterTitle": "Addad n Usenfar",
+      "statusOpen": "Yeldi",
+      "statusInProgress": "Nteddu deg-s",
+      "statusCompleted": "Yekfa",
+      "skillsFilterTitle": "Timussniwin",
+      "moreSkills": "+{count} n tmussniwin nniḍen",
+      "applyFilters": "Snes Imsizdigen",
+      "showFilters": "Sken Imsizdigen",
+      "availableProjects": "Isenfaren Yellan",
+      "showingAll": "Sken akk {count} n yisenfaren",
+      "showingFiltered": "Sken {showing} seg {total} n yisenfaren",
+      "newProject": "Asenfar Amaynut",
+      "signUpToCreate": "Jerred i Wakken ad Tesnulfuḍ",
+      "noProjectsFound": "Ulac Isenfaren Yettwafen",
+      "noProjectsSearch": "Ulac isenfaren iwulmen anadi-ik amiran. Ɛreḍ ad tbeddleḍ imsizdigen neɣ imeslayen.",
+      "noProjectsAvailable": "Ulac isenfaren yellan deg teswiɛt-a. Uɣal-d sakkin i tlemmiẓin timaynutin.",
+      "clearFilters": "Sfeḍ Imsizdigen",
+      "createFirstProject": "Snulfu-d Asenfar-ik Amezwaru",
+      "signUpToCreateProjects": "Jerred i Wakken ad Tesnulfuḍ Isenfaren",
+      "loadMoreProjects": "Sali Isenfaren Nniḍen",
+      "activeFiltersTitle": "Imsizdigen Irmeden",
+      "noFiltersApplied": "Ulac imsizdigen yettwasensen",
+      "tipsTitle": "Tirmitin i Tifin n Yisenfaren Ifazen",
+      "tipsDescription": "Sqedec tilemmiẓin-ik n ukensi akken iwata s termitin-a n yimussnawen",
+      "expertAdvice": "Tirmit n Yimussnawen",
+      "tip1Title": "Sbedd Timussniwin-ik",
+      "tip1Description": "Sqedec imsizdigen i tifin n yisenfaren iwulmen tamussni-ik talqayant. Imsafagen bɣan wid i d-yeskanayen tarmit n tidet.",
+      "tip2Title": "Aru Tisumar Iqewwan",
+      "tip2Description": "Aru yal tasumert s wudem uslig. Segzi amek timussniwin-ik ara ifrun ugur n umsafag d wayen i k-yerran d amezwaru.",
+      "tip3Title": "Selken Amazray n Umsafag",
+      "tip3Description": "Wali imagraden n yimsafagen, isenfaren yezrin, d wakat-nsen. Imsafagen yesɛan tiẓriyin telha d imriken iweznen.",
+      "ctaTitle": "Twejdeḍ ad Tebduḍ Abrid-ik n Ukensi?",
+      "ctaDescription": "Jerred tura i wakken ad tsutreḍ isenfaren, ad tesnulfuḍ ayla-k, ad tebnuḍ amagrad-ik, sakin ad ternerniḍ d yikensiyen ifellayen n Lezzayer.",
+      "ctaFeature1": "Snirem akk isenfaren",
+      "ctaFeature2": "Azen tisumar",
+      "ctaFeature3": "Snulfu-d isenfaren",
+      "ctaFeature4": "Ḍfer asurif",
+      "signUpFree": "Jerred Baṭel",
+      "signInToAccess": "Kcem i Unkcum"
+    },
+    "new": {
+      "meta": {
+        "title": "Snulfu-d Asenfar Amaynut | Hub n Ikensiyen Podacium",
+        "description": "Sbedd isuturen n usenfar-ik sakin af-d akensi iwulmen deg uzaɣar amezwaru n yikensiyen deg Lezzayer."
+      },
+      "header": {
+        "badge": "Snulfu-d Asenfar",
+        "titleLine1": "Snulfu-d Asenfar-ik",
+        "titleHighlight": "D-iteddun",
+        "descriptionLine1": "Sbedd isuturen n usenfar-ik sakin af-d akensi iwulmen i tewwurt-ik.",
+        "descriptionLine2": "Ili d amellal i wakken ad d-tejebdeḍ imusnawen ifellayen deg Podacium."
+      },
+      "form": {
+        "title": {
+          "label": "Azwel n Usenfar",
+          "placeholder": "Sekcem azwel amellal yerna d agleman i usenfar-ik",
+          "description": "Ili d amellal ɣef wayen tesriḍ. Amedya: 'Asnefli n Usnas Aziraz i Uzaɣar n Tnezzut'"
+        },
+        "description": {
+          "label": "Aglam n Usenfar",
+          "placeholder": "Glem-d asenfar-ik s telqayt. D acu-ten yisuturen, iswiyen, d yiselkamen?",
+          "description": "Seddu isuturen itiknikiyen, azirig n wakud, d yifulan nniḍen. Talast d 5000 n yisekkilen."
+        },
+        "skills": {
+          "label": "Timussniwin Yettwasutren",
+          "description": "Rnu timussniwin yettwasutren i usenfar-a. Senned Enter neɣ tafras i wakken ad ternuḍ tamussni.",
+          "placeholder": "Rnu timussniwin (amedya, React, Node.js, Asuneɣ UI/UX)",
+          "popularSkills": "Timussniwin Yettwasnen",
+          "popularSkillsList": {
+            "1": "React",
+            "2": "Node.js",
+            "3": "Python",
+            "4": "UI/UX",
+            "5": "Asnas Aziraz",
+            "6": "Asuneɣ n Web",
+            "7": "Tagrumma n Yisefka",
+            "8": "DevOps"
+          },
+          "removeSkill": "Kkes {skill}"
+        }
+      },
+      "budget": {
+        "title": "Tajumma n Tedrimt",
+        "minPlaceholder": "Tadut",
+        "maxPlaceholder": "Tafellayt",
+        "description": "Eǧǧ-it d ilem i tedrimt yettwamsawalen"
+      },
+      "tips": {
+        "title": "Tirmitin i Wagmuḍ n Tsumiwin Ifazen",
+        "list": {
+          "1": "Ili d amellal ɣef yisuturen d yiselkamen",
+          "2": "Sbedd tadrimt taweznt i umahil n tɣara",
+          "3": "Bder-d akk timussniwin yettwasutren i ujbad n yikensiyen imussnawen",
+          "4": "Bder-d azirig-ik n wakud s tiseddi"
+        }
+      },
+      "buttons": {
+        "backToProjects": "Uɣal ɣer Yisenfaren",
+        "cancel": "Sefsex",
+        "saveDraft": "Sekles d Arewway",
+        "createProject": "Snulfu-d Asenfar",
+        "creating": "Asnulfu..."
+      },
+      "infoCards": {
+        "securePlatform": {
+          "title": "Azaɣar Aɣellis",
+          "description": "Akk timura n ssuq ttwarnunt s PodaPoints. Ulac tiqbuct n uzaɣar — txellseḍ kan timura i tesqedceḍ."
+        },
+        "qualityFreelancers": {
+          "title": "Ikensiyen n Tɣara",
+          "description": "Anekcum ɣer yikensiyen izzayriyen ifellayen usentkeden s umezruy n tidet d tmussniwin yettwasekyden s Podacium."
+        },
+        "directCommunication": {
+          "title": "Teɣwalt Srid",
+          "description": "Mmeslay srid d yikensiyen, ḍfer asurif, sakin ssefrek iselkamen akk deg yiwen n umkan."
+        }
+      },
+      "support": {
+        "title": "Tesriḍ Tallelt deg Usnulfu n Usenfar-ik?",
+        "description": "Tarbaɛt-nneɣ tegga i wakken a k-tɛiwen ad taruḍ aglam iwulmen sakin ad tafeḍ imusnawen ifazen.",
+        "liveSupport": {
+          "title": "Tallalt Srid",
+          "description": "Mmeslay d terbaɛt n tallalt",
+          "button": "Bdu Amsawal Srid"
+        },
+        "templates": {
+          "title": "Tisekkirin n Yisenfaren",
+          "description": "Sqedec tisekkirin-nneɣ yettwassnen",
+          "button": "Snirem Tisekkirin"
+        }
+      },
+      "success": {
+        "title": "Yedda!",
+        "created": "Asenfar yettwasnulfu s lferḥ! Aseddu...",
+        "savedDraft": "Asenfar yettwasekles d arewway. Tzemreḍ ad tkemmleḍ aẓrag sakkin."
+      },
+      "errors": {
+        "title": "Tuccḍa",
+        "accessDeniedTitle": "Anekcum Yettwagi",
+        "accessDeniedMessage": "Yessefk ad tkecmeḍ d amsafag i wakken ad tesnulfuḍ isenfaren.",
+        "accessFailed": "Asentked n yizerfan ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+        "createFailed": "Asnulfu n usenfar ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+        "validationFix": "Ttxil sseggem tuccḍiwin n usentked s wadda."
+      },
+      "postGate": {
+        "title": "Ulac Tisura n Yisenfaren I D-yegran",
+        "description": "Aɣ tasureft n usenfar i wakken ad tkemmleḍ. 200 PodaPoints i yal asenfar.",
+        "buyButton": "Aɣ Tisura n Yisenfaren",
+        "remaining": "{count} n tsura n usenfar i d-yegran",
+        "lastPost": "D tagi i d tasureft-ik taneggarut",
+        "insufficient": "Ulac tisura n yisenfaren i d-yegran. Aɣ timura seg Ufeter."
+      },
+      "validation": {
+        "titleRequired": "Azwel n usenfar d amussnaw",
+        "titleMinLength": "Azwel yessefk ad yesɛu ma drus 5 n yisekkilen",
+        "titleMaxLength": "Azwel yessefk ad yili ddaw n 200 n yisekkilen",
+        "descriptionMaxLength": "Aglam yessefk ad yili ddaw n 5000 n yisekkilen",
+        "skillsRequired": "Ma drus yiwet n tmussni tettwasuter",
+        "skillsMaxLength": "Talast d 20 n tmussniwin",
+        "budgetMinNegative": "Tadut n tedrimt ur tezmir ara ad tili ddaw n yilem",
+        "budgetMaxNegative": "Tafellayt n tedrimt ur tezmir ara ad tili ddaw n yilem",
+        "budgetMaxLessThanMin": "Tafellayt n tedrimt yessefk ad tili sennig n tdut"
+      }
+    },
+    "detail": {
+      "meta": {
+        "title": "{title} - Ifulan n Usenfar | Hub n Ikensiyen Podacium",
+        "description": "Ẓer ifulan n usenfar, isuturen, sakin suter d akensi neɣ ssefrek tisumar d amsafag deg uzaɣar amezwaru n yikensiyen deg Lezzayer."
+      },
+      "errors": {
+        "loadError": "Asali n yifulan n usenfar ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+        "loadErrorTitle": "Asali n Usenfar Ur Yeddi Ara",
+        "submitError": "Tuzna n tsumert ur teddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+        "searchError": "Anadi ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen."
+      },
+      "empty": {
+        "notFoundTitle": "Asenfar Ur Yettwafen Ara",
+        "notFoundDescription": "Asenfar i tettnadiḍ ur yelli ara neɣ yettwakkes."
+      },
+      "sections": {
+        "projectDetails": "Ifulan n Usenfar",
+        "requiredSkills": "Timussniwin Yettwasutren",
+        "skillsDescription": "Timussniwin yesran i usenfar-a",
+        "applicationStatus": "Addad n Usuter-ik",
+        "clientInfo": "Isallen n Umsafag",
+        "projectOwner": "Bab n Usenfar",
+        "projectTimeline": "Azirig n Wakud n Usenfar",
+        "quickActions": "Iskaren Ifessasen",
+        "recentProposals": "Tisumar Timaynutin"
+      },
+      "stats": {
+        "status": "Addad",
+        "skillsRequired": "Timussniwin Yettwasutren",
+        "skills": "timussniwin",
+        "posted": "Yettwasbedd",
+        "proposals": "Tisumar",
+        "received": "yewweḍ-d",
+        "ownersOnly": "Bab n usenfar kan i izemren ad iwali"
+      },
+      "status": {
+        "open": "Yeldi",
+        "in_progress": "Nteddu deg-s",
+        "completed": "Yekfa",
+        "cancelled": "Yettwasefsex"
+      },
+      "buttons": {
+        "backToProjects": "Uɣal ɣer Yisenfaren",
+        "applyToProject": "Suter deg Usenfar",
+        "viewProposals": "Ẓer Tisumar ({count})",
+        "signUpToApply": "Jerred i Wakken ad Tsutreḍ",
+        "viewContract": "Ẓer Agatu",
+        "applyNow": "Suter Tura",
+        "reviewProposals": "Selken Tisumar ({count})",
+        "browseMoreProjects": "Snirem Isenfaren Nniḍen",
+        "viewClientProfile": "Ẓer Amagrad n Umsafag",
+        "viewAll": "Ẓer Akk",
+        "tryAgain": "Ɛreḍ Tikkelt Nniḍen",
+        "browseProjects": "Snirem Isenfaren",
+        "browseAvailableProjects": "Snirem Isenfaren Yellan",
+        "signIn": "Kcem",
+        "browseFreelancers": "Snirem Ikensiyen"
+      },
+      "noDescription": "Ulac aglam yettwamudden.",
+      "noDetailedDescription": "Ulac aglam alqayan yettwamudden.",
+      "clientInfoNotAvailable": "Isallen n umsafag ur llint ara",
+      "onlyFreelancersCanApply": "Ikensiyen kan i izemren ad sutren deg yisenfaren",
+      "projectNotAcceptingProposals": "Asenfar-a ur iqebbel ara tisumar timaynutin",
+      "cannotApply": "Ur tezmireḍ ara ad tsutreḍ deg usenfar-a",
+      "phoneVerified": "Asawal Yettwasentked",
+      "statusLabel": "Addad",
+      "postedLabel": "Yettwasbedd",
+      "lastUpdatedLabel": "Abeddel Aneggaru",
+      "postedOn": "Yettwasbedd deg {date}",
+      "proposalSubmitted": "Tasumert Tettwazen",
+      "proposalPending": "Tasumert Tettraǧu",
+      "proposalRejected": "Tasumert Tettwagi",
+      "proposalsReceived": "{count} n tsumiwin i d-yewwḍen",
+      "anonymous": "Uffir",
+      "noPriceSet": "Ulac azal yettwasbedden",
+      "notAFreelancer": "Mačči d Akensi",
+      "authenticationRequired": "Asentked d Amussnaw",
+      "signInToApply": "Kcem i wakken ad tsutreḍ deg usenfar-a",
+      "notEligibleToApply": "Ur tesɛiḍ ara ilugan i usuter",
+      "projectNotOpen": "Asenfar ur yeldi ara i yisuturen",
+      "ownProject": "Ur tezmireḍ ara ad tsutreḍ deg usenfar-ik",
+      "proposalModal": {
+        "title": "Azen Tasumert",
+        "applyFor": "Suter deg: {title}",
+        "messageLabel": "Izen n Tsumert",
+        "messagePlaceholder": "Glem-d tarrayt-ik, tarmit-ik, d sebba i k-yerran d amezwaru i usenfar-a...",
+        "messageHelp": "Ili d amellal ɣef wazal ara d-tmuddeḍ i umsafag",
+        "budgetLabel": "Tadrimt i Tsutureḍ (ma tebɣiḍ)",
+        "budgetHelp": "S yisantimen, aru amedya 1000000 n yisantimen deg wadeg n 10000.00 DZD.",
+        "timelineLabel": "Azirig n Wakud Yettwaḥsben (Ussan)",
+        "cancel": "Sefsex",
+        "submitting": "Tuzna...",
+        "submitProposal": "Azen Tasumert"
+      }
+    },
+    "proposals": {
+      "title": "Tisumar i \"{title}\"",
+      "description": "Selken sakin ssefrek akk tisumar i d-yewwḍen i usenfar-ik",
+      "anonymousFreelancer": "Uffir",
+      "noBioProvided": "Ulac agzul yettwamudden",
+      "moreSkills": "+{count} nniḍen",
+      "proposedBudget": "Tadrimt Yettwasutren",
+      "currencyDZD": "{amount} DZD",
+      "submittedOn": "Yettwazen deg {date}",
+      "proposalMessage": "Izen n Tsumert",
+      "freelancerDetails": "Ifulan n Ukensi",
+      "phoneVerified": "Asawal Yettwasentked",
+      "certificatesCount": "{count} n yiselkanen",
+      "viewFullProfile": "Ẓer Amagrad Ummid",
+      "freelancer": "Akensi",
+      "actions": "Iskaren",
+      "acceptedMessage": "Tqebleḍ tasumert-a. Agatu yettwasnulfu.",
+      "rejectedMessage": "Tasumert-a tettwagi.",
+      "status": {
+        "pending": "Yettraǧu",
+        "accepted": "Yettwaqbel",
+        "rejected": "Yettwagi"
+      },
+      "buttons": {
+        "acceptProposal": "Qbel Tasumert",
+        "reject": "Agi",
+        "refresh": "Smiren",
+        "viewProject": "Ẓer Asenfar",
+        "tryAgain": "Ɛreḍ Tikkelt Nniḍen",
+        "backToProject": "Uɣal ɣer Usenfar",
+        "showAll": "Sken Akk Tisumar",
+        "browseAllProjects": "Wali akk isenfaren"
+      },
+      "navigation": {
+        "backToProject": "Uɣal ɣer Usenfar"
+      },
+      "stats": {
+        "totalProposals": "Asemday n Tsumiwin",
+        "pending": "Yettraǧun",
+        "accepted": "Yettwaqblen",
+        "rejected": "Yettwagin"
+      },
+      "filters": {
+        "all": "Akk",
+        "pending": "Yettraǧun",
+        "accepted": "Yettwaqblen",
+        "rejected": "Yettwagin"
+      },
+      "empty": {
+        "noProposals": "Ulac Tisumar Yakan",
+        "noProposalsDescription": "Ulac amdan i d-yuznen tasumert i usenfar-ik yakan. Bḍu asenfar-ik i ujbad n yikensiyen.",
+        "noFilteredProposals": "Ulac tisumar n {filter}",
+        "noFilteredProposalsDescription": "Ulac tisumar n {filter} ara d-nsebgen. Ɛreḍ amsizdeg nniḍen."
+      },
+      "errors": {
+        "loadError": "Asali n tsumiwin ur yeddi ara",
+        "acceptError": "Aqbal n tsumert ur yeddi ara",
+        "rejectError": "Agay n tsumert ur yeddi ara",
+        "failedToLoad": "Asali n Tsumiwin Ur Yeddi Ara",
+        "accessDenied": "Anekcum Yettwagi",
+        "accessDeniedDescription": "Ur tesɛiḍ ara ttesriḥ i tmuɣli n tsumiwin n usenfar-a."
+      },
+      "tips": {
+        "title": "Tirmitin i Usenqed n Tsumiwin",
+        "badge": "Tirmit n Yimussnawen",
+        "reviewMessages": {
+          "title": "Ɣer Iznan s Tseddi",
+          "description": "Nadi tisumar i d-yeskanayen afham n yisuturen n usenfar d yifrat usligen."
+        },
+        "checkExperience": {
+          "title": "Selken Tarmit",
+          "description": "Wali imagraden n yikensiyen, iselkanen, d umahil yezrin i uḍman n termit iwulmen."
+        },
+        "respondPromptly": {
+          "title": "Err-d s Zreb",
+          "description": "Ikensiyen ifellayen sɛan aṭas n tlemmiẓin. Err-d ɣer tsumiwin yelhan deg 1-2 n wussan."
+        }
+      },
+      "modals": {
+        "accept": {
+          "title": "Qbel Tasumert",
+          "description": "Snulfu-d agatu d {name}",
+          "contractTerms": "Ilugan n Ugatu",
+          "termsPlaceholder": "Sbedd ilugan n ugatu...",
+          "termsHelp": "Ilugan-a ad ilin d aḥric seg ugatu amussnaw s usaḍuf",
+          "contractAmount": "Azal n Ugatu (ma tebɣiḍ)",
+          "amountPlaceholder": "Eǧǧ-it d ilem i useqdec n wazal n tsumert",
+          "amountHelp": "S yisantimen (100 = 1.00 DZD). Eǧǧ-it d ilem i wazal n tsumert.",
+          "startDate": "Azemz n Tazwara (ma tebɣiḍ)",
+          "endDate": "Azemz n Taggara (ma tebɣiḍ)",
+          "defaultTerms": "Qebleɣ ad mahleɣ ɣef usenfar-a s yilugan yettwasutren.",
+          "creatingContract": "Asnulfu n Ugatu...",
+          "acceptAndCreate": "Qbel & Snulfu-d Agatu"
+        },
+        "reject": {
+          "title": "Agi Tasumert",
+          "description": "Tasumert seg {name}",
+          "confirmTitle": "Tebɣiḍ s tidet ad tagiḍ tasumert-a?",
+          "confirmDescription": "Askar-a ur yezmir ara ad yuɣal ɣer deffir. Akensi ad t-id-yaweḍ yizen belli tasumert-is tettwagi.",
+          "rejecting": "Agay...",
+          "yesReject": "Ih, Agi Tasumert"
+        },
+        "buttons": {
+          "cancel": "Sefsex"
+        }
+      }
+    }
+  },
+  "proposals": {
+    "header": {
+      "badge": "Asefrek n Tsumiwin",
+      "title": "Tisumar-ik",
+      "titleHighlight": "Tisumar",
+      "description": "Ḍfer, ssefrek, sakin kemmel d wakk tisumar i tuzneḍ deg yiwen n umkan"
+    },
+    "stats": {
+      "title": "Tamussni Tamatut n Tsumiwin",
+      "description": "Ḍfer asurif d lferḥ n tsumiwin-ik",
+      "totalProposals": "Asemday n Tsumiwin",
+      "pendingReview": "Yettraǧun Asenqed",
+      "accepted": "Yettwaqblen",
+      "rejected": "Yettwagin",
+      "totalValue": "Azal Ummid",
+      "tooltips": {
+        "totalProposals": "Akk tisumar i tuzneḍ",
+        "pendingReview": "Tisumar yettraǧun taɣtast n umsafag",
+        "accepted": "Tisumar yuɣalen d iguta",
+        "rejected": "Tisumar yettwagin",
+        "totalValue": "Azal ummid n tsumiwin yettwaqeblen"
+      }
+    },
+    "sections": {
+      "proposalsList": {
+        "title": "Tisumar-ik",
+        "description": "Ssefrek sakin ḍfer akk tisumar i tuzneḍ"
+      },
+      "tips": {
+        "title": "Tirmitin & Ilugan Ifellayen n Tsumiwin",
+        "description": "Snerni aswir n lferḥ n tsumiwin-ik s termitin-a n yimussnawen",
+        "personalizeMessage": {
+          "title": "Err Izen-ik d Uslig",
+          "description": "Siwel s lebda i umsafag s yisem-is sakin bder-d ifulan n usenfar. Sken-as belli teɣriḍ yerna tfahmeḍ isuturen-is."
+        },
+        "clearPricing": {
+          "title": "Azal Amellal",
+          "description": "Bḍu azal-ik s tiseddi. Segzi acu yellan deg-s sakin mudd-d sebba n wazal-ik s termit d wazal ara d-tmuddeḍ."
+        },
+        "realisticTimeline": {
+          "title": "Azirig n Wakud n Tidet",
+          "description": "Mudd-d azirig n wakud n tidet s yiswiren. Imsafagen ḥemmlen tiseddi ɣef melmi ara d-awḍen yiselkamen."
+        }
+      }
+    },
+    "filters": {
+      "filterBy": "Zizdeg s:",
+      "all": "Akk",
+      "pending": "Yettraǧun",
+      "accepted": "Yettwaqblen",
+      "rejected": "Yettwagin",
+      "activeFilter": "Tisumar n {status}",
+      "showingCount": "Sken {showing} seg {total} n tsumiwin",
+      "clear": "Sfeḍ Amsizdegan"
+    },
+    "search": {
+      "placeholder": "Nadi tisumar s yisem n usenfar, isem n umsafag, neɣ izen..."
+    },
+    "buttons": {
+      "viewProject": "Ẓer Asenfar",
+      "withdraw": "Kkes Tasumert",
+      "refresh": "Smiren",
+      "refreshing": "Asmiren...",
+      "findMoreProjects": "Af-d Isenfaren Nniḍen",
+      "viewAllProjects": "Ẓer Akk Isenfaren",
+      "clearSearch": "Sfeḍ Anadi",
+      "browseAllProjects": "Snirem Akk Isenfaren",
+      "findProjects": "Af-d Isenfaren",
+      "goToHub": "Rzu ɣer Hub",
+      "updateProfile": "Beddel Amagrad",
+      "browseProjects": "Snirem Isenfaren",
+      "learnFreelancing": "Lmed Akensi",
+      "cancel": "Sefsex",
+      "confirmWithdraw": "Sfeḍ Tasumert"
+    },
+    "cta": {
+      "title": "Theggaḍ ad tafeḍ ugar n tlemmiẓin?",
+      "description": "Snirem timaḍ n yisenfaren ifazen yerna azen tisumar i usedmer n umahil-ik."
+    },
+    "status": {
+      "pending": "Yettraǧu Asenqed",
+      "accepted": "Yettwaqbel",
+      "rejected": "Yettwagi"
+    },
+    "emptyStates": {
+      "noMatching": {
+        "title": "Ulac Tisumar Iwulmen",
+        "description": "Ulac tisumar yettwafen iwulmen \"{query}\". Ɛreḍ ad tbeddleḍ imeslayen n unadi neɣ sfeḍ anadi."
+      },
+      "noStatus": {
+        "title": "Ulac tisumar n {status}",
+        "description": "Ur tesɛiḍ ara tisumar n {status} deg teswiɛt-a. Selken addaden nniḍen neɣ snirem isenfaren imaynuten."
+      },
+      "noProposals": {
+        "title": "Ulac Tisumar Yakan",
+        "description": "Ur tuzneḍ ara tisumar yakan. Bdu s usnirem n yisenfaren yellan sakin azen tasumert-ik tamezwarut."
+      }
+    },
+    "permissionError": {
+      "accessRestricted": "Anekcum Yettwaḥdeṛ",
+      "title": "Anekcum n Ukensi d Amussnaw",
+      "description": "Yessefk ad tjerrdeḍ d akensi i wakken ad twaliḍ sakin ad tessefrekeḍ tisumar. Ad tuɣaleḍ ɣer Hub deg 5 n tesdidin.",
+      "currentRole": "Tamlilt Tamirant",
+      "notSet": "Ur yettwasbedd ara",
+      "hint": "I unekcum ɣer tsumiwin, tesriḍ amiḍan n ukensi. Ttxil ssiweḍ ɣer tallalt ma telli-d tuccḍa."
+    },
+    "errors": {
+      "sessionExpired": "Tiɣimit temmut. Ttxil kcem tikkelt nniḍen.",
+      "failedToLoad": "Asali n tsumiwin ur yeddi ara: {message}",
+      "genericError": "Asali n tsumiwin ur yeddi ara. Ttxil ɛreḍ tikkelt nniḍen.",
+      "withdrawFailed": "Tukksa n tsumert ur teddi ara. Ttxil ɛreḍ tikkelt nniḍen."
+    },
+    "confirmations": {
+      "withdraw": "Tebɣiḍ s tidet ad tekkseḍ tasumert-a? Askar-a ur yezmir ara ad yuɣal ɣer deffir.",
+      "withdrawTitle": "Sfeḍ Tasumert",
+      "withdrawDescription": "Tebɣiḍ s tidet ad tsefḍeḍ tasumert-a? Askar-a ur yezmir ara ad yuɣal ɣer deffir."
+    },
+    "success": {
+      "withdrawn": "Tasumert tettwasefḍeḍ s urebbaḥ"
+    },
+    "currency": "DA",
+    "negotiable": "Yettwamsawal",
+    "untitledProject": "Asenfar War Azwel",
+    "noMessage": "Ulac izen n tsumert yettwamudden",
+    "projectOwner": "Bab n Usenfar",
+    "submittedOn": "Yettwazen deg"
+  },
+  "portfolioForm": {
+    "editTitle": "Snfel aferdis n usenfar",
+    "newTitle": "Aferdis amaynut n usenfar",
+    "titleLabel": "Azwel *",
+    "titlePlaceholder": "Asenfar-iw amaynut",
+    "descLabel": "Aglam",
+    "descPlaceholder": "Glem amahil-inek...",
+    "tagsLabel": "Tabzimt",
+    "tagsPlaceholder": "react, asuneɣ, web",
+    "tagsHint": "Bḍu-ten s tecbaḍin",
+    "mediaUrlsLabel": "Tansiwin URL n umidya",
+    "mediaUrlsPlaceholder": "https://amedya.com/tugna.png, https://...",
+    "mediaUrlsHint": "Tansiwin URL n tugniwin neɣ tvidyutin s tecbaḍin",
+    "links": "Iseɣwan",
+    "urlPlaceholder": "https://...",
+    "labelPlaceholder": "Tabzimt (amedya: Asenqed n tillit)",
+    "removeLink": "Kkes aseɣwen",
+    "addLink": "Rnu aseɣwen",
+    "saveChanges": "Sekles ibeddilen",
+    "createItem": "Snulfu-d aferdis",
+    "saveError": "Ur yessin ara ad isekles aferdis n tmeskant. Ttxil-k ɛreḍ tikkelt nniḍen.",
+    "cancel": "Sefsex"
+  },
+  "portfolioGrid": {
+    "deleteConfirm": "Tebɣiḍ ad tekkseḍ aferdis-agi n usenfar?",
+    "emptyTitle": "Ulac iferdisen n usenfar yakan",
+    "emptySubtitle": "Sken amahil-inek s tmerna n usenfar-inek amezwaru.",
+    "addItem": "Rnu aferdis n usenfar",
+    "edit": "Snfel",
+    "delete": "Kkes"
+  }
+}

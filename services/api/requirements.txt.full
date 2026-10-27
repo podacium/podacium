@@ -1,0 +1,56 @@
+# Core Framework
+fastapi==0.115.0
+uvicorn==0.24.0
+pydantic[email]==2.9.2
+pydantic-settings==2.1.0
+
+# Database
+prisma==0.11.0
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.9
+
+# Authentication & Security
+passlib[argon2]==1.7.4
+PyJWT==2.9.0
+cryptography==44.0.1
+pyotp==2.9.0
+
+# Task Queue
+celery[redis]==5.3.6
+redis==5.0.1
+# flower==2.0.1  # ⚠️  Commented out for production — no built-in auth
+# If you need Celery monitoring, deploy Flower behind an auth proxy only.
+
+# HTTP Client
+httpx==0.27.2
+
+# Data & Analytics
+duckdb==0.10.3
+pandas==2.2.3
+numpy==1.26.4
+openpyxl==3.1.5
+reportlab==4.2.5
+
+# Cloud & Storage
+boto3==1.34.162
+chargily-pay==2.0.0
+
+# Monitoring & Observability
+sentry-sdk[fastapi]==2.19.2
+prometheus-fastapi-instrumentator==7.0.2
+python-json-logger==3.2.1
+
+# Utilities
+python-dotenv==1.0.0
+python-multipart==0.0.12
+jinja2==3.1.4
+
+# Dev & Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+hypothesis==6.115.0
+ruff==0.8.4
+mypy==1.13.0
+bandit==1.8.0
+safety==3.2.11

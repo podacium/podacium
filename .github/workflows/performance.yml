@@ -1,0 +1,94 @@
+name: Performance
+
+on:
+  schedule:
+    - cron: '0 4 * * 0'
+  workflow_dispatch:
+
+jobs:
+  k6-load-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start API mock for performance test
+        run: |
+          python3 -c "import http.server; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler, port=8000)" &
+          sleep 2
+      - name: Run k6 load test
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: scripts/performance-test.js
+          flags: --vus 50 --duration 30s
+        env:
+          TARGET_HOST: http://localhost:8000
+      - name: Upload k6 results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-results
+          path: scripts/*.json
+
+  lighthouse-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+        working-directory: apps/web
+      - name: Build for Lighthouse
+        run: npm run build
+        working-directory: apps/web
+        env:
+          NEXT_PUBLIC_API_URL: https://backend-api.podacium.com
+          NEXT_PUBLIC_BASE_URL: https://podacium.com
+      - name: Lighthouse CI — Desktop + Mobile
+        run: npx lhci autorun --config=.lighthouserc.js
+        working-directory: apps/web
+        continue-on-error: false
+      - name: Upload Lighthouse report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: apps/web/.lighthouseci/
+
+  report:
+    runs-on: ubuntu-latest
+    needs: [k6-load-test, lighthouse-audit]
+    if: always() && github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+      - name: Compose performance report
+        run: |
+          echo "## Performance Report" > report.md
+          echo "" >> report.md
+          echo "### k6 Load Test" >> report.md
+          if [ -f "k6-results/summary.json" ]; then
+            echo "Results saved to k6-results artifact." >> report.md
+          fi
+          echo "" >> report.md
+          echo "### Lighthouse CI" >> report.md
+          if [ -f "lighthouse-report/manifest.json" ]; then
+            echo "Results saved to lighthouse-report artifact." >> report.md
+          fi
+          echo "" >> report.md
+          cat report.md
+      - name: Create issue with performance report
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('report.md', 'utf8');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Performance Report — ' + new Date().toISOString().slice(0, 10),
+              body: body,
+              labels: ['performance']
+            });

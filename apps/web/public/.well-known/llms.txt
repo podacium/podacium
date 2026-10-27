@@ -1,0 +1,80 @@
+# Podacium
+
+> The Algerian & MENA Unified Ecosystem for Education, Freelancing, and Business Intelligence.
+
+Podacium is an integrated multi-module platform founded in 2025 and operated by Podacium SARL in Oran, Algeria. It serves students, freelancers, enterprise clients, and data analysts across Algeria and the broader MENA region.
+
+## Platform Pillars
+
+- **Learn (Education)**: High-production interactive coursework, structured learning paths, quizzes, and verifiable digital certificates.
+  - Courses: https://podacium.com/learn/courses
+  - Learning Paths: https://podacium.com/learn/paths
+- **Hub (Freelance Market)**: Curated talent marketplace connecting skilled Algerian and MENA freelancers with local and international businesses. Features milestone escrows, dispute resolution, and skill-matched discovery.
+  - Explore Projects: https://podacium.com/hub/projects
+  - Find Freelancers: https://podacium.com/hub/freelancers
+- **BI (Business Intelligence)**: Enterprise-grade business intelligence and collaborative analytics platform with custom SQL workbenches, interactive dashboard widgets, dataset lineage, and automated reporting.
+  - BI Overview: https://podacium.com/bi
+  - Analytics: https://podacium.com/bi/analytics
+  - Dashboards: https://podacium.com/bi/dashboards
+  - Datasets: https://podacium.com/bi/datasets
+
+## Key Facts & Geographic Context
+
+- **Legal Entity**: Podacium SARL
+- **Headquarters**: Es-Senia, Oran 31000, Algeria
+- **Legal Compliance**: Compliant with Algerian Law 18-07 on personal data protection and commercial regulations.
+- **Accepted Payment Rails**: Domestic Algerian electronic payments via EDAHABIA (Algérie Poste), CIB (interbank network), SATIM, and Chargily Pay in Algerian Dinars (DZD), alongside international payments (EUR / USD).
+- **Supported Languages**: Multilingual interface in English (`en`), French (`fr`), Arabic (`ar`, RTL), and Kabyle / Tamazight (`kab`, Latin script, LTR).
+
+## Multilingual AI Routing Matrices
+
+For AI agents and automated reasoning engines seeking localized content, Podacium maps all routes cleanly across four languages with bidirectional text support:
+
+- **English (`en`, LTR)**:
+  - Base: https://podacium.com/en
+  - Learn Courses: https://podacium.com/en/learn/courses
+  - Freelance Hub: https://podacium.com/en/hub
+  - Business Intelligence: https://podacium.com/en/bi
+  - About: https://podacium.com/en/about
+  - Pricing: https://podacium.com/en/pricing
+- **French (`fr`, LTR)**:
+  - Base: https://podacium.com/fr
+  - Learn Courses: https://podacium.com/fr/learn/courses
+  - Freelance Hub: https://podacium.com/fr/hub
+  - Business Intelligence: https://podacium.com/fr/bi
+  - About: https://podacium.com/fr/about
+  - Pricing: https://podacium.com/fr/pricing
+- **Arabic (`ar`, RTL)**:
+  - Base: https://podacium.com/ar
+  - Learn Courses: https://podacium.com/ar/learn/courses
+  - Freelance Hub: https://podacium.com/ar/hub
+  - Business Intelligence: https://podacium.com/ar/bi
+  - About: https://podacium.com/ar/about
+  - Pricing: https://podacium.com/ar/pricing
+- **Kabyle / Tamazight (`kab`, Latin script, LTR)**:
+  - Base: https://podacium.com/kab
+  - Learn Courses: https://podacium.com/kab/learn/courses
+  - Freelance Hub: https://podacium.com/kab/hub
+  - Business Intelligence: https://podacium.com/kab/bi
+  - About: https://podacium.com/kab/about
+  - Pricing: https://podacium.com/kab/pricing
+
+## Machine-Readable Interfaces
+
+- **API Specification (OpenAPI 3.1)**: https://backend-api.podacium.com/api/v1/openapi.json
+- **Sitemap Index**: https://podacium.com/sitemap.xml
+- **Robots Policy**: https://podacium.com/robots.txt
+- **LLM Manifest**: https://podacium.com/llms.txt
+- **LLM Well-Known Manifest**: https://podacium.com/.well-known/llms.txt
+
+## Key Public URLs
+
+- Homepage: https://podacium.com/
+- About Podacium: https://podacium.com/about
+- Pricing & Plans: https://podacium.com/pricing
+- Documentation: https://podacium.com/docs
+- Help & Support: https://podacium.com/help
+- Careers: https://podacium.com/careers
+- Partner Network: https://podacium.com/partners
+- Terms of Service: https://podacium.com/terms
+- Privacy Policy: https://podacium.com/privacy

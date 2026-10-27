@@ -1,0 +1,301 @@
+{
+  "docs": {
+    "meta": {
+      "title": "Tasemlit - Podacium",
+      "description": "Tasemlit tummidt i tiɣula n Uselmed, Hub n Ikensiyen, d Tnezzut Tuzzigt n Podacium"
+    },
+    "hero": {
+      "badge": "Tasemlit",
+      "title": "Tasemlit n",
+      "titleHighlight": "Podacium",
+      "subtitle": "Akk ayen yessefk ad t-tissineḍ ɣef useqdec n uzaɣar amellil n Podacium i uselmed, akensi, d tnezzut tuzzigt.",
+      "searchPlaceholder": "Nadi deg tsemlit..."
+    },
+    "navigation": {
+      "gettingStarted": "Tazwara",
+      "platforms": "Tiɣula",
+      "features": "Timura",
+      "guides": "Isebgranen"
+    },
+    "gettingStarted": {
+      "title": "Tazwara",
+      "subtitle": "D amaynut deg Podacium? Bdu da i wakken ad tfahmeḍ azaɣar-nneɣ sakin ad tebduḍ s zreb.",
+      "whatIs": {
+        "title": "D acu-t Podacium?",
+        "description": "Podacium d azaɣar amellil i yesdukklen kraḍ n tiɣula tigejdanin: Aselmed (asnefli n tmussniwin d yiselkanen), Hub (agraw n yikensiyen), d BI (tinezzut tuzzigt d tesledt)."
+      },
+      "quickstart": {
+        "title": "Asebgran n Tazwara Tafessast",
+        "description": "Snulfu-d amiḍan-ik, ččar amagrad-ik, sakin bdu asnirem n tɣuriwin, isenfaren, neɣ tagrummiwin n yisefka deg kra n tesdidin. Fren tamlilt-ik d Anelmad, Akensi, neɣ Tanezzut."
+      },
+      "accountSetup": {
+        "title": "Asebded n Umiḍan",
+        "description": "Lmed amek ara tesbeddeḍ amiḍan-ik, ad tsentkdeḍ imayl d usawal-ik, ad tferneḍ tamlilt-ik, sakin ad tesbeddeḍ tisurifin-ik i tmuɣli tusligt."
+      }
+    },
+    "platforms": {
+      "title": "Tasemlit n Tiɣula",
+      "subtitle": "Isebgranen ilqayanen i yal yiwet seg kraḍt n tiɣula n Podacium.",
+      "explore": "Snirem Taɣult",
+      "learn": {
+        "title": "Taɣult n Uselmed",
+        "description": "Segrew timussniwin yettwasutren s tɣuriwin tinemyagin, tibridin tusligin, d yiselkanen yettwaqeblen deg tebbura.",
+        "features": [
+          "Snirem sakin jerred deg tɣuriwin",
+          "Dfer tibridin n uselmed yettwasuddsen",
+          "Ḍfer asurif-ik d wayen i tewwḍeḍ",
+          "Awi iselkanen usentkeden"
+        ]
+      },
+      "hub": {
+        "title": "Hub n Ikensiyen",
+        "description": "Qqen d tebbura d yikensiyen deg Lezzayer merra. Af-d isenfaren, seddu imusnawen, sakin snerni amahil-ik.",
+        "features": [
+          "Snirem sakin sbedd isenfaren",
+          "Azen tisumar n umahil",
+          "Ssefrek iguta",
+          "Ixellisen iɣellisen"
+        ]
+      },
+      "bi": {
+        "title": "Tinezzut Tuzzigt (BI)",
+        "description": "Beddel isefka izeddganen ɣer tmuɣliwin yesɛan azal s tesledt n AI, tifelwiyin n usenqed, d yifecka n uneqqis.",
+        "features": [
+          "Ssidder sakin ssefrek tagrummiwin n yisefka",
+          "Snulfu tifelwiyin tinemyagin",
+          "Sseḍru ineqqisen iwurmanen",
+          "Mmetki d trebbaɛ deg tuddsiwin"
+        ]
+      }
+    },
+    "features": {
+      "title": "Timura Tigejdanin",
+      "subtitle": "Snirem timura tigejdanin i yerran Podacium d amellil yerna d afessas i useqdec.",
+      "authentication": {
+        "title": "Asentked d Tɣellist",
+        "description": "Anekcum aɣellis s waṭas n yimuddiyen d usefrek n tɣimit.",
+        "items": [
+          "Anekcum s yimayl d wawal uffir",
+          "Anekcum n tmetti (Google, GitHub, LinkedIn)",
+          "Asentked n uṭṭun n usawal",
+          "Asentked s sin yiswiren (2FA)"
+        ]
+      },
+      "billing": {
+        "title": "Afeter d Yisishel",
+        "description": "Ahilen n usishel ifessasen i yinelmaden d tebbura.",
+        "items": [
+          "Ahilen n Unelmad i wid yelmaden",
+          "Ahilen n BI i tebbura",
+          "Aseddu n uxellas aɣellis",
+          "Asefrek n yifatturen"
+        ]
+      },
+      "notifications": {
+        "title": "Anagraw n Yilɣa",
+        "description": "Qqim d uzzig s yilɣa d yisallen imir-imiryen.",
+        "items": [
+          "Ilɣa deg wakud n tidet",
+          "Ilɣa s yimayl",
+          "Ismenyifen n yilɣa",
+          "Tizmilin n wayen ur nettwaɣri ara"
+        ]
+      },
+      "profile": {
+        "title": "Asefrek n Umagrad",
+        "description": "Sgrew amagrad-ik sakin sken timussniwin-ik.",
+        "items": [
+          "Tugna n umagrad d ugzul",
+          "Tamsikent n tmussniwin",
+          "Aseken n umahil yezrin",
+          "Iɣewwaren n tbaḍnit"
+        ]
+      }
+    },
+    "guides": {
+      "title": "Isebgranen n Useqdac",
+      "subtitle": "Isebgranen asurif s wurif i wakken ad tesqedceḍ Podacium akken iwata.",
+      "learnMore": "Lmed ugar",
+      "gettingStarted": {
+        "title": "Tazwara deg Podacium",
+        "description": "Lmed tarrayin tigejdanin n unekcum ɣer uzaɣar d usebded n umiḍan-ik."
+      },
+      "account": {
+        "title": "Asefrek n Umiḍan-ik",
+        "description": "Amek ara tbeddleḍ amagrad-ik, iɣewwaren, d useddu n tɣellist."
+      },
+      "billing": {
+        "title": "Gzu Afeter",
+        "description": "Akk ayen yessefk ad t-tissineḍ ɣef yisishel, ixellisen, d uṛeṭṭal n tedrimt."
+      }
+    },
+    "faq": {
+      "title": "Isteqsiyen Yettwaskaren Ddeqs",
+      "subtitle": "Tiririyin tifessasin ɣef yisteqsiyen n tsemlit",
+      "items": [
+        {
+          "question": "Acḥal n wakud i yessefk i wakken ad bduɣ deg Podacium?",
+          "answer": "Tzemreḍ ad tesnulfuḍ amiḍan sakin ad tebduḍ asnirem deg ddaw n snat n tesdidin. Anekcum amezwaru d baṭel yerna yeččur d tiɣuriwin n tazwara, asnirem n yisenfaren, d tmuɣliwin n tsemrasin n BI. Anekcum ummid yesra kan afran n wahil iwulmen tiwuriwin-ik."
+        },
+        {
+          "question": "Anta tiwsatin n yimiḍanen i teddunt deg Podacium?",
+          "answer": "Podacium teqbel kraḍt n tiwsatin n yimiḍanen: Anelmad (i uselmed d usnefli n tmussniwin), Akensi (i umuddu n yimeẓla d tifin n yisenfaren), d Tanezzut (i usebded n yikensiyen d useqdec n yifecka n BI). Tzemreḍ ad tbeddleḍ gar temlilin neɣ ad tent-tesdukkleḍ deg yiwen n umiḍan."
+        },
+        {
+          "question": "Amek temgarrad Podacium ɣef yizaɣaren nniḍen?",
+          "answer": "Podacium temgarrad deg usedkel n uselmed, amahil n ukensi, d tnezzut tuzzigt deg yiwen n uzaɣar amellil. Mgal ifecka i yebḍan, Podacium tessuruf i tmussniwin n tɣuriwin ad snernint amagrad n ukensi, d tesledt n BI ad tɛiwen iɣtasen n tebburt — akk deg yiwet n tawennaḍt."
+        },
+        {
+          "question": "Yella uɛraḍ baṭel i timura tusligin?",
+          "answer": "Ih. Iseqdacen imaynuten sɛan aɛraḍ n 14 n wussan baṭel s unekcum ummid ɣer timura meqqren deg kraḍt n tiɣula: tiɣuriwin mebla cceḍ, asebded n yisenfaren, d tesledt n BI pro. Ur tettwasuter ara tkarḍa n lbanka, yerna tzemreḍ ad tsfexteḍ melmi tebɣiḍ deg tallit n uɛraḍ."
+        },
+        {
+          "question": "Anta tarrayin n tallalt i yellan?",
+          "answer": "Akk iseqdacen zemren ad awḍen ɣer tsemlit-nneɣ, tamkarḍit n tmusniwin, d yiswiren n tmetti. Ahilen usligen sɛan tallalt s yimayl d wamsawal srid. Imsafagen n tebbura meqqren sɛan tallalt tamezwarut s umḍebber uslig d wakud n tririt yettwaḍemnen."
+        },
+        {
+          "question": "Amek i tettḥadaw Podacium ɣef yisefka-inu d tbaḍnit?",
+          "answer": "Podacium tesseqdac taɣellist tameqqrant gar-asent astenyed deg usekles d unqal, asenqed n lebda n tɣellist, d usefrek uqsiḥ n unekcum. Nqader ilugan n GDPR d uḥader n yisefka. Tebɣiḍ ad teṭṭfeḍ bab n yisefka-ik yerna tzemreḍ ad ten-tessufɣeḍ neɣ ad ten-temḥuḍ melmi tebɣiḍ."
+        },
+        {
+          "question": "Tettmuddu-d Podacium anekcum s API i usedkel d yifecka-inu yellan?",
+          "answer": "Ih. Podacium temmud-d REST API i unekcum s tmusniwt ɣer tɣuriwin, isenfaren, tagrummiwin n yisefka, d usefrek n yiseqdacen. API-a yella deg wahilen n Tnezzut d Tebbut tameqqrant s talast d usentked s tsarut n API. Tasemlit tummidt n API s yixfawen, imedyaten, d yisuddimen n SDK tella deg teɣult n yisneflayen."
+        },
+        {
+          "question": "Zemreɣ ad unagɣ isefka-inu ma fernen ad ǧǧeɣ Podacium?",
+          "answer": "Ih. Tzemreḍ ad tessufɣeḍ akk isefka-ik melmi tebɣiḍ — gar-asen asurif n tɣuriwin, iselkanen, amazray n yisenfaren, d tifelwiyin n BI — deg talɣiwin yettwaqeblen deg tebbura. Tufɣa n yisefka tella deg useddu n uzaɣar. Amḥay n umiḍan yekkes isefka-ik udmawanen deg 30 n wussan ilmend n yisuḍaf n GDPR."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Twejdeḍ ad tebduḍ?",
+      "subtitle": "Ddu ɣer wagimen n yinelmaden, ikensiyen, d tebbura yesseqdacen Podacium tura.",
+      "primary": "Snulfu-d Amiḍan Baṭel",
+      "secondary": "Ssiweḍ ɣer Tallalt"
+    }
+  },
+  "developer": {
+    "portal": {
+      "badgePlatform": "Asalay n inefkaren",
+      "badgeLayer13": "Aswir 13 n tkebbaniyin",
+      "apiDocs": "Aglam n API",
+      "apiKeysTitle": "Tisarutin n API",
+      "apiKeysDesc": "Sented tuttriwin n uselkam s Bearer tokens d tsertiyin teqqen.",
+      "createApiKey": "Snulfu tasarut n API",
+      "badgeActive": "Irmad",
+      "badgeRotationGrace": "Tallit n usenfel termad",
+      "badgeRevoked": "Yettwakkes",
+      "copyMaskedKey": "Nɣel tasarut yeffren",
+      "graceWindow": "Tallit n uraju: d-yeqqim 6w 21s",
+      "quickstart": "Tazwara tuzribt",
+      "rotateKey": "Zzi tasarut",
+      "revokeKey": "Kkes tasarut",
+      "deliveriesTitle": "Asali n Standard Webhooks",
+      "deliveriesDesc": "Aɣmis n usali deg wakud n tidet s lqanun n Standard Webhooks.",
+      "dispatchTest": "Azen asari n ukayad",
+      "svixCompliant": "Iquder aswir n Svix V1",
+      "thStatus": "Addad",
+      "thEventType": "Anaw n usari",
+      "thDuration": "Tallit",
+      "thTimestamp": "Akud (UTC)",
+      "thAction": "Tigawt",
+      "inspectBtn": "Sseqqed",
+      "createModalTitle": "Snulfu tasarut n API s usekkir",
+      "createModalDesc": "Snekmu tasarut n usekkar s tɣellist tameqqrant.",
+      "keyNameLabel": "Isem n tsarut / Aglam",
+      "keyNamePlaceholder": "Amedya: Azeddi ERP n Wehran",
+      "scopesLabel": "Isutar d tewwura timuxalifin",
+      "cancelBtn": "Semmet",
+      "generateBtn": "Snulfu tasarut",
+      "secretModalTitle": "Nɣel tasarut-ik tuffirt n API",
+      "secretModalDesc": "Ḍmen ad tenɣleḍ tasarut-ik tura. Ur tettizriḍ ara tikkelt nniḍen!",
+      "securityWarning": "Alɣu n tɣellist",
+      "securityWarningText": "Aselkin-agi yeṭṭef tisuraf i textareḍ. Ḥrez-it deg uḥuddu iqudren. Podacium yeṭṭef kan SHA-256 hash.",
+      "copiedToClipboard": "Yettwanɣel ɣer tseddast!",
+      "clickCopyPrompt": "Ssed nɣel uqbel ad tmedleḍ",
+      "copiedBtn": "Yettwanɣel",
+      "copyKeyBtn": "Nɣel tasarut",
+      "doneBtn": "Yekfa",
+      "inspectorTitle": "Aseqqad n usali",
+      "httpStatusLabel": "Addad HTTP",
+      "latencyLabel": "Akud n uraju",
+      "deliveredAtLabel": "Yessawed deg",
+      "headersTitle": "Iqeṛṛay n Standard Webhooks",
+      "payloadTitle": "Afaris JSON yettwaznen",
+      "upstreamResponseTitle": "Tiririt n usekkir",
+      "resendSuccess": "Tulsa n tuzna terbeḥ (200 OK)",
+      "resending": "Tulsa n tuzna...",
+      "resendPayload": "Ales tuzna n ufaris",
+      "quickstartTitle": "Tazwara tuzribt n SDK: {name}",
+      "quickstartDesc": "Nɣel tanafa n tengalt i d-yewjden i usekkar-ik.",
+      "closeBtn": "Mdel",
+      "dispatchModalTitle": "Azen asari n ukayad n Webhook",
+      "dispatchModalDesc": "Azen asari uzrib s uzmul n tɣellist n Webhooks.",
+      "eventTypeLabel": "Anaw n usari",
+      "destinationUrlLabel": "Tansa URL n Webhook",
+      "dispatchedSuccess": "Standard Webhook yettwazen (200 OK)",
+      "dispatchMockBtn": "Azen asari amedya"
+    },
+    "workflows": {
+      "builder": {
+        "cycleAlert": "Ur tezmireḍ ara ad tselkmeḍ asenfar s tuzzya. Fren tuzzya uqbel.",
+        "invalidJsonAlert": "Talɣa n ufaylu JSON n DAG ur teṣliḥ ara.",
+        "orchestratorTitle": "Amsuddes n ifarisen n DAG s wudem awurman",
+        "orchestratorDesc": "Bnu ibriden s isurifen n Extism WebAssembly d Standard Webhooks.",
+        "exportJsonTitle": "Sifeḍ DAG ɣer JSON",
+        "exportJsonBtn": "Sifeḍ JSON",
+        "importJsonTitle": "Kter DAG seg JSON",
+        "importJsonBtn": "Kter JSON",
+        "dryRunBtn": "Akayad n ubrid mebla aselkem",
+        "deployBtn": "Sers asenfar n uxeddim"
+      },
+      "canvas": {
+        "connectInputTitle": "Qqen anekcum",
+        "dragConnectTitle": "Zuɣer i wakken ad teqqneḍ asurif d-iteddun",
+        "addTrigger": "+ Anekcum",
+        "addAction": "+ Tigawt",
+        "addWasm": "+ Asurif Wasm",
+        "addLogic": "+ Tameẓla",
+        "cycleDetected": "Tuzzya tettwazra! Tuzzya ur nfuk tettwaḥbes",
+        "dagVerified": "DAG yettwasenqed: Acyclique (O(V+E))",
+        "zoomInTitle": "Semɣer",
+        "zoomOutTitle": "Semẓi",
+        "resetViewTitle": "Ales tamuɣli"
+      },
+      "logs": {
+        "outputTitle": "Uffiɣ n uselkem d iɣmisen n wakud n tidet",
+        "clearBtn": "Sfeḍ",
+        "executing": "Aselkem...",
+        "testWorkflow": "Akayad n usenfar",
+        "noLogs": "Ulac iɣmisen n uselkem tura. Ssed \"Akayad n usenfar\" i wakken ad tɛerḍeḍ abrid n DAG."
+      },
+      "drawer": {
+        "configureStep": "Swel asurif",
+        "closeDrawerAria": "Mdel afur",
+        "stepName": "Isem n usurif",
+        "stepNamePlaceholder": "Amedya: Azen Webhook n ukaṛṭi",
+        "triggerEvent": "Asari n unekcum",
+        "contractCreated": "Akaṛṭi yettwaxdem",
+        "paymentReceived": "Afaris yettwaqbel (Chargily / EDAHABIA)",
+        "courseCompleted": "Tamsirt tekfa",
+        "actionType": "Anaw n tigawt",
+        "standardWebhookOption": "Asenfal Webhook amagnu (HTTP POST)",
+        "wasmTransformOption": "Asenfel n Wasm s Extism",
+        "whatsappAlertOption": "Azen alɣu n WhatsApp (Concierge)",
+        "anaeInvoiceOption": "Snulfu tafakturt n ANAE (Asaduf 22-23)",
+        "supportTicketOption": "Snulfu tikit n tallelt",
+        "destinationUrl": "Tansa URL n unekcum",
+        "standardWebhooksActive": "Standard Webhooks Irmad",
+        "stampsDesc": "Isemres webhook-id, webhook-timestamp d uzmulen n HMAC-SHA256 (webhook-signature: v1,<sig>).",
+        "wasmFunction": "Tawuri n usenfel n Extism Wasm",
+        "ceilingDesc": "Afella: 50ms / 16MAT",
+        "sandboxedDesc": "Itteddu deg WebAssembly mebla tisuraf n uẓeṭṭa neɣ ifuyla.",
+        "logicCondition": "Tawtilt n tmeẓla",
+        "logicConditionPlaceholder": "Amedya: data.status == 'COMPLETED'",
+        "delaySeconds": "Asgunfu (tasdatin)",
+        "deleteNode": "Kkes tiqqit",
+        "doneBtn": "Yekfa"
+      }
+    }
+  }
+}

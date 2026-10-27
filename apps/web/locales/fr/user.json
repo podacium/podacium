@@ -1,0 +1,2653 @@
+{
+  "dashboard": {
+    "loading": "Chargement de votre tableau de bord...",
+    "tabs": {
+      "overview": "Aperçu",
+      "learning": "Apprentissage",
+      "freelancing": "Freelance",
+      "business": "Décisionnel BI",
+      "financial": "Revenus",
+      "teaching": "Enseignement",
+      "profile": "Analytique du profil"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "dashboard": "Tableau de bord"
+    },
+    "time": {
+      "justNow": "À l'instant",
+      "minutes": "min",
+      "hours": "h",
+      "days": "j"
+    },
+    "general": {
+      "user": "Utilisateur",
+      "beginner": "Débutant",
+      "dashboard": "Tableau de bord",
+      "notSpecified": "Non spécifié"
+    },
+    "welcome": {
+      "title": "Bon retour, {name} !",
+      "subtitle": "Voici ce qui se passe dans votre écosystème Podacium aujourd'hui.",
+      "FREELANCER": "Bon retour, {name} ! Prêt à trouver votre prochain projet ?",
+      "BUSINESS": "Bon retour, {name} ! Votre tableau de bord d'entreprise vous attend.",
+      "ADMIN": "Bonjour, {name} ! Aperçu de la plateforme en un coup d'œil."
+    },
+    "profileCompletion": {
+      "title": "Complétez Votre Profil",
+      "description": "Mettez à jour les informations de votre profil et sélectionnez votre rôle pour obtenir des recommandations personnalisées et débloquer toutes les fonctionnalités.",
+      "cta": "Aller au Profil"
+    },
+    "recommendations": {
+      "common": {
+        "learnMore": "En savoir plus"
+      },
+      "labels": {
+        "skill_gap": "Écart de compétences",
+        "skill_match": "Compétences clés",
+        "collab_filter": "Choix des pairs",
+        "popularity": "Populaire",
+        "trending": "Tendance",
+        "cross_pillar": "Inter-domaine",
+        "geo_loc": "Local",
+        "social": "Social",
+        "price_match": "Meilleur prix",
+        "default": "Recommandé"
+      },
+      "reasons": {
+        "popularity": "Le plus populaire auprès des apprenants Podacium",
+        "collab_filter": "Populaire parmi les apprenants ayant des objectifs similaires",
+        "skill_gap": "Comble vos lacunes et renforce vos compétences",
+        "skill_match": "Excellente correspondance avec votre profil et vos intérêts",
+        "trending": "Tendance actuelle dans votre domaine",
+        "cross_pillar": "Appliquez vos connaissances à des projets réels",
+        "geo_loc": "Tendance dans votre région",
+        "social": "Recommandé par des personnes que vous suivez",
+        "price_match": "Adapté à votre budget",
+        "default": "Recommandé pour vous selon votre parcours"
+      },
+      "c_py_basics": {
+        "title": "Bases de Python",
+        "description": "Introduction à la programmation Python",
+        "reason": "Compétence essentielle pour la donnée",
+        "action": "Commencer l'apprentissage"
+      },
+      "c_py_adv": {
+        "title": "Python Avancé",
+        "description": "Maîtrisez les décorateurs et générateurs",
+        "reason": "Améliorez votre code",
+        "action": "Voir le cours"
+      },
+      "c_ds_pandas": {
+        "title": "Maîtrise de Pandas",
+        "description": "Manipulation de données haute performance",
+        "reason": "Crucial pour l'analyse",
+        "action": "S'inscrire maintenant"
+      },
+      "c_alg_sme": {
+        "title": "Données pour les PME Algériennes",
+        "description": "Analytique pour entreprises locales",
+        "reason": "Demande du marché local",
+        "action": "Commencer maintenant"
+      },
+      "c_viz_tab": {
+        "title": "Fondamentaux de Tableau",
+        "description": "Visualisez vos insights",
+        "reason": "Compétence très demandée",
+        "action": "Apprendre Tableau"
+      },
+      "c_viz_pbi": {
+        "title": "Power BI pour le Business",
+        "description": "Créez des tableaux de bord business",
+        "reason": "Standard en entreprise",
+        "action": "Ouvrir Power BI"
+      },
+      "c_ml_intro": {
+        "title": "Intro au ML",
+        "description": "Bases de Scikit-Learn",
+        "reason": "Carrière d'avenir",
+        "action": "Se lancer"
+      },
+      "c_sql_boot": {
+        "title": "Bootcamp SQL",
+        "description": "Maîtrise des requêtes de base de données",
+        "reason": "Fondation de la donnée",
+        "action": "Rejoindre le Bootcamp"
+      },
+      "c_api_dev": {
+        "title": "Développement FastAPI",
+        "description": "Construisez des API haute performance",
+        "reason": "Stack backend moderne",
+        "action": "Créer des API"
+      },
+      "c_free_101": {
+        "title": "Freelance 101",
+        "description": "Commencez votre parcours",
+        "reason": "Monétisez vos compétences",
+        "action": "Démarrer"
+      },
+      "c_client_nego": {
+        "title": "Négociation Client",
+        "description": "Soyez payé à votre juste valeur",
+        "reason": "Boost de soft skills",
+        "action": "Maîtriser la négo"
+      },
+      "c_brand_pers": {
+        "title": "Branding Personnel",
+        "description": "Démarquez-vous sur le marché",
+        "reason": "Attirez des clients",
+        "action": "Créer sa marque"
+      },
+      "c_time_mgmt": {
+        "title": "Gestion du Temps",
+        "description": "Maximisez votre productivité",
+        "reason": "Essentiel pour le télétravail",
+        "action": "Être productif"
+      },
+      "c_rem_work": {
+        "title": "Bonnes Pratiques du Télétravail",
+        "description": "Restez en bonne santé et productif",
+        "reason": "Travaillez de n'importe où",
+        "action": "Conseils télétravail"
+      },
+      "c_excel_pro": {
+        "title": "Excel pour Professionnels",
+        "description": "Formules avancées et VBA",
+        "reason": "Essentiel au bureau",
+        "action": "Excel Pro"
+      },
+      "c_st_story": {
+        "title": "Storytelling de Données",
+        "description": "Communiquez avec les données",
+        "reason": "Compétence de leadership",
+        "action": "Raconter des histoires"
+      },
+      "c_cloud_fund": {
+        "title": "Fondamentaux du Cloud",
+        "description": "Bases AWS/Azure/GCP",
+        "reason": "Compétence infrastructure",
+        "action": "Intro Cloud"
+      },
+      "c_docker_dev": {
+        "title": "Docker pour Développeurs",
+        "description": "Bases de la conteneurisation",
+        "reason": "Essentiel DevOps",
+        "action": "Déployer"
+      },
+      "c_nlp_intro": {
+        "title": "Intro au NLP",
+        "description": "Traitement du Langage Naturel",
+        "reason": "IA de pointe",
+        "action": "Traiter du texte"
+      },
+      "c_big_data": {
+        "title": "Big Data avec Spark",
+        "description": "Passez à l'échelle",
+        "reason": "Ingénierie grande échelle",
+        "action": "Voir grand"
+      },
+      "p_sales_dash": {
+        "title": "Revue de Tableau de Bord Ventes",
+        "description": "Visualiser les données retail",
+        "reason": "Bon projet d'entrée",
+        "action": "Lancer le projet"
+      },
+      "p_ecom_opt": {
+        "title": "Optimisation E-com",
+        "description": "Améliorer la conversion du tunnel",
+        "reason": "Impact haute valeur",
+        "action": "Optimiser"
+      },
+      "p_inv_sys": {
+        "title": "Système d'Inventaire",
+        "description": "Automatiser le suivi des stocks",
+        "reason": "Automatisation Python",
+        "action": "Créer le script"
+      },
+      "p_real_est": {
+        "title": "Analyse Immobilière",
+        "description": "Analyser les tendances du logement",
+        "reason": "Compétence analyse de marché",
+        "action": "Analyser"
+      },
+      "p_cust_seg": {
+        "title": "Segmentation Client",
+        "description": "Clustering via ML",
+        "reason": "Projet ML avancé",
+        "action": "Segmenter"
+      },
+      "p_web_port": {
+        "title": "Site Portfolio",
+        "description": "Construisez votre vitrine",
+        "reason": "Montrez votre travail",
+        "action": "Créer maintenant"
+      },
+      "p_api_integ": {
+        "title": "Intégration API Paiement",
+        "description": "Intégrer les paiements locaux",
+        "reason": "Défi technique",
+        "action": "Intégrer"
+      },
+      "p_bug_fix": {
+        "title": "Marathon de Correctifs",
+        "description": "Corriger des bugs open source",
+        "reason": "Contribution communauté",
+        "action": "Corriger"
+      },
+      "p_data_clean": {
+        "title": "Mission Nettoyage de Données",
+        "description": "Nettoyer des fichiers Excel",
+        "reason": "Tâche à rotation rapide",
+        "action": "Nettoyer"
+      },
+      "p_trans_doc": {
+        "title": "Traduction Doc Tech",
+        "description": "Traduire des docs EN->AR",
+        "reason": "Exploiter le bilinguisme",
+        "action": "Traduire"
+      },
+      "p_chatbot_dev": {
+        "title": "Développement Chatbot",
+        "description": "Créer un assistant IA",
+        "reason": "Implémentation IA",
+        "action": "Créer le bot"
+      },
+      "p_seo_audit": {
+        "title": "Projet Audit SEO",
+        "description": "Optimiser pour la recherche",
+        "reason": "Marketing digital",
+        "action": "Auditer"
+      },
+      "p_app_test": {
+        "title": "Projet de Tests App",
+        "description": "QA pour applications mobiles",
+        "reason": "Expérience QA",
+        "action": "Tester"
+      },
+      "p_market_res": {
+        "title": "Étude de Marché",
+        "description": "Analyser les concurrents",
+        "reason": "Insight stratégique",
+        "action": "Rechercher"
+      },
+      "p_viz_dz": {
+        "title": "Viz Données Algérie",
+        "description": "Projet viz de données locales",
+        "reason": "Spécialisation locale",
+        "action": "Visualiser"
+      },
+      "d_alg_hous": {
+        "title": "Données Logement Alger",
+        "description": "Prix et localisations",
+        "reason": "Tendance locale",
+        "action": "Obtenir les données"
+      },
+      "d_dz_wthr": {
+        "title": "Météo Algérie 10 ans",
+        "description": "Données météo historiques",
+        "reason": "Analyse climatique",
+        "action": "Explorer"
+      },
+      "d_stock_mrk": {
+        "title": "Bourse Mondiale",
+        "description": "Cours de clôture quotidiens",
+        "reason": "Modélisation financière",
+        "action": "Analyser"
+      },
+      "d_soc_media": {
+        "title": "Sentiments Médias Sociaux",
+        "description": "Jeu de données 1M tweets",
+        "reason": "Pratique du NLP",
+        "action": "Entraîner le modèle"
+      },
+      "d_retail_sales": {
+        "title": "Historique Ventes Retail",
+        "description": "3 ans de transactions",
+        "reason": "Pratique prévisions",
+        "action": "Prévoir"
+      },
+      "d_traffic": {
+        "title": "Flux Trafic Urbain",
+        "description": "Motifs mouvement urbain",
+        "reason": "Urbanisme",
+        "action": "Cartographier"
+      },
+      "d_energy": {
+        "title": "Consommation Énergie",
+        "description": "Stats usage domestique",
+        "reason": "Analyse durabilité",
+        "action": "Analyser"
+      },
+      "d_job_mkt": {
+        "title": "Marché Emploi Tech",
+        "description": "Salaires et compétences 2026",
+        "reason": "Aperçu carrière",
+        "action": "Parcourir"
+      },
+      "d_movie_rev": {
+        "title": "Critiques de Films",
+        "description": "Données sentiment analysis",
+        "reason": "NLP débutant",
+        "action": "Obtenir critiques"
+      },
+      "d_crime_stats": {
+        "title": "Statistiques Criminalité",
+        "description": "Analyse tendances sécurité",
+        "reason": "Projet sécurité publique",
+        "action": "Auditer"
+      },
+      "m_cv_review": {
+        "title": "Revue de CV",
+        "description": "Obtenez un avis d'expert",
+        "reason": "Boostez votre employabilité",
+        "action": "Soumettre CV"
+      },
+      "m_intern_dz": {
+        "title": "Stages Locaux",
+        "description": "Trouvez des stages en DZ",
+        "reason": "Début de carrière",
+        "action": "Postuler"
+      },
+      "m_webinar_dat": {
+        "title": "Webinaire Données",
+        "description": "Tendances en 2026",
+        "reason": "Restez à jour",
+        "action": "S'inscrire"
+      },
+      "m_dz_startup": {
+        "title": "Hub Startup DZ",
+        "description": "Rejoignez l'écosystème",
+        "reason": "Networking",
+        "action": "Rejoindre le Hub"
+      },
+      "m_pro_net": {
+        "title": "Networking Pro",
+        "description": "Connectez avec des experts",
+        "reason": "Élargissez vos horizons",
+        "action": "Se connecter"
+      }
+    },
+    "stats": {
+      "activeCourses": {
+        "title": "Cours Actifs",
+        "description": "{completed} terminés",
+        "completed": "terminés"
+      },
+      "activeProjects": {
+        "title": "Projets Actifs",
+        "description": "{completed} terminés",
+        "completed": "terminés"
+      },
+      "totalEarnings": {
+        "title": "Gains Totaux",
+        "description": "Revenus totaux",
+        "available": "disponible"
+      },
+      "skillLevel": {
+        "title": "Niveau de Compétence",
+        "description": "Basé sur votre activité",
+        "skillsTracked": "compétences suivies"
+      },
+      "platformUsers": "Utilisateurs de la plateforme",
+      "revenue": "Revenus",
+      "transactions": "Transactions",
+      "hires": "Embauches",
+      "projects": "Projets Actifs"
+    },
+    "pillars": {
+      "overview": {
+        "title": "Vue d'ensemble"
+      },
+      "education": {
+        "title": "Éducation",
+        "description": "Apprentissage & Développement",
+        "stats": {
+          "courses": "cours",
+          "progress": "progrès",
+          "certificates": "certificats"
+        }
+      },
+      "freelancing": {
+        "title": "Freelance",
+        "description": "Projets & Gains",
+        "stats": {
+          "active": "actifs",
+          "completed": "terminés",
+          "earnings": "gains"
+        }
+      },
+      "business": {
+        "title": "Intelligence d'Affaires",
+        "description": "Données & Analytique",
+        "stats": {
+          "datasets": "jeux de données",
+          "reports": "rapports",
+          "insights": "aperçus"
+        }
+      }
+    },
+    "sections": {
+      "aiInsights": {
+        "title": "Insights IA & Recommandations",
+        "regenerate": "Régénérer les Insights"
+      },
+      "learningProgress": {
+        "title": "Progrès d'Apprentissage",
+        "viewAll": "Voir Tous les Cours",
+        "modules": "{completed}/{total} modules terminés",
+        "next": "Suivant : {lesson}"
+      },
+      "activeProjects": {
+        "title": "Projets Actifs",
+        "findNew": "Trouver de Nouveaux Projets",
+        "active": "actifs",
+        "client": "Client :",
+        "progress": "Progrès :",
+        "amount": "Montant :",
+        "deadline": "Échéance :"
+      },
+      "recentDatasets": {
+        "title": "Jeux de Données Récents",
+        "upload": "Téléverser un Jeu de Données",
+        "datasetsCount": "jeux de données"
+      },
+      "wallet": {
+        "title": "Portefeuille",
+        "available": "disponible",
+        "viewAll": "Voir tout"
+      },
+      "quickLinks": {
+        "title": "Liens Rapides",
+        "dashboard": "Tableau de bord",
+        "profile": "Profil",
+        "billing": "Facturation et abonnements",
+        "accountSettings": "Paramètres du compte"
+      },
+      "recentActivities": {
+        "title": "Activités Récentes"
+      },
+      "skillsOverview": {
+        "title": "Aperçu des Compétences"
+      },
+      "certificates": {
+        "title": "Certificats",
+        "earned": "{count} certificats obtenus"
+      }
+    },
+    "quickActions": {
+      "title": "Actions Rapides",
+      "startCourse": {
+        "title": "Commencer un Nouveau Cours",
+        "description": "Parcourir et s'inscrire à de nouveaux cours"
+      },
+      "findProjects": {
+        "title": "Trouver des Projets",
+        "description": "Découvrir des opportunités de freelance"
+      },
+      "uploadDataset": {
+        "title": "Téléverser un Jeu de Données",
+        "description": "Ajouter de nouvelles données pour analyse"
+      },
+      "createReport": {
+        "title": "Créer un Rapport",
+        "description": "Générer des insights business"
+      },
+      "postJob": {
+        "title": "Publier une Offre",
+        "description": "Créez une nouvelle offre d'emploi"
+      },
+      "viewAnalytics": {
+        "title": "Voir les Analyses",
+        "description": "Consultez les analyses de la plateforme"
+      },
+      "manageUsers": {
+        "title": "Gérer les Utilisateurs",
+        "description": "Administrez les comptes utilisateurs"
+      },
+      "reviewReports": {
+        "title": "Examiner les Rapports",
+        "description": "Examinez les signalements de contenu"
+      }
+    },
+    "emptyStates": {
+      "aiInsights": {
+        "title": "Aucun Insight IA Pour le Moment",
+        "description": "Complétez plus d'activités pour obtenir des recommandations IA personnalisées"
+      },
+      "courses": {
+        "title": "Aucun Cours Actif",
+        "description": "Commencez votre parcours d'apprentissage en vous inscrivant à des cours"
+      },
+      "projects": {
+        "title": "Aucun Projet Actif",
+        "description": "Commencez à gagner en prenant des projets freelance"
+      },
+      "datasets": {
+        "title": "Aucun Jeu de Données",
+        "description": "Téléversez des jeux de données pour commencer à analyser vos données"
+      },
+      "activities": {
+        "title": "Aucune Activité Récente",
+        "description": "Vos activités apparaîtront ici"
+      },
+      "skills": {
+        "title": "Aucune Compétence Suivie",
+        "description": "Complétez des cours pour construire votre profil de compétences"
+      },
+      "transactions": {
+        "description": "Aucune transaction récente"
+      },
+      "proposals": {
+        "title": "Aucune Proposition",
+        "description": "Soumettez des propositions aux projets pour commencer"
+      },
+      "listings": {
+        "title": "Aucune Offre d'Emploi",
+        "description": "Publiez votre première offre pour trouver des talents"
+      }
+    },
+    "buttons": {
+      "exploreCourses": "Explorer les Cours",
+      "browseCourses": "Parcourir les Cours",
+      "findProjects": "Trouver des Projets",
+      "uploadDataset": "Téléverser un Jeu de Données",
+      "refresh": "Actualiser"
+    },
+    "freelancerSections": {
+      "proposals": {
+        "title": "Propositions Récentes",
+        "pending": "{count} propositions en attente",
+        "submitted": "Soumise le {date}"
+      },
+      "contracts": {
+        "title": "Contrats Actifs",
+        "client": "Client : {name}",
+        "deadline": "Échéance : {date}"
+      },
+      "earnings": {
+        "title": "Aperçu des Gains",
+        "thisMonth": "Ce Mois",
+        "pending": "Paiements en Attente",
+        "average": "Moy. Par Projet"
+      }
+    },
+    "businessSections": {
+      "listings": {
+        "title": "Offres d'Emploi",
+        "active": "{count} offres actives",
+        "applicants": "{count} candidats"
+      },
+      "applicants": {
+        "title": "Aperçu des Candidats",
+        "viewAll": "Voir Toutes les Offres"
+      },
+      "team": {
+        "title": "Membres de l'Équipe",
+        "members": "{count} membres",
+        "invite": "Inviter des Membres"
+      }
+    },
+    "adminSections": {
+      "platform": {
+        "title": "Métriques de la Plateforme"
+      },
+      "users": {
+        "title": "Utilisateurs Récents"
+      },
+      "revenue": {
+        "title": "Aperçu des Revenus"
+      },
+      "alerts": {
+        "title": "Alertes Système"
+      },
+      "health": {
+        "uptime": "Temps de fonctionnement"
+      }
+    },
+    "alerts": {
+      "acknowledged": "Reconnue",
+      "new": "Nouvelle"
+    },
+    "common": {
+      "total": "Total",
+      "joined": "Inscrit"
+    },
+    "datasetInfo": {
+      "size": "Taille :",
+      "records": "Enregistrements :",
+      "lastAccess": "Dernier Accès :",
+      "status": "Statut :"
+    },
+    "errors": {
+      "loading": {
+        "title": "Erreur de Chargement du Tableau de Bord",
+        "retry": "Réessayer",
+        "description": "Nous avons rencontré un problème lors du chargement des données de votre tableau de bord. Veuillez réessayer."
+      }
+    },
+    "profile": {
+      "breadcrumb": "Performance du Profil",
+      "title": "Performance du Profil",
+      "description": "Suivez les vues de votre profil, vos abonnés et vos mesures d'engagement",
+      "refresh": "Actualiser",
+      "loading": "Chargement du tableau de bord du profil...",
+      "error": {
+        "title": "Quelque chose s'est mal passé",
+        "retry": "Réessayer"
+      },
+      "stats": {
+        "totalViews": "Vues Totales",
+        "totalFollows": "Abonnements Totaux",
+        "totalShares": "Partages Totaux",
+        "totalSearches": "Recherches Totales"
+      },
+      "viewTrends": {
+        "title": "Tendances des Vues du Profil",
+        "description": "Vues quotidiennes du profil dans le temps",
+        "empty": {
+          "title": "Aucune Donnée de Vue",
+          "description": "Les tendances des vues du profil apparaîtront une fois que vous commencerez à recevoir des visites"
+        }
+      },
+      "followerGrowth": {
+        "title": "Croissance des Abonnés",
+        "description": "Évolution mensuelle des abonnés",
+        "empty": {
+          "title": "Aucune Donnée d'Abonnés",
+          "description": "Les mesures de croissance des abonnés apparaîtront une fois que vous commencerez à gagner des abonnés"
+        }
+      },
+      "engagement": {
+        "title": "Aperçu de l'Engagement",
+        "description": "Mesures d'engagement clés en un coup d'œil",
+        "new": "nouveau"
+      }
+    },
+    "business": {
+      "title": "Intelligence d'Affaires",
+      "description": "Analyses, tableaux de bord et insights pour votre entreprise",
+      "refresh": "Actualiser",
+      "newDashboard": "Nouveau Tableau de Bord",
+      "breadcrumb": "Intelligence d'Affaires",
+      "loading": "Chargement...",
+      "loadError": "Échec du Chargement des Données",
+      "retry": "Réessayer",
+      "widgets": "{count} widgets configurés",
+      "rows": "{count} lignes",
+      "accuracy": "{accuracy}% précision",
+      "stats": {
+        "totalDatasets": "Total Jeux de Données",
+        "totalModels": "Total Modèles ML",
+        "totalDashboards": "Total Tableaux de Bord",
+        "totalQueries": "Total Requêtes"
+      },
+      "dashboards": {
+        "title": "Tableaux de Bord Récents",
+        "description": "Vos tableaux de bord les plus récemment mis à jour",
+        "viewAll": "Voir Tout",
+        "empty": "Aucun tableau de bord pour le moment",
+        "createFirst": "Créez votre premier tableau de bord"
+      },
+      "datasets": {
+        "title": "Aperçu des Jeux de Données",
+        "description": "Vos sources de données et leur statut",
+        "viewAll": "Voir Tout",
+        "empty": "Aucun jeu de données téléversé pour le moment"
+      },
+      "models": {
+        "title": "Modèles ML",
+        "description": "Modèles de machine learning entraînés",
+        "viewAll": "Voir Tout",
+        "empty": "Aucun modèle ML entraîné pour le moment"
+      },
+      "insights": {
+        "title": "Insights Rapides",
+        "totalQueries": "Total Requêtes",
+        "datasetsLoaded": "Jeux de Données Chargés",
+        "modelsActive": "Modèles Actifs"
+      },
+      "reports": {
+        "title": "Voir les Rapports",
+        "description": "Consulter tous les rapports d'entreprise"
+      },
+      "breadcrumbDashboard": "Tableau de Bord",
+      "breadcrumbHome": "Accueil"
+    },
+    "financial": {
+      "breadcrumb": "Aperçu Financier",
+      "title": "Aperçu Financier",
+      "description": "Suivez vos revenus, paiements et gains sur tous les piliers",
+      "refresh": "Actualiser",
+      "loading": "Chargement du tableau de bord financier...",
+      "error": {
+        "title": "Quelque chose s'est mal passé",
+        "retry": "Réessayer"
+      },
+      "stats": {
+        "totalRevenue": "Revenu Total",
+        "pendingPayouts": "Paiements en Attente",
+        "availableBalance": "Solde Disponible",
+        "revenueByPillar": "Revenu par Pilier",
+        "pillars": "{count} piliers"
+      },
+      "revenueBreakdown": {
+        "title": "Répartition des Revenus par Pilier",
+        "description": "Distribution des gains sur vos activités",
+        "ofTotal": "% du total"
+      },
+      "revenueSummary": {
+        "title": "Résumé des Revenus",
+        "description": "Aperçu financier rapide",
+        "totalRevenue": "Revenu Total",
+        "pendingPayouts": "Paiements en Attente",
+        "availableBalance": "Solde Disponible"
+      },
+      "revenueOverTime": {
+        "title": "Revenus dans le Temps",
+        "description": "Répartition mensuelle des revenus",
+        "empty": {
+          "title": "Aucune Donnée de Revenu",
+          "description": "La répartition mensuelle des revenus apparaîtra une fois que vous commencerez à gagner"
+        }
+      },
+      "payoutHistory": {
+        "title": "Historique des Paiements",
+        "description": "Paiements récents et à venir",
+        "empty": {
+          "title": "Aucun Historique de Paiement",
+          "description": "Votre historique de paiement apparaîtra ici dès réception de votre premier paiement"
+        }
+      },
+      "pillars": {
+        "teaching": "Enseignement",
+        "freelancing": "Freelance",
+        "business": "Entreprise",
+        "other": "Autre"
+      }
+    },
+    "freelancing": {
+      "breadcrumb": "Freelance",
+      "title": "Tableau de Bord Freelance",
+      "description": "Gérez vos projets freelance, propositions et gains",
+      "refresh": "Actualiser",
+      "loading": "Chargement du tableau de bord freelance...",
+      "error": {
+        "title": "Quelque chose s'est mal passé",
+        "retry": "Réessayer"
+      },
+      "stats": {
+        "activeProjects": "Projets Actifs",
+        "completedProjects": "Projets Terminés",
+        "totalEarnings": "Gains Totaux",
+        "pendingProposals": "Propositions en Attente",
+        "avgRating": "Note Moyenne",
+        "responseRate": "Taux de Réponse"
+      },
+      "earningsOverview": {
+        "title": "Aperçu des Gains",
+        "description": "Répartition mensuelle des gains",
+        "totalEarned": "Total Gagné",
+        "total": "Total",
+        "pending": "En attente",
+        "withdrawn": "Retiré",
+        "empty": "Aucune donnée de gains pour le moment"
+      },
+      "projectStatus": {
+        "title": "Statut des Projets",
+        "description": "Répartition",
+        "open": "Ouvert",
+        "inProgress": "En Cours",
+        "completed": "Terminé",
+        "cancelled": "Annulé"
+      },
+      "recentProposals": {
+        "title": "Propositions Récentes",
+        "description": "Vos dernières propositions de projets",
+        "empty": "Aucune proposition pour le moment",
+        "emptyHint": "Commencez à parcourir les projets pour soumettre des propositions",
+        "browseProjects": "Parcourir les Projets"
+      }
+    },
+    "learning": {
+      "breadcrumb": "Apprentissage",
+      "title": "Tableau de Bord d'Apprentissage",
+      "description": "Suivez votre progression, vos scores de quiz et vos jalons d'apprentissage",
+      "refresh": "Actualiser",
+      "error": {
+        "title": "Échec du chargement des données d'apprentissage",
+        "retry": "Réessayer"
+      },
+      "stats": {
+        "coursesInProgress": "Cours en Cours",
+        "completedCourses": "Cours Terminés",
+        "totalHours": "Heures Totales",
+        "avgQuizScore": "Score Moyen aux Quiz",
+        "certificates": "Certificats"
+      },
+      "courseProgress": {
+        "title": "Progression des Cours",
+        "courses": "{count} cours",
+        "empty": "Aucun cours pour le moment",
+        "browseCourses": "Parcourir les cours",
+        "lastActivity": "Dernière activité : {date}"
+      },
+      "quizPerformance": {
+        "title": "Performance aux Quiz",
+        "empty": "Aucune donnée de quiz pour le moment",
+        "emptyHint": "Terminez un quiz pour voir vos scores"
+      },
+      "quickActions": {
+        "title": "Actions Rapides",
+        "browseCourses": "Parcourir les Cours",
+        "mainDashboard": "Tableau de Bord Principal"
+      }
+    },
+    "teaching": {
+      "breadcrumb": "Enseignement",
+      "title": "Tableau de Bord d'Enseignement",
+      "description": "Gérez vos cours, étudiants et gains",
+      "error": {
+        "title": "Échec du Chargement du Tableau de Bord d'Enseignement",
+        "retry": "Réessayer"
+      },
+      "stats": {
+        "totalCourses": "Total Cours",
+        "totalStudents": "Total Étudiants",
+        "totalRevenue": "Revenu Total",
+        "avgRating": "Note Moyenne",
+        "totalReviews": "Total Avis",
+        "spendableBalance": "Solde disponible"
+      },
+      "royalties": {
+        "monthlyTitle": "Redevances mensuelles du créateur",
+        "noMonthlyData": "Aucun historique de revenus mensuels",
+        "noMonthlyDataDesc": "Les redevances apparaîtront ici lorsque les étudiants achèteront vos cours.",
+        "byCourseTitle": "Distribution des revenus par cours",
+        "noCourseData": "Aucun revenu de cours pour le moment",
+        "noCourseDataDesc": "La répartition de vos cours les plus performants s'affichera ici."
+      },
+      "recentReviews": {
+        "title": "Avis Récents",
+        "empty": "Aucun Avis pour le Moment",
+        "emptyDescription": "Les avis de vos étudiants apparaîtront ici"
+      },
+      "studentEngagement": {
+        "title": "Engagement des Étudiants",
+        "completionRate": "Taux d'Achèvement",
+        "activeStudents": "Étudiants Actifs",
+        "avgTimeSpent": "Temps Moyen Passé",
+        "empty": "Aucune Donnée d'Engagement",
+        "emptyDescription": "Les mesures d'engagement des étudiants apparaîtront une fois que vous aurez des étudiants actifs"
+      }
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Gérez vos paramètres et préférences de compte",
+    "groups": {
+      "accountSecurity": "Compte et Sécurité",
+      "preferences": "Préférences et Apparence",
+      "billingUsage": "Facturation et Utilisation",
+      "system": "Système et Avancé"
+    },
+    "tabs": {
+      "account": "Compte personnel",
+      "notifications": "Canaux de notification",
+      "security": "Sécurité et mot de passe",
+      "privacy": "Confidentialité et visibilité",
+      "appearance": "Apparence et langue",
+      "billing": "Abonnement et cartes",
+      "integrations": "Applications et intégrations",
+      "usage": "Limites d utilisation",
+      "data": "Données et RGPD",
+      "advanced": "Paramètres avancés",
+      "devices": "Appareils et sessions",
+      "danger": "Zone dangereuse"
+    },
+    "buttons": {
+      "saveChanges": "Enregistrer les Modifications",
+      "savePreferences": "Enregistrer les Préférences",
+      "updateSecurity": "Mettre à Jour la Sécurité",
+      "savePrivacy": "Enregistrer la Confidentialité",
+      "saveAppearance": "Enregistrer l'Apparence",
+      "edit": "Modifier",
+      "exportData": "Exporter les Données"
+    },
+    "success": {
+      "accountUpdated": "Paramètres du compte mis à jour avec succès !",
+      "securityUpdated": "Paramètres de sécurité mis à jour avec succès !",
+      "notificationsUpdated": "Préférences de notification mises à jour avec succès !",
+      "appearanceUpdated": "Paramètres d'apparence mis à jour avec succès !",
+      "privacyUpdated": "Paramètres de confidentialité mis à jour avec succès !",
+      "passwordChanged": "Mot de passe changé avec succès !",
+      "accountDeletionScheduled": "Suppression du compte planifiée avec succès. Vous serez déconnecté sous peu.",
+      "verificationEmailSent": "E-mail de vérification envoyé ! Veuillez vérifier votre boîte de réception.",
+      "verificationCodeSent": "Code de vérification envoyé sur votre téléphone !",
+      "integrationConnected": "{integration} connecté avec succès !",
+      "integrationDisconnected": "{integration} déconnecté avec succès !"
+    },
+    "errors": {
+      "passwordMismatch": "Les nouveaux mots de passe ne correspondent pas",
+      "incorrectPassword": "Le mot de passe actuel est incorrect. Veuillez réessayer.",
+      "confirmPassword": "Veuillez entrer votre mot de passe pour confirmer la suppression du compte",
+      "integrationConnectFailed": "Échec de la connexion de {integration}",
+      "integrationDisconnectFailed": "Échec de la déconnexion de {integration}",
+      "network": "Erreur réseau. Veuillez vérifier votre connexion et réessayer."
+    },
+    "account": {
+      "title": "Paramètres du compte",
+      "subtitle": "Gérez vos informations personnelles, vos coordonnées et vos préférences",
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "ex. Youcef Benali",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "language": "Langue d affichage",
+      "languages": {
+        "en": "Anglais (États-Unis)",
+        "fr": "Français (France)",
+        "ar": "Arabe (Standard)",
+        "kab": "Kabyle (Tamazight)"
+      },
+      "timezone": "Fuseau horaire",
+      "dateFormat": "Format de date",
+      "headline": "Titre professionnel",
+      "headlinePlaceholder": "ex. Ingénieur Full-Stack Senior & Chercheur en IA",
+      "bio": "Bio personnelle",
+      "bioPlaceholder": "Bref résumé professionnel sur vous-même...",
+      "saveError": "Échec de l'enregistrement des paramètres",
+      "avatarUploadError": "Échec du téléchargement de l'avatar",
+      "removePhoto": "Supprimer la photo",
+      "verifiedStatus": "Compte vérifié",
+      "detectTimezone": "Détection auto",
+      "saveSuccess": "Paramètres enregistrés avec succès !",
+      "emailPlaceholder": "nom@entreprise.com",
+      "phonePlaceholder": "+213 550 000 000",
+      "defaultUser": "Profil utilisateur",
+      "timezones": {
+        "utc": "UTC (Temps Universel Coordonné)",
+        "algiers": "Afrique/Alger (CET, UTC+1)",
+        "paris": "Fuseau Europe/Paris (CET, UTC+1)",
+        "newYork": "Amérique/New_York (EST, UTC-5)",
+        "dubai": "Asie/Dubaï (GST, UTC+4)"
+      },
+      "dateFormats": {
+        "iso": "Format ISO : AAAA-MM-JJ (2026-08-30)",
+        "eu": "Format Européen : JJ/MM/AAAA (30/08/2026)",
+        "us": "Format Américain : MM/JJ/AAAA (08/30/2026)"
+      },
+      "timeFormat": {
+        "label": "Format Horaire",
+        "options": {
+          "twelve": "12 heures",
+          "twentyFour": "24 heures"
+        }
+      },
+      "newsletter": {
+        "title": "Abonnement à la Newsletter",
+        "description": "Recevez des mises à jour, des nouvelles et des offres spéciales"
+      },
+      "verification": {
+        "title": "Statut de Vérification",
+        "email": {
+          "title": "Adresse E-mail",
+          "verified": "Votre e-mail est vérifié et sécurisé",
+          "unverified": "Vérifiez votre e-mail pour sécuriser votre compte"
+        },
+        "phone": {
+          "title": "Numéro de Téléphone",
+          "verified": "Votre numéro de téléphone est vérifié",
+          "unverified": "Vérifiez votre téléphone pour une sécurité supplémentaire",
+          "manualNotice": "La vérification automatique du téléphone est actuellement indisponible. Pour vérifier votre numéro, veuillez contacter notre équipe.",
+          "contactAdmin": "Contacter podacium@podacium.com",
+          "emailSubject": "Demande de vérification de téléphone",
+          "emailBody": "Bonjour,\n\nJe souhaite vérifier mon numéro de téléphone.\n\nE-mail du compte : {email}\nNuméro de téléphone : {phone}\n\nMerci."
+        },
+        "verifyEmail": "Vérifier l'E-mail",
+        "verifyPhone": "Vérifier le Téléphone"
+      }
+    },
+    "privacy": {
+      "title": "Paramètres de confidentialité",
+      "profile": {
+        "title": "Visibilité du Profil",
+        "visibility": {
+          "label": "Qui peut voir votre profil",
+          "options": {
+            "public": "Public",
+            "followers": "Abonnés Uniquement",
+            "connections": "Connexions Uniquement",
+            "private": "Privé"
+          }
+        },
+        "search": {
+          "label": "Visibilité dans la Recherche",
+          "description": "Permettre à votre profil d'apparaître dans les résultats de recherche"
+        },
+        "activity": {
+          "label": "Statut d'Activité",
+          "description": "Afficher quand vous êtes actif sur la plateforme"
+        }
+      },
+      "data": {
+        "title": "Données & Communications",
+        "readReceipts": {
+          "label": "Accusés de Lecture",
+          "description": "Faites savoir aux autres quand vous avez lu leurs messages"
+        },
+        "sharing": {
+          "label": "Partage de Données",
+          "description": "Aidez à améliorer nos services en partageant des données d'utilisation"
+        },
+        "ads": {
+          "label": "Publicités Personnalisées",
+          "description": "Voir des publicités pertinentes basées sur votre activité"
+        }
+      },
+      "visibility": {
+        "public": "Public",
+        "followers": "Abonnés uniquement",
+        "connections": "Connexions uniquement",
+        "private": "Privé"
+      },
+      "sections": {
+        "title": "Visibilité par Section",
+        "description": "Contrôlez qui peut voir chaque section de votre profil. Les sections définies sur \"Hériter\" suivent le réglage global de visibilité.",
+        "section": "Section",
+        "visibility": "Visibilité",
+        "visibilityOptions": {
+          "public": "Public",
+          "followers": "Abonnés uniquement",
+          "connections": "Connexions uniquement",
+          "private": "Privé"
+        },
+        "saving": "Enregistrement...",
+        "footerNote": "Votre paramètre de visibilité global s'applique toujours aux sections définies sur \"Hériter\".",
+        "listLabel": "Sections du profil",
+        "bio": "Biographie",
+        "bioDesc": "Votre biographie professionnelle",
+        "headline": "Titre professionnel",
+        "headlineDesc": "Votre titre professionnel sous votre nom",
+        "tagline": "Slogan",
+        "taglineDesc": "Votre devise personnelle",
+        "pronouns": "Pronoms",
+        "pronounsDesc": "Vos pronoms préférés",
+        "coverImage": "Image de Couverture",
+        "coverImageDesc": "Votre image de couverture",
+        "location": "Localisation",
+        "locationDesc": "Votre ville et pays",
+        "socialLinks": "Liens Sociaux",
+        "socialLinksDesc": "Liens vers vos profils sociaux",
+        "availability": "Disponibilité",
+        "availabilityDesc": "Votre statut de disponibilité",
+        "timezone": "Fuseau horaire",
+        "timezoneDesc": "Votre fuseau horaire local",
+        "profileViews": "Vues du Profil",
+        "profileViewsDesc": "Votre compteur de vues",
+        "lastActive": "Dernière Activité",
+        "lastActiveDesc": "Votre dernière activité sur la plateforme",
+        "followers": "Abonnés",
+        "followersDesc": "Votre nombre d'abonnés",
+        "following": "Abonnements",
+        "followingDesc": "Votre liste d'abonnements",
+        "badges": "Badges",
+        "badgesDesc": "Vos badges et réalisations",
+        "skills": "Compétences",
+        "skillsDesc": "Vos compétences listées",
+        "activityFeed": "Flux d'Activité",
+        "activityFeedDesc": "Votre activité récente",
+        "usernameHistory": "Historique des Noms",
+        "usernameHistoryDesc": "Vos anciens noms d'utilisateur",
+        "loading": "Chargement des visibilités...",
+        "loadError": "Échec du chargement",
+        "saveError": "Échec de l'enregistrement",
+        "cover_image": "Image de couverture",
+        "social_links": "Liens sociaux",
+        "profile_views": "Vues du profil",
+        "last_active": "Dernière activité",
+        "activity_feed": "Flux d activité",
+        "username_history": "Historique du nom d utilisateur"
+      },
+      "subtitle": "Configurez la visibilité granulaire par section, les autorisations d indexation et l activité en ligne",
+      "globalScope": "Portée globale du profil",
+      "globalVisibilityGroup": "Portée globale du profil",
+      "profileVisibility": "Visibilité globale du profil",
+      "profileVisibilityDesc": "Contrôle l accès des visiteurs non connectés et des moteurs de recherche",
+      "granularField": "Visibilité granulaire des éléments",
+      "granularFieldDesc": "Configurez individuellement le niveau de visibilité de chaque composant de votre portfolio",
+      "perSectionGroup": "Visibilité granulaire des éléments",
+      "perSectionDesc": "Configurez individuellement le niveau de visibilité de chaque composant de votre portfolio",
+      "discoverabilityPresence": "Découvrabilité et présence",
+      "discoverabilityGroup": "Découvrabilité et présence",
+      "searchIndexing": "Indexation par les moteurs de recherche",
+      "searchIndexingDesc": "Autorisez l indexation de votre profil public par Google et la recherche de la plateforme",
+      "searchVisibility": "Indexation par les moteurs de recherche",
+      "searchVisibilityDesc": "Autorisez l indexation de votre profil public par Google et la recherche de la plateforme",
+      "liveActivity": "Indicateur d activité en direct",
+      "activityStatus": "Indicateur d activité en direct",
+      "activityStatusDesc": "Affichez un point vert actif aux clients et recruteurs potentiels",
+      "saveChanges": "Enregistrer les modifications",
+      "options": {
+        "public": "Public (Tous)",
+        "followers": "Abonnés uniquement",
+        "connections": "Relations uniquement",
+        "private": "Privé (Moi uniquement)"
+      }
+    },
+    "notifications": {
+      "title": "Canaux de notification",
+      "email": {
+        "title": "Notifications par E-mail",
+        "account": {
+          "label": "Notifications par E-mail",
+          "description": "Recevez des notifications par e-mail pour les activités importantes"
+        }
+      },
+      "inApp": {
+        "label": "Notifications dans l'Application",
+        "description": "Recevez des notifications dans l'interface de la plateforme"
+      },
+      "sms": {
+        "label": "Notifications SMS",
+        "description": "Recevez des alertes importantes par SMS"
+      },
+      "push": {
+        "title": "Notifications Push",
+        "notifications": {
+          "label": "Notifications Push",
+          "description": "Alertes en temps réel sur vos appareils"
+        }
+      },
+      "marketing": {
+        "title": "Marketing et Communications",
+        "emails": {
+          "label": "E-mails Marketing",
+          "description": "Mises à jour produit et promotions"
+        },
+        "newsletter": {
+          "label": "Newsletter",
+          "description": "Insights et conseils hebdomadaires"
+        }
+      },
+      "quietHours": {
+        "title": "Heures Silencieuses",
+        "start": "Début des Heures Silencieuses",
+        "end": "Fin des Heures Silencieuses",
+        "description": "Les notifications seront silencieuses pendant ces heures"
+      },
+      "digest": {
+        "title": "Résumé par E-mail",
+        "frequency": "Fréquence du Résumé",
+        "frequencyOptions": {
+          "daily": "Quotidien",
+          "weekly": "Hebdomadaire",
+          "never": "Jamais"
+        }
+      },
+      "digestTime": {
+        "label": "Heure du Résumé",
+        "description": "Recevez un résumé de vos notifications à cette heure"
+      },
+      "subtitle": "Configurez vos alertes personnelles, digests e-mail et communications marketing",
+      "channelsGroup": "Alertes système et sécurité",
+      "emailNotifications": "Notifications par e-mail",
+      "emailNotificationsDesc": "Recevez les alertes de plateforme, avis de sécurité et cours par e-mail",
+      "pushNotifications": "Notifications push",
+      "pushNotificationsDesc": "Alertes instantanées dans votre navigateur pour les messages et opportunités",
+      "smsNotifications": "Notifications SMS",
+      "smsNotificationsDesc": "Alertes SMS d urgence pour la vérification de sécurité",
+      "marketingGroup": "Marketing et bulletins d information",
+      "marketingEmails": "E-mails marketing",
+      "marketingEmailsDesc": "Recevez des informations sur les nouvelles fonctionnalités et offres promotionnelles",
+      "newsletter": "Bulletin d information hebdomadaire",
+      "newsletterDesc": "Résumé hebdomadaire des meilleures opportunités et analyses Podacium",
+      "loadError": "Échec du chargement des préférences de notification",
+      "saveError": "Échec de l enregistrement des préférences de notification",
+      "savedSuccess": "Préférences de notification enregistrées avec succès",
+      "pushEnabled": "Notifications push activées avec succès !",
+      "pushDisabled": "Notifications push désactivées",
+      "pushDenied": "L'autorisation pour les notifications push a été refusée ou n'est pas prise en charge."
+    },
+    "security": {
+      "title": "Paramètres de Sécurité",
+      "authentication": {
+        "title": "Authentification",
+        "twoFactor": {
+          "label": "Authentification à Deux Facteurs",
+          "description": "Ajoutez une couche de sécurité supplémentaire"
+        },
+        "loginAlerts": {
+          "label": "Alertes de Connexion",
+          "description": "Soyez notifié des nouvelles connexions"
+        }
+      },
+      "sessions": {
+        "title": "Gestion des Sessions",
+        "deviceManagement": {
+          "label": "Gestion des Appareils",
+          "description": "Gérez les appareils et sessions actifs"
+        },
+        "timeout": {
+          "label": "Délai d'Expiration de Session",
+          "value": "{hours} heures",
+          "description": "Déconnexion automatique après inactivité"
+        }
+      },
+      "password": {
+        "title": "Gestion des Mots de Passe",
+        "current": {
+          "label": "Mot de Passe Actuel",
+          "placeholder": "Entrez votre mot de passe actuel",
+          "error": "Le mot de passe actuel est incorrect"
+        },
+        "new": {
+          "label": "Nouveau Mot de Passe",
+          "placeholder": "Créez un mot de passe fort"
+        },
+        "confirm": {
+          "label": "Confirmer le Nouveau Mot de Passe",
+          "placeholder": "Confirmez votre nouveau mot de passe",
+          "error": "Les mots de passe ne correspondent pas"
+        },
+        "change": "Changer le Mot de Passe",
+        "strength": {
+          "title": "Force du Mot de Passe"
+        },
+        "requirements": {
+          "length": "8+ caractères",
+          "uppercase": "Lettre majuscule",
+          "lowercase": "Lettre minuscule",
+          "number": "Chiffre",
+          "special": "Caractère spécial"
+        }
+      }
+    },
+    "appearance": {
+      "title": "Paramètres d apparence",
+      "theme": {
+        "label": "Thème",
+        "options": {
+          "light": "Clair",
+          "dark": "Sombre",
+          "system": "Système"
+        },
+        "light": "Mode clair",
+        "dark": "Mode sombre",
+        "system": "Système par défaut"
+      },
+      "fontSize": {
+        "label": "Taille de Police",
+        "options": {
+          "small": "Petite",
+          "medium": "Moyenne",
+          "large": "Grande"
+        },
+        "small": "Petite",
+        "medium": "Moyenne",
+        "large": "Grande"
+      },
+      "density": {
+        "label": "Densité",
+        "options": {
+          "compact": "Compact",
+          "comfortable": "Confortable",
+          "spacious": "Spacieux"
+        },
+        "compact": "Compacte",
+        "compactDesc": "Espacement réduit",
+        "comfortable": "Confortable",
+        "comfortableDesc": "Équilibre standard",
+        "spacious": "Aérée",
+        "spaciousDesc": "Espacement large"
+      },
+      "reducedMotion": "Réduction des mouvements",
+      "highContrast": "Mode contraste élevé",
+      "subtitle": "Personnalisez le thème visuel et la taille de police",
+      "themeGroup": "Mode de couleur & Thème",
+      "themeSavedNotice": "Préférences de thème enregistrées (Mode sombre prévu dans la prochaine mise à jour v2)",
+      "light": "Studio Clair",
+      "dark": "Studio Sombre",
+      "system": "Système Auto",
+      "fontSizeGroup": "Taille de police",
+      "densityGroup": "Densité de l affichage",
+      "accessibilityGroup": "Paramètres d accessibilité",
+      "reducedMotionDesc": "Minimiser les animations complexes",
+      "highContrastDesc": "Maximiser le contraste visuel pour la lecture",
+      "previewTitle": "Aperçu de mise à l échelle en direct",
+      "previewCardTitle": "Carte interactive d exemple",
+      "previewMeta": "Police : {font} • Densité : {density}",
+      "previewHeading": "Espace de travail Podacium",
+      "previewText": "Cet aperçu reflète en temps réel la taille de police et l espacement sur l ensemble de votre tableau de bord.",
+      "previewPrimaryBtn": "Bouton d action",
+      "previewSecondaryBtn": "Secondaire",
+      "loadError": "Échec du chargement des préférences d apparence",
+      "saveError": "Échec de l enregistrement des paramètres"
+    },
+    "billing": {
+      "title": "Facturation et Abonnement",
+      "currentPlan": "Forfait d abonnement actuel",
+      "recommended": "Recommandé",
+      "current": "Actuel",
+      "interval": {
+        "monthly": "mois",
+        "yearly": "an"
+      },
+      "upgrade": "Mettre à Niveau",
+      "paymentMethods": "Moyens de paiement enregistrés",
+      "history": {
+        "title": "Historique de Facturation",
+        "columns": {
+          "date": "Date",
+          "description": "Description",
+          "amount": "Montant",
+          "status": "Statut"
+        },
+        "proPlan": "Plan Pro - Mensuel",
+        "paid": "Payé"
+      },
+      "subtitle": "Gérez votre forfait, moyens de paiement et factures",
+      "freePlanDesc": "Vous utilisez le forfait Gratuit. Passez à Pro pour tout débloquer.",
+      "proPlanDesc": "Vous utilisez le forfait Pro. Accès complet disponible.",
+      "upgradeCTA": "Passer à Pro",
+      "noPaymentMethods": "Aucun moyen de paiement ajouté",
+      "invoices": "Historique des factures",
+      "noInvoices": "Aucun historique de factures",
+      "addPaymentMethod": "Ajouter un moyen de paiement",
+      "freePlanTitle": "Forfait Gratuit",
+      "proPlanTitle": "Forfait Pro",
+      "enterprisePlanTitle": "Forfait Entreprise",
+      "freeBadge": "GRATUIT BASE",
+      "proBadge": "TIER PRO",
+      "loadError": "Échec du chargement des informations de facturation",
+      "changePlanCTA": "Gérer le forfait d abonnement",
+      "expires": "Expire le",
+      "makeDefault": "Définir par défaut",
+      "removePaymentMethod": "Supprimer le mode de paiement",
+      "modalTitle": "Ajouter un mode de paiement",
+      "modalDesc": "Entrez les détails de votre carte bancaire pour un traitement sécurisé.",
+      "cardholderName": "Nom du titulaire",
+      "cardholderPlaceholder": "ex. Youcef Benali",
+      "cardNumber": "Numéro de carte",
+      "cardNumberPlaceholder": "4532 •••• •••• 8892",
+      "expDate": "Date d expiration (MM/AA)",
+      "cvc": "Code de sécurité (CVC / CVV)",
+      "setAsDefault": "Définir comme mode de paiement par défaut",
+      "addCardBtn": "Enregistrer la carte",
+      "addCardError": "Échec de l ajout du mode de paiement",
+      "errorCardholder": "Le nom du titulaire est requis",
+      "errorCardNumber": "Numéro de carte invalide",
+      "errorExpDate": "Date d expiration invalide (MM/AA)",
+      "errorCardExpired": "La carte est expirée",
+      "errorCvc": "Code CVC invalide",
+      "switchPlanTitle": "Sélectionner un niveau d abonnement",
+      "switchPlanDesc": "Choisissez le forfait qui correspond le mieux à vos besoins professionnels.",
+      "plans": {
+        "freeName": "Gratuit de base",
+        "freePrice": "0 $ / mois",
+        "freeDesc": "Fonctionnalités essentielles pour explorer Podacium",
+        "proName": "Niveau Pro",
+        "proPrice": "19 $ / mois",
+        "proDesc": "Fonctionnalités d IA illimitées, calcul prioritaire et analytique",
+        "enterpriseName": "Entreprise",
+        "enterprisePrice": "99 $ / mois",
+        "enterpriseDesc": "SLA dédié, sécurité multi-org et intégrations personnalisées",
+        "activePlan": "Forfait actif",
+        "switchTo": "Passer à {name}"
+      },
+      "receipt": {
+        "title": "Reçu de facture n° {id}",
+        "description": "Reçu de paiement officiel émis par la plateforme Podacium",
+        "colDescription": "Description",
+        "colDate": "Date",
+        "colGateway": "Passerelle de paiement",
+        "chargilyPay": "Chargily Pay",
+        "totalPaid": "Montant total payé",
+        "printPdf": "Imprimer / Enregistrer en PDF",
+        "close": "Fermer"
+      }
+    },
+    "integrations": {
+      "title": "Moteur d'intégration Podacium Connect",
+      "subtitle": "Connexions OAuth 2.0 PKCE déléguées à travers l'EdTech, le Freelance et la Business Intelligence",
+      "connected": "Connecté",
+      "notConnected": "Non connecté",
+      "connect": "Connecter le compte",
+      "disconnect": "Déconnecter",
+      "connectors": "Connecteurs",
+      "connectorsHeader": "10 Connecteurs Sortants",
+      "workflowBuilder": "DAG de flux",
+      "wasmPreview": "Transformateur WASM",
+      "dlqTitle": "File DLQ",
+      "dlqDesc": "Inspecter et mettre en quarantaine les livraisons échouées avec ré-expédition en 1 clic",
+      "outboundCount": "{count} Connecteurs Sortants",
+      "connectedGroup": "Comptes tiers connectés",
+      "auditLogs": "Journaux d'audit",
+      "syncNow": "Synchroniser maintenant",
+      "workflowTitle": "Générateur visuel de flux DAG",
+      "workflowDesc": "Connecter des nœuds d'automatisation multi-étapes à travers l'EdTech, le Freelance et les connecteurs BI",
+      "addNode": "Ajouter un nœud",
+      "step": "Étape {n}",
+      "wasmTitle": "Aperçu du transformateur sandbox WASM",
+      "wasmDesc": "Prévisualiser les transformations de données JavaScript/Rust définies par l'utilisateur dans un environnement WASM sécurisé",
+      "wasmCodeLabel": "Code de transformation du script WASM",
+      "rawInputLabel": "Charge utile brute (JSON)",
+      "executeWasm": "Exécuter dans le bac à sable WASM",
+      "outputPreview": "Aperçu de la sortie WASM transformée :",
+      "dlqInspectorTitle": "Inspecteur de la file des messages non distribués (DLQ)",
+      "dlqInspectorDesc": "Inspecter et mettre en quarantaine les livraisons échouées avec ré-expédition en 1 clic",
+      "redeliver": "Ré-expédier la charge utile de l'événement",
+      "auditLogsTitle": "Journaux d'audit : {provider}",
+      "noLogs": "Aucune exécution de connecteur enregistrée pour l'instant.",
+      "executeTitle": "Exécuter",
+      "executeDesc": "Déclencher la logique d'intégration du connecteur API backend pour",
+      "triggerDesc": "Déclencher la logique d'intégration du connecteur API backend pour",
+      "runAction": "Exécuter l'action",
+      "statusConnected": "Connecté",
+      "statusNotConnected": "Non connecté",
+      "connectBtn": "Connecter le compte",
+      "connectedMsg": "connecté avec succès",
+      "disconnectedMsg": "déconnecté",
+      "actionSucceeded": "Action du connecteur réussie",
+      "loadError": "Échec du chargement des intégrations connectées",
+      "disconnectError": "Échec de la déconnexion de l'intégration",
+      "syncSuccess": "Synchronisation automatique en arrière-plan terminée pour {provider}",
+      "syncError": "Échec de la synchronisation de l'intégration",
+      "pillar": {
+        "all": "Tous",
+        "education": "EdTech",
+        "freelance": "Freelance",
+        "bi": "Pôle BI"
+      },
+      "google": {
+        "name": "Google Drive et Workspace",
+        "desc": "Importer des devoirs directement depuis Drive et exporter des rapports de données BI",
+        "action": "Importer le fichier du devoir"
+      },
+      "github": {
+        "name": "Moteur développeur GitHub",
+        "desc": "Vérifier les branches PR et synchroniser les commits des freelances avec les jalons du contrat",
+        "action": "Synchroniser la PR du jalon"
+      },
+      "slack": {
+        "name": "Intelligence d'équipe Slack",
+        "desc": "Envoyer des rapports d'instantanés KPI BI et des alertes d'anomalies sur le canal",
+        "action": "Publier l'instantané BI"
+      },
+      "zoom": {
+        "name": "Classe virtuelle Zoom",
+        "desc": "Fournir des webinaires en direct et des cours virtuels interactifs pour les formations EdTech",
+        "action": "Créer un webinaire en direct"
+      },
+      "notion": {
+        "name": "Espace d'étude Notion",
+        "desc": "Exporter les guides d'étude et les notes de cours directement dans l'espace Notion",
+        "action": "Exporter les notes d'étude"
+      },
+      "kaggle": {
+        "name": "Pôle de données Kaggle",
+        "desc": "Ingérer des jeux de données d'apprentissage automatique et des repères de compétition dans le Pôle BI",
+        "action": "Ingérer le jeu de données ML"
+      },
+      "huggingface": {
+        "name": "Cartes IA HuggingFace",
+        "desc": "Synchroniser les cartes de modèles IA, les étiquettes de pipeline et les métriques dans les projets",
+        "action": "Synchroniser la carte du modèle IA"
+      },
+      "teams": {
+        "name": "Diffusion Microsoft Teams",
+        "desc": "Publier des mises à jour KPI sous forme de cartes adaptatives sur les canaux Teams",
+        "action": "Publier la carte adaptative Teams"
+      },
+      "calendar": {
+        "name": "Calendrier Google/Outlook",
+        "desc": "Synchroniser les emplois du temps des cours et les échéances des contrats freelance avec le calendrier",
+        "action": "Ajouter un cours au calendrier"
+      },
+      "chargily": {
+        "name": "Séquestre BaridiMob & Chargily",
+        "desc": "Dépôts sous séquestre par carte CIB / Edahabia et paiements CCP BaridiMob en Algérie",
+        "action": "Créer le paiement sous séquestre"
+      },
+      "connectError": "Échec de la connexion à l'intégration",
+      "executeError": "Échec de l'exécution de l'action du connecteur"
+    },
+    "advanced": {
+      "title": "Paramètres Développeur Avancés",
+      "subtitle": "Gérez les clés API développeur, les webhooks, la purge du cache et les outils de débogage",
+      "enterpriseStudio": "Studio Plateforme Développeur Entreprise",
+      "circuitResetFailed": "Échec de la réinitialisation du disjoncteur",
+      "programmaticKeys": "Clés API programmatiques & Portées",
+      "rotate": "Pivoter",
+      "eventWebhooks": "Webhooks d événements & Disjoncteurs",
+      "resetCircuit": "Réinitialiser le disjoncteur",
+      "logs": "Journaux",
+      "rotateSecret": "Pivoter le secret",
+      "test": "Tester",
+      "analyticsTitle": "Analytique d utilisation de la clé API",
+      "totalCalls": "Appels totaux",
+      "errorRate": "Taux d erreur",
+      "avgLatency": "Latence moy.",
+      "noAnalytics": "Aucune analytique d utilisation enregistrée.",
+      "generateModalTitle": "Générer une clé API avec portées RBAC",
+      "saveSecretAlert": "ENREGISTREZ CE SECRET MAINTENANT !",
+      "saveSecretDesc": "Cette clé secrète ne sera PLUS JAMAIS affichée. Conservez-la en lieu sûr dans votre coffre-fort.",
+      "done": "Terminé",
+      "keyNameLabel": "Nom de l identifiant de clé",
+      "keyNamePlaceholder": "ex. Service Backend Production",
+      "environmentLabel": "Environnement",
+      "envProduction": "Production",
+      "envSandbox": "Bac à sable / Pré-production",
+      "rbacLabel": "Permissions de portées RBAC",
+      "ipWhitelistLabel": "Liste blanche CIDR IP autorisées (Optionnel, séparé par des virgules)",
+      "deliveryLogsTitle": "Journaux de livraison des Webhooks",
+      "noDeliveryLogs": "Aucun journal de livraison enregistré.",
+      "registerWebhookTitle": "Enregistrer le point de terminaison du Webhook",
+      "saveSigningSecretAlert": "ENREGISTREZ CE SECRET DE SIGNATURE !",
+      "saveSigningSecretDesc": "Utilisé pour vérifier les signatures HMAC SHA-256 (X-Podacium-Signature) lors de la livraison.",
+      "endpointLabel": "Nom de l étiquette du point de terminaison",
+      "endpointPlaceholder": "ex. Webhook Système Comptable",
+      "payloadUrlLabel": "URL de la charge utile (HTTPS)",
+      "subscribedEventsLabel": "Événements souscrits",
+      "metrics": "Métriques",
+      "saveWebhook": "Enregistrer le Webhook",
+      "replay": "Rejouer",
+      "loadError": "Échec du chargement de l'infrastructure de la plateforme développeur",
+      "generateKeyError": "Échec de la génération de la clé API",
+      "keyRevokedSuccess": "Clé API révoquée avec succès",
+      "revokeKeyError": "Échec de la révocation de la clé API",
+      "keyRotatedSuccess": "Clé API pivotée avec succès (fenêtre de transition de 7 jours active)",
+      "rotateKeyError": "Échec de la rotation de la clé API",
+      "registerWebhookError": "Échec de l'enregistrement du point de terminaison du Webhook",
+      "webhookRemovedSuccess": "Point de terminaison du Webhook supprimé",
+      "removeWebhookError": "Échec de la suppression du point de terminaison du Webhook",
+      "webhookTestSuccess": "Ping de test livré avec succès",
+      "testWebhookError": "Échec de l'envoi du webhook",
+      "circuitResetSuccess": "Coupe-circuit réinitialisé à FERMÉ",
+      "resetCircuitError": "Échec de la réinitialisation du coupe-circuit",
+      "secretRotatedSuccess": "Secret de signature pivoté ! L'ancien secret reste actif pour les tentatives en cours.",
+      "rotateSecretError": "Échec de la rotation du secret",
+      "deliveryReplayedSuccess": "Livraison du webhook rejouée !",
+      "replayDeliveryError": "Échec du rejeu",
+      "usage": {
+        "title": "Utilisation & Limites",
+        "storage": "Stockage utilisé",
+        "bandwidth": "Bande passante",
+        "projects": "Projets actifs",
+        "collaborators": "Collaborateurs"
+      },
+      "data": {
+        "title": "Gestion des Données",
+        "export": "Exporter toutes les données",
+        "clearCache": "Vider le cache",
+        "refresh": "Actualiser les données",
+        "generateReport": "Générer un rapport"
+      },
+      "developer": {
+        "title": "Paramètres Développeur",
+        "apiKey": "Clé API",
+        "apiKeyPlaceholder": "Votre clé API",
+        "regenerate": "Régénérer la clé",
+        "documentation": "Consulter la documentation"
+      },
+      "apiKeysGroup": "Clés d API programmatiques",
+      "generateKey": "Générer une nouvelle clé",
+      "noApiKeys": "Aucune clé d API programmatique active",
+      "webhooksGroup": "Webhooks d événements",
+      "addWebhook": "Ajouter un point de terminaison",
+      "noWebhooks": "Aucun webhook en temps réel configuré",
+      "dataGroup": "Gouvernance des Données & Opérations de Cache",
+      "exportData": "Exporter l archive du compte",
+      "exportDataDesc": "Téléchargez un export JSON lisible par machine de toutes vos données",
+      "clearCache": "Purger le cache client local",
+      "clearCacheDesc": "Invalider le cache de session client, les assets du service worker et les réponses"
+    },
+    "devices": {
+      "title": "Appareils & Sécurité",
+      "manageTitle": "Gérer vos Appareils",
+      "manageDesc": "Consultez et gérez tous les appareils qui ont accédé à votre compte. Examinez les événements de sécurité, approuvez ou révoquez des appareils.",
+      "manageCta": "Ouvrir le Gestionnaire"
+    },
+    "danger": {
+      "title": "Zone de Danger",
+      "export": {
+        "title": "Exporter Vos Données",
+        "description": "Téléchargez toutes vos données avant de supprimer votre compte",
+        "button": "Exporter les Données"
+      },
+      "delete": {
+        "title": "Supprimer Définitivement le Compte",
+        "description": "Cette action ne peut pas être annulée. Toutes vos données seront définitivement supprimées.",
+        "reason": {
+          "label": "Raison du Départ (Optionnel)",
+          "placeholder": "Aidez-nous à nous améliorer en partageant votre raison"
+        },
+        "feedback": {
+          "label": "Retour (Optionnel)",
+          "placeholder": "Des suggestions d'amélioration ?"
+        },
+        "confirmPassword": "Confirmer le Mot de Passe",
+        "passwordPlaceholder": "Entrez votre mot de passe pour confirmer",
+        "button": "Supprimer le Compte"
+      },
+      "signOut": "Se Déconnecter"
+    },
+    "dataPrivacy": {
+      "title": "Mes Données & Confidentialité",
+      "subtitle": "Vous possédez vos données. Téléchargez-les à tout moment ou demandez la suppression permanente.",
+      "export": {
+        "title": "Télécharger mes données",
+        "description": "Téléchargez une archive JSON complète de toutes les données associées à votre compte Podacium, incluant votre profil, inscriptions, certificats, projets, propositions, transactions du portefeuille et tickets de support.",
+        "items": {
+          "profile": "Profil & paramètres",
+          "enrollments": "Inscriptions & certificats",
+          "projects": "Projets & propositions",
+          "contracts": "Contrats",
+          "wallet": "Portefeuille & transactions",
+          "support": "Tickets de support",
+          "analytics": "Jeux de données analytiques",
+          "notifications": "Notifications"
+        },
+        "redactionNotice": "Les champs sensibles (mots de passe, secrets TOTP) sont rédigés dans l'exportation.",
+        "button": "Télécharger mes données",
+        "busy": "Préparation de l'exportation…"
+      },
+      "overview": {
+        "title": "Vos données en un coup d'œil",
+        "courses": "Cours",
+        "certificates": "Certificats",
+        "projects": "Projets",
+        "datasets": "Jeux de données",
+        "storage": "Stockage utilisé",
+        "completed": "terminé(s)",
+        "active": "actif(s)"
+      },
+      "deletion": {
+        "title": "Supprimer mon compte",
+        "description": "Supprimez définitivement votre compte Podacium et toutes les données associées. Cette action est irréversible une fois la période de grâce de 30 jours écoulée.",
+        "features": {
+          "grace": "Période de grâce de 30 jours — annulez à tout moment avant l'exécution",
+          "email": "Email de confirmation envoyé à votre adresse enregistrée",
+          "erase": "Toutes les données personnelles définitivement effacées après la période de grâce"
+        },
+        "status": {
+          "checking": "Vérification du statut…",
+          "scheduled": "Suppression programmée · {days}j restants",
+          "none": "Aucune demande de suppression en cours"
+        },
+        "banner": {
+          "title": "Suppression de compte programmée",
+          "body": "Votre compte sera définitivement supprimé le {date} ({days} jours restants)."
+        },
+        "timeline": {
+          "title": "Calendrier de suppression",
+          "daysLeft": "{n} jours restants",
+          "expiring": "Expire bientôt",
+          "requested": "Demandé le {date}",
+          "scheduled": "Suppression le {date}"
+        },
+        "requestButton": "Demander la suppression du compte",
+        "cancelButton": "Annuler la suppression",
+        "cancelRequestButton": "Annuler la demande de suppression",
+        "cancelling": "Annulation…",
+        "overlay": {
+          "title": "Compte Programmé pour Suppression",
+          "subtitle": "Votre compte Podacium a été programmé pour suppression définitive. Vous pouvez annuler cette demande à tout moment dans les 30 prochains jours.",
+          "status": "Suppression programmée",
+          "scheduledDate": "Suppression définitive le {date}",
+          "daysRemaining": "{n} jours restants",
+          "statusGood": "OK",
+          "statusWarning": "Expire bientôt",
+          "statusCritical": "Critique",
+          "requestedDate": "Demandé le {date}",
+          "deletionDate": "Suppression le {date}",
+          "whatHappens": {
+            "title": "Ce que cela signifie",
+            "line1": "Après la période de grâce, toutes vos données seront définitivement effacées.",
+            "line2": "Vous perdrez l'accès aux cours, certificats, projets et au solde du portefeuille.",
+            "line3": "Vous pouvez annuler cette demande à tout moment pour conserver votre compte."
+          },
+          "cancelButton": "Annuler la Suppression & Garder Mon Compte",
+          "cancelling": "Annulation en cours…",
+          "support": "Besoin d'aide ?",
+          "contactSupport": "Contacter le Support",
+          "cancelled": {
+            "title": "Suppression Annulée",
+            "message": "Votre suppression de compte a été annulée. Rechargement…"
+          },
+          "logout": "Se déconnecter"
+        }
+      },
+      "dialog": {
+        "title": "Demander la Suppression du Compte",
+        "titleFinal": "Confirmation Finale",
+        "stepsLabel": "Étape",
+        "warning": {
+          "title": "Cette action a des conséquences",
+          "line1": "Toutes vos données personnelles seront définitivement effacées",
+          "line2": "Vous perdrez l'accès à tous les cours et certificats",
+          "line3": "Les projets et contrats actifs seront résiliés",
+          "line4": "Le solde du portefeuille peut être perdu",
+          "graceNote": "Vous disposez d'un délai de grâce de 30 jours après la demande. Vous pouvez annuler à tout moment avant l'expiration de ce délai.",
+          "downloadPrompt": "Vous souhaitez conserver une copie de vos données ?",
+          "downloadButton": "Télécharger mes données d'abord",
+          "acknowledge": "Je comprends que cette action est irréversible après la période de grâce et que mes données seront définitivement supprimées."
+        },
+        "reason": {
+          "label": "Raison du départ",
+          "optional": "(optionnel)",
+          "options": {
+            "select": "Sélectionnez une raison…",
+            "notUsing": "Je n'utilise plus la plateforme",
+            "privacy": "Problèmes de confidentialité",
+            "alternative": "J'ai trouvé une meilleure alternative",
+            "expensive": "Trop cher",
+            "technical": "Problèmes techniques",
+            "other": "Autre"
+          }
+        },
+        "feedback": {
+          "label": "Commentaires supplémentaires",
+          "optional": "(optionnel)",
+          "placeholder": "Aidez-nous à nous améliorer en partageant votre expérience…"
+        },
+        "confirmText": {
+          "instruction": "Tapez “DELETE” ci-dessous pour confirmer la suppression définitive de votre compte.",
+          "label": "Tapez “DELETE” pour confirmer",
+          "mismatch": "Le texte ne correspond pas"
+        },
+        "password": {
+          "label": "Confirmez votre mot de passe",
+          "placeholder": "Entrez votre mot de passe pour confirmer",
+          "warning": "Cette étape est finale. Saisissez votre mot de passe pour confirmer la suppression."
+        },
+        "keepAccount": "Garder mon compte",
+        "continue": "Continuer",
+        "back": "Retour",
+        "processing": "Traitement en cours…",
+        "confirm": "Supprimer définitivement mon compte"
+      },
+      "alerts": {
+        "exportSuccess": "Votre exportation de données a été téléchargée.",
+        "exportEmpty": "Aucune donnée à exporter. Votre compte est peut-être nouveau ou vide.",
+        "exportRateLimit": "Trop de demandes. Veuillez patienter un moment.",
+        "exportTimeout": "L'exportation a expiré. Veuillez réessayer.",
+        "exportError": "Échec de l'exportation de vos données. Veuillez réessayer.",
+        "deletionSuccess": "Votre demande de suppression de compte a été reçue. Un email de confirmation a été envoyé à votre adresse enregistrée. Vous pouvez annuler cette demande à tout moment dans les 30 prochains jours.",
+        "deletionBadRequest": "Demande invalide. Veuillez vérifier votre mot de passe.",
+        "deletionError": "Échec de la création de la demande de suppression. Veuillez réessayer.",
+        "cancelSuccess": "Votre demande de suppression de compte a été annulée. Votre compte est sûr.",
+        "undoCancel": "Annuler",
+        "cancelError": "Échec de l'annulation de la demande de suppression. Veuillez réessayer."
+      },
+      "legal": "Vos droits sont protégés par la législation applicable sur la protection des données.",
+      "privacyLink": "Politique de Confidentialité",
+      "termsLink": "Conditions d'Utilisation"
+    },
+    "usage": {
+      "title": "Utilisation et Limites",
+      "subtitle": "Suivez l utilisation du stockage, de la bande passante et des projets",
+      "resourceGroup": "Jauges de quotas actifs",
+      "storage": "Stockage cloud",
+      "bandwidth": "Bande passante",
+      "projects": "Projets actifs",
+      "collaborators": "Collaborateurs",
+      "summaryGroup": "Résumé rapide des indicateurs",
+      "atLimit": "Quota atteint — pensez à mettre à niveau votre forfait",
+      "nearLimit": "Limite d'allocation des ressources presque atteinte",
+      "loadError": "Échec du chargement des mesures d'utilisation",
+      "loading": "Chargement des mesures d'utilisation des ressources...",
+      "retry": "Réessayer"
+    }
+  },
+  "notifications": {
+    "page": {
+      "title": "Notifications",
+      "subtitle": "Gérez vos notifications et préférences"
+    },
+    "stats": {
+      "total": "Total",
+      "unread": "Non lues",
+      "read": "Lues",
+      "categories": "Catégories"
+    },
+    "header": {
+      "refresh": "Actualiser",
+      "selected": "{count} sélectionné(s)",
+      "markRead": "Marquer comme lu",
+      "delete": "Supprimer"
+    },
+    "tabs": {
+      "all": "Toutes",
+      "unread": "Non lues",
+      "read": "Lues",
+      "archived": "Archivées"
+    },
+    "admin": {
+      "title": "Centre de notifications administrateur",
+      "sendNow": "Envoyer maintenant",
+      "schedule": "Programmer",
+      "send": "Envoyer",
+      "scheduleIt": "Programmer",
+      "form": {
+        "title": "Titre",
+        "titlePlaceholder": "Titre de la notification",
+        "category": "Catégorie",
+        "message": "Message",
+        "messagePlaceholder": "Entrez votre message de notification...",
+        "priority": "Priorité",
+        "targetUsers": "Utilisateurs cibles",
+        "targetRole": "Rôle cible",
+        "sendEmail": "Envoyer par email",
+        "scheduleFor": "Programmer pour"
+      },
+      "targetOptions": {
+        "all": "Tous les utilisateurs",
+        "role": "Par rôle",
+        "specific": "Utilisateurs spécifiques"
+      },
+      "notificationsSent": "Notification envoyée avec succès !",
+      "notificationsScheduled": "Notification programmée avec succès !"
+    },
+    "preferences": {
+      "title": "Préférences de notifications",
+      "save": "Enregistrer",
+      "emailNotifications": {
+        "title": "Notifications par email",
+        "account": "Notifications de compte",
+        "accountDesc": "Mises à jour importantes concernant votre compte",
+        "projects": "Mises à jour de projets",
+        "projectsDesc": "Notifications concernant vos projets",
+        "courses": "Mises à jour de cours",
+        "coursesDesc": "Progression d'apprentissage et nouveau contenu"
+      },
+      "pushNotifications": {
+        "title": "Notifications push",
+        "push": "Notifications push",
+        "pushDesc": "Alertes en temps réel sur vos appareils",
+        "security": "Alertes de sécurité",
+        "securityDesc": "Notifications de sécurité importantes"
+      },
+      "marketing": {
+        "title": "Marketing et Communications",
+        "marketing": "Emails marketing",
+        "marketingDesc": "Mises à jour produit et promotions",
+        "newsletter": "Newsletter",
+        "newsletterDesc": "Insights et conseils hebdomadaires"
+      },
+      "quietHours": {
+        "title": "Heures silencieuses",
+        "start": "Début heures silencieuses",
+        "end": "Fin heures silencieuses",
+        "description": "Les notifications seront silencieuses pendant ces heures"
+      },
+      "digest": {
+        "title": "Résumé quotidien",
+        "time": "Heure du résumé",
+        "description": "Recevez un résumé quotidien des notifications à cette heure"
+      }
+    },
+    "filters": {
+      "title": "Filtres",
+      "clearAll": "Tout effacer",
+      "category": "Catégorie",
+      "allCategories": "Toutes catégories",
+      "priority": "Priorité",
+      "allPriorities": "Toutes priorités",
+      "status": "Statut",
+      "allStatuses": "Tous statuts",
+      "startDate": "Date de début",
+      "endDate": "Date de fin"
+    },
+    "toolbar": {
+      "search": "Rechercher des notifications...",
+      "viewModes": {
+        "list": "Vue liste",
+        "grid": "Vue grille"
+      },
+      "sort": {
+        "newest": "Plus récent d'abord",
+        "oldest": "Plus ancien d'abord",
+        "priority": "Par priorité"
+      }
+    },
+    "notificationItem": {
+      "markAsRead": "Marquer comme lu",
+      "markUnread": "Marquer comme non lu",
+      "delete": "Supprimer",
+      "showMore": "Afficher plus",
+      "showLess": "Afficher moins",
+      "priority": {
+        "urgent": "Urgent",
+        "high": "Élevée",
+        "normal": "Normale",
+        "low": "Basse"
+      },
+      "time": {
+        "justNow": "À l'instant",
+        "hoursAgo": "il y a {hours}h",
+        "daysAgo": "il y a {days}j"
+      }
+    },
+    "actions": {
+      "loadMore": "Charger plus",
+      "tryAgain": "Réessayer"
+    },
+    "emptyStates": {
+      "noNotifications": {
+        "title": "Aucune notification",
+        "descriptionAll": "Vous êtes à jour ! Les nouvelles notifications apparaîtront ici.",
+        "descriptionUnread": "Aucune notification non lue trouvée.",
+        "descriptionRead": "Aucune notification lue trouvée.",
+        "descriptionArchived": "Aucune notification archivée trouvée."
+      }
+    },
+    "errors": {
+      "loading": "Erreur de chargement des notifications",
+      "markingRead": "Erreur lors du marquage comme lu",
+      "deleting": "Erreur lors de la suppression",
+      "sending": "Erreur lors de l'envoi",
+      "scheduling": "Erreur lors de la programmation",
+      "updatingPreferences": "Erreur lors de la mise à jour des préférences"
+    },
+    "success": {
+      "markedRead": "{count} notifications marquées comme lues",
+      "deleted": "{count} notifications supprimées",
+      "preferencesUpdated": "Préférences mises à jour avec succès !"
+    }
+  },
+  "profile": {
+    "title": "Profil - Podacium",
+    "metaDescription": "Gérez votre profil Podacium, vos compétences et votre présence professionnelle",
+    "premium": "PREMIUM",
+    "header": {
+      "title": "Votre Identité Numérique",
+      "subtitle": "Créez votre héritage professionnel avec des visuels époustouflants, des éléments interactifs et des analyses complètes",
+      "joined": "Membre depuis",
+      "followers": "abonnés",
+      "following": "abonnements",
+      "follow": "Suivre",
+      "following_btn": "Suivi",
+      "message": "Message",
+      "rating": "Note",
+      "reviews": "Avis",
+      "profileViews": "Vues",
+      "lastActive": "Dernière activité",
+      "projects": "Projets",
+      "earnings": "Gains",
+      "hourlyRate": "Taux horaire",
+      "courses": "Cours",
+      "students": "Étudiants",
+      "courseRating": "Note",
+      "mlModels": "Modèles ML",
+      "showMore": "Afficher plus",
+      "showLess": "Afficher moins",
+      "verifiedProfessional": "Professionnel vérifié",
+      "cropPreview": "Aperçu"
+    },
+    "tabs": {
+      "overview": "Vue d'ensemble",
+      "projects": "Projets",
+      "learning": "Parcours d'Apprentissage",
+      "social": "Réseau",
+      "insights": "Insights IA",
+      "business": "Entreprise",
+      "teaching": "Enseignement",
+      "freelancing": "Freelance",
+      "portfolio": "Portfolio",
+      "reviews": "Avis"
+    },
+    "sections": {
+      "profileInfo": "Informations du profil",
+      "quickStats": "Statistiques rapides",
+      "skillsOverview": "Aperçu des compétences",
+      "comprehensiveAnalytics": "Analyses complètes",
+      "profileStrength": "Force du profil & Progression",
+      "recentActivity": "Activité récente",
+      "projectsWork": "Projets & Travail",
+      "learningJourney": "Parcours d'Apprentissage",
+      "certifications": "Certifications et Réalisations",
+      "skillsExpertise": "Compétences & Expertise",
+      "network": "Réseau",
+      "aiInsights": "Insights propulsés par l'IA",
+      "pronouns": "Pronoms",
+      "availability": "Disponibilité",
+      "credentials": "Diplômes",
+      "experience": "Expérience",
+      "publications": "Publications",
+      "datasets": "Jeux de données"
+    },
+    "roles": {
+      "student": "Étudiant",
+      "freelancer": "Freelance",
+      "business": "Professionnel Business",
+      "instructor": "Instructeur"
+    },
+    "fields": {
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Entrez votre nom complet",
+      "professionalBio": "Bio professionnelle",
+      "bioPlaceholder": "Créez votre histoire professionnelle... Partagez votre expertise, vos passions et ce qui vous motive.",
+      "headlinePlaceholder": "Votre titre professionnel",
+      "taglinePlaceholder": "Votre courte accroche",
+      "email": "Email",
+      "emailPlaceholder": "votre.email@example.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+213 123 45 67 89",
+      "country": "Pays",
+      "countryPlaceholder": "Votre pays",
+      "city": "Ville",
+      "cityPlaceholder": "Votre ville",
+      "professionalRole": "Rôle professionnel",
+      "currentRole": "Rôle actuel",
+      "professional": "Professionnel",
+      "memberSince": "Membre depuis",
+      "lastUpdated": "Dernière mise à jour",
+      "lastLogin": "Dernière connexion",
+      "unknown": "Inconnu",
+      "recently": "Récemment",
+      "notSet": "Non défini",
+      "noBio": "Aucune bio fournie pour le moment. Racontez votre histoire et montrez votre expertise !",
+      "addNewSkill": "Ajouter une nouvelle compétence...",
+      "skillsCount": "{count} sur {max} compétences",
+      "maxSkillsReached": "Nombre maximum de compétences atteint",
+      "profileSkills": "Compétences du profil",
+      "moreSkills": "+{count} de plus",
+      "profileCompleteness": "Complétude du profil",
+      "basicInfo": "Informations de base",
+      "profilePicture": "Photo de profil",
+      "bio": "Bio",
+      "skills": "Compétences",
+      "socialLinks": "Liens sociaux",
+      "uploading": "Téléchargement...",
+      "dropToUpload": "Déposer pour télécharger",
+      "searchProjects": "Rechercher des projets...",
+      "unknownCourse": "Cours inconnu",
+      "proficiency": "Maîtrise",
+      "advanced": "Avancé",
+      "intermediate": "Intermédiaire",
+      "expert": "Expert",
+      "pronounsPlaceholder": "ex. iel, il, elle",
+      "availabilityPlaceholder": "ex. Disponible pour mission",
+      "role": "Rôle",
+      "industry": "Secteur",
+      "expertise": "Expertise"
+    },
+    "geo": {
+      "selectCountry": "Sélectionnez un pays",
+      "selectCity": "Sélectionnez une ville",
+      "selectCountryFirst": "Sélectionnez d'abord un pays",
+      "countries": {
+        "ALGERIA": "Algérie",
+        "EGYPT": "Égypte",
+        "MOROCCO": "Maroc",
+        "TUNISIA": "Tunisie",
+        "LIBYA": "Libye"
+      },
+      "cities": {
+        "ALGIERS": "Alger",
+        "ORAN": "Oran",
+        "CONSTANTINE": "Constantine",
+        "ANNABA": "Annaba",
+        "BLIDA": "Blida",
+        "BATNA": "Batna",
+        "DJELFA": "Djelfa",
+        "SETIF": "Sétif",
+        "SIDI_BEL_ABBES": "Sidi Bel Abbès",
+        "BISKRA": "Biskra",
+        "TEBESSA": "Tébessa",
+        "EL_OUED": "El Oued",
+        "SKIKDA": "Skikda",
+        "TIARET": "Tiaret",
+        "BEJAIA": "Béjaïa",
+        "TLEMCEN": "Tlemcen",
+        "OUARGLA": "Ouargla",
+        "MOSTAGANEM": "Mostaganem",
+        "MSILA": "M'Sila",
+        "GHARDAIA": "Ghardaïa",
+        "CAIRO": "Le Caire",
+        "ALEXANDRIA": "Alexandrie",
+        "GIZA": "Gizeh",
+        "PORT_SAID": "Port-Saïd",
+        "SUEZ": "Suez",
+        "CASABLANCA": "Casablanca",
+        "RABAT": "Rabat",
+        "MARRAKESH": "Marrakech",
+        "TANGIER": "Tanger",
+        "FES": "Fès",
+        "TUNIS": "Tunis",
+        "SFAX": "Sfax",
+        "SOUSSE": "Sousse",
+        "ETTADHAMEN": "Ettadhamen",
+        "KAIROUAN": "Kairouan",
+        "TRIPOLI": "Tripoli",
+        "BENGHAZI": "Benghazi",
+        "MISRATA": "Misrata",
+        "SIRTE": "Syrte",
+        "SABHA": "Sabha",
+        "ADRAR": "Adrar",
+        "CHLEF": "Chlef",
+        "LAGHOUAT": "Laghouat",
+        "OUM_EL_BOUAGHI": "Oum El Bouaghi",
+        "BECHAR": "Béchar",
+        "BOUIRA": "Bouira",
+        "TAMANRASSET": "Tamanrasset",
+        "TIZI_OUZOU": "Tizi Ouzou",
+        "JIJEL": "Jijel",
+        "SAIDA": "Saïda",
+        "GUELMA": "Guelma",
+        "MEDEA": "Médéa",
+        "MASCARA": "Mascara",
+        "EL_BAYADH": "El Bayadh",
+        "ILLIZI": "Illizi",
+        "BORDJ_BOU_ARRERIDJ": "Bordj Bou Arréridj",
+        "BOUMERDES": "Boumerdès",
+        "EL_TARF": "El Tarf",
+        "TINDOUF": "Tindouf",
+        "TISSEMSILT": "Tissemsilt",
+        "KHENCHELA": "Khenchela",
+        "SOUK_AHRAS": "Souk Ahras",
+        "TIPAZA": "Tipaza",
+        "MILA": "Mila",
+        "AIN_DEFLA": "Aïn Defla",
+        "NAAMA": "Naâma",
+        "AIN_TEMOUCHENT": "Aïn Témouchent",
+        "RELIZANE": "Relizane",
+        "TIMIMOUN": "Timimoun",
+        "BORDJ_BADJI_MOKHTAR": "Bordj Badji Mokhtar",
+        "OULED_DJELLAL": "Ouled Djellal",
+        "BENI_ABBES": "Béni Abbès",
+        "IN_SALAH": "In Salah",
+        "IN_GUEZZAM": "In Guezzam",
+        "TOUGGOURT": "Touggourt",
+        "DJANET": "Djanet",
+        "EL_MGHAIR": "El M'Ghair",
+        "EL_MENIAA": "El Meniaa",
+        "AFLOU": "Aflou",
+        "BARIKA": "Barika",
+        "EL_KANTARA": "El Kantara",
+        "BIR_EL_ATER": "Bir El Ater",
+        "EL_ARICHA": "El Aricha",
+        "KSAR_CHELLALA": "Ksar Chellala",
+        "AIN_OUSSERA": "Aïn Oussera",
+        "MESSAAD": "Messaad",
+        "KSAR_EL_BOUKHARI": "Ksar El Boukhari",
+        "BOU_SAADA": "Bou Saâda",
+        "EL_ABIODH_SIDI_CHEIKH": "El Abiodh Sidi Cheikh"
+      },
+      "sectors": {
+        "TECHNOLOGY_AND_SOFTWARE": "Technologie & Logiciels",
+        "BANKING_AND_FINANCIAL_SERVICES": "Banque, Finance & Assurance",
+        "HEALTHCARE_AND_PHARMACEUTICALS": "Santé & Industrie Pharmaceutique",
+        "ENERGY_AND_OIL_AND_GAS": "Énergie, Hydrocarbures & Gaz",
+        "AUTOMOTIVE_AND_MANUFACTURING": "Industrie & Fabrication Automobile",
+        "RETAIL_AND_CONSUMER_GOODS": "Commerce, Distribution & E-Commerce",
+        "TELECOMMUNICATIONS": "Télécommunications & Réseaux",
+        "AEROSPACE_AND_DEFENSE": "Aéronautique & Défense",
+        "AGRICULTURE_AND_FOOD_PRODUCTION": "Agriculture & Industrie Agroalimentaire",
+        "TRANSPORTATION_AND_LOGISTICS": "Transport, Logistique & Supply Chain",
+        "EDUCATION_AND_EDTECH": "Éducation, Formation & EdTech",
+        "CONSTRUCTION_AND_REAL_ESTATE": "BTP, Construction & Immobilier",
+        "CONSULTING_AND_PROFESSIONAL_SERVICES": "Conseil, Audit & Services Professionnels",
+        "MEDIA_AND_CREATIVE_INDUSTRIES": "Médias, Communication & Industries Créatives",
+        "TOURISM_AND_HOSPITALITY": "Tourisme, Hôtellerie & Événementiel",
+        "PUBLIC_SECTOR_AND_ADMINISTRATION": "Secteur Public & Administration",
+        "RENEWABLE_ENERGY_AND_CLEANTECH": "Énergies Renouvelables & CleanTech",
+        "MINING_AND_METALLURGY": "Mines, Métallurgie & Matériaux",
+        "TEXTILES_AND_APPAREL": "Textile, Cuir & Habillement",
+        "NON_PROFIT_AND_NGO": "Associations, Fondations & ONG",
+        "OTHER": "Autre / Multi-Secteurs"
+      }
+    },
+    "stats": {
+      "certificates": "Certificats",
+      "certificatesDesc": "Réalisations professionnelles",
+      "projects": "Projets",
+      "projectsDesc": "Travaux terminés",
+      "datasets": "Jeux de données",
+      "datasetsDesc": "Collections de données",
+      "organizations": "Organisations",
+      "organizationsDesc": "Adhésions d'équipe",
+      "coursesCompleted": "Cours terminés",
+      "coursesCompletedDesc": "Étapes d'apprentissage",
+      "skills": "Compétences",
+      "skillsDesc": "Domaines d'expertise",
+      "socialLinks": "Liens sociaux",
+      "socialLinksDesc": "Présence en ligne",
+      "profileComplete": "Profil complet",
+      "profileCompleteDesc": "Force du profil",
+      "engagement": "Engagement",
+      "engagementDesc": "Activité sur la plateforme",
+      "influence": "Influence",
+      "influenceDesc": "Score d'impact",
+      "increase": "augmentation",
+      "decrease": "diminution",
+      "inProgress": "En cours",
+      "averageProgress": "Progression moyenne",
+      "totalSkills": "Compétences totales",
+      "technicalSkills": "Compétences techniques",
+      "skillsCapacity": "Capacité des compétences"
+    },
+    "buttons": {
+      "adding": "Ajout en cours...",
+      "add": "Ajouter",
+      "cancel": "Annuler",
+      "editProfile": "Modifier le profil",
+      "saveProfile": "Enregistrer le profil",
+      "saving": "Enregistrement en cours...",
+      "addLink": "Ajouter un lien",
+      "saveLinks": "Enregistrer les liens",
+      "savingLinks": "Enregistrement des liens...",
+      "addFirstLink": "Ajouter votre premier lien",
+      "startProject": "Commencer votre premier projet",
+      "viewAllCourses": "Voir tous ({count} cours)",
+      "viewCertificate": "Voir le certificat",
+      "browseLearningPaths": "Parcourir les parcours",
+      "exploreCertifications": "Explorer les certifications",
+      "addFirstSkill": "Ajouter votre première compétence",
+      "unlockAiInsights": "Débloquer tous les insights IA - Essai gratuit",
+      "privacy": "Confidentialité",
+      "share": "Partager",
+      "changeCover": "Changer la couverture",
+      "saveAvatar": "Enregistrer la photo"
+    },
+    "messages": {
+      "tryAgain": "Réessayer",
+      "loadError": "Échec du chargement des données. Veuillez réessayer.",
+      "currency": "DZD",
+      "rows": "{count} lignes",
+      "profilePictureUpdated": "Photo de profil mise à jour avec succès ! 🎉",
+      "uploadError": "Échec du téléchargement de la photo de profil. Veuillez réessayer.",
+      "profileNotLoaded": "Profil utilisateur non chargé",
+      "profileUpdated": "Profil mis à jour avec succès ! {links} liens sociaux enregistrés. 🎉",
+      "skillAdded": "Compétence ajoutée avec succès ! 🎯",
+      "skillError": "Échec de l'ajout de la compétence. Veuillez réessayer.",
+      "skillRemoved": "Compétence supprimée avec succès ! 🗑️",
+      "skillRemoveError": "Échec de la suppression de la compétence. Veuillez réessayer.",
+      "completenessMessage": "Complétez votre profil pour débloquer de meilleures opportunités et augmenter votre visibilité.",
+      "improvementTips": "Conseils d'amélioration du profil",
+      "addBioTip": "Ajoutez une bio professionnelle pour vous présenter",
+      "addSkillsTip": "Ajoutez au moins 3 compétences pour montrer votre expertise",
+      "addSocialLinksTip": "Connectez vos profils sociaux pour renforcer votre crédibilité",
+      "addProfilePictureTip": "Téléchargez une photo de profil professionnelle",
+      "profileComplete": "🎉 Votre profil est complet ! Gardez-le à jour.",
+      "noActivity": "Aucune activité récente pour le moment",
+      "startActivityMessage": "Commencez à apprendre et à créer pour voir votre activité ici !",
+      "createdDate": "Créé le {date}",
+      "issuedDate": "Délivré le {date}",
+      "addedDate": "Ajouté le {date}",
+      "saveError": "Échec de l'enregistrement du profil. Veuillez vérifier la console pour les détails.",
+      "profileNotFound": "Profil introuvable",
+      "profileNotFoundDesc": "Ce profil n'existe pas ou est privé.",
+      "goHome": "Aller à l'accueil"
+    },
+    "activity": {
+      "certificate": "Certificat obtenu",
+      "project": "Projet créé",
+      "enrollment": "Progression du cours mise à jour"
+    },
+    "sort": {
+      "name": "Trier par nom",
+      "date": "Trier par date",
+      "progress": "Trier par progression"
+    },
+    "emptyStates": {
+      "projects": {
+        "title": "Votre Toile Créative Vous Attend",
+        "description": "Transformez vos idées en projets remarquables et montrez votre talent au monde."
+      },
+      "learning": {
+        "title": "Commencez Votre Parcours d'Apprentissage",
+        "description": "Embarkez sur une aventure éducative qui transformera votre carrière et élargira vos horizons."
+      },
+      "certificates": {
+        "title": "Construisez Votre Héritage d'Excellence",
+        "description": "Obtenez des certifications prestigieuses qui valident votre expertise et montrent vos réalisations."
+      },
+      "skills": {
+        "title": "Aucune compétence pour le moment",
+        "description": "Commencez à ajouter des compétences pour montrer votre expertise !",
+        "noCategory": "Aucune compétence {category} ajoutée pour le moment."
+      },
+      "business": {
+        "description": "Les tableaux de bord publics, jeux de données et modèles ML apparaîtront ici."
+      },
+      "teaching": {
+        "description": "Les cours enseignés, étudiants et diplômes apparaîtront ici."
+      },
+      "reviews": {
+        "description": "Les avis apparaîtront ici une fois reçus."
+      },
+      "followers": {
+        "description": "Les personnes qui suivent ce profil apparaîtront ici."
+      },
+      "following": {
+        "description": "Les profils que cet utilisateur suit apparaîtront ici."
+      }
+    },
+    "skills": {
+      "all": "Toutes les compétences",
+      "technical": "Technique",
+      "business": "Business",
+      "creative": "Créatif",
+      "soft": "Compétences comportementales",
+      "design": "Design"
+    },
+    "socialLinks": {
+      "categories": {
+        "professional": "Professionnel",
+        "social": "Réseaux sociaux",
+        "creative": "Créatif & Portfolio",
+        "video": "Vidéo & Contenu"
+      },
+      "addNew": "Ajouter un nouveau lien social",
+      "selectPlatform": "Sélectionner la plateforme",
+      "platform": "Plateforme",
+      "platformPlaceholder": "Ou tapez une plateforme personnalisée...",
+      "url": "URL",
+      "urlPlaceholder": "https://...",
+      "linksCount": "{current} sur {max} liens ajoutés",
+      "emptyTitle": "Aucun lien social pour le moment",
+      "emptyDescription": "Connectez vos profils de médias sociaux et sites web pour construire votre réseau professionnel et montrer votre présence en ligne.",
+      "maxLinksWarning": "Nombre maximum de {max} liens sociaux atteint. Supprimez certains liens pour en ajouter de nouveaux."
+    },
+    "insights": {
+      "unlockPremium": "Débloquez les Insights IA Premium",
+      "premiumDescription": "Obtenez des conseils de carrière personnalisés, une analyse des écarts de compétences et des recommandations basées sur les données propulsées par l'IA avancée",
+      "previewTitle": "Aperçu de vos insights potentiels",
+      "premiumFeature": "Fonctionnalité Premium",
+      "upgradeToUnlock": "Mettez à niveau pour débloquer",
+      "biAnalytics": "Analyses Business Intelligence",
+      "dataVisualization": "Compétences en visualisation de données",
+      "dashboardCreation": "Création de tableaux de bord",
+      "premiumInsight": "Insight Premium",
+      "biInsight": "Vos compétences BI vous positionnent pour des opportunités salariales 45% plus élevées dans les rôles axés sur les données",
+      "freelanceAnalysis": "Analyse de carrière Freelance",
+      "marketRate": "Taux du marché",
+      "successScore": "Score de réussite",
+      "freelanceInsight": "Basé sur votre portfolio, vous pourriez augmenter vos tarifs de 30% pour les clients entreprises",
+      "learningPath": "Optimisation du parcours d'apprentissage",
+      "recommendedCourse": "Cours recommandé suivant",
+      "advancedAnalytics": "Analyses avancées",
+      "learningInsight": "Terminez 2 cours supplémentaires pour débloquer 3 nouveaux parcours de carrière avec un potentiel de revenus 25% plus élevé",
+      "premiumIncludes": "Ce qui est inclus dans les Insights IA Premium",
+      "features": {
+        "careerRoadmap": "Feuille de route de carrière personnalisée",
+        "careerRoadmapDesc": "Chemin généré par l'IA basé sur vos compétences et objectifs",
+        "marketAnalysis": "Analyse du marché en temps réel",
+        "marketAnalysisDesc": "Données en direct sur les tendances d'emploi et les références salariales",
+        "skillGap": "Identification des écarts de compétences",
+        "skillGapDesc": "Recommandations précises pour le développement des compétences",
+        "projectMatching": "Correspondance d'opportunités de projet",
+        "projectMatchingDesc": "Recommandations de freelance et de projets organisées par l'IA"
+      },
+      "trialOffer": "Essai gratuit de 7 jours • Annulez à tout moment • Accès à toutes les fonctionnalités premium"
+    },
+    "viewAs": {
+      "public": "Public",
+      "follower": "Abonné",
+      "followers": "Abonnés",
+      "self": "Moi-même",
+      "previewPublicBanner": "Aperçu de votre profil en tant que visiteur public",
+      "previewFollowerBanner": "Aperçu de votre profil en tant qu'abonné",
+      "resetSelf": "Passer à la vue personnelle"
+    },
+    "completion": {
+      "title": "Progression du profil",
+      "almostDone": "Presque terminé ! Ajoutez quelques détails supplémentaires.",
+      "makingProgress": "Bonne progression ! Continuez à remplir votre profil.",
+      "goodStart": "Bon début ! Complétez votre profil pour vous démarquer.",
+      "completeProfile": "Complétez votre profil pour profiter pleinement de Podacium."
+    },
+    "qrCode": {
+      "share": "Partager le profil",
+      "scanToView": "Scannez pour voir le profil de {username}",
+      "download": "Télécharger QR",
+      "linkCopied": "Lien copié !",
+      "linkCopyFailed": "Échec de la copie du lien",
+      "alt": "Code QR pour {username}"
+    },
+    "phone": {
+      "countryCode": "Sélectionnez l'indicatif du pays",
+      "number": "Numéro de téléphone"
+    },
+    "avatar": {
+      "cropTitle": "Télécharger une photo de profil",
+      "dragDrop": "Glissez-déposez votre photo ici",
+      "orClickToBrowse": "ou cliquez pour parcourir"
+    }
+  },
+  "rec": {
+    "c_py_basics": {
+      "t": "Bases de Python",
+      "d": "Introduction au langage de programmation Python",
+      "r": "Compétence essentielle"
+    },
+    "c_py_adv": {
+      "t": "Python Avancé",
+      "d": "Maîtrisez les décorateurs, générateurs et métaclasses",
+      "r": "Améliorez la qualité de votre code"
+    },
+    "c_ds_pandas": {
+      "t": "Pandas pour Data Science",
+      "d": "Maîtrise de la manipulation et de l'analyse de données",
+      "r": "Crucial pour tout rôle data"
+    },
+    "c_alg_sme": {
+      "t": "Données pour PME Algériennes",
+      "d": "Analysez efficacement les données d'entreprises locales",
+      "r": "Forte demande sur le marché local"
+    },
+    "c_viz_tab": {
+      "t": "Fondamentaux de Tableau",
+      "d": "Visualisez vos insights avec Tableau",
+      "r": "Compétence de visualisation très demandée"
+    },
+    "c_viz_pbi": {
+      "t": "Power BI pour le Business",
+      "d": "Créez des tableaux de bord prêts pour l'entreprise",
+      "r": "Outil standard pour le business"
+    },
+    "c_ml_intro": {
+      "t": "Intro au Machine Learning",
+      "d": "Bases de Scikit-Learn et du ML",
+      "r": "Assurez votre avenir professionnel"
+    },
+    "c_sql_boot": {
+      "t": "Bootcamp SQL",
+      "d": "Maîtrisez les requêtes et la gestion de bases de données",
+      "r": "Le fondement du travail sur les données"
+    },
+    "c_web_scrap": {
+      "t": "Web Scraping avec Python",
+      "d": "Extrayez des données de n'importe quel site web",
+      "r": "Rassemblez vos propres jeux de données"
+    },
+    "c_api_dev": {
+      "t": "Développement FastAPI",
+      "d": "Construisez des API haute performance",
+      "r": "Standard moderne du backend"
+    },
+    "c_free_101": {
+      "t": "Freelance 101",
+      "d": "Commencez votre voyage de freelance aujourd'hui",
+      "r": "Monétisez vos compétences"
+    },
+    "c_client_nego": {
+      "t": "Négociation Client",
+      "d": "Soyez payé à votre juste valeur",
+      "r": "Augmentez vos revenus"
+    },
+    "c_brand_pers": {
+      "t": "Branding Personnel",
+      "d": "Démarquez-vous dans un marché encombré",
+      "r": "Attirez de meilleurs clients"
+    },
+    "c_time_mgmt": {
+      "t": "Gestion du Temps",
+      "d": "Maximisez votre productivité",
+      "r": "Essentiel pour le travail à distance"
+    },
+    "c_rem_work": {
+      "t": "Meilleures Pratiques Télétravail",
+      "d": "Restez sain et productif depuis chez vous",
+      "r": "Travaillez de n'importe où"
+    },
+    "p_sales_dash": {
+      "t": "Revue Tableau de Bord Ventes",
+      "d": "Visualisez les données de vente au détail",
+      "r": "Bon projet pour débuter"
+    },
+    "p_ecom_opt": {
+      "t": "Optimisation E-com",
+      "d": "Améliorez les taux de conversion du tunnel",
+      "r": "Impact business à haute valeur"
+    },
+    "p_inv_sys": {
+      "t": "Script Système d'Inventaire",
+      "d": "Automatisez le suivi de stock avec Python",
+      "r": "Superbe pratique d'automatisation"
+    },
+    "p_real_est": {
+      "t": "Analyse Immobilière",
+      "d": "Analysez les tendances du marché immobilier",
+      "r": "Analyse de marché concrète"
+    },
+    "p_cust_seg": {
+      "t": "Segmentation Client",
+      "d": "Groupez les clients avec le ML",
+      "r": "Projet de machine learning avancé"
+    },
+    "p_web_port": {
+      "t": "Site Web Portfolio",
+      "d": "Construisez votre vitrine professionnelle",
+      "r": "Nécessaire pour montrer votre travail"
+    },
+    "p_api_integ": {
+      "t": "Intégration API Paiement",
+      "d": "Intégrez des passerelles de paiement locales",
+      "r": "Défi technique"
+    },
+    "p_bug_fix": {
+      "t": "Marathon Correction de Bugs",
+      "d": "Corrigez 5 bugs open source",
+      "r": "Contribuez à la communauté"
+    },
+    "p_data_clean": {
+      "t": "Mission Nettoyage Données",
+      "d": "Nettoyez des fichiers excel malpropres",
+      "r": "Tâche à rotation rapide"
+    },
+    "p_trans_doc": {
+      "t": "Traduction Doc Tech",
+      "d": "Traduisez la documentation EN->AR",
+      "r": "Exploitez vos compétences linguistiques"
+    },
+    "d_alg_hous": {
+      "t": "Données Logement Alger",
+      "d": "Prix immobiliers et localisations",
+      "r": "Tendance locale"
+    },
+    "d_dz_wthr": {
+      "t": "Météo Algérie 10 ans",
+      "d": "Données météo historiques sur 10 ans",
+      "r": "Bases de l'analyse climatique"
+    },
+    "d_stock_mrk": {
+      "t": "Marché Boursier Mondial",
+      "d": "Prix de clôture quotidiens des actions majeures",
+      "r": "Pratique de modélisation financière"
+    },
+    "d_soc_media": {
+      "t": "Sentiments Réseaux Sociaux",
+      "d": "Jeu de données de 1 million de tweets",
+      "r": "Matériel de pratique NLP"
+    },
+    "d_retail_sales": {
+      "t": "Historique Ventes Détail",
+      "d": "3 ans d'historique de transactions",
+      "r": "Pratique de prévision"
+    },
+    "d_traffic": {
+      "t": "Flux Trafic Urbain",
+      "d": "Modèles de mouvement et densité urbaine",
+      "r": "Projet d'urbanisme"
+    },
+    "d_energy": {
+      "t": "Consommation Énergétique",
+      "d": "Statistiques d'utilisation énergétique des ménages",
+      "r": "Analyse d'énergie verte"
+    },
+    "d_job_mkt": {
+      "t": "Marché Emploi Tech",
+      "d": "Salaires et demande de compétences 2026",
+      "r": "Insights de carrière"
+    },
+    "cert_bi_adv": {
+      "t": "Certification BI Avancée",
+      "d": "Tableaux de bord niveau professionnel",
+      "r": "Avancement de carrière sérieux"
+    },
+    "cert_py_pro": {
+      "t": "Professionnel Python",
+      "d": "Statut de Pythoniste certifié",
+      "r": "Preuve définitive de compétence"
+    },
+    "cert_data_eng": {
+      "t": "Ingénierie des Données",
+      "d": "ETL, Pipelines et Entrepôt de données",
+      "r": "Qualification pour rôle à haut salaire"
+    },
+    "cert_cloud_fund": {
+      "t": "Fondamentaux Cloud",
+      "d": "Essentiels AWS/Azure/GCP",
+      "r": "Connaissance infrastructure"
+    }
+  },
+  "privacy": {
+    "sections": {
+      "title": "Visibilité des sections",
+      "description": "Contrôlez qui peut voir chaque section de votre profil.",
+      "section": "Section",
+      "visibility": "Visibilité",
+      "bio": "Biographie",
+      "bioDesc": "Votre biographie personnelle",
+      "headline": "Titre professionnel",
+      "headlineDesc": "Votre titre professionnel",
+      "tagline": "Slogan",
+      "taglineDesc": "Votre slogan personnel",
+      "pronouns": "Pronoms",
+      "pronounsDesc": "Vos pronoms",
+      "coverImage": "Image de couverture",
+      "coverImageDesc": "Votre image de couverture de profil",
+      "location": "Localisation",
+      "locationDesc": "Votre localisation",
+      "socialLinks": "Liens sociaux",
+      "socialLinksDesc": "Vos liens vers les réseaux sociaux",
+      "availability": "Disponibilité",
+      "availabilityDesc": "Votre statut de disponibilité",
+      "timezone": "Fuseau horaire",
+      "timezoneDesc": "Votre fuseau horaire",
+      "profileViews": "Vues du profil",
+      "profileViewsDesc": "Le nombre de vues de votre profil",
+      "lastActive": "Dernière activité",
+      "lastActiveDesc": "Date et heure de votre dernière activité",
+      "followers": "Abonnés",
+      "followersDesc": "Votre nombre d'abonnés",
+      "following": "Abonnements",
+      "followingDesc": "Les personnes que vous suivez",
+      "badges": "Badges",
+      "badgesDesc": "Vos badges obtenus",
+      "skills": "Compétences",
+      "skillsDesc": "Vos compétences et expertises",
+      "activityFeed": "Fil d'activité",
+      "activityFeedDesc": "Votre activité récente",
+      "footerNote": "Par défaut utilise la visibilité définie dans vos paramètres de confidentialité.",
+      "loadError": "Échec du chargement des paramètres de visibilité.",
+      "saveError": "Échec de l'enregistrement des paramètres de visibilité.",
+      "saving": "Enregistrement..."
+    },
+    "buttons": {
+      "cancel": "Annuler",
+      "saveChanges": "Enregistrer les modifications"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+# =============================================================================
+# Podacium — Caddy Reverse Proxy
+# =============================================================================
+# Caddy automatically obtains and renews Let's Encrypt certificates.
+# No manual certbot setup. No cron jobs. No cloud-specific services.
+#
+# Environment variables (set in docker-compose.prod.yml):
+#   DOMAIN     — main frontend domain (e.g., podacium.com)
+#   API_DOMAIN — backend API domain (e.g., api.podacium.com)
+# =============================================================================
+
+# Catch-all: reject unknown hosts with empty response
+:80, :443 {
+    respond 444
+}
+
+# WWW → non-WWW redirect
+www.{$DOMAIN} {
+    redir https://{$DOMAIN}{uri} permanent
+}
+
+# ── Main Frontend (Next.js on port 3000) ─────────────────────────────────────
+{$DOMAIN} {
+    # Security headers
+    header {
+        Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+        X-Frame-Options "DENY"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    }
+
+    # Domain ownership verification for Google
+    handle /_uu35cdoh9pqvq3za88v72mnp6vga9d8b {
+        root * /srv/static
+        file_server
+    }
+
+    # ACME challenge
+    handle /.well-known/acme-challenge/* {
+        root * /var/www/certbot
+        file_server
+    }
+
+    # Everything else → Next.js
+    reverse_proxy host.docker.internal:3000 {
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto https
+    }
+}
+
+# ── Backend API (FastAPI on port 8000) ───────────────────────────────────────
+{$API_DOMAIN} {
+    # Security headers
+    header {
+        Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+        X-Frame-Options "DENY"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    }
+
+    # Upload size limit (videos up to 2GB, datasets up to 100MB)
+    request_body {
+        max_size 2000MB
+    }
+
+    # ACME challenge
+    handle /.well-known/acme-challenge/* {
+        root * /var/www/certbot
+        file_server
+    }
+
+    # ⚠️  /static/* is intentionally NOT handled here — uploaded files require JWT
+    # authentication. ALL /static/* requests are forwarded to FastAPI's
+    # _AuthenticatedStaticFiles middleware which verifies the JWT before serving.
+    # Serving them from Caddy directly would bypass authentication entirely.
+
+    # Everything else → FastAPI
+    reverse_proxy host.docker.internal:8000 {
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto https
+    }
+}

@@ -1,0 +1,301 @@
+{
+  "docs": {
+    "meta": {
+      "title": "Documentation - Podacium",
+      "description": "Comprehensive documentation for Podacium's Learning, Freelance Hub, and Business Intelligence platforms"
+    },
+    "hero": {
+      "badge": "Documentation",
+      "title": "Podacium",
+      "titleHighlight": "Documentation",
+      "subtitle": "Everything you need to know about using Podacium's integrated platform for learning, freelancing, and business intelligence.",
+      "searchPlaceholder": "Search documentation..."
+    },
+    "navigation": {
+      "gettingStarted": "Getting Started",
+      "platforms": "Platforms",
+      "features": "Features",
+      "guides": "Guides"
+    },
+    "gettingStarted": {
+      "title": "Getting Started",
+      "subtitle": "New to Podacium? Start here to understand our platform and get up and running quickly.",
+      "whatIs": {
+        "title": "What is Podacium?",
+        "description": "Podacium is an integrated platform combining three powerful pillars: Learning (skill development and certifications), Hub (freelance marketplace), and BI (business intelligence and analytics)."
+      },
+      "quickstart": {
+        "title": "Quick Start Guide",
+        "description": "Create your account, complete your profile, and start exploring courses, projects, or datasets within minutes. Choose your role as Student, Freelancer, or Business user."
+      },
+      "accountSetup": {
+        "title": "Account Setup",
+        "description": "Learn how to set up your account, verify your email and phone, choose your role, and configure your preferences for a personalized experience."
+      }
+    },
+    "platforms": {
+      "title": "Platform Documentation",
+      "subtitle": "Detailed guides for each of Podacium's three integrated platforms.",
+      "explore": "Explore Platform",
+      "learn": {
+        "title": "Learning Platform",
+        "description": "Master in-demand skills through interactive courses, structured learning paths, and industry-recognized certifications.",
+        "features": [
+          "Browse and enroll in courses",
+          "Follow structured learning paths",
+          "Track your progress and achievements",
+          "Earn verified certificates"
+        ]
+      },
+      "hub": {
+        "title": "Freelance Hub",
+        "description": "Connect with businesses and freelancers across Algeria. Find projects, hire talent, and grow your career.",
+        "features": [
+          "Browse and post projects",
+          "Submit proposals",
+          "Manage contracts",
+          "Secure payments"
+        ]
+      },
+      "bi": {
+        "title": "Business Intelligence",
+        "description": "Transform raw data into actionable insights with AI-powered analytics, dashboards, and reporting tools.",
+        "features": [
+          "Upload and manage datasets",
+          "Create interactive dashboards",
+          "Generate automated reports",
+          "Collaborate in organizations"
+        ]
+      }
+    },
+    "features": {
+      "title": "Key Features",
+      "subtitle": "Explore the core features that make Podacium powerful and easy to use.",
+      "authentication": {
+        "title": "Authentication & Security",
+        "description": "Secure authentication with multiple providers and session management.",
+        "items": [
+          "Email and password authentication",
+          "Social login (Google, GitHub, LinkedIn)",
+          "Phone verification",
+          "Two-factor authentication"
+        ]
+      },
+      "billing": {
+        "title": "Billing & Subscriptions",
+        "description": "Flexible subscription plans for learners and businesses.",
+        "items": [
+          "Student plans for learners",
+          "BI plans for businesses",
+          "Secure payment processing",
+          "Invoice management"
+        ]
+      },
+      "notifications": {
+        "title": "Notifications System",
+        "description": "Stay informed with real-time notifications and updates.",
+        "items": [
+          "Real-time notifications",
+          "Email notifications",
+          "Notification preferences",
+          "Unread badges"
+        ]
+      },
+      "profile": {
+        "title": "Profile Management",
+        "description": "Customize your profile and showcase your skills.",
+        "items": [
+          "Profile photo and bio",
+          "Skills showcase",
+          "Portfolio highlights",
+          "Privacy settings"
+        ]
+      }
+    },
+    "guides": {
+      "title": "User Guides",
+      "subtitle": "Step-by-step guides to help you get the most out of Podacium.",
+      "learnMore": "Learn More",
+      "gettingStarted": {
+        "title": "Getting Started with Podacium",
+        "description": "Learn the basics of navigating the platform and setting up your account."
+      },
+      "account": {
+        "title": "Managing Your Account",
+        "description": "How to update your profile, change settings, and manage security."
+      },
+      "billing": {
+        "title": "Understanding Billing",
+        "description": "Everything you need to know about subscriptions, payments, and refunds."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to common documentation questions",
+      "items": [
+        {
+          "question": "How long does it take to get started with Podacium?",
+          "answer": "You can create an account and start exploring in under two minutes. Basic access is free and includes introductory courses, project browsing, and sample BI dashboards. Full platform access only requires choosing a plan that fits your needs."
+        },
+        {
+          "question": "What types of accounts does Podacium support?",
+          "answer": "Podacium supports three account types: Student (for learning and skill development), Freelancer (for offering services and finding projects), and Business (for hiring talent and using BI tools). You can switch between roles or combine them on a single account."
+        },
+        {
+          "question": "How does Podacium compare to other platforms?",
+          "answer": "Podacium is unique in combining learning, freelancing, and business intelligence in one integrated platform. Unlike separate tools for each function, Podacium allows skills from courses to strengthen your freelancer profile, and BI insights to inform your business decisions — all in one ecosystem."
+        },
+        {
+          "question": "Is there a free trial for premium features?",
+          "answer": "Yes. New users get a 14-day free trial with full access to premium features across all three pillars: unlimited courses, project posting, and BI pro analytics. No credit card is required, and you can cancel anytime during the trial period."
+        },
+        {
+          "question": "What support options are available?",
+          "answer": "All users have access to our documentation, knowledge base, and community forums. Premium plans include email and live chat support. Enterprise clients receive priority support with a dedicated account manager and guaranteed response times."
+        },
+        {
+          "question": "How does Podacium protect my data and privacy?",
+          "answer": "Podacium employs enterprise-grade security including encryption at rest and in transit, regular security audits, and strict access controls. We comply with GDPR and data protection regulations. You maintain full ownership of your data and can export or delete it anytime."
+        },
+        {
+          "question": "Does Podacium offer API access for integrating with my existing tools?",
+          "answer": "Yes. Podacium provides a REST API for programmatic access to courses, projects, datasets, and user management. The API is available on Business and Enterprise plans with rate limits and authentication via API keys. Full API documentation with endpoints, examples, and SDK stubs is available in the developer section."
+        },
+        {
+          "question": "Can I migrate my data if I decide to leave Podacium?",
+          "answer": "Yes. You can export all your data at any time — including course progress, certificates, project history, and BI dashboards — in industry-standard formats. Data portability is built into the platform design. Account deletion removes your personal data within 30 days per GDPR requirements."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join thousands of learners, freelancers, and businesses already using Podacium.",
+      "primary": "Create Free Account",
+      "secondary": "Contact Support"
+    }
+  },
+  "developer": {
+    "portal": {
+      "badgePlatform": "Developer Platform",
+      "badgeLayer13": "Layer 13 Enterprise",
+      "apiDocs": "API Documentation",
+      "apiKeysTitle": "API Keys",
+      "apiKeysDesc": "Authenticate server-to-server requests using Bearer tokens with strict domain scopes.",
+      "createApiKey": "Create API Key",
+      "badgeActive": "Active",
+      "badgeRotationGrace": "Rotation Grace Active",
+      "badgeRevoked": "Revoked",
+      "copyMaskedKey": "Copy Masked Key",
+      "graceWindow": "Grace Window: 6d 21h left",
+      "quickstart": "Quickstart",
+      "rotateKey": "Rotate Key",
+      "revokeKey": "Revoke",
+      "deliveriesTitle": "Standard Webhooks Deliveries",
+      "deliveriesDesc": "Real-time delivery log conforming to Standard Webhooks spec (webhook-id, webhook-timestamp, webhook-signature).",
+      "dispatchTest": "Dispatch Test Event",
+      "svixCompliant": "Svix Standard V1 Compliant",
+      "thStatus": "Status",
+      "thEventType": "Event Type",
+      "thDuration": "Duration",
+      "thTimestamp": "Timestamp (UTC)",
+      "thAction": "Action",
+      "inspectBtn": "Inspect",
+      "createModalTitle": "Create Scoped API Key",
+      "createModalDesc": "Generate a high-security server API key with granular domain permissions.",
+      "keyNameLabel": "Key Name / Description",
+      "keyNamePlaceholder": "e.g. Oran Campus ERP Integration",
+      "scopesLabel": "Granular Scopes & Permissions",
+      "cancelBtn": "Cancel",
+      "generateBtn": "Generate Key",
+      "secretModalTitle": "Copy Your API Secret Key",
+      "secretModalDesc": "Make sure to copy your API key now. You will not be able to see it again!",
+      "securityWarning": "Security Warning",
+      "securityWarningText": "This token carries authorization for the scopes you selected. Store it in an environment secret or encrypted vault. Podacium only stores the SHA-256 hash.",
+      "copiedToClipboard": "Copied to clipboard!",
+      "clickCopyPrompt": "Click copy before closing",
+      "copiedBtn": "Copied",
+      "copyKeyBtn": "Copy Key",
+      "doneBtn": "Done",
+      "inspectorTitle": "Delivery Inspector",
+      "httpStatusLabel": "HTTP Status",
+      "latencyLabel": "Latency",
+      "deliveredAtLabel": "Delivered At",
+      "headersTitle": "Standard Webhooks Headers",
+      "payloadTitle": "Dispatched JSON Payload",
+      "upstreamResponseTitle": "Upstream Response Body",
+      "resendSuccess": "Resend Succeeded (200 OK)",
+      "resending": "Resending...",
+      "resendPayload": "Resend Payload",
+      "quickstartTitle": "SDK Quickstart: {name}",
+      "quickstartDesc": "Copy production-ready integration code snippets for your preferred language runtime.",
+      "closeBtn": "Close",
+      "dispatchModalTitle": "Dispatch Test Webhook Event",
+      "dispatchModalDesc": "Simulate an instant event dispatch with Standard Webhooks cryptographic signing.",
+      "eventTypeLabel": "Event Type",
+      "destinationUrlLabel": "Destination Webhook URL",
+      "dispatchedSuccess": "Standard Webhook Dispatched (200 OK)",
+      "dispatchMockBtn": "Dispatch Mock Event"
+    },
+    "workflows": {
+      "builder": {
+        "cycleAlert": "Cannot execute workflow with cyclic dependencies. Please resolve cycle first.",
+        "invalidJsonAlert": "Invalid workflow DAG JSON file format.",
+        "orchestratorTitle": "Automated Workflow DAG Orchestrator",
+        "orchestratorDesc": "Build event-driven pipelines with Extism WebAssembly transformations and Standard Webhooks.",
+        "exportJsonTitle": "Export DAG to JSON",
+        "exportJsonBtn": "Export JSON",
+        "importJsonTitle": "Import DAG from JSON",
+        "importJsonBtn": "Import JSON",
+        "dryRunBtn": "Dry-Run Pipeline",
+        "deployBtn": "Deploy Workflow"
+      },
+      "canvas": {
+        "connectInputTitle": "Connect input",
+        "dragConnectTitle": "Drag to connect next step",
+        "addTrigger": "+ Trigger",
+        "addAction": "+ Action",
+        "addWasm": "+ Wasm Step",
+        "addLogic": "+ Logic",
+        "cycleDetected": "Cycle Detected! Infinite loop prevented",
+        "dagVerified": "DAG Verified: Acyclic (O(V+E))",
+        "zoomInTitle": "Zoom In",
+        "zoomOutTitle": "Zoom Out",
+        "resetViewTitle": "Reset View"
+      },
+      "logs": {
+        "outputTitle": "Execution Output & Live Logs",
+        "clearBtn": "Clear",
+        "executing": "Executing...",
+        "testWorkflow": "Test Workflow",
+        "noLogs": "No execution logs yet. Click \"Test Workflow\" to dry-run the DAG pipeline."
+      },
+      "drawer": {
+        "configureStep": "Configure Step",
+        "closeDrawerAria": "Close drawer",
+        "stepName": "Step Name",
+        "stepNamePlaceholder": "e.g. Dispatch Contract Webhook",
+        "triggerEvent": "Trigger Event",
+        "contractCreated": "Contract Created",
+        "paymentReceived": "Payment Received (Chargily / EDAHABIA)",
+        "courseCompleted": "Course Completed",
+        "actionType": "Action Type",
+        "standardWebhookOption": "Standard Webhook (HTTP POST)",
+        "wasmTransformOption": "Extism Wasm Sandboxed Transform",
+        "whatsappAlertOption": "Send WhatsApp Alert (Concierge)",
+        "anaeInvoiceOption": "Generate ANAE Invoice (Loi 22-23)",
+        "supportTicketOption": "Create Support Ticket",
+        "destinationUrl": "Destination URL",
+        "standardWebhooksActive": "Standard Webhooks Active",
+        "stampsDesc": "Stamps webhook-id, webhook-timestamp, and dual HMAC-SHA256 signatures (webhook-signature: v1,<sig>).",
+        "wasmFunction": "Extism Wasm Transform Function",
+        "ceilingDesc": "Ceiling: 50ms / 16MB",
+        "sandboxedDesc": "Runs sandboxed in WebAssembly with zero filesystem or network permissions.",
+        "logicCondition": "Logic Filter Condition",
+        "logicConditionPlaceholder": "e.g. data.status == 'COMPLETED'",
+        "delaySeconds": "Delay (seconds)",
+        "deleteNode": "Delete Node",
+        "doneBtn": "Done"
+      }
+    }
+  }
+}

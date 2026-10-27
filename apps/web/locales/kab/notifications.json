@@ -1,0 +1,250 @@
+{
+    "page": {
+        "title": "Ilɣuten",
+        "subtitle": "Sefrek ilɣuten-inek u qqim d amaynut ɣef yisenfaren d yirmuden n terbaɛt."
+    },
+    "header": {
+        "refresh": "Smiren",
+        "selected": "{count} yettwafernen",
+        "markRead": "Crem am yeɣran",
+        "delete": "Kkes"
+    },
+    "stats": {
+        "total": "Akk Ilɣuten",
+        "unread": "Ur Neɣri Ara",
+        "read": "Yeɣran",
+        "categories": "S Taggayt"
+    },
+    "tabs": {
+        "all": "Akk",
+        "unread": "Ur Neɣri Ara",
+        "read": "Yeɣran"
+    },
+    "toolbar": {
+        "search": "Nadi ilɣuten...",
+        "sort": {
+            "newest": "Amaynut d amezwaru",
+            "oldest": "Aqdim d amezwaru",
+            "priority": "Tazwart tafellayt"
+        }
+    },
+    "filters": {
+        "title": "Sizdeg Ilɣuten",
+        "clearAll": "Sfeḍ akk",
+        "category": "Taggayt",
+        "allCategories": "Akk Taggayin",
+        "priority": "Tazwart",
+        "allPriorities": "Akk Tizwariyin",
+        "status": "Addad",
+        "allStatuses": "Akk Waddaden",
+        "startDate": "Azemz n Tazwara",
+        "endDate": "Azemz n Taggara"
+    },
+    "preferences": {
+        "title": "Ismanyen n Yilɣuten",
+        "save": "Sekles Ismanyen",
+        "loading": "Asali n yismanyen...",
+        "notLoaded": "Ur nezmir ara ad d-nali ismanyen n yilɣuten",
+        "retry": "Ales aɛreḍ",
+        "emailNotifications": {
+            "title": "Ilɣuten s E-mail",
+            "account": "Ilɣuten s E-mail",
+            "accountDesc": "Awi ilɣuten s e-mail ɣef yirmuden igejdanen n umiḍan.",
+            "inApp": "Ilɣuten deg Tensa",
+            "inAppDesc": "Awi ilɣuten deg ugdil n tensa.",
+            "sms": "Ilɣuten s SMS",
+            "smsDesc": "Awi ilɣuten igejdanen s tebrat n uḍris."
+        },
+        "pushNotifications": {
+            "title": "Ilɣuten Push",
+            "push": "Ilɣuten Push",
+            "pushDesc": "Awi ilɣuten deg wakud amatu ɣef wallalen-inek."
+        },
+        "marketing": {
+            "title": "Tadamsa & Tiywalin",
+            "marketing": "I-maylen n Tdamsa",
+            "marketingDesc": "Awi isallen ɣef timmad timaynutin d yisumar uzzigen.",
+            "newsletter": "Tabrat n Yisallen n Waggur",
+            "newsletterDesc": "Aglam n waggur ɣef yisenfaren igejdanen d tseddast n tensa."
+        },
+        "quietHours": {
+            "title": "Tisaɛin n Tsusmi",
+            "start": "Seg",
+            "end": "Ar",
+            "description": "Ur ttazen ara ilɣuten deg tsaɛin-a."
+        },
+        "digest": {
+            "title": "Aglam s E-mail",
+            "time": "Akud n tuzna",
+            "frequency": "Allus",
+            "frequencyOptions": {
+                "daily": "Yal ass",
+                "weekly": "Yal dduṛt",
+                "never": "Ur yelli ara"
+            },
+            "description": "Awi e-mail n uglam n yilɣuten-inek."
+        }
+    },
+    "notificationItem": {
+        "markAsRead": "Crem am yeɣran",
+        "markUnread": "Crem am ur neɣri ara",
+        "delete": "Kkes",
+        "showMore": "Sken ugar",
+        "showLess": "Sken drus",
+        "time": {
+            "justNow": "Tura kan",
+            "hoursAgo": "{hours} ts aya",
+            "daysAgo": "{days} wussan aya"
+        }
+    },
+    "invitation": {
+        "title": "Anecdu ɣer {orgName}",
+        "message": "{inviterName} inced-ik-id iwakken ad ternuḍ ɣer {orgName} am {role}.",
+        "accepted": {
+            "title": "Anecdu Yettwaqbel",
+            "message": "{userName} yeqbel anecdu-inek ɣer {orgName}."
+        }
+    },
+    "project": {
+        "new_proposal": {
+            "title": "Tasumert Tamaynut Tettwawed-d",
+            "message": "Tewweḍ-ik-id tasumert tamaynut i usenfar-ik '{project_title}'"
+        }
+    },
+    "proposal": {
+        "new": {
+            "title": "Tasumert Tamaynut Tettwawed-d",
+            "body": "Tewweḍ-ik-id tasumert tamaynut i usenfar-ik '{project_title}'"
+        },
+        "accepted": {
+            "title": "Tasumert Tettwaqbel!",
+            "body": "Tasumert-ik i usenfar '{project_title}' tettwaqbel s lferḥ"
+        },
+        "rejected": {
+            "title": "Aselket n Tsumert",
+            "body": "Tasumert-ik i usenfar '{project_title}' ur tettwafran ara"
+        }
+    },
+    "emptyStates": {
+        "noNotifications": {
+            "title": "Ulac ilɣuten yakan",
+            "descriptionAll": "Akk ayen yellan yekfa! Ulac ilɣuten ara d-nesken akka tura.",
+            "descriptionUnread": "Ur tesɛiḍ ara ilɣuten ur neɣri ara.",
+            "descriptionRead": "Ur tesɛiḍ ara ilɣuten yeɣran."
+        }
+    },
+    "actions": {
+        "markAllRead": "Crem akk am yeɣran",
+        "viewAll": "Wali akk",
+        "tryAgain": "Ales aɛreḍ",
+        "accept": "Qbel",
+        "decline": "Aggi",
+        "view": "Wali",
+        "dismiss": "Kkes",
+        "view_proposal": "Wali Asumer",
+        "loadMore": "Rnu-d Ugar",
+        "selectAll": "Fren Akk",
+        "emailSent": "Izen e-mail yettwazen"
+    },
+    "roles": {
+        "member": "amaslaḍ",
+        "admin": "aneflus",
+        "owner": "bab-is",
+        "moderator": "amsiddeg",
+        "STUDENT": "anelmad",
+        "BUSINESS": "tazeqqa",
+        "FREELANCER": "ililelli",
+        "ADMIN": "aneflus",
+        "INSTRUCTOR": "aselmad"
+    },
+    "categories": {
+        "SYSTEM": "Anagraw",
+        "PROJECT": "Asenfar",
+        "COURSE": "Tamsirt",
+        "SECURITY": "Taɣellist",
+        "MARKETING": "Tadamsa",
+        "BILLING": "Axxalas",
+        "MESSAGING": "Iznan",
+        "LIVE": "Tiɣimit timsalliyin",
+        "SUPPORT": "Tallalt",
+        "EDUCATION": "Aselmed",
+        "FREELANCE": "Amahil ilelli"
+    },
+    "chat": {
+        "new_message": "Izen amaynut sɣur {sender_name}",
+        "sent_attachment": "Yuzen-d tanafut",
+        "voice_note": "[Izen n taɣect]"
+    },
+    "item": {
+        "markAsUnread": "Err-it d arɣri",
+        "markAsRead": "Err-it d yeɣran",
+        "delete": "Kkes alɣu"
+    },
+    "priorities": {
+        "URGENT": "D Tazzla",
+        "HIGH": "Afellay",
+        "NORMAL": "Amagnu",
+        "LOW": "Adday"
+    },
+    "admin": {
+        "title": "Azen Alɣu",
+        "send": "Azen Tura",
+        "sendNow": "Azen Tura",
+        "schedule": "Sbedd Akud",
+        "scheduleIt": "Sbedd Akud",
+        "notificationsSent": "Ilɣuten ttwaznen s lewziq.",
+        "notificationsScheduled": "Alɣu yettwasbedd wakud-is.",
+        "targetOptions": {
+            "all": "Akk Iseqdacen",
+            "role": "S Temlilt",
+            "specific": "Iseqdacen Uzzigen"
+        },
+        "form": {
+            "title": "Azwel",
+            "titlePlaceholder": "Sekcem azwel n ulɣu",
+            "category": "Taggayt",
+            "message": "Izen",
+            "messagePlaceholder": "Sekcem izen n ulɣu",
+            "priority": "Tazwart",
+            "targetUsers": "Iseqdacen Yettwasuturen",
+            "targetRole": "Tamlilt Yettwasuturen",
+            "sendEmail": "Azen daɣen alɣu s e-mail",
+            "scheduleFor": "Yettwasbedd i"
+        }
+    },
+    "live_session": {
+        "booked": {
+            "title": "Tiɣimit Tettwasekles",
+            "body": "Tsekleseḍ s lewziq \"{title}\""
+        },
+        "cancelled": {
+            "title": "Asekles Yettwasefsex",
+            "body": "Asekles-inek i \"{title}\" yettwasefsex"
+        },
+        "payout": {
+            "title": "Axxalas Yettwawwi",
+            "body": "Tewwiḍ {amount} i \"{title}\""
+        },
+        "transferred": {
+            "title": "Asekles Yettwazen",
+            "body": "Asekles-inek i \"{title}\" yettwazen"
+        },
+        "waitlist_promoted": {
+            "title": "Amkan Yella",
+            "body": "Amkan yeldi i \"{title}\" — tulin-d seg tebyart n uraja"
+        }
+    },
+    "success": {
+        "markedRead": "{count} n yilɣuten cremmen am yeɣran",
+        "deleted": "{count} n yilɣuten ttwakksen",
+        "preferencesUpdated": "Ismanyen ttwasfeḍen s lewziq"
+    },
+    "errors": {
+        "loading": "Afecl deg usali n yilɣuten. Ales aɛreḍ.",
+        "markingRead": "Afecl deg ucram n yilɣuten.",
+        "deleting": "Afecl deg tukksa n yilɣuten.",
+        "sending": "Afecl deg tuzna n ulɣu.",
+        "scheduling": "Afecl deg usbeddi n wakud n ulɣu.",
+        "updatingPreferences": "Afecl deg ubeddel n yismanyen."
+    }
+}

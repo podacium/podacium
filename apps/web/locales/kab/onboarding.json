@@ -1,0 +1,104 @@
+{
+    "onboarding": {
+        "title": "Mmeslay-aɣ-d ɣef yiman-ik",
+        "subtitle": "Ɛiwen-aɣ ad d-nheggi tirmit i k-iwatan",
+        "progress": "Asurif {current} seg {total}",
+        "buttons": {
+            "next": "Ddu",
+            "back": "Uɣal",
+            "skip": "Zri akka tura",
+            "submit": "Bdu Tura",
+            "submitting": "Aheggi deg uselkem..."
+        },
+        "questions": {
+            "role": {
+                "title": "D acu i d tamlilt-inek?",
+                "subtitle": "Ayagi ad aɣ-iɛiwen ad d-nheggi agbur i k-iwatan",
+                "options": {
+                    "student": "Anelmad",
+                    "professional": "Amsadur",
+                    "freelancer": "Amselkim Ililelli",
+                    "entrepreneur": "Bab n Tnezzut",
+                    "researcher": "Amnadi",
+                    "instructor": "Aselmad",
+                    "other": "Wayeḍ"
+                }
+            },
+            "primaryGoal": {
+                "title": "D acu i d iswi-inek agejdan deg Podacium?",
+                "subtitle": "Ad k-nwellah ɣer yifecka iṣeḥḥan",
+                "options": {
+                    "learn": "Lmed timusniwin timaynutin",
+                    "freelance": "Af amahil ililelli",
+                    "hire": "Qerrec izemran",
+                    "analyze": "Sleḍ isefta n tnezzut",
+                    "teach": "Snulfu u zenz timsirin",
+                    "explore": "Anadi kan"
+                }
+            },
+            "experienceLevel": {
+                "title": "D acu i d aswir-inek n termit?",
+                "subtitle": "Akken ad d-nsemres tazwara i k-iwatan",
+                "options": {
+                    "beginner": "Amezwaru",
+                    "intermediate": "Alemmas",
+                    "advanced": "Unzif",
+                    "expert": "Amusnaw"
+                }
+            },
+            "fieldOfInterest": {
+                "title": "Anta taɣult i k-yeɛjben aṭas?",
+                "subtitle": "Ad d-nessken agbur i k-iwatan",
+                "options": {
+                    "software": "Asnefled n Yiseɣzanen",
+                    "data": "Tusna n Yisefta & IA",
+                    "design": "Asuneɣ & Asnulfu",
+                    "business": "Tadamsa & Tinezzut",
+                    "finance": "Tadrimt & Tasiḍent",
+                    "other": "Wayeḍ"
+                }
+            },
+            "weeklyTime": {
+                "title": "Acḥal n wakud i tezmreḍ ad tefkeḍ yal dduṛt?",
+                "subtitle": "Ad nheggi tazzla n ulmad-inek",
+                "options": {
+                    "lessThan2": "Ddaw n 2 tsaɛin",
+                    "2to5": "Gar 2 d 5 tsaɛin",
+                    "5to10": "Gar 5 d 10 tsaɛin",
+                    "moreThan10": "Ugar n 10 tsaɛin"
+                }
+            },
+            "discoverySource": {
+                "title": "Amek i tessneḍ Podacium?",
+                "subtitle": "Ayagi ad aɣ-iɛiwen ad nsimɣer tametti-nneɣ",
+                "options": {
+                    "search": "Amsedday n unadi",
+                    "social": "Izeṭṭwan inmettayen",
+                    "friend": "Amdakkul neɣ ameddakkul n umahil",
+                    "ad": "Aleqqem n Internet",
+                    "event": "Tidyanin neɣ timliliyin",
+                    "other": "Wayeḍ"
+                }
+            },
+            "openAnswer": {
+                "title": "Yella kra nniḍen i tebɣiḍ ad aɣ-d-tiniḍ?",
+                "subtitle": "D afrayan — ini-aɣ-d d acu i tessirimeḍ ad tawḍeḍ",
+                "placeholder": "Bḍu timuɣliwin-inek..."
+            },
+            "skills": {
+                "title": "Anta timusniwin i tesɛiḍ?",
+                "subtitle": "Fren timusniwin i d-yesskanayen tarmit-inek",
+                "placeholder": "Nadi timusniwin...",
+                "selected": "Yettwafernen ({count})"
+            }
+        },
+        "completion": {
+            "title": "Kullec yewjed!",
+            "subtitle": "Aselkem ɣer tfelwit n uskasi..."
+        },
+        "errors": {
+            "submitFailed": "Tella-d tuccḍa. Ales aɛreḍ.",
+            "skipFailed": "Afecl deg uzray n tazwara. Ales aɛreḍ."
+        }
+    }
+}

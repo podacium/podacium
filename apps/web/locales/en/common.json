@@ -1,0 +1,1742 @@
+{
+  "previous": "Previous",
+  "next": "Next",
+  "pageOf": "Page {page} of {total}",
+  "free": "Free",
+  "justNow": "Just now",
+  "followUsOn": "Follow us on {platform}",
+  "toggleSubmenu": "Toggle {name} submenu",
+  "hidePassword": "Hide password",
+  "showPassword": "Show password",
+  "recent": "Recent",
+  "online": "Online",
+  "offline": "Offline",
+  "view": "View",
+  "getStarted": "Get Started",
+  "pause": "Pause",
+  "play": "Play",
+  "exit": "Exit",
+  "done": "Done",
+  "send": "Send",
+  "nav": {
+    "collapseSidebar": "Collapse sidebar",
+    "badgeCount": "{count} items",
+    "workspace": "Workspace",
+    "learning": "Learning",
+    "hub": "Hub",
+    "bi": "BI",
+    "policies": "Policies",
+    "pricing": "Pricing",
+    "company": "Company",
+    "learningCenter": "Learning Center",
+    "learningCenterDesc": "Interactive learning experiences",
+    "paths": "Paths",
+    "pathsDesc": "Guided learning paths",
+    "courses": "Courses",
+    "coursesDesc": "In-depth courses on tech",
+    "documentation": "Documentation",
+    "documentationDesc": "Comprehensive technical docs",
+    "hubCenter": "Hub Center",
+    "hubCenterDesc": "The heart of Podacium's Hub",
+    "freelancer": "Freelancer",
+    "freelancerDesc": "Find and hire top freelancers",
+    "projects": "Projects",
+    "projectsDesc": "Find or Create freelance projects",
+    "forCompanies": "For Companies",
+    "forCompaniesDesc": "Hire talent & post projects",
+    "businessIntelligence": "Business Intelligence",
+    "businessIntelligenceDesc": "Main Business Intelligence Overview",
+    "biDashboard": "Dashboard",
+    "biDashboardDesc": "Main BI overview",
+    "organizations": "Organizations",
+    "organizationsDesc": "Manage your organizations",
+    "datasets": "Datasets",
+    "datasetsDesc": "Manage and analyze datasets",
+    "dashboards": "Dashboards",
+    "dashboardsDesc": "View and create dashboards",
+    "analytics": "Analytics",
+    "analyticsDesc": "Deep dive analysis tools",
+    "aiAnalytics": "AI Analytics",
+    "aiAnalyticsDesc": "AI-powered insights and predictions",
+    "quality": "Quality",
+    "qualityDesc": "Data quality management",
+    "decisions": "Decisions",
+    "decisionsDesc": "Decision tracking & management",
+    "reports": "Reports",
+    "reportsDesc": "Generate and view reports",
+    "reporting": "Reporting",
+    "reportingDesc": "Interactive visualizations",
+    "securityTrust": "Security & Trust",
+    "securityTrustDesc": "Our commitment to security",
+    "legalPolicies": "Legal & Policies",
+    "legalPoliciesDesc": "Legal documents and policies",
+    "privacyPolicy": "Privacy Policy",
+    "privacyPolicyDesc": "Our privacy practices",
+    "termsService": "Terms of Service",
+    "termsServiceDesc": "Our terms and conditions",
+    "cookiePolicy": "Cookie Policy",
+    "refundPolicy": "Refund Policies",
+    "refundPolicyDesc": "Our refund and return policies",
+    "helpSupport": "Help & Support",
+    "helpSupportDesc": "Get help when you need it",
+    "pricingPlans": "Pricing Plans",
+    "pricingPlansDesc": "Choose the right plan for you",
+    "aboutUs": "About Us",
+    "aboutUsDesc": "Learn about our company",
+    "partners": "Partners",
+    "partnersDesc": "Partner programs and resources",
+    "careers": "Careers",
+    "careersDesc": "Join our team",
+    "contact": "Contact",
+    "contactDesc": "Get in touch with us",
+    "mega": {
+      "helpTitle": "Need help getting started?",
+      "helpSubtitle": "Explore our comprehensive guides and documentation"
+    },
+    "badges": {
+      "popular": "Popular",
+      "new": "New",
+      "comingSoon": "Coming Soon",
+      "beta": "Beta"
+    },
+    "comingSoonBadge": "In Development",
+    "comingSoonTitle": "Coming Soon - We're working on it!",
+    "home": "Home",
+    "profile": "Profile",
+    "login": "Login",
+    "create": "Create",
+    "jobs": "Jobs",
+    "contracts": "Contracts",
+    "myHires": "Hires",
+    "teaching": "Teaching",
+    "admin": "Admin",
+    "ariaMobileNav": "Mobile Navigation Bar",
+    "ariaCreateAction": "Create or Quick Action",
+    "ariaCloseSheet": "Close action sheet",
+    "actions": {
+      "quickActions": "Quick Actions",
+      "quickActionsSub": "Choose an action to create or explore",
+      "postProject": "Project",
+      "postProjectDesc": "Hire skilled freelancers for your business",
+      "uploadDataset": "Dataset",
+      "uploadDatasetDesc": "Analyze CSV, Excel or JSON data",
+      "createDashboard": "Dashboard",
+      "createDashboardDesc": "Build interactive BI visualizations",
+      "createCourse": "Course",
+      "createCourseDesc": "Share your expertise with thousands of learners",
+      "explorePaths": "Paths",
+      "explorePathsDesc": "Structured career tracks and curricula",
+      "addLesson": "Lesson",
+      "addLessonDesc": "Add video or quiz content to your courses",
+      "findWork": "Jobs",
+      "findWorkDesc": "Explore open client projects matching your skills",
+      "viewProposals": "Proposals",
+      "viewProposalsDesc": "Track active bids and applications",
+      "updatePortfolio": "Portfolio",
+      "updatePortfolioDesc": "Showcase recent work & skills",
+      "adminUsers": "Users",
+      "adminUsersDesc": "Manage users, verification and roles",
+      "adminAudit": "Audit",
+      "adminAuditDesc": "System activity and security logs",
+      "adminMetrics": "Metrics",
+      "adminMetricsDesc": "Platform analytics & performance",
+      "studentCourses": "Courses",
+      "studentCoursesDesc": "Access enrolled courses and progress",
+      "studentPaths": "Paths",
+      "studentPathsDesc": "Follow structured learning curricula",
+      "studentCertificates": "Certificates",
+      "studentCertificatesDesc": "View and share earned credentials",
+      "exploreCourses": "Courses",
+      "exploreCoursesDesc": "Master tech, business and creative skills",
+      "hireTalent": "Talent",
+      "hireTalentDesc": "Connect with top vetted professionals",
+      "aiInsights": "Analytics",
+      "aiInsightsDesc": "Interactive data tools and scenario planning"
+    },
+    "primaryNav": "Primary Navigation",
+    "toggleMenu": "Toggle menu",
+    "dashboard": "Dashboard",
+    "courseAuthoring": "Course Authoring",
+    "myCourses": "My Courses",
+    "createCourse": "Create Course",
+    "createModule": "Create Module",
+    "createLesson": "Create Lesson",
+    "liveSessions": "Live Sessions",
+    "mySessions": "My Sessions",
+    "payouts": "Payouts",
+    "freelanceHub": "Freelance Hub",
+    "proposals": "Proposals",
+    "messages": "Messages",
+    "biGovernance": "BI & Governance",
+    "notifications": "Notifications",
+    "myLearning": "My Learning",
+    "learningPaths": "Learning Paths",
+    "certificates": "Certificates",
+    "browseProjects": "Browse Projects",
+    "postProject": "Post a Project",
+    "settings": "Settings",
+    "clientWork": "Client Work",
+    "hiring": "Hiring & Talent",
+    "workspaceTitles": {
+      "student": "Learning Space",
+      "studentDesc": "Track your courses, quizzes & certificates",
+      "instructor": "Instructor Studio",
+      "instructorDesc": "Author courses, track students & revenue",
+      "freelancer": "Freelance Hub",
+      "freelancerDesc": "Contracts, proposals, messages & earnings",
+      "business": "Business Hub",
+      "businessDesc": "Projects, hires & analytics",
+      "admin": "Admin Console",
+      "adminDesc": "Platform governance & system telemetry",
+      "account": "Account Settings",
+      "accountDesc": "Manage your settings & preferences"
+    }
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "getStarted": "Get Started",
+    "signOut": "Sign Out",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "profileSettings": "Profile Settings",
+    "billing": "Billing & Plans",
+    "accountSettings": "Account Settings",
+    "devicesSecurity": "Devices & Security",
+    "helpSupport": "Help & Support",
+    "adminPanel": "Admin Panel",
+    "instructorDashboard": "Instructor Dashboard",
+    "statusActive": "Active",
+    "roles": {
+      "admin": "Admin",
+      "instructor": "Instructor",
+      "member": "Member",
+      "business": "Business",
+      "student": "Student",
+      "freelancer": "Freelancer"
+    },
+    "theme": {
+      "title": "Appearance",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "modal": {
+      "title": "Access Required",
+      "joinCommunity": "Join the Community",
+      "description": "Unlock your personalized profile, track your progress, and connect with others. Sign in to access your digital identity.",
+      "signIn": "Sign In to Continue",
+      "createAccount": "Create New Account",
+      "footer": "By continuing, you agree to our Terms and Privacy Policy"
+    },
+    "userMenu": "User menu",
+    "roleGuard": {
+      "accessRestricted": "Access Restricted",
+      "reservedFor": "This section is reserved for {roles} accounts. Your current role is {currentRole}.",
+      "returnToOverview": "Return to Overview"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "new": "new",
+    "noNotifications": "No notifications",
+    "loading": "Loading notifications...",
+    "markAllRead": "Mark all read",
+    "viewAll": "View all notifications",
+    "justNow": "Just now",
+    "viewDetails": "View details",
+    "retry": "Retry",
+    "markRead": "Mark read",
+    "allCaughtUp": "You're all caught up!",
+    "hoursAgo": "{n}h ago",
+    "closeNotifications": "Close notifications",
+    "selectNotification": "Select notification {id}",
+    "failedToLoad": "Failed to load notifications",
+    "bellLabel": "Notifications",
+    "preferences": {
+      "loading": "Loading preferences...",
+      "notLoaded": "Unable to load notification preferences",
+      "retry": "Retry"
+    },
+    "module_approved": {
+      "title": "Module approved and published!",
+      "body": "Your module \"{moduleTitle}\" has been approved and is now live for students."
+    },
+    "module_rejected": {
+      "title": "Module needs changes",
+      "body": "Your module \"{moduleTitle}\" was not approved. Please review the feedback and resubmit."
+    },
+    "module_unpublished": {
+      "title": "Module unpublished",
+      "body": "Your module \"{moduleTitle}\" has been unpublished by an administrator."
+    },
+    "pushNotSupported": "Push notifications are not supported in this browser",
+    "pushPermissionDenied": "Notification permission denied"
+  },
+  "search": {
+    "title": "Search Podacium",
+    "subtitle": "Find courses, projects, and freelancers across Podacium",
+    "placeholder": "Search content...",
+    "openSearch": "Search courses, freelancers, projects, commands...",
+    "searchButton": "Search",
+    "noResults": "No results found",
+    "tryDifferent": "Try a different search term or filter",
+    "resultsCount": "Found",
+    "viewAllResults": "View all results",
+    "recentSearches": "Recent Searches",
+    "clearRecent": "Clear all",
+    "quickJump": "Quick Jump",
+    "courses": "Courses & Modules",
+    "freelancers": "Freelancers",
+    "projects": "Projects",
+    "commands": "Commands",
+    "askTeam": "Can't find what you need? Ask our team",
+    "viewAll": "View all results for",
+    "closeSearch": "Close search"
+  },
+  "docs": {
+    "view": "View Documentation"
+  },
+  "breadcrumbs": {
+    "home": "Podacium",
+    "help": "Help Center",
+    "pricing": "Pricing",
+    "bi": "BI",
+    "learn": "Learn",
+    "hub": "Hub",
+    "docs": "Documentation",
+    "about": "About Podacium",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "refund": "Refund Policy",
+    "cookies": "Cookie Policy",
+    "contact": "Contact",
+    "partners": "Partners",
+    "careers": "Careers"
+  },
+  "footer": {
+    "description": "The all-in-one platform for online learning, freelance work, and business intelligence.",
+    "badges": {
+      "popular": "Popular",
+      "new": "New",
+      "beta": "Beta"
+    },
+    "sections": {
+      "productSuite": {
+        "title": "Our Services",
+        "learnPlatform": "Learning Platform",
+        "biAnalytics": "Business Intelligence",
+        "aiAnalytics": "AI Analytics",
+        "talentHub": "Talent Hub"
+      },
+      "companyInfo": {
+        "title": "Company Info",
+        "about": "About Us",
+        "partners": "Partners",
+        "waitlist": "Join Waitlist",
+        "blog": "Blog"
+      },
+      "userSupport": {
+        "title": "User Support",
+        "documentation": "Documentation",
+        "helpCenter": "Help Center",
+        "contactSupport": "Contact Support",
+        "status": "System Status"
+      },
+      "resourcesHub": {
+        "title": "Resources Hub",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "cookiePolicy": "Cookie Policy"
+      }
+    },
+    "trust": {
+      "law1807": "Compliant with Law 18-07",
+      "soc2": "Enterprise Security",
+      "enterprise": "Enterprise Ready",
+      "iso": "ISO 27001"
+    },
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "refund": "Refunds",
+      "cookies": "Cookies"
+    },
+    "newsletterTitle": "Stay in the loop",
+    "newsletterPlaceholder": "your@email.com",
+    "newsletterCta": "Subscribe",
+    "newsletterSuccess": "You're subscribed! Check your inbox.",
+    "newsletterError": "Something went wrong. Try again later.",
+    "copyright": "© {year} Podacium. All rights reserved.",
+    "socialMedia": "Social media",
+    "newsletterSignup": "Newsletter signup",
+    "footerNavigation": "Footer navigation"
+  },
+  "meta": {
+    "home": {
+      "title": "Podacium — Learn. Work. Analyze. Grow.",
+      "description": "The all-in-one platform for online learning, freelance work, and business intelligence. Join thousands of professionals across MENA advancing their careers."
+    },
+    "about": {
+      "title": "About Podacium — Our Mission & Vision",
+      "description": "Discover how Podacium is transforming education and work across MENA. Learn about our mission to empower professionals through learning, freelancing, and data-driven insights."
+    },
+    "pricing": {
+      "title": "Pricing — Plans for Every Professional",
+      "description": "Choose the perfect plan for your needs. From free tier to enterprise, unlock learning, freelancing, and BI tools that accelerate your career growth."
+    },
+    "contact": {
+      "title": "Contact Us — We're Here to Help",
+      "description": "Get in touch with the Podacium team. Whether you have questions about learning, freelancing, or BI tools, we're ready to assist you."
+    },
+    "careers": {
+      "title": "Careers — Join Our Team",
+      "description": "Be part of the future of education and work. Explore open positions at Podacium and help us build the platform that empowers professionals across MENA."
+    },
+    "partners": {
+      "title": "Partners — Collaboration Opportunities",
+      "description": "Explore partnership opportunities with Podacium. Whether you're a university, business, or NGO, let's create impact together."
+    },
+    "privacy": {
+      "title": "Privacy Policy — How We Protect Your Data",
+      "description": "Learn how Podacium collects, uses, and protects your personal information. Transparency and data security are our top priorities."
+    },
+    "terms": {
+      "title": "Terms of Service — User Agreement",
+      "description": "Read the terms and conditions governing your use of Podacium's learning, freelancing, and business intelligence services."
+    },
+    "cookies": {
+      "title": "Cookie Policy — How We Use Cookies",
+      "description": "Understand how Podacium uses cookies and similar technologies to enhance your learning and work experience on our platform."
+    },
+    "refund": {
+      "title": "Refund Policy — Money-Back Guarantee",
+      "description": "Learn about Podacium's refund policy for courses, subscriptions, and services. We believe in fair and transparent billing practices."
+    },
+    "login": {
+      "title": "Sign In — Access Your Account",
+      "description": "Sign in to your Podacium account to access courses, projects, and analytics tools."
+    },
+    "signup": {
+      "title": "Create Account — Join Podacium Today",
+      "description": "Create your free Podacium account and start learning, freelancing, or analyzing data today."
+    },
+    "forgotPassword": {
+      "title": "Forgot Password — Account Recovery",
+      "description": "Reset your Podacium account password securely. Enter your email to receive a password reset link."
+    },
+    "resetPassword": {
+      "title": "Reset Password — Podacium",
+      "description": "Create a new password for your Podacium account."
+    },
+    "verifyEmail": {
+      "title": "Verify Email — Podacium",
+      "description": "Verify your email address to access your Podacium account and start your learning journey."
+    },
+    "resendVerification": {
+      "title": "Resend Verification — Podacium",
+      "description": "Resend email verification link for your Podacium account."
+    },
+    "loginFailed": {
+      "title": "Login Failed — Podacium",
+      "description": "There was a problem signing in to your account. Please try again."
+    },
+    "dashboard": {
+      "title": "Dashboard — Your Podacium Home",
+      "description": "Your personalized Podacium dashboard. Track your learning progress, manage projects, and view analytics."
+    },
+    "profile": {
+      "title": "Your Profile — Manage Your Account",
+      "description": "Manage your Podacium profile, skills, and portfolio. Update your information and visibility settings."
+    },
+    "settings": {
+      "title": "Account Settings — Preferences",
+      "description": "Configure your Podacium account settings, notifications, and privacy preferences."
+    },
+    "notifications": {
+      "title": "Notifications — Your Activity",
+      "description": "Stay updated with your Podacium notifications. Course updates, project messages, and system alerts."
+    },
+    "billing": {
+      "title": "Billing & Subscriptions",
+      "description": "Manage your Podacium subscription, payment methods, and billing history."
+    },
+    "onboarding": {
+      "title": "Welcome — Setup Your Profile",
+      "description": "Complete your profile setup to get personalized course recommendations and professional opportunities."
+    },
+    "unauthorized": {
+      "title": "Unauthorized Access — Podacium",
+      "description": "You do not have permission to access this page. Please sign in with an authorized account."
+    },
+    "learn": {
+      "title": "Learn — Online Courses & Certifications",
+      "description": "Advance your career with expert-led courses and industry-recognized certifications. Learn in-demand skills across tech, business, and creative fields."
+    },
+    "learnCourses": {
+      "title": "Browse Courses — Learn New Skills Online",
+      "description": "Explore hundreds of courses taught by industry experts. From programming to design, find the perfect course to advance your career."
+    },
+    "learnPaths": {
+      "title": "Learning Paths — Structured Career Development",
+      "description": "Follow curated learning paths designed by industry experts. Structured curricula that take you from beginner to job-ready professional."
+    },
+    "learnManage": {
+      "title": "Manage Courses — Instructor Dashboard",
+      "description": "Manage your courses, track student progress, and update content from your instructor dashboard."
+    },
+    "hub": {
+      "title": "Hub — Find Work & Hire Talent",
+      "description": "Connect with top freelancers and exciting projects on Podacium Hub. The premier marketplace for skills and opportunities across MENA."
+    },
+    "hubProjects": {
+      "title": "Browse Projects — Freelance Opportunities",
+      "description": "Discover exciting freelance projects across development, design, marketing, and more. Apply to opportunities that match your skills."
+    },
+    "hubProjectsNew": {
+      "title": "Post a New Project — Podacium Hub",
+      "description": "Create and post a new project to find talented freelancers on Podacium Hub."
+    },
+    "hubFreelancers": {
+      "title": "Hire Freelancers — Top Talent",
+      "description": "Browse skilled freelancers ready to bring your projects to life. From developers to designers, find the perfect talent for your needs."
+    },
+    "hubContracts": {
+      "title": "Contracts — Secure Freelance Agreements",
+      "description": "Manage your freelance contracts with confidence. Milestone-based payments, dispute resolution, and secure collaboration tools."
+    },
+    "hubMessages": {
+      "title": "Messages — Podacium Hub",
+      "description": "Manage your conversations with clients and freelancers. Stay connected on Podacium Hub."
+    },
+    "hubProposals": {
+      "title": "My Proposals — Podacium Hub",
+      "description": "Track and manage your project proposals and applications on Podacium Hub."
+    },
+    "bi": {
+      "title": "BI — Business Intelligence & Analytics",
+      "description": "Transform your data into actionable insights. Create dashboards, analyze datasets, and make data-driven decisions with Podacium BI."
+    },
+    "biAnalytics": {
+      "title": "Analytics — Data Visualization & Insights",
+      "description": "Powerful analytics tools to visualize and understand your data. Create stunning charts, reports, and interactive dashboards."
+    },
+    "biDashboards": {
+      "title": "Dashboards — Public BI Dashboards",
+      "description": "Explore community-created dashboards and share your own. Discover insights from public datasets and inspire your analytics journey."
+    },
+    "biDashboardsNew": {
+      "title": "Create Dashboard — Podacium BI",
+      "description": "Build custom interactive data dashboards with drag-and-drop widgets on Podacium BI."
+    },
+    "biDatasets": {
+      "title": "Datasets — Open Data & Resources",
+      "description": "Access and contribute to our repository of public datasets. Clean, curated data for your analysis and research projects."
+    },
+    "biDatasetsUpload": {
+      "title": "Upload Dataset — Podacium BI",
+      "description": "Upload your CSV, Excel, or JSON datasets for analysis and visualization on Podacium BI."
+    },
+    "biOrganizations": {
+      "title": "Organizations — Analytics Communities",
+      "description": "Connect with organizations leveraging data for impact. Discover analytics teams, data communities, and business intelligence networks."
+    },
+    "biOrganizationInvitations": {
+      "title": "Organization Invitations — Podacium BI",
+      "description": "View and accept invitations to join analytics organizations on Podacium BI."
+    },
+    "biReports": {
+      "title": "Reports — Data-Driven Insights",
+      "description": "Browse and share data reports from the Podacium community. Discover insights, trends, and analysis from public datasets."
+    },
+    "biQuality": {
+      "title": "Data Quality — Clean & Validate Data",
+      "description": "Ensure your data meets the highest standards. Automated quality checks, validation rules, and data cleansing tools."
+    },
+    "biDecisions": {
+      "title": "Decision Support — Data-Driven Decisions",
+      "description": "Make better decisions with AI-powered recommendations. Analyze scenarios, predict outcomes, and optimize your strategies."
+    },
+    "admin": {
+      "title": "Admin Dashboard — Podacium",
+      "description": "Administrative dashboard for Podacium platform management. Manage users, courses, and system settings."
+    },
+    "adminWaitlist": {
+      "title": "Waitlist Management — Admin",
+      "description": "Manage waitlist entries, verify signups, and track conversion on the Podacium platform."
+    },
+    "adminUsers": {
+      "title": "User Management — Admin",
+      "description": "Manage platform users, roles, and permissions from the admin panel."
+    },
+    "adminCourses": {
+      "title": "Course Management — Admin",
+      "description": "Manage all courses on the platform. Create, edit, publish, and archive courses."
+    },
+    "adminCoursesNew": {
+      "title": "Create Course — Admin",
+      "description": "Create a new course on the Podacium platform."
+    },
+    "adminCoursesEdit": {
+      "title": "Edit Course — Admin",
+      "description": "Edit course details, content, and settings."
+    },
+    "adminLessons": {
+      "title": "Lesson Management — Admin",
+      "description": "Manage all lessons across courses on the platform."
+    },
+    "adminLessonsNew": {
+      "title": "Create Lesson — Admin",
+      "description": "Create a new lesson for a course on the platform."
+    },
+    "adminLessonsEdit": {
+      "title": "Edit Lesson — Admin",
+      "description": "Edit lesson content, videos, and settings."
+    },
+    "adminPaths": {
+      "title": "Path Management — Admin",
+      "description": "Manage learning paths. Create, edit, and organize course sequences."
+    },
+    "adminPathsNew": {
+      "title": "Create Path — Admin",
+      "description": "Create a new learning path on the platform."
+    },
+    "adminPathsEdit": {
+      "title": "Edit Path — Admin",
+      "description": "Edit learning path details and course sequence."
+    },
+    "adminEnrollments": {
+      "title": "Enrollments — Admin",
+      "description": "View and manage student enrollments across all courses."
+    },
+    "adminQuizzes": {
+      "title": "Quiz Management — Admin",
+      "description": "Manage quizzes and assessments across all courses."
+    },
+    "adminSettings": {
+      "title": "Platform Settings — Admin",
+      "description": "Configure platform-wide settings and preferences."
+    },
+    "adminAnalytics": {
+      "title": "Analytics — Admin",
+      "description": "View platform analytics, user metrics, and revenue reports."
+    },
+    "adminActivityLog": {
+      "title": "Activity Log — Admin",
+      "description": "View platform activity logs and audit trail for administrative actions."
+    },
+    "adminAppeals": {
+      "title": "Appeals — Admin",
+      "description": "Review and manage user appeals and dispute resolutions."
+    },
+    "adminContentReview": {
+      "title": "Content Review — Admin",
+      "description": "Review and moderate submitted content awaiting approval."
+    },
+    "adminOrganizations": {
+      "title": "Organizations — Admin",
+      "description": "Manage organizations and their settings on the platform."
+    },
+    "adminTickets": {
+      "title": "Support Tickets — Admin",
+      "description": "Manage and respond to user support tickets."
+    },
+    "aiAnalytics": {
+      "title": "AI Insights & Analytics",
+      "description": "Harness the power of AI to analyze your learning progress and professional growth.",
+      "page": {
+        "title": "AI Analytics",
+        "description": "AI-powered insights and predictions for your learning journey.",
+        "stats": {
+          "modelsActive": "Active Models",
+          "modelsActiveValue": "12",
+          "queriesProcessed": "Queries Today",
+          "queriesProcessedValue": "2,847",
+          "avgResponseTime": "Avg Response Time",
+          "avgResponseTimeValue": "1.2s",
+          "accuracy": "Model Accuracy",
+          "accuracyValue": "97.8%"
+        },
+        "insights": {
+          "title": "AI Insights",
+          "personalized": {
+            "title": "Personalized Recommendations",
+            "description": "Get tailored course and career recommendations based on your learning patterns."
+          },
+          "progress": {
+            "title": "Progress Prediction",
+            "description": "AI predicts your learning trajectory and suggests optimal study paths."
+          },
+          "skills": {
+            "title": "Skills Gap Analysis",
+            "description": "Identify missing skills and get targeted recommendations to fill gaps."
+          },
+          "career": {
+            "title": "Career Insights",
+            "description": "Discover career paths that align with your skills and learning history."
+          }
+        },
+        "comingSoon": {
+          "title": "Advanced Analytics Coming Soon",
+          "description": "We are building deeper AI-powered analytics. Check back soon for predictive models, learning pattern recognition, and personalized growth insights."
+        }
+      }
+    },
+    "docs": {
+      "title": "Documentation — Developer Docs",
+      "description": "Comprehensive documentation for Podacium's Learning, Freelance Hub, and Business Intelligence APIs and platform features."
+    },
+    "help": {
+      "title": "Help Center — Support",
+      "description": "Get help with courses, freelance projects, billing, and BI tools. Browse FAQs and contact Podacium support."
+    },
+    "paymentSuccess": {
+      "title": "Payment Successful",
+      "description": "Your payment has been processed successfully. Thank you for your purchase on Podacium."
+    },
+    "paymentFailure": {
+      "title": "Payment Failed",
+      "description": "We could not process your payment. Please try again or use a different payment method."
+    },
+    "paymentCheckout": {
+      "title": "Checkout — Podacium",
+      "description": "Review your order and complete your purchase securely on Podacium."
+    },
+    "live": {
+      "title": "Live Sessions — Join Expert Streaming Events",
+      "description": "Discover and join live streaming sessions with expert creators. Learn in real-time with interactive Q&A, workshops, and more."
+    },
+    "liveCreate": {
+      "title": "Create Live Session | Podacium",
+      "description": "Schedule and host a live streaming session on Podacium. Set up your session details, pricing, and go live."
+    },
+    "liveMySessions": {
+      "title": "My Live Sessions | Podacium",
+      "description": "View and manage your live streaming sessions on Podacium. Track upcoming, live, and past sessions."
+    },
+    "liveBookings": {
+      "title": "My Bookings | Podacium",
+      "description": "View your booked live sessions on Podacium. Manage reservations and access your upcoming events."
+    },
+    "liveReplays": {
+      "title": "Session Replays | Podacium",
+      "description": "Watch recorded live session replays on Podacium. Catch up on past workshops, webinars, and expert sessions."
+    },
+    "livePayouts": {
+      "title": "Session Payouts | Podacium",
+      "description": "Track your live session earnings and payouts on Podacium. View transaction history and payout status."
+    },
+    "liveTransfer": {
+      "title": "Transfer Booking | Podacium",
+      "description": "Transfer your live session booking to another person on Podacium."
+    },
+    "liveAcceptTransfer": {
+      "title": "Accept Booking Transfer | Podacium",
+      "description": "Accept a transferred live session booking on Podacium."
+    }
+  },
+  "loading": "Loading...",
+  "loadingScreen": {
+    "brand": "Podacium",
+    "preparingJourney": "Preparing your learning journey"
+  },
+  "error": "An error occurred",
+  "processing": "Processing...",
+  "loadingForms": {
+    "loginForm": "Loading login form...",
+    "resetForm": "Loading reset form..."
+  },
+  "errors": {
+    "podaPoints": {
+      "insufficient_points": "Insufficient PodaPoints",
+      "purchase_failed": "Failed to purchase PodaPoints",
+      "spend_failed": "Failed to spend PodaPoints",
+      "feature_not_found": "Feature not found",
+      "feature_already_active": "Feature already active",
+      "feature.freelancer_boost.already_active": "Freelancer Boost is already active. Wait until it expires to purchase again.",
+      "feature.freelancer_featured_7d.already_active": "Featured Freelancer is already active. Wait until it expires to purchase again.",
+      "feature_expired": "Feature has expired",
+      "wallet_not_found": "Wallet not found",
+      "invalid_amount": "Invalid PodaPoints amount"
+    },
+    "billing": {
+      "wallet_not_found": "Wallet not found",
+      "failed_to_get_wallet": "Failed to retrieve wallet information",
+      "not_authorized_org_wallet": "Not authorized to access organization wallet",
+      "not_authorized_wallet": "Not authorized to access this wallet",
+      "amount_must_be_positive": "Transaction amount must be positive",
+      "contract_not_found": "Contract not found",
+      "subscription_not_found": "Subscription not found",
+      "failed_to_get_subscriptions": "Failed to retrieve subscriptions",
+      "not_authorized_transactions": "Not authorized to view these transactions",
+      "failed_to_initiate_payment": "Failed to initiate payment. Please try again later.",
+      "failed_to_initiate_subscription": "Failed to initiate subscription. Please try again later.",
+      "no_checkout_url": "Secure checkout session could not be established."
+    },
+    "admin": {
+      "access_required": "Administrative access required"
+    },
+    "auth": {
+      "invalid_credentials": "Invalid authentication credentials",
+      "invalid_token": "Invalid token payload",
+      "invalid_user_id": "Invalid user ID in token",
+      "database_error": "Database error",
+      "user_not_found": "User not found",
+      "validation_failed": "Could not validate credentials",
+      "account_deactivated": "Account has been deactivated",
+      "authentication_error": "Authentication error",
+      "insufficient_permissions": "Insufficient permissions",
+      "admin_access_required": "Admin access required",
+      "terms_required": "Must accept terms and conditions",
+      "email_exists": "User with this email already exists",
+      "create_failed": "Failed to create user",
+      "login_failed": "Login failed"
+    },
+    "wallet": {
+      "insufficient_funds": "Insufficient funds",
+      "wallet_not_active": "Wallet is not active",
+      "currency_mismatch": "Currency mismatch between wallets",
+      "transfer_failed": "Failed to transfer funds",
+      "credit_failed": "Failed to credit wallet",
+      "debit_failed": "Failed to debit wallet",
+      "hold_failed": "Failed to hold funds",
+      "release_failed": "Failed to release hold"
+    },
+    "escrow": {
+      "create_failed": "Failed to create escrow hold",
+      "hold_not_found": "Escrow hold not found",
+      "freelancer_wallet_not_found": "Freelancer wallet not found",
+      "release_failed": "Failed to release escrow",
+      "refund_failed": "Failed to refund escrow"
+    },
+    "payout": {
+      "wallet_not_found": "Wallet not found",
+      "wallet_not_active": "Wallet is not active",
+      "create_failed": "Failed to create payout request",
+      "not_found": "Payout not found",
+      "cannot_fail_completed": "Cannot fail completed payout",
+      "fail_process_failed": "Failed to process payout failure"
+    },
+    "subscription": {
+      "user_not_found": "User not found",
+      "org_not_found": "Organization not found",
+      "already_exists": "Active subscription already exists",
+      "create_failed": "Failed to create subscription",
+      "update_failed": "Failed to update subscription",
+      "not_active": "Subscription is not active",
+      "cancel_failed": "Failed to cancel subscription",
+      "not_paused": "Subscription is not paused"
+    },
+    "file": {
+      "invalid_category": "Invalid file category",
+      "not_found_or_unauthorized": "File not found or unauthorized",
+      "upload_failed": "File upload failed",
+      "upload_not_found": "Uploaded file was not found in storage",
+      "dangerous_extension_detected": "Dangerous file type or extension detected",
+      "empty_content": "Cannot upload an empty file",
+      "save_failed": "Failed to save file to storage"
+    },
+    "webhook": {
+      "invalid_signature": "Invalid webhook signature",
+      "invalid_payload": "Invalid JSON payload",
+      "processing_failed": "Webhook processing failed"
+    },
+    "commission": {
+      "calculation_failed": "Failed to calculate commission",
+      "freelancer_not_found": "Freelancer profile not found",
+      "update_tier_failed": "Failed to update freelancer tier",
+      "transaction_not_found": "Transaction not found",
+      "record_failed": "Failed to record commission",
+      "invalid_rate": "Custom commission rate must be between 0 and 0.20",
+      "enterprise_only": "Custom rates only available for ENTERPRISE tier"
+    }
+  },
+  "errorFallback": {
+    "generic": {
+      "heading": "Something went wrong",
+      "message": "An unexpected error occurred. Our team has been notified.",
+      "tryAgain": "Try again",
+      "goBack": "Go back",
+      "goHome": "Go home",
+      "digest": "Error digest: {digest}"
+    },
+    "auth": {
+      "heading": "Authentication error",
+      "message": "Something went wrong during authentication. Please try again or contact support."
+    },
+    "dashboard": {
+      "heading": "Dashboard unavailable",
+      "message": "We couldn't load your dashboard. Please try again."
+    },
+    "learn": {
+      "heading": "Learning content unavailable",
+      "message": "We couldn't load the learning content. Please try again."
+    },
+    "hub": {
+      "heading": "Freelancing hub unavailable",
+      "message": "We couldn't load the freelancing hub. Please try again."
+    },
+    "admin": {
+      "heading": "Admin panel unavailable",
+      "message": "We couldn't load the admin panel. Please try again."
+    },
+    "bi": {
+      "heading": "Analytics unavailable",
+      "message": "We couldn't load the analytics dashboard. Your data is safe. Please try again."
+    },
+    "payment": {
+      "heading": "Payment gateway error",
+      "message": "Something went wrong with the payment process. Your account has not been charged. Please try again."
+    },
+    "settings": {
+      "heading": "Settings unavailable",
+      "message": "We couldn't load your settings. Please try again."
+    }
+  },
+  "common": {
+    "all": "All",
+    "allTopics": "All Topics",
+    "saveChanges": "Save Changes",
+    "saving": "Saving...",
+    "saved": "Saved successfully",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "save": "Save",
+    "searchQuestions": "Search questions or keywords...",
+    "noMatchingQuestions": "No matching questions found",
+    "noMatchingQuestionsDesc": "Try different search terms or clear your filter",
+    "clearSearch": "Clear search",
+    "wasHelpful": "Was this helpful?",
+    "yes": "Yes",
+    "no": "No",
+    "thankYouFeedback": "Thank you for your feedback!",
+    "expandAll": "Expand All",
+    "collapseAll": "Collapse All",
+    "podaciumLogo": "Podacium Logo",
+    "home": "Podacium Home",
+    "navigation": "Navigation",
+    "actionsTitle": "Actions",
+    "navigate": "Navigate",
+    "select": "Select",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {page} of {total}",
+    "loadingMore": "Loading more",
+    "allLoaded": "All loaded",
+    "refreshing": "Refreshing",
+    "pullToRefresh": "Pull to refresh",
+    "actions": "Actions",
+    "processed": "Processed",
+    "copied": "Copied",
+    "copy": "Copy",
+    "details": "Details"
+  },
+  "settings": {
+    "title": "Settings",
+    "tabs": {
+      "account": "Account Settings",
+      "appearance": "Appearance & Language",
+      "integrations": "Connected Apps & Integrations",
+      "advanced": "Advanced Studio"
+    },
+    "account": {
+      "title": "Account Settings",
+      "subtitle": "Manage your personal information, contact details, and preferences",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "language": "Language",
+      "timezone": "Timezone",
+      "dateFormat": "Date Format",
+      "verifiedStatus": "Account Verified",
+      "headline": "Professional Headline",
+      "headlinePlaceholder": "e.g. Senior Full-Stack Engineer & AI Researcher",
+      "bio": "Personal Bio / Tagline",
+      "bioPlaceholder": "Brief professional summary about yourself...",
+      "detectTimezone": "Auto-Detect",
+      "sessionTimeout": "Session Timeout",
+      "sessionTimeoutVal": "15 minutes",
+      "languages": {
+        "en": "English (US)",
+        "fr": "French (France)",
+        "ar": "Arabic (العربية)",
+        "kab": "Kabyle (Taqbaylit)"
+      },
+      "saveSuccess": "Settings saved successfully!",
+      "saveError": "Failed to update account settings",
+      "timezones": {
+        "utc": "UTC",
+        "utcFull": "UTC (Universal Time Coordinated)"
+      }
+    },
+    "appearance": {
+      "title": "Appearance Preferences",
+      "subtitle": "Customize how Podacium looks, feels, and adapts to your workspace",
+      "themeSavedNotice": "Theme preferences saved to profile (Dark mode release scheduled for upcoming v2 update)",
+      "themeGroup": "Color Theme",
+      "light": "Light Studio",
+      "dark": "Dark Studio",
+      "system": "System Auto",
+      "fontSizeGroup": "Font Size Scale",
+      "fontSize": {
+        "small": "Small",
+        "smallLabel": "Aa Small",
+        "medium": "Medium",
+        "mediumLabel": "Aa Medium",
+        "large": "Large",
+        "largeLabel": "Aa Large"
+      },
+      "densityGroup": "Interface Spacing Density",
+      "density": {
+        "compact": "Compact",
+        "compactDesc": "Tighter UI Spacing",
+        "comfortable": "Comfortable",
+        "comfortableDesc": "Standard Balanced",
+        "spacious": "Spacious",
+        "spaciousDesc": "Relaxed & Breathable"
+      },
+      "previewTitle": "Live UI Scaling Preview",
+      "previewCardTitle": "Sample Interactive Card",
+      "previewMeta": "Font: {font} • Density: {density}",
+      "previewHeading": "Podacium Platform Workspace",
+      "previewText": "This preview reflects real-time font scaling and layout spacing across your entire dashboard.",
+      "previewPrimaryBtn": "Action Button",
+      "previewSecondaryBtn": "Secondary",
+      "accessibilityGroup": "Accessibility Settings",
+      "reducedMotion": "Reduced Motion",
+      "reducedMotionDesc": "Minimize layout transitions and background motion",
+      "highContrast": "High Contrast Mode",
+      "highContrastDesc": "Maximize visual contrast ratio for screen readability",
+      "saveError": "Failed to save appearance settings"
+    },
+    "advanced": {
+      "title": "Enterprise Developer Platform Studio",
+      "subtitle": "Manage Stripe-grade API keys, RBAC scope matrices, IP whitelists, and outbound webhooks with circuit breakers",
+      "apiKeysGroup": "Programmatic API Keys & Scopes",
+      "generateKey": "Generate New Key",
+      "noApiKeys": "No programmatic API keys active",
+      "webhooksGroup": "Event Webhooks & Circuit Breakers",
+      "addWebhook": "Add Endpoint",
+      "noWebhooks": "No real-time webhook endpoints configured",
+      "dualKeyRotation": "Stripe-Grade Dual Active Key Rotation",
+      "dualKeyDesc": "7-day transition window with Warning headers for zero-downtime key rotation",
+      "rakScoping": "Restricted API Key (RAK) Scoping",
+      "rakPathDesc": "Restrict keys to specific HTTP paths and method wildcards",
+      "secretRotation": "Zero-Downtime Secret Rotation",
+      "secretRotationDesc": "Rotate signing secrets without interrupting active retries (Dual v1 Signatures)",
+      "apiKeys": "API Keys & Access Tokens",
+      "webhooks": "Webhook Endpoints",
+      "dataGroup": "Data Governance & Cache",
+      "exportData": "Export Account Archive",
+      "exportDataDesc": "Download a machine-readable JSON export of all personal data",
+      "clearCache": "Clear Client-Side Cache",
+      "clearCacheDesc": "Invalidate cached resources and local sessions"
+    },
+    "integrations": {
+      "title": "Podacium Connect Integration Engine",
+      "subtitle": "Delegated OAuth 2.0 PKCE connections across EdTech, Freelancing, and Business Intelligence",
+      "pageTitle": "Connected Apps & Integrations",
+      "pageSubtitle": "Manage third-party tools, OAuth apps, and webhooks",
+      "connectors": "Connectors",
+      "connectorsHeader": "10 Outbound Connectors",
+      "workflowBuilder": "Visual Workflow DAG Builder",
+      "workflowDesc": "Connect multi-step automation nodes across EdTech, Freelancing, and BI connectors",
+      "wasmPreview": "WASM Sandboxed Transformer Preview",
+      "wasmDesc": "Preview user-defined JavaScript/Rust data transformations in sandboxed WASM compute environment",
+      "dlqTitle": "Dead Letter Queue (DLQ) Inspector",
+      "dlqDesc": "Inspect and quarantine failed deliveries with 1-click re-delivery",
+      "loadError": "Failed to load connected integrations",
+      "statusConnected": "Connected",
+      "statusNotConnected": "Not Connected",
+      "connectBtn": "Connect Account",
+      "executeTitle": "Execute",
+      "executeDesc": "Trigger real backend API connector integration logic for",
+      "runAction": "Run Action",
+      "connectedMsg": "connected successfully",
+      "disconnectedMsg": "disconnected",
+      "actionSucceeded": "Connector Action Succeeded",
+      "pillar": {
+        "education": "E-Learning",
+        "freelance": "Freelancing",
+        "bi": "Business Intelligence"
+      },
+      "google": {
+        "name": "Google Drive & Workspace",
+        "desc": "Import homework files directly from Drive & export BI data reports",
+        "action": "Import Assignment File"
+      },
+      "github": {
+        "name": "GitHub Developer Engine",
+        "desc": "Verify PR branches & sync freelancer commit activity to contract milestones",
+        "action": "Sync Milestone PR"
+      },
+      "slack": {
+        "name": "Slack Team Intelligence",
+        "desc": "Send automated BI KPI snapshot block-kit reports & anomaly alerts to channel",
+        "action": "Post BI Snapshot"
+      },
+      "zoom": {
+        "name": "Zoom Virtual Classroom",
+        "desc": "Provision live webinars & interactive virtual lectures for EdTech courses",
+        "action": "Provision Live Webinar"
+      },
+      "notion": {
+        "name": "Notion Study Workspace",
+        "desc": "Export course study guides and notes directly into Notion workspace",
+        "action": "Export Study Notes"
+      },
+      "kaggle": {
+        "name": "Kaggle Dataset Hub",
+        "desc": "Ingest machine learning datasets and competition benchmarks into BI Hub",
+        "action": "Ingest ML Dataset"
+      },
+      "huggingface": {
+        "name": "HuggingFace AI Cards",
+        "desc": "Sync AI model cards, pipeline tags, and dataset metrics into project cards",
+        "action": "Sync AI Model Card"
+      },
+      "teams": {
+        "name": "Microsoft Teams Broadcast",
+        "desc": "Post Adaptive Card KPI updates to Microsoft Teams corporate channels",
+        "action": "Post Teams Adaptive Card"
+      },
+      "calendar": {
+        "name": "Google/Outlook Calendar",
+        "desc": "Sync course timetables & freelance milestone deadlines with calendar",
+        "action": "Add Calendar Lecture"
+      },
+      "chargily": {
+        "name": "BaridiMob & Chargily Escrow",
+        "desc": "CIB / Edahabia card escrow deposits & Algerian CCP BaridiMob payouts",
+        "action": "Create Escrow Checkout"
+      }
+    }
+  },
+  "shared": {
+    "loading": "Loading shared insight...",
+    "error": {
+      "expired": "This shared insight has expired",
+      "notFound": "Shared insight not found",
+      "loadFailed": "Failed to load shared insight"
+    },
+    "expired": {
+      "title": "Insight Expired",
+      "message": "This shared insight is no longer available. Shared insights are valid for 7 days.",
+      "askSender": "Ask the sender to generate a new one."
+    },
+    "notFoundTitle": "Insight Unavailable",
+    "card": {
+      "title": "Business Health",
+      "subtitle": "Shared insight",
+      "scoreLabel": "Health Score",
+      "margin": "Margin",
+      "revenue": "Revenue",
+      "expenses": "Expenses",
+      "debt": "Debt",
+      "buffer": "Buffer",
+      "trend": "Trend",
+      "trendUp": "Up",
+      "trendDown": "Down",
+      "trendFlat": "Stable",
+      "sharedOn": "Shared on",
+      "poweredBy": "Powered by Podacium BI",
+      "publicNote": "This is a publicly shared insight. Anyone with this link can view it.",
+      "shareInsight": "Share this insight",
+      "shareButton": "Share"
+    },
+    "labels": {
+      "excellent": "Excellent",
+      "good": "Good",
+      "average": "Average",
+      "critical": "Needs Attention"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, we couldn't find the page you're looking for. It might have been moved, deleted, or the URL might be incorrect.",
+    "goHome": "Go to homepage",
+    "goBack": "Go back",
+    "tagline": "Podacium — Learn. Work. Analyze. Grow."
+  },
+  "visibility": {
+    "inherit": "Inherit",
+    "public": "Public",
+    "followers": "Followers Only",
+    "connections": "Connections Only",
+    "private": "Private"
+  },
+  "saveChanges": "Save Changes",
+  "save": "Save",
+  "saving": "Saving...",
+  "retry": "Retry",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "type_to_confirm_instruction": "Please type",
+  "type_to_confirm_to_proceed": "to proceed:",
+  "dismiss": "Dismiss",
+  "default": "Default",
+  "all": "All",
+  "submitting": "Adding Card...",
+  "downloadInvoice": "View Invoice {id}",
+  "add": "Add",
+  "bi": {
+    "copilot": {
+      "title": "PoDalil AI (بودليل)",
+      "versionBadge": "PoDalil v2.4",
+      "subtitle": "Ask natural language analytics questions or detect automated insights across your DZD datasets",
+      "autoInsights": "Auto Insights",
+      "placeholder": "Ask PoDalil: e.g., 'What is our top performing wilaya by gross margin?'",
+      "ask": "Ask",
+      "analyzing": "Analyzing...",
+      "suggestions": "Suggestions:",
+      "queryExecSuccess": "AI Analytics query executed successfully",
+      "narrativeTitle": "Executive AI Narrative",
+      "sampleQueries": {
+        "revenueGrowth": "Show quarterly revenue growth by Wilaya in DZD",
+        "churnAnomalies": "Detect churn anomalies in Enterprise subscriptions",
+        "forecastBookings": "Forecast Q4 marketplace freelance bookings",
+        "q1": "Show quarterly revenue growth by Wilaya in DZD",
+        "q2": "Detect churn anomalies in Enterprise subscriptions",
+        "q3": "Forecast Q4 marketplace freelance bookings"
+      }
+    },
+    "datasets": {
+      "domains": {
+        "sales": "Sales & E-Commerce",
+        "finance": "Finance & Accounting",
+        "hr": "Human Resources",
+        "product": "Product & SaaS",
+        "marketing": "Marketing & Growth",
+        "operations": "Operations & Logistics",
+        "other": "General & Other",
+        "unknown": "General & Other"
+      },
+      "status": {
+        "processed": "PROCESSED",
+        "uploaded": "UPLOADED",
+        "indexed": "INDEXED",
+        "dirty": "DIRTY",
+        "error": "ERROR"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Home",
+          "bi": "BI Hub",
+          "datasets": "Datasets"
+        }
+      },
+      "detail": {
+        "loading": {
+          "title": "Loading dataset...",
+          "subtitle": "Analyzing structure, quality, and semantic data."
+        },
+        "errors": {
+          "notFound": "Dataset not found",
+          "notFoundDesc": "The dataset may have been deleted or you may not have access.",
+          "loadFailed": "Failed to load dataset details",
+          "refreshFailed": "Failed to refresh dataset",
+          "updateFailed": "Failed to update dataset",
+          "deleteFailed": "Failed to delete dataset"
+        },
+        "actions": {
+          "refreshing": "Refreshing data...",
+          "refreshed": "Data refreshed successfully",
+          "retry": "Retry",
+          "backToList": "Back to Datasets"
+        },
+        "toast": {
+          "updated": "Metadata updated successfully",
+          "deleted": "Dataset deleted successfully"
+        },
+        "hero": {
+          "health": "Health",
+          "smartClean": "1-Click Smart Clean",
+          "export": "Export",
+          "exportTitle": "Export CSV File",
+          "refresh": "Refresh Data",
+          "delete": "Delete Dataset",
+          "editDetails": "Edit Details",
+          "nameLabel": "Dataset Name",
+          "domainLabel": "Business Domain",
+          "descriptionLabel": "Description",
+          "cancel": "Cancel",
+          "save": "Save",
+          "rows": "{count} rows",
+          "columns": "{count} columns",
+          "createdAt": "Created on {date}",
+          "noDescription": "No description provided.",
+          "stats": {
+            "rows": "{count} rows",
+            "columns": "{count} columns",
+            "createdOn": "Created on {date}"
+          },
+          "actions": {
+            "smartClean": "1-Click Smart Clean",
+            "export": "Export",
+            "refresh": "Refresh Data",
+            "delete": "Delete Dataset",
+            "edit": "Edit Details"
+          },
+          "editModal": {
+            "title": "Edit Dataset Metadata",
+            "nameLabel": "Dataset Name",
+            "domainLabel": "Business Domain",
+            "descriptionLabel": "Description",
+            "cancel": "Cancel",
+            "save": "Save"
+          }
+        },
+        "tabs": {
+          "overview": {
+            "title": "Overview",
+            "metrics": {
+              "completeness": "Completeness",
+              "uniqueness": "Uniqueness",
+              "columns": "Columns",
+              "domain": "Domain"
+            },
+            "info": {
+              "title": "General Information",
+              "format": "File Format",
+              "domain": "Domain",
+              "created": "Import Date",
+              "updated": "Last Update"
+            },
+            "aiSummary": {
+              "title": "Executive AI Narrative",
+              "narrative": "This dataset comprises {rows} records and {columns} semantic columns. Overall dataset health is rated at {score}%. {issuesText}",
+              "description": "This dataset comprises {rows} records and {columns} semantic columns. Overall dataset health is rated at {score}%. {issuesText}",
+              "issuesDetected": "{count} data quality issues were detected.",
+              "noIssues": "No major anomalies were detected.",
+              "cleanData": "Clean Data",
+              "viewAnalytics": "View AI Analytics",
+              "viewAi": "View AI Analytics"
+            },
+            "description": {
+              "empty": "No description provided."
+            }
+          },
+          "data": {
+            "title": "Data & Schema",
+            "previewTitle": "Data Preview Grid",
+            "schemaTitle": "Schema Dictionary"
+          },
+          "quality": {
+            "title": "Quality & Governance",
+            "doctorTitle": "Data Quality Diagnostics",
+            "governanceTitle": "Data Governance & Contracts",
+            "metrics": {
+              "uniqueness": "Uniqueness"
+            },
+            "scoreSubtitle": "Overall Score: {score}% — Completeness, uniqueness, validation rules, and PII masking.",
+            "globalScore": "Overall Score: {score}% — Completeness, uniqueness, validation rules, and PII masking.",
+            "rulesBtn": "Quality Rules",
+            "piiBtn": "PII Masking",
+            "syntheticBtn": "Synthetic Data",
+            "completenessVerified": "Completeness Rate Verified",
+            "completenessDesc": "Most attributes meet quality standards with no critical missing values.",
+            "recommendationsTitle": "AI Optimization Recommendations",
+            "recommendationsDesc": "Smart suggestions based on data profiling and distribution.",
+            "alertsTitle": "Anomalies & Quality Alerts",
+            "noAnomalies": "No major anomalies were detected."
+          },
+          "analytics": {
+            "title": "Analytics & Query",
+            "intelligenceTitle": "Data Intelligence & AI Insights",
+            "queryTitle": "SQL Query Workbench",
+            "businessInsights": "Business AI Insights",
+            "aiInsights": "Enterprise AI Analytics",
+            "matrixTitle": "Statistical Correlation Matrix",
+            "matrixDesc": "Linear correlations computed on numeric columns.",
+            "correlationMatrix": "Correlation Matrix",
+            "correlationMatrixTitle": "Statistical Correlation Matrix",
+            "correlationMatrixDesc": "Linear correlations computed on numeric columns.",
+            "noCorrelation": "No direct numeric correlation detected."
+          },
+          "settings": {
+            "title": "Security & Settings",
+            "securityTitle": "Row & Column Security Policies",
+            "webhooksTitle": "Alerts & Webhooks",
+            "historyTitle": "Time Travel & Audit Trail"
+          },
+          "preview": {
+            "title": "Data Preview",
+            "search": "Search in sample records...",
+            "showing": "Showing {count} of {total} rows ({all} total in database)",
+            "empty": "No records match your search criteria."
+          },
+          "schema": {
+            "title": "Semantic Dictionary & Schema",
+            "subtitle": "Modify SQL data type and semantic domain (Wilaya, Currency, Phone, etc.) for each column.",
+            "profilerSubtitle": "Statistical Profiling & Value Distribution",
+            "calculatingStats": "Calculating statistical distributions...",
+            "totalRows": "Total Rows",
+            "uniqueValues": "Unique Values",
+            "nullValues": "Missing (Nulls)",
+            "semanticType": "Semantic Type",
+            "descriptiveStats": "Descriptive Statistics",
+            "topValues": "Top Value Frequency",
+            "columnsCount": "{count} Structured columns",
+            "typeUpdated": "Column type updated successfully",
+            "colName": "Column Name",
+            "sqlType": "SQL Type",
+            "semanticDomain": "Semantic Domain",
+            "statProfile": "Statistical Profile",
+            "actions": "Actions",
+            "edit": "Modify",
+            "inspect": "Inspect",
+            "stats": {
+              "min": "Minimum",
+              "max": "Maximum",
+              "mean": "Mean Average",
+              "median": "Median",
+              "std": "Standard Deviation",
+              "q25_q75": "Q25 / Q75 Percentiles"
+            }
+          },
+          "cleanModal": {
+            "title": "1-Click Smart Clean",
+            "subtitle": "Automatically clean, deduplicate, and impute dataset values",
+            "fillMissing": "Impute Missing Values",
+            "fillMissingDesc": "Fill null cells using selected statistical strategy",
+            "strategyLabel": "Imputation Strategy",
+            "autoStrategy": "Auto (Median for numeric, Mode for text)",
+            "meanStrategy": "Mean average",
+            "modeStrategy": "Most frequent mode",
+            "deduplicate": "Deduplicate Rows",
+            "deduplicateDesc": "Remove exact duplicate rows from the dataset",
+            "trimWhitespace": "Trim Whitespace",
+            "trimWhitespaceDesc": "Remove leading and trailing spaces in text columns",
+            "cancel": "Cancel",
+            "submit": "Run Smart Clean",
+            "cleaning": "Cleaning data...",
+            "success": "Dataset cleaned successfully",
+            "error": "Failed to clean dataset"
+          },
+          "modals": {
+            "dqRules": {
+              "title": "Data Quality Rules",
+              "subtitle": "Configure custom validation rules and assertions",
+              "activeRules": "Active Quality Rules",
+              "addRule": "Add Rule",
+              "ruleTypes": {
+                "notNull": "Not Null Constraint",
+                "range": "Value Range Constraint",
+                "regex": "Regex Pattern Matching"
+              },
+              "close": "Close",
+              "testRules": "Test Rules"
+            },
+            "pii": {
+              "title": "PII & Column Masking",
+              "subtitle": "Mask sensitive columns before sharing or querying",
+              "selectMethod": "Select Masking Method",
+              "methods": {
+                "hash": "Cryptographic Hash (SHA-256)",
+                "redact": "Full Redaction ([REDACTED])",
+                "mask": "Partial Masking (XX****XX)"
+              },
+              "sensitiveColumns": "Sensitive Columns ({count})",
+              "applyMasking": "Apply Masking Rules",
+              "close": "Cancel"
+            }
+          },
+          "syntheticModal": {
+            "title": "Synthetic Data Generator",
+            "subtitle": "Generate privacy-preserving artificial rows based on schema",
+            "rowsLabel": "Number of Synthetic Rows",
+            "close": "Cancel",
+            "submit": "Generate Synthetic Data",
+            "generating": "Generating rows..."
+          },
+          "lineage": {
+            "title": "Lineage Graph & Audit Log"
+          },
+          "governance": {
+            "title": "Governance & Contracts",
+            "description": "Enterprise data contracts, SLAs, sensitivity classification, and compliance tags.",
+            "contractTitle": "Data Quality Contract & SLA",
+            "sensitivity": "Sensitivity Classification",
+            "compliance": "Compliance Frameworks",
+            "contractSla": "Data Quality SLA",
+            "verified": "Verified & Accepted",
+            "minRows": "Minimum Row Count",
+            "maxMissingPct": "Max Missing Values %",
+            "qualityScore": "Quality Score Threshold",
+            "tags": "Classification Tags",
+            "addTag": "Add Tag",
+            "newTagPlaceholder": "New tag (e.g., #AUDITED)"
+          },
+          "versioning": {
+            "title": "Time Travel & Versioning",
+            "description": "Immutable version snapshots, schema drift history, and 1-click rollback.",
+            "createSnapshot": "Create Version Snapshot",
+            "timeline": "Version Timeline",
+            "restore": "Restore Version",
+            "restoring": "Restoring...",
+            "current": "Current State",
+            "rows": "Rows",
+            "columns": "Columns",
+            "health": "Health Score"
+          },
+          "security": {
+            "title": "Row & Column Security",
+            "description": "Configure Row-Level Security (RLS) rules and Column-Level Masking (CLS).",
+            "addPolicy": "Add Security Policy",
+            "activePolicies": "Active Access Policies",
+            "type": "Policy Type",
+            "role": "Role",
+            "condition": "Filter / Condition",
+            "status": "Status",
+            "rls": "Row Filter (RLS)",
+            "cls": "Column Masking (CLS)",
+            "active": "Active"
+          },
+          "query": {
+            "title": "SQL Query Workbench",
+            "description": "Execute dynamic SQL queries, aggregations, and filters directly against data records.",
+            "runQuery": "Run Query",
+            "running": "Executing...",
+            "editorTitle": "SQL Query Editor",
+            "top10": "Preview Top 10 Records",
+            "groupBy": "Group By & Count Distribution",
+            "numericalSummary": "Numerical Summary Aggregations"
+          },
+          "webhooks": {
+            "title": "Alerts & Webhooks",
+            "description": "Real-time webhook subscriptions for SLA breaches and data state changes.",
+            "addWebhook": "Register Webhook Endpoint",
+            "activeWebhooks": "Subscribed Alert Webhooks",
+            "url": "Webhook Endpoint URL",
+            "event": "Trigger Event",
+            "status": "Status",
+            "action": "Actions",
+            "test": "Test Webhook",
+            "testing": "Testing..."
+          },
+          "history": {
+            "title": "Audit Trail & Activity Log",
+            "description": "Complete audit trail of schema changes, cleanups, and dataset transformations."
+          }
+        }
+      }
+    }
+  },
+  "pwa": {
+    "installTitle": "Install Podacium App",
+    "installSubtitle": "Faster learning & work on your home screen",
+    "installButton": "Install",
+    "iosGuideTitle": "Install on iOS Safari:",
+    "iosStep1": "Tap the Share button",
+    "iosStep2": "Scroll down & select \"Add to Home Screen\"",
+    "updateAvailable": "New Podacium update available!",
+    "reloadButton": "Reload",
+    "offlineTitle": "You are offline",
+    "offlineDesc": "Working in offline mode. Changes will sync automatically once reconnected.",
+    "onlineTitle": "Back online",
+    "onlineDesc": "Connection restored. All changes synchronized.",
+    "syncingActions": " • Syncing offline actions...",
+    "remainingToSync": " • {count} remaining to sync",
+    "dismissBanner": "Dismiss banner",
+    "closeNotification": "Close notification"
+  },
+  "robustness": {
+    "settlement": {
+      "modalTitle": "Milestone Settlement & Digital Vault",
+      "p2pNoticeTitle": "Direct P2P Settlement Protected by Escrow",
+      "p2pNoticeDesc": "Use BaridiMob or bank transfer to the RIP below, including the mandatory reference code.",
+      "referenceLabel": "Mandatory Reference Code",
+      "freelancerRipLabel": "Freelancer BaridiMob RIP",
+      "amountDue": "Net Amount Due:",
+      "dragDropTitle": "Drag & drop BaridiMob receipt or CCP bordereau here",
+      "dragDropSub": "PNG, JPG, PDF (Max 10 MB)",
+      "ocrScanning": "OCR Scanning...",
+      "ocrValidated": "Validated",
+      "cancel": "Cancel",
+      "confirmAndUnlock": "Confirm & Unlock",
+      "submitting": "Submitting...",
+      "vaultUnlockedTitle": "Deliverable Decrypted & Certified",
+      "downloadDecrypted": "Download Decrypted Files (ZIP Archive)",
+      "vaultLockedTitle": "Vault Locked under AES-256-GCM",
+      "vaultLockedDesc": "The decryption key will be released automatically upon payment proof approval or PV acceptance.",
+      "tabPayment": "Payment Details",
+      "tabProof": "Proof & OCR",
+      "tabVault": "Decrypted Vault"
+    },
+    "fiscal": {
+      "defensePackButton": "Fiscal Pack (100% IBS Deductible)",
+      "defensePackTooltip": "Certified fiscal defense file (Contract, PV, ANAE Invoice, Art. 169 CIDTA Memo) guaranteeing 100% corporate tax deduction.",
+      "legalNotice": "Loi 22-23 & LF 2024 Art. 282 sexies CIDTA (IFU 0.5% - Exemption of TVA)",
+      "ibsSavings": "Estimated IBS tax savings: {amount} DZD"
+    },
+    "chat_shield": {
+      "activeBanner": "Fiscal Shield Active:",
+      "clientWarning": "Going off-platform causes you to lose up to {amount} DZD in IBS tax deductions (Art. 169 CIDTA) and cancels delivery guarantees.",
+      "freelancerWarning": "Off-platform payments do not constitute legal income proof for visas, bank loans, and CASNOS social security.",
+      "learnMore": "Learn more",
+      "modalTitle": "Why stay protected by Podacium?",
+      "legalBasisTitle": "Algerian Legal & Fiscal Framework",
+      "legalBasisDesc": "Pursuant to Article 169 CIDTA and Law 22-23 on Auto-Entrepreneurship, Podacium provides the certified documentary triptyque recognized by the DGI for 100% corporate tax deduction.",
+      "guaranteesTitle": "Exclusive Platform Guarantees:",
+      "guaranteeVault": "Cryptographic escrow guaranteeing deliverable release after acceptance.",
+      "guaranteePack": "Instant certified tax defense pack for certified accountants and auditors.",
+      "guaranteeLoyalty": "0% platform commission on repeat contracts with the same client.",
+      "understood": "I understand",
+      "dismiss": "Dismiss warning"
+    },
+    "reconciliation": {
+      "title": "EDAHABIA / Chargily Synchronization",
+      "confirmed": "Payment Confirmed",
+      "pending": "Pending Confirmation",
+      "description": "If your CCP/bank account was debited but the page didn't update due to SMS latency, synchronize now.",
+      "verifyButton": "Check My Payment Now",
+      "disputeButton": "Algérie Poste Dispute Claim (PDF)"
+    },
+    "auth_2fa": {
+      "title": "Security Verification Required (2FA)",
+      "description": "This sensitive administrative action requires OTP verification.",
+      "errorDigits": "Please enter all 6 digits.",
+      "errorInvalid": "Security code invalid or expired.",
+      "cancel": "Cancel",
+      "confirm": "Confirm Operation"
+    },
+    "dlg": {
+      "encoding": "File Encoding",
+      "delimiter": "Delimiter",
+      "entriesCount": "Journal Entries",
+      "balanced": "Balanced",
+      "unbalanced": "Unbalanced",
+      "complianceWarnings": "SCF Compliance Warnings:",
+      "previewTitle": "Algerian SCF Classification Preview",
+      "sampleCount": "{count} sample rows",
+      "accountNumber": "Account No.",
+      "classification": "SCF Class",
+      "label": "Description",
+      "debit": "Debit (DZD)",
+      "credit": "Credit (DZD)",
+      "confirmImport": "Confirm & Import Dataset to BI"
+    },
+    "reputation": {
+      "title": "Reputation & Reliability Score",
+      "tier0": "Tier 0 — Email Verified",
+      "tier1": "Tier 1 — National ID (NIN) Verified",
+      "tier2": "Tier 2 — Biometric KYC Verified",
+      "tier3": "Tier 3 — Certified ANAE Auto-Entrepreneur",
+      "limitMonthly": "{amount} DZD / month",
+      "limitUnlimited": "Unlimited Volume",
+      "weightedReviews": "{count} weighted reviews (EigenTrust)",
+      "clientDiversity": "Client Diversity",
+      "onTimeDelivery": "On-Time Delivery",
+      "completedContracts": "Completed Projects",
+      "anaeVerified": "Verified ANAE Card: official invoices eligible for 100% corporate tax deduction."
+    }
+  },
+  "trending": {
+    "title": "Trending {entity}",
+    "updatedRecently": "Updated recently",
+    "loading": "Loading trending items",
+    "failedToLoad": "Failed to load trending",
+    "empty": "No trending {entity} available yet.",
+    "courses": "Courses",
+    "projects": "Projects",
+    "freelancers": "Freelancers"
+  },
+  "profile": "Profile",
+  "progress": "Progress",
+  "showTooltip": "Show tooltip",
+  "close": "Close",
+  "mockCheckout": {
+    "securePayment": "Secure Mock Payment",
+    "testCheckout": "Test Checkout",
+    "amountToPay": "Amount to Pay",
+    "selectPaymentMethod": "Select Payment Method",
+    "edahabia": "Edahabia",
+    "cibCard": "CIB Card",
+    "cardNumber": "Card Number",
+    "expiry": "Expiry",
+    "cvv": "CVV",
+    "processing": "Processing...",
+    "simulateSuccess": "Simulate Successful Payment",
+    "simulateFailed": "Simulate Failed Payment",
+    "disclaimer": "This is a mock payment page for testing purposes.",
+    "transactionId": "Transaction ID: {id}"
+  },
+  "dangerModal": {
+    "actionIrreversible": "This action is irreversible and will permanently modify platform state.",
+    "impactList": "Consequences of this action:",
+    "typeToConfirm": "To confirm, please type",
+    "below": "below:",
+    "antiPasteNotice": "Paste disabled to prevent accidental confirmation.",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "livingCanvas": {
+    "actions": {
+      "translateToDarija": "Translate to Darija",
+      "applyArticle169TaxShield": "Apply Article 169 Tax Shield",
+      "apply19Tva": "Apply 19% TVA",
+      "convertToDzd": "Convert to DZD",
+      "liveVoiceConcierge": "Live Voice Concierge",
+      "cameraInvoiceScanner": "Camera Invoice Scanner",
+      "workflowDagStepper": "Workflow DAG Stepper",
+      "apply19TvaTitle": "Apply 19% TVA to this cell",
+      "convertToDzdTitle": "Convert value to DZD",
+      "filterTop5Title": "Filter Top 5 based on this column",
+      "filterTop5": "Filter Top 5"
+    }
+  },
+  "uiLabels": {
+    "featuresAria": "{title} features",
+    "deliverablesAria": "{title} deliverables",
+    "digestTitle": "Digest: {hash} — Prev: {prev}",
+    "lessons": "lessons",
+    "selected": "selected",
+    "rows": "rows",
+    "columns": "columns",
+    "cols": "cols",
+    "columnPrefix": "Column:",
+    "companyLogoAlt": "{name} logo",
+    "freelancerSingular": "freelancer",
+    "freelancerPlural": "freelancers",
+    "questions": "questions",
+    "pts": "pts",
+    "resultsFor": "results for",
+    "circuitPrefix": "Circuit:",
+    "min15": "15 minutes",
+    "min30": "30 minutes",
+    "hour1": "1 hour",
+    "hours8": "8 hours",
+    "hours24": "24 hours",
+    "trendAria": "{label} trend",
+    "actualPrefix": "Actual:",
+    "budgetPrefix": "Budget:",
+    "goalPrefix": "Goal:",
+    "vs": "vs",
+    "pushdownActive": "pushdown active",
+    "gapPrefix": "Gap:",
+    "simulatedPrefix": "Simulated:",
+    "baselinePrefix": "Baseline:",
+    "impactPrefix": "Impact:",
+    "varianceDecomposition": "variance decomposition",
+    "updatedTitle": "Updated: {date}",
+    "typeString": "string",
+    "typeInteger": "integer",
+    "typeFloat": "float",
+    "typeDatetime": "datetime",
+    "typeBoolean": "boolean",
+    "widgetPrefix": "Widget",
+    "latencyPrefix": "Latency:",
+    "expectedPrefix": "Expected:",
+    "annotationsCount": "{count} annotations",
+    "enginePrefix": "Engine:",
+    "etaPrefix": "ETA:",
+    "scopesPrefix": "Scopes:",
+    "dispatching": "Dispatching...",
+    "nodePrefix": "Node:",
+    "podaciumIntroTitle": "Podacium Platform Introduction",
+    "recommendationAria": "Recommendation: {title}",
+    "votes": "votes"
+  }
+}

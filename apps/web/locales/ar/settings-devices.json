@@ -1,0 +1,126 @@
+{
+  "settings-devices": {
+    "meta": {
+      "title": "إدارة الأجهزة",
+      "description": "إدارة الأجهزة الموثوقة وعرض الأحداث الأمنية"
+    },
+    "page": {
+      "breadcrumbHome": "الرئيسية",
+      "breadcrumbSettings": "الإعدادات",
+      "title": "الأجهزة والأمان",
+      "subtitle": "إدارة أجهزتك الموثوقة ومراجعة النشاط الأمني",
+      "deviceListTitle": "الأجهزة النشطة",
+      "deviceListDesc": "الأجهزة التي وصلت إلى حسابك",
+      "currentDevice": "هذا الجهاز",
+      "primaryDevice": "أساسي",
+      "trusted": "موثوق",
+      "untrusted": "غير موثوق",
+      "trustToggle": "توثيق هذا الجهاز",
+      "revokeTrust": "إلغاء التوثيق",
+      "lastActive": "آخر نشاط",
+      "firstSeen": "أول ظهور",
+      "logins": "عدد تسجيلات الدخول",
+      "unknownDevice": "جهاز غير معروف",
+      "noDevices": "لا توجد أجهزة مسجلة",
+      "securityEvents": "الأحداث الأمنية",
+      "noEvents": "لا توجد أحدث أمنية حديثة",
+      "group": {
+        "today": "اليوم",
+        "yesterday": "أمس",
+        "week": "هذا الأسبوع",
+        "older": "الأقدم"
+      },
+      "time": {
+        "justNow": "الآن",
+        "minutes": "قبل {count} دقيقة",
+        "hours": "قبل {count} ساعة"
+      },
+      "event": {
+        "NEW_DEVICE_DETECTED": "تم اكتشاف جهاز جديد",
+        "NEW_DEVICE_DETECTED_desc": "جهاز جديد: {browser} على {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "تم اكتشاف حركة مستحيلة",
+        "EXCESSIVE_SUBNET_SPREAD": "تم اكتشاف مشاركة حساب",
+        "DEVICE_TRUSTED": "تم توثيق الجهاز",
+        "DEVICE_REVOKED": "تم إلغاء توثيق الجهاز",
+        "STRIKE_ISSUED": "تم إصدار تحذير",
+        "STRIKE_TWO_REACHED": "الحساب مقيد",
+        "STRIKE_THREE_REACHED": "الحساب معلق",
+        "ACCOUNT_SUSPENDED": "الحساب معلق",
+        "ESCROW_COOLDOWN_STARTED": "بدأت فترة التهدئة الأمنية",
+        "COOLDOWN_BYPASS_2FA": "تم تجاوز فترة التهدئة عبر التحقق بخطوتين"
+      },
+      "eventDesc": {
+        "NEW_DEVICE_DETECTED": "جهاز جديد: {browser} على {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "تسجيل دخول مشبوه من موقع بعيد",
+        "EXCESSIVE_SUBNET_SPREAD": "تم اكتشاف شبكات متعددة",
+        "DEVICE_TRUSTED": "تم توثيق الجهاز",
+        "DEVICE_REVOKED": "تم إلغاء توثيق الجهاز",
+        "STRIKE_ISSUED": "تحذير بسبب انتهاك السياسة",
+        "STRIKE_TWO_REACHED": "تقييد ميزات الحساب",
+        "STRIKE_THREE_REACHED": "تم تعليق الحساب للانتهاكات",
+        "ACCOUNT_SUSPENDED": "تم تعليق الحساب",
+        "ESCROW_COOLDOWN_STARTED": "فترة تهدئة أمنية 72 ساعة لجهاز غير موثوق",
+        "COOLDOWN_BYPASS_2FA": "تم تجاوز فترة التهدئة عبر التحقق بخطوتين"
+      },
+      "totalDevices": "إجمالي الأجهزة",
+      "trustedDevices": "موثوق",
+      "activeToday": "نشط اليوم",
+      "events7d": "الأحداث (7 أيام)",
+      "trustUpdated": "تم تحديث توثيق الجهاز",
+      "trustFailed": "فشل تحديث التوثيق",
+      "loadFailed": "فشل تحميل الأجهزة",
+      "makePrimary": "تعيين كأساسي",
+      "primaryUpdated": "تم تحديث الجهاز الأساسي",
+      "primaryFailed": "فشل تحديث الجهاز الأساسي",
+      "removeButton": "إزالة",
+      "removeDevice": "إزالة الجهاز",
+      "removeConfirmTitle": "إزالة الجهاز؟",
+      "removeConfirmDesc": "سيؤدي هذا إلى تسجيل خروج هذا الجهاز وإزالته من أجهزتك الموثوقة.",
+      "removeSuccess": "تمت إزالة الجهاز بنجاح",
+      "removeFailed": "فشلت إزالة الجهاز",
+      "cannotRemovePrimary": "لا يمكن إزالة الجهاز الأساسي",
+      "breadcrumbHome": "الرئيسية",
+      "breadcrumbSettings": "الإعدادات",
+      "cancel": "إلغاء"
+    },
+    "banner": {
+      "strike2": {
+        "title": "الحساب مقيد",
+        "description": "بعض الميزات مقفلة بسبب تحذيرات متعددة. قم بالترقية إلى Pro لإضافة أجهزة مصرح بها.",
+        "cta": "الترقية إلى Pro"
+      },
+      "strike3": {
+        "title": "الحساب معلق",
+        "description": "تم تعليق حسابك بسبب انتهاكات السياسة. يرجى الاتصال بالدعم.",
+        "cta": "اتصل بالدعم"
+      }
+    },
+    "notifications": {
+      "newDevice": {
+        "title": "تم اكتشاف جهاز جديد",
+        "body": "جهاز جديد ({device}) قام بالوصول إلى حسابك للتو."
+      },
+      "impossibleTravel": {
+        "title": "تم اكتشاف محاولة تسجيل دخول مشبوهة",
+        "body": "تم الوصول إلى حسابك من موقع بعيد في وقت غير ممكن."
+      },
+      "strike1": {
+        "title": "تحذير مشاركة الحساب",
+        "body": "تم الوصول إلى حسابك من مواقع متعددة. يرجى مراجعة أجهزتك."
+      },
+      "strike2": {
+        "title": "الحساب مقيد",
+        "body": "بعض الميزات مقفلة بسبب تحذيرات متعددة."
+      },
+      "strike3": {
+        "title": "الحساب معلق",
+        "body": "تم تعليق حسابك بسبب انتهاكات السياسة."
+      }
+    },
+    "toast": {
+      "trustUpdated": "تم تحديث توثيق الجهاز",
+      "loadFailed": "فشل تحميل الأجهزة",
+      "trustFailed": "فشل تحديث توثيق الجهاز"
+    }
+  }
+}

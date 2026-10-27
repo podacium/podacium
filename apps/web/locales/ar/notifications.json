@@ -1,0 +1,250 @@
+{
+    "page": {
+        "title": "الإشعارات",
+        "subtitle": "إدارة إشعاراتك والبقاء على اطلاع بآخر تحديثات مشاريعك وأنشطة فريقك."
+    },
+    "header": {
+        "refresh": "تحديث",
+        "selected": "تم تحديد {count}",
+        "markRead": "تحديد كمقروء",
+        "delete": "حذف"
+    },
+    "stats": {
+        "total": "إجمالي الإشعارات",
+        "unread": "غير مقروءة",
+        "read": "مقروءة",
+        "categories": "حسب الفئة"
+    },
+    "tabs": {
+        "all": "الكل",
+        "unread": "غير مقروءة",
+        "read": "مقروءة"
+    },
+    "toolbar": {
+        "search": "البحث في الإشعارات...",
+        "sort": {
+            "newest": "الأحدث أولاً",
+            "oldest": "الأقدم أولاً",
+            "priority": "الأعلى أولوية"
+        }
+    },
+    "filters": {
+        "title": "تصفية الإشعارات",
+        "clearAll": "مسح الكل",
+        "category": "الفئة",
+        "allCategories": "كل الفئات",
+        "priority": "الأولوية",
+        "allPriorities": "كل المستويات",
+        "status": "الحالة",
+        "allStatuses": "كل الحالات",
+        "startDate": "من تاريخ",
+        "endDate": "إلى تاريخ"
+    },
+    "preferences": {
+        "title": "تفضيلات الإشعارات",
+        "save": "حفظ التفضيلات",
+        "loading": "جاري تحميل التفضيلات...",
+        "notLoaded": "تعذر تحميل تفضيلات الإشعارات",
+        "retry": "إعادة المحاولة",
+        "emailNotifications": {
+            "title": "إشعارات البريد الإلكتروني",
+            "account": "إشعارات البريد الإلكتروني",
+            "accountDesc": "تلقي إشعارات عبر البريد الإلكتروني للأنشطة المهمة في الحساب.",
+            "inApp": "إشعارات داخل التطبيق",
+            "inAppDesc": "تلقي إشعارات داخل واجهة المنصة.",
+            "sms": "إشعارات الرسائل القصيرة",
+            "smsDesc": "تلقي تنبيهات مهمة عبر الرسائل النصية."
+        },
+        "pushNotifications": {
+            "title": "تنبيهات المتصفح",
+            "push": "الإشعارات الفورية",
+            "pushDesc": "تلقي تنبيهات فورية على أجهزتك."
+        },
+        "marketing": {
+            "title": "التسويق والتواصل",
+            "marketing": "رسائل ترويجية",
+            "marketingDesc": "تلقي أخبار حول الميزات الجديدة والعروض الخاصة.",
+            "newsletter": "النشرة الإخبارية",
+            "newsletterDesc": "ملخص شهري لأفضل المشاريع وإحصائيات المنصة."
+        },
+        "quietHours": {
+            "title": "ساعات الهدوء",
+            "start": "من",
+            "end": "إلى",
+            "description": "عدم إرسال إشعارات خلال هذه الساعات."
+        },
+        "digest": {
+            "title": "الملخص البريدي",
+            "time": "وقت الإرسال",
+            "frequency": "التكرار",
+            "frequencyOptions": {
+                "daily": "يومي",
+                "weekly": "أسبوعي",
+                "never": "أبداً"
+            },
+            "description": "تلقي رسالة بريدية تلخص إشعاراتك."
+        }
+    },
+    "notificationItem": {
+        "markAsRead": "تحديد كمقروء",
+        "markUnread": "تحديد كغير مقروء",
+        "delete": "حذف",
+        "showMore": "عرض المزيد",
+        "showLess": "عرض أقل",
+        "time": {
+            "justNow": "الآن",
+            "hoursAgo": "منذ {hours} ساعة",
+            "daysAgo": "منذ {days} يوم"
+        }
+    },
+    "invitation": {
+        "title": "دعوة للانضمام إلى {orgName}",
+        "message": "قام {inviterName} بدعوتك للانضمام إلى {orgName} بصفتك {role}.",
+        "accepted": {
+            "title": "تم قبول الدعوة",
+            "message": "قبل {userName} دعوتك للانضمام إلى {orgName}."
+        }
+    },
+    "project": {
+        "new_proposal": {
+            "title": "تم استلام عرض جديد",
+            "message": "لقد تلقيت عرضاً جديداً لمشروعك '{project_title}'"
+        }
+    },
+    "proposal": {
+        "new": {
+            "title": "تم استلام عرض جديد",
+            "body": "لقد تلقيت عرضاً جديداً لمشروعك '{project_title}'"
+        },
+        "accepted": {
+            "title": "تم قبول العرض!",
+            "body": "تم قبول عرضك لمشروع '{project_title}'"
+        },
+        "rejected": {
+            "title": "تحديث بخصوص العرض",
+            "body": "لم يتم اختيار عرضك لمشروع '{project_title}'"
+        }
+    },
+    "emptyStates": {
+        "noNotifications": {
+            "title": "لا توجد إشعارات بعد",
+            "descriptionAll": "لقد قرأت كل شيء! لا توجد إشعارات جديدة حالياً.",
+            "descriptionUnread": "لا توجد إشعارات غير مقروءة.",
+            "descriptionRead": "لا توجد إشعارات مقروءة."
+        }
+    },
+    "actions": {
+        "markAllRead": "تحديد الكل كمقروء",
+        "viewAll": "عرض الكل",
+        "tryAgain": "حاول مرة أخرى",
+        "accept": "قبول",
+        "decline": "رفض",
+        "view": "عرض",
+        "dismiss": "تجاهل",
+        "view_proposal": "عرض العرض",
+        "loadMore": "تحميل المزيد",
+        "selectAll": "تحديد الكل",
+        "emailSent": "تم إرسال بريد إلكتروني"
+    },
+    "roles": {
+        "member": "عضو",
+        "admin": "مدير",
+        "owner": "مالك",
+        "moderator": "مشرف",
+        "STUDENT": "طالب",
+        "BUSINESS": "عمل تجاري",
+        "FREELANCER": "مستقل",
+        "ADMIN": "مدير نظام",
+        "INSTRUCTOR": "محاضر"
+    },
+    "categories": {
+        "SYSTEM": "نظام",
+        "PROJECT": "مشروع",
+        "COURSE": "دورة",
+        "SECURITY": "أمان",
+        "MARKETING": "تسويق",
+        "BILLING": "فوترة",
+        "MESSAGING": "رسائل",
+        "LIVE": "جلسات مباشرة",
+        "SUPPORT": "الدعم الفني",
+        "EDUCATION": "تعليم",
+        "FREELANCE": "عمل حر"
+    },
+    "chat": {
+        "new_message": "رسالة جديدة من {sender_name}",
+        "sent_attachment": "أرسل مرفقًا",
+        "voice_note": "[تسجيل صوتي]"
+    },
+    "item": {
+        "markAsUnread": "تحديد كغير مقروء",
+        "markAsRead": "تحديد كمقروء",
+        "delete": "حذف الإشعار"
+    },
+    "priorities": {
+        "URGENT": "عاجل",
+        "HIGH": "عالية",
+        "NORMAL": "عادية",
+        "LOW": "منخفضة"
+    },
+    "admin": {
+        "title": "إرسال إشعار",
+        "send": "إرسال الآن",
+        "sendNow": "إرسال الآن",
+        "schedule": "جدولة",
+        "scheduleIt": "جدولة",
+        "notificationsSent": "تم إرسال الإشعارات بنجاح.",
+        "notificationsScheduled": "تمت جدولة الإشعار.",
+        "targetOptions": {
+            "all": "جميع المستخدمين",
+            "role": "حسب الدور",
+            "specific": "مستخدمين محددين"
+        },
+        "form": {
+            "title": "العنوان",
+            "titlePlaceholder": "أدخل عنوان الإشعار",
+            "category": "الفئة",
+            "message": "الرسالة",
+            "messagePlaceholder": "أدخل رسالة الإشعار",
+            "priority": "الأولوية",
+            "targetUsers": "المستخدمون المستهدفون",
+            "targetRole": "الدور المستهدف",
+            "sendEmail": "إرسال إشعار بريدي أيضاً",
+            "scheduleFor": "مجدول لتاريخ"
+        }
+    },
+    "live_session": {
+        "booked": {
+            "title": "تم حجز الجلسة",
+            "body": "لقد قمت بحجز \"{title}\" بنجاح"
+        },
+        "cancelled": {
+            "title": "تم إلغاء الحجز",
+            "body": "تم إلغاء حجزك لـ \"{title}\""
+        },
+        "payout": {
+            "title": "تم استلام الدفعة",
+            "body": "لقد استلمت {amount} مقابل \"{title}\""
+        },
+        "transferred": {
+            "title": "تم تحويل الحجز",
+            "body": "تم تحويل حجزك لـ \"{title}\""
+        },
+        "waitlist_promoted": {
+            "title": "مكان متاح",
+            "body": "تم إتاحة مكان لـ \"{title}\" — تم ترقيتك من قائمة الانتظار"
+        }
+    },
+    "success": {
+        "markedRead": "تم تحديد {count} كإشعارات مقروءة",
+        "deleted": "تم حذف {count} إشعارات",
+        "preferencesUpdated": "تم تحديث التفضيلات بنجاح"
+    },
+    "errors": {
+        "loading": "فشل تحميل الإشعارات. يرجى المحاولة مرة أخرى.",
+        "markingRead": "فشل تحديد الإشعارات كمقروءة.",
+        "deleting": "فشل حذف الإشعارات.",
+        "sending": "فشل إرسال الإشعار.",
+        "scheduling": "فشل جدولة الإشعار.",
+        "updatingPreferences": "فشل تحديث التفضيلات."
+    }
+}

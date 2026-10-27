@@ -1,0 +1,301 @@
+{
+  "docs": {
+    "meta": {
+      "title": "Documentation officielle - Podacium",
+      "description": "Documentation complète pour les plateformes d'apprentissage, de hub freelance et de business intelligence de Podacium"
+    },
+    "hero": {
+      "badge": "Documentation",
+      "title": "Podacium",
+      "titleHighlight": "Documentation",
+      "subtitle": "Tout ce que vous devez savoir sur l'utilisation de la plateforme intégrée Podacium pour l'apprentissage, le freelancing et le business intelligence.",
+      "searchPlaceholder": "Rechercher dans la documentation..."
+    },
+    "navigation": {
+      "gettingStarted": "Commencer",
+      "platforms": "Plateformes",
+      "features": "Fonctionnalités",
+      "guides": "Guides"
+    },
+    "gettingStarted": {
+      "title": "Commencer",
+      "subtitle": "Nouveau sur Podacium ? Commencez ici pour comprendre notre plateforme et démarrer rapidement.",
+      "whatIs": {
+        "title": "Qu'est-ce que Podacium ?",
+        "description": "Podacium est une plateforme intégrée combinant trois piliers puissants : l'apprentissage (développement des compétences et certifications), le hub (marketplace freelance) et le business intelligence (analyses et intelligence commerciale)."
+      },
+      "quickstart": {
+        "title": "Guide de démarrage rapide",
+        "description": "Créez votre compte, complétez votre profil et commencez à explorer les cours, projets ou ensembles de données en quelques minutes. Choisissez votre rôle d'étudiant, de freelance ou d'entreprise."
+      },
+      "accountSetup": {
+        "title": "Configuration du compte",
+        "description": "Apprenez à configurer votre compte, à vérifier votre email et téléphone, à choisir votre rôle et à configurer vos préférences pour une expérience personnalisée."
+      }
+    },
+    "platforms": {
+      "title": "Documentation des plateformes",
+      "subtitle": "Guides détaillés pour chacune des trois plateformes intégrées de Podacium.",
+      "explore": "Explorer la plateforme",
+      "learn": {
+        "title": "Plateforme d'apprentissage",
+        "description": "Maîtrisez les compétences recherchées grâce à des cours interactifs, des parcours d'apprentissage structurés et des certifications reconnues par l'industrie.",
+        "features": [
+          "Parcourir et s'inscrire aux cours",
+          "Suivre des parcours d'apprentissage structurés",
+          "Suivre vos progrès et réalisations",
+          "Obtenir des certificats vérifiés"
+        ]
+      },
+      "hub": {
+        "title": "Hub freelance",
+        "description": "Connectez-vous avec des entreprises et des freelances à travers l'Algérie. Trouvez des projets, recrutez des talents et développez votre carrière.",
+        "features": [
+          "Parcourir et publier des projets",
+          "Soumettre des propositions",
+          "Gérer les contrats",
+          "Paiements sécurisés"
+        ]
+      },
+      "bi": {
+        "title": "Informatique décisionnelle",
+        "description": "Transformez les données brutes en informations exploitables grâce à des analyses basées sur l'IA, des tableaux de bord et des outils de reporting.",
+        "features": [
+          "Charger et gérer des ensembles de données",
+          "Créer des tableaux de bord interactifs",
+          "Générer des rapports automatisés",
+          "Collaborer dans des organisations"
+        ]
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités clés",
+      "subtitle": "Découvrez les fonctionnalités principales qui rendent Podacium puissant et facile à utiliser.",
+      "authentication": {
+        "title": "Authentification et sécurité",
+        "description": "Authentification sécurisée avec plusieurs fournisseurs et gestion des sessions.",
+        "items": [
+          "Authentification par email et mot de passe",
+          "Connexion sociale (Google, GitHub, LinkedIn)",
+          "Vérification téléphonique",
+          "Authentification à deux facteurs"
+        ]
+      },
+      "billing": {
+        "title": "Facturation et abonnements",
+        "description": "Plans d'abonnement flexibles pour les apprenants et les entreprises.",
+        "items": [
+          "Plans étudiants pour les apprenants",
+          "Plans BI pour les entreprises",
+          "Traitement sécurisé des paiements",
+          "Gestion des factures"
+        ]
+      },
+      "notifications": {
+        "title": "Système de notifications",
+        "description": "Restez informé avec des notifications et mises à jour en temps réel.",
+        "items": [
+          "Notifications en temps réel",
+          "Notifications par email",
+          "Préférences de notification",
+          "Badges non lus"
+        ]
+      },
+      "profile": {
+        "title": "Gestion du profil",
+        "description": "Personnalisez votre profil et présentez vos compétences.",
+        "items": [
+          "Photo de profil et biographie",
+          "Présentation des compétences",
+          "Points forts du portfolio",
+          "Paramètres de confidentialité"
+        ]
+      }
+    },
+    "guides": {
+      "title": "Guides utilisateur",
+      "subtitle": "Guides étape par étape pour vous aider à tirer le meilleur parti de Podacium.",
+      "learnMore": "En savoir plus",
+      "gettingStarted": {
+        "title": "Commencer avec Podacium",
+        "description": "Apprenez les bases de la navigation sur la plateforme et la configuration de votre compte."
+      },
+      "account": {
+        "title": "Gérer votre compte",
+        "description": "Comment mettre à jour votre profil, modifier les paramètres et gérer la sécurité."
+      },
+      "billing": {
+        "title": "Comprendre la facturation",
+        "description": "Tout ce que vous devez savoir sur les abonnements, les paiements et les remboursements."
+      }
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "subtitle": "Réponses rapides aux questions courantes sur la documentation",
+      "items": [
+        {
+          "question": "Combien de temps faut-il pour commencer avec Podacium ?",
+          "answer": "Vous pouvez créer un compte et commencer à explorer en moins de deux minutes. L'accès de base est gratuit et comprend des cours d'introduction, la navigation dans les projets et des exemples de tableaux de bord BI. L'accès complet à la plateforme nécessite simplement de choisir un plan adapté à vos besoins."
+        },
+        {
+          "question": "Quels types de comptes Podacium prend-il en charge ?",
+          "answer": "Podacium prend en charge trois types de comptes : Étudiant (pour l'apprentissage et le développement de compétences), Freelance (pour offrir des services et trouver des projets) et Entreprise (pour recruter des talents et utiliser des outils BI). Vous pouvez passer d'un rôle à l'autre ou les combiner sur un seul compte."
+        },
+        {
+          "question": "Comment Podacium se compare-t-il aux autres plateformes ?",
+          "answer": "Podacium est unique en combinant l'apprentissage, le freelancing et l'intelligence d'affaires dans une plateforme intégrée. Contrairement aux outils séparés pour chaque fonction, Podacium permet aux compétences acquises dans les cours de renforcer votre profil freelance, et aux insights BI d'informer vos décisions commerciales — le tout dans un seul écosystème."
+        },
+        {
+          "question": "Existe-t-il un essai gratuit pour les fonctionnalités premium ?",
+          "answer": "Oui. Les nouveaux utilisateurs bénéficient d'un essai gratuit de 14 jours avec un accès complet aux fonctionnalités premium des trois piliers : cours illimités, publication de projets et analyses BI pro. Aucune carte de crédit n'est requise et vous pouvez annuler à tout moment pendant la période d'essai."
+        },
+        {
+          "question": "Quelles options de support sont disponibles ?",
+          "answer": "Tous les utilisateurs ont accès à notre documentation, base de connaissances et forums communautaires. Les plans premium incluent le support par email et chat en direct. Les clients Entreprise reçoivent un support prioritaire avec un gestionnaire de compte dédié et des temps de réponse garantis."
+        },
+        {
+          "question": "Comment Podacium protège-t-il mes données et ma vie privée ?",
+          "answer": "Podacium utilise une sécurité de niveau entreprise, incluant le chiffrement au repos et en transit, des audits de sécurité réguliers et des contrôles d'accès stricts. Nous sommes conformes au RGPD et aux réglementations sur la protection des données. Vous conservez la pleine propriété de vos données et pouvez les exporter ou les supprimer à tout moment."
+        },
+        {
+          "question": "Podacium propose-t-il un accès API pour l'intégration avec mes outils existants ?",
+          "answer": "Oui. Podacium fournit une API REST pour un accès programmatique aux cours, projets, ensembles de données et gestion des utilisateurs. L'API est disponible sur les plans Business et Entreprise avec des limites de débit et une authentification par clés API. La documentation complète avec endpoints et exemples est disponible dans la section développeur."
+        },
+        {
+          "question": "Puis-je migrer mes données si je décide de quitter Podacium ?",
+          "answer": "Oui. Vous pouvez exporter toutes vos données à tout moment — y compris la progression des cours, certificats, historique de projets et tableaux de bord BI — dans des formats standard. La portabilité des données est intégrée à la conception de la plateforme. La suppression du compte supprime vos données personnelles sous 30 jours conformément au RGPD."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à commencer ?",
+      "subtitle": "Rejoignez des milliers d'apprenants, de freelances et d'entreprises utilisant déjà Podacium.",
+      "primary": "Créer un compte gratuit",
+      "secondary": "Contacter le support"
+    }
+  },
+  "developer": {
+    "portal": {
+      "badgePlatform": "Plateforme Développeur",
+      "badgeLayer13": "Couche 13 Entreprise",
+      "apiDocs": "Documentation de l'API",
+      "apiKeysTitle": "Clés d'API",
+      "apiKeysDesc": "Authentifiez les requêtes de serveur à serveur à l'aide de jetons Bearer avec des portées de domaine strictes.",
+      "createApiKey": "Créer une clé API",
+      "badgeActive": "Actif",
+      "badgeRotationGrace": "Période de grâce de rotation active",
+      "badgeRevoked": "Révoqué",
+      "copyMaskedKey": "Copier la clé masquée",
+      "graceWindow": "Délai de grâce : 6j 21h restants",
+      "quickstart": "Démarrage rapide",
+      "rotateKey": "Faire pivoter la clé",
+      "revokeKey": "Révoquer",
+      "deliveriesTitle": "Livraisons Standard Webhooks",
+      "deliveriesDesc": "Journal de livraison en temps réel conforme aux spécifications Standard Webhooks (webhook-id, webhook-timestamp, webhook-signature).",
+      "dispatchTest": "Envoyer un événement de test",
+      "svixCompliant": "Conforme au standard Svix V1",
+      "thStatus": "Statut",
+      "thEventType": "Type d'événement",
+      "thDuration": "Durée",
+      "thTimestamp": "Horodatage (UTC)",
+      "thAction": "Action",
+      "inspectBtn": "Inspecter",
+      "createModalTitle": "Créer une clé API avec portée",
+      "createModalDesc": "Générez une clé API de serveur haute sécurité avec des autorisations de domaine granulaires.",
+      "keyNameLabel": "Nom de la clé / Description",
+      "keyNamePlaceholder": "ex. Intégration ERP Campus d'Oran",
+      "scopesLabel": "Portées et autorisations granulaires",
+      "cancelBtn": "Annuler",
+      "generateBtn": "Générer la clé",
+      "secretModalTitle": "Copiez votre clé secrète d'API",
+      "secretModalDesc": "Assurez-vous de copier votre clé API maintenant. Vous ne pourrez plus la revoir !",
+      "securityWarning": "Avertissement de sécurité",
+      "securityWarningText": "Ce jeton porte l'autorisation pour les portées que vous avez sélectionnées. Conservez-le dans un coffre-fort chiffré. Podacium ne conserve que le hachage SHA-256.",
+      "copiedToClipboard": "Copié dans le presse-papiers !",
+      "clickCopyPrompt": "Cliquez sur copier avant de fermer",
+      "copiedBtn": "Copié",
+      "copyKeyBtn": "Copier la clé",
+      "doneBtn": "Terminé",
+      "inspectorTitle": "Inspecteur de livraison",
+      "httpStatusLabel": "Statut HTTP",
+      "latencyLabel": "Latence",
+      "deliveredAtLabel": "Livré à",
+      "headersTitle": "En-têtes Standard Webhooks",
+      "payloadTitle": "Charge utile JSON envoyée",
+      "upstreamResponseTitle": "Corps de la réponse amont",
+      "resendSuccess": "Renvoi réussi (200 OK)",
+      "resending": "Renvoi en cours...",
+      "resendPayload": "Renvoyer la charge utile",
+      "quickstartTitle": "Démarrage rapide du SDK : {name}",
+      "quickstartDesc": "Copiez des extraits de code d'intégration prêts pour la production pour votre langage préféré.",
+      "closeBtn": "Fermer",
+      "dispatchModalTitle": "Envoyer un événement Webhook de test",
+      "dispatchModalDesc": "Simulez l'envoi instantané d'un événement avec signature cryptographique Standard Webhooks.",
+      "eventTypeLabel": "Type d'événement",
+      "destinationUrlLabel": "URL du Webhook de destination",
+      "dispatchedSuccess": "Webhook standard envoyé (200 OK)",
+      "dispatchMockBtn": "Envoyer l'événement simulé"
+    },
+    "workflows": {
+      "builder": {
+        "cycleAlert": "Impossible d'exécuter un flux contenant des dépendances cycliques. Veuillez d'abord résoudre la boucle.",
+        "invalidJsonAlert": "Format de fichier JSON de DAG de flux non valide.",
+        "orchestratorTitle": "Orchestrateur DAG de flux automatisés",
+        "orchestratorDesc": "Créez des pipelines basés sur les événements avec des transformations WebAssembly Extism et des Standard Webhooks.",
+        "exportJsonTitle": "Exporter le DAG en JSON",
+        "exportJsonBtn": "Exporter JSON",
+        "importJsonTitle": "Importer le DAG depuis JSON",
+        "importJsonBtn": "Importer JSON",
+        "dryRunBtn": "Test à blanc du pipeline",
+        "deployBtn": "Déployer le flux"
+      },
+      "canvas": {
+        "connectInputTitle": "Connecter l'entrée",
+        "dragConnectTitle": "Faites glisser pour connecter l'étape suivante",
+        "addTrigger": "+ Déclencheur",
+        "addAction": "+ Ajouter une action",
+        "addWasm": "+ Étape Wasm",
+        "addLogic": "+ Logique",
+        "cycleDetected": "Cycle détecté ! Boucle infinie évitée",
+        "dagVerified": "DAG vérifié : Acyclique (O(V+E))",
+        "zoomInTitle": "Zoomer",
+        "zoomOutTitle": "Dézoomer",
+        "resetViewTitle": "Réinitialiser la vue"
+      },
+      "logs": {
+        "outputTitle": "Sortie d'exécution & Journaux en direct",
+        "clearBtn": "Effacer",
+        "executing": "Exécution...",
+        "testWorkflow": "Tester le flux",
+        "noLogs": "Aucun journal d'exécution pour le moment. Cliquez sur \"Tester le flux\" pour tester le pipeline DAG."
+      },
+      "drawer": {
+        "configureStep": "Configurer l'étape",
+        "closeDrawerAria": "Fermer le panneau",
+        "stepName": "Nom de l'étape",
+        "stepNamePlaceholder": "ex. Envoi de webhook de contrat",
+        "triggerEvent": "Événement déclencheur",
+        "contractCreated": "Contrat créé",
+        "paymentReceived": "Paiement reçu (Chargily / EDAHABIA)",
+        "courseCompleted": "Formation terminée",
+        "actionType": "Type d'action",
+        "standardWebhookOption": "Webhook standard (HTTP POST)",
+        "wasmTransformOption": "Transformation Wasm isolée Extism",
+        "whatsappAlertOption": "Envoyer une alerte WhatsApp (Concierge)",
+        "anaeInvoiceOption": "Générer une facture auto-entrepreneur ANAE (Loi 22-23)",
+        "supportTicketOption": "Créer un ticket de support",
+        "destinationUrl": "URL de destination",
+        "standardWebhooksActive": "Standard Webhooks Actif",
+        "stampsDesc": "Génère webhook-id, webhook-timestamp et double signatures HMAC-SHA256 (webhook-signature: v1,<sig>).",
+        "wasmFunction": "Fonction de transformation Wasm Extism",
+        "ceilingDesc": "Plafond : 50ms / 16Mo",
+        "sandboxedDesc": "Exécution en bac à sable WebAssembly sans accès au système de fichiers ni au réseau.",
+        "logicCondition": "Condition de filtre logique",
+        "logicConditionPlaceholder": "ex. data.status == 'COMPLETED'",
+        "delaySeconds": "Délai (secondes)",
+        "deleteNode": "Supprimer le nœud",
+        "doneBtn": "Terminé"
+      }
+    }
+  }
+}

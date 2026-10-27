@@ -1,0 +1,126 @@
+{
+  "settings-devices": {
+    "meta": {
+      "title": "Device Management",
+      "description": "Manage trusted devices and view security events"
+    },
+    "page": {
+      "breadcrumbHome": "Home",
+      "breadcrumbSettings": "Settings",
+      "title": "Devices & Security",
+      "subtitle": "Manage your trusted devices and review security activity",
+      "deviceListTitle": "Active Devices",
+      "deviceListDesc": "Devices that have accessed your account",
+      "currentDevice": "This device",
+      "primaryDevice": "Primary",
+      "trusted": "Trusted",
+      "untrusted": "Untrusted",
+      "trustToggle": "Trust this device",
+      "revokeTrust": "Revoke trust",
+      "lastActive": "Last active",
+      "firstSeen": "First seen",
+      "logins": "Logins",
+      "unknownDevice": "Unknown device",
+      "noDevices": "No devices registered",
+      "securityEvents": "Security Events",
+      "noEvents": "No recent security events",
+      "group": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "week": "This week",
+        "older": "Older"
+      },
+      "time": {
+        "justNow": "Just now",
+        "minutes": "{count}m ago",
+        "hours": "{count}h ago"
+      },
+      "event": {
+        "NEW_DEVICE_DETECTED": "New device detected",
+        "NEW_DEVICE_DETECTED_desc": "New device: {browser} on {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "Impossible travel detected",
+        "EXCESSIVE_SUBNET_SPREAD": "Account sharing detected",
+        "DEVICE_TRUSTED": "Device trusted",
+        "DEVICE_REVOKED": "Device trust revoked",
+        "STRIKE_ISSUED": "Warning issued",
+        "STRIKE_TWO_REACHED": "Account restricted",
+        "STRIKE_THREE_REACHED": "Account suspended",
+        "ACCOUNT_SUSPENDED": "Account suspended",
+        "ESCROW_COOLDOWN_STARTED": "Security cooldown started",
+        "COOLDOWN_BYPASS_2FA": "Cooldown bypassed via 2FA"
+      },
+      "eventDesc": {
+        "NEW_DEVICE_DETECTED": "New device: {browser} on {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "Suspicious login from a distant location",
+        "EXCESSIVE_SUBNET_SPREAD": "Multiple network locations detected",
+        "DEVICE_TRUSTED": "Device marked as trusted",
+        "DEVICE_REVOKED": "Device trust was revoked",
+        "STRIKE_ISSUED": "Warning issued for policy violation",
+        "STRIKE_TWO_REACHED": "Account features restricted",
+        "STRIKE_THREE_REACHED": "Account suspended for violations",
+        "ACCOUNT_SUSPENDED": "Account has been suspended",
+        "ESCROW_COOLDOWN_STARTED": "72h security cooldown for untrusted device",
+        "COOLDOWN_BYPASS_2FA": "Cooldown bypassed via two-factor authentication"
+      },
+      "totalDevices": "Total Devices",
+      "trustedDevices": "Trusted",
+      "activeToday": "Active Today",
+      "events7d": "Events (7d)",
+      "trustUpdated": "Device trust updated",
+      "trustFailed": "Failed to update device trust",
+      "loadFailed": "Failed to load devices",
+      "makePrimary": "Make primary",
+      "primaryUpdated": "Primary device updated",
+      "primaryFailed": "Failed to update primary device",
+      "removeButton": "Remove",
+      "removeDevice": "Remove device",
+      "removeConfirmTitle": "Remove device?",
+      "removeConfirmDesc": "This will sign this device out and remove it from your trusted devices.",
+      "removeSuccess": "Device removed successfully",
+      "removeFailed": "Failed to remove device",
+      "cannotRemovePrimary": "Cannot remove primary device",
+      "breadcrumbHome": "Home",
+      "breadcrumbSettings": "Settings",
+      "cancel": "Cancel"
+    },
+    "banner": {
+      "strike2": {
+        "title": "Account Restricted",
+        "description": "Some features are locked due to multiple device warnings. Upgrade to Pro to add authorised devices.",
+        "cta": "Upgrade to Pro"
+      },
+      "strike3": {
+        "title": "Account Suspended",
+        "description": "Your account has been suspended due to policy violations. Please contact support.",
+        "cta": "Contact Support"
+      }
+    },
+    "notifications": {
+      "newDevice": {
+        "title": "New device detected",
+        "body": "A new device ({device}) just accessed your account."
+      },
+      "impossibleTravel": {
+        "title": "Suspicious login detected",
+        "body": "Your account was accessed from a distant location within an impossible time frame."
+      },
+      "strike1": {
+        "title": "Account sharing warning",
+        "body": "Your account was accessed from multiple locations. Please review your devices."
+      },
+      "strike2": {
+        "title": "Account restricted",
+        "body": "Some features are locked due to multiple device warnings."
+      },
+      "strike3": {
+        "title": "Account suspended",
+        "body": "Your account has been suspended due to policy violations."
+      }
+    },
+    "toast": {
+      "trustUpdated": "Device trust updated",
+      "loadFailed": "Failed to load devices",
+      "trustFailed": "Failed to update device trust"
+    }
+  }
+}

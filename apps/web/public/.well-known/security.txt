@@ -1,0 +1,10 @@
+# Security Contact for Podacium
+# https://podacium.com
+
+Contact: mailto:security@podacium.com
+Expires: 2027-06-22T00:00:00.000Z
+Preferred-Languages: en, fr, ar
+Canonical: https://podacium.com/.well-known/security.txt
+Policy: https://podacium.com/security-policy
+Encryption: https://podacium.com/pgp-key.txt
+Acknowledgments: https://podacium.com/hall-of-fame

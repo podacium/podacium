@@ -1,0 +1,24 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: podacium-api-pdb
+  namespace: podacium
+spec:
+  minAvailable: 1
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: podacium-api
+---
+# PDB for canary — allow full disruption since canary runs 1 replica
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: podacium-api-canary-pdb
+  namespace: podacium
+spec:
+  minAvailable: 0
+  selector:
+    matchLabels:
+      app: podacium-api
+      track: canary

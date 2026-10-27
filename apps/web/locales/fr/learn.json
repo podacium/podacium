@@ -1,0 +1,2159 @@
+{
+  "learn": {
+    "meta": {
+      "title": "Hub d'Apprentissage Global | Maîtrisez les Compétences & Avancez Votre Carrière",
+      "description": "Votre tableau de bord complet d'apprentissage avec modules, parcours, suivi de progression et recommandations personnalisées",
+      "keywords": "hub d'apprentissage, cours en ligne, développement de compétences, croissance professionnelle, suivi de progression, apprentissage personnalisé"
+    },
+    "branding": {
+      "pillar1": "Apprentissage",
+      "pillar2": "Freelance",
+      "pillar3": "Expert BI"
+    },
+    "nav": {
+      "breadcrumb": {
+        "home": "Accueil",
+        "learn": "Apprendre"
+      }
+    },
+    "quickActions": {
+      "modules": "Parcourir les modules",
+      "modulesDesc": "Trouver des cours individuels",
+      "paths": "Parcours d'apprentissage",
+      "pathsDesc": "Voyages structurés",
+      "progress": "Ma progression",
+      "progressDesc": "Suivez votre apprentissage"
+    },
+    "landing": {
+      "hero": {
+        "title": "Maîtrisez vos compétences avec",
+        "highlight": "Podacium",
+        "subtitle": "Votre passerelle vers des cours dirigés par des experts et des parcours d'apprentissage structurés pour accélérer votre carrière.",
+        "cta": "Commencer à apprendre",
+        "badge": "Éducation Podacium"
+      },
+      "choices": {
+        "courses": {
+          "title": "Explorer les cours",
+          "desc": "Plongez dans des modules individuels pour maîtriser des compétences spécifiques à votre rythme.",
+          "action": "Parcourir les cours"
+        },
+        "paths": {
+          "title": "Parcours d'apprentissage",
+          "desc": "Suivez des voyages structurés pour atteindre une maîtrise complète dans un domaine.",
+          "action": "Voir les parcours"
+        }
+      },
+      "features": {
+        "title": "Pourquoi apprendre avec Podacium ?",
+        "subtitle": "Accélérez votre carrière avec notre contenu vérifié",
+        "items": {
+          "expert": {
+            "title": "Contenu dirigé par des experts",
+            "desc": "Apprenez auprès de professionnels de l'industrie"
+          },
+          "interactive": {
+            "title": "Apprentissage interactif",
+            "desc": "Exercices pratiques et projets concrets"
+          },
+          "certified": {
+            "title": "Obtenez une certification",
+            "desc": "Obtenez des certificats reconnus"
+          }
+        }
+      },
+      "stats": {
+        "learners": {
+          "label": "Apprenants actifs"
+        },
+        "courses": {
+          "label": "Cours experts"
+        },
+        "paths": {
+          "label": "Parcours de carrière"
+        },
+        "lessons": {
+          "label": "Leçons interactives"
+        },
+        "satisfaction": {
+          "label": "Note des apprenants"
+        }
+      },
+      "howItWorks": {
+        "title": "Comment ça marche",
+        "subtitle": "Commencez votre voyage en trois étapes simples",
+        "steps": {
+          "discover": {
+            "title": "Découvrir",
+            "desc": "Parcourez notre catalogue pour trouver votre chemin"
+          },
+          "learn": {
+            "title": "Apprendre",
+            "desc": "Engagez-vous avec du contenu interactif"
+          },
+          "certify": {
+            "title": "Certifier",
+            "desc": "Obtenez un certificat vérifié"
+          }
+        }
+      },
+      "audience": {
+        "title": "Pour qui est-ce ?",
+        "subtitle": "Podacium est conçu pour les apprenants à chaque étape",
+        "segments": {
+          "students": {
+            "title": "Étudiants",
+            "desc": "Construisez des compétences fondamentales."
+          },
+          "professionals": {
+            "title": "Professionnels",
+            "desc": "Montez en compétences pour avancer votre carrière."
+          },
+          "teams": {
+            "title": "Équipes",
+            "desc": "Formez votre main-d'œuvre avec des parcours personnalisés."
+          }
+        }
+      },
+      "featured": {
+        "title": "Cours en vedette",
+        "subtitle": "Explorez notre contenu le mieux noté sélectionné pour vous",
+        "viewCourse": "Voir le cours",
+        "beginnerLevel": "Débutant",
+        "new": "Nouveau",
+        "lessons": "leçons",
+        "duration": "2 h 15 min"
+      },
+      "faq": {
+        "title": "Questions fréquentes",
+        "subtitle": "Questions courantes sur notre plateforme",
+        "items": [
+          {
+            "question": "Le contenu est-il gratuit ?",
+            "answer": "Nous proposons des cours d'introduction gratuits et des parcours premium."
+          },
+          {
+            "question": "Obtiens-je un certificat ?",
+            "answer": "Oui, des certificats vérifiés sont disponibles à la fin des cours premium."
+          },
+          {
+            "question": "Puis-je apprendre à mon propre rythme ?",
+            "answer": "Absolument. Tout notre contenu est à votre rythme."
+          },
+          {
+            "question": "Y a-t-il un support disponible ?",
+            "answer": "Oui, les apprenants premium ont accès aux questions-réponses avec les instructeurs."
+          },
+          {
+            "question": "Puis-je apprendre sur un appareil mobile ?",
+            "answer": "Absolument. Notre plateforme est entièrement responsive et optimisée pour les smartphones et tablettes. Vous pouvez regarder des vidéos, lire des documents et passer des quiz sur n'importe quel appareil. Votre progression se synchronise automatiquement entre vos appareils."
+          },
+          {
+            "question": "Y a-t-il des prérequis pour les cours ?",
+            "answer": "La plupart des cours débutants n'ont aucun prérequis. Les cours intermédiaires et avancés indiquent clairement les connaissances requises sur leur page de description. Les parcours d'apprentissage vous guident progressivement des fondamentaux aux sujets avancés."
+          },
+          {
+            "question": "À quelle fréquence le contenu est-il mis à jour ?",
+            "answer": "Le contenu des cours est révisé et mis à jour régulièrement pour refléter les évolutions du secteur. Les cours premium reçoivent des mises à jour au moins trimestriellement. Une fois inscrit, vous accédez automatiquement à toutes les mises à jour sans frais supplémentaires."
+          },
+          {
+            "question": "Comment Podacium évalue-t-il mon niveau ?",
+            "answer": "À votre inscription, vous pouvez consulter les parcours d'apprentissage recommandés en fonction de vos objectifs et de votre expérience. La plateforme suggère des parcours personnalisés adaptés à votre niveau, et vous pouvez ajuster votre parcours à tout moment."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prêt à commencer votre voyage ?",
+        "subtitle": "Rejoignez notre communauté d'apprenants aujourd'hui.",
+        "primary": "Commencer gratuitement",
+        "secondary": "Voir les plans entreprise"
+      }
+    },
+    "hero": {
+      "badge": "Hub d'Apprentissage Global",
+      "title": {
+        "main": "Votre Univers",
+        "highlight": "d'Apprentissage Personnel"
+      },
+      "description": {
+        "main": "Découvrez, apprenez et suivez votre progression à travers nos cours et parcours d'apprentissage.",
+        "authenticated": " Des recommandations personnalisées alimentées par l'IA pour accélérer votre croissance professionnelle.",
+        "unauthenticated": " Inscrivez-vous pour suivre votre progression et recevoir des recommandations personnalisées."
+      },
+      "features": [
+        "Parcours d'apprentissage personnalisés",
+        "Suivi de progression & analytiques",
+        "Recommandations personnalisées",
+        "Certification de compétences"
+      ]
+    },
+    "stats": {
+      "user": [
+        {
+          "label": "Inscriptions Totales",
+          "description": "Parcours d'apprentissage actifs"
+        },
+        {
+          "label": "Leçons Terminées",
+          "description": "Compétences maîtrisées"
+        },
+        {
+          "label": "Heures d'Apprentissage",
+          "description": "Temps total investi"
+        },
+        {
+          "label": "Certificats Obtenus",
+          "description": "Réalisations débloquées"
+        }
+      ],
+      "public": [
+        {
+          "label": "Apprenants Actifs",
+          "description": "Rejoignez notre communauté"
+        },
+        {
+          "label": "Cours Disponibles",
+          "description": "Commencez à apprendre dès aujourd'hui"
+        },
+        {
+          "label": "Parcours d'Apprentissage",
+          "description": "Développement structuré des compétences"
+        },
+        {
+          "label": "Note Moyenne",
+          "description": "Basé sur les retours des apprenants"
+        }
+      ]
+    },
+    "auth": {
+      "signIn": "Se connecter",
+      "cta": "pour suivre votre progression et recevoir des recommandations personnalisées",
+      "progress": {
+        "title": "Suivez Votre Progression",
+        "description": "Créez un compte ou connectez-vous pour suivre votre parcours d'apprentissage, voir votre progression et recevoir des recommandations personnalisées."
+      }
+    },
+    "tabs": [
+      "Aperçu",
+      "Modules",
+      "Parcours",
+      "Ma Progression"
+    ],
+    "search": {
+      "placeholder": {
+        "modules": "Rechercher des modules...",
+        "paths": "Rechercher des parcours...",
+        "content": "Rechercher du contenu d'apprentissage..."
+      },
+      "results": "Trouvé <1>{modules}</1> modules et <3>{paths}</3> parcours correspondant à \"{query}\""
+    },
+    "labels": {
+      "sortBy": "Trier par",
+      "skillFocus": "Compétence Ciblée",
+      "allSkills": "Toutes les Compétences",
+      "durationRange": "Plage de Durée",
+      "features": "Fonctionnalités",
+      "match": "correspondance",
+      "modules": "modules",
+      "learners": "apprenants",
+      "popular": "Populaire",
+      "inProgress": "en cours",
+      "learningContent": "Contenu d'Apprentissage",
+      "complete": "terminé",
+      "progressUpdated": "Progression mise à jour",
+      "newEnrollment": "Nouvelle inscription",
+      "progress": "Progression",
+      "randomSelection": "Sélection Aléatoire",
+      "randomlySelected": "sélectionné aléatoirement",
+      "enrolled": "inscrits",
+      "more": "plus",
+      "featured": "En Vedette",
+      "unknown": "Inconnu",
+      "there": "là",
+      "learningActivity": "Activité d'Apprentissage",
+      "general": "Général",
+      "hours": "h",
+      "minutes": "min",
+      "lessons": "Leçons",
+      "all": "All",
+      "free": "Free"
+    },
+    "sortOptions": {
+      "popularity": "Plus Populaires",
+      "recent": "Récemment Ajoutés",
+      "progress": "Progression",
+      "duration": "Durée",
+      "rating": "Mieux Notés"
+    },
+    "filterOptions": {
+      "duration": {
+        "any": "Toute Durée",
+        "under1h": "Moins d'1 heure",
+        "1to5h": "1-5 heures",
+        "5to10h": "5-10 heures",
+        "over10h": "10+ heures"
+      },
+      "features": {
+        "certification": "Certification Incluse",
+        "handsOn": "Projets Pratiques",
+        "interactive": "Exercices Interactifs"
+      }
+    },
+    "buttons": {
+      "shuffle": "Mélanger",
+      "hideFilters": "Masquer les Filtres",
+      "showFilters": "Plus de Filtres",
+      "clearAll": "Tout Effacer",
+      "clearSearch": "Effacer la Recherche",
+      "explore": "Explorer",
+      "continue": "Continuer",
+      "continuePath": "Continuer le Parcours",
+      "enrollNow": "S'inscrire Maintenant",
+      "startLearning": "Commencer à Apprendre",
+      "startPath": "Démarrer le Parcours",
+      "explorePath": "Explorer le Parcours",
+      "loading": "Chargement...",
+      "loadMoreModules": "Charger Plus de Modules",
+      "loadMorePaths": "Charger Plus de Parcours",
+      "clearAllFilters": "Effacer Tous les Filtres",
+      "createAccount": "Créer un Compte",
+      "getHelp": "Obtenir de l'Aide",
+      "browseCourses": "Parcourir les Cours Individuels",
+      "viewCertificate": "Voir le Certificat",
+      "continueLearning": "Continuer l'Apprentissage",
+      "goToDashboard": "Aller au Tableau de Bord",
+      "createFreeAccount": "Créer un Compte Gratuit"
+    },
+    "overview": {
+      "recommendations": {
+        "title": "Recommandé Pour Vous",
+        "subtitle": "Parcours d'apprentissage personnalisés basés sur vos intérêts et votre progression",
+        "defaultDescription": "Maîtrisez cette compétence avec notre parcours d'apprentissage guidé",
+        "viewPath": "Voir le Parcours Complet"
+      },
+      "featured": {
+        "title": "Contenu en Vedette",
+        "subtitle": "Parcours d'apprentissage et modules populaires choisis par notre communauté",
+        "defaultDescription": "Maîtrisez cette compétence avec notre parcours d'apprentissage guidé"
+      },
+      "continue": {
+        "title": "Continuer à Apprendre",
+        "subtitle": "Reprenez où vous vous êtes arrêté dans vos cours actifs"
+      },
+      "recentActivity": {
+        "title": "Activité Récente"
+      }
+    },
+    "modules": {
+      "searchResults": "Résultats de Recherche",
+      "availableModules": "Modules Disponibles",
+      "searchDescription": "Modules correspondant à vos critères de recherche",
+      "defaultDescription": "Parcourez et inscrivez-vous à des cours individuels pour développer des compétences spécifiques",
+      "showingCount": "Affichage de {count} {random} sur {total} modules",
+      "limitedResults": "Seulement {count} éléments correspondent à vos filtres",
+      "noDescription": "Aucune description disponible"
+    },
+    "paths": {
+      "searchResults": "Résultats de Recherche",
+      "learningPaths": "Parcours d'Apprentissage",
+      "searchDescription": "Parcours correspondant à vos critères de recherche",
+      "defaultDescription": "Parcours d'apprentissage structurés pour maîtriser des ensembles de compétences complets",
+      "showingCount": "Affichage de {count} {random} sur {total} parcours",
+      "limitedResults": "Seulement {count} éléments correspondent à vos filtres",
+      "defaultPathDescription": "Un parcours d'apprentissage complet pour maîtriser de nouvelles compétences et faire progresser votre carrière"
+    },
+    "progress": {
+      "title": "Progression d'Apprentissage",
+      "subtitle": "Suivez votre parcours et voyez jusqu'où vous êtes allé",
+      "dayStreak": "jours consécutifs",
+      "enrolled": "Inscrit",
+      "activeModules": "Modules Actifs",
+      "completed": "terminé",
+      "learningPaths": "Parcours d'Apprentissage",
+      "hours": "Heures",
+      "totalLearningTime": "Temps Total d'Apprentissage",
+      "avgModuleProgress": "Prog. Moy. Module",
+      "certificates": "Certificats",
+      "earned": "Obtenus",
+      "avgPathProgress": "Prog. Moy. Parcours",
+      "skillDevelopment": {
+        "title": "Développement des Compétences",
+        "subtitle": "Compétences sur lesquelles vous travaillez activement dans votre contenu inscrit",
+        "courses": "cours",
+        "viewAll": "Voir les {count} compétences →"
+      },
+      "timeline": {
+        "title": "Chronologie d'Apprentissage",
+        "subtitle": "Vos activités et réalisations d'apprentissage récentes",
+        "completed": "Terminé avec succès ! 🎉",
+        "progressUpdated": "Progression mise à jour à {progress}%"
+      },
+      "tips": {
+        "title": "Conseils d'Apprentissage",
+        "subtitle": "Maximisez votre efficacité d'apprentissage",
+        "items": [
+          {
+            "tip": "La régularité est essentielle",
+            "description": "Essayez d'apprendre au moins 30 minutes chaque jour pour créer un élan."
+          },
+          {
+            "tip": "Mélangez théorie et pratique",
+            "description": "Appliquez ce que vous apprenez à travers des projets et exercices."
+          },
+          {
+            "tip": "Prenez des pauses régulières",
+            "description": "Utilisez la technique Pomodoro : 25 minutes concentrées, 5 minutes de pause."
+          },
+          {
+            "tip": "Fixez des objectifs clairs",
+            "description": "Définissez ce que vous voulez accomplir chaque semaine pour rester motivé."
+          },
+          {
+            "tip": "Révisez régulièrement",
+            "description": "Revisitez les leçons précédentes pour renforcer votre compréhension."
+          },
+          {
+            "tip": "Rejoignez les discussions",
+            "description": "Participez avec d'autres apprenants pour obtenir différentes perspectives."
+          }
+        ]
+      }
+    },
+    "timeframes": {
+      "week": "Cette Semaine",
+      "month": "Ce Mois",
+      "year": "Cette Année"
+    },
+    "pagination": {
+      "show12": "Afficher 12 par page",
+      "show24": "Afficher 24 par page",
+      "show48": "Afficher 48 par page"
+    },
+    "emptyStates": {
+      "modules": {
+        "title": "Aucun module trouvé",
+        "searchMessage": "Aucun module ne correspond à votre recherche \"{query}\". Essayez différents mots-clés ou effacez les filtres.",
+        "noFilters": "Aucun module disponible avec les filtres actuels. Essayez d'ajuster votre sélection."
+      },
+      "paths": {
+        "title": "Aucun parcours d'apprentissage trouvé",
+        "searchMessage": "Aucun parcours ne correspond à votre recherche \"{query}\". Essayez différents mots-clés ou effacez les filtres.",
+        "noFilters": "Aucun parcours d'apprentissage disponible avec les filtres actuels. Essayez d'ajuster votre sélection."
+      }
+    },
+    "messages": {
+      "loadError": "Échec du chargement du contenu d'apprentissage. Veuillez réessayer plus tard.",
+      "userDataError": "Certaines fonctionnalités de personnalisation peuvent être indisponibles.",
+      "userDataErrorTitle": "Personnalisation Limitée",
+      "searchError": "Échec de la recherche. Veuillez réessayer.",
+      "loadMoreError": "Échec du chargement de plus de contenu. Veuillez réessayer.",
+      "enrollError": "Échec de l'inscription. Veuillez réessayer.",
+      "errorTitle": "Quelque chose s'est mal passé",
+      "loadingUserData": "Chargement des données personnalisées..."
+    },
+    "footer": {
+      "authenticated": {
+        "title": "Continuez votre parcours d'apprentissage, {name} !",
+        "description": "Vous faites d'excellents progrès ! Explorez de nouvelles compétences, terminez vos cours inscrits, ou consultez les recommandations personnalisées pour faire passer votre apprentissage au niveau supérieur."
+      },
+      "unauthenticated": {
+        "title": "Prêt à accélérer votre apprentissage ?",
+        "description": "Rejoignez les apprenants qui transforment leur carrière avec notre plateforme d'apprentissage complète. Créez un compte pour suivre votre progression et recevoir des recommandations personnalisées."
+      }
+    },
+    "certificate": {
+      "downloadSuccess": "Certificat téléchargé avec succès",
+      "downloadError": "Échec du téléchargement du certificat",
+      "shareSuccess": "Certificat partagé avec succès",
+      "shareError": "Échec du partage du certificat",
+      "linkCopied": "Lien copié dans le presse-papiers",
+      "copyError": "Échec de la copie du lien",
+      "notFoundDescription": "Ce certificat n'existe pas ou a peut-être été révoqué. Veuillez vérifier l'identifiant et réessayer.",
+      "title": "Certificat d'Achèvement",
+      "issuedTo": "Délivré à",
+      "header": "Certificat",
+      "certifiedThat": "Ceci certifie que",
+      "completionDescription": "a complété avec succès",
+      "dateIssued": "Date d'Émission",
+      "instructor": "Instructeur",
+      "verificationId": "ID de Vérification",
+      "downloadPdf": "Télécharger PDF",
+      "shareLinkedIn": "Partager sur LinkedIn",
+      "verifyLink": "Copier le Lien de Vérification",
+      "verificationTitle": "Vérifier le Certificat",
+      "verificationDescription": "Vérifiez l'authenticité d'un certificat de complétion Podacium",
+      "verifyOnline": "Vérifier en Ligne",
+      "certificateDetails": "Détails du Certificat",
+      "certificateId": "ID du Certificat",
+      "issueDate": "Date d'Émission",
+      "certificateType": "Type de Certificat",
+      "moduleType": "Certificat de Cours",
+      "pathType": "Certificat de Parcours",
+      "status": "Statut",
+      "valid": "Valide",
+      "notFound": "Certificat introuvable",
+      "issuer": "Podacium",
+      "expertTeam": "Équipe d'experts Podacium",
+      "qrCodeAlt": "Code QR de vérification"
+    },
+    "preview": {
+      "badge": "Aperçu gratuit",
+      "watchingBanner": "Vous regardez une leçon d'aperçu gratuit",
+      "enrollPrompt": "S'inscrire au cours complet →",
+      "enjoyedTitle": "Vous avez aimé cet aperçu gratuit ?",
+      "enjoyedDesc": "Inscrivez-vous maintenant pour accéder au cours complet, aux quiz, aux ressources téléchargeables et au certificat officiel !",
+      "enrollNow": "S'inscrire maintenant",
+      "previewThisCourse": "Aperçu de ce cours",
+      "modalTitle": "Aperçu du cours"
+    }
+  },
+  "paths": {
+    "badges": {
+      "featured": "Mis en avant"
+    },
+    "meta": {
+      "title": "Parcours d'apprentissage | Maîtrisez votre carrière",
+      "description": "Explorez des parcours d'apprentissage complets conçus pour vous guider de débutant à expert dans votre domaine choisi",
+      "keywords": "parcours d'apprentissage, développement de carrière, progression des compétences, croissance professionnelle, cours en ligne"
+    },
+    "hero": {
+      "badge": "Parcours d'apprentissage guidés",
+      "title": {
+        "line1": "Maîtrisez votre carrière avec",
+        "highlight": "des Parcours d'Apprentissage"
+      },
+      "description": "Des parcours structurés conçus pour transformer les débutants en professionnels. Suivez des roadmaps organisées avec des étapes claires et des résultats mesurables.",
+      "features": [
+        "Roadmaps organisées par des experts",
+        "Construction progressive des compétences",
+        "Projets prêts pour le marché",
+        "Reconnaissance de l'industrie"
+      ]
+    },
+    "stats": [
+      {
+        "label": "Inscriptions",
+        "description": "Parcours d'apprentissage actifs"
+      },
+      {
+        "label": "Leçons terminées",
+        "description": "Compétences maîtrisées"
+      },
+      {
+        "label": "Heures d'apprentissage",
+        "description": "Temps total investi"
+      },
+      {
+        "label": "Certificats obtenus",
+        "description": "Réussites débloquées"
+      }
+    ],
+    "recommendations": {
+      "title": "Recommandé pour vous",
+      "subtitle": "Basé sur votre historique d'apprentissage et vos intérêts",
+      "match": "correspondance",
+      "defaultDescription": "Maîtrisez cette compétence avec notre parcours d'apprentissage guidé"
+    },
+    "search": {
+      "placeholder": "Rechercher des parcours d'apprentissage par titre, description ou compétences...",
+      "results": "Trouvé <1>{paths}</1> parcours d'apprentissage et <3>{modules}</3> modules correspondant à \"{query}\""
+    },
+    "filters": {
+      "sortBy": "Trier par",
+      "durationRange": "Plage de durée",
+      "enrollmentStatus": "Statut d'inscription",
+      "features": "Fonctionnalités",
+      "categories": "Catégories",
+      "levels": "Niveaux"
+    },
+    "filterOptions": {
+      "duration": [
+        "Toute durée",
+        "Moins de 10 heures",
+        "10-30 heures",
+        "30-50 heures",
+        "50+ heures"
+      ],
+      "status": {
+        "enrolled": "Parcours inscrits",
+        "notEnrolled": "Non inscrit"
+      },
+      "features": {
+        "certification": "Certification incluse",
+        "handsOn": "Projets pratiques"
+      }
+    },
+    "sortOptions": [
+      {
+        "value": "popularity",
+        "label": "Plus populaires"
+      },
+      {
+        "value": "recent",
+        "label": "Ajoutés récemment"
+      },
+      {
+        "value": "progress",
+        "label": "Progression"
+      },
+      {
+        "value": "duration",
+        "label": "Durée"
+      }
+    ],
+    "activeEnrollments": {
+      "title": "Vos parcours d'apprentissage actifs",
+      "subtitle": "en cours",
+      "defaultTitle": "Parcours d'apprentissage"
+    },
+    "results": {
+      "searchResults": "Résultats de recherche",
+      "header": "Parcours d'apprentissage disponibles",
+      "searchDescription": "Parcours correspondant à vos critères de recherche",
+      "description": "Des parcours d'apprentissage complets pour faire progresser votre carrière",
+      "showing": "Affichage de {current} sur {total} parcours",
+      "filtered": "(filtré)"
+    },
+    "pagination": [
+      "Afficher 12 par page",
+      "Afficher 24 par page",
+      "Afficher 48 par page"
+    ],
+    "pathCard": {
+      "featured": "À la une",
+      "popular": "Populaire",
+      "topRated": "Mieux noté",
+      "enrolled": "Inscrit",
+      "continue": "Continuer",
+      "explore": "Explorer",
+      "save": "Sauvegarder",
+      "share": "Partager",
+      "noDescription": "Aucune description disponible",
+      "defaultDescription": "Un parcours d'apprentissage complet pour maîtriser de nouvelles compétences et faire progresser votre carrière",
+      "detailedDescription": "Un parcours d'apprentissage complet conçu pour vous mener de débutant à expert dans votre domaine choisi.",
+      "featuredModules": "Modules en vedette",
+      "skillsYoullLearn": "Compétences que vous apprendrez"
+    },
+    "emptyState": {
+      "title": "Aucun parcours d'apprentissage trouvé",
+      "searchMessage": "Aucun parcours d'apprentissage ne correspond à votre recherche \"{query}\". Essayez d'autres mots-clés ou effacez les filtres.",
+      "noFilters": "Aucun parcours d'apprentissage disponible avec les filtres actuels. Essayez d'ajuster votre sélection."
+    },
+    "popularModules": {
+      "title": "Modules individuels populaires",
+      "subtitle": "Commencez par ces cours très bien notés",
+      "defaultDescription": "Maîtrisez des compétences essentielles avec ce cours complet",
+      "viewAll": "Voir tous les cours"
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "subtitle": "Obtenez des réponses aux questions courantes sur les parcours d'apprentissage",
+      "items": [
+        {
+          "question": "Quelle est la différence entre un parcours d'apprentissage et des cours individuels ?",
+          "answer": "Les parcours d'apprentissage sont des séquences structurées de cours conçues pour vous mener de débutant à expert dans un domaine spécifique. Ils fournissent un parcours guidé avec des étapes claires, tandis que les cours individuels se concentrent sur des compétences ou sujets spécifiques."
+        },
+        {
+          "question": "Combien de temps faut-il pour terminer un parcours d'apprentissage ?",
+          "answer": "Nos parcours sont à votre rythme. Le temps de réalisation varie selon la complexité du parcours, mais certains parcours fournissent un temps de réalisation estimé basé sur un rythme d'apprentissage typique."
+        },
+        {
+          "question": "Est-ce que je reçois un certificat en terminant un parcours d'apprentissage ?",
+          "answer": "Oui ! Après avoir terminé tous les modules requis d'un parcours d'apprentissage, vous recevrez un certificat vérifié que vous pourrez partager sur LinkedIn et d'autres plateformes professionnelles."
+        },
+        {
+          "question": "Puis-je suivre les cours d'un parcours d'apprentissage dans n'importe quel ordre ?",
+          "answer": "Bien que vous ayez de la flexibilité, nous recommandons de suivre la séquence suggérée car chaque cours s'appuie sur les connaissances des précédents. Certains modules avancés peuvent nécessiter des prérequis."
+        },
+        {
+          "question": "Que se passe-t-il si je ne peux pas terminer un parcours d'apprentissage ?",
+          "answer": "Vous pouvez mettre en pause et reprendre à tout moment. Votre progression est sauvegardée indéfiniment. Vous pouvez également changer de parcours d'apprentissage ou vous concentrer sur des cours individuels dans un parcours."
+        },
+        {
+          "question": "Y a-t-il des prérequis pour les parcours d'apprentissage ?",
+          "answer": "La plupart des parcours débutants n'ont aucun prérequis. Les parcours intermédiaires et avancés peuvent nécessiter des connaissances de base. Chaque parcours indique clairement toutes les exigences avant votre inscription."
+        },
+        {
+          "question": "Comment Podacium recommande-t-il des parcours pour mes objectifs de carrière ?",
+          "answer": "Podacium recommande des parcours d'apprentissage basés sur votre historique d'apprentissage et vos intérêts de carrière. Les recommandations s'adaptent à mesure que vous terminez des modules, et vous pouvez ajuster votre parcours ou ignorer les suggestions à tout moment."
+        },
+        {
+          "question": "Puis-je prévisualiser le contenu d'un parcours avant de m'inscrire ?",
+          "answer": "Chaque parcours d'apprentissage a une page d'aperçu détaillée listant tous les modules, objectifs pédagogiques et durée estimée. Vous pouvez consulter le programme complet avant de vous inscrire pour évaluer si le parcours correspond à vos objectifs."
+        }
+      ]
+    },
+    "buttons": {
+      "clear": "Effacer",
+      "filters": "Filtres",
+      "clearAll": "Tout effacer",
+      "hideFilters": "Masquer les filtres",
+      "showFilters": "Plus de filtres",
+      "continue": "Continuer",
+      "continuePath": "Continuer le parcours",
+      "continueLearning": "Continuer l'apprentissage",
+      "enrollNow": "S'inscrire maintenant",
+      "startFree": "Commencer gratuitement",
+      "startLearningPath": "Commencer le parcours",
+      "save": "Sauvegarder",
+      "share": "Partager",
+      "loadMorePaths": "Charger plus de parcours",
+      "loading": "Chargement...",
+      "browseCourses": "Parcourir les cours individuels",
+      "getRecommendations": "Obtenir des recommandations",
+      "explore": "Explorer",
+      "exploreCourse": "Explorer le cours",
+      "viewAll": "Voir tout",
+      "clearSearch": "Effacer la recherche",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "clearAllFilters": "Effacer tous les filtres",
+      "tryAgain": "Réessayer",
+      "clearFilters": "Effacer les filtres"
+    },
+    "labels": {
+      "learningPath": "Parcours d'apprentissage",
+      "modules": "modules",
+      "enrolled": "inscrits",
+      "lessons": "leçons",
+      "complete": "terminé",
+      "progress": "progression",
+      "skills": "compétences",
+      "na": "N/A",
+      "duration": "Durée",
+      "unknown": "Inconnu",
+      "general": "Général",
+      "minutes": "min",
+      "more": "plus",
+      "moreSkills": "autres compétences",
+      "yourProgress": "Votre progression",
+      "readyToEnroll": "Prêt à s'inscrire",
+      "certificateUponCompletion": "Certificat à l'issue",
+      "includes": "Inclut",
+      "avgDuration": "Durée Moyenne",
+      "rating": "Évaluation",
+      "totalLessons": "Total des Leçons"
+    },
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    "messages": {
+      "loadError": "Échec du chargement des parcours d'apprentissage. Veuillez réessayer plus tard.",
+      "searchError": "Échec de la recherche. Veuillez réessayer.",
+      "enrollError": "Échec de l'inscription au parcours. Veuillez réessayer.",
+      "loadMoreError": "Échec du chargement d'autres parcours. Veuillez réessayer.",
+      "errorTitle": "Une erreur s'est produite"
+    },
+    "pricing": {
+      "title": "Tarifs",
+      "free": "Gratuit",
+      "paid": "Payant"
+    },
+    "empty": {
+      "title": "Aucun parcours trouvé",
+      "noFilters": "Aucun parcours d'apprentissage disponible avec les filtres actuels."
+    },
+    "loadFailed": "Impossible de charger les parcours. Veuillez réessayer."
+  },
+  "courses": {
+    "meta": {
+      "title": "Modules de Cours | Plateforme d'Apprentissage",
+      "description": "Explorez des modules d'apprentissage complets avec un design professionnel et une expérience fluide"
+    },
+    "hero": {
+      "title": "Explorer les Modules d'Apprentissage",
+      "description": "Découvrez des cours complets conçus pour vous aider à maîtriser de nouvelles compétences et faire progresser votre carrière"
+    },
+    "search": {
+      "placeholder": "Rechercher des cours par titre, description ou compétences...",
+      "results": "Trouvé {modules} modules et {paths} parcours"
+    },
+    "filters": {
+      "path": "Parcours d'Apprentissage",
+      "allPaths": "Tous les Parcours"
+    },
+    "buttons": {
+      "listView": "Liste",
+      "gridView": "Grille",
+      "clear": "Effacer",
+      "clearSearch": "Effacer la recherche",
+      "startCourse": "Démarrer le cours",
+      "continue": "Continuer",
+      "save": "Enregistrer",
+      "share": "Partager",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "clearAllFilters": "Effacer tous les filtres",
+      "browseLearningPaths": "Parcourir les parcours",
+      "viewAll": "Tout voir",
+      "explorePath": "Explorer le parcours",
+      "filters": "Filtres"
+    },
+    "sections": {
+      "searchResults": "Résultats de Recherche",
+      "availableModules": "Modules Disponibles",
+      "learningPaths": "Parcours d'Apprentissage"
+    },
+    "count": {
+      "modules": "{count} modules de formation"
+    },
+    "noDescription": "Aucune description disponible",
+    "badges": {
+      "featured": "Mis en avant",
+      "new": "NOUVEAU"
+    },
+    "labels": {
+      "lessons": "leçons",
+      "modules": "modules",
+      "enrolled": "inscrits",
+      "progress": "Progression",
+      "avgDuration": "Durée moyenne",
+      "level": "Niveau",
+      "category": "Catégorie",
+      "allCategories": "Toutes les catégories",
+      "allLevels": "Tous les niveaux",
+      "general": "Général"
+    },
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    "results": {
+      "showing": "Affichage de {current} sur {total} cours",
+      "filtered": "(filtré)"
+    },
+    "pricing": {
+      "free": "Gratuit"
+    },
+    "pagination": {
+      "page": "Page {current} sur {total}"
+    },
+    "empty": {
+      "title": "Aucun cours trouvé",
+      "searchMessage": "Aucun cours ne correspond à votre recherche \"{query}\". Essayez d'autres mots-clés ou effacez les filtres.",
+      "noFilters": "Aucun cours disponible avec les filtres actuels. Essayez d'ajuster votre sélection."
+    },
+    "paths": {
+      "defaultDescription": "Un parcours d'apprentissage complet pour maîtriser de nouvelles compétences",
+      "modulesCount": "{count} modules de formation",
+      "enrolledCount": "{count} inscrits",
+      "progress": "{progress}% terminé"
+    },
+    "messages": {
+      "loadError": "Échec du chargement des cours. Veuillez réessayer plus tard.",
+      "searchError": "Échec de la recherche. Veuillez réessayer."
+    }
+  },
+  "path": {
+    "hero": {
+      "badge": "Parcours d'Apprentissage",
+      "stats": {
+        "duration": "Durée Totale",
+        "modules": "Modules",
+        "enrolled": "Inscrits",
+        "level": "Niveau",
+        "completion": "Temps estimé",
+        "rating": "Note",
+        "selfPaced": "Auto-rythmé"
+      },
+      "progress": "Votre Progression",
+      "features": [
+        "Parcours d'apprentissage étape par étape",
+        "{count} modules complets",
+        "Certificat de fin de parcours",
+        "Accès sur mobile et ordinateur",
+        "Premier module déverrouillé en aperçu",
+        "Tous les modules verrouillés jusqu'à l'inscription"
+      ],
+      "actions": {
+        "continue": "Continuer à Apprendre",
+        "enrollFree": "S'inscrire Gratuitement",
+        "enrollNow": "S'inscrire Maintenant",
+        "signIn": "Se Connecter pour S'inscrire",
+        "bookmark": "Marquer",
+        "bookmarked": "Marqué",
+        "share": "Partager",
+        "guarantee": "Garantie de remboursement de 30 jours • Certificat inclus",
+        "viewCertificate": "Voir le Certificat"
+      }
+    },
+    "social": {
+      "bookmarked": "Parcours ajouté aux favoris",
+      "unbookmarked": "Parcours retiré des favoris",
+      "linkCopied": "Lien copié dans le presse-papiers !"
+    },
+    "tabs": {
+      "overview": "Vue d'ensemble",
+      "modules": "Modules",
+      "progress": "Progression",
+      "resources": "Ressources"
+    },
+    "overview": {
+      "title": "Aperçu du Parcours",
+      "noDescription": "Aucune description détaillée disponible pour ce parcours d'apprentissage.",
+      "modulesPreview": {
+        "title": "Modules de ce Parcours",
+        "viewAll": "Voir tous les {count} modules"
+      }
+    },
+    "modules": {
+      "header": {
+        "title": "Modules du Parcours",
+        "description": "Suivez ces modules dans l'ordre pour terminer le parcours d'apprentissage",
+        "totalDuration": "Durée Totale"
+      },
+      "curriculum": "Programme",
+      "enrollToAccess": "Inscrivez-vous pour accéder à tous les modules et suivre votre progression",
+      "minutes": "min",
+      "badges": {
+        "startHere": "Commencer Ici",
+        "new": "Nouveau"
+      },
+      "sections": {
+        "description": "Description",
+        "skills": "Compétences Couvertes",
+        "prerequisites": "Prérequis",
+        "yourProgress": "Votre Progression"
+      },
+      "actions": {
+        "viewCourse": "Voir le Cours",
+        "reviewCourse": "Revoir le Cours",
+        "continueLearning": "Continuer à Apprendre",
+        "preview": "Aperçu",
+        "locked": "Verrouillé",
+        "enrollInCourse": "S'inscrire au Cours",
+        "individualPrice": "Prix individuel du cours"
+      },
+      "status": {
+        "completed": "Terminé",
+        "inProgress": "En Cours",
+        "preview": "Aperçu",
+        "locked": "Verrouillé",
+        "available": "Disponible"
+      },
+      "empty": {
+        "title": "Aucun Module Disponible",
+        "description": "Des modules seront ajoutés à ce parcours d'apprentissage bientôt."
+      }
+    },
+    "progress": {
+      "header": {
+        "title": "Votre Progression d'Apprentissage",
+        "description": "Suivez votre progression à travers le parcours d'apprentissage"
+      },
+      "milestones": "Étapes Clés",
+      "enrollPrompt": {
+        "title": "Inscrivez-vous pour Suivre la Progression",
+        "description": "Inscrivez-vous à ce parcours d'apprentissage pour commencer à suivre votre progression, gagner des réalisations et surveiller vos analyses d'apprentissage."
+      },
+      "analytics": {
+        "title": "Analyses d'Apprentissage",
+        "timeline": "Chronologie de Progression",
+        "modulesCompleted": "Modules Terminés",
+        "learningTime": "Temps d'Apprentissage",
+        "timeDistribution": "Répartition du Temps",
+        "modulePerformance": "Performance des Modules",
+        "completed": "Terminé",
+        "remaining": "Restant"
+      },
+      "completion": "Achèvement du Parcours",
+      "overall": "Global"
+    },
+    "resources": {
+      "title": "Ressources d'Apprentissage",
+      "certificate": {
+        "title": "Certificat d'Achèvement",
+        "description": "Obtenez un certificat après avoir complété tous les modules de ce parcours d'apprentissage",
+        "progress": "Progression",
+        "modules": "Modules",
+        "status": "Statut",
+        "ready": "Prêt",
+        "inProgress": "En Cours",
+        "completeRemaining": "Terminez les {count} modules restants pour obtenir votre certificat",
+        "download": "Télécharger le Certificat",
+        "congratulations": "Félicitations !",
+        "view": "Voir le Certificat",
+        "copyLink": "Copier le Lien",
+        "generate": "Générer le Certificat",
+        "linkCopied": "Lien copié dans le presse-papiers !"
+      },
+      "downloadable": {
+        "title": "Ressources Téléchargeables"
+      },
+      "community": {
+        "title": "Communauté & Support",
+        "forum": "Forum de Discussion",
+        "forumDescription": "Connectez-vous avec d'autres apprenants, posez des questions et partagez vos idées",
+        "studyGroups": "Groupes d'Étude",
+        "studyGroupsDescription": "Rejoignez des groupes d'étude et collaborez sur des projets",
+        "qa": "Support Questions/Réponses",
+        "qaDescription": "Obtenez de l'aide des instructeurs et assistants pédagogiques",
+        "liveSessions": "Sessions en Direct",
+        "liveSessionsDescription": "Participez aux sessions de questions/réponses en direct et ateliers"
+      },
+      "enrollPrompt": {
+        "title": "Inscrivez-vous pour Accéder aux Ressources",
+        "description": "Inscrivez-vous à ce parcours d'apprentissage pour accéder aux ressources téléchargeables, certificats et support communautaire.",
+        "button": "Inscrivez-vous pour Accéder aux Ressources"
+      }
+    },
+    "sidebar": {
+      "stats": {
+        "title": "Statistiques du Parcours",
+        "totalModules": "Total des Modules",
+        "totalDuration": "Durée Totale",
+        "estCompletion": "Temps Estimé",
+        "enrolled": "Inscrits",
+        "updated": "Mis à jour",
+        "level": "Niveau",
+        "mixedLevels": "Niveaux Mixtes"
+      },
+      "prerequisites": {
+        "title": "Prérequis"
+      },
+      "whatYouGet": {
+        "title": "Ce que Vous Obtenez"
+      },
+      "requirements": {
+        "title": "Exigences"
+      },
+      "featuredPaths": {
+        "title": "Parcours Recommandés"
+      },
+      "relatedPaths": "Parcours Similaires"
+    },
+    "buttons": {
+      "continueLearning": "Continuer à Apprendre",
+      "enrollNow": "S'inscrire Maintenant",
+      "signIn": "Se Connecter pour S'inscrire",
+      "bookmark": "Marquer",
+      "share": "Partager",
+      "viewAllModules": "Voir tous les {count} modules",
+      "download": "Télécharger",
+      "shareCertificate": "Partager",
+      "getHelp": "Obtenir de l'Aide",
+      "browsePaths": "Parcourir les Parcours",
+      "tryAgain": "Réessayer"
+    },
+    "labels": {
+      "modules": "modules",
+      "lessons": "leçons",
+      "progress": "Progression",
+      "status": "Statut",
+      "timeSpent": "Temps Passé",
+      "lastAccessed": "Dernier Accès",
+      "never": "Jamais",
+      "module": "Module",
+      "of": "sur",
+      "streak": "Série",
+      "days": "jours",
+      "pace": "Rythme",
+      "pace_ahead": "En Avance",
+      "pace_behind": "En Retard",
+      "pace_on-track": "Dans les Temps"
+    },
+    "messages": {
+      "enrollmentSuccess": "Inscription réussie au parcours d'apprentissage ! Tous les modules sont maintenant disponibles.",
+      "moduleAutoEnrolled": "✅ Inscription automatique au module suivant : {title}",
+      "failedAutoEnroll": "Échec de l'inscription automatique au module suivant : {error}",
+      "bookmarkToggle": "Marque-page activé/désactivé : {state}",
+      "linkCopied": "Lien copié dans le presse-papiers !",
+      "failedToCopy": "Échec de la copie du lien. Veuillez réessayer."
+    },
+    "errors": {
+      "loadError": "Erreur de Chargement du Parcours",
+      "notFound": "Parcours d'Apprentissage Introuvable",
+      "notFoundDescription": "Le parcours d'apprentissage que vous recherchez n'existe pas ou a été supprimé.",
+      "enrollmentError": "Échec de l'inscription au parcours d'apprentissage. Veuillez réessayer.",
+      "moduleEnrollmentError": "Échec de l'inscription au module. Veuillez réessayer.",
+      "moduleLocked": "Veuillez compléter les modules précédents pour déverrouiller ce module."
+    },
+    "enrollmentCta": {
+      "title": {
+        "unauthenticated": "Rejoignez des milliers d'apprenants",
+        "authenticated": "Commencez votre parcours d'apprentissage aujourd'hui"
+      },
+      "description": {
+        "unauthenticated": "Inscrivez-vous pour accéder à ce parcours d'apprentissage et déverrouiller tous les modules",
+        "authenticated": "Inscrivez-vous maintenant pour obtenir un accès à vie à tous les modules et ressources"
+      },
+      "save": "Économisez {savings} DA",
+      "enrollWithPrice": "S'inscrire Maintenant - {price} DA",
+      "noPayment": "Aucun paiement requis",
+      "oneTimePayment": "Paiement unique • Accès à vie à tous les modules",
+      "noPaymentRequired": "Aucun paiement requis • Accès à vie",
+      "enrolling": "Inscription en cours...",
+      "errors": {
+        "enrollFailed": "Échec de l'inscription. Veuillez réessayer."
+      }
+    }
+  },
+  "course": {
+    "tabs": {
+      "video": "Lecteur Vidéo",
+      "quiz": "Système de Quiz",
+      "resources": "Ressources",
+      "analytics": "Analyses",
+      "certificate": "Certificat",
+      "actions": "Outils & Social",
+      "reviews": "Avis",
+      "title": "Onglets de navigation du cours"
+    },
+    "meta": {
+      "title": "Détails du cours | Plateforme d'apprentissage",
+      "description": "Explorez le contenu du cours, les leçons et suivez votre progression"
+    },
+    "header": {
+      "title": "Détails du cours",
+      "defaultCategory": "Cours",
+      "noDescription": "Aucune description disponible",
+      "instructor": "Instructeur",
+      "duration": "Durée",
+      "students": "Étudiants",
+      "rating": "Note",
+      "level": "Débutant"
+    },
+    "hero": {
+      "title": "Maîtrisez vos compétences",
+      "description": "Commencez votre parcours d'apprentissage avec des leçons complètes et des exercices pratiques"
+    },
+    "progress": {
+      "label": "Progression",
+      "yourProgress": "Votre progression"
+    },
+    "sync": {
+      "syncing": "Synchronisation...",
+      "status": {
+        "online": "Synchronisation automatique active",
+        "offline": "Hors ligne - Sauvegarde locale",
+        "syncing": "Synchronisation avec la base de données...",
+        "error": "Erreur de synchronisation - Nouvel essai"
+      },
+      "pending": "en attente",
+      "last": "Dernière",
+      "autoSyncing": "Synchronisation automatique toutes les 30 secondes"
+    },
+    "actions": {
+      "syncNow": "Synchroniser maintenant",
+      "signInToEnroll": "Se connecter pour s'inscrire",
+      "enrollFree": "S'inscrire gratuitement",
+      "enrollNow": "S'inscrire maintenant",
+      "browseCourses": "Parcourir les cours",
+      "tryAgain": "Réessayer",
+      "continueLearning": "Continuer l'Apprentissage",
+      "startLearning": "Commencer l'Apprentissage",
+      "enrollNowToStart": "Inscrivez-vous pour Commencer",
+      "login": "Connexion",
+      "signUp": "S'inscrire",
+      "jumpToIncomplete": "Aller à la première leçon incomplète ←",
+      "markComplete": "Marquer comme terminé",
+      "cta": {
+        "unauthenticated": {
+          "title": "Rejoignez des milliers d'apprenants",
+          "description": "Inscrivez-vous pour accéder à ce cours et débloquer toutes les fonctionnalités"
+        },
+        "authenticated": {
+          "title": "Commencez votre parcours d'apprentissage aujourd'hui",
+          "description": "Inscrivez-vous maintenant pour un accès à vie à toutes les leçons et ressources"
+        }
+      },
+      "enrolling": "Inscription en cours..."
+    },
+    "badges": {
+      "new": "Nouveau",
+      "premium": "Premium"
+    },
+    "currency": {
+      "da": "DA"
+    },
+    "pricing": {
+      "oneTimePayment": "Paiement unique",
+      "features": "Paiement unique • Accès à vie",
+      "save": "Économisez",
+      "free": "Gratuit",
+      "freeDescription": "Aucun paiement requis • Accès à vie",
+      "guarantee": "Garantie de remboursement de 30 jours"
+    },
+    "features": {
+      "lifetimeAccess": "Accès à vie complet",
+      "certificate": "Certificat d'achèvement",
+      "mobileDesktop": "Accès sur mobile et ordinateur",
+      "downloadableResources": "Ressources téléchargeables",
+      "instructorSupport": "Support direct de l'instructeur"
+    },
+    "curriculum": {
+      "title": "Programme du cours",
+      "lesson": "leçon",
+      "lessons": "leçons",
+      "enrolled": "inscrits",
+      "of": "sur",
+      "complete": "terminé",
+      "moduleObjectives": "Objectifs d'apprentissage du module",
+      "courseCompleted": "Cours terminé !"
+    },
+    "lessons": {
+      "objectives": {
+        "label": "Objectifs d'apprentissage"
+      },
+      "keyTakeaways": {
+        "label": "Points clés à retenir"
+      },
+      "more": "plus",
+      "status": {
+        "completed": "Terminé"
+      },
+      "videoNotAvailable": {
+        "title": "Vidéo non disponible",
+        "description": "Ce contenu vidéo est actuellement indisponible."
+      },
+      "locked": {
+        "title": "Leçon Verrouillée",
+        "description": "Terminez la leçon précédente et réussissez son quiz pour déverrouiller ce contenu.",
+        "quizRequired": "Quiz Requis",
+        "quizRequiredDescription": "Vous devez réussir le quiz de la leçon précédente pour continuer."
+      },
+      "completion": {
+        "title": "Leçon Terminée !",
+        "quizPrompt": "Passez le quiz pour déverrouiller la leçon suivante.",
+        "nextLessonLocked": "Complétez le quiz pour accéder à la leçon suivante.",
+        "quizButton": "Commencer le Quiz"
+      },
+      "milestones": {
+        "title": "Jalons de progression",
+        "of": "sur",
+        "completed": "complétés",
+        "notReached": "Non atteint"
+      },
+      "resources": {
+        "title": "Ressources de la leçon"
+      },
+      "active": "Actif",
+      "resumeFrom": "Reprendre depuis",
+      "videoLoading": {
+        "title": "Génération du lien vidéo sécurisé...",
+        "description": "Veuillez patienter pendant que nous préparons votre leçon en toute sécurité."
+      },
+      "videoError": {
+        "title": "Erreur vidéo"
+      },
+      "transcoding": {
+        "title": "Transcodage en cours",
+        "description": "Votre vidéo est en cours de transcodage en plusieurs résolutions pour une lecture optimale. Cela prend généralement 1 à 3 minutes."
+      },
+      "transcodingFailed": {
+        "title": "Problème de transcodage",
+        "description": "Un problème est survenu lors du traitement de cette vidéo. Tentative de basculement vers la lecture directe."
+      },
+      "prev": "Leçon précédente",
+      "next": "Leçon suivante"
+    },
+    "sidebar": {
+      "instructor": "Instructeur",
+      "instructorDefaultBio": "Instructeur expert",
+      "details": "Détails du cours",
+      "level": "Niveau",
+      "allLevels": "Tous niveaux",
+      "duration": "Durée",
+      "lessons": "Leçons",
+      "enrolled": "Inscrits",
+      "updated": "Mis à jour",
+      "languages": "Langues",
+      "prerequisites": "Prérequis",
+      "whatYouGet": "Ce que vous obtenez",
+      "requirements": "Exigences"
+    },
+    "navigation": {
+      "previousLesson": "Leçon précédente",
+      "nextLesson": "Leçon suivante"
+    },
+    "states": {
+      "noLessons": "Aucune leçon disponible pour le moment",
+      "error": {
+        "title": "Erreur de chargement du cours"
+      },
+      "notFound": {
+        "title": "Cours introuvable",
+        "description": "Le cours que vous recherchez n'existe pas ou a été supprimé."
+      },
+      "noLessonsAvailable": {
+        "title": "Aucune leçon disponible",
+        "description": "Les leçons seront ajoutées à ce cours prochainement."
+      },
+      "notEnrolled": {
+        "title": "Inscrivez-vous pour accéder au contenu",
+        "description": "Inscrivez-vous à ce cours pour débloquer toutes les leçons, vidéos et ressources."
+      },
+      "unauthenticated": {
+        "title": "Connectez-vous pour accéder au contenu",
+        "description": "Connectez-vous pour vous inscrire et accéder à toutes les leçons, vidéos et ressources."
+      },
+      "lockedTitle": "Débloquez l'accès complet",
+      "lockedDescription": "Ce contenu est exclusif aux étudiants inscrits. Inscrivez-vous maintenant pour débloquer toutes les leçons, les quiz interactifs et les ressources téléchargeables.",
+      "noData": "Informations non disponibles pour le moment",
+      "trainingOngoing": "Formation en cours...",
+      "loading": "Chargement..."
+    },
+    "messages": {
+      "loadError": "Échec du chargement des données du cours",
+      "searchError": "Échec de la recherche",
+      "enrollError": "Échec de l'inscription au cours"
+    },
+    "quiz": {
+      "lockedTitle": "Quiz Verrouillé",
+      "lockedDescription": "Vous devez d'abord terminer la leçon vidéo pour déverrouiller ce quiz. Continuez à regarder pour acquérir les connaissances nécessaires !",
+      "progressPercentage": "{percentage}% de la vidéo regardée",
+      "title": "Quiz du Module",
+      "stats": "Score de passage : 80% • Tentatives restantes : 3",
+      "prevQuestion": "Question Précédente",
+      "nextQuestion": "Question Suivante",
+      "defaultQuestion": "Quel est l'objectif principal de ce module ?",
+      "shortAnswerPlaceholder": "Tapez votre réponse ici...",
+      "shortAnswerHint": "Gardez votre réponse concise et pertinente.",
+      "passed": "Félicitations ! Vous avez réussi !",
+      "failed": "Quiz non réussi",
+      "savedOffline": "Réponses enregistrées hors ligne",
+      "passedMessage": "Excellent travail ! Vous avez réussi ce quiz.",
+      "failedMessage": "Vous devez réviser le matériel et réessayer.",
+      "savedOfflineMessage": "Vos réponses sont enregistrées localement et synchroniseront automatiquement avec le serveur dès le rétablissement de la connexion.",
+      "score": "Score",
+      "correct": "Correct",
+      "passedCanRetake": "Vous pouvez repasser ce quiz pour améliorer votre score.",
+      "attemptHistory": "Historique des tentatives",
+      "attempt": "Tentative",
+      "retake": "Repasser le quiz",
+      "tryAgain": "Réessayer",
+      "questions": "Questions",
+      "minutes": "Minutes",
+      "previousAttempts": "Vous avez des tentatives précédentes. Vous pouvez repasser pour améliorer votre score.",
+      "start": "Commencer le quiz",
+      "question": "Question",
+      "of": "sur",
+      "points": "points",
+      "hint": "Indice",
+      "answered": "répondu",
+      "submit": "Soumettre",
+      "submitting": "Soumission...",
+      "questionNavigator": "Navigateur de questions",
+      "cooldownError": "Prenez un moment pour revoir le contenu de la leçon avant votre prochaine tentative",
+      "cooldownSubtitle": "Un court délai entre les tentatives garantit une meilleure compréhension et vous aide à retenir ce que vous avez appris. Vous pourrez repasser le quiz sous peu.",
+      "true": "Vrai",
+      "false": "Faux",
+      "characters": "caractères",
+      "types": {
+        "multipleChoice": "Choix Multiple",
+        "multipleSelect": "Choix Multiples",
+        "trueFalse": "Vrai / Faux",
+        "codeOutput": "Sortie de code",
+        "shortAnswer": "Réponse Courte",
+        "unknown": "Type Inconnu",
+        "fillInBlank": "Texte à trous",
+        "essay": "Dissertation"
+      },
+      "codeOutputPlaceholder": "Entrez la sortie console attendue...",
+      "questionReview": "Révision des questions et explications",
+      "yourAnswer": "Votre réponse",
+      "noAnswer": "Aucune",
+      "explanation": "Explication",
+      "unsupportedQuestionType": "Ce type de question n'est pas pris en charge dans la version actuelle.",
+      "fillBlankPlaceholder": "Tapez votre réponse ici...",
+      "essayPlaceholder": "Tapez votre réponse détaillée...",
+      "fillBlankHint": "Remplissez le mot-clé ou le terme manquant.",
+      "essayHint": "Fournissez une explication détaillée avec vos propres mots.",
+      "essayNote": "Les questions de rédaction sont examinées séparément et ne comptent pas dans votre score."
+    },
+    "resources": {
+      "title": "Ressources de la Leçon",
+      "subtitle": "Téléchargez les documents supplémentaires pour cette leçon",
+      "accessGranted": "Accès Accordé",
+      "proTitle": "Téléchargements Membres Pro",
+      "proDescription": "En tant qu'étudiant, vous avez un accès à vie à ces ressources. De nouveaux documents sont ajoutés régulièrement.",
+      "seeAllLibrary": "Voir toute la bibliothèque",
+      "download": "Télécharger",
+      "open": "Ouvrir dans un nouvel onglet",
+      "noResources": "Aucune ressource disponible pour cette leçon",
+      "related": "Ressources connexes",
+      "relatedSubtitle": "Matériaux supplémentaires pour approfondir l'apprentissage",
+      "usageNotice": "Notice d'utilisation",
+      "usageDescription": "Les ressources sont réservées à un usage personnel d'apprentissage. Veuillez ne pas redistribuer ou partager ces matériaux sans autorisation.",
+      "defaultName": "Ressource",
+      "defaultType": "Fichier",
+      "size": {
+        "bytes": "Octets",
+        "kb": "Ko",
+        "mb": "Mo",
+        "gb": "Go"
+      }
+    },
+    "analytics": {
+      "title": "Vos analyses d'apprentissage",
+      "timeSpent": "Temps Passé",
+      "hours": "heures",
+      "weekTrend": "{percentage}% cette semaine",
+      "quizAverage": "Moyenne des Quiz",
+      "rank": "Top 10% de la classe",
+      "streak": "Série d'Apprentissage",
+      "days": "jours",
+      "personalBest": "Meilleur score personnel !",
+      "progressBreakdown": "Détail de la Progression",
+      "journeyDescription": "Votre parcours à travers le module",
+      "totalProgress": "Progression Totale",
+      "skillsAcquired": "Compétences Acquises",
+      "milestones": "Jalons"
+    },
+    "certificate": {
+      "title": "Certificat d'achèvement",
+      "lockedTitle": "Certificat Verrouillé",
+      "lockedDescription": "Terminez toutes les leçons et passez l'évaluation finale pour obtenir votre certificat officiel.",
+      "header": "Certificat d'Achèvement",
+      "certifiedThat": "ceci certifie que",
+      "completionDescription": "a complété avec succès toutes les exigences et évaluations pour le module",
+      "dateIssued": "Date d'Émission",
+      "instructor": "Instructeur",
+      "verificationId": "ID de Vérification",
+      "downloadPdf": "Télécharger PDF",
+      "shareLinkedIn": "Partager sur LinkedIn",
+      "verifyLink": "Copier le lien de vérification",
+      "downloadSuccess": "Certificat téléchargé avec succès !",
+      "downloadError": "Échec du téléchargement. Veuillez réessayer.",
+      "shareSuccess": "Ouverture du dialogue de partage LinkedIn...",
+      "shareError": "Échec du partage sur LinkedIn.",
+      "linkCopied": "Lien copié dans le presse-papiers !",
+      "copyError": "Échec de la copie du lien.",
+      "purchaseTitle": "Acheter un certificat",
+      "purchaseDescription": "Votre forfait actuel n'inclut pas les certificats, mais vous pouvez en acheter un pour ce cours. Obtenez un certificat vérifié pour valoriser votre réussite.",
+      "purchaseButton": "Acheter le certificat — 1 500 DZD",
+      "issuedTo": "Délivré à",
+      "notFound": "Certificat non trouvé",
+      "notFoundDescription": "Le certificat recherché n'existe pas ou a été révoqué.",
+      "verificationTitle": "Vérifier ce certificat",
+      "verificationDescription": "Tout le monde peut vérifier l'authenticité de ce certificat en utilisant le lien ci-dessous.",
+      "verifyOnline": "Vérifier en ligne",
+      "certificateDetails": "Détails du certificat",
+      "certificateId": "ID du certificat",
+      "issueDate": "Date d'émission",
+      "certificateType": "Type",
+      "moduleType": "Module de cours",
+      "pathType": "Parcours d'apprentissage",
+      "status": "Statut",
+      "valid": "Valide",
+      "processing": "Traitement...",
+      "expertTeam": "Équipe d'experts Podacium"
+    },
+    "social": {
+      "share": "Partager le Cours",
+      "bookmark": "Favoris",
+      "bookmarked": "Mis en favoris",
+      "unbookmarked": "Cours retiré des favoris",
+      "support": "Demander du Support",
+      "review": "Écrire un Avis",
+      "yourInstructor": "Votre Instructeur",
+      "instructor": "Instructeur",
+      "studentsTaught": "Plus de {count} étudiants formés cette année",
+      "instructorBio": "Nos instructeurs sont des développeurs et éducateurs de classe mondiale avec des décennies d'expérience.",
+      "viewProfile": "Voir le Profil de l'Instructeur",
+      "instructorProfileUnavailable": "Profil de l'instructeur indisponible",
+      "linkCopied": "Lien copié dans le presse-papiers !",
+      "failedToCopy": "Échec de la copie du lien. Veuillez réessayer.",
+      "bookmarkToggle": "Favori mis à jour",
+      "careerLeap": "Saut de Carrière",
+      "careerPathDescription": "Ce module fait partie du parcours Fullstack. Les étudiants qui le terminent gagnent en moyenne 25% de plus.",
+      "partOfPath": "Ce module fait partie du parcours d'apprentissage {path}. Complétez-le pour maîtriser tout le programme.",
+      "explorePath": "Explorer le Parcours",
+      "wishlist": "Ajouter à la liste de souhaits",
+      "gift": "Offrir ce Cours",
+      "giftMessage": "Je vous offre ce cours sur Podacium !",
+      "giftLinkCopied": "Lien cadeau copié dans le presse-papiers !",
+      "unbookmark": "Retirer des favoris"
+    },
+    "reviews": {
+      "title": "Avis",
+      "writeReview": "Écrire un avis",
+      "noReviewsYet": "Pas encore d'avis. Soyez le premier à partager votre expérience !",
+      "reviewSubmitted": "Votre avis a été soumis.",
+      "ratingRequired": "Veuillez sélectionner une note avant de soumettre.",
+      "deleteReview": "Supprimer l'avis",
+      "reviewDeleted": "Votre avis a été supprimé.",
+      "noRating": "Pas encore de notes",
+      "comment": "Partagez votre expérience (optionnel)",
+      "submit": "Soumettre l'avis",
+      "cancel": "Annuler",
+      "loadMore": "Charger plus d'avis",
+      "enrollFirst": "Inscrivez-vous à ce cours pour pouvoir écrire un avis",
+      "completeLessonFirst": "Terminez au moins une leçon pour pouvoir écrire un avis",
+      "reviewCount": "{count} avis",
+      "reviewsCount": "{count} avis",
+      "submitError": "Échec de l'envoi de l'avis. Veuillez réessayer.",
+      "rateStar": "Noter {count} étoile(s)"
+    },
+    "errors": {
+      "enrollFailed": "Échec de l'inscription. Veuillez réessayer."
+    }
+  },
+  "verify": {
+    "brand": "Podacium",
+    "breadcrumb": "Vérification de Certificat",
+    "meta": {
+      "title": "Vérification de Certificat | Podacium",
+      "description": "Vérifiez l'authenticité d'un certificat de complétion Podacium"
+    },
+    "loading": "Vérification du certificat...",
+    "trust": {
+      "badge": "Identifiant Vérifié",
+      "subtitle": "Émis par Podacium — la plateforme de référence pour l'intelligence d'affaires et la technologie",
+      "publiclyVerifiable": "Publiquement Vérifiable",
+      "issuedByPlatform": "Émis par la Plateforme Podacium",
+      "cryptographicallySigned": "Signé Cryptographiquement"
+    },
+    "qr": {
+      "title": "Scanner pour Vérifier"
+    },
+    "share": {
+      "linkedin": "Ajouter à LinkedIn",
+      "copyLink": "Copier le Lien",
+      "linkCopied": "Lien Copié !",
+      "openPublicLink": "Ouvrir le Lien Public",
+      "linkedInOpened": "Ouverture de LinkedIn..."
+    },
+    "notFound": {
+      "title": "Certificat Introuvable",
+      "description": "Ce certificat n'existe pas ou a peut-être été révoqué. Veuillez vérifier l'identifiant et réessayer.",
+      "backHome": "Retour à l'Accueil"
+    },
+    "certificate": {
+      "title": "Certificat d'Achèvement",
+      "certifies": "Ceci certifie que",
+      "completed": "a complété avec succès",
+      "with": "avec distinction sur la plateforme Podacium."
+    },
+    "details": {
+      "heading": "Détails du Certificat",
+      "certId": "Identifiant du Certificat",
+      "type": "Type de Récompense",
+      "issued": "Date d'Émission",
+      "completed": "Complété Le",
+      "status": "Statut",
+      "statusValid": "Valide et Authentique",
+      "typeModule": "Certificat de Cours",
+      "typePath": "Certificat de Parcours d'Apprentissage",
+      "skills": "Compétences Démontrées"
+    },
+    "actions": {
+      "heading": "Et Maintenant ?",
+      "discoverPlatform": "Découvrir Podacium",
+      "discoverDesc": "Explorez tous nos outils pour les freelancers, apprenants et professionnels de la donnée.",
+      "browseCourses": "Parcourir tous les Cours",
+      "browseDesc": "Trouvez votre prochain cours et continuez à développer vos compétences.",
+      "takeCourse": "Suivre ce Cours",
+      "takeDesc": "Inscrivez-vous et obtenez votre propre certificat de complétion."
+    },
+    "footer": {
+      "poweredBy": "Propulsé par",
+      "tagline": "La plateforme pour un apprentissage professionnel rigoureux et vérifiable."
+    },
+    "proofOfWork": {
+      "title": "Proof-of-Work & Vetting Technique",
+      "rubricScore": "Score Rubrique : {score}/100",
+      "capstoneProject": "Projet Capstone Vérifié",
+      "viewCode": "Code Source & Tests Automatisés",
+      "ondaRegistration": "Enregistrement ONDA (Droits d'Auteur)",
+      "complianceDisclaimer": "Certificat délivré après validation des évaluations pratiques et revue de code rigoureuse conformément aux standards ONDA & Podacium Academy."
+    }
+  },
+  "instructor": {
+    "curriculum": {
+      "lessons": "leçons",
+      "dragToReorder": "Glisser pour réorganiser",
+      "autosaveSaved": "Enregistré",
+      "autosaveSaving": "Enregistrement...",
+      "autosaveUnsaved": "Modifications non enregistrées"
+    },
+    "manage": {
+      "title": "Mes Modules",
+      "breadcrumb": {
+        "home": "Accueil",
+        "learn": "Apprendre",
+        "modules": "Mes Modules"
+      },
+      "total": "Total",
+      "subtitle": "Gérez vos cours et suivez leur état de publication.",
+      "createModule": "Créer un Module",
+      "noModules": "Pas encore de modules",
+      "noModulesDesc": "Créez votre premier module pour commencer à enseigner.",
+      "instructorDenied": "Vous devez avoir un compte instructeur pour gérer les cours.",
+      "lessons": "{count} leçon",
+      "lessonsPlural": "{count} leçons",
+      "enrolled": "{count} inscrits",
+      "submitForReview": "Soumettre pour Révision",
+      "submitting": "Soumission...",
+      "awaitingReview": "En attente de révision...",
+      "edit": "Modifier",
+      "submitDisabled": "Ajoutez au moins une leçon d'abord",
+      "submitSuccess": "Module soumis pour révision ! Un administrateur l'examinera sous peu.",
+      "submitFail": "Échec de la soumission",
+      "allModules": "Tous les Modules",
+      "noModulesFilter": "Aucun module ne correspond à ce statut",
+      "loadFail": "Échec du chargement de vos modules",
+      "statuses": {
+        "draft": "Brouillon",
+        "inReview": "En Révision",
+        "published": "Publié",
+        "archived": "Archivé"
+      },
+      "feedback": {
+        "label": "Commentaire :",
+        "ariaLabel": "Commentaire du module"
+      },
+      "pagination": {
+        "previous": "Précédent",
+        "next": "Suivant",
+        "page": "Page {current} sur {total}"
+      },
+      "submitDisabledDesc": "Ajoutez au moins une leçon avec contenu avant de soumettre pour révision.",
+      "cancel": "Annuler",
+      "loading": "Chargement...",
+      "viewAllModules": "Voir tous les modules"
+    },
+    "create": {
+      "newModule": "Créer un Nouveau Module",
+      "breadcrumb": {
+        "home": "Accueil",
+        "learn": "Apprendre",
+        "modules": "Mes Modules"
+      },
+      "newModuleSubtitle": "Configurez le contenu et les détails de votre cours",
+      "editModule": "Modifier le Module",
+      "editModuleSubtitle": "Mettez à jour le contenu et les détails de votre cours",
+      "basicInfo": "Informations de Base",
+      "media": "Média",
+      "details": "Détails du Cours",
+      "skillsAndTags": "Compétences & Tags",
+      "pricing": "Tarification",
+      "courseId": "ID du Cours",
+      "courseIdHint": "Un identifiant unique (ex: javascript-essentials)",
+      "courseIdPlaceholder": "ex: javascript-essentials",
+      "titleField": "Titre",
+      "titlePlaceholder": "Entrez le titre du cours",
+      "shortDescription": "Brève Description",
+      "shortDescriptionPlaceholder": "Résumé du cours",
+      "fullDescription": "Description Complète",
+      "fullDescriptionPlaceholder": "Description détaillée du cours...",
+      "thumbnailUrl": "URL de la Vignette",
+      "thumbnailPlaceholder": "https://example.com/thumbnail.jpg",
+      "duration": "Durée (minutes)",
+      "durationHint": "Durée totale du cours en minutes",
+      "durationPlaceholder": "120",
+      "level": "Niveau",
+      "levelBeginner": "Débutant",
+      "levelIntermediate": "Intermédiaire",
+      "levelAdvanced": "Avancé",
+      "effort": "Effort Estimé",
+      "effortPlaceholder": "ex: 5 heures/semaine",
+      "skills": "Compétences",
+      "skillPlaceholder": "Ajouter une compétence",
+      "tags": "Tags",
+      "tagPlaceholder": "Ajouter un tag",
+      "featured": "Marquer comme Vedette",
+      "pricePlaceholder": "0",
+      "create": "Créer le Module",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "createSuccess": "Module créé avec succès",
+      "createSuccessHint": "Vous pouvez maintenant ajouter des leçons et soumettre pour révision.",
+      "saveSuccess": "Module mis à jour avec succès",
+      "createFail": "Échec de la création du module",
+      "saveFail": "Échec de la mise à jour du module",
+      "loadFail": "Échec du chargement du module",
+      "errors": {
+        "required": "L'ID du cours et le titre sont requis",
+        "notFound": "Module introuvable",
+        "titleRequired": "Le titre est requis",
+        "requiredId": "L'ID du cours est requis",
+        "requiredTitle": "Le titre est requis"
+      },
+      "featuredHint": "Les cours en vedette apparaissent sur la page d'accueil",
+      "price": "Prix",
+      "priceHint": "Laissez vide pour un cours gratuit",
+      "currency": "Devise",
+      "thumbnailHint": "Optionnel — collez une URL d'image pour la carte du cours",
+      "addSkill": "Ajouter une compétence",
+      "addTag": "Ajouter une étiquette",
+      "remove": "Supprimer",
+      "skillHint": "Tapez une compétence et appuyez sur Entrée ou +",
+      "tagHint": "Tapez une étiquette et appuyez sur Entrée ou +",
+      "resetToTitle": "Réinitialiser au titre"
+    },
+    "moduleDetail": {
+      "title": "Détails du Module",
+      "subtitle": "Gérez les leçons et le contenu de ce module",
+      "addLesson": "Ajouter une Leçon",
+      "noLessons": "Pas encore de leçons",
+      "noLessonsDesc": "Ajoutez votre première leçon pour commencer.",
+      "lessonsList": "Leçons",
+      "moduleInfo": "Informations du Module",
+      "backToManage": "Retour à Mes Modules",
+      "deleteLesson": "Supprimer la Leçon",
+      "confirmDeleteLesson": "Voulez-vous vraiment supprimer cette leçon ?",
+      "lessonDeleted": "Leçon supprimée avec succès",
+      "lessonDeletedFail": "Échec de la suppression de la leçon",
+      "reorderLessons": "Réorganiser les Leçons",
+      "reorderSaved": "Ordre des leçons enregistré",
+      "reorderFail": "Échec de l'enregistrement de l'ordre",
+      "reorderSaveLabel": "Enregistrer l'Ordre",
+      "savingOrder": "Enregistrement...",
+      "loadFail": "Échec du chargement du module",
+      "noModule": "Aucun module sélectionné.",
+      "notFound": "Module introuvable.",
+      "quizComingSoon": "Constructeur de quiz à venir.",
+      "addQuiz": "Ajouter un Quiz",
+      "editQuiz": "Modifier le Quiz",
+      "quizSaved": "Quiz enregistré",
+      "quizSaveFail": "Échec de l'enregistrement du quiz",
+      "quizRequiresLessons": "Ajoutez d'abord des leçons",
+      "quizRequiresLessonsDesc": "Vous devez créer au moins une leçon avant d'ajouter un quiz à ce module.",
+      "deleteWarning": "Cette action est irréversible.",
+      "quizSelectLesson": "Sélectionnez une leçon pour gérer son quiz:",
+      "quizExists": "Quiz assigné",
+      "quizNone": "Pas de quiz",
+      "transcodingStatus": {
+        "processing": "Encodage en cours...",
+        "ready": "HD Prêt",
+        "failed": "Échec de l'encodage"
+      },
+      "providers": {
+        "aws": "AWS S3",
+        "bunny": "Bunny Stream",
+        "cloudflare": "Cloudflare Stream",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "dailymotion": "Dailymotion"
+      },
+      "lessons": "leçons"
+    },
+    "lessonEditor": {
+      "title": "Éditeur de Leçon",
+      "videoUploadInProgress": "Veuillez attendre la fin du téléversement de la vidéo avant d'enregistrer",
+      "breadcrumb": {
+        "home": "Accueil",
+        "learn": "Apprendre",
+        "modules": "Mes Modules"
+      },
+      "details": "Détails",
+      "video": "Vidéo",
+      "quiz": "Quiz",
+      "lessonId": "ID de Leçon",
+      "lessonIdHint": "Un identifiant unique (ex. intro-variables)",
+      "module": "Module",
+      "selectModule": "Sélectionner un module",
+      "titleField": "Titre",
+      "titlePlaceholder": "Entrez le titre de la leçon",
+      "description": "Description",
+      "descriptionPlaceholder": "Décrivez ce que les étudiants apprendront...",
+      "order": "Ordre",
+      "type": "Type de Leçon",
+      "difficulty": "Difficulté",
+      "duration": "Durée (minutes)",
+      "estimatedTime": "Temps estimé (min)",
+      "objectives": "Objectifs d'Apprentissage",
+      "objectivePlaceholder": "Les étudiants seront capables de...",
+      "takeaways": "Points Clés",
+      "takeawayPlaceholder": "Point important à retenir...",
+      "tags": "Étiquettes",
+      "tagPlaceholder": "Ajouter une étiquette",
+      "instructorNotes": "Notes de l'Instructeur",
+      "instructorNotesPlaceholder": "Notes pour les instructeurs...",
+      "freePreviewLabel": "Leçon d'aperçu gratuit",
+      "freePreviewBadge": "Extrait",
+      "freePreviewDescription": "Permettre aux visiteurs non inscrits de visionner cette vidéo gratuitement avant d'acheter le cours.",
+      "videoUrl": "URL de la Vidéo",
+      "uploadLocalFile": "Téléverser un fichier vidéo",
+      "enterVideoUrl": "URL vidéo / Chemin local",
+      "videoUrlHelp": "Entrez une URL web, un chemin de stockage Supabase ou un chemin local (ex. /videos/python/01-welcome.mp4).",
+      "dragDropVideo": "Glissez-déposez le fichier vidéo ici, ou cliquez pour parcourir",
+      "chooseVideoFile": "Choisir un fichier vidéo",
+      "uploadingStatus": "Téléversement de la vidéo vers le serveur...",
+      "transcodingStatus": "Téléversement terminé — traitement du flux vidéo...",
+      "invalidVideoType": "Veuillez sélectionner un fichier vidéo valide (MP4, MOV, MKV, WebM).",
+      "moduleRequired": "Sélectionnez d'abord un module.",
+      "saveBeforeUpload": "Enregistrez d'abord la leçon, puis téléversez sa vidéo.",
+      "uploadVideo": "Téléverser la vidéo (MP4 / MOV / MKV / WebM, jusqu'à 2 GO)",
+      "uploading": "Téléversement…",
+      "uploadVideoBtn": "Téléverser le fichier vidéo",
+      "videoProcessing": "Vidéo téléversée — transcodage vers les flux HD en cours. Vous pouvez continuer d'éditer.",
+      "autoDetectedDuration": "Détecté automatiquement : {time}",
+      "videoUploadSuccess": "Vidéo téléversée avec succès.",
+      "videoUploadFail": "Échec du téléversement de la vidéo.",
+      "livePreview": "Aperçu vidéo en direct",
+      "validVideoUrl": "Flux vidéo valide détecté et vérifié",
+      "detectedProvider": {
+        "youtube": "Vidéo YouTube",
+        "vimeo": "Vidéo Vimeo",
+        "dailymotion": "Vidéo Dailymotion",
+        "cloudflare": "Flux Cloudflare",
+        "bunny": "Flux Bunny",
+        "hls": "Flux adaptatif HLS (.m3u8)",
+        "mp4": "Fichier vidéo direct (.mp4)"
+      },
+      "thumbnailUrl": "URL de la Miniature",
+      "transcript": "Transcription",
+      "transcriptPlaceholder": "Transcription vidéo...",
+      "save": "Enregistrer la Leçon",
+      "cancel": "Annuler",
+      "creating": "Création...",
+      "updating": "Enregistrement...",
+      "createSuccess": "Leçon créée avec succès",
+      "updateSuccess": "Leçon mise à jour avec succès",
+      "createFail": "Échec de la création de la leçon",
+      "updateFail": "Échec de la mise à jour de la leçon",
+      "errors": {
+        "lesson": {
+          "validation_failed": "Vérifiez les données de la leçon et réessayez.",
+          "create_failed": "Échec de la création de la leçon. Veuillez réessayer."
+        },
+        "required": "Le titre est requis",
+        "requiredTitle": "Veuillez d'abord saisir un titre pour la leçon."
+      },
+      "types": {
+        "text": "Texte",
+        "video": "Vidéo",
+        "quiz": "Quiz",
+        "interactive": "Interactif"
+      },
+      "difficulties": {
+        "beginner": "Débutant",
+        "intermediate": "Intermédiaire",
+        "advanced": "Avancé"
+      },
+      "quizSettings": {
+        "title": "Paramètres du Quiz",
+        "quizTitle": "Titre du Quiz",
+        "quizTitlePlaceholder": "Quiz de la Leçon",
+        "passingScore": "Score de Réussite (%)",
+        "timeLimit": "Limite de Temps (minutes)",
+        "allowRetake": "Autoriser la Relecture",
+        "shuffleQuestions": "Mélanger les Questions",
+        "questions": "Questions",
+        "addQuestion": "Ajouter une Question",
+        "addFirstQuestion": "Ajouter Votre Première Question",
+        "noQuestions": "Aucune question ajoutée",
+        "questionText": "Question",
+        "questionPlaceholder": "Entrez votre question...",
+        "multipleChoice": "Choix Multiple",
+        "trueFalse": "Vrai/Faux",
+        "shortAnswer": "Réponse Courte",
+        "option": "Option",
+        "true": "Vrai",
+        "false": "Faux",
+        "correctAnswer": "Bonne Réponse",
+        "correctAnswerPlaceholder": "Entrez la bonne réponse",
+        "explanation": "Explication",
+        "explanationPlaceholder": "Expliquez pourquoi c'est correct...",
+        "points": "Points",
+        "create": "Créer la Leçon",
+        "errors": {
+          "required": "L'ID, le titre et le module de la leçon sont requis",
+          "failed": "Échec de la création de la leçon"
+        },
+        "addOption": "Ajouter une option",
+        "optionPlaceholder": "Option de réponse {n}",
+        "createSubtitle": "Créer une nouvelle leçon",
+        "editSubtitle": "Modifier le contenu de la leçon",
+        "loadFail": "Échec du chargement de la leçon",
+        "saveSuccess": "Leçon enregistrée avec succès",
+        "saveFail": "Échec de l'enregistrement de la leçon",
+        "createSuccess": "Leçon créée avec succès",
+        "createFail": "Échec de la création de la leçon",
+        "createSuccessHint": "Ajoutez plus de leçons ou soumettez votre module pour révision."
+      },
+      "createSubtitle": "Créer une nouvelle leçon",
+      "editSubtitle": "Modifier le contenu de la leçon",
+      "quizTitle": "Titre du Quiz",
+      "quizTitlePlaceholder": "Quiz de la Leçon",
+      "passingScore": "Score de Réussite (%)",
+      "timeLimit": "Limite de Temps (minutes)",
+      "allowRetake": "Autoriser la Relecture",
+      "shuffleQuestions": "Mélanger les Questions",
+      "questions": "Questions",
+      "addQuestion": "Ajouter une Question",
+      "addFirstQuestion": "Ajouter Votre Première Question",
+      "noQuestions": "Aucune question ajoutée",
+      "questionText": "Question",
+      "questionPlaceholder": "Entrez votre question...",
+      "multipleChoice": "Choix Multiple",
+      "trueFalse": "Vrai/Faux",
+      "shortAnswer": "Réponse Courte",
+      "option": "Option",
+      "true": "Vrai",
+      "false": "Faux",
+      "correctAnswer": "Bonne Réponse",
+      "correctAnswerPlaceholder": "Entrez la bonne réponse",
+      "explanation": "Explication",
+      "explanationPlaceholder": "Expliquez pourquoi c'est correct...",
+      "points": "Points",
+      "create": "Créer la Leçon",
+      "addOption": "Ajouter une option",
+      "optionPlaceholder": "Option de réponse {n}",
+      "loadFail": "Échec du chargement de la leçon",
+      "saveSuccess": "Leçon enregistrée avec succès",
+      "saveFail": "Échec de l'enregistrement de la leçon",
+      "createSuccessHint": "Ajoutez plus de leçons ou soumettez votre module pour révision.",
+      "videoFormatsHint": "MP4, MOV, MKV, WebM — jusqu'à 2 Go",
+      "mb": "Mo •",
+      "durationSaved": "Durée enregistrée",
+      "videoPlaceholder": "ex. https://... ou /videos/python/01-welcome.mp4",
+      "youtubePreview": "Aperçu YouTube",
+      "vimeoPreview": "Aperçu Vimeo",
+      "dailymotionPreview": "Aperçu Dailymotion",
+      "transcodingComplete": "100% Transcodage"
+    },
+    "preview": {
+      "badge": "Aperçu Gratuit",
+      "watchingBanner": "Vous regardez une leçon en aperçu gratuit",
+      "enrollPrompt": "S'inscrire au cours complet →",
+      "enjoyedTitle": "Vous avez apprécié cet aperçu gratuit ?",
+      "enjoyedDesc": "Inscrivez-vous maintenant pour débloquer l'intégralité du cours, les quiz, les ressources et votre certificat officiel !",
+      "enrollNow": "S'inscrire Maintenant",
+      "previewThisCourse": "Aperçu du Cours",
+      "modalTitle": "Aperçu du Cours",
+      "markedSuccess": "Leçon marquée comme aperçu gratuit",
+      "disabledSuccess": "Aperçu gratuit désactivé",
+      "updateFail": "Échec de la mise à jour de l'aperçu gratuit",
+      "setPreview": "Définir l'aperçu",
+      "enablePreviewTooltip": "Cliquer pour marquer comme aperçu gratuit",
+      "disablePreviewTooltip": "Cliquer pour désactiver l'aperçu gratuit"
+    },
+    "bulkUpload": {
+      "dropzoneTitle": "Glissez plusieurs fichiers vidéo ici (Création Automatique)",
+      "dropzoneDesc": "Prend en charge MP4, MOV, MKV. Les noms comme « 01 - Introduction.mp4 » sont analysés automatiquement.",
+      "selectFiles": "Sélectionner des Vidéos",
+      "queueTitle": "File d'attente",
+      "uploadingActive": "Téléversement de 3 fichiers simultanément...",
+      "startBatch": "Lancer le Téléversement Groupé",
+      "statusDone": "Terminé",
+      "statusFailed": "Échoué",
+      "readyCount": "prêts",
+      "validVideoToast": "Veuillez sélectionner des fichiers vidéo valides (MP4, MOV, MKV, WebM)",
+      "uploadSuccess": "Téléversement par lot terminé !",
+      "uploadFailed": "Échec du téléversement",
+      "hide": "Masquer le téléverseur groupé"
+    },
+    "lessonSheet": {
+      "editTitle": "Modifier la Leçon",
+      "createTitle": "Créer une Nouvelle Leçon",
+      "subtitle": "Concepteur de programme • Éditeur instantané intégré",
+      "contentTab": "Contenu & Vidéo",
+      "pedagogyTab": "Pédagogie & Notes",
+      "quizTab": "Quiz & Évaluation",
+      "titleLabel": "Titre de la Leçon",
+      "titlePlaceholder": "ex: Installation de Prisma et Configuration du Schéma",
+      "freePreviewLabel": "Leçon en Aperçu Gratuit",
+      "freePreviewDesc": "Les apprenants potentiels peuvent regarder cette leçon sur la page de présentation avant d'acheter.",
+      "typeLabel": "Type de Contenu",
+      "orderLabel": "Ordre d'affichage",
+      "durationLabel": "Durée (Minutes)",
+      "durationPlaceholder": "ex: 15",
+      "descriptionLabel": "Description de la Leçon (Markdown supporté)",
+      "videoSectionTitle": "Contenu Vidéo & Diffusion",
+      "saveButton": "Enregistrer la Leçon",
+      "savingButton": "Enregistrement...",
+      "cancelButton": "Annuler",
+      "lessonUpdated": "Leçon mise à jour",
+      "lessonCreated": "Leçon créée",
+      "saveFailed": "Échec de l'enregistrement de la leçon",
+      "loadFailed": "Impossible de charger les détails de la leçon",
+      "titleRequired": "Veuillez saisir un titre de leçon",
+      "draftCreated": "Brouillon de leçon créé",
+      "addLessonFail": "Échec de l'ajout de la leçon",
+      "lessonType": "Type de leçon",
+      "videoLecture": "Leçon vidéo",
+      "textArticle": "Lecture / Article",
+      "quiz": "Quiz interactif",
+      "autoDetected": "Détecté automatiquement lors du téléversement",
+      "videoFile": "Fichier vidéo (MP4, MOV, WebM)",
+      "dropVideo": "Choisissez ou glissez un fichier vidéo",
+      "routedDirectly": "Téléversé directement vers le routeur de stockage selon le tarif du cours.",
+      "uploadingVideo": "Téléversement de la vidéo...",
+      "notesAndDescription": "Description de la leçon & Notes",
+      "editRaw": "Modifier le texte",
+      "previewFormat": "Aperçu du format",
+      "descriptionPlaceholder": "Qu'accompliront les apprenants dans cette leçon ?",
+      "noDescription": "Aucune description fournie.",
+      "learningObjectives": "Objectifs d'apprentissage",
+      "objectivePlaceholder": "ex: Maîtriser l'authentification JWT",
+      "keyTakeaways": "Points clés à retenir",
+      "takeawayPlaceholder": "ex: Toujours chiffrer les cookies de session",
+      "instructorNotes": "Notes privées de l'instructeur",
+      "instructorNotesPlaceholder": "Rappels internes ou plan de cours",
+      "add": "Ajouter",
+      "editInDrawer": "Modifier la leçon dans le volet"
+    },
+    "quiz": {
+      "enableTitle": "Évaluation & Quiz de la Leçon",
+      "enableSubtitle": "Attachez un point de contrôle à cette leçon. Notation automatique et seuils de réussite personnalisés.",
+      "settingsTitle": "Configuration du Quiz",
+      "questionsCount": "Questions",
+      "totalPoints": "Points Totaux",
+      "titleLabel": "Titre du Quiz",
+      "quizSuffix": "Contrôle des connaissances",
+      "titlePlaceholder": "ex: Contrôle des connaissances du Chapitre 1",
+      "instructionsLabel": "Consignes aux étudiants (Optionnel)",
+      "instructionsPlaceholder": "Instructions ou attentes pour les apprenants avant d'entamer ce quiz...",
+      "passScoreLabel": "Note de passage requise",
+      "timeLimitLabel": "Limite de temps (Minutes)",
+      "noLimit": "Aucune limite",
+      "minutesShort": "min",
+      "allowRetake": "Autoriser les rattrapages en cas d'échec",
+      "shuffleQuestions": "Mélanger l'ordre des questions",
+      "questionsHeading": "Questions & Réponses",
+      "noQuestionsPrompt": "Aucune question dans ce quiz pour le moment.",
+      "noQuestionsHelper": "Ajoutez des questions à choix multiple, vrai/faux ou réponse courte ci-dessous.",
+      "typeSingle": "Choix unique",
+      "typeMulti": "Choix multiples (Cases à cocher)",
+      "typeTrueFalse": "Vrai / Faux",
+      "typeCodeOutput": "Sortie de code",
+      "typeFillBlank": "Texte à trous",
+      "typeShortAnswer": "Réponse courte",
+      "moveUp": "Monter",
+      "moveDown": "Descendre",
+      "deleteQuestion": "Supprimer la question",
+      "questionPrompt": "Énoncé de la question",
+      "questionPromptPlaceholder": "ex: Quel mot-clé est utilisé pour définir une fonction en Python ?",
+      "acceptedAnswer": "Réponse exacte acceptée / Mot-clé",
+      "acceptedAnswerPlaceholder": "ex: def",
+      "correctAnswerLabel": "Bonne réponse",
+      "true": "Vrai",
+      "false": "Faux",
+      "answerChoices": "Options (Sélectionnez la bonne réponse)",
+      "addChoice": "Ajouter une option",
+      "markedCorrect": "Marqué comme bonne réponse",
+      "markCorrect": "Cliquer pour marquer comme bonne réponse",
+      "optionPlaceholder": "Option",
+      "explanationLabel": "Explication (Affichée à l'étudiant après soumission)",
+      "explanationPlaceholder": "Fournissez la justification pédagogique ou référence expliquant pourquoi cette réponse est correcte...",
+      "addSingleChoice": "+ Choix unique",
+      "addMultiSelect": "+ Choix multiples",
+      "addTrueFalse": "+ Vrai / Faux",
+      "addShortAnswer": "+ Réponse courte",
+      "noQuizTitle": "Aucune évaluation attachée",
+      "noQuizDesc": "Cette leçon est actuellement une vidéo/lecture seule. Activez le bouton ci-dessus pour ajouter des questions et un seuil de passage.",
+      "enableButton": "Activer le quiz pour cette leçon"
+    },
+    "details": {
+      "badgeHeadline": "Titre Principal du Cours",
+      "primaryIdentifier": "Catalogue & Moteurs de recherche",
+      "chars": "caractères",
+      "titleHelp": "Le titre affiché sur les fiches de cours, recherches et réseaux sociaux. Gardez-le sous 60 caractères pour un taux de clic maximal.",
+      "titlePlaceholder": "ex: Python pour l'analyse et la visualisation de données",
+      "badgeHook": "Description Courte / L'Accroche",
+      "cardSnippet": "1 à 2 phrases percutantes",
+      "shortDescHelp": "Le sous-titre sur la carte du catalogue et l'en-tête de vente. Résumez ce que l'étudiant accomplira en moins de 160 caractères.",
+      "shortDescPlaceholder": "ex: Apprenez Python de zéro et écrivez des scripts pour nettoyer et visualiser de véritables données économiques algériennes.",
+      "badgeSyllabus": "Syllabus & Description Complète",
+      "writeMarkdown": "Rédiger en Markdown",
+      "previewMarkdown": "Aperçu",
+      "fullDescHelp": "Programme détaillé du cours, prérequis, projets pratiques et compétences visées. Affiché sur la page de vente du cours.",
+      "fullDescPlaceholder": "### Vue d'ensemble du cours\nPython est devenu la référence du traitement de données...\n\n### Ce que vous allez apprendre\n- Nettoyer des jeux de données réels\n- Concevoir des tableaux de bord interactifs\n\n### Prérequis\nAucune expérience en programmation requise.",
+      "emptyMarkdownPreview": "Aucune description détaillée rédigée pour l'instant.",
+      "courseAttributes": "Tarification & Niveau",
+      "difficultyLevel": "Niveau de difficulté",
+      "priceLabel": "Prix du cours (DZD)",
+      "freeCourseCheckbox": "Cours Gratuit",
+      "levels": {
+        "beginner": "Débutant",
+        "intermediate": "Intermédiaire",
+        "advanced": "Avancé",
+        "allLevels": "Tous niveaux"
+      },
+      "coverImageTitle": "Image de couverture du cours (16:9)",
+      "coverImageHelp": "Saisissez l'URL publique de l'image du cours (1280x720 recommandé).",
+      "livePreviewHeading": "Aperçu en Direct",
+      "previewCardTab": "Carte Catalogue",
+      "previewHeroTab": "Bannière Vente",
+      "headlineField": "Titre du Cours",
+      "previewEmptyTitle": "Titre du cours non défini",
+      "theHookField": "L'Accroche (Sous-titre)",
+      "previewEmptyDesc": "Votre courte accroche de 1 à 2 phrases expliquant les compétences acquises apparaîtra ici.",
+      "free": "Gratuit",
+      "curriculum": "CURRICULUM",
+      "instructorPreview": "Studio Instructeur",
+      "enrollFree": "S'inscrire Gratuitement",
+      "courseCoverRatio": "Couverture du cours 16:9"
+    },
+    "errors": {
+      "lesson": {
+        "validation_failed": "Vérifiez les données de la leçon et réessayez.",
+        "create_failed": "Échec de la création de la leçon. Veuillez réessayer."
+      }
+    },
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé",
+      "allLevels": "Tous les niveaux"
+    }
+  },
+  "errors": {
+    "secureLoadFailed": "Échec du chargement sécurisé de la vidéo."
+  },
+  "classroom": {
+    "arrete1275": "Arrêté ministériel 1275",
+    "resetTitle": "Réinitialiser au modèle de départ",
+    "resetBtn": "Réinitialiser",
+    "running": "Exécution...",
+    "runTests": "Exécuter les tests",
+    "submitCapstone": "Soumettre le projet capstone",
+    "exitFullscreen": "Quitter le plein écran",
+    "fullscreen": "Plein écran",
+    "curriculumMilestone": "Étape du programme",
+    "estimatedEffort": "Effort estimé : ~{minutes} minutes",
+    "pedagogicalRequirements": "Exigences pédagogiques",
+    "progressiveHints": "Indices progressifs ({revealed}/3 débloqués)",
+    "unlockNextHint": "Débloquer l'indice suivant",
+    "hint1Title": "Indice 1 : Stratégie conceptuelle",
+    "hint2Title": "Indice 2 : Algorithme structurel",
+    "hint3Title": "Indice 3 : Architecture de la solution",
+    "stuckPrompt": "Bloqué sur ce projet ? Cliquez sur \"Débloquer l'indice suivant\" pour afficher une aide progressive sans dévoiler la solution.",
+    "dragResizeDesc": "Faites glisser pour redimensionner la description",
+    "pythonSandboxed": "(Python 3.11 • Bac à sable)",
+    "copyCode": "Copier le code dans le presse-papiers",
+    "copied": "Copié",
+    "copy": "Copier",
+    "dragResizeEditor": "Faites glisser pour redimensionner l'éditeur et la console",
+    "testCases": "Cas de test ({passed}/{total})",
+    "xtermOutput": "Sortie xterm",
+    "sandboxMetrics": "Métriques du bac à sable",
+    "antiCheatActive": "Anti-triche actif",
+    "testItem": "Test {index} : {name}",
+    "executionLatency": "Latence d'exécution",
+    "latencyTarget": "Objectif : < 500ms • Boucle d'événements FastAPI débloquée",
+    "memoryQuota": "{memory} Mo / 128 Mo",
+    "cgroupsQuota": "Quota bac à sable isolé Cgroups v2",
+    "astWinnowing": "Vérification de plagiat par fenêtrage AST",
+    "similarityPercent": "{similarity}% de similarité",
+    "mossHashes": "Hachages de fenêtres glissantes MOSS (Seuil de réussite : < 85%)",
+    "credentialStatus": "Statut du justificatif W3C",
+    "eligibleBadge": "Éligible pour Open Badge v3",
+    "pendingTests": "Tests en attente",
+    "startupPassportReady": "Passeport startup MESRS Arrêté 1275 prêt"
+  },
+  "video": {
+    "player": {
+      "availableOffline": "Disponible hors ligne",
+      "videoPlayerAria": "Lecteur vidéo",
+      "tamperAlert": "Alerte de sécurité : lecture suspendue"
+    },
+    "uploader": {
+      "tusHeader": "Téléversement réversible TUS v1.0.0 avec échelle de transcodage Multi-CDN",
+      "supportedFormats": "MP4, MOV, WebM, MKV jusqu'à 5 Go • Reprise sur 4G LTE algérienne",
+      "startUpload": "Démarrer le téléversement réversible ({provider})",
+      "resumeUpload": "Reprendre le téléversement",
+      "pauseUpload": "Suspendre le téléversement",
+      "paused": "En pause",
+      "speed": "Vitesse : {speed}",
+      "chunk": "Bloc {current}/{total}",
+      "retryBackoff": "Coupure réseau détectée. Nouvelle tentative avec repli exponentiel (tentative {attempt})"
+    }
+  }
+}

@@ -1,0 +1,3318 @@
+{
+  "bi": {
+    "density": {
+      "label": "Densité du tableau",
+      "compact": "Compact",
+      "comfortable": "Normal",
+      "spacious": "Aéré"
+    },
+    "meta": {
+      "title": "Informatique décisionnelle - Podacium",
+      "description": "Transformez vos données en informations exploitables avec la plateforme de Business Intelligence alimentée par l'IA de Podacium"
+    },
+    "hero": {
+      "badge": "Analytique Alimentée par l'IA",
+      "title": "Transformez les Données en",
+      "titleHighlight": "Décisions Intelligentes",
+      "subtitle": "Libérez la puissance de vos données avec des insights pilotés par l'IA, des tableaux de bord automatisés et des outils de prise de décision intelligents conçus pour les entreprises modernes.",
+      "cta": {
+        "primary": "Commencer",
+        "secondary": "Voir les cas d'usage"
+      },
+      "integrations": {
+        "label": "Accédez facilement à :",
+        "datasets": "Les données",
+        "dashboards": "Tableaux de bord",
+        "reports": "Rapports",
+        "insights": "Insights"
+      }
+    },
+    "what": {
+      "title": "Qu'est-ce que la Business Intelligence ?",
+      "subtitle": "Podacium BI transforme les données brutes en insights exploitables grâce à l'analytique alimentée par l'IA",
+      "features": {
+        "analytics": {
+          "title": "Analytique Alimentée par l'IA",
+          "description": "Des algorithmes d'apprentissage automatique avancés analysent vos données pour découvrir des modèles et tendances cachés"
+        },
+        "dashboards": {
+          "title": "Tableaux de Bord Intelligents",
+          "description": "Tableaux de bord auto-générés et personnalisables qui s'adaptent à vos besoins en temps réel"
+        },
+        "insights": {
+          "title": "Insights Exploitables",
+          "description": "Obtenez des recommandations claires et exploitables basées sur une analyse complète des données"
+        },
+        "decisions": {
+          "title": "Support de Décision",
+          "description": "Prise de décision assistée par l'IA avec évaluation des risques et analyse d'impact"
+        },
+        "integration": {
+          "title": "Intégration Transparente",
+          "description": "Connectez-vous à vos outils et sources de données existants sans effort"
+        },
+        "realtime": {
+          "title": "Mises à Jour en Temps Réel",
+          "description": "Surveillez vos métriques commerciales avec streaming de données en direct et alertes instantanées"
+        }
+      }
+    },
+    "audience": {
+      "title": "Pour Qui ?",
+      "subtitle": "Conçu pour les organisations de toutes tailles recherchant une croissance basée sur les données",
+      "segments": {
+        "businesses": {
+          "title": "Entreprises en Croissance",
+          "description": "Développez vos opérations avec des insights basés sur les données",
+          "benefits": [
+            "Suivez les KPI en temps réel",
+            "Identifiez les opportunités de croissance",
+            "Optimisez l'allocation des ressources",
+            "Améliorez la vitesse de prise de décision"
+          ]
+        },
+        "enterprises": {
+          "title": "Grandes Entreprises",
+          "description": "Analytique de niveau entreprise pour des opérations complexes",
+          "benefits": [
+            "Analytique multi-départements",
+            "Contrôles de sécurité avancés",
+            "Intégrations personnalisées",
+            "Support dédié"
+          ]
+        },
+        "startups": {
+          "title": "Startups & Fondateurs",
+          "description": "Prenez des décisions plus intelligentes dès le premier jour",
+          "benefits": [
+            "Tarification abordable",
+            "Configuration rapide",
+            "Rapports prêts pour les investisseurs",
+            "Suivi de croissance"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Cas d'Usage Réels",
+      "subtitle": "Découvrez comment les organisations peuvent exploiter Podacium BI pour réussir",
+      "featuresLabel": "Fonctionnalités",
+      "cases": {
+        "dashboards": {
+          "title": "Tableaux de Bord Exécutifs",
+          "description": "Vue d'ensemble complète des performances commerciales",
+          "features": [
+            "Suivi des revenus",
+            "Analytique client",
+            "Métriques opérationnelles",
+            "Analyse des tendances"
+          ],
+          "impact": "Économisez plus de 10 heures par semaine sur les rapports"
+        },
+        "insights": {
+          "title": "Insights Prédictifs",
+          "description": "Prévoyez les tendances et anticipez les changements du marché",
+          "features": [
+            "Prévision des ventes",
+            "Prédiction du churn",
+            "Planification de la demande",
+            "Évaluation des risques"
+          ],
+          "impact": "Améliorez la précision des prévisions de 40%"
+        },
+        "decisions": {
+          "title": "Décisions Basées sur les Données",
+          "description": "Prenez des décisions confiantes soutenues par les données",
+          "features": [
+            "Analyse de tests A/B",
+            "Calcul du ROI",
+            "Modélisation de scénarios",
+            "Évaluation d'impact"
+          ],
+          "impact": "Réduisez le temps de décision de 60%"
+        },
+        "marketing": {
+          "title": "Segmentation Client",
+          "description": "Ciblez le bon public avec précision",
+          "features": [
+            "Clustering comportemental",
+            "Prédiction de la valeur vie",
+            "Optimisation de campagne",
+            "Analyse du risque de départ"
+          ],
+          "impact": "Augmentez les taux de conversion de 35%"
+        },
+        "risk": {
+          "title": "Gestion des Risques",
+          "description": "Identifiez et atténuez les risques potentiels tôt",
+          "features": [
+            "Détection de fraude",
+            "Surveillance de conformité",
+            "Scoring de risque de crédit",
+            "Analyse des risques opérationnels"
+          ],
+          "impact": "Prévenez 90% des fraudes potentielles"
+        },
+        "supply": {
+          "title": "Optimisation Supply Chain",
+          "description": "Rationalisez les opérations et réduisez les coûts",
+          "features": [
+            "Optimisation des stocks",
+            "Prévision de la demande",
+            "Performance des fournisseurs",
+            "Routage logistique"
+          ],
+          "impact": "Réduisez les coûts de stock de 25%"
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à Transformer Vos Données ?",
+      "subtitle": "Rejoignez des milliers d'organisations prenant des décisions plus intelligentes avec Podacium BI",
+      "getStarted": "Commencer",
+      "actions": {
+        "datasets": {
+          "title": "Téléchargez Vos Données",
+          "description": "Commencez par télécharger vos ensembles de données",
+          "link": "/bi/datasets"
+        },
+        "dashboards": {
+          "title": "Créez des Tableaux de Bord",
+          "description": "Construisez des tableaux de bord analytiques personnalisés",
+          "link": "/bi/dashboards"
+        },
+        "analytics": {
+          "title": "Lancez l'Analytique",
+          "description": "Générez des insights à partir de vos données",
+          "link": "/bi/analytics"
+        }
+      },
+      "footer": "Aucune carte de crédit requise • Niveau gratuit disponible • Annulez à tout moment"
+    },
+    "howItWorks": {
+      "title": "Comment Ça Marche",
+      "subtitle": "Commencez avec Podacium BI en trois étapes simples",
+      "steps": {
+        "upload": {
+          "title": "Téléchargez Vos Données",
+          "description": "Connectez vos sources de données ou téléchargez des fichiers aux formats CSV, Excel, ou JSON. Notre plateforme intègre les bases de données et le stockage cloud populaires."
+        },
+        "analyze": {
+          "title": "Analysez et Apprenez",
+          "description": "Nos algorithmes avancés analyseront vos données, détecteront les modèles, identifieront les tendances et généreront des insights adaptés à vos besoins commerciaux."
+        },
+        "decide": {
+          "title": "Prenez des Décisions Intelligentes",
+          "description": "Accédez aux tableaux de bord, recevez des alertes en temps réel et obtenez des recommandations pour prendre des décisions basées sur les données en toute confiance."
+        }
+      }
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Tout ce que vous devez savoir sur Podacium BI",
+      "questions": [
+        {
+          "question": "Quels types de sources de données puis-je connecter ?",
+          "answer": "Podacium BI prend en charge une large gamme de sources de données, notamment CSV, Excel, JSON, et essaie d'en intégrer plus bientôt. Restez à l'écoute pour toute mise à jour."
+        },
+        {
+          "question": "Mes données sont-elles sécurisées ?",
+          "answer": "Absolument. Nous utilisons un chiffrement de niveau entreprise (AES-256) pour les données au repos et en transit. Toutes les données sont stockées dans des centres de données sécurisés et conformes avec des audits de sécurité réguliers. Vous conservez le contrôle total et la propriété de vos données."
+        },
+        {
+          "question": "Ai-je besoin de compétences techniques pour utiliser Podacium BI ?",
+          "answer": "Non ! Podacium BI est conçu pour les utilisateurs techniques et non techniques. Notre plateforme alimentée par l'IA génère automatiquement des insights et des tableaux de bord. Cependant, les utilisateurs avancés peuvent personnaliser les requêtes et créer des analyses complexes."
+        },
+        {
+          "question": "Quelle est la précision des prédictions ?",
+          "answer": "Nos modèles d'IA atteignent une précision moyenne de 73% sur diverses tâches de prédiction. La précision s'améliore avec le temps à mesure que le système apprend de vos modèles de données. Nous fournissons des scores de confiance avec toutes les prédictions."
+        },
+        {
+          "question": "Puis-je exporter mes rapports et tableaux de bord ?",
+          "answer": "Oui ! Vous pouvez exporter des tableaux de bord au format PDF, PNG ou HTML. Les données peuvent être exportées aux formats CSV, Excel ou JSON. Nous prévoyons d'ajouter d'autres formats prochainement."
+        },
+        {
+          "question": "Qu'est-ce qui est inclus dans le niveau gratuit ?",
+          "answer": "Le niveau gratuit comprend jusqu'à 2 ensembles de données, 4 tableaux de bord et des fonctionnalités d'analyse de base. C'est parfait pour les particuliers qui débutent avec la BI."
+        },
+        {
+          "question": "Mon équipe peut-elle collaborer sur les mêmes tableaux de bord ?",
+          "answer": "Oui. Les plans Organisation prennent en charge la collaboration d'équipe avec des ensembles de données, des tableaux de bord et des rapports partagés. Les membres de l'équipe peuvent co-éditer des tableaux de bord, laisser des commentaires, définir des autorisations et recevoir des notifications lorsque les données sont mises à jour. Chaque organisation dispose de son propre espace de travail isolé."
+        },
+        {
+          "question": "Podacium BI propose-t-il une API pour un accès programmatique ?",
+          "answer": "Oui. Podacium BI fournit une API REST qui vous permet de charger des ensembles de données par programmation, d'interroger des données, de générer des rapports et d'intégrer les capacités BI dans vos propres applications. L'accès à l'API est disponible sur les plans Growth et supérieurs, avec une documentation complète."
+        },
+        {
+          "question": "Combien de temps les données sont-elles conservées ?",
+          "answer": "La conservation des données dépend de votre plan. Les plans gratuits conservent les données pendant 90 jours, les plans Growth pendant 1 an, et les plans Scale et Elite offrent une conservation illimitée des données avec des politiques d'archivage configurables. Vous pouvez exporter vos données à tout moment avant leur expiration."
+        },
+        {
+          "question": "Puis-je planifier la génération automatisée de rapports ?",
+          "answer": "Oui. Vous pouvez planifier des rapports pour qu'ils soient générés quotidiennement, hebdomadairement ou mensuellement et automatiquement envoyés par e-mail aux parties prenantes. Les rapports planifiés prennent en charge plusieurs formats, notamment PDF, CSV et Excel. Cette fonctionnalité est disponible sur les plans Growth et supérieurs."
+        }
+      ]
+    },
+    "common": {
+      "loading": "Chargement...",
+      "error": "Une erreur s'est produite",
+      "retry": "Réessayer",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "close": "Fermer",
+      "bytes": "octets",
+      "kb": "Ko",
+      "mb": "Mo",
+      "gb": "Go",
+      "ago": "il y a",
+      "unknown": "Inconnu",
+      "noDescription": "Aucune description fournie",
+      "stats": {
+        "min": "Minimum",
+        "max": "Maximum",
+        "mean": "Moyenne",
+        "median": "Médiane",
+        "stdDev": "Écart Type",
+        "sum": "Somme Totale",
+        "count": "Total des Enregistrements",
+        "nulls": "Valeurs Manquantes",
+        "uniqueValues": "Score de Diversité",
+        "unavailable": "Non disponible pour ce type"
+      },
+      "top": "Haut",
+      "bottom": "Bas",
+      "left": "Gauche",
+      "right": "Droite",
+      "hidden": "Caché",
+      "importance": {
+        "high": "Haute",
+        "medium": "Moyenne",
+        "low": "Basse"
+      },
+      "trajectories": {
+        "UPWARD": "Ascendante",
+        "DOWNWARD": "Descendante",
+        "STABLE": "Stable"
+      }
+    },
+    "analytics": {
+      "meta": {
+        "title": "Hub Analytique - Podacium",
+        "description": "Plongez dans vos données avec des analyses de base alimentées par l'IA."
+      },
+      "hero": {
+        "badge": "Intelligence Core",
+        "title": "Analyse de Données",
+        "titleHighlight": "Réinventée",
+        "subtitle": "Sélectionnez un jeu de données pour générer instantanément des rapports complets allant de l'analyse des tendances aux prévisions prédictives.",
+        "cta": "Analyser le Jeu de Données"
+      },
+      "analysis": {
+        "defaultTitle": "Analyse de Données",
+        "generalDomain": "Général",
+        "rows": "lignes"
+      },
+      "webgl": {
+        "highDensityRenderer": "Rendu haute densité ({count} points)"
+      },
+      "summary": {
+        "title": "Résumé Exécutif",
+        "subtitle": "Aperçu stratégique de votre jeu de données synthétisé par l'IA.",
+        "confidenceScore": "Score de Confiance",
+        "healthScore": "Score de Santé",
+        "insights": {
+          "standard": "L'analyse de '{{target}}' à travers '{{dimension}}' révèle une base stable avec une variance saisonnière typique.",
+          "positive_growth": "Haute performance détectée ! '{{target}}' montre un élan ascendant significatif avec une forte contribution des segments.",
+          "risk_detected": "Action requise : Plusieurs anomalies détectées dans '{{target}}' pouvant indiquer des problèmes de qualité des données ou des événements commerciaux inhabituels."
+        }
+      },
+      "selection": {
+        "title": "Sélectionner un Jeu de Données",
+        "placeholder": "Rechercher des jeux de données par nom ou domaine...",
+        "empty": "Aucun jeu de données trouvé correspondant à votre recherche.",
+        "upload": "Télécharger un Nouveau Dataset",
+        "general": "Général"
+      },
+      "core": {
+        "trend": {
+          "title": "Analyse des Tendances",
+          "description": "Modèles de croissance longitudinale dans le temps.",
+          "insights": {
+            "trajectory": "Trajectoire globale {{trajectory}} avec une croissance de {{growth}}% sur {{months}} mois."
+          }
+        },
+        "comparative": {
+          "title": "Analyse Comparative",
+          "description": "Indicateurs de performance période sur période.",
+          "mom": "Mois après Mois",
+          "yoy": "Année après Année",
+          "insights": {
+            "pop": "Le dernier mois affiche une variation de {{mom}}% MoM et {{yoy}}% YoY.",
+            "insufficient": "Données historiques insuffisantes pour une comparaison complète."
+          }
+        },
+        "segmentation": {
+          "title": "Segmentation",
+          "description": "Segments clés pilotant vos métriques.",
+          "insights": {
+            "primary": "Segmentation primaire identifiée dans {{dimension}} où le segment supérieur représente une part significative de la valeur."
+          }
+        },
+        "root_cause": {
+          "title": "Analyse des Causes Racines",
+          "description": "Principaux facteurs impactant votre KPI.",
+          "insights": {
+            "primary": "'{{driver}}' identifié comme le principal moteur de la variance de '{{target}}'."
+          }
+        },
+        "what_if": {
+          "title": "Analyse What-If",
+          "description": "Modélisation de scénarios pour les résultats futurs.",
+          "insights": {
+            "optimistic": "Le total de {{column}} atteindrait {{value}} dans un scénario optimiste (+30%)."
+          }
+        },
+        "forecasting": {
+          "title": "Prévisions Prédictives",
+          "description": "Performance future projetée par l'IA.",
+          "insights": {
+            "projected": "Sur la base des tendances récentes, {{column}} devrait se stabiliser autour de {{value}} dans 3 mois.",
+            "insufficient": "Données historiques insuffisantes pour des prévisions fiables."
+          },
+          "periods": {
+            "next_month": "Mois Prochain",
+            "three_months": "Dans 3 Mois",
+            "six_months": "Dans 6 Mois"
+          }
+        },
+        "correlation": {
+          "title": "Matrice de Corrélation",
+          "description": "Relations entre les variables clés.",
+          "insights": {
+            "strongest": "Relations les plus fortes identifiées entre les colonnes avec une corrélation > 0,7."
+          }
+        },
+        "anomaly": {
+          "title": "Détection d'Anomalies",
+          "description": "Valeurs aberrantes et irrégularités statistiques.",
+          "insights": {
+            "detected": "Détection de {{count}} anomalies statistiques (valeurs aberrantes) dans {{column}}."
+          }
+        },
+        "funnel": {
+          "title": "Analyse de l'Entonnoir",
+          "description": "Taux de conversion à travers les étapes.",
+          "insights": {
+            "conversion": "L'entonnoir identifie '{{stage}}' comme l'étape finale avec {{conversion}}% de conversion totale.",
+            "no_stage": "Aucune colonne de type étape détectée pour l'analyse de l'entonnoir."
+          }
+        },
+        "profitability": {
+          "title": "Analyse de Rentabilité",
+          "description": "Répartition de la marge brute et des revenus.",
+          "grossMargin": "Marge Brute",
+          "totalRevenue": "Chiffre d'Affaires Total",
+          "insights": {
+            "summary": "La marge brute s'élève à {{margin}}% avec un chiffre d'affaires total de {{revenue}}.",
+            "missing": "Colonnes de revenus ou de coûts manquantes pour l'analyse de rentabilité."
+          }
+        }
+      },
+      "empty": {
+        "title": "Aucune analyse pour le moment",
+        "description": "Sélectionnez un ensemble de données pour générer un rapport d'analyse complet."
+      },
+      "errors": {
+        "analysisFailed": "Échec de l'analyse de cet ensemble de données",
+        "analysisFailedDesc": "Une erreur est survenue lors de l'analyse. Veuillez réessayer ou choisir un autre ensemble de données.",
+        "retry": "Réessayer",
+        "selectAnother": "Choisir un autre ensemble de données"
+      }
+    },
+    "datasets": {
+      "meta": {
+        "title": "Ensembles de Données - Business Intelligence",
+        "description": "Gérez, téléchargez et analysez vos ensembles de données"
+      },
+      "nav": {
+        "back": "Retour à BI",
+        "breadcrumb": {
+          "home": "Accueil",
+          "bi": "Informatique décisionnelle",
+          "datasets": "Ensembles de données",
+          "upload": "Télécharger",
+          "details": "Détails"
+        }
+      },
+      "list": {
+        "title": "Vos Ensembles de Données",
+        "subtitle": "Gérez et analysez vos collections de données",
+        "uploadButton": "Télécharger un Dataset",
+        "quickActions": {
+          "title": "Actions Rapides",
+          "upload": "Nouveau Dataset",
+          "uploadDesc": "CSV, JSON, Excel",
+          "whatsapp": "Import WhatsApp",
+          "whatsappDesc": "Collez vos messages",
+          "manual": "Entrée Manuelle",
+          "manualDesc": "Saisissez-le directement",
+          "recent": "Activité Récente",
+          "recentDesc": "Voir les dernières mises à jour",
+          "analytics": "Centre d'Analytique",
+          "analyticsDesc": "Aperçus globaux"
+        },
+        "empty": {
+          "title": "Aucun Dataset",
+          "description": "Téléchargez votre premier ensemble de données pour commencer à analyser vos données avec des insights alimentés par l'IA.",
+          "cta": "Télécharger Votre Premier Dataset",
+          "action": "Télécharger"
+        },
+        "search": {
+          "placeholder": "Rechercher des datasets...",
+          "noResults": "Aucun dataset trouvé correspondant à votre recherche"
+        },
+        "filters": {
+          "all": "Tous les Datasets",
+          "domain": "Domaine",
+          "status": "Statut",
+          "format": "Format",
+          "sortBy": "Trier par",
+          "search": "Rechercher...",
+          "sortOptions": {
+            "newest": "Plus récent",
+            "oldest": "Plus ancien",
+            "name": "Nom (A-Z)",
+            "nameDesc": "Nom (Z-A)",
+            "size": "Plus grand",
+            "rows": "Plus de lignes"
+          }
+        },
+        "actions": {
+          "upload": "Télécharger un Dataset"
+        },
+        "table": {
+          "name": "Nom du Dataset",
+          "domain": "Domaine",
+          "format": "Format",
+          "rows": "Lignes",
+          "columns": "Colonnes",
+          "size": "Taille",
+          "status": "Statut",
+          "quality": "Qualité",
+          "created": "Créé",
+          "updated": "Mis à jour",
+          "location": "Emplacement",
+          "actions": {
+            "title": "Actions",
+            "view": "Voir les détails",
+            "analyze": "Lancer l'analyse",
+            "preview": "Aperçu",
+            "export": "Exporter",
+            "delete": "Supprimer",
+            "duplicate": "Dupliquer",
+            "share": "Partager"
+          }
+        },
+        "status": {
+          "pending": "En attente",
+          "processing": "En cours",
+          "ready": "Prêt",
+          "uploaded": "Téléchargé",
+          "processed": "Traitement terminé",
+          "error": "Erreur",
+          "archived": "Archivé"
+        },
+        "bulk": {
+          "selected": "{count} éléments sélectionnés",
+          "selectAll": "Tout sélectionner"
+        },
+        "bulkDelete": {
+          "button": "Supprimer ({count})",
+          "confirmTitle": "Supprimer {count} éléments ?",
+          "confirmMessage": "Êtes-vous sûr de vouloir supprimer {count} éléments ? Cette action est irréversible.",
+          "success": "{count} éléments supprimés avec succès",
+          "partialSuccess": "{success} supprimés, {failed} échoués",
+          "error": "Échec de la suppression des éléments",
+          "deleting": "Suppression de {count} éléments..."
+        },
+        "error": {
+          "generic": "Échec du chargement des jeux de données. Veuillez réessayer.",
+          "uploadFailed": "Échec du téléchargement du jeu de données. Veuillez réessayer.",
+          "deleteFailed": "Échec de la suppression du jeu de données. Veuillez réessayer.",
+          "notFound": "Jeu de données introuvable.",
+          "missingOrgId": "L'ID de l'organisation est manquant.",
+          "invalidFileType": "Type de fichier invalide. Seuls les fichiers CSV, Excel et JSON sont supportés.",
+          "ingestFailed": "Échec de l'ingestion du jeu de données.",
+          "noOrg": "L'utilisateur n'est associé à aucune organisation.",
+          "previewFailed": "Échec du chargement de l'aperçu.",
+          "accessDenied": "Accès refusé.",
+          "listFailed": "Échec de la liste des jeux de données.",
+          "updateFailed": "Échec de la mise à jour du jeu de données.",
+          "fileNotFound": "Fichier introuvable.",
+          "exportFailed": "Échec de l'exportation du jeu de données.",
+          "empty": "Le jeu de données est vide.",
+          "validationFailed": "Échec de la validation.",
+          "noFilePath": "Chemin du fichier manquant.",
+          "qualityFailed": "Échec de l'évaluation de la qualité."
+        },
+        "success": {
+          "uploaded": "Jeu de données téléchargé avec succès.",
+          "ingested": "Jeu de données ingéré avec succès.",
+          "retrieved": "Jeu de données récupéré avec succès.",
+          "updated": "Jeu de données mis à jour avec succès."
+        },
+        "domains": {
+          "finance": "Finance",
+          "marketing": "Marketing",
+          "sales": "Ventes",
+          "operations": "Opérations",
+          "hr": "Ressources Humaines",
+          "customer": "Client",
+          "product": "Produit",
+          "other": "Autre"
+        },
+        "pagination": {
+          "showing": "Affichage de",
+          "of": "sur",
+          "datasets": "datasets",
+          "previous": "Précédent",
+          "next": "Suivant",
+          "perPage": "par page"
+        },
+        "stats": {
+          "total": "Total des jeux de données",
+          "rows": "Total Lignes",
+          "quality": "Qualité Moy.",
+          "totalRows": "Total Lignes",
+          "avgQuality": "Qualité Moy.",
+          "storage": "Stockage Utilisé"
+        }
+      },
+      "modals": {
+        "delete": {
+          "title": "Supprimer le Dataset",
+          "subtitle": "Cette action est irréversible",
+          "message": "Êtes-vous sûr de vouloir supprimer {name} ? Toutes les données et analyses associées seront définitivement supprimées.",
+          "confirm": "Supprimer le Dataset",
+          "deleting": "Suppression...",
+          "cancel": "Annuler"
+        }
+      },
+      "upload": {
+        "title": "Télécharger un Dataset",
+        "subtitle": "Ajoutez un nouvel ensemble de données à votre collection",
+        "semicolon": "Point-virgule (;)",
+        "firstLines": "{count} premières lignes",
+        "tabs": {
+          "file": "Fichier",
+          "whatsapp": "WhatsApp",
+          "manual": "Saisie Manuelle",
+          "whatsappData": "Données WhatsApp",
+          "manualData": "Données Saisie Manuelle",
+          "whatsappImport": "Import WhatsApp {date}",
+          "manualImport": "Saisie Manuelle {date}"
+        },
+        "steps": {
+          "select": "Sélectionner",
+          "configure": "Configurer",
+          "review": "Réviser",
+          "complete": "Terminer"
+        },
+        "dropzone": {
+          "title": "Glissez-déposez votre fichier ici",
+          "subtitle": "ou cliquez pour parcourir les fichiers",
+          "formats": "Formats supportés: CSV, Excel (.xlsx, .xls), JSON",
+          "maxSize": "Taille maximale: 100 Mo",
+          "uploading": "Téléchargement...",
+          "processing": "Traitement de votre fichier...",
+          "success": "Fichier téléchargé avec succès !",
+          "error": "Échec du téléchargement. Veuillez réessayer.",
+          "remove": "Supprimer"
+        },
+        "form": {
+          "name": {
+            "label": "Nom du Dataset",
+            "placeholder": "Entrez un nom descriptif",
+            "hint": "Choisissez un nom clair et mémorable",
+            "required": "Le nom du dataset est requis"
+          },
+          "description": {
+            "label": "Description",
+            "placeholder": "Décrivez le contenu de ce dataset...",
+            "hint": "Optionnel mais recommandé"
+          },
+          "domain": {
+            "label": "Domaine",
+            "placeholder": "Sélectionnez un domaine",
+            "hint": "Catégorisez votre dataset"
+          },
+          "organization": {
+            "label": "Organisation",
+            "placeholder": "Sélectionnez l'organisation",
+            "hint": "Choisissez l'organisation"
+          },
+          "advanced": {
+            "title": "Options Avancées",
+            "autoProcess": "Traitement auto après téléchargement",
+            "validateData": "Valider la qualité des données",
+            "detectTypes": "Détection auto des types de colonnes"
+          }
+        },
+        "preview": {
+          "title": "Aperçu du Fichier",
+          "datasetConfiguration": "Configuration du Dataset",
+          "fileName": "Nom du Fichier",
+          "fileSize": "Taille du Fichier",
+          "estimatedRows": "Lignes Estimées",
+          "columns": "Colonnes Détectées",
+          "sampleData": "Données d'Échantillon (5 Premières Lignes)"
+        },
+        "actions": {
+          "cancel": "Annuler",
+          "back": "Retour",
+          "next": "Suivant",
+          "upload": "Télécharger le Dataset",
+          "uploadAnother": "Télécharger un Autre",
+          "viewDataset": "Voir le Dataset"
+        },
+        "success": {
+          "title": "Dataset Téléchargé avec Succès !",
+          "message": "Votre dataset a été téléchargé et est en cours de traitement.",
+          "processing": "L'IA analyse vos données. Cela peut prendre quelques minutes.",
+          "whatNext": "Que souhaitez-vous faire ensuite ?"
+        },
+        "errors": {
+          "invalidFormat": "Format de fichier invalide. Veuillez télécharger des fichiers CSV, Excel ou JSON.",
+          "fileTooLarge": "Le fichier est trop volumineux. Taille maximale: 100 Mo.",
+          "uploadFailed": "Échec du téléchargement. Vérifiez votre connexion et réessayez.",
+          "processingFailed": "Échec du traitement. Le fichier peut être corrompu ou dans un format non supporté.",
+          "noFile": "Veuillez sélectionner un fichier à télécharger",
+          "noOrganization": "Aucune organisation trouvée. Veuillez d'abord créer ou rejoindre une organisation."
+        }
+      },
+      "whatsapp": {
+        "title": "Importer depuis WhatsApp",
+        "subtitle": "Collez vos messages professionnels ici",
+        "placeholder": "Collez vos messages ici...\n\nExemple:\nVendu 5 pains pour 250 DZD\nAcheté de la farine 1500\nRevenu du jour 15000\nAchat huile 800 DA",
+        "parse": "Analyser les messages",
+        "parsing": "Analyse en cours...",
+        "result": {
+          "title": "Résultats",
+          "found": "Trouvé {count} transactions",
+          "none": "Aucune transaction détectée. Essayez d'écrire des montants avec des nombres.",
+          "save": "Enregistrer comme Dataset",
+          "saving": "Enregistrement..."
+        },
+        "columns": {
+          "date": "Date",
+          "description": "Description",
+          "category": "Catégorie",
+          "type": "Type",
+          "amount": "Montant"
+        }
+      },
+      "manual": {
+        "title": "Saisie Manuelle",
+        "subtitle": "Ajoutez vos transactions une par une",
+        "addRow": "Ajouter une ligne",
+        "removeRow": "Supprimer",
+        "currency": "DZD",
+        "fields": {
+          "date": "Date",
+          "description": "Description",
+          "descriptionPlaceholder": "Ce qui s'est passé...",
+          "category": "Catégorie",
+          "type": "Type",
+          "amount": "Montant (DZD)",
+          "quantity": "Quantité"
+        },
+        "categories": {
+          "vente": "Vente",
+          "achat": "Achat",
+          "depense": "Dépense",
+          "revenu": "Revenu",
+          "facture": "Facture",
+          "stock": "Stock",
+          "autre": "Autre"
+        },
+        "types": {
+          "revenu": "Revenu",
+          "depense": "Dépense"
+        },
+        "submit": "Tout enregistrer",
+        "submitting": "Enregistrement...",
+        "next": "Suivant",
+        "modeForm": "Formulaire",
+        "modeSheet": "Tableur",
+        "sheetHint": "Cliquez pour modifier · Collez depuis Excel avec Ctrl+V · Naviguez avec Tab/Entrée/Flèches",
+        "rowCount": "{count} lignes",
+        "clearAll": "Tout effacer",
+        "clearAllConfirm": "Ceci effacera toutes les données et réinitialisera les colonnes. Continuer ?",
+        "undo": "Annuler",
+        "redo": "Rétablir",
+        "firstRowPromoted": "Première ligne promue en en-têtes de colonne",
+        "csvExported": "CSV exporté",
+        "noDataAnalyze": "Aucune donnée à analyser",
+        "allColumnsValidated": "Toutes les colonnes sont validées ✓",
+        "editHeader": "Modifier l'en-tête de colonne",
+        "removeColumn": "Supprimer la colonne",
+        "add20Rows": "+20 lignes",
+        "validation": {
+          "invalidAmount": "Le montant doit être un nombre",
+          "invalidDate": "Format de date invalide",
+          "emptyDescription": "La description est requise"
+        },
+        "pasteResult": "{count} lignes collées depuis le presse-papiers",
+        "sidebar": {
+          "structure": "Structure",
+          "addRows": "Ajouter des lignes",
+          "addColumn": "Ajouter une colonne",
+          "deleteRows": "Supprimer la sélection",
+          "firstRowHeaders": "1ère ligne → En-têtes",
+          "firstRowHeadersHint": "Utiliser la première ligne comme noms de colonnes",
+          "data": "Outils de données",
+          "templates": "Modèles",
+          "templatesHint": "Charger une structure BI prête à l'emploi",
+          "detectTypes": "Détecter les types",
+          "detectTypesHint": "Analyser les colonnes : Nombre, Date ou Texte",
+          "validateCols": "Valider",
+          "validateColsHint": "Vérifier les colonnes sans nom ou vides",
+          "io": "Importation / Exportation",
+          "exportCsv": "Exporter CSV",
+          "exportCsvHint": "Télécharger la grille en fichier .csv",
+          "cleanup": "Nettoyage",
+          "clearAllHint": "Effacer toutes les données et réinitialiser"
+        },
+        "templates": {
+          "title": "Sélectionner un Modèle",
+          "close": "Fermer",
+          "cancel": "Annuler",
+          "noTemplates": "Aucun modèle trouvé",
+          "searchPlaceholder": "Rechercher des modèles...",
+          "categoryFilter": "Toutes les catégories",
+          "categories": {
+            "retail": "Vente au détail",
+            "food": "Restauration",
+            "ecommerce": "E-commerce",
+            "services": "Services",
+            "finance": "Finance",
+            "inventory": "Inventaire",
+            "sales": "Ventes",
+            "hr": "Ressources Humaines",
+            "logistics": "Logistique",
+            "customer": "Succès Client",
+            "marketing": "Marketing"
+          },
+          "items": {
+            "retail_sales": {
+              "name": "Ventes au Détail",
+              "description": "Suivi des ventes quotidiennes",
+              "preview": "Colonnes: Date, Article, Quantité..."
+            },
+            "restaurant_orders": {
+              "name": "Commandes Restaurant",
+              "description": "Suivi des tables et revenus",
+              "preview": "Colonnes: Date, Table, Commande..."
+            },
+            "ecommerce_orders": {
+              "name": "Commandes E-commerce",
+              "description": "Traitement des commandes en ligne",
+              "preview": "Colonnes: Date, Client, Produit..."
+            },
+            "services": {
+              "name": "Services & Conseil",
+              "description": "Suivi des heures et facturation",
+              "preview": "Colonnes: Client, Service, Heures..."
+            },
+            "financial": {
+              "name": "Registre Financier",
+              "description": "Comptabilité, revenus et dépenses",
+              "preview": "Colonnes: Date, Description, Montant..."
+            },
+            "inventory": {
+              "name": "Suivi d'Inventaire",
+              "description": "Niveaux de stock en entrepôt",
+              "preview": "Colonnes: Produit, SKU, Stock, Coût..."
+            },
+            "sales_pipeline": {
+              "name": "Pipeline de Ventes",
+              "description": "Suivi CRM et opportunités B2B",
+              "preview": "Colonnes: Lead, Entreprise, Valeur..."
+            },
+            "hr_payroll": {
+              "name": "Paie des Employés",
+              "description": "Rémunération mensuelle du personnel",
+              "preview": "Colonnes: Employé, Salaire, Net..."
+            },
+            "logistics": {
+              "name": "Logistique & Livraison",
+              "description": "Suivi de flotte et expéditions",
+              "preview": "Colonnes: Suivi, Chauffeur, Statut..."
+            },
+            "expense_claims": {
+              "name": "Notes de Frais",
+              "description": "Remboursements des employés",
+              "preview": "Colonnes: Employé, Type de frais..."
+            },
+            "customer_feedback": {
+              "name": "Retours Clients",
+              "description": "Scores de satisfaction et NPS",
+              "preview": "Colonnes: Client, Produit, Note..."
+            },
+            "marketing_campaigns": {
+              "name": "Campagnes Marketing",
+              "description": "Dépenses publicitaires et leads",
+              "preview": "Colonnes: Campagne, Budget, Leads..."
+            }
+          },
+          "useTemplate": "Utiliser ce modèle"
+        }
+      },
+      "errors": {
+        "loadFailed": "Échec du chargement des jeux de données"
+      },
+      "quickEntry": {
+        "errors": {
+          "parseFailed": "Échec de l'analyse des messages",
+          "handlerNotConfigured": "Gestionnaire de données non configuré. Veuillez utiliser ce composant dans un flux de téléversement."
+        }
+      },
+      "spreadsheet": {
+        "templateLoaded": "Modèle \"{name}\" chargé",
+        "detectedTypes": "Types détectés : {types}",
+        "errors": {
+          "prepareFailed": "Échec de la préparation des données"
+        }
+      },
+      "detail": {
+        "title": "Détails du Dataset",
+        "columns": "Colonnes :",
+        "moreColumns": "+{count} de plus",
+        "hero": {
+          "health": "Santé",
+          "editDetails": "Modifier les détails",
+          "editModal": {
+            "nameLabel": "Nom du jeu de données",
+            "domainLabel": "Domaine métier",
+            "descriptionLabel": "Description",
+            "cancel": "Annuler",
+            "save": "Enregistrer"
+          },
+          "stats": {
+            "rows": "{count} lignes",
+            "columns": "{count} colonnes",
+            "createdOn": "Créé le {date}"
+          },
+          "actions": {
+            "smartClean": "Smart Clean 1-Clic",
+            "export": "Exporter",
+            "exportTitle": "Exporter le fichier CSV",
+            "refreshTitle": "Actualiser les données",
+            "deleteTitle": "Supprimer le jeu de données"
+          }
+        },
+        "loading": {
+          "title": "Chargement du jeu de données...",
+          "subtitle": "Analyse de la structure, de la qualité et des données sémantiques."
+        },
+        "actions": {
+          "edit": "Modifier les Détails",
+          "share": "Partager",
+          "duplicate": "Dupliquer",
+          "delete": "Supprimer le Dataset",
+          "save": "Enregistrer les modifications",
+          "cancel": "Annuler",
+          "confirmDelete": "Supprimer l'ensemble de données",
+          "export": "Exporter"
+        },
+        "toast": {
+          "updated": "Métadonnées mises à jour",
+          "deleted": "Jeu de données supprimé",
+          "contractActivated": "Contrat de données activé",
+          "snapshotCaptured": "Instantané capturé avec succès",
+          "policySaved": "Politique de sécurité enregistrée",
+          "webhookRegistered": "Webhook enregistré",
+          "typeUpdated": "Type de colonne mis à jour",
+          "tagAdded": "Tag ajouté : {tag}",
+          "tagRemoved": "Tag supprimé : {tag}",
+          "snapshotRestored": "Instantané restauré : {id}",
+          "webhookTestSuccess": "Test ping du webhook envoyé avec succès",
+          "webhookTestError": "Échec du test du webhook",
+          "queryFailed": "Échec de l'exécution de la requête"
+        },
+        "errors": {
+          "loadFailed": "Échec du chargement du jeu de données",
+          "notFound": "Jeu de données introuvable",
+          "notFoundDesc": "Le jeu de données a peut-être été supprimé ou vous n'avez pas l'accès nécessaire.",
+          "updateFailed": "Échec de la mise à jour de l'ensemble de données",
+          "deleteFailed": "Échec de la suppression de l'ensemble de données",
+          "exportFailed": "Échec de l'export de l'ensemble de données",
+          "refreshFailed": "Échec de l'actualisation"
+        },
+        "unknown": "Domaine Inconnu",
+        "uploadedBy": "Téléchargé par",
+        "organization": "Organisation",
+        "cleanModal": {
+          "title": "Docteur de données intelligent en 1 clic",
+          "subtitle": "Nettoyage et imputation automatique par IA",
+          "fillMissing": "Imputer les valeurs manquantes",
+          "fillMissingDesc": "Compléter automatiquement les cellules vides",
+          "strategyLabel": "Stratégie d'imputation",
+          "autoStrategy": "Auto-Intelligent (Médiane pour les nombres, Mode pour le texte)",
+          "meanStrategy": "Moyenne (Colonnes numériques)",
+          "modeStrategy": "Mode / Valeur la plus fréquente",
+          "deduplicate": "Dédupliquer les enregistrements",
+          "deduplicateDesc": "Supprimer les lignes entièrement identiques",
+          "trimWhitespace": "Nettoyer les espaces inutiles",
+          "trimWhitespaceDesc": "Purger les espaces superflus dans les champs textuels",
+          "cancel": "Annuler",
+          "cleaning": "Nettoyage en cours...",
+          "submit": "Lancer l'Auto-Nettoyage",
+          "success": "Jeu de données nettoyé avec succès !",
+          "error": "Échec du nettoyage du jeu de données"
+        },
+        "syntheticModal": {
+          "title": "Générateur de Données Synthétiques Sandbox",
+          "subtitle": "Générez un échantillon factice conforme au schéma SQL et aux types sémantiques.",
+          "rowsLabel": "Nombre de lignes à générer (1 à 100)",
+          "previewTitle": "Aperçu de l'échantillon synthétique ({count} lignes)",
+          "copyJson": "Copier en JSON",
+          "generating": "Génération en cours...",
+          "close": "Fermer",
+          "submit": "Générer l'échantillon",
+          "toastSuccess": "{count} lignes synthétiques générées !",
+          "toastError": "Échec de la génération synthétique",
+          "toastCopied": "JSON synthétique copié dans le presse-papier !"
+        },
+        "webhooks": {
+          "title": "Alertes & Webhooks",
+          "description": "Abonnements webhook en direct pour les alertes de violation de SLA et les mises à jour de données.",
+          "createWebhook": "Enregistrer le point de terminaison Webhook",
+          "webhooksList": "Webhooks d'alerte abonnés",
+          "urlLabel": "URL du point de terminaison",
+          "urlPlaceholder": "https://hooks.slack.com/services/...",
+          "targetUrl": "URL du Webhook",
+          "eventLabel": "Événement déclencheur",
+          "eventType": "Événement déclencheur",
+          "events": {
+            "qualitySlaFailed": "QUALITY_SLA_FAILED (Violation du SLA de qualité)",
+            "dataUpdated": "DATA_UPDATED (Données mises à jour)"
+          },
+          "action": "Action",
+          "cancel": "Annuler"
+        },
+        "insights": {
+          "whyDidThisHappen": "Pourquoi cela s'est-il produit ? (Analyse des facteurs clés)",
+          "confidence": "Niveau de confiance",
+          "datasetImpactMetric": "Métrique d'impact du jeu de données",
+          "baselineBenchmark": "Référence de base",
+          "recentlyUpdated": "Récemment mis à jour",
+          "urgency": {
+            "critical": "Risque Critique",
+            "warning": "Avertissement",
+            "opportunity": "Opportunité de croissance",
+            "info": "Information"
+          },
+          "categories": {
+            "all": "Toutes les observations",
+            "anomaly": "Risques & Anomalies",
+            "trend": "Opportunités de croissance & Tendances",
+            "performance": "Performance & Santé des données"
+          },
+          "actions": {
+            "createDecision": "Créer un registre de décision métier",
+            "triggerClean": "Déclencher le nettoyage intelligent",
+            "applyFilter": "Appliquer le filtre de requête SQL",
+            "createAlert": "Enregistrer une alerte SLA de qualité"
+          },
+          "demo": {
+            "anomTitle": "Forte densité de valeurs aberrantes détectée",
+            "anomDesc": "Les montants des transactions présentent un écart de 24,5 % par rapport à la référence historique sur 30 jours.",
+            "trendTitle": "Forte croissance des revenus et du volume",
+            "trendDesc": "Le volume total des transactions a augmenté de +18,4 % par rapport à la période précédente sur toutes les succursales régionales.",
+            "perfTitle": "Score de qualité et d'exhaustivité des données",
+            "perfDesc": "L'intégrité du schéma respecte à 100 % les seuils de qualité SLA de la plateforme Podacium."
+          }
+        },
+        "contractModal": {
+          "title": "Définir un Contrat de Données & SLA",
+          "contractName": "Nom du contrat",
+          "defaultContractName": "Contrat SLA de Schéma de Production",
+          "minRows": "SLA Nombre Min de Lignes",
+          "maxMissing": "SLA % Max de Valeurs Manquantes",
+          "strictSchema": "Appliquer des types de schéma stricts",
+          "cancel": "Annuler",
+          "activate": "Activer le contrat"
+        },
+        "columnModal": {
+          "profilingTitle": "Profilage statistique & Distribution des valeurs",
+          "totalRows": "Total des lignes",
+          "uniqueValues": "Valeurs uniques",
+          "missingNulls": "Valeurs manquantes (Nulls)",
+          "semanticType": "Type sémantique",
+          "descStats": "Statistiques descriptives",
+          "min": "Minimum",
+          "max": "Maximum",
+          "mean": "Moyenne",
+          "median": "Médiane",
+          "stdDev": "Écart-type",
+          "quartiles": "Quartiles Q25 / Q75",
+          "topValues": "Top 10 des valeurs les plus fréquentes",
+          "calculatingStats": "Calcul des distributions statistiques..."
+        },
+        "modals": {
+          "edit": {
+            "title": "Modifier les métadonnées",
+            "subtitle": "Ajustez le nom, le domaine d'activité et la description.",
+            "name": "Nom du jeu de données",
+            "domain": "Domaine métier",
+            "description": "Description",
+            "descPlaceholder": "Description concise du jeu de données et de son utilité...",
+            "cancel": "Annuler",
+            "saving": "Enregistrement...",
+            "save": "Mettre à jour"
+          },
+          "delete": {
+            "title": "Supprimer le jeu de données",
+            "subtitle": "Cette action est irréversible et définitive.",
+            "confirmPrompt": "Êtes-vous absolument sûr de vouloir supprimer le jeu de données {name} ?",
+            "consequences": "Toutes les données associées, historiques, profils sémantiques et métriques de qualité seront définitivement effacés.",
+            "cancel": "Annuler",
+            "deleting": "Suppression...",
+            "confirm": "Confirmer la suppression"
+          },
+          "pii": {
+            "title": "Masquage PII & Anonymisation",
+            "subtitle": "Masquer ou anonymiser les colonnes sensibles avant le partage",
+            "selectMethod": "Sélectionner la méthode de masquage",
+            "selectColumnError": "Veuillez sélectionner au moins une colonne à masquer.",
+            "methods": {
+              "hash": "Hachage cryptographique (SHA-256)",
+              "redact": "Masquage total ([RÉDACTÉ])",
+              "mask": "Masquage partiel (XX****XX)"
+            },
+            "sensitiveColumns": "Colonnes sensibles ({count})",
+            "cancel": "Annuler",
+            "close": "Fermer",
+            "maskingProgress": "Anonymisation en cours...",
+            "applyMasking": "Appliquer le masquage",
+            "success": "Anonymisation effectuée avec succès !",
+            "error": "Échec de l'anonymisation"
+          },
+          "dqRules": {
+            "title": "Moteur de règles de qualité personnalisées",
+            "subtitle": "Définir des contraintes d'intégrité (Non Nul, Min/Max, Regex) et mesurer la conformité.",
+            "activeRules": "Assertions actives",
+            "addRule": "Ajouter une règle",
+            "success": "Règles de qualité évaluées avec succès !",
+            "error": "Échec de l'évaluation des règles de qualité",
+            "resultsTitle": "Résultats du test de conformité",
+            "complianceCounts": "{passed} réussies, {failed} échouées sur {total} règles totales",
+            "passRate": "Taux de conformité global : {rate}%",
+            "evaluating": "Évaluation en cours...",
+            "ruleTypes": {
+              "notNull": "Non Nul (Not Null)",
+              "min": "Valeur Minimum (≥)",
+              "max": "Valeur Maximum (≤)"
+            },
+            "limitValuePlaceholder": "Valeur limite...",
+            "close": "Fermer",
+            "testRules": "Tester les règles (1-Click)"
+          }
+        },
+        "schema": {
+          "columnUpdated": "Colonne \"{column}\" mise à jour",
+          "typeUpdated": "Type de colonne mis à jour avec succès",
+          "profilerError": "Échec du chargement du profil de colonne"
+        },
+        "tabs": {
+          "overview": {
+            "title": "Vue d'ensemble",
+            "metrics": {
+              "rows": "Total Lignes",
+              "columns": "Total Colonnes",
+              "size": "Taille Fichier",
+              "quality": "Score de Qualité",
+              "completeness": "Complétude",
+              "uniqueness": "Unicité"
+            },
+            "info": {
+              "title": "Informations Générales",
+              "format": "Format de fichier",
+              "domain": "Domaine métier",
+              "created": "Date d'importation",
+              "updated": "Dernière mise à jour"
+            },
+            "description": {
+              "title": "Description",
+              "empty": "Aucune description fournie pour ce jeu de données."
+            },
+            "sample": {
+              "title": "Aperçu de l'échantillon",
+              "viewMore": "Voir l'aperçu complet"
+            },
+            "aiSummary": {
+              "title": "Synthèse Exécutive IA",
+              "issuesDetected": "{count} alertes de qualité ont été détectées.",
+              "noIssues": "Aucune anomalie majeure n'a été détectée.",
+              "narrative": "Ce jeu de données comprend {rows} enregistrements et {columns} colonnes sémantiques. Le score de santé globale est évalué à {score}%. {issuesText}",
+              "cleanData": "Nettoyer les données",
+              "viewAnalytics": "Voir les analyses IA"
+            }
+          },
+          "preview": {
+            "title": "Aperçu des Données",
+            "search": "Rechercher dans l'échantillon...",
+            "showing": "Affichage des {count} premières lignes",
+            "showingPaged": "Affichage de {count} sur {total} lignes ({all} au total)",
+            "empty": "Aucune donnée d'aperçu disponible"
+          },
+          "schema": {
+            "title": "Dictionnaire Sémantique & Schéma",
+            "subtitle": "Modifiez le type de données SQL et le domaine sémantique (Wilaya, Devise, Phone, etc.) pour chaque colonne.",
+            "description": "Définitions des colonnes et types de données déduits du dataset.",
+            "columnsCount": "Colonnes Trouvées",
+            "columnsCountFormatted": "{count} Colonnes",
+            "colName": "Nom de colonne",
+            "sqlType": "Type SQL",
+            "semanticDomain": "Domaine sémantique",
+            "statProfile": "Profil statistique",
+            "edit": "Modifier",
+            "inspect": "Inspecter",
+            "table": {
+              "column": "Colonne",
+              "type": "Type",
+              "missing": "Complétude",
+              "stats": "Distribution et Statistiques",
+              "semantic": "Sémantique"
+            },
+            "mixedTypes": "Types Mixtes",
+            "stats": {
+              "min": "Min",
+              "max": "Max",
+              "mean": "Moyenne",
+              "sum": "Somme",
+              "uniqueValues": "Valeurs Uniques",
+              "unavailable": "Indisponible"
+            },
+            "empty": "Aucune définition de schéma disponible pour ce jeu de données."
+          },
+          "analytics": {
+            "title": "Intelligence des Données",
+            "description": "Analyse de niveau entreprise dévoilant l'histoire cachée au sein de votre jeu de données.",
+            "runAnalysis": "Analyser le Jeu de Données",
+            "analyzing": "Synthèse des Données...",
+            "loadingDesc": "Notre IA profile les distributions, calcule les corrélations et génère des insights.",
+            "confidence": "Confiance des Données",
+            "sections": {
+              "summary": "Synthèse Exécutive",
+              "highlights": "Principales Constatations",
+              "distribution": "Modèles de Données",
+              "relationships": "Relations entre Variables"
+            },
+            "subtabs": {
+              "insights": "Insights Clés",
+              "distributions": "Distributions",
+              "correlations": "Matrice de Relations"
+            },
+            "filter": {
+              "title": "Filtrer les Variables",
+              "toggle": "Basculer les Filtres",
+              "all": "Toutes les Variables",
+              "selected": "{count} Sélectionnées",
+              "search": "Rechercher...",
+              "selectAll": "Tout Sélectionner",
+              "selectNone": "Tout Désélectionner",
+              "noColumns": "Aucune colonne trouvée",
+              "emptySelection": "Sélectionnez des variables pour voir les distributions"
+            },
+            "matrix": {
+              "title": "Matrice de Corrélation & Explorateur de Relations",
+              "subtitle": "Découvrez comment les variables numériques de votre jeu de données évoluent ensemble ou en sens opposé.",
+              "learnMore": "Comment Lire la Matrice",
+              "disclaimer": "Note : La corrélation mesure le co-mouvement statistique et non une causalité directe.",
+              "viewHeatmap": "Grille de Chaleur",
+              "viewCards": "Cartes des Relations Clés",
+              "viewLowerTriangle": "Triangle Inférieur Seul",
+              "viewFullMatrix": "Vue Matrice Complète",
+              "filters": {
+                "all": "Toutes les Paires",
+                "strong": "Fortes Seules (|r| ≥ 0.5)",
+                "positive": "Positives Seules (r > 0)",
+                "negative": "Négatives Seules (r < 0)"
+              },
+              "strongPos": "Positive Forte",
+              "strongNeg": "Négative Forte",
+              "neutral": "Aucune Corrélation",
+              "legend": {
+                "title": "Spectre de Force de Corrélation",
+                "positive": "Positif (+1.0)",
+                "negative": "Négative (-1.0)",
+                "neutral": "Neutre (0.0)",
+                "strongPos": "Positive Forte (+0.7 à +1.0)",
+                "strongPosDesc": "Variables augmentent ensemble",
+                "modPos": "Positive Modérée (+0.3 à +0.7)",
+                "modPosDesc": "Tendance à augmenter ensemble",
+                "neutralDesc": "Aucune relation linéaire claire",
+                "modNeg": "Négative Modérée (-0.7 à -0.3)",
+                "modNegDesc": "Mouvement inverse modéré",
+                "strongNeg": "Négative Forte (-1.0 à -0.7)",
+                "strongNegDesc": "Variables évoluent en sens opposé"
+              },
+              "tooltip": {
+                "title": "Analyse de la Relation",
+                "explanation": {
+                  "pos_very_strong": "{v1} et {v2} évoluent presque parfaitement ensemble.",
+                  "pos_strong": "Lorsque {v1} augmente, {v2} a tendance à augmenter fortement.",
+                  "pos_moderate": "{v1} a un impact positif modéré sur {v2}.",
+                  "pos_weak": "{v1} et {v2} ont une faible relation positive.",
+                  "pos_very_weak": "Aucun schéma clair entre {v1} et {v2}.",
+                  "neg_very_strong": "Relation inverse presque parfaite entre {v1} et {v2}.",
+                  "neg_strong": "Lorsque {v1} augmente, {v2} a tendance à diminuer fortement.",
+                  "neg_moderate": "{v1} a un impact négatif modéré sur {v2}.",
+                  "neg_weak": "{v1} et {v2} ont une faible relation inverse.",
+                  "neg_very_weak": "La relation inverse est négligeable entre {v1} et {v2}."
+                },
+                "identity": "Une variable est toujours parfaitement corrélée avec elle-même (1.0).",
+                "technical": "Coefficient de Pearson : {val}. Amplitude de dépendance statistique."
+              },
+              "strength": {
+                "very_weak": "Très Faible",
+                "weak": "Faible",
+                "moderate": "Modérée",
+                "strong": "Forte",
+                "very_strong": "Très Forte",
+                "neutral": "Identité"
+              },
+              "takeaways": {
+                "title": "Observations clés des relations automatiques",
+                "empty": "Aucune corrélation significative détectée entre les variables numériques."
+              },
+              "labels": {
+                "influential": "Paire hautement influente",
+                "moderate": "Lien comportemental modéré",
+                "minor": "Relation mineure détectée",
+                "strategic": "Stratégique",
+                "relevant": "Pertinent",
+                "incidental": "Accessoire"
+              }
+            },
+            "learning": {
+              "summary": "Une synthèse de haut niveau de la santé et du potentiel de votre jeu de données.",
+              "distribution": "Visualisation de la répartition de vos points de données sur différentes plages ou catégories.",
+              "relationships": "Comprendre comment différentes variables s'influencent ou évoluent ensemble.",
+              "insights": "Observations stratégiques basées sur des anomalies et des modèles statistiques."
+            },
+            "insights": {
+              "trend": {
+                "title": "Tendance à la hausse détectée",
+                "description": "La colonne 'revenue' montre un modèle de croissance constant."
+              },
+              "correlation": {
+                "title": "Forte corrélation trouvée",
+                "description": "Corrélation significative détectée entre les colonnes."
+              },
+              "anomaly": {
+                "title": "Valeurs aberrantes identifiées",
+                "description": "Valeurs anomales trouvées s'écartant de la moyenne."
+              },
+              "recommendation": {
+                "title": "Enrichissement des données suggéré",
+                "description": "Envisagez d'ajouter des données géographiques pour améliorer l'analyse."
+              },
+              "dominant_category": {
+                "title": "Catégorie Dominante : {value}",
+                "description": "La valeur '{value}' représente {pct}% de la colonne '{column}'."
+              },
+              "high_completeness": {
+                "title": "Complétude Totale : {column}",
+                "description": "La colonne '{column}' est complétée à 100%, offrant une base solide pour l'analyse."
+              },
+              "low_completeness": {
+                "title": "Valeurs Manquantes dans {column}",
+                "description": "La colonne '{column}' n'est complétée qu'à {pct}%. Une densité de nullité élevée peut biaiser les résultats."
+              },
+              "constant_column": {
+                "title": "Colonne Constante : {column}",
+                "description": "La colonne '{column}' contient la même valeur pour toutes les lignes et n'apporte aucun pouvoir prédictif."
+              },
+              "high_cardinality": {
+                "title": "Cardinalité Élevée : {column}",
+                "description": "La colonne '{column}' contient {count} valeurs uniques. Recommandé pour une utilisation comme identifiant."
+              },
+              "data_range": {
+                "title": "Plage de Données : {column}",
+                "description": "Les valeurs dans '{column}' vont de {min} à {max}."
+              },
+              "strong_correlation": {
+                "title": "Forte Corrélation Détectée",
+                "description": "Une corrélation élevée de {value} existe entre '{col1}' et '{col2}'."
+              },
+              "moderate_correlation": {
+                "title": "Corrélation Modérée Trouvée",
+                "description": "Une relation (score : {value}) existe entre '{col1}' et '{col2}'."
+              },
+              "outliers": {
+                "title": "Détection d'Anomalies : {column}",
+                "description": "L'analyse a identifié {count} valeurs aberrantes ({pct}% des données) dans la colonne '{column}'."
+              },
+              "noCorrelations": "Aucune corrélation significative trouvée."
+            },
+            "empty": "Aucune analyse disponible pour ce jeu de données pour le moment.",
+            "emptyTitle": "Prêt pour l'Intelligence",
+            "runFirst": "Cliquez ci-dessus pour lancer l'analyse et découvrir des modèles cachés.",
+            "executiveSummary": "Résumé Exécutif",
+            "executiveSummaryDetail": {
+              "template": "L'analyse a identifié {total} informations. {high} d'entre elles sont d'une importance élevée.",
+              "empty": "Aucune information significative détectée dans ce jeu de données pour le moment."
+            },
+            "distributions": "Distributions des Données",
+            "distributionSuffix": "(Distribution)",
+            "topValuesSuffix": "(Top Valeurs)",
+            "correlations": "Corrélations Clés",
+            "businessInsights": "Aperçus Métier",
+            "insightsTitle": "Analyses Décisionnelles IA & Causes Racines",
+            "insightsDesc": "Analyse automatique des causes racines, tri des risques et recommandations d'action."
+          },
+          "quality": {
+            "title": "Évaluation de la Qualité",
+            "doctorTitle": "Diagnostic de qualité & Gouvernance IA",
+            "scoreSubtitle": "Score de qualité et conformité : {score}/100",
+            "rulesBtn": "Règles de Qualité",
+            "piiBtn": "Masquage PII",
+            "syntheticBtn": "Données Synthétiques",
+            "completenessVerified": "Taux de complétude vérifié",
+            "completenessDesc": "La plupart des attributs répondent aux critères de qualité et ne comportent pas de taux de vide critique.",
+            "recommendationsTitle": "Recommandations d'optimisation",
+            "recommendationsDesc": "Le moteur Smart Clean peut imputer les valeurs manquantes, supprimer les doublons et anonymiser les PII.",
+            "alertsTitle": "Alertes & Diagnostic détaillé",
+            "metrics": {
+              "completeness": "Complétude",
+              "completeness_desc": "Pourcentage de cellules non nulles dans votre jeu de données.",
+              "uniqueness": "Unicité",
+              "uniqueness_desc": "Ratio d'enregistrements uniques par rapport au total.",
+              "consistency": "Cohérence",
+              "consistency_desc": "Adhésion aux types de données et modèles attendus.",
+              "accuracy": "Exactitude",
+              "accuracy_desc": "Correction et validité des valeurs de données."
+            },
+            "issues": {
+              "title": "Problèmes Détectés",
+              "none": "Aucun problème significatif détecté dans ce jeu de données.",
+              "missing": {
+                "title": "Valeurs manquantes détectées",
+                "description": "colonnes contiennent des valeurs nulles"
+              },
+              "duplicates": {
+                "title": "Doublons potentiels trouvés",
+                "description": "lignes peuvent être des doublons basés sur les colonnes clés"
+              },
+              "dynamic": {
+                "high_nulls": "La colonne '{column}' contient {pct}% de valeurs manquantes.",
+                "mixed_types": "La colonne '{column}' contient des types de données mixtes.",
+                "low_uniqueness": "La colonne '{column}' a une très faible unicité ({ratio}%).",
+                "outliers": "Détection de {count} valeurs aberrantes dans la colonne '{column}'."
+              }
+            },
+            "empty": "Les résultats de l'évaluation de la qualité ne sont pas encore disponibles.",
+            "status": {
+              "excellent": "La santé des données est EXCELLENTE.",
+              "good": "La santé des données est BONNE.",
+              "acceptable": "La santé des données est ACCEPTABLE.",
+              "poor": "La santé des données est MAUVAISE."
+            },
+            "summary": {
+              "warnings": {
+                "count": "{count} problèmes potentiels détectés.",
+                "none": "Aucun problème potentiel détecté."
+              }
+            }
+          },
+          "governance": {
+            "title": "Gouvernance & Contrats",
+            "description": "Contrats de données d'entreprise, SLA, classification de sensibilité et étiquettes de conformité.",
+            "sensitivity": "Classification de Sensibilité",
+            "compliance": "Cadres de Conformité",
+            "tags": "Étiquettes Taxonomiques",
+            "addTag": "Ajouter Tag",
+            "tagPlaceholder": "Nouveau tag (ex. #AUDITED)",
+            "contractsTitle": "Contrat de Qualité & SLA",
+            "contractsDesc": "Contrat formel définissant l'intégrité du schéma et les contraintes SLA.",
+            "createContract": "Définir le Contrat",
+            "status": "Statut du Contrat",
+            "minRows": "SLA Lignes Min",
+            "maxMissing": "SLA Manquants Max %",
+            "verified": "VÉRIFIÉ & CONFORME",
+            "violated": "SLA VIOLÉ",
+            "sensitivity_internal": "INTERNE",
+            "sensitivity_confidential": "CONFIDENTIEL",
+            "sensitivity_restricted": "RESTREINT",
+            "sensitivity_public": "PUBLIC",
+            "algeriaLaw": "Loi Algérienne 18-07 (Protection des données)"
+          },
+          "contractModal": {
+            "title": "Définir le contrat de données & SLA",
+            "contractName": "Nom du contrat",
+            "defaultContractName": "Contrat SLA de schéma de production",
+            "minRows": "SLA Lignes Min",
+            "maxMissing": "SLA Manquants Max %",
+            "strictSchema": "Appliquer des types de schéma stricts",
+            "cancel": "Annuler",
+            "activate": "Activer le contrat"
+          },
+          "history": {
+            "title": "Historique de la gouvernance & Traçabilité",
+            "description": "Journal d'audit complet des modifications de schéma, nettoyages et transformations.",
+            "initialImportTitle": "Importation initiale & Profilage sémantique",
+            "initialImportDesc": "Le fichier source a été analysé avec succès par le moteur BI.",
+            "dataModified": "Modification de données",
+            "actions": {
+              "uploaded": "Dataset téléchargé",
+              "processed": "Traitement terminé",
+              "qualityRun": "Évaluation de la qualité lancée"
+            },
+            "details": {
+              "originalFile": "Fichier original : {name}",
+              "rowsProcessed": "{count} lignes traitées avec succès",
+              "qualityScore": "Score de qualité : {score}%"
+            },
+            "empty": "Aucun historique d'activité."
+          },
+          "versioning": {
+            "title": "Historique des Versions & Instantanés",
+            "description": "Instantanés d'évolutions inaltérables, historique des dérivations et restauration en 1 clic.",
+            "createSnapshot": "Créer un Instantané",
+            "snapshotHistory": "Chronologie des Versions",
+            "version": "Version",
+            "rows": "Lignes",
+            "cols": "Colonnes",
+            "quality": "Score de Santé",
+            "created": "Capturé le",
+            "current": "ACTUEL",
+            "restore": "Restaurer",
+            "restoring": "Restauration...",
+            "modalTitle": "Capturer un Instantané",
+            "versionName": "Nom de la version",
+            "versionNameLabel": "Nom de la version",
+            "descLabel": "Description (Optionnel)",
+            "namePlaceholder": "Nom de la version (ex. Post-Nettoyage v1.2)",
+            "descPlaceholder": "Motif de l'instantané...",
+            "initialIngestion": "Importation initiale",
+            "currentState": "État actuel",
+            "submit": "Capturer une version",
+            "submitting": "Capture en cours...",
+            "cancel": "Annuler"
+          },
+          "security": {
+            "title": "Sécurité Lignes & Colonnes",
+            "description": "Configurer la sécurité au niveau des lignes (RLS) et le masquage des colonnes (CLS).",
+            "createPolicy": "Ajouter une Règle",
+            "policiesList": "Règles d'Accès Actives",
+            "type": "Type de Règle",
+            "policyType": "Type de Règle",
+            "targetRole": "Rôle Cible",
+            "role": "Rôle",
+            "condition": "Filtre / Condition",
+            "sqlCondition": "Condition de Filtre SQL",
+            "sqlConditionPlaceholder": "ex: amount >= 0",
+            "targetColumn": "Colonne Cible",
+            "masking": "Méthode de Masquage",
+            "status": "Statut",
+            "active": "ACTIF",
+            "cancel": "Annuler",
+            "saving": "Enregistrement...",
+            "savePolicy": "Enregistrer la Règle",
+            "rowFilter": "Filtre de Ligne (RLS)",
+            "colMask": "Masquage de Colonne (CLS)",
+            "types": {
+              "rowFilter": "Filtre au niveau des lignes (RLS)",
+              "columnMask": "Masquage de colonne (CLS)"
+            },
+            "roles": {
+              "all": "Tous les rôles",
+              "analyst": "Analyste",
+              "viewer": "Lecteur",
+              "manager": "Gestionnaire"
+            },
+            "methods": {
+              "hash": "Hachage SHA-256",
+              "redact": "Étiquette [MASQUÉ]",
+              "maskChars": "Masquer caractères (****)"
+            }
+          },
+          "query": {
+            "title": "Éditeur SQL Workbench",
+            "description": "Exécuter des requêtes SQL dynamiques, agrégations et filtres directement sur les enregistrements.",
+            "editorLabel": "Éditeur de Requête SQL",
+            "queryPlaceholder": "SELECT * FROM dataset WHERE ...",
+            "keyboardShortcut": "Ctrl + Entrée pour exécuter",
+            "runQuery": "Exécuter la Requête",
+            "running": "Exécution en cours...",
+            "results": "Résultats de Requête",
+            "executionTime": "Temps d'Exécution",
+            "rowsReturned": "Lignes Retournées",
+            "recentHistory": "Historique récent d'exécution",
+            "copy": "Copier",
+            "clear": "Effacer",
+            "presets": "Requêtes d'Analyse Prédéfinies",
+            "exportResults": "Exporter Résultats (CSV)",
+            "presetPreview": "Aperçu des 10 premiers enregistrements",
+            "presetGroupBy": "Regroupement & Distribution des comptages",
+            "presetSummary": "Agrégations du résumé numérique",
+            "presetNullAudit": "Audit Qualité & Valeurs Manquantes",
+            "presetOutliers": "Filtrage des Valeurs Aberrantes",
+            "presetTrends": "Tendances Temporelles Quotidiennes",
+            "presetRecentOrder": "Trier les enregistrements par ordre décroissant",
+            "formatSql": "Formater le SQL",
+            "copySql": "Copier la Requête",
+            "copied": "Copié !",
+            "clearSql": "Effacer L'Éditeur",
+            "snippets": "Clauses SQL",
+            "insertSnippet": "Insérer une clause",
+            "sqlHistory": "Historique des Requêtes",
+            "clearHistory": "Effacer L'Historique",
+            "noHistory": "Aucune requête exécutée dans cette session.",
+            "rowLimit": "Limite de Lignes",
+            "searchResults": "Filtrer le tableau...",
+            "noMatchingRows": "Aucun résultat correspondant trouvé.",
+            "categories": {
+              "all": "Tous les modèles",
+              "basic": "Base & Exploration",
+              "aggregations": "Agrégations",
+              "quality": "Qualité des données",
+              "advanced": "Filtrage Avancé"
+            }
+          },
+          "webhooks": {
+            "title": "Alertes & Webhooks",
+            "description": "Abonnements webhooks en temps réel pour les violations de SLA et modifications de données.",
+            "createWebhook": "Enregistrer un Webhook Endpoint",
+            "webhooksList": "Webhooks d'Alerte Actifs",
+            "urlLabel": "URL du Webhook Endpoint",
+            "urlPlaceholder": "https://hooks.slack.com/services/...",
+            "targetUrl": "URL Webhook",
+            "eventLabel": "Événement Déclencheur",
+            "eventType": "Événement Déclencheur",
+            "events": {
+              "qualitySlaFailed": "QUALITY_SLA_FAILED (Échec du SLA Qualité)",
+              "dataUpdated": "DATA_UPDATED (Données Mises à Jour)",
+              "schemaChanged": "SCHEMA_CHANGED (Schéma Modifié)"
+            },
+            "testWebhook": "Tester le Webhook",
+            "testing": "Test en cours...",
+            "status": "Statut",
+            "action": "Action",
+            "active": "ACTIF",
+            "submit": "Enregistrer le Webhook",
+            "submitting": "Abonnement...",
+            "cancel": "Annuler"
+          }
+        },
+        "noDescription": "Aucune description",
+        "domains": {
+          "sales": "Ventes",
+          "finance": "Finance",
+          "hr": "RH",
+          "product": "Produit",
+          "marketing": "Marketing",
+          "operations": "Opérations",
+          "other": "Autre"
+        },
+        "toasts": {
+          "updated": "Ensemble de données mis à jour avec succès",
+          "deleted": "Ensemble de données supprimé",
+          "exported": "Ensemble de données exporté avec succès",
+          "linkCopied": "Lien copié dans le presse-papiers",
+          "deleteConfirm": "Supprimer définitivement cet ensemble de données ? Cette action est irréversible."
+        },
+        "refresh": "Actualiser",
+        "editModal": {
+          "title": "Modifier les détails de l'ensemble de données",
+          "name": "Nom",
+          "namePlaceholder": "Nom de l'ensemble de données",
+          "description": "Description",
+          "descriptionPlaceholder": "Décrivez cet ensemble de données",
+          "domain": "Domaine",
+          "domainPlaceholder": "Sélectionnez un domaine",
+          "domainNone": "Aucun"
+        }
+      }
+    },
+    "dashboards": {
+      "loadingChart": "Chargement du graphique…",
+      "measureBuilder": {
+        "title": "Générateur de Mesures & Formules DAX",
+        "badge": "Compilateur AST",
+        "subtitle": "Créez des mesures calculées et métriques DAX personnalisées pour les widgets de tableau de bord en temps réel",
+        "compileEvaluate": "Compiler et Évaluer",
+        "measureIdentifier": "Identifiant de Mesure",
+        "daxExpression": "Expression DAX",
+        "syntaxHint": "Syntaxe : Compatible SQL / PowerBI DAX",
+        "quickFunctions": "Fonctions Rapides :",
+        "successToast": "Mesure calculée compilée et validée !"
+      },
+      "scheduledExport": {
+        "title": "Centre de rapports et récapitulatifs planifiés",
+        "subtitle": "Automatisez les exportations d'instantanés pour {{dashboardTitle}}",
+        "dispatchFrequency": "Fréquence d'envoi",
+        "recipientLabel": "E-mail(s) du destinataire / Webhook Slack",
+        "exportFormat": "Format d'exportation",
+        "secureShareToken": "Jeton de partage public sécurisé",
+        "cancel": "Annuler",
+        "enableSchedule": "Activer la planification automatique",
+        "copySuccess": "Lien de partage public sécurisé copié dans le presse-papiers",
+        "saveSuccess": "Envoi programmé du rapport {format} configuré ({frequency})",
+        "frequencies": {
+          "daily": "Quotidien",
+          "weekly": "Hebdomadaire",
+          "monthly": "Mensuel"
+        }
+      },
+      "comments": {
+        "title": "Commentaires et annotations",
+        "closeDrawer": "Fermer le volet",
+        "filterAll": "Tous ({{count}})",
+        "filterWidget": "Ce widget",
+        "filterUnresolved": "Non résolu",
+        "noComments": "Aucun commentaire trouvé pour cette vue.",
+        "pin": "Épingle ({{x}} %, {{y}} %)",
+        "markUnresolved": "Marquer comme non résolu",
+        "markResolved": "Marquer comme résolu",
+        "replyCount": "Répondre ({{count}})",
+        "replyingTo": "Réponse au fil n°{{id}}",
+        "replyPlaceholder": "Écrire une réponse...",
+        "addPlaceholder": "Ajouter un commentaire ou une annotation spatiale...",
+        "teamMember": "Membre de l'équipe",
+        "user": "Utilisateur"
+      },
+      "meta": {
+        "title": "Tableaux de Bord - Business Intelligence",
+        "description": "Créez et visualisez des tableaux de bord interactifs"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Accueil",
+          "bi": "Informatique décisionnelle",
+          "dashboards": "Tableaux de Bord"
+        }
+      },
+      "list": {
+        "title": "Tableaux de Bord",
+        "subtitle": "Visualisez vos données avec des tableaux de bord interactifs",
+        "createButton": "Nouveau Tableau de Bord",
+        "loading": "Chargement des tableaux de bord...",
+        "noDescription": "Aucune description fournie",
+        "newDashboardDefaultName": "Nouveau Tableau de Bord",
+        "newDashboardDefaultDescription": "Un nouveau tableau de bord pour visualiser vos insights.",
+        "empty": {
+          "title": "Aucun tableau de bord",
+          "description": "Créez votre premier tableau de bord pour commencer à visualiser vos données.",
+          "cta": "Créer un Tableau de Bord"
+        },
+        "search": {
+          "placeholder": "Rechercher des tableaux de bord...",
+          "noResults": "Aucun tableau de bord trouvé"
+        },
+        "filters": {
+          "all": "Tous",
+          "public": "Public",
+          "private": "Privé"
+        },
+        "stats": {
+          "total": "Total Tableaux",
+          "public": "Publics",
+          "widgets": "Total des widgets"
+        }
+      },
+      "detail": {
+        "tabs": {
+          "overview": "Aperçu",
+          "cockpit": "Cockpit Exécutif",
+          "edit": "Modifier la Mise en Page",
+          "settings": "Paramètres"
+        },
+        "notFound": {
+          "title": "Tableau de Bord Introuvable",
+          "description": "Le tableau de bord que vous recherchez n'existe pas ou a été supprimé.",
+          "backToDashboards": "Retour aux Tableaux de Bord"
+        },
+        "errors": {
+          "createFailed": "Échec de la création du tableau de bord. Veuillez réessayer.",
+          "updateFailed": "Échec de la mise à jour du tableau de bord. Veuillez réessayer.",
+          "deleteFailed": "Échec de la suppression du tableau de bord. Veuillez réessayer.",
+          "loadFailed": "Échec du chargement du tableau de bord. Veuillez réessayer.",
+          "generic": "Une erreur s'est produite. Veuillez réessayer.",
+          "noOrg": "L'utilisateur n'est associé à aucune organisation.",
+          "datasetNotFound": "Jeu de données introuvable.",
+          "emptyDataset": "Le jeu de données ne contient aucune donnée à visualiser.",
+          "generateFailed": "Échec de la génération du tableau de bord.",
+          "accessDenied": "Accès refusé.",
+          "listFailed": "Échec de la liste des tableaux de bord.",
+          "notFound": "Tableau de bord introuvable.",
+          "notFoundOrPrivilege": "Tableau de bord introuvable ou permission refusée.",
+          "widgetError": "Erreur de widget.",
+          "widgetAddFailed": "Échec de l'ajout du widget.",
+          "widgetNotFound": "Widget introuvable."
+        },
+        "success": {
+          "created": "Tableau de bord créé avec succès.",
+          "generated": "Tableau de bord généré automatiquement avec succès.",
+          "retrieved": "Tableau de bord récupéré avec succès.",
+          "updated": "Tableau de bord mis à jour avec succès.",
+          "deleted": "Tableau de bord supprimé avec succès.",
+          "widgetAdded": "Widget ajouté au tableau de bord avec succès.",
+          "widgetDeleted": "Widget supprimé avec succès."
+        },
+        "actions": {
+          "save": "Enregistrer la Mise en Page",
+          "cancel": "Annuler les Modifications",
+          "edit": "Modifier le Tableau de Bord",
+          "delete": "Supprimer",
+          "share": "Partager",
+          "addWidget": "Ajouter un Widget",
+          "generate": "Génération Auto IA",
+          "fullscreen": "Plein Écran",
+          "exitFullscreen": "Quitter Plein Écran"
+        },
+        "autoGenerate": {
+          "title": "Générateur Analytique IA",
+          "description": "Laissez l'IA construire votre tableau de bord basé sur les modèles de données.",
+          "primary": "Générer la Mise en Page",
+          "secondary": "Choisir des Préréglages",
+          "loading": "Architecture du Tableau de Bord...",
+          "success": "Mise en page générée avec succès !",
+          "selectDataset": "Sélectionner un jeu de données"
+        },
+        "deleteConfirm": "Voulez-vous vraiment supprimer ce tableau de bord ?",
+        "settings": {
+          "descriptionPlaceholder": "Entrez une description pour votre tableau de bord",
+          "titlePlaceholder": "Titre du tableau de bord",
+          "public": {
+            "label": "Accès public",
+            "description": "Permettre à toute personne disposant du lien de consulter ce tableau de bord"
+          },
+          "saveSuccess": "Paramètres du tableau de bord enregistrés",
+          "saveError": "Échec de l'enregistrement des paramètres",
+          "deleteSuccess": "Tableau de bord supprimé",
+          "deleteError": "Échec de la suppression du tableau de bord",
+          "saving": "Enregistrement…"
+        },
+        "editor": {
+          "errors": {
+            "failedToLoadColumns": "Échec du chargement des colonnes du jeu de données"
+          },
+          "actions": {
+            "daxMetrics": "Mesures DAX",
+            "scheduleDigest": "Programmer le récapitulatif"
+          },
+          "sidebar": {
+            "tabs": {
+              "data": "Données",
+              "design": "Design",
+              "format": "Format"
+            },
+            "semantic": {
+              "valid": "Configuration valide",
+              "required_dimension": "La dimension de l'axe X est requise",
+              "required_metric": "Au moins une métrique est requise",
+              "pie_limit": "Les graphiques circulaires ne prennent en charge qu'une seule métrique",
+              "kpi_limit": "Les cartes KPI ne prennent en charge qu'une seule métrique"
+            },
+            "data": {
+              "source": "Source de Données",
+              "xAxis": "Axe X (Dimension)",
+              "metrics": "Métriques (Axe Y)",
+              "addMetric": "Ajouter une Métrique",
+              "preview": "Aperçu en Direct",
+              "liveSync": "Synchronisation en direct"
+            },
+            "design": {
+              "chartType": "Type de graphique",
+              "theme": "Thème de couleurs",
+              "interactive": "Interactivity",
+              "glassmorphism": "Glassmorphism",
+              "legend": "Position de la légende",
+              "palettes": {
+                "azure": "Azure",
+                "forest": "Forest",
+                "sunset": "Sunset"
+              }
+            },
+            "format": {
+              "numberFormat": "Format des nombres",
+              "auto": "Auto",
+              "currency": "Currency",
+              "percentage": "Percentage",
+              "decimal": "Decimal",
+              "decimals": "Decimals"
+            },
+            "title": "Générateur de widgets",
+            "description": "Glissez des widgets vers votre tableau de bord"
+          }
+        }
+      },
+      "new": {
+        "detail": {
+          "errors": {
+            "createFailed": "Échec de la création du tableau de bord"
+          },
+          "success": {
+            "created": "Tableau de bord créé avec succès",
+            "generated": "Tableau de bord généré avec succès"
+          }
+        },
+        "meta": {
+          "title": "Créer un tableau de bord - Intelligence d'affaires",
+          "description": "Créer un nouveau tableau de bord"
+        },
+        "nav": {
+          "breadcrumb": {
+            "home": "Accueil",
+            "bi": "Informatique décisionnelle",
+            "dashboards": "Tableaux de Bord",
+            "create": "Créer un Tableau de Bord"
+          }
+        },
+        "title": "Créer un nouveau tableau de bord",
+        "subtitle": "Construisez un tableau de bord personnalisé avec des widgets",
+        "steps": {
+          "basic": "Informations de base",
+          "dataset": "Jeu de données",
+          "widgets": "Widgets",
+          "layout": "Disposition",
+          "preview": "Aperçu"
+        },
+        "form": {
+          "title": {
+            "label": "Titre du tableau de bord",
+            "placeholder": "Entrez un titre descriptif",
+            "hint": "Choisissez un nom clair et mémorable pour votre tableau de bord",
+            "required": "Le titre du tableau de bord est requis"
+          },
+          "description": {
+            "label": "Description",
+            "placeholder": "Décrivez ce que ce tableau de bord montre...",
+            "hint": "Optionnel mais recommandé pour une meilleure organisation"
+          },
+          "visibility": {
+            "label": "Visibilité",
+            "private": "Privé",
+            "privateDesc": "Seul vous pouvez voir ce tableau de bord",
+            "team": "Équipe",
+            "teamDesc": "Les membres de votre organisation peuvent voir",
+            "public": "Public",
+            "publicDesc": "Toute personne disposant du lien peut consulter"
+          },
+          "dataset": {
+            "search": "Rechercher des jeux de données...",
+            "empty": "Aucun jeu de données traité disponible",
+            "upload": "Télécharger un jeu de données",
+            "selected": "Jeu de données sélectionné",
+            "required": "Veuillez sélectionner un jeu de données"
+          },
+          "widgets": {
+            "select": "Ajouter des widgets",
+            "selected": "Widgets sélectionnés",
+            "titlePlaceholder": "Titre du widget",
+            "empty": "Cliquez ci-dessus pour ajouter des widgets",
+            "required": "Veuillez ajouter au moins un widget"
+          },
+          "layout": {
+            "type": "Type de disposition",
+            "types": {
+              "grid": "Grille",
+              "freeform": "Forme libre",
+              "report": "Rapport",
+              "presentation": "Présentation"
+            },
+            "grid": "Paramètres de la grille",
+            "columns": "Colonnes",
+            "rowHeight": "Hauteur des lignes",
+            "gap": "Écart",
+            "presets": {
+              "compact": "Compact",
+              "standard": "Standard",
+              "spacious": "Spacieux"
+            },
+            "preview": "Aperçu de la disposition",
+            "previewEmpty": "Ajoutez des widgets pour voir l'aperçu"
+          },
+          "preview": {
+            "summary": "Résumé",
+            "title": "Titre",
+            "untitled": "Tableau de bord sans titre",
+            "visibility": "Visibilité",
+            "widgets": "Widgets",
+            "layout": "Disposition",
+            "description": "Description",
+            "widgetsPreview": "Aperçu des widgets",
+            "widgetPreview": "Aperçu du widget",
+            "saveDraft": "Enregistrer le brouillon",
+            "publish": "Publier le tableau de bord"
+          }
+        },
+        "types": {
+          "metric": "Carte métrique",
+          "metricDesc": "Affichez une métrique clé unique avec un indicateur de tendance optionnel",
+          "bar": "Graphique à barres",
+          "barDesc": "Comparez des valeurs entre catégories avec des barres horizontales ou verticales",
+          "line": "Graphique linéaire",
+          "lineDesc": "Affichez les tendances dans le temps ou les données continues",
+          "pie": "Graphique circulaire",
+          "pieDesc": "Affichez les proportions d'un tout en tranches",
+          "table": "Tableau",
+          "tableDesc": "Affichez les données en lignes et colonnes avec tri et filtrage",
+          "heatmap": "Carte thermique",
+          "heatmapDesc": "Visualisez la densité ou l'intensité sur deux dimensions"
+        },
+        "navigation": {
+          "back": "Retour",
+          "next": "Suivant"
+        }
+      }
+    },
+    "widgets": {
+      "add": "Ajouter un widget",
+      "edit": "Modifier le widget",
+      "remove": "Supprimer le widget",
+      "moreOptions": "Plus d'options",
+      "fullscreen": {
+        "enter": "Plein écran",
+        "exit": "Quitter le plein écran"
+      },
+      "types": {
+        "metric": "Carte métrique",
+        "bar": "Graphique à barres",
+        "line": "Graphique linéaire",
+        "pie": "Graphique circulaire",
+        "scatter": "Nuage de points",
+        "histogram": "Histogramme",
+        "table": "Tableau",
+        "heatmap": "Carte thermique",
+        "sankey": "Diagramme de Sankey",
+        "radar": "Graphique radar",
+        "funnel": "Entonnoir",
+        "map": "Carte géographique",
+        "treemap": "Treemap",
+        "gauge": "Jauge",
+        "custom": "Widget personnalisé",
+        "area": "Graphique de zone",
+        "kpi": "Carte KPI",
+        "unsupported": "Type non pris en charge"
+      },
+      "aggregations": {
+        "sum": "Somme",
+        "avg": "Moyenne",
+        "count": "Compte",
+        "min": "Min",
+        "max": "Max"
+      },
+      "interactivity": {
+        "export": "Exporter les données"
+      },
+      "config": {
+        "titlePlaceholder": "Titre du widget",
+        "title": "Titre",
+        "description": "Description"
+      },
+      "insight": {
+        "analysis": "Analyse",
+        "dynamicValue": "Tendance en {dimension}",
+        "placeholder": "Aucun aperçu disponible"
+      },
+      "state": {
+        "loading": "Chargement des données...",
+        "error": "Erreur lors du chargement des données",
+        "empty": "Aucune donnée disponible"
+      }
+    },
+    "organizations": {
+      "meta": {
+        "title": "Organisations - Business Intelligence",
+        "description": "Gérez vos organisations et membres d'équipe"
+      },
+      "title": "Organisations",
+      "subtitle": "Gérez vos organisations et équipes",
+      "create": "Créer une Organisation",
+      "createNew": "Nouvelle Organisation",
+      "edit": "Modifier l'Organisation",
+      "view": "Voir les Détails",
+      "switch": "Changer d'Organisation",
+      "active": "Active",
+      "primary": "Principale",
+      "setPrimary": "Définir comme Principale",
+      "noOrganizations": "Aucune organisation trouvée",
+      "getStarted": "Commencez en créant votre première organisation",
+      "createFirst": "Créez votre première organisation",
+      "alreadyHaveOne": "Vous en avez déjà une ?",
+      "checkStatus": "Vérifier le statut",
+      "member": "Membre",
+      "joined": "Rejoint",
+      "manageMembers": "Gérer les Membres",
+      "inviteMember": "Inviter un Membre",
+      "removeMember": "Retirer le Membre",
+      "updateRole": "Mettre à Jour le Rôle",
+      "noDescription": "Aucune description fournie",
+      "stats": {
+        "min": "Min",
+        "max": "Max",
+        "mean": "Moyenne",
+        "sum": "Somme",
+        "uniqueValues": "Valeurs uniques",
+        "unavailable": "Aucune statistique disponible"
+      },
+      "owner": "Propriétaire",
+      "you": "Vous",
+      "loading": "Chargement des organisations...",
+      "tabs": {
+        "overview": "Aperçu",
+        "members": "Membres",
+        "settings": "Paramètres",
+        "datasets": "Jeux de données"
+      },
+      "datasets": {
+        "empty": {
+          "title": "Aucun jeu de données trouvé",
+          "description": "Cette organisation n'a pas encore téléchargé de jeux de données."
+        }
+      },
+      "overview": {
+        "members": "Total des membres",
+        "datasets": "Total des jeux de données",
+        "role": "Votre rôle",
+        "basic_info": "Informations de base",
+        "description": "À propos de l'organisation",
+        "no_description": "Aucune description fournie pour cette organisation."
+      },
+      "status": {
+        "active": "Organisation active"
+      },
+      "actions": {
+        "switch": "Passer à cette organisation",
+        "new_dataset": "Nouveau jeu de données"
+      },
+      "nav": {
+        "back_to_list": "Retour à la liste des organisations",
+        "breadcrumb": {
+          "home": "Accueil",
+          "bi": "Informatique décisionnelle",
+          "organizations": "Organisations"
+        }
+      },
+      "settings": {
+        "description": "Gérez les paramètres et préférences de votre organisation.",
+        "no_permission": "Accès Restreint",
+        "no_permission_desc": "Vous n'avez pas les permissions administratives pour modifier les paramètres de cette organisation."
+      },
+      "list": {
+        "title": "Vos Organisations",
+        "subtitle": "Gérez vos organisations, membres et ressources",
+        "actions": {
+          "create": "Nouvelle Organisation",
+          "leave": "Quitter l'Organisation",
+          "leaveConfirm": "Êtes-vous sûr de vouloir quitter {name} ? Vous perdrez l'accès à toutes ses ressources."
+        },
+        "stats": {
+          "total": "Total des Organisations",
+          "owned": "Propriétaire",
+          "members": "Total Membres"
+        },
+        "empty": {
+          "title": "Aucune Organisation",
+          "description": "Créez votre première organisation pour collaborer avec votre équipe et gérer vos ressources efficacement.",
+          "action": "Créer une Organisation"
+        },
+        "filters": {
+          "search": "Rechercher des organisations..."
+        },
+        "bulkDelete": {
+          "button": "Supprimer ({count})",
+          "confirmTitle": "Supprimer {count} organisations ?",
+          "confirmMessage": "Êtes-vous sûr de vouloir supprimer {count} organisations ? Cette action est irréversible.",
+          "success": "{count} organisations supprimées avec succès",
+          "partialSuccess": "{success} supprimées, {failed} échoués",
+          "error": "Échec de la suppression des organisations",
+          "deleting": "Suppression de {count} organisations..."
+        },
+        "table": {
+          "name": "Organisation",
+          "role": "Votre Rôle",
+          "members": "Membres",
+          "location": "Lieu",
+          "sector": "Secteur",
+          "created": "Créée le",
+          "actions": {
+            "title": "Actions",
+            "view": "Voir Détails",
+            "edit": "Paramètres",
+            "delete": "Supprimer Organisation",
+            "members": "Gérer Membres",
+            "leave": "Quitter l'Organisation"
+          }
+        }
+      },
+      "invitations": {
+        "title": "Invitations en attente",
+        "invitedBy": "Invité par",
+        "actions": {
+          "accept": "Accepter l'Invitation",
+          "decline": "Refuser"
+        }
+      },
+      "roles": {
+        "owner": "Propriétaire",
+        "admin": "Administrateur",
+        "member": "Membre",
+        "moderator": "Modérateur"
+      },
+      "card": {
+        "viewDetails": "Voir Détails",
+        "settings": "Paramètres",
+        "memberCount": "{count} membre",
+        "memberCount_plural": "{count} membres",
+        "createdOn": "Créé le {date}",
+        "ownedByYou": "Propriétaire",
+        "role": "Votre rôle"
+      },
+      "form": {
+        "title": {
+          "create": "Créer une Nouvelle Organisation",
+          "edit": "Modifier l'Organisation"
+        },
+        "name": {
+          "label": "Nom de l'Organisation",
+          "placeholder": "ex. Acme Corp",
+          "hint": "Choisissez un nom clair et mémorable",
+          "required": "Le nom de l'organisation est requis",
+          "minLength": "Le nom doit contenir au moins 2 caractères",
+          "maxLength": "Le nom doit contenir moins de 100 caractères"
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Brève description de votre organisation",
+          "hint": "Optionnel mais recommandé"
+        },
+        "geography": {
+          "label": "Localisation",
+          "placeholder": "Sélectionnez un pays",
+          "hint": "Où se situe votre organisation ?",
+          "required": "La sélection géographique est requise"
+        },
+        "sector": {
+          "label": "Secteur d'activité",
+          "placeholder": "Sélectionnez un secteur",
+          "hint": "Dans quel secteur d'activité opérez-vous ?",
+          "required": "Le secteur d'activité est requis"
+        },
+        "website": {
+          "label": "Site Web",
+          "placeholder": "https://exemple.com",
+          "hint": "Le site web de votre organisation",
+          "invalid": "Veuillez entrer une URL valide"
+        },
+        "submit": {
+          "create": "Créer l'Organisation",
+          "update": "Enregistrer les Modifications",
+          "creating": "Création...",
+          "updating": "Enregistrement..."
+        },
+        "cancel": "Annuler",
+        "error": {
+          "generic": "Une erreur s'est produite lors de l'enregistrement de l'organisation",
+          "alreadyOwner": "Vous possédez déjà une organisation. Chaque utilisateur ne peut posséder qu'une seule organisation.",
+          "nameTaken": "Une organisation avec ce nom existe déjà",
+          "loadFailed": "Échec du chargement des détails de l'organisation"
+        },
+        "success": {
+          "created": "Organisation créée avec succès !",
+          "updated": "Organisation mise à jour avec succès !"
+        }
+      },
+      "delete": {
+        "title": "Supprimer l'Organisation",
+        "subtitle": "Cette action est irréversible",
+        "message": "Êtes-vous sûr de vouloir supprimer {name} ? Toutes les données, membres et ressources associés seront définitivement supprimés.",
+        "hasResources": "Cette organisation a {count} ressource(s) active(s). Veuillez les supprimer ou les transférer avant de supprimer.",
+        "hasMembers": "Cette organisation a {count} membre(s). Ils perdront l'accès à toutes les ressources.",
+        "confirm": "Supprimer l'Organisation",
+        "confirmText": "Tapez SUPPRIMER pour confirmer",
+        "confirmPlaceholder": "Tapez SUPPRIMER",
+        "confirmMismatch": "Veuillez taper SUPPRIMER pour confirmer",
+        "deleting": "Suppression...",
+        "cancel": "Annuler",
+        "error": "Échec de la suppression de l'organisation",
+        "success": "Organisation supprimée avec succès"
+      },
+      "members": {
+        "title": "Membres de l'organisation",
+        "subtitle": "Gérer qui a accès à cette organisation",
+        "loading": "Chargement des membres...",
+        "count": "{count} membre",
+        "count_plural": "{count} membres",
+        "noMembers": "Aucun membre trouvé dans cette organisation.",
+        "noMembersDescription": "Invitez des membres de l'équipe à collaborer sur cette organisation",
+        "inviteButton": "Inviter",
+        "joined": "A rejoint l'équipe",
+        "changeRole": "Changer le Rôle",
+        "you": "(Vous)",
+        "pending": "En attente",
+        "roles": {
+          "owner": "Propriétaire",
+          "admin": "Administrateur",
+          "member": "Membre"
+        },
+        "roleDescriptions": {
+          "owner": "Contrôle total de l'organisation",
+          "admin": "Peut gérer les membres et les paramètres",
+          "member": "Peut voir et utiliser les ressources"
+        },
+        "permissions": {
+          "owner": "Accès complet",
+          "admin": "Gérer les membres, modifier les paramètres",
+          "member": "Lecture seule"
+        },
+        "invite": {
+          "title": "Inviter un Nouveau Membre",
+          "subtitle": "Ajouter un nouveau membre à votre organisation",
+          "email": {
+            "label": "Adresse Email",
+            "placeholder": "collegue@exemple.com",
+            "hint": "Entrez l'email de la personne que vous souhaitez inviter",
+            "required": "L'email est requis",
+            "invalid": "Veuillez entrer une adresse email valide"
+          },
+          "role": {
+            "label": "Rôle",
+            "placeholder": "Sélectionnez un rôle",
+            "hint": "Choisissez le niveau de permission approprié",
+            "required": "Veuillez sélectionner un rôle"
+          },
+          "message": {
+            "label": "Message Personnel (Optionnel)",
+            "placeholder": "Ajoutez une note personnelle à l'invitation...",
+            "hint": "Ceci sera inclus dans l'email d'invitation"
+          },
+          "submit": "Envoyer l'Invitation",
+          "sending": "Envoi...",
+          "cancel": "Annuler",
+          "error": {
+            "generic": "Échec de l'envoi de l'invitation",
+            "userNotFound": "Aucun utilisateur trouvé avec cette adresse email",
+            "alreadyMember": "Cet utilisateur est déjà membre",
+            "alreadyInvited": "Une invitation a déjà été envoyée à cet email"
+          },
+          "success": "Invitation envoyée avec succès !"
+        },
+        "remove": {
+          "title": "Retirer le Membre",
+          "subtitle": "Retirer {name} de cette organisation",
+          "message": "Êtes-vous sûr de vouloir retirer {name} ? Ils perdront l'accès à toutes les ressources de l'organisation.",
+          "cannotRemoveOwner": "Impossible de retirer le propriétaire de l'organisation",
+          "cannotRemoveSelf": "Vous ne pouvez pas vous retirer vous-même. Transférez la propriété ou suppmise l'organisation à la place.",
+          "confirm": "Retirer le Membre",
+          "removing": "Retrait...",
+          "cancel": "Annuler",
+          "error": "Échec du retrait du membre",
+          "success": "Membre retiré avec succès"
+        },
+        "updateRole": {
+          "title": "Mettre à Jour le Rôle",
+          "subtitle": "Changer le rôle de {name}",
+          "currentRole": "Rôle actuel : {role}",
+          "newRole": {
+            "label": "Nouveau Rôle",
+            "placeholder": "Sélectionnez un nouveau rôle"
+          },
+          "cannotChangeOwner": "Impossible de changer le rôle du propriétaire",
+          "cannotChangeSelf": "Vous ne pouvez pas changer votre propre rôle",
+          "confirm": "Mettre à Jour le Rôle",
+          "updating": "Mise à jour...",
+          "cancel": "Annuler",
+          "error": "Échec de la mise à jour du rôle",
+          "success": "Rôle mis à jour avec succès"
+        },
+        "accept": {
+          "title": "Rejoindre {orgName}",
+          "subtitle": "Vous êtes invité(e) à collaborer",
+          "invitedBy": "Invité par {inviterName}",
+          "role": "Votre rôle : {role}",
+          "acceptButton": "Accepter l'invitation",
+          "declineButton": "Refuser",
+          "accepting": "Adhésion en cours...",
+          "declining": "Refus en cours...",
+          "success": "Vous avez rejoint {orgName} !",
+          "successRedirect": "Redirection vers votre organisation...",
+          "declined": "Invitation refusée",
+          "expired": "Cette invitation a expiré",
+          "expiredHint": "Veuillez demander une nouvelle invitation.",
+          "notFound": "Invitation introuvable",
+          "notFoundHint": "Ce lien d'invitation est invalide.",
+          "alreadyMember": "Vous êtes déjà membre de cette organisation",
+          "alreadyMemberHint": "Vous pouvez accéder à l'organisation depuis votre tableau de bord.",
+          "alreadyUsed": "Cette invitation a déjà été utilisée",
+          "alreadyUsedHint": "Cette invitation a déjà été traitée.",
+          "loginRequired": "Veuillez vous connecter pour accepter cette invitation",
+          "loading": "Chargement de l'invitation...",
+          "goToOrganizations": "Aller aux Organisations"
+        },
+        "list": {
+          "title": "Invitations en attente",
+          "empty": "Aucune invitation en attente",
+          "invitedOn": "Invité le {date}",
+          "expiresIn": "Expire dans {days} jours",
+          "expired": "Expirée"
+        },
+        "actions": {
+          "cancel": "Annuler l'invitation",
+          "resend": "Renvoyer l'invitation",
+          "cancelConfirm": "Êtes-vous sûr de vouloir annuler cette invitation ?",
+          "resendConfirm": "Renvoyer l'email d'invitation à {email} ?",
+          "cancelling": "Annulation...",
+          "resending": "Renvoi...",
+          "modalCancel": "Annuler",
+          "modalConfirm": "Confirmer"
+        },
+        "success": {
+          "cancelled": "Invitation annulée",
+          "resent": "Invitation renvoyée avec succès"
+        },
+        "error": {
+          "title": "Erreur",
+          "generic": "Échec du chargement des membres",
+          "cancelFailed": "Échec de l'annulation de l'invitation",
+          "resendFailed": "Échec du renvoi de l'invitation"
+        }
+      },
+      "switcher": {
+        "title": "Changer d'Organisation",
+        "current": "Organisation Actuelle",
+        "switchTo": "Passer à {name}",
+        "manage": "Gérer les Organisations",
+        "create": "Créer une Nouvelle Organisation"
+      },
+      "details": {
+        "title": "Détails de l'Organisation",
+        "overview": "Aperçu",
+        "members": "Membres",
+        "settings": "Paramètres",
+        "info": {
+          "name": "Nom",
+          "description": "Description",
+          "owner": "Propriétaire",
+          "created": "Créé",
+          "updated": "Dernière Mise à Jour",
+          "location": "Localisation",
+          "sector": "Secteur",
+          "website": "Site Web",
+          "memberCount": "Total des Membres"
+        },
+        "actions": {
+          "edit": "Modifier les Détails",
+          "delete": "Supprimer l'Organisation",
+          "leave": "Quitter l'Organisation"
+        }
+      },
+      "errors": {
+        "loadFailed": "Échec du chargement des organisations",
+        "createFailed": "Échec de la création de l'organisation",
+        "updateFailed": "Échec de la mise à jour de l'organisation",
+        "deleteFailed": "Échec de la suppression de l'organisation",
+        "leaveFailed": "Échec de la sortie de l'organisation",
+        "notFound": "Organisation introuvable",
+        "noPermission": "Vous n'avez pas la permission d'effectuer cette action",
+        "ownerOnly": "Seul le propriétaire de l'organisation peut effectuer cette action",
+        "adminOnly": "Seuls les administrateurs peuvent effectuer cette action"
+      },
+      "enums": {
+        "city_label": "Ville",
+        "select_city": "Sélectionnez une ville",
+        "country": {
+          "ALGERIA": "Algérie",
+          "EGYPT": "Égypte",
+          "MOROCCO": "Maroc",
+          "TUNISIA": "Tunisie",
+          "LIBYA": "Libye"
+        },
+        "city": {
+          "ALGIERS": "Alger",
+          "ORAN": "Oran",
+          "CONSTANTINE": "Constantine",
+          "ANNABA": "Annaba",
+          "BLIDA": "Blida",
+          "BATNA": "Batna",
+          "DJELFA": "Djelfa",
+          "SETIF": "Sétif",
+          "SIDI_BEL_ABBES": "Sidi Bel Abbès",
+          "BISKRA": "Biskra",
+          "TEBESSA": "Tébessa",
+          "EL_OUED": "El Oued",
+          "SKIKDA": "Skikda",
+          "TIARET": "Tiaret",
+          "BEJAIA": "Béjaïa",
+          "TLEMCEN": "Tlemcen",
+          "OUARGLA": "Ouargla",
+          "MOSTAGANEM": "Mostaganem",
+          "MSILA": "M'Sila",
+          "GHARDAIA": "Ghardaïa",
+          "CAIRO": "Le Caire",
+          "ALEXANDRIA": "Alexandrie",
+          "GIZA": "Gizeh",
+          "PORT_SAID": "Port-Saïd",
+          "SUEZ": "Suez",
+          "CASABLANCA": "Casablanca",
+          "RABAT": "Rabat",
+          "MARRAKESH": "Marrakech",
+          "TANGIER": "Tanger",
+          "FES": "Fès",
+          "TUNIS": "Tunis",
+          "SFAX": "Sfax",
+          "SOUSSE": "Sousse",
+          "ETTADHAMEN": "Ettadhamen",
+          "KAIROUAN": "Kairouan",
+          "TRIPOLI": "Tripoli",
+          "BENGHAZI": "Benghazi",
+          "MISRATA": "Misrata",
+          "SIRTE": "Syrte",
+          "SABHA": "Sebha",
+          "ADRAR": "Adrar",
+          "CHLEF": "Chlef",
+          "LAGHOUAT": "Laghouat",
+          "OUM_EL_BOUAGHI": "Oum El Bouaghi",
+          "BECHAR": "Béchar",
+          "BOUIRA": "Bouira",
+          "TAMANRASSET": "Tamanrasset",
+          "TIZI_OUZOU": "Tizi Ouzou",
+          "JIJEL": "Jijel",
+          "SAIDA": "Saïda",
+          "GUELMA": "Guelma",
+          "MEDEA": "Médéa",
+          "MASCARA": "Mascara",
+          "EL_BAYADH": "El Bayadh",
+          "ILLIZI": "Illizi",
+          "BORDJ_BOU_ARRERIDJ": "Bordj Bou Arréridj",
+          "BOUMERDES": "Boumerdès",
+          "EL_TARF": "El Tarf",
+          "TINDOUF": "Tindouf",
+          "TISSEMSILT": "Tissemsilt",
+          "KHENCHELA": "Khenchela",
+          "SOUK_AHRAS": "Souk Ahras",
+          "TIPAZA": "Tipaza",
+          "MILA": "Mila",
+          "AIN_DEFLA": "Aïn Defla",
+          "NAAMA": "Naâma",
+          "AIN_TEMOUCHENT": "Aïn Témouchent",
+          "RELIZANE": "Relizane",
+          "TIMIMOUN": "Timimoun",
+          "BORDJ_BADJI_MOKHTAR": "Bordj Badji Mokhtar",
+          "OULED_DJELLAL": "Ouled Djellal",
+          "BENI_ABBES": "Béni Abbès",
+          "IN_SALAH": "In Salah",
+          "IN_GUEZZAM": "In Guezzam",
+          "TOUGGOURT": "Touggourt",
+          "DJANET": "Djanet",
+          "EL_MGHAIR": "El M'Ghair",
+          "EL_MENIAA": "El Meniaa",
+          "AFLOU": "Aflou",
+          "BARIKA": "Barika",
+          "EL_KANTARA": "El Kantara",
+          "BIR_EL_ATER": "Bir El Ater",
+          "EL_ARICHA": "El Aricha",
+          "KSAR_CHELLALA": "Ksar Chellala",
+          "AIN_OUSSERA": "Aïn Oussera",
+          "MESSAAD": "Messaad",
+          "KSAR_EL_BOUKHARI": "Ksar El Boukhari",
+          "BOU_SAADA": "Bou Saâda",
+          "EL_ABIODH_SIDI_CHEIKH": "El Abiodh Sidi Cheikh"
+        },
+        "sector": {
+          "TECHNOLOGY_AND_SOFTWARE": "Technologie & Logiciels",
+          "BANKING_AND_FINANCIAL_SERVICES": "Banque, Finance & Assurance",
+          "HEALTHCARE_AND_PHARMACEUTICALS": "Santé & Industrie Pharmaceutique",
+          "ENERGY_AND_OIL_AND_GAS": "Énergie, Hydrocarbures & Gaz",
+          "AUTOMOTIVE_AND_MANUFACTURING": "Industrie & Fabrication Automobile",
+          "RETAIL_AND_CONSUMER_GOODS": "Commerce, Distribution & E-Commerce",
+          "TELECOMMUNICATIONS": "Télécommunications & Réseaux",
+          "AEROSPACE_AND_DEFENSE": "Aéronautique & Défense",
+          "AGRICULTURE_AND_FOOD_PRODUCTION": "Agriculture & Industrie Agroalimentaire",
+          "TRANSPORTATION_AND_LOGISTICS": "Transport, Logistique & Supply Chain",
+          "EDUCATION_AND_EDTECH": "Éducation, Formation & EdTech",
+          "CONSTRUCTION_AND_REAL_ESTATE": "BTP, Construction & Immobilier",
+          "CONSULTING_AND_PROFESSIONAL_SERVICES": "Conseil, Audit & Services Professionnels",
+          "MEDIA_AND_CREATIVE_INDUSTRIES": "Médias, Communication & Industries Créatives",
+          "TOURISM_AND_HOSPITALITY": "Tourisme, Hôtellerie & Événementiel",
+          "PUBLIC_SECTOR_AND_ADMINISTRATION": "Secteur Public & Administration",
+          "RENEWABLE_ENERGY_AND_CLEANTECH": "Énergies Renouvelables & CleanTech",
+          "MINING_AND_METALLURGY": "Mines, Métallurgie & Matériaux",
+          "TEXTILES_AND_APPAREL": "Textile, Cuir & Habillement",
+          "NON_PROFIT_AND_NGO": "Associations, Fondations & ONG",
+          "OTHER": "Autre / Multi-Secteurs"
+        }
+      }
+    },
+    "reports": {
+      "meta": {
+        "title": "Rapports - Intelligence d'affaires",
+        "description": "Générer des rapports"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Accueil",
+          "bi": "Informatique décisionnelle",
+          "reports": "Rapports"
+        }
+      },
+      "title": "Rapports",
+      "subtitle": "Gérez et planifiez des rapports automatisés",
+      "createButton": "Créer un rapport",
+      "empty": "Aucun rapport trouvé",
+      "createFirst": "Créez votre premier rapport",
+      "search": {
+        "placeholder": "Rechercher des rapports..."
+      },
+      "stats": {
+        "total": "Total des rapports",
+        "active": "Actifs",
+        "completed": "Exécutions terminées",
+        "failed": "Exécutions échouées"
+      },
+      "filters": {
+        "title": "Filtres",
+        "clear": "Effacer",
+        "all": "Tous",
+        "inactive": "Inactif",
+        "format": {
+          "label": "Format",
+          "all": "Tous les formats"
+        },
+        "status": {
+          "label": "Statut",
+          "all": "Tous les statuts"
+        },
+        "dashboard": {
+          "label": "Tableau de bord",
+          "all": "Tous les tableaux de bord"
+        },
+        "active": {
+          "label": "Actif",
+          "all": "Tous",
+          "yes": "Actif",
+          "no": "Inactif"
+        }
+      },
+      "table": {
+        "active": "Actif",
+        "inactive": "Inactif",
+        "lastRun": "Dernière exécution"
+      },
+      "status": {
+        "completed": "Terminé",
+        "failed": "Échoué",
+        "running": "En cours",
+        "pending": "En attente",
+        "cancelled": "Annulé"
+      },
+      "schedule": {
+        "daily": "Quotidien",
+        "weekly": "Hebdomadaire",
+        "monthly": "Mensuel",
+        "manual": "Manuel"
+      },
+      "actions": {
+        "run": "Exécuter maintenant",
+        "edit": "Modifier",
+        "history": "Voir l'historique",
+        "delete": "Supprimer",
+        "activate": "Activer",
+        "deactivate": "Désactiver"
+      },
+      "delete": {
+        "confirm": "Êtes-vous sûr de vouloir supprimer ce rapport ?"
+      },
+      "history": {
+        "title": "Historique des exécutions",
+        "empty": "Aucun historique disponible",
+        "recipients": "destinataires",
+        "retry": "Réessayer",
+        "download": "Télécharger"
+      },
+      "recipients": "Destinataires",
+      "create": {
+        "selectDashboard": "Sélectionner un tableau de bord",
+        "format": "Format",
+        "manual": "Manuel",
+        "interval": "Intervalle",
+        "every": "Tous les",
+        "days": "jour(s)",
+        "weeks": "semaine(s)",
+        "months": "mois",
+        "recipientsPlaceholder": "Entrez les adresses email",
+        "recipientsHint": "Séparez plusieurs adresses email par des virgules",
+        "active": "Actif",
+        "title": "Créer un rapport",
+        "description": "Planifier un nouveau rapport",
+        "name": "Nom du rapport",
+        "desc": "Description",
+        "dashboard": "Tableau de bord",
+        "schedule": "Fréquence",
+        "recipients": "Destinataires",
+        "cancel": "Annuler",
+        "submit": "Créer le rapport"
+      }
+    },
+    "quality": {
+      "meta": {
+        "title": "Qualité des données - Intelligence d'affaires",
+        "description": "Qualité des données"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Accueil",
+          "bi": "Informatique décisionnelle",
+          "quality": "Qualité des Données"
+        }
+      },
+      "title": "Qualité des Données",
+      "subtitle": "Surveillez et améliorez la santé de vos données",
+      "noData": "Aucune donnée de qualité disponible",
+      "actions": {
+        "refresh": "Actualiser l'analyse",
+        "export": "Exporter le rapport"
+      },
+      "freshness": {
+        "title": "Fraîcheur des données",
+        "lastCheck": "Dernière vérification"
+      },
+      "metrics": {
+        "overall": "Score global",
+        "completeness": "Complétude",
+        "uniqueness": "Unicité",
+        "consistency": "Cohérence",
+        "accuracy": "Exactitude"
+      },
+      "trends": {
+        "title": "Tendances de qualité"
+      },
+      "issues": {
+        "filters": "Filtrer les problèmes",
+        "empty": "Aucun problème détecté",
+        "emptyDesc": "Vos données semblent propres !",
+        "column": "Colonne",
+        "type": "Type",
+        "severity": "Sévérité",
+        "affected": "Lignes affectées",
+        "status": "Statut",
+        "date": "Date de détection",
+        "actions": "Actions",
+        "allColumns": "Toutes les colonnes",
+        "resolve": "Marquer comme résolu",
+        "ignore": "Ignorer le problème"
+      },
+      "filters": {
+        "severity": {
+          "all": "Toutes les sévérités"
+        },
+        "type": {
+          "all": "Tous les types"
+        },
+        "status": {
+          "all": "Tous les statuts"
+        }
+      },
+      "severity": {
+        "critical": "Critique",
+        "high": "Élevée",
+        "medium": "Moyenne",
+        "low": "Basse"
+      },
+      "issueTypes": {
+        "missing_values": "Valeurs manquantes",
+        "duplicates": "Doublons",
+        "outliers": "Valeurs aberrantes",
+        "invalid_types": "Types invalides"
+      },
+      "status": {
+        "open": "Ouvert",
+        "resolved": "Résolu",
+        "ignored": "Ignoré",
+        "excellent": "Qualité excellente",
+        "good": "Bonne qualité",
+        "acceptable": "Qualité acceptable",
+        "poor": "Qualité médiocre"
+      },
+      "summary": {
+        "title": "Résumé de qualité",
+        "completeness": {
+          "excellent": "Excellente complétude des données.",
+          "good": "Bonne complétude des données.",
+          "poor": "Complétude des données médiocre - nombreuses valeurs manquantes."
+        },
+        "duplicates": {
+          "few": "Très peu de doublons.",
+          "some": "Quelques enregistrements en double présents.",
+          "high": "Taux élevé de doublons détecté."
+        },
+        "outliers": {
+          "minimal": "Valeurs aberrantes minimes dans les données numériques.",
+          "some": "Quelques valeurs aberrantes présentes dans les données numériques.",
+          "many": "Nombreuses valeurs aberrantes détectées dans les données numériques."
+        },
+        "warnings": {
+          "count": "Remarque : {count} avertissements concernant les données numériques."
+        }
+      },
+      "recommendations": {
+        "title": "Recommandations",
+        "impute_missing": "Envisagez des stratégies d'imputation de données pour les valeurs manquantes",
+        "review_collection": "Révisez les processus de collecte de données pour réduire les données manquantes",
+        "detect_duplicates": "Mettez en place la détection des doublons dans le pipeline d'ingestion des données",
+        "remove_duplicates": "Examinez et supprimez les enregistrements en double avant l'analyse",
+        "investigate_outliers": "Analysez les valeurs aberrantes pour déterminer s'il s'agit d'erreurs ou de valeurs extrêmes valides",
+        "treat_outliers": "Envisagez des méthodes de traitement des valeurs aberrantes pour l'analyse statistique",
+        "poor_quality": "La qualité des données est médiocre. Envisagez une nouvelle collecte ou un nettoyage approfondi avant l'analyse",
+        "good_quality": "La qualité des données est bonne pour l'analyse",
+        "review_issues": "Examinez les problèmes de qualité détectés et corrigez-les."
+      },
+      "dataset": {
+        "title": "Sélectionner un jeu de données",
+        "search": "Rechercher des jeux de données...",
+        "empty": "Aucun jeu de données trouvé"
+      },
+      "level": {
+        "excellent": "Excellent",
+        "good": "Bon",
+        "fair": "Moyen",
+        "poor": "Mauvais"
+      }
+    },
+    "decisions": {
+      "meta": {
+        "title": "Décisions - Intelligence d'affaires",
+        "description": "Gérer les décisions"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Accueil",
+          "bi": "Informatique décisionnelle",
+          "decisions": "Support de Décision"
+        }
+      },
+      "title": "Support de Décision",
+      "subtitle": "Suivez et gérez les décisions basées sur les données",
+      "createButton": "Nouvelle décision",
+      "status": {
+        "draft": "Brouillon",
+        "review": "En révision",
+        "approved": "Approuvée",
+        "implemented": "Mise en œuvre",
+        "archived": "Archivée"
+      },
+      "impact": {
+        "low": "Impact faible",
+        "medium": "Impact moyen",
+        "high": "Impact élevé",
+        "critical": "Impact critique"
+      },
+      "filters": {
+        "title": "Filtres",
+        "clear": "Effacer",
+        "status": {
+          "label": "Statut",
+          "all": "Tous les statuts"
+        },
+        "impact": {
+          "label": "Impact",
+          "all": "Tous les niveaux"
+        },
+        "dateFrom": "Date de début",
+        "dateTo": "Date de fin"
+      },
+      "table": {
+        "empty": "Aucune décision trouvée. Créez votre première décision pour commencer.",
+        "title": "Titre",
+        "owner": "Propriétaire",
+        "updated": "Dernière mise à jour",
+        "actions": "Actions"
+      },
+      "create": {
+        "title": "Enregistrer une décision",
+        "titleLabel": "Titre",
+        "description": "Description",
+        "impact": "Impact attendu",
+        "rationale": "Justification",
+        "expectedOutcome": "Résultat attendu",
+        "cancel": "Annuler",
+        "submit": "Enregistrer la décision"
+      },
+      "drawer": {
+        "id": "ID de la décision",
+        "description": "Description",
+        "rationale": "Justification",
+        "expectedOutcome": "Résultat attendu",
+        "actualOutcome": "Résultat réel",
+        "created": "Créé",
+        "updated": "Mis à jour",
+        "owner": "Propriétaire",
+        "unknown": "Inconnu",
+        "dataset": "Jeu de données",
+        "tags": "Étiquettes",
+        "noHistory": "Aucun historique disponible",
+        "changedBy": "Modifié par",
+        "addComment": "Ajouter un commentaire",
+        "send": "Envoyer",
+        "noComments": "Aucun commentaire pour l'instant",
+        "tabs": {
+          "details": "Détails",
+          "history": "Historique",
+          "comments": "Commentaires"
+        },
+        "transitionTo": {
+          "review": "Soumettre pour révision",
+          "approved": "Approuver",
+          "implemented": "Marquer comme mis en œuvre",
+          "archived": "Archiver"
+        }
+      },
+      "pagination": {
+        "page": "Page",
+        "of": "sur"
+      }
+    },
+    "accessibility": {
+      "chartLabel": "Graphique de type {{type}}",
+      "chartDescription": "Graphique {{type}} affichant {{count}} points de données",
+      "dataTable": "Tableau de données",
+      "loadingAnalytics": "Chargement des analyses, veuillez patienter...",
+      "confidenceGauge": "Jauge de confiance : {{score}} pour cent",
+      "healthScore": "Jauge du score de santé : {{score}} pour cent",
+      "analyticsCards": "Résultats des analyses",
+      "saveDashboard": "Enregistrer le tableau de bord",
+      "closePanel": "Fermer le panneau d'édition",
+      "selectAggregation": "Sélectionner la fonction d'agrégation",
+      "sortColumn": "Trier par colonne"
+    },
+    "home": {
+      "header": {
+        "badge": "Centre de Commandement",
+        "brand": "Podacium",
+        "brandHighlight": "Intelligence",
+        "educationalHub": "Centre Éducatif",
+        "title": "Informatique décisionnelle",
+        "subtitle": "Aperçu en temps réel de vos performances et décisions."
+      },
+      "kpi": {
+        "revenue": "Revenus",
+        "expenses": "Dépenses",
+        "datasets": "Jeux de données",
+        "decisions": "Décisions",
+        "records": "{{count}} lignes",
+        "approved": "{{count}} approuvées"
+      },
+      "health": {
+        "title": "Score de Santé",
+        "margin": "Marge",
+        "cashBuffer": "Réserve de tréso",
+        "informalDebt": "Dette informelle : {{amount}}",
+        "season": "Saison",
+        "refresh": "Actualiser"
+      },
+      "insights": {
+        "title": "Insights en direct",
+        "emptyTitle": "Importez des données pour générer des insights",
+        "emptyCta": "Importer des données →",
+        "generatedAgo": "Généré il y a {{time}}",
+        "refreshed": "Insights actualisés avec succès",
+        "refreshFailed": "Échec de l'actualisation des insights",
+        "confidence": "Niveau de Confiance",
+        "whyDidThisHappen": "Pourquoi cela s'est-il produit ? (Facteurs Clés)",
+        "recentlyUpdated": "Mis à jour récemment",
+        "columnLabel": "Colonne : {{column}}",
+        "baselineTarget": "Cible de Référence ({{column}})",
+        "baselineBenchmark": "Référence Standard",
+        "datasetImpactMetric": "Métrique d'Impact",
+        "categories": {
+          "all": "Toutes les Analyses",
+          "anomaly": "Risques & Anomalies",
+          "trend": "Opportunités de Croissance",
+          "forecast": "Prédictions",
+          "performance": "Performance & Santé"
+        },
+        "urgency": {
+          "critical": "Risque Critique",
+          "warning": "Avertissement",
+          "opportunity": "Opportunité",
+          "info": "Observation"
+        },
+        "actions": {
+          "createDecision": "Créer une Décision",
+          "triggerClean": "Nettoyage Intelligent",
+          "applyFilter": "Appliquer Filtre SQL"
+        }
+      },
+      "pipeline": {
+        "title": "Pipeline de décisions",
+        "viewAll": "Voir tout",
+        "recentTitle": "Décisions Récentes",
+        "emptyTitle": "Aucune décision pour l'instant"
+      }
+    },
+    "onboarding": {
+      "noOrgTitle": "Bienvenue sur Podacium BI",
+      "noOrgSubtitle": "Pour commencer à prendre des décisions basées sur les données, vous devez appartenir à une organisation. Vous pouvez créer la vôtre ou attendre une invitation.",
+      "createTitle": "Créez votre organisation",
+      "createDesc": "Soyez le propriétaire de vos données et de vos insights. Configurez votre profil d'entreprise en quelques secondes.",
+      "createCta": "Créer l'organisation",
+      "joinTitle": "Rejoindre une organisation",
+      "joinDesc": "Vous cherchez votre équipe ? Vérifiez vos e-mails pour les invitations ou contactez votre administrateur.",
+      "joinCta": "Vérifier les invitations",
+      "infoTitle": "Pourquoi utiliser Podacium BI ?",
+      "info1": "Centralisez toutes vos données professionnelles",
+      "info2": "Obtenez des insights propulsés par l'IA automatiquement",
+      "info3": "Partagez des résumés via WhatsApp en un clic",
+      "info4": "Surveillez votre score de santé en temps réel"
+    },
+    "share": {
+      "button": "Partager via WhatsApp",
+      "preparing": "Préparation...",
+      "done": "Partagé",
+      "defaultText": "Découvrez ces informations commerciales sur Podacium BI",
+      "copied": "Copié dans le presse-papiers ! Vous pouvez le coller dans WhatsApp.",
+      "error": "Échec de la génération du lien de partage"
+    },
+    "error": {
+      "loadFailed": "Échec du chargement du tableau de bord",
+      "loadFailedDesc": "Une erreur est survenue lors du chargement de votre tableau de bord. Veuillez réessayer.",
+      "healthScoreFailed": "Échec du chargement du score de santé"
+    },
+    "retry": "Réessayer",
+    "bookmarks": {
+      "views": "Vues",
+      "deletePreset": "Supprimer le prédéfini de vue",
+      "saveCurrentView": "Enregistrer la vue actuelle",
+      "savePresetModalTitle": "Enregistrer le prédéfini de signet",
+      "presetName": "Nom du prédéfini",
+      "presetPlaceholder": "ex. Ventes T3 & Vue Exécutive",
+      "shareOrg": "Partager avec les membres de l'organisation",
+      "setDefault": "Définir comme ma vue de tableau de bord par défaut",
+      "savePreset": "Enregistrer le prédéfini"
+    },
+    "drillThrough": {
+      "defaultTitle": "Sous-ensemble d'enregistrements & Répartition des segments",
+      "defaultSubtitle": "Enregistrements interactifs, distribution statistique et déclencheurs de décision",
+      "recordsCount": "{{count}} enregistrements",
+      "exportCSV": "CSV",
+      "segmentMetrics": "Métriques de segment",
+      "rawRecordSlice": "Extrait d'enregistrements ({{count}})",
+      "createDecisionLog": "Créer un journal de décision",
+      "totalVolume": "Volume Total",
+      "averageTicket": "Panier Moyen",
+      "sliceRows": "Lignes d'extrait",
+      "topBreakdown": "Éléments clés de répartition",
+      "automatedSegmentInsight": "Analyse automatique de segment",
+      "filterPlaceholder": "Filtrer les lignes d'extrait...",
+      "pageInfo": "Page {{page}} sur {{total}}",
+      "decisionTitle": "Titre de la décision",
+      "decisionTitlePlaceholder": "ex. Optimiser l'allocation des stocks pour la région d'Alger",
+      "impactLevel": "Niveau d'impact",
+      "impactCritical": "Critique (Conseil d'administration)",
+      "impactHigh": "Élevé (Chef de département)",
+      "impactMedium": "Moyen (Sprint d'équipe)",
+      "rationaleLabel": "Justification & Plan d'action",
+      "rationalePlaceholder": "Documenter la justification analytique observée dans le segment...",
+      "submitDecision": "Soumettre le journal de décision",
+      "exportSuccess": "CSV de segment exporté avec succès !",
+      "decisionTitleRequired": "Veuillez entrer un titre de décision",
+      "decisionLogged": "Décision exécutive enregistrée à partir du détail de la métrique !"
+    },
+    "smartChart": {
+      "dataPoint": "Point de données",
+      "xAxis": "Axe X",
+      "yAxis": "Axe Y",
+      "palette": "Palette de couleurs",
+      "paletteBrand": "Bleu-Indigo (Marque)",
+      "paletteEmerald": "Croissance Émeraude",
+      "paletteAmber": "Chaleur Ambrée",
+      "paletteRose": "Alerte Rose",
+      "paletteCyan": "Tech Cyan",
+      "aggregation": "Agrégation",
+      "targetGoal": "Ligne d'objectif cible",
+      "targetPlaceholder": "ex. 50000",
+      "rangeLimit": "Limite de plage ({{count}})",
+      "hideGrid": "Masquer la grille",
+      "showGrid": "Afficher la grille",
+      "metricKPI": "KPI de métrique",
+      "aggregatedSum": "Somme agrégée sur {{count}} enregistrements",
+      "goalLabel": "Objectif : {{val}}",
+      "exportSuccess": "CSV exporté avec succès !",
+      "enhancementsTooltip": "Améliorations du graphique & curseurs",
+      "rawTableTooltip": "Basculer vers la vue tableau brut",
+      "exportCSVTooltip": "Exporter le jeu de données CSV",
+      "fullscreenTooltip": "Vue plein écran"
+    },
+    "filterBar": {
+      "period": "Période :",
+      "granularityDaily": "Granularité quotidienne",
+      "granularityWeekly": "Granularité hebdomadaire",
+      "granularityMonthly": "Granularité mensuelle",
+      "granularityQuarterly": "Granularité trimestrielle",
+      "resetAll": "Réinitialiser tout",
+      "appliedToast": "Filtre de date appliqué : {{preset}}"
+    },
+    "uploadWizard": {
+      "title": "Connecteurs de données & Assistant d'ingestion",
+      "subtitle": "Connecter des fichiers CSV/Parquet ou des bases de données relationnelles externes",
+      "step1": "Sélectionner la source",
+      "step2": "Schéma & Format",
+      "step3": "Confirmer & Ingérer",
+      "fileTab": "Téléversement de fichier",
+      "dbTab": "Base de données externe",
+      "waTab": "Journal WhatsApp",
+      "dragPrompt": "Glisser-déposer des fichiers CSV, Parquet ou Excel",
+      "browseFile": "Parcourir les fichiers",
+      "engine": "Moteur",
+      "host": "Hôte / Point d'accès",
+      "port": "Port",
+      "dbName": "Nom de la base de données",
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "enableSsl": "Activer le chiffrement SSL",
+      "testConnection": "Tester la connexion",
+      "waPlaceholder": "Coller le texte d'exportation WhatsApp brut ou les journaux de dette...",
+      "waHelp": "Analyse le texte de discussion non structuré ex. \"Mohamed 15000 DZD - Vente PC Portable\" en tableaux structurés.",
+      "nextSchema": "Suivant : Configurer le schéma",
+      "nextReview": "Suivant : Vérifier & Soumettre",
+      "datasetName": "Nom du jeu de données",
+      "csvDelimiter": "Délimiteur CSV",
+      "detectedColumns": "Colonnes et types de données détectés ({{count}})",
+      "inferredDuckDB": "Déduit via DuckDB",
+      "colName": "Nom de colonne",
+      "type": "Type",
+      "sampleValue": "Valeur d'exemple",
+      "back": "Retour",
+      "readyIngest": "Prêt à ingérer \"{{name}}\"",
+      "targetEngineInfo": "Moteur cible : Stockage DuckDB Parquet avec indexation analytique vectorisée.",
+      "sourceType": "Type de source :",
+      "detectedColsCount": "Colonnes détectées :",
+      "encoding": "Encodage :",
+      "ingesting": "Ingestion du jeu de données...",
+      "confirmImport": "Confirmer & Importer",
+      "fileSelectError": "Veuillez sélectionner un fichier à téléverser",
+      "dbConnectSuccess": "Connexion à la base de données réussie !",
+      "dbConnectFailed": "Échec du test de connexion à la base de données",
+      "uploadSuccess": "Jeu de données téléversé avec succès !",
+      "dbSavedSuccess": "Connecteur DB externe enregistré avec succès !",
+      "fileFormatsHelp": "Prend en charge CSV, Parquet, Excel, JSON jusqu'à 250 Mo",
+      "dbFillError": "Veuillez renseigner l'hôte, le nom de la base de données et le nom d'utilisateur",
+      "engines": {
+        "snowflake": "Snowflake"
+      },
+      "delimiters": {
+        "comma": "Virgule (,)",
+        "semicolon": "Point-virgule (;)",
+        "tab": "Tabulation (\\t)"
+      }
+    },
+    "insights": {
+      "title": "Insights en direct",
+      "emptyTitle": "Importez des données pour générer des insights",
+      "emptyCta": "Importer des données →",
+      "generatedAgo": "Généré il y a {{time}}",
+      "refreshed": "Insights actualisés avec succès",
+      "refreshFailed": "Échec de l'actualisation des insights",
+      "confidence": "Niveau de Confiance",
+      "whyDidThisHappen": "Pourquoi cela s'est-il produit ? (Facteurs Clés)",
+      "recentlyUpdated": "Mis à jour récemment",
+      "columnLabel": "Colonne : {{column}}",
+      "baselineTarget": "Cible de Référence ({{column}})",
+      "baselineBenchmark": "Référence Standard",
+      "datasetImpactMetric": "Métrique d'Impact",
+      "categories": {
+        "all": "Toutes les Analyses",
+        "anomaly": "Risques & Anomalies",
+        "trend": "Opportunités de Croissance",
+        "forecast": "Prédictions",
+        "performance": "Performance & Santé"
+      },
+      "urgency": {
+        "critical": "Risque Critique",
+        "warning": "Avertissement",
+        "opportunity": "Opportunité",
+        "info": "Observation"
+      },
+      "feedback": {
+        "helpful": "Aperçu utile",
+        "notHelpful": "Pas utile"
+      },
+      "significanceStats": "p < 0,01 • N=14 280",
+      "actions": {
+        "createDecision": "Créer une Décision",
+        "triggerClean": "Nettoyage Intelligent",
+        "applyFilter": "Appliquer Filtre SQL"
+      },
+      "businessAiInsights": "Insights IA d'entreprise",
+      "prescriptiveTitle": "Insights d'affaires prescriptifs IA/ML",
+      "prescriptiveDesc": "Analyse automatisée des causes profondes, triage des risques et recommandations d'actions prescriptives.",
+      "demo": {
+        "anomTitle": "Forte densité de valeurs aberrantes détectée",
+        "anomDesc": "Les montants des transactions montrent un écart de 24,5 % par rapport à la référence historique sur 30 jours.",
+        "trendTitle": "Forte croissance des revenus et du volume",
+        "trendDesc": "Le volume global des transactions a augmenté de +18,4 % par rapport à la période précédente.",
+        "perfTitle": "Score de qualité et d'exhaustivité des données",
+        "perfDesc": "L'intégrité du schéma respecte à 100 % les seuils SLA de qualité des données sur Podacium."
+      },
+      "correlation": {
+        "title": "Matrice de corrélation et explorateur de relations",
+        "description": "Explorez les corrélations linéaires entre les dimensions numériques de votre jeu de données.",
+        "howToRead": "Comment lire les corrélations",
+        "spectrum": "Spectre de force de corrélation (-1,0 à +1,0)",
+        "note": "Note : La corrélation mesure la covariation statistique, non la relation de cause à effet.",
+        "strongPositive": "Forte positive : Les variables évoluent ensemble",
+        "moderatePositive": "Modérée positive : Légère covariation positive",
+        "neutral": "Neutre : Aucune relation linéaire nette",
+        "moderateNegative": "Modérée négative : Légère covariation inverse",
+        "strongNegative": "Forte négative : Les variables évoluent en sens inverse",
+        "heatmapGrid": "Grille de carte thermique",
+        "keyConnections": "Connexions clés",
+        "lowerTriangle": "Triangle inférieur uniquement",
+        "fullMatrix": "Vue matrice complète",
+        "allPairs": "Toutes les paires",
+        "strong": "Fortes (|r| ≥ 0,5)",
+        "positive": "Positives (r > 0)",
+        "negative": "Négatives (r < 0)",
+        "column": "Colonne",
+        "noMatches": "Aucune corrélation ne correspond au filtre sélectionné.",
+        "noData": "Aucune donnée de corrélation numérique disponible pour ce jeu de données."
+      }
+    },
+    "copilot": {
+      "title": "PoDalil IA (بودليل)",
+      "versionBadge": "PoDalil v2.4",
+      "subtitle": "Posez des questions d'analyse en langage naturel ou détectez des aperçus automatisés sur vos ensembles de données DZD",
+      "autoInsights": "Aperçus automatiques",
+      "placeholder": "Demander à PoDalil : ex. « Quelle est notre wilaya la plus performante en marge brute ? »",
+      "analyzing": "Analyse en cours...",
+      "ask": "Demander",
+      "suggestions": "Suggestions :",
+      "narrativeTitle": "Récit exécutif de l'IA",
+      "queryExecSuccess": "Requête d'analyse IA exécutée avec succès",
+      "sampleQueries": {
+        "revenueGrowth": "Afficher la croissance trimestrielle des revenus par wilaya en DZD",
+        "churnAnomalies": "Détecter les anomalies de désabonnement dans les abonnements Entreprise",
+        "forecastBookings": "Prévoir les réservations freelance de la place de marché pour le T4"
+      }
+    },
+    "embed": {
+      "defaultTitle": "Analytique d'entreprise intégrée",
+      "ssoMode": "Mode d'intégration authentifié SSO",
+      "refreshData": "Actualiser les données",
+      "loadingAnalytics": "Chargement des analyses vérifiées par la sécurité...",
+      "activeOrgTenant": "Locataire de l'organisation actif",
+      "verifiedTenantScope": "Périmètre du locataire vérifié",
+      "embedTargetId": "ID de la cible d'intégration",
+      "dashboardTarget": "Tableau de bord n°{{id}}",
+      "systemAuto": "Auto système",
+      "securityEntitlement": "Autorisation de sécurité",
+      "tokenVerified": "Jeton vérifié (RS256)",
+      "invalidToken": "Jeton d'intégration non valide ou manquant"
+    },
+    "cockpit": {
+      "alert": "Alerte",
+      "trend": {
+        "driverFilter": "Filtre Levier : {driver}",
+        "actualNet": "Net Réel",
+        "budgetBaseline": "Base Budgétaire",
+        "targetGoal": "Objectif Cible",
+        "chartAriaLabel": "Graphique de Tendance Principale"
+      },
+      "waterfall": {
+        "outlierSingle": "Anomalie",
+        "outlierPlural": "Anomalies",
+        "baseline": "Base",
+        "gain": "Gain",
+        "drag": "Impact Négatif",
+        "ariaLabel": "Graphique de Décomposition en Cascade de la Variance",
+        "runningTotal": "Total Cumulé :",
+        "thDriver": "Levier",
+        "thAmount": "Montant",
+        "thRunningTotal": "Total Cumulé",
+        "thOutlierStatus": "Statut Anomalie",
+        "normalStatus": "Normal",
+        "outlierLabel": "Anomalie (Z={zScore})"
+      },
+      "simulator": {
+        "title": "Bac à Sable de Simulation Directionnelle (Modélisation de Sensibilité)",
+        "targetReached": "Objectif Atteint ({amount})",
+        "monteCarlo": "Monte-Carlo {ms}ms · IC 95%",
+        "description": "Ajustez les curseurs des leviers pour modéliser les trajectoires de revenus en temps réel et cartographier les exigences vers la zone cible.",
+        "reset": "Réinitialiser",
+        "createMemo": "Créer une Note de Décision",
+        "projectedTrajectory": "Trajectoire Projetée sur 6 Mois",
+        "baselineCurve": "Courbe de Référence",
+        "simulatedProjection": "Projection Simulée",
+        "ci95": "IC 95%",
+        "targetGoalZone": "Zone Objectif Cible",
+        "chartAriaLabel": "Graphique de Projection de Simulation",
+        "ciRange": "Plage IC 95% :",
+        "targetGoal": "Objectif Cible :"
+      },
+      "executive": {
+        "badge3Tier": "Cockpit à 3 Niveaux",
+        "badgeInvertedPyramid": "Pyramide Inversée en Temps Réel",
+        "badgeDzdStandard": "Standard Monétaire DZD",
+        "ariaVitalSigns": "Signes Vitaux Exécutifs",
+        "ariaRootCause": "Analyse des Causes Racines et Tendances",
+        "varianceDriversTitle": "Facteurs de Variance : {metric}",
+        "varianceDriversSubtitle": "Décomposition du delta global vs. {baseline}",
+        "revenueTrendTitle": "Tendance Historique des Revenus sur 6 Mois",
+        "revenueTrendSubtitle": "Trajectoire réelle vs. base budgétaire et seuil objectif",
+        "ariaSensitivitySandbox": "Bac à Sable de Sensibilité Directionnelle"
+      },
+      "drawer": {
+        "closeAria": "Fermer le panneau",
+        "totalVolume": "Volume Total",
+        "avgLineItem": "Ligne Moyenne",
+        "totalRecords": "Total Enregistrements",
+        "filterPlaceholder": "Filtrer entités, catégories ou statuts...",
+        "numberedTitle": "Pagination par pages numérotées",
+        "pages": "Pages",
+        "infiniteTitle": "Défilement infini / liste continue",
+        "infinite": "Infini",
+        "exportCsv": "Exporter CSV",
+        "newMemoTitle": "Nouvelle Note de Décision Directionnelle",
+        "cancel": "Annuler",
+        "decisionTitle": "Titre de la Décision",
+        "decisionPlaceholder": "ex. Valider le niveau de mise en cache serveur pour juguler les coûts cloud",
+        "actionPlan": "Plan d'Action / Étapes de Mise en Œuvre",
+        "actionPlanPlaceholder": "Détails pour l'exécution opérationnelle...",
+        "assignedOwner": "Responsable Assigné",
+        "owners": {
+          "dg": "Directeur Général (DG)",
+          "daf": "Directeur Administratif et Financier (DAF)",
+          "eng": "Directeur Technique / Ingénierie",
+          "growth": "VP Croissance & Marketing"
+        },
+        "logDecisionMemo": "Enregistrer la Note de Décision",
+        "memoPrompt": "Transformez cette observation de segment en décision de gouvernance concrète.",
+        "logMemoBtn": "Enregistrer Note",
+        "thEntity": "Entité",
+        "thCategory": "Catégorie",
+        "thAmount": "Montant",
+        "thVariance": "Variance",
+        "thStatus": "Statut",
+        "loadingRecords": "Chargement des enregistrements...",
+        "noRecords": "Aucun enregistrement ne correspond aux critères de filtre.",
+        "loadedCount": "{visible} enregistrements chargés sur {total}",
+        "loadMore": "Charger Plus (+{rows})",
+        "showingRange": "Affichage de {start}–{end} sur {total}",
+        "rowsPerPage": "Lignes par page :",
+        "firstPage": "Première page",
+        "prevPage": "Page précédente",
+        "nextPage": "Page suivante",
+        "lastPage": "Dernière page",
+        "pageIndicator": "Page {page} sur {totalPages}",
+        "continuousActive": "Défilement continu actif",
+        "closeInspection": "Fermer l'Inspection"
+      }
+    }
+  }
+}

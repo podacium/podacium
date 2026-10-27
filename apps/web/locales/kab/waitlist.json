@@ -1,0 +1,141 @@
+{
+  "waitlist": {
+    "meta": {
+      "title": "Rnu ɣer Tebyart n Uraja — Podacium",
+      "description": "Ili-k d amezwaru ara yekcmen ɣer tensa tamezdayt n Lezzayer i ulmad, amahil ililelli d tusna n tnezzut."
+    },
+    "hero": {
+      "badge": "Anekcum Amezwaru — Imukan D Idrusan",
+      "headline": "Imal-inek Umḍin Ibeddu Dagi",
+      "subheadline": "Ili-k gar yimezwura ara yernun ɣer tensa tamezdayt n Lezzayer i ulmad, amahil ililelli d tusna n tnezzut.",
+      "countdown": "Tuffɣa deg"
+    },
+    "form": {
+      "title": "Ḥrez Amkan-inek",
+      "subtitle": "Rnu ɣer yidzayriyen yettmuqqulen ɣer sdat yellan yakan deg tebyart",
+      "nameLabel": "Isem Amakku",
+      "namePlaceholder": "amd. Amine Benali",
+      "emailLabel": "Tansa E-mail",
+      "emailPlaceholder": "amd. amine@example.com",
+      "referralLabel": "Tangalt n Uceggeɛ (afrayan)",
+      "referralPlaceholder": "amd. ABC12345",
+      "referralValid": "Inced-ik-id {name} — tewwiḍ-d asunqes!",
+      "referralInvalid": "Tangalt-a ulac-itt. Ttxil-k senqed u ales aɛreḍ.",
+      "referralValidating": "Asenqed n tengalt…",
+      "terms": "Qebleɣ Tiwtilin n Usemres d Tsertit n Tbaḍnit",
+      "submit": "Rnu ɣer Tebyart n Uraja",
+      "submitting": "Ajerred deg uselkem…",
+      "success": "Telliḍ deg tebyart!",
+      "errors": {
+        "nameRequired": "Ttxil-k sekcem isem-inek",
+        "nameInvalid": "Isem ilaq ad yesɛu gar 2 d 80 n yisekkilen",
+        "emailRequired": "Ttxil-k sekcem e-mail-inek",
+        "emailInvalid": "Ttxil-k sekcem e-mail iṣeḥḥan",
+        "emailDisposable": "Tansiwin e-mail n tikkelt kan ur ttwaqbalent ara",
+        "duplicateEmail": "Telliḍ yakan deg tebyart n uraja! Bḍu aseysey-inek n uceggeɛ ddaw-a.",
+        "invalidReferral": "Tangalt n uceggeɛ ur tuɣid ara",
+        "selfReferral": "Ur tezmireḍ ara ad tencedeḍ iman-ik",
+        "rateLimited": "Aṭas n turmitin. Ales aɛreḍ ticki.",
+        "serverError": "Tella-d tuccḍa. Ales aɛreḍ.",
+        "termsRequired": "Ttxil-k qbel tiwtilin"
+      }
+    },
+    "dashboard": {
+      "title": "Ansuf yis-k ɣer Yimal, {name}!",
+      "position": "Telliḍ d uṭṭun #{position} deg ubrid",
+      "referral": {
+        "title": "Nced & Ali deg Tebyart",
+        "subtitle": "Bḍu aseysey-inek u ali deg ubrid. Yal tikelt ara tencedeḍ imdukkal, ad taweḍeḍ zik ɣer tensa.",
+        "linkLabel": "Aseysey-inek n uceggeɛ",
+        "copy": "Senɣel Aseysey",
+        "copied": "Yettwasenɣel!",
+        "shareTitle": "Bḍu ɣef",
+        "progress": "{count} / {goal} n yincewden",
+        "nextReward": "Arraz i d-iteddun ɣer {goal} n yincewden",
+        "milestones": {
+          "freeMonth": "Aggur Baṭel",
+          "freeYear": "Aseggas Baṭel",
+          "earlyAccess": "Anekcum Amezwaru",
+          "badge": "Tiggezt Tuzzigt"
+        }
+      }
+    },
+    "leaderboard": {
+      "title": "Imencewden Imezwura",
+      "rank": "#",
+      "name": "Isem",
+      "referrals": "Incewden",
+      "empty": "Ili-k d amezwaru ara yenceden amdakkul!"
+    },
+    "countdown": {
+      "days": "Ussan",
+      "hours": "Tisaɛin",
+      "minutes": "Tiseddarin",
+      "seconds": "Tisinatin",
+      "totalGoal": "{count} / {goal} jerreden",
+      "live": "Neffeɣ-d s srid!"
+    },
+    "why": {
+      "title": "Acuɣer Podacium?",
+      "cards": {
+        "learn": {
+          "title": "Lmed s Yiswi",
+          "desc": "Timsirin yettwasuddsen d yibriden iṣeḥḥan i ulzuz n umahil adzayri d yiswiren igraɣlanen."
+        },
+        "earn": {
+          "title": "Rbeḥ akken i k-yewata",
+          "desc": "Qqen d yimsaɣen, sken timusniwin-inek u awi tidrimt — ulzuz amezwaru n umahil ililelli deg Lezzayer."
+        },
+        "analyze": {
+          "title": "Sleḍ & Ffer Teɣtasin",
+          "desc": "Ifecka n tusna n tnezzut i tkebbaniyin timectuḥin: ḍfer tiseddarin, serwes d yimzizlen u qdec s yisefta n tidet."
+        },
+        "local": {
+          "title": "Yettwabna i Lezzayer",
+          "desc": "S kraḍt n tutlayin (Taqbaylit / Taɛrabt / Tafransist / Taglizit), yewjed akken iwata i RTL d waddad n ulzuz adzayri."
+        }
+      }
+    },
+    "footer": {
+      "tagline": "Lmed. Mahel. Sleḍ. Nnerni. — Akk deg yiwen n wemkan."
+    },
+    "email": {
+      "confirmed": "Senqed tabwaṭ-inek n yimaylen i usentem",
+      "resend": "Ales tuzna n e-mail"
+    },
+    "admin": {
+      "title": "Asefrek n Tebyart n Uraja",
+      "stats": {
+        "total": "Akk Ijerriḍen",
+        "pending": "Yettraǧun",
+        "verified": "Yettwasenqden",
+        "converted": "Ibeddlen",
+        "bounced": "I d-yuɣalen",
+        "unsubscribed": "I yeffɣen",
+        "conversionRate": "Aswir n Ubeddel",
+        "avgReferrals": "Alemmas n Yincewden/Aseqdac"
+      },
+      "table": {
+        "name": "Isem",
+        "email": "E-mail",
+        "referrals": "Incewden",
+        "status": "Addad",
+        "date": "Azemz",
+        "actions": "Iggiyeen"
+      },
+      "confirmDelete": "Kkes afran-a seg tebyart n uraja?",
+      "empty": "Ulac iferdisen deg tebyart n uraja",
+      "filters": {
+        "all": "Akk",
+        "pending": "Yettraǧun",
+        "verified": "Yettwasenqden",
+        "converted": "Ibeddlen",
+        "bounced": "I d-yuɣalen",
+        "unsubscribed": "I yeffɣen",
+        "search": "Nadi s yisem neɣ e-mail…",
+        "export": "Suffeɣ CSV"
+      },
+      "pageOf": "Asebter {page} seg {totalPages}"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "settings-security": {
+    "meta": {
+      "title": "Security Settings",
+      "description": "Manage your account security and two-factor authentication"
+    },
+    "page": {
+      "home": "Home",
+      "settings": "Settings",
+      "title": "Security Settings",
+      "subtitle": "Manage your account security and configure two-factor authentication",
+      "mfaSection": "Two-Factor Authentication",
+      "mfaDesc": "Add an extra layer of security to your account",
+      "statusEnabled": "Two-factor authentication is enabled",
+      "statusDisabled": "Two-factor authentication is disabled",
+      "noMethods": "No MFA methods configured",
+      "activeMethods": "Active Methods",
+      "totp": {
+        "title": "Authenticator App",
+        "desc": "Use Google Authenticator, Microsoft Authenticator, or any TOTP app",
+        "setup": "Set up Authenticator App",
+        "scanQR": "Scan this QR code with your authenticator app",
+        "qrCodeAlt": "TOTP QR Code",
+        "orEnterKey": "Or enter this key manually:",
+        "revealKey": "Reveal secret key",
+        "hideKey": "Hide secret key",
+        "clickToCopy": "Click to copy",
+        "copied": "Copied to clipboard",
+        "enterCode": "Enter the 6-digit code from your app",
+        "codePlaceholder": "000000",
+        "verify": "Verify & Enable",
+        "enabled": "Authenticator app is active",
+        "disable": "Disable Authenticator",
+        "success": "Authenticator app enabled successfully"
+      },
+      "email": {
+        "title": "Email OTP",
+        "desc": "Receive a one-time code via email when signing in",
+        "setup": "Set up Email OTP",
+        "sendCode": "Send verification code",
+        "codeSent": "A verification code has been sent to your email",
+        "enterCode": "Enter the 6-digit code",
+        "verify": "Verify & Enable",
+        "enabled": "Email OTP is active",
+        "disable": "Disable Email OTP",
+        "success": "Email OTP enabled successfully"
+      },
+      "webauthn": {
+        "title": "Passkey (Biometric)",
+        "desc": "Use your fingerprint, face, or device PIN for secure authentication",
+        "setup": "Register Passkey",
+        "registering": "Checking your device...",
+        "notSupported": "Passkeys are not supported on this device or browser",
+        "cancelled": "Passkey registration cancelled",
+        "enabled": "Passkey is active",
+        "disable": "Remove Passkey",
+        "success": "Passkey registered successfully",
+        "noPlatformBiometrics": "No built-in biometric sensor (Touch ID/Windows Hello) detected on this computer.",
+        "openOnMobile": "Setup from Mobile Phone",
+        "mobileQrPrompt": "Scan this QR code with your phone camera to open this page directly on your phone and register with fingerprint/Face ID in 1 tap:",
+        "bluetoothNotice": "Note: Linking a phone from desktop via QR requires Bluetooth enabled on both devices."
+      },
+      "backupCodes": {
+        "title": "Backup Codes",
+        "desc": "Use these single-use codes to sign in if you lose access to your authenticator",
+        "remaining": "{count} codes remaining",
+        "generate": "Generate Backup Codes",
+        "regenerate": "Regenerate Codes",
+        "regenerateConfirm": "This will invalidate all your existing backup codes. Continue?",
+        "saveWarning": "Save these codes in a secure place. You will not be able to see them again.",
+        "copy": "Copy",
+        "download": "Download",
+        "downloaded": "Make sure you have saved these codes",
+        "generated": "Backup codes generated successfully",
+        "noCodes": "No backup codes generated"
+      },
+      "disable": {
+        "title": "Disable Two-Factor Authentication",
+        "confirm": "Enter your password to disable all 2FA methods",
+        "passwordPlaceholder": "Current password",
+        "cancel": "Cancel",
+        "submit": "Disable 2FA",
+        "success": "Two-factor authentication disabled"
+      },
+      "generalPrefs": {
+        "title": "Security Preferences",
+        "desc": "Manage login alerts, multi-device management, and session timeout thresholds.",
+        "loginAlerts": "Login Alerts",
+        "loginAlertsDesc": "Receive email alerts on unrecognized device logins",
+        "deviceMgmt": "Device Management",
+        "deviceMgmtDesc": "Track active browser sessions and trusted devices",
+        "sessionTimeout": "Session Timeout"
+      },
+      "securityPrefsSaved": "Security preferences saved successfully"
+    },
+    "toast": {
+      "enabled": "Two-factor authentication enabled",
+      "disabled": "Two-factor authentication disabled",
+      "codeSent": "Verification code sent to your email",
+      "invalidCode": "Invalid verification code",
+      "backupCodesCopied": "Backup codes copied to clipboard",
+      "backupCodesGenerated": "New backup codes generated",
+      "passkeyRegistered": "Passkey registered successfully",
+      "passkeyFailed": "Failed to register passkey",
+      "emailOtpSent": "Verification code sent",
+      "emailOtpVerified": "Email OTP verified successfully"
+    },
+    "errors": {
+      "invalidPassword": "Invalid password",
+      "codeRequired": "Verification code is required",
+      "setupFirst": "Please set up the method first",
+      "emailNotAvailable": "Email service is temporarily unavailable. Please try again later.",
+      "generic": "An error occurred. Please try again."
+    }
+  }
+}

@@ -1,0 +1,5195 @@
+generator client {
+  provider                    = "prisma-client-py"
+  output                      = "../app/generated/prisma"
+  enable_experimental_decimal = "true"
+  recursive_type_depth        = -1
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Preserved for future licensed PSP operations under Bank of Algeria Regulation 25-02
+model Wallet {
+  id                 Int                 @id @default(autoincrement())
+  userId             Int?                @unique
+  organizationId     Int?                @unique
+  podaPoints         Int                 @default(0)
+  currency           String              @default("PODAPOINT")
+  isActive           Boolean             @default(true)
+  lastTopUpAt        DateTime?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  deletedAt          DateTime?
+  escrowHolds        EscrowHold[] // Preserved for future licensed PSP operations under Bank of Algeria Regulation 25-02
+  payouts            Payout[] // Preserved for future licensed PSP operations under Bank of Algeria Regulation 25-02
+  walletTransactions Transaction[]
+  organization       Organization?       @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user               User?               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  transactions       WalletTransaction[]
+
+  @@index([userId])
+  @@index([organizationId])
+  @@index([podaPoints])
+  @@index([isActive])
+  @@index([createdAt])
+}
+
+/// Preserved for future licensed PSP operations under Bank of Algeria Regulation 25-02
+model EscrowHold {
+  id                 Int           @id @default(autoincrement())
+  contractId         Int           @unique
+  walletId           Int
+  amount             Int
+  currency           String        @default("DZD")
+  status             String        @default("HOLD")
+  releaseConditions  Json?
+  scheduledReleaseAt DateTime?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+  releasedAt         DateTime?
+  refundedAt         DateTime?
+  releasedAmount     Int           @default(0)
+  contract           Contract      @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  wallet             Wallet        @relation(fields: [walletId], references: [id])
+  transactions       Transaction[]
+
+  @@index([contractId])
+  @@index([walletId])
+  @@index([status])
+  @@index([scheduledReleaseAt])
+  @@index([createdAt])
+}
+
+model WalletTransaction {
+  id              Int            @id @default(autoincrement())
+  walletId        Int
+  amount          Int
+  previousBalance Int
+  newBalance      Int
+  type            String
+  purpose         PaymentPurpose
+  referenceId     String?
+  description     String?
+  metadata        Json?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime?      @updatedAt
+  wallet          Wallet         @relation(fields: [walletId], references: [id])
+
+  @@index([walletId])
+  @@index([referenceId])
+  @@index([type])
+  @@index([purpose])
+  @@index([createdAt])
+  @@index([walletId, createdAt])
+}
+
+model FreelancerProfile {
+  id                      Int            @id @default(autoincrement())
+  userId                  Int            @unique
+  tier                    FreelancerTier @default(NEW)
+  commissionRate          Decimal        @default(0.0) @db.Decimal(5, 2) // Preserved for future PSP operations
+  completedProjects       Int            @default(0)
+  totalEarned             Int            @default(0) // Preserved for future PSP operations
+  platformFee             Int            @default(0) // Preserved for future PSP operations
+  isVerified              Boolean        @default(false)
+  featured                Boolean        @default(false)
+  featuredBoost           Float          @default(0.0) // decayable boost score (1.0 → 0 over 7d)
+  featuredUntil           DateTime?
+  isPremium               Boolean        @default(false)
+  skillPassportVerified   Boolean        @default(false)
+  skillPassportVerifiedAt DateTime?
+  isAnaeRegistered        Boolean        @default(false) // Loi 22-23 Auto-Entrepreneur status
+  anaeCardNumber          String?
+  ribCcpNumber            String?
+  metadata                Json?
+  createdAt               DateTime       @default(now())
+  updatedAt               DateTime       @updatedAt
+  contracts               Contract[]
+  user                    User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([tier])
+  @@index([commissionRate])
+  @@index([completedProjects])
+  @@index([isVerified])
+}
+
+model StudentProfile {
+  id                 Int      @id @default(autoincrement())
+  userId             Int      @unique
+  headline           String?
+  learningGoals      String?
+  careerPath         String?
+  totalLearningHours Float    @default(0)
+  completedCourses   Int      @default(0)
+  averageQuizScore   Float?
+  bestSubject        String?
+  badges             Json?
+  wishlist           Int[]    @default([])
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model InstructorProfile {
+  id                 Int       @id @default(autoincrement())
+  userId             Int       @unique
+  headline           String?
+  totalStudents      Int       @default(0)
+  totalCourses       Int       @default(0)
+  totalCourseHours   Float     @default(0)
+  averageRating      Float?
+  reviewCount        Int       @default(0)
+  responseRate       Float?
+  responseTimeHours  Int?
+  languages          String[]  @default([])
+  credentials        Json?
+  workExperience     Json?
+  publications       Json?
+  teachingCategories String[]  @default([])
+  featuredCourseId   Int?
+  instructorSince    DateTime  @default(now())
+  lastCourseUpdate   DateTime?
+  satisfactionRate   Float?
+  curriculumVitae    String?
+  researchInterests  String[]  @default([])
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  user               User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([averageRating])
+}
+
+model BusinessProfile {
+  id                Int      @id @default(autoincrement())
+  userId            Int      @unique
+  headline          String?
+  companyRole       String?
+  department        String?
+  industry          String?
+  companySize       String?
+  yearsOfExperience Int?
+  areasOfExpertise  String[] @default([])
+  linkedIn          String?
+  portfolioUrl      String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model FreelancerService {
+  id                  Int       @id @default(autoincrement())
+  userId              Int
+  title               String
+  description         String
+  category            String
+  subcategory         String?
+  pricingType         String
+  price               Float?
+  basicPrice          Float?
+  basicDescription    String?
+  standardPrice       Float?
+  standardDescription String?
+  premiumPrice        Float?
+  premiumDescription  String?
+  deliveryDays        Int?
+  revisions           Int       @default(0)
+  images              String[]  @default([])
+  video               String?
+  isActive            Boolean   @default(true)
+  isBoosted           Boolean   @default(false)
+  boostExpiresAt      DateTime?
+  orderCount          Int       @default(0)
+  averageRating       Float?
+  reviewCount         Int       @default(0)
+  viewCount           Int       @default(0)
+  tags                String[]  @default([])
+  faq                 Json?
+  requirements        String?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  user                User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isActive])
+  @@index([category, subcategory])
+  @@index([isActive, isBoosted])
+}
+
+model SkillEndorsement {
+  id         Int      @id @default(autoincrement())
+  skillName  String
+  endorserId Int
+  endorsedId Int
+  createdAt  DateTime @default(now())
+  endorser   User     @relation("Endorser", fields: [endorserId], references: [id])
+  endorsed   User     @relation("EndorsedUser", fields: [endorsedId], references: [id])
+
+  @@unique([skillName, endorserId, endorsedId])
+  @@index([endorsedId, skillName])
+}
+
+model UserFollow {
+  id          Int      @id @default(autoincrement())
+  followerId  Int
+  followingId Int
+  createdAt   DateTime @default(now())
+  follower    User     @relation("Following", fields: [followerId], references: [id])
+  following   User     @relation("Followers", fields: [followingId], references: [id])
+
+  @@unique([followerId, followingId])
+  @@index([followerId])
+  @@index([followingId])
+}
+
+model UserBlock {
+  id        Int      @id @default(autoincrement())
+  blockerId Int
+  blockedId Int
+  createdAt DateTime @default(now())
+  blocker   User     @relation("Blocker", fields: [blockerId], references: [id])
+  blocked   User     @relation("Blocked", fields: [blockedId], references: [id])
+
+  @@unique([blockerId, blockedId])
+  @@index([blockerId])
+  @@index([blockedId])
+}
+
+model OrgProfile {
+  id                  Int          @id @default(autoincrement())
+  organizationId      Int          @unique
+  longDescription     String?
+  specialties         String[]     @default([])
+  technologies        String[]     @default([])
+  competitors         String[]     @default([])
+  fundingRound        String?
+  fundingAmount       Float?
+  revenueRange        String?
+  products            Json?
+  jobs                Json?
+  culture             String?
+  benefits            String?
+  mission             String?
+  achievements        Json?
+  certifications      String[]     @default([])
+  mapLocation         Json?
+  algerianHealthScore Float?
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime     @updatedAt
+  organization        Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@index([organizationId])
+}
+
+model OrgReview {
+  id             Int          @id @default(autoincrement())
+  organizationId Int
+  userId         Int
+  rating         Int
+  title          String?
+  comment        String?
+  isRecommended  Boolean      @default(true)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  user           User         @relation(fields: [userId], references: [id])
+
+  @@unique([organizationId, userId])
+  @@index([organizationId])
+  @@index([rating])
+}
+
+model OrgFollow {
+  id             Int          @id @default(autoincrement())
+  organizationId Int
+  userId         Int
+  createdAt      DateTime     @default(now())
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  user           User         @relation(fields: [userId], references: [id])
+
+  @@unique([organizationId, userId])
+  @@index([organizationId])
+  @@index([userId])
+}
+
+model PublicDashboard {
+  id             Int           @id @default(autoincrement())
+  organizationId Int?
+  userId         Int?
+  title          String
+  description    String?
+  thumbnailUrl   String?
+  tags           String[]      @default([])
+  isPublic       Boolean       @default(false)
+  viewCount      Int           @default(0)
+  likeCount      Int           @default(0)
+  embedUrl       String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  organization   Organization? @relation(fields: [organizationId], references: [id])
+  user           User?         @relation(fields: [userId], references: [id])
+
+  @@index([organizationId, isPublic])
+  @@index([userId, isPublic])
+}
+
+/// Preserved for future licensed PSP operations under Bank of Algeria Regulation 25-02
+model Payout {
+  id                Int             @id @default(autoincrement())
+  walletId          Int
+  amount            Int
+  currency          String          @default("DZD")
+  method            PaymentProvider @default(BANK_TRANSFER)
+  status            String          @default("PENDING")
+  reference         String?
+  metadata          Json?
+  requestedAt       DateTime        @default(now())
+  processedAt       DateTime?
+  completedAt       DateTime?
+  accountHolderName String?
+  accountNumber     String?
+  adminNotes        String?
+  bankName          String?
+  batchId           String?
+  notes             String?
+  wallet            Wallet          @relation(fields: [walletId], references: [id])
+  updatedAt         DateTime?       @updatedAt
+
+  @@index([walletId])
+  @@index([status])
+  @@index([requestedAt])
+  @@index([method])
+  @@index([reference])
+  @@index([batchId])
+}
+
+model User {
+  id                        Int                       @id @default(autoincrement())
+  username                  String?                   @unique
+  slug                      String?
+  email                     String?                   @unique
+  role                      UserRole                  @default(STUDENT)
+  createdAt                 DateTime                  @default(now())
+  updatedAt                 DateTime                  @updatedAt
+  acceptedTerms             Boolean                   @default(false)
+  bio                       String?
+  headline                  String?
+  tagline                   String?
+  pronouns                  String?
+  deletedAt                 DateTime?
+  emailVerified             Boolean                   @default(false)
+  emailVerifiedAt           DateTime?
+  fullName                  String
+  passwordHash              String?
+  phoneNumber               String?                   @unique
+  phoneVerified             Boolean                   @default(false)
+  phoneVerifiedAt           DateTime?
+  primaryOrganizationId     Int?
+  profilePictureUrl         String?
+  coverImageUrl             String?
+  provider                  AuthProvider              @default(EMAIL)
+  providerId                String?
+  skills                    String[]                  @default([])
+  /// Maintained by the arabic_search migration and app startup (tsvector is
+  /// not natively supported by Prisma). Declared so `db push` never drops it.
+  search_vector             Unsupported("tsvector")?
+  socialLinks               Json?
+  availability              String                    @default("AVAILABLE")
+  timezone                  String?
+  profileViewCount          Int                       @default(0)
+  lastActiveAt              DateTime?
+  subscribeNewsletter       Boolean                   @default(false)
+  isActive                  Boolean                   @default(true)
+  isDeactivated             Boolean                   @default(false)
+  onboardingCompleted       Boolean                   @default(false)
+  deactivatedAt             DateTime?
+  lastLoginAt               DateTime?
+  lastPasswordChangeAt      DateTime?
+  loginCount                Int                       @default(0)
+  country                   Country?
+  city                      City?
+  deletionRequests          AccountDeletionRequest[]
+  advancedSettings          AdvancedSettings?
+  authTokens                AuthToken[]
+  certificates              Certificate[]
+  contractsAsClient         Contract[]                @relation("ContractClient")
+  contractsAsFreelancer     Contract[]
+  authoredReviews           ContractReview[]          @relation("AuthoredReviews")
+  receivedReviews           ContractReview[]          @relation("ReceivedReviews")
+  reviewAppeals             ReviewAppeal[]            @relation("ReviewAppeals")
+  reviewReports             ReviewReport[]            @relation("ReviewReports")
+  platformAppeals           PlatformAppeal[]          @relation("UserPlatformAppeals")
+  resolvedPlatformAppeals   PlatformAppeal[]          @relation("ResolvedPlatformAppeals")
+  initiatedAdminActions     PendingAdminAction[]      @relation("InitiatedAdminActions")
+  approvedAdminActions      PendingAdminAction[]      @relation("ApprovedAdminActions")
+  courseReviews             CourseReview[]
+  conversationParticipants  ConversationParticipant[]
+  dashboards                Dashboard[]
+  dataConnectors            DataConnector[]
+  dataExports               DataExport[]
+  datasets                  Dataset[]
+  enrollments               Enrollment[]
+  files                     File[]
+  freelancerProfile         FreelancerProfile?
+  idempotencyKeys           IdempotencyKey[]
+  insights                  Insight[]
+  sentInvitations           Invitation[]              @relation("SentInvitations")
+  lessonProgresses          LessonProgress[]
+  mlModels                  MLModel[]                 @relation("MLModelCreator")
+  messages                  Message[]
+  messageReactions          MessageReaction[]
+  messageReadReceipts       MessageReadReceipt[]
+  instructedModules         Module[]                  @relation("ModuleInstructor")
+  reviewedModules           Module[]                  @relation("ModuleReviewer")
+  notifications             Notification[]
+  notificationPrefs         NotificationPreferences?
+  ownedOrganizations        Organization[]            @relation("OrgOwner")
+  seatAllocations           SeatAllocation[]
+  invoices                  Invoice[]
+  sentInvites               OrganizationMember[]      @relation("OrgInvites")
+  memberships               OrganizationMember[]      @relation("UserMemberships")
+  paymentMethods            PaymentMethod[]
+  projects                  Project[]
+  proposals                 Proposal[]
+  quizAttempts              QuizAttempt[]
+  securitySettings          SecuritySettings?
+  subscriptions             Subscription[]
+  transactions              Transaction[]
+  usageTrackings            UsageTracking[]
+  primaryOrganization       Organization?             @relation("PrimaryUsers", fields: [primaryOrganizationId], references: [id], onDelete: Restrict)
+  devices                   UserDevice[]
+  webauthnCredentials       WebAuthnCredential[]
+  emailOtpCodes             EmailOtpCode[]
+  securityEvents            SecurityEvent[]
+  deviceCooldowns           DeviceCooldown[]
+  securityStrikes           Int                       @default(0)
+  accountRestricted         Boolean                   @default(false)
+  accountRestrictedAt       DateTime?
+  userSettings              UserSettings?
+  appearanceSettings        AppearanceSettings?
+  privacySettings           PrivacySettings?
+  integrations              UserIntegration[]
+  apiKeys                   ApiKey[]
+  webhookEndpoints          WebhookEndpoint[]
+  workflows                 IntegrationWorkflow[]
+  skillsDetails             UserSkill[]
+  wallet                    Wallet?
+  createdDisputes           Dispute[]                 @relation("DisputeCreator")
+  resolvedDisputes          Dispute[]                 @relation("DisputeResolver")
+  receivedDisputes          Dispute[]                 @relation("DisputeOpponent")
+  onboardingAnswer          OnboardingAnswer?
+  biAuditLogs               BiAuditLog[]
+  decisions                 Decision[]
+  decisionHistories         DecisionHistory[]
+  decisionComments          DecisionComment[]
+  reports                   Report[]
+  dashboardTemplates        DashboardTemplate[]
+  CrossPillarEvent          CrossPillarEvent[]
+  tickets                   Ticket[]                  @relation("UserTickets")
+  assignedTickets           Ticket[]                  @relation("AssignedTickets")
+  ticketMessages            TicketMessage[]           @relation("TicketMessageSender")
+  liveSessionsCreated       LiveSession[]             @relation("LiveSessionOwner")
+  liveSessionParticipations LiveSessionParticipant[]
+  liveSessionBookings       LiveSessionBooking[]
+  liveSessionCoHosted       LiveSessionCoHost[]
+  liveSessionWaitlists      LiveSessionWaitlist[]
+  hostCoupons               HostCoupon[]
+  liveSessionReviews        LiveSessionReview[]
+  liveSessionChatMessages   LiveSessionChatMessage[]
+  portfolioItems            PortfolioItem[]
+  featurePurchases          FeaturePurchase[]         @relation("UserFeaturePurchases")
+  studentProfile            StudentProfile?
+  instructorProfile         InstructorProfile?
+  businessProfile           BusinessProfile?
+  freelancerServices        FreelancerService[]
+  skillEndorsementsGiven    SkillEndorsement[]        @relation("Endorser")
+  skillEndorsementsReceived SkillEndorsement[]        @relation("EndorsedUser")
+  followers                 UserFollow[]              @relation("Following")
+  following                 UserFollow[]              @relation("Followers")
+  blockedUsers              UserBlock[]               @relation("Blocker")
+  blockedBy                 UserBlock[]               @relation("Blocked")
+  usernameHistory           UsernameRedirect[]
+  orgReviews                OrgReview[]
+  orgFollows                OrgFollow[]
+  publicDashboards          PublicDashboard[]
+  authoredDashboardComments DashboardComment[]        @relation("CommentAuthor")
+  resolvedDashboardComments DashboardComment[]        @relation("CommentResolver")
+  dashboardBookmarks        DashboardBookmark[]
+  dashboardSnapshots        DashboardSnapshot[]
+  dashboardShareLinks       DashboardShareLink[]
+  videoUploadSessions       VideoUploadSession[]
+  kyc                       UserKyc?
+  adminProfile              AdminProfile?             @relation("UserAdminProfile")
+  mailAccounts              MailAccount[]             @relation("UserMailAccounts")
+  emailAuditLogs            EmailAuditLog[]           @relation("EmailAuditActor")
+  aiSessions                AiSession[]               @relation("UserAiSessions")
+  aiLogs                    AiLog[]                   @relation("UserAiLogs")
+  confirmedAiIntents        AiActionIntent[]          @relation("ConfirmedAiIntents")
+
+  @@index([search_vector], map: "user_search_idx", type: Gin)
+  @@index([email])
+  @@index([role, isActive, deletedAt])
+  @@index([phoneVerified])
+  @@index([skills])
+  @@index([fullName])
+  @@index([city, country])
+  @@index([provider, providerId])
+  @@index([lastLoginAt])
+  @@index([createdAt])
+  @@index([updatedAt])
+  @@index([isActive, role])
+  @@index([emailVerified, email])
+}
+
+model UsernameRedirect {
+  id          Int      @id @default(autoincrement())
+  oldUsername String   @unique
+  newUserId   Int
+  changedAt   DateTime @default(now())
+  expiresAt   DateTime
+  user        User     @relation(fields: [newUserId], references: [id])
+
+  @@index([oldUsername])
+  @@index([expiresAt])
+  @@index([newUserId])
+}
+
+model ReservedUsername {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+}
+
+model OnboardingAnswer {
+  id              Int      @id @default(autoincrement())
+  userId          Int      @unique
+  role            String?
+  primaryGoal     String?
+  experienceLevel String?
+  fieldOfInterest String?
+  weeklyTime      String?
+  discoverySource String?
+  openAnswer      String?
+  createdAt       DateTime @default(now())
+  user            User     @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model Organization {
+  id                 Int                  @id @default(autoincrement())
+  slug               String?              @unique
+  name               String
+  description        String?
+  website            String?
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  deletedAt          DateTime?
+  ownerId            Int?
+  city               City                 @default(ALGIERS)
+  sector             OrganizationSector   @default(TECHNOLOGY_AND_SOFTWARE)
+  country            Country              @default(ALGERIA)
+  dashboards         Dashboard[]
+  datasets           Dataset[]
+  decisions          Decision[]
+  reports            Report[]
+  dashboardTemplates DashboardTemplate[]
+  invitations        Invitation[]
+  owner              User?                @relation("OrgOwner", fields: [ownerId], references: [id])
+  members            OrganizationMember[]
+  paymentMethods     PaymentMethod[]
+  projects           Project[]
+  subscriptions      Subscription[]
+  transactions       Transaction[]
+  usageTrackings     UsageTracking[]
+  primaryUsers       User[]               @relation("PrimaryUsers")
+  wallet             Wallet?
+  biAuditLogs        BiAuditLog[]
+  CrossPillarEvent   CrossPillarEvent[]
+  dataConnectors     DataConnector[]
+  semanticModels     SemanticModel[]
+  rowLevelPolicies   RowLevelPolicy[]
+  orgProfile         OrgProfile?
+  reviews            OrgReview[]
+  followers          OrgFollow[]
+  publicDashboards   PublicDashboard[]
+  kyb                OrganizationKyb?
+  departments        Department[]
+  branches           Branch[]
+  teamLicensePools   TeamLicensePool[]
+  caseStudies        CompanyCaseStudy[]
+  leadership         CompanyLeadership[]
+  companyReviews     CompanyReview[]
+  invoices           Invoice[]
+  nisNumber          String?
+  nifNumber          String?
+  rcNumber           String?
+  articleImposition  String?
+  taxRegime          String?
+  verifiedDomains    String[]             @default([])
+  samlEntityId       String?
+  samlMetadataUrl    String?
+  scimEnabled        Boolean              @default(false)
+  tagline            String?
+  companySizeBracket String?              @default("MICRO_1_10")
+  operationalScale   String?              @default("NATIONAL_58_WILAYAS")
+  primaryLanguages   String[]             @default(["FRENCH", "ARABIC"])
+  isPublic           Boolean              @default(true)
+  internalBulletin   String?
+  timeZone           String?              @default("Africa/Algiers")
+  keyContacts        Json?
+  hqAddress          String?
+  brandAccentColor   String?              @default("#1B4D3E")
+  coverBannerUrl     String?
+  socialLinks        Json?
+  mailAccounts       MailAccount[]        @relation("OrgMailAccounts")
+  aiSessions         AiSession[]          @relation("OrgAiSessions")
+
+  @@index([name])
+  @@index([ownerId])
+  @@index([createdAt])
+  @@index([sector])
+  @@index([country])
+  @@index([city])
+  @@index([isPublic])
+}
+
+model Invitation {
+  id             Int          @id @default(autoincrement())
+  email          String
+  role           String       @default("MEMBER")
+  token          String       @unique
+  organizationId Int
+  inviterId      Int
+  status         String       @default("PENDING")
+  createdAt      DateTime     @default(now())
+  expiresAt      DateTime
+  inviter        User         @relation("SentInvitations", fields: [inviterId], references: [id])
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@index([email])
+  @@index([organizationId])
+  @@index([token])
+}
+
+model OrganizationMember {
+  id             Int          @id @default(autoincrement())
+  organizationId Int
+  userId         Int
+  role           String?
+  invitedById    Int?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  deletedAt      DateTime?
+  invitedBy      User?        @relation("OrgInvites", fields: [invitedById], references: [id], onDelete: Restrict)
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  user           User         @relation("UserMemberships", fields: [userId], references: [id])
+  departmentId   Int?
+  department     Department?  @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+
+  @@unique([organizationId, userId])
+  @@index([organizationId])
+  @@index([userId])
+  @@index([role])
+  @@index([invitedById])
+  @@index([departmentId])
+  @@index([createdAt])
+}
+
+model Path {
+  id              String        @id
+  title           String
+  description     String?
+  durationMinutes Int?          @default(0)
+  totalLessons    Int?          @default(0)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  deletedAt       DateTime?
+  featured        Boolean       @default(false)
+  price           Json?
+  thumbnailUrl    String?
+  certificates    Certificate[]
+  enrollments     Enrollment[]
+  modules         PathModule[]
+
+  @@index([createdAt])
+  @@index([title])
+  @@index([deletedAt])
+  @@index([featured])
+  @@index([createdAt, featured])
+}
+
+model Module {
+  id               String                  @id
+  title            String
+  description      String?
+  fullDescription  String?
+  durationMinutes  Int?
+  estimatedEffort  String?
+  totalLessons     Int?                    @default(0)
+  level            String?
+  instructorId     Int?
+  status           ModuleStatus            @default(DRAFT)
+  publishedAt      DateTime?
+  reviewedBy       Int?
+  rejectionReason  String?
+  submittedAt      DateTime?
+  createdAt        DateTime                @default(now())
+  updatedAt        DateTime                @updatedAt
+  deletedAt        DateTime?
+  skills           String[]                @default([])
+  tags             String[]                @default([])
+  /// See User.search_vector — maintained by SQL, declared to protect it.
+  search_vector    Unsupported("tsvector")?
+  featured         Boolean                 @default(false)
+  lastUpdated      DateTime?
+  price            Json?
+  thumbnailUrl     String?
+  certificates     Certificate[]
+  enrollments      Enrollment[]
+  lessons          Lesson[]
+  instructor       User?                   @relation("ModuleInstructor", fields: [instructorId], references: [id], onDelete: Restrict)
+  reviewer         User?                   @relation("ModuleReviewer", fields: [reviewedBy], references: [id], onDelete: SetNull)
+  pathLinks        PathModule[]
+  reviews          CourseReview[]
+  liveSessionLinks LiveSessionModuleLink[]
+  mailThreads      MailThread[]            @relation("ModuleMailThreads")
+  mailMessages     MailMessage[]
+
+  @@index([search_vector], map: "module_search_idx", type: Gin)
+  @@index([instructorId])
+  @@index([featured])
+  @@index([createdAt])
+  @@index([level])
+  @@index([tags])
+  @@index([skills])
+  @@index([deletedAt])
+  @@index([title])
+  @@index([status])
+  @@index([instructorId, status])
+  @@index([status, featured])
+  @@index([instructorId, featured])
+  @@index([createdAt, featured])
+}
+
+model PathModule {
+  id       Int    @id @default(autoincrement())
+  pathId   String
+  moduleId String
+  order    Int?
+  module   Module @relation(fields: [moduleId], references: [id])
+  path     Path   @relation(fields: [pathId], references: [id])
+
+  @@unique([pathId, moduleId])
+  @@index([pathId])
+  @@index([moduleId])
+  @@index([order])
+  @@index([pathId, order])
+}
+
+model Lesson {
+  id                      String               @id
+  moduleId                String
+  title                   String
+  description             String?
+  durationMinutes         Int?
+  durationSeconds         Int?
+  type                    String
+  status                  LessonStatus         @default(DRAFT)
+  videoUrl                String?
+  storageProvider         String               @default("supabase")
+  hlsPath                 String?
+  rawPath                 String?
+  transcodingStatus       String?
+  transcript              String?
+  subtitlesPath           String?
+  subtitlesLanguage       String?              @default("ar")
+  subtitlesEnabled        Boolean              @default(true)
+  attachments             Json?
+  quizId                  Int?
+  requiredPassScore       Int?
+  order                   Int
+  thumbnailUrl            String?
+  thumbnailBlurDataURL    String?
+  learningObjectives      String[]             @default([])
+  keyTakeaways            String[]             @default([])
+  instructorNotes         String?
+  estimatedCompletionTime Int?
+  difficulty              String?
+  tags                    String[]             @default([])
+  relatedResources        Json?
+  isPreview               Boolean              @default(false)
+  createdAt               DateTime             @default(now())
+  updatedAt               DateTime             @updatedAt
+  deletedAt               DateTime?
+  videoAssetId            String?
+  videoAsset              VideoAsset?          @relation("LessonVideoAsset", fields: [videoAssetId], references: [id], onDelete: SetNull)
+  uploadSessions          VideoUploadSession[]
+  module                  Module               @relation(fields: [moduleId], references: [id])
+  progresses              LessonProgress[]
+  quiz                    Quiz?
+
+  @@index([moduleId])
+  @@index([order])
+  @@index([type])
+  @@index([status])
+  @@index([difficulty])
+  @@index([isPreview])
+  @@index([createdAt])
+  @@index([moduleId, order])
+  @@index([moduleId, status])
+  @@index([title])
+  @@index([deletedAt])
+  @@index([quizId])
+}
+
+model Enrollment {
+  id            Int          @id @default(autoincrement())
+  userId        Int
+  progress      Float        @default(0)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  completedAt   DateTime?
+  deletedAt     DateTime?
+  moduleId      String?
+  pathId        String?
+  startedAt     DateTime     @default(now())
+  expiresAt     DateTime?
+  transactionId Int?
+  certificateId String?      @unique
+  certificate   Certificate? @relation(fields: [certificateId], references: [certificateId])
+  module        Module?      @relation(fields: [moduleId], references: [id], onDelete: Restrict)
+  path          Path?        @relation(fields: [pathId], references: [id], onDelete: Restrict)
+  transaction   Transaction? @relation(fields: [transactionId], references: [id])
+  user          User         @relation(fields: [userId], references: [id])
+
+  @@unique([userId, moduleId])
+  @@unique([userId, pathId])
+  @@index([userId])
+  @@index([moduleId])
+  @@index([pathId])
+  @@index([progress])
+  @@index([createdAt])
+  @@index([startedAt])
+  @@index([completedAt])
+  @@index([expiresAt])
+  @@index([deletedAt])
+  @@index([transactionId])
+  @@index([userId, moduleId, completedAt])
+  @@index([userId, pathId, completedAt])
+  @@index([moduleId, userId])
+  @@index([pathId, userId])
+}
+
+model LessonProgress {
+  id          Int       @id @default(autoincrement())
+  userId      Int
+  lessonId    String
+  isCompleted Boolean   @default(false)
+  completedAt DateTime?
+  progress    Float     @default(0.0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+  lesson      Lesson    @relation(fields: [lessonId], references: [id])
+  user        User      @relation(fields: [userId], references: [id])
+
+  @@unique([userId, lessonId])
+  @@index([userId])
+  @@index([lessonId])
+  @@index([isCompleted])
+  @@index([completedAt])
+  @@index([progress])
+  @@index([createdAt])
+  @@index([userId, isCompleted])
+  @@index([lessonId, isCompleted])
+  @@index([userId, lessonId, completedAt])
+}
+
+model Quiz {
+  id                    Int            @id @default(autoincrement())
+  lessonId              String?        @unique
+  title                 String
+  description           String?
+  passingScore          Int            @default(90)
+  timeLimitMinutes      Int            @default(30)
+  allowRetake           Boolean        @default(true)
+  shuffleQuestions      Boolean        @default(true)
+  createdAt             DateTime       @default(now())
+  updatedAt             DateTime       @updatedAt
+  deletedAt             DateTime?
+  retakeCooldownMinutes Int            @default(60)
+  lesson                Lesson?        @relation(fields: [lessonId], references: [id])
+  attempts              QuizAttempt[]
+  questions             QuizQuestion[]
+
+  @@index([lessonId])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([title])
+}
+
+model QuizQuestion {
+  id            Int              @id @default(autoincrement())
+  quizId        Int
+  question      String
+  questionType  QuizQuestionType @default(MULTIPLE_CHOICE)
+  options       Json?
+  correctAnswer String?
+  explanation   String?
+  points        Int              @default(10)
+  order         Int              @default(0)
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+  deletedAt     DateTime?
+  quiz          Quiz             @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  userAnswers   QuizUserAnswer[]
+
+  @@index([quizId])
+  @@index([order])
+  @@index([questionType])
+  @@index([points])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([quizId, order])
+}
+
+model QuizAttempt {
+  id          Int              @id @default(autoincrement())
+  userId      Int
+  quizId      Int
+  score       Float
+  isPassed    Boolean          @default(false)
+  timeSpent   Int?
+  startedAt   DateTime         @default(now())
+  completedAt DateTime?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  deletedAt   DateTime?
+  quiz        Quiz             @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userAnswers QuizUserAnswer[]
+
+  @@index([userId])
+  @@index([quizId])
+  @@index([score])
+  @@index([isPassed])
+  @@index([startedAt])
+  @@index([completedAt])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([userId, quizId])
+  @@index([userId, isPassed])
+  @@index([quizId, isPassed])
+  @@index([userId, quizId, completedAt])
+}
+
+model QuizUserAnswer {
+  id             Int          @id @default(autoincrement())
+  attemptId      Int
+  questionId     Int
+  selectedAnswer String?
+  isCorrect      Boolean      @default(false)
+  pointsEarned   Float        @default(0)
+  timeSpent      Int?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  deletedAt      DateTime?
+  attempt        QuizAttempt  @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question       QuizQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([attemptId, questionId])
+  @@index([attemptId])
+  @@index([questionId])
+  @@index([isCorrect])
+  @@index([pointsEarned])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([attemptId, isCorrect])
+}
+
+model Certificate {
+  id               Int         @id @default(autoincrement())
+  userId           Int
+  moduleId         String?
+  fileUrl          String
+  issuedAt         DateTime    @default(now())
+  metadata         Json?
+  createdAt        DateTime    @default(now())
+  deletedAt        DateTime?
+  pathId           String?
+  certificateId    String      @unique @default(uuid())
+  digitalSignature String?
+  qrCodeUrl        String?
+  revokedAt        DateTime?
+  verificationUrl  String?
+  module           Module?     @relation(fields: [moduleId], references: [id], onDelete: Restrict)
+  path             Path?       @relation(fields: [pathId], references: [id], onDelete: Restrict)
+  user             User        @relation(fields: [userId], references: [id])
+  enrollment       Enrollment?
+
+  @@index([certificateId])
+  @@index([userId])
+  @@index([moduleId])
+  @@index([pathId])
+  @@index([issuedAt])
+  @@index([userId, moduleId])
+  @@index([userId, pathId])
+  @@index([deletedAt])
+  @@index([createdAt])
+  @@index([revokedAt])
+}
+
+model Project {
+  id               Int           @id @default(autoincrement())
+  title            String
+  description      String?
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  deletedAt        DateTime?
+  organizationId   Int?
+  ownerId          Int?
+  skills           String[]      @default([])
+  /// See User.search_vector — maintained by SQL, declared to protect it.
+  search_vector    Unsupported("tsvector")?
+  budget           Int?
+  currency         String        @default("DZD")
+  featured         Boolean       @default(false)
+  featuredBoost    Float         @default(0.0) // decayable boost score (1.0 → 0 over 7d)
+  featureExpiresAt DateTime?
+  status           ProjectStatus @default(OPEN)
+  contracts        Contract[]
+  organization     Organization? @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  owner            User?         @relation(fields: [ownerId], references: [id], onDelete: Restrict)
+  proposals        Proposal[]
+
+  @@index([search_vector], map: "project_search_idx", type: Gin)
+  @@index([status, createdAt])
+  @@index([ownerId, status])
+  @@index([skills])
+  @@index([createdAt])
+  @@index([title, description])
+  @@index([organizationId])
+  @@index([deletedAt])
+  @@index([organizationId, status])
+  @@index([budget])
+}
+
+model Proposal {
+  id           Int            @id @default(autoincrement())
+  projectId    Int
+  freelancerId Int?
+  message      String?
+  amount       Int?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  deletedAt    DateTime?
+  currency     String         @default("DZD")
+  status       ProposalStatus @default(PENDING)
+  freelancer   User?          @relation(fields: [freelancerId], references: [id], onDelete: Restrict)
+  project      Project        @relation(fields: [projectId], references: [id])
+
+  @@index([projectId, status])
+  @@index([freelancerId, status])
+  @@index([status, createdAt])
+  @@index([amount])
+  @@index([projectId, freelancerId])
+  @@index([createdAt])
+  @@index([deletedAt])
+}
+
+model Contract {
+  id                  Int                 @id @default(autoincrement())
+  projectId           Int
+  freelancerId        Int?
+  clientId            Int?
+  terms               String?
+  startDate           DateTime?
+  endDate             DateTime?
+  createdAt           DateTime            @default(now())
+  updatedAt           DateTime            @updatedAt
+  deletedAt           DateTime?
+  amount              Int? // informational only — payment is off-platform
+  currency            String              @default("DZD")
+  freelancerProfileId Int?
+  status              ContractStatus      @default(DRAFT)
+  client              User?               @relation("ContractClient", fields: [clientId], references: [id], onDelete: Restrict)
+  freelancer          User?               @relation(fields: [freelancerId], references: [id], onDelete: Restrict)
+  freelancerProfile   FreelancerProfile?  @relation(fields: [freelancerProfileId], references: [id])
+  project             Project             @relation(fields: [projectId], references: [id])
+  dispute             Dispute?
+  deliveries          Delivery[]
+  milestones          ContractMilestone[]
+  escrowHold          EscrowHold? // @deprecated — preserved for future PSP-backed marketplace
+  transactions        Transaction[]
+  reviews             ContractReview[]
+  mailThreads         MailThread[]        @relation("ContractMailThreads")
+  mailMessages        MailMessage[]
+
+  @@index([freelancerId, status])
+  @@index([clientId, status])
+  @@index([projectId])
+  @@index([status, createdAt])
+  @@index([startDate])
+  @@index([endDate])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([clientId, freelancerId])
+  @@index([projectId, status])
+  @@index([amount])
+  @@index([freelancerProfileId])
+}
+
+model Delivery {
+  id          Int                @id @default(autoincrement())
+  contractId  Int
+  description String?
+  deliveredAt DateTime           @default(now())
+  files       Json?
+  createdAt   DateTime           @default(now())
+  deletedAt   DateTime?
+  contract    Contract           @relation(fields: [contractId], references: [id])
+  milestoneId Int?
+  milestone   ContractMilestone? @relation(fields: [milestoneId], references: [id])
+
+  @@index([contractId])
+  @@index([deliveredAt])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([milestoneId])
+}
+
+model ContractMilestone {
+  id                     Int                 @id @default(autoincrement())
+  contractId             Int
+  title                  String
+  amount                 Int
+  currency               String              @default("DZD")
+  dueDate                DateTime?
+  deliverables           Json?
+  status                 MilestoneStatus     @default(PENDING)
+  order                  Int                 @default(0)
+  createdAt              DateTime            @default(now())
+  updatedAt              DateTime            @updatedAt
+  deliveredAt            DateTime?
+  approvedAt             DateTime?
+  disputedAt             DateTime?
+  contract               Contract            @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  deliveries             Delivery[]
+  dispute                Dispute?            @relation("MilestoneDispute")
+  settlementMethod       SettlementMethod?
+  settlementReference    String?
+  deliverableKeyReleased Boolean             @default(false)
+  releasedAt             DateTime?
+  submissions            ProjectSubmission[]
+
+  @@index([contractId])
+  @@index([status])
+  @@index([order])
+  @@index([dueDate])
+  @@index([settlementReference])
+}
+
+enum MilestoneStatus {
+  PENDING
+  DELIVERED
+  APPROVED
+  DISPUTED
+  RELEASED
+}
+
+model Transaction {
+  id                   Int                 @id @default(autoincrement())
+  userId               Int?
+  organizationId       Int?
+  amount               Int
+  currency             String              @default("DZD")
+  status               PaymentStatus       @default(PENDING)
+  providerData         Json?
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+  deletedAt            DateTime?
+  checkoutUrl          String?
+  commission           Int?
+  contractId           Int?
+  escrowHoldId         Int?
+  freelancerPayout     Int?
+  gateway              PaymentGateway      @default(MOCK)
+  gatewayMetadata      Json?
+  lastWebhookAttemptAt DateTime?
+  metadata             Json?
+  netAmount            Int?
+  parentTransactionId  Int?
+  provider             PaymentProvider     @default(CHARGILY)
+  providerReference    String?             @unique
+  purpose              PaymentPurpose
+  subscriptionId       Int?
+  walletId             Int?
+  webhookAttempts      Int                 @default(0)
+  webhookUrl           String?
+  enrollments          Enrollment[]
+  idempotencyKeys      IdempotencyKey[]
+  paymentWebhookLogs   PaymentWebhookLog[]
+  contract             Contract?           @relation(fields: [contractId], references: [id])
+  escrowHold           EscrowHold?         @relation(fields: [escrowHoldId], references: [id])
+  organization         Organization?       @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  parentTransaction    Transaction?        @relation("TransactionChildren", fields: [parentTransactionId], references: [id])
+  childTransactions    Transaction[]       @relation("TransactionChildren")
+  subscription         Subscription?       @relation(fields: [subscriptionId], references: [id])
+  user                 User?               @relation(fields: [userId], references: [id], onDelete: Restrict)
+  wallet               Wallet?             @relation(fields: [walletId], references: [id])
+  liveSession          LiveSession?        @relation("LiveSessionTransaction")
+  liveSessionBooking   LiveSessionBooking? @relation("LiveSessionBookingTransaction")
+
+  @@index([userId])
+  @@index([organizationId])
+  @@index([purpose])
+  @@index([status])
+  @@index([provider])
+  @@index([createdAt])
+  @@index([contractId])
+  @@index([subscriptionId])
+  @@index([purpose, status])
+  @@index([parentTransactionId])
+  @@index([userId, purpose, status])
+  @@index([gateway, status])
+  @@index([checkoutUrl])
+  @@index([webhookAttempts])
+  @@index([createdAt, gateway])
+  @@index([walletId])
+  @@index([escrowHoldId])
+  @@index([commission])
+}
+
+model Subscription {
+  id                 Int                @id @default(autoincrement())
+  userId             Int?
+  organizationId     Int?
+  plan               SubscriptionPlan
+  startedAt          DateTime           @default(now())
+  currentPeriodStart DateTime           @default(now())
+  cancelledAt        DateTime?
+  endsAt             DateTime?
+  amount             Int
+  billingCycle       String
+  currency           String             @default("DZD")
+  currentPeriodEnd   DateTime
+  status             SubscriptionStatus @default(ACTIVE)
+  autoRenew          Boolean            @default(true)
+  paymentMethodId    Int?
+  metadata           Json?
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  organization       Organization?      @relation(fields: [organizationId], references: [id])
+  user               User?              @relation(fields: [userId], references: [id])
+  paymentMethod      PaymentMethod?     @relation(fields: [paymentMethodId], references: [id])
+  transactions       Transaction[]
+
+  @@unique([userId, plan])
+  @@unique([organizationId, plan])
+  @@index([currentPeriodEnd])
+  @@index([status])
+}
+
+model UserEntitlement {
+  id              Int       @id @default(autoincrement())
+  userId          Int
+  entitlementType String
+  resourceId      String?
+  sourceType      String
+  sourceId        String
+  grantedAt       DateTime  @default(now())
+  expiresAt       DateTime?
+
+  @@unique([userId, entitlementType, resourceId])
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+// @deprecated — preserved for future PSP-backed marketplace launch
+model CommissionCalculation {
+  id                Int            @id @default(autoincrement())
+  contractId        Int            @unique
+  grossAmount       Int
+  freelancerTier    FreelancerTier
+  commissionRate    Float
+  commission        Int
+  netAmount         Int
+  tierJustification Json
+  calculatedAt      DateTime       @default(now())
+  updatedAt         DateTime?      @updatedAt
+
+  @@index([contractId])
+}
+
+model CommissionTierHistory {
+  id                Int            @id @default(autoincrement())
+  freelancerId      Int
+  tier              FreelancerTier
+  commissionRate    Float
+  completedProjects Int
+  totalEarned       Int
+  effectiveFrom     DateTime       @default(now())
+  updatedAt         DateTime?      @updatedAt
+
+  @@index([freelancerId, effectiveFrom])
+}
+
+// @deprecated — preserved for future PSP-backed marketplace launch
+model PlatformRevenue {
+  id          Int       @id @default(autoincrement())
+  source      String
+  amount      Int
+  currency    String    @default("DZD")
+  referenceId String?
+  periodStart DateTime
+  periodEnd   DateTime
+  metadata    Json?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime? @updatedAt
+
+  @@index([source])
+  @@index([periodStart, periodEnd])
+  @@index([createdAt])
+}
+
+model EntitlementCache {
+  id        String   @id
+  userId    Int
+  data      Json
+  expiresAt DateTime
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model PaymentMethod {
+  id             Int             @id @default(autoincrement())
+  userId         Int?
+  organizationId Int?
+  provider       PaymentProvider @default(CHARGILY)
+  providerType   String
+  providerId     String?
+  isDefault      Boolean         @default(false)
+  metadata       Json?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  deletedAt      DateTime?
+  organization   Organization?   @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user           User?           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subscriptions  Subscription[]
+
+  @@index([userId])
+  @@index([organizationId])
+  @@index([provider])
+  @@index([isDefault])
+  @@index([createdAt])
+  @@index([providerId])
+}
+
+model UserSkill {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  name      String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([name])
+  @@index([userId, name])
+  @@index([createdAt])
+}
+
+model DataConnector {
+  id                Int          @id @default(autoincrement())
+  name              String
+  engine            String       @default("postgres")
+  encryptedHost     String
+  port              Int          @default(5432)
+  databaseName      String
+  encryptedUsername String
+  encryptedPassword String
+  ssl               Boolean      @default(false)
+  organizationId    Int
+  createdById       Int
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+  organization      Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdBy         User         @relation(fields: [createdById], references: [id], onDelete: Restrict)
+  datasets          Dataset[]
+
+  @@index([organizationId])
+  @@index([createdById])
+  @@index([engine])
+  @@index([createdAt])
+}
+
+model SemanticModel {
+  id             Int          @id @default(autoincrement())
+  name           String
+  description    String?
+  datasetId      Int
+  organizationId Int
+  config         Json?
+  dimensions     Json?
+  measures       Json?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  dataset        Dataset      @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  widgets        Widget[]
+
+  @@index([datasetId])
+  @@index([organizationId])
+  @@index([createdAt])
+}
+
+model RowLevelPolicy {
+  id             Int          @id @default(autoincrement())
+  name           String
+  datasetId      Int
+  organizationId Int
+  role           String       @default("VIEWER")
+  userAttribute  String?
+  columnName     String
+  operator       String       @default("eq")
+  valuePredicate String
+  isActive       Boolean      @default(true)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  dataset        Dataset      @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@index([datasetId])
+  @@index([organizationId])
+  @@index([role])
+  @@index([isActive])
+}
+
+model Dataset {
+  id                 Int                 @id @default(autoincrement())
+  description        String?
+  userId             Int?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  deletedAt          DateTime?
+  filePath           String?
+  storageBucket      String?
+  storageKey         String?
+  connectorId        Int?
+  metadata           Json?
+  name               String
+  organizationId     Int?
+  previewRows        Json?
+  processingStatus   DatasetStatus       @default(PENDING)
+  sourceType         String
+  sourceUrl          String?
+  schema_            Json?
+  columnCount        Int?
+  columns            Json?
+  domain             String?
+  fileSize           Int?
+  format             String?
+  originalFilename   String?
+  processedAt        DateTime?
+  qualityScore       Float?
+  rowCount           Int?
+  status             String?
+  connector          DataConnector?      @relation(fields: [connectorId], references: [id], onDelete: SetNull)
+  dashboardLinks     DashboardDataset[]
+  organization       Organization?       @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  ownerUser          User?               @relation(fields: [userId], references: [id], onDelete: Restrict)
+  mlModels           MLModel[]
+  qualityIssues      QualityIssue[]
+  qualityAssessments QualityAssessment[]
+  widgets            Widget[]
+  biAuditLogs        BiAuditLog[]
+  decisions          Decision[]
+  semanticModels     SemanticModel[]
+  rowLevelPolicies   RowLevelPolicy[]
+  departmentId       Int?
+  department         Department?         @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+
+  @@index([processingStatus])
+  @@index([userId])
+  @@index([organizationId])
+  @@index([departmentId])
+  @@index([connectorId])
+  @@index([createdAt])
+  @@index([name])
+  @@index([deletedAt])
+  @@index([userId, processingStatus])
+  @@index([domain])
+  @@index([format])
+  @@index([sourceType])
+  @@index([status])
+  @@index([organizationId, status])
+  @@index([organizationId, createdAt])
+}
+
+model Dashboard {
+  id              Int                  @id @default(autoincrement())
+  title           String
+  description     String?
+  createdAt       DateTime             @default(now())
+  updatedAt       DateTime             @updatedAt
+  deletedAt       DateTime?
+  organizationId  Int?
+  ownerId         Int?
+  config          Json?
+  layout          Json?
+  theme           Json?
+  isPublic        Boolean              @default(false)
+  isTemplate      Boolean              @default(false)
+  folderId        Int?
+  refreshInterval Int?
+  tags            String[]             @default([])
+  organization    Organization?        @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  ownerUser       User?                @relation(fields: [ownerId], references: [id], onDelete: Restrict)
+  datasetLinks    DashboardDataset[]
+  insights        Insight[]
+  widgets         Widget[]
+  reports         Report[]
+  comments        DashboardComment[]
+  bookmarks       DashboardBookmark[]
+  snapshots       DashboardSnapshot[]
+  shareLinks      DashboardShareLink[]
+  departmentId    Int?
+  department      Department?          @relation(fields: [departmentId], references: [id], onDelete: SetNull)
+
+  @@index([organizationId])
+  @@index([departmentId])
+  @@index([ownerId])
+  @@index([createdAt])
+  @@index([title])
+  @@index([deletedAt])
+  @@index([organizationId, ownerId])
+  @@index([organizationId, createdAt])
+}
+
+model DashboardDataset {
+  id          Int       @id @default(autoincrement())
+  dashboardId Int
+  datasetId   Int
+  addedAt     DateTime  @default(now())
+  dashboard   Dashboard @relation(fields: [dashboardId], references: [id])
+  dataset     Dataset   @relation(fields: [datasetId], references: [id])
+
+  @@unique([dashboardId, datasetId])
+  @@index([dashboardId])
+  @@index([datasetId])
+  @@index([addedAt])
+}
+
+model Widget {
+  id              Int                @id @default(autoincrement())
+  dashboardId     Int?
+  datasetId       Int?
+  semanticModelId Int?
+  type            WidgetType
+  config          Json
+  order           Int                @default(0)
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+  deletedAt       DateTime?
+  description     String?
+  h               Int                @default(4)
+  minH            Int?
+  minW            Int?
+  name            String?
+  w               Int                @default(4)
+  x               Int                @default(0)
+  y               Int                @default(0)
+  dashboard       Dashboard?         @relation(fields: [dashboardId], references: [id], onDelete: Restrict)
+  dataset         Dataset?           @relation(fields: [datasetId], references: [id], onDelete: Restrict)
+  semanticModel   SemanticModel?     @relation(fields: [semanticModelId], references: [id], onDelete: SetNull)
+  comments        DashboardComment[]
+
+  @@index([dashboardId])
+  @@index([datasetId])
+  @@index([semanticModelId])
+  @@index([type])
+  @@index([order])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([dashboardId, order])
+}
+
+model DashboardComment {
+  id           Int       @id @default(autoincrement())
+  dashboardId  Int
+  widgetId     Int?
+  authorId     Int
+  parentId     Int?
+  content      String
+  positionX    Float?
+  positionY    Float?
+  isResolved   Boolean   @default(false)
+  resolvedById Int?
+  resolvedAt   DateTime?
+  metadata     Json?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  deletedAt    DateTime?
+
+  dashboard  Dashboard          @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
+  widget     Widget?            @relation(fields: [widgetId], references: [id], onDelete: Cascade)
+  author     User               @relation("CommentAuthor", fields: [authorId], references: [id])
+  resolvedBy User?              @relation("CommentResolver", fields: [resolvedById], references: [id])
+  parent     DashboardComment?  @relation("ThreadReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies    DashboardComment[] @relation("ThreadReplies")
+
+  @@index([dashboardId, isResolved])
+  @@index([widgetId])
+  @@index([authorId])
+  @@index([parentId])
+}
+
+model DashboardBookmark {
+  id          Int      @id @default(autoincrement())
+  dashboardId Int
+  userId      Int
+  name        String   @db.VarChar(120)
+  description String?  @db.VarChar(255)
+  isShared    Boolean  @default(false)
+  isDefault   Boolean  @default(false)
+  filterState Json
+  layoutState Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  dashboard Dashboard @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([dashboardId, userId])
+  @@index([dashboardId, isShared])
+}
+
+model DashboardSnapshot {
+  id           Int      @id @default(autoincrement())
+  dashboardId  Int
+  createdById  Int
+  name         String
+  notes        String?
+  filterState  Json
+  frozenData   Json
+  thumbnailUrl String?
+  createdAt    DateTime @default(now())
+
+  dashboard Dashboard @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
+  createdBy User      @relation(fields: [createdById], references: [id])
+
+  @@index([dashboardId, createdAt])
+}
+
+model DashboardShareLink {
+  id             Int       @id @default(autoincrement())
+  dashboardId    Int
+  token          String    @unique @db.VarChar(64)
+  passwordHash   String?   @db.VarChar(255)
+  expiresAt      DateTime?
+  maxViews       Int?
+  viewCount      Int       @default(0)
+  canFilter      Boolean   @default(true)
+  canExport      Boolean   @default(false)
+  defaultFilters Json?
+  isRevoked      Boolean   @default(false)
+  createdById    Int
+  createdAt      DateTime  @default(now())
+  lastAccessedAt DateTime?
+
+  dashboard Dashboard @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
+  createdBy User      @relation(fields: [createdById], references: [id])
+
+  @@index([token, isRevoked])
+  @@index([dashboardId])
+}
+
+model Insight {
+  id          Int       @id @default(autoincrement())
+  dashboardId Int
+  userId      Int?
+  content     String
+  metadata    Json?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+  dashboard   Dashboard @relation(fields: [dashboardId], references: [id])
+  author      User?     @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@index([dashboardId])
+  @@index([userId])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([dashboardId, userId])
+}
+
+model MLModel {
+  id        Int       @id @default(autoincrement())
+  datasetId Int
+  creatorId Int?
+  name      String
+  type      String
+  modelPath String?
+  metrics   Json?
+  params    Json?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+  creator   User?     @relation("MLModelCreator", fields: [creatorId], references: [id], onDelete: Restrict)
+  dataset   Dataset   @relation(fields: [datasetId], references: [id])
+
+  @@index([datasetId])
+  @@index([creatorId])
+  @@index([type])
+  @@index([createdAt])
+  @@index([name])
+  @@index([deletedAt])
+  @@index([datasetId, creatorId])
+}
+
+model Decision {
+  id              Int               @id @default(autoincrement())
+  title           String
+  description     String?
+  status          String            @default("draft")
+  impactLevel     String            @default("medium")
+  rationale       String?
+  expectedOutcome String?
+  actualOutcome   String?
+  datasetId       Int?
+  ownerId         Int
+  organizationId  Int
+  tags            String[]
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  organization    Organization      @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  owner           User              @relation(fields: [ownerId], references: [id], onDelete: Restrict)
+  dataset         Dataset?          @relation(fields: [datasetId], references: [id], onDelete: SetNull)
+  history         DecisionHistory[]
+  comments        DecisionComment[]
+
+  @@index([organizationId])
+  @@index([ownerId])
+  @@index([status])
+  @@index([datasetId])
+  @@index([createdAt])
+  @@index([organizationId, status])
+  @@index([organizationId, createdAt])
+}
+
+model DecisionHistory {
+  id          Int      @id @default(autoincrement())
+  decisionId  Int
+  status      String
+  changedById Int
+  notes       String?
+  changedAt   DateTime @default(now())
+  decision    Decision @relation(fields: [decisionId], references: [id], onDelete: Cascade)
+  changedBy   User     @relation(fields: [changedById], references: [id], onDelete: Restrict)
+
+  @@index([decisionId])
+  @@index([changedById])
+}
+
+model DecisionComment {
+  id         Int      @id @default(autoincrement())
+  decisionId Int
+  userId     Int
+  content    String
+  createdAt  DateTime @default(now())
+  decision   Decision @relation(fields: [decisionId], references: [id], onDelete: Cascade)
+  user       User     @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@index([decisionId])
+  @@index([userId])
+}
+
+model Report {
+  id               Int          @id @default(autoincrement())
+  name             String
+  description      String?
+  dashboardId      Int?
+  format           String
+  scheduleType     String       @default("manual")
+  scheduleCron     String?
+  scheduleInterval Int?
+  recipients       String[]
+  isActive         Boolean      @default(true)
+  nextRun          DateTime?
+  createdById      Int
+  organizationId   Int
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+  organization     Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdBy        User         @relation(fields: [createdById], references: [id], onDelete: Restrict)
+  dashboard        Dashboard?   @relation(fields: [dashboardId], references: [id], onDelete: SetNull)
+  runs             ReportRun[]
+
+  @@index([organizationId])
+  @@index([createdById])
+  @@index([dashboardId])
+  @@index([isActive])
+  @@index([scheduleType])
+  @@index([createdAt])
+}
+
+model ReportRun {
+  id             Int       @id @default(autoincrement())
+  reportId       Int
+  status         String    @default("pending")
+  startedAt      DateTime  @default(now())
+  completedAt    DateTime?
+  fileUrl        String?
+  fileSize       Int?
+  errorMessage   String?
+  recipientCount Int       @default(0)
+  report         Report    @relation(fields: [reportId], references: [id], onDelete: Cascade)
+
+  @@index([reportId])
+  @@index([status])
+  @@index([startedAt])
+}
+
+model QualityIssue {
+  id           Int       @id @default(autoincrement())
+  datasetId    Int
+  columnName   String?
+  issueType    String
+  severity     String
+  description  String
+  affectedRows Int
+  percentage   Float
+  status       String    @default("open")
+  resolvedAt   DateTime?
+  createdAt    DateTime  @default(now())
+  dataset      Dataset   @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+  @@index([datasetId])
+  @@index([issueType])
+  @@index([severity])
+  @@index([status])
+  @@index([createdAt])
+  @@index([datasetId, status])
+  @@index([datasetId, severity])
+}
+
+model QualityAssessment {
+  id           Int      @id @default(autoincrement())
+  datasetId    Int
+  overallScore Float
+  completeness Float?
+  accuracy     Float?
+  consistency  Float?
+  validity     Float?
+  issuesCount  Int?
+  status       String   @default("completed")
+  createdAt    DateTime @default(now())
+  dataset      Dataset  @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+  @@index([datasetId])
+  @@index([createdAt])
+}
+
+model DashboardTemplate {
+  id             Int           @id @default(autoincrement())
+  title          String
+  description    String?
+  category       String        @default("general")
+  config         Json?
+  layout         Json?
+  theme          Json?
+  isOfficial     Boolean       @default(false)
+  organizationId Int?
+  createdById    Int?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdBy      User?         @relation(fields: [createdById], references: [id], onDelete: SetNull)
+
+  @@index([category])
+  @@index([organizationId])
+  @@index([isOfficial])
+}
+
+model ScheduledJob {
+  id             Int       @id @default(autoincrement())
+  jobType        String
+  targetId       Int
+  cronExpression String
+  lastRunAt      DateTime?
+  nextRunAt      DateTime?
+  status         String    @default("active")
+  metadata       Json?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([jobType])
+  @@index([status])
+  @@index([nextRunAt])
+}
+
+model UsageTracking {
+  id             Int           @id @default(autoincrement())
+  userId         Int
+  organizationId Int?
+  metricType     String
+  value          Int
+  limit          Int
+  periodStart    DateTime
+  periodEnd      DateTime
+  createdAt      DateTime      @default(now())
+  subscriptionId Int?
+  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, metricType, periodStart])
+  @@index([userId, metricType])
+  @@index([organizationId])
+  @@index([subscriptionId])
+  @@index([periodStart])
+  @@index([periodEnd])
+  @@index([userId, periodStart])
+  @@index([organizationId, metricType])
+  @@index([metricType, periodStart])
+}
+
+model Notification {
+  id             Int                    @id @default(autoincrement())
+  userId         Int
+  type           String
+  title          String?
+  body           String
+  data           Json?
+  isRead         Boolean                @default(false)
+  emailSent      Boolean                @default(false)
+  emailSentAt    DateTime?
+  createdAt      DateTime               @default(now())
+  deletedAt      DateTime?
+  category       NotificationCategory?
+  priority       NotificationPriority   @default(NORMAL)
+  expiresAt      DateTime?
+  inAppDelivered Boolean                @default(false)
+  pushSent       Boolean                @default(false)
+  pushSentAt     DateTime?
+  readAt         DateTime?
+  user           User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deliveries     NotificationDelivery[]
+
+  @@index([userId])
+  @@index([isRead])
+  @@index([createdAt])
+  @@index([userId, isRead])
+  @@index([category, createdAt])
+  @@index([priority])
+  @@index([emailSent])
+  @@index([type])
+  @@index([deletedAt])
+  @@index([userId, createdAt])
+  @@index([userId, category])
+  @@index([userId, isRead, createdAt])
+  @@index([expiresAt])
+  @@index([userId, deletedAt, createdAt])
+}
+
+enum DisputeReason {
+  NON_DELIVERY
+  POOR_QUALITY
+  INCOMPLETE_REQUIREMENTS
+  OTHER
+}
+
+enum DisputeStatus {
+  OPEN
+  UNDER_REVIEW
+  RESOLVED
+  CANCELLED
+}
+
+model Dispute {
+  id         Int @id @default(autoincrement())
+  contractId Int @unique
+  creatorId  Int // User who opened the dispute
+  opponentId Int // The other party
+
+  reason      DisputeReason
+  description String
+  status      DisputeStatus @default(OPEN)
+
+  // Evidence / Metadata
+  metadata Json? // Links to messages, files, etc.
+
+  // Resolution details
+  resolutionNotes  String?
+  resolutionReason String? // Machine-readable reason code (e.g. "AUTO_TIMEOUT", "ADMIN_RULING")
+  resolvedAt       DateTime?
+  resolvedById     Int? // Admin user who resolved it (null = auto-resolved)
+  autoResolvedAt   DateTime? // Set when Celery auto-resolution fires
+  escalatedAt      DateTime? // Set when dispute is escalated to admin
+
+  // Milestone relation
+  milestoneId Int? @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  contract     Contract           @relation(fields: [contractId], references: [id])
+  creator      User               @relation("DisputeCreator", fields: [creatorId], references: [id])
+  opponent     User               @relation("DisputeOpponent", fields: [opponentId], references: [id])
+  resolvedBy   User?              @relation("DisputeResolver", fields: [resolvedById], references: [id])
+  milestone    ContractMilestone? @relation("MilestoneDispute", fields: [milestoneId], references: [id])
+  mailThreads  MailThread[]       @relation("DisputeMailThreads")
+  mailMessages MailMessage[]
+
+  @@index([status])
+  @@index([contractId])
+  @@index([createdAt])
+  @@index([autoResolvedAt])
+  @@index([milestoneId])
+}
+
+model NotificationDelivery {
+  id             Int                        @id @default(autoincrement())
+  notificationId Int
+  channel        NotificationChannel
+  status         NotificationDeliveryStatus @default(PENDING)
+  sentAt         DateTime?
+  deliveredAt    DateTime?
+  failedAt       DateTime?
+  errorMessage   String?
+  retryCount     Int                        @default(0)
+  nextRetryAt    DateTime?
+  externalId     String?
+  createdAt      DateTime                   @default(now())
+  updatedAt      DateTime                   @updatedAt
+  notification   Notification               @relation(fields: [notificationId], references: [id], onDelete: Cascade)
+
+  @@index([notificationId])
+  @@index([channel])
+  @@index([status])
+  @@index([nextRetryAt])
+  @@index([createdAt])
+  @@index([status, nextRetryAt])
+}
+
+model NotificationPreferences {
+  id                  Int      @id @default(autoincrement())
+  userId              Int      @unique
+  emailNotifications  Boolean  @default(true)
+  pushNotifications   Boolean  @default(true)
+  marketingEmails     Boolean  @default(false)
+  newsletter          Boolean  @default(false)
+  quietHoursStart     String?
+  quietHoursEnd       String?
+  digestTime          String?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+  categoryPreferences Json?
+  digestDay           Int?
+  digestFrequency     String   @default("daily")
+  digestTimezone      String   @default("UTC")
+  inAppNotifications  Boolean  @default(true)
+  quietHoursTimezone  String   @default("UTC")
+  smsNotifications    Boolean  @default(false)
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([emailNotifications])
+  @@index([updatedAt])
+}
+
+model AuthToken {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  token     String    @unique
+  type      String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([token])
+  @@index([type])
+  @@index([expiresAt])
+  @@index([usedAt])
+  @@index([createdAt])
+  @@index([userId, type])
+  @@index([expiresAt, usedAt])
+}
+
+model File {
+  id          Int       @id @default(autoincrement())
+  filename    String
+  storedName  String
+  path        String
+  size        Int
+  mimeType    String?
+  contentType String?
+  category    String?
+  ownerId     Int
+  createdAt   DateTime  @default(now())
+  deletedAt   DateTime?
+  owner       User      @relation(fields: [ownerId], references: [id])
+
+  @@index([ownerId])
+  @@index([filename])
+  @@index([category])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([ownerId, category])
+  @@index([storedName])
+}
+
+model AuditLog {
+  id         Int       @id @default(autoincrement())
+  actorId    Int?
+  createdAt  DateTime  @default(now())
+  amount     Int?
+  currency   String?
+  entityId   String
+  entityType String
+  eventType  String
+  metadata   Json?
+  updatedAt  DateTime? @updatedAt
+
+  @@index([entityType, entityId])
+  @@index([eventType, createdAt])
+  @@index([createdAt])
+}
+
+model UserSettings {
+  id         Int      @id @default(autoincrement())
+  userId     Int      @unique
+  language   String   @default("en")
+  timezone   String   @default("UTC")
+  dateFormat String   @default("MM/DD/YYYY")
+  timeFormat String   @default("12h")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([language])
+  @@index([timezone])
+  @@index([updatedAt])
+}
+
+model AppearanceSettings {
+  id            Int             @id @default(autoincrement())
+  userId        Int             @unique
+  theme         ThemePreference @default(SYSTEM)
+  reducedMotion Boolean         @default(false)
+  highContrast  Boolean         @default(false)
+  fontSize      String          @default("medium")
+  density       String          @default("comfortable")
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  user          User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([theme])
+  @@index([updatedAt])
+}
+
+model PrivacySettings {
+  id                Int               @id @default(autoincrement())
+  userId            Int               @unique
+  profileVisibility ProfileVisibility @default(PUBLIC)
+  searchVisibility  Boolean           @default(true)
+  activityStatus    Boolean           @default(true)
+  readReceipts      Boolean           @default(true)
+  showBio           SectionVisibility @default(INHERIT)
+  showSkills        SectionVisibility @default(INHERIT)
+  showPortfolio     SectionVisibility @default(INHERIT)
+  showCertificates  SectionVisibility @default(INHERIT)
+  showReviews       SectionVisibility @default(INHERIT)
+  showEnrollments   SectionVisibility @default(INHERIT)
+  showContactInfo   SectionVisibility @default(INHERIT)
+  showOrganization  SectionVisibility @default(INHERIT)
+  showTagline       SectionVisibility @default(INHERIT)
+  showHeadline      SectionVisibility @default(INHERIT)
+  showPronouns      SectionVisibility @default(INHERIT)
+  showAvailability  SectionVisibility @default(INHERIT)
+  showRating        SectionVisibility @default(INHERIT)
+  showEmail         Boolean           @default(false)
+  showPhone         Boolean           @default(false)
+  showLastActive    Boolean           @default(true)
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  user              User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([profileVisibility])
+  @@index([updatedAt])
+}
+
+model UserIntegration {
+  id           Int            @id @default(autoincrement())
+  userId       Int
+  provider     String
+  providerId   String?
+  accountLabel String?
+  accessToken  String?
+  refreshToken String?
+  expiresAt    DateTime?
+  scopes       String[]       @default([])
+  metadata     Json?
+  settings     Json?
+  status       String         @default("ACTIVE")
+  syncStatus   String         @default("IDLE") // "IDLE" | "SYNCING" | "ACTIVE" | "ERROR" | "EXPIRED"
+  lastSyncedAt DateTime?
+  errorCount   Int            @default(0)
+  connectedAt  DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  user         User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  logs         ConnectorLog[]
+
+  @@unique([userId, provider])
+  @@index([userId])
+  @@index([provider])
+}
+
+model ConnectorLog {
+  id                Int             @id @default(autoincrement())
+  userIntegrationId Int
+  provider          String
+  action            String
+  status            String          @default("SUCCESS") // "SUCCESS" | "FAILED"
+  requestPayload    Json?
+  responsePayload   Json?
+  durationMs        Int?
+  createdAt         DateTime        @default(now())
+  userIntegration   UserIntegration @relation(fields: [userIntegrationId], references: [id], onDelete: Cascade)
+
+  @@index([userIntegrationId])
+  @@index([provider, action])
+  @@index([createdAt])
+}
+
+model ApiKey {
+  id             Int           @id @default(autoincrement())
+  userId         Int
+  name           String
+  keyPrefix      String
+  keyHash        String        @unique
+  scopes         String[]      @default([])
+  ipWhitelist    String[]      @default([])
+  allowedPaths   String[]      @default([])
+  allowedMethods String[]      @default([])
+  environment    String        @default("production")
+  lastUsedAt     DateTime?
+  expiresAt      DateTime?
+  graceExpiresAt DateTime?
+  successorKeyId Int?
+  replacedKeyId  Int?
+  revokedAt      DateTime?
+  createdAt      DateTime      @default(now())
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  usages         ApiKeyUsage[]
+
+  @@index([userId])
+  @@index([keyHash])
+}
+
+model ApiKeyUsage {
+  id             Int      @id @default(autoincrement())
+  apiKeyId       Int
+  endpoint       String
+  method         String
+  statusCode     Int
+  ipAddress      String?
+  responseTimeMs Int?
+  timestamp      DateTime @default(now())
+  apiKey         ApiKey   @relation(fields: [apiKeyId], references: [id], onDelete: Cascade)
+
+  @@index([apiKeyId])
+  @@index([timestamp])
+}
+
+model WebhookEndpoint {
+  id             Int                 @id @default(autoincrement())
+  userId         Int
+  name           String
+  url            String
+  secret         String
+  previousSecret String?
+  events         String[]            @default([])
+  active         Boolean             @default(true)
+  failureCount   Int                 @default(0)
+  circuitState   String              @default("CLOSED") // "CLOSED" | "OPEN" | "HALF_OPEN"
+  lastFailureAt  DateTime?
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  user           User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deliveries     WebhookDelivery[]
+  deadLetters    WebhookDeadLetter[]
+
+  @@index([userId])
+  @@index([circuitState])
+}
+
+model WebhookDelivery {
+  id                 Int             @id @default(autoincrement())
+  webhookEndpointId  Int
+  eventId            String
+  eventType          String
+  payload            Json
+  responseStatusCode Int?
+  responseBody       String?
+  durationMs         Int?
+  attemptNumber      Int             @default(1)
+  status             String          @default("PENDING")
+  deliveredAt        DateTime        @default(now())
+  endpoint           WebhookEndpoint @relation(fields: [webhookEndpointId], references: [id], onDelete: Cascade)
+
+  @@index([webhookEndpointId])
+  @@index([eventId])
+}
+
+// Workflow DAG Execution Models
+model IntegrationWorkflow {
+  id            Int                 @id @default(autoincrement())
+  userId        Int
+  name          String
+  description   String?
+  triggerType   String // "WEBHOOK" | "SCHEDULE" | "EVENT"
+  triggerConfig Json
+  active        Boolean             @default(true)
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  user          User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  nodes         WorkflowNode[]
+  edges         WorkflowEdge[]
+  executions    WorkflowExecution[]
+
+  @@index([userId])
+}
+
+model WorkflowNode {
+  id         String              @id @default(uuid())
+  workflowId Int
+  type       String // "CONNECTOR_ACTION" | "WASM_TRANSFORM" | "FILTER" | "DELAY"
+  provider   String?
+  config     Json
+  workflow   IntegrationWorkflow @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+
+  @@index([workflowId])
+}
+
+model WorkflowEdge {
+  id           String              @id @default(uuid())
+  workflowId   Int
+  sourceNodeId String
+  targetNodeId String
+  condition    String?
+  workflow     IntegrationWorkflow @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+
+  @@index([workflowId])
+}
+
+model WorkflowExecution {
+  id         Int                 @id @default(autoincrement())
+  workflowId Int
+  status     String // "PENDING" | "RUNNING" | "COMPLETED" | "FAILED"
+  logs       Json?
+  durationMs Int?
+  createdAt  DateTime            @default(now())
+  workflow   IntegrationWorkflow @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+
+  @@index([workflowId])
+}
+
+// Dead Letter Queue (DLQ) for Webhook Deliveries
+model WebhookDeadLetter {
+  id                Int             @id @default(autoincrement())
+  webhookEndpointId Int
+  eventType         String
+  payload           Json
+  failureReason     String
+  retryCount        Int             @default(10)
+  createdAt         DateTime        @default(now())
+  endpoint          WebhookEndpoint @relation(fields: [webhookEndpointId], references: [id], onDelete: Cascade)
+
+  @@index([webhookEndpointId])
+}
+
+model SecuritySettings {
+  id                 Int       @id @default(autoincrement())
+  userId             Int       @unique
+  twoFactorEnabled   Boolean   @default(false)
+  twoFactorSecret    String?
+  backupCodes        String[]  @default([])
+  emailOtpVerified   Boolean   @default(false)
+  webauthnEnabled    Boolean   @default(false)
+  loginAlerts        Boolean   @default(true)
+  deviceManagement   Boolean   @default(true)
+  sessionTimeout     Int       @default(24)
+  lastPasswordChange DateTime?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  user               User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([twoFactorEnabled])
+  @@index([updatedAt])
+  @@index([lastPasswordChange])
+}
+
+model WebAuthnCredential {
+  id           Int      @id @default(autoincrement())
+  userId       Int
+  credentialId String   @unique
+  publicKey    Bytes
+  counter      Int      @default(0)
+  transports   String[]
+  deviceName   String?
+  createdAt    DateTime @default(now())
+  lastUsedAt   DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([credentialId])
+}
+
+model EmailOtpCode {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  email     String
+  code      String
+  purpose   String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, purpose])
+  @@index([email, code])
+}
+
+model UserDevice {
+  id               Int      @id @default(autoincrement())
+  userId           Int
+  fingerprintHash  String
+  platform         String?
+  browserName      String?
+  browserVersion   String?
+  osVersion        String?
+  deviceModel      String?
+  screenResolution String?
+  lastKnownIp      String?
+  lastKnownWilaya  String?
+  lastKnownSubnet  String?
+  firstSeenAt      DateTime @default(now())
+  lastActiveAt     DateTime @default(now()) @updatedAt
+  loginCount       Int      @default(1)
+  isTrusted        Boolean  @default(false)
+  isPrimary        Boolean  @default(false)
+  isActive         Boolean  @default(true)
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, fingerprintHash])
+  @@index([userId])
+  @@index([fingerprintHash])
+  @@index([userId, isTrusted])
+  @@index([lastActiveAt])
+}
+
+enum SecurityEventType {
+  NEW_DEVICE_DETECTED
+  GEO_IMPOSSIBLE_TRAVEL
+  EXCESSIVE_SUBNET_SPREAD
+  DEVICE_TRUSTED
+  DEVICE_REVOKED
+  STRIKE_ISSUED
+  STRIKE_TWO_REACHED
+  STRIKE_THREE_REACHED
+  ACCOUNT_SUSPENDED
+  ACCOUNT_REINSTATED
+  ESCROW_COOLDOWN_STARTED
+  ESCROW_COOLDOWN_EXPIRED
+  COOLDOWN_BYPASS_2FA
+  PASSWORD_CHANGED
+  TWO_FACTOR_ENABLED
+  TWO_FACTOR_DISABLED
+}
+
+model SecurityEvent {
+  id          Int               @id @default(autoincrement())
+  userId      Int
+  eventType   SecurityEventType
+  description String?
+  metadata    Json?
+  ipAddress   String?
+  wilaya      String?
+  fingerprint String?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime?         @updatedAt
+  user        User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([userId, createdAt])
+  @@index([eventType])
+}
+
+model DeviceCooldown {
+  id              Int       @id @default(autoincrement())
+  userId          Int
+  fingerprintHash String
+  cooldownType    String
+  startedAt       DateTime  @default(now())
+  expiresAt       DateTime
+  isActive        Boolean   @default(true)
+  bypassedAt      DateTime?
+  bypassMethod    String?
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([fingerprintHash])
+  @@index([userId, isActive])
+}
+
+model AdvancedSettings {
+  id              Int      @id @default(autoincrement())
+  userId          Int      @unique
+  apiAccess       Boolean  @default(false)
+  webhooks        Boolean  @default(false)
+  dataExport      Boolean  @default(false)
+  debugMode       Boolean  @default(false)
+  performanceMode Boolean  @default(false)
+  cacheSize       Int      @default(500)
+  logLevel        LogLevel @default(INFO)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([debugMode])
+  @@index([performanceMode])
+  @@index([updatedAt])
+}
+
+model DataExport {
+  id          Int       @id @default(autoincrement())
+  userId      Int
+  status      String    @default("PENDING")
+  fileUrl     String?
+  requestedAt DateTime  @default(now())
+  completedAt DateTime?
+  expiresAt   DateTime?
+  format      String    @default("JSON")
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([status])
+  @@index([requestedAt])
+  @@index([completedAt])
+  @@index([expiresAt])
+  @@index([userId, status])
+  @@index([format])
+}
+
+model AccountDeletionRequest {
+  id           Int       @id @default(autoincrement())
+  userId       Int
+  reason       String?
+  feedback     String?
+  status       String    @default("PENDING")
+  scheduledFor DateTime
+  requestedAt  DateTime  @default(now())
+  updatedAt    DateTime? @updatedAt
+  cancelledAt  DateTime?
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([status])
+  @@index([scheduledFor])
+  @@index([requestedAt])
+  @@index([userId, status])
+  @@index([scheduledFor, status])
+}
+
+model PhoneVerification {
+  id                Int      @id @default(autoincrement())
+  phone_number      String   @unique
+  verification_code String
+  expires_at        DateTime
+  attempts          Int      @default(0)
+  verified          Boolean  @default(false)
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+
+  @@index([phone_number])
+  @@index([expires_at])
+  @@index([verified])
+  @@index([created_at])
+  @@index([phone_number, verified])
+  @@map("phone_verifications")
+}
+
+model WaitlistEntry {
+  id                   Int            @id @default(autoincrement())
+  fullName             String
+  email                String         @unique
+  referralCode         String         @unique
+  referredById         Int?
+  friendsReferredCount Int            @default(0)
+  utmSource            String?
+  utmMedium            String?
+  utmCampaign          String?
+  locale               String         @default("en")
+  status               WaitlistStatus @default(PENDING)
+  lastDripSentAt       DateTime?
+  convertedToUserId    Int?
+  convertedAt          DateTime?
+  metadata             Json           @default("{}")
+  createdAt            DateTime       @default(now())
+  updatedAt            DateTime       @updatedAt
+
+  referredBy WaitlistEntry?  @relation("WaitlistReferrals", fields: [referredById], references: [id])
+  referrals  WaitlistEntry[] @relation("WaitlistReferrals")
+
+  @@index([email])
+  @@index([referralCode])
+  @@index([createdAt])
+  @@index([status])
+  @@index([referredById])
+  @@index([status, createdAt])
+}
+
+model WaitlistReferralMilestone {
+  id                Int                @id @default(autoincrement())
+  position          Int                @unique
+  referralsRequired Int
+  reward            String
+  rewardType        ReferralRewardType @default(FREE_MONTH)
+  isActive          Boolean            @default(true)
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  @@index([position])
+  @@index([isActive])
+}
+
+model PaymentWebhookLog {
+  id              Int              @id @default(autoincrement())
+  transactionId   Int?
+  eventType       WebhookEventType
+  gateway         PaymentGateway
+  payload         Json
+  signature       String?
+  isVerified      Boolean          @default(false)
+  processed       Boolean          @default(false)
+  processingError String?
+  attempts        Int              @default(0)
+  createdAt       DateTime         @default(now())
+  processedAt     DateTime?
+  transaction     Transaction?     @relation(fields: [transactionId], references: [id])
+
+  @@index([transactionId])
+  @@index([eventType])
+  @@index([gateway])
+  @@index([createdAt])
+  @@index([processed])
+  @@index([isVerified])
+}
+
+model IdempotencyKey {
+  id            Int          @id @default(autoincrement())
+  key           String       @unique
+  userId        Int?
+  transactionId Int?
+  lastRunAt     DateTime
+  responseCode  Int
+  responseBody  Json
+  createdAt     DateTime     @default(now())
+  expiresAt     DateTime
+  transaction   Transaction? @relation(fields: [transactionId], references: [id], onDelete: Cascade)
+  user          User?        @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([key])
+  @@index([userId])
+  @@index([expiresAt])
+  @@index([createdAt])
+}
+
+model Conversation {
+  id             Int                       @id @default(autoincrement())
+  conversationId String                    @unique @default(uuid())
+  type           ConversationType          @default(FREELANCE)
+  createdAt      DateTime                  @default(now())
+  updatedAt      DateTime                  @updatedAt
+  deletedAt      DateTime?
+  metadata       Json?
+  archivedAt     DateTime?
+  title          String?
+  version        Int                       @default(0)
+  participants   ConversationParticipant[]
+  messages       Message[]
+  attachments    MessageAttachment[]
+
+  @@index([conversationId])
+  @@index([type])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([updatedAt])
+  @@index([archivedAt])
+  @@index([type, createdAt])
+  @@index([type, updatedAt])
+  @@index([deletedAt, updatedAt])
+}
+
+model ConversationParticipant {
+  id                Int             @id @default(autoincrement())
+  conversationId    Int
+  userId            Int
+  role              ParticipantRole @default(MEMBER)
+  joinedAt          DateTime        @default(now())
+  leftAt            DateTime?
+  lastReadAt        DateTime?
+  isArchived        Boolean         @default(false)
+  isPinned          Boolean         @default(false)
+  lastReadMessageId String?
+  mutedUntil        DateTime?
+  conversation      Conversation    @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  user              User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([conversationId, userId])
+  @@index([userId])
+  @@index([conversationId])
+  @@index([conversationId, userId])
+  @@index([joinedAt])
+  @@index([leftAt])
+  @@index([lastReadAt])
+  @@index([userId, leftAt])
+  @@index([userId, isArchived])
+  @@index([userId, isPinned])
+  @@index([mutedUntil])
+}
+
+model Message {
+  id             Int                  @id @default(autoincrement())
+  messageId      String               @unique @default(uuid())
+  conversationId Int
+  senderId       Int
+  content        String
+  messageType    MessageType          @default(TEXT)
+  isEdited       Boolean              @default(false)
+  editedAt       DateTime?
+  createdAt      DateTime             @default(now())
+  deletedAt      DateTime?
+  metadata       Json?
+  deletedById    Int?
+  editedById     Int?
+  replyToId      Int?
+  status         MessageStatus        @default(SENT)
+  version        Int                  @default(0)
+  conversation   Conversation         @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  replyToMessage Message?             @relation("MessageReplies", fields: [replyToId], references: [id])
+  replies        Message[]            @relation("MessageReplies")
+  sender         User                 @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  attachments    MessageAttachment[]
+  reactions      MessageReaction[]
+  readReceipts   MessageReadReceipt[]
+
+  @@index([messageId])
+  @@index([conversationId])
+  @@index([senderId])
+  @@index([createdAt])
+  @@index([deletedAt])
+  @@index([conversationId, createdAt])
+  @@index([conversationId, deletedAt, createdAt])
+  @@index([replyToId])
+  @@index([status])
+  @@index([conversationId, status])
+}
+
+model MessageAttachment {
+  id             Int          @id @default(autoincrement())
+  messageId      Int
+  fileName       String
+  fileType       String
+  fileSize       Int
+  fileUrl        String
+  thumbnailUrl   String?
+  createdAt      DateTime     @default(now())
+  conversationId Int
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  message        Message      @relation(fields: [messageId], references: [id], onDelete: Cascade)
+
+  @@index([messageId])
+  @@index([conversationId])
+  @@index([createdAt])
+}
+
+model MessageReaction {
+  id        Int      @id @default(autoincrement())
+  messageId Int
+  userId    Int
+  emoji     String
+  createdAt DateTime @default(now())
+  message   Message  @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([messageId, userId, emoji])
+  @@index([messageId])
+  @@index([userId])
+  @@index([createdAt])
+}
+
+model MessageReadReceipt {
+  id        Int      @id @default(autoincrement())
+  messageId Int
+  userId    Int
+  readAt    DateTime @default(now())
+  message   Message  @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([messageId, userId])
+  @@index([messageId])
+  @@index([userId])
+  @@index([readAt])
+}
+
+enum Country {
+  ALGERIA
+  EGYPT
+  MOROCCO
+  TUNISIA
+  LIBYA
+}
+
+enum City {
+  ADRAR
+  CHLEF
+  LAGHOUAT
+  OUM_EL_BOUAGHI
+  BATNA
+  BEJAIA
+  BISKRA
+  BECHAR
+  BLIDA
+  BOUIRA
+  TAMANRASSET
+  TEBESSA
+  TLEMCEN
+  TIARET
+  TIZI_OUZOU
+  ALGIERS
+  DJELFA
+  JIJEL
+  SETIF
+  SAIDA
+  SKIKDA
+  SIDI_BEL_ABBES
+  ANNABA
+  GUELMA
+  CONSTANTINE
+  MEDEA
+  MOSTAGANEM
+  MSILA
+  MASCARA
+  OUARGLA
+  ORAN
+  EL_BAYADH
+  ILLIZI
+  BORDJ_BOU_ARRERIDJ
+  BOUMERDES
+  EL_TARF
+  TINDOUF
+  TISSEMSILT
+  EL_OUED
+  KHENCHELA
+  SOUK_AHRAS
+  TIPAZA
+  MILA
+  AIN_DEFLA
+  NAAMA
+  AIN_TEMOUCHENT
+  GHARDAIA
+  RELIZANE
+  TIMIMOUN
+  BORDJ_BADJI_MOKHTAR
+  OULED_DJELLAL
+  BENI_ABBES
+  IN_SALAH
+  IN_GUEZZAM
+  TOUGGOURT
+  DJANET
+  EL_MGHAIR
+  EL_MENIAA
+  AFLOU
+  BARIKA
+  EL_KANTARA
+  BIR_EL_ATER
+  EL_ARICHA
+  KSAR_CHELLALA
+  AIN_OUSSERA
+  MESSAAD
+  KSAR_EL_BOUKHARI
+  BOU_SAADA
+  EL_ABIODH_SIDI_CHEIKH
+  CAIRO
+  ALEXANDRIA
+  GIZA
+  PORT_SAID
+  SUEZ
+  CASABLANCA
+  RABAT
+  MARRAKESH
+  TANGIER
+  FES
+  TUNIS
+  SFAX
+  SOUSSE
+  ETTADHAMEN
+  KAIROUAN
+  TRIPOLI
+  BENGHAZI
+  MISRATA
+  SIRTE
+  SABHA
+}
+
+enum OrganizationSector {
+  TECHNOLOGY_AND_SOFTWARE
+  BANKING_AND_FINANCIAL_SERVICES
+  HEALTHCARE_AND_PHARMACEUTICALS
+  ENERGY_AND_OIL_AND_GAS
+  AUTOMOTIVE_AND_MANUFACTURING
+  RETAIL_AND_CONSUMER_GOODS
+  TELECOMMUNICATIONS
+  AEROSPACE_AND_DEFENSE
+  AGRICULTURE_AND_FOOD_PRODUCTION
+  TRANSPORTATION_AND_LOGISTICS
+  EDUCATION_AND_EDTECH
+  CONSTRUCTION_AND_REAL_ESTATE
+  CONSULTING_AND_PROFESSIONAL_SERVICES
+  MEDIA_AND_CREATIVE_INDUSTRIES
+  TOURISM_AND_HOSPITALITY
+  PUBLIC_SECTOR_AND_ADMINISTRATION
+  RENEWABLE_ENERGY_AND_CLEANTECH
+  MINING_AND_METALLURGY
+  TEXTILES_AND_APPAREL
+  NON_PROFIT_AND_NGO
+  OTHER
+}
+
+enum UserRole {
+  STUDENT
+  BUSINESS
+  FREELANCER
+  ADMIN
+  INSTRUCTOR
+  MODERATOR
+}
+
+enum AuthProvider {
+  EMAIL
+  GOOGLE
+  GITHUB
+  LINKEDIN
+  PHONE
+}
+
+enum DatasetStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum WidgetType {
+  KPI
+  METRIC
+  BAR
+  LINE
+  AREA
+  PIE
+  SCATTER
+  BUBBLE
+  HISTOGRAM
+  TABLE
+  HEATMAP
+  SANKEY
+  RADAR
+  FUNNEL
+  MAP
+  TREEMAP
+  GAUGE
+  CUSTOM
+  CHART
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+  CANCELLED
+  DISPUTED
+}
+
+enum PaymentPurpose {
+  COURSE_PURCHASE
+  PATH_PURCHASE
+  STUDENT_SUBSCRIPTION
+  BI_SUBSCRIPTION
+  CONTRACT_PAYMENT
+  REFUND
+  LIVE_SESSION_PURCHASE
+  LIVE_SESSION_REFUND
+  CERTIFICATE_PURCHASE
+  PODAPOINT_PURCHASE
+  FEATURE_PURCHASE
+  FREELANCER_SUBSCRIPTION
+  BUSINESS_SUBSCRIPTION
+  DEPOSIT
+  CONTRACT_ESCROW
+  TRANSFER
+  CREATOR_ROYALTY
+}
+
+enum PaymentProvider {
+  CHARGILY
+  CASH
+  BANK_TRANSFER
+  OTHER
+}
+
+enum PaymentGateway {
+  CHARGILY
+  MOCK
+  SATIM
+  CIB
+  EDAHABIA
+}
+
+enum WebhookEventType {
+  PAYMENT_PENDING
+  PAYMENT_PAID
+  PAYMENT_FAILED
+  PAYMENT_CANCELED
+  PAYMENT_REFUNDED
+  PAYMENT_DISPUTED
+}
+
+enum SubscriptionPlan {
+  FREE
+  STUDENT_STARTER
+  STUDENT_PLUS
+  STUDENT_PRO
+  BI_GROWTH
+  BI_SCALE
+  BI_ELITE
+  CUSTOM
+  FREELANCER_PLUS
+  FREELANCER_PREMIUM
+  BUSINESS_STARTER
+  BUSINESS_PRO
+  BUSINESS_ENTERPRISE
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  CANCELLED
+  EXPIRED
+  PAUSED
+  GRACE_PERIOD
+  PENDING_PAYMENT
+}
+
+enum ContractStatus {
+  DRAFT
+  ACTIVE
+  COMPLETED
+  CANCELLED
+  DISPUTED
+}
+
+enum ProjectStatus {
+  DRAFT
+  OPEN
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum ProposalStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+  WITHDRAWN
+}
+
+enum ThemePreference {
+  LIGHT
+  DARK
+  SYSTEM
+}
+
+enum ProfileVisibility {
+  PUBLIC
+  CONNECTIONS
+  PRIVATE
+}
+
+enum SectionVisibility {
+  INHERIT
+  PUBLIC
+  CONNECTIONS
+  PRIVATE
+}
+
+enum LogLevel {
+  ERROR
+  WARN
+  INFO
+  DEBUG
+}
+
+enum DeviceType {
+  WEB
+  MOBILE
+  DESKTOP
+}
+
+enum NotificationCategory {
+  SECURITY
+  PROJECT
+  COURSE
+  MARKETING
+  SYSTEM
+  BILLING
+}
+
+enum NotificationPriority {
+  LOW
+  NORMAL
+  HIGH
+  URGENT
+}
+
+enum QuizQuestionType {
+  MULTIPLE_CHOICE
+  TRUE_FALSE
+  SHORT_ANSWER
+}
+
+enum FreelancerTier {
+  NEW
+  STANDARD
+  PRO
+  ENTERPRISE
+}
+
+enum WaitlistStatus {
+  PENDING
+  VERIFIED
+  CONVERTED
+  BOUNCED
+  UNSUBSCRIBED
+}
+
+enum ReferralRewardType {
+  FREE_MONTH
+  FREE_YEAR
+  DISCOUNT_50
+  DISCOUNT_25
+  EARLY_ACCESS
+  BADGE
+}
+
+enum NotificationChannel {
+  IN_APP
+  EMAIL
+  PUSH
+  SMS
+  WEBHOOK
+}
+
+enum NotificationDeliveryStatus {
+  PENDING
+  QUEUED
+  SENT
+  DELIVERED
+  FAILED
+  RETRYING
+}
+
+enum ConversationType {
+  FREELANCE
+  EDUCATION
+  SYSTEM
+  BI_COLLABORATION
+  SUPPORT
+}
+
+enum ParticipantRole {
+  CLIENT
+  FREELANCER
+  INSTRUCTOR
+  STUDENT
+  ADMIN
+  MEMBER
+  OWNER
+  MODERATOR
+  SUPPORT_AGENT
+  GUEST
+}
+
+enum MessageType {
+  TEXT
+  FILE
+  SYSTEM
+  TYPING_INDICATOR
+  REACTION
+}
+
+enum MessageStatus {
+  SENDING
+  SENT
+  DELIVERED
+  READ
+  FAILED
+}
+
+// ======================
+// ENUMS FOR RATINGS & REVIEWS
+// ======================
+enum ReviewStatus {
+  ACTIVE
+  REDACTED
+  PENDING_APPEAL
+}
+
+enum AppealStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  INFO_REQUESTED
+}
+
+enum ReviewType {
+  CLIENT_TO_FREELANCER
+  FREELANCER_TO_CLIENT
+}
+
+enum ReviewReportStatus {
+  PENDING
+  REVIEWED
+  DISMISSED
+}
+
+model ContractReview {
+  id           Int          @id @default(autoincrement())
+  contractId   Int
+  authorId     Int
+  targetId     Int
+  reviewType   ReviewType
+  rating       Float
+  subRatings   Json
+  comment      String?
+  status       ReviewStatus @default(ACTIVE)
+  isPublic     Boolean      @default(false)
+  lastEditedAt DateTime?
+  editCount    Int          @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  contract Contract       @relation(fields: [contractId], references: [id])
+  author   User           @relation("AuthoredReviews", fields: [authorId], references: [id])
+  target   User           @relation("ReceivedReviews", fields: [targetId], references: [id])
+  appeals  ReviewAppeal[]
+  reports  ReviewReport[]
+
+  @@unique([contractId, authorId])
+  @@index([contractId])
+  @@index([authorId])
+  @@index([targetId])
+}
+
+model ReviewAppeal {
+  id              Int          @id @default(autoincrement())
+  reviewId        Int
+  appealerId      Int
+  reason          String
+  status          AppealStatus @default(PENDING)
+  evidenceUrls    String[]     @default([])
+  resolutionNotes String?
+  resolvedAt      DateTime?
+  resolvedById    Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  review   ContractReview @relation(fields: [reviewId], references: [id])
+  appealer User           @relation("ReviewAppeals", fields: [appealerId], references: [id])
+
+  @@index([reviewId])
+  @@index([status])
+}
+
+enum PlatformAppealTargetType {
+  REVIEW
+  COURSE_REJECTION
+  ACCOUNT_BAN
+  WALLET_FREEZE
+}
+
+enum PlatformAppealStatus {
+  PENDING
+  UNDER_REVIEW
+  ACCEPTED
+  REJECTED
+}
+
+model PlatformAppeal {
+  id              Int                      @id @default(autoincrement())
+  targetType      PlatformAppealTargetType
+  targetId        String
+  appealerId      Int
+  reason          String
+  evidenceUrls    String[]                 @default([])
+  status          PlatformAppealStatus     @default(PENDING)
+  resolutionNotes String?
+  resolvedById    Int?
+  resolvedAt      DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  appealer User  @relation("UserPlatformAppeals", fields: [appealerId], references: [id], onDelete: Cascade)
+  resolver User? @relation("ResolvedPlatformAppeals", fields: [resolvedById], references: [id], onDelete: SetNull)
+
+  @@index([targetType, targetId])
+  @@index([appealerId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model ReviewReport {
+  id         Int                @id @default(autoincrement())
+  reviewId   Int
+  reporterId Int
+  reason     String
+  status     ReviewReportStatus @default(PENDING)
+  adminNotes String?
+  createdAt  DateTime           @default(now())
+  updatedAt  DateTime           @updatedAt
+
+  review   ContractReview @relation(fields: [reviewId], references: [id])
+  reporter User           @relation("ReviewReports", fields: [reporterId], references: [id])
+
+  @@index([reviewId])
+  @@index([reporterId])
+  @@index([status])
+}
+
+model CourseReview {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  moduleId  String
+  rating    Int
+  comment   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  module Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, moduleId])
+  @@index([moduleId])
+}
+
+model BiAuditLog {
+  id                  Int          @id @default(autoincrement())
+  datasetId           Int?
+  organizationId      Int
+  userId              Int
+  eventType           String
+  eventData           Json
+  ipAddress           String?
+  userAgent           String?
+  executionDurationMs Int?
+  rowCount            Int?
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime?    @updatedAt
+  dataset             Dataset?     @relation(fields: [datasetId], references: [id], onDelete: SetNull)
+  organization        Organization @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  user                User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([datasetId])
+  @@index([organizationId])
+  @@index([userId])
+  @@index([eventType])
+  @@index([createdAt])
+  @@index([organizationId, createdAt])
+  @@index([datasetId, createdAt])
+}
+
+model CrossPillarEvent {
+  id             Int      @id @default(autoincrement())
+  organizationId Int
+  userId         Int
+  pillarSource   String // 'education', 'freelancing', 'platform'
+  eventType      String // e.g., 'course_completed', 'contract_paid'
+  amount         Int? // Financial value if applicable
+  currency       String   @default("DZD")
+  metadata       Json // Specific event data
+  createdAt      DateTime @default(now())
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([organizationId])
+  @@index([userId])
+  @@index([pillarSource])
+  @@index([createdAt])
+}
+
+model PlatformSetting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}
+
+// =============================================================================
+// PLATFORM CONFIGURATION MODELS
+// =============================================================================
+
+enum TierCategory {
+  EDTECH
+  BI
+}
+
+model SubscriptionTierConfig {
+  id            Int              @id @default(autoincrement())
+  plan          SubscriptionPlan
+  category      TierCategory
+  name          String
+  description   String?
+  price         Int              @default(0)
+  billingCycle  String           @default("monthly") // monthly, yearly
+  yearlyPrice   Int?
+  maxCourses    Int?
+  maxStorage    Int? // in MB
+  maxStudents   Int?
+  maxDatasets   Int?
+  maxDashboards Int?
+  maxApiCalls   Int?
+  features      Json? // JSON array of feature keys
+  isActive      Boolean          @default(true)
+  sortOrder     Int              @default(0)
+  trialDays     Int              @default(0)
+  metadata      Json?
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+
+  @@unique([plan, category])
+  @@index([category])
+  @@index([isActive])
+  @@index([sortOrder])
+}
+
+// @deprecated — preserved for future PSP-backed marketplace launch
+model CommissionRateConfig {
+  id                Int            @id @default(autoincrement())
+  tier              FreelancerTier
+  commissionPercent Float
+  minProject        Int?
+  maxProject        Int?
+  effectiveFrom     DateTime       @default(now())
+  effectiveTo       DateTime?
+  isActive          Boolean        @default(true)
+  description       String?
+  metadata          Json?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+
+  @@unique([tier, isActive])
+  @@index([tier])
+  @@index([isActive])
+  @@index([effectiveFrom])
+}
+
+model PaymentGatewayConfig {
+  id                  Int      @id @default(autoincrement())
+  gateway             String   @unique // chargily, satim, cib, edahabia
+  displayName         String
+  isEnabled           Boolean  @default(false)
+  isDefault           Boolean  @default(false)
+  environment         String   @default("sandbox") // sandbox, production
+  config              Json? // encrypted gateway-specific config
+  supportedCurrencies String[] @default(["DZD"])
+  minAmount           Int?
+  maxAmount           Int?
+  metadata            Json?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  @@index([isEnabled])
+  @@index([isDefault])
+}
+
+model FeatureFlag {
+  id          Int      @id @default(autoincrement())
+  key         String   @unique
+  name        String
+  description String?
+  isEnabled   Boolean  @default(false)
+  category    String   @default("general") // general, edtech, bi, freelance, experimental
+  metadata    Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+  @@index([isEnabled])
+}
+
+model PlatformLimitsConfig {
+  id          Int      @id @default(autoincrement())
+  key         String   @unique
+  name        String
+  description String?
+  value       Int
+  unit        String? // MB, minutes, count, etc.
+  category    String   @default("general") // general, upload, session, content
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+}
+
+model NotificationConfig {
+  id               Int      @id @default(autoincrement())
+  channel          String   @unique // email, sms, push, webhook
+  isEnabled        Boolean  @default(true)
+  providerName     String?
+  config           Json? // provider-specific config (encrypted)
+  rateLimitPerHour Int?
+  metadata         Json?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([isEnabled])
+}
+
+model SecurityConfig {
+  id          Int      @id @default(autoincrement())
+  key         String   @unique
+  name        String
+  description String?
+  value       String
+  category    String   @default("auth") // auth, rate_limit, session
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+}
+
+// =============================================================================
+// CRM & SUPPORT
+// =============================================================================
+
+enum TicketStatus {
+  OPEN
+  IN_PROGRESS
+  WAITING_ON_CUSTOMER
+  RESOLVED
+  CLOSED
+}
+
+enum TicketPriority {
+  URGENT
+  HIGH
+  NORMAL
+  LOW
+}
+
+enum TicketCategory {
+  GENERAL
+  BILLING
+  TECHNICAL
+  ACCOUNT
+  COURSE_CONTENT
+  FREELANCING
+  FEATURE_REQUEST
+  BUG_REPORT
+}
+
+model Ticket {
+  id                    Int            @id @default(autoincrement())
+  ticketNumber          String         @unique @default(uuid())
+  userId                Int
+  assignedToId          Int?
+  subject               String
+  status                TicketStatus   @default(OPEN)
+  priority              TicketPriority @default(NORMAL)
+  category              TicketCategory @default(GENERAL)
+  slaResponseDeadline   DateTime?
+  slaResolutionDeadline DateTime?
+  firstResponseAt       DateTime?
+  resolvedAt            DateTime?
+  closedAt              DateTime?
+  csatScore             Int? // 1-5 rating
+  csatFeedback          String?
+  csatSubmittedAt       DateTime?
+  metadata              Json?
+  tags                  String[]       @default([])
+  createdAt             DateTime       @default(now())
+  updatedAt             DateTime       @updatedAt
+  deletedAt             DateTime?
+
+  user         User            @relation("UserTickets", fields: [userId], references: [id], onDelete: Cascade)
+  assignedTo   User?           @relation("AssignedTickets", fields: [assignedToId], references: [id], onDelete: SetNull)
+  messages     TicketMessage[]
+  mailThreads  MailThread[]    @relation("TicketMailThreads")
+  mailMessages MailMessage[]
+
+  @@index([userId])
+  @@index([assignedToId])
+  @@index([status])
+  @@index([priority])
+  @@index([category])
+  @@index([createdAt])
+  @@index([slaResponseDeadline])
+  @@index([slaResolutionDeadline])
+  @@index([status, priority])
+  @@index([userId, status])
+  @@index([assignedToId, status])
+}
+
+model TicketMessage {
+  id          Int      @id @default(autoincrement())
+  ticketId    Int
+  senderId    Int
+  body        String
+  isInternal  Boolean  @default(false) // Internal notes not visible to customer
+  attachments Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  ticket Ticket @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  sender User   @relation("TicketMessageSender", fields: [senderId], references: [id], onDelete: Cascade)
+
+  @@index([ticketId])
+  @@index([senderId])
+  @@index([createdAt])
+  @@index([ticketId, createdAt])
+}
+
+enum ModuleStatus {
+  DRAFT
+  IN_REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum LessonStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model SharedInsight {
+  id             Int       @id @default(autoincrement())
+  token          String    @unique @default(cuid())
+  organizationId Int
+  type           String    @default("health")
+  locale         String    @default("en")
+  createdBy      Int?
+  createdAt      DateTime  @default(now())
+  expiresAt      DateTime?
+
+  @@index([token])
+  @@index([expiresAt])
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// LIVE EVENTS / LIVE SESSIONS — Phase 1
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum LiveSessionStatus {
+  SCHEDULED
+  LIVE
+  ENDED
+  CANCELLED
+}
+
+enum LiveSessionVisibility {
+  PUBLIC
+  UNLISTED
+  PRIVATE
+}
+
+enum LiveSessionType {
+  COURSE
+  MEETING
+}
+
+enum LiveSessionParticipantRole {
+  HOST
+  CO_HOST
+  PARTICIPANT
+}
+
+model LiveSession {
+  id                String                @id @default(cuid())
+  type              LiveSessionType       @default(COURSE)
+  title             String
+  description       String?
+  thumbnailUrl      String?
+  category          String?
+  tags              String[]              @default([])
+  status            LiveSessionStatus     @default(SCHEDULED)
+  visibility        LiveSessionVisibility @default(PUBLIC)
+  ownerId           Int
+  owner             User                  @relation("LiveSessionOwner", fields: [ownerId], references: [id], onDelete: Restrict)
+  scheduledAt       DateTime
+  startedAt         DateTime?
+  endedAt           DateTime?
+  durationMinutes   Int?
+  maxParticipants   Int?                  @default(100)
+  priceAmount       Int?
+  currency          String                @default("DZD")
+  roomName          String?
+  roomSid           String?
+  roomMetadata      Json?
+  recordingEgressId String?
+  recordingUrl      String?
+  replayUrl         String?
+  replayExpiresAt   DateTime?
+  transactionId     Int?                  @unique
+  transaction       Transaction?          @relation("LiveSessionTransaction", fields: [transactionId], references: [id], onDelete: Restrict)
+  moduleId          String?
+  lessonId          String?
+  contractId        Int?
+  orgOnly           Boolean               @default(false)
+  approvedAt        DateTime?
+  rejectedAt        DateTime?
+  rejectionReason   String?
+  createdAt         DateTime              @default(now())
+  updatedAt         DateTime              @updatedAt
+  deletedAt         DateTime?
+
+  participants    LiveSessionParticipant[]
+  bookings        LiveSessionBooking[]
+  waitlistEntries LiveSessionWaitlist[]
+  coHosts         LiveSessionCoHost[]
+  reviews         LiveSessionReview[]
+  chatMessages    LiveSessionChatMessage[]
+  hostCoupons     HostCoupon[]
+  moduleLinks     LiveSessionModuleLink[]
+
+  @@index([ownerId])
+  @@index([type])
+  @@index([status])
+  @@index([scheduledAt])
+  @@index([category])
+  @@index([visibility, status, scheduledAt])
+  @@index([deletedAt])
+}
+
+model LiveSessionModuleLink {
+  id            Int         @id @default(autoincrement())
+  moduleId      String
+  module        Module      @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  liveSessionId String
+  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  order         Int         @default(0)
+  isRequired    Boolean     @default(true)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@unique([moduleId, liveSessionId])
+  @@index([moduleId])
+  @@index([liveSessionId])
+  @@index([moduleId, order])
+}
+
+model LiveSessionParticipant {
+  id            Int                        @id @default(autoincrement())
+  liveSessionId String
+  liveSession   LiveSession                @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  userId        Int
+  user          User                       @relation(fields: [userId], references: [id], onDelete: Restrict)
+  role          LiveSessionParticipantRole @default(PARTICIPANT)
+  joinedAt      DateTime?
+  leftAt        DateTime?
+  attendancePct Float?
+  metadata      Json?
+  createdAt     DateTime                   @default(now())
+  updatedAt     DateTime                   @updatedAt
+  deletedAt     DateTime?
+
+  @@unique([liveSessionId, userId])
+  @@index([userId])
+  @@index([liveSessionId])
+  @@index([liveSessionId, role])
+  @@index([deletedAt])
+}
+
+model LiveSessionBooking {
+  id              Int          @id @default(autoincrement())
+  liveSessionId   String
+  liveSession     LiveSession  @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  userId          Int
+  user            User         @relation(fields: [userId], references: [id], onDelete: Restrict)
+  transactionId   Int?         @unique
+  transaction     Transaction? @relation("LiveSessionBookingTransaction", fields: [transactionId], references: [id], onDelete: Restrict)
+  status          String       @default("confirmed")
+  cancelledAt     DateTime?
+  refundProcessed Boolean      @default(false)
+  attended        Boolean?
+  hostCode        String?
+  metadata        Json?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  deletedAt       DateTime?
+
+  @@unique([liveSessionId, userId])
+  @@index([userId])
+  @@index([liveSessionId])
+  @@index([transactionId])
+  @@index([status])
+  @@index([deletedAt])
+}
+
+model LiveSessionWaitlist {
+  id            Int         @id @default(autoincrement())
+  liveSessionId String
+  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  userId        Int
+  user          User        @relation(fields: [userId], references: [id], onDelete: Restrict)
+  notified      Boolean     @default(false)
+  createdAt     DateTime    @default(now())
+  deletedAt     DateTime?
+
+  @@unique([liveSessionId, userId])
+  @@index([liveSessionId])
+  @@index([userId])
+  @@index([deletedAt])
+}
+
+model LiveSessionChatMessage {
+  id            Int         @id @default(autoincrement())
+  liveSessionId String
+  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  userId        Int
+  user          User        @relation(fields: [userId], references: [id], onDelete: Restrict)
+  message       String
+  messageType   String      @default("chat")
+  createdAt     DateTime    @default(now())
+
+  @@index([liveSessionId, createdAt])
+  @@index([liveSessionId, messageType])
+}
+
+model LiveSessionReview {
+  id            Int         @id @default(autoincrement())
+  liveSessionId String
+  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  userId        Int
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  rating        Int
+  comment       String?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@unique([liveSessionId, userId])
+  @@index([liveSessionId])
+  @@index([userId])
+}
+
+model LiveSessionCoHost {
+  id            Int         @id @default(autoincrement())
+  liveSessionId String
+  liveSession   LiveSession @relation(fields: [liveSessionId], references: [id], onDelete: Cascade)
+  userId        Int
+  user          User        @relation(fields: [userId], references: [id], onDelete: Restrict)
+  permissions   String      @default("all")
+  createdAt     DateTime    @default(now())
+  deletedAt     DateTime?
+
+  @@unique([liveSessionId, userId])
+  @@index([liveSessionId])
+  @@index([userId])
+  @@index([deletedAt])
+}
+
+model HostCoupon {
+  id              Int          @id @default(autoincrement())
+  code            String       @unique
+  creatorId       Int
+  creator         User         @relation(fields: [creatorId], references: [id], onDelete: Cascade)
+  liveSessionId   String?
+  liveSession     LiveSession? @relation(fields: [liveSessionId], references: [id], onDelete: SetNull)
+  maxRedemptions  Int          @default(1)
+  redemptionCount Int          @default(0)
+  expiresAt       DateTime?
+  createdAt       DateTime     @default(now())
+  deletedAt       DateTime?
+
+  @@index([creatorId])
+  @@index([code])
+  @@index([liveSessionId])
+  @@index([deletedAt])
+}
+
+model PortfolioItem {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  title       String
+  description String?
+  mediaUrls   String[] @default([])
+  tags        String[] @default([])
+  links       Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([userId, createdAt])
+}
+
+model PromoCode {
+  id                 Int       @id @default(autoincrement())
+  code               String    @unique
+  description        String?
+  discountType       String    @default("PERCENTAGE")
+  discountValue      Int
+  minPurchaseAmount  Int?
+  maxRedemptions     Int       @default(100)
+  redemptionCount    Int       @default(0)
+  maxUsagesPerUser   Int?
+  expiresAt          DateTime?
+  isActive           Boolean   @default(true)
+  applicablePlans    Json?
+  applicableProducts Json?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  deletedAt          DateTime?
+
+  @@index([code])
+  @@index([isActive])
+  @@index([deletedAt])
+}
+
+model FeaturePurchase {
+  id                  Int       @id @default(autoincrement())
+  userId              Int
+  featureKey          String // project_post | featured_project_7d | freelancer_boost | freelancer_featured_7d | skill_passport
+  quantity            Int       @default(1)
+  usedCount           Int       @default(0) // for consumables like project_post
+  referenceId         String? // projectId or freelancerProfileId for activation features
+  walletTransactionId Int?
+  expiresAt           DateTime? // NULL for permanent or unlimited-time consumables
+  purchasedAt         DateTime  @default(now())
+  user                User      @relation("UserFeaturePurchases", fields: [userId], references: [id])
+
+  @@index([userId, featureKey])
+  @@index([userId, featureKey, expiresAt])
+  @@index([featureKey, expiresAt])
+}
+
+model SystemSetting {
+  id          String   @id @default(uuid())
+  key         String   @unique
+  value       String
+  category    String   @default("video")
+  isSecret    Boolean  @default(false)
+  description String?
+  updatedBy   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+  @@index([key])
+}
+
+model SystemSettingAudit {
+  id         String   @id @default(uuid())
+  settingKey String
+  oldValue   String?
+  newValue   String?
+  changedBy  String
+  ipAddress  String?
+  createdAt  DateTime @default(now())
+
+  @@index([settingKey])
+  @@index([createdAt])
+}
+
+enum StorageProvider {
+  AWS
+  BUNNY
+  CLOUDFLARE
+  YOUTUBE
+  VIMEO
+  DAILYMOTION
+  SUPABASE
+  CUSTOM_HLS
+}
+
+enum VideoTranscodeStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum UploadSessionStatus {
+  PENDING
+  UPLOADING
+  PROCESSING
+  COMPLETED
+  FAILED
+  EXPIRED
+}
+
+model VideoAsset {
+  id                 String               @id @default(uuid())
+  title              String
+  description        String?
+  durationSeconds    Int                  @default(0)
+  storageProvider    StorageProvider      @default(AWS)
+  providerAssetId    String?
+  providerLibraryId  String?
+  youtubeVideoId     String?
+  vimeoVideoId       String?
+  dailymotionVideoId String?
+  isYoutubeUnlisted  Boolean              @default(false)
+  isExternalUnlisted Boolean              @default(false)
+  rawPath            String?
+  hlsPath            String?
+  dashPath           String?
+  thumbnailUrl       String?
+  storyboardUrl      String?
+  status             VideoTranscodeStatus @default(PENDING)
+  transcodeProgress  Int                  @default(0)
+  transcodeJobId     String?
+  errorReason        String?
+  renditions         VideoRendition[]
+  uploadSessions     VideoUploadSession[]
+  lessons            Lesson[]             @relation("LessonVideoAsset")
+  metadata           Json?
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  deletedAt          DateTime?
+
+  @@index([storageProvider])
+  @@index([status])
+  @@index([providerAssetId])
+  @@index([youtubeVideoId])
+  @@index([vimeoVideoId])
+  @@index([dailymotionVideoId])
+}
+
+model VideoRendition {
+  id            String     @id @default(uuid())
+  videoAssetId  String
+  videoAsset    VideoAsset @relation(fields: [videoAssetId], references: [id], onDelete: Cascade)
+  resolution    String // "1080p", "720p", "480p", "360p"
+  width         Int
+  height        Int
+  bitrateKbps   Int
+  frameRate     Float      @default(30.0)
+  videoCodec    String     @default("H264")
+  audioCodec    String     @default("AAC")
+  playlistPath  String
+  fileSizeBytes BigInt?
+  isProcessed   Boolean    @default(false)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@unique([videoAssetId, resolution])
+  @@index([videoAssetId])
+}
+
+model VideoUploadSession {
+  id                 String              @id @default(uuid())
+  tusId              String?             @unique
+  userId             Int
+  lessonId           String?
+  videoAssetId       String?
+  storageProvider    StorageProvider     @default(AWS)
+  fileName           String
+  fileSizeBytes      BigInt
+  uploadedBytes      BigInt              @default(0)
+  chunkSizeBytes     Int                 @default(5242880)
+  lastByteOffset     BigInt              @default(0)
+  magicBytesVerified Boolean             @default(false)
+  status             UploadSessionStatus @default(PENDING)
+  expiresAt          DateTime
+  completedAt        DateTime?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson     Lesson?     @relation(fields: [lessonId], references: [id], onDelete: SetNull)
+  videoAsset VideoAsset? @relation(fields: [videoAssetId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([tusId])
+  @@index([status])
+}
+
+// ── Compliance & Non-Custodial Delivery Models (Loi 22-23, LF 2024 Art. 282 sexies CIDTA) ──
+
+enum InvoiceType {
+  PLATFORM_FEE
+  FREELANCER_SERVICE
+  COURSE_PURCHASE
+  SUBSCRIPTION
+}
+
+enum InvoiceStatus {
+  DRAFT
+  ISSUED
+  PAID
+  CANCELLED
+}
+
+enum KycStatus {
+  NOT_SUBMITTED
+  PENDING_REVIEW
+  APPROVED
+  REJECTED
+}
+
+enum SettlementMethod {
+  DIRECT_BARIDIMOB
+  DIRECT_BANK_TRANSFER
+  CHARGILY_EDAHABIA
+  CHARGILY_CIB
+}
+
+model Invoice {
+  id             Int           @id @default(autoincrement())
+  invoiceNumber  String        @unique
+  type           InvoiceType   @default(PLATFORM_FEE)
+  status         InvoiceStatus @default(ISSUED)
+  issuerId       Int?
+  issuerType     String        @default("PLATFORM") // PLATFORM | USER
+  recipientId    Int?
+  recipientType  String        @default("ORGANIZATION") // ORGANIZATION | USER
+  organizationId Int?
+  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  userId         Int?
+  user           User?         @relation(fields: [userId], references: [id], onDelete: Restrict)
+  contractId     Int?
+  milestoneId    Int?
+  subtotalDzd    Int
+  taxDzd         Int           @default(0)
+  totalDzd       Int
+  taxRatePercent Float         @default(0.0)
+  legalNotice    String?
+  pdfUrl         String?
+  issuedAt       DateTime      @default(now())
+  paidAt         DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  items          InvoiceItem[]
+  mailThreads    MailThread[]  @relation("InvoiceMailThreads")
+  mailMessages   MailMessage[]
+
+  @@index([invoiceNumber])
+  @@index([issuerId])
+  @@index([recipientId])
+  @@index([organizationId])
+  @@index([userId])
+  @@index([organizationId, status, issuedAt])
+  @@index([contractId])
+  @@index([status])
+  @@index([issuedAt])
+}
+
+model InvoiceItem {
+  id            Int     @id @default(autoincrement())
+  invoiceId     Int
+  description   String
+  quantity      Int     @default(1)
+  unitPriceDzd  Int
+  totalPriceDzd Int
+  invoice       Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@index([invoiceId])
+}
+
+model UserKyc {
+  id                 Int           @id @default(autoincrement())
+  userId             Int           @unique
+  nationalIdNumber   String?
+  anaeCardNumber     String?
+  anaeCertificateUrl String?
+  ribCcpNumber       String?
+  status             KycStatus     @default(NOT_SUBMITTED)
+  rejectionReason    String?
+  verifiedAt         DateTime?
+  verifiedBy         Int?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+  user               User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  verifierProfile    AdminProfile? @relation("AdminKycVerifier", fields: [verifiedBy], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([status])
+  @@index([anaeCardNumber])
+}
+
+model ProjectSubmission {
+  id                Int               @id @default(autoincrement())
+  milestoneId       Int
+  deliverableUrl    String
+  encryptionKeyHash String?
+  submissionNotes   String?
+  clientFeedback    String?
+  submittedAt       DateTime          @default(now())
+  approvedAt        DateTime?
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  milestone         ContractMilestone @relation(fields: [milestoneId], references: [id], onDelete: Cascade)
+
+  @@index([milestoneId])
+  @@index([submittedAt])
+}
+
+// =============================================================================
+// SUB-ADMIN MULTI-TIER RBAC & AUDIT SUBSYSTEM (NIST SP 800-53 / SOC 2 / ISO 27001)
+// =============================================================================
+
+enum AdminDepartment {
+  EXECUTIVE
+  SUPER_ADMIN
+  FINANCE_AND_PAYMENTS
+  COMPLIANCE_AND_KYC
+  CONTENT_MODERATION
+  CUSTOMER_SUPPORT
+  SECURITY_AND_OPERATIONS
+  REGIONAL_WILAYA_OPS
+}
+
+enum AdminPermissionDomain {
+  SYSTEM
+  USERS
+  RBAC
+  KYC
+  BILLING
+  EDUCATION
+  FREELANCING
+  BUSINESS_INTELLIGENCE
+  SUPPORT
+  SECURITY
+}
+
+enum AuditActionStatus {
+  SUCCESS
+  FAILURE
+  DENIED
+  BLOCKED
+}
+
+enum AuditSeverity {
+  INFO
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+  EMERGENCY
+}
+
+model AdminProfile {
+  id                  Int             @id @default(autoincrement())
+  userId              Int             @unique
+  employeeId          String?         @unique
+  department          AdminDepartment @default(CUSTOMER_SUPPORT)
+  title               String
+  isActive            Boolean         @default(true)
+  mfaEnforced         Boolean         @default(true)
+  hardwareKeyRequired Boolean         @default(false)
+  allowedIpSubnets    String[]        @default([])
+  clearanceLevel      Int             @default(1)
+  suspendedAt         DateTime?
+  suspensionReason    String?
+  emergencyBreakGlass Boolean         @default(false)
+  lastAdminLoginAt    DateTime?
+  createdAt           DateTime        @default(now())
+  updatedAt           DateTime        @updatedAt
+  deletedAt           DateTime?
+
+  user                 User                         @relation("UserAdminProfile", fields: [userId], references: [id], onDelete: Restrict)
+  roleAssignments      AdminUserRoleAssignment[]
+  adminSessions        AdminSession[]
+  auditTrails          AdminAuditTrail[]            @relation("AdminProfileAuditTrails")
+  verifiedKycs         UserKyc[]                    @relation("AdminKycVerifier")
+  managedAssignments   AdminUserRoleAssignment[]    @relation("RoleAssignedBy")
+  assignedMailAccounts MailAccountAdminAssignment[]
+  verifiedKybs         OrganizationKyb[]            @relation("AdminKybVerifier")
+  kybLogs              OrganizationKybLog[]
+
+  @@index([userId])
+  @@index([department, isActive])
+  @@index([clearanceLevel])
+  @@index([isActive])
+}
+
+model AdminRole {
+  id            Int      @id @default(autoincrement())
+  slug          String   @unique
+  name          String
+  description   String?
+  isSystem      Boolean  @default(false)
+  hierarchyRank Int      @default(100)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  permissions     AdminRolePermission[]
+  userAssignments AdminUserRoleAssignment[]
+
+  @@index([slug])
+  @@index([hierarchyRank])
+}
+
+model AdminPermission {
+  id          Int                   @id @default(autoincrement())
+  code        String                @unique // e.g. "finance:gateways:write"
+  name        String
+  domain      AdminPermissionDomain
+  description String?
+  isDangerous Boolean               @default(false)
+  createdAt   DateTime              @default(now())
+
+  rolePermissions AdminRolePermission[]
+
+  @@index([code])
+  @@index([domain])
+}
+
+model AdminRolePermission {
+  id           Int      @id @default(autoincrement())
+  roleId       Int
+  permissionId Int
+  grantedAt    DateTime @default(now())
+
+  role       AdminRole       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission AdminPermission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+}
+
+model AdminUserRoleAssignment {
+  id             Int       @id @default(autoincrement())
+  adminProfileId Int
+  roleId         Int
+  assignedById   Int?
+  expiresAt      DateTime?
+  assignedAt     DateTime  @default(now())
+
+  adminProfile AdminProfile  @relation(fields: [adminProfileId], references: [id], onDelete: Cascade)
+  role         AdminRole     @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  assignedBy   AdminProfile? @relation("RoleAssignedBy", fields: [assignedById], references: [id], onDelete: SetNull)
+
+  @@unique([adminProfileId, roleId])
+  @@index([adminProfileId])
+  @@index([roleId])
+}
+
+model AdminAuditTrail {
+  id             BigInt                @id @default(autoincrement())
+  sequenceNumber BigInt                @unique
+  adminProfileId Int?
+  impersonatorId Int?
+  action         String
+  domain         AdminPermissionDomain
+  resourceType   String
+  resourceId     String?
+  status         AuditActionStatus
+  severity       AuditSeverity         @default(INFO)
+  ipAddress      String
+  userAgent      String?
+  geoCountry     String?               @default("DZ")
+  geoWilaya      Int?
+  sessionId      String?
+  mfaVerified    Boolean               @default(true)
+  requestId      String?
+  beforeState    Json?
+  afterState     Json?
+  metadata       Json?
+  sha256Hash     String
+  previousHash   String
+  timestamp      DateTime              @default(now())
+
+  adminProfile AdminProfile? @relation("AdminProfileAuditTrails", fields: [adminProfileId], references: [id], onDelete: SetNull)
+
+  @@index([sequenceNumber])
+  @@index([adminProfileId, timestamp])
+  @@index([action, timestamp])
+  @@index([domain, timestamp])
+  @@index([severity, timestamp])
+}
+
+model AdminSession {
+  id              String    @id @default(uuid())
+  adminProfileId  Int
+  tokenHash       String    @unique
+  ipAddress       String
+  userAgent       String?
+  mfaVerified     Boolean   @default(false)
+  hardwareKeyUsed Boolean   @default(false)
+  expiresAt       DateTime
+  revokedAt       DateTime?
+  lastActivityAt  DateTime  @default(now())
+  createdAt       DateTime  @default(now())
+
+  adminProfile AdminProfile @relation(fields: [adminProfileId], references: [id], onDelete: Cascade)
+
+  @@index([adminProfileId, revokedAt])
+  @@index([tokenHash])
+}
+
+enum PendingActionStatus {
+  PENDING_APPROVAL
+  APPROVED
+  REJECTED
+  EXPIRED
+  EXECUTED
+}
+
+model PendingAdminAction {
+  id              String              @id @default(uuid())
+  actionType      String
+  targetResource  String
+  targetId        String?
+  payload         Json
+  status          PendingActionStatus @default(PENDING_APPROVAL)
+  initiatorId     Int
+  approverId      Int?
+  rejectionReason String?
+  approvalNotes   String?
+  expiresAt       DateTime
+  executedAt      DateTime?
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+
+  initiator User  @relation("InitiatedAdminActions", fields: [initiatorId], references: [id], onDelete: Cascade)
+  approver  User? @relation("ApprovedAdminActions", fields: [approverId], references: [id], onDelete: SetNull)
+
+  @@index([actionType, status])
+  @@index([initiatorId])
+  @@index([approverId])
+  @@index([status, expiresAt])
+}
+
+// ============================================================================
+// PODACIUM MAIL SUITE ENUMS & MODELS
+// ============================================================================
+
+enum MailAccountType {
+  PERSONAL
+  DEPARTMENTAL
+  SHARED
+}
+
+enum MailAccountStatus {
+  ACTIVE
+  DISCONNECTED
+  AUTH_ERROR
+  SYNCING
+  DISABLED
+}
+
+enum MailboxType {
+  INBOX
+  SENT
+  DRAFTS
+  TRASH
+  SPAM
+  ARCHIVE
+  STARRED
+  CUSTOM
+}
+
+enum MailMessageStatus {
+  RECEIVED
+  QUEUED
+  SENDING
+  SENT
+  FAILED
+  DRAFT
+  BOUNCED
+}
+
+enum MailPriority {
+  LOW
+  NORMAL
+  HIGH
+  URGENT
+}
+
+model MailAccount {
+  id             Int               @id @default(autoincrement())
+  accountId      String            @unique @default(uuid())
+  userId         Int?
+  organizationId Int?
+  emailAddress   String            @unique
+  displayName    String
+  type           MailAccountType   @default(PERSONAL)
+  status         MailAccountStatus @default(ACTIVE)
+
+  imapHost   String  @default("imap.purelymail.com")
+  imapPort   Int     @default(993)
+  imapUseSsl Boolean @default(true)
+  smtpHost   String  @default("smtp.purelymail.com")
+  smtpPort   Int     @default(465)
+  smtpUseSsl Boolean @default(true)
+
+  encryptedPassword String
+  dekWrapped        String
+  dekNonce          String
+
+  lastSyncAt    DateTime?
+  lastSyncError String?
+  syncCursor    String?
+  quotaBytes    BigInt?
+  usedBytes     BigInt?   @default(0)
+  signatureHtml String?
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  user             User?                        @relation("UserMailAccounts", fields: [userId], references: [id], onDelete: Cascade)
+  organization     Organization?                @relation("OrgMailAccounts", fields: [organizationId], references: [id], onDelete: Cascade)
+  mailboxes        Mailbox[]
+  mailThreads      MailThread[]
+  messages         MailMessage[]
+  attachments      MailAttachment[]
+  adminAssignments MailAccountAdminAssignment[]
+
+  @@index([userId])
+  @@index([organizationId])
+  @@index([emailAddress])
+  @@index([status])
+  @@index([type])
+}
+
+model MailAccountAdminAssignment {
+  id             Int      @id @default(autoincrement())
+  mailAccountId  Int
+  adminProfileId Int
+  canRead        Boolean  @default(true)
+  canSend        Boolean  @default(false)
+  canManage      Boolean  @default(false)
+  assignedAt     DateTime @default(now())
+
+  mailAccount  MailAccount  @relation(fields: [mailAccountId], references: [id], onDelete: Cascade)
+  adminProfile AdminProfile @relation(fields: [adminProfileId], references: [id], onDelete: Cascade)
+
+  @@unique([mailAccountId, adminProfileId])
+  @@index([adminProfileId])
+  @@index([mailAccountId])
+}
+
+model Mailbox {
+  id            Int         @id @default(autoincrement())
+  mailboxId     String      @unique @default(uuid())
+  mailAccountId Int
+  name          String
+  remoteName    String
+  type          MailboxType @default(CUSTOM)
+  unreadCount   Int         @default(0)
+  totalCount    Int         @default(0)
+  uidValidity   BigInt?
+  lastSeenUid   BigInt?
+  parentId      Int?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  mailAccount  MailAccount   @relation(fields: [mailAccountId], references: [id], onDelete: Cascade)
+  parent       Mailbox?      @relation("MailboxHierarchy", fields: [parentId], references: [id], onDelete: Cascade)
+  subMailboxes Mailbox[]     @relation("MailboxHierarchy")
+  messages     MailMessage[]
+
+  @@unique([mailAccountId, remoteName])
+  @@index([mailAccountId])
+  @@index([mailAccountId, type])
+}
+
+model MailThread {
+  id             Int      @id @default(autoincrement())
+  threadId       String   @unique @default(uuid())
+  mailAccountId  Int
+  subject        String
+  snippet        String?
+  lastMessageAt  DateTime @default(now())
+  messageCount   Int      @default(1)
+  hasAttachments Boolean  @default(false)
+  isUnread       Boolean  @default(true)
+  isStarred      Boolean  @default(false)
+
+  ticketId   Int?
+  contractId Int?
+  disputeId  Int?
+  invoiceId  Int?
+  moduleId   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  mailAccount MailAccount   @relation(fields: [mailAccountId], references: [id], onDelete: Cascade)
+  messages    MailMessage[]
+
+  ticket   Ticket?   @relation("TicketMailThreads", fields: [ticketId], references: [id], onDelete: SetNull)
+  contract Contract? @relation("ContractMailThreads", fields: [contractId], references: [id], onDelete: SetNull)
+  dispute  Dispute?  @relation("DisputeMailThreads", fields: [disputeId], references: [id], onDelete: SetNull)
+  invoice  Invoice?  @relation("InvoiceMailThreads", fields: [invoiceId], references: [id], onDelete: SetNull)
+  module   Module?   @relation("ModuleMailThreads", fields: [moduleId], references: [id], onDelete: SetNull)
+
+  @@index([mailAccountId])
+  @@index([mailAccountId, lastMessageAt])
+  @@index([ticketId])
+  @@index([contractId])
+  @@index([disputeId])
+  @@index([invoiceId])
+  @@index([moduleId])
+}
+
+model MailMessage {
+  id                Int      @id @default(autoincrement())
+  messageId         String   @unique @default(uuid())
+  internetMessageId String?
+  inReplyTo         String?
+  references        String[] @default([])
+  mailAccountId     Int
+  mailboxId         Int
+  threadId          Int?
+  uid               BigInt?
+
+  fromAddress    String
+  fromName       String?
+  toAddresses    String[]
+  ccAddresses    String[] @default([])
+  bccAddresses   String[] @default([])
+  replyToAddress String?
+  subject        String
+  snippet        String?
+  bodyText       String?
+  bodyHtml       String?
+  headers        Json?
+
+  status         MailMessageStatus @default(RECEIVED)
+  priority       MailPriority      @default(NORMAL)
+  isRead         Boolean           @default(false)
+  isStarred      Boolean           @default(false)
+  isDraft        Boolean           @default(false)
+  hasAttachments Boolean           @default(false)
+
+  ticketId   Int?
+  contractId Int?
+  disputeId  Int?
+  invoiceId  Int?
+  moduleId   String?
+
+  receivedAt DateTime?
+  sentAt     DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  deletedAt  DateTime?
+
+  mailAccount MailAccount      @relation(fields: [mailAccountId], references: [id], onDelete: Cascade)
+  mailbox     Mailbox          @relation(fields: [mailboxId], references: [id], onDelete: Cascade)
+  thread      MailThread?      @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  attachments MailAttachment[]
+
+  ticket   Ticket?   @relation(fields: [ticketId], references: [id], onDelete: SetNull)
+  contract Contract? @relation(fields: [contractId], references: [id], onDelete: SetNull)
+  dispute  Dispute?  @relation(fields: [disputeId], references: [id], onDelete: SetNull)
+  invoice  Invoice?  @relation(fields: [invoiceId], references: [id], onDelete: SetNull)
+  module   Module?   @relation(fields: [moduleId], references: [id], onDelete: SetNull)
+
+  @@index([mailAccountId])
+  @@index([mailboxId])
+  @@index([threadId])
+  @@index([internetMessageId])
+  @@index([fromAddress])
+  @@index([isRead, createdAt])
+  @@unique([mailAccountId, internetMessageId])
+  @@unique([mailboxId, uid])
+  @@index([ticketId])
+  @@index([contractId])
+  @@index([disputeId])
+  @@index([invoiceId])
+  @@index([moduleId])
+}
+
+model MailAttachment {
+  id               Int      @id @default(autoincrement())
+  attachmentId     String   @unique @default(uuid())
+  mailMessageId    Int?
+  mailAccountId    Int?
+  fileName         String
+  mimeType         String
+  fileSizeBytes    Int
+  contentId        String?
+  storagePath      String
+  isEncrypted      Boolean  @default(false)
+  envelopeMetadata Json?
+  sha256Checksum   String
+  scanStatus       String   @default("unknown")
+  scanEngine       String?
+  createdAt        DateTime @default(now())
+
+  mailMessage MailMessage? @relation(fields: [mailMessageId], references: [id], onDelete: Cascade)
+  mailAccount MailAccount? @relation(fields: [mailAccountId], references: [id], onDelete: Cascade)
+
+  @@index([mailMessageId])
+  @@index([mailAccountId])
+  @@index([attachmentId])
+}
+
+model EmailAuditLog {
+  id           BigInt   @id @default(autoincrement())
+  threadId     String
+  messageId    String?
+  actorId      Int?
+  action       String
+  ipAddress    String
+  userAgent    String?
+  details      Json     @default("{}")
+  previousHash String
+  entryHash    String
+  createdAt    DateTime @default(now())
+
+  actor User? @relation("EmailAuditActor", fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([threadId, createdAt])
+  @@index([actorId, createdAt])
+}
+
+// =============================================================================
+// AGENTIC AI PERSISTENCE & SESSION LAYER (Phase 1)
+// =============================================================================
+
+enum AiSessionStatus {
+  ACTIVE
+  PAUSED
+  COMPLETED
+  FAILED
+  ARCHIVED
+}
+
+enum AiMessageRole {
+  SYSTEM
+  USER
+  ASSISTANT
+  TOOL
+}
+
+enum AiToolStatus {
+  PENDING
+  SUCCESS
+  ERROR
+  TIMEOUT
+}
+
+enum AiIntentStatus {
+  PROPOSED
+  CONFIRMED
+  REJECTED
+  EXECUTED
+  CANCELLED
+}
+
+enum AiAgentType {
+  GENERAL_ASSISTANT
+  FREELANCE_ADVISOR
+  BI_ANALYST
+  COURSE_TUTOR
+  SUPPORT_AGENT
+}
+
+/// Agentic AI execution and conversation session
+model AiSession {
+  id                     String          @id @default(uuid())
+  userId                 Int
+  organizationId         Int?
+  agentType              AiAgentType     @default(GENERAL_ASSISTANT)
+  status                 AiSessionStatus @default(ACTIVE)
+  title                  String?
+  model                  String          @default("gemini-2.5-flash")
+  systemPromptOverride   String?         @db.Text
+  totalTokens            Int             @default(0)
+  contextTokens          Int             @default(0)
+  summaryState           String?         @db.Text
+  compactedUntilSequence Int             @default(0)
+  metadata               Json            @default("{}")
+  createdAt              DateTime        @default(now())
+  updatedAt              DateTime        @updatedAt
+  deletedAt              DateTime?
+
+  user          User             @relation("UserAiSessions", fields: [userId], references: [id], onDelete: Cascade)
+  organization  Organization?    @relation("OrgAiSessions", fields: [organizationId], references: [id], onDelete: SetNull)
+  messages      AiMessage[]
+  toolTraces    AiToolTrace[]
+  actionIntents AiActionIntent[]
+  logs          AiLog[]
+
+  @@index([userId, updatedAt(sort: Desc)])
+  @@index([organizationId, createdAt])
+  @@index([status, updatedAt])
+  @@index([agentType, status])
+}
+
+/// Immutable record of conversation turns within an AI session
+model AiMessage {
+  id             String        @id @default(uuid())
+  sessionId      String
+  role           AiMessageRole
+  content        String        @db.Text
+  sequence       Int
+  tokenCount     Int           @default(0)
+  isCompacted    Boolean       @default(false)
+  isSummary      Boolean       @default(false)
+  model          String?
+  finishReason   String?
+  costMicroCents Int           @default(0)
+  metadata       Json          @default("{}")
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  session       AiSession        @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  toolTraces    AiToolTrace[]
+  actionIntents AiActionIntent[]
+
+  @@unique([sessionId, sequence])
+  @@index([sessionId, isCompacted, sequence(sort: Asc)])
+  @@index([sessionId, createdAt(sort: Asc)])
+}
+
+/// Observability & execution traces for tool calls dispatched by the agent
+model AiToolTrace {
+  id           String       @id @default(uuid())
+  sessionId    String
+  messageId    String?
+  toolName     String
+  toolCallId   String?
+  inputArgs    Json
+  outputResult Json?
+  errorMessage String?      @db.Text
+  status       AiToolStatus @default(PENDING)
+  durationMs   Int?
+  startedAt    DateTime     @default(now())
+  completedAt  DateTime?
+  createdAt    DateTime     @default(now())
+
+  session AiSession  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  message AiMessage? @relation(fields: [messageId], references: [id], onDelete: SetNull)
+
+  @@index([sessionId, startedAt(sort: Desc)])
+  @@index([toolName, status, startedAt])
+  @@index([messageId])
+}
+
+/// Guardrail & Human-in-the-Loop (HITL) action intents proposed by AI
+model AiActionIntent {
+  id                    String         @id @default(uuid())
+  sessionId             String
+  messageId             String?
+  intentType            String
+  targetEntity          String?
+  targetEntityId        String?
+  payload               Json
+  riskScore             Float          @default(0.0)
+  status                AiIntentStatus @default(PROPOSED)
+  requiresHumanApproval Boolean        @default(false)
+  confirmedByUserId     Int?
+  confirmedAt           DateTime?
+  executedAt            DateTime?
+  rejectionReason       String?
+  createdAt             DateTime       @default(now())
+  updatedAt             DateTime       @updatedAt
+
+  session     AiSession  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  message     AiMessage? @relation(fields: [messageId], references: [id], onDelete: SetNull)
+  confirmedBy User?      @relation("ConfirmedAiIntents", fields: [confirmedByUserId], references: [id], onDelete: SetNull)
+
+  @@index([sessionId, status])
+  @@index([status, requiresHumanApproval])
+  @@index([confirmedByUserId, createdAt])
+}
+
+/// Immutable, tamper-evident SHA-256 hash-chained audit log & analytical flywheel
+model AiLog {
+  id               BigInt   @id @default(autoincrement())
+  sessionId        String?
+  userId           Int
+  eventType        String
+  promptTokens     Int      @default(0)
+  completionTokens Int      @default(0)
+  latencyMs        Int      @default(0)
+  model            String
+  costMicroCents   Int      @default(0)
+  ipAddress        String?
+  userAgent        String?
+  details          Json     @default("{}")
+  previousHash     String
+  entryHash        String
+  createdAt        DateTime @default(now())
+
+  session AiSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  user    User       @relation("UserAiLogs", fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([sessionId, createdAt(sort: Desc)])
+  @@index([userId, createdAt(sort: Desc)])
+  @@index([eventType, createdAt(sort: Desc)])
+}
+
+enum KybStatus {
+  NOT_SUBMITTED
+  PENDING_VERIFICATION
+  REQUIRES_CLARIFICATION
+  APPROVED
+  REJECTED
+  SUSPENDED_FRAUD
+}
+
+enum CorporateDocumentType {
+  CNRC_EXTRAIT_RC
+  NIF_ATTESTATION
+  DECLARATION_G8
+  STATUTS_SOCIETE
+  CARTE_AUTO_ENTREPRENEUR
+  CARTE_ARTISAN
+  PROCURATION_NOTARIEE
+  ATTESTATION_CNAS_CASNOS
+}
+
+enum OrganizationRole {
+  OWNER
+  ADMIN
+  BILLING_ADMIN
+  HIRING_MANAGER
+  ANALYST
+  VIEWER
+  AUDITOR
+}
+
+model OrganizationKyb {
+  id                    Int       @id @default(autoincrement())
+  organizationId        Int       @unique
+  legalName             String
+  tradeName             String?
+  legalStructure        String // SARL, EURL, SPA, SNC, AUTO_ENTREPRENEUR
+  shareCapitalDzd       BigInt?
+  rcNumber              String    @unique
+  rcWilayaCode          String
+  rcDateImmatriculation DateTime?
+  nifNumber             String    @unique
+  nisNumber             String?
+  articleImposition     String?
+  taxRegime             String? // REEL, IFU
+  headquartersAddress   String
+  city                  City      @default(ALGIERS)
+  status                KybStatus @default(NOT_SUBMITTED)
+  riskScore             Int       @default(0)
+  rejectionReason       String?
+  verifiedAt            DateTime?
+  verifiedBy            Int? // AdminProfile ID
+  qrVerifiedAt          DateTime?
+  qrVerificationReceipt Json?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  organization     Organization         @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  verifierProfile  AdminProfile?        @relation("AdminKybVerifier", fields: [verifiedBy], references: [id], onDelete: SetNull)
+  documents        CorporateDocument[]
+  verificationLogs OrganizationKybLog[]
+
+  @@index([status])
+  @@index([rcNumber])
+  @@index([nifNumber])
+  @@index([rcWilayaCode])
+}
+
+model CorporateDocument {
+  id               Int                   @id @default(autoincrement())
+  kybId            Int
+  documentType     CorporateDocumentType
+  storageKey       String // MinIO/S3 Sovereign Vault Key
+  fileName         String
+  mimeType         String                @default("application/pdf")
+  fileSize         Int
+  fileSha256       String
+  isEncrypted      Boolean               @default(true)
+  qrCodeVerified   Boolean               @default(false)
+  qrCodeRawData    String?
+  ocrExtractedData Json?
+  uploadedAt       DateTime              @default(now())
+  verifiedAt       DateTime?
+
+  kyb OrganizationKyb @relation(fields: [kybId], references: [id], onDelete: Cascade)
+
+  @@index([kybId, documentType])
+  @@index([fileSha256])
+}
+
+model OrganizationKybLog {
+  id             Int       @id @default(autoincrement())
+  kybId          Int
+  adminId        Int?
+  previousStatus KybStatus
+  newStatus      KybStatus
+  reason         String?
+  metadata       Json?
+  createdAt      DateTime  @default(now())
+
+  kyb   OrganizationKyb @relation(fields: [kybId], references: [id], onDelete: Cascade)
+  admin AdminProfile?   @relation(fields: [adminId], references: [id], onDelete: SetNull)
+
+  @@index([kybId])
+  @@index([createdAt])
+}
+
+model Department {
+  id             Int       @id @default(autoincrement())
+  organizationId Int
+  name           String
+  slug           String
+  code           String? // Cost Center code / Centre de coût
+  description    String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deletedAt      DateTime?
+
+  organization Organization         @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  members      OrganizationMember[]
+  datasets     Dataset[]
+  dashboards   Dashboard[]
+
+  @@unique([organizationId, slug])
+  @@index([organizationId])
+}
+
+model Branch {
+  id             Int      @id @default(autoincrement())
+  organizationId Int
+  name           String
+  code           String? // e.g., ORN-01, ALG-01
+  wilayaCode     Int // 1 to 58
+  city           City
+  address        String?
+  phoneNumber    String?
+  isHeadquarters Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@index([organizationId])
+  @@index([wilayaCode])
+}
+
+model TeamLicensePool {
+  id             Int       @id @default(autoincrement())
+  organizationId Int
+  moduleId       String?
+  pathId         String?
+  totalSeats     Int
+  allocatedSeats Int       @default(0)
+  purchasedAt    DateTime  @default(now())
+  expiresAt      DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  organization Organization     @relation(fields: [organizationId], references: [id], onDelete: Restrict)
+  allocations  SeatAllocation[]
+
+  @@index([organizationId])
+}
+
+model SeatAllocation {
+  id         Int       @id @default(autoincrement())
+  poolId     Int
+  userId     Int
+  assignedAt DateTime  @default(now())
+  revokedAt  DateTime?
+
+  pool TeamLicensePool @relation(fields: [poolId], references: [id], onDelete: Cascade)
+  user User            @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@unique([poolId, userId])
+  @@index([userId])
+}
+
+model CompanyCaseStudy {
+  id               Int          @id @default(autoincrement())
+  organizationId   Int
+  title            String
+  slug             String
+  clientName       String?
+  industry         String?
+  problemStatement String
+  solutionSummary  String
+  roiMetrics       Json? // e.g., [{"label": "Cost Reduction", "value": "42%"}]
+  technologies     String[]     @default([])
+  isFeatured       Boolean      @default(false)
+  publishedAt      DateTime?
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@unique([organizationId, slug])
+  @@index([organizationId])
+}
+
+model CompanyLeadership {
+  id             Int          @id @default(autoincrement())
+  organizationId Int
+  fullName       String
+  roleTitle      String // e.g., "PDG / CEO", "DAF", "CTO"
+  bio            String?
+  avatarUrl      String?
+  linkedinUrl    String?
+  displayOrder   Int          @default(0)
+  isExecutive    Boolean      @default(true)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@index([organizationId, displayOrder])
+}
+
+model CompanyReview {
+  id                      Int          @id @default(autoincrement())
+  organizationId          Int
+  reviewerId              Int
+  contractId              Int?
+  reviewerType            String       @default("FREELANCER") // FREELANCER | CLIENT | CORPORATE_LEARNER
+  overallRating           Float
+  paymentPromptnessRating Float?
+  scopeClarityRating      Float?
+  communicationRating     Float?
+  title                   String?
+  comment                 String?
+  isVerifiedContract      Boolean      @default(false)
+  createdAt               DateTime     @default(now())
+  updatedAt               DateTime     @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@unique([organizationId, reviewerId, contractId])
+  @@index([organizationId])
+  @@index([reviewerId])
+}
+

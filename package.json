@@ -1,0 +1,33 @@
+{
+  "name": "tamwheel",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "clean": "turbo clean",
+    "prepare": "husky",
+    "build:mobile": "bash scripts/build-mobile.sh",
+    "mobile:init": "cd apps/web && npx cap init",
+    "mobile:sync": "cd apps/web && npx cap sync"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.9.6",
+    "turbo": "^2.0.0"
+  },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"]
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

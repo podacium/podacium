@@ -1,0 +1,696 @@
+{
+  "hero": {
+    "badge": "Désormais avec copilote IA",
+    "headline": {
+      "part1": "Apprenez la compétence.",
+      "part2": "Prouvez-la par du vrai travail.",
+      "part3": "Soyez payé en Algérie."
+    },
+    "subtitle": "Podacium réunit des cours, un hub freelance sans commission et des tableaux de bord métier en direct — chaque certificat devient un portfolio, chaque projet devient un revenu.",
+    "pillarsAriaLabel": "Piliers de la plateforme",
+    "trust": {
+      "title": "Conçu pour la réalité algérienne",
+      "items": {
+        "languages": "Des cours en arabe, français, anglais et kabyle",
+        "certificates": "Des certificats vérifiés, contrôlables par les employeurs",
+        "payments": "Paiements CIB et Dahabia pris en charge",
+        "commission": "Aucune commission sur vos revenus freelance"
+      }
+    },
+    "dashboard": {
+      "ariaLabel": "Aperçu interactif de l'espace talent Podacium : cours actifs, badges Open Badges vérifiés, séquestre client sécurisé et paiements en DZD",
+      "userTitle": "Amine K. • Développeur Full-Stack",
+      "userStatus": "Espace actif",
+      "overview": "Espace Talent",
+      "period": "12 dernières semaines",
+      "search": "Rechercher cours, missions, contrats…",
+      "weeklyChart": "Progression & Revenus",
+      "currency": "+32% ce mois-ci",
+      "topChannels": "Matrice de compétences",
+      "nav": {
+        "learning": "Mes cours",
+        "freelancing": "Missions clients",
+        "bi": "Compétences",
+        "hub": "Portefeuille séquestre"
+      },
+      "kpi": {
+        "courses": "Cours en cours",
+        "learners": "Badges vérifiés (v3)",
+        "earnings": "Sécurisé sous séquestre",
+        "satisfaction": "Revenus versés"
+      },
+      "sources": {
+        "organic": "Next.js & TypeScript",
+        "referral": "FastAPI & Python",
+        "paid": "PostgreSQL & Prisma",
+        "email": "Docker & Déploiement Cloud"
+      },
+      "activity": {
+        "course": "Badge Open Badges v3 émis : Architecture Web Full-Stack",
+        "freelancer": "Jalon séquestre 2/3 sécurisé : App E-Commerce",
+        "project": "Virement effectué vers BaridiMob / EDAHABIA"
+      }
+    },
+    "title": "Podacium vous aide à",
+    "animatedWords": {
+      "learn": "Apprendre.",
+      "earn": "Gagner.",
+      "grow": "Progresser.",
+      "analyze": "Analyser.",
+      "connect": "Connecter."
+    },
+    "description": "Transformez votre façon d'apprendre, d'analyser et de collaborer avec les données grâce à notre plateforme intégrée.",
+    "cta": {
+      "primary": "Commencer gratuitement",
+      "secondary": "Voir comment ça marche",
+      "startLearning": "Commencer par Apprendre",
+      "learnAboutUs": "En savoir plus sur nous"
+    },
+    "benefits": {
+      "noCreditCard": "Aucune carte bancaire requise",
+      "freeTrial": "Essai gratuit de 14 jours"
+    },
+    "aiEngineActive": "Moteur IA Actif",
+    "talentSignal": "Signal de Talent",
+    "effectStats": [
+      {
+        "label": "Validation des compétences",
+        "before": "64%",
+        "after": "94%",
+        "color": "text-emerald-500"
+      },
+      {
+        "label": "Préparation au marché",
+        "before": "C-",
+        "after": "A+",
+        "color": "text-blue-500"
+      },
+      {
+        "label": "Visibilité du profil",
+        "before": "INACTIF",
+        "after": "ACTIF",
+        "color": "text-indigo-500"
+      }
+    ],
+    "pillars": {
+      "title": "Piliers de la Plateforme",
+      "learning": "Apprentissage",
+      "freelancing": "Freelance",
+      "bi": "Analyses BI",
+      "hub": "Plateforme Freelance"
+    }
+  },
+  "pillars": {
+    "learn": {
+      "title": "Apprendre",
+      "subtitle": "Plateforme d'Apprentissage par IA",
+      "description": "Maîtrisez les compétences en données les plus demandées grâce à des cours interactifs, des parcours personnalisés et une éducation assistée par IA.",
+      "features": [
+        "Cours Interactifs",
+        "Parcours d'Apprentissage Personnalisés",
+        "Tuteur IA (Bientôt disponible)",
+        "Évaluations de Compétences"
+      ],
+      "metrics": {
+        "growthRate": "Taux de Croissance"
+      },
+      "hubLabel": "Plateforme Freelance"
+    },
+    "bi": {
+      "title": "BI",
+      "subtitle": "Business Intelligence & Analyse",
+      "description": "Transformez les données brutes en insights actionnables grâce à l'analyse avancée, la modélisation prédictive et les tableaux de bord intelligents.",
+      "features": [
+        "Tableaux de Bord Interactifs",
+        "Analyse Prédictive",
+        "Reporting Automatisé",
+        "Visualisation des Données"
+      ],
+      "metrics": {
+        "growthRate": "Taux de Croissance"
+      }
+    },
+    "hub": {
+      "title": "Hub",
+      "subtitle": "Réseau & Marketplace de Talents",
+      "description": "Connectez-vous avec des professionnels de haut niveau, trouvez des correspondances de projet parfaites et construisez votre carrière grâce à des collaborations significatives.",
+      "features": [
+        "Appariement Intelligent des Talents",
+        "Marketplace de Projets",
+        "Vérification des Compétences",
+        "Outils de Collaboration"
+      ],
+      "talentProfiles": [
+        {
+          "skill": "Développeur"
+        },
+        {
+          "skill": "Analyste"
+        },
+        {
+          "skill": "Designer"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Application Web",
+          "budget": "5K $"
+        },
+        {
+          "title": "Tableau de Bord Données",
+          "budget": "3,5K $"
+        },
+        {
+          "title": "Application Mobile",
+          "budget": "8K $"
+        },
+        {
+          "title": "Modèle IA",
+          "budget": "12K $"
+        }
+      ],
+      "hubLabel": "Plateforme Freelance"
+    },
+    "cta": {
+      "explore": "Explorer",
+      "clickHint": "Cliquer pour explorer"
+    },
+    "navigation": {
+      "previous": "Pilier précédent",
+      "next": "Pilier suivant"
+    },
+    "autoRotate": {
+      "auto": "Auto",
+      "manual": "Manuel"
+    },
+    "indicators": {
+      "switchTo": "Passer à",
+      "goToSlide": "Aller à la diapositive"
+    },
+    "swipeHint": "Glisser pour naviguer"
+  },
+  "ai": {
+    "comingSoon": "BIENTÔT DISPONIBLE",
+    "title": {
+      "part1": "Podacium",
+      "part2": "Suite Neuronale"
+    },
+    "description": "Systèmes d'IA avancés pour l'apprentissage, l'analyse et la collaboration. Actuellement en entraînement neuronal avec lancement prévu au T2 2027.",
+    "tutor": {
+      "title": "Tuteur IA",
+      "description": "Intelligence d'apprentissage adaptative qui personnalise l'éducation",
+      "features": [
+        "Analyse des modèles d'apprentissage en temps réel",
+        "Génération de curriculum personnalisé",
+        "Suivi des performances cognitives",
+        "Détection automatique des lacunes de connaissances"
+      ]
+    },
+    "analyst": {
+      "title": "Analyste IA",
+      "description": "Intelligence prédictive pour la prise de décision basée sur les données",
+      "features": [
+        "Reconnaissance automatique des motifs",
+        "Modèles de prévision en temps réel",
+        "Interrogation des données en langage naturel",
+        "Synthèse intelligente des rapports"
+      ]
+    },
+    "matchmaker": {
+      "title": "Médiateur IA",
+      "description": "Appariement neuronal pour une synergie talent-projet optimale",
+      "features": [
+        "Analyse de compatibilité des compétences",
+        "Prédiction de succès des projets",
+        "Optimisation de la chimie d'équipe",
+        "Apprentissage continu à partir des résultats"
+      ]
+    },
+    "neuralAI": "IA Neuronale",
+    "progress": {
+      "training": "Progrès de l'entraînement"
+    },
+    "neuralNetwork": "Réseau Neuronal",
+    "launchTimeline": "Lancement T2 2027",
+    "neuralCapabilities": "Capacités Neuronales",
+    "notifyAtLaunch": "Vous serez notifié au lancement",
+    "neuralInterfacePreview": "Aperçu de l'Interface Neuronale",
+    "previewDescription": "Vivez une simulation des capacités de {title}",
+    "sampleInteraction": "Exemple d'Interaction",
+    "sampleQuestion": "Comment puis-je améliorer mon efficacité d'apprentissage ?",
+    "systemStatus": "Statut du Système",
+    "trainingActive": "Entraînement Actif",
+    "stats": {
+      "neuralTrainingAccuracy": "Précision de l'Entraînement Neuronal",
+      "expectedLaunch": "T2 2027",
+      "expectedLaunchLabel": "Lancement Prévu"
+    }
+  },
+  "combined": {
+    "joinCommunity": "Rejoignez Notre Communauté",
+    "title": {
+      "part1": "Restez en avance avec",
+      "part2": "Podacium"
+    },
+    "newsletter": "Newsletter",
+    "premiumAccess": "Accès Premium",
+    "newsletterCard": {
+      "title": "Abonnez-vous à Notre Newsletter",
+      "description": "Rejoignez les professionnels recevant des insights, recommandations et contenus exclusifs directement dans votre boîte mail.",
+      "benefits": [
+        {
+          "title": "Digest Hebdomadaire",
+          "description": "Contenu sélectionné chaque lundi"
+        },
+        {
+          "title": "Promesse Zéro Spam",
+          "description": "Uniquement du contenu de qualité, désabonnement à tout moment"
+        }
+      ],
+      "success": {
+        "title": "Bienvenue à bord !",
+        "message": "Vérifiez votre email {email} pour confirmer votre abonnement."
+      },
+      "emailLabel": "Adresse Email",
+      "emailPlaceholder": "votre@email.com",
+      "clearEmail": "Effacer l'email",
+      "subscribing": "Abonnement en cours...",
+      "subscribe": "S'abonner à la Newsletter",
+      "privacyNotice": {
+        "part1": "En vous abonnant, vous acceptez notre",
+        "part2": "Politique de Confidentialité"
+      }
+    },
+    "pricingCard": {
+      "title": "Débloquez le Potentiel Complet",
+      "description": "Accédez à toutes les fonctionnalités Podacium, y compris les outils IA avancés, les analyses illimitées et le support premium.",
+      "benefits": [
+        {
+          "title": "Accès aux trois piliers",
+          "description": "Toutes nos offres incluses"
+        },
+        {
+          "title": "Analyses Avancées",
+          "description": "avec Support Prioritaire"
+        }
+      ],
+      "cta": {
+        "title": "Prêt à Passer au Niveau Supérieur ?",
+        "button": "Voir Tous les Forfaits"
+      },
+      "stats": {
+        "plans": {
+          "count": "3",
+          "label": "Forfaits"
+        },
+        "trial": {
+          "count": "14 Jours",
+          "label": "Essai"
+        },
+        "support": {
+          "count": "24/7",
+          "label": "Support"
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Foire Aux Questions",
+    "description": "Trouvez des réponses aux questions courantes sur la plateforme, la tarification et les fonctionnalités de Podacium.",
+    "categories": {
+      "all": "Tous les sujets",
+      "general": "Général",
+      "billing": "Facturation & Forfaits",
+      "technical": "Technique",
+      "accounts": "Comptes"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "Qu'est-ce que Podacium et comment ça marche ?",
+          "answer": "Podacium est une plateforme tout-en-un qui combine formation en ligne, marketplace freelance et outils de business intelligence. Les apprenants suivent des cours et obtiennent des certificats, les freelances trouvent des projets et sont payés en toute sécurité, et les entreprises analysent leurs données et découvrent des talents — le tout dans un seul écosystème."
+        },
+        "1": {
+          "question": "Comment fonctionne la plateforme à trois piliers ?",
+          "answer": "Podacium repose sur trois piliers intégrés : Learn (cours en ligne avec certificats vérifiés), Hub (marketplace freelance avec paiements PodaPoints par fonctionnalité) et BI (tableaux de bord et analyse de données). Les progrès et compétences circulent entre les piliers : vos résultats d'apprentissage renforcent votre profil freelance, et les analyses BI éclairent vos décisions professionnelles."
+        },
+        "2": {
+          "question": "Podacium est-il disponible en arabe, français et anglais ?",
+          "answer": "Oui. La plateforme est entièrement disponible en anglais, français et arabe. Vous pouvez changer de langue à tout moment. Le contenu des cours, l'interface et le support sont localisés pour chaque langue."
+        },
+        "3": {
+          "question": "Qui peut bénéficier de Podacium ?",
+          "answer": "Les étudiants et professionnels souhaitant monter en compétences, les freelances cherchant des projets et des clients, les entreprises ayant besoin de talents et d'analyses de données, ainsi que les organisations voulant suivre le développement de leurs équipes — tous trouvent leur place sur Podacium."
+        },
+        "4": {
+          "question": "Faut-il des compétences techniques pour commencer ?",
+          "answer": "Pas du tout. Podacium est conçu pour tous les niveaux. Les débutants peuvent commencer par des cours fondamentaux, et nos recommandations personnalisées vous aident à trouver le parcours adapté à vos objectifs et à votre expérience actuelle."
+        },
+        "5": {
+          "question": "Comment fonctionne le système de recommandation ?",
+          "answer": "Le système analyse votre historique d'apprentissage, vos objectifs de carrière et votre activité sur la plateforme pour vous recommander des cours, des projets et des outils BI personnalisés. Les recommandations s'améliorent avec le temps à mesure que vous interagissez avec plus de contenu, offrant des suggestions de plus en plus pertinentes pour votre développement."
+        },
+        "6": {
+          "question": "Puis-je utiliser Podacium sur des appareils mobiles ?",
+          "answer": "Oui. Podacium est entièrement responsive et fonctionne sur tous les appareils, y compris les smartphones et les tablettes. Vous pouvez suivre des cours, parcourir des projets freelance et consulter des tableaux de bord BI depuis n'importe quel appareil. Une application mobile dédiée est également en cours de développement pour une expérience améliorée en déplacement."
+        }
+      },
+      "billing": {
+        "0": {
+          "question": "Combien coûte Podacium ?",
+          "answer": "Podacium propose un accès gratuit de base avec des options de mise à niveau. Les cours commencent à 500 DZD, les abonnements Learn à partir de 1 500 DZD/mois et BI Pro à partir de 3 000 DZD/mois. Le Hub freelance utilise PodaPoints pour les achats de fonctionnalités sans commission sur les projets. Les abonnements annuels offrent jusqu'à 25 % d'économie."
+        },
+        "1": {
+          "question": "Quels moyens de paiement acceptez-vous ?",
+          "answer": "Nous acceptons toutes les principales cartes bancaires algériennes (CIB/Dahabia), les cartes de crédit internationales (Visa, Mastercard) et les solutions de paiement mobile. Les clients professionnels peuvent également payer par virement bancaire ou facture."
+        },
+        "2": {
+          "question": "Proposez-vous un essai gratuit ?",
+          "answer": "Oui. Les nouveaux utilisateurs bénéficient d'un essai gratuit de 14 jours avec accès complet à toutes les fonctionnalités Pro de Learn, Hub et BI. Aucune carte de crédit n'est requise et vous pouvez annuler à tout moment pendant la période d'essai sans frais."
+        },
+        "3": {
+          "question": "Puis-je annuler ou changer de forfait à tout moment ?",
+          "answer": "Absolument. Vous pouvez passer à un forfait supérieur ou annuler votre abonnement à tout moment. Si vous annulez, vous conservez l'accès jusqu'à la fin de votre période de facturation en cours."
+        },
+        "4": {
+          "question": "Y a-t-il des réductions pour les étudiants ou les établissements d'enseignement ?",
+          "answer": "Oui, nous proposons des tarifs spéciaux pour les étudiants vérifiés et les établissements d'enseignement. Les étudiants bénéficient d'une réduction de 50 % sur les forfaits Pro et Pro Plus. Les établissements d'enseignement peuvent nous contacter pour des tarifs de groupe personnalisés incluant des fonctionnalités administratives."
+        }
+      },
+      "technical": {
+        "0": {
+          "question": "Comment fonctionne le suivi de progression sur plusieurs appareils ?",
+          "answer": "Votre progression se synchronise automatiquement en temps réel sur tous vos appareils. Commencez un cours sur votre ordinateur, continuez sur votre téléphone et reprenez là où vous vous êtes arrêté — votre position vidéo, vos scores aux quiz et vos leçons terminées sont toujours à jour."
+        },
+        "1": {
+          "question": "Puis-je obtenir des certificats vérifiés ?",
+          "answer": "Oui. Après avoir terminé un cours ou un parcours d'apprentissage, vous recevez un certificat vérifié que vous pouvez partager sur LinkedIn, ajouter à votre portfolio ou utiliser pour renforcer votre profil freelance sur Podacium Hub."
+        },
+        "2": {
+          "question": "Mes données sont-elles sécurisées sur Podacium ?",
+          "answer": "Nous appliquons une sécurité de niveau entreprise : chiffrement de bout en bout en transit et au repos, audits de sécurité réguliers et contrôles d'accès stricts. Vos informations personnelles, vos données de projet et vos détails de paiement sont protégés en permanence."
+        },
+        "3": {
+          "question": "Puis-je exporter mes données ?",
+          "answer": "Oui. Vous pouvez exporter votre progression de cours, vos certificats, vos tableaux de bord BI et vos rapports aux formats CSV, PDF ou PNG. Les téléchargements de jeux de données sont disponibles aux formats CSV, Excel et JSON."
+        },
+        "4": {
+          "question": "Comment fonctionne le système de paiement du marché freelance ?",
+          "answer": "Podacium utilise un modèle de tarification par fonctionnalité avec PodaPoints. Au lieu de commissions, vous achetez des fonctionnalités comme les publications de projets (200 PodaPoints) ou les annonces en vedette (500 PodaPoints). Il n'y a pas de commissions de plateforme sur vos gains — vous ne payez que pour les services que vous utilisez activement."
+        },
+        "5": {
+          "question": "Comment les données sont-elles stockées et protégées ?",
+          "answer": "Toutes les données sont chiffrées au repos et en transit. Nous utilisons un chiffrement AES-256 pour le stockage et TLS 1.3 pour les transmissions. Notre infrastructure est hébergée sur des serveurs sécurisés avec des sauvegardes régulières et une réplication géographique pour garantir la disponibilité et l'intégrité des données."
+        },
+        "6": {
+          "question": "Quels types de projets freelance puis-je trouver sur le Hub ?",
+          "answer": "Le Hub propose des projets dans divers domaines, notamment le développement web, la science des données, le design graphique, la rédaction technique, le marketing numérique, et bien plus encore. Chaque projet inclut des exigences détaillées, la fourchette budgétaire et les délais pour vous aider à trouver les missions les mieux adaptées à vos compétences."
+        }
+      },
+      "accounts": {
+        "0": {
+          "question": "Comment créer un compte ?",
+          "answer": "Cliquez sur 'Commencer' et inscrivez-vous avec votre adresse e-mail ou votre compte Google. Choisissez votre rôle (Apprenant, Freelance ou Entreprise) et complétez votre profil. L'ensemble du processus prend moins de deux minutes, et l'accès de base est gratuit."
+        },
+        "1": {
+          "question": "Comment réinitialiser mon mot de passe ?",
+          "answer": "Cliquez sur 'Mot de passe oublié' sur la page de connexion, saisissez votre adresse e-mail et nous vous enverrons un lien de réinitialisation sécurisé. Le lien expire après une heure pour des raisons de sécurité. Si vous ne recevez pas l'e-mail, vérifiez votre dossier de courriers indésirables."
+        },
+        "2": {
+          "question": "Puis-je avoir plusieurs rôles sur le même compte ?",
+          "answer": "Oui. Vous pouvez être un apprenant suivant des cours, un freelance soumissionnant sur des projets et un chef d'entreprise recrutant des talents — tout cela depuis le même compte. Votre tableau de bord s'adapte pour afficher les outils pertinents pour chaque rôle."
+        },
+        "3": {
+          "question": "Comment contacter le support ?",
+          "answer": "Vous pouvez joindre notre équipe de support via le widget de chat en direct sur n'importe quelle page, nous envoyer un e-mail à support@podacium.com ou consulter le Centre d'aide. Les clients professionnels bénéficient de gestionnaires de compte dédiés avec des temps de réponse prioritaires."
+        },
+        "4": {
+          "question": "Puis-je exporter mes données et supports de cours ?",
+          "answer": "Oui, vous pouvez exporter vos certificats terminés, vos projets de portfolio et les ressources de cours téléchargeables. Les données de votre compte, y compris votre historique d'apprentissage et vos contributions BI, peuvent être exportées au format JSON ou CSV depuis les paramètres de votre compte."
+        },
+        "5": {
+          "question": "Comment la confidentialité des données est-elle protégée sur les projets du Hub ?",
+          "answer": "Les détails des projets sont partagés exclusivement entre les candidats présélectionnés et les clients. Tous les accords de non-divulgation (NDA) sont appliqués via des contrats numériques. Les candidatures et les soumissions sont chiffrées, et les informations d'identification personnelle sont masquées jusqu'à ce qu'une mission soit attribuée."
+        }
+      }
+    },
+    "contact": {
+      "title": "Vous avez encore des questions ?",
+      "description": "Notre équipe de support est là pour vous aider à tirer le meilleur parti de Podacium — que ce soit pour l'aide technique, la tarification ou les conseils d'intégration.",
+      "button": "Contacter le Support"
+    }
+  },
+  "variation1": {
+    "title": {
+      "part1": "Maîtrisez votre art",
+      "part2": "Acquérir l'expérience",
+      "part3": "Amplifiez le succès"
+    },
+    "description": "Podacium transforme l'apprentissage contextuel en visibilité haute fidélité pour la main-d'œuvre moderne. Apprenez, analysez et connectez-vous.",
+    "cta": {
+      "startLearning": "Commencer par l'apprentissage",
+      "learnAboutUs": "Comprendre Podacium"
+    },
+    "benefits": {
+      "freeTrial": "Essai gratuit de 14 jours",
+      "noCreditCard": "Carte de crédit non requise"
+    },
+    "stats": {
+      "builders": "Une communauté de créateurs"
+    },
+    "features": {
+      "learn": {
+        "title": "Plateforme d'Apprentissage",
+        "description": "Cours & certifications par IA"
+      },
+      "bi": {
+        "title": "Analyses BI",
+        "description": "Analyses avancées & tableaux de bord"
+      },
+      "hub": {
+        "title": "Plateforme Freelance",
+        "description": "Appariement de freelances & projets"
+      },
+      "ai": {
+        "title": "Assistant IA",
+        "description": "Insights intelligents & automatisation"
+      }
+    }
+  },
+  "video": {
+    "title": "Comprenez comment Podacium fonctionne en moins de 2 minutes",
+    "description": "Découvrez pourquoi les compétences seules ne suffisent pas et comment nous transformons les données en opportunités.",
+    "play": "Lire l’intro de 2 minutes",
+    "unavailable": "Cette vidéo ne peut pas être lue ici pour le moment. Vous pouvez la regarder directement sur Vimeo.",
+    "watchOnVimeo": "Regarder sur Vimeo",
+    "retry": "Réessayer",
+    "steps": {
+      "capture": {
+        "title": "Capture",
+        "desc": "Données d'apprentissage haute fidélité."
+      },
+      "validate": {
+        "title": "Validation",
+        "desc": "Évaluation de projet liée aux compétences."
+      },
+      "signal": {
+        "title": "Signal",
+        "desc": "Visibilité prête pour le marché."
+      }
+    }
+  },
+  "layers": {
+    "education": {
+      "label": "Couche 01: Éducation",
+      "features": {
+        "micro": {
+          "title": "Micro-cours Contextuels",
+          "desc": "Modules d'apprentissage courts et ciblés s'intégrant dans les flux de travail actifs."
+        },
+        "paths": {
+          "title": "Parcours Structurés",
+          "desc": "Itinéraires définis du novice aux niveaux de compétences prêts pour le marché."
+        },
+        "validation": {
+          "title": "Validation des Compétences",
+          "desc": "Évaluations et mini-projets capturant des données de performance réelles."
+        }
+      },
+      "stats": {
+        "accuracy": "Précision de Validation",
+        "behavioral": "Métriques de capture de compétences comportementales"
+      },
+      "subtitle": "La couche d'intégration pour des données haute fidélité.",
+      "description": "L'apprentissage n'est que l'entrée. Nous capturons chaque interaction, évaluation et réalisation de projet pour construire votre signature de compétences unique."
+    },
+    "freelancing": {
+      "label": "Couche 02: Freelancing",
+      "readiness": {
+        "title": "Disponibilité",
+        "desc": "Compétences liées automatiquement aux profils."
+      },
+      "reputation": {
+        "title": "Réputation",
+        "desc": "Découlant directement des résultats d'apprentissage."
+      },
+      "cta": "Explorer le Talent Hub",
+      "description": "Nous ne proposons pas seulement un marché ; nous offrons des indicateurs de préparation. Vos données d'apprentissage génèrent des signaux qui vous associent à des tâches complexes et à une visibilité professionnelle."
+    },
+    "bi": {
+      "label": "Couche 03: Business Intelligence",
+      "features": {
+        "supply": {
+          "title": "Signaux d'Offre de Compétences",
+          "desc": "Visibilité en temps réel sur les clusters de compétences émergents au sein de la main-d'œuvre."
+        },
+        "performance": {
+          "title": "Indicateurs de Performance",
+          "desc": "Métriques basées sur les données en fonction de l'achèvement réel des tâches."
+        },
+        "insights": {
+          "title": "Insights Organisationnels",
+          "desc": "Agrégation de haut niveau de la préparation et de l'activation du capital humain."
+        }
+      },
+      "infrastructure": {
+        "title": "Infrastructure pour la Rétention",
+        "description": "Notre couche BI est conçue pour l'activation organisationnelle. Elle fournit les données nécessaires pour retenir les talents.",
+        "dashboard": "Tableau de bord organisationnel (Accès anticipé)"
+      },
+      "subtitle": "Valeur cumulée grâce aux signaux de l'offre.",
+      "description": "Le système multicouche agrège le comportement d'apprentissage et la performance des tâches en perspectives organisationnelles. Nous ne devinons pas l'offre de compétences ; nous la voyons.",
+      "stats": {
+        "connectivity": "Connectivité des clusters",
+        "velocity": "Vitesse de croissance des compétences",
+        "retention": "Prédiction de rétention"
+      }
+    },
+    "activation": {
+      "title": "Prêt à rejoindre la dynamique de la plateforme ?"
+    }
+  },
+  "activation": {
+    "cta": {
+      "module": "Commencer votre premier module",
+      "docs": "Documentation de la plateforme",
+      "joinWaitlist": "Rejoindre la liste d'attente"
+    },
+    "benefits": {
+      "noCard": "Pas de carte de crédit requise",
+      "market": "Ciblé sur le marché algérien",
+      "infra": "Infrastructure multi-services"
+    }
+  },
+  "variation2": {
+    "title": {
+      "part1": "Transformez Votre",
+      "part2": "Parcours Données",
+      "part3": "Avec la Puissance de Podacium"
+    },
+    "description": "De l'apprentissage des compétences essentielles en données au déploiement d'analyses avancées et à la connexion avec des opportunités - Podacium fournit l'écosystème complet pour votre carrière dans les données.",
+    "cta": {
+      "getStarted": "Commencer Gratuitement",
+      "watchDemo": "Voir la Démo"
+    },
+    "benefits": {
+      "freeTrial": "Essai gratuit de 14 jours",
+      "noCreditCard": "Carte de crédit non nécessaire"
+    },
+    "features": {
+      "learn": {
+        "title": "Apprendre & Progresser",
+        "description": "Plateforme éducative par IA"
+      },
+      "bi": {
+        "title": "Analyser & Décider",
+        "description": "Outils de business intelligence"
+      },
+      "hub": {
+        "title": "Se Connecter & Collaborer",
+        "description": "Réseau de talents & projets"
+      },
+      "ai": {
+        "title": "Automatiser & Passer à l'Échelle",
+        "description": "Intelligence pilotée par IA"
+      }
+    }
+  },
+  "features": {
+    "title": "Capacités Avancées",
+    "description": "Tirez parti de fonctionnalités de pointe conçues pour les flux de travail de données modernes et la collaboration d'équipe",
+    "items": {
+      "collaboration": {
+        "title": "Collaboration en Temps Réel",
+        "description": "Travaillez ensemble sur des tableaux de bord, des rapports et des projets avec des fonctionnalités d'édition et de commentaires en temps réel."
+      },
+      "security": {
+        "title": "Sécurité Entreprise",
+        "description": "Sécurité de niveau bancaire avec chiffrement, audits réguliers et contrôles d'accès avancés pour vos données."
+      },
+      "api": {
+        "title": "Intégration API",
+        "description": "API REST complète pour des intégrations personnalisées, l'automatisation et l'extension des capacités de la plateforme."
+      }
+    }
+  },
+  "metadata": {
+    "title": "Podacium - Plateforme d'Éducation, d'Analyse & de Talents Données par IA",
+    "description": "Maîtrisez les compétences en données avec un apprentissage par IA, transformez les insights avec des outils de business intelligence et connectez-vous avec les meilleurs talents en données grâce à la plateforme intégrée de Podacium.",
+    "organization": {
+      "name": "Podacium",
+      "url": "https://podacium.com",
+      "logo": "https://podacium.com/logo.png",
+      "description": "Plateforme par IA pour l'éducation en données, la business intelligence et l'appariement de talents",
+      "social": {
+        "twitter": "https://twitter.com/podacium",
+        "linkedin": "https://linkedin.com/company/podacium"
+      },
+      "contact": {
+        "telephone": "+1-555-123-4567",
+        "contactType": "service client"
+      }
+    }
+  },
+  "postLoginModal": {
+    "title": "Bienvenue ! Que voulez-vous faire ?",
+    "subtitle": "Commencez par votre profil ou votre tableau de bord",
+    "footerNote": "Vous pouvez toujours accéder à ces options plus tard dans le menu de votre compte",
+    "close": "Peut-être plus tard",
+    "options": {
+      "profile": {
+        "title": "Complétez Votre Profil",
+        "description": "Ajoutez vos informations personnelles",
+        "ariaLabel": "Accédez à la page de profil pour compléter les informations personnelles"
+      },
+      "dashboard": {
+        "title": "Aller au Tableau de Bord",
+        "description": "Consultez votre progression",
+        "ariaLabel": "Accédez à la page du tableau de bord pour voir les statistiques utilisateur"
+      },
+      "stay": {
+        "title": "Rester sur la Page d'Accueil",
+        "description": "Continuez à explorer",
+        "ariaLabel": "Fermez la modale et restez sur la page d'accueil"
+      }
+    }
+  },
+  "oauth": {
+    "completingLogin": "Finalisation de la connexion OAuth...",
+    "pleaseWait": "Veuillez patienter",
+    "loginFailed": "Échec de la connexion OAuth: {message}",
+    "processingError": "Erreur lors du traitement de OAuth"
+  },
+  "errors": {
+    "subscriptionFailed": "Échec de l'inscription",
+    "subscriptionFailedDetail": "L'inscription a échoué. Veuillez réessayer.",
+    "animationContextError": "useAnimationContext doit être utilisé dans un AnimationProvider"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "cancel": "Annuler"
+  },
+  "trustHero": {
+    "aiEngineActive": "Moteur d'IA actif",
+    "talentSignal": "Signal de talent"
+  }
+}

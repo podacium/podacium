@@ -1,0 +1,250 @@
+{
+    "page": {
+        "title": "Notifications",
+        "subtitle": "Manage your notifications and stay updated on your projects and team activities."
+    },
+    "header": {
+        "refresh": "Refresh",
+        "selected": "{count} selected",
+        "markRead": "Mark as read",
+        "delete": "Delete"
+    },
+    "stats": {
+        "total": "Total Notifications",
+        "unread": "Unread",
+        "read": "Read",
+        "categories": "By Category"
+    },
+    "tabs": {
+        "all": "All",
+        "unread": "Unread",
+        "read": "Read"
+    },
+    "toolbar": {
+        "search": "Search notifications...",
+        "sort": {
+            "newest": "Newest first",
+            "oldest": "Oldest first",
+            "priority": "Highest priority"
+        }
+    },
+    "filters": {
+        "title": "Filter Notifications",
+        "clearAll": "Clear all",
+        "category": "Category",
+        "allCategories": "All Categories",
+        "priority": "Priority",
+        "allPriorities": "All Priorities",
+        "status": "Status",
+        "allStatuses": "All Statuses",
+        "startDate": "Start Date",
+        "endDate": "End Date"
+    },
+    "preferences": {
+        "title": "Notification Preferences",
+        "save": "Save Preferences",
+        "loading": "Loading preferences...",
+        "notLoaded": "Unable to load notification preferences",
+        "retry": "Retry",
+        "emailNotifications": {
+            "title": "Email Notifications",
+            "account": "Email Notifications",
+            "accountDesc": "Receive notifications via email for important account activities.",
+            "inApp": "In-App Notifications",
+            "inAppDesc": "Receive notifications within the platform interface.",
+            "sms": "SMS Notifications",
+            "smsDesc": "Receive important alerts via text message."
+        },
+        "pushNotifications": {
+            "title": "Push Notifications",
+            "push": "Push Notifications",
+            "pushDesc": "Receive real-time push alerts on your devices."
+        },
+        "marketing": {
+            "title": "Marketing & Communications",
+            "marketing": "Marketing Emails",
+            "marketingDesc": "Receive news about features and special offers.",
+            "newsletter": "Monthly Newsletter",
+            "newsletterDesc": "A monthly digest of top projects and platform stats."
+        },
+        "quietHours": {
+            "title": "Quiet Hours",
+            "start": "From",
+            "end": "To",
+            "description": "Don't send notifications during these hours."
+        },
+        "digest": {
+            "title": "Email Digest",
+            "time": "Send time",
+            "frequency": "Frequency",
+            "frequencyOptions": {
+                "daily": "Daily",
+                "weekly": "Weekly",
+                "never": "Never"
+            },
+            "description": "Receive a summary email of your notifications."
+        }
+    },
+    "notificationItem": {
+        "markAsRead": "Mark as read",
+        "markUnread": "Mark as unread",
+        "delete": "Delete",
+        "showMore": "Show more",
+        "showLess": "Show less",
+        "time": {
+            "justNow": "Just now",
+            "hoursAgo": "{hours}h ago",
+            "daysAgo": "{days}d ago"
+        }
+    },
+    "invitation": {
+        "title": "Invitation to join {orgName}",
+        "message": "{inviterName} has invited you to join {orgName} as {role}.",
+        "accepted": {
+            "title": "Invitation Accepted",
+            "message": "{userName} has accepted your invitation to join {orgName}."
+        }
+    },
+    "project": {
+        "new_proposal": {
+            "title": "New Proposal Received",
+            "message": "You have received a new proposal for your project '{project_title}'"
+        }
+    },
+    "proposal": {
+        "new": {
+            "title": "New Proposal Received",
+            "body": "You have received a new proposal for your project '{project_title}'"
+        },
+        "accepted": {
+            "title": "Proposal Accepted!",
+            "body": "Your proposal for project '{project_title}' has been accepted"
+        },
+        "rejected": {
+            "title": "Proposal Update",
+            "body": "Your proposal for project '{project_title}' was not selected"
+        }
+    },
+    "emptyStates": {
+        "noNotifications": {
+            "title": "No notifications yet",
+            "descriptionAll": "You're all caught up! There are no notifications to show right now.",
+            "descriptionUnread": "You have no unread notifications.",
+            "descriptionRead": "You have no read notifications."
+        }
+    },
+    "actions": {
+        "markAllRead": "Mark all as read",
+        "viewAll": "View all",
+        "tryAgain": "Try again",
+        "accept": "Accept",
+        "decline": "Decline",
+        "view": "View",
+        "dismiss": "Dismiss",
+        "view_proposal": "View Proposal",
+        "loadMore": "Load More",
+        "selectAll": "Select All",
+        "emailSent": "Email sent"
+    },
+    "roles": {
+        "member": "member",
+        "admin": "admin",
+        "owner": "owner",
+        "moderator": "moderator",
+        "STUDENT": "student",
+        "BUSINESS": "business",
+        "FREELANCER": "freelancer",
+        "ADMIN": "admin",
+        "INSTRUCTOR": "instructor"
+    },
+    "categories": {
+        "SYSTEM": "System",
+        "PROJECT": "Project",
+        "COURSE": "Course",
+        "SECURITY": "Security",
+        "MARKETING": "Marketing",
+        "BILLING": "Billing",
+        "MESSAGING": "Messages",
+        "LIVE": "Live Sessions",
+        "SUPPORT": "Support",
+        "EDUCATION": "Education",
+        "FREELANCE": "Freelance"
+    },
+    "chat": {
+        "new_message": "New message from {sender_name}",
+        "sent_attachment": "Sent an attachment",
+        "voice_note": "[Voice Note]"
+    },
+    "item": {
+        "markAsUnread": "Mark as unread",
+        "markAsRead": "Mark as read",
+        "delete": "Delete notification"
+    },
+    "priorities": {
+        "URGENT": "Urgent",
+        "HIGH": "High",
+        "NORMAL": "Normal",
+        "LOW": "Low"
+    },
+    "admin": {
+        "title": "Send Notification",
+        "send": "Send Now",
+        "sendNow": "Send Now",
+        "schedule": "Schedule",
+        "scheduleIt": "Schedule",
+        "notificationsSent": "Notifications have been sent successfully.",
+        "notificationsScheduled": "Notification has been scheduled.",
+        "targetOptions": {
+            "all": "All Users",
+            "role": "By Role",
+            "specific": "Specific Users"
+        },
+        "form": {
+            "title": "Title",
+            "titlePlaceholder": "Enter notification title",
+            "category": "Category",
+            "message": "Message",
+            "messagePlaceholder": "Enter notification message",
+            "priority": "Priority",
+            "targetUsers": "Target Users",
+            "targetRole": "Target Role",
+            "sendEmail": "Also send email notification",
+            "scheduleFor": "Scheduled for"
+        }
+    },
+    "live_session": {
+        "booked": {
+            "title": "Session Booked",
+            "body": "You have successfully booked \"{title}\""
+        },
+        "cancelled": {
+            "title": "Booking Cancelled",
+            "body": "Your booking for \"{title}\" has been cancelled"
+        },
+        "payout": {
+            "title": "Payout Received",
+            "body": "You received {amount} for \"{title}\""
+        },
+        "transferred": {
+            "title": "Booking Transferred",
+            "body": "Your booking for \"{title}\" has been transferred"
+        },
+        "waitlist_promoted": {
+            "title": "Spot Available",
+            "body": "A spot opened up for \"{title}\" — you've been promoted from the waitlist"
+        }
+    },
+    "success": {
+        "markedRead": "Marked {count} notifications as read",
+        "deleted": "Deleted {count} notifications",
+        "preferencesUpdated": "Preferences updated successfully"
+    },
+    "errors": {
+        "loading": "Failed to load notifications. Please try again.",
+        "markingRead": "Failed to mark notifications as read.",
+        "deleting": "Failed to delete notifications.",
+        "sending": "Failed to send notification.",
+        "scheduling": "Failed to schedule notification.",
+        "updatingPreferences": "Failed to update preferences."
+    }
+}

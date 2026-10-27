@@ -1,0 +1,1826 @@
+{
+  "terms": {
+    "hero": {
+      "badge": "Tasentemt Tasadufant",
+      "title": "Tiwtilin Timatutin n Useqdec",
+      "description": "Ttxil-k ɣer s lḥerz tiwtilin-a uqbel aseqdec n Podacium. S unekcum ɣer tenfalit-nneɣ, teqbleḍ ad tettwasikled s tiwtilin-a.",
+      "sections": "Iḥricen",
+      "effectiveDate": "Azemz n Tazwara",
+      "version": "Lqem"
+    },
+    "effectiveDate": "Azemz n Tazwara",
+    "lastUpdated": "Abeddel Aneggaru",
+    "version": "Lqem",
+    "sections": {
+      "introduction": "1. Tazwart d Umur",
+      "introductionDesc": "Agatu asadufan gar-ak d Podacium SARL",
+      "definitions": "2. Tisbadutin",
+      "definitionsDesc": "Irmawen igejdanen deg Tiwtilin-a n Useqdec",
+      "eligibility": "3. Tizmert d Yimiḍanen n Yiseqdacen",
+      "eligibilityDesc": "Isuturen i usnulfu d useqdec n umiḍan",
+      "services": "4. Imeẓla n Tenfalit",
+      "servicesDesc": "Imeẓla n uselmed, IA, BI, d umahil ilelli",
+      "responsibilities": "5. Izerfan d Tmasitin n Useqdac",
+      "responsibilitiesDesc": "Ayen i tzemreḍ d wayen ur tzemreḍ ara ad t-txedmeḍ",
+      "intellectualProperty": "6. Agbur d Teyla Taɣerfant",
+      "intellectualPropertyDesc": "Izerfan n teyla d useqdec n ugbur",
+      "payments": "7. Ixlasen, Izaɣaren, d Wurrad",
+      "paymentsDesc": "Azalen, tarrayin n uxlas, d tsertiyin n urrad",
+      "dataProtection": "8. Aḥerrez n Yisefka d Tbaḍnit",
+      "dataProtectionDesc": "Amek i nḥerrez yerna nseqdac isefka-ik",
+      "thirdParty": "9. Imeẓla n Wid n Berra d Yiseɣwan",
+      "thirdPartyDesc": "Imeẓla uffiɣen d tuqqna-nsen",
+      "disclaimers": "10. Agdal n Tmasit d Tḥaddiwin",
+      "disclaimersDesc": "Tiḥaddiwin d yigdalen ixataren",
+      "forceMajeure": "11. Tagnit Iǧehden",
+      "forceMajeureDesc": "Tadyanin sennig tezmert-nneɣ",
+      "termination": "12. Aḥbas d Urkas n Umiḍan",
+      "terminationDesc": "Amek i yezmer ad yeḥbes neɣ ad yettwarkes umiḍan",
+      "disputeResolution": "13. Tifrat n Yimyenqafen",
+      "disputeResolutionDesc": "Amek i ttefrun yimyenqafen",
+      "generalProvisions": "14. Tisekkirin Timatutin",
+      "generalProvisionsDesc": "Tiwtilin tisadufanin timernanin",
+      "contact": "15. Isallen n Unermis",
+      "contactDesc": "Amek ara tnermseḍ Podacium"
+    },
+    "toc": {
+      "title": "Agbur n Teftart"
+    },
+    "badges": {
+      "important": "Axatar",
+      "new": "Amaynut",
+      "updated": "Yettwabeddel"
+    },
+    "cards": {
+      "bindingAgreement": {
+        "title": "Agatu Imsetlel",
+        "description": "Tiwtilin-a d agatu asadufan imsetlel gar-ak d Podacium SARL"
+      },
+      "governedByAlgerianLaw": {
+        "title": "Asaduf Azzayri",
+        "description": "Akk tiwtilin ttwanebḍent s usaḍuf d teɣdemt tazzayrit"
+      }
+    },
+    "definitions": {
+      "aiServices": {
+        "title": "Imeẓla n IA",
+        "description": "Timahilin s IA gar-asent iselmaden, isumaren, d yifecka n usnulfu n ugbur"
+      },
+      "biFeatures": {
+        "title": "Timahilin n BI",
+        "description": "Tifelwin n tesleḍt, aḍfar n tmahilt, d yifecka n yineqqisen"
+      },
+      "freelancingMarketplace": {
+        "title": "Ulzuz n Yililelliyen",
+        "description": "Iqqen ililelliyen d yimsaɣen i yisenfaren n umahil"
+      },
+      "userGeneratedContent": {
+        "title": "Agbur Isnulfa Useqdac",
+        "description": "Agbur i d-yesnulfa useqdac gar-as imahilen d yiznan deg yiseqqamen"
+      }
+    },
+    "content": {
+      "introduction": {
+        "aboutTheseTerms": "Tiwtilin Timatutin n Useqdec-a ('Tiwtilin') d agatu asadufan imsetlel gar-ak ('Aseqdac', 'kečč', neɣ 'inek') d Podacium SARL ('Podacium', 'nekni', neɣ 'nneɣ'), d takebbanit s tmasit talemmast (SARL) yettwajerrden deg Lezzayer.",
+        "acceptanceOfTerms": "S unekcum, tunigin, ajerred, neɣ aseqdec n tenfalit d yimeẓla n Podacium (s umata, 'Tanfalit'), teqqreḍ dakken teɣriḍ, tegziḍ, yerna teqbleḍ ad tettwasikled s Tiwtilin-a, akk d Tsertit-nneɣ n Tbaḍnit, Tasertit n Inagan n Tuqqna, d Tsertit n Urrad, yellan d amur seg ugatu-a.",
+        "acceptanceWarning": "Ma yella ur teqbileḍ ara Tiwtilin-a, ilaq ad teḥbseḍ imira aseqdec n Tenfalit.",
+        "amendments": "Neḥrez azerfan ad nbeddel Tiwtilin-a deg yal akud. Ibeddilen ixataren ad ttwaceyɛen i yiseqdacen yettwajerrden s e-mail neɣ s walɣut afessas ɣef Tenfalit ma drus 15 n wussan uqbel ad bdun. Aseqdec-ik ikemmlen n Tenfalit deffir yibeddilen-a yettwaḥsab d aqbal n Tiwtilin timaynutin.",
+        "legalContinuity": "Podacium SARL tezmer ad tbeddel talɣa-s tasadufant ɣer Tkebbanit s Yiswiren Ifessasen (SPAS) deg yimal. Asnifel-a ur yetteqqas ara azal neɣ aselkem n Tiwtilin-a. Iseqdacen ad ttwalɣen ɣef yal abeddel deg talɣa tasadufant."
+      },
+      "definitions": {
+        "intro": "Ilmend n Tiwtilin-a, tisbadutin-a d tid yeqqnen:"
+      },
+      "eligibility": {
+        "ageRequirements": "I wakken ad tesnulfuḍ Amiḍan deg Podacium, ilaq ad tesɛuḍ ma drus 16 n yiseggasen. Iseqdacen gar 16 d 18 n yiseggasen zemren ad kecmen ɣer Tenfalit kan s tisurag n yimawlan neɣ n wemḍebber asadufan, ilmend n usaḍuf azzayri yellan.",
+        "parentalConsentProcess": "Akala n Tsuragt n Yimawlan:",
+        "parentalConsentItem1": "Amraw neɣ umḍebber asadufan ilaq ad d-yefk tisurag s usentem n tmagit",
+        "parentalConsentItem2": "Podacium teḥrrez ttbut n tsuragt n yimawlan deg tɣellist i usenqed d usnimer",
+        "parentalConsentItem3": "Imawlan neɣ yemḍebbren zemren ad kksen tisurag deg yal akud s unermis-nneɣ",
+        "accountRegistration": "I unekcum ɣer tmahilin timaddanin n Tenfalit, ilaq ad tesnulfuḍ Amiḍan s usuffeɣ n yisem-ik amakku, tansa e-mail tameɣtut, azemz n tlalit, d wawal n uffir yettṣadan d yisuturen-nneɣ n tɣellist.",
+        "accountSecurity": "D kečč i d amasay ɣef uḥerrez n tbaḍnit n yisallen n unekcum ɣer Umiḍan-ik d akk irmad i d-yeḍran ddaw-as. Ilaq ad aɣ-d-telɣuḍ imira ma tella tuffɣa ur nettusureg ara neɣ aṛebbi n tɣellist.",
+        "accountTypes": "Podacium teqbel Imiḍanen n Yinelmaden Udmawanen, Imiḍanen n Yililelliyen, Imiḍanen n Tnezzutin, d Yimiḍanen n Tuddsiwin, yal yiwen s tmahilin d yisuturen-is."
+      },
+      "services": {
+        "educationalServices": "Podacium tettekkef imeẓla n ulmad s uselkim gar-asen timsiros n tvidyut yettwasekelsen, irmad imiriyen, ibriden n ulmad, iselkinen n taggara, ifaylan PDF, d uselmed s IA mi yewjed.",
+        "certificatesAndCredentials": "Iselkinen i d-tettak Podacium skanayen-d aselkem n yisuturen n tmesrit lameɛna mačči d idublumen isdawiyen unsiben neɣ d iselkinen yettwaqeblen s wudem amaddud. D inagan ur nelli ara d unziben i usedmer n ulmad amezzayan.",
+        "aiServices": "Podacium tezmer ad tesseqdec tatiknulujit n IA i usnerni n tirmit n ulmad. Timahilin n IA g仁asent iselmaden imeslayanen, isumaren udmawanen, asenqed awurman, d yifecka n usnulfu n ugbur. Igdalen ixataren llan ɣef ugbur isnulfa IA.",
+        "biFeatures": "Podacium tettak-d ifecka n tesleḍt n BI i yiseqdacen udmawanen (tifelwin n usnerni n ulmad, tisleḍtin n tmahilt) d yiseqdacen n tnezzut/tuddsa (tisleḍtin n ulmad n yixeddamen, tifelwin n terbaɛt, ineqqisen udmawanen)."
+      },
+      "responsibilities": {
+        "licenseToUse": "Ilmend n uqader n Tiwtilin-a, Podacium tettak-ak tasuret talemmast, tar-tasligant, ur nettwasiweḍ ara, yezmer ad tettwakkes i unekcum d useqdec n Tenfalit i yiswiyen udmawanen neɣ n tnezzut taflayt.",
+        "permittedUses": "Tzemreḍ ad tkecmeḍ ɣer tmesras i deg tjerrdeḍ, ad tettekkid deg yiseqqamen n Tenfalit, ad tesnulfeḍ Agbur n Useqdac ilmend n Tiwtilin-a, ad tesseqdceḍ timahilin n BI i tesleḍt tameɣtut, yerna ad tessidreḍ ifaylan yettusurgen i usider.",
+        "prohibitedUses": "Ur ilaq ara ad tesseqdceḍ Tanfalit i yiswiyen ur nelli ara deg usaḍuf, ad tettekkid deg txazabit n ulmad, ad tebḍuḍ isallen n Umiḍan, ad tɛawdeḍ tasleḍt n unagraw n Tenfalit, ad tesseqdceḍ inagrawen iwurmanen i ujemmeɛ n yisefka, ad tzegleḍ inagrawen n uxlas, ad tsaliḍ tangalt tucmit, ad tcewweleḍ iseqdacen wiyaḍ, ad tseqdceḍ tamagit n wiyaḍ, neɣ ad tcewweleḍ Imeẓla n IA."
+      },
+      "intellectualProperty": {
+        "ourIP": "Akk Agbur n Tenfalit, gar-as tangalt n uẓar, isnasen, ilugritmen, ifaylan n tmesras, imeddulen n IA, udem n Tenfalit, ticraḍ n tnezzut, iluguten, d yifecka n Business Intelligence, d ayla n Podacium SARL neɣ s tsuragt n wid n berra. Akk izerfan ttwawḥan.",
+        "userContentOwnership": "Tḥerrzeḍ ayla-ik amakku ɣef Agbur Isnulfa Useqdac i d-tesnulfaḍ, gar-asen imahilen n tmesras, iznan deg yiseqqamen, ticekkiyin, d wayen i d-tessewjdeḍ deg umahil ilelli.",
+        "licenseToPodacium": "S tuffɣa n Ugbur Isnulfa Useqdac ɣer Tenfalit, tettakeḍ-as i Podacium tasuret tar-tasligant, tamadlant, baṭel, yezmer ad tettwasureg d usedmer i usken, asenɣel, d usedger n ugbur-ik ɣef Tenfalit."
+      },
+      "payments": {
+        "pricing": "Azalen n tmesras, ijerriḍen, d tmettiwin n Ulzuz n Yililelliyen ttwaskanen deg Tenfalit s Yidinaren Izzayriyen (DZD) neɣ s tedrimin niḍen yellan. Azalen zemren ad beddlen deg yal akud.",
+        "paymentMethods": "Podacium teqbel ixlasen s tewwura n uxlas n wid n berra yettwasurgen, gar-asent tikarḍiwin tibankiyin tizzayriyin (CIB, EDAHABIA), anagraw n uxlas SATIM, d yimseddiyen n uxlas imaḍlanen yettwasurgen.",
+        "taxes": "Azalen yettwaskanen sɛan deg-sen tazeṭṭaṭ tazzayrit (TVA) anagar ma yella wayen nniḍen i d-yettwannan. Iseqdacen imaḍlanen zemren ad selsen tizeṭṭaḍin n tmurt-nsen.",
+        "refundPolicy": "Tiwtilin telqayen n urrad llan deg Tsertit-nneɣ n Urrad tasligant. Gar-asent: urrad amakku deg 7 n wussan i tiɣin n tmesrit ma ur yelli wugbur yettwaɣren, urrad amurran i usedmer amurran, d tegnatin ur nettwarad ara."
+      },
+      "dataProtection": {
+        "privacyCommitment": "Podacium teqqen iman-is i uḥerrez n yisefka-ik udmawanen ilmend n Usaḍuf Azzayri uṭṭun 18-07 ɣef Uḥerrez n Yisefka Udmawanen. Talqayt tamaddut tella deg Tsertit-nneɣ n Tbaḍnit.",
+        "userRights": "Tesɛiḍ azerfan ad tawḍeḍ ɣer yisefka-ik udmawanen, ad tesseggmeḍ isefka ur nseḥḥa ara, ad tekseḍ isefka-ik (ilmend n yisuturen n usaḍuf), ad tgdeleḍ kra n yirmad n uselkem, ad tekseḍ tisurag n uselkem ur nelli d afrayan, yerna ad tcekkfeḍ ɣer Tanbaḍt Taɣelnawt i Uḥerrez n Yisefka Udmawanen (ANPDP).",
+        "dataRetention": "Isefka udmawanen ttwakksen 6 n wagguren deffir tukksa n Umiḍan. Isekra n tedrimt ttwassumren 10 n yiseggasen s wudem ur nettwassen ara. Iselkinen n taggara n tmesras ttwassumren i lebda i usenqed."
+      },
+      "thirdParty": {
+        "integrations": "Podacium teqqen d yimeẓla n wid n berra gar-asen imseddiyen n uxlas, imḍebbren n IA, ifecka n tesleḍt, imukan n usider deg usigna, d yimeẓla n teywalt. Imeẓla-a sɛan tiwtilin d tsertiyin-nsen n tbaḍnit.",
+        "liability": "Podacium tettheggi akk tazmert-is i wakken ad textir imḍebbren ifazen. Lameɛna, ur nelli ara d imasayen ɣef wuguren, aḥbas, neɣ tuccḍiwin n yimeẓla n wid n berra. Nḥerrez inagrawen n uḥraz anida yella wamek s tniknikt."
+      },
+      "disclaimers": {
+        "educationalDisclaimer": "Podacium ur tettḍaman ara dakken akfa n tmesras ad d-yawi igmad n ulmad usligen, amahil, dduzan n tesdawit, neɣ tasuragt tamsadurt. Afara n ulmad yettkel ɣef tezmert tudmawant d tegnatin uffiɣin sennig tezmert-nneɣ.",
+        "aiDisclaimer": "Imeẓla n IA zemren ad d-fken isallen ur nseḥḥa ara, ur nkemmil ara, neɣ iɣellḍen. Isumaren n IA d tinaḍin timatutin kan yerna mačči d asiwel amsadur. Nermes imusnawen i yiseftiyen ixataren.",
+        "limitationOfLiability": "Alamma d afellay yettusurgen ddaw usaḍuf azzayri, Podacium ur telli ara d tamasayt ɣef lixsas arusrid, amuran, neɣ amsedrar. Ma yella Podacium tettwaḥseb d tamasayt, tamasit-nneɣ tamatut teḥbes ɣef wazal yettwaxelsen deg 12 n wagguren iɛeddan neɣ 50,000 n Yidinaren Izzayriyen (DZD), d win meẓẓiyen gar-asen."
+      },
+      "forceMajeure": {
+        "intro": "Podacium ur telli ara d tamasayt ɣef lmeṭla neɣ urkisen n uselkem n yigaten ilmend n tadyanin sennig tezmert-nneɣ, gar-asent lmuṣibat tigmamin, aṭṭanen imeqqranen, imenɣiyen, tigawin n unabaḍ, lexsas n uẓeṭṭa n Internet, tawaɣiyin talyiktruniyin, uguren n yiseddayen n wid n berra, aḥbas n yixeddamen, neɣ akfay n trisiti."
+      },
+      "termination": {
+        "byUser": "Tzemreḍ ad tekseḍ Amiḍan-ik deg yal akud s tqeffalt n tukksa deg yiɣewwaren n Umiḍan neɣ s unermis n tallelt. Agmu n tukksa yesɛa deg-s aḥbas imira n unekcum, tukksa n yisefka udmawanen deg 6 n wagguren, d uḥerrez n yisekra n tedrimt i 10 n yiseggasen.",
+        "byPodacium": "Nezmer ad neḥbes neɣ ad nṛecc Amiḍan-ik imira war alɣu ɣef uṛebbi ameqqran n Tiwtilin (txazabit, irmad ur nelli deg usaḍuf, acewwel, tukksa n teyla, takerḍa n ulmad, neɣ asenqes n tɣellist n Tenfalit)."
+      },
+      "disputeResolution": {
+        "governingLaw": "Tiwtilin-a ttwanebḍent yerna ttwafsrent ilmend n yisuḍaf n Lezzayer, gar-asen Asaḍuf 18-07 ɣef Uḥerrez n Yisefka Udmawanen, Asaḍuf 18-05 ɣef Tnezzut Talyiktrunit, Asaḍuf 09-03 ɣef Uḥerrez n Umsaɣ, d Yikatan Izzayriyen n Umdan d Tnezzut.",
+        "jurisdiction": "Yal amyenaqef i d-yekkan seg neɣ yeqqnen ɣer Tiwtilin-a neɣ aseqdec-ik n Tenfalit ad yettwazen kan ɣer tsenbaḍin n Wehran, Lezzayer.",
+        "adr": "Uqbel abdu n ukala deg tsenbeḍt, iḥricen qeblen ad ɛerḍen tifrat s umeslay n liser (30 n wussan) d umsuqqel sɣur umsuqqel yettwaqeblen deg Lezzayer. ADR ur yettheggi ara yiwen seg yexsimen ad yessuter tasertit taruradt n tsenbeḍt."
+      },
+      "generalProvisions": {
+        "entireAgreement": "Tiwtilin-a, akk d Tsertit n Tbaḍnit, Tasertit n Inagan n Tuqqna, d Tsertit n Urrad, d agatu amakku gar-ak d Podacium ɣef useqdec n Tenfalit, yessurfen akk agaten d yigiman yezwaren.",
+        "language": "Tiwtilin-a ttwuran s Teglizit. Lqem unzib s Taɛrabt ad yeffeɣ d lqem asadufan amenzu. Mi d-yeffeɣ, lqem n Taɛrabt ad yuɣal d win imsetlen s usaḍuf. Ma yella umgired gar yisuqqilen, lqem unzib s Taɛrabt i d amenzu."
+      },
+      "contact": {
+        "responseTimes": "Ikataren n Tiririt:",
+        "responseTime1": "Isteqsiyen imatuten: 48 n tsaɛatin",
+        "responseTime2": "Isuturen n uḥerrez n yisefka: 15 n wussan",
+        "responseTime3": "Ticekkiyin d yiznan isadufanen: 15 n wussan"
+      }
+    },
+    "refunds": {
+      "coolingOffPeriod": {
+        "title": "Tanzayt n Uḥebbus n 7 n Wussan",
+        "description": "Urrad amakku i tiɣin n tmesrit ma ur yettwaɣer wugbur deg 7 n wussan"
+      },
+      "nonRefundable": {
+        "title": "Ur Yettwarad Ara",
+        "description": "Urkas n umiḍan ɣef tuccḍiwin, timsiros ikfan, d kra n tnezzutin tusligin"
+      },
+      "consent": {
+        "title": "Aqbal",
+        "description": "S uqbal n Tiwtilin-a, tettakeḍ aqbal afessas i uselkem n yisefka"
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 Fell-asent Tiwtilin-a",
+        "section1_2": "1.2 Aqbal n Tiwtilin",
+        "section1_3": "1.3 Ibeddilen",
+        "section1_4": "1.4 Tamsalt n Ukemmel Asadufan"
+      },
+      "eligibility": {
+        "section3_1": "3.1 Isuturen n Leɛmer",
+        "section3_2": "3.2 Ajerred n Umiḍan",
+        "section3_3": "3.3 Taɣellist n Umiḍan",
+        "section3_4": "3.4 Anawen n Yimiḍanen"
+      },
+      "services": {
+        "section4_1": "4.1 Imeẓla n Ulmad",
+        "section4_2": "4.2 Iselkinen d Yinagan",
+        "section4_3": "4.3 Imeẓla n Tnezzut s IA",
+        "section4_4": "4.4 Timahilin n Business Intelligence"
+      },
+      "responsibilities": {
+        "section5_1": "5.1 Tasuragt n Useqdec n Tenfalit",
+        "section5_2": "5.2 Aseqdec Yettusurgen",
+        "section5_3": "5.3 Aseqdec Yegdelen"
+      },
+      "intellectualProperty": {
+        "section6_1": "6.1 Tayla Taɣerfant n Podacium",
+        "section6_2": "6.2 Tayla n Ugbur Isnulfa Useqdac",
+        "section6_3": "6.3 Tasuragt i Podacium"
+      },
+      "payments": {
+        "section7_1": "7.1 Azalen",
+        "section7_2": "7.2 Tarrayin n Uxlas",
+        "section7_3": "7.3 Tizeṭṭaḍin",
+        "section7_6": "7.6 Tasertit n Urrad"
+      },
+      "dataProtection": {
+        "section8_1": "8.1 Agatu n Tbaḍnit",
+        "section8_2": "8.2 Izerfan n Useqdac Ddaw Usaḍuf Azzayri",
+        "section8_3": "8.3 Aḥerrez n Yisefka"
+      },
+      "thirdParty": {
+        "section9_1": "9.1 Tuqqna d Wid n Berra",
+        "section9_3": "9.3 Tamasit n Wid n Berra"
+      },
+      "disclaimers": {
+        "section10_1": "10.1 Agdal n Tmasit deg Ulmad",
+        "section10_2": "10.2 Agdal n Tmasit deg IA",
+        "section10_4": "10.4 Tiḥaddiwin n Tmasit"
+      },
+      "termination": {
+        "section12_1": "12.1 Asefsex sɣur Useqdac",
+        "section12_2": "12.2 Asefsex sɣur Podacium"
+      },
+      "disputeResolution": {
+        "section13_1": "13.1 Asaḍuf Anbaḍ",
+        "section13_2": "13.2 Tasenbeḍt Tazerfant",
+        "section13_3": "13.3 Tifrat n Yimyenqafen s Tallelt (ADR)"
+      },
+      "generalProvisions": {
+        "section14_1": "14.1 Agatu Amakku",
+        "section14_5": "14.5 Tutlayt"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "E-mail"
+      },
+      "phone": {
+        "title": "Tiliɣri"
+      },
+      "address": {
+        "title": "Tansa"
+      },
+      "website": {
+        "title": "Asmel Web"
+      },
+      "capital": {
+        "title": "Aserwes n Tedrimt"
+      }
+    },
+    "company": {
+      "name": "Takebbanit Podacium SARL",
+      "address": "PC38+5MV, Bir El Djir, Wehran, Lezzayer",
+      "fullAddress": "PC38+5MV, Bir El Djir, Wehran, Lezzayer",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "registeredCompany": "Takebbanit s Tmasit Talemmast (SARL) yettwajerrden deg Lezzayer",
+      "dpo": "Amḍebber n Uḥerrez n Yisefka (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com",
+      "rc": "RC: Deg uselkem n urmas (Axxam n teɣdemt n Wehran)",
+      "nif": "NIF: Deg uselkem n tukci",
+      "ni": "NIS: Deg uselkem n tukci",
+      "capital": "Aserwes: 100,000 DZD (Yettwazerwec)"
+    },
+    "dates": {
+      "effectiveDate": "1 Yennayer 2026",
+      "lastUpdated": "1 Yennayer 2026",
+      "version": "1.0",
+      "updatedLabel": "Abeddel: 1 Yen 2026"
+    },
+    "acknowledgment": {
+      "title": "Asentem",
+      "description": "S useqdec n Tenfalit n Podacium, teqqreḍ dakken teɣriḍ yerna tegziḍ Tiwtilin-a, teqbleḍ akk tisekkirin yellan deg-sent, ad tqadreḍ akk isuḍaf d yilugan yellan, tegziḍ agdal d tḥaddiwin n tmasit, teqbleḍ aselkem n yisefka, yerna teqbleḍ asaḍuf d teɣdemt tazzayrit."
+    },
+    "actions": {
+      "print": "Siggez Tiwtilin",
+      "download": "Sider PDF",
+      "viewPrivacy": "Wali Tasertit n Tbaḍnit",
+      "viewRefund": "Wali Tasertit n Urrad",
+      "viewTerms": "Wali Tiwtilin n Useqdec",
+      "viewCookiePolicy": "Wali Tasertit n Inagan n Tuqqna",
+      "viewRefundPolicy": "Wali Tasertit n Urrad"
+    },
+    "footer": {
+      "thankYou": "Tanemmirt-ik ɣef ufran n Podacium. Neqqen iman-nneɣ i usedmer n yimeẓla n ulmad ifazen d uḥerrez n yizerfan-ik ddaw usaḍuf azzayri."
+    }
+  },
+  "privacy": {
+    "hero": {
+      "badge": "Tabaḍnit & Aḥerrez n Yisefka",
+      "title": "Tasertit n Tbaḍnit",
+      "description": "Issin amek i d-tjemmeɛ Podacium, tseqdac, yerna tḥerrez isefka-ik udmawanen ilmend n Usaḍuf Azzayri uṭṭun 18-07 ɣef Uḥerrez n Yisefka Udmawanen.",
+      "sections": "Iḥricen",
+      "effectiveDate": "Azemz n Tazwara",
+      "version": "Lqem"
+    },
+    "effectiveDate": "Azemz n Tazwara",
+    "lastUpdated": "Abeddel Aneggaru",
+    "version": "Lqem",
+    "sections": {
+      "introduction": "1. Tazwart",
+      "introductionDesc": "Tazwart ɣef ugatu-nneɣ n tbaḍnit d ukala",
+      "legalBasis": "2. Tasila Tasadufant i Uselkem n Yisefka",
+      "legalBasisDesc": "Tisadurin n uselkem ddaw Usaḍuf Azzayri 18-07",
+      "dataCollection": "3. Isefka i d-Njemmeɛ",
+      "dataCollectionDesc": "Anawen n yisefka udmawanen i d-tjemmeɛ Podacium",
+      "dataUsage": "4. Amek i Nseqdac Isefka-ik",
+      "dataUsageDesc": "Iswiyen n uselkem n yisefka-ik udmawanen",
+      "dataRetention": "5. Aḥerrez n Yisefka",
+      "dataRetentionDesc": "Acḥal n wakud i nḥerrez isefka-ik udmawanen",
+      "dataSharing": "6. Beṭṭu d Usuffeɣ n Yisefka",
+      "dataSharingDesc": "Melmi d wukud i nebṭu isefka-ik",
+      "crossBorder": "7. Asiweḍ n Yisefka Sennig Tlisa",
+      "crossBorderDesc": "Asiweḍ imaḍlan n yisefka d tḥaddiwin n tɣellist",
+      "dataSecurity": "8. Taɣellist n Yisefka",
+      "dataSecurityDesc": "Tarrayin n uḥerrez n yisefka-ik udmawanen",
+      "userRights": "9. Izerfan-ik Ddaw Usaḍuf Azzayri",
+      "userRightsDesc": "Izerfan n umdan ɣef yisefka ddaw Usaḍuf 18-07",
+      "minorsProtection": "10. Aḥerrez n Yisefka n Yimeẓyanen",
+      "minorsProtectionDesc": "Aḥerrez uslig i yiseqdacen ddaw 19 n yiseggasen",
+      "cookies": "11. Inagan n Tuqqna d Tatiknulujit n Uḍfar",
+      "cookiesDesc": "Aseqdec n yinagan n tuqqna d yifecka yettemcabin",
+      "policyChanges": "12. Ibeddilen deg Tsertit-a n Tbaḍnit",
+      "policyChangesDesc": "Amek i nbeddel tasertit-a",
+      "internationalUsers": "13. Iseqdacen Imaḍlanen d GDPR",
+      "internationalUsersDesc": "Asnimer d yilugan imaḍlanen",
+      "biEnterprise": "14. Imsaɣen n Tkebbaniyin deg Business Intelligence",
+      "biEnterpriseDesc": "Aḥerrez amernan i yiseqdacen n tkebbaniyin",
+      "contact": "15. Isallen n Unermis",
+      "contactDesc": "Amek ara aɣ-d-tnermseḍ ɣef temsal n tbaḍnit"
+    },
+    "toc": {
+      "title": "Agbur n Teftart"
+    },
+    "badges": {
+      "important": "Axatar",
+      "new": "Amaynut",
+      "updated": "Yettwabeddel"
+    },
+    "cards": {
+      "terms": {
+        "title": "Tiwtilin n Useqdec",
+        "description": "Agatu asadufan gar-ak d Podacium"
+      },
+      "cookiePolicy": {
+        "title": "Tasertit n Inagan n Tuqqna",
+        "description": "Talqayt ɣef yinagan n tuqqna d uḍfar"
+      },
+      "refundPolicy": {
+        "title": "Tasertit n Urrad",
+        "description": "Isallen ɣef wurrad d usefsex"
+      },
+      "contract": {
+        "title": "Aselkem n Ugatu",
+        "description": "Aselkem ilaqen i usedmer n yimeẓla"
+      },
+      "legalObligation": {
+        "title": "Asuter Asadufan",
+        "description": "Aselkem yettusutren sɣur usaḍuf azzayri"
+      },
+      "legitimateInterest": {
+        "title": "Lfaida Tameɣtut",
+        "description": "Aselkem i usnerni n tnezzut"
+      },
+      "accountManagement": {
+        "title": "Asefrek n Umiḍan",
+        "description": "Snulfu, ḥrez, yerna ḍmen taɣellist n umiḍan-ik"
+      },
+      "educationalService": {
+        "title": "Ameẓlu n Ulmad",
+        "description": "Sedmer timsiros, ḍfer asnerni, sedmer iselkinen"
+      },
+      "paymentProcessing": {
+        "title": "Aselkem n Uxlas",
+        "description": "Selkem ixlasen yerna sefrek tinezzutin"
+      },
+      "platformImprovement": {
+        "title": "Asnerni n Tenfalit",
+        "description": "Sleḍ aseqdec yerna snerni tirmit n useqdac"
+      },
+      "securityFraud": {
+        "title": "Taɣellist & Aseddel n Txazabit",
+        "description": "Ḥrez mgal unekcum ur nettusureg ara d txazabit"
+      },
+      "legalCompliance": {
+        "title": "Asnimer Asadufan",
+        "description": "Qader isuḍaf yerna rra awal i yiduba"
+      },
+      "personalData": {
+        "title": "Isefka Udmawanen",
+        "description": "Ttwakksen deg 6 n wagguren deffir tukksa n umiḍan"
+      },
+      "financialRecords": {
+        "title": "Isekra n Tedrimt",
+        "description": "Ttwassumren 10 n yiseggasen (s wudem uffir) i usnimer asadufan"
+      },
+      "certificates": {
+        "title": "Iselkinen",
+        "description": "Ttwassumren i lebda i usenqed"
+      },
+      "encryption": {
+        "title": "Afrag (Encryption)",
+        "description": "AES-256 deg usekles, TLS 1.3 deg usiweḍ"
+      },
+      "accessControls": {
+        "title": "Asenqed n Unekcum",
+        "description": "Anekcum yebnan ɣef tmililin, asentem s snat n ttawilat"
+      },
+      "infrastructureSecurity": {
+        "title": "Taɣellist n Tseddast",
+        "description": "Immasen n yisefka deg tɣellist, asenqed 24/7"
+      },
+      "backupRecovery": {
+        "title": "Aḥraz & Tuɣalin",
+        "description": "Aḥraz amezzayan, aɣawas n tuɣalin deffir lmuṣiba"
+      },
+      "rightAccess": {
+        "title": "Azerfan n Unekcum",
+        "description": "Kcem ɣer yisefka-ik udmawanen"
+      },
+      "rightRectification": {
+        "title": "Azerfan n Useggem",
+        "description": "Seggem isefka ur nseḥḥa ara"
+      },
+      "rightErasure": {
+        "title": "Azerfan n Umḥay",
+        "description": "Kkes isefka-ik udmawanen"
+      },
+      "rightPortability": {
+        "title": "Azerfan n Usiweḍ",
+        "description": "Awi isefka-ik s tawsit tameɣrut s tmacint"
+      },
+      "rightWithdraw": {
+        "title": "Azerfan n Tukksa",
+        "description": "Kkes aqbal-ik deg yal akud"
+      },
+      "rightComplaint": {
+        "title": "Azerfan n Tcekkift",
+        "description": "Cektef ɣer ANPDP ma ttwarksen yizerfan-ik"
+      }
+    },
+    "definitions": {
+      "dataController": {
+        "title": "Asemras n Yisefka",
+        "description": "Podacium SARL tettḥettim iswiyen d ttawilat n uselkem"
+      },
+      "dataProcessor": {
+        "title": "Amselkem n Yisefka",
+        "description": "Wid n berra i iselkamen isefka deg umkan-nneɣ"
+      },
+      "personalData": {
+        "title": "Isefka Udmawanen",
+        "description": "Yal isalli yeqqnen ɣer umdan yettwassnen neɣ yezmer ad yettwassen"
+      }
+    },
+    "content": {
+      "introduction": {
+        "ourCommitment": "Podacium SARL ('Podacium', 'nekni', neɣ 'nneɣ') teqqen iman-is i uḥerrez n tbaḍnit d yisefka udmawanen n akk iseqdacen n tenfalit-nneɣ n ulmad ('Tanfalit'). Tasertit-a n Tbaḍnit tessefhem-d amek i d-njemmeɛ, nseqdac, nḥerrez, nebṭu, yerna nḥemmel isallen-ik udmawanen ilmend n Usaḍuf Azzayri uṭṭun 18-07 n 10 Yunyu 2018 ɣef Uḥerrez n Yisefka Udmawanen ('Asaḍuf 18-07').",
+        "scope": "Tasertit-a n Tbaḍnit tesseqdec ɣef akk iseqdacen n Tenfalit n Podacium, gar-asen: Inelmaden udmawanen, Ililelliyen (mi ara yeldi Ulzuz n Yililelli), Iseqdacen n tnezzut d tuddsa, Inebgawen, Imeẓyanen (s tsuragt n yimawlan).",
+        "regulatoryCompliance": "Podacium teqqen iman-is i usnimer d: Usaḍuf Azzayri 18-07 ɣef Uḥerrez n Yisefka Udmawanen, Ilugan n Tanbaḍt Taɣelnawt i Uḥerrez n Yisefka Udmawanen (ANPDP), Ikataren imaḍlanen n uḥerrez n yisefka. Nejred (neɣ ad nejred uqbel aznuz amaddud) akk aselken n uselkem n yisefka d ANPDP yerna ad d-nawi tisurag ilaqen i usiweḍ n yisefka sennig tlisa.",
+        "relationshipToPolicies": "Tasertit-a n Tbaḍnit ilaq ad tettwaɣer akk d: Tiwtilin n Useqdec (yeṭṭfen tisekkirin n uqbal deg Uḥric 7.8), Tasertit n Inagan n Tuqqna (yeṭṭfen talqayt ɣef useqdec n yinagan d uḍfar), Tasertit n Urrad."
+      },
+      "legalBasis": {
+        "intro": "Ddaw Usaḍuf 18-07, nselkam isefka-ik udmawanen ilmend n tisila tisadufanin-a:",
+        "consent": {
+          "main": {
+            "title": "S uqbal n Tiwtilin-nneɣ n Useqdec, tettakeḍ aqbal afessas, yelhan, yerna d ilelli i:",
+            "items": [
+              "Ajmaɛ d uselkem n yisefka-ik udmawanen akken yettwagllem deg Tsertit-a",
+              "Aseqdec n yinagan n tuqqna d tatiknulujit n uḍfar akken yettwagllem deg Tsertit n Inagan",
+              "Tiywalin seg Podacium ɣef Umiḍan-ik d yimeẓla",
+              "Aselkem i yiswiyen yettwasbadun deg Uḥric 4 n Tsertit-a"
+            ]
+          },
+          "withdrawal": "Tzemreḍ ad tekseḍ aqbal deg yal akud s:",
+          "withdrawal1": "Abeddel n yiɣewwaren n tbaḍnit deg tfelwit n Umiḍan-ik",
+          "withdrawal2": "Anermis-nneɣ ɣer podacium@podacium.com",
+          "withdrawal3": "Tukksa n Umiḍan-ik (wali Aḥric 11.1)"
+        }
+      },
+      "dataCollection": {
+        "personalIdentification": {
+          "registration": "Isefka i d-yettwagemmen deg ujerred:",
+          "items": [
+            "Isem amakku asadufan",
+            "Tansa n e-mail tameɣtut",
+            "Azemz n tlalit",
+            "Uṭṭun n tiliɣri (d afrayan)",
+            "Afaylu n tmagit i tsuragt n yimawlan n yimeẓyanen"
+          ]
+        },
+        "authenticationData": "Isem n useqdac, Awal n uffir (yettwafergen), Azemz n usnulfu n umiḍan, Azemz d wakud n unekcum aneggaru, Isallen n usentem s snat n ttawilat (ma yermed), Izmulen n unekcum s yizeḍwan (ma tseqdceḍ Google/Facebook).",
+        "usageLearningData": "Armad n Ulmad: Timsiros i deg tjerrdeḍ, twalaḍ, yerna tkfiḍ; Akud n tmuɣli n tvidyut d usnerni; Ikayaden d yimahilen yettwaceyɛen; Asnerni n ubrid n ulmad; Isekra n usedmer n yiselkinen. Tamyigawt deg Tenfalit: Isebtar i trezfeḍ d wansayen n tunigin; Akud i tesɛeddaḍ ɣef tenfalit; Timahilin i tseqdceḍ; Tutriwin n unadi; Asider n ugbur.",
+        "technicalDeviceData": "Tansa IP, Anaw d lqem n umrig, Anagraw n wammud, Anaw n wallal (aselkim, aziraz, tatablett), Tiddi n ugdil, Asmel/aɣbalu i k-id-yewwin, Tansa tarakalant (tamurt/tamdint, seg IP), Isnisen n tutlayt, Tastayt n wakud.",
+        "communicationData": "Izen n e-mail d terbaɛt n tallelt, Iznan deg tenfalit, Agbur n tinfulin n tallelt, Tiririyin n tezrawin, Isumaren d tmuɣliwin.",
+        "biData": "I Yiseqdacen Udmawanen: Isektiyen n umyellel, Tisleḍtin n ulmad, Tinekkiwin n tmahilt. I Yiseqdacen n Tnezzut/Tuddsa: Asnerni n ulmad n yixeddamen, Tifelwin n terbaɛt, Isektiyen n ROI n ussileɣ, Tisleḍtin timaddanin n yixeddamen. Tamawt: Imsaɣen n tkebbaniyin deg BI zemren ad salin isefka n tbaḍnit n tnezzut. Isefka-a sɛan tarrayin n tɣellist timernanin d yigaten n tbaḍnit (NDAs).",
+        "aiInteractionData": "Mi ara bdun Imeẓla n IA: Isteqsiyen yettusutren i yiselmaden n IA, Tiririyin n IA, Ticekkiyin ɣef seḥḥa n IA, Isumaren n yibriden n ulmad n IA yettwaqeblen/yettwangen. D axatar: Isefka n umyellel d IA ad ttwaseqdacen kan i uselmed n IA s uqbal afessas yerna s wudem ur nettwassen ara yerna d amatu.",
+        "paymentData": {
+          "gateway": {
+            "title": "Yettwaselkem s tewwura n uxlas n wid n berra (Podacium ur tḥerrez ara):",
+            "items": [
+              "Isallen n tkarḍa n tedrimt/uxlas",
+              "Talqayt n umiḍan n lbanka",
+              "Izmulen n tsuragt n uxlas"
+            ]
+          },
+          "stored": {
+            "title": "Isefka i tḥerrez Podacium:",
+            "items": [
+              "Isuḍaf d wazalen n tnezzutin",
+              "Izemzen d wakud n tnezzutin",
+              "Amezruy n tiɣin n tmesras",
+              "Addad n ujerred",
+              "Isekra n wurrad",
+              "Tifaturin yettwasuffɣen"
+            ]
+          }
+        },
+        "userGeneratedContent": "Imahilen d yisenfaren n tmesras, Iznan d tcekkiyin deg yiseqqamen, Isismilen d wazalen, Ifaylan yulin (deg tlisa n tenfalit), Tugniwin n umaɣnu (d afrayan), Ifarisen n umahil ilelli (mi ara yeldi Ulzuz).",
+        "dataNotCollected": {
+          "title": "Podacium ur tettjemmiɛ ara:",
+          "items": [
+            "Uṭṭunen n tkarḍa taɣelnawt (anagar i usenqed n tsuragt n yimawlan)",
+            "Isefka ibyumiṭriyen",
+            "Isallen n tdawsa neɣ n tezmert",
+            "Tidmiwin tidyananin neɣ tisertanin",
+            "Amaslad deg tdukliwin n yixeddamen",
+            "Isefka ijinitiyen",
+            "Amezruy n yijrimen (anagar ma yettusuter i yihilen usligen n tuddsa)"
+          ]
+        }
+      },
+      "dataUsage": {
+        "communicationMarketing": {
+          "transactional": {
+            "title": "Tiywalin n Tnezzut (ur teḥwaǧ ara aqbal):",
+            "items": [
+              "Asentem d yisekla n usuter",
+              "Ilɣuten n ujerred deg tmesrit",
+              "Asiweḍ n yiselkinen",
+              "E-mails n wallus n wawal n uffir",
+              "Ilɣuten n tɣellist n umiḍan",
+              "Ibeddilen ixataren deg Tiwtilin/Tasertit"
+            ]
+          },
+          "marketing": {
+            "title": "Asnuzer (yeḥwaǧ aqbal):",
+            "items": [
+              "Alɣu n tmesras timaynutin",
+              "Isumaren d wazalen yersan",
+              "Ibeddilen deg tmahilin n tenfalit",
+              "Isumaren n ugbur n ulmad",
+              "Isallan n yal imalas"
+            ]
+          }
+        },
+        "optOut": "Tzemreḍ ad tekkseḍ iman-ik seg tywalin n usnuzer deg yal akud s:",
+        "optOut1": "Iseɣwan n tukksa deg tebṛatin n e-mail",
+        "optOut2": "Tafelwit n yiɣewwaren n Umiḍan",
+        "optOut3": "Tirawt ɣer podacium@podacium.com",
+        "aiTraining": "D axatar: Isefka ur nettwassen ara kan i yezmer ad yettwaseqdec i uselmed n IA, yerna s uqbal afessas n useqdac."
+      },
+      "dataRetention": {
+        "activeAccounts": "Isefka ttwassumren skud Amiḍan-ik yermed yerna i yiswiyen i d-yettwagemmen fell-asen.",
+        "deletedAccounts": {
+          "intro": "Mi ara yettwakkes Umiḍan: Isefka n Tmagit Tudmawant: Ttwakksen deg 6 n wagguren deffir usuter n tukksa n Umiḍan. Isekra n Tedrimt d Tnezzutin: Ttwassumren 10 n yiseggasen s wudem ur nettwassen ara. Iselkinen n Taggara n Tmesras: Ttwassumren i lebda i usenqed. Agbur Isnulfa Useqdac: Iznan n yiseqqamen izuyaz: Ttwakksen yismawen n wid yuran lameɛna agbur yettwaḥrez; Imahilen usligen: Ttwakksen akk d Umiḍan."
+        },
+        "backupData": "Ifaylan n uḥraz yesɛan isefka-ik ttwakksen deg 90 n wussan deffir tukksa n Umiḍan. Aḥerrez-a ilaq i tuɣalin deffir lmuṣibat d useḥbiber ɣef unagraw."
+      },
+      "dataSharing": {
+        "noSale": "Podacium ur tzennez ara, ur tessekray ara, yerna ur tbeddel ara isefka-ik udmawanen d wid n berra i yiswiyen n usnuzer.",
+        "serviceProviders": {
+          "title": "Nebṭu isefka d yimḍebbren n yimeẓla n wid n berra i yettwasurgen i uselkem n yisefka deg umkan-nneɣ:",
+          "items": [
+            "Imseddiyen n Uxlas (CIB, SATIM, EDAHABIA)",
+            "Imḍebbren n Usider deg Usigna (immasen n yisefka deg Lezzayer)",
+            "Imḍebbren n Yimeẓla n IA (deg Yimal)",
+            "Imḍebbren n Tesleḍt",
+            "Imeẓla n Teywalt"
+          ],
+          "note": "Akk imselkamen n wid n berra zmlin Agaten n Uselkem n Yisefka (DPAs) yerna qadren Asaḍuf Azzayri 18-07."
+        },
+        "aggregateData": "Nezmer ad nebḍu isefka ur nettwassen ara yerna d imatuten d: Imnadiyen deg ulmad, Imeddukal n tnezzut, Tuddsiwin n unabaḍ, Azzayez (s yineqqisen d tuffɣiwin). Amedya: '70% n yiseqdacen kfan timsiros deg 3 n wagguren' neɣ 'Inelmaden izzayriyen ḥemmlen tvidyut sennig uḍris.'"
+      },
+      "crossBorder": {
+        "dataLocalization": "Asider amenzu n yisefka: Akk isefka udmawanen ttwassumren ɣef yiserwuren yellan s wudem amaddud deg Lezzayer.",
+        "internationalTransfers": "Ddaw Usaḍuf 18-07, asiweḍ n yisefka sennig tlisa yeḥwaǧ tasuret tuzwirt seg Tanbaḍt Taɣelnawt i Uḥerrez n Yisefka Udmawanen (ANPDP). Tignatin i d-yettaran asiweḍ imaḍlan: Asider n uḥraz ɣef yiserwuren n UE (i tuɣalin deffir lmuṣiba), Imḍebbren n IA yellan berra n Lezzayer, Ifecka imaḍlanen n tesleḍt, Imseddiyen n uxlas i yiseqdacen imaḍlanen.",
+        "localHosting": {
+          "title": "Asider n Yisefka deg Tmurt",
+          "items": [
+            "Akk isefka udmawanen n yiseqdacen izzayriyen ttwassumren ɣef yiserwuren yellan s wudem amaddud deg Lezzayer",
+            "Nemyellel d OCCtenium (occidentium.dz), amḍebber azzayri n tseddast n usigna, i usedmer amenzu n yisefka",
+            "Taseddast tis snat tesseqdac immasen n yisefka n Algérie Télécom",
+            "Ayagi yeḍmen asnimer d yisuturen n usider deg tmurt n Usaḍuf 18-07 d yilugan n ANPDP"
+          ],
+          "note": "Asiweḍ n yisefka sennig tlisa yeḍrru-d kan s tsuragt tuzwirt n ANPDP d tḥaddiwin ilaqen akken yettwagllem sennig-a."
+        }
+      },
+      "dataSecurity": {
+        "securityMeasures": {
+          "intro": "Podacium tesseqdac tarrayin titiknikanin d tuddsanin n uswir ɛlayen i uḥerrez n yisefka udmawanen:"
+        },
+        "breachResponse": "Ma yella-d uṛebbi n yisefka udmawanen: Tifin d Usenqed (deg 24 n tsaɛatin), Alɣu i ANPDP (deg 48-72 n tsaɛatin), Alɣu i Yiseqdacen i d-tḥuza (deg 72 n tsaɛatin), Aseggem, Tasleḍt deffir tedyant.",
+        "userResponsibilities": {
+          "title": "Ɣas akken nseqdac tarrayin tiǧehdanin n tɣellist, tesɛiḍ ula d kečč timasitin:",
+          "items": [
+            "Ḥrez awal-ik n uffir deg tbaḍnit yerna sseǧhed-it",
+            "Rmed asentem s snat n ttawilat",
+            "Ur bṭu ara isallen n unekcum ɣer Umiḍan-ik",
+            "Ffeɣ seg umiḍan mi ara tesseqdceḍ allalen yettwabḍan",
+            "Mel-d irmad icukken imira",
+            "Smed isallen-ik n unermis yal tikelt"
+          ],
+          "note": "Ur nelli ara d imasayen ɣef unekcum ur nettusureg ara i d-yekkan seg lexsas-ik deg uḥerrez n yisallen n Umiḍan-ik."
+        }
+      },
+      "userRights": {
+        "intro": "Tesɛiḍ izerfan-a ddaw Usaḍuf Azzayri 18-07:",
+        "items": [
+          "Azerfan n unekcum — issin anwa isefka i nḥerrez fell-ak",
+          "Azerfan n useggem — seggem isefka ur nseḥḥa ara",
+          "Azerfan n umḥay ('azerfan n ttatut')",
+          "Azerfan n ugdal — gdel kra n yirmad n uselkem",
+          "Azerfan n usiweḍ n yisefka — awi isefka-ik s tawsit tameɣrut",
+          "Azerfan n uḥbas n uselkem",
+          "Azerfan n tukksa n uqbal deg yal akud",
+          "Azerfan n usuter n tcekkift ɣer ANPDP"
+        ],
+        "responseTimes": "Neqqen iman-nneɣ i tririt ɣef yisuturen n yizerfan: Asentem: deg 48 n tsaɛatin, Tiririt tamaddut: deg 15 n wussan, Isuturen iweɛren: alamma d 30 n wussan (s walɣut n lmeṭla). Aseqdec n yizerfan-ik d baṭel."
+      },
+      "minorsProtection": {
+        "ageRequirements": "Leɛmer adrusi i usnulfu n Umiḍan: 16 n yiseggasen. Iseqdacen ddaw 19 n yiseggasen ttwassnen d Imeẓyanen ddaw usaḍuf azzayri yerna ḥwaǧen tisurag n yimawlan.",
+        "parentalConsent": {
+          "intro": "I yiseqdacen gar 16 d 18 n yiseggasen: Tisurag n yimawlan neɣ n wemḍebber asadufan yettwasenqden d tawaǧit. Amraw ilaq ad d-yefk: Afaylu n tmagit yettwasnen, NEƔ asentem n uṭṭun n tiliɣri s OTP.",
+          "process": "Akala n Tsuragt:",
+          "process1": "Ameẓyan yettak-d isallen n unermis n umraw/umḍebber deg ujerred",
+          "process2": "Podacium tenremmes amraw/amḍebber i usenqed",
+          "process3": "Amiḍan yetteddu kan deffir mi tettwasenqed tsuragt"
+        }
+      },
+      "cookies": {
+        "overview": "Podacium tesseqdac inagan n tuqqna d tatiknulujit n uḍfar i usnerni n tirmit n useqdac, tasleḍt n useqdec n Tenfalit, d usedmer n ugbur udmawan. Talqayt tella deg Tsertit-nneɣ n Inagan n Tuqqna.",
+        "cookieConsent": [
+          {
+            "title": "Arzef Amezwaru:",
+            "items": [
+              "Afeggag n yinagan n tuqqna yettwaskan-d",
+              "Ifranen n uqbal fessasen (qbel akk, agi wid ur nelli d afrayan, sebges)",
+              "Inagan ifrayanen ttwassersan imira",
+              "Inagan ur nelli d ifrayanen ttwassersan kan deffir uqbal"
+            ]
+          },
+          {
+            "title": "Sefrek Isnisen:",
+            "items": [
+              "Beddel iɣewwaren deg yal akud deg tfelwit n Umiḍan",
+              "Sseqdec iɣewwaren n umrig i ugdal/tukksa n yinagan",
+              "Nermes podacium@podacium.com i tallelt"
+            ]
+          }
+        ]
+      },
+      "policyChanges": {
+        "notificationChanges": "Ibeddilen ixataren ad d-ttwaznen s: Tira n e-mail i yiseqdacen yettwajerrden (ma drus 15 n wussan uqbel azemz n tazwara), Alɣu afessas deg usebter agejdan n Tenfalit, Alɣu deg usnas deg unekcum i d-itteddun.",
+        "consentChanges": "Aseqdec ikemmlen n Tenfalit deffir mi d-yewweḍ uzemz n yibeddilen yettwaḥseb d aqbal n Tsertit n Tbaḍnit tamaynut. Ma yella ur teqbileḍ ara ibeddilen: Ḥbes aseqdec n Tenfalit, Kkes Amiḍan-ik uqbel azemz n tazwara, Sseqdec izerfan-ik ɣef yisefka (anekcum, tukksa, atg.)."
+      },
+      "internationalUsers": {
+        "currentStatus": {
+          "intro": "Iseqdacen n UE d US ttwagdel-asen unekcum tura alamma d asnimer amakku.",
+          "items": [
+            "Asbeddi n umgensas deg UE",
+            "Asnimer d yisuturen iǧehden n GDPR",
+            "Asedmer n akk izerfan n GDPR i umdan",
+            "Aselkem n walɣu n uṛebbi n yisefka ilmend n GDPR (72 n tsaɛatin)"
+          ],
+          "note": "Nettheggi iman-nneɣ i unnerni ɣer wulzuzen n Turuft, Tamrikt n Ugafa, d MENA s yikataren n tbaḍnit yettwafernen i yal tamurt."
+        },
+        "euStatus": "Podacium teqqen iman-is i usnimer n GDPR i yiseqdacen deg Temnaḍt Tadamsant n Turuft (EEA). Nettheggi tarrayin ilaqen gar-asent asbeddi n umgensas deg UE, Tisekkirin n Ugatu n Tseddast i usiweḍ n yisefka, d Agatu n Uselkem n Yisefka. Tasentemt tamaddut n GDPR ad tili uqbel unnerni ɣer wulzuzen n UE.",
+        "ccpaStatus": "Podacium teqqen iman-is i usnimer n CCPA i yiseqdacen deg California, USA. Nettheggi akatar n yizerfan n umsaɣ gar-asen azerfan n tussna, azerfan n umḥay, azerfan n ugdal n uznuz, d ur-asismel ara. Asnimer amakku n CCPA ad yefk lqid uqbel unnerni ɣer wulzuz n US.",
+        "ksaPDPL": "Podacium teqqen iman-is i usnimer n Usaḍuf n Uḥerrez n Yisefka Udmawanen (PDPL) n Tgelda n Saɛudiyya d Tanaḍt Tafidiralit uṭṭun 45 n 2021 n UAE i yiseqdacen deg tmura-a. Nḍeffer asnefli n yilugan yerna ad nselkem ikataren n tbaḍnit n temnaḍt uqbel unnerni ɣer wulzuzen-a.",
+        "expansionContact": "I yisteqsiyen ɣef usnimer-nneɣ imaḍlan n uḥerrez n yisefka, ttxil-k nermes Amḍebber-nneɣ n Uḥerrez n Yisefka (DPO)."
+      },
+      "biEnterprise": {
+        "additionalProtections": "Imsaɣen n tkebbaniyin i yesseqdacen timahilin n BI sɛan lfaida seg: Agaten n Tbaḍnit (NDAs), Afray n Yisefka (afray amakku seg yisefka n yiseqdacen wiyaḍ), Taɣellist Tudmawant (afrag amernan d usenqed n unekcum), Tallelt Tasligant (tallelt tuzwirt deg uḥerrez n yisefka).",
+        "clientResponsibilities": "Imsaɣen n tkebbaniyin d nitni i d imasayen ɣef: Tuwwfa n tsurag ilaqen seg yixeddamen, Ttbut n tasila tasadufant i usedmer n yisefka n yixeddamen, Asnimer d yisuḍaf n umahil d txeddimt, Asenqes n yisefka (sali kan isefka ilaqen)."
+      },
+      "contact": {
+        "responseTimes": {
+          "intro": "Ikataren n Tiririt:",
+          "general": "Isteqsiyen imatuten: 48 n tsaɛatin",
+          "dataRequests": "Isuturen n yizerfan n umdan: 15 n wussan (alamma d 30 n wussan i wid iweɛren)",
+          "breachNotifications": "Ilɣuten n uṛebbi n yisefka: 72 n tsaɛatin",
+          "complaints": "Ticekkiyin: 15 n wussan"
+        },
+        "anpdpContact": "Tanbaḍt Taɣelnawt i Uḥerrez n Yisefka Udmawanen: 01, Abrid Ahmed Ouaked, Dely Ibrahim, Lezzayer Tamanaɣt, Lezzayer. Asmel Web: https://www.anpdp.dz, E-mail: contact@anpdp.dz."
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 Agatu-nneɣ i Tbaḍnit",
+        "section1_2": "1.2 Amur",
+        "section1_3": "1.3 Isallen n Umḍebber n Yisefka",
+        "section1_4": "1.4 Asnimer Asadufan",
+        "section1_5": "1.5 Assaɣ d Tsertiyin Wiyaḍ"
+      },
+      "legalBasis": {
+        "section2_1": "2.1 Aqbal (Tasreft 4 n Usaḍuf 18-07)"
+      },
+      "dataCollection": {
+        "section3_1": "3.1 Isefka n Tmagit Tudmawant",
+        "section3_2": "3.2 Isefka n Umiḍan d Usentem",
+        "section3_3": "3.3 Isefka n Useqdec d Ulmad",
+        "section3_4": "3.4 Isefka Itiknikanen d Yibenkan",
+        "section3_5": "3.5 Isefka n Teywalt",
+        "section3_6": "3.6 Isefka n Business Intelligence (BI)",
+        "section3_7": "3.7 Isefka n Umyellel d IA (Tamahilt n Yimal)",
+        "section3_8": "3.8 Isefka n Uxlas d Tedrimt",
+        "section3_9": "3.9 Agbur Isnulfa Useqdac",
+        "section3_10": "3.10 Isefka UR Nettjemmiɛ Ara"
+      },
+      "dataUsage": {
+        "section4_1": "4.1 Asefrek n Umiḍan",
+        "section4_2": "4.2 Asedmer n Yimeẓla n Ulmad",
+        "section4_3": "4.3 Aselkem n Uxlas",
+        "section4_4": "4.4 Asnerni n Tenfalit d Tesleḍtin",
+        "section4_5": "4.5 Timahilin n Business Intelligence",
+        "section4_6": "4.6 Taywalt d Usnuzer",
+        "section4_7": "4.7 Tallelt n Umsaɣ",
+        "section4_8": "4.8 Taɣellist d Useddel n Txazabit",
+        "section4_9": "4.9 Asnimer Asadufan",
+        "section4_10": "4.10 Aselmed n Umeddul n IA (deg Yimal, s Uqbal)"
+      },
+      "dataRetention": {
+        "section5_1": "5.1 Imiḍanen Urmiden",
+        "section5_2": "5.2 Imiḍanen Yettwakksen",
+        "section5_3": "5.3 Aḥraz Asadufan n Umennuɣ",
+        "section5_4": "5.4 Isefka n Business Intelligence",
+        "section5_5": "5.5 Isefka n Uḥraz (Backup)"
+      },
+      "dataSharing": {
+        "section6_1": "6.1 Ulac Aznuz n Yisefka Udmawanen",
+        "section6_2": "6.2 Imḍebbren n Yimeẓla (Imselkamen)",
+        "section6_3": "6.3 Agaten n Uselkem n Yisefka (DPAs)",
+        "section6_4": "6.4 Asnifel n Tnezzut",
+        "section6_5": "6.5 Isuturen Isadufanen d Yiduba",
+        "section6_6": "6.6 Isefka Imatuten Ur Nettwassen Ara",
+        "section6_7": "6.7 S Uqbal-ik"
+      },
+      "crossBorder": {
+        "section7_1": "7.1 Agatu n Usider n Yisefka deg Tmurt",
+        "section7_2": "7.2 Asiweḍ Imaḍlan (yeḥwaǧ tasuret n ANPDP)",
+        "section7_3": "7.3 Asider Adigan d Tseddast",
+        "section7_4": "7.4 Iseqdacen n UE d Yimaḍlanen"
+      },
+      "dataSecurity": {
+        "section8_1": "8.1 Tarrayin n Tɣellist",
+        "section8_2": "8.2 Tiririt ɣef Uṛebbi n Yisefka",
+        "section8_3": "8.3 Timasitin n Useqdac",
+        "section8_4": "8.4 Tiḥaddiwin"
+      },
+      "userRights": {
+        "section9_1": "9.1 Azerfan n Unekcum (Tasreft 36)",
+        "section9_2": "9.2 Azerfan n Useggem (Tasreft 37)",
+        "section9_3": "9.3 Azerfan n Umḥay / 'Azerfan n Ttatut' (Tasreft 38)",
+        "section9_4": "9.4 Azerfan n Ugdal (Tasreft 39)",
+        "section9_5": "9.5 Azerfan n Usiweḍ n Yisefka (Tasreft 40)",
+        "section9_6": "9.6 Azerfan n Uḥbas n Uselkem (Tasreft 41)",
+        "section9_7": "9.7 Azerfan n Tukksa n Uqbal",
+        "section9_8": "9.8 Azerfan n Tcekkift",
+        "section9_9": "9.9 Ikataren n Tiririt",
+        "section9_10": "9.10 Baṭel War Axlas"
+      },
+      "minorsProtection": {
+        "section10_1": "10.1 Isuturen n Leɛmer",
+        "section10_2": "10.2 Tisurag n Yimawlan",
+        "section10_3": "10.3 Izerfan n Yimawlan",
+        "section10_4": "10.4 Igdalen",
+        "section10_5": "10.5 Tifin n Yiseqdacen Ddaw Leɛmer"
+      },
+      "cookies": {
+        "section11_1": "11.1 Tamuɣli Tamatut",
+        "section11_2": "11.2 Anawen n Yinagan n Tuqqna",
+        "section11_3": "11.3 Aqbal n Yinagan",
+        "section11_4": "11.4 Inagan n Wid n Berra"
+      },
+      "policyChanges": {
+        "section12_1": "12.1 Azerfan n Ubeddel",
+        "section12_2": "12.2 Alɣu n Yibeddilen",
+        "section12_3": "12.3 Aqbal n Yibeddilen",
+        "section12_4": "12.4 Amezruy n Yilqamen"
+      },
+      "internationalUsers": {
+        "section13_1": "13.1 Addad Amiran",
+        "section13_2": "13.2 Iseqdacen n Tdukli n Turuft (GDPR)",
+        "section13_3": "13.3 Iseqdacen n California (CCPA)",
+        "section13_4": "13.4 Iseqdacen deg Saɛudiyya & UAE (PDPL)"
+      },
+      "biEnterprise": {
+        "section14_1": "14.1 Aḥerrez Amernan",
+        "section14_2": "14.2 Agaten n Uselkem n Yisefka",
+        "section14_3": "14.3 Timasitin n Umsaɣ"
+      },
+      "contact": {
+        "section15_1": "15.1 Isteqsiyen n Uḥerrez n Yisefka",
+        "section15_2": "15.2 Ikataren n Tiririt",
+        "section15_3": "15.3 Anermis n ANPDP",
+        "section15_4": "15.4 Ajerred Asadufan"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "E-mail"
+      },
+      "phone": {
+        "title": "Tiliɣri"
+      },
+      "address": {
+        "title": "Tansa"
+      },
+      "website": {
+        "title": "Asmel Web"
+      },
+      "capital": {
+        "title": "Aserwes n Tedrimt"
+      }
+    },
+    "company": {
+      "name": "Takebbanit Podacium SARL",
+      "registeredCompany": "Takebbanit s Tmasit Talemmast (SARL) yettwajerrden deg Lezzayer",
+      "rc": "RC: Deg uselkem n urmas (Axxam n teɣdemt n Wehran)",
+      "nif": "NIF: Deg uselkem n tukci",
+      "ni": "NIS: Deg uselkem n tukci",
+      "capital": "Aserwes: 100,000 DZD (Yettwazerwec)",
+      "fullAddress": "PC38+5MV, Bir El Djir, Wehran, Lezzayer",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "dpo": "Amḍebber n Uḥerrez n Yisefka (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com"
+    },
+    "dates": {
+      "effectiveDate": "1 Yennayer 2026",
+      "lastUpdated": "1 Yennayer 2026",
+      "version": "1.0",
+      "updatedLabel": "Abeddel: 1 Yen 2026"
+    },
+    "acknowledgment": {
+      "title": "Asentem d Uqbal",
+      "description": "S useqdec n Tenfalit n Podacium, teqqreḍ dakken: Teɣriḍ yerna tegziḍ Tasertit-a n Tbaḍnit, Tegziḍ amek ara d-ttwajemɛen, ttwaseqdacen, yerna ttwawḥan isefka-ik udmawanen, Teqbleḍ aselkem n yisefka akken yettwagllem da, Tegziḍ izerfan-ik ddaw Usaḍuf Azzayri 18-07, Tzemreḍ ad tekseḍ aqbal neɣ ad tesqedceḍ izerfan-ik deg yal akud. Ma d Ameẓyan i telliḍ (ddaw 19 n yiseggasen): Amraw-ik neɣ umḍebber-ik asadufan yefka-d tisurag yettwasenqden i useqdec-ik n Tenfalit d uselkem n yisefka-ik udmawanen."
+    },
+    "actions": {
+      "print": "Siggez Tasertit",
+      "download": "Sider PDF",
+      "viewTerms": "Wali Tiwtilin n Useqdec",
+      "viewCookiePolicy": "Wali Tasertit n Inagan n Tuqqna",
+      "viewRefundPolicy": "Wali Tasertit n Urrad"
+    },
+    "footer": {
+      "thankYou": "Tanemmirt-ik ɣef wammus-ik deg Podacium i yisallen-ik udmawanen. Neqqen iman-nneɣ i uḥerrez n tbaḍnit-ik d uqader n akk isuḍaf izzayriyen n uḥerrez n yisefka."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Isnisen n Yinagan n Tuqqna",
+      "description": "Nseqdac inagan n tuqqna i usnerni n tirmit-ik n tunigin, usedmer n yilɣuten neɣ ugbur udmawan, d tesleḍt n tazzla n tenfalit. S usekcem ɣef \"Qbel Akk\", teqbleḍ aseqdec-nneɣ n yinagan n tuqqna.",
+      "customize": "Sebges",
+      "rejectAll": "Agi Akk",
+      "acceptAll": "Qbel Akk",
+      "arabicDominance": "Tazwart n Tutlayt Taɛrabt",
+      "essential": "Afrazyan",
+      "analytics": "Tisleḍtin",
+      "marketing": "Asnuzer",
+      "savePreferences": "Sekles Isnisen"
+    },
+    "hero": {
+      "badge": "Tasertit n Inagan n Tuqqna",
+      "title": "Tasertit n Inagan n Tuqqna",
+      "description": "Issin amek i tesseqdac Podacium inagan n tuqqna d tatiknulujit n uḍfar yettemcabin i usnerni n tirmit-ik deg tɣellist n tbaḍnit-ik.",
+      "sections": "Iḥricen",
+      "effectiveDate": "Azemz n Tazwara",
+      "version": "Lqem"
+    },
+    "effectiveDate": "Azemz n Tazwara",
+    "lastUpdated": "Abeddel Aneggaru",
+    "version": "Lqem",
+    "sections": {
+      "introduction": "1. Tazwart",
+      "introductionDesc": "Tazwart ɣef tarrayin-nneɣ n yinagan n tuqqna d ukatar asadufan",
+      "whatAreCookies": "2. D Acu i D Inagan n Tuqqna?",
+      "whatAreCookiesDesc": "Tazwart ɣef yinagan n tuqqna d tatiknulujit n uḍfar",
+      "howWeUseCookies": "3. Amek i Nseqdac Inagan n Tuqqna & Tasila Tasadufant",
+      "howWeUseCookiesDesc": "Iswiyen d tisadurin tisadufanin n useqdec n yinagan",
+      "yourConsentControl": "4. Aqbal-ik d Usefrek",
+      "yourConsentControlDesc": "Asefrek d tukksa n yisnisen-ik n yinagan n tuqqna",
+      "typesOfCookies": "5. Anawen n Yinagan n Tuqqna i Nseqdac",
+      "typesOfCookiesDesc": "Taggayin n yinagan n daxel d wid n berra",
+      "detailedCookieList": "6. Umuɣ Amaddud n Yinagan n Tuqqna",
+      "detailedCookieListDesc": "Inagan n tuqqna usligen yettwaseqdacen deg tenfalit-nneɣ",
+      "dataRetention": "7. Aḥerrez n Yisefka",
+      "dataRetentionDesc": "Acḥal n wakud i ttwassumren yisefka n yinagan",
+      "dataTransfers": "8. Asiweḍ n Yisefka Berra n Lezzayer",
+      "dataTransfersDesc": "Asnimer n usiweḍ imaḍlan n yisefka",
+      "minorsPrivacy": "9. Tabaḍnit n Yimeẓyanen",
+      "minorsPrivacyDesc": "Aḥerrez uslig i yiseqdacen ddaw 19 n yiseggasen",
+      "yourRights": "10. Izerfan-ik deg Uḥerrez n Yisefka",
+      "yourRightsDesc": "Izerfan-ik ddaw Usaḍuf Azzayri 18-07",
+      "contactInformation": "11. Isallen n Unermis & Asemras n Yisefka",
+      "contactInformationDesc": "Amek ara aɣ-d-tnermseḍ ɣef temsal n yinagan n tuqqna",
+      "policyChanges": "12. Ibeddilen deg Tsertit-a n Inagan n Tuqqna",
+      "policyChangesDesc": "Amek i nbeddel tasertit-a"
+    },
+    "toc": {
+      "title": "Agbur n Teftart"
+    },
+    "badges": {
+      "important": "Axatar",
+      "new": "Amaynut",
+      "updated": "Yettwabeddel"
+    },
+    "cards": {
+      "privacyPolicy": {
+        "title": "Tasertit n Tbaḍnit",
+        "description": "Tarrayin timaddanin n uḥerrez n yisefka"
+      },
+      "termsOfService": {
+        "title": "Tiwtilin n Useqdec",
+        "description": "Agatu asadufan gar-ak d Podacium"
+      },
+      "textFiles": {
+        "title": "Ifaylan n Uḍris",
+        "description": "Ifaylan imecṭaḥ n uḍris yettwasersen ɣef wallal-ik"
+      },
+      "websiteEfficiency": {
+        "title": "Afara n Yismel",
+        "description": "Err ismal ad qedcen s tezmert yerna ad cfoun ɣef yisnisen"
+      },
+      "legalCompliance": {
+        "title": "Asnimer Asadufan",
+        "description": "Asnimer amakku d Usaḍuf Azzayri 18-07"
+      },
+      "userConsent": {
+        "title": "Aqbal n Useqdac",
+        "description": "Aqbal azwaran, yelhan, yerna d afessas yettusuter"
+      },
+      "rightAccess": {
+        "title": "Azerfan n Unekcum",
+        "description": "Kcem ɣer yisefka-ik udmawanen i d-yettwagemmen s yinagan"
+      },
+      "rightRectification": {
+        "title": "Azerfan n Useggem",
+        "description": "Seggem isefka ur nseḥḥa ara n yinagan"
+      },
+      "rightErasure": {
+        "title": "Azerfan n Umḥay",
+        "description": "Kkes isefka-ik udmawanen n yinagan"
+      },
+      "rightPortability": {
+        "title": "Azerfan n Usiweḍ",
+        "description": "Awi isefka n yinagan s tawsit tameɣrut s tmacint"
+      }
+    },
+    "categories": {
+      "essential": "Afrayan",
+      "analytics": "Tisleḍtin",
+      "functional": "Tawurmant",
+      "marketing": "Asnuzer"
+    },
+    "table": {
+      "headers": {
+        "cookieName": "Isem n Unaga",
+        "provider": "Amḍebber",
+        "purpose": "Iswi",
+        "duration": "Tanzayt",
+        "dataShared": "Isefka Yettwabḍan",
+        "category": "Taggayt"
+      }
+    },
+    "usageTable": {
+      "headers": {
+        "purpose": "Iswi",
+        "description": "Aglam",
+        "legalBasis": "Tasila Tasadufant Ddaw Usaḍuf Azzayri"
+      },
+      "strictlyNecessary": {
+        "purpose": "Afrazyan Maḍi",
+        "description": "Ilaq maḍi i tteddu n Tenfalit. Yettak ttawil i tmahilin tigejdanin am unekcum, asefrek n tɣimit, taɣellist, d uselkem n uxlas.",
+        "legalBasis": "Aselkem n Ugatu (Tasreft 5) - Ur yeḥwaǧ ara aqbal azwaran"
+      },
+      "performanceAnalytics": {
+        "purpose": "Tamahilt / Tisleḍtin",
+        "description": "Yeččur amek i tettemyellel d Tenfalit. Ijelleb isallen ur nettwassen ara i usnerni n tseddast, agbur, d tirmit n useqdac.",
+        "legalBasis": "Aqbal-ik Azwaran Afessas (Tisrifin 4 & 5)"
+      },
+      "functionality": {
+        "purpose": "Tawurmant",
+        "description": "Icfu ɣef yifranen-ik (tutlayt, tamnaḍt) i usedmer n tmahilin udmawanen yufraren.",
+        "legalBasis": "Aqbal-ik Azwaran Afessas"
+      },
+      "targeting": {
+        "purpose": "Asnuzer / Aḍfar",
+        "description": "Yettawi-d ilɣuten yemṣadan yerna yessekyer afara n yisenfaren n usnuzer.",
+        "legalBasis": "Aqbal-ik Azwaran Afessas (deg Yimal kan)"
+      }
+    },
+    "providersTable": {
+      "headers": {
+        "serviceProvider": "Amḍebber n Yimeẓla",
+        "purpose": "Iswi",
+        "dataLocation": "Tansa n Yisefka & Asiweḍ",
+        "yourControl": "Asefrek-ik"
+      },
+      "paymentGateways": {
+        "provider": "Tiwwura n Uxlas (CIB, SATIM, EDAHABIA)",
+        "purpose": "Aselkem n tnezzutin deg tɣellist",
+        "dataLocation": "Iserwuren deg Lezzayer. Ulac isefka udmawanen deg yinagan",
+        "yourControl": "Yettusuter i umeẓlu"
+      },
+      "analyticsProviders": {
+        "provider": "Imḍebbren n Tesleḍtin (amd., Google Analytics)",
+        "purpose": "Tasleḍt n tazzla d wansayen n useqdec n Tenfalit",
+        "dataLocation": "Iserwuren berra n Lezzayer (yeḥwaǧ tasuret n ANPDP)",
+        "yourControl": "Yebna ɣef uqbal afessas deg ufeggag n yinagan"
+      },
+      "aiServiceProviders": {
+        "provider": "Imḍebbren n Yimeẓla n IA",
+        "purpose": "Asnerni n uselmed s IA d yisumaren",
+        "dataLocation": "Deg Lezzayer s umata. Imaḍlan yeḥwaǧ tasuret n ANPDP",
+        "yourControl": "Yebna ɣef uqbal afessas"
+      },
+      "marketingPlatforms": {
+        "provider": "Tisuyas n Usnuzer (amd., Facebook Pixel)",
+        "purpose": "Asenqed n tmahilt n yilɣuten d usedmer n yilɣuten yemṣadan",
+        "dataLocation": "Iserwuren berra n Lezzayer (yeḥwaǧ tasuret n ANPDP)",
+        "yourControl": "Yebna ɣef uqbal afessas yerna d afrayan"
+      }
+    },
+    "cookies": {
+      "sessionId": {
+        "purpose": "Iḥerrez tɣimit n unekcum n useqdac"
+      },
+      "csrfToken": {
+        "purpose": "Iḥemmel mgal tiytawin n Cross-Site Request Forgery"
+      },
+      "cookieConsent": {
+        "purpose": "Iḥerrez ifranen-ik n uqbal n yinagan n tuqqna"
+      },
+      "googleAnalytics": {
+        "purpose": "Issemgired iseqdacen usligen i tesleḍt"
+      },
+      "googleAnalytics24h": {
+        "purpose": "Issemgired iseqdacen i tesleḍt deg tanzayt n 24 n tsaɛatin"
+      }
+    },
+    "providers": {
+      "googleAnalytics": "Google Analytics (Yettwahegga)"
+    },
+    "durations": {
+      "session": "Tiɣimit",
+      "oneYear": "1 Asseggas",
+      "twoYears": "2 Yiseggasen",
+      "twentyFourHours": "24 n Tsaɛatin"
+    },
+    "dataShared": {
+      "none": "Ulac",
+      "google": "Google (Asiweḍ imaḍlan yebna ɣef tsuragt n ANPDP)"
+    },
+    "content": {
+      "introduction": {
+        "policyExplanation": "Tasertit-a n Inagan n Tuqqna tessefhem-d amek i tesseqdac Podacium SARL ('Podacium,' 'nekni,' neɣ 'nneɣ') inagan n tuqqna d tatiknulujit n uḍfar yettemcabin ɣef usmel d tenfalit-nneɣ (s umata, 'Tanfalit'). Tasertit-a ilaq ad tettwaɣer akk d Tsertit-nneɣ n Tbaḍnit d Tiwtilin n Useqdec.",
+        "complianceCommitment": "Neqqen iman-nneɣ i uḥerrez n tbaḍnit-ik d usedmer n tsedmirt deg tarrayin-nneɣ n yisefka s uqader amakku n Usaḍuf Azzayri uṭṭun 18-07 n 10 Yunyu 2018 ɣef Uḥerrez n Yisefka Udmawanen."
+      },
+      "whatAreCookies": {
+        "definition": "Inagan n tuqqna d ifaylan imecṭaḥ n uḍris yettwasersen ɣef wallal-ik (aselkim, tatablett, neɣ aziraz) mi ara trezfeḍ asmel web. Ttwaseqdacen aṭas i wakken ismal ad qedcen s tezmert, ad cfoun ɣef yisnisen-ik, yerna ad fken isallen i bab n yismel.",
+        "trackingTechnologies": "Nseqdac daɣen tatiknulujit n uḍfar yettemcabin am web beacons, pixels, d uḥraz adigan (yettwasemman s umata 'inagan n tuqqna' deg tsertit-a)."
+      },
+      "howWeUseCookies": {
+        "intro": "Nseqdac inagan n tuqqna i yiswiyen-a, yebnan ɣef tisila tisadufanin yellan deg Usaḍuf Azzayri 18-07:"
+      },
+      "yourConsentControl": {
+        "priorConsent": "Ilmend n Tasreft 4 n Usaḍuf 18-07, nesra aqbal-ik ilelli, afessas, yelhan, yerna ur nesɛi ccek uqbel asers n yal anaga ur nelli ara d afrayan ɣef wallal-ik.",
+        "consentFlow": {
+          "intro": "Akala n Uqbal:",
+          "step1": "Arzef Amezwaru → Afeggag n Yinagan Yettwaskan-d",
+          "step2": "Aseqdac Iffren: [Qbel Akk] NEƔ [Agi Wid Ur Nelli D Afrayan] NEƔ [Sebges Isnisen]",
+          "step3": "Ifran Yettwasekles (anaga `cookie_consent` yettwasers i 1 n useggas)",
+          "step4": "Inagan Yemṣadan Ttwassersan → Aseqdac yezmer ad ibeddel ifran-is deg yal akud",
+          "keyPoints": "Tidmiwin Tigejdanin:",
+          "point1": "Deg urzef amezwaru: Afeggag n uqbal afessas s yifranen lqayen",
+          "point2": "Asefrek Afrayan: Efk neɣ agi aqbal s wudem amyiwen i yal taggayt",
+          "point3": "Ulac Aqbal Arusrid: Tunigin war tamyigawt ≠ aqbal ameɣtu",
+          "point4": "Asekles n Uqbal: Ifran yettwaḥrez deg `cookie_consent` i 1 n useggas"
+        },
+        "withdrawConsent": "Tesɛiḍ azerfan ad tekseḍ neɣ ad tbeddleḍ aqbal-ik n yinagan deg yal akud, i yimal. Tukksa ur tetteqqas ara inagan ifrayanen maḍi ilaqen i usedmer n Tenfalit.",
+        "manageOptions": {
+          "option1": "Kcem ɣer 'Isnisen n Yinagan' deg tfelwit n Umiḍan-ik",
+          "option2": "Tekki ɣef tignit/useɣwen n yinagan deg taggara n usebter",
+          "option3": "Nermes-aɣ-d i tallelt",
+          "option4": "Sfeḍ inagan n umrig (ad yales awennez n yisnisen yerna yeḥwaǧ anekcum tikkelt nniḍen)"
+        },
+        "rejectionWarning": "Ma yella tugiḍ inagan neɣ tekseḍ aqbal, inagan ur nelli d ifrayanen ad ttwakksen s urured yerna ur d-ttwassrasen ara deg yirzifen i d-itteddun.",
+        "browserSettings": "Tzemreḍ daɣen ad tsefrekeḍ inagan s yiɣewwaren n umrig-ik web. Aṭas n yimrigen ttakken ttawil ad tgedleḍ neɣ ad tekseḍ inagan, neɣ ad tesbeddeḍ isnisen i kra n yismal.",
+        "browserGuides": {
+          "chromeTitle": "Iminig Google Chrome",
+          "firefoxTitle": "Iminig Mozilla Firefox",
+          "safariTitle": "Safari",
+          "edgeTitle": "Iminig Microsoft Edge",
+          "chrome": "Sefrek inagan deg yiɣewwaren n umrig Chrome",
+          "firefox": "Sebges isnisen n yinagan deg Firefox",
+          "safari": "Sefrek inagan d yisefka n yismal deg Safari",
+          "edge": "Kkes yerna sefrek inagan deg Microsoft Edge"
+        },
+        "blockingWarning": "Agdal n akk inagan, ladɣa wid Ifrayanen Maḍi, ad yeḥbes aseqdec-ik n Tenfalit n Podacium s lqedd."
+      },
+      "typesOfCookies": {
+        "firstPartyCookies": "D inagan yettwasersen srid sɣur Podacium ɣef usmel-nneɣ amenzu (podacium.com) akk d yismal-nneɣ wis sin (podacium.dz, podacium.com.dz), akk ttusirigen ɣer yiwen n userwer.",
+        "thirdPartyCookies": "D inagan yettwasersen sɣur ismal nniḍen berra n Podacium, sɣur imḍebbren n yimeẓla i ntammen. Aseqdec-nsen yettwanebḍ s Yigaten n Uselkem n Yisefka i usedmer n usnimer d usaḍuf azzayri."
+      },
+      "detailedCookieList": {
+        "strictlyNecessaryNote": "Inagan ifrayanen maḍi ilaqen i Tenfalit akken ad teqdec ttwassersan war aqbal azwaran akken i d-yessuter Usaḍuf Azzayri 18-07 Tasreft 5.",
+        "analyticsNote": "Inagan n tesleḍtin ttwassersan kan s uqbal-ik afessas deg ufeggag n yinagan.",
+        "functionalityMarketingNote": "Tura ur nseqdac ara inagan n twurmant neɣ n usnuzer. Yal aselkem deg yimal ad yettwajred da yerna yeḥwaǧ aqbal-ik afessas.",
+        "updateNote": "Tafelwit-a ad tettwabeddel imira deffir usenqed amakku n yinagan yerna tezmer ad tesɛu inagan nniḍen ma llan."
+      },
+      "dataRetention": {
+        "intro": "Isefka n yinagan ttwassumren kan deg tanzayt yettwasbadun deg tfelwit n yinagan sennig-a (inagan n 'Tiɣimit' ttwakksen mi ara tmedleḍ amrig-ik).",
+        "privacyPolicyReference": "Isefka udmawanen i d-yettwagemmen s yinagan ttwassumren ilmend n tanzayin yettwaglmen deg Tsertit-nneɣ n Tbaḍnit."
+      },
+      "dataTransfers": {
+        "intro": "Aseqdec n kra n yinagan n wid n berra yezmer ad d-yawi asiweḍ n yisefka udmawanen ɣer yiserwuren yellan berra n Lezzayer. Ilmend n Tisrifin 31-33 n Usaḍuf 18-07, yal asiweḍ imaḍlan yeḥwaǧ tasuret tuzwirt seg Tanbaḍt Taɣelnawt i Uḥerrez n Yisefka Udmawanen (ANPDP).",
+        "ourCommitments": {
+          "intro": "Neqqen iman-nneɣ i:",
+          "commitment1": "Ur nserred ara yal ameẓlu yesɛan asiweḍ imaḍlan n yisefka s yinagan uqbel tuwwfa n tsuragt n ANPDP",
+          "commitment2": "Alɣu-ik deg tsertit-a d ufeggag n yinagan ɣef yal asiweḍ imaḍlan",
+          "commitment3": "Aḍman n tḥaddiwin ilaqen s Yigaten n Uselkem n Yisefka d akk imḍebbren n wid n berra"
+        }
+      },
+      "minorsPrivacy": {
+        "intro": "Akken yella deg Tiwtilin n Useqdec d Tsertit n Tbaḍnit, iseqdacen ddaw 19 n yiseggasen ttwassnen d Imeẓyanen ddaw usaḍuf azzayri.",
+        "parentalConsent": "Nesra tisurag n yimawlan yettwasenqden uqbel aselkem n yisefka udmawanen n Yimeẓyanen. Asers n yinagan ur nelli d ifrayanen ɣef wallal n Umeẓyan yebna ɣef tsuragt-a n yimawlan."
+      },
+      "yourRights": {
+        "intro": "Rnu ɣer yizerfan-ik ɣef uqbal, tesɛiḍ akk izerfan n umdan ddaw Usaḍuf Azzayri 18-07, akken yettwagllem deg Tsertit-nneɣ n Tbaḍnit (Aḥric 9).",
+        "exerciseRights": "I usedmer n yizerfan-a, neɣ i yal asteqsi ɣef Tsertit-a n Inagan n Tuqqna, ttxil-k nermes-aɣ-d s yisallen n unermis ddaw-a."
+      },
+      "contactInformation": {
+        "dpoNote": "Tamawt: Amḍebber n Uḥerrez n Yisefka (DPO) ad yettwasbedd s wudem unzib uqbel aznuz amaddud. Alamma d imir, akk isteqsiyen yettwazen ɣer tansa-a ad ttwagmen s urured.",
+        "anpdpContact": "Tesɛiḍ azerfan ad tcekkfeḍ ɣer Tanbaḍt Taɣelnawt i Uḥerrez n Yisefka Udmawanen (ANPDP) ma tumneḍ dakken aselkem-nneɣ n yisefka-ik yerkes asaḍuf azzayri. ANPDP: 01, Abrid Ahmed Ouaked, Dely Ibrahim, Lezzayer Tamanaɣt, Lezzayer. Asmel Web: https://www.anpdp.dz",
+        "anpdpRegistration": "Uṭṭun n Ujerred deg ANPDP: Yettraǧu / Ad yettwarnu mi d-yeffeɣ."
+      },
+      "policyChanges": {
+        "intro": "Nezmer ad nbeddel Tasertit-a n Inagan n Tuqqna i wakken ad d-tesken ibeddilen deg tarrayin-nneɣ, tatiknulujit, isuturen isadufanen, neɣ imeẓla.",
+        "notificationMethod": "Ad k-id-nelɣu ɣef yal abeddel axatar s e-mail (ma tesɛiḍ amiḍan) d/neɣ s walɣut afessas ɣef Tenfalit-nneɣ ma drus 15 n wussan uqbel ad bdun yibeddilen.",
+        "continuedUse": "Aseqdec-ik ikemmlen n Tenfalit deffir uzemz n tazwara n tsertit tamaynut yettwaḥseb d aqbal n yibeddilen, ladɣa ɣef yisnisen-ik n uqbal n yinagan ur nelli d ifrayanen."
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 Asefhem n Tsertit",
+        "section1_2": "1.2 Agatu n Usnimer"
+      },
+      "whatAreCookies": {
+        "section2_1": "2.1 D Acu i D Inagan n Tuqqna?",
+        "section2_2": "2.2 Tatiknulujit n Uḍfar Yettemcabin"
+      },
+      "howWeUseCookies": {
+        "section3_1": "3.1 Tafelwit n Tasila Tasadufant"
+      },
+      "yourConsentControl": {
+        "section4_1": "4.1 Aqbal Azwaran, Yelhan, yerna d Afessas",
+        "section4_2": "4.2 Akala n Uqbal",
+        "section4_3": "4.3 Tukksa neɣ Abeddel n Uqbal",
+        "section4_4": "4.4 Asefrek n Yinagan s Yiɣewwaren n Umrig"
+      },
+      "typesOfCookies": {
+        "section5_1": "5.1 Inagan n Daxel",
+        "section5_2": "5.2 Inagan n Wid n Berra"
+      },
+      "detailedCookieList": {
+        "section6_1": "6.1 Inagan Ifrayanen Maḍi",
+        "section6_2": "6.2 Inagan n Tmahilt / Tisleḍtin",
+        "section6_3": "6.3 Inagan n Twurmant & Usnuzer",
+        "section6_4": "6.4 Ibeddilen deg Umuɣ n Yinagan"
+      },
+      "dataRetention": {
+        "section7_1": "7.1 Aḥerrez n Yisefka n Yinagan",
+        "section7_2": "7.2 Assaɣ ɣer Tsertit n Tbaḍnit"
+      },
+      "dataTransfers": {
+        "section8_1": "8.1 Isuturen n Usiweḍ Imaḍlan",
+        "section8_2": "8.2 Igaten-nneɣ"
+      },
+      "minorsPrivacy": {
+        "section9_1": "9.1 Isuturen n Leɛmer",
+        "section9_2": "9.2 Asuter n Tsuragt n Yimawlan"
+      },
+      "yourRights": {
+        "section10_1": "10.1 Izerfan-ik Ddaw Usaḍuf 18-07",
+        "section10_2": "10.2 Aseqdec n Yizerfan-ik"
+      },
+      "contactInformation": {
+        "section11_1": "11.1 Isallen n Umḍebber n Yisefka",
+        "section11_2": "11.2 Amḍebber n Uḥerrez n Yisefka (DPO)",
+        "section11_3": "11.3 Tanbaḍt n Usenqed Tazzayrit",
+        "section11_4": "11.4 Ajerred deg ANPDP"
+      },
+      "policyChanges": {
+        "section12_1": "12.1 Azerfan n Ubeddel",
+        "section12_2": "12.2 Alɣu n Yibeddilen",
+        "section12_3": "12.3 Aseqdec Ikemmlen d Aqbal"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "E-mail"
+      },
+      "phone": {
+        "title": "Tiliɣri"
+      },
+      "address": {
+        "title": "Tansa"
+      },
+      "website": {
+        "title": "Asmel Web"
+      },
+      "capital": {
+        "title": "Aserwes n Tedrimt"
+      }
+    },
+    "company": {
+      "name": "Takebbanit Podacium SARL",
+      "registeredCompany": "Takebbanit s Tmasit Talemmast (SARL) yettwajerrden deg Lezzayer",
+      "rc": "RC: Deg uselkem n urmas (Axxam n teɣdemt n Wehran)",
+      "nif": "NIF: Deg uselkem n tukci",
+      "ni": "NIS: Deg uselkem n tukci",
+      "capital": "Aserwes: 100,000 DZD (Yettwazerwec)",
+      "fullAddress": "PC38+5MV, Bir El Djir, Wehran, Lezzayer",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "dpo": "Amḍebber n Uḥerrez n Yisefka (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com"
+    },
+    "dates": {
+      "effectiveDate": "1 Yennayer 2026",
+      "lastUpdated": "1 Yennayer 2026",
+      "version": "1.0",
+      "updatedLabel": "Abeddel: 1 Yen 2026"
+    },
+    "languageVersion": {
+      "title": "Lqem n Tutlayt",
+      "description": "Lqem unzib asadufan n teftart-a d win n Taɛrabt. Isuqqilen nniḍen d tallelt kan. Ma yella umgired, lqem n Taɛrabt i d amenzu."
+    },
+    "acknowledgment": {
+      "title": "Asentem",
+      "description": "S useqdec n Tenfalit n Podacium, teqqreḍ dakken teɣriḍ yerna tegziḍ Tasertit-a n Inagan n Tuqqna yerna teqbleḍ aseqdec n yinagan n tuqqna d tatiknulujit yettemcabin akken yettwagllem da."
+    },
+    "actions": {
+      "print": "Siggez Tasertit",
+      "download": "Sider PDF",
+      "viewPrivacy": "Wali Tasertit n Tbaḍnit",
+      "viewTerms": "Wali Tiwtilin n Useqdec",
+      "viewRefund": "Wali Tasertit n Urrad",
+      "viewCookiePolicy": "Wali Tasertit n Inagan n Tuqqna",
+      "viewRefundPolicy": "Wali Tasertit n Urrad"
+    },
+    "footer": {
+      "thankYou": "Tanemmirt-ik ɣef wammus-ik deg Podacium. Neqqen iman-nneɣ i usedmer n tarrayin n yinagan n tuqqna ifazen d uḥerrez n tbaḍnit-ik ddaw yisuḍaf izzayriyen n uḥerrez n yisefka."
+    }
+  },
+  "refund": {
+    "hero": {
+      "badge": "Tasertit n Urrad",
+      "title": "Tasertit n Urrad",
+      "description": "Issin isuturen-nneɣ n urrad, tanzayin n uḥebbus, d tegnatin i yijerriḍen d tiɣin n yiwet n tikelt.",
+      "sections": "Iḥricen",
+      "effectiveDate": "Azemz n Tazwara",
+      "version": "Lqem",
+      "lastUpdated": "Abeddel Aneggaru"
+    },
+    "effectiveDate": "Azemz n Tazwara",
+    "lastUpdated": "Abeddel Aneggaru",
+    "version": "Lqem",
+    "sections": {
+      "introduction": "1. Tazwart",
+      "introductionDesc": "Tazwart d walɣu n tutlayt",
+      "generalPrinciples": "2. Ilugan Imatuten n Urrad",
+      "generalPrinciplesDesc": "Ilugan igejdanen i inebbḍen akk urraden",
+      "educationRefunds": "3. Urraden n Tenfalit n Ulmad",
+      "educationRefundsDesc": "Urraden ɣef tmesras d ugbur n ulmad",
+      "subscriptionRefunds": "4. Urraden n Yimeẓla n Ujerred",
+      "subscriptionRefundsDesc": "Urraden ɣef yisurifen n ujerred",
+      "freelancingRefunds": "5. Urraden n Wulzuz n Yililelliyen",
+      "freelancingRefundsDesc": "Urraden ɣef yimeẓla n umahil ilelli",
+      "technicalIssues": "6. Uguren Itiknikanen d Urkisen n Tenfalit",
+      "technicalIssuesDesc": "Urraden ɣef wuguren itiknikanen",
+      "forceMajeure": "7. Tagnit Iǧehden d Tadyanin Tusligin",
+      "forceMajeureDesc": "Urraden deg tegnatin tusligin",
+      "paymentProcessing": "8. Aselkem n Uxlas d Tedrimt",
+      "paymentProcessingDesc": "Amek i d-tettwaselkam tuɣalin n tedrimt",
+      "platformCredits": "9. Tanfalit n Yisefra deg Umkan n Tedrimt",
+      "platformCreditsDesc": "Aseqdec n yisefra deg umkan n tuɣalin n tedrimt s ufus",
+      "fraudPrevention": "10. Txazabit, Asedder, d Tukksa n Uxlas",
+      "fraudPreventionDesc": "Aseḥbiber mgal asedder n urrad",
+      "specialCases": "11. Tignatin Tusligin d Yisurifen",
+      "specialCasesDesc": "Tignatin tusligin n urrad",
+      "procedures": "12. Tarrayin n Usuter n Urrad",
+      "proceduresDesc": "Amek ara tessutreḍ urrad",
+      "disputeResolution": "13. Tifrat n Yimyenqafen d Yisuturen",
+      "disputeResolutionDesc": "Amek ara tferruḍ imyenqafen n urrad",
+      "policyUpdates": "14. Ibeddilen deg Tsertit d Tneflit",
+      "policyUpdatesDesc": "Amek i tezmer ad tbeddel tsertit-a",
+      "contact": "15. Isallen n Unermis",
+      "contactDesc": "Amek ara aɣ-d-tnermseḍ ɣef wurrad",
+      "quickReference": "16. Tafelwit Taruradt n Urrad",
+      "quickReferenceDesc": "Agzul n tezmert n urrad",
+      "acknowledgment": "17. Asentem",
+      "acknowledgmentDesc": "Aqbal n tiwtilin"
+    },
+    "toc": {
+      "title": "Agbur n Teftart",
+      "sectionsCount": "{count} n yiḥricen"
+    },
+    "badges": {
+      "important": "Axatar",
+      "new": "Amaynut",
+      "updated": "Yettwabeddel"
+    },
+    "cards": {
+      "languageNotice": {
+        "title": "Alɣu n Tutlayt",
+        "description": "Lqem unzib asadufan n teftart-a d win n Taɛrabt. Isuqqilen nniḍen d tallelt kan. Ma yella umgired, lqem n Taɛrabt i d amenzu."
+      },
+      "digitalContent": {
+        "title": "Aḥric n Ugbur Umḍin",
+        "description": "Agbur yettwaɣren yettwaḥseb d win yewwḍen yerna yettwaseqdec"
+      },
+      "consumerRights": {
+        "title": "Izerfan n Uḥerrez n Umsaɣ",
+        "description": "Izerfan-ik ddaw Usaḍuf Azzayri 09-03"
+      },
+      "coolingOff": {
+        "title": "Tanzayt n Uḥebbus n 7 n Wussan",
+        "description": "Urrad amakku ma ur yettwaɣer wugbur deg 7 n wussan"
+      },
+      "subscriptionPause": {
+        "title": "Aḥbas n Ujerred",
+        "description": "Ḥbes ajerred alamma d 3 n wagguren"
+      },
+      "escrowProtection": {
+        "title": "Ixlasen n Tmahilin deg Tɣellist",
+        "description": "Akk tiɣin n tmahilin tettwaḥrez s unagraw n PodaPoints"
+      },
+      "platformCredits": {
+        "title": "Isefra n Tenfalit",
+        "description": "Awi amur amernan n 110-120% mi ara tefrneḍ isefra"
+      },
+      "identityVerification": {
+        "title": "Asenqed n Tmagit",
+        "description": "Yettusuter i wurraden yugaren 10,000 DZD"
+      },
+      "mediation": {
+        "title": "Amsuqqel n Liser",
+        "description": "Fru imyenqafen s talwit uqbel asuter asadufan"
+      },
+      "grandfathering": {
+        "title": "Tasekkirt n Tira Taqdimt",
+        "description": "Tiɣin tettwanebḍ s tsertit yellan deg wakud n tiɣin"
+      },
+      "serviceFees": {
+        "title": "Tasertit n Tiɣin n Tmahilin",
+        "description": "Tiɣin n tmahilt d taneggarut mi ara termed"
+      },
+      "giftPurchases": {
+        "title": "Tiɣin n Tfaska (Tarzeft)",
+        "description": "Izerfan n urrad d ayla n win i d-yuɣen kan"
+      },
+      "duplicatePurchases": {
+        "title": "Tiɣin Yettwalsen",
+        "description": "Urrad amakku ɣef tiɣin yettwalsen s tuccḍa deg 48 n tsaɛatin"
+      },
+      "accountDeletion": {
+        "title": "Tukksa n Umiḍan",
+        "description": "Urrad amurran kan i yijerriḍen urmeden"
+      },
+      "deceasedUsers": {
+        "title": "Imiḍanen n Wid Yemmuten",
+        "description": "Urrad yella i yimawlan yettwasurgen"
+      }
+    },
+    "categories": {
+      "fullRefund": "Urrad Amakku",
+      "conditionalRefund": "S Teftart / Discrétionnaire",
+      "noRefund": "Ulac Urrad",
+      "alternativeCompensation": "Tuɣalin Tasentit"
+    },
+    "table": {
+      "headers": {
+        "productService": "Afaris/Ameẓlu",
+        "scenario": "Tagnit",
+        "refundStatus": "Addad n Urrad",
+        "timeline": "Tanzayt"
+      },
+      "scenarios": {
+        "zeroAccessed7Days": "0% yettwaɣer, deg 7 n wussan",
+        "partialAccessed7Days": "1-30% yettwaɣer, deg 7 n wussan",
+        "overConsumedOrTime": ">30% yettwaɣer neɣ >7 n wussan",
+        "first72HoursNoUsage": "72 n tsaɛatin timezwura, ulac aseqdec",
+        "first30Days": "30 n wussan imezwura",
+        "zeroCompletion": "0% n umahil ikfan",
+        "lowDowntime": "<24 n tsaɛatin/aggur n urkis"
+      },
+      "timelines": {
+        "standard": "5-10 n wussan",
+        "conditional": "10-17 n wussan",
+        "notApplicable": "Ur yelli ara",
+        "automatic": "Awurman"
+      },
+      "products": {
+        "individualCourse7Day": "Tamsirt Tudmawant (Tagnit Tagamant)",
+        "individualCourseConditional": "Tamsirt Tudmawant (S Teftart)",
+        "individualCourseNoRefund": "Tamsirt Tudmawant (Ulac Urrad)",
+        "subscription72Hours": "Ajerred Amaynut (72h n Tanzayt n Uḥebbus)",
+        "subscription30Day": "Ajerred (30 n Wussan Imezwura)",
+        "freelancingFeature": "Tiɣin n Tmahilt n Yililelli",
+        "technicalDowntime": "Uguren Itiknikanen / Arkas n Tenfalit"
+      }
+    },
+    "content": {
+      "introduction": {
+        "policyExplanation": "Tasertit-a n Urrad tnebbed akk isuturen n urrad ɣef yifarisen d yimeẓla yettwaɣen deg tenfalit n Podacium, yettwaselken sɣur Podacium SARL, d takebbanit s tmasit talemmast yettwajerrden deg Lezzayer.",
+        "languageNotice": "Lqem unzib asadufan n teftart-a d win n Taɛrabt. Isuqqilen nniḍen d tallelt kan. Ma yella umgired, lqem n Taɛrabt i d amenzu.",
+        "multiPillarEcosystem": "Podacium tesɛa anagraw ameqqran umḍin yesɛan Tanfalit n Ulmad (timsiros s uselkim, ibriden n ulmad), Imeẓla n Ujerred (isurifen n Yinelmaden, anekcum ɣer Business Intelligence), Ulzuz n Yililelliyen (imeẓla yebnan ɣef yisenfaren s wazalen n tmahilin), d Unagraw n Tsaqayt Tumḍint (aselkem n uxlas s PodaPoints d tiɣin n tmahilin).",
+        "relationshipToTerms": "Tasertit-a n Urrad d amur seg Tiwtilin n Useqdec n Podacium. Ma yella umgired gar Tsertit-a d Tiwtilin, d Tasertit-a ara iḥekkmen deg temsal n urrad."
+      },
+      "generalPrinciples": {
+        "digitalContentBarrier": "Mi ara yettwaɣer ugbur umḍin (tavidyut tettwali, afaylu yettwasider, akayad yettwaxdem, tazwart tekfa), yettwaḥseb d win yewwḍen yerna yettwaseqdec. Ulac urrad ɣef ugbur yettwaɣren anagar ma yella lixsas ameqqran deg-s neɣ ur yemṣada ara d uglam.",
+        "servicePerformance": "Imeẓla n tenfalit (anekcum ɣer tseddast, aselkem n uxlas, tuqqna gar yiseqdacen, tifrat n yimyenqafen) mgaraden ɣef ugbur neɣ yifarisen yettwaɣen. Izaɣaren n yimeẓla ɣef tmahilin yermden ur ttwarraden ara mi ara qedcen, ɣas aseqdac ur yeɛǧib-it ara ugmu.",
+        "consumerProtection": "Ulac ayen deg Tsertit-a n Urrad ara yekksen neɣ ara yessenqsen izerfan-ik ilaqen ddaw Usaḍuf Azzayri 09-03 ɣef Uḥerrez n Umsaɣ (yettwabeddlen s Usaḍuf 18-09), gar-asen azerfan-ik ɣer yisallen iseḥḥan, imeẓla n tɣara deg tɣellist, aseggem n yimeẓla yesɛan lixsas, d usekcem n tcekkift ɣer yiduba n uḥerrez n umsaɣ.",
+        "withdrawalRight": "Ddaw usaḍuf azzayri n umsaɣ (Asaḍuf 09-03), imsaɣen sɛan azerfan n uḥebbus n 14 n wussan i yigaten n lebɛid. Lameɛna, ilmend n usurif n ugbur umḍin (Tasreft 4 n Tanaḍt Taslekmant 14-134), teqbleḍ s wudem afessas anekcum imira yerna tettedduḍ azerfan-ik n uḥebbus mi ara yekfu usedmer n ugbur umḍin (tamsirt tettwaɣer, tavidyut tettwali, neɣ aselkin yeffeɣ-d). Tanzayt-nneɣ n urrad n 7 n wussan tugar tanzayt tadrusant n usaḍuf i tɣara n ugbur umḍin, yerna azerfan n 14 n wussan ur yettseqdac ara mi ara tessutreḍ aselkem uqbel ad tfak tanzayt n uḥebbus."
+      },
+      "educationRefunds": {
+        "individualCourse7Day": "Tzemreḍ ad tessutreḍ urrad amakku i tiɣin n tmesrit tudmawant deg 7 n wussan n tiɣin ma yella: Ur teɣriḍ ara agbur n tmesrit (0% n usnerni), Ulac aselkin i d-yeffɣen, Asuter yettwaceyyeɛ s yiberdan unziben.",
+        "individualCourseConditional": "Ma teɣriḍ gar 1% d 30% n ugbur n tmesrit deg tanzayt n 7 n wussan, urrad yezmer ad yettunefk s tmuɣli n Podacium ma tzemreḍ ad d-teskeneḍ dakken agbur n tmesrit yemxallaf mliḥ ɣef uglam yettwasuffɣen neɣ kra n tmahilin yettwasnen xussent.",
+        "individualCourseNoRefund": "Ulac urrad ma yella: Teɣriḍ ugar n 30% n ugbur n tmesrit, Ugar n 7 n wussan iɛeddan seg tiɣin, Tessadreḍ ifaylan n tmesrit neɣ tkfiḍ ikayaden, Aselkin yeffeɣ-d.",
+        "courseBundles": "Tuddsiwin n tmesras d yibriden n ulmad ttwazenzen d ifarisen iduklen s wazal yersan. Urrad amurran i yal tamsirt deg tudtsa ur yelli ara. Urrad amakku n tudtsa iḍeffer alugen n 7 n wussan d 0% n uɣuri i AKK timsiros n tudtsa.",
+        "liveCoursesBeforeStart": "I tmesras tusriddin: Urrad amakku yella alamma d 48 n tsaɛatin uqbel akud n tazwara. Ulac urrad deg 48 n tsaɛatin n tazwara ilmend n usuddes n uselmad d tmasit n wemkan.",
+        "liveCoursesAfterStart": "Ulac urrad mi ara tebdu tɣimit tamezwarut, imi ameẓlu yettwaselkem yakan. Asurif: Ma yella Podacium neɣ aselmad yeḥbes tamsirt merra neɣ ibeddel akud s ddaw 48 n tsaɛatin n walɣu, urrad amakku yella s wudem awurman.",
+        "certificatesIssued": "Mi ara yeffeɣ uselkin: Tamsirt tettwaḥseb tewweḍ s timmad-is, Ulac urrad i yellan, Tukksa n uselkin ur tettak ara azerfan ɣer wurrad.",
+        "checkpoints": {
+          "zeroAccessed": "0% n usnerni",
+          "noCertificate": "Ulac aselkin i d-yeffɣen",
+          "within7Days": "Deg 7 n wussan",
+          "noRefundAfterCertificate": "Ulac urrad deffir tuffɣa n uselkin"
+        }
+      },
+      "subscriptionRefunds": {
+        "first72Hours": "Deg 72 n tsaɛatin timezwura n ujerred amaynut neɣ n uswir yulin, tzemreḍ ad tessutreḍ urrad amakku ma yella: Ur teɣriḍ ara timahilin tifellayin neɣ agbur, D ajerred-ik amezwaru deg uswir-a.",
+        "thirtyDayCommitment": "30 n wussan imezwura n yal tanzayt n ufeter ur ttwarraden ara (anagar deg 72 n tsaɛatin n tanzayt n uḥebbus). Ayagi yeḍmen tiddi n tenfalit yerna yetthawa aseqdec n txazabit n yijerriḍen.",
+        "proRataRefunds": "Deffir 30 n wussan imezwura n tanzayt n ufeter, urrad amurran i tanzayin n ujerred ur nettwaseqdec ara yezmer ad yettunefk s tmuɣli n Podacium, ilmend n yisuturen n usaḍuf azzayri n umsaɣ.",
+        "automaticRenewal": "Ijerriḍen ttuɣalen s wudem awurman anagar ma ttwasefsex uqbel azemz n tuɣalin. Podacium tettceyyiɛ alɣuten n tuɣalin ma drus 7 n wussan uqbel s e-mail d walɣut deg usnas.",
+        "failedNoticeProtection": "Ma yella Podacium ur tessawweḍ ara alɣu n 7 n wussan uqbel, tesɛiḍ azerfan ɣer wurrad amakku n tanzayt-nni n tuɣalin mi ara tessutreḍ deg 14 n wussan n tiɣin.",
+        "pauseFeature": "Tzemreḍ ad teḥbseḍ ajerred-ik alamma d 3 n wagguren (90 n wussan) deg yiɣewwaren n Umiḍan-ik. Aḥbas mačči d urrad – asuter-ik n uxlas yeḥbes kan deg tanzayt n uḥbas. Ulac urrad i d-yetteffiɣen ɣef yijerriḍen yeḥbsen."
+      },
+      "freelancingRefunds": {
+        "statusNotice": "Ulzuz n Yililelliyen isseqdac tasila n wazalen yebnan ɣef tmahilin. Ulac timettiwin ɣef yisenfaren.",
+        "featurePurchaseRefund": "Tiɣin n tmahilin (aserres n usenfar, aserres yufraren, boosts, apaspuṛ n tezmar) ur tettwarad ara mi ara termed. Ma yella tamahilt ur termed ara (amd., asenfar ur yeffiɣ ara yakan), urrad yezmer ad yettusuter deg 48 n tsaɛatin n tiɣin.",
+        "unusedPoints": "PodaPoints ur nettwaseqdec ara qqimen deg tsaqayt-ik yerna ur kfan ara tizi-nsen skud tesɛiḍ armad deg tsaqayt deg 365 n wussan. Tzemreḍ ad ten-tesseqdceḍ i yal tiɣin n tmahilt deg yimal.",
+        "disputeResolution": "I yimyenqafen n yisenfaren gar yimsaɣen d yililelliyen, Podacium tettak-d amsuqqel n liser. Tiɣin n tmahilin yeqqnen ɣer usenfar i deg yella umyenqef ur sɛint ara azerfan ɣer wurrad.",
+        "noCommission": "Ulac timettiwt n tenfalit i d-yettwaxellsen ɣef yixlasen n yisenfaren. Tanfalit tetteddu s tiɣin n tmahilin d yisurifen n ujerred."
+      },
+      "technicalIssues": {
+        "downtimeLess24Hours": "Arkas n tenfalit <24 n tsaɛatin deg waggur: Ulac urrad, tanzayin n ujerred ad ttwazemzent s wudem awurman i usedmer n wakud iṛuḥen.",
+        "downtimeMore24Hours": "Arkas n tenfalit >24 n tsaɛatin deg waggur: Iseqdacen n ujerred ad awin aselken amurran, iseqdacen ur nesɛi ara ajerred ad awin tanzayt tamernant yemṣadan d wakud n urkis.",
+        "catastrophicDowntime": "Arkas ameqqran maḍi (>7 n wussan imseḍfaren): Urrad amurran awurman ad yettunefk, Iseqdacen ad ttwalɣen s e-mail, Ijerriḍen ad ḥebsen s wudem awurman alamma yuɣal-d umeẓlu.",
+        "technicalDefects": "Ma yella agbur yettwaɣen yesɛa uguren itiknikanen (tividyutin yeṛzan, ifaylan ur nettweldi ara, ikayaden ur nqeddac ara): Mel-it-id deg 30 n wussan s ttbut, Podacium ad tesnqd deg 7 n wussan, Fren urrad amakku, tamsirt tasentit, neɣ 120% n yisefra n Tenfalit.",
+        "contentUnavailability": "Ma yella agbur yettwakkes s wudem amezzayan seg Tenfalit: Timsiros tudmawanin sɛant azerfan ɣer wurrad amurran ilmend n wakud i d-yegran, Ijerriḍen sɛan aselken amurran, Tuddsiwin sɛant urrad amurran ilmend n wazal n ugbur yettwakksen.",
+        "examples": {
+          "brokenVideos": "Tividyutin yeṛzan",
+          "nonFunctionalQuizzes": "Ikayaden ur nqeddac ara",
+          "corruptDownloads": "Isidar yefsden"
+        }
+      },
+      "forceMajeure": {
+        "interruptionsLess14Days": "Aḥbas n tgnit iǧehden ddaw 14 n wussan imseḍfaren: Ulac urrad, tanzayin n unekcum d ufeter n ujerred ad ḥebsen s wudem awurman deg tedyant, akud iṛuḥen ad yettwarnu ɣer tanzayt-ik.",
+        "interruptionsMore14Days": "Aḥbas n tgnit iǧehden yugaren 14 n wussan imseḍfaren: Podacium tettak-d tanzayt tamernant (2× wakud n urkis), aselken n tsaqayt n Tenfalit (amurran), neɣ tuɣalin n tedrimt (amurran) ilmend n tmuɣli n Podacium.",
+        "notification": "Podacium ad telɣu iseqdacen ɣef tadyanin n tgnit iǧehden s e-mail, alɣu ɣef usebter agejdan, d yilɣuten deg yizeḍwan imettiyen s telqayt n tedyant d wakud i tettraǧu."
+      },
+      "paymentProcessing": {
+        "refundMethod": "Urraden ttwasselkamen s tarrayt tamezwarut n uxlas anagar ma: Tarrayt tamezwarut ur telli ara tura, Aseqdac yessuter s wudem afessas isefra n tsaqayt, Amsedday n uxlas ur yezmir ara ad yerr tadrimt.",
+        "processingTime": "Tanzayt tagamant: 5-10 n wussan n umahil seg usireg alamma d tuwwfa n tedrimt. Urrad ɣer tsaqayt: Imira (deg 24 n tsaɛatin).",
+        "currency": "Iseqdacen izzayriyen: Akk tinezzutin d wurraden s Yidinaren Izzayriyen (DZD). Iseqdacen imaḍlanen: Urraden s tedrimt tamezwarut n tnezzut ilmend n wazal amezwaru. Isefra n tenfalit ttwattunefken s DZD i akk iseqdacen.",
+        "taxHandling": "Akk azalen sɛan deg-sen Tazeṭṭaṭ ɣef Wazan Amernan (TVA) ilmend n wazal amiran deg Lezzayer. Urraden sɛan deg-sen TVA yettwaxelsen ɣef wazal yettwarraden. Podacium tettak-d tanaḍt n uselken (note de crédit) i akk urraden i usnimer asadufan."
+      },
+      "platformCredits": {
+        "creditBonus": "I yisuturen n urrad yettwaqeblen, Podacium tezmer ad d-tsumer isefra n Tenfalit d tasentit i tedrimt s yimuren imernanen: 110% n wazal amernan i wurraden yettusutren s usaḍuf neɣ tsertit, 120% n wazal amernan i wurraden n tmuɣli tusligt.",
+        "creditTerms": "Isefra n Tenfalit: Qeddcen i 12 n wagguren seg tuffɣa, Zemren ad ttwaseqdacen i tiɣin n tmesras, ijerriḍen, imeẓla n yililelliyen, Zemren ad ttwasedmren d tarzeft i wiyaḍ, Ur zemren ara ad uɣalen d tadrimt, Kfan tizi-nsen deffir 12 n wagguren.",
+        "userChoice": "Isefra d afrayanen yal tikelt. Tzemreḍ ad ten-tugiḍ yerna ad tawiḍ tuɣalin n tedrimt tagamant (war amur amernan).",
+        "conditions": {
+          "valid12Months": "Qeddcen i 12 n wagguren",
+          "usageScope": "Ttwaseqdacen i akk imeẓla n tenfalit",
+          "giftable": "Zemren ad ttwunefken d tarzeft i wiyaḍ",
+          "nonConvertible": "Ur zemren ara ad uɣalen d tadrimt"
+        }
+      },
+      "fraudPrevention": {
+        "abuseIndicators": "Podacium teḥrez azerfan ad tagi urrad yerna ad teḥbes Imiḍanen ɣef usedder amsedrar gar-as: Ugar n 2 n yisuturen n urrad deg 6 n wagguren, Isuturen n urrad ɣef ugar n 30% n tiɣin tamatut, Aɣuri ɛlayen n ugbur uqbel asuter n urrad.",
+        "largeRefundVerification": "Urraden yugaren 10,000 DZD ḥwaǧen asenqed n tmagit i uqader n yilugan izzayriyen mgal asired n tedrimt, ikataren n useddel n txazabit, d yisuturen n usnimer n tzeṭṭaḍin.",
+        "chargebackPolicy": "Tukksa n uxlas tameɣtut (tanezzut ur nettusureg ara, tuccḍa n ufeter, ameẓlu ur yewwiḍ ara): Podacium teqbel-itt. Tukksa n uxlas n txazabit (ameẓlu yewweḍ yerna yettwaseqdec): Podacium tezmer ad temcici, ad teḥbes Amiḍan, ad tgdel tarrayin n uxlas, yerna ad teddu ɣer tsenbeḍt.",
+        "chargebackFees": "Asuter n tukksa n uxlas ɣer lbanka yekkes azerfan-ik ɣer urrad agaman. Nermes tallelt uqbel lbanka-ik. Aṭas n wuguren zemren ad frun s urured s umeslay usrid."
+      },
+      "specialCases": {
+        "giftPurchases": "I tmesras neɣ ijerriḍen yettwaɣen d tarzeft: D win i d-yuɣen kan i yezmren ad yessuter urrad, Ilmend n tegnatin tigamanin n urrad, Win yewwin tarzeft ur yesɛi ara azerfan ɣer wurrad.",
+        "duplicatePurchases": "Tiɣin yettwalsen s tuccḍa: Nermes-aɣ-d deg 48 n tsaɛatin n tiɣin, Efk-d uṭṭunen n tnezzutin, Urrad amakku ad yettunefk i tiɣin tis snat deg 3-5 n wussan n umahil.",
+        "accountDeletion": "Isuturen n tukksa n Umiḍan: Urrad amurran yella kan i tanzayin n ujerred ur nettwaseqdec ara deffir 30 n wussan n leɛmer adrusi, Ulac urrad ɣef tiɣin n tmesras tudmawanin, Tadrimt n tsaqayt tezmer ad tettwazen ɣer umiḍan n lbanka.",
+        "deceasedUsers": "Imiḍanen n wid yemmuten: Imasladen n twacult yettwasurgen zemren ad ssutren urrad i yijerriḍen urmeden d tedrimt n tsaqayt, Ifaylan yettusutren: afaylu n tmettant, tasuragt tasadufant, ttbut n wassaɣ n twacult.",
+        "promotionalPurchases": "Tiɣin s wazalen n usnuzer: Urraden ttwasiḍnen ilmend n wazal yettwaxelsen s tidet (azal yersan), mačči azal amezwaru amakku, Tangalt n usedmer ur tettwarad ara s yiman-is.",
+        "bundleUpgrades": "Asali n uswir n ujerred: Ulac urrad amurran i wakud ur nettwaseqdec ara n uswir yersan, Azal n usali yettwasiḍen d amgired gar yiswiren yettwasiḍnen i wakud i d-yegran deg tanzayt."
+      },
+      "procedures": {
+        "howToRequest": [
+          {
+            "title": "Suter urrad s:",
+            "items": [
+              "Tafelwit n Tenfalit (Iɣewwaren n Umiḍan → Amezruy n Tiɣin)",
+              "E-mail ɣer podacium@podacium.com",
+              "Tiliɣri deg tsaɛatin n umahil (+213 792 913 873)"
+            ]
+          }
+        ],
+        "requiredInformation": "Akk isuturen n urrad ilaq ad sɛun: Uṭṭun n tnezzut neɣ n usuter, Tansa e-mail n Umiḍan, Azemz n tiɣin, Isem n ufaris/umeẓlu, Sebba telqayt n urrad, Ttbut ifazen (ma yella).",
+        "processingTimeline": "Asentem: 24-48 n tsaɛatin, Tasleḍt d usefti: 3-5 n wussan n umahil, Asenqed iweɛren: 7-14 n wussan n umahil, Aselkem n urrad: 5-10 n wussan n umahil ɣer tarrayt n uxlas.",
+        "statusTracking": "Ḍfer addad n urrad s: Ilɣuten n e-mail, Aḥric n Umezruy n Urrad deg Tfelwit n Umiḍan, Ibeddilen deg unagraw n tinfulin n tallelt.",
+        "channels": {
+          "dashboard": "Tafelwit n Tenfalit",
+          "email": "Tallelt s E-mail",
+          "phone": "Tallelt s Tiliɣri"
+        },
+        "timelineCheckpoints": {
+          "acknowledgment": "Asentem: 24-48h",
+          "review": "Tasleḍt: 3-5 wussan",
+          "complex": "Iweɛren: 7-14 wussan",
+          "processing": "Aselkem: 5-10 wussan"
+        }
+      },
+      "disputeResolution": {
+        "internalAppeals": "Ma yettwagi usuter n urrad: Ceyyeɛ asuter n wallus deg 14 n wussan s e-mail, Rnu uṭṭun n tansa d usefhem alqayan, Amselkam amezwaru ad isenqed asuter, Asfti aneggaru deg 7 n wussan n umahil.",
+        "externalResolution": "Ma ur teqdaceḍ ara d usuter agensan: Cektef ɣer Tenmehla Tamatut n Tnezzut (DGC), Nermes Tanbaḍt Taɣelnawt i Uḥerrez n Yisefka Udmawanen (ANPDP) i yimyenqafen n yisefka, Ddu ɣer tsenbaḍin tizzayriyin.",
+        "voluntaryMediation": "Uqbel abdu deg tsenbeḍt, iḥricen zemren ad qblen amsuqqel n liser: Fren amsuqqel yettwaqeblen s wuzzul, Azalen ad bḍun s tegdut, Taggara deg 30-45 n wussan, Ur yettḥettim ara anagar ma qblen iḥricen i sin."
+      },
+      "policyUpdates": {
+        "rightToModify": "Podacium teḥrez azerfan ad tbeddel Tasertit-a n Urrad i wakken ad d-tesken ibeddilen deg usaḍuf azzayri, timahilin n tenfalit, asnerni n tmahilt, tarrayin n useddel n txazabit, neɣ isumaren n yiseqdacen.",
+        "noticeOfChanges": "Ibeddilen ixataren (yessenqasen izerfan n useqdac): Alɣu s e-mail 30 n wussan uqbel azemz n tazwara, Alɣu deg usnas, Alɣu deg usebter agejdan. Ibeddilen ur nelli d ixataren: Azemz yettwabeddlen kan.",
+        "acceptanceOfChanges": "Aseqdec ikemmlen n Tenfalit deffir uzemz n tazwara yettwaḥseb d aqbal n Tsertit n Urrad tamaynut. Ma ur teqbileḍ ara: Ḥbes aseqdec uqbel azemz n tazwara, Suter urrad i yijerriḍen urmeden, Sseqdec izerfan-ik n umdan.",
+        "grandfatheringProvision": "Tiɣin yettwaxedmen uqbel abeddel n tsertit tettwanebḍ s tsertit yellan deg wakud n tiɣin, anagar ma abeddel yettusuter s usaḍuf, yefka aḥerrez yugaren, neɣ qblen iḥricen i sin tiwtilin timaynutin."
+      },
+      "contact": {
+        "refundSupport": [
+          {
+            "title": "Isallen n Unermis:",
+            "items": [
+              "E-mail: podacium@podacium.com",
+              "Tiliɣri: +213 792 913 873",
+              "Tasaɛatin n Umahil: Seg Lḥedd ɣer Lexmis, 09:00-17:00 Akud n Lezzayer (GMT+1)",
+              "Tansa: Podacium SARL, PC38+5MV, Bir El Djir, Wehran, Lezzayer"
+            ]
+          }
+        ],
+        "responseTime": "Isteqsiyen s e-mail: 24-48 n tsaɛatin, Isuturen n urrad: asfti deg 3-5 n wussan n umahil, Asuter n wallus: 7 n wussan n umahil, Tallelt s tiliɣri: Imira deg tsaɛatin n umahil.",
+        "regulatoryInformation": "Tuddsa Tasadufant: Podacium SARL, Asaḍuf Anbaḍ: Asaḍuf Azzayri 09-03 ɣef Uḥerrez n Umsaɣ, Tasenbeḍt: Tisenbaḍin n Wehran, Lezzayer.",
+        "responseTimeCheckpoints": {
+          "email": "E-mail: 24-48h",
+          "refund": "Asfti: 3-5 wussan",
+          "appeals": "Allus: 7 wussan"
+        },
+        "email": {
+          "title": "E-mail"
+        },
+        "phone": {
+          "title": "Tiliɣri"
+        },
+        "address": {
+          "title": "Tansa"
+        },
+        "website": {
+          "title": "Asmel Web"
+        }
+      },
+      "quickReference": {
+        "legend": "Tasarut: Urrad Amakku - Tizmert tawurmant, S Teftart/Discrétionnaire - Yeḥwaǧ ttbut neɣ asenqed, Ulac Urrad - Ur yesɛi ara azerfan, Tuɣalin Tasentit - Tanzayt tamernant neɣ aselken"
+      },
+      "acknowledgment": {
+        "acceptance": "S tiɣin deg Tenfalit n Podacium, teqqreḍ dakken: Teɣriḍ yerna tegziḍ Tasertit-a n Urrad, Teqbleḍ ad tettwasikled s tiwtilin-is, Tegziḍ isuturen n tezmert n urrad, Teqbleḍ dakken kra n tiɣin ur tettwarad ara, Tegziḍ izerfan-ik n umsaɣ, Teqbleḍ ad tɛerḍeḍ tifrat tagensant uqbel."
+      }
+    },
+    "subSections": {
+      "introduction": {
+        "section1_1": "1.1 Asefhem n Tsertit",
+        "section1_2": "1.2 Alɣu n Tutlayt",
+        "section1_3": "1.3 Anagraw n Ddeqs n Yigejda",
+        "section1_4": "1.4 Assaɣ ɣer Tiwtilin n Useqdec"
+      },
+      "generalPrinciples": {
+        "section2_1": "2.1 Tiḥaddit n Usedmer n Ugbur Umḍin",
+        "section2_2": "2.2 Aselkem n Yimeẓla vs. Asiweḍ n Yifarisen",
+        "section2_3": "2.3 Izerfan n Uḥerrez n Umsaɣ"
+      },
+      "educationRefunds": {
+        "section3_1": "3.1 Tiɣin n Tmesras Tudmawanin",
+        "section3_2": "3.2 Tuddsiwin n Tmesras d Yibriden n Ulmad",
+        "section3_3": "3.3 Timsiros Tusriddin d Tid Yettwanharen",
+        "section3_4": "3.4 Iselkinen d Yisefra n Taggara"
+      },
+      "subscriptionRefunds": {
+        "section4_1": "4.1 Isurifen n Ujerred Yettwaṭṭfen",
+        "section4_2": "4.2 72 n Tsaɛatin Timezwura (Tanzayt n Uḥebbus)",
+        "section4_3": "4.3 30 n Wussan n Leɛmer Adrusi",
+        "section4_4": "4.4 Urraden Imuranen (Deffir 30 n Wussan - Discrétionnaire)",
+        "section4_5": "4.5 Tuɣalin Tawurmant d Walɣu n Tazwara",
+        "section4_6": "4.6 Tamahilt n Uḥbas n Ujerred"
+      },
+      "freelancingRefunds": {
+        "section5_1": "5.1 Agaten Yettwaḥerzen s Leɛnaya (Escrow)",
+        "section5_2": "5.2 Agaten Ur Nettwaḥrez Ara s Leɛnaya",
+        "section5_3": "5.3 Ur-Tuɣalin Ara n Tmettiwt n Tenfalit"
+      },
+      "technicalIssues": {
+        "section6_1": "6.1 Arkas n Tenfalit",
+        "section6_2": "6.2 Uguren Itiknikanen deg Ugbur",
+        "section6_3": "6.3 Lixsas n Ugbur"
+      },
+      "forceMajeure": {
+        "section7_1": "7.1 Aḥbas Ddaw 14 n Wussan Imseḍfaren",
+        "section7_2": "7.2 Aḥbas Yugaren 14 n Wussan Imseḍfaren",
+        "section7_3": "7.3 Alɣu n Tgnit Iǧehden"
+      },
+      "paymentProcessing": {
+        "section8_1": "8.1 Tarrayt n Urrad",
+        "section8_2": "8.2 Akud n Uselkem n Urrad",
+        "section8_3": "8.3 Tadrimt d Wazan n Usnifel",
+        "section8_4": "8.4 Asefrek n Tzeṭṭaṭ n TVA"
+      },
+      "platformCredits": {
+        "section9_1": "9.1 Ahil n Yimuren Imernanen n Yisefra",
+        "section9_2": "9.2 Tiwtilin d Tarrayin n Yisefra"
+      },
+      "fraudPrevention": {
+        "section10_1": "10.1 Aseddel n Usedder n Urrad",
+        "section10_2": "10.2 Asenqed n Tmagit i Wurraden Imeqqranen",
+        "section10_3": "10.3 Tasertit n Tukksa n Uxlas (Chargeback)"
+      },
+      "specialCases": {
+        "section11_1": "11.1 Tiɣin n Tfaska (Tarzeft)",
+        "section11_2": "11.2 Tiɣin Yettwalsen neɣ n Tuccḍa",
+        "section11_3": "11.3 Isuturen n Tukksa n Umiḍan",
+        "section11_4": "11.4 Imiḍanen n Wid Yemmuten",
+        "section11_5": "11.5 Tiɣin s Wazan n Usnuzer d Usenqes",
+        "section11_6": "11.6 Asali n Tuddsiwin d Yibeddilen n Yiswiren"
+      },
+      "procedures": {
+        "section12_1": "12.1 Amek ara Tessutreḍ Urrad",
+        "section12_2": "12.2 Isallen Yettusutren",
+        "section12_3": "12.3 Ikataren n Wakud n Uselkem",
+        "section12_4": "12.4 Aḍfar n Waddad n Urrad"
+      },
+      "disputeResolution": {
+        "section13_1": "13.1 Akala n Usuter Agensan",
+        "section13_2": "13.2 Tifrat n Yimyenqafen s Wid n Berra",
+        "section13_3": "13.3 Amsuqqel n Liser"
+      },
+      "policyUpdates": {
+        "section14_1": "14.1 Azerfan n Ubeddel",
+        "section14_2": "14.2 Alɣu n Yibeddilen",
+        "section14_3": "14.3 Aqbal n Yibeddilen",
+        "section14_4": "14.4 Tasekkirt n Tira Taqdimt",
+        "section14_5": "14.5 Amezruy n Yilqamen"
+      },
+      "contact": {
+        "section15_1": "15.1 Tallelt n Urrad",
+        "section15_2": "15.2 Igaten n Wakud n Tiririt",
+        "section15_3": "15.3 Isallen Isadufanen d Yilugan"
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "E-mail"
+      },
+      "phone": {
+        "title": "Tiliɣri"
+      },
+      "address": {
+        "title": "Tansa"
+      },
+      "website": {
+        "title": "Asmel Web"
+      },
+      "capital": {
+        "title": "Aserwes n Tedrimt"
+      }
+    },
+    "company": {
+      "name": "Takebbanit Podacium SARL",
+      "address": "Tansa",
+      "registeredCompany": "Takebbanit s Tmasit Talemmast (SARL) yettwajerrden deg Lezzayer",
+      "rc": "RC: Deg uselkem n urmas (Axxam n teɣdemt n Wehran)",
+      "nif": "NIF: Deg uselkem n tukci",
+      "ni": "NIS: Deg uselkem n tukci",
+      "capital": "Aserwes: 100,000 DZD (Yettwazerwec)",
+      "fullAddress": "PC38+5MV, Bir El Djir, Wehran, Lezzayer",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "dpo": "Amḍebber n Uḥerrez n Yisefka (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com"
+    },
+    "dates": {
+      "effectiveDate": "1 Yennayer 2026",
+      "lastUpdated": "1 Yennayer 2026",
+      "version": "1.0",
+      "updatedLabel": "Abeddel: 1 Yen 2026"
+    },
+    "languageVersion": {
+      "title": "Lqem n Tutlayt",
+      "description": "Lqem unzib asadufan n teftart-a d win n Taɛrabt. Isuqqilen nniḍen d tallelt kan. Ma yella umgired, lqem n Taɛrabt i d amenzu."
+    },
+    "actions": {
+      "print": "Siggez Tasertit",
+      "download": "Sider PDF",
+      "viewPrivacy": "Wali Tasertit n Tbaḍnit",
+      "viewTerms": "Wali Tiwtilin n Useqdec",
+      "viewCookies": "Wali Tasertit n Inagan n Tuqqna",
+      "openTOC": "Ldi agbur n teftart",
+      "closeTOC": "Mdel agbur n teftart",
+      "viewCookiePolicy": "Wali Tasertit n Inagan n Tuqqna",
+      "viewRefundPolicy": "Wali Tasertit n Urrad"
+    },
+    "footer": {
+      "thankYou": "Tanemmirt-ik ɣef ufran n Podacium. Neqqen iman-nneɣ i usedmer n tarrayin n urrad ifazen yerna d ifessasen ilmend n yisuḍaf izzayriyen n uḥerrez n umsaɣ."
+    },
+    "contentExtras": {
+      "privacyDesc": "Tarrayin n uḥerrez n yisefka d tbaḍnit",
+      "cookiesDesc": "Tasertit n useqdec n yinagan n tuqqna d uḍfar",
+      "quickReferenceDisclaimer": "Tafelwit-a d agzul kan. Wali iḥricen usligen sennig-a i telqayt d tegnatin timaddanin."
+    },
+    "acknowledgment": {
+      "title": "Asteɛref",
+      "description": "S tmesɣiwt deg usmel n Podacium, tqebleḍ d akken teɣriḍ u tfehmeḍ tasertit-agi n tririt n yedrimen u tqebleḍ tiwtilin-is."
+    }
+  },
+  "legal": {
+    "toc": {
+      "title": "Agbur",
+      "sections": "Iḥricen",
+      "sectionsCount": "{count} n Yiḥricen",
+      "open": "Ldi Agbur n Teftart",
+      "close": "Mdel Agbur n Teftart"
+    },
+    "cards": {
+      "languageNotice": {
+        "title": "Alɣu n Tutlayt",
+        "description": "Lqem unzib asadufan n teftart-a d win n Taɛrabt. Isuqqilen nniḍen d tallelt kan. Ma yella umgired, lqem n Taɛrabt i d amenzu."
+      }
+    },
+    "company": {
+      "name": "Takebbanit Podacium SARL",
+      "address": "PC38+5MV, Bir El Djir, Wehran, Lezzayer",
+      "fullAddress": "PC38+5MV, Bir El Djir, Wehran, Lezzayer",
+      "email": "podacium@podacium.com",
+      "phone": "+213 792 913 873",
+      "website": "www.podacium.com",
+      "websiteAlt1": "www.podacium.dz",
+      "websiteAlt2": "www.podacium.com.dz",
+      "principalDomain": "www.podacium.com",
+      "registeredCompany": "Takebbanit s Tmasit Talemmast (SARL) yettwajerrden deg Lezzayer",
+      "dpo": "Amḍebber n Uḥerrez n Yisefka (DPO)",
+      "dpoEmail": "merhabahmed@podacium.com",
+      "rc": "RC: Deg uselkem n urmas (Axxam n teɣdemt n Wehran)",
+      "nif": "NIF: Deg uselkem n tukci",
+      "ni": "NIS: Deg uselkem n tukci",
+      "capital": "Aserwes: 100,000 DZD (Yettwazerwec)"
+    },
+    "contact": {
+      "email": {
+        "title": "E-mail"
+      },
+      "phone": {
+        "title": "Tiliɣri"
+      },
+      "address": {
+        "title": "Tansa"
+      },
+      "website": {
+        "title": "Asmel Web"
+      },
+      "capital": {
+        "title": "Aserwes n Tedrimt"
+      }
+    },
+    "dates": {
+      "effectiveDate": "1 Yennayer 2026",
+      "lastUpdated": "1 Yennayer 2026",
+      "version": "1.0",
+      "updatedLabel": "Abeddel: 1 Yen 2026"
+    },
+    "effectiveDate": "Azemz n Tazwara",
+    "lastUpdated": "Abeddel Aneggaru",
+    "version": "Lqem"
+  }
+}

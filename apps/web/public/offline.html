@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Offline — Podacium</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --bg-gradient: radial-gradient(circle at 50% 0%, #eff6ff 0%, #f8fafc 65%, #f1f5f9 100%);
+      --card-bg: rgba(255, 255, 255, 0.88);
+      --card-border: rgba(226, 232, 240, 0.9);
+      --card-shadow: 0 24px 48px -12px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(15, 23, 42, 0.04);
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #2563eb;
+      --primary-end: #4f46e5;
+      --primary-shadow: rgba(37, 99, 235, 0.28);
+      --btn-sec-bg: #ffffff;
+      --btn-sec-text: #334155;
+      --btn-sec-hover: #f8fafc;
+      --tip-bg: rgba(241, 245, 249, 0.75);
+      --tip-border: rgba(226, 232, 240, 0.8);
+      --status-bg: rgba(245, 158, 11, 0.1);
+      --status-text: #b45309;
+      --status-border: rgba(245, 158, 11, 0.25);
+      --status-dot: #f59e0b;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", system-ui, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #020617;
+        --bg-gradient: radial-gradient(circle at 50% 0%, #0b1329 0%, #020617 65%, #050914 100%);
+        --card-bg: rgba(15, 23, 42, 0.82);
+        --card-border: rgba(51, 65, 85, 0.65);
+        --card-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --border: #334155;
+        --primary: #3b82f6;
+        --primary-end: #6366f1;
+        --primary-shadow: rgba(59, 130, 246, 0.35);
+        --btn-sec-bg: #0f172a;
+        --btn-sec-text: #cbd5e1;
+        --btn-sec-hover: #1e293b;
+        --tip-bg: rgba(30, 41, 59, 0.55);
+        --tip-border: rgba(51, 65, 85, 0.6);
+        --status-bg: rgba(245, 158, 11, 0.15);
+        --status-text: #fbbf24;
+        --status-border: rgba(245, 158, 11, 0.35);
+        --status-dot: #fbbf24;
+      }
+    }
+
+    html[dir="rtl"] {
+      --font-family: "Baloo Bhaijaan 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+      background: var(--bg);
+      background-image: var(--bg-gradient);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Ambient Aurora Glows */
+    .aurora-orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(65px);
+      opacity: 0.7;
+    }
+    .orb-1 {
+      top: -10%;
+      right: -10%;
+      width: 440px;
+      height: 440px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.16) 0%, rgba(6, 182, 212, 0.08) 60%, transparent 80%);
+    }
+    .orb-2 {
+      bottom: -15%;
+      left: -10%;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(147, 51, 234, 0.14) 0%, rgba(99, 102, 241, 0.08) 60%, transparent 80%);
+    }
+
+    /* Main Container */
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 460px;
+    }
+
+    /* Glassmorphic Card */
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 1.5rem;
+      padding: 2.25rem 2rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: cardAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes cardAppear {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    /* Header with Locale Switcher */
+    .card-top {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-end));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 4px 10px var(--primary-shadow);
+    }
+
+    .brand-name {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .locale-switcher {
+      display: inline-flex;
+      background: var(--tip-bg);
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .locale-btn {
+      background: transparent;
+      border: 0;
+      color: var(--text-muted);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .locale-btn:hover {
+      color: var(--text-main);
+    }
+
+    .locale-btn.active {
+      background: var(--card-bg);
+      color: var(--primary);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Icon Hero Stage */
+    .icon-stage {
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+
+    .icon-backdrop {
+      width: 76px;
+      height: 76px;
+      border-radius: 1.25rem;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(99, 102, 241, 0.08) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+
+    .icon-offline-badge {
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--status-dot);
+      border: 2px solid var(--card-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    html[dir="rtl"] .icon-offline-badge {
+      right: auto;
+      left: -4px;
+    }
+
+    /* Status Pill */
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3125rem 0.8125rem;
+      border-radius: 2rem;
+      background: var(--status-bg);
+      color: var(--status-text);
+      border: 1px solid var(--status-border);
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 0.01em;
+      transition: all 0.3s ease;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--status-dot);
+      position: relative;
+    }
+
+    .status-dot::after {
+      content: "";
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: inherit;
+      opacity: 0.4;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.4; }
+      50% { transform: scale(1.6); opacity: 0; }
+    }
+
+    /* Titles & Description */
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+    }
+
+    p.description {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      max-width: 38ch;
+      margin-bottom: 1.75rem;
+    }
+
+    /* Actions */
+    .actions {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.8125rem 1.25rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 0.875rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-end));
+      color: #ffffff;
+      box-shadow: 0 8px 20px -4px var(--primary-shadow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px -4px var(--primary-shadow);
+      filter: brightness(1.04);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      filter: brightness(0.96);
+    }
+
+    .btn-secondary {
+      background: var(--btn-sec-bg);
+      color: var(--btn-sec-text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--btn-sec-hover);
+      color: var(--text-main);
+    }
+
+    .btn-secondary:active {
+      transform: translateY(0);
+    }
+
+    /* Rotating animation for retry button */
+    .spin {
+      animation: spin 0.9s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Informational Tip Card */
+    .tip-card {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.875rem 1rem;
+      background: var(--tip-bg);
+      border: 1px solid var(--tip-border);
+      border-radius: 0.875rem;
+      text-align: start;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .tip-icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--primary);
+    }
+
+    .tip-content {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+
+    .tip-title {
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.125rem;
+    }
+
+    .tip-desc {
+      color: var(--text-muted);
+    }
+
+    /* Reconnection Banner State */
+    .status-pill.online {
+      background: rgba(16, 185, 129, 0.12);
+      color: #059669;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+    .status-pill.online .status-dot {
+      background: #10b981;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .status-pill.online {
+        background: rgba(16, 185, 129, 0.2);
+        color: #34d399;
+        border-color: rgba(16, 185, 129, 0.4);
+      }
+      .status-pill.online .status-dot {
+        background: #34d399;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Ambient Aurora Blobs -->
+  <div class="aurora-orb orb-1" aria-hidden="true"></div>
+  <div class="aurora-orb orb-2" aria-hidden="true"></div>
+
+  <main class="container">
+    <div class="card">
+      <!-- Card Top: Brand mark + Compact Language Switcher -->
+      <div class="card-top">
+        <div class="brand-group">
+          <div class="brand-mark" aria-hidden="true">
+            <!-- Authentic Podacium Mark SVG -->
+            <svg viewBox="0 0 209.59 224.89" width="18" height="18" fill="none">
+              <path fill="currentColor" d="M321.44,545.39v64.43a8.26,8.26,0,0,1-8.26,8.26H228.34a8.26,8.26,0,0,1-8.27-8.26V545.39c0-24.42,22.81-44.4,50.69-44.4a54.33,54.33,0,0,1,35.79,13C315.74,522.08,321.44,533.18,321.44,545.39Zm59.91-150.34h-53.9v48.33h0c0,26.57,22.41,48.32,49,48.32h4.91a48.33,48.33,0,0,0,0-96.65Z" transform="translate(-220.07 -393.19)"/>
+              <circle fill="currentColor" cx="49.25" cy="49.25" r="49.25"/>
+            </svg>
+          </div>
+          <span class="brand-name">Podacium</span>
+        </div>
+
+        <nav class="locale-switcher" aria-label="Language selection">
+          <button type="button" class="locale-btn" data-lang="en">EN</button>
+          <button type="button" class="locale-btn" data-lang="fr">FR</button>
+          <button type="button" class="locale-btn" data-lang="ar">عربي</button>
+          <button type="button" class="locale-btn" data-lang="kab">KAB</button>
+        </nav>
+      </div>
+
+      <!-- Icon Stage -->
+      <div class="icon-stage" aria-hidden="true">
+        <div class="icon-backdrop">
+          <!-- Signal / Cloud-off glyph -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0-4 7h1.26a5 5 0 0 0 7.84 4.15"></path>
+            <line x1="1" y1="1" x2="23" y2="23"></line>
+          </svg>
+        </div>
+        <div class="icon-offline-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Live Connection Status Pill -->
+      <div class="status-pill" id="status-pill" role="status" aria-live="polite">
+        <span class="status-dot"></span>
+        <span id="status-text">Offline Mode</span>
+      </div>
+
+      <!-- Heading & Description -->
+      <h1 id="offline-title">You're offline</h1>
+      <p class="description" id="offline-desc">
+        No internet connection detected. Your learning and work on Podacium will resume automatically when you reconnect.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="actions">
+        <button class="btn btn-primary" id="retry-btn" type="button">
+          <svg id="retry-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <path d="M3 3v5h5"></path>
+            <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+            <path d="M16 21h5v-5"></path>
+          </svg>
+          <span id="retry-label">Try Again</span>
+        </button>
+
+        <a href="/" class="btn btn-secondary" id="home-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span id="home-label">Go to Homepage</span>
+        </a>
+      </div>
+
+      <!-- Helpful Context / Offline Resiliency Note -->
+      <div class="tip-card" role="note">
+        <div class="tip-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </div>
+        <div class="tip-content">
+          <div class="tip-title" id="tip-title">Offline Access</div>
+          <div class="tip-desc" id="tip-desc">Previously cached courses and downloaded materials remain available while offline.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      // ── Translations Dictionary (Algerian EdTech context) ──────────────────
+      var TRANSLATIONS = {
+        en: {
+          title: "You're offline",
+          badge: "Offline Mode",
+          desc: "No internet connection detected. Your learning and work on Podacium will resume automatically when you reconnect.",
+          retry: "Try Again",
+          retrying: "Checking connection...",
+          home: "Go to Homepage",
+          tipTitle: "Offline Access",
+          tipDesc: "Previously cached courses and downloaded materials remain available while offline.",
+          restored: "Connection restored! Reloading..."
+        },
+        fr: {
+          title: "Vous êtes hors ligne",
+          badge: "Mode hors ligne",
+          desc: "Aucune connexion Internet détectée. Vos cours et votre travail sur Podacium reprendront automatiquement dès votre reconnexion.",
+          retry: "Réessayer",
+          retrying: "Vérification de la connexion...",
+          home: "Retour à l'accueil",
+          tipTitle: "Accès hors ligne",
+          tipDesc: "Les cours mis en cache et les ressources téléchargées restent consultables hors ligne.",
+          restored: "Connexion rétablie ! Rechargement..."
+        },
+        ar: {
+          title: "أنت غير متصل بالإنترنت",
+          badge: "وضع غير متصل",
+          desc: "لم يتم اكتشاف اتصال بالإنترنت. سيستأنف تعلّمك وعملك على بوداسيوم تلقائياً بمجرد استعادة الاتصال.",
+          retry: "إعادة المحاولة",
+          retrying: "جارٍ التحقق من الاتصال...",
+          home: "العودة للرئيسية",
+          tipTitle: "الوصول دون اتصال",
+          tipDesc: "المقررات المحفوظة والمواد المنزلة مسبقاً تظل متاحة أثناء عدم الاتصال.",
+          restored: "تمت استعادة الاتصال! جارٍ التحميل..."
+        },
+        kab: {
+          title: "Ur teqqineḍ ara",
+          badge: "Meqqar ulac tuqqna",
+          desc: "Ulac tuqqna ɣer Internet. Aswir-ik d uxeddim-ik deg Podacium ad d-uɣalen akken kan ara d-tuɣaleḍ.",
+          retry: "Aɛreḍ tikkelt nniḍen",
+          retrying: "Asefqed n tuqqna...",
+          home: "Uɣal ɣer tezwara",
+          tipTitle: "Aseqdec meqqar ulac tuqqna",
+          tipDesc: "Timsirin yettwakelsen d wayen i d-tessawḍeḍ ad qqimen wejden.",
+          restored: "Tuqqna tuɣal-d! Aleqqem..."
+        }
+      };
+
+      // ── Detect initial locale ─────────────────────────────────────────────
+      function getInitialLocale() {
+        try {
+          var saved = localStorage.getItem("podacium_locale");
+          if (saved && TRANSLATIONS[saved]) return saved;
+
+          var match = document.cookie.match(/(?:^|;\s*)(?:NEXT_LOCALE|podacium_locale)=([^;]+)/);
+          if (match && match[1] && TRANSLATIONS[match[1]]) return match[1];
+
+          var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+          if (nav.startsWith("ar")) return "ar";
+          if (nav.startsWith("fr")) return "fr";
+          if (nav.startsWith("kab")) return "kab";
+        } catch (_) {}
+        return "en";
+      }
+
+      var currentLocale = getInitialLocale();
+
+      function applyLocale(locale) {
+        currentLocale = TRANSLATIONS[locale] ? locale : "en";
+        var t = TRANSLATIONS[currentLocale];
+        var isRTL = currentLocale === "ar";
+
+        document.documentElement.lang = currentLocale;
+        document.documentElement.dir = isRTL ? "rtl" : "ltr";
+
+        document.getElementById("offline-title").textContent = t.title;
+        document.getElementById("offline-desc").textContent = t.desc;
+        document.getElementById("status-text").textContent = t.badge;
+        document.getElementById("retry-label").textContent = t.retry;
+        document.getElementById("home-label").textContent = t.home;
+        document.getElementById("tip-title").textContent = t.tipTitle;
+        document.getElementById("tip-desc").textContent = t.tipDesc;
+
+        var buttons = document.querySelectorAll(".locale-btn");
+        buttons.forEach(function (btn) {
+          if (btn.getAttribute("data-lang") === currentLocale) {
+            btn.classList.add("active");
+            btn.setAttribute("aria-current", "true");
+          } else {
+            btn.classList.remove("active");
+            btn.removeAttribute("aria-current");
+          }
+        });
+
+        try {
+          localStorage.setItem("podacium_locale", currentLocale);
+          document.cookie = "podacium_locale=" + currentLocale + ";path=/;max-age=31536000;SameSite=Lax";
+        } catch (_) {}
+      }
+
+      // Attach language switcher clicks
+      document.querySelectorAll(".locale-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var lang = this.getAttribute("data-lang");
+          applyLocale(lang);
+        });
+      });
+
+      applyLocale(currentLocale);
+
+      // ── Retry Logic ───────────────────────────────────────────────────────
+      var retryBtn = document.getElementById("retry-btn");
+      var retryIcon = document.getElementById("retry-icon");
+      var retryLabel = document.getElementById("retry-label");
+
+      function handleRetry() {
+        retryIcon.classList.add("spin");
+        retryLabel.textContent = TRANSLATIONS[currentLocale].retrying;
+        retryBtn.disabled = true;
+
+        // Perform a quick fetch test or reload
+        fetch("/", { method: "HEAD", cache: "no-store" })
+          .then(function () {
+            location.reload();
+          })
+          .catch(function () {
+            setTimeout(function () {
+              retryIcon.classList.remove("spin");
+              retryLabel.textContent = TRANSLATIONS[currentLocale].retry;
+              retryBtn.disabled = false;
+            }, 600);
+          });
+      }
+
+      retryBtn.addEventListener("click", handleRetry);
+
+      // ── Automatic Online Detection ────────────────────────────────────────
+      window.addEventListener("online", function () {
+        var statusPill = document.getElementById("status-pill");
+        var statusText = document.getElementById("status-text");
+        statusPill.classList.add("online");
+        statusText.textContent = TRANSLATIONS[currentLocale].restored;
+
+        setTimeout(function () {
+          location.reload();
+        }, 400);
+      });
+    })();
+  </script>
+</body>
+</html>

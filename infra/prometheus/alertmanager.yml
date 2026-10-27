@@ -1,0 +1,138 @@
+# Alertmanager configuration for Podacium — production-grade
+# Routes: severity-based with inhibition rules to reduce noise.
+# Receivers: PagerDuty (critical), Slack (all), Email (escalation), Webhook (opsgenie/pagerduty fallback)
+route:
+  receiver: default
+  group_by: [alertname, severity, namespace, job]
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+
+  routes:
+    # Critical → PagerDuty + Slack immediately
+    - receiver: pagerduty-critical
+      match:
+        severity: critical
+      group_wait: 10s
+      repeat_interval: 1h
+      continue: true
+
+    # High → Slack + Email, wait briefly for grouping
+    - receiver: slack-high
+      match:
+        severity: high
+      group_wait: 1m
+      repeat_interval: 2h
+
+    # Warning/Info → Slack only, longer cooldown
+    - receiver: slack-all
+      match_re:
+        severity: warning|info
+      group_wait: 5m
+      repeat_interval: 8h
+
+    # Catch-all → Slack default
+    - receiver: default
+
+# Suppress low-severity alerts when a critical/high alert for the same
+# alertname is already firing (reduces noise during outages).
+inhibit_rules:
+  - source_match:
+      severity: critical
+    target_match_re:
+      severity: high|warning|info
+    equal: [alertname, namespace]
+
+  - source_match:
+      severity: high
+    target_match_re:
+      severity: warning|info
+    equal: [alertname, namespace]
+
+  - source_match:
+      alertname: HighErrorRate
+    target_match_re:
+      alertname: HighLatencyP99
+    equal: [namespace]
+
+receivers:
+  - name: default
+    slack_configs:
+      - api_url: ${SLACK_WEBHOOK_URL}
+        channel: '#alerts'
+        title: '{{ .GroupLabels.alertname }}'
+        text: '{{ .CommonAnnotations.summary }}'
+        send_resolved: true
+
+  - name: pagerduty-critical
+    pagerduty_configs:
+      - routing_key: ${PAGERDUTY_ROUTING_KEY}
+        severity: critical
+        description: '*{{ .GroupLabels.alertname }}* — {{ .CommonAnnotations.summary }}'
+        client: Podacium
+        client_url: 'https://podacium.com'
+        links:
+          - href: '{{ .CommonAnnotations.runbook }}'
+            text: Runbook
+        details:
+          alert: '{{ .GroupLabels.alertname }}'
+          value: '{{ .CommonAnnotations.description }}'
+          namespace: '{{ .GroupLabels.namespace }}'
+        send_resolved: true
+
+  - name: slack-critical
+    slack_configs:
+      - api_url: ${SLACK_WEBHOOK_URL}
+        channel: '#alerts-critical'
+        title: ':fire: *{{ .GroupLabels.alertname }}*'
+        text: >
+          *Severity:* CRITICAL
+          *Summary:* {{ .CommonAnnotations.summary }}
+          *Description:* {{ .CommonAnnotations.description }}
+          *Runbook:* {{ .CommonAnnotations.runbook }}
+        send_resolved: true
+        actions:
+          - type: button
+            text: 'View Runbook :book:'
+            url: '{{ .CommonAnnotations.runbook }}'
+          - type: button
+            text: 'Acknowledge'
+            url: 'https://podacium.com/ops/alerts/ack'
+
+  - name: slack-high
+    slack_configs:
+      - api_url: ${SLACK_WEBHOOK_URL}
+        channel: '#alerts'
+        title: ':warning: *{{ .GroupLabels.alertname }}*'
+        text: >
+          *Severity:* {{ .CommonLabels.severity | toUpper }}
+          *Summary:* {{ .CommonAnnotations.summary }}
+          *Description:* {{ .CommonAnnotations.description }}
+        send_resolved: true
+
+  - name: slack-all
+    slack_configs:
+      - api_url: ${SLACK_WEBHOOK_URL}
+        channel: '#alerts'
+        title: '{{ .GroupLabels.alertname }}'
+        text: >
+          *Severity:* {{ .CommonLabels.severity | toUpper }}
+          *Summary:* {{ .CommonAnnotations.summary }}
+        send_resolved: true
+
+  - name: email-escalation
+    email_configs:
+      - to: ${OPS_EMAIL_TO}
+        from: ${OPS_EMAIL_FROM}
+        smarthost: ${SMTP_HOST}:${SMTP_PORT}
+        auth_username: ${SMTP_USER}
+        auth_password: ${SMTP_PASSWORD}
+        require_tls: true
+        headers:
+          subject: '[PODACIUM] {{ .GroupLabels.alertname }} — {{ .GroupLabels.severity | toUpper }}'
+        send_resolved: true
+
+  - name: webhook-generic
+    webhook_configs:
+      - url: ${OPS_WEBHOOK_URL}
+        send_resolved: true

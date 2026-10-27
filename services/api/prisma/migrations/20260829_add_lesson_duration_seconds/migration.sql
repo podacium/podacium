@@ -1,0 +1,6 @@
+-- AlterTable
+ALTER TABLE "Lesson" ADD COLUMN IF NOT EXISTS "durationSeconds" INTEGER;
+
+-- AlterTable
+ALTER TABLE "Path" ADD COLUMN IF NOT EXISTS "durationMinutes" INTEGER DEFAULT 0,
+ADD COLUMN IF NOT EXISTS "totalLessons" INTEGER DEFAULT 0;

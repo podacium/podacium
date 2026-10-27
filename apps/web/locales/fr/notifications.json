@@ -1,0 +1,250 @@
+{
+    "page": {
+        "title": "Notifications",
+        "subtitle": "Gérez vos notifications et restez informé des mises à jour de vos projets et des activités de votre équipe."
+    },
+    "header": {
+        "refresh": "Actualiser",
+        "selected": "{count} sélectionné(s)",
+        "markRead": "Marquer comme lu",
+        "delete": "Supprimer"
+    },
+    "stats": {
+        "total": "Total des notifications",
+        "unread": "Non lues",
+        "read": "Lues",
+        "categories": "Par catégorie"
+    },
+    "tabs": {
+        "all": "Tout",
+        "unread": "Non lues",
+        "read": "Lues"
+    },
+    "toolbar": {
+        "search": "Rechercher des notifications...",
+        "sort": {
+            "newest": "Plus récentes d'abord",
+            "oldest": "Plus anciennes d'abord",
+            "priority": "Priorité la plus haute"
+        }
+    },
+    "filters": {
+        "title": "Filtrer les notifications",
+        "clearAll": "Effacer tout",
+        "category": "Catégorie",
+        "allCategories": "Toutes les catégories",
+        "priority": "Priorité",
+        "allPriorities": "Toutes les priorités",
+        "status": "Statut",
+        "allStatuses": "Tous les statuts",
+        "startDate": "Date de début",
+        "endDate": "Date de fin"
+    },
+    "preferences": {
+        "title": "Préférences de notification",
+        "save": "Enregistrer les préférences",
+        "loading": "Chargement des préférences...",
+        "notLoaded": "Impossible de charger les préférences de notification",
+        "retry": "Réessayer",
+        "emailNotifications": {
+            "title": "Notifications par e-mail",
+            "account": "Notifications par e-mail",
+            "accountDesc": "Recevez des notifications par e-mail pour les activités importantes du compte.",
+            "inApp": "Notifications dans l'application",
+            "inAppDesc": "Recevez des notifications dans l'interface de la plateforme.",
+            "sms": "Notifications SMS",
+            "smsDesc": "Recevez des alertes importantes par message texte."
+        },
+        "pushNotifications": {
+            "title": "Notifications push",
+            "push": "Notifications push",
+            "pushDesc": "Recevez des alertes push en temps réel sur vos appareils."
+        },
+        "marketing": {
+            "title": "Marketing et communications",
+            "marketing": "E-mails marketing",
+            "marketingDesc": "Recevez des nouvelles sur les fonctionnalités et les offres spéciales.",
+            "newsletter": "Newsletter mensuelle",
+            "newsletterDesc": "Un condensé mensuel des meilleurs projets et des statistiques de la plateforme."
+        },
+        "quietHours": {
+            "title": "Heures de tranquillité",
+            "start": "De",
+            "end": "À",
+            "description": "Ne pas envoyer de notifications pendant ces heures."
+        },
+        "digest": {
+            "title": "Résumé par e-mail",
+            "time": "Heure d'envoi",
+            "frequency": "Fréquence",
+            "frequencyOptions": {
+                "daily": "Quotidien",
+                "weekly": "Hebdomadaire",
+                "never": "Jamais"
+            },
+            "description": "Recevez un e-mail récapitulatif de vos notifications."
+        }
+    },
+    "notificationItem": {
+        "markAsRead": "Marquer comme lu",
+        "markUnread": "Marquer comme non lu",
+        "delete": "Supprimer",
+        "showMore": "En savoir plus",
+        "showLess": "En savoir moins",
+        "time": {
+            "justNow": "À l'instant",
+            "hoursAgo": "Il y a {hours}h",
+            "daysAgo": "Il y a {days}j"
+        }
+    },
+    "invitation": {
+        "title": "Invitation à rejoindre {orgName}",
+        "message": "{inviterName} vous a invité à rejoindre {orgName} en tant que {role}.",
+        "accepted": {
+            "title": "Invitation acceptée",
+            "message": "{userName} a accepté votre invitation à rejoindre {orgName}."
+        }
+    },
+    "project": {
+        "new_proposal": {
+            "title": "Nouvelle Proposition Reçue",
+            "message": "Vous avez reçu une nouvelle proposition pour votre projet '{project_title}'"
+        }
+    },
+    "proposal": {
+        "new": {
+            "title": "Nouvelle Proposition Reçue",
+            "body": "Vous avez reçu une nouvelle proposition pour votre projet '{project_title}'"
+        },
+        "accepted": {
+            "title": "Proposition Acceptée !",
+            "body": "Votre proposition pour le projet '{project_title}' a été acceptée"
+        },
+        "rejected": {
+            "title": "Mise à jour de la Proposition",
+            "body": "Votre proposition pour le projet '{project_title}' n'a pas été retenue"
+        }
+    },
+    "emptyStates": {
+        "noNotifications": {
+            "title": "Pas encore de notifications",
+            "descriptionAll": "Vous êtes à jour ! Il n'y a pas de notifications à afficher pour le moment.",
+            "descriptionUnread": "Vous n'avez aucune notification non lue.",
+            "descriptionRead": "Vous n'avez aucune notification lue."
+        }
+    },
+    "actions": {
+        "markAllRead": "Tout marquer comme lu",
+        "viewAll": "Tout afficher",
+        "tryAgain": "Réessayer",
+        "accept": "Accepter",
+        "decline": "Refuser",
+        "view": "Afficher",
+        "dismiss": "Ignorer",
+        "view_proposal": "Voir la proposition",
+        "loadMore": "Charger plus",
+        "selectAll": "Tout sélectionner",
+        "emailSent": "Email envoyé"
+    },
+    "roles": {
+        "member": "membre",
+        "admin": "administrateur",
+        "owner": "propriétaire",
+        "moderator": "modérateur",
+        "STUDENT": "étudiant",
+        "BUSINESS": "entreprise",
+        "FREELANCER": "freelance",
+        "ADMIN": "administrateur",
+        "INSTRUCTOR": "instructeur"
+    },
+    "categories": {
+        "SYSTEM": "Système",
+        "PROJECT": "Projet",
+        "COURSE": "Cours",
+        "SECURITY": "Sécurité",
+        "MARKETING": "Marketing",
+        "BILLING": "Facturation",
+        "MESSAGING": "Messages",
+        "LIVE": "Sessions en direct",
+        "SUPPORT": "Support",
+        "EDUCATION": "Éducation",
+        "FREELANCE": "Freelance"
+    },
+    "chat": {
+        "new_message": "Nouveau message de {sender_name}",
+        "sent_attachment": "A envoyé une pièce jointe",
+        "voice_note": "[Note vocale]"
+    },
+    "item": {
+        "markAsUnread": "Marquer comme non lu",
+        "markAsRead": "Marquer comme lu",
+        "delete": "Supprimer la notification"
+    },
+    "priorities": {
+        "URGENT": "Urgent",
+        "HIGH": "Haute",
+        "NORMAL": "Normale",
+        "LOW": "Basse"
+    },
+    "admin": {
+        "title": "Envoyer une notification",
+        "send": "Envoyer maintenant",
+        "sendNow": "Envoyer maintenant",
+        "schedule": "Planifier",
+        "scheduleIt": "Planifier",
+        "notificationsSent": "Les notifications ont été envoyées avec succès.",
+        "notificationsScheduled": "La notification a été planifiée.",
+        "targetOptions": {
+            "all": "Tous les utilisateurs",
+            "role": "Par rôle",
+            "specific": "Utilisateurs spécifiques"
+        },
+        "form": {
+            "title": "Titre",
+            "titlePlaceholder": "Entrez le titre de la notification",
+            "category": "Catégorie",
+            "message": "Message",
+            "messagePlaceholder": "Entrez le message de la notification",
+            "priority": "Priorité",
+            "targetUsers": "Utilisateurs cibles",
+            "targetRole": "Rôle cible",
+            "sendEmail": "Envoyer également une notification par e-mail",
+            "scheduleFor": "Prévu pour"
+        }
+    },
+    "live_session": {
+        "booked": {
+            "title": "Session Réservée",
+            "body": "Vous avez réservé \"{title}\" avec succès"
+        },
+        "cancelled": {
+            "title": "Réservation Annulée",
+            "body": "Votre réservation pour \"{title}\" a été annulée"
+        },
+        "payout": {
+            "title": "Paiement Reçu",
+            "body": "Vous avez reçu {amount} pour \"{title}\""
+        },
+        "transferred": {
+            "title": "Réservation Transférée",
+            "body": "Votre réservation pour \"{title}\" a été transférée"
+        },
+        "waitlist_promoted": {
+            "title": "Place Disponible",
+            "body": "Une place s'est libérée pour \"{title}\" — vous avez été promu de la liste d'attente"
+        }
+    },
+    "success": {
+        "markedRead": "{count} notification(s) marquée(s) comme lue(s)",
+        "deleted": "{count} notification(s) supprimée(s)",
+        "preferencesUpdated": "Préférences mises à jour avec succès"
+    },
+    "errors": {
+        "loading": "Échec du chargement des notifications. Veuillez réessayer.",
+        "markingRead": "Échec du marquage des notifications comme lues.",
+        "deleting": "Échec de la suppression des notifications.",
+        "sending": "Échec de l'envoi de la notification.",
+        "scheduling": "Échec de la planification de la notification.",
+        "updatingPreferences": "Échec de la mise à jour des préférences."
+    }
+}

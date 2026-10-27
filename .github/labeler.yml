@@ -1,0 +1,20 @@
+frontend:
+  - apps/web/*
+
+backend:
+  - services/api/*
+
+infrastructure:
+  - infra/*
+
+kubernetes:
+  - k8s/*
+
+documentation:
+  - docs/*
+
+ci-cd:
+  - .github/*
+
+scripts:
+  - scripts/*

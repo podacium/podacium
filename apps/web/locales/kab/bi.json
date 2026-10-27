@@ -1,0 +1,3318 @@
+{
+  "bi": {
+    "density": {
+      "label": "Tussda n tfelwit",
+      "compact": "Aḥerfi",
+      "comfortable": "Amagnu",
+      "spacious": "Yewseɛ"
+    },
+    "meta": {
+      "title": "Tneflit n Tnezzut (BI) - Podacium",
+      "description": "Err isefka-inek d tmuɣliwin yemmden s tallelt n teflwit n Tneflit n Tnezzut n Podacium s IA"
+    },
+    "hero": {
+      "badge": "Tasleḍt s IA",
+      "title": "Err Isefka d",
+      "titleHighlight": "Iɣtasan Igmanen",
+      "subtitle": "Ldi tazmert n isefka-inek s tmuɣliwin s IA, tisebntariyin tiwurmanin, d ifecka n ufran n yiɣtasan igmanen i tnezzutin titrarin.",
+      "cta": {
+        "primary": "Bdu Tura",
+        "secondary": "Wali Tignatin n Useqdec"
+      },
+      "integrations": {
+        "label": "Awwel s sshala ɣer:",
+        "datasets": "Igrawen n Isefka",
+        "dashboards": "Tisebntariyin",
+        "reports": "Ineqqisen",
+        "insights": "Tmuɣliwin"
+      }
+    },
+    "what": {
+      "title": "D acu-tt Tneflit n Tnezzut (BI)?",
+      "subtitle": "Podacium BI yetterra isefka iziraz d tmuɣliwin yettwasensen s tallelt n tesleḍt s IA",
+      "features": {
+        "analytics": {
+          "title": "Tasleḍt s IA",
+          "description": "Inagrawen n ulmad amurman leddin igburen d tignatin yeffren deg yisefka-inek"
+        },
+        "dashboards": {
+          "title": "Tisebntariyin Tigmanin",
+          "description": "Tisebntariyin yettwasnulfan s uwurman, yettwasefrayen s unekcum urmir"
+        },
+        "insights": {
+          "title": "Tmuɣliwin n Tigawt",
+          "description": "Awi-d iweṣṣiyen ifrawanen i yezmren ad ttwasensen s usleḍ leqqayen n isefka"
+        },
+        "decisions": {
+          "title": "Tallelt deg Yiɣtasan",
+          "description": "Tukksa n yiɣtasan s tallelt n IA, s uselked n yimihiyen d usemdu"
+        },
+        "integration": {
+          "title": "Aqqan Afessas",
+          "description": "Qqen ifecka-inek d yiɣbula n isefka-inek war ugur"
+        },
+        "realtime": {
+          "title": "Isimren deg Wakud Adigan",
+          "description": "Ḍfer tisektiyin n tnezzut-inek s trazla tusridt d yiseɣtal imiriyen"
+        }
+      }
+    },
+    "audience": {
+      "title": "I Wumi Yettwahegga",
+      "subtitle": "Yettwag i tuddsiwin n yal tiddi i yebɣan agemmu s isefka",
+      "segments": {
+        "businesses": {
+          "title": "Tinezzutin la Yettnernin",
+          "description": "Semɣer tigawtin-inek s tmuɣliwin n isefka",
+          "benefits": [
+            "Ḍfer ikalasen n KPI deg wakud adigan",
+            "Afe-d tignatin n ugemmu",
+            "Sizdeg asedmer n ttawilat",
+            "Err afran n yiɣtasan d arurad"
+          ]
+        },
+        "enterprises": {
+          "title": "Tikebbaniyin Timeqranin",
+          "description": "Tasleḍt tanaṣlit i tuddsiwin timeqranin",
+          "benefits": [
+            "Tasleḍt gar yegzumen",
+            "Isefrayen n tɣellist uzwiren",
+            "Aqqan yettwasefrayen",
+            "Tallalt taẓlayt"
+          ]
+        },
+        "startups": {
+          "title": "Tikebbaniyin Timaynutin & Imseflasen",
+          "description": "Fren s leɛqel seg wass amezwaru",
+          "benefits": [
+            "Ssuma yettwazenzen",
+            "Asebded arurad",
+            "Ineqqisen i yimestamren",
+            "Aḍfar n ugemmu"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Tignatin n Useqdec n Tidett",
+      "subtitle": "Wali amek tuddsiwin zemrent ad sqedcent Podacium BI i wakken ad awḍent ɣer rrbeḥ",
+      "featuresLabel": "Timahilin",
+      "cases": {
+        "dashboards": {
+          "title": "Tisebntariyin Tinemhalin",
+          "description": "Tamuɣli tamatut ɣef tfelwit n tnezzut",
+          "features": [
+            "Aḍfar n tnezzut d yidrimen",
+            "Tasleḍt n yimsudaɣ",
+            "Tisektiyin tinemhalin",
+            "Tasleḍt n tignatin"
+          ],
+          "impact": "Sellek ugar n 10 n yisragen yal imalas deg uneqqis"
+        },
+        "insights": {
+          "title": "Tmuɣliwin n Tnekra d Tseddi",
+          "description": "Skan tignatin u themmel ibeddilen n ssuq",
+          "features": [
+            "Asedmer n tnezzut",
+            "Askan n trula n yimsudaɣ",
+            "Asrag n ssutrat",
+            "Aselked n yimihiyen"
+          ],
+          "impact": "Snerni taseddi n uskan s 40%"
+        },
+        "decisions": {
+          "title": "Iɣtasan ɣef Yisefka",
+          "description": "Ṭṭef iɣtasan s tflest yebnan ɣef yisefka",
+          "features": [
+            "Tasleḍt n ukayad A/B",
+            "Asiḍen n ROI",
+            "Asnulfu n tseddarin",
+            "Aselked n usemdu"
+          ],
+          "impact": "Senqes akud n ufran n yiɣtasan s 60%"
+        },
+        "marketing": {
+          "title": "Beṭṭu n Yimsudaɣ",
+          "description": "Sers aḍu ɣer yimsudaɣ yettusiremen s tseddi",
+          "features": [
+            "Agraw amaddur",
+            "Askan n wazal ameddur",
+            "Aseggem n tsertiyin",
+            "Tasleḍt n yimihi n trula"
+          ],
+          "impact": "Snerni aswir n tuɣalin s 35%"
+        },
+        "risk": {
+          "title": "Asefrek n Yimihiyen",
+          "description": "Afe-d u sifsus imihiyen uqbel ad ḍrun",
+          "features": [
+            "Tifin n thila d ukellex",
+            "Aḍfar n usentem",
+            "Agemmay n yimihi n umerwas",
+            "Tasleḍt n yimihiyen inmhalanen"
+          ],
+          "impact": "Sewḥel 90% n thila yezmren ad d-teḍru"
+        },
+        "supply": {
+          "title": "Aseggem n Uẓeṭṭa n Usalay",
+          "description": "Sifsus timhalin u senqes iṣurdiyen",
+          "features": [
+            "Aseggem n uselɣeɣ",
+            "Askan n usuter",
+            "Tamellilt n yimesnuyen",
+            "Abrid n tnezzut d usawaḍ"
+          ],
+          "impact": "Senqes iṣurdiyen n uselɣeɣ s 25%"
+        }
+      }
+    },
+    "cta": {
+      "title": "Twejdeḍ ad Terreḍ Isefka-inek d Ddewla?",
+      "subtitle": "Rnu ɣer waggagen n tuddsiwin i yeṭṭfen iɣtasan d igmanen s Podacium BI",
+      "getStarted": "Bdu Tura",
+      "actions": {
+        "datasets": {
+          "title": "Sali-d Isefka-inek",
+          "description": "Bdu s usali n yigrawen n isefka-inek",
+          "link": "/bi/datasets"
+        },
+        "dashboards": {
+          "title": "Snulfu-d Tisebntariyin",
+          "description": "Bnu tisebntariyin n tesleḍt yettwasefrayen",
+          "link": "/bi/dashboards"
+        },
+        "analytics": {
+          "title": "Sekker Tasleḍt",
+          "description": "Snulfu-d tmuɣliwin seg yisefka-inek",
+          "link": "/bi/analytics"
+        }
+      },
+      "footer": "Ur yesri ara takarḍa n lbanka • Aswir baṭel yella • Sefsex melmi tebɣiḍ"
+    },
+    "howItWorks": {
+      "title": "Amek I Teddu",
+      "subtitle": "Bdu s Podacium BI deg kraḍ n yimuren ifessasen",
+      "steps": {
+        "upload": {
+          "title": "Sali-d Isefka-inek",
+          "description": "Qqen iɣbula n yisefka-inek neɣ sali-d ifuyla deg CSV, Excel, neɣ JSON. Tabaɣurt-nneɣ la tetteqqen tabaḍniyin d tsekliwin n uselɣeɣ deg usigna."
+        },
+        "analyze": {
+          "title": "Sleḍ & Lmed",
+          "description": "Inagrawen-nneɣ uzwiren ad sleḍen isefka-inek, ad afen tignatin, ad afen aswir n usemdu, u ad d-fken tmuɣliwin yemṣadan d tnezzut-inek."
+        },
+        "decide": {
+          "title": "Ṭṭef Iɣtasan Igmanen",
+          "description": "Kcem ɣer tsebntariyin tiṣeḥḥiyin, rmes iseɣtal deg wakud adigan, u awi-d iweṣṣiyen i wakken ad teṭṭfeḍ iɣtasan yebnan ɣef yisefka s tflest."
+        }
+      }
+    },
+    "faq": {
+      "title": "Isteqsiyen Yettwalsen Aṭas",
+      "subtitle": "Akk ayen yessefk ad teẓreḍ ɣef Podacium BI",
+      "questions": [
+        {
+          "question": "Anta tewsatin n yiɣbula n isefka i zemreɣ ad qqneɣ?",
+          "answer": "Podacium BI yettdag aṭas n tewsatin n yiɣbula am CSV, Excel, JSON, d tbankiwin n isefka yettwasnen. Netteddu ad nrennu iqqanen imaynuten yal ass."
+        },
+        {
+          "question": "Isefka-inu ḍemnen deg tɣellist?",
+          "answer": "Ih, s tidett. Nesseqdac aselket n tkebbaniyin (AES-256) deg weḥraz d usawaḍ. Akk isefka ttwaḥerzen deg wammasen n isefka iqadren asaḍuf s uselked n tɣellist amezzayan. Tesɛiḍ aḥkam d wayla amadud ɣef yisefka-inek."
+        },
+        {
+          "question": "Esriɣ timussniwin titiknikiyin i useqdec n Podacium BI?",
+          "answer": "Uhu! Podacium BI yettwag i yimseqdacen itiknikiyen d wid ur nelli ara. Tabaɣurt-nneɣ s IA tessufuɣ-d tmuɣliwin d tsebntariyin s uwurman. Maca, imseqdacen uzwiren zemren ad sefrin tuttriwin d tesleḍt leqqayen."
+        },
+        {
+          "question": "Amek tella tseddi n yisakan?",
+          "answer": "Inagrawen-nneɣ ttawḍen ɣer 73% n tseddi talemmast deg yal tamhelt n uskan. Taseddi tettnerni s wakud ticki anagraw yelmed seg tseddarin n isefka-inek. Nettak-d agemmay n tflest deg akk isakan."
+        },
+        {
+          "question": "Zemreɣ ad ssifḍeɣ ineqqisen d tsebntariyin-inu?",
+          "answer": "Ih! Tzemreḍ ad tessifḍeḍ tisebntariyin deg PDF, PNG, neɣ HTML. Isefka zemren ad ttwasifḍen deg CSV, Excel, neɣ JSON. Netteddu ad nrennu tarrayin nniḍen n usifeḍ."
+        },
+        {
+          "question": "D acu yellan deg uswir n baṭel?",
+          "answer": "Aswir n baṭel yesɛa armi d 2 n yigrawen n isefka, 4 n tsebntariyin, d tmahilin tigejdanin n tesleḍt. D ayen yelhan i yimdanen i la yebddun deg BI."
+        },
+        {
+          "question": "Tezmer terbaɛt-iw ad teddukkel ɣef yiwet n tsebntart?",
+          "answer": "Ih. Isenfaren n tuddsa ttaken-d tamhelt n tdukli s yigrawen, tisebntariyin, d yineqqisen i yebḍan. Iɛeggalen zemren ad leddin tisebntariyin akken, ad rnun tizemmar, ad heyyin tisuraf, u ad rmesen iseɣtal m'ara d-yili usimer. Yal tuddsa tesɛa amḍiq-is yettwaḥerzen."
+        },
+        {
+          "question": "Eski Podacium BI yettak-d API i unekcum s usnas?",
+          "answer": "Ih. Podacium BI yettak-d API REST i yessurufen asali n yigrawen, tuttriwin n isefka, asnulfu n yineqqisen, d usekcem n BI deg yisnisen-inek. Anekcum ɣer API yella deg yisenfaren n Tmerniwt (Growth) d wid yugaren, s warraten ikamalen."
+        },
+        {
+          "question": "Acḥal n wakud i tteqqimen yisefka?",
+          "answer": "Akud n weḥraz yeṭṭafar aɣawas-inek. Isenfaren n baṭel ḥerrzen isefka i 90 n wussan, isenfaren n Tmerniwt i 1 n useggas, ma d isenfaren Scale d Elite fkan-d aḥraz war talast s tsertiyin n uḥraz yettwasefrayen. Tzemreḍ ad tessifḍeḍ isefka-inek melmi tebɣiḍ uqbel ad tfakk tallit."
+        },
+        {
+          "question": "Zemreɣ ad ssewjedeɣ asnulfu awurman n yineqqisen?",
+          "answer": "Ih. Tzemreḍ ad tessewjedeḍ ineqqisen ad d-ttwasnulfun yal ass, yal imalas, neɣ yal aggur u ad tt-waznen s yimayl ɣer wid yerra wawal. Ineqqisen ttwasnen deg waṭas n tewsatin am PDF, CSV, d Excel. Tamahilt-agi tella deg yisenfaren n Tmerniwt d wid yugaren."
+        }
+      ]
+    },
+    "common": {
+      "loading": "La yessedlay...",
+      "error": "Tella-d tuccḍa",
+      "retry": "Ɛreḍ tikkelt nniḍen",
+      "save": "Sekles",
+      "cancel": "Sefsex",
+      "confirm": "Sentem",
+      "close": "Mdel",
+      "bytes": "octets",
+      "kb": "Ko",
+      "mb": "Mo",
+      "gb": "Go",
+      "ago": "aya",
+      "unknown": "Ur yettwassen ara",
+      "top": "Afella",
+      "bottom": "Adda",
+      "left": "Zelmaḍ",
+      "right": "Yeppas",
+      "hidden": "Yeffer",
+      "noDescription": "Ulac aglam yettwamlen",
+      "stats": {
+        "min": "Adday",
+        "max": "Aflay",
+        "mean": "Alemmas",
+        "median": "Talemmast",
+        "stdDev": "Tasemda Tamagnut",
+        "sum": "Semmdu Asemday",
+        "count": "Amḍan Asemday",
+        "nulls": "Azalen Ixuṣṣen",
+        "uniqueValues": "Agemmay n Umgired",
+        "unavailable": "Ur yelli ara i tewsit-agi"
+      },
+      "importance": {
+        "high": "Afellay",
+        "medium": "Alemmas",
+        "low": "Adday"
+      },
+      "trajectories": {
+        "UPWARD": "Yuli",
+        "DOWNWARD": "Yuder",
+        "STABLE": "Yerked"
+      }
+    },
+    "analytics": {
+      "meta": {
+        "title": "Ammas n Tesleḍt - Podacium",
+        "description": "Kcem s telqayt deg yisefka-inek s tesleḍt tagejdant s tallelt n IA."
+      },
+      "hero": {
+        "badge": "Tamussni Tagejdant",
+        "title": "Tasleḍt n Isefka",
+        "titleHighlight": "Deg Ulqam Amaynut",
+        "subtitle": "Fren agraw n isefka i wakken ad d-tegreḍ s zreb ineqqisen yemmden seg tesleḍt n tignatin ar uskan n tnekra.",
+        "cta": "Sleḍ Agraw n Isefka"
+      },
+      "analysis": {
+        "defaultTitle": "Tasleḍt n Isefka",
+        "generalDomain": "Amatu",
+        "rows": "izirigen"
+      },
+      "webgl": {
+        "highDensityRenderer": "Asemsedday n Tussda Tameqqrant ({count} n wagazen)"
+      },
+      "summary": {
+        "title": "Agzul Anemhal",
+        "subtitle": "Tamuɣli tastratijit ɣef ugraw-inek n isefka yettwasemden s IA.",
+        "confidenceScore": "Agemmay n Tflest",
+        "healthScore": "Agemmay n Tdawsa",
+        "insights": {
+          "standard": "Tasleḍt n '{{target}}' deg '{{dimension}}' teskan-d llsas yerkden s umgired ameskan n tsemhuyin.",
+          "positive_growth": "Tamellilt taflayt tettwafa! '{{target}}' yeskan-d tnekra yulin s uqader ameqran seg yigzumen.",
+          "risk_detected": "Tigawt tettwasuter: Waṭas n yizagaten yettwafen deg '{{target}}' i yezmren ad ssekken uguren deg taɣara n isefka neɣ tedyant ur nemyeccad ara deg tnezzut."
+        }
+      },
+      "selection": {
+        "title": "Fren Agraw n Isefka",
+        "placeholder": "Nadi igrawen s yisem neɣ s taɣult...",
+        "empty": "Ulac agraw n isefka yettwafen i ymṣadan d unadi-inek.",
+        "upload": "Sali-d Agraw Amaynut",
+        "general": "Amatu"
+      },
+      "core": {
+        "trend": {
+          "title": "Tasleḍt n Tignatin",
+          "description": "Ibrid n ugemmu deg talliyin yemxallafen.",
+          "insights": {
+            "trajectory": "Ibrid amatu {{trajectory}} s ugemmu n {{growth}}% ɣef {{months}} n wagguren."
+          }
+        },
+        "comparative": {
+          "title": "Tasleḍt Tamgaradant",
+          "description": "Tisektiyin n tmellilt gar talliyin.",
+          "mom": "Aggur ɣer Waggur",
+          "yoy": "Aseggas ɣer Useggas",
+          "insights": {
+            "pop": "Aggur aneggaru yeskan-d abeddel n {{mom}}% MoM d {{yoy}}% YoY.",
+            "insufficient": "Isefka imazrayen xuṣṣen i usegdel amadud."
+          }
+        },
+        "segmentation": {
+          "title": "Tuzzya d Beṭṭu",
+          "description": "Igzumen igejdanen i yettawin tisektiyin-inek.",
+          "insights": {
+            "primary": "Beṭṭu amezwaru yettwafa deg {{dimension}} anda agzum amezwaru yeṭṭef aḥric d ameqran seg wazal."
+          }
+        },
+        "root_cause": {
+          "title": "Tasleḍt n Yiẓuran n Tmentilt",
+          "description": "Iffura igejdanen i yettembiwilen KPI-inek.",
+          "insights": {
+            "primary": "'{{driver}}' yettwassen d netta i d afrir amezwaru n umgired deg '{{target}}'."
+          }
+        },
+        "what_if": {
+          "title": "Tasleḍt Lemmer (What-If)",
+          "description": "Asnulfu n tseddarin i yigmaḍ n yimal.",
+          "insights": {
+            "optimistic": "Asemday n {{column}} yezmer ad yaweḍ ɣer {{value}} deg tseddart n tezmert (+30%)."
+          }
+        },
+        "forecasting": {
+          "title": "Askan n Yimal",
+          "description": "Tamellilt n yimal yettwasemden s IA.",
+          "insights": {
+            "projected": "Ɣef llsas n tignatin timiriyin, {{column}} yettwarja ad yerked ɣef wazal n {{value}} deg 3 n wagguren.",
+            "insufficient": "Isefka imazrayen xuṣṣen i uskan d amwellef."
+          },
+          "periods": {
+            "next_month": "Aggur d-Itteddun",
+            "three_months": "Deg 3 n Wagguren",
+            "six_months": "Deg 6 n Wagguren"
+          }
+        },
+        "correlation": {
+          "title": "Tafelwit n Wassawen (Correlation)",
+          "description": "Assaɣen gar yisekkilen igejdanen.",
+          "insights": {
+            "strongest": "Assaɣen iǧehden yettwafen gar tgejda s wassaɣ > 0.7."
+          }
+        },
+        "anomaly": {
+          "title": "Tifin n Yizagaten",
+          "description": "Azalen inafalen d wurkiden deg yisefka.",
+          "insights": {
+            "detected": "Ttwafehm-d {{count}} n yizagaten imḍanen deg {{column}}."
+          }
+        },
+        "funnel": {
+          "title": "Tasleḍt n Telkin (Funnel)",
+          "description": "Aswir n tuɣalin gar yimuren.",
+          "insights": {
+            "conversion": "Talkint tessekna-d '{{stage}}' d amur aneggaru s {{conversion}}% n tuɣalin tamatut.",
+            "no_stage": "Ulac tagejdit n tewsit n wamur i tesleḍt n telkint."
+          }
+        },
+        "profitability": {
+          "title": "Tasleḍt n Tbaɣurt d Lfayda",
+          "description": "Beṭṭu n lfayda tamatut d daxel n tedrimt.",
+          "grossMargin": "Lfayda Tamatut",
+          "totalRevenue": "Idrimen n Tnezzut Isemdayen",
+          "insights": {
+            "summary": "Lfayda tamatut tella ɣer {{margin}}% s tedrimt tamatut n {{revenue}}.",
+            "missing": "Tigejda n tedrimt neɣ n tesqamunt xuṣṣent i tesleḍt n lfayda."
+          }
+        }
+      },
+      "empty": {
+        "title": "Ulac tasleḍt yakan",
+        "description": "Fren agraw n isefka i wakken ad d-tegreḍ aneqqis n tesleḍt yemmed."
+      },
+      "errors": {
+        "analysisFailed": "Tasleḍt n ugraw-agi n isefka ur teddi ara",
+        "analysisFailedDesc": "Yella wayen ixuṣṣen deg tesleḍt. Ttxil-k ɛreḍ tikkelt nniḍen neɣ fren agraw nniḍen.",
+        "retry": "Ɛreḍ Tikkelt Nniḍen",
+        "selectAnother": "Fren Agraw Nniḍen"
+      }
+    },
+    "datasets": {
+      "meta": {
+        "title": "Igrawen n Isefka - Business Intelligence",
+        "description": "Sefrek, sali-d, u sleḍ igrawen-inek n isefka"
+      },
+      "nav": {
+        "back": "Uɣal ɣer BI",
+        "breadcrumb": {
+          "home": "Ageddiw",
+          "bi": "Tussna n Tnezzut",
+          "datasets": "Igrawen n Isefka",
+          "upload": "Sali-d",
+          "details": "Afruri"
+        }
+      },
+      "list": {
+        "title": "Igrawen-inek n Isefka",
+        "subtitle": "Sefrek u sleḍ tigrawin-inek n isefka",
+        "uploadButton": "Sali-d Agraw n Isefka",
+        "quickActions": {
+          "title": "Tigawtin Tiruradin",
+          "upload": "Sali-d Afaylu",
+          "uploadDesc": "CSV, JSON, Excel",
+          "whatsapp": "Aterras seg WhatsApp",
+          "whatsappDesc": "Senteḍ iznan-inek",
+          "manual": "Anekcum s Ufus",
+          "manualDesc": "Aru srid",
+          "recent": "Armud Annegru",
+          "recentDesc": "Wali isimren ineggura",
+          "analytics": "Ammas n Tesleḍt",
+          "analyticsDesc": "Tmuɣliwin timatutin"
+        },
+        "empty": {
+          "title": "Ulac Igrawen n Isefka Yakan",
+          "description": "Sali-d agraw-inek amezwaru n isefka i wakken ad tebduḍ tasleḍt s tmuɣliwin n IA.",
+          "cta": "Sali-d Agraw-inek Amezwaru",
+          "action": "Sali-d Agraw n Isefka"
+        },
+        "search": {
+          "placeholder": "Nadi igrawen n isefka...",
+          "noResults": "Ulac igrawen n isefka yemṣadan d unadi-inek"
+        },
+        "filters": {
+          "all": "Akk Igrawen",
+          "domain": "Taɣult",
+          "status": "Addad",
+          "format": "Tamselt",
+          "sortBy": "Semskel s",
+          "search": "Nadi igrawen n isefka...",
+          "sortOptions": {
+            "newest": "Amaynut D Amezwaru",
+            "oldest": "Aqbur D Amezwaru",
+            "name": "Isem (A-Z)",
+            "nameDesc": "Isem (Z-A)",
+            "size": "Ameqran D Amezwaru",
+            "rows": "Ugar n Izirigen"
+          }
+        },
+        "actions": {
+          "upload": "Sali-d Agraw n Isefka"
+        },
+        "table": {
+          "name": "Isem n Ugraw",
+          "domain": "Taɣult",
+          "format": "Tamselt",
+          "rows": "Izirigen",
+          "columns": "Tigejda",
+          "size": "Tiddi",
+          "status": "Addad",
+          "quality": "Taɣara",
+          "created": "Yettwasnulfa",
+          "updated": "Yettwasmirwet",
+          "location": "Adig",
+          "actions": {
+            "title": "Tigawtin",
+            "view": "Wali Afruri",
+            "analyze": "Sekker Tasleḍt",
+            "preview": "Tamuɣli",
+            "export": "Sifeḍ",
+            "delete": "Kkes",
+            "duplicate": "Sleg",
+            "share": "Bḍu"
+          }
+        },
+        "status": {
+          "pending": "Ittraǧu",
+          "processing": "La yetteddu",
+          "ready": "Yewjed",
+          "uploaded": "Yettwasali-d",
+          "processed": "Yettwasleḍ",
+          "error": "Tuccḍa",
+          "archived": "Yettwaḥrez"
+        },
+        "bulk": {
+          "selected": "{count} n yiferdisen ttwafernen",
+          "selectAll": "Fren Akk"
+        },
+        "bulkDelete": {
+          "button": "Kkes ({count})",
+          "confirmTitle": "Ad tekkseḍ {count} n yiferdisen?",
+          "confirmMessage": "Tebɣiḍ ad tekkseḍ {count} n yiferdisen? Tigawt-agi ur tettwagdel ara.",
+          "success": "{count} n yiferdisen ttwakksen s urebbaḥ",
+          "partialSuccess": "{success} ttwakksen, {failed} xesren",
+          "error": "Tukksa n yiferdisen ur teddi ara",
+          "deleting": "La yettekkes {count} n yiferdisen..."
+        },
+        "error": {
+          "generic": "Asali n yigrawen ur yeddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "uploadFailed": "Asali n ugraw ur yeddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "deleteFailed": "Tukksa n ugraw ur teddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "notFound": "Agraw n isefka ur yettwafa ara.",
+          "missingOrgId": "Asulay n tuddsa ixuṣṣ.",
+          "invalidFileType": "Tawsit n ufaylu ur teqbil ara. CSV, Excel, d JSON kan i yettwaqbalen.",
+          "ingestFailed": "Anekcum n ugraw n isefka ur yeddi ara.",
+          "noOrg": "Amseqdac ur yeqqin ara ɣer kra n tuddsa.",
+          "previewFailed": "Tamuɣli n ubrid ur teddi ara.",
+          "accessDenied": "Anekcum yettwagdel.",
+          "listFailed": "Ur yezmir ara ad d-yessken tabdart n yigrawen.",
+          "updateFailed": "Asimret n ugraw ur yeddi ara.",
+          "fileNotFound": "Afaylu ur yettwafa ara.",
+          "exportFailed": "Asifeḍ n ugraw ur yeddi ara.",
+          "empty": "Agraw n isefka d ilem.",
+          "validationFailed": "Asentem ur yeddi ara.",
+          "noFilePath": "Abrid n ufaylu ixuṣṣ.",
+          "qualityFailed": "Aselked n taɣara ur yeddi ara."
+        },
+        "success": {
+          "uploaded": "Agraw n isefka yettwasali-d s urebbaḥ.",
+          "ingested": "Agraw n isefka yettwasekcem s urebbaḥ.",
+          "retrieved": "Agraw n isefka yettwassiweḍ-d s urebbaḥ.",
+          "updated": "Agraw n isefka yettwasmirwet s urebbaḥ."
+        },
+        "domains": {
+          "finance": "Tadrimt",
+          "marketing": "Azenz d Usnuzeg",
+          "sales": "Azenzi",
+          "operations": "Timhalin",
+          "hr": "Tisugawin Titawiyin (RH)",
+          "customer": "Amsudaɣ",
+          "product": "Afaris",
+          "other": "Wayeḍ"
+        },
+        "pagination": {
+          "showing": "Askan n",
+          "of": "seg",
+          "datasets": "igrawen n isefka",
+          "previous": "Uqbel",
+          "next": "D-Itteddun",
+          "perPage": "deg usebter"
+        },
+        "stats": {
+          "total": "Asemday n Yigrawen",
+          "rows": "Asemday n Yizirigen",
+          "quality": "Taɣara Talemmast",
+          "totalRows": "Asemday n Yizirigen",
+          "avgQuality": "Taɣara Talemmast",
+          "storage": "Aḥraz Yettwasqedcen"
+        }
+      },
+      "modals": {
+        "delete": {
+          "title": "Kkes Agraw n Isefka",
+          "subtitle": "Tigawt-agi ur tettwagdel ara",
+          "message": "Tebɣiḍ ad tekkseḍ {name}? Akk isefka d tesleḍt yeqqnen ɣur-s ad ttwakksen i lebda.",
+          "confirm": "Kkes Agraw",
+          "deleting": "La yettekkes...",
+          "cancel": "Sefsex"
+        }
+      },
+      "upload": {
+        "title": "Sali-d Agraw n Isefka",
+        "subtitle": "Rnu agraw amaynut n isefka ɣer tegrawt-inek",
+        "semicolon": "Tanqqiṭ d tinqidt (;)",
+        "firstLines": "{count} n yijerriḍen imezwura",
+        "tabs": {
+          "file": "Asali n ufaylu",
+          "whatsapp": "WhatsApp",
+          "manual": "Asekcem s ufus",
+          "whatsappData": "Isefka n WhatsApp",
+          "manualData": "Isefka n usekcem s ufus",
+          "whatsappImport": "Asekter n WhatsApp {date}",
+          "manualImport": "Asekcem s ufus {date}"
+        },
+        "steps": {
+          "select": "Fren Afaylu",
+          "configure": "Sefru",
+          "review": "Wali tikkelt nniḍen",
+          "complete": "Yemmed"
+        },
+        "dropzone": {
+          "title": "Zuɣer u sers afaylu-inek dagi",
+          "subtitle": "neɣ tekki i wakken ad tnadiḍ ifuyla",
+          "formats": "Timselyin yettwaqbalen: CSV, Excel (.xlsx, .xls), JSON",
+          "maxSize": "Tiddi taflayt n ufaylu: 100MB",
+          "uploading": "La yettali-d...",
+          "processing": "La yetteddu usleḍ n ufaylu-inek...",
+          "success": "Afaylu yettwasali-d s urebbaḥ!",
+          "error": "Asali ur yeddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "remove": "Kkes"
+        },
+        "form": {
+          "name": {
+            "label": "Isem n Ugraw",
+            "placeholder": "Sekcem isem ifrawanen",
+            "hint": "Fren isem ibanen i yettwaṭṭfen deg wallaɣ",
+            "required": "Isem n ugraw n isefka d amadan"
+          },
+          "description": {
+            "label": "Aglam",
+            "placeholder": "Glem ayen yellan deg ugraw-agi...",
+            "hint": "D afranay maca yelha i useddu ifazen"
+          },
+          "domain": {
+            "label": "Taɣult",
+            "placeholder": "Fren taɣult",
+            "hint": "Sismil agraw-inek i unadi fessasen"
+          },
+          "organization": {
+            "label": "Tuddsa",
+            "placeholder": "Fren tuddsa",
+            "hint": "Fren anwa tuddsa i yeṭṭfen agraw-agi"
+          },
+          "advanced": {
+            "title": "Isefrayen Uzwiren",
+            "autoProcess": "Asleḍ awurman sdeffir usali",
+            "validateData": "Aselked n taɣara n isefka",
+            "detectTypes": "Tifin tawurmant n tewsatin n tgejda"
+          }
+        },
+        "preview": {
+          "title": "Tamuɣli n Ufaylu",
+          "datasetConfiguration": "Asefrek n Ugraw",
+          "fileName": "Isem n Ufaylu",
+          "fileSize": "Tiddi n Ufaylu",
+          "estimatedRows": "Izirigen Yettwasemden",
+          "columns": "Tigejda Yettwafen",
+          "sampleData": "Isefka n Tmeddurt (5 n Yizirigen Imezwura)"
+        },
+        "actions": {
+          "cancel": "Sefsex",
+          "back": "Uɣal ɣer deffir",
+          "next": "D-Itteddun",
+          "upload": "Sali-d Agraw n Isefka",
+          "uploadAnother": "Sali-d Agraw Nniḍen",
+          "viewDataset": "Wali Agraw"
+        },
+        "success": {
+          "title": "Agraw Yettwasali-d s Urebbaḥ!",
+          "message": "Agraw-inek yettwasali-d u la yetteddu usleḍ-is.",
+          "processing": "IA la tsellḍed isefka-inek. Yezmer ad yeṭṭef kra n tesdidin.",
+          "whatNext": "D acu tebɣiḍ ad tegeḍ sdeffir waya?"
+        },
+        "errors": {
+          "invalidFormat": "Tamselt n ufaylu ur teqbil ara. Ttxil-k sali-d CSV, Excel, neɣ JSON.",
+          "fileTooLarge": "Afaylu meqqer aṭas. Tiddi taflayt d 100MB.",
+          "uploadFailed": "Asali ur yeddi ara. Senqed aqqan-inek u ɛreḍ tikkelt nniḍen.",
+          "processingFailed": "Asleḍ ur yeddi ara. Afaylu yezmer ad yexser neɣ tamselt-is ur tettwaqbal ara.",
+          "noFile": "Ttxil-k fren afaylu i usali",
+          "noOrganization": "Ulac tuddsa yettwafen. Ttxil-k snulfu-d neɣ kcem ɣer tuddsa uqbel."
+        }
+      },
+      "whatsapp": {
+        "title": "Aterras seg WhatsApp",
+        "subtitle": "Senteḍ iznan-inek n tnezzut dagi",
+        "placeholder": "Senteḍ iznan dagi...\n\nAmedya:\nZenzen 5 n teḥbulin s 250 DZD\nUɣen-d awren 1500\nIdrimen n wass-a 15000\nAchat huile 800 DA",
+        "parse": "Sleḍ Iznan",
+        "parsing": "La yesleḍ...",
+        "result": {
+          "title": "Igmaḍ",
+          "found": "Yettwafa-d {count} n timhalin",
+          "none": "Ulac tamhelt yettwafen. Ɛreḍ ad taruḍ azalen s yimḍanen.",
+          "save": "Sekles d Agraw n Isefka",
+          "saving": "La isekles..."
+        },
+        "columns": {
+          "date": "Azemz",
+          "description": "Aglam",
+          "category": "Taggayt",
+          "type": "Tawsit",
+          "amount": "Azal"
+        }
+      },
+      "manual": {
+        "title": "Anekcum s Ufus",
+        "subtitle": "Rnu timhalin-inek yiwen yiwen",
+        "addRow": "Rnu Azirig",
+        "removeRow": "Kkes",
+        "currency": "DZD",
+        "fields": {
+          "date": "Azemz",
+          "description": "Aglam",
+          "descriptionPlaceholder": "D acu i d-yeḍran...",
+          "category": "Taggayt",
+          "type": "Tawsit",
+          "amount": "Azal (DZD)",
+          "quantity": "Amḍan"
+        },
+        "categories": {
+          "vente": "Azenzi",
+          "achat": "Tiɣin",
+          "depense": "Tasaɣurt",
+          "revenu": "Tadrimt",
+          "facture": "Tafaturt",
+          "stock": "Aselɣeɣ",
+          "autre": "Wayeḍ"
+        },
+        "types": {
+          "revenu": "Tadrimt Yekcmen",
+          "depense": "Tasaɣurt"
+        },
+        "submit": "Sekles Akk",
+        "submitting": "La isekles...",
+        "next": "Ɣer zdat",
+        "modeForm": "Anekcum s Tferkit",
+        "modeSheet": "Tafelwit n Isefka",
+        "sheetHint": "Tekki ɣef taylwin i ubeddel · Senteḍ seg Excel s Ctrl+V · Sikel s Tab/Enter/Tineccabin",
+        "rowCount": "{count} n yizirigen",
+        "clearAll": "Kkes Akk",
+        "clearAllConfirm": "Waya ad yekkes akk isefka u ad yerr tigejda am zik. Ad tkemmleḍ?",
+        "undo": "Err-d",
+        "redo": "Ales",
+        "firstRowPromoted": "Azirig amezwaru yettusali d izwilen n tgejdit",
+        "csvExported": "CSV yettwasifeḍ",
+        "noDataAnalyze": "Ulac isefka i usleḍ",
+        "allColumnsValidated": "Akk tigejda ttwasnetment ✓",
+        "editHeader": "Beddel azwel n tgejdit",
+        "removeColumn": "Kkes tagejdit",
+        "add20Rows": "+20 n yizirigen",
+        "validation": {
+          "invalidAmount": "Azal yessefk ad yili d amḍan",
+          "invalidDate": "Tamselt n uzemz ur teddi ara",
+          "emptyDescription": "Aglam d amadan"
+        },
+        "pasteResult": "Yettwasenteḍ {count} n yizirigen seg teskilt",
+        "sidebar": {
+          "structure": "Tuddsa",
+          "addRows": "Rnu izirigen",
+          "addColumn": "Rnu tagejdit",
+          "deleteRows": "Kkes wid yettwafernen",
+          "firstRowHeaders": "Azirig amezwaru → Izwilen",
+          "firstRowHeadersHint": "Err azirig amezwaru d ismawen n tgejda",
+          "data": "Ifecka n Isefka",
+          "templates": "Tineɣrufin",
+          "templatesHint": "Sali tuddsa BI yewjden",
+          "detectTypes": "Af-d tewsatin",
+          "detectTypesHint": "Sleḍ tigejda i Amḍan, Azemz, neɣ Aḍris",
+          "validateCols": "Sentem",
+          "validateColsHint": "Senqed ma llant tgejda war isem neɣ d tilmatin",
+          "io": "Asekcem / Asifeḍ",
+          "exportCsv": "Sifeḍ CSV",
+          "exportCsvHint": "Zdem tafelwit d afaylu .csv",
+          "cleanup": "Asizdeg",
+          "clearAllHint": "Kkes akk isefka u sers tigejda seg tazwara"
+        },
+        "templates": {
+          "title": "Fren Taneɣruft",
+          "close": "Mdel",
+          "cancel": "Sefsex",
+          "noTemplates": "Ulac tineɣrufin yettwafen",
+          "searchPlaceholder": "Nadi tineɣrufin...",
+          "categoryFilter": "Akk Taggayin",
+          "categories": {
+            "retail": "Azenzi s Tcetrit",
+            "food": "Učči d Tisasit",
+            "ecommerce": "Tanezzut deg Internet",
+            "services": "Imeẓla",
+            "finance": "Tadrimt",
+            "inventory": "Aselɣeɣ",
+            "sales": "Azenzi",
+            "hr": "Tisugawin Titawiyin",
+            "logistics": "Tasuddest n Usawaḍ",
+            "customer": "Aḍfar n Yimsudaɣ",
+            "marketing": "Azenz d Usnuzeg"
+          },
+          "items": {
+            "retail_sales": {
+              "name": "Azenzi s Tcetrit",
+              "description": "Aḍfar n uzenzi n yal ass deg tḥuna",
+              "preview": "Tigejda: Azemz, Aferdis, SKU, Amḍan..."
+            },
+            "restaurant_orders": {
+              "name": "Tisutriwin n Tneccact",
+              "description": "Aḍfar n teḍwilt, tisutriwin, d tedrimt n yal ass",
+              "preview": "Tigejda: Azemz, Taḍwilt, Tasutert, Asemday..."
+            },
+            "ecommerce_orders": {
+              "name": "Tisutriwin n Tnezzut deg Internet",
+              "description": "Aḍfar n tnezzut deg tḥanut n Internet",
+              "preview": "Tigejda: Azemz n Tsutert, Amsudaɣ, Afaris..."
+            },
+            "services": {
+              "name": "Imeẓla & Asiwel",
+              "description": "Aḍfar n yisragen n yimsudaɣ d tefturin",
+              "preview": "Tigejda: Amsudaɣ, Ameẓlu, Isragen, Azal..."
+            },
+            "financial": {
+              "name": "Akalas n Tedrimt",
+              "description": "Tasiḍent tamatut, tadrimt yekcmen, d tsaɣurin",
+              "preview": "Tigejda: Azemz, Aglam, Azal..."
+            },
+            "inventory": {
+              "name": "Aḍfar n Uselɣeɣ",
+              "description": "Aswir n uselɣeɣ deg lemxazen d umbiwel",
+              "preview": "Tigejda: Afaris, SKU, Aselɣeɣ, Tesqamunt..."
+            },
+            "sales_pipeline": {
+              "name": "Ibrid n Uzenzi",
+              "description": "Aḍfar n tnezzut B2B d CRM",
+              "preview": "Tigejda: Amsuddeg, Takebbanit, Azal, Addad..."
+            },
+            "hr_payroll": {
+              "name": "Akalas n Yixellisen",
+              "description": "Ixellisen n yixeddamen n yal aggur",
+              "preview": "Tigejda: Axeddam, Lxelsa, Asemday..."
+            },
+            "logistics": {
+              "name": "Tasuddest d Usawaḍ",
+              "description": "Aḍfar n tkeṛṛusin d yisawaḍen",
+              "preview": "Tigejda: ID n Usawaḍ, Amsayan, Addad..."
+            },
+            "expense_claims": {
+              "name": "Tisutriwin n Tsaɣurin",
+              "description": "Tuɣalin n yidrimen n yixeddamen",
+              "preview": "Tigejda: Axeddam, Tawsit n Tsaɣurt, Azal..."
+            },
+            "customer_feedback": {
+              "name": "Tamuɣli n Yimsudaɣ",
+              "description": "Igemmayen n NPS d lferḥ n yimsudaɣ",
+              "preview": "Tigejda: Amsudaɣ, Afaris, Agemmay..."
+            },
+            "marketing_campaigns": {
+              "name": "Tsertiyin n Usnuzeg",
+              "description": "Iṣurdiyen n ucehher d yimsudaɣ imaynuten",
+              "preview": "Tigejda: Tasertit, Aɣawas n Tedrimt, Imsudag..."
+            }
+          },
+          "useTemplate": "Seqdec Taneɣruft"
+        }
+      },
+      "errors": {
+        "loadFailed": "Ur yezmir ara ad d-yessali tagrumiwin n yisefka"
+      },
+      "quickEntry": {
+        "errors": {
+          "parseFailed": "Afecl deg tesleḍt n yiznan",
+          "handlerNotConfigured": "Asefrek n yisefka ur yettwasbedd ara. Ttxil-k seqdec afecku-agi deg usali n ugraw."
+        }
+      },
+      "spreadsheet": {
+        "templateLoaded": "Taneɣruft \"{name}\" tettwasali",
+        "detectedTypes": "Anawen yettwafen: {types}",
+        "errors": {
+          "prepareFailed": "Afecl deg uheggi n yisefka"
+        }
+      },
+      "detail": {
+        "title": "Afruri n Ugraw n Isefka",
+        "columns": "Tigejda:",
+        "moreColumns": "+{count} nniḍen",
+        "hero": {
+          "health": "Tazmert",
+          "editDetails": "Snifel iferdisen",
+          "editModal": {
+            "nameLabel": "Isem n tegrawt n yisefka",
+            "domainLabel": "Taɣult n umahil",
+            "descriptionLabel": "Aglam",
+            "cancel": "Sefsex",
+            "save": "Sekles"
+          },
+          "stats": {
+            "rows": "{count} n yizirigen",
+            "columns": "{count} n tgejda",
+            "createdOn": "Yettwarna deg {date}"
+          },
+          "actions": {
+            "smartClean": "Asizdeg uḥric 1-Usiti",
+            "export": "Sifeḍ",
+            "exportTitle": "Sifeḍ afaylu CSV",
+            "refreshTitle": "Smiren isefka",
+            "deleteTitle": "Kkes tagrawt n yisefka"
+          }
+        },
+        "loading": {
+          "title": "Asali n tagrumma n isefka...",
+          "subtitle": "Tasleṭ n tmezgiyin, taɣara d yisefka inamkanes."
+        },
+        "actions": {
+          "edit": "Bded Afruri",
+          "share": "Bḍu",
+          "duplicate": "Sleg",
+          "delete": "Kkes Agraw",
+          "save": "Sekles Ibeddilen",
+          "cancel": "Sefsex",
+          "confirmDelete": "Kkes Agraw n Isefka",
+          "export": "Sifeḍ"
+        },
+        "toast": {
+          "updated": "Isefka ifellayen ttusmirnen",
+          "deleted": "Tagrumma n isefka tettwakkes",
+          "contractActivated": "Agatu n yisefka yermed",
+          "snapshotCaptured": "Tuṭṭfa n tugna tekfa s lweqt",
+          "policySaved": "Tasertit n tɣellist tettwasekles",
+          "webhookRegistered": "Webhook yettwasekles",
+          "typeUpdated": "Tawsit n tgejdit tettusmiren",
+          "tagAdded": "Tabzert tettwarnu: {tag}",
+          "tagRemoved": "Tabzert tettwakkes: {tag}",
+          "snapshotRestored": "Tugna tettwarrad: {id}",
+          "webhookTestSuccess": "Asekyed n webhook yettwazen s lweqt",
+          "webhookTestError": "Asekyed n webhook ur yezmir ara",
+          "queryFailed": "Aselkem n tuttra yecceḍ"
+        },
+        "errors": {
+          "loadFailed": "Ur yezmir ara ad yessedli agraw n isefka",
+          "notFound": "Agraw n isefka ur yettwafa ara",
+          "notFoundDesc": "Tagrumma n isefka tella tettwakkes neɣ ur tesɛiḍ ara tasiregt.",
+          "updateFailed": "Ur yezmir ara ad yessmirwet agraw n isefka",
+          "deleteFailed": "Ur yezmir ara ad yekkes agraw n isefka",
+          "exportFailed": "Ur yezmir ara ad yessifeḍ agraw n isefka",
+          "refreshFailed": "Ur yezmir ara ad ismiren isefka"
+        },
+        "unknown": "Taɣult ur nettwasen ara",
+        "uploadedBy": "Yettwasekles sɣur",
+        "organization": "Tuddsa",
+        "cleanModal": {
+          "title": "Amsuji n Yisefka Aḥṛici s 1 n Uklik",
+          "subtitle": "Asizdeg d usmagger s AI n uzalen ixuṣṣen",
+          "fillMissing": "Ččar azalen ixuṣṣen",
+          "fillMissingDesc": "Ččar s uwurman tixxamin tilmawin",
+          "strategyLabel": "Tastratijit n usmagger",
+          "autoStrategy": "Auto-Intelligent (Alemmas i yimḍanen, Mode i uḍris)",
+          "meanStrategy": "Alemmas (Tigejda timḍanin)",
+          "modeStrategy": "Mode / Azal yettwasemden aṭas",
+          "deduplicate": "Kkes izirigen n allusay",
+          "deduplicateDesc": "Kkes izirigen yemgadan s lekmal",
+          "trimWhitespace": "Sizdeg talamin tixutimin",
+          "trimWhitespaceDesc": "Kkes talamin zeddiyen deg yisefray n uḍris",
+          "cancel": "Sefsex",
+          "cleaning": "La yessizdig...",
+          "submit": "Sekker Asizdeg Awurman",
+          "success": "Agraw n isefka yettwasizdeg s urebbaḥ!",
+          "error": "Usizdeg n ugraw n isefka ur yeddi ara"
+        },
+        "syntheticModal": {
+          "title": "Amsnulfu n Isefka Isinfuliyen",
+          "subtitle": "Snulfu-d izirigen isinfuliyen yegdan ulqam SQL d tewsatin n unamek.",
+          "rowsLabel": "Amḍan n izirigen i usnulfu (1 ar 100)",
+          "previewTitle": "Taskant n tammunt n yisefka isinfuliyen ({count} n yizirigen)",
+          "copyJson": "Nɣel s JSON",
+          "generating": "La yessnulfuy-d...",
+          "close": "Mdel",
+          "submit": "Snulfu Tammunt",
+          "toastSuccess": "{count} n izirigen isinfuliyen ttwasnulfan-d!",
+          "toastError": "Asnulfu n isefka isinfuliyen ur yeddi ara",
+          "toastCopied": "JSON amsinful yettwansel s afus!"
+        },
+        "webhooks": {
+          "title": "Ilɣan & Webhooks",
+          "description": "Tuqqniwin webhook s srid i yilɣan n ungaf n SLA d yismuylef n waddad n yisefka.",
+          "createWebhook": "Kles Talɣut n Tqacuct Webhook",
+          "webhooksList": "Webhooks n Yilɣan i Deg Tettwakles",
+          "urlLabel": "Tansa URL n Webhook",
+          "urlPlaceholder": "https://hooks.slack.com/services/...",
+          "targetUrl": "Tansa URL n Webhook",
+          "eventLabel": "Tadyant Tamselkemt",
+          "eventType": "Tadyant Tamselkemt",
+          "events": {
+            "qualitySlaFailed": "QUALITY_SLA_FAILED (Angaf n SLA n Tɣara)",
+            "dataUpdated": "DATA_UPDATED (Isefka Ttwabeddlen)"
+          },
+          "action": "Tigawt",
+          "cancel": "Sefsex"
+        },
+        "insights": {
+          "whyDidThisHappen": "Ayɣer i d-teḍra waya? (Tasleḍt n yidisan igejdanen)",
+          "confidence": "Aswir n Tflest",
+          "datasetImpactMetric": "Asɣal n usemdu n ugraw n isefka",
+          "baselineBenchmark": "Asadaw azadur",
+          "recentlyUpdated": "Yettwabeddel d amaynut",
+          "urgency": {
+            "critical": "Amizi Afellay",
+            "warning": "Alɣu",
+            "opportunity": "Tagnit n Tegmi",
+            "info": "Talɣut"
+          },
+          "categories": {
+            "all": "Akk Timuɣliwin",
+            "anomaly": "Imiziyen d Tmuɣliwin Tixutimin",
+            "trend": "Tignatin n Tegmi d Yiberdan",
+            "performance": "Tamellit d Tdawsa n Yisefka"
+          },
+          "actions": {
+            "createDecision": "Snulfu Amagrad n Urkiz n Tnezzut",
+            "triggerClean": "Sermed Asizdeg Ussis s Wudem Awurman",
+            "applyFilter": "Snes Asizdeg n Usuter SQL",
+            "createAlert": "Kles Alɣu n Tɣara SLA"
+          },
+          "demo": {
+            "anomTitle": "Tifin n Tseqqart Tameqrant deg Yisefka Ixutimen",
+            "anomDesc": "Azalen n yiselkimen skanayen-d anemgal n 24.5% ɣef usadaw amezruyan n 30 wussan.",
+            "trendTitle": "Asnerni Iqewwan deg Wayla d Tenfalit",
+            "trendDesc": "Asemday n tenfalit yennerna s +18.4% ɣer tallit yezrin deg akk ticeqqufin tidiganin.",
+            "perfTitle": "Tasmilt n Tɣara d Usmed n Yisefka",
+            "perfDesc": "Taɣellist n ulqam temṣada 100% d talasast n tɣara SLA deg tɣerɣart n Podacium."
+          }
+        },
+        "contractModal": {
+          "title": "Sbadu Agatu n Isefka & SLA",
+          "contractName": "Isem n wagatu",
+          "defaultContractName": "Agatu SLA n Tseddast n Ufares",
+          "minRows": "Amḍan adday n yizirigen SLA",
+          "maxMissing": "% afellay n wazalen ixuṣṣen SLA",
+          "strictSchema": "Snes tawsiyin n tseddast qessiḥen",
+          "cancel": "Sefsex",
+          "activate": "Smedhed Agatu"
+        },
+        "columnModal": {
+          "profilingTitle": "Asleḍ n Tsemda & Usedmer n Uzalen",
+          "totalRows": "Amḍan n Izirigen",
+          "uniqueValues": "Azalen Imusnawen",
+          "missingNulls": "Ixuṣṣen (Ilm)",
+          "semanticType": "Tawsit n Unamek",
+          "descStats": "Tismendayin n Uglam",
+          "min": "Adday",
+          "max": "Aflay",
+          "mean": "Alemmas",
+          "median": "Alemmas talemmast",
+          "stdDev": "Tasemda Tamagnut",
+          "quartiles": "Ikuwaṛṭilen Q25 / Q75",
+          "topValues": "10 n wazalen yugaren deg wallus",
+          "calculatingStats": "Asiḍen n usesmel ussnan..."
+        },
+        "modals": {
+          "edit": {
+            "title": "Snifel iɣbula n yisefka",
+            "subtitle": "Sehrek isem, taɣult d uglam.",
+            "name": "Isem n tegrawt n yisefka",
+            "domain": "Taɣult n umahil",
+            "description": "Aglam",
+            "descPlaceholder": "Aglam awezlan n tegrawt n yisefka d tfaweḍt-is...",
+            "cancel": "Sefsex",
+            "saving": "Asekles...",
+            "save": "Smiren iɣbula"
+          },
+          "delete": {
+            "title": "Kkes tagrawt n yisefka",
+            "subtitle": "Tigawt-agi d timezgit ur tettwagzi ara.",
+            "confirmPrompt": "Tebɣiḍ s tidet ad tekkseḍ tagrawt n yisefka {name}?",
+            "consequences": "Akk isefka yeqqnen, amazray, ifuyla imussanen d tesmektit n tɣara ad ttwakksen i lebda.",
+            "cancel": "Sefsex",
+            "deleting": "Tukksa...",
+            "confirm": "Sentem tukksa"
+          },
+          "pii": {
+            "title": "Tazwart & Ussuru n Isefka PII",
+            "subtitle": "Ffer neɣ ssumer tigejda tiḥersanin uqbel ubṭu",
+            "selectMethod": "Fren Tarrayt n Ussuru",
+            "selectColumnError": "Ttxil-k fren aṭas akk tagnit yewwen n tgejdit.",
+            "methods": {
+              "hash": "Tuffirt s Tsemda (SHA-256)",
+              "redact": "Ussuru Amadud ([REDACTED])",
+              "mask": "Ussuru n Wwiyya (XX****XX)"
+            },
+            "sensitiveColumns": "Tigejda Tiḥersanin ({count})",
+            "cancel": "Sefsex",
+            "close": "Mdel",
+            "maskingProgress": "La yettusur...",
+            "applyMasking": "Snes Ussuru",
+            "success": "Ussuru yettwasekkas s urebbaḥ!",
+            "error": "Ussuru ur yeddi ara"
+          },
+          "dqRules": {
+            "title": "Amsedday n yilugan n tɣara tusligt",
+            "subtitle": "Badu tilisa n urkiz (Ur ilim ara, Adday/Afellay, Regex) u ktezk taɣara.",
+            "activeRules": "Tisuraf tirmanin",
+            "addRule": "Rnu alugan",
+            "success": "Ilugan n tɣara ttwaqeyymen s urebbaḥ!",
+            "error": "Afecl deg usqeyyed n yilugan n tɣara",
+            "resultsTitle": "Igmeylen n ukayad n umṣada",
+            "complianceCounts": "{passed} rebbḥen, {failed} feclem deg {total} n yilugan s umata",
+            "passRate": "Tanzagt n umṣada tamatut: {rate}%",
+            "evaluating": "La yettwaqeyyem...",
+            "ruleTypes": {
+              "notNull": "Ur Ilim Ara (Not Null)",
+              "min": "Azal Adday (≥)",
+              "max": "Azal Afellay (≤)"
+            },
+            "limitValuePlaceholder": "Azal n talast...",
+            "close": "Mdel",
+            "testRules": "Kayed ilugan (1-Sser)"
+          }
+        },
+        "schema": {
+          "columnUpdated": "Tagejdit \"{column}\" tettwabeddel",
+          "typeUpdated": "Tawsit n tgejdit tettwabeddel s urebbaḥ",
+          "profilerError": "Afecl deg usali n ugzul n tgejdit"
+        },
+        "tabs": {
+          "overview": {
+            "title": "Tamuɣli tamatut",
+            "metrics": {
+              "rows": "Asemday n yizirigen",
+              "columns": "Asemday n tgejda",
+              "size": "Teɣzi n ufaylu",
+              "quality": "Tazmert n tɣara",
+              "completeness": "Timmadit",
+              "uniqueness": "Asufi"
+            },
+            "info": {
+              "title": "Talɣut tamatut",
+              "format": "Amasal n ufaylu",
+              "domain": "Taɣult n umahil",
+              "created": "Azemz n usekcam",
+              "updated": "Asmiren aneggaru"
+            },
+            "description": {
+              "title": "Aglam",
+              "empty": "Ulac aglam i d-yettunefken i tegrawt-agi."
+            },
+            "sample": {
+              "title": "Tamuɣli n tmeẓriwt",
+              "viewMore": "Wali tamuɣli tummidt"
+            },
+            "aiSummary": {
+              "title": "Agzul Anemhal s AI",
+              "issuesDetected": "{count} n yilɣa n tɣara ttwafehmen.",
+              "noIssues": "Ulac anomali ameqqran yettwafehmen.",
+              "narrative": "Tagrawt-agi n yisefka tebḍa {rows} n yizirigen d {columns} n tgejda. Tazmert tamatut tewweḍ {score}%. {issuesText}",
+              "cleanData": "Sizdeg Isefka",
+              "viewAnalytics": "Wali tisleḍin n AI"
+            }
+          },
+          "preview": {
+            "title": "Tamuɣli n Isefka",
+            "search": "Nadi deg yizirigen n tmidyant...",
+            "showing": "Skani {count} n izirigen imezwura",
+            "showingPaged": "Deg uskan n {count} seg {total} n yizirigen ({all} s umata)",
+            "empty": "Ulac isefka i tamuɣli"
+          },
+          "schema": {
+            "title": "Amawal Anamkan & Ulqam",
+            "subtitle": "Beddel tawsit n isefka SQL d taɣult tanamkant (Lwilaya, Tadrimt, Tiliɣri, atg.) i yal tigejdit.",
+            "description": "Tazwart n tgejda d tewsatin n isefka yettwaslen sɣur ugraw.",
+            "columnsCount": "Tigejda Yettwafan",
+            "columnsCountFormatted": "{count} n Tgejda",
+            "colName": "Isem n tgejdit",
+            "sqlType": "Tawsit n SQL",
+            "semanticDomain": "Taɣult tanamkant",
+            "statProfile": "Ameɣrad ussnan",
+            "edit": "Beddel",
+            "inspect": "Senqed",
+            "table": {
+              "column": "Tagejdit",
+              "type": "Tawsit",
+              "missing": "Timmudda",
+              "stats": "Usedmer & Tismendayin",
+              "semantic": "Anamek"
+            },
+            "mixedTypes": "Tewsatin Irkebn",
+            "stats": {
+              "min": "Adday",
+              "max": "Aflay",
+              "mean": "Alemmas",
+              "sum": "Semmdu",
+              "uniqueValues": "Azalen Imusnawen",
+              "unavailable": "Ur yelli ara"
+            },
+            "empty": "Ulac tazwart n ulqam i ugraw-agi."
+          },
+          "analytics": {
+            "title": "Tamussni n Isefka",
+            "description": "Tasleḍt tanaṣlit i leddin tamsalt yeffren deg ugraw-inek.",
+            "runAnalysis": "Sleḍ Agraw n Isefka",
+            "analyzing": "La yesmermed Isefka...",
+            "loadingDesc": "IA-nneɣ la tettezmer usedmer, tessiḍen assaɣen, u tettnulfu-d tmuɣliwin.",
+            "confidence": "Tafles deg Isefka",
+            "sections": {
+              "summary": "Tamuɣli Tanemhalt",
+              "highlights": "Tifin Tameqqrant",
+              "distribution": "Tiseddarin n Isefka",
+              "relationships": "Assaɣen gar Yisekkilen"
+            },
+            "subtabs": {
+              "insights": "Tmuɣliwin Tigejdanin",
+              "distributions": "Usedmer",
+              "correlations": "Tafelwit n Wassawen"
+            },
+            "filter": {
+              "title": "Zizdeg Isekkilen",
+              "toggle": "Sbedd Isizdigen",
+              "all": "Akk Isekkilen",
+              "selected": "{count} Yettwafernen",
+              "search": "Nadi isekkilen...",
+              "selectAll": "Fren Akk",
+              "selectNone": "Kkes Afran",
+              "noColumns": "Ulac tigejda yettwafen",
+              "emptySelection": "Fren isekkilen i wakken ad twaliḍ usedmer"
+            },
+            "matrix": {
+              "title": "Tafelwit n Wassawen & Anadi n Wassaɣ",
+              "subtitle": "Af-d amek ttembiwilen isekkilen imḍanen akken neɣ deg yibriden yemgaraden.",
+              "learnMore": "Amek ad taɣreḍ tafelwit n wassawen",
+              "disclaimer": "Tazmilt: Assaɣ iskan-d amek ttembiwilen isefka deg tsemda, mačči d mentilt tusridt.",
+              "viewHeatmap": "Tigdet n Uzwel",
+              "viewCards": "Iqqanen Igejdanen",
+              "viewLowerTriangle": "Amkuẓ d-yusan wadda kan",
+              "viewFullMatrix": "Tamuɣli n Tfelwit Tamatut",
+              "filters": {
+                "all": "Akk Tisiyyin",
+                "strong": "Tuzwirt kan (|r| ≥ 0.5)",
+                "positive": "Tilawt kan (r > 0)",
+                "negative": "Tuzigt kan (r < 0)"
+              },
+              "strongPos": "Talaft Tuzwirt",
+              "strongNeg": "Tuzigt Tuzwirt",
+              "neutral": "Ulac Assaɣ",
+              "legend": {
+                "title": "Aseklu n Tazmert n Wassaw",
+                "positive": "Ilaw (+1.0)",
+                "negative": "Uzlig (-1.0)",
+                "neutral": "Amagan (0.0)",
+                "strongPos": "Ilaw Uzwir (+0.7 ar +1.0)",
+                "strongPosDesc": "Isekkilen ttalayen akken",
+                "modPos": "Ilaw Alemmas (+0.3 ar +0.7)",
+                "modPosDesc": "Tazmert n usali akken",
+                "neutralDesc": "Ulac assaɣ amrid ibanen",
+                "modNeg": "Uzlig Alemmas (-0.7 ar -0.3)",
+                "modNegDesc": "Ambiwel amgarrad alemmas",
+                "strongNeg": "Uzlig Uzwir (-1.0 ar -0.7)",
+                "strongNegDesc": "Isekkilen ttembiwilen deg yibriden ur nemcabi ara"
+              },
+              "tooltip": {
+                "title": "Tasleḍt n Wassaɣ",
+                "explanation": {
+                  "pos_very_strong": "{v1} d {v2} tteddun akken s tseddi meqqren.",
+                  "pos_strong": "Ticki yuli {v1}, {v2} yettali ula d netta s uzwir.",
+                  "pos_moderate": "{v1} yesɛa asemdu ilaw alemmas ɣef {v2}.",
+                  "pos_weak": "{v1} d {v2} sɛan assaɣ ilaw afessas.",
+                  "pos_very_weak": "Ulac taseddart ibanen gar {v1} d {v2}.",
+                  "neg_very_strong": "Assaɣ uzlig amadud gar {v1} d {v2}.",
+                  "neg_strong": "Ticki yuli {v1}, {v2} yettsubbu s uzwir.",
+                  "neg_moderate": "{v1} yesɛa asemdu uzlig alemmas ɣef {v2}.",
+                  "neg_weak": "{v1} d {v2} sɛan assaɣ uzlig afessas.",
+                  "neg_very_weak": "Assaɣ uzlig d amecṭuḥ aṭas gar {v1} d {v2}."
+                },
+                "identity": "Asekkil dima yesɛa assaɣ yemmed d yiman-is (1.0).",
+                "technical": "Afakul n Pearson: {val}. Tazmert n wadaf deg tsemda."
+              },
+              "strength": {
+                "very_weak": "Afessas Aṭas",
+                "weak": "Afessas",
+                "moderate": "Alemmas",
+                "strong": "Uzwir",
+                "very_strong": "Uzwir Aṭas",
+                "neutral": "Tamagit"
+              },
+              "takeaways": {
+                "title": "Tmuɣliwin Tiwurmanin ɣef Wassaɣen Igejdanen",
+                "empty": "Ulac assaɣ ameqran yettwafen gar yisekkilen imḍanen."
+              },
+              "labels": {
+                "influential": "Aqqan yesɛan asemdu d ameqran",
+                "moderate": "Aqqan amaddur alemmas",
+                "minor": "Assaɣ afessas yettwafa",
+                "strategic": "Astratiji",
+                "relevant": "Yerzan",
+                "incidental": "Ameskan"
+              }
+            },
+            "learning": {
+              "summary": "Agzul amatu ɣef tdawsa d tezmert n ugraw-inek n isefka.",
+              "distribution": "Tamuɣli ɣef wamek ttwabḍan wagazen n isefka ɣef tseddarin yemgaraden.",
+              "relationships": "Tifin n wamek isekkilen ttemsefhamen neɣ ttembiwilen akken.",
+              "insights": "Tazwart tastratijit yebnan ɣef yizagaten d tseddarin n tsemda."
+            },
+            "insights": {
+              "trend": {
+                "title": "Tignatin n tnekra yettwafen",
+                "description": "Tagejdit 'revenue' teskan-d agemmu yerkden."
+              },
+              "correlation": {
+                "title": "Assaɣ uzwir yettwafa",
+                "description": "Assaɣ ameqran yettwafa gar tgejda."
+              },
+              "anomaly": {
+                "title": "Izagaten yettwafen",
+                "description": "Azalen inafalen yettwafen i yebrran i walemmas."
+              },
+              "recommendation": {
+                "title": "Asnerni n isefka yettwasuter",
+                "description": "Rnu isefka n tseddarin tijeɣrafiyin i usegdel n tesleḍt."
+              },
+              "dominant_category": {
+                "title": "Taggayt Tameqqrant: {value}",
+                "description": "Azal '{value}' yeṭṭef {pct}% seg tgejdit '{column}'."
+              },
+              "high_completeness": {
+                "title": "Timmudda Tummidt: {column}",
+                "description": "Tagejdit '{column}' temmed 100%, d llsas iǧehden i tesleḍt."
+              },
+              "low_completeness": {
+                "title": "Azalen Ixuṣṣen deg {column}",
+                "description": "Tagejdit '{column}' temmed kan s {pct}%. Tussda n yilm tezmer ad txerreq igmaḍ."
+              },
+              "constant_column": {
+                "title": "Tagejdit Yerkden: {column}",
+                "description": "Tagejdit '{column}' tesɛa yiwen kan n wazal deg akk izirigen u ur tettak ara tazmert i uskan."
+              },
+              "high_cardinality": {
+                "title": "Agemmay n Umgired Afellay: {column}",
+                "description": "Tagejdit '{column}' tesɛa {count} n wazalen imusnawen. Yelha ad tettwaseqdec d asulay."
+              },
+              "data_range": {
+                "title": "Talast n Isefka: {column}",
+                "description": "Azalen deg '{column}' bdan seg {min} ar {max}."
+              },
+              "strong_correlation": {
+                "title": "Assaɣ Uzwir Yettwafa",
+                "description": "Assaɣ meqqren n {value} yella gar '{col1}' d '{col2}'."
+              },
+              "moderate_correlation": {
+                "title": "Assaɣ Alemmas Yettwafa",
+                "description": "Assaɣ (agemmay: {value}) yella gar '{col1}' d '{col2}'."
+              },
+              "outliers": {
+                "title": "Tifin n Yizagaten: {column}",
+                "description": "Yettwafa {count} n yizagaten ({pct}% n isefka) deg tgejdit '{column}'."
+              },
+              "noCorrelations": "Ulac assaɣ ameqran yettwafen."
+            },
+            "empty": "Ulac tmuɣliwin yellan i ugraw-agi n isefka yakan.",
+            "emptyTitle": "Yewjed i Tneflit",
+            "runFirst": "Tekki ɣef ufella i wakken ad tebduḍ tasleḍt u ad tafeḍ tiseddarin yeffren.",
+            "executiveSummary": "Agzul Anemhal",
+            "executiveSummaryDetail": {
+              "template": "Tasleḍt tufa-d {total} n tmuɣliwin. {high} deg-sent sɛant azal d ameqran.",
+              "empty": "Ulac tmuɣli tameqqrant yettwafen deg ugraw-agi yakan."
+            },
+            "distributions": "Usedmer n Isefka",
+            "distributionSuffix": "(Usedmer)",
+            "topValuesSuffix": "(Azalen Imusnawen)",
+            "correlations": "Assaɣen Igejdanen",
+            "businessInsights": "Timuɣliwin n Tnezzut",
+            "insightsTitle": "Tmuɣliwin Timsugnin IA/ML n Tnezzut",
+            "insightsDesc": "Tasleḍt tawurmant n yiẓuran n tmentilt, asenqed n yimihiyen, d iweṣṣiyen n tigawt."
+          },
+          "quality": {
+            "title": "Aheyyi n Taɣara",
+            "doctorTitle": "Diagnostic de qualité & Gouvernance IA",
+            "scoreSubtitle": "Score de qualité et conformité : {score}/100",
+            "rulesBtn": "Règles de Qualité",
+            "piiBtn": "Anonymisation PII",
+            "syntheticBtn": "Données Synthétiques",
+            "completenessVerified": "Taux de complétude vérifié",
+            "completenessDesc": "La plupart des attributs répondent aux critères de qualité.",
+            "recommendationsTitle": "Recommandations d'optimisation",
+            "recommendationsDesc": "Le moteur Smart Clean peut imputer les valeurs manquantes.",
+            "alertsTitle": "Alertes & Diagnostic détaillé",
+            "metrics": {
+              "completeness": "Timmudda",
+              "completeness_desc": "Afellay n taylwin ur nelli ara d ilm deg ugraw-inek.",
+              "uniqueness": "Tisusni",
+              "uniqueness_desc": "Assaɣ n yizirigen imusnawen ɣer umḍan asemday.",
+              "consistency": "Tudda",
+              "consistency_desc": "Aḍfar n tewsatin d tullisin yettwarjan deg isefka.",
+              "accuracy": "Taseddi",
+              "accuracy_desc": "Tiseddi d uzref n wazalen n isefka."
+            },
+            "issues": {
+              "title": "Uguren Yettwafan",
+              "none": "Ulac ugur ameqran yettwafan deg ugraw-agi.",
+              "missing": {
+                "title": "Azalen ixuṣṣen yettwafen",
+                "description": "tigejda ggbent azalen ixuṣṣen"
+              },
+              "duplicates": {
+                "title": "Izirigen i yettawsiwlen yettwafen",
+                "description": "izirigen zemren ad ilin d allusay ɣef llsas n tgejda tigejdanin"
+              },
+              "dynamic": {
+                "high_nulls": "Tagejdit '{column}' tesɛa {pct}% n wazalen ixuṣṣen.",
+                "mixed_types": "Tagejdit '{column}' tegber tiwsatin irkebn.",
+                "low_uniqueness": "Tagejdit '{column}' tesɛa tisusni d taddayt aṭas ({ratio}%).",
+                "outliers": "Yettwafa-d {count} n yizagaten deg tgejdit '{column}'."
+              }
+            },
+            "empty": "Igmaḍ n useklu n taɣara ur d-awḍen ara yakan.",
+            "status": {
+              "excellent": "Addad n ugraw yella d UFRIN.",
+              "good": "Addad n ugraw yella d AƔAR.",
+              "acceptable": "Addad n ugraw yella d AMAGNU.",
+              "poor": "Addad n ugraw yella d ADIRI."
+            },
+            "summary": {
+              "warnings": {
+                "count": "Yettwafa-d {count} n wuguren zemren ad ilin.",
+                "none": "Yettwafa-d 0 n wuguren."
+              }
+            }
+          },
+          "governance": {
+            "title": "Asefrek & Aaggt",
+            "description": "Aaggt n Isefka n Tuddsa, SLA, asenfel n tḥersa, d isebntariyin n usenfel.",
+            "sensitivity": "Asenfel n Tḥersa",
+            "compliance": "Akafar n Usemmer",
+            "tags": "Isebntariyin n Tnamakt",
+            "addTag": "Rnu Asebntar",
+            "tagPlaceholder": "Asebntar amaynut (d.m. #AUDITED)",
+            "contractsTitle": "Aaggt n Taɣara n Isefka & SLA",
+            "contractsDesc": "Aaggt unsib i ibeddlen tazrart n ulqam d ilugan n SLA.",
+            "createContract": "Badu Aaggt n Isefka",
+            "status": "Addad n Uaggt",
+            "minRows": "Izirigen SLA Addayen",
+            "maxMissing": "% SLA Aflay n Ixusnawen",
+            "verified": "YETTWASEKAYED D YEDDA",
+            "violated": "SLA YETTWAKEČČEM",
+            "sensitivity_internal": "AGENSAN",
+            "sensitivity_confidential": "UFFIR",
+            "sensitivity_restricted": "AMAGUR",
+            "sensitivity_public": "AZAYEZ",
+            "algeriaLaw": "Asaḍuf Azzayri 18-07 (Tammast n isefka)"
+          },
+          "contractModal": {
+            "title": "Badu Aaggt n Isefka & SLA",
+            "contractName": "Isem n Uaggt",
+            "defaultContractName": "Aaggt n SLA n Ulqam n Usnulfu",
+            "minRows": "Izirigen SLA Addayen",
+            "maxMissing": "% SLA Aflay n Ixusnawen",
+            "strictSchema": "Snes tewsatin n ulqam s usired",
+            "cancel": "Sefsex",
+            "activate": "Sekker Aaggt"
+          },
+          "history": {
+            "title": "Amazray n Tbaḍnit & Aḍfar",
+            "description": "Aḍfar ummid n isniflen n tseddast, asizdeg d uselket n yisefka.",
+            "initialImportTitle": "Asekcam Ameswar & Tasleṭ n Taɣult n Isefka",
+            "initialImportDesc": "Afaylu aɣbalu yettwasleḍ s urebbaḥ sɣur umsedday BI.",
+            "dataModified": "Asnifel n yisefka",
+            "actions": {
+              "uploaded": "Agraw n isefka yettwaseklas",
+              "processed": "Asleḍ yemmed",
+              "qualityRun": "Aseklu n taɣara yettwasaḍ"
+            },
+            "details": {
+              "originalFile": "Afaylu amezwaru: {name}",
+              "rowsProcessed": "{count} n izirigen ttwaselḍen s urebbaḥ",
+              "qualityScore": "Agemmay n taɣara: {score}%"
+            },
+            "empty": "Ulac tedyanin n amezruy."
+          },
+          "versioning": {
+            "title": "Akud n Usikel d Temselyin",
+            "description": "Tuccḍiyin n demselyin war asemmed, amezruy n ulqam, d tasmilt n uɣal s 1-Sser.",
+            "createSnapshot": "Snulfu-d Tasmilt n Temselt",
+            "snapshotHistory": "Amezruy n Tsmilt",
+            "version": "Tamselt",
+            "rows": "Izirigen",
+            "cols": "Tigejda",
+            "quality": "Agemmay n Tazmert",
+            "created": "Yettwasekles Deg",
+            "current": "AMIRAN",
+            "restore": "Rres Tamselt",
+            "restoring": "La yrerras...",
+            "modalTitle": "Snulfu-d Tasmilt n Temselt",
+            "versionName": "Isem n Temselt",
+            "versionNameLabel": "Isem n Temselt",
+            "descLabel": "Aglam (Afranay)",
+            "namePlaceholder": "Isem n tsmilt (d.m., Post-Cleaning v1.2)",
+            "descPlaceholder": "Sebbeb n tsmilt...",
+            "initialIngestion": "Anekcum Amezwaru",
+            "currentState": "Addad Amiran",
+            "submit": "Snulfu Tasmilt",
+            "submitting": "La yessnulfuy...",
+            "cancel": "Sefsex"
+          },
+          "security": {
+            "title": "Tabaḍni n Izirigen d Tigejda",
+            "description": "Sefrek ilugan n RLS d CLS deg ugraw.",
+            "createPolicy": "Rnu Tasertit n Unekcum",
+            "policiesList": "Tisuraf Yermden",
+            "type": "Tawsit n Tsertit",
+            "policyType": "Tawsit n Tsertit",
+            "targetRole": "Tamellilt Yettwafefrnen",
+            "role": "Tamellilt",
+            "condition": "Isisdeg / Tagnit",
+            "sqlCondition": "Tagnit n Usisdeg SQL",
+            "sqlConditionPlaceholder": "d.m. amount >= 0",
+            "targetColumn": "Tagejdit Yettwafefrnen",
+            "masking": "Tarrayt n Ussuru",
+            "status": "Addad",
+            "active": "YERMED",
+            "cancel": "Sefsex",
+            "saving": "La yesselkay...",
+            "savePolicy": "Kles Tasertit",
+            "rowFilter": "Isisdeg n Izirigen (RLS)",
+            "colMask": "Ussuru n Tigejda (CLS)",
+            "types": {
+              "rowFilter": "Isisdeg n Izirigen (RLS)",
+              "columnMask": "Ussuru n Tigejda (CLS)"
+            },
+            "roles": {
+              "all": "Akk Timellilin",
+              "analyst": "Amesleḍ",
+              "viewer": "Amseqdac",
+              "manager": "Amsasaw"
+            },
+            "methods": {
+              "hash": "Assellef SHA-256",
+              "redact": "Tukksa [YETTWAFFER]",
+              "maskChars": "Ussuru n Isekkilen (****)"
+            }
+          },
+          "query": {
+            "title": "Mahrag n Tussda SQL",
+            "description": "Sekker tuttriwin SQL timsugnin deg ugraw.",
+            "editorLabel": "Amaẓrag SQL",
+            "queryPlaceholder": "SELECT * FROM dataset WHERE ...",
+            "keyboardShortcut": "Ctrl + Enter i uselkem",
+            "runQuery": "Sekker Tuttra",
+            "running": "La yessakkad...",
+            "results": "Igmaḍ n Tuttra",
+            "executionTime": "Akud n Uskker",
+            "rowsReturned": "Izirigen d-yuɣalen",
+            "recentHistory": "Amazray n uselkem aneggaru",
+            "copy": "Nɣel",
+            "clear": "Sfeḍ",
+            "presets": "Tuttriwin n Uzwir",
+            "exportResults": "Sifeḍ Igmaḍ (CSV)",
+            "presetPreview": "Tamuɣli 10 n Izirigen Imezwura",
+            "presetGroupBy": "Usedmer s Ugraw & Amḍan",
+            "presetSummary": "Tisemdayin Timḍanin",
+            "presetNullAudit": "Asseqsi n Tnefrut d Imura Yayessan",
+            "presetOutliers": "Isisdeg n Izirigen Inafalen",
+            "presetTrends": "Asali n Izirigen n Ussan",
+            "presetRecentOrder": "Semskel izirigen s uksar",
+            "formatSql": "Snemsel SQL",
+            "copySql": "Nɣel Tuttra",
+            "copied": "Yenneɣles!",
+            "clearSql": "Kkes Amaẓrag",
+            "snippets": "Tukksa n SQL",
+            "insertSnippet": "Ger tazrart n SQL",
+            "sqlHistory": "Amazray n Tuttriwin",
+            "clearHistory": "Kkes Amazray",
+            "noHistory": "Ulac tuttriwin deg tɣimit-agi.",
+            "rowLimit": "Talast n Izirigen",
+            "searchResults": "Isisdeg deg igmaḍ...",
+            "noMatchingRows": "Ulac igmaḍ imsaṣan.",
+            "categories": {
+              "all": "Akk Tisefka",
+              "basic": "Tazwara & Uzzig",
+              "aggregations": "Tisemdayin",
+              "quality": "Tanefrut n Isefka",
+              "advanced": "Isisdeg yennulfan"
+            }
+          },
+          "webhooks": {
+            "title": "Iseɣtal & Webhooks",
+            "description": "Tizzayrin n Webhooks i nfaftiyin n SLA.",
+            "createWebhook": "Sekles Tansa n Webhook",
+            "webhooksList": "Webhooks Yettwazmzen",
+            "urlLabel": "Tansa URL n Webhook Endpoint",
+            "urlPlaceholder": "https://hooks.slack.com/services/...",
+            "targetUrl": "Tansa n Webhook",
+            "eventLabel": "Tadyanit n Usekker",
+            "eventType": "Tawsit n Tedyanit",
+            "events": {
+              "qualitySlaFailed": "QUALITY_SLA_FAILED (Tuccḍa n SLA n Taɣara)",
+              "dataUpdated": "DATA_UPDATED (Isefka Ttwasmirwten)",
+              "schemaChanged": "SCHEMA_CHANGED (Ulqam Yettwasenfel)"
+            },
+            "testWebhook": "Kayed Webhook",
+            "testing": "La yettkayad...",
+            "status": "Addad",
+            "action": "Tigawt",
+            "active": "YERMED",
+            "submit": "Sekles Webhook",
+            "submitting": "La yezmez...",
+            "cancel": "Sefsex"
+          }
+        },
+        "noDescription": "Ulac aglam",
+        "domains": {
+          "sales": "Azenzi",
+          "finance": "Tadrimt",
+          "hr": "Tisugawin Titawiyin",
+          "product": "Afaris",
+          "marketing": "Azenz d Usnuzeg",
+          "operations": "Timhalin",
+          "other": "Wayeḍ"
+        },
+        "toasts": {
+          "updated": "Agraw n isefka yettwasmirwet s urebbaḥ",
+          "deleted": "Agraw n isefka yettwakkes",
+          "exported": "Agraw n isefka yettwasifeḍ s urebbaḥ",
+          "linkCopied": "Aseɣwen yettwanɣel ɣer teskilt",
+          "deleteConfirm": "Tebɣiḍ ad tekkseḍ agraw-agi n isefka i lebda? Waya ur yettwagdel ara."
+        },
+        "refresh": "Smirwet",
+        "editModal": {
+          "title": "Bded Afruri n Ugraw",
+          "name": "Isem",
+          "namePlaceholder": "Isem n ugraw",
+          "description": "Aglam",
+          "descriptionPlaceholder": "Glem agraw-agi n isefka",
+          "domain": "Taɣult",
+          "domainPlaceholder": "Fren taɣult",
+          "domainNone": "Ulac"
+        }
+      }
+    },
+    "dashboards": {
+      "loadingChart": "Asali n ugnaw…",
+      "measureBuilder": {
+        "title": "Amsedday n tiseddarin n DAX d usekti",
+        "badge": "Amsedday AST",
+        "subtitle": "Snulfu-d isektiyen yettwaḥesben d tiseddarin DAX tusligin i tsekkinin n tsebntart deg wakud adigan",
+        "compileEvaluate": "Seddi & Qeyyem",
+        "measureIdentifier": "Asulay n usekti",
+        "daxExpression": "Tanfalit DAX",
+        "syntaxHint": "Taseddast: Imṣada d SQL / PowerBI DAX",
+        "quickFunctions": "Tisekkirin Tiziraziyin:",
+        "successToast": "Asekti yettwaḥesben yettwasihel yerna yettwasentem!"
+      },
+      "scheduledExport": {
+        "title": "Ammas n yinelkamen d yigzulen yettwaheggan",
+        "subtitle": "Selsek asifeḍ n tmeẓriwt i {{dashboardTitle}}",
+        "dispatchFrequency": "Tanzagt n tuzna",
+        "recipientLabel": "Tansa(iwin) n yimayl / Slack Webhook",
+        "exportFormat": "Amasal n usifeḍ",
+        "secureShareToken": "Asulay aɣellis n beṭṭu azayez",
+        "cancel": "Sefsex",
+        "enableSchedule": "Rmed aheggi awurman",
+        "copySuccess": "Aseɣwen aɣellis n beṭṭu azayez yettwanɣel ɣer tecfawt",
+        "saveSuccess": "Azen amsuddes n usefka {format} yettwasbedd ({frequency})",
+        "frequencies": {
+          "daily": "Yal ass",
+          "weekly": "Yal imalas",
+          "monthly": "Yal aggur"
+        }
+      },
+      "comments": {
+        "title": "Iwenniten d tzmilin",
+        "closeDrawer": "Mdel aselway",
+        "filterAll": "Akk ({{count}})",
+        "filterWidget": "Awiǧet-agi",
+        "filterUnresolved": "Ur yefrin ara",
+        "noComments": "Ulac iwenniten i tmuɣli-yagi.",
+        "pin": "Ṭṭef ({{x}}%, {{y}}%)",
+        "markUnresolved": "Rcem am ur yefrin ara",
+        "markResolved": "Rcem am yefrin",
+        "replyCount": "Err ({{count}})",
+        "replyingTo": "Tiririt i uftaɣ #{{id}}",
+        "replyPlaceholder": "Aru tiririt...",
+        "addPlaceholder": "Rnu awennit neɣ tazmilt...",
+        "teamMember": "Amaslad n tegrawt",
+        "user": "Aseqdac"
+      },
+      "meta": {
+        "title": "Tisebntariyin - Business Intelligence",
+        "description": "Snulfu-d u sefrek tisebntariyin timurmanin n isefka"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Ageddiw",
+          "bi": "Tussna n Tnezzut",
+          "dashboards": "Tisebntariyin"
+        }
+      },
+      "list": {
+        "title": "Tisebntariyin",
+        "subtitle": "Wali isefka-inek s tsebntariyin timurmanin",
+        "createButton": "Tasebntart Tamaynut",
+        "loading": "La yessedlay tisebntariyin...",
+        "noDescription": "Ulac aglam yettwamlen",
+        "newDashboardDefaultName": "Tasebntart Tamaynut",
+        "newDashboardDefaultDescription": "Tasebntart tamaynut i usekkan n tmuɣliwin n isefka-inek.",
+        "empty": {
+          "title": "Ulac Tisebntariyin Yakan",
+          "description": "Snulfu-d tasebntart-inek tamezwarut i usekkan n isefka-inek.",
+          "cta": "Snulfu Tasebntart"
+        },
+        "search": {
+          "placeholder": "Nadi tisebntariyin...",
+          "noResults": "Ulac tisebntariyin yettwafen"
+        },
+        "filters": {
+          "all": "Akk Tisebntariyin",
+          "public": "Tazayezt",
+          "private": "Tusligt"
+        },
+        "stats": {
+          "total": "Asemday n Tsebntariyin",
+          "public": "Tisebntariyin Tizayezin",
+          "widgets": "Asemday n Yiweǧiten"
+        }
+      },
+      "detail": {
+        "tabs": {
+          "overview": "Tamuɣli Tamatut",
+          "cockpit": "Tanarit tamezwarut",
+          "edit": "Bded Asebded",
+          "settings": "Iɣewwaren n Tsebntart"
+        },
+        "notFound": {
+          "title": "Tasebntart Ur Tettwafa Ara",
+          "description": "Tasebntart i la tettnadiḍ ulac-itt neɣ tettwakkes.",
+          "backToDashboards": "Uɣal ɣer Tsebntariyin"
+        },
+        "errors": {
+          "createFailed": "Asnulfu n tsebntart ur yeddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "updateFailed": "Asimret n tsebntart ur yeddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "deleteFailed": "Tukksa n tsebntart ur teddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "loadFailed": "Asali n tsebntart ur yeddi ara. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "generic": "Tella-d tuccḍa. Ttxil-k ɛreḍ tikkelt nniḍen.",
+          "noOrg": "Amseqdac ur yeqqin ara ɣer kra n tuddsa.",
+          "datasetNotFound": "Agraw n isefka ur yettwafa ara.",
+          "emptyDataset": "Agraw n isefka ulac deg-s isefka i usekkan.",
+          "generateFailed": "Asnulfu n tsebntart ur yeddi ara.",
+          "accessDenied": "Anekcum yettwagdel.",
+          "listFailed": "Ur yezmir ara ad d-yessken tisebntariyin.",
+          "notFound": "Tasebntart ur tettwafa ara.",
+          "notFoundOrPrivilege": "Tasebntart ur tettwafa ara neɣ turagt tettwagdel.",
+          "widgetError": "Tuccḍa deg uweǧit.",
+          "widgetAddFailed": "Tmerniwt n uweǧit ur teddi ara.",
+          "widgetNotFound": "Aweǧit ur yettwafa ara."
+        },
+        "success": {
+          "created": "Tasebntart tettwasnulfa-d s urebbaḥ.",
+          "generated": "Tasebntart tettwasnulfay-d s uwurman s urebbaḥ.",
+          "retrieved": "Tasebntart tettwassiweḍ-d s urebbaḥ.",
+          "updated": "Tasebntart tettwasmirwet s urebbaḥ.",
+          "deleted": "Tasebntart tettwakkes s urebbaḥ.",
+          "widgetAdded": "Aweǧit yettwarnu ɣer tsebntart s urebbaḥ.",
+          "widgetDeleted": "Aweǧit yettwakkes s urebbaḥ."
+        },
+        "actions": {
+          "save": "Sekles Asebded",
+          "cancel": "Sefsex Ibeddilen",
+          "edit": "Bded Tasebntart",
+          "delete": "Kkes Tasebntart",
+          "share": "Bḍu Tmuɣliwin",
+          "addWidget": "Rnu Aweǧit n Tneflit",
+          "generate": "Asnulfu Awurman s IA",
+          "fullscreen": "Kcem s Ugdil Amadud",
+          "exitFullscreen": "Ffeɣ seg Ugdil Amadud"
+        },
+        "autoGenerate": {
+          "title": "Amsnulfu n Tesleḍt s IA",
+          "description": "Eǧǧ Podacium AI ad tebnu tasebntart-inek ɣef llsas n tseddarin n yisefka.",
+          "primary": "Snulfu-d Asebded s Uwurman",
+          "secondary": "Fren Tineɣrufin Yewjden",
+          "loading": "La yebnnu Tasebntart...",
+          "success": "Asebded yettwasnulfa-d s urebbaḥ!",
+          "selectDataset": "Fren Agraw n Isefka"
+        },
+        "editor": {
+          "errors": {
+            "failedToLoadColumns": "Ur yezmir ara ad d-yessali tigejda n tgejdit n yisefka"
+          },
+          "actions": {
+            "daxMetrics": "Isektayen n DAX",
+            "scheduleDigest": "Aheggi n ugzul"
+          },
+          "sidebar": {
+            "tabs": {
+              "data": "Isefka",
+              "design": "Afeṣṣel",
+              "format": "Tamselt"
+            },
+            "semantic": {
+              "valid": "Asefrek yemṣada",
+              "required_dimension": "Tagejdit n ugelhim X d tamadant",
+              "required_metric": "Aql-it yessefk ɣas yiwen n usekti",
+              "pie_limit": "Tugna n teḥbult tettdag yiwen kan n usekti",
+              "kpi_limit": "Tikarḍiwin n KPI ttedgant yiwen kan n usekti"
+            },
+            "data": {
+              "source": "Aɣbalu n Isefka",
+              "xAxis": "Agelhim X (Tamsalt)",
+              "metrics": "Tisektiyin (Agelhim Y)",
+              "addMetric": "Rnu Asekti",
+              "preview": "Tamuɣli Tusridt",
+              "liveSync": "Amsasa srid"
+            },
+            "design": {
+              "chartType": "Tawsit n Tugna",
+              "theme": "Iseɣwan n Yiniten",
+              "interactive": "Amurman",
+              "glassmorphism": "Tamuɣli n Djaj (Glassmorphism)",
+              "legend": "Amḍiq n Umsegzi",
+              "palettes": {
+                "azure": "Anili (Azure)",
+                "forest": "Tazegzawt n Tezgi",
+                "sunset": "Gellu n Yiṭij"
+              }
+            },
+            "format": {
+              "numberFormat": "Tamselt n Umḍan",
+              "auto": "Awurman",
+              "currency": "Adrim",
+              "percentage": "Afellay %",
+              "decimal": "Amḍan Anzazan",
+              "decimals": "Inzazen"
+            },
+            "title": "Amnulfu n Yiweǧiten",
+            "description": "Zuɣer iweǧiten ɣer tsebntart-inek"
+          }
+        },
+        "deleteConfirm": "Tebɣiḍ s tidett ad tekkseḍ tasebntart-agi?",
+        "settings": {
+          "titlePlaceholder": "Azwel n Tsebntart",
+          "descriptionPlaceholder": "Sekcem aglam i tsebntart-inek",
+          "public": {
+            "label": "Anekcum Azayez",
+            "description": "Siref i yal yiwen yesɛan aseɣwen ad iwali tasebntart-agi"
+          },
+          "saveSuccess": "Iɣewwaren n tsebntart ttwaselsen",
+          "saveError": "Aselkes n yiɣewwaren ur yeddi ara",
+          "deleteSuccess": "Tasebntart tettwakkes",
+          "deleteError": "Tukksa n tsebntart ur teddi ara",
+          "saving": "La isekles…"
+        }
+      },
+      "new": {
+        "detail": {
+          "errors": {
+            "createFailed": "Asnulfu n tsebntart ur yeddi ara"
+          },
+          "success": {
+            "created": "Tasebntart tettwasnulfa-d s urebbaḥ",
+            "generated": "Tasebntart tettwasnulfa-d s uwurman"
+          }
+        },
+        "nav": {
+          "breadcrumb": {
+            "home": "Ageddiw",
+            "bi": "Tussna n Tnezzut",
+            "dashboards": "Tisebntariyin",
+            "create": "Snulfu Tasebntart"
+          }
+        },
+        "title": "Snulfu Tasebntart Tamaynut",
+        "subtitle": "Bnu tasebntart yettwasefrayen s yiweǧiten",
+        "steps": {
+          "basic": "Talɣut n Tazwara",
+          "dataset": "Agraw n Isefka",
+          "widgets": "Iweǧiten",
+          "layout": "Asebded",
+          "preview": "Tamuɣli"
+        },
+        "form": {
+          "title": {
+            "label": "Azwel n Tsebntart",
+            "placeholder": "Sekcem azwel ifrawanen",
+            "hint": "Fren isem ibanen i yettwaṭṭfen deg wallaɣ",
+            "required": "Azwel n tsebntart d amadan"
+          },
+          "description": {
+            "label": "Aglam",
+            "placeholder": "Glem d acu i d-tesskan tsebntart-agi...",
+            "hint": "D afranay maca yelha i useddu ifazen"
+          },
+          "visibility": {
+            "label": "Tamuɣli",
+            "private": "Tusligt",
+            "privateDesc": "Kečč kan i izemren ad tt-twaliḍ",
+            "team": "Tarbaɛt",
+            "teamDesc": "Iɛeggalen n tuddsa-inek zemren ad tt-walin",
+            "public": "Tazayezt",
+            "publicDesc": "Yal yiwen yesɛan aseɣwen yezmer ad tt-iwali"
+          },
+          "dataset": {
+            "search": "Nadi igrawen n isefka...",
+            "empty": "Ulac agraw n isefka yettwasleḍen i yellan",
+            "upload": "Sali-d Agraw n Isefka",
+            "selected": "Agraw Yettwafernen",
+            "required": "Ttxil-k fren agraw n isefka"
+          },
+          "widgets": {
+            "select": "Rnu Iweǧiten",
+            "selected": "Iweǧiten Yettwafernen",
+            "titlePlaceholder": "Azwel n uweǧit",
+            "empty": "Tekki ɣef ufella i tmerniwt n yiweǧiten",
+            "required": "Ttxil-k rnu aql-it yiwen n uweǧit"
+          },
+          "layout": {
+            "type": "Tawsit n Usebded",
+            "types": {
+              "grid": "Tafelwit",
+              "freeform": "Tilellit",
+              "report": "Aneqqis",
+              "presentation": "Askasi"
+            },
+            "grid": "Iɣewwaren n Tfelwit",
+            "columns": "Tigejda",
+            "rowHeight": "Tiddi n Uzirig",
+            "gap": "Tallunt gar-asen",
+            "presets": {
+              "compact": "Aḥerfi",
+              "standard": "Amagnu",
+              "spacious": "Yewseɛ"
+            },
+            "preview": "Tamuɣli n Usebded",
+            "previewEmpty": "Rnu iweǧiten i wakken ad twaliḍ asebded"
+          },
+          "preview": {
+            "summary": "Agzul",
+            "title": "Azwel",
+            "untitled": "Tasebntart War Azwel",
+            "visibility": "Tamuɣli",
+            "widgets": "Iweǧiten",
+            "layout": "Asebded",
+            "description": "Aglam",
+            "widgetsPreview": "Tamuɣli n Yiweǧiten",
+            "widgetPreview": "Tamuɣli n Uweǧit",
+            "saveDraft": "Sekles d Arewwel",
+            "publish": "Zuzzer Tasebntart"
+          }
+        },
+        "types": {
+          "metric": "Takarḍa n Usekti",
+          "metricDesc": "Skan yiwen n usekti agejdan s uskan n tseddart n tnekra",
+          "bar": "Tugna n Yicerriqen",
+          "barDesc": "Serwes azalen gar taggayin s yicerriqen ibeddiyen neɣ yensen",
+          "line": "Tugna n Yizirig",
+          "lineDesc": "Skan tignatin deg wakud neɣ isefka imedlen",
+          "pie": "Tugna n Teḥbult",
+          "pieDesc": "Skan iḥricen n wamur amadud d tiḥbula",
+          "table": "Tafelwit",
+          "tableDesc": "Sken isefka deg yizirigen d tgejda s usizdeg d usemskel",
+          "heatmap": "Tigdet n Uzwel",
+          "heatmapDesc": "Sken tussda neɣ tazmert ɣef sin n yigelhimen"
+        },
+        "navigation": {
+          "back": "Uɣal",
+          "next": "D-Itteddun"
+        },
+        "meta": {
+          "title": "Snulfu Tasebntart - Business Intelligence",
+          "description": "Snulfu-d tasebntart tamaynut"
+        }
+      }
+    },
+    "widgets": {
+      "add": "Rnu Aweǧit",
+      "edit": "Beddel Aweǧit",
+      "remove": "Kkes Aweǧit",
+      "moreOptions": "Iɣewwaren nniḍen",
+      "fullscreen": {
+        "enter": "Agdil ačuran",
+        "exit": "Ffeɣ seg ugdil ačuran"
+      },
+      "types": {
+        "metric": "Takarḍa n Usekti",
+        "bar": "Tugna n Yicerriqen",
+        "line": "Tugna n Yizirig",
+        "pie": "Tugna n Teḥbult",
+        "scatter": "Tugna n Usedmer (Scatter)",
+        "histogram": "Ahistugram",
+        "table": "Tafelwit",
+        "heatmap": "Tigdet n Uzwel",
+        "sankey": "Tugna n Sankey",
+        "radar": "Tugna n Radar",
+        "funnel": "Tugna n Telkint",
+        "map": "Takarḍa Tajeɣrafit",
+        "treemap": "TreeMap",
+        "gauge": "Agemmay n Uktay",
+        "custom": "Aweǧit Yettwasefrayen",
+        "area": "Tugna n Tejrart",
+        "kpi": "Takarḍa n KPI",
+        "unsupported": "Tawsit Ur Nettwagdel Ara"
+      },
+      "aggregations": {
+        "sum": "Semmdu",
+        "avg": "Alemmas",
+        "count": "Amḍan",
+        "min": "Adday",
+        "max": "Aflay"
+      },
+      "interactivity": {
+        "export": "Sifeḍ Isefka"
+      },
+      "config": {
+        "titlePlaceholder": "Azwel n Uweǧit",
+        "title": "Azwel",
+        "description": "Aglam"
+      },
+      "insight": {
+        "analysis": "Tasleḍt",
+        "dynamicValue": "La yettenfufud deg {dimension}",
+        "placeholder": "Ulac tmuɣliwin yellan"
+      },
+      "state": {
+        "loading": "La yessedlay isefka...",
+        "error": "Tuccḍa deg usali n isefka",
+        "empty": "Ulac isefka yellan"
+      }
+    },
+    "organizations": {
+      "meta": {
+        "title": "Tuddsiwin - Business Intelligence",
+        "description": "Sefrek tuddsiwin-inek d yiɛeggalen n terbaɛt"
+      },
+      "title": "Tuddsiwin",
+      "subtitle": "Sefrek tuddsiwin-inek d tirebbaɛ-inek",
+      "create": "Snulfu Tuddsa",
+      "createNew": "Tuddsa Tamaynut",
+      "edit": "Bded Tuddsa",
+      "view": "Wali Afruri",
+      "switch": "Senfel Tuddsa",
+      "active": "Termed",
+      "primary": "Tagejdant",
+      "setPrimary": "Err d Tagejdant",
+      "noOrganizations": "Ulac tuddsiwin yettwafen",
+      "getStarted": "Bdu s usnulfu n tuddsa-inek tamezwarut",
+      "createFirst": "Snulfu tuddsa-inek tamezwarut",
+      "alreadyHaveOne": "Tesɛiḍ yakan yiwet?",
+      "checkStatus": "Senqed addad",
+      "member": "Aɛeggal",
+      "manageMembers": "Sefrek Iɛeggalen",
+      "inviteMember": "Ɛreḍ Aɛeggal",
+      "removeMember": "Kkes Aɛeggal",
+      "updateRole": "Beddel Tamellilt",
+      "noDescription": "Ulac aglam yettwamlen",
+      "owner": "Bab n Tuddsa",
+      "you": "Kečč",
+      "joined": "Yekcem Deg",
+      "loading": "La yessedlay tuddsiwin...",
+      "stats": {
+        "min": "Adday",
+        "max": "Aflay",
+        "mean": "Alemmas",
+        "sum": "Semmdu",
+        "uniqueValues": "Azalen Imusnawen",
+        "unavailable": "Ulac tismendayin yellan"
+      },
+      "invitations": {
+        "title": "Inaddaden la Ittraǧun",
+        "invitedBy": "Yettwaɛreḍ sɣur",
+        "actions": {
+          "accept": "Qbel Tinubga",
+          "decline": "Aggi"
+        }
+      },
+      "tabs": {
+        "overview": "Tamuɣli Tamatut",
+        "members": "Iɛeggalen",
+        "settings": "Iɣewwaren",
+        "datasets": "Igrawen n Isefka"
+      },
+      "datasets": {
+        "empty": {
+          "title": "Ulac igrawen n isefka yettwafen",
+          "description": "Tuddsa-agi ur tesli ara yakan kra n ugraw n isefka."
+        }
+      },
+      "overview": {
+        "members": "Asemday n Yiɛeggalen",
+        "datasets": "Asemday n Yigrawen",
+        "role": "Tamellilt-inek",
+        "basic_info": "Talɣut n Tazwara",
+        "description": "Ɣef Tuddsa",
+        "no_description": "Ulac aglam yettwamlen i tuddsa-agi."
+      },
+      "status": {
+        "active": "Tuddsa Yermden"
+      },
+      "actions": {
+        "switch": "Senfel ɣer tuddsa-agi",
+        "new_dataset": "Agraw Amaynut"
+      },
+      "nav": {
+        "back_to_list": "Uɣal ɣer tebdart n tuddsiwin",
+        "breadcrumb": {
+          "home": "Ageddiw",
+          "bi": "Tussna n Tnezzut",
+          "organizations": "Tuddsiwin"
+        }
+      },
+      "settings": {
+        "description": "Sefrek iɣewwaren d yismuyen n tuddsa-inek.",
+        "no_permission": "Anekcum Yettwagdel",
+        "no_permission_desc": "Ur tesɛiḍ ara tisuraf n unedbal i ubeddel n yiɣewwaren n tuddsa-agi."
+      },
+      "list": {
+        "title": "Tuddsiwin-inek",
+        "subtitle": "Sefrek tuddsiwin-inek, iɛeggalen, d ttawilat",
+        "actions": {
+          "create": "Tuddsa Tamaynut",
+          "leave": "Eǧǧ Tuddsa",
+          "leaveConfirm": "Tebɣiḍ s tidett ad teǧǧeḍ {name}? Ad tesṛuḥeḍ anekcum ɣer akk ttawilat-is."
+        },
+        "stats": {
+          "total": "Asemday n Tuddsiwin",
+          "owned": "Tid tesɛiḍ d ayla-k",
+          "members": "Asemday n Yiɛeggalen"
+        },
+        "filters": {
+          "search": "Nadi tuddsiwin..."
+        },
+        "bulkDelete": {
+          "button": "Kkes ({count})",
+          "confirmTitle": "Ad tekkseḍ {count} n tuddsiwin?",
+          "confirmMessage": "Tebɣiḍ ad tekkseḍ {count} n tuddsiwin? Tigawt-agi ur tettwagdel ara.",
+          "success": "{count} n tuddsiwin ttwakksent s urebbaḥ",
+          "partialSuccess": "{success} ttwakksent, {failed} xesrent",
+          "error": "Tukksa n tuddsiwin ur teddi ara",
+          "deleting": "La yettekkes {count} n tuddsiwin..."
+        },
+        "table": {
+          "name": "Tuddsa",
+          "role": "Tamellilt-inek",
+          "members": "Iɛeggalen",
+          "location": "Adig",
+          "sector": "Igzum",
+          "created": "Yettwasnulfa Deg",
+          "actions": {
+            "title": "Tigawtin",
+            "view": "Wali Afruri",
+            "edit": "Bded Iɣewwaren",
+            "delete": "Kkes Tuddsa",
+            "members": "Sefrek Iɛeggalen",
+            "leave": "Eǧǧ Tuddsa"
+          }
+        },
+        "empty": {
+          "title": "Ulac Tuddsiwin Yakan",
+          "description": "Snulfu-d tuddsa-inek tamezwarut i wakken ad teddukkleḍ d terbaɛt-inek u ad tsefrekeḍ ttawilat s tseddi.",
+          "action": "Snulfu Tuddsa"
+        }
+      },
+      "roles": {
+        "owner": "Bab n Tuddsa",
+        "admin": "Anedbal",
+        "member": "Aɛeggal",
+        "moderator": "Alemmas (Moderator)"
+      },
+      "card": {
+        "viewDetails": "Wali Afruri",
+        "settings": "Iɣewwaren",
+        "memberCount": "{count} n uɛeggal",
+        "memberCount_plural": "{count} n yiɛeggalen",
+        "createdOn": "Yettwasnulfa deg {date}",
+        "ownedByYou": "D ayla-k",
+        "role": "Tamellilt-inek"
+      },
+      "form": {
+        "title": {
+          "create": "Snulfu Tuddsa Tamaynut",
+          "edit": "Bded Tuddsa"
+        },
+        "name": {
+          "label": "Isem n Tuddsa",
+          "placeholder": "d.m. Acme Corp",
+          "hint": "Fren isem ibanen i yettwaṭṭfen deg wallaɣ",
+          "required": "Isem n tuddsa d amadan",
+          "minLength": "Isem yessefk ad yesɛu aql-it 2 n yisekkilen",
+          "maxLength": "Isem yessefk ad yili ddaw n 100 n yisekkilen"
+        },
+        "description": {
+          "label": "Aglam",
+          "placeholder": "Aglam wezzilen ɣef tuddsa-inek",
+          "hint": "D afranay maca yelha"
+        },
+        "geography": {
+          "label": "Adig",
+          "placeholder": "Fren adig",
+          "hint": "Anda tella tuddsa-inek?",
+          "required": "Afran n wadig d amadan"
+        },
+        "sector": {
+          "label": "Igzum",
+          "placeholder": "Fren igzum",
+          "hint": "D acu i d igzum-inek adamsan agejdan?",
+          "required": "Igzum adamsan d amadan"
+        },
+        "website": {
+          "label": "Asmel n Internet",
+          "placeholder": "https://example.com",
+          "hint": "Asmel n internet n tuddsa-inek",
+          "invalid": "Ttxil-k sekcem tansa URL iṣeḥḥan"
+        },
+        "submit": {
+          "create": "Snulfu Tuddsa",
+          "update": "Sekles Ibeddilen",
+          "creating": "La yessnulfuy...",
+          "updating": "La isekles..."
+        },
+        "cancel": "Sefsex",
+        "error": {
+          "generic": "Tella-d tuccḍa deg uselkes n tuddsa",
+          "alreadyOwner": "Tesɛiḍ yakan tuddsa d ayla-k. Yal amseqdac yezmer kan ad yesɛu yiwet n tuddsa.",
+          "nameTaken": "Tuddsa s yisem-agi tella yakan",
+          "loadFailed": "Asali n yifruriyen n tuddsa ur yeddi ara"
+        },
+        "success": {
+          "created": "Tuddsa tettwasnulfa-d s urebbaḥ!",
+          "updated": "Tuddsa tettwasmirwet s urebbaḥ!"
+        }
+      },
+      "delete": {
+        "title": "Kkes Tuddsa",
+        "subtitle": "Tigawt-agi ur tettwagdel ara",
+        "message": "Tebɣiḍ ad tekkseḍ {name}? Akk isefka, iɛeggalen, d ttawilat ad ttwakksen i lebda.",
+        "hasResources": "Tuddsa-agi tesɛa {count} n ttawilat yermden. Ttxil-k kkes-iten neɣ sers-iten deg umḍiq nniḍen uqbel tukksa.",
+        "hasMembers": "Tuddsa-agi tesɛa {count} n yiɛeggalen. Ad sṛuḥen anekcum ɣer akk ttawilat.",
+        "confirm": "Kkes Tuddsa",
+        "confirmText": "Aru KKES i usentem",
+        "confirmPlaceholder": "Aru KKES",
+        "confirmMismatch": "Ttxil-k aru KKES i usentem",
+        "deleting": "La yettekkes...",
+        "cancel": "Sefsex",
+        "error": "Tukksa n tuddsa ur teddi ara",
+        "success": "Tuddsa tettwakkes s urebbaḥ"
+      },
+      "members": {
+        "title": "Iɛeggalen n Terbaɛt",
+        "subtitle": "Sefrek anwa yesɛan anekcum ɣer tuddsa-agi",
+        "loading": "La yessedlay iɛeggalen...",
+        "count": "{count} n uɛeggal",
+        "count_plural": "{count} n yiɛeggalen",
+        "noMembers": "Ulac iɛeggalen yakan",
+        "noMembersDescription": "Ɛreḍ iɛeggalen n terbaɛt i wakken ad teddukklem ɣef tuddsa-agi",
+        "inviteButton": "Ɛreḍ",
+        "joined": "Yekcem Deg",
+        "changeRole": "Beddel Tamellilt",
+        "you": "(Kečč)",
+        "pending": "Ittraǧu",
+        "roles": {
+          "owner": "Bab n Tuddsa",
+          "admin": "Anedbal",
+          "member": "Aɛeggal"
+        },
+        "roleDescriptions": {
+          "owner": "Aḥkam amadud ɣef tuddsa",
+          "admin": "Yezmer ad isefrek iɛeggalen d yiɣewwaren",
+          "member": "Yezmer ad iwali u ad iseqdec ttawilat"
+        },
+        "permissions": {
+          "owner": "Anekcum amadud",
+          "admin": "Asefrek n yiɛeggalen, abeddel n yiɣewwaren",
+          "member": "Tamuɣli kan"
+        },
+        "invite": {
+          "title": "Ɛreḍ Aɛeggal n Terbaɛt",
+          "subtitle": "Rnu aɛeggal amaynut ɣer tuddsa-inek",
+          "email": {
+            "label": "Tansa n Yimayl",
+            "placeholder": "amdakkul@example.com",
+            "hint": "Sekcem imayl n umdan i tebɣiḍ ad tɛerḍeḍ",
+            "required": "Imayl d amadan",
+            "invalid": "Ttxil-k sekcem tansa n yimayl iṣeḥḥan"
+          },
+          "role": {
+            "label": "Tamellilt",
+            "placeholder": "Fren tamellilt",
+            "hint": "Fren aswir n turagt yemṣadan",
+            "required": "Ttxil-k fren tamellilt"
+          },
+          "message": {
+            "label": "Izen Udmawan (Afranay)",
+            "placeholder": "Rnu izen udmawan ɣer tinubga...",
+            "hint": "Waya ad yili deg yimayl n tinubga"
+          },
+          "submit": "Azen Tinubga",
+          "sending": "La yazen...",
+          "cancel": "Sefsex",
+          "error": {
+            "generic": "Tuzna n tinubga ur teddi ara",
+            "userNotFound": "Ulac amseqdac yettwafen s tensa-agi n yimayl",
+            "alreadyMember": "Amseqdac-agi d aɛeggal yakan",
+            "alreadyInvited": "Tinubga tettwazen yakan ɣer yimayl-agi"
+          },
+          "success": "Tinubga tettwazen s urebbaḥ!"
+        },
+        "remove": {
+          "title": "Kkes Aɛeggal",
+          "subtitle": "Kkes {name} seg tuddsa-agi",
+          "message": "Tebɣiḍ ad tekkseḍ {name}? Ad isṛuḥ anekcum ɣer akk ttawilat n tuddsa.",
+          "cannotRemoveOwner": "Ur tezmireḍ ara ad tekkseḍ bab n tuddsa",
+          "cannotRemoveSelf": "Ur tezmireḍ ara ad tekkseḍ iman-ik. Efk tuddsa i wayeḍ neɣ kkes-itt.",
+          "confirm": "Kkes Aɛeggal",
+          "removing": "La yettekkes...",
+          "cancel": "Sefsex",
+          "error": "Tukksa n uɛeggal ur teddi ara",
+          "success": "Aɛeggal yettwakkes s urebbaḥ"
+        },
+        "updateRole": {
+          "title": "Beddel Tamellilt n Uɛeggal",
+          "subtitle": "Beddel tamellilt i {name}",
+          "currentRole": "Tamellilt tamirant: {role}",
+          "newRole": {
+            "label": "Tamellilt Tamaynut",
+            "placeholder": "Fren tamellilt tamaynut"
+          },
+          "cannotChangeOwner": "Ur tezmireḍ ara ad tbeddleḍ tamellilt n bab n tuddsa",
+          "cannotChangeSelf": "Ur tezmireḍ ara ad tbeddleḍ tamellilt-inek s yiman-ik",
+          "confirm": "Beddel Tamellilt",
+          "updating": "La ibeddel...",
+          "cancel": "Sefsex",
+          "error": "Abeddel n tmellilt ur yeddi ara",
+          "success": "Tamellilt tettwabeddel s urebbaḥ"
+        },
+        "accept": {
+          "title": "Kcem ɣer {orgName}",
+          "subtitle": "Tettwaɛerḍeḍ i wakken ad teddukkleḍ",
+          "invitedBy": "Yettwaɛreḍ sɣur {inviterName}",
+          "role": "Tamellilt-inek: {role}",
+          "acceptButton": "Qbel Tinubga",
+          "declineButton": "Aggi",
+          "accepting": "La yetteddu unekcum...",
+          "declining": "La yettagi...",
+          "success": "Tkecmeḍ ɣer {orgName}!",
+          "successRedirect": "Aserwes ɣer tuddsa-inek...",
+          "declined": "Tinubga tettwagdel",
+          "expired": "Tinubga-agi tfukk tallit-is",
+          "expiredHint": "Ttxil-k ssuter tinubga tamaynut.",
+          "notFound": "Tinubga ur tettwafa ara",
+          "notFoundHint": "Aseɣwen n tinubga-agi ur yeddi ara.",
+          "alreadyMember": "Kečč d aɛeggal deg tuddsa-agi yakan",
+          "alreadyMemberHint": "Tzemreḍ ad tkecmeḍ ɣer tuddsa seg tsebntart-inek.",
+          "alreadyUsed": "Tinubga-agi tettwaseqdec yakan",
+          "alreadyUsedHint": "Tinubga-agi tettwasleḍ yakan.",
+          "loginRequired": "Ttxil-k qqen i wakken ad tqebleḍ tinubga-agi",
+          "loading": "La yessedlay tinubga...",
+          "goToOrganizations": "Ddu ɣer Tuddsiwin"
+        },
+        "list": {
+          "title": "Tinubgiwin la Ittraǧun",
+          "empty": "Ulac tinubgiwin la ittraǧun",
+          "invitedOn": "Yettwaɛreḍ deg {date}",
+          "expiresIn": "Ad tfakk deg {days} n wussan",
+          "expired": "Tfukk"
+        },
+        "actions": {
+          "cancel": "Sefsex Tinubga",
+          "resend": "Ales Azen n Tinubga",
+          "cancelConfirm": "Tebɣiḍ s tidett ad tsefsxeḍ tinubga-agi?",
+          "resendConfirm": "Ales azen n yimayl n tinubga ɣer {email}?",
+          "cancelling": "La isefsex...",
+          "resending": "La yettales azen...",
+          "modalCancel": "Sefsex",
+          "modalConfirm": "Sentem"
+        },
+        "success": {
+          "cancelled": "Tinubga tettwasefsex",
+          "resent": "Tinubga tettwazen tikkelt nniḍen s urebbaḥ"
+        },
+        "error": {
+          "title": "Tuccḍa",
+          "generic": "Asali n yiɛeggalen ur yeddi ara",
+          "cancelFailed": "Asefsex n tinubga ur yeddi ara",
+          "resendFailed": "Allus n tuzna n tinubga ur yeddi ara"
+        }
+      },
+      "switcher": {
+        "title": "Senfel Tuddsa",
+        "current": "Tuddsa Tamirant",
+        "switchTo": "Senfel ɣer {name}",
+        "manage": "Sefrek Tuddsiwin",
+        "create": "Snulfu Tuddsa Tamaynut"
+      },
+      "details": {
+        "title": "Afruri n Tuddsa",
+        "overview": "Tamuɣli Tamatut",
+        "members": "Iɛeggalen",
+        "settings": "Iɣewwaren",
+        "info": {
+          "name": "Isem",
+          "description": "Aglam",
+          "owner": "Bab n Tuddsa",
+          "created": "Yettwasnulfa Deg",
+          "updated": "Asimer Aneggaru",
+          "location": "Adig",
+          "sector": "Igzum",
+          "website": "Asmel n Internet",
+          "memberCount": "Asemday n Yiɛeggalen"
+        },
+        "actions": {
+          "edit": "Bded Afruri",
+          "delete": "Kkes Tuddsa",
+          "leave": "Eǧǧ Tuddsa"
+        }
+      },
+      "errors": {
+        "loadFailed": "Asali n tuddsiwin ur yeddi ara",
+        "createFailed": "Asnulfu n tuddsa ur yeddi ara",
+        "updateFailed": "Asimret n tuddsa ur yeddi ara",
+        "deleteFailed": "Tukksa n tuddsa ur teddi ara",
+        "leaveFailed": "Ur yezmir ara ad yeffeɣ seg tuddsa",
+        "notFound": "Tuddsa ur tettwafa ara",
+        "noPermission": "Ur tesɛiḍ ara turagt i tigawt-agi",
+        "ownerOnly": "Bab n tuddsa kan i izemren ad yeg tigawt-agi",
+        "adminOnly": "Inedbalen kan i izemren ad gen tigawt-agi"
+      },
+      "enums": {
+        "city_label": "Tiɣremt",
+        "select_city": "Fren tiɣremt",
+        "country": {
+          "ALGERIA": "Dzayer",
+          "EGYPT": "Maṣer",
+          "MOROCCO": "Lmerruk",
+          "TUNISIA": "Tunes",
+          "LIBYA": "Libya"
+        },
+        "city": {
+          "ALGIERS": "Dzayer",
+          "ORAN": "Wehran",
+          "CONSTANTINE": "Qsenṭina",
+          "ANNABA": "Ɛennaba",
+          "BLIDA": "Blida",
+          "BATNA": "Batna",
+          "DJELFA": "Ǧelfa",
+          "SETIF": "Sṭif",
+          "SIDI_BEL_ABBES": "Sidi Belɛebbas",
+          "BISKRA": "Biskra",
+          "TEBESSA": "Tbessa",
+          "EL_OUED": "Lwad",
+          "SKIKDA": "Skikda",
+          "TIARET": "Tyaret",
+          "BEJAIA": "Bgayet",
+          "TLEMCEN": "Tlemsan",
+          "OUARGLA": "Wargla",
+          "MOSTAGANEM": "Mustɣanem",
+          "MSILA": "Msila",
+          "GHARDAIA": "Ɣerdaya",
+          "CAIRO": "Lqahira",
+          "ALEXANDRIA": "Liskandariya",
+          "GIZA": "Giza",
+          "PORT_SAID": "Bur Saɛid",
+          "SUEZ": "Swis",
+          "CASABLANCA": "Anfa (Casablanca)",
+          "RABAT": "Rbaṭ",
+          "MARRAKESH": "Merrakec",
+          "TANGIER": "Ṭanja",
+          "FES": "Fas",
+          "TUNIS": "Tunes Tamanaɣt",
+          "SFAX": "Sfaqes",
+          "SOUSSE": "Susa",
+          "ETTADHAMEN": "Ettadhamen",
+          "KAIROUAN": "Qirwan",
+          "TRIPOLI": "Ṭrables",
+          "BENGHAZI": "Benɣazi",
+          "MISRATA": "Meṣrata",
+          "SIRTE": "Surt",
+          "SABHA": "Sebha",
+          "ADRAR": "Adrar",
+          "CHLEF": "Clef",
+          "LAGHOUAT": "Leɣwaṭ",
+          "OUM_EL_BOUAGHI": "Um Lebwaqi",
+          "BECHAR": "Beccar",
+          "BOUIRA": "Tubiret",
+          "TAMANRASSET": "Tamenɣest",
+          "TIZI_OUZOU": "Tizi Wezzu",
+          "JIJEL": "Jijel",
+          "SAIDA": "Sɛida",
+          "GUELMA": "Galma",
+          "MEDEA": "Lemdiyya",
+          "MASCARA": "Mɛesker",
+          "EL_BAYADH": "Lebyeḍ",
+          "ILLIZI": "Illizi",
+          "BORDJ_BOU_ARRERIDJ": "Borǧ Bu Ɛririǧ",
+          "BOUMERDES": "Bumerdas",
+          "EL_TARF": "Ṭṭaref",
+          "TINDOUF": "Tinduf",
+          "TISSEMSILT": "Tisemsilt",
+          "KHENCHELA": "Xencelt",
+          "SOUK_AHRAS": "Suq Ahras",
+          "TIPAZA": "Tipaza",
+          "MILA": "Mila",
+          "AIN_DEFLA": "Ɛin Defla",
+          "NAAMA": "Nɛama",
+          "AIN_TEMOUCHENT": "Ɛin Timucent",
+          "RELIZANE": "Ɣilizan",
+          "TIMIMOUN": "Timimun",
+          "BORDJ_BADJI_MOKHTAR": "Borǧ Baǧi Muxtar",
+          "OULED_DJELLAL": "Wlad Ǧellal",
+          "BENI_ABBES": "Bni Ɛebbas",
+          "IN_SALAH": "Ɛin Ṣaleḥ",
+          "IN_GUEZZAM": "Ɛin Gezzam",
+          "TOUGGOURT": "Tuggurt",
+          "DJANET": "Ǧanet",
+          "EL_MGHAIR": "Lemɣir",
+          "EL_MENIAA": "Lemniɛa",
+          "AFLOU": "Aflu",
+          "BARIKA": "Barika",
+          "EL_KANTARA": "Lqenṭra",
+          "BIR_EL_ATER": "Bir Lɛater",
+          "EL_ARICHA": "Lɛrica",
+          "KSAR_CHELLALA": "Qṣer Cellala",
+          "AIN_OUSSERA": "Ɛin Wessara",
+          "MESSAAD": "Mesɛed",
+          "KSAR_EL_BOUKHARI": "Qṣer Lbuxari",
+          "BOU_SAADA": "Busɛada",
+          "EL_ABIODH_SIDI_CHEIKH": "Lebyeḍ Sidi Cix"
+        },
+        "sector": {
+          "TECHNOLOGY_AND_SOFTWARE": "Tasnatwilt d Yiseɣzanen",
+          "BANKING_AND_FINANCIAL_SERVICES": "Lbanka d Yimeẓla n Tedrimt",
+          "HEALTHCARE_AND_PHARMACEUTICALS": "Tazmert d Tnesfart",
+          "ENERGY_AND_OIL_AND_GAS": "Tasaɣult, Apiṭrul d Lgaz",
+          "AUTOMOTIVE_AND_MANUFACTURING": "Tamguri d Ufares",
+          "RETAIL_AND_CONSUMER_GOODS": "Tanezzut d Uzenzi",
+          "TELECOMMUNICATIONS": "Tiliɣwalt d Yizeḍwa",
+          "AEROSPACE_AND_DEFENSE": "Tallunt d Temḥaddit",
+          "AGRICULTURE_AND_FOOD_PRODUCTION": "Tafellaḥt d Ufares n Tuččit",
+          "TRANSPORTATION_AND_LOGISTICS": "Amesni d Tlujistikt",
+          "EDUCATION_AND_EDTECH": "Aselmed, Asileɣ d EdTech",
+          "CONSTRUCTION_AND_REAL_ESTATE": "Lebni d Wayla",
+          "CONSULTING_AND_PROFESSIONAL_SERVICES": "Amciwer d Yimeẓla ImSaduren",
+          "MEDIA_AND_CREATIVE_INDUSTRIES": "imidyaten d Turiwin",
+          "TOURISM_AND_HOSPITALITY": "Tamerrit d Usensu",
+          "PUBLIC_SECTOR_AND_ADMINISTRATION": "Agzum Azayez d Tedbelt",
+          "RENEWABLE_ENERGY_AND_CLEANTECH": "Tasaɣult D-yettuɣalen d CleanTech",
+          "MINING_AND_METALLURGY": "Imɣuzen d Yimɣuzen",
+          "TEXTILES_AND_APPAREL": "Aẓetta d Yiceṭṭiḍen",
+          "NON_PROFIT_AND_NGO": "Tiddukliwin d Tuddsiwin",
+          "OTHER": "Wayeḍ / Aget-igzumen"
+        }
+      }
+    },
+    "reports": {
+      "meta": {
+        "title": "Ineqqisen - Business Intelligence",
+        "description": "Snulfu-d u sefrek ineqqisen imurmanen"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Ageddiw",
+          "bi": "Tussna n Tnezzut",
+          "reports": "Ineqqisen"
+        }
+      },
+      "title": "Ineqqisen",
+      "subtitle": "Sefrek u heggi ineqqisen imurmanen",
+      "createButton": "Snulfu Aneqqis",
+      "empty": "Ulac ineqqisen yettwafen",
+      "createFirst": "Snulfu aneqqis-inek amezwaru",
+      "search": {
+        "placeholder": "Nadi ineqqisen..."
+      },
+      "stats": {
+        "total": "Asemday n Yineqqisen",
+        "active": "Yermed",
+        "completed": "Tuzzya yemmed",
+        "failed": "Tuzzya ixesren"
+      },
+      "filters": {
+        "title": "Isizdigen",
+        "clear": "Kkes Isizdigen",
+        "all": "Akk",
+        "inactive": "Ur yermid ara",
+        "format": {
+          "label": "Tamselt",
+          "all": "Akk Timselyin"
+        },
+        "status": {
+          "label": "Addad",
+          "all": "Akk Waddaden"
+        },
+        "dashboard": {
+          "label": "Tasebntart",
+          "all": "Akk Tisebntariyin"
+        },
+        "active": {
+          "label": "Yermed",
+          "all": "Akk",
+          "yes": "Yermed",
+          "no": "Ur yermid ara"
+        }
+      },
+      "table": {
+        "active": "Yermed",
+        "inactive": "Ur yermid ara",
+        "lastRun": "Tuzzya Taneggarut"
+      },
+      "status": {
+        "completed": "Yemmed",
+        "failed": "Ixesser",
+        "running": "La yetteddu",
+        "pending": "Ittraǧu",
+        "cancelled": "Yettwasefsex"
+      },
+      "actions": {
+        "run": "Sekker Tura",
+        "edit": "Bded",
+        "history": "Wali Amezruy",
+        "delete": "Kkes",
+        "activate": "Sekker",
+        "deactivate": "Ssens"
+      },
+      "delete": {
+        "confirm": "Tebɣiḍ s tidett ad tekkseḍ aneqqis-agi?"
+      },
+      "history": {
+        "title": "Amezruy n Tuzzya",
+        "empty": "Ulac amezruy yellan",
+        "recipients": "wid i t-yermsen",
+        "retry": "Ɛreḍ Tikkelt Nniḍen",
+        "download": "Zdem"
+      },
+      "recipients": "Wid i t-Irmsen",
+      "schedule": {
+        "daily": "Yal ass",
+        "weekly": "Yal imalas",
+        "monthly": "Yal aggur",
+        "manual": "S ufus"
+      },
+      "create": {
+        "selectDashboard": "Fren Tasebntart",
+        "format": "Tamselt",
+        "interval": "Tallit",
+        "every": "Yal",
+        "days": "ass/ussan",
+        "weeks": "imalas/imalasen",
+        "months": "aggur/agguren",
+        "manual": "S ufus",
+        "recipientsPlaceholder": "Sekcem tinsatin n yimayl",
+        "recipientsHint": "Bḍu imaylen s tfelgiyin (,)",
+        "active": "Yermed",
+        "title": "Snulfu Aneqqis",
+        "description": "Heggi aneqqis amaynut",
+        "name": "Isem n Uneqqis",
+        "desc": "Aglam",
+        "dashboard": "Tasebntart",
+        "schedule": "Ahil",
+        "recipients": "Wid i t-Irmsen",
+        "cancel": "Sefsex",
+        "submit": "Snulfu Aneqqis"
+      }
+    },
+    "quality": {
+      "meta": {
+        "title": "Taɣara n Isefka - Business Intelligence",
+        "description": "Senqed u snerni taɣara n isefka"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Ageddiw",
+          "bi": "Tussna n Tnezzut",
+          "quality": "Taɣara n Isefka"
+        }
+      },
+      "title": "Taɣara n Isefka",
+      "subtitle": "Senqed u snerni tadawsa n isefka-inek",
+      "noData": "Ulac isefka n taɣara yellan",
+      "actions": {
+        "refresh": "Smirwet Tasleḍt",
+        "export": "Sifeḍ Aneqqis"
+      },
+      "freshness": {
+        "title": "Timirra n Isefka",
+        "lastCheck": "Asenqed aneggaru"
+      },
+      "metrics": {
+        "overall": "Agemmay Amatu",
+        "completeness": "Timmudda",
+        "uniqueness": "Tisusni",
+        "consistency": "Tudda",
+        "accuracy": "Taseddi"
+      },
+      "trends": {
+        "title": "Tignatin n Taɣara"
+      },
+      "issues": {
+        "filters": "Zizdeg Uguren",
+        "empty": "Ulac ugur yettwafen",
+        "emptyDesc": "Isefka-inek zeddigen aṭas!",
+        "column": "Tagejdit",
+        "type": "Tawsit",
+        "severity": "Tazmert n Wurkid",
+        "affected": "Izirigen i Yeḥzen",
+        "status": "Addad",
+        "date": "Azemz n Tifin",
+        "actions": "Tigawtin",
+        "allColumns": "Akk Tigejda",
+        "resolve": "Err d Yefra",
+        "ignore": "Ttu Ugur-agi"
+      },
+      "filters": {
+        "severity": {
+          "all": "Akk Tzemmar"
+        },
+        "type": {
+          "all": "Akk Tiwsatin"
+        },
+        "status": {
+          "all": "Akk Waddaden"
+        }
+      },
+      "severity": {
+        "critical": "Axatar",
+        "high": "Afellay",
+        "medium": "Alemmas",
+        "low": "Adday"
+      },
+      "issueTypes": {
+        "missing_values": "Azalen Ixuṣṣen",
+        "duplicates": "Izirigen Yettwalsen",
+        "outliers": "Izagaten",
+        "invalid_types": "Tiwsatin Ur Neqbil Ara"
+      },
+      "status": {
+        "open": "Yeldi",
+        "resolved": "Yefra",
+        "ignored": "Yettwattu",
+        "excellent": "Taɣara Tufrint",
+        "good": "Taɣara Telha",
+        "acceptable": "Taɣara Tamagnut",
+        "poor": "Taɣara Tadirik"
+      },
+      "summary": {
+        "title": "Agzul n Taɣara",
+        "completeness": {
+          "excellent": "Timmudda n isefka d tufrint.",
+          "good": "Timmudda n isefka telha.",
+          "poor": "Timmudda n isefka tdiri - aṭas n wazalen ixuṣṣen."
+        },
+        "duplicates": {
+          "few": "Drus maḍi n yizirigen yettwalsen.",
+          "some": "Llan kra n yizirigen yettwalsen.",
+          "high": "Afellay meqqren n yizirigen yettwalsen yettwafa."
+        },
+        "outliers": {
+          "minimal": "Drus aṭas n yizagaten deg yisefka imḍanen.",
+          "some": "Llan kra n yizagaten deg yisefka imḍanen.",
+          "many": "Aṭas n yizagaten yettwafen deg yisefka imḍanen."
+        },
+        "warnings": {
+          "count": "Tazmilt: {count} n yiseɣtal ɣef yisefka imḍanen."
+        }
+      },
+      "recommendations": {
+        "title": "Iweṣṣiyen",
+        "impute_missing": "Smuqqel tastratijin n usmagger n isefka i wazalen ixuṣṣen",
+        "review_collection": "Senqed tarrayt n uleqqeḍ n isefka i usemɣer n timmudda",
+        "detect_duplicates": "Sers tifin n yizirigen yettwalsen deg uẓeṭṭa n unekcum",
+        "remove_duplicates": "Senqed u kkes izirigen yettwalsen uqbel tasleḍt",
+        "investigate_outliers": "Nadi ɣef yizagaten ma d tuccḍiwin neɣ d azalen imiddiyen n tidett",
+        "treat_outliers": "Snes tarrayin n usegdel n yizagaten i tesleḍt n tsemda",
+        "poor_quality": "Taɣara n isefka tdiri. Xmmen ɣef wallus n uleqqeḍ neɣ asizdeg ameqran uqbel tasleḍt",
+        "good_quality": "Taɣara n isefka telha i tesleḍt",
+        "review_issues": "Senqed uguren n taɣara yettwafen u fer-iten."
+      },
+      "dataset": {
+        "title": "Fren Agraw n Isefka",
+        "search": "Nadi igrawen...",
+        "empty": "Ulac igrawen yettwafen"
+      },
+      "level": {
+        "excellent": "Ufrin",
+        "good": "Yelha",
+        "fair": "Amagnu",
+        "poor": "Adiri"
+      }
+    },
+    "decisions": {
+      "meta": {
+        "title": "Iɣtasan - Business Intelligence",
+        "description": "Ḍfer u sefrek iɣtasan yebnan ɣef yisefka"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Ageddiw",
+          "bi": "Tussna n Tnezzut",
+          "decisions": "Tallelt deg Yiɣtasan"
+        }
+      },
+      "title": "Tallelt deg Yiɣtasan",
+      "subtitle": "Ḍfer u sefrek iɣtasan yebnan ɣef yisefka",
+      "createButton": "Aɣtas Amaynut",
+      "status": {
+        "draft": "Arewwel",
+        "review": "Deg Ussikel",
+        "approved": "Yettwaqbel",
+        "implemented": "Yettwasnes",
+        "archived": "Yettwaḥrez"
+      },
+      "impact": {
+        "low": "Asemdu Adday",
+        "medium": "Asemdu Alemmas",
+        "high": "Asemdu Afellay",
+        "critical": "Asemdu Axatar"
+      },
+      "filters": {
+        "title": "Isizdigen",
+        "clear": "Kkes Isizdigen",
+        "status": {
+          "label": "Addad",
+          "all": "Akk Waddaden"
+        },
+        "impact": {
+          "label": "Asemdu",
+          "all": "Akk Yiswiren"
+        },
+        "dateFrom": "Seg Wazemz",
+        "dateTo": "Ar Azemz"
+      },
+      "table": {
+        "empty": "Ulac iɣtasan yettwafen. Snulfu-d aɣtas-inek amezwaru i wakken ad tebduḍ.",
+        "title": "Azwel",
+        "owner": "Bab n Uɣtas",
+        "updated": "Asimer Aneggaru",
+        "actions": "Tigawtin"
+      },
+      "create": {
+        "title": "Kles Aɣtas",
+        "titleLabel": "Azwel",
+        "description": "Aglam",
+        "impact": "Asemdu Yettwarjan",
+        "rationale": "Tamentilt",
+        "expectedOutcome": "Agmuḍ Yettwarjan",
+        "cancel": "Sefsex",
+        "submit": "Sekles Aɣtas"
+      },
+      "drawer": {
+        "id": "Asulay n Uɣtas",
+        "description": "Aglam",
+        "rationale": "Tamentilt",
+        "expectedOutcome": "Agmuḍ Yettwarjan",
+        "actualOutcome": "Agmuḍ n Tidett",
+        "created": "Yettwasnulfa Deg",
+        "updated": "Yettwasmirwet Deg",
+        "owner": "Bab n Uɣtas",
+        "unknown": "Ur yettwassen ara",
+        "dataset": "Agraw n Isefka",
+        "tags": "Isebntariyin",
+        "noHistory": "Ulac amezruy yellan",
+        "changedBy": "Yettwabeddel sɣur",
+        "addComment": "Rnu awennit",
+        "send": "Azen",
+        "noComments": "Ulac iwenniten yakan",
+        "tabs": {
+          "details": "Afruri",
+          "history": "Amezruy",
+          "comments": "Iwenniten"
+        },
+        "transitionTo": {
+          "review": "Azen i Usenqed",
+          "approved": "Qbel",
+          "implemented": "Err d Yettwasnes",
+          "archived": "Ḥrez"
+        }
+      },
+      "pagination": {
+        "page": "Asebter",
+        "of": "seg"
+      }
+    },
+    "accessibility": {
+      "chartLabel": "Tugna n usekkan n {{type}}",
+      "chartDescription": "Tugna n {{type}} tesskan-d {{count}} n wagazen n isefka",
+      "dataTable": "Tafelwit n isefka",
+      "loadingAnalytics": "La yessedlay isefka n tesleḍt, rǧu ttxil-k...",
+      "confidenceGauge": "Agemmay n tflest: {{score}} deg meyya",
+      "analyticsCards": "Igmaḍ n tesleḍt",
+      "saveDashboard": "Sekles tasebntart",
+      "closePanel": "Mdel amur n ubeddel",
+      "selectAggregation": "Fren tamhelt n usemdu",
+      "sortColumn": "Semskel s tgejdit",
+      "healthScore": "Asektay n tdawsa: {{score}} deg meyya"
+    },
+    "home": {
+      "header": {
+        "badge": "Ammas n Tnila",
+        "brand": "Podacium",
+        "brandHighlight": "Tamussni",
+        "educationalHub": "Ammas Asgman",
+        "title": "Tussna n Tnezzut",
+        "subtitle": "Tamuɣli tusridt deg wakud adigan ɣef tmellilt n tnezzut-inek d yiɣtasan."
+      },
+      "kpi": {
+        "revenue": "Tadrimt Yekcmen",
+        "expenses": "Tisaɣurin",
+        "datasets": "Igrawen n Isefka",
+        "decisions": "Iɣtasan",
+        "records": "{{count}} n yikalan",
+        "approved": "{{count}} yettwaqblen"
+      },
+      "health": {
+        "title": "Agemmay n Tdawsa",
+        "margin": "Lfayda",
+        "cashBuffer": "Amur n Tedrimt n Tɛessast",
+        "informalDebt": "Amerwas Amadud: {{amount}}",
+        "season": "Tasemhawt",
+        "refresh": "Smirwet Tmuɣliwin"
+      },
+      "insights": {
+        "title": "Tmuɣliwin n Wakud Adigan",
+        "emptyTitle": "Sali-d isefka i wakken ad d-tegreḍ tmuɣliwin",
+        "emptyCta": "Sali-d Isefka →",
+        "generatedAgo": "Yettwasnulfa {{time}} aya",
+        "refreshed": "Tmuɣliwin ttwasmirwent s urebbaḥ",
+        "refreshFailed": "Asimret n tmuɣliwin ur yeddi ara",
+        "confidence": "Tafles",
+        "whyDidThisHappen": "Acuɣer i d-yeḍra waya? (Iffura Igejdanen)",
+        "recentlyUpdated": "Yettwasmirwet melmi kan",
+        "columnLabel": "Tagejdit: {{column}}",
+        "baselineTarget": "Iswi n Llsas ({{column}})",
+        "baselineBenchmark": "Asekyal Aɣelnaw",
+        "datasetImpactMetric": "Asekti n Semdu n Ugraw",
+        "categories": {
+          "all": "Akk Tmuɣliwin",
+          "anomaly": "Imihiyen & Izagaten",
+          "trend": "Tignatin n Ugemmu",
+          "forecast": "Isakan n Yimal",
+          "performance": "Tamellilt & Tadawsa"
+        },
+        "urgency": {
+          "critical": "Imihi Axatar",
+          "warning": "Aɣtal",
+          "opportunity": "Tagnit",
+          "info": "Tamuɣli"
+        },
+        "actions": {
+          "createDecision": "Snulfu-d Aɣtas",
+          "triggerClean": "Sekker Asizdeg Igman",
+          "applyFilter": "Snes Isisdeg SQL"
+        }
+      },
+      "pipeline": {
+        "title": "Abrid n Yiɣtasan",
+        "viewAll": "Wali akk",
+        "recentTitle": "Iɣtasan Ineggura",
+        "emptyTitle": "Ulac iɣtasan yakan"
+      }
+    },
+    "onboarding": {
+      "noOrgTitle": "Ansuf ɣer Podacium BI",
+      "noOrgSubtitle": "I wakken ad tebduḍ afran n yiɣtasan s yisefka, yessefk ad tiliḍ deg kra n tuddsa. Tzemreḍ ad tesnulfuḍ ayla-k neɣ ad terǧuḍ tinubga.",
+      "createTitle": "Snulfu tuddsa-inek",
+      "createDesc": "Ili-k d bab n yisefka d tmuɣliwin-inek. Heggi amaɣnu n tnezzut-inek deg kra n tesdidin.",
+      "createCta": "Snulfu Tuddsa",
+      "joinTitle": "Kcem ɣer kra n tuddsa",
+      "joinDesc": "La tettnadiḍ tarbaɛt-inek? Senqed imayl-inek i tinubgiwin neɣ siwel i unedbal-inek.",
+      "joinCta": "Senqed Tinubgiwin",
+      "infoTitle": "Acuɣer ad tseqdceḍ Podacium BI?",
+      "info1": "Sdukkel akk isefka n tnezzut-inek deg yiwen wemḍiq",
+      "info2": "Awi-d tmuɣliwin s IA s uwurman",
+      "info3": "Bḍu igzulen deg WhatsApp s yiwet n tikkelt",
+      "info4": "Senqed agemmay n tdawsa n tnezzut deg wakud adigan"
+    },
+    "share": {
+      "button": "Bḍu deg WhatsApp",
+      "preparing": "La iheggi...",
+      "done": "Yettwabḍa",
+      "defaultText": "Wali tmuɣliwin-agi n tnezzut deg Podacium BI",
+      "copied": "Yettwanɣel ɣer teskilt! Tzemreḍ ad t-tsenteḍ deg WhatsApp.",
+      "error": "Asnulfu n useɣwen n beṭṭu ur yeddi ara"
+    },
+    "error": {
+      "loadFailed": "Asali n tsebntart ur yeddi ara",
+      "loadFailedDesc": "Yella wayen ixuṣṣen deg usali n tsebntart-inek. Ttxil-k ɛreḍ tikkelt nniḍen.",
+      "healthScoreFailed": "Asali n ugemmay n tdawsa ur yeddi ara"
+    },
+    "retry": "Ɛreḍ tikkelt nniḍen",
+    "bookmarks": {
+      "views": "Timuɣliwin",
+      "deletePreset": "Kkes taneɣruft n tmuɣli",
+      "saveCurrentView": "Sekles Tamuɣli Tamirant",
+      "savePresetModalTitle": "Sekles Taneɣruft n Usikew",
+      "presetName": "Isem n Tneɣruft",
+      "presetPlaceholder": "d.m. Tanezzut Q3 & Tamuɣli Tanemhalt",
+      "shareOrg": "Bḍu d yiɛeggalen n tuddsa",
+      "setDefault": "Err d tamuɣli-inu tamagnut n tsebntart",
+      "savePreset": "Sekles Taneɣruft"
+    },
+    "drillThrough": {
+      "defaultTitle": "Beṭṭu n Yikalan d Ugzum n Wadda",
+      "defaultSubtitle": "Ikalan n telqayt imurmanen, usedmer n tsemda, d tsekra n yiɣtasan",
+      "recordsCount": "{{count}} n yikalan",
+      "exportCSV": "CSV",
+      "segmentMetrics": "Tisektiyin n Ugzum",
+      "rawRecordSlice": "Aḥric n Yikalan Izirazen ({{count}})",
+      "createDecisionLog": "Snulfu Akalas n Uɣtas",
+      "totalVolume": "Asemday n Tiddi",
+      "averageTicket": "Tikit Talemmast",
+      "sliceRows": "Izirigen n Wamur",
+      "topBreakdown": "Iferdisen Igejdanen n Beṭṭu",
+      "automatedSegmentInsight": "Tamuɣli Tawurmant n Ugzum",
+      "filterPlaceholder": "Zizdeg izirigen n telqayt...",
+      "pageInfo": "Asebter {{page}} seg {{total}}",
+      "decisionTitle": "Azwel n Uɣtas",
+      "decisionTitlePlaceholder": "d.m. Snegmu Aḥraz n Uselɣeɣ i Temnaḍt n Lezzayer",
+      "impactLevel": "Aswir n Usemdu",
+      "impactCritical": "Axatar (Aseqamu Anemhal)",
+      "impactHigh": "Afellay (Aɣella n Ugzum)",
+      "impactMedium": "Alemmas (Tarbaɛt n Sprint)",
+      "rationaleLabel": "Tamentilt & Aɣawas n Tigawt",
+      "rationalePlaceholder": "Aru tamentilt n tesleḍt yettwalin deg uḥric n usekti...",
+      "submitDecision": "Azen Akalas n Uɣtas",
+      "exportSuccess": "CSV n ugzum yettwasifeḍ s urebbaḥ!",
+      "decisionTitleRequired": "Ttxil-k sekcem azwel n uɣtas",
+      "decisionLogged": "Aɣtas Anemhal yettwasekles seg telqayt n usekti!"
+    },
+    "smartChart": {
+      "dataPoint": "Taqit n yisefka",
+      "xAxis": "Aftaɣ X",
+      "yAxis": "Aftaɣ Y",
+      "palette": "Iseɣwan n Yiniten",
+      "paletteBrand": "Amidadi-Anili (Brand)",
+      "paletteEmerald": "Tazegzawt n Lmerǧan",
+      "paletteAmber": "Awraɣ Yeḥman",
+      "paletteRose": "Azeggaɣ n Uɣtal",
+      "paletteCyan": "Anili n Tatiknulujit",
+      "aggregation": "Asemmdu",
+      "targetGoal": "Izirig n Yiswi Yettusiremen",
+      "targetPlaceholder": "d.m. 50000",
+      "rangeLimit": "Talast n Tallit ({{count}})",
+      "hideGrid": "Ffer Tafelwit",
+      "showGrid": "Sken Tafelwit",
+      "metricKPI": "KPI n Usekti",
+      "aggregatedSum": "Semmdu asemday ɣef {{count}} n yikalan",
+      "goalLabel": "Iswi: {{val}}",
+      "exportSuccess": "CSV yettwasifeḍ s urebbaḥ!",
+      "enhancementsTooltip": "Isegmanen d Yimbiwlen n Tugna",
+      "rawTableTooltip": "Beddel Tamuɣli ɣer Tfelwit Tazirazt",
+      "exportCSVTooltip": "Sifeḍ Agraw n Isefka CSV",
+      "fullscreenTooltip": "Tamuɣli n Ugdil Amadud"
+    },
+    "filterBar": {
+      "period": "Tallit:",
+      "granularityDaily": "Abeddel n Yal Ass",
+      "granularityWeekly": "Abeddel n Yal Imalas",
+      "granularityMonthly": "Abeddel n Yal Aggur",
+      "granularityQuarterly": "Abeddel n Kraḍ n Wagguren",
+      "resetAll": "Err Akk ɣer Tazwara",
+      "appliedToast": "Isisdeg n uzemz yettwasnes: {{preset}}"
+    },
+    "uploadWizard": {
+      "title": "Iqqanen n Isefka & Amsnulfu n Unekcum",
+      "subtitle": "Qqen ifuyla CSV/Parquet neɣ tibankiwin n isefka tiwerdanin",
+      "step1": "Fren Aɣbalu",
+      "step2": "Ulqam & Tamselt",
+      "step3": "Sentem & Sekcem",
+      "fileTab": "Asali n Ufaylu",
+      "dbTab": "Tabaḍnit Tawerdant",
+      "waTab": "Akalas n WhatsApp",
+      "dragPrompt": "Zuɣer u sers ifuyla CSV, Parquet, neɣ Excel",
+      "browseFile": "Nadi Ifuyla",
+      "engine": "Amsedday (Engine)",
+      "host": "Amsawaḍ / Endpoint",
+      "port": "Tabburt (Port)",
+      "dbName": "Isem n Tbanka",
+      "username": "Isem n Umseqdac",
+      "password": "Awal n Uffir",
+      "enableSsl": "Sekker Aselket SSL",
+      "testConnection": "Kayed Aqqan",
+      "waPlaceholder": "Senteḍ aḍris n WhatsApp neɣ ikalasen n umerwas n lkarni...",
+      "waHelp": "Yesleḍ aḍris ur nerkid ara am \"Mohamed 15000 DZD - Vente PC Portable\" ɣer tfelwiyin yettwasefrayen.",
+      "nextSchema": "D-Itteddun: Sefru Ulqam",
+      "nextReview": "D-Itteddun: Wali & Azen",
+      "datasetName": "Isem n Ugraw",
+      "csvDelimiter": "Amezray n CSV",
+      "detectedColumns": "Tigejda d Tewsatin Yettwafen ({{count}})",
+      "inferredDuckDB": "Yettwaslaḍ s DuckDB",
+      "colName": "Isem n Tgejdit",
+      "type": "Tawsit",
+      "sampleValue": "Azal n Tmeddurt",
+      "back": "Uɣal",
+      "readyIngest": "Yewjed i Unekcum \"{{name}}\"",
+      "targetEngineInfo": "Amsedday n yiswi: Aḥraz DuckDB Parquet s umḍiq n tesleḍt tanemkant.",
+      "sourceType": "Tawsit n Uɣbalu:",
+      "detectedColsCount": "Tigejda Yettwafen:",
+      "encoding": "Asetdel (Encoding):",
+      "ingesting": "La isekcem Agraw n Isefka...",
+      "confirmImport": "Sentem & Sekcem",
+      "fileSelectError": "Ttxil-k fren afaylu i usali",
+      "dbConnectSuccess": "Aqqan ɣer tbanka n isefka yedda s urebbaḥ!",
+      "dbConnectFailed": "Akayad n waqqan ɣer tbanka ur yeddi ara",
+      "uploadSuccess": "Agraw n isefka yettwasali-d s urebbaḥ!",
+      "dbSavedSuccess": "Aqqan n tbanka tawerdant yettwasekles s urebbaḥ!",
+      "fileFormatsHelp": "Yetteddeg CSV, Parquet, Excel, JSON armi d 250MB",
+      "dbFillError": "Ttxil-k sbedd aselway n taffa, isem n taffa d yisem n useqdac",
+      "engines": {
+        "snowflake": "Snowflake"
+      },
+      "delimiters": {
+        "comma": "Tafasilt (,)",
+        "semicolon": "Tafasilt-tinqit (;)",
+        "tab": "Asurif (\\t)"
+      }
+    },
+    "insights": {
+      "title": "Tmuɣliwin Usrid",
+      "emptyTitle": "Sali-d isefka i wakken ad d-tsnulfuḍ tmuɣliwin",
+      "emptyCta": "Sali-d Isefka →",
+      "generatedAgo": "Yettwasnulfu {{time}} aya",
+      "refreshed": "Tmuɣliwin ttwasimren s urebbaḥ",
+      "refreshFailed": "Tazmert n usimer n tmuɣliwin teɣli",
+      "confidence": "Aswir n Tflest",
+      "whyDidThisHappen": "Acuɣer i d-yeḍra waya? (Iffura Igejdanen)",
+      "recentlyUpdated": "Yettwasmel mi qrib",
+      "columnLabel": "Tagejdit: {{column}}",
+      "baselineTarget": "Ashaḍ n Tasaḍert ({{column}})",
+      "baselineBenchmark": "Ashaḍ Aɣelan",
+      "datasetImpactMetric": "Asekti n Semdu",
+      "categories": {
+        "all": "Akk Tmuɣliwin",
+        "anomaly": "Izagaten d Yisegran",
+        "trend": "Tagnitin n Tmerniwt",
+        "forecast": "Isakan Yezrin",
+        "performance": "Tamellilt d Tdawsa"
+      },
+      "urgency": {
+        "critical": "Aziɣer Axatar",
+        "warning": "Alɣu",
+        "opportunity": "Tagnit",
+        "info": "Talɣut"
+      },
+      "feedback": {
+        "helpful": "Tamuɣli yelhan",
+        "notHelpful": "Ur telhi ara"
+      },
+      "significanceStats": "p < 0.01 • N=14,280",
+      "actions": {
+        "createDecision": "Senned Aseklu n Utukki",
+        "triggerClean": "Sekker Zzedwa Tamirant",
+        "applyFilter": "Snes Isisdeg SQL"
+      },
+      "businessAiInsights": "Tamuɣliwin n tnezzut s usnulfu n tmusni",
+      "prescriptiveTitle": "Tamuɣliwin tineddiyin n tnezzut s AI/ML",
+      "prescriptiveDesc": "Tasleṭ tawurmant n tmentilin, asekyed n umihiyen, d tsemyagert n tigawin.",
+      "demo": {
+        "anomTitle": "Tanemzayt tameqqrant n wazalen yeffɣen i tilawt",
+        "anomDesc": "Azalen n temhalin skanen-d amgired n 24.5% ɣef llsas n 30 wussan.",
+        "trendTitle": "Gemmu ameqqran deg wayen d-ikecmen d ubleɣ",
+        "trendDesc": "Ableɣ n temhalin yennerna s +18.4% ɣef tallit yezrin.",
+        "perfTitle": "Tugna n tɣara d timmadit n yisefka",
+        "perfDesc": "Timmadit n tmeskart tedda d 100% n leqwanen n tɣara n yisefka deg Podacium."
+      },
+      "correlation": {
+        "title": "Tamsettit n wassaɣ d unadi n wassaɣen",
+        "description": "Nadi assaɣen iziriyen gar tesnawin timḍanin deg tagrumma n yisefka-inek.",
+        "howToRead": "Amek ara teɣreḍ assaɣen",
+        "spectrum": "Asegres n tezmert n wassaɣ (-1.0 ɣer +1.0)",
+        "note": "Tamawt: Assaɣ yezra amussu usnilsan, mačči d ayen i d-yessuturen tamentilt srid.",
+        "strongPositive": "Ufrin Iǧehden: Ifarisen lehhun ɣer ddukel",
+        "moderatePositive": "Ufrin Amnummsan: Amussu ufrin amectuḥ",
+        "neutral": "War amgired: Ulac assaɣ iziri n tidet",
+        "moderateNegative": "Uznazfan Amnummsan: Amussu amgal amectuḥ",
+        "strongNegative": "Uznazfan Iǧehden: Ifarisen lehhun mgal wayegwa",
+        "heatmapGrid": "Aẓeṭṭa n tkarḍa n teẓɣelt",
+        "keyConnections": "Assaɣen igejdanen",
+        "lowerTriangle": "Takuẓt tasadart kan",
+        "fullMatrix": "Tamuɣli n tmsettit merra",
+        "allPairs": "Tayugiwin merra",
+        "strong": "Iǧhed (|r| ≥ 0.5)",
+        "positive": "Ufrin (r > 0)",
+        "negative": "Uznazfan (r < 0)",
+        "column": "Tagejdit",
+        "noMatches": "Ulac assaɣen i d-yettazzalen d testayt yettwafernen.",
+        "noData": "Ulac isefka n wassaɣ amḍan i tagrumma-agi n isefka."
+      }
+    },
+    "copilot": {
+      "title": "PoDalil IA (بودليل)",
+      "versionBadge": "Lqem PoDalil v2.4",
+      "subtitle": "Sseqsi isteqsiyen n tesleṭ s tutlayt tagamant neɣ af-d iwaliwen iwtumatiyen deg yisefka-inek n DZD",
+      "autoInsights": "Iwaliwen iwtumatiyen",
+      "placeholder": "Sseqsi PoDalil: amedya, 'Anta lwilaya ixeddmen aṭas deg lfaṣil n lmarka?'",
+      "analyzing": "Tasleṭ tettddu...",
+      "ask": "Sseqsi",
+      "suggestions": "Isumar:",
+      "narrativeTitle": "Ahil n Tselkint n Tnefrit",
+      "queryExecSuccess": "Asuter n tesleṭ n tnefrit yemda akken iwata",
+      "sampleQueries": {
+        "revenueGrowth": "Sken taneflit n tedrimt n kraḍ n wayyuren ilmend n lwilaya s DZD",
+        "churnAnomalies": "Af-d uguren n usneglaf deg tsusrufin n Tbanka",
+        "forecastBookings": "Cced tilin n yimahilen n tnezzut n T4"
+      }
+    },
+    "embed": {
+      "defaultTitle": "Tisleṭ n tbanka yettwaqqnen",
+      "ssoMode": "Askar n usekcem yettwaṣeḥḥan s SSO",
+      "refreshData": "Smucceg isefka",
+      "loadingAnalytics": "Asali n tesleṭ yettwaḥerzen...",
+      "activeOrgTenant": "Amsedday n tdukla urmid",
+      "verifiedTenantScope": "Aswir n useqdac yettwaṣeḥḥan",
+      "embedTargetId": "Asulay n usentel n usekcem",
+      "dashboardTarget": "Tafelwit n usenked #{{id}}",
+      "systemAuto": "Awurman n unagraw",
+      "securityEntitlement": "Astehzi n tɣellist",
+      "tokenVerified": "Ajiṭun yettwaṣeḥḥan (RS256)",
+      "invalidToken": "Ajiṭun n usekcem ur yelhi ara neɣ ixus"
+    },
+    "cockpit": {
+      "alert": "Alɣu",
+      "trend": {
+        "driverFilter": "Imzizdeg n unegmar: {driver}",
+        "actualNet": "Anet ilaw",
+        "budgetBaseline": "Izirig n tseqqamt",
+        "targetGoal": "Aswir yettwaqsed",
+        "chartAriaLabel": "Udlif n tmuɣli tazerfant"
+      },
+      "waterfall": {
+        "outlierSingle": "Tamaynut ur nṣeḥḥa",
+        "outlierPlural": "Timaynawin ur nṣeḥḥa",
+        "baseline": "Izirig",
+        "gain": "Arbaḥ",
+        "drag": "Aɣbel",
+        "ariaLabel": "Udlif n tuffɣa n umgarad n waman",
+        "runningTotal": "Agraw ameddan:",
+        "thDriver": "Anegmar",
+        "thAmount": "Azal",
+        "thRunningTotal": "Agraw Ameddan",
+        "thOutlierStatus": "Addad n tefyirt",
+        "normalStatus": "Amagnu",
+        "outlierLabel": "Tafyirt (Z={zScore})"
+      },
+      "simulator": {
+        "title": "Afrag n uselkem anedbal (Asegzi n tḥessast)",
+        "targetReached": "Aswir yettwaweḍ ({amount})",
+        "monteCarlo": "Tirmit n Monte Carlo {ms}ms · 95% CI",
+        "description": "Beddel ifurka n inegmaren akken ad twaliḍ tikli n yidrimen s wakud ilaw.",
+        "reset": "Ales Asebded",
+        "createMemo": "Rnu Tira n Tiɣtas",
+        "projectedTrajectory": "Tikli yettwaṛjan n 6 n wagguren",
+        "baselineCurve": "Izirig n tɣara",
+        "simulatedProjection": "Tamuɣli yettwaselken",
+        "ci95": "Agraw n tfulit 95%",
+        "targetGoalZone": "Taɣult n uswir yettwaqsed",
+        "chartAriaLabel": "Udlif n uselken n tmuɣli",
+        "ciRange": "Tafekka n 95% CI:",
+        "targetGoal": "Aswir yettwaqsed:"
+      },
+      "executive": {
+        "badge3Tier": "Cockpit s 3 n yiswiren",
+        "badgeInvertedPyramid": "Taramit yettusbedden s wakud ilaw",
+        "badgeDzdStandard": "Alugen n tedrimt n DZD",
+        "ariaVitalSigns": "Isalan igejdanen n unedbal",
+        "ariaRootCause": "Tasleḍt n yiẓuran d tikli",
+        "varianceDriversTitle": "Inegmaren n umgarad: {metric}",
+        "varianceDriversSubtitle": "Asebded n umgarad amatu mgal {baseline}",
+        "revenueTrendTitle": "Tikli n yidrimen n 6 n wagguren yezrin",
+        "revenueTrendSubtitle": "Tikli tilawt mgal izirig n tseqqamt d uswir yettwaqsed",
+        "ariaSensitivitySandbox": "Afrag n tḥessast tanedbalt"
+      },
+      "drawer": {
+        "closeAria": "Mdel aselkim",
+        "totalVolume": "Agraw Amatu",
+        "avgLineItem": "Alemmas n yizirig",
+        "totalRecords": "Agraw n yisebbtaren",
+        "filterPlaceholder": "Zizdeg tifekkiwin, taggayin neɣ addad...",
+        "numberedTitle": "Afran n yisebtaren s wuṭṭun",
+        "pages": "Isebtaren",
+        "infiniteTitle": "Tikli ur nkeffu ara",
+        "infinite": "Ur nkeffu",
+        "exportCsv": "Sifeḍ CSV",
+        "newMemoTitle": "Tira tamaynut n teɣtas tanedbalt",
+        "cancel": "Semmet",
+        "decisionTitle": "Azwel n teɣtas",
+        "decisionPlaceholder": "Amedya: Sentem aswir n usekles n uqeddac akken ad d-tekkseḍ asali n watig",
+        "actionPlan": "Ahil n tigawt / Imecwaren n usekcem",
+        "actionPlanPlaceholder": "Iferdisen n usekfel...",
+        "assignedOwner": "Bab n tigawt",
+        "owners": {
+          "dg": "Anedbal Amatu (DG)",
+          "daf": "Anedbal n Tedrimt (DAF)",
+          "eng": "Aɣella n Titiknulujit",
+          "growth": "Aɣella n Usnerni d Tnezzut"
+        },
+        "logDecisionMemo": "Sekles Tira n Teɣtas",
+        "memoPrompt": "Err tamuɣli-a d tiɣtas tanedbalt tusḍift.",
+        "logMemoBtn": "Sekles Tira",
+        "thEntity": "Tafekka",
+        "thCategory": "Taggayt",
+        "thAmount": "Azal",
+        "thVariance": "Amgarad",
+        "thStatus": "Addad",
+        "loadingRecords": "Asali n yisebtaren iteddu...",
+        "noRecords": "Ulac asekles i d-yemseqdan d yimzizdigen.",
+        "loadedCount": "Yuli {visible} seg {total} n yisebbtaren",
+        "loadMore": "Rnu Sali (+{rows})",
+        "showingRange": "Sken {start}–{end} seg {total}",
+        "rowsPerPage": "Izirigen i yal asebtar:",
+        "firstPage": "Asebtar amezwaru",
+        "prevPage": "Asebtar yezrin",
+        "nextPage": "Asebtar d-iteddun",
+        "lastPage": "Asebtar aneggaru",
+        "pageIndicator": "Asebtar {page} seg {totalPages}",
+        "continuousActive": "Tikli tameɣlut tedda",
+        "closeInspection": "Mdel Asefqed"
+      }
+    }
+  }
+}

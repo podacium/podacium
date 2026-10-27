@@ -1,0 +1,3318 @@
+{
+  "bi": {
+    "density": {
+      "label": "Table Density",
+      "compact": "Compact",
+      "comfortable": "Comfortable",
+      "spacious": "Spacious"
+    },
+    "meta": {
+      "title": "Business Intelligence - Podacium",
+      "description": "Transform your data into actionable insights with Podacium's AI-powered Business Intelligence platform"
+    },
+    "hero": {
+      "badge": "AI-Powered Analytics",
+      "title": "Transform Data into",
+      "titleHighlight": "Intelligent Decisions",
+      "subtitle": "Unlock the power of your data with AI-driven insights, automated dashboards, and smart decision-making tools designed for modern businesses.",
+      "cta": {
+        "primary": "Get Started",
+        "secondary": "View Use Cases"
+      },
+      "integrations": {
+        "label": "Seamlessly reach to:",
+        "datasets": "Datasets",
+        "dashboards": "Dashboards",
+        "reports": "Reports",
+        "insights": "Insights"
+      }
+    },
+    "what": {
+      "title": "What is Business Intelligence?",
+      "subtitle": "Podacium BI transforms raw data into actionable insights through AI-powered analytics",
+      "features": {
+        "analytics": {
+          "title": "AI-Powered Analytics",
+          "description": "Advanced machine learning algorithms analyze your data to uncover hidden patterns and trends"
+        },
+        "dashboards": {
+          "title": "Smart Dashboards",
+          "description": "Auto-generated, customizable dashboards that adapt to your business needs in real-time"
+        },
+        "insights": {
+          "title": "Actionable Insights",
+          "description": "Get clear, actionable recommendations based on comprehensive data analysis"
+        },
+        "decisions": {
+          "title": "Decision Support",
+          "description": "AI-assisted decision-making with risk assessment and impact analysis"
+        },
+        "integration": {
+          "title": "Seamless Integration",
+          "description": "Connect with your existing tools and data sources effortlessly"
+        },
+        "realtime": {
+          "title": "Real-Time Updates",
+          "description": "Monitor your business metrics with live data streaming and instant alerts"
+        }
+      }
+    },
+    "audience": {
+      "title": "Who It's For",
+      "subtitle": "Designed for organizations of all sizes seeking data-driven growth",
+      "segments": {
+        "businesses": {
+          "title": "Growing Businesses",
+          "description": "Scale your operations with data-driven insights",
+          "benefits": [
+            "Track KPIs in real-time",
+            "Identify growth opportunities",
+            "Optimize resource allocation",
+            "Improve decision-making speed"
+          ]
+        },
+        "enterprises": {
+          "title": "Enterprise Organizations",
+          "description": "Enterprise-grade analytics for complex operations",
+          "benefits": [
+            "Multi-department analytics",
+            "Advanced security controls",
+            "Custom integrations",
+            "Dedicated support"
+          ]
+        },
+        "startups": {
+          "title": "Startups & Founders",
+          "description": "Make smarter decisions from day one",
+          "benefits": [
+            "Affordable pricing",
+            "Quick setup",
+            "Investor-ready reports",
+            "Growth tracking"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Real-World Use Cases",
+      "subtitle": "See how organizations can leverage Podacium BI to drive success",
+      "featuresLabel": "Features",
+      "cases": {
+        "dashboards": {
+          "title": "Executive Dashboards",
+          "description": "Comprehensive overview of business performance",
+          "features": [
+            "Revenue tracking",
+            "Customer analytics",
+            "Operational metrics",
+            "Trend analysis"
+          ],
+          "impact": "Save 10+ hours weekly on reporting"
+        },
+        "insights": {
+          "title": "Predictive Insights",
+          "description": "Forecast trends and anticipate market changes",
+          "features": [
+            "Sales forecasting",
+            "Churn prediction",
+            "Demand planning",
+            "Risk assessment"
+          ],
+          "impact": "Improve forecast accuracy by 40%"
+        },
+        "decisions": {
+          "title": "Data-Driven Decisions",
+          "description": "Make confident choices backed by data",
+          "features": [
+            "A/B test analysis",
+            "ROI calculation",
+            "Scenario modeling",
+            "Impact assessment"
+          ],
+          "impact": "Reduce decision time by 60%"
+        },
+        "marketing": {
+          "title": "Customer Segmentation",
+          "description": "Target the right audience with precision",
+          "features": [
+            "Behavioral clustering",
+            "Lifetime value prediction",
+            "Campaign optimization",
+            "Churn risk analysis"
+          ],
+          "impact": "Increase conversion rates by 35%"
+        },
+        "risk": {
+          "title": "Risk Management",
+          "description": "Identify and mitigate potential risks early",
+          "features": [
+            "Fraud detection",
+            "Compliance monitoring",
+            "Credit risk scoring",
+            "Operational risk analysis"
+          ],
+          "impact": "Prevent 90% of potential fraud"
+        },
+        "supply": {
+          "title": "Supply Chain Optimization",
+          "description": "Streamline operations and reduce costs",
+          "features": [
+            "Inventory optimization",
+            "Demand forecasting",
+            "Supplier performance",
+            "Logistics routing"
+          ],
+          "impact": "Reduce inventory costs by 25%"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Data?",
+      "subtitle": "Join thousands of organizations making smarter decisions with Podacium BI",
+      "getStarted": "Get Started",
+      "actions": {
+        "datasets": {
+          "title": "Upload Your Data",
+          "description": "Start by uploading your datasets",
+          "link": "/bi/datasets"
+        },
+        "dashboards": {
+          "title": "Create Dashboards",
+          "description": "Build custom analytics dashboards",
+          "link": "/bi/dashboards"
+        },
+        "analytics": {
+          "title": "Run Analytics",
+          "description": "Generate insights from your data",
+          "link": "/bi/analytics"
+        }
+      },
+      "footer": "No credit card required • Free tier available • Cancel anytime"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Get started with Podacium BI in three simple steps",
+      "steps": {
+        "upload": {
+          "title": "Upload Your Data",
+          "description": "Connect your data sources or upload files in CSV, Excel, or JSON. Our platform is integrating popular databases and cloud storage."
+        },
+        "analyze": {
+          "title": "Analyze & Learn",
+          "description": "Our advanced algorithms will analyze your data, detect patterns, identify trends, and generate insights tailored to your business needs."
+        },
+        "decide": {
+          "title": "Make Smart Decisions",
+          "description": "Access professional dashboards, receive real-time alerts, and get recommendations to make data-driven decisions with confidence."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about Podacium BI",
+      "questions": [
+        {
+          "question": "What types of data sources can I connect?",
+          "answer": "Podacium BI supports a wide range of data sources including CSV, Excel, JSON, and popular databases. We are continuously adding new connectors. Stay tuned for updates on additional integrations."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Absolutely. We use enterprise-grade encryption (AES-256) for data at rest and in transit. All data is stored in secure, compliant data centers with regular security audits. You maintain full control and ownership of your data."
+        },
+        {
+          "question": "Do I need technical skills to use Podacium BI?",
+          "answer": "No! Podacium BI is designed for both technical and non-technical users. Our AI-powered platform automatically generates insights and dashboards. However, advanced users can customize queries and create complex analytics."
+        },
+        {
+          "question": "How accurate are the predictions?",
+          "answer": "Our models achieve 73% average accuracy across various prediction tasks. Accuracy improves over time as the system learns from your data patterns. We provide confidence scores with all predictions."
+        },
+        {
+          "question": "Can I export my reports and dashboards?",
+          "answer": "Yes! You can export dashboards as PDF, PNG, or HTML. Data can be exported in CSV, Excel, or JSON formats. We are continuously adding more export options."
+        },
+        {
+          "question": "What's included in the free tier?",
+          "answer": "The free tier includes up to 2 datasets, 4 dashboards, and basic analytics features. It's perfect for individuals getting started with BI."
+        },
+        {
+          "question": "Can my team collaborate on the same dashboards?",
+          "answer": "Yes. Organization plans support team collaboration with shared datasets, dashboards, and reports. Team members can co-edit dashboards, leave comments, set permissions, and receive notifications when data is updated. Each organization has its own isolated workspace."
+        },
+        {
+          "question": "Does Podacium BI offer an API for programmatic access?",
+          "answer": "Yes. Podacium BI provides a REST API that allows you to programmatically upload datasets, query data, generate reports, and integrate BI capabilities into your own applications. API access is available on Growth plans and above, with comprehensive documentation."
+        },
+        {
+          "question": "How long is data retained?",
+          "answer": "Data retention depends on your plan. Free plans retain data for 90 days, Growth plans for 1 year, and Scale and Elite plans offer unlimited data retention with configurable archival policies. You can export your data at any time before it expires."
+        },
+        {
+          "question": "Can I schedule automated report generation?",
+          "answer": "Yes. You can schedule reports to be generated daily, weekly, or monthly and automatically emailed to stakeholders. Scheduled reports support multiple formats including PDF, CSV, and Excel. This feature is available on Growth plans and above."
+        }
+      ]
+    },
+    "common": {
+      "loading": "Loading...",
+      "error": "An error occurred",
+      "retry": "Retry",
+      "save": "Save",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "close": "Close",
+      "bytes": "bytes",
+      "kb": "KB",
+      "mb": "MB",
+      "gb": "GB",
+      "ago": "ago",
+      "unknown": "Unknown",
+      "top": "Top",
+      "bottom": "Bottom",
+      "left": "Left",
+      "right": "Right",
+      "hidden": "Hidden",
+      "noDescription": "No description provided",
+      "stats": {
+        "min": "Minimum",
+        "max": "Maximum",
+        "mean": "Average",
+        "median": "Median",
+        "stdDev": "Standard Deviation",
+        "sum": "Total Sum",
+        "count": "Total Records",
+        "nulls": "Missing Values",
+        "uniqueValues": "Diversity Score",
+        "unavailable": "Not available for this type"
+      },
+      "importance": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "trajectories": {
+        "UPWARD": "Upward",
+        "DOWNWARD": "Downward",
+        "STABLE": "Stable"
+      }
+    },
+    "analytics": {
+      "meta": {
+        "title": "Analytics Hub - Podacium",
+        "description": "Deep dive into your data with AI-powered core analytics."
+      },
+      "hero": {
+        "badge": "Core Intelligence",
+        "title": "Data Analytics",
+        "titleHighlight": "Redefined",
+        "subtitle": "Select a dataset to instantly generate comprehensive reports ranging from trend analysis to predictive forecasting.",
+        "cta": "Analyze Dataset"
+      },
+      "analysis": {
+        "defaultTitle": "Data Analysis",
+        "generalDomain": "General",
+        "rows": "rows"
+      },
+      "webgl": {
+        "highDensityRenderer": "High-Density Renderer ({count} points)"
+      },
+      "summary": {
+        "title": "Executive Summary",
+        "subtitle": "AI-synthesized strategic overview of your dataset.",
+        "confidenceScore": "Confidence Score",
+        "healthScore": "Health Score",
+        "insights": {
+          "standard": "The analysis of '{{target}}' across '{{dimension}}' reveals a stable baseline with typical seasonal variance.",
+          "positive_growth": "High-performance detected! '{{target}}' shows significant upward momentum with strong segment contribution.",
+          "risk_detected": "Action required: Multiple anomalies detected in '{{target}}' that may indicate data quality issues or unusual business events."
+        }
+      },
+      "selection": {
+        "title": "Select Dataset",
+        "placeholder": "Search datasets by name or domain...",
+        "empty": "No datasets found matching your search.",
+        "upload": "Upload New Dataset",
+        "general": "General"
+      },
+      "core": {
+        "trend": {
+          "title": "Trend Analysis",
+          "description": "Longitudinal growth patterns over time.",
+          "insights": {
+            "trajectory": "Overall {{trajectory}} trajectory with {{growth}}% growth across {{months}} months."
+          }
+        },
+        "comparative": {
+          "title": "Comparative Analysis",
+          "description": "Period-over-period performance metrics.",
+          "mom": "Month over Month",
+          "yoy": "Year over Year",
+          "insights": {
+            "pop": "Latest month shows {{mom}}% MoM change and {{yoy}}% YoY change.",
+            "insufficient": "Insufficient historical data for full comparison."
+          }
+        },
+        "segmentation": {
+          "title": "Segmentation",
+          "description": "Key segments driving your metrics.",
+          "insights": {
+            "primary": "Primary segmentation identified in {{dimension}} where top segment represents significant portion of value."
+          }
+        },
+        "root_cause": {
+          "title": "Root Cause Analysis",
+          "description": "Primary drivers impacting your KPI.",
+          "insights": {
+            "primary": "'{{driver}}' identified as the primary driver for '{{target}}' variance."
+          }
+        },
+        "what_if": {
+          "title": "What-If Analysis",
+          "description": "Scenario modeling for future outcomes.",
+          "insights": {
+            "optimistic": "Total {{column}} would reach {{value}} in an optimistic scenario (+30%)."
+          }
+        },
+        "forecasting": {
+          "title": "Predictive Forecasting",
+          "description": "AI-projected future performance.",
+          "insights": {
+            "projected": "Based on recent trends, {{column}} is projected to stabilize around {{value}} in 3 months.",
+            "insufficient": "Insufficient historical data for reliable forecasting."
+          },
+          "periods": {
+            "next_month": "Next Month",
+            "three_months": "3 Months Out",
+            "six_months": "6 Months Out"
+          }
+        },
+        "correlation": {
+          "title": "Correlation Matrix",
+          "description": "Relationships between key variables.",
+          "insights": {
+            "strongest": "Strongest relationships identified between columns with correlation > 0.7."
+          }
+        },
+        "anomaly": {
+          "title": "Anomaly Detection",
+          "description": "Statistical outliers and irregularities.",
+          "insights": {
+            "detected": "Detected {{count}} statistical anomalies (outliers) in {{column}}."
+          }
+        },
+        "funnel": {
+          "title": "Funnel Analysis",
+          "description": "Conversion rates across stages.",
+          "insights": {
+            "conversion": "Funnel conversion identifies '{{stage}}' as the final stage with {{conversion}}% total conversion.",
+            "no_stage": "No stage-like column detected for funnel analysis."
+          }
+        },
+        "profitability": {
+          "title": "Profitability Analysis",
+          "description": "Gross margin and revenue breakdown.",
+          "grossMargin": "Gross Margin",
+          "totalRevenue": "Total Revenue",
+          "insights": {
+            "summary": "Gross margin stands at {{margin}}% with total revenue of {{revenue}}.",
+            "missing": "Missing revenue or cost columns for profitability analysis."
+          }
+        }
+      },
+      "empty": {
+        "title": "No analysis yet",
+        "description": "Select a dataset to generate a comprehensive analysis report."
+      },
+      "errors": {
+        "analysisFailed": "Failed to analyze this dataset",
+        "analysisFailedDesc": "Something went wrong while analyzing. Please try again or pick another dataset.",
+        "retry": "Try Again",
+        "selectAnother": "Choose Another Dataset"
+      }
+    },
+    "datasets": {
+      "meta": {
+        "title": "Datasets - Business Intelligence",
+        "description": "Manage, upload, and analyze your datasets"
+      },
+      "nav": {
+        "back": "Back to BI",
+        "breadcrumb": {
+          "home": "Home",
+          "bi": "Business Intelligence",
+          "datasets": "Datasets",
+          "upload": "Upload",
+          "details": "Details"
+        }
+      },
+      "list": {
+        "title": "Your Datasets",
+        "subtitle": "Manage and analyze your data collections",
+        "uploadButton": "Upload Dataset",
+        "quickActions": {
+          "title": "Quick Actions",
+          "upload": "Upload File",
+          "uploadDesc": "CSV, JSON, Excel",
+          "whatsapp": "WhatsApp Import",
+          "whatsappDesc": "Paste your messages",
+          "manual": "Manual Entry",
+          "manualDesc": "Type it in directly",
+          "recent": "Recent Activity",
+          "recentDesc": "View latest updates",
+          "analytics": "Analytics Hub",
+          "analyticsDesc": "Global insights"
+        },
+        "empty": {
+          "title": "No Datasets Yet",
+          "description": "Upload your first dataset to start analyzing your data with AI-powered insights.",
+          "cta": "Upload Your First Dataset",
+          "action": "Upload Dataset"
+        },
+        "search": {
+          "placeholder": "Search datasets...",
+          "noResults": "No datasets found matching your search"
+        },
+        "filters": {
+          "all": "All Datasets",
+          "domain": "Domain",
+          "status": "Status",
+          "format": "Format",
+          "sortBy": "Sort by",
+          "search": "Search datasets...",
+          "sortOptions": {
+            "newest": "Newest First",
+            "oldest": "Oldest First",
+            "name": "Name (A-Z)",
+            "nameDesc": "Name (Z-A)",
+            "size": "Largest First",
+            "rows": "Most Rows"
+          }
+        },
+        "actions": {
+          "upload": "Upload Dataset"
+        },
+        "table": {
+          "name": "Dataset Name",
+          "domain": "Domain",
+          "format": "Format",
+          "rows": "Rows",
+          "columns": "Columns",
+          "size": "Size",
+          "status": "Status",
+          "quality": "Quality",
+          "created": "Created",
+          "updated": "Updated",
+          "location": "Location",
+          "actions": {
+            "title": "Actions",
+            "view": "View Details",
+            "analyze": "Run Analysis",
+            "preview": "Preview",
+            "export": "Export",
+            "delete": "Delete",
+            "duplicate": "Duplicate",
+            "share": "Share"
+          }
+        },
+        "status": {
+          "pending": "Pending",
+          "processing": "Processing",
+          "ready": "Ready",
+          "uploaded": "Uploaded",
+          "processed": "Processed",
+          "error": "Error",
+          "archived": "Archived"
+        },
+        "bulk": {
+          "selected": "{count} items selected",
+          "selectAll": "Select All"
+        },
+        "bulkDelete": {
+          "button": "Delete ({count})",
+          "confirmTitle": "Delete {count} items?",
+          "confirmMessage": "Are you sure you want to delete {count} items? This action cannot be undone.",
+          "success": "{count} items deleted successfully",
+          "partialSuccess": "{success} deleted, {failed} failed",
+          "error": "Failed to delete items",
+          "deleting": "Deleting {count} items..."
+        },
+        "error": {
+          "generic": "Failed to load datasets. Please try again.",
+          "uploadFailed": "Failed to upload dataset. Please try again.",
+          "deleteFailed": "Failed to delete dataset. Please try again.",
+          "notFound": "Dataset not found.",
+          "missingOrgId": "Organization ID is missing.",
+          "invalidFileType": "Invalid file type. Only CSV, Excel, and JSON are supported.",
+          "ingestFailed": "Failed to ingest dataset.",
+          "noOrg": "User is not associated with an organization.",
+          "previewFailed": "Failed to load preview.",
+          "accessDenied": "Access denied.",
+          "listFailed": "Failed to list datasets.",
+          "updateFailed": "Failed to update dataset.",
+          "fileNotFound": "File not found.",
+          "exportFailed": "Failed to export dataset.",
+          "empty": "Dataset is empty.",
+          "validationFailed": "Validation failed.",
+          "noFilePath": "File path missing.",
+          "qualityFailed": "Quality assessment failed."
+        },
+        "success": {
+          "uploaded": "Dataset uploaded successfully.",
+          "ingested": "Dataset ingested successfully.",
+          "retrieved": "Dataset retrieved successfully.",
+          "updated": "Dataset updated successfully."
+        },
+        "domains": {
+          "finance": "Finance",
+          "marketing": "Marketing",
+          "sales": "Sales",
+          "operations": "Operations",
+          "hr": "Human Resources",
+          "customer": "Customer",
+          "product": "Product",
+          "other": "Other"
+        },
+        "pagination": {
+          "showing": "Showing",
+          "of": "of",
+          "datasets": "datasets",
+          "previous": "Previous",
+          "next": "Next",
+          "perPage": "per page"
+        },
+        "stats": {
+          "total": "Total Datasets",
+          "rows": "Total Rows",
+          "quality": "Avg Quality",
+          "totalRows": "Total Rows",
+          "avgQuality": "Avg Quality",
+          "storage": "Storage Used"
+        }
+      },
+      "modals": {
+        "delete": {
+          "title": "Delete Dataset",
+          "subtitle": "This action cannot be undone",
+          "message": "Are you sure you want to delete {name}? All associated data and analysis will be permanently removed.",
+          "confirm": "Delete Dataset",
+          "deleting": "Deleting...",
+          "cancel": "Cancel"
+        }
+      },
+      "upload": {
+        "title": "Upload Dataset",
+        "subtitle": "Add a new dataset to your collection",
+        "semicolon": "Semicolon (;)",
+        "firstLines": "First {count} lines",
+        "tabs": {
+          "file": "File Upload",
+          "whatsapp": "WhatsApp",
+          "manual": "Manual Entry",
+          "whatsappData": "WhatsApp Data",
+          "manualData": "Manual Entry Data",
+          "whatsappImport": "WhatsApp Import {date}",
+          "manualImport": "Manual Entry {date}"
+        },
+        "steps": {
+          "select": "Select File",
+          "configure": "Configure",
+          "review": "Review",
+          "complete": "Complete"
+        },
+        "dropzone": {
+          "title": "Drag and drop your file here",
+          "subtitle": "or click to browse files",
+          "formats": "Supported formats: CSV, Excel (.xlsx, .xls), JSON",
+          "maxSize": "Maximum file size: 100MB",
+          "uploading": "Uploading...",
+          "processing": "Processing your file...",
+          "success": "File uploaded successfully!",
+          "error": "Upload failed. Please try again.",
+          "remove": "Remove"
+        },
+        "form": {
+          "name": {
+            "label": "Dataset Name",
+            "placeholder": "Enter a descriptive name",
+            "hint": "Choose a clear, memorable name for your dataset",
+            "required": "Dataset name is required"
+          },
+          "description": {
+            "label": "Description",
+            "placeholder": "Describe what this dataset contains...",
+            "hint": "Optional but recommended for better organization"
+          },
+          "domain": {
+            "label": "Domain",
+            "placeholder": "Select a domain",
+            "hint": "Categorize your dataset for easier filtering"
+          },
+          "organization": {
+            "label": "Organization",
+            "placeholder": "Select organization",
+            "hint": "Choose which organization this dataset belongs to"
+          },
+          "advanced": {
+            "title": "Advanced Options",
+            "autoProcess": "Auto-process after upload",
+            "validateData": "Validate data quality",
+            "detectTypes": "Auto-detect column types"
+          }
+        },
+        "preview": {
+          "title": "File Preview",
+          "datasetConfiguration": "Dataset Configuration",
+          "fileName": "File Name",
+          "fileSize": "File Size",
+          "estimatedRows": "Estimated Rows",
+          "columns": "Columns Detected",
+          "sampleData": "Sample Data (First 5 Rows)"
+        },
+        "actions": {
+          "cancel": "Cancel",
+          "back": "Back",
+          "next": "Next",
+          "upload": "Upload Dataset",
+          "uploadAnother": "Upload Another",
+          "viewDataset": "View Dataset"
+        },
+        "success": {
+          "title": "Dataset Uploaded Successfully!",
+          "message": "Your dataset has been uploaded and is being processed.",
+          "processing": "The AI is analyzing your data. This may take a few minutes.",
+          "whatNext": "What would you like to do next?"
+        },
+        "errors": {
+          "invalidFormat": "Invalid file format. Please upload CSV, Excel, or JSON files.",
+          "fileTooLarge": "File is too large. Maximum size is 100MB.",
+          "uploadFailed": "Upload failed. Please check your connection and try again.",
+          "processingFailed": "Processing failed. The file may be corrupted or in an unsupported format.",
+          "noFile": "Please select a file to upload",
+          "noOrganization": "No organization found. Please create or join an organization first."
+        }
+      },
+      "whatsapp": {
+        "title": "Import from WhatsApp",
+        "subtitle": "Paste your business messages here",
+        "placeholder": "Paste messages here...\n\nExample:\nSold 5 breads for 250 DZD\nBought flour 1500\nToday's revenue 15000\nAchat huile 800 DA",
+        "parse": "Parse Messages",
+        "parsing": "Parsing...",
+        "result": {
+          "title": "Results",
+          "found": "Found {count} transactions",
+          "none": "No transactions detected. Try writing amounts with numbers.",
+          "save": "Save as Dataset",
+          "saving": "Saving..."
+        },
+        "columns": {
+          "date": "Date",
+          "description": "Description",
+          "category": "Category",
+          "type": "Type",
+          "amount": "Amount"
+        }
+      },
+      "manual": {
+        "title": "Manual Entry",
+        "subtitle": "Add your transactions one by one",
+        "addRow": "Add Row",
+        "removeRow": "Remove",
+        "currency": "DZD",
+        "fields": {
+          "date": "Date",
+          "description": "Description",
+          "descriptionPlaceholder": "What happened...",
+          "category": "Category",
+          "type": "Type",
+          "amount": "Amount (DZD)",
+          "quantity": "Quantity"
+        },
+        "categories": {
+          "vente": "Sale",
+          "achat": "Purchase",
+          "depense": "Expense",
+          "revenu": "Revenue",
+          "facture": "Invoice",
+          "stock": "Stock",
+          "autre": "Other"
+        },
+        "types": {
+          "revenu": "Income",
+          "depense": "Expense"
+        },
+        "submit": "Save All",
+        "submitting": "Saving...",
+        "next": "Next",
+        "modeForm": "Form Entry",
+        "modeSheet": "Spreadsheet",
+        "sheetHint": "Click cells to edit · Paste from Excel with Ctrl+V · Navigate with Tab/Enter/Arrows",
+        "rowCount": "{count} rows",
+        "clearAll": "Clear All",
+        "clearAllConfirm": "This will erase all data and reset columns. Continue?",
+        "undo": "Undo",
+        "redo": "Redo",
+        "firstRowPromoted": "First row promoted to column headers",
+        "csvExported": "CSV exported",
+        "noDataAnalyze": "No data to analyze",
+        "allColumnsValidated": "All columns validated ✓",
+        "editHeader": "Edit column header",
+        "removeColumn": "Remove column",
+        "add20Rows": "+20 rows",
+        "validation": {
+          "invalidAmount": "Amount must be a number",
+          "invalidDate": "Invalid date format",
+          "emptyDescription": "Description is required"
+        },
+        "pasteResult": "Pasted {count} rows from clipboard",
+        "sidebar": {
+          "structure": "Structure",
+          "addRows": "Add rows",
+          "addColumn": "Add column",
+          "deleteRows": "Delete selected",
+          "firstRowHeaders": "First row → Headers",
+          "firstRowHeadersHint": "Promote first data row to column names",
+          "data": "Data Tools",
+          "templates": "Templates",
+          "templatesHint": "Load a ready-made BI structure",
+          "detectTypes": "Detect types",
+          "detectTypesHint": "Analyze columns for Number, Date, or Text",
+          "validateCols": "Validate",
+          "validateColsHint": "Check for unnamed or empty columns",
+          "io": "Import / Export",
+          "exportCsv": "Export CSV",
+          "exportCsvHint": "Download grid as a .csv file",
+          "cleanup": "Cleanup",
+          "clearAllHint": "Erase all data and reset columns"
+        },
+        "templates": {
+          "title": "Select a Template",
+          "close": "Close",
+          "cancel": "Cancel",
+          "noTemplates": "No templates found",
+          "searchPlaceholder": "Search templates...",
+          "categoryFilter": "All Categories",
+          "categories": {
+            "retail": "Retail",
+            "food": "Food & Beverage",
+            "ecommerce": "E-commerce",
+            "services": "Services",
+            "finance": "Finance",
+            "inventory": "Inventory",
+            "sales": "Sales",
+            "hr": "Human Resources",
+            "logistics": "Logistics",
+            "customer": "Customer Success",
+            "marketing": "Marketing"
+          },
+          "items": {
+            "retail_sales": {
+              "name": "Retail Sales",
+              "description": "Daily sales and POS tracking for stores",
+              "preview": "Columns: Date, Item, SKU, Quantity..."
+            },
+            "restaurant_orders": {
+              "name": "Restaurant Orders",
+              "description": "Track tables, orders, and daily revenue",
+              "preview": "Columns: Date, Table, Order, Total..."
+            },
+            "ecommerce_orders": {
+              "name": "E-commerce Orders",
+              "description": "Online store order fulfillment",
+              "preview": "Columns: Order Date, Customer, Product..."
+            },
+            "services": {
+              "name": "Services & Consulting",
+              "description": "Track client hours and billing",
+              "preview": "Columns: Client, Service, Hours, Rate..."
+            },
+            "financial": {
+              "name": "Financial Ledger",
+              "description": "General accounting, income, and expenses",
+              "preview": "Columns: Date, Description, Amount..."
+            },
+            "inventory": {
+              "name": "Inventory Tracker",
+              "description": "Warehouse stock levels and movement",
+              "preview": "Columns: Product, SKU, Stock, Cost..."
+            },
+            "sales_pipeline": {
+              "name": "Sales Pipeline",
+              "description": "B2B deals and CRM tracking",
+              "preview": "Columns: Lead, Company, Value, Status..."
+            },
+            "hr_payroll": {
+              "name": "Employee Payroll",
+              "description": "Monthly staff compensation",
+              "preview": "Columns: Employee, Salary, Net Pay..."
+            },
+            "logistics": {
+              "name": "Logistics & Delivery",
+              "description": "Fleet and shipment tracking",
+              "preview": "Columns: Tracking ID, Driver, Status..."
+            },
+            "expense_claims": {
+              "name": "Expense Claims",
+              "description": "Employee reimbursements",
+              "preview": "Columns: Employee, Expense Type, Amount..."
+            },
+            "customer_feedback": {
+              "name": "Customer Feedback",
+              "description": "NPS and satisfaction scores",
+              "preview": "Columns: Customer, Product, Rating..."
+            },
+            "marketing_campaigns": {
+              "name": "Marketing Campaigns",
+              "description": "Ad spend and lead generation",
+              "preview": "Columns: Campaign, Budget, Leads..."
+            }
+          },
+          "useTemplate": "Use Template"
+        }
+      },
+      "errors": {
+        "loadFailed": "Failed to load datasets"
+      },
+      "quickEntry": {
+        "errors": {
+          "parseFailed": "Failed to parse messages",
+          "handlerNotConfigured": "Data handler not configured. Please use this component within a dataset upload flow."
+        }
+      },
+      "spreadsheet": {
+        "templateLoaded": "Loaded \"{name}\" template",
+        "detectedTypes": "Detected types: {types}",
+        "errors": {
+          "prepareFailed": "Failed to prepare data"
+        }
+      },
+      "detail": {
+        "title": "Dataset Details",
+        "columns": "Columns:",
+        "moreColumns": "+{count} more",
+        "hero": {
+          "health": "Health",
+          "editDetails": "Edit Details",
+          "editModal": {
+            "nameLabel": "Dataset Name",
+            "domainLabel": "Business Domain",
+            "descriptionLabel": "Description",
+            "cancel": "Cancel",
+            "save": "Save"
+          },
+          "stats": {
+            "rows": "{count} rows",
+            "columns": "{count} columns",
+            "createdOn": "Created on {date}"
+          },
+          "actions": {
+            "smartClean": "1-Click Smart Clean",
+            "export": "Export",
+            "exportTitle": "Export CSV File",
+            "refreshTitle": "Refresh Data",
+            "deleteTitle": "Delete Dataset"
+          }
+        },
+        "loading": {
+          "title": "Loading dataset...",
+          "subtitle": "Analyzing structure, quality, and semantic data."
+        },
+        "actions": {
+          "edit": "Edit Details",
+          "share": "Share",
+          "duplicate": "Duplicate",
+          "delete": "Delete Dataset",
+          "save": "Save Changes",
+          "cancel": "Cancel",
+          "confirmDelete": "Delete Dataset",
+          "export": "Export"
+        },
+        "toast": {
+          "updated": "Metadata updated",
+          "deleted": "Dataset deleted",
+          "contractActivated": "Data Contract activated",
+          "snapshotCaptured": "Snapshot captured successfully",
+          "policySaved": "Security policy saved",
+          "webhookRegistered": "Webhook registered",
+          "typeUpdated": "Column type updated",
+          "tagAdded": "Tag added: {tag}",
+          "tagRemoved": "Tag removed: {tag}",
+          "snapshotRestored": "Snapshot restored: {id}",
+          "webhookTestSuccess": "Webhook test ping sent successfully",
+          "webhookTestError": "Webhook test failed",
+          "queryFailed": "Query execution failed"
+        },
+        "errors": {
+          "loadFailed": "Failed to load dataset",
+          "notFound": "Dataset not found",
+          "notFoundDesc": "The dataset may have been deleted or you may not have the necessary access.",
+          "updateFailed": "Failed to update dataset",
+          "deleteFailed": "Failed to delete dataset",
+          "exportFailed": "Failed to export dataset",
+          "refreshFailed": "Failed to refresh data"
+        },
+        "unknown": "Unknown Domain",
+        "uploadedBy": "Uploaded by",
+        "organization": "Organization",
+        "cleanModal": {
+          "title": "1-Click Smart Data Doctor",
+          "subtitle": "Automated data cleaning and AI imputation",
+          "fillMissing": "Fill Missing Values (Imputation)",
+          "fillMissingDesc": "Automatically infer and impute missing null values",
+          "strategyLabel": "Imputation Strategy",
+          "autoStrategy": "Auto Infer (Mean/Mode)",
+          "meanStrategy": "Mean Average (Numeric columns)",
+          "modeStrategy": "Mode / Most Frequent Value",
+          "deduplicate": "Deduplicate Duplicate Rows",
+          "deduplicateDesc": "Remove exact duplicate rows across all columns",
+          "trimWhitespace": "Trim Whitespace",
+          "trimWhitespaceDesc": "Strip leading and trailing spaces from text fields",
+          "cancel": "Cancel",
+          "cleaning": "Cleaning in progress...",
+          "submit": "Apply Cleaning",
+          "success": "Dataset cleaned successfully!",
+          "error": "Failed to clean dataset"
+        },
+        "syntheticModal": {
+          "title": "Synthetic Data Sandbox Generator",
+          "subtitle": "Generate synthetic sample rows matching SQL schema and semantic types.",
+          "rowsLabel": "Number of rows to generate (1 to 100)",
+          "previewTitle": "Synthetic Data Sample Preview ({count} rows)",
+          "copyJson": "Copy JSON",
+          "generating": "Generating...",
+          "close": "Close",
+          "submit": "Generate Synthetic Rows",
+          "toastSuccess": "{count} synthetic rows generated!",
+          "toastError": "Synthetic generation failed",
+          "toastCopied": "Synthetic JSON copied to clipboard!"
+        },
+        "webhooks": {
+          "title": "Alerts & Webhooks",
+          "description": "Live webhook subscriptions for SLA breach alerts and dataset status updates.",
+          "createWebhook": "Register Webhook Endpoint",
+          "webhooksList": "Subscribed Alert Webhooks",
+          "urlLabel": "Webhook Endpoint URL",
+          "urlPlaceholder": "https://hooks.slack.com/services/...",
+          "targetUrl": "Webhook URL",
+          "eventLabel": "Trigger Event",
+          "eventType": "Trigger Event",
+          "events": {
+            "qualitySlaFailed": "QUALITY_SLA_FAILED (Quality SLA Breach)",
+            "dataUpdated": "DATA_UPDATED (Data Updated)"
+          },
+          "action": "Action",
+          "cancel": "Cancel"
+        },
+        "insights": {
+          "whyDidThisHappen": "Why did this happen? (Key Drivers Analysis)",
+          "confidence": "Confidence Level",
+          "datasetImpactMetric": "Dataset Impact Metric",
+          "baselineBenchmark": "Baseline Benchmark",
+          "recentlyUpdated": "Recently updated",
+          "urgency": {
+            "critical": "Critical Risk",
+            "warning": "Warning",
+            "opportunity": "Growth Opportunity",
+            "info": "Insight"
+          },
+          "categories": {
+            "all": "All Insights",
+            "anomaly": "Risks & Anomalies",
+            "trend": "Growth Opportunities & Trends",
+            "performance": "Performance & Health"
+          },
+          "actions": {
+            "createDecision": "Create Business Decision Record",
+            "triggerClean": "Trigger Smart Clean Automatically",
+            "applyFilter": "Apply SQL Filter Query",
+            "createAlert": "Register Quality SLA Alert"
+          },
+          "demo": {
+            "anomTitle": "High Outlier Density Detected",
+            "anomDesc": "Transaction amounts show a 24.5% deviation from historical 30-day baseline in high-volume records.",
+            "trendTitle": "Strong Growth in Revenue & Volume",
+            "trendDesc": "Total transaction volume increased by +18.4% compared to previous period across all regional branches.",
+            "perfTitle": "Data Quality & Completeness Score",
+            "perfDesc": "Schema integrity matches 100% of data quality SLA thresholds on the Podacium platform."
+          }
+        },
+        "contractModal": {
+          "title": "Define Data Contract & SLA",
+          "contractName": "Contract Name",
+          "defaultContractName": "Production Schema SLA Contract",
+          "minRows": "Min Row Count SLA",
+          "maxMissing": "Max Missing % SLA",
+          "strictSchema": "Enforce strict schema types",
+          "cancel": "Cancel",
+          "activate": "Activate Contract"
+        },
+        "columnModal": {
+          "profilingTitle": "Statistical Profiling & Value Distribution",
+          "totalRows": "Total Rows",
+          "uniqueValues": "Unique Values",
+          "missingNulls": "Missing (Nulls)",
+          "semanticType": "Semantic Type",
+          "descStats": "Descriptive Statistics",
+          "min": "Min",
+          "max": "Max",
+          "mean": "Mean",
+          "median": "Median",
+          "stdDev": "Standard Deviation",
+          "quartiles": "Q25 / Q75",
+          "topValues": "Top 10 Most Frequent Values",
+          "calculatingStats": "Calculating statistical distributions..."
+        },
+        "modals": {
+          "edit": {
+            "title": "Edit Metadata",
+            "subtitle": "Adjust name, business domain, and description.",
+            "name": "Dataset Name",
+            "domain": "Business Domain",
+            "description": "Description",
+            "descPlaceholder": "Concise description of dataset purpose and contents...",
+            "cancel": "Cancel",
+            "saving": "Saving...",
+            "save": "Update Metadata"
+          },
+          "delete": {
+            "title": "Delete Dataset",
+            "subtitle": "This action is permanent and cannot be undone.",
+            "confirmPrompt": "Are you absolutely sure you want to delete dataset {name}?",
+            "consequences": "All associated data, version history, semantic profiles, and quality metrics will be permanently erased.",
+            "cancel": "Cancel",
+            "deleting": "Deleting...",
+            "confirm": "Confirm Delete"
+          },
+          "pii": {
+            "title": "PII Anonymization & Masking",
+            "subtitle": "Mask or anonymize sensitive columns before sharing",
+            "selectMethod": "Select Masking Method",
+            "selectColumnError": "Please select at least one column to mask.",
+            "methods": {
+              "hash": "Cryptographic Hash (SHA-256)",
+              "redact": "Full Redaction ([REDACTED])",
+              "mask": "Partial Masking (XX****XX)"
+            },
+            "sensitiveColumns": "Sensitive Columns ({count})",
+            "cancel": "Cancel",
+            "close": "Close",
+            "maskingProgress": "Anonymizing...",
+            "applyMasking": "Apply Masking",
+            "success": "Anonymization performed successfully!",
+            "error": "Anonymization failed"
+          },
+          "dqRules": {
+            "title": "Custom Data Quality Rules Engine",
+            "subtitle": "Define integrity constraints (Not Null, Min/Max, Regex) and measure compliance.",
+            "activeRules": "Active Assertions",
+            "addRule": "Add Rule",
+            "success": "Quality rules evaluated successfully!",
+            "error": "Failed to evaluate quality rules",
+            "resultsTitle": "Compliance Test Results",
+            "complianceCounts": "{passed} passed, {failed} failed of {total} total rules",
+            "passRate": "Overall Pass Rate: {rate}%",
+            "evaluating": "Evaluating rules...",
+            "ruleTypes": {
+              "notNull": "Not Null Assertion",
+              "min": "Minimum Value (≥)",
+              "max": "Maximum Value (≤)"
+            },
+            "limitValuePlaceholder": "Threshold value...",
+            "close": "Close",
+            "testRules": "Run Assertions"
+          }
+        },
+        "schema": {
+          "columnUpdated": "Column \"{column}\" updated successfully",
+          "typeUpdated": "Column type updated successfully",
+          "profilerError": "Failed to load column profile"
+        },
+        "tabs": {
+          "overview": {
+            "title": "Overview",
+            "metrics": {
+              "rows": "Total Rows",
+              "columns": "Total Columns",
+              "size": "File Size",
+              "quality": "Quality Score",
+              "completeness": "Completeness",
+              "uniqueness": "Uniqueness"
+            },
+            "info": {
+              "title": "Dataset Info",
+              "format": "Format",
+              "domain": "Domain",
+              "created": "Created",
+              "updated": "Last Updated"
+            },
+            "description": {
+              "title": "Description",
+              "empty": "No description provided for this dataset."
+            },
+            "sample": {
+              "title": "Sample Records Preview",
+              "viewMore": "View Full Preview"
+            },
+            "aiSummary": {
+              "title": "Executive AI Narrative",
+              "issuesDetected": "{count} quality alerts were detected.",
+              "noIssues": "No major anomalies were detected.",
+              "narrative": "This dataset includes {rows} records and {columns} structured columns. The overall health score is rated at {score}%. {issuesText}",
+              "cleanData": "Clean Data",
+              "viewAnalytics": "View AI Analytics"
+            }
+          },
+          "preview": {
+            "title": "Data Preview",
+            "search": "Search in sample rows...",
+            "showing": "Showing first {count} rows",
+            "showingPaged": "Showing {count} of {total} rows ({all} total)",
+            "empty": "No data available for preview"
+          },
+          "schema": {
+            "title": "Semantic Dictionary & Schema",
+            "subtitle": "Edit the SQL data type and semantic domain (Wilaya, Currency, Phone, etc.) for each column.",
+            "description": "Column definitions and inferred data types from the dataset.",
+            "columnsCount": "Columns Found",
+            "columnsCountFormatted": "{count} Columns",
+            "colName": "Column Name",
+            "sqlType": "SQL Type",
+            "semanticDomain": "Semantic Domain",
+            "statProfile": "Statistical Profile",
+            "edit": "Edit",
+            "inspect": "Inspect",
+            "table": {
+              "column": "Column",
+              "type": "Type",
+              "missing": "Completeness",
+              "stats": "Distribution & Stats",
+              "semantic": "Semantic"
+            },
+            "mixedTypes": "Mixed Types",
+            "stats": {
+              "min": "Min",
+              "max": "Max",
+              "mean": "Mean",
+              "sum": "Sum",
+              "uniqueValues": "Unique Values",
+              "unavailable": "Unavailable"
+            },
+            "empty": "No schema definition available for this dataset."
+          },
+          "analytics": {
+            "title": "Data Intelligence",
+            "description": "Enterprise-grade analysis uncovering the hidden story within your dataset.",
+            "runAnalysis": "Analyze Dataset",
+            "analyzing": "Synthesizing Data...",
+            "loadingDesc": "Our AI is profiling distributions, calculating correlations, and generating insights.",
+            "confidence": "Data Confidence",
+            "sections": {
+              "summary": "Executive Overview",
+              "highlights": "Key Findings",
+              "distribution": "Data Patterns",
+              "relationships": "Variable Relationships"
+            },
+            "subtabs": {
+              "insights": "Main Insights",
+              "distributions": "Distributions",
+              "correlations": "Relations Matrix"
+            },
+            "filter": {
+              "title": "Filter Variables",
+              "toggle": "Toggle Filters",
+              "all": "All Variables",
+              "selected": "{count} Selected",
+              "search": "Search variables...",
+              "selectAll": "Select All",
+              "selectNone": "Select None",
+              "noColumns": "No columns found",
+              "emptySelection": "Select variables to view distributions"
+            },
+            "matrix": {
+              "title": "Correlation Matrix & Relationship Explorer",
+              "subtitle": "Discover how numerical variables in your dataset move together or in opposite directions.",
+              "learnMore": "How to Read Correlations",
+              "disclaimer": "Note: Correlation measures statistical co-movement, not direct cause-and-effect.",
+              "viewHeatmap": "Heatmap Grid",
+              "viewCards": "Key Connections",
+              "viewLowerTriangle": "Lower Triangle Only",
+              "viewFullMatrix": "Full Matrix View",
+              "filters": {
+                "all": "All Pairs",
+                "strong": "Strong Only (|r| ≥ 0.5)",
+                "positive": "Positive Only (r > 0)",
+                "negative": "Negative Only (r < 0)"
+              },
+              "strongPos": "Strong Positive",
+              "strongNeg": "Strong Negative",
+              "neutral": "No Correlation",
+              "legend": {
+                "title": "Correlation Strength Spectrum",
+                "positive": "Positive (+1.0)",
+                "negative": "Negative (-1.0)",
+                "neutral": "Neutral (0.0)",
+                "strongPos": "Strong Positive (+0.7 to +1.0)",
+                "strongPosDesc": "Variables move up together",
+                "modPos": "Moderate Positive (+0.3 to +0.7)",
+                "modPosDesc": "Tendency to rise together",
+                "neutralDesc": "No clear linear relationship",
+                "modNeg": "Moderate Negative (-0.7 to -0.3)",
+                "modNegDesc": "Mild inverse movement",
+                "strongNeg": "Strong Negative (-1.0 to -0.7)",
+                "strongNegDesc": "Variables move in opposite directions"
+              },
+              "tooltip": {
+                "title": "Relationship Analysis",
+                "explanation": {
+                  "pos_very_strong": "{v1} and {v2} move together almost perfectly.",
+                  "pos_strong": "As {v1} increases, {v2} strongly tends to increase.",
+                  "pos_moderate": "{v1} has a moderate positive impact on {v2}.",
+                  "pos_weak": "{v1} and {v2} have a weak positive relationship.",
+                  "pos_very_weak": "There is no clear pattern between {v1} and {v2}.",
+                  "neg_very_strong": "Near-perfect inverse relationship between {v1} and {v2}.",
+                  "neg_strong": "As {v1} increases, {v2} strongly tends to decrease.",
+                  "neg_moderate": "{v1} has a moderate negative impact on {v2}.",
+                  "neg_weak": "{v1} and {v2} have a weak inverse relationship.",
+                  "neg_very_weak": "Inverse relationship is negligible between {v1} and {v2}."
+                },
+                "identity": "A variable is always perfectly correlated with itself (1.0).",
+                "technical": "Pearson coefficient: {val}. Statistical dependence magnitude."
+              },
+              "strength": {
+                "very_weak": "Very Weak",
+                "weak": "Weak",
+                "moderate": "Moderate",
+                "strong": "Strong",
+                "very_strong": "Very Strong",
+                "neutral": "Identity"
+              },
+              "takeaways": {
+                "title": "Automated Key Relationship Insights",
+                "empty": "No significant correlation detected between numeric variables."
+              },
+              "labels": {
+                "influential": "Highly influential pairing",
+                "moderate": "Moderate behavioral link",
+                "minor": "Minor relationship detected",
+                "strategic": "Strategic",
+                "relevant": "Relevant",
+                "incidental": "Incidental"
+              }
+            },
+            "learning": {
+              "summary": "A high-level synthesis of your dataset's health and potential.",
+              "distribution": "Visualizing how your data points are spread across different ranges or categories.",
+              "relationships": "Understanding how different variables influence or move alongside each other.",
+              "insights": "Strategic observations based on statistical anomalies and patterns."
+            },
+            "insights": {
+              "trend": {
+                "title": "Upward trend detected",
+                "description": "The 'revenue' column shows a consistent growth pattern."
+              },
+              "correlation": {
+                "title": "Strong correlation found",
+                "description": "Significant correlation detected between columns."
+              },
+              "anomaly": {
+                "title": "Outliers identified",
+                "description": "Anomalous values found deviating from the mean."
+              },
+              "recommendation": {
+                "title": "Data enrichment suggested",
+                "description": "Consider adding geographic data to improve analysis."
+              },
+              "dominant_category": {
+                "title": "Dominant Category: {value}",
+                "description": "Value '{value}' represents {pct}% of the '{column}' column."
+              },
+              "high_completeness": {
+                "title": "Full Completeness: {column}",
+                "description": "The '{column}' column is 100% complete, offering a solid basis for analysis."
+              },
+              "low_completeness": {
+                "title": "Missing Values in {column}",
+                "description": "Column '{column}' is only {pct}% complete. High null density may bias results."
+              },
+              "constant_column": {
+                "title": "Constant Column: {column}",
+                "description": "The '{column}' column contains the same value for all rows and provides no predictive power."
+              },
+              "high_cardinality": {
+                "title": "High Cardinality: {column}",
+                "description": "Column '{column}' contains {count} unique values. Recommended for identifier use."
+              },
+              "data_range": {
+                "title": "Data Range: {column}",
+                "description": "Values in '{column}' range from {min} to {max}."
+              },
+              "strong_correlation": {
+                "title": "Strong Correlation Detected",
+                "description": "A high correlation of {value} exists between '{col1}' and '{col2}'."
+              },
+              "moderate_correlation": {
+                "title": "Moderate Correlation Found",
+                "description": "A relationship (score: {value}) exists between '{col1}' and '{col2}'."
+              },
+              "outliers": {
+                "title": "Outlier Detection: {column}",
+                "description": "Found {count} outliers ({pct}% of data) in the '{column}' column."
+              },
+              "noCorrelations": "No significant correlations found."
+            },
+            "empty": "No insights available for this dataset yet.",
+            "emptyTitle": "Ready for Intelligence",
+            "runFirst": "Click above to run analysis and discover hidden patterns.",
+            "executiveSummary": "Executive Summary",
+            "executiveSummaryDetail": {
+              "template": "Analysis identified {total} insights. {high} of them are high importance.",
+              "empty": "No significant insights detected in this dataset yet."
+            },
+            "distributions": "Data Distributions",
+            "distributionSuffix": "(Distribution)",
+            "topValuesSuffix": "(Top Values)",
+            "correlations": "Key Correlations",
+            "businessInsights": "Business Insights",
+            "insightsTitle": "Prescriptive AI/ML Business Insights",
+            "insightsDesc": "Automated root-cause analysis, risk triage, and prescriptive action recommendations."
+          },
+          "quality": {
+            "title": "Quality Assessment",
+            "doctorTitle": "Quality Diagnosis & AI Governance",
+            "scoreSubtitle": "Quality and compliance score: {score}/100",
+            "rulesBtn": "Quality Rules",
+            "piiBtn": "PII Masking",
+            "syntheticBtn": "Synthetic Data",
+            "completenessVerified": "Verified Completeness Rate",
+            "completenessDesc": "Most attributes meet quality criteria without critical emptiness rates.",
+            "recommendationsTitle": "Optimization Recommendations",
+            "recommendationsDesc": "The Smart Clean engine can impute missing values, remove duplicates, and anonymize PII.",
+            "alertsTitle": "Alerts & Detailed Diagnosis",
+            "metrics": {
+              "completeness": "Completeness",
+              "completeness_desc": "Percentage of non-null cells in your dataset.",
+              "uniqueness": "Uniqueness",
+              "uniqueness_desc": "Ratio of unique records to total records.",
+              "consistency": "Consistency",
+              "consistency_desc": "Adherence to expected data types and patterns.",
+              "accuracy": "Accuracy",
+              "accuracy_desc": "Correctness and validity of the data values."
+            },
+            "issues": {
+              "title": "Detected Issues",
+              "none": "No significant issues detected in this dataset.",
+              "missing": {
+                "title": "Missing values detected",
+                "description": "columns contain null values"
+              },
+              "duplicates": {
+                "title": "Potential duplicates found",
+                "description": "rows might be duplicates based on key columns"
+              },
+              "dynamic": {
+                "high_nulls": "Column '{column}' has {pct}% missing values.",
+                "mixed_types": "Column '{column}' contains mixed data types.",
+                "low_uniqueness": "Column '{column}' has very low uniqueness ({ratio}%).",
+                "outliers": "Detected {count} outliers in column '{column}'."
+              }
+            },
+            "empty": "Quality assessment results are not yet available.",
+            "status": {
+              "excellent": "Dataset health is EXCELLENT.",
+              "good": "Dataset health is GOOD.",
+              "acceptable": "Dataset health is ACCEPTABLE.",
+              "poor": "Dataset health is POOR."
+            },
+            "summary": {
+              "warnings": {
+                "count": "Found {count} potential issues.",
+                "none": "Found 0 potential issues."
+              }
+            }
+          },
+          "governance": {
+            "title": "Governance & Contracts",
+            "description": "Enterprise Data Contracts, SLAs, sensitivity classification, and compliance taxonomy tags.",
+            "sensitivity": "Sensitivity Classification",
+            "compliance": "Compliance Frameworks",
+            "tags": "Taxonomy Tags",
+            "addTag": "Add Tag",
+            "tagPlaceholder": "New tag (e.g. #AUDITED)",
+            "contractsTitle": "Data Quality Contract & SLAs",
+            "contractsDesc": "Formal contract defining schema integrity and quality SLA constraints.",
+            "createContract": "Define Data Contract",
+            "status": "Contract Status",
+            "minRows": "Min Rows SLA",
+            "maxMissing": "Max Missing % SLA",
+            "verified": "VERIFIED & PASSED",
+            "violated": "SLA VIOLATED",
+            "sensitivity_internal": "INTERNAL",
+            "sensitivity_confidential": "CONFIDENTIAL",
+            "sensitivity_restricted": "RESTRICTED",
+            "sensitivity_public": "PUBLIC",
+            "algeriaLaw": "Algeria Law 18-07 (Data Protection)"
+          },
+          "contractModal": {
+            "title": "Define Data Contract & SLA",
+            "contractName": "Contract Name",
+            "defaultContractName": "Production Schema SLA Contract",
+            "minRows": "Min Row Count SLA",
+            "maxMissing": "Max Missing % SLA",
+            "strictSchema": "Enforce strict schema types",
+            "cancel": "Cancel",
+            "activate": "Activate Contract"
+          },
+          "history": {
+            "title": "Governance History & Lineage",
+            "description": "Complete audit trail of schema changes, cleanups, and dataset transformations.",
+            "initialImportTitle": "Initial Ingestion & Data Domain Analysis",
+            "initialImportDesc": "Source file successfully parsed and analyzed by BI Engine.",
+            "dataModified": "Data Modification",
+            "actions": {
+              "uploaded": "Dataset uploaded",
+              "processed": "Processing completed",
+              "qualityRun": "Quality assessment run"
+            },
+            "details": {
+              "originalFile": "Original file: {name}",
+              "rowsProcessed": "{count} rows processed successfully",
+              "qualityScore": "Quality score: {score}%"
+            },
+            "empty": "No history events found."
+          },
+          "versioning": {
+            "title": "Dataset Version Snapshots & History",
+            "description": "Immutable version snapshots, schema drift history, and 1-click rollback capabilities.",
+            "createSnapshot": "Create Version Snapshot",
+            "snapshotHistory": "Snapshot History Timeline",
+            "version": "Version",
+            "rows": "Rows",
+            "cols": "Cols",
+            "quality": "Health Score",
+            "created": "Captured At",
+            "current": "CURRENT",
+            "restore": "Restore Version",
+            "restoring": "Restoring...",
+            "modalTitle": "Capture Version Snapshot",
+            "versionName": "Version Name",
+            "versionNameLabel": "Version Name",
+            "descLabel": "Description (Optional)",
+            "namePlaceholder": "Snapshot name (e.g., Post-Cleaning v1.2)",
+            "descPlaceholder": "Reason for snapshot...",
+            "initialIngestion": "Initial Ingestion",
+            "currentState": "Current State",
+            "submit": "Capture Snapshot",
+            "submitting": "Capturing...",
+            "cancel": "Cancel"
+          },
+          "security": {
+            "title": "Row & Column Security",
+            "description": "Configure fine-grained Row-Level Security (RLS) and Column-Level Security (CLS) masking rules.",
+            "createPolicy": "Add Security Policy",
+            "policiesList": "Active Access Policies",
+            "type": "Policy Type",
+            "policyType": "Policy Type",
+            "targetRole": "Target Role",
+            "role": "Role",
+            "condition": "Filter / Condition",
+            "sqlCondition": "SQL Filter Condition",
+            "sqlConditionPlaceholder": "e.g. amount >= 0",
+            "targetColumn": "Target Column",
+            "masking": "Masking Method",
+            "status": "Status",
+            "active": "ACTIVE",
+            "cancel": "Cancel",
+            "saving": "Saving...",
+            "savePolicy": "Save Policy",
+            "rowFilter": "Row-Level Filter (RLS)",
+            "colMask": "Column Masking (CLS)",
+            "types": {
+              "rowFilter": "Row-Level Filter (RLS)",
+              "columnMask": "Column Masking (CLS)"
+            },
+            "roles": {
+              "all": "All Roles",
+              "analyst": "Analyst",
+              "viewer": "Viewer",
+              "manager": "Manager"
+            },
+            "methods": {
+              "hash": "SHA-256 Hash",
+              "redact": "[REDACTED] Label",
+              "maskChars": "Mask Chars (****)"
+            }
+          },
+          "query": {
+            "title": "SQL Query Workbench",
+            "description": "Execute dynamic SQL queries, aggregations, and filters directly against dataset records.",
+            "editorLabel": "SQL Query Editor",
+            "queryPlaceholder": "SELECT * FROM dataset WHERE ...",
+            "keyboardShortcut": "Ctrl + Enter to run",
+            "runQuery": "Run Query",
+            "running": "Executing Query...",
+            "results": "Query Results",
+            "executionTime": "Execution Time",
+            "rowsReturned": "Rows Returned",
+            "recentHistory": "Recent Execution History",
+            "copy": "Copy",
+            "clear": "Clear",
+            "presets": "Preset Analysis Queries",
+            "exportResults": "Export Query Results (CSV)",
+            "presetPreview": "Preview Top 10 Records",
+            "presetGroupBy": "Group By & Count Distribution",
+            "presetSummary": "Numerical Summary Aggregations",
+            "presetNullAudit": "Data Quality & Missing Null Audit",
+            "presetOutliers": "Outlier Records Filtering",
+            "presetTrends": "Time-Series Daily Event Trends",
+            "presetRecentOrder": "Order Records Descending",
+            "formatSql": "Format SQL",
+            "copySql": "Copy Query",
+            "copied": "Copied!",
+            "clearSql": "Clear Editor",
+            "snippets": "SQL Clauses",
+            "insertSnippet": "Insert Clause",
+            "sqlHistory": "Execution History",
+            "clearHistory": "Clear History",
+            "noHistory": "No previous queries executed in this session.",
+            "rowLimit": "Max Rows",
+            "searchResults": "Filter results table...",
+            "noMatchingRows": "No matching rows found in results.",
+            "categories": {
+              "all": "All Presets",
+              "basic": "Basic & Preview",
+              "aggregations": "Aggregations",
+              "quality": "Data Quality",
+              "advanced": "Advanced Filtering"
+            }
+          },
+          "webhooks": {
+            "title": "Alerts & Webhooks",
+            "description": "Real-time webhook subscriptions for quality SLA breaches and dataset state changes.",
+            "createWebhook": "Register Webhook Endpoint",
+            "webhooksList": "Subscribed Alert Webhooks",
+            "urlLabel": "Webhook Endpoint URL",
+            "urlPlaceholder": "https://hooks.slack.com/services/...",
+            "targetUrl": "Webhook URL",
+            "eventLabel": "Trigger Event",
+            "eventType": "Trigger Event",
+            "events": {
+              "qualitySlaFailed": "QUALITY_SLA_FAILED (Quality SLA Failed)",
+              "dataUpdated": "DATA_UPDATED (Data Updated)",
+              "schemaChanged": "SCHEMA_CHANGED (Schema Changed)"
+            },
+            "testWebhook": "Test Webhook",
+            "testing": "Pinging...",
+            "status": "Status",
+            "action": "Action",
+            "active": "ACTIVE",
+            "submit": "Register Webhook",
+            "submitting": "Subscribing...",
+            "cancel": "Cancel"
+          }
+        },
+        "noDescription": "No description",
+        "domains": {
+          "sales": "Sales",
+          "finance": "Finance",
+          "hr": "HR",
+          "product": "Product",
+          "marketing": "Marketing",
+          "operations": "Operations",
+          "other": "Other"
+        },
+        "toasts": {
+          "updated": "Dataset updated successfully",
+          "deleted": "Dataset deleted",
+          "exported": "Dataset exported successfully",
+          "linkCopied": "Link copied to clipboard",
+          "deleteConfirm": "Delete this dataset permanently? This cannot be undone."
+        },
+        "refresh": "Refresh",
+        "editModal": {
+          "title": "Edit Dataset Details",
+          "name": "Name",
+          "namePlaceholder": "Dataset name",
+          "description": "Description",
+          "descriptionPlaceholder": "Describe this dataset",
+          "domain": "Domain",
+          "domainPlaceholder": "Select a domain",
+          "domainNone": "None"
+        }
+      }
+    },
+    "dashboards": {
+      "loadingChart": "Loading chart…",
+      "measureBuilder": {
+        "title": "DAX & Metric Formula Builder",
+        "badge": "AST Compiler",
+        "subtitle": "Create calculated measures and custom DAX metrics for real-time dashboard widgets",
+        "compileEvaluate": "Compile & Evaluate",
+        "measureIdentifier": "Measure Identifier",
+        "daxExpression": "DAX Expression",
+        "syntaxHint": "Syntax: SQL / PowerBI DAX Compatible",
+        "quickFunctions": "Quick Functions:",
+        "successToast": "Calculated measure compiled and validated!"
+      },
+      "scheduledExport": {
+        "title": "Scheduled Report & Digest Hub",
+        "subtitle": "Automate snapshot exports for {{dashboardTitle}}",
+        "dispatchFrequency": "Dispatch Frequency",
+        "recipientLabel": "Recipient Email(s) / Slack Webhook",
+        "exportFormat": "Export Format",
+        "secureShareToken": "Secure Public Share Token",
+        "cancel": "Cancel",
+        "enableSchedule": "Enable Automated Schedule",
+        "copySuccess": "Secured public share link copied to clipboard",
+        "saveSuccess": "Scheduled {format} report dispatch configured ({frequency})",
+        "frequencies": {
+          "daily": "Daily",
+          "weekly": "Weekly",
+          "monthly": "Monthly"
+        }
+      },
+      "comments": {
+        "title": "Comments & Annotations",
+        "closeDrawer": "Close drawer",
+        "filterAll": "All ({{count}})",
+        "filterWidget": "This Widget",
+        "filterUnresolved": "Unresolved",
+        "noComments": "No comments found for this view.",
+        "pin": "Pin ({{x}}%, {{y}}%)",
+        "markUnresolved": "Mark unresolved",
+        "markResolved": "Mark resolved",
+        "replyCount": "Reply ({{count}})",
+        "replyingTo": "Replying to thread #{{id}}",
+        "replyPlaceholder": "Write a reply...",
+        "addPlaceholder": "Add a comment or spatial annotation...",
+        "teamMember": "Team Member",
+        "user": "User"
+      },
+      "meta": {
+        "title": "Dashboards - Business Intelligence",
+        "description": "Create and view interactive dashboards"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Home",
+          "bi": "Business Intelligence",
+          "dashboards": "Dashboards"
+        }
+      },
+      "list": {
+        "title": "Dashboards",
+        "subtitle": "Visualize your data with interactive dashboards",
+        "createButton": "New Dashboard",
+        "loading": "Loading dashboards...",
+        "noDescription": "No description provided",
+        "newDashboardDefaultName": "New Dashboard",
+        "newDashboardDefaultDescription": "A new dashboard to visualize your data insights.",
+        "empty": {
+          "title": "No Dashboards Yet",
+          "description": "Create your first dashboard to start visualizing your data.",
+          "cta": "Create Dashboard"
+        },
+        "search": {
+          "placeholder": "Search dashboards...",
+          "noResults": "No dashboards found"
+        },
+        "filters": {
+          "all": "All Dashboards",
+          "public": "Public",
+          "private": "Private"
+        },
+        "stats": {
+          "total": "Total Dashboards",
+          "public": "Public Dashboards",
+          "widgets": "Total Widgets"
+        }
+      },
+      "detail": {
+        "tabs": {
+          "overview": "Overview",
+          "cockpit": "Executive Cockpit",
+          "edit": "Edit Layout",
+          "settings": "Dashboard Settings"
+        },
+        "notFound": {
+          "title": "Dashboard Not Found",
+          "description": "The dashboard you're looking for doesn't exist or has been removed.",
+          "backToDashboards": "Back to Dashboards"
+        },
+        "errors": {
+          "createFailed": "Failed to create dashboard. Please try again.",
+          "updateFailed": "Failed to update dashboard. Please try again.",
+          "deleteFailed": "Failed to delete dashboard. Please try again.",
+          "loadFailed": "Failed to load dashboard. Please try again.",
+          "generic": "An error occurred. Please try again.",
+          "noOrg": "User is not associated with an organization.",
+          "datasetNotFound": "Dataset not found.",
+          "emptyDataset": "Dataset has no data for visualization.",
+          "generateFailed": "Failed to generate dashboard.",
+          "accessDenied": "Access denied.",
+          "listFailed": "Failed to list dashboards.",
+          "notFound": "Dashboard not found.",
+          "notFoundOrPrivilege": "Dashboard not found or permission denied.",
+          "widgetError": "Widget error.",
+          "widgetAddFailed": "Failed to add widget.",
+          "widgetNotFound": "Widget not found."
+        },
+        "success": {
+          "created": "Dashboard created successfully.",
+          "generated": "Dashboard auto-generated successfully.",
+          "retrieved": "Dashboard retrieved successfully.",
+          "updated": "Dashboard updated successfully.",
+          "deleted": "Dashboard deleted successfully.",
+          "widgetAdded": "Widget added to dashboard successfully.",
+          "widgetDeleted": "Widget deleted successfully."
+        },
+        "actions": {
+          "save": "Persist Layout",
+          "cancel": "Discard Changes",
+          "edit": "Modify Dashboard",
+          "delete": "Delete Dashboard",
+          "share": "Share Insights",
+          "addWidget": "Add Intelligence Widget",
+          "generate": "AI Auto-Generate",
+          "fullscreen": "Enter Fullscreen",
+          "exitFullscreen": "Exit Fullscreen"
+        },
+        "autoGenerate": {
+          "title": "AI Analytics Generator",
+          "description": "Let Podacium AI build your dashboard based on dataset patterns.",
+          "primary": "Auto-Generate Layout",
+          "secondary": "Choose Presets",
+          "loading": "Architecting Dashboard...",
+          "success": "Layout generated successfully!",
+          "selectDataset": "Select Dataset"
+        },
+        "editor": {
+          "errors": {
+            "failedToLoadColumns": "Failed to load dataset columns"
+          },
+          "actions": {
+            "daxMetrics": "DAX Metrics",
+            "scheduleDigest": "Schedule Digest"
+          },
+          "sidebar": {
+            "tabs": {
+              "data": "Data",
+              "design": "Design",
+              "format": "Format"
+            },
+            "semantic": {
+              "valid": "Configuration valid",
+              "required_dimension": "X-Axis dimension is required",
+              "required_metric": "At least one metric is required",
+              "pie_limit": "Pie charts support only one metric",
+              "kpi_limit": "KPI cards support only one metric"
+            },
+            "data": {
+              "source": "Data Source",
+              "xAxis": "X Axis (Dimension)",
+              "metrics": "Metrics (Y Axis)",
+              "addMetric": "Add Metric",
+              "preview": "Live Preview",
+              "liveSync": "Live Sync"
+            },
+            "design": {
+              "chartType": "Chart Type",
+              "theme": "Color Theme",
+              "interactive": "Interactivity",
+              "glassmorphism": "Glassmorphism",
+              "legend": "Legend Position",
+              "palettes": {
+                "azure": "Azure",
+                "forest": "Forest",
+                "sunset": "Sunset"
+              }
+            },
+            "format": {
+              "numberFormat": "Number Format",
+              "auto": "Auto",
+              "currency": "Currency",
+              "percentage": "Percentage",
+              "decimal": "Decimal",
+              "decimals": "Decimals"
+            },
+            "title": "Widget Builder",
+            "description": "Drag widgets to your dashboard"
+          }
+        },
+        "deleteConfirm": "Are you sure you want to delete this dashboard?",
+        "settings": {
+          "titlePlaceholder": "Dashboard Title",
+          "descriptionPlaceholder": "Enter a description for your dashboard",
+          "public": {
+            "label": "Public Access",
+            "description": "Allow anyone with the link to view this dashboard"
+          },
+          "saveSuccess": "Dashboard settings saved",
+          "saveError": "Failed to save dashboard settings",
+          "deleteSuccess": "Dashboard deleted",
+          "deleteError": "Failed to delete dashboard",
+          "saving": "Saving…"
+        }
+      },
+      "new": {
+        "detail": {
+          "errors": {
+            "createFailed": "Failed to create dashboard"
+          },
+          "success": {
+            "created": "Dashboard created successfully",
+            "generated": "Dashboard generated successfully"
+          }
+        },
+        "nav": {
+          "breadcrumb": {
+            "home": "Home",
+            "bi": "Business Intelligence",
+            "dashboards": "Dashboards",
+            "create": "Create Dashboard"
+          }
+        },
+        "title": "Create New Dashboard",
+        "subtitle": "Build a custom dashboard with widgets",
+        "steps": {
+          "basic": "Basic Info",
+          "dataset": "Dataset",
+          "widgets": "Widgets",
+          "layout": "Layout",
+          "preview": "Preview"
+        },
+        "form": {
+          "title": {
+            "label": "Dashboard Title",
+            "placeholder": "Enter a descriptive title",
+            "hint": "Choose a clear, memorable name for your dashboard",
+            "required": "Dashboard title is required"
+          },
+          "description": {
+            "label": "Description",
+            "placeholder": "Describe what this dashboard shows...",
+            "hint": "Optional but recommended for better organization"
+          },
+          "visibility": {
+            "label": "Visibility",
+            "private": "Private",
+            "privateDesc": "Only you can view this dashboard",
+            "team": "Team",
+            "teamDesc": "Your organization members can view",
+            "public": "Public",
+            "publicDesc": "Anyone with the link can view"
+          },
+          "dataset": {
+            "search": "Search datasets...",
+            "empty": "No processed datasets available",
+            "upload": "Upload a Dataset",
+            "selected": "Selected Dataset",
+            "required": "Please select a dataset"
+          },
+          "widgets": {
+            "select": "Add Widgets",
+            "selected": "Selected Widgets",
+            "titlePlaceholder": "Widget title",
+            "empty": "Click above to add widgets",
+            "required": "Please add at least one widget"
+          },
+          "layout": {
+            "type": "Layout Type",
+            "types": {
+              "grid": "Grid",
+              "freeform": "Freeform",
+              "report": "Report",
+              "presentation": "Presentation"
+            },
+            "grid": "Grid Settings",
+            "columns": "Columns",
+            "rowHeight": "Row Height",
+            "gap": "Gap",
+            "presets": {
+              "compact": "Compact",
+              "standard": "Standard",
+              "spacious": "Spacious"
+            },
+            "preview": "Layout Preview",
+            "previewEmpty": "Add widgets to see preview"
+          },
+          "preview": {
+            "summary": "Summary",
+            "title": "Title",
+            "untitled": "Untitled Dashboard",
+            "visibility": "Visibility",
+            "widgets": "Widgets",
+            "layout": "Layout",
+            "description": "Description",
+            "widgetsPreview": "Widgets Preview",
+            "widgetPreview": "Widget Preview",
+            "saveDraft": "Save Draft",
+            "publish": "Publish Dashboard"
+          }
+        },
+        "types": {
+          "metric": "Metric Card",
+          "metricDesc": "Display a single key metric with optional trend indicator",
+          "bar": "Bar Chart",
+          "barDesc": "Compare values across categories with horizontal or vertical bars",
+          "line": "Line Chart",
+          "lineDesc": "Show trends over time or continuous data",
+          "pie": "Pie Chart",
+          "pieDesc": "Show proportions of a whole as slices",
+          "table": "Table",
+          "tableDesc": "Display data in rows and columns with sorting and filtering",
+          "heatmap": "Heatmap",
+          "heatmapDesc": "Visualize density or intensity across two dimensions"
+        },
+        "navigation": {
+          "back": "Back",
+          "next": "Next"
+        },
+        "meta": {
+          "title": "Create Dashboard - Business Intelligence",
+          "description": "Create a new dashboard"
+        }
+      }
+    },
+    "widgets": {
+      "add": "Add Widget",
+      "edit": "Edit Widget",
+      "remove": "Remove Widget",
+      "moreOptions": "More options",
+      "fullscreen": {
+        "enter": "Enter fullscreen",
+        "exit": "Exit fullscreen"
+      },
+      "types": {
+        "metric": "Metric Card",
+        "bar": "Bar Chart",
+        "line": "Line Chart",
+        "pie": "Pie Chart",
+        "scatter": "Scatter Plot",
+        "histogram": "Histogram",
+        "table": "Table",
+        "heatmap": "Heatmap",
+        "sankey": "Sankey Diagram",
+        "radar": "Radar Chart",
+        "funnel": "Funnel Chart",
+        "map": "Geographic Map",
+        "treemap": "TreeMap",
+        "gauge": "Gauge Chart",
+        "custom": "Custom Widget",
+        "area": "Area Chart",
+        "kpi": "KPI Card",
+        "unsupported": "Unsupported Type"
+      },
+      "aggregations": {
+        "sum": "Sum",
+        "avg": "Average",
+        "count": "Count",
+        "min": "Min",
+        "max": "Max"
+      },
+      "interactivity": {
+        "export": "Export Data"
+      },
+      "config": {
+        "titlePlaceholder": "Widget Title",
+        "title": "Title",
+        "description": "Description"
+      },
+      "insight": {
+        "analysis": "Analysis",
+        "dynamicValue": "Trending in {dimension}",
+        "placeholder": "No insights available"
+      },
+      "state": {
+        "loading": "Loading Data...",
+        "error": "Error Loading Data",
+        "empty": "No Data Available"
+      }
+    },
+    "organizations": {
+      "meta": {
+        "title": "Organizations - Business Intelligence",
+        "description": "Manage your organizations and team members"
+      },
+      "title": "Organizations",
+      "subtitle": "Manage your organizations and teams",
+      "create": "Create Organization",
+      "createNew": "New Organization",
+      "edit": "Edit Organization",
+      "view": "View Details",
+      "switch": "Switch Organization",
+      "active": "Active",
+      "primary": "Primary",
+      "setPrimary": "Set as Primary",
+      "noOrganizations": "No organizations found",
+      "getStarted": "Get started by creating your first organization",
+      "createFirst": "Create your first organization",
+      "alreadyHaveOne": "Already have one?",
+      "checkStatus": "Check status",
+      "member": "Member",
+      "manageMembers": "Manage Members",
+      "inviteMember": "Invite Member",
+      "removeMember": "Remove Member",
+      "updateRole": "Update Role",
+      "noDescription": "No description provided",
+      "owner": "Owner",
+      "you": "You",
+      "joined": "Joined",
+      "loading": "Loading organizations...",
+      "stats": {
+        "min": "Min",
+        "max": "Max",
+        "mean": "Mean",
+        "sum": "Sum",
+        "uniqueValues": "Unique Values",
+        "unavailable": "No statistics available"
+      },
+      "invitations": {
+        "title": "Pending Invitations",
+        "invitedBy": "Invited by",
+        "actions": {
+          "accept": "Accept Invitation",
+          "decline": "Decline"
+        }
+      },
+      "tabs": {
+        "overview": "Overview",
+        "members": "Members",
+        "settings": "Settings",
+        "datasets": "Datasets"
+      },
+      "datasets": {
+        "empty": {
+          "title": "No datasets found",
+          "description": "This organization hasn't uploaded any datasets yet."
+        }
+      },
+      "overview": {
+        "members": "Total Members",
+        "datasets": "Total Datasets",
+        "role": "Your Role",
+        "basic_info": "Basic Information",
+        "description": "About Organization",
+        "no_description": "No description provided for this organization."
+      },
+      "status": {
+        "active": "Active Organization"
+      },
+      "actions": {
+        "switch": "Switch to this organization",
+        "new_dataset": "New Dataset"
+      },
+      "nav": {
+        "back_to_list": "Back to organizations list",
+        "breadcrumb": {
+          "home": "Home",
+          "bi": "Business Intelligence",
+          "organizations": "Organizations"
+        }
+      },
+      "settings": {
+        "description": "Manage your organization's settings and preferences.",
+        "no_permission": "Access Restricted",
+        "no_permission_desc": "You do not have administrative permissions to modify this organization's settings."
+      },
+      "list": {
+        "title": "Your Organizations",
+        "subtitle": "Manage your organizations, members, and resources",
+        "actions": {
+          "create": "New Organization",
+          "leave": "Leave Organization",
+          "leaveConfirm": "Are you sure you want to leave {name}? You will lose access to all its resources."
+        },
+        "stats": {
+          "total": "Total Organizations",
+          "owned": "Owned by You",
+          "members": "Total Members"
+        },
+        "filters": {
+          "search": "Search organizations..."
+        },
+        "bulkDelete": {
+          "button": "Delete ({count})",
+          "confirmTitle": "Delete {count} organizations?",
+          "confirmMessage": "Are you sure you want to delete {count} organizations? This action cannot be undone.",
+          "success": "{count} organizations deleted successfully",
+          "partialSuccess": "{success} deleted, {failed} failed",
+          "error": "Failed to delete organizations",
+          "deleting": "Deleting {count} organizations..."
+        },
+        "table": {
+          "name": "Organization",
+          "role": "Your Role",
+          "members": "Members",
+          "location": "Location",
+          "sector": "Sector",
+          "created": "Created At",
+          "actions": {
+            "title": "Actions",
+            "view": "View Details",
+            "edit": "Edit Settings",
+            "delete": "Delete Organization",
+            "members": "Manage Members",
+            "leave": "Leave Organization"
+          }
+        },
+        "empty": {
+          "title": "No Organizations Yet",
+          "description": "Create your first organization to collaborate with your team and manage resources efficiently.",
+          "action": "Create Organization"
+        }
+      },
+      "roles": {
+        "owner": "Owner",
+        "admin": "Admin",
+        "member": "Member",
+        "moderator": "Moderator"
+      },
+      "card": {
+        "viewDetails": "View Details",
+        "settings": "Settings",
+        "memberCount": "{count} member",
+        "memberCount_plural": "{count} members",
+        "createdOn": "Created on {date}",
+        "ownedByYou": "Owned by you",
+        "role": "Your role"
+      },
+      "form": {
+        "title": {
+          "create": "Create New Organization",
+          "edit": "Edit Organization"
+        },
+        "name": {
+          "label": "Organization Name",
+          "placeholder": "e.g. Acme Corp",
+          "hint": "Choose a clear, memorable name",
+          "required": "Organization name is required",
+          "minLength": "Name must be at least 2 characters",
+          "maxLength": "Name must be less than 100 characters"
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Brief description of your organization",
+          "hint": "Optional but recommended"
+        },
+        "geography": {
+          "label": "Location",
+          "placeholder": "Select location",
+          "hint": "Where is your organization based?",
+          "required": "Location selection is required"
+        },
+        "sector": {
+          "label": "Sector",
+          "placeholder": "Select sector",
+          "hint": "What is your primary economic sector?",
+          "required": "Economic sector is required"
+        },
+        "website": {
+          "label": "Website",
+          "placeholder": "https://example.com",
+          "hint": "Your organization's website",
+          "invalid": "Please enter a valid URL"
+        },
+        "submit": {
+          "create": "Create Organization",
+          "update": "Save Changes",
+          "creating": "Creating...",
+          "updating": "Saving..."
+        },
+        "cancel": "Cancel",
+        "error": {
+          "generic": "An error occurred while saving the organization",
+          "alreadyOwner": "You already own an organization. Each user can only own one organization.",
+          "nameTaken": "An organization with this name already exists",
+          "loadFailed": "Failed to load organization details"
+        },
+        "success": {
+          "created": "Organization created successfully!",
+          "updated": "Organization updated successfully!"
+        }
+      },
+      "delete": {
+        "title": "Delete Organization",
+        "subtitle": "This action cannot be undone",
+        "message": "Are you sure you want to delete {name}? All associated data, members, and resources will be permanently removed.",
+        "hasResources": "This organization has {count} active resource(s). Please remove or transfer them before deleting.",
+        "hasMembers": "This organization has {count} member(s). They will lose access to all resources.",
+        "confirm": "Delete Organization",
+        "confirmText": "Type DELETE to confirm",
+        "confirmPlaceholder": "Type DELETE",
+        "confirmMismatch": "Please type DELETE to confirm",
+        "deleting": "Deleting...",
+        "cancel": "Cancel",
+        "error": "Failed to delete organization",
+        "success": "Organization deleted successfully"
+      },
+      "members": {
+        "title": "Team Members",
+        "subtitle": "Manage who has access to this organization",
+        "loading": "Loading members...",
+        "count": "{count} member",
+        "count_plural": "{count} members",
+        "noMembers": "No members yet",
+        "noMembersDescription": "Invite team members to collaborate on this organization",
+        "inviteButton": "Invite",
+        "joined": "Joined",
+        "changeRole": "Change Role",
+        "you": "(You)",
+        "pending": "Pending",
+        "roles": {
+          "owner": "Owner",
+          "admin": "Admin",
+          "member": "Member"
+        },
+        "roleDescriptions": {
+          "owner": "Full control over the organization",
+          "admin": "Can manage members and settings",
+          "member": "Can view and use resources"
+        },
+        "permissions": {
+          "owner": "Full access",
+          "admin": "Manage members, edit settings",
+          "member": "View only"
+        },
+        "invite": {
+          "title": "Invite Team Member",
+          "subtitle": "Add a new member to your organization",
+          "email": {
+            "label": "Email Address",
+            "placeholder": "colleague@example.com",
+            "hint": "Enter the email of the person you want to invite",
+            "required": "Email is required",
+            "invalid": "Please enter a valid email address"
+          },
+          "role": {
+            "label": "Role",
+            "placeholder": "Select role",
+            "hint": "Choose the appropriate permission level",
+            "required": "Please select a role"
+          },
+          "message": {
+            "label": "Personal Message (Optional)",
+            "placeholder": "Add a personal note to the invitation...",
+            "hint": "This will be included in the invitation email"
+          },
+          "submit": "Send Invitation",
+          "sending": "Sending...",
+          "cancel": "Cancel",
+          "error": {
+            "generic": "Failed to send invitation",
+            "userNotFound": "No user found with this email address",
+            "alreadyMember": "This user is already a member",
+            "alreadyInvited": "An invitation has already been sent to this email"
+          },
+          "success": "Invitation sent successfully!"
+        },
+        "remove": {
+          "title": "Remove Member",
+          "subtitle": "Remove {name} from this organization",
+          "message": "Are you sure you want to remove {name}? They will lose access to all organization resources.",
+          "cannotRemoveOwner": "Cannot remove the organization owner",
+          "cannotRemoveSelf": "You cannot remove yourself. Transfer ownership or delete the organization instead.",
+          "confirm": "Remove Member",
+          "removing": "Removing...",
+          "cancel": "Cancel",
+          "error": "Failed to remove member",
+          "success": "Member removed successfully"
+        },
+        "updateRole": {
+          "title": "Update Member Role",
+          "subtitle": "Change role for {name}",
+          "currentRole": "Current role: {role}",
+          "newRole": {
+            "label": "New Role",
+            "placeholder": "Select new role"
+          },
+          "cannotChangeOwner": "Cannot change the owner's role",
+          "cannotChangeSelf": "You cannot change your own role",
+          "confirm": "Update Role",
+          "updating": "Updating...",
+          "cancel": "Cancel",
+          "error": "Failed to update role",
+          "success": "Role updated successfully"
+        },
+        "accept": {
+          "title": "Join {orgName}",
+          "subtitle": "You've been invited to collaborate",
+          "invitedBy": "Invited by {inviterName}",
+          "role": "Your role: {role}",
+          "acceptButton": "Accept Invitation",
+          "declineButton": "Decline",
+          "accepting": "Joining...",
+          "declining": "Declining...",
+          "success": "You've joined {orgName}!",
+          "successRedirect": "Redirecting to your organization...",
+          "declined": "Invitation declined",
+          "expired": "This invitation has expired",
+          "expiredHint": "Please ask for a new invitation.",
+          "notFound": "Invitation not found",
+          "notFoundHint": "This invitation link is invalid.",
+          "alreadyMember": "You're already a member of this organization",
+          "alreadyMemberHint": "You can access the organization from your dashboard.",
+          "alreadyUsed": "This invitation has already been used",
+          "alreadyUsedHint": "This invitation has already been processed.",
+          "loginRequired": "Please log in to accept this invitation",
+          "loading": "Loading invitation...",
+          "goToOrganizations": "Go to Organizations"
+        },
+        "list": {
+          "title": "Pending Invitations",
+          "empty": "No pending invitations",
+          "invitedOn": "Invited on {date}",
+          "expiresIn": "Expires in {days} days",
+          "expired": "Expired"
+        },
+        "actions": {
+          "cancel": "Cancel Invitation",
+          "resend": "Resend Invitation",
+          "cancelConfirm": "Are you sure you want to cancel this invitation?",
+          "resendConfirm": "Resend invitation email to {email}?",
+          "cancelling": "Cancelling...",
+          "resending": "Resending...",
+          "modalCancel": "Cancel",
+          "modalConfirm": "Confirm"
+        },
+        "success": {
+          "cancelled": "Invitation cancelled",
+          "resent": "Invitation resent successfully"
+        },
+        "error": {
+          "title": "Error",
+          "generic": "Failed to load members",
+          "cancelFailed": "Failed to cancel invitation",
+          "resendFailed": "Failed to resend invitation"
+        }
+      },
+      "switcher": {
+        "title": "Switch Organization",
+        "current": "Current Organization",
+        "switchTo": "Switch to {name}",
+        "manage": "Manage Organizations",
+        "create": "Create New Organization"
+      },
+      "details": {
+        "title": "Organization Details",
+        "overview": "Overview",
+        "members": "Members",
+        "settings": "Settings",
+        "info": {
+          "name": "Name",
+          "description": "Description",
+          "owner": "Owner",
+          "created": "Created",
+          "updated": "Last Updated",
+          "location": "Location",
+          "sector": "Sector",
+          "website": "Website",
+          "memberCount": "Total Members"
+        },
+        "actions": {
+          "edit": "Edit Details",
+          "delete": "Delete Organization",
+          "leave": "Leave Organization"
+        }
+      },
+      "errors": {
+        "loadFailed": "Failed to load organizations",
+        "createFailed": "Failed to create organization",
+        "updateFailed": "Failed to update organization",
+        "deleteFailed": "Failed to delete organization",
+        "leaveFailed": "Failed to leave organization",
+        "notFound": "Organization not found",
+        "noPermission": "You don't have permission to perform this action",
+        "ownerOnly": "Only the organization owner can perform this action",
+        "adminOnly": "Only admins can perform this action"
+      },
+      "enums": {
+        "city_label": "City",
+        "select_city": "Select city",
+        "country": {
+          "ALGERIA": "Algeria",
+          "EGYPT": "Egypt",
+          "MOROCCO": "Morocco",
+          "TUNISIA": "Tunisia",
+          "LIBYA": "Libya"
+        },
+        "city": {
+          "ALGIERS": "Algiers",
+          "ORAN": "Oran",
+          "CONSTANTINE": "Constantine",
+          "ANNABA": "Annaba",
+          "BLIDA": "Blida",
+          "BATNA": "Batna",
+          "DJELFA": "Djelfa",
+          "SETIF": "Setif",
+          "SIDI_BEL_ABBES": "Sidi Bel Abbes",
+          "BISKRA": "Biskra",
+          "TEBESSA": "Tebessa",
+          "EL_OUED": "El Oued",
+          "SKIKDA": "Skikda",
+          "TIARET": "Tiaret",
+          "BEJAIA": "Bejaia",
+          "TLEMCEN": "Tlemcen",
+          "OUARGLA": "Ouargla",
+          "MOSTAGANEM": "Mostaganem",
+          "MSILA": "M'Sila",
+          "GHARDAIA": "Ghardaia",
+          "CAIRO": "Cairo",
+          "ALEXANDRIA": "Alexandria",
+          "GIZA": "Giza",
+          "PORT_SAID": "Port Said",
+          "SUEZ": "Suez",
+          "CASABLANCA": "Casablanca",
+          "RABAT": "Rabat",
+          "MARRAKESH": "Marrakesh",
+          "TANGIER": "Tangier",
+          "FES": "Fes",
+          "TUNIS": "Tunis",
+          "SFAX": "Sfax",
+          "SOUSSE": "Sousse",
+          "ETTADHAMEN": "Ettadhamen",
+          "KAIROUAN": "Kairouan",
+          "TRIPOLI": "Tripoli",
+          "BENGHAZI": "Benghazi",
+          "MISRATA": "Misrata",
+          "SIRTE": "Sirte",
+          "SABHA": "Sabha",
+          "ADRAR": "Adrar",
+          "CHLEF": "Chlef",
+          "LAGHOUAT": "Laghouat",
+          "OUM_EL_BOUAGHI": "Oum El Bouaghi",
+          "BECHAR": "Bechar",
+          "BOUIRA": "Bouira",
+          "TAMANRASSET": "Tamanrasset",
+          "TIZI_OUZOU": "Tizi Ouzou",
+          "JIJEL": "Jijel",
+          "SAIDA": "Saida",
+          "GUELMA": "Guelma",
+          "MEDEA": "Medea",
+          "MASCARA": "Mascara",
+          "EL_BAYADH": "El Bayadh",
+          "ILLIZI": "Illizi",
+          "BORDJ_BOU_ARRERIDJ": "Bordj Bou Arreridj",
+          "BOUMERDES": "Boumerdes",
+          "EL_TARF": "El Tarf",
+          "TINDOUF": "Tindouf",
+          "TISSEMSILT": "Tissemsilt",
+          "KHENCHELA": "Khenchela",
+          "SOUK_AHRAS": "Souk Ahras",
+          "TIPAZA": "Tipaza",
+          "MILA": "Mila",
+          "AIN_DEFLA": "Ain Defla",
+          "NAAMA": "Naama",
+          "AIN_TEMOUCHENT": "Ain Temouchent",
+          "RELIZANE": "Relizane",
+          "TIMIMOUN": "Timimoun",
+          "BORDJ_BADJI_MOKHTAR": "Bordj Badji Mokhtar",
+          "OULED_DJELLAL": "Ouled Djellal",
+          "BENI_ABBES": "Beni Abbes",
+          "IN_SALAH": "In Salah",
+          "IN_GUEZZAM": "In Guezzam",
+          "TOUGGOURT": "Touggourt",
+          "DJANET": "Djanet",
+          "EL_MGHAIR": "El M'Ghair",
+          "EL_MENIAA": "El Meniaa",
+          "AFLOU": "Aflou",
+          "BARIKA": "Barika",
+          "EL_KANTARA": "El Kantara",
+          "BIR_EL_ATER": "Bir El Ater",
+          "EL_ARICHA": "El Aricha",
+          "KSAR_CHELLALA": "Ksar Chellala",
+          "AIN_OUSSERA": "Ain Oussera",
+          "MESSAAD": "Messaad",
+          "KSAR_EL_BOUKHARI": "Ksar El Boukhari",
+          "BOU_SAADA": "Bou Saada",
+          "EL_ABIODH_SIDI_CHEIKH": "El Abiodh Sidi Cheikh"
+        },
+        "sector": {
+          "TECHNOLOGY_AND_SOFTWARE": "Technology & Software",
+          "BANKING_AND_FINANCIAL_SERVICES": "Banking & Financial Services",
+          "HEALTHCARE_AND_PHARMACEUTICALS": "Healthcare & Pharmaceuticals",
+          "ENERGY_AND_OIL_AND_GAS": "Energy, Oil & Gas",
+          "AUTOMOTIVE_AND_MANUFACTURING": "Automotive & Industrial Manufacturing",
+          "RETAIL_AND_CONSUMER_GOODS": "Retail, E-Commerce & Consumer Goods",
+          "TELECOMMUNICATIONS": "Telecommunications & Networks",
+          "AEROSPACE_AND_DEFENSE": "Aerospace & Defense",
+          "AGRICULTURE_AND_FOOD_PRODUCTION": "Agriculture & Agro-Food Production",
+          "TRANSPORTATION_AND_LOGISTICS": "Transportation & Logistics",
+          "EDUCATION_AND_EDTECH": "Education, Training & EdTech",
+          "CONSTRUCTION_AND_REAL_ESTATE": "Construction, BTP & Real Estate",
+          "CONSULTING_AND_PROFESSIONAL_SERVICES": "Consulting, Audit & Professional Services",
+          "MEDIA_AND_CREATIVE_INDUSTRIES": "Media, Marketing & Creative Industries",
+          "TOURISM_AND_HOSPITALITY": "Tourism, Hospitality & Events",
+          "PUBLIC_SECTOR_AND_ADMINISTRATION": "Public Sector & Administration",
+          "RENEWABLE_ENERGY_AND_CLEANTECH": "Renewable Energy & CleanTech",
+          "MINING_AND_METALLURGY": "Mining, Metallurgy & Materials",
+          "TEXTILES_AND_APPAREL": "Textiles, Leather & Apparel",
+          "NON_PROFIT_AND_NGO": "Associations, Foundations & NGOs",
+          "OTHER": "Other / Multi-Sector"
+        }
+      }
+    },
+    "reports": {
+      "meta": {
+        "title": "Reports - Business Intelligence",
+        "description": "Generate and schedule automated reports"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Home",
+          "bi": "Business Intelligence",
+          "reports": "Reports"
+        }
+      },
+      "title": "Reports",
+      "subtitle": "Manage and schedule automated reports",
+      "createButton": "Create Report",
+      "empty": "No reports found",
+      "createFirst": "Create your first report",
+      "search": {
+        "placeholder": "Search reports..."
+      },
+      "stats": {
+        "total": "Total Reports",
+        "active": "Active",
+        "completed": "Completed Runs",
+        "failed": "Failed Runs"
+      },
+      "filters": {
+        "title": "Filters",
+        "clear": "Clear Filters",
+        "all": "All",
+        "inactive": "Inactive",
+        "format": {
+          "label": "Format",
+          "all": "All Formats"
+        },
+        "status": {
+          "label": "Status",
+          "all": "All Statuses"
+        },
+        "dashboard": {
+          "label": "Dashboard",
+          "all": "All Dashboards"
+        },
+        "active": {
+          "label": "Active",
+          "all": "All",
+          "yes": "Active",
+          "no": "Inactive"
+        }
+      },
+      "table": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "lastRun": "Last Run"
+      },
+      "status": {
+        "completed": "Completed",
+        "failed": "Failed",
+        "running": "Running",
+        "pending": "Pending",
+        "cancelled": "Cancelled"
+      },
+      "actions": {
+        "run": "Run Now",
+        "edit": "Edit",
+        "history": "View History",
+        "delete": "Delete",
+        "activate": "Activate",
+        "deactivate": "Deactivate"
+      },
+      "delete": {
+        "confirm": "Are you sure you want to delete this report?"
+      },
+      "history": {
+        "title": "Run History",
+        "empty": "No history available",
+        "recipients": "recipients",
+        "retry": "Retry",
+        "download": "Download"
+      },
+      "recipients": "Recipients",
+      "schedule": {
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "manual": "Manual"
+      },
+      "create": {
+        "selectDashboard": "Select Dashboard",
+        "format": "Format",
+        "interval": "Interval",
+        "every": "Every",
+        "days": "day(s)",
+        "weeks": "week(s)",
+        "months": "month(s)",
+        "manual": "Manual",
+        "recipientsPlaceholder": "Enter email addresses",
+        "recipientsHint": "Separate multiple emails with commas",
+        "active": "Active",
+        "title": "Create Report",
+        "description": "Schedule a new report",
+        "name": "Report Name",
+        "desc": "Description",
+        "dashboard": "Dashboard",
+        "schedule": "Schedule",
+        "recipients": "Recipients",
+        "cancel": "Cancel",
+        "submit": "Create Report"
+      }
+    },
+    "quality": {
+      "meta": {
+        "title": "Data Quality - Business Intelligence",
+        "description": "Monitor and improve data quality"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Home",
+          "bi": "Business Intelligence",
+          "quality": "Data Quality"
+        }
+      },
+      "title": "Data Quality",
+      "subtitle": "Monitor and improve your data health",
+      "noData": "No quality data available",
+      "actions": {
+        "refresh": "Refresh Analysis",
+        "export": "Export Report"
+      },
+      "freshness": {
+        "title": "Data Freshness",
+        "lastCheck": "Last check"
+      },
+      "metrics": {
+        "overall": "Overall Score",
+        "completeness": "Completeness",
+        "uniqueness": "Uniqueness",
+        "consistency": "Consistency",
+        "accuracy": "Accuracy"
+      },
+      "trends": {
+        "title": "Quality Trends"
+      },
+      "issues": {
+        "filters": "Filter Issues",
+        "empty": "No issues detected",
+        "emptyDesc": "Your data looks clean!",
+        "column": "Column",
+        "type": "Type",
+        "severity": "Severity",
+        "affected": "Affected Rows",
+        "status": "Status",
+        "date": "Date Detected",
+        "actions": "Actions",
+        "allColumns": "All Columns",
+        "resolve": "Mark as Resolved",
+        "ignore": "Ignore Issue"
+      },
+      "filters": {
+        "severity": {
+          "all": "All Severities"
+        },
+        "type": {
+          "all": "All Types"
+        },
+        "status": {
+          "all": "All Statuses"
+        }
+      },
+      "severity": {
+        "critical": "Critical",
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "issueTypes": {
+        "missing_values": "Missing Values",
+        "duplicates": "Duplicates",
+        "outliers": "Outliers",
+        "invalid_types": "Invalid Types"
+      },
+      "status": {
+        "open": "Open",
+        "resolved": "Resolved",
+        "ignored": "Ignored",
+        "excellent": "Excellent Quality",
+        "good": "Good Quality",
+        "acceptable": "Acceptable Quality",
+        "poor": "Poor Quality"
+      },
+      "summary": {
+        "title": "Quality Summary",
+        "completeness": {
+          "excellent": "Excellent data completeness.",
+          "good": "Good data completeness.",
+          "poor": "Poor data completeness - many missing values."
+        },
+        "duplicates": {
+          "few": "Very few duplicates.",
+          "some": "Some duplicate records present.",
+          "high": "High duplicate rate detected."
+        },
+        "outliers": {
+          "minimal": "Minimal outliers in numeric data.",
+          "some": "Some outliers present in numeric data.",
+          "many": "Many outliers detected in numeric data."
+        },
+        "warnings": {
+          "count": "Note: {count} warnings about numeric data."
+        }
+      },
+      "recommendations": {
+        "title": "Recommendations",
+        "impute_missing": "Consider data imputation strategies for missing values",
+        "review_collection": "Review data collection processes to reduce missing data",
+        "detect_duplicates": "Implement duplicate detection in data ingestion pipeline",
+        "remove_duplicates": "Review and remove duplicate records before analysis",
+        "investigate_outliers": "Investigate outliers to determine if they are errors or valid extremes",
+        "treat_outliers": "Consider outlier treatment methods for statistical analysis",
+        "poor_quality": "Data quality is poor. Consider re-collecting or extensive cleaning before analysis",
+        "good_quality": "Data quality is good for analysis",
+        "review_issues": "Review the detected quality issues and address them."
+      },
+      "dataset": {
+        "title": "Select Dataset",
+        "search": "Search datasets...",
+        "empty": "No datasets found"
+      },
+      "level": {
+        "excellent": "Excellent",
+        "good": "Good",
+        "fair": "Fair",
+        "poor": "Poor"
+      }
+    },
+    "decisions": {
+      "meta": {
+        "title": "Decisions - Business Intelligence",
+        "description": "Track and manage data-driven decisions"
+      },
+      "nav": {
+        "breadcrumb": {
+          "home": "Home",
+          "bi": "Business Intelligence",
+          "decisions": "Decision Support"
+        }
+      },
+      "title": "Decision Support",
+      "subtitle": "Track and manage data-driven decisions",
+      "createButton": "New Decision",
+      "status": {
+        "draft": "Draft",
+        "review": "In Review",
+        "approved": "Approved",
+        "implemented": "Implemented",
+        "archived": "Archived"
+      },
+      "impact": {
+        "low": "Low Impact",
+        "medium": "Medium Impact",
+        "high": "High Impact",
+        "critical": "Critical Impact"
+      },
+      "filters": {
+        "title": "Filters",
+        "clear": "Clear Filters",
+        "status": {
+          "label": "Status",
+          "all": "All Statuses"
+        },
+        "impact": {
+          "label": "Impact",
+          "all": "All Levels"
+        },
+        "dateFrom": "From Date",
+        "dateTo": "To Date"
+      },
+      "table": {
+        "empty": "No decisions found. Create your first decision to get started.",
+        "title": "Title",
+        "owner": "Owner",
+        "updated": "Last Updated",
+        "actions": "Actions"
+      },
+      "create": {
+        "title": "Record Decision",
+        "titleLabel": "Title",
+        "description": "Description",
+        "impact": "Expected Impact",
+        "rationale": "Rationale",
+        "expectedOutcome": "Expected Outcome",
+        "cancel": "Cancel",
+        "submit": "Save Decision"
+      },
+      "drawer": {
+        "id": "Decision ID",
+        "description": "Description",
+        "rationale": "Rationale",
+        "expectedOutcome": "Expected Outcome",
+        "actualOutcome": "Actual Outcome",
+        "created": "Created",
+        "updated": "Updated",
+        "owner": "Owner",
+        "unknown": "Unknown",
+        "dataset": "Dataset",
+        "tags": "Tags",
+        "noHistory": "No history available",
+        "changedBy": "Changed by",
+        "addComment": "Add a comment",
+        "send": "Send",
+        "noComments": "No comments yet",
+        "tabs": {
+          "details": "Details",
+          "history": "History",
+          "comments": "Comments"
+        },
+        "transitionTo": {
+          "review": "Submit for Review",
+          "approved": "Approve",
+          "implemented": "Mark Implemented",
+          "archived": "Archive"
+        }
+      },
+      "pagination": {
+        "page": "Page",
+        "of": "of"
+      }
+    },
+    "accessibility": {
+      "chartLabel": "{{type}} chart visualization",
+      "chartDescription": "{{type}} chart displaying {{count}} data points",
+      "dataTable": "Data table",
+      "loadingAnalytics": "Loading analytics data, please wait...",
+      "confidenceGauge": "Confidence score gauge: {{score}} percent",
+      "healthScore": "Health score gauge: {{score}} percent",
+      "analyticsCards": "Analytics results",
+      "saveDashboard": "Save dashboard",
+      "closePanel": "Close editor panel",
+      "selectAggregation": "Select aggregation function",
+      "sortColumn": "Sort by column"
+    },
+    "home": {
+      "header": {
+        "badge": "Command Center",
+        "brand": "Podacium",
+        "brandHighlight": "Intelligence",
+        "educationalHub": "Educational Hub",
+        "title": "Business Intelligence",
+        "subtitle": "Real-time overview of your business performance and decisions."
+      },
+      "kpi": {
+        "revenue": "Revenue",
+        "expenses": "Expenses",
+        "datasets": "Datasets",
+        "decisions": "Decisions",
+        "records": "{{count}} records",
+        "approved": "{{count}} approved"
+      },
+      "health": {
+        "title": "Health Score",
+        "margin": "Margin",
+        "cashBuffer": "Cash Buffer",
+        "informalDebt": "Informal Debt: {{amount}}",
+        "season": "Season",
+        "refresh": "Refresh Insights"
+      },
+      "insights": {
+        "title": "Live Insights",
+        "emptyTitle": "Upload data to generate insights",
+        "emptyCta": "Upload Data →",
+        "generatedAgo": "Generated {{time}}",
+        "refreshed": "Insights refreshed successfully",
+        "refreshFailed": "Failed to refresh insights",
+        "confidence": "Confidence",
+        "whyDidThisHappen": "Why did this happen? (Key Drivers)",
+        "recentlyUpdated": "Recently updated",
+        "columnLabel": "Column: {{column}}",
+        "baselineTarget": "Baseline Target ({{column}})",
+        "baselineBenchmark": "Baseline Benchmark",
+        "datasetImpactMetric": "Dataset Impact Metric",
+        "categories": {
+          "all": "All Insights",
+          "anomaly": "Risks & Anomalies",
+          "trend": "Growth Opportunities",
+          "forecast": "Predictive Forecasts",
+          "performance": "Performance & Health"
+        },
+        "urgency": {
+          "critical": "Critical Risk",
+          "warning": "Warning",
+          "opportunity": "Opportunity",
+          "info": "Insight"
+        },
+        "actions": {
+          "createDecision": "Create Decision Record",
+          "triggerClean": "Trigger Smart Clean",
+          "applyFilter": "Apply SQL Filter"
+        }
+      },
+      "pipeline": {
+        "title": "Decision Pipeline",
+        "viewAll": "View all",
+        "recentTitle": "Recent Decisions",
+        "emptyTitle": "No decisions yet"
+      }
+    },
+    "onboarding": {
+      "noOrgTitle": "Welcome to Podacium BI",
+      "noOrgSubtitle": "To start making data-driven decisions, you need to belong to an organization. You can create your own or wait for an invitation.",
+      "createTitle": "Create your organization",
+      "createDesc": "Be the owner of your data and insights. Set up your business profile in seconds.",
+      "createCta": "Create Organization",
+      "joinTitle": "Join an organization",
+      "joinDesc": "Looking for your team? Check your email for invitations or contact your administrator.",
+      "joinCta": "Check Invitations",
+      "infoTitle": "Why use Podacium BI?",
+      "info1": "Centralize all your business data",
+      "info2": "Get AI-powered insights automatically",
+      "info3": "Share summaries via WhatsApp with one click",
+      "info4": "Monitor your health score in real-time"
+    },
+    "share": {
+      "button": "Share via WhatsApp",
+      "preparing": "Preparing...",
+      "done": "Shared",
+      "defaultText": "Check out these business insights on Podacium BI",
+      "copied": "Copied to clipboard! You can paste it into WhatsApp.",
+      "error": "Failed to generate share link"
+    },
+    "error": {
+      "loadFailed": "Failed to load dashboard",
+      "loadFailedDesc": "Something went wrong loading your dashboard. Please try again.",
+      "healthScoreFailed": "Failed to load health score"
+    },
+    "retry": "Retry",
+    "bookmarks": {
+      "views": "Views",
+      "deletePreset": "Delete view preset",
+      "saveCurrentView": "Save Current View",
+      "savePresetModalTitle": "Save Bookmark Preset",
+      "presetName": "Preset Name",
+      "presetPlaceholder": "e.g. Q3 Sales & Executive View",
+      "shareOrg": "Share with organization team members",
+      "setDefault": "Set as my default dashboard view",
+      "savePreset": "Save Preset"
+    },
+    "drillThrough": {
+      "defaultTitle": "Underlying Record Slice & Segment Breakdown",
+      "defaultSubtitle": "Interactive drill-down records, statistical distribution, and decision triggers",
+      "recordsCount": "{{count}} records",
+      "exportCSV": "CSV",
+      "segmentMetrics": "Segment Metrics",
+      "rawRecordSlice": "Raw Record Slice ({{count}})",
+      "createDecisionLog": "Create Decision Log",
+      "totalVolume": "Total Volume",
+      "averageTicket": "Average Ticket",
+      "sliceRows": "Slice Rows",
+      "topBreakdown": "Top Breakdown Elements",
+      "automatedSegmentInsight": "Automated Segment Insight",
+      "filterPlaceholder": "Filter drill-down rows...",
+      "pageInfo": "Page {{page}} of {{total}}",
+      "decisionTitle": "Decision Title",
+      "decisionTitlePlaceholder": "e.g. Optimize Inventory Allocation for Alger Region",
+      "impactLevel": "Impact Level",
+      "impactCritical": "Critical (Executive Board)",
+      "impactHigh": "High (Department Lead)",
+      "impactMedium": "Medium (Team Sprint)",
+      "rationaleLabel": "Rationale & Action Plan",
+      "rationalePlaceholder": "Document analytical rationale observed in metric slice...",
+      "submitDecision": "Submit Decision Log",
+      "exportSuccess": "Segment CSV exported successfully!",
+      "decisionTitleRequired": "Please enter a decision title",
+      "decisionLogged": "Executive Decision logged from metric drill-down!"
+    },
+    "smartChart": {
+      "dataPoint": "Data Point",
+      "xAxis": "X Axis",
+      "yAxis": "Y Axis",
+      "palette": "Color Palette",
+      "paletteBrand": "Blue-Indigo (Brand)",
+      "paletteEmerald": "Emerald Growth",
+      "paletteAmber": "Amber Warmth",
+      "paletteRose": "Rose Alert",
+      "paletteCyan": "Cyan Tech",
+      "aggregation": "Aggregation",
+      "targetGoal": "Target Goal Line",
+      "targetPlaceholder": "e.g. 50000",
+      "rangeLimit": "Range Limit ({{count}})",
+      "hideGrid": "Hide Grid",
+      "showGrid": "Show Grid",
+      "metricKPI": "Metric KPI",
+      "aggregatedSum": "Aggregated sum over {{count}} records",
+      "goalLabel": "Goal: {{val}}",
+      "exportSuccess": "CSV exported successfully!",
+      "enhancementsTooltip": "Chart Enhancements & Sliders",
+      "rawTableTooltip": "Toggle Raw Table View",
+      "exportCSVTooltip": "Export CSV Dataset",
+      "fullscreenTooltip": "Fullscreen Modal View"
+    },
+    "filterBar": {
+      "period": "Period:",
+      "granularityDaily": "Daily Granularity",
+      "granularityWeekly": "Weekly Granularity",
+      "granularityMonthly": "Monthly Granularity",
+      "granularityQuarterly": "Quarterly Granularity",
+      "resetAll": "Reset All",
+      "appliedToast": "Date filter applied: {{preset}}"
+    },
+    "uploadWizard": {
+      "title": "Data Connectors & Ingestion Wizard",
+      "subtitle": "Connect CSV/Parquet files or external relational databases",
+      "step1": "Select Source",
+      "step2": "Schema & Format",
+      "step3": "Confirm & Ingest",
+      "fileTab": "File Upload",
+      "dbTab": "External Database",
+      "waTab": "WhatsApp Log",
+      "dragPrompt": "Drag & drop CSV, Parquet, or Excel files",
+      "browseFile": "Browse Files",
+      "engine": "Engine",
+      "host": "Host / Endpoint",
+      "port": "Port",
+      "dbName": "Database Name",
+      "username": "Username",
+      "password": "Password",
+      "enableSsl": "Enable SSL Encryption",
+      "testConnection": "Test Connection",
+      "waPlaceholder": "Paste raw WhatsApp export text or Carnet debt logs...",
+      "waHelp": "Parses unstructured chat text e.g. \"Mohamed 15000 DZD - Vente PC Portable\" into structured tables.",
+      "nextSchema": "Next: Configure Schema",
+      "nextReview": "Next: Review & Submit",
+      "datasetName": "Dataset Name",
+      "csvDelimiter": "CSV Delimiter",
+      "detectedColumns": "Detected Columns & Data Types ({{count}})",
+      "inferredDuckDB": "Inferred via DuckDB",
+      "colName": "Column Name",
+      "type": "Type",
+      "sampleValue": "Sample Value",
+      "back": "Back",
+      "readyIngest": "Ready to Ingest \"{{name}}\"",
+      "targetEngineInfo": "Target engine: DuckDB Parquet storage with vectorized analytics indexing.",
+      "sourceType": "Source Type:",
+      "detectedColsCount": "Detected Columns:",
+      "encoding": "Encoding:",
+      "ingesting": "Ingesting Dataset...",
+      "confirmImport": "Confirm & Import",
+      "fileSelectError": "Please select a file to upload",
+      "dbConnectSuccess": "Database connection successful!",
+      "dbConnectFailed": "Database connection test failed",
+      "uploadSuccess": "Dataset uploaded successfully!",
+      "dbSavedSuccess": "External DB Connector saved successfully!",
+      "fileFormatsHelp": "Supports CSV, Parquet, Excel, JSON up to 250MB",
+      "dbFillError": "Please fill in database host, database name, and username",
+      "engines": {
+        "snowflake": "Snowflake"
+      },
+      "delimiters": {
+        "comma": "Comma (,)",
+        "semicolon": "Semicolon (;)",
+        "tab": "Tab (\\t)"
+      }
+    },
+    "insights": {
+      "title": "Live Insights",
+      "emptyTitle": "Upload data to generate insights",
+      "emptyCta": "Upload Data →",
+      "generatedAgo": "Generated {{time}}",
+      "refreshed": "Insights refreshed successfully",
+      "refreshFailed": "Failed to refresh insights",
+      "confidence": "Confidence",
+      "whyDidThisHappen": "Why did this happen? (Key Drivers)",
+      "recentlyUpdated": "Recently updated",
+      "columnLabel": "Column: {{column}}",
+      "baselineTarget": "Baseline Target ({{column}})",
+      "baselineBenchmark": "Baseline Benchmark",
+      "datasetImpactMetric": "Dataset Impact Metric",
+      "categories": {
+        "all": "All Insights",
+        "anomaly": "Risks & Anomalies",
+        "trend": "Growth Opportunities",
+        "forecast": "Predictive Forecasts",
+        "performance": "Performance & Health"
+      },
+      "urgency": {
+        "critical": "Critical Risk",
+        "warning": "Warning",
+        "opportunity": "Opportunity",
+        "info": "Insight"
+      },
+      "feedback": {
+        "helpful": "Helpful insight",
+        "notHelpful": "Not helpful"
+      },
+      "significanceStats": "p < 0.01 • N=14,280",
+      "actions": {
+        "createDecision": "Create Decision Record",
+        "triggerClean": "Trigger Smart Clean",
+        "applyFilter": "Apply SQL Filter"
+      },
+      "businessAiInsights": "Business AI Insights",
+      "prescriptiveTitle": "Prescriptive AI/ML Business Insights",
+      "prescriptiveDesc": "Automated root-cause analysis, risk triage, and prescriptive action recommendations.",
+      "demo": {
+        "anomTitle": "High Outlier Density Detected",
+        "anomDesc": "Numerical transaction values show a 24.5% deviation from historical 30-day baseline in high-volume records.",
+        "trendTitle": "Strong Growth in Revenue & Volume",
+        "trendDesc": "Total transaction volume increased by +18.4% compared to previous period across all regional branches.",
+        "perfTitle": "Data Quality & Completeness Score",
+        "perfDesc": "Schema integrity matches 100% of data quality SLA thresholds on the Podacium platform."
+      },
+      "correlation": {
+        "title": "Correlation Matrix & Relationship Explorer",
+        "description": "Explore linear correlations between numeric dimensions in your dataset.",
+        "howToRead": "How to Read Correlations",
+        "spectrum": "Correlation Strength Spectrum (-1.0 to +1.0)",
+        "note": "Note: Correlation measures statistical co-movement, not direct cause-and-effect.",
+        "strongPositive": "Strong Positive: Variables move up together",
+        "moderatePositive": "Moderate Positive: Mild upward co-movement",
+        "neutral": "Neutral: No clear linear relationship",
+        "moderateNegative": "Moderate Negative: Mild inverse movement",
+        "strongNegative": "Strong Negative: Variables move in opposite directions",
+        "heatmapGrid": "Heatmap Grid",
+        "keyConnections": "Key Connections",
+        "lowerTriangle": "Lower Triangle Only",
+        "fullMatrix": "Full Matrix View",
+        "allPairs": "All Pairs",
+        "strong": "Strong (|r| ≥ 0.5)",
+        "positive": "Positive (r > 0)",
+        "negative": "Negative (r < 0)",
+        "column": "Column",
+        "noMatches": "No correlations matching the selected filter.",
+        "noData": "No numeric correlation data available for this dataset."
+      }
+    },
+    "copilot": {
+      "title": "PoDalil AI (بودليل)",
+      "versionBadge": "PoDalil v2.4",
+      "subtitle": "Ask natural language analytics questions or detect automated insights across your DZD datasets",
+      "autoInsights": "Auto Insights",
+      "placeholder": "Ask PoDalil: e.g., 'What is our top performing wilaya by gross margin?'",
+      "analyzing": "Analyzing...",
+      "ask": "Ask",
+      "suggestions": "Suggestions:",
+      "narrativeTitle": "Executive AI Narrative",
+      "queryExecSuccess": "AI Analytics query executed successfully",
+      "sampleQueries": {
+        "revenueGrowth": "Show quarterly revenue growth by Wilaya in DZD",
+        "churnAnomalies": "Detect churn anomalies in Enterprise subscriptions",
+        "forecastBookings": "Forecast Q4 marketplace freelance bookings"
+      }
+    },
+    "embed": {
+      "defaultTitle": "Embedded Business Analytics",
+      "ssoMode": "SSO Authenticated Embed Mode",
+      "refreshData": "Refresh Data",
+      "loadingAnalytics": "Loading Security Verified Analytics...",
+      "activeOrgTenant": "Active Organization Tenant",
+      "verifiedTenantScope": "Verified Tenant Scope",
+      "embedTargetId": "Embed Target ID",
+      "dashboardTarget": "Dashboard #{{id}}",
+      "systemAuto": "System Auto",
+      "securityEntitlement": "Security Entitlement",
+      "tokenVerified": "Token Verified (RS256)",
+      "invalidToken": "Invalid or missing embed token"
+    },
+    "cockpit": {
+      "alert": "Alert",
+      "trend": {
+        "driverFilter": "Driver Filter: {driver}",
+        "actualNet": "Actual Net",
+        "budgetBaseline": "Budget Baseline",
+        "targetGoal": "Target Goal",
+        "chartAriaLabel": "Core Trend Chart"
+      },
+      "waterfall": {
+        "outlierSingle": "Outlier",
+        "outlierPlural": "Outliers",
+        "baseline": "Baseline",
+        "gain": "Gain",
+        "drag": "Drag",
+        "ariaLabel": "Waterfall Variance Decomposition Chart",
+        "runningTotal": "Running Total:",
+        "thDriver": "Driver",
+        "thAmount": "Amount",
+        "thRunningTotal": "Running Total",
+        "thOutlierStatus": "Outlier Status",
+        "normalStatus": "Normal",
+        "outlierLabel": "Outlier (Z={zScore})"
+      },
+      "simulator": {
+        "title": "Executive Simulator Sandbox (Sensitivity Modeling)",
+        "targetReached": "Target Reached ({amount})",
+        "monteCarlo": "Monte Carlo {ms}ms · 95% CI",
+        "description": "Adjust driver sliders to model real-time revenue trajectories and map requirements for the Target Goal Zone.",
+        "reset": "Reset",
+        "createMemo": "Create Decision Memo",
+        "projectedTrajectory": "Projected 6-Month Trajectory",
+        "baselineCurve": "Baseline Curve",
+        "simulatedProjection": "Simulated Projection",
+        "ci95": "95% CI",
+        "targetGoalZone": "Target Goal Zone",
+        "chartAriaLabel": "Simulation Projection Chart",
+        "ciRange": "95% CI Range:",
+        "targetGoal": "Target Goal:"
+      },
+      "executive": {
+        "badge3Tier": "3-Tier Cockpit",
+        "badgeInvertedPyramid": "Real-time Inverted Pyramid",
+        "badgeDzdStandard": "DZD Monetary Standard",
+        "ariaVitalSigns": "Executive Vital Signs",
+        "ariaRootCause": "Root Cause & Trend Analysis",
+        "varianceDriversTitle": "{metric} Variance Drivers",
+        "varianceDriversSubtitle": "Decomposition of headline delta vs. {baseline}",
+        "revenueTrendTitle": "6-Month Historical Revenue Trend",
+        "revenueTrendSubtitle": "Actual trajectory vs. Budget baseline and Target goal threshold",
+        "ariaSensitivitySandbox": "Executive Sensitivity Sandbox"
+      },
+      "drawer": {
+        "closeAria": "Close drawer",
+        "totalVolume": "Total Volume",
+        "avgLineItem": "Avg Line Item",
+        "totalRecords": "Total Records",
+        "filterPlaceholder": "Filter entities, categories, or status...",
+        "numberedTitle": "Numbered pages pagination",
+        "pages": "Pages",
+        "infiniteTitle": "Infinite scrolling / continuous list",
+        "infinite": "Infinite",
+        "exportCsv": "Export CSV",
+        "newMemoTitle": "New Executive Decision Memo",
+        "cancel": "Cancel",
+        "decisionTitle": "Decision Title",
+        "decisionPlaceholder": "e.g. Approve server caching tier to halt cloud cost spikes",
+        "actionPlan": "Action Plan / Implementation Steps",
+        "actionPlanPlaceholder": "Details for operational execution...",
+        "assignedOwner": "Assigned Owner",
+        "owners": {
+          "dg": "Chief Executive Officer (CEO / DG)",
+          "daf": "Chief Financial Officer (CFO / DAF)",
+          "eng": "Head of Engineering",
+          "growth": "VP Growth & Marketing"
+        },
+        "logDecisionMemo": "Log Decision Memo",
+        "memoPrompt": "Transform this segment observation into an actionable governance record.",
+        "logMemoBtn": "Log Memo",
+        "thEntity": "Entity",
+        "thCategory": "Category",
+        "thAmount": "Amount",
+        "thVariance": "Variance",
+        "thStatus": "Status",
+        "loadingRecords": "Loading records slice...",
+        "noRecords": "No records match the filter criteria.",
+        "loadedCount": "Loaded {visible} of {total} records",
+        "loadMore": "Load More (+{rows})",
+        "showingRange": "Showing {start}–{end} of {total}",
+        "rowsPerPage": "Rows per page:",
+        "firstPage": "First page",
+        "prevPage": "Previous page",
+        "nextPage": "Next page",
+        "lastPage": "Last page",
+        "pageIndicator": "Page {page} of {totalPages}",
+        "continuousActive": "Continuous scrolling active",
+        "closeInspection": "Close Inspection"
+      }
+    }
+  }
+}

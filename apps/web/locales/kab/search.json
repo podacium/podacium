@@ -1,0 +1,36 @@
+{
+    "search": {
+        "title": "Nadi deg Podacium",
+        "subtitle": "Af isallen, isnulfanen akked ifrilansiyyen deg Podacium",
+        "placeholder": "Nadi...",
+        "searchButton": "Nadi",
+        "noResults": "Ulac igmaḍ yettwafen",
+        "tryDifferent": "Ɛreḍ awal nniḍen neɣ use tassast nniḍen",
+        "resultsFound": "Yettwafen {total} n igmaḍ i \"{query}\"",
+        "resultsCount": "Yettwaf",
+        "filterAll": "Akk",
+        "tryAgain": "Ɛreḍ tikkelt nniḍen",
+        "viewAllResults": "Wali akk igmaḍ",
+        "matchPercent": "{pct}% n usmenyif",
+        "types": {
+            "module": "Aselmed",
+            "project": "Amullu",
+            "user": "Afrilanski",
+            "modules": "Iselmayen",
+            "projects": "Imulluyen",
+            "users": "Ifrilansiyyen"
+        }
+    },
+    "meta": {
+        "search": {
+            "title": "Anadi — Podacium",
+            "description": "Nadi isallen, ifrilansiyyen akked imulluyen deg Podacium."
+        }
+    },
+    "breadcrumbs": {
+        "search": "Anadi"
+    },
+    "tryAgain": "Ɛreḍ tikkelt nniḍen",
+    "filterAll": "Akk",
+    "matchPercent": "{percent}% n unsaɣ"
+}

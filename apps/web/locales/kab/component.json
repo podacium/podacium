@@ -1,0 +1,821 @@
+{
+  "compcourse": {
+    "accessControl": {
+      "contentLocked": "Agbur yettwamdel",
+      "lockedMessage": "Ilaq ad tjerreḍ deg tmesrit-a iwakken ad tkecmeḍ ɣer ugbur-a."
+    },
+    "analytics": {
+      "title": "Tasleḍt n Ulmad",
+      "subtitle": "Ḍfer asfurret d yigmaren-inek",
+      "updated": "Yettwabeddel tura kan",
+      "lessonProgress": "Asfurret n Timsirin",
+      "timeSpent": "Akud iɛeddan",
+      "completion": "Asmed",
+      "engagement": "Irmad",
+      "personalizedRecommendations": "Isemrasen udmawanen",
+      "recommendations": {
+        "focusAreas": "Iḥricen n usefrek",
+        "focusAreasSubtitle": "S waddad n yigmaren n ukayad",
+        "focusAreasDescription": "Ales tiɣuri n tmiwa iwakken ad tfehmeḍ akken iwata",
+        "studySchedule": "Ahil n tɣuri",
+        "studyScheduleSubtitle": "Almad yelhan",
+        "studyScheduleDescription": "Ɣer 45 n tseddarin deg wass iwakken ad teskelseḍ tamusni",
+        "nextSteps": "Imeḍranen i d-iteddun",
+        "nextStepsSubtitle": "Kemmel almad",
+        "nextStepsDescription": "Kfu 2 n tmiwa nniḍen iwakken ad teldiḍ isental unzifen"
+      },
+      "units": {
+        "lessons": "timsirin",
+        "inProgress": "deg uselkem"
+      }
+    },
+    "certificate": {
+      "title": "Tazrart n Ulmad Podacium",
+      "type": "Aselkin n Usmed",
+      "presentedTo": "Aselkin-a yettunefk s uzux i",
+      "forCompleting": "ɣef usmed akken iwata n tmesrit",
+      "withGrade": "s tesmilt tagrawant n",
+      "duration": "Tanzagt",
+      "completionDate": "Azemz n usmed",
+      "certificateId": "ID n Uselkin",
+      "instructor": "Aselmad",
+      "issuingAuthority": "Adabu amsileɣ",
+      "verification": "Senqed aselkin-a ɣef:",
+      "issuedOn": "Yettunefk ass n",
+      "validIndefinitely": "Izeddi d lebda",
+      "verificationDescription": "Yezmer ad yettwasenqed uselkin-a s srid s usemres n ID neɣ tansa URL n usenqed.",
+      "verifyOnline": "Senqed Aselkin s Srid",
+      "aboutCertificate": "Ɣef Uselkin-inek",
+      "certificateDetails": "Talqayt n Uselkin",
+      "actions": {
+        "downloadPdf": "Zdem-d PDF",
+        "printCertificate": "Siggez Aselkin",
+        "shareAchievement": "Bḍu Aselkin"
+      },
+      "generating": "Asirew n uselkin...",
+      "generatingDescription": "Ttxil-k rǧu kra n lweqt asmi ara nheggi aselkin-ik n usemmed.",
+      "generateError": "Ur yezmir ara ad isirew aselkin. Ttxil-k ɛreḍ tikkelt nniḍen."
+    },
+    "quiz": {
+      "loading": "Asali n Ukayad",
+      "loadingDescription": "Aheggi n usekyer-inek...",
+      "error": "Tuccḍa deg Ukayad",
+      "error_submit": "Ur yezmir ara ad yazen akayad. Ttxil-k ɛreḍ tikkelt nniḍen.",
+      "error_start": "Ur yezmir ara ad yebdu akayad. Ttxil-k ɛreḍ tikkelt nniḍen.",
+      "tryAgain": "Ales aɛreḍ",
+      "knowledgeCheck": "Asenqed n tmusni",
+      "description": "Sezmer tamusni-inek ɣef tegzi n ugbur s ukayad-a amiddaw.",
+      "questions": "Isteqsiyen",
+      "totalPoints": "Akk tinqiḍin",
+      "timeLimit": "Tallunt n wakud",
+      "attemptsRemaining": "{count} n tiremt i d-yegran",
+      "startQuiz": "Bdu Akayad",
+      "question": "Asteqsi {current} seg {total}",
+      "points": "{points} tinqiḍin",
+      "checkAnswer": "Senqed Tiririt",
+      "nextQuestion": "Asteqsi i d-iteddun",
+      "finishQuiz": "Fak Akayad",
+      "finish": "Fak",
+      "passed": "Yekfa Akayad s Lewziq!",
+      "failed": "Ur yezri ara Ukayad",
+      "passedMessage": "Aybub! Tkemmleḍ akayad-inek akken iwata.",
+      "failedMessage": "Ilaq ad tawḍeḍ ɣer 70% akken ad tezriḍ. Tzemreḍ ad taleseḍ tiremt.",
+      "pointsScored": "Tinqiḍin i d-tebwiḍ",
+      "percentage": "Amur deg meyya",
+      "passingScore": "70% (Azray)",
+      "retryQuiz": "Ales Akayad ({attempts} n tiremt i d-yegran)",
+      "reviewQuestions": "Sekkud Isteqsiyen",
+      "questionReview": "Asekkud n Usteqsi",
+      "questionNumber": "Asteqsi {number}",
+      "explanation": "Asegzi:",
+      "true": "D tidet",
+      "false": "D asekrikab",
+      "fillBlankPlaceholder": "Aru tiririt-ik dagi...",
+      "noQuestions": "Ulac isteqsiyen",
+      "noQuestionsDescription": "Akayad-a ur yesɛi ara yakan isteqsiyen."
+    },
+    "resources": {
+      "title": "Iɣbula n Tmesrit",
+      "noResources": "Ulac iɣbula",
+      "noResourcesDescription": "Ad d-rnun iɣbula ɣer tmesrit-a deqs kan.",
+      "resourceCount": "{count} n yiɣbula",
+      "preview": "Taskant",
+      "copyLink": "Nɣel aseysey",
+      "download": "Zdem",
+      "downloading": "Azdam deg uselkem...",
+      "locked": "Yettwamdel",
+      "downloadAll": "Zdem Akk Iɣbula",
+      "downloadAllDescription": "Awi akk iɣbula n tmesrit deg yiwet n tezmirt",
+      "usageGuidelines": "Ilugan n usemres",
+      "guidelines": [
+        "Iɣbula-ya ttwagman i uselmed udmawan kan",
+        "Ur bḍu ara ifuyla yesɛan izerfan n umeskar",
+        "Bder aɣbalu ma tesmerseḍ-t deg umahil-inek",
+        "Ssiwel i tallelt i yisuturen n turagt"
+      ]
+    },
+    "video": {
+      "loading": "Asali n uvidyu...",
+      "fetchingDuration": "Awway n tanzagt n uvidyu...",
+      "playbackError": "Tuccḍa deg tɣuri n uvidyu",
+      "retry": "Ales aɛreḍ",
+      "buffering": "Asali deg tkatut...",
+      "keyboardShortcuts": "Inegzumen n unasiw",
+      "speed": "Tazzla",
+      "quality": "Tɣara",
+      "autoAbr": "Awurman (ABR)",
+      "autoOriginal": "Awurman (Asadaw HD)",
+      "speedBoost": "Asemɣer n tazzla 2.0x",
+      "enableCaptions": "Sermed iḍrisen",
+      "disableCaptions": "Sens iḍrisen",
+      "captionsLanguage": "Iḍrisen n usenked",
+      "pictureInPicture": "Tugna deg tugna",
+      "settingsTitle": "Iɣewwaren n tɣuri",
+      "audioTrack": "Abrid n ssut",
+      "theaterMode": "Askar n umezgun",
+      "normalSpeed": "Amagnu (1.0x)",
+      "providers": {
+        "title": "Fren amedday n usekles n uvidyu",
+        "youtube": "YouTube (Baṭel Ur yettwajerred ara)",
+        "vimeo": "Vimeo (Ur yettwajerred ara)",
+        "dailymotion": "Dailymotion (Usslig)",
+        "bunny": "Asuddem Bunny Stream (HLS)",
+        "cloudflare": "Cloudflare Stream",
+        "aws": "Asefrek AWS MediaConvert",
+        "badges": {
+          "free": "Baṭel",
+          "freePro": "Baṭel / Amsedday",
+          "private": "Usslig",
+          "cdn": "Aẓeṭṭa CDN",
+          "enterprise": "Tamezdayt"
+        },
+        "descriptions": {
+          "youtube": "Asekles baṭel i tɣuriwin n ujerred d usenked",
+          "vimeo": "Asenked yettwaḥerzen s taɣult akked usefrek n usentem",
+          "dailymotion": "Asali usslig n uvidyu mebla ma yettban deg umaḍal",
+          "bunny": "Aserwes arurad s wazal rxis akked uselken HLS imir-imir",
+          "cloudflare": "Taɣuri s tanzagt tamezwarut d tɣellist RS256",
+          "aws": "Aselken azerfan amezday s usemres n AWS S3 d CloudFront"
+        }
+      },
+      "uploader": {
+        "smartRoutingTitle": "Asiweḍ Awurman ɣer Usigna",
+        "smartRoutingDesc": "Aḥraz yettwazen s wudem awurman s leḥsab n ssuma n teɣri d tmuɣli baṭel",
+        "dragDrop": "Zuɣer u sers avidyu n ulmed dagi, neɣ tekki iwakken ad tferneḍ",
+        "browseFiles": "Nadi ifuyla",
+        "supportedFormats": "MP4, MOV, WebM neɣ MKV alamma d 5 GB",
+        "targetProvider": "Amedday n tmuɣli",
+        "startUpload": "Bdu asali",
+        "cancelUpload": "Sefsex asali",
+        "pauseUpload": "Sbedd kra",
+        "resumeUpload": "Kemmel",
+        "uploading": "Asali ɣer {provider}...",
+        "uploadProgress": "{progress}% yuli",
+        "speed": "Tazzla n usali",
+        "speedValue": "{speed} MT/tas",
+        "eta": "Akud i d-yegran",
+        "etaValue": "Igra-d {eta}",
+        "etaCalculating": "Asiḍen n wakud i d-yegran...",
+        "stages": {
+          "init": "Aheggi n tɣimit n usali...",
+          "uploading": "Asali n iḥricen n uvidyu ({current}/{total})...",
+          "processing": "Aselken d usesfer n uvidyu HLS...",
+          "finalizing": "Asmed d usekles n uvidyu..."
+        },
+        "success": "Avidyu yuli akken iwata!",
+        "invalidFormat": "Tawsit n ufaylu ur teṣli ara. Ttxil-k fren saraba n MP4, MOV neɣ WebM.",
+        "intentError": "Afecl deg usnulfu n usuter n usali",
+        "uploadError": "Tuccḍa ur nettwarǧi ara teḍra deg usali n saraba.",
+        "targetProviderNote": "Amedday n yiswi: {provider}. Ur tesriḍ ara asenɣel n useysey.",
+        "startUploadTo": "Bdu asali ɣer {provider}",
+        "errors": {
+          "invalidFormat": "Tawsit n ufaylu ur tettwaqbal ara. Fren MP4, MOV neɣ WebM.",
+          "fileTooLarge": "Afaylu yugar tiddi talemmast n {maxSize}.",
+          "networkError": "Tuqqna tebded. Ales aɛreḍ...",
+          "generic": "Tuccḍa deg usali n uvidyu. Senqed tasarut-inek tɛerḍeḍ tikelt nniḍen."
+        }
+      },
+      "shortcuts": {
+        "title": "Inegzumen n unasiw",
+        "playPause": "Tallunt / K: Rmed neɣ Sbedd",
+        "seek": "← / →: Zzi 5 tsinin",
+        "volume": "↑ / ↓: Taɣect",
+        "seekBackward": "← / J: Uɣal ɣer deffir s 5 tsinin",
+        "seekForward": "→ / L: Ddu ɣer zdat s 5 tsinin",
+        "volumeUp": "↑: Sserfed taɣect (+5%)",
+        "volumeDown": "↓: Ssedres taɣect (-5%)",
+        "fullscreen": "F: Agdil ačuran",
+        "mute": "M: Kkes / Err-d taɣect",
+        "captions": "C: Sermed / Sens iḍrisen",
+        "pip": "P: Askar n tugna deg tugna",
+        "theater": "T: Askar n umezgun",
+        "jumpPercent": "0 – 9: Neggez seg 0% ar 90% deg uvidyu",
+        "speedBoostHint": "Aṭṭaf n tqeffilt / Asenned: Tazzla tamezwarut 2.0x",
+        "doubleTapHint": "Asenned uslig Zelmaḍ / Ayeffus: Neggez s ±10 tsinin"
+      },
+      "controls": {
+        "replay": "Ales urar",
+        "play": "Rmed",
+        "pause": "Sbedd",
+        "volume": "Taɣect",
+        "settings": "Iɣewwaren",
+        "enterFullscreen": "Agdil ačuran",
+        "exitFullscreen": "Ffeɣ seg ugdil ačuran"
+      },
+      "dataSaver": "Aḥraz n isefka 4G",
+      "dataSaverActive": "360p (Urmid)",
+      "dataSaverDisabled": "Yensa"
+    },
+    "transcript": {
+      "title": "Aḍris Anemyag",
+      "cues": "{count} n yiferdisen",
+      "searchPlaceholder": "Nadi deg uḍris...",
+      "loading": "Asali n uḍris...",
+      "empty": "Ulac izirigen n uḍris yettwafen"
+    }
+  },
+  "comphub": {
+    "freelancerCard": {
+      "defaultName": "Amselkim Ililelli",
+      "defaultBio": "Amsadur ililelli yesɛan tarmit yelhan i usenfar-inek",
+      "noBio": "Ulac amagrad ɣef uselkim. Amsadur-a yewjed i usenfar amaynut s tɣara tamuqrant.",
+      "role": "{role} • {count} n yisenfaren yekfan",
+      "verified": "Yettwasenqed",
+      "stats": {
+        "projects": "Isenfaren",
+        "earnings": "Tidrimt",
+        "rating": "Asemrek",
+        "trust": "Taflest"
+      },
+      "certifications": "{count} n yiselkinen"
+    },
+    "projectCard": {
+      "recently": "Tura kan",
+      "today": "Ass-a",
+      "yesterday": "Iḍelli",
+      "daysAgo": "{days} n wussan aya",
+      "weeksAgo": "{weeks} n dduṛtat aya",
+      "monthsAgo": "{months} n wagguren aya",
+      "noDescription": "Ulac aglam",
+      "budgetNegotiable": "Ssuma tettwaskasi",
+      "applied": "Ittwasuter",
+      "stats": {
+        "budget": "Tabudjit",
+        "posted": "Yettwasuffeɣ",
+        "type": "Tawsit",
+        "project": "Asenfar"
+      },
+      "byOwner": "Sɣur {name}"
+    },
+    "proposalForm": {
+      "title": "Azen Asumer",
+      "forProject": "i usenfar \"{title}\"",
+      "validation": {
+        "messageRequired": "Ttxil-k aru tabrat n usumer",
+        "messageMinLength": "Tabrat ilaq ad tesɛu 10 n yisekkilen d afella",
+        "minAmount": "Azal amectuḥ n usumer d 10 DA (1000 iṣentin)",
+        "estimatedDaysRange": "Ussan ilaq ad ilin gar 1 d 365"
+      },
+      "submitError": "Afecl deg tuzna n usumer. Ales aɛreḍ.",
+      "fileTooLarge": "Afaylu {name} meqqer aṭas. Tiddi tameqrant d {maxSize}.",
+      "fileTypeNotSupported": "Tawsit n ufaylu {name} ur tettwaqbal ara. Zdem PDF, DOC, JPG neɣ PNG.",
+      "labels": {
+        "message": "Tabrat n Usumer *",
+        "amount": "Azal yettwasumren (DA) *",
+        "estimatedDays": "Akud yettwalan (Ussan)",
+        "attachments": "Ifuyla n tallelt (Afrayan)"
+      },
+      "placeholders": {
+        "message": "Glem-d tarrayt-inek, tarmit-inek, d acu i k-yejjan d ameskar iwatan..."
+      },
+      "hints": {
+        "minCharacters": "10 n yisekkilen s waddad",
+        "minAmount": "10 DA s waddad",
+        "estimatedDaysRange": "Afrayan, 1-365 n wussan",
+        "uploadFiles": "Tekki iwakken ad tsaliḍ ifuyla neɣ zuɣer-d",
+        "fileTypesAndSize": "PDF, DOC, JPG, PNG alamma d 10MB i ufaylu"
+      },
+      "selectedFiles": "Ifuyla yettwafernen",
+      "tips": {
+        "title": "Tisektiwin i usumer iṣeḥḥan",
+        "specificApproach": "Glem akken iwata tarrayt-inek n umahil",
+        "highlightExperience": "Sken tarmit d tmusniwin-inek",
+        "realisticTimeline": "Mudd akud d ssuma iwatan",
+        "askQuestions": "Steqsi ma llan yidisan ur nban ara",
+        "marketExperience": "Bder tarmit-inek deg ulzuz adzayri"
+      },
+      "buttons": {
+        "cancel": "Sefsex",
+        "submit": "Azen Asumer",
+        "submitting": "Tuzna deg uselkem..."
+      }
+    },
+    "searchFilters": {
+      "placeholders": {
+        "search": "Nadi isenfaren, imselkimen, timusniwin..."
+      },
+      "buttons": {
+        "hideFilters": "Ffer Isizdigen",
+        "moreFilters": "Ugar n Yisizdigen",
+        "hide": "Ffer",
+        "browse": "Snirem",
+        "clearAll": "Sfeḍ akk",
+        "applyFilters": "Snes Isizdigen",
+        "searching": "Anadi deg uselkem..."
+      },
+      "labels": {
+        "skills": "Timusniwin",
+        "status": "Addad",
+        "verification": "Asenqed",
+        "certificates": "Iselkinen"
+      },
+      "status": {
+        "all": "Akk Waddaden",
+        "open": "Yeldi",
+        "inProgress": "Deg uselkem",
+        "completed": "Yekfa"
+      },
+      "filters": {
+        "phoneVerified": "Tiliɣri tettwasenqed",
+        "hasCertificates": "Yesɛa iselkinen",
+        "any": "Yal yiwen"
+      }
+    },
+    "statusBadge": {
+      "project": {
+        "open": "Yeldi",
+        "inProgress": "Deg uselkem",
+        "completed": "Yekfa",
+        "cancelled": "Yettwasefsex"
+      },
+      "proposal": {
+        "pending": "Yettraǧu",
+        "accepted": "Yettwaqbel",
+        "rejected": "Yettwanged"
+      },
+      "contract": {
+        "active": "Armad",
+        "completed": "Yekfa",
+        "cancelled": "Yettwasefsex"
+      }
+    },
+    "trustBadges": {
+      "phoneVerified": "Tiliɣri tettwasenqed",
+      "emailVerified": "Imayl yettwasenqed",
+      "skillPassport": "Takarḍa n Tmusni tettwasenqed",
+      "certificatesCount": "{count} n yiselkinen",
+      "certificate": "iselkinen",
+      "projectsCount": "{count} n yisenfaren",
+      "project": "isenfaren",
+      "trusted": "Aflas"
+    }
+  },
+  "video": {
+    "hlsError": "Tuccḍa deg uselkem HLS",
+    "loadError": "Ur yezmir ara ad d-yessali avidyu",
+    "subtitles": "Iduzwalen",
+    "arabic": "Taɛrabt"
+  },
+  "copilot": {
+    "studioTitle": "Asallun PoDalil (بودليل)",
+    "studioSubtitle": "Adeg n unhil asinan • Asuddem n umeslay & Talwit tamiddurt",
+    "tool": "Afecku",
+    "resizeShortcut": "⌘[ / ⌘] Beddel tiddi",
+    "emptyTitle": "D acu tebɣiḍ ad txedmeḍ ass-a?",
+    "emptyDescription": "Nadi deg wumuɣ n tseddarin, sfeqsed isefka n DuckDB, heggi isutar n umgired neɣ siḍen asenqes n tebzert (Art. 169 CIDTA).",
+    "inputPlaceholder": "Seqsi asteqsi neɣ suter tigawt...",
+    "canvasReady": "Talwit tamiddurt thegga",
+    "canvasReadyDescription": "Suter i PoDalil ad d-tessufeɣ tuttriwin n DuckDB, ad tsefqed isefka, ad tesseknew ahil n usedwel neɣ ad taru agatu. Igiten ad d-banen dagi.",
+    "copied": "Yettwanɣel",
+    "copy": "Nɣel",
+    "preview": "Taskant",
+    "edit": "Beddel",
+    "badgePro": "Afeḥli",
+    "resetSession": "Taɣimit tamaynut",
+    "resetSessionTooltip": "Ales asbadu n tɣimit",
+    "commandShortcut": "K i tseqqarin",
+    "greetingTitle": "Azul! Amek i zemreɣ ad k-mleɣ ass-a?",
+    "greetingSubtitle": "Suter asteqsi, suter tasledt neɣ azen timhalin gar uselmed, amahil ilelli d tneflit n tnezzut deg Lezzayer.",
+    "agentName": "Amallal n Podacium",
+    "inputHintSend": "Sekcem i wazan",
+    "inputHintNewline": "Maj + Sekcem i yijerriḍ amaynut",
+    "stop": "Ḥbes",
+    "send": "Azen",
+    "scan": "Mseknew",
+    "records": "{count} n yikaramen",
+    "copyResponseTooltip": "Nɣel tiririt",
+    "tabs": {
+      "discussion": "Ameslay",
+      "canvas": "Tafelwit"
+    },
+    "canvas": {
+      "copyTooltip": "Nɣel agbur n ufaris",
+      "scanTooltip": "Mseknew taneflit s tkamirat (OCR)",
+      "features": {
+        "sqlTitle": "Isuturen SQL",
+        "sqlDesc": "Taẓrigt d usekmem aɣelsan n DuckDB",
+        "docsTitle": "Iragan n usaḍuf",
+        "docsDesc": "Akiti akraḍan n tfaturt d proforma ANAE",
+        "biTitle": "Tiskevlin BI",
+        "biDesc": "Tifelwiyin n yisefka d tseddarin",
+        "hitlTitle": "Aseɣbel HITL",
+        "hitlDesc": "Aselken aɣelsan n tigawin iweɛren"
+      },
+      "actions": {
+        "translateToDarija": "Suqel ɣer Darija",
+        "applyArticle169TaxShield": "Snes aḥezzem adeblan n Umagrad 169",
+        "apply19Tva": "Snes 19% n TVA",
+        "convertToDzd": "Selket ɣer DZD",
+        "liveVoiceConcierge": "Ameɛwan amsawal srid",
+        "cameraInvoiceScanner": "Amseknew n tfaturin s tkamirat",
+        "workflowDagStepper": "Asefrer n tedwilt DAG",
+        "apply19TvaTitle": "Snes 19% n TVA ɣef teɣreft-agi",
+        "convertToDzdTitle": "Selket azal ɣer DZD",
+        "filterTop5Title": "Zizdeg 5 ifazen ilmend n tgejdit-agi",
+        "filterTop5": "Zizdeg Top 5"
+      }
+    },
+    "cameraOcr": {
+      "title": "Amseknew n tneflit n tebzert d CCP",
+      "subtitle": "BaridiMob • EDAHABIA • CCP • Tafakturt Proforma",
+      "toggleTorch": "Sended tafat n ufus",
+      "switchCamera": "Beddel takamirat",
+      "close": "Mdel",
+      "capturedReceiptAlt": "Taneflit yettwaṭṭfen",
+      "docTypeLabel": "Anaw n warat:",
+      "cameraUnavailable": "Anekcum ɣer tkamirat ur yelli ara",
+      "retry": "Ɛreḍ tikkelt nniḍen",
+      "uploadPhoto": "Sali-d tawlaft",
+      "alignReceipt": "Ssemsawi taneflit neɣ akaram n CCP",
+      "stampVisible": "Aṭabaɛ n lbusta d wazal banen-d",
+      "retake": "Ɛawed aṭṭaf n twlaft",
+      "extracting": "Asufeɣ n OCR la iteddu...",
+      "submitted": "Taneflit tettezzem ɣer AI",
+      "analyzeWithOcr": "Sfeqsed s ocr_receipt_scan",
+      "gallery": "Tazeqqa n tewlafin",
+      "takePhoto": "Ṭṭef tawlaft n tneflit"
+    },
+    "voice": {
+      "startSession": "Senker tiɣri srid (Gemini Live)",
+      "stopSession": "Ḥbes tiɣri srid",
+      "active": "Taɣect termed",
+      "live": "Taɣect srid",
+      "mute": "Sgugem asawaḍ",
+      "unmute": "Rmed asawaḍ",
+      "bargeInTitle": "Gzem awal i umseqdac (Barge-in)",
+      "bargeIn": "Gzem awal"
+    },
+    "livingCanvas": {
+      "actions": {
+        "translateToDarija": "Suqel ɣer Darija",
+        "applyArticle169TaxShield": "Snes aḥezzem adeblan n Umagrad 169",
+        "apply19Tva": "Snes 19% n TVA",
+        "convertToDzd": "Selket ɣer DZD",
+        "liveVoiceConcierge": "Ameɛwan amsawal srid",
+        "cameraInvoiceScanner": "Amseknew n tfaturin s tkamirat",
+        "workflowDagStepper": "Asefrer n tedwilt DAG",
+        "apply19TvaTitle": "Snes 19% n TVA ɣef teɣreft-agi",
+        "convertToDzdTitle": "Selket azal ɣer DZD",
+        "filterTop5Title": "Zizdeg 5 ifazen ilmend n tgejdit-agi",
+        "filterTop5": "Zizdeg Top 5"
+      }
+    },
+    "prompts": {
+      "edtechTitle": "Iselmiden n AI d Tiknulujit",
+      "edtechBadge": "EdTech Aselmed",
+      "edtechPrompt": "Anta timedziyin ifazen yellan deg Podacium deg Python, Isefka d AI?",
+      "freelanceTitle": "Aswel n umahil ilelli (ANAE)",
+      "freelanceBadge": "Asaḍuf 22-23",
+      "freelancePrompt": "Amek ara selknaɣ tura-w d amsedday awurman (Asaḍuf 22-23) sakin ad qadreɣ anafag n 5 imelyan DZD?",
+      "biTitle": "Tasledt n yisefka d KPIs",
+      "biBadge": "Amsedday DuckDB",
+      "biPrompt": "Sken-iyi-d amek ara sleḍeɣ tagrumiwin n yisefka sakin ad snulfaɣ tafelwit tummidt s DuckDB.",
+      "taxTitle": "Kkes n tebzert IBS",
+      "taxBadge": "Imagraden 169 & 224",
+      "taxPrompt": "Amek ara sfaydiɣ seg tuffɣa n 26% n tebzert IBS ɣef uselmed (Imagraden 169 & 224 CIDTA)?"
+    },
+    "actionReview": {
+      "title": "Asenqed lqayen n tigawt (Tabburt n tɣellist HITL)",
+      "highRisk": "Amizi aεlayen",
+      "modifying": "Abeddal",
+      "paramsInspection": "Asenqed n yisefka n tmeskart",
+      "authorizeAndExecute": "Sireg & Snes deg taffa n yisefka",
+      "rejectAction": "Aggi tigawt",
+      "rejected": "Tigawt tettwagi",
+      "executing": "Asnas n tigawt yettwasentmen la iteddu...",
+      "success": "Tigawt tettwasentem yerna tettedda akken iwata."
+    },
+    "document": {
+      "prefix": "Asekkan",
+      "markdown": "Asekkan Markdown",
+      "categoryDoc": "Asekkan • {category}",
+      "downloadMd": "Sider .md",
+      "actions": {
+        "translateDarijaTitle": "Suqel aḍris yettwafernen ɣer Darija",
+        "translateDarija": "Suqel ɣer Darija (Tazzayrit)",
+        "applyArticle169Title": "Snes aḥezzem adeblan n Umagrad 169 & 224 CIDTA",
+        "applyArticle169": "Snes Aḥezzem Adeblan Art. 169 CIDTA",
+        "addAnpdpClauseTitle": "Rnu taseddast ANPDP n usaḍuf 25-11",
+        "addAnpdpClause": "Rnu taseddast ANPDP"
+      }
+    },
+    "dag": {
+      "completed": "Ifuk",
+      "running": "La iteddu",
+      "failed": "Yecceḍ",
+      "pending": "Yettraǧu",
+      "title": "Asuddes n DAG n umseqdac",
+      "stepsProgress": "{completed} / {total} n tseddarin kifent",
+      "nodeDetails": "Talqayt n tseddart",
+      "stepLabel": "Tamhelt",
+      "toolExecuted": "Allal yettwaqedcen",
+      "outputLogs": "Tuffɣa d usatal",
+      "askExplanation": "Ssefhem taseddart-agi",
+      "selectPrompt": "Fren taseddart iwakken ad twaliḍ talqayt."
+    },
+    "sql": {
+      "duckdbEngine": "Amsedday DuckDB",
+      "runSql": "Selkem SQL",
+      "result": "Agmuḍ",
+      "rows": "izirigen",
+      "resultWithCount": "Agmuḍ: {count} izirigen"
+    },
+    "splitPaneResizeHandle": "Tuṭṭfa n ubeddel n teɣzi n uzegrir ibḍan",
+    "reasoning": {
+      "title": "Tarrayt n useknew d uselkem n yifecka",
+      "statusThinking": "Asugen deg ubrid...",
+      "statusCompleted": "Tefra tarrayt n useknew",
+      "statusFailed": "Aselkem yexser",
+      "stepIntentAnalysis": "Tasleḍt n tuttra d usbadu n lebɣi",
+      "stepToolExecution": "Aselkem n ufecku",
+      "stepSynthesis": "Asdukel n tririt",
+      "toolInput": "Isettan n unekcum",
+      "toolOutput": "Agmuḍ",
+      "elapsed": "Tanzagt",
+      "copyParams": "Nɣel isettan",
+      "copied": "Yettwanɣel!",
+      "hideLogs": "Ffer ifyiren",
+      "showLogs": "Sken ifyiren",
+      "running": "Deg uselkem",
+      "done": "Immed",
+      "failed": "Yexser",
+      "logsCount": "Iɣmisen ({count})"
+    },
+    "container": {
+      "openAria": "Ldi Podacium Copilot",
+      "title": "Amɛawen Podacium",
+      "geminiVersion": "Alɣu Gemini 2.5",
+      "agentSafety": "Aɣersiw amagan & Taɣellist HITL",
+      "expandAria": "Semɣer ɣer umsegraw ačuran",
+      "dockRightSideAria": "Sbedd ɣer uyeffus",
+      "dockRightAria": "Kmes ɣer uyeffus",
+      "floatingBubbleAria": "Snifel ɣer tfulit tettferfuren",
+      "closeAria": "Mdel amɛawen",
+      "copied": "Yettwanɣel",
+      "copy": "Nɣel"
+    },
+    "composer": {
+      "removeEntityAria": "Kkes {label}",
+      "contextEntities": "Tifekkiwin n usekkir",
+      "attachContextTitle": "Senteḍ asatal n tfekka (@)"
+    },
+    "hitl": {
+      "action": {
+        "replayError": "Ales n tigawt yebded: aselkin-agi yettwaselkem neɣ yemmut.",
+        "confirmationRequired": "Asentem yettwasuter: {toolName}",
+        "intentHash": "Iswi umḍin {id}",
+        "proposedChangesTitle": "Ibeddilen n waddad i d-yettwasumren",
+        "actionApproved": "Tigawt tettwaqbel u tettwaselkem s tɣellist.",
+        "actionRejected": "Tigawt teggiḍ-tt. Ulac ibeddilen i yettwaxedmen.",
+        "rejectBtn": "Aggi / Beddel tiwila",
+        "approveBtn": "Qbel u selkem"
+      },
+      "diff": {
+        "splitViewAria": "Tamuɣli ibeḍlen",
+        "split": "Ibeḍlen",
+        "unifiedViewAria": "Tamuɣli d yiwet",
+        "unified": "D yiwet",
+        "before": "Uqbel",
+        "after": "Deffir"
+      }
+    }
+  },
+  "generativeUi": {
+    "unavailableTitle": "Aferdis amyagaw ur yelli ara",
+    "unavailableDescription": "Ur izmir ara ad d-yesken aferdis amsirman",
+    "actionConfirmation": {
+      "statusPending": "Asentem yettwasuter (HITL)",
+      "statusExecuting": "Aselkem aɣelsan la iteddu...",
+      "statusConfirmed": "Tigawt tettwaselkem akken iwata",
+      "statusRejected": "Tigawt tettusemmet",
+      "statusExpired": "Akud n usedwet ifuk",
+      "statusFailed": "Tigawt texser",
+      "actionPrefix": "Tigawt",
+      "highRisk": "Amizi aεlayen",
+      "modifying": "Abeddal",
+      "preparedParams": "Iɣewwaren iheggan",
+      "financialImpact": "Asemdu adriman",
+      "cancel": "Sefsex",
+      "confirmAndExecute": "Sentem & Selkem",
+      "hmacValidating": "Asentem uffir HMAC la iteddu...",
+      "operationSuccess": "Tamhelt tettwasentem yerna tettwaselkem",
+      "rejectedByUser": "Aseqdac yugi tamhelt.",
+      "tokenExpired": "Tawilayt n tsiregt tfuk.",
+      "biometricVerify": "Yettwasra usentem abiymitri",
+      "biometricVerified": "Tantit tabiymitrit tettwasentem",
+      "biometricAuthorize": "Sireg s uḍad / FaceID",
+      "biometricTokenValid": "Tasedmirt 2FA HMAC-SHA256 tameɣtut",
+      "tokenValid": "Akal n HMAC-SHA256 2FA iṣelḥen",
+      "biometricMethods": "Asentem s uḍad / udem / PIN",
+      "chargilyPay": "Tabburt n Chargily Pay :",
+      "urgentExpiry": "Qrib ad yemmet!",
+      "edahabiaBadge": "EDAHABIA",
+      "cibBadge": "CIB",
+      "chargilyPayEscrow": "Axlas aɣelsan s tɣellist (Asaduf 22-23)",
+      "timeRemaining": "Akud i d-yegran",
+      "retry": "Ales aɛreḍ"
+    },
+    "biChart": {
+      "viewTable": "Wali tafelwit",
+      "viewChart": "Wali udeg"
+    },
+    "course": {
+      "viewCourse": "Wali taseddari",
+      "free": "Baṭel",
+      "recommendedCourses": "Tiseddarin yettusumren ({count})"
+    },
+    "projects": {
+      "title": "Isenfaren & Tiwuriwin ({count})",
+      "viewAll": "Wali akk",
+      "apply": "Sumer",
+      "proposalsCount": "{count} n isumren"
+    },
+    "dashboards": {
+      "title": "Tifelwiyin n usedwel BI ({count})",
+      "biStudio": "Asudu BI",
+      "public": "Azdizay",
+      "private": "Uslig",
+      "openInEditor": "Ldi deg umaẓrag"
+    },
+    "dataset": {
+      "duckdbEngine": "Amsedday DuckDB",
+      "indexedRows": "Izirigen yettusbadun:",
+      "columns": "Tigejda:",
+      "queryWithSql": "Steqsi s SQL"
+    },
+    "freelancerComparison": {
+      "project": "Asenfar",
+      "proposedRate": "Azal yettusumren",
+      "deliveryDelay": "Akud n uselkem",
+      "deliveryDetails": "{days} wussan ({milestones} isurifen)",
+      "selected": "Yettwaxtar",
+      "reviewOffer": "Semres asumer-agi",
+      "reviews": "iwenniten"
+    }
+  },
+  "bi": {
+    "wilayaMap": {
+      "title": "Takarḍa n tnezzut d uznuzu ɣef 58 n lwilayat",
+      "subtitle": "Takarḍa tamyaddant n urured n uznuzu d tladniwin di Lezzayer",
+      "metricSales": "Arured n uznuzu (DZD)",
+      "metricOrders": "Ablaɣ n tladniwin",
+      "metricActiveUsers": "Iseqdacen iruraden",
+      "metricGrowth": "Afras n timmerwit",
+      "searchPlaceholder": "Nadi ɣef twilayt (amedya: 16 Lezzayer, 31 Wehran)...",
+      "filterAll": "Akk timnaḍin",
+      "filterNorth": "Agafa d yiri n yilel",
+      "filterHighPlateaus": "Tigjda tennigiyin",
+      "filterSahara": "Uneẓruf d unẓul",
+      "nationalAverage": "Alemmas aɣelnaw",
+      "aboveAverage": "Sennig walemmas aɣelnaw",
+      "belowAverage": "Daw walemmas aɣelnaw",
+      "totalRevenue": "Asemday n yidrimen",
+      "totalOrders": "Asemday n tladniwin",
+      "topWilaya": "Tawilayt tamenzut",
+      "rank": "Amḍiq",
+      "viewMap": "Sken takarḍa",
+      "viewGrid": "Sken tafeggaɣt",
+      "viewList": "Sken amizzwer",
+      "noWilayaFound": "Ur d-nufi ula d yiwet n twilayt i unadi-agi",
+      "wilayaDetails": "Ifyiren n twilayt",
+      "wilayasCount": "{count} n lwilayat s umata",
+      "regionNorth": "AGAFA D YIRI N YILEL",
+      "regionHighPlateaus": "TIGJDA TENNIGIYIN",
+      "regionSahara": "UNEẒRUF D UNẒUL",
+      "nationalBenchmark": "Alemmas aɣelnaw",
+      "colWilaya": "Tawilayt",
+      "colRegion": "Tamnaḍt",
+      "wilayaCode": "Tawilayt uṭṭun {code}"
+    }
+  },
+  "component": {
+    "motionStatus": {
+      "demo": {
+        "eyebrow": "Anagraw n Udem",
+        "title": "Addad n Tmerna",
+        "subtitle": "Amgal n tyuga yeddren i yal tazmert tarurit — axemmem n ubur, asali, amtawi d usekles.",
+        "preview": "Tamuɣli tusridt",
+        "state": "Addad",
+        "variant": "Tawsit",
+        "size": "Tiddi",
+        "layout": "Asebges",
+        "showLabel": "Sken azwel",
+        "animatedLabel": "Aled azwel",
+        "paused": "Aḥbas n tmerna",
+        "speed": "Tazernet n yifran",
+        "theme": "Udem",
+        "options": "Iɣewwaren",
+        "light": "Tafat",
+        "dark": "Tillas",
+        "direction": "Tawala",
+        "dataBinding": "Tuqqna tusridt",
+        "dataBindingDesc": "Ssenker isignalen u tmuɣleḍ useMotionStatus yextar addad iwulmen.",
+        "gallery": "Akk waddaden",
+        "usage": "Aseqdac",
+        "copied": "Yettwanɣel",
+        "signals": {
+          "loading": "Asali",
+          "fetching": "Ttawi",
+          "streaming": "Asuddem",
+          "tool": "Afecku yetteddu",
+          "listening": "Asseɣ",
+          "saving": "Asekles",
+          "importing": "Asali",
+          "success": "Yeddu",
+          "error": "Tuccḍa"
+        }
+      },
+      "importing": "Asali",
+      "syncing": "Amtawi",
+      "searching": "Anadi",
+      "busy": "Yecceɣ",
+      "saving": "Asekles",
+      "initializing": "Asenker",
+      "thinking": "Axemmem",
+      "listening": "Asseɣ",
+      "idle": "Yewjed",
+      "success": "Immed",
+      "error": "Tuccḍa",
+      "statusLabel": "Addad: {status}"
+    },
+    "badge": {
+      "expires": "Ikeffu deg {{date}}",
+      "featured": "Ufrin",
+      "boosted": "Yettwasnerna",
+      "premium": "Abaɣur",
+      "verified": "Yettwasentem"
+    },
+    "checkbox": {
+      "demoTitle": "Aferdis n Uchenna n Cekbax",
+      "demoDescription": "Aferdis n cekbax iwumi yezmer yiwen ad yekcem s uzaylan d wadeg gar tawsitin, tiddiyin, d waddaden.",
+      "tabBasic": "Asasi",
+      "tabStates": "Waddaden",
+      "tabVariants": "Tidura",
+      "tabSizes": "Tiddiyin",
+      "tabRTL": "RTL",
+      "basicCheckboxes": "Cekbaxen Asasiyen",
+      "acceptTerms": "Qbel aḍellal d tlisa",
+      "subscribeNewsletter": "Sekkṛeḍ-d i tlallit",
+      "newsletterDescription": "Awi-d taselwayt n yimalasen ɣef tseddarin d timsal timaynutin.",
+      "enableNotifications": "Sers taziyert",
+      "notificationsDescription": "Awi-d taziyert ɣef usanekraf n tseddarin d usenɣes.",
+      "labelPositions": "Amkanen n weqrar",
+      "labelRight": "Aqrar deg uyeffus (awlal)",
+      "labelLeft": "Aqrar deg uzelmaḍ",
+      "interactiveStates": "Waddaden Imuddinen",
+      "unchecked": "Ur yettwachenna ara",
+      "checked": "Yettwachenna",
+      "indeterminate": "Ur yettwassen ara",
+      "disabledState": "Waddad Yettwassenfes",
+      "disabledUnchecked": "Yettwassenfes ur yettwachenna",
+      "disabledChecked": "Yettwassenfes yettwachenna",
+      "disabledIndeterminate": "Yettwassenfes ur yettwassen",
+      "errorState": "Waddad n Tuccḍa",
+      "requiredField": "Aḍris yettwasuter *",
+      "errorRequired": "Aḍris-a yettwasuter",
+      "variantExamples": "Timeddukal n Tidura",
+      "variantDefault": "Awlal",
+      "variantOutline": "Anammas",
+      "variantSoft": "Ameqqar",
+      "sizeExamples": "Timeddukal n Tiddiyin",
+      "sizeSM": "Amecṭuḥ",
+      "sizeMD": "Amezwaru",
+      "sizeLG": "Ameqqran",
+      "rtlSupport": "Tallelt n RTL",
+      "rtlActive": "Usker n RTL urnid (tutlayt taεrabt)",
+      "rtlInactive": "Tutlayt tura: {currentLocale}. Beddel ɣer taεrabt akken ad twaliḍ asker n RTL.",
+      "rtlLabel": "Qbel aḍellal d tlisa",
+      "rtlLabelWithDesc": "Sekkṛeḍ-d i tlallit",
+      "rtlDescription": "Awi-d taselwayt n yimalasen ɣef tseddarin d timsal timaynutin.",
+      "rtlLabelLeft": "Aqrar deg uzelmaḍ",
+      "formExample": "Timsalit n Uṭenfas",
+      "formAcceptTerms": "Qbleɣ aḍellal n usemres d uɣilif n tallelt *",
+      "formSubscribe": "Sekkṛeɣ-d i usarag n ufaris",
+      "formSubscribeDesc": "Ad ak-nazen imaylen seg akken i wakka ɣef timsal timaynutin.",
+      "formEnableUpdates": "Sers usanekraf awurmanen",
+      "formSubmit": "Azen",
+      "formSubmitted": "Uṭenfas yezzenz s lewziq!",
+      "formTermsRequired": "Ilaq ad tqebleḍ aḍellal iwakken ad d-tedduḍ"
+    }
+  }
+}

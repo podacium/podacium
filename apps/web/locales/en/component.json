@@ -1,0 +1,821 @@
+{
+  "compcourse": {
+    "accessControl": {
+      "contentLocked": "Content Locked",
+      "lockedMessage": "You need to enroll in this course to access this content."
+    },
+    "analytics": {
+      "title": "Learning Analytics",
+      "subtitle": "Track your progress and performance",
+      "updated": "Updated just now",
+      "lessonProgress": "Lesson Progress",
+      "timeSpent": "Time Spent",
+      "completion": "Completion",
+      "engagement": "Engagement",
+      "personalizedRecommendations": "Personalized Recommendations",
+      "recommendations": {
+        "focusAreas": "Focus Areas",
+        "focusAreasSubtitle": "Based on quiz results",
+        "focusAreasDescription": "Review lessons concepts for better understanding",
+        "studySchedule": "Study Schedule",
+        "studyScheduleSubtitle": "Optimized learning",
+        "studyScheduleDescription": "Study 45 minutes daily for best retention",
+        "nextSteps": "Next Steps",
+        "nextStepsSubtitle": "Continue learning",
+        "nextStepsDescription": "Complete 2 more lessons to unlock advanced topics"
+      },
+      "units": {
+        "lessons": "lessons",
+        "inProgress": "in progress"
+      }
+    },
+    "certificate": {
+      "title": "Podacium LMS",
+      "type": "Certificate of Completion",
+      "presentedTo": "This certificate is proudly presented to",
+      "forCompleting": "for successfully completing the course",
+      "withGrade": "with a final grade of",
+      "duration": "Duration",
+      "completionDate": "Completion Date",
+      "certificateId": "Certificate ID",
+      "instructor": "Instructor",
+      "issuingAuthority": "Issuing Authority",
+      "verification": "Verify this certificate at:",
+      "issuedOn": "Issued on",
+      "validIndefinitely": "Valid indefinitely",
+      "verificationDescription": "This certificate can be verified online using the certificate ID or verification URL.",
+      "verifyOnline": "Verify Certificate Online",
+      "aboutCertificate": "About Your Certificate",
+      "certificateDetails": "Certificate Details",
+      "actions": {
+        "downloadPdf": "Download PDF",
+        "printCertificate": "Print Certificate",
+        "shareAchievement": "Share Achievement"
+      },
+      "generating": "Generating Certificate...",
+      "generatingDescription": "Please wait while we prepare your certificate of completion.",
+      "generateError": "Failed to generate certificate. Please try again."
+    },
+    "quiz": {
+      "loading": "Loading Quiz",
+      "loadingDescription": "Preparing your assessment...",
+      "error": "Quiz Error",
+      "error_submit": "Failed to submit quiz attempt. Please try again.",
+      "error_start": "Failed to start quiz attempt. Please try again.",
+      "tryAgain": "Try Again",
+      "knowledgeCheck": "Knowledge Check",
+      "description": "Test your understanding of the material with this interactive quiz.",
+      "questions": "Questions",
+      "totalPoints": "Total Points",
+      "timeLimit": "Time Limit",
+      "attemptsRemaining": "{count} attempts remaining",
+      "startQuiz": "Start Quiz",
+      "question": "Question {current} of {total}",
+      "points": "{points} points",
+      "checkAnswer": "Check Answer",
+      "nextQuestion": "Next Question",
+      "finishQuiz": "Finish Quiz",
+      "finish": "Finish",
+      "passed": "Quiz Passed!",
+      "failed": "Quiz Not Passed",
+      "passedMessage": "Congratulations! You have successfully completed the quiz.",
+      "failedMessage": "You need to score at least 70% to pass. You can retry the quiz.",
+      "pointsScored": "Points Scored",
+      "percentage": "Percentage",
+      "passingScore": "70% (Passing)",
+      "retryQuiz": "Retry Quiz ({attempts} attempts left)",
+      "reviewQuestions": "Review Questions",
+      "questionReview": "Question Review",
+      "questionNumber": "Question {number}",
+      "explanation": "Explanation:",
+      "true": "True",
+      "false": "False",
+      "fillBlankPlaceholder": "Type your answer here...",
+      "noQuestions": "No Questions Available",
+      "noQuestionsDescription": "This quiz doesn't have any questions yet."
+    },
+    "resources": {
+      "title": "Lesson Resources",
+      "noResources": "No Resources Available",
+      "noResourcesDescription": "Resources will be added to this lesson soon.",
+      "resourceCount": "{count} resources",
+      "preview": "Preview",
+      "copyLink": "Copy link",
+      "download": "Download",
+      "downloading": "Downloading...",
+      "locked": "Locked",
+      "downloadAll": "Download All Resources",
+      "downloadAllDescription": "Get all lesson resources in one package",
+      "usageGuidelines": "Usage Guidelines",
+      "guidelines": [
+        "Resources are for personal learning purposes only",
+        "Do not redistribute or share copyrighted materials",
+        "Cite appropriately if used in your own work",
+        "Contact support for licensing inquiries"
+      ]
+    },
+    "video": {
+      "loading": "Loading video...",
+      "fetchingDuration": "Fetching video duration...",
+      "playbackError": "Playback Error",
+      "retry": "Retry",
+      "buffering": "Loading...",
+      "keyboardShortcuts": "Keyboard Shortcuts",
+      "speed": "Speed",
+      "quality": "Quality",
+      "autoAbr": "Auto (ABR)",
+      "autoOriginal": "Auto (HD Original)",
+      "speedBoost": "2.0x Speed Boost",
+      "enableCaptions": "Enable captions",
+      "disableCaptions": "Disable captions",
+      "captionsLanguage": "Captions Language",
+      "pictureInPicture": "Picture-in-Picture",
+      "settingsTitle": "Playback Settings",
+      "audioTrack": "Audio Track",
+      "theaterMode": "Theater Mode",
+      "normalSpeed": "Normal (1.0x)",
+      "providers": {
+        "title": "Select video hosting provider",
+        "youtube": "YouTube (Free Unlisted)",
+        "vimeo": "Vimeo (Unlisted)",
+        "dailymotion": "Dailymotion (Private)",
+        "bunny": "Bunny Stream (HLS)",
+        "cloudflare": "Cloudflare Stream",
+        "aws": "AWS MediaConvert",
+        "badges": {
+          "free": "Free",
+          "freePro": "Free / Pro",
+          "private": "Private",
+          "cdn": "CDN Network",
+          "enterprise": "Enterprise"
+        },
+        "descriptions": {
+          "youtube": "Free hosting for public and unlisted courses",
+          "vimeo": "Domain-restricted private streaming with access control",
+          "dailymotion": "Private video upload with hidden listing",
+          "bunny": "Ultra-fast global edge delivery with live HLS encoding",
+          "cloudflare": "Sub-second startup with signed RS256 token security",
+          "aws": "Custom enterprise delivery using S3 and CloudFront CDN"
+        }
+      },
+      "uploader": {
+        "smartRoutingTitle": "Automated Cloud Dispatching",
+        "smartRoutingDesc": "Storage routed automatically based on course price & preview toggle",
+        "dragDrop": "Drag and drop your course video here, or click to browse",
+        "browseFiles": "Browse files",
+        "supportedFormats": "MP4, MOV, WebM or MKV up to 5 GB",
+        "targetProvider": "Target video provider",
+        "startUpload": "Start Upload",
+        "cancelUpload": "Cancel Upload",
+        "pauseUpload": "Pause Upload",
+        "resumeUpload": "Resume Upload",
+        "uploading": "Uploading to {provider}...",
+        "uploadProgress": "{progress}% uploaded",
+        "speed": "Upload speed",
+        "speedValue": "{speed} MB/s",
+        "eta": "Time remaining",
+        "etaValue": "{eta} left",
+        "etaCalculating": "Calculating time remaining...",
+        "stages": {
+          "init": "Initializing upload session...",
+          "uploading": "Uploading video chunks ({current}/{total})...",
+          "processing": "Processing and encoding HLS video...",
+          "finalizing": "Finalizing and saving video..."
+        },
+        "success": "Video uploaded successfully!",
+        "invalidFormat": "Invalid file format. Please select an MP4, MOV, or WebM video.",
+        "intentError": "Failed to create upload intent",
+        "uploadError": "An unexpected error occurred during video upload.",
+        "targetProviderNote": "Target Provider: {provider}. No URL copy-pasting needed.",
+        "startUploadTo": "Start Uploading to {provider}",
+        "errors": {
+          "invalidFormat": "File format not supported. Please choose MP4, MOV or WebM.",
+          "fileTooLarge": "File exceeds maximum upload size of {maxSize}.",
+          "networkError": "Network connection lost. Please try again...",
+          "generic": "Video upload failed. Check your connection and try again."
+        }
+      },
+      "shortcuts": {
+        "title": "Keyboard Shortcuts",
+        "playPause": "Space/Enter/K: Play/Pause",
+        "seek": "←/→: Seek 5s",
+        "volume": "↑/↓: Volume",
+        "seekBackward": "← / J: Seek backward 5s",
+        "seekForward": "→ / L: Seek forward 5s",
+        "volumeUp": "↑: Increase volume (+5%)",
+        "volumeDown": "↓: Decrease volume (-5%)",
+        "fullscreen": "F: Fullscreen",
+        "mute": "M: Mute / Unmute",
+        "captions": "C: Toggle captions",
+        "pip": "P: Picture-in-picture mode",
+        "theater": "T: Theater mode",
+        "jumpPercent": "0 – 9: Jump 0% to 90%",
+        "speedBoostHint": "Hold Click/Touch: Temporary 2.0x Speed",
+        "doubleTapHint": "Double-Tap Left/Right: Seek -10s/+10s"
+      },
+      "controls": {
+        "replay": "Replay",
+        "play": "Play",
+        "pause": "Pause",
+        "volume": "Volume",
+        "settings": "Settings",
+        "enterFullscreen": "Enter Fullscreen",
+        "exitFullscreen": "Exit Fullscreen"
+      },
+      "dataSaver": "4G Data Saver",
+      "dataSaverActive": "360p (Active)",
+      "dataSaverDisabled": "Off"
+    },
+    "transcript": {
+      "title": "Interactive Transcript",
+      "cues": "{count} Cues",
+      "searchPlaceholder": "Search transcript text...",
+      "loading": "Loading transcript...",
+      "empty": "No transcript lines found"
+    }
+  },
+  "comphub": {
+    "freelancerCard": {
+      "defaultName": "Freelancer",
+      "defaultBio": "Experienced freelancer ready for your project",
+      "noBio": "No bio available. This freelancer is ready to take on new projects and deliver high-quality work.",
+      "role": "{role} • {count} projects completed",
+      "verified": "Verified",
+      "stats": {
+        "projects": "Projects",
+        "earnings": "Earnings",
+        "rating": "Rating",
+        "trust": "Trust"
+      },
+      "certifications": "{count} certifications"
+    },
+    "projectCard": {
+      "recently": "Recently",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "daysAgo": "{days} days ago",
+      "weeksAgo": "{weeks} weeks ago",
+      "monthsAgo": "{months} months ago",
+      "noDescription": "No description available",
+      "budgetNegotiable": "Price negotiable",
+      "applied": "Applied",
+      "stats": {
+        "budget": "Budget",
+        "posted": "Posted",
+        "type": "Type",
+        "project": "Project"
+      },
+      "byOwner": "By {name}"
+    },
+    "proposalForm": {
+      "title": "Submit Proposal",
+      "forProject": "for \"{title}\"",
+      "validation": {
+        "messageRequired": "Please enter a proposal message",
+        "messageMinLength": "Proposal message must be at least 10 characters",
+        "minAmount": "Minimum proposal amount is 10 DA (1000 cents)",
+        "estimatedDaysRange": "Estimated days must be between 1 and 365"
+      },
+      "submitError": "Failed to submit proposal. Please try again.",
+      "fileTooLarge": "File {name} is too large. Maximum size is {maxSize}.",
+      "fileTypeNotSupported": "File {name} type is not supported. Please upload PDF, DOC, JPG, or PNG files.",
+      "labels": {
+        "message": "Proposal Message *",
+        "amount": "Proposed Amount (DA) *",
+        "estimatedDays": "Estimated Timeline (Days)",
+        "attachments": "Attachments (Optional)"
+      },
+      "placeholders": {
+        "message": "Describe your approach, experience, and why you're the right fit for this project..."
+      },
+      "hints": {
+        "minCharacters": "Minimum 10 characters",
+        "minAmount": "Minimum 10 DA (1000 cents)",
+        "estimatedDaysRange": "Optional, 1-365 days",
+        "uploadFiles": "Click to upload files or drag and drop",
+        "fileTypesAndSize": "PDF, DOC, JPG, PNG up to 10MB each"
+      },
+      "selectedFiles": "Selected Files",
+      "tips": {
+        "title": "Tips for a successful proposal",
+        "specificApproach": "Be specific about how you'll approach the project",
+        "highlightExperience": "Highlight relevant experience and skills",
+        "realisticTimeline": "Provide a realistic timeline and budget",
+        "askQuestions": "Ask clarifying questions if needed",
+        "marketExperience": "Mention any relevant Algerian market experience"
+      },
+      "buttons": {
+        "cancel": "Cancel",
+        "submit": "Submit Proposal",
+        "submitting": "Submitting..."
+      }
+    },
+    "searchFilters": {
+      "placeholders": {
+        "search": "Search projects, freelancers, skills..."
+      },
+      "buttons": {
+        "hideFilters": "Hide Filters",
+        "moreFilters": "More Filters",
+        "hide": "Hide",
+        "browse": "Browse",
+        "clearAll": "Clear All",
+        "applyFilters": "Apply Filters",
+        "searching": "Searching..."
+      },
+      "labels": {
+        "skills": "Skills",
+        "status": "Status",
+        "verification": "Verification",
+        "certificates": "Certificates"
+      },
+      "status": {
+        "all": "All Status",
+        "open": "Open",
+        "inProgress": "In Progress",
+        "completed": "Completed"
+      },
+      "filters": {
+        "phoneVerified": "Phone Verified",
+        "hasCertificates": "Has Certificates",
+        "any": "Any"
+      }
+    },
+    "statusBadge": {
+      "project": {
+        "open": "Open",
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "proposal": {
+        "pending": "Pending",
+        "accepted": "Accepted",
+        "rejected": "Rejected"
+      },
+      "contract": {
+        "active": "Active",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      }
+    },
+    "trustBadges": {
+      "phoneVerified": "Phone Verified",
+      "emailVerified": "Email Verified",
+      "skillPassport": "Skill Passport Verified",
+      "certificatesCount": "{count} certifications",
+      "certificate": "certifications",
+      "projectsCount": "{count} projects",
+      "project": "projects",
+      "trusted": "Trusted"
+    }
+  },
+  "video": {
+    "hlsError": "HLS playback error",
+    "loadError": "Failed to load video",
+    "subtitles": "Subtitles",
+    "arabic": "Arabic"
+  },
+  "copilot": {
+    "studioTitle": "PoDalil Studio (بودليل)",
+    "studioSubtitle": "Bimodal Cockpit • Chat Stream & Live Canvas",
+    "tool": "Tool",
+    "resizeShortcut": "⌘[ / ⌘] Resize",
+    "emptyTitle": "What would you like to achieve today?",
+    "emptyDescription": "Explore course catalogs, analyze DuckDB datasets, generate freelance quotes, or calculate your tax deduction (Art. 169 CIDTA).",
+    "inputPlaceholder": "Ask a question or request an action...",
+    "canvasReady": "Live Canvas Ready",
+    "canvasReadyDescription": "Ask PoDalil to write DuckDB queries, analyze data, design training curriculums, or draft contracts. Enriched artifacts will appear right here.",
+    "copied": "Copied",
+    "copy": "Copy",
+    "preview": "Preview",
+    "edit": "Edit",
+    "badgePro": "Pro",
+    "resetSession": "New session",
+    "resetSessionTooltip": "Reset session",
+    "commandShortcut": "K for commands",
+    "greetingTitle": "Hello! How can I propel you today?",
+    "greetingSubtitle": "Ask a question, request an analysis or delegate operations across EdTech, freelancing and Business Intelligence in Algeria.",
+    "agentName": "Podacium Agent",
+    "inputHintSend": "Enter to send",
+    "inputHintNewline": "Shift + Enter for new line",
+    "stop": "Stop",
+    "send": "Send",
+    "scan": "Scan",
+    "records": "{count} records",
+    "copyResponseTooltip": "Copy response",
+    "tabs": {
+      "discussion": "Discussion",
+      "canvas": "Canvas"
+    },
+    "canvas": {
+      "copyTooltip": "Copy artifact content",
+      "scanTooltip": "Scan receipt with camera (OCR)",
+      "features": {
+        "sqlTitle": "SQL Queries",
+        "sqlDesc": "Secure DuckDB editing & execution",
+        "docsTitle": "Legal Documents",
+        "docsDesc": "ANAE invoice & proforma triple kit",
+        "biTitle": "BI Visualizations",
+        "biDesc": "Data tables & metrics",
+        "hitlTitle": "HITL Validation",
+        "hitlDesc": "Secure review of sensitive actions"
+      },
+      "actions": {
+        "translateToDarija": "Translate to Darija",
+        "applyArticle169TaxShield": "Apply Article 169 Tax Shield",
+        "apply19Tva": "Apply 19% TVA",
+        "convertToDzd": "Convert to DZD",
+        "liveVoiceConcierge": "Live Voice Concierge",
+        "cameraInvoiceScanner": "Camera Invoice Scanner",
+        "workflowDagStepper": "Workflow DAG Stepper",
+        "apply19TvaTitle": "Apply 19% TVA to this cell",
+        "convertToDzdTitle": "Convert value to DZD",
+        "filterTop5Title": "Filter Top 5 based on this column",
+        "filterTop5": "Filter Top 5"
+      }
+    },
+    "cameraOcr": {
+      "title": "Fiscal Receipt & CCP Scanner",
+      "subtitle": "BaridiMob • EDAHABIA • CCP • Proforma Invoice",
+      "toggleTorch": "Toggle flashlight",
+      "switchCamera": "Switch camera",
+      "close": "Close",
+      "capturedReceiptAlt": "Captured receipt",
+      "docTypeLabel": "Document type:",
+      "cameraUnavailable": "Camera Access Unavailable",
+      "retry": "Retry",
+      "uploadPhoto": "Upload a photo",
+      "alignReceipt": "Align receipt or CCP slip",
+      "stampVisible": "Stamp & amount visible",
+      "retake": "Retake photo",
+      "extracting": "OCR extraction in progress...",
+      "submitted": "Receipt submitted to AI",
+      "analyzeWithOcr": "Analyze with ocr_receipt_scan",
+      "gallery": "Gallery",
+      "takePhoto": "Take photo of receipt"
+    },
+    "voice": {
+      "startSession": "Start live voice session (Gemini Live)",
+      "stopSession": "Stop live voice session",
+      "active": "Voice Active",
+      "live": "Live Voice",
+      "mute": "Mute microphone",
+      "unmute": "Unmute microphone",
+      "bargeInTitle": "Interrupt agent (Barge-in)",
+      "bargeIn": "Barge-in"
+    },
+    "livingCanvas": {
+      "actions": {
+        "translateToDarija": "Translate to Darija",
+        "applyArticle169TaxShield": "Apply Article 169 Tax Shield",
+        "apply19Tva": "Apply 19% TVA",
+        "convertToDzd": "Convert to DZD",
+        "liveVoiceConcierge": "Live Voice Concierge",
+        "cameraInvoiceScanner": "Camera Invoice Scanner",
+        "workflowDagStepper": "Workflow DAG Stepper",
+        "apply19TvaTitle": "Apply 19% TVA to this cell",
+        "convertToDzdTitle": "Convert value to DZD",
+        "filterTop5Title": "Filter Top 5 based on this column",
+        "filterTop5": "Filter Top 5"
+      }
+    },
+    "prompts": {
+      "edtechTitle": "AI & Tech Training",
+      "edtechBadge": "EdTech",
+      "edtechPrompt": "What are the best certified courses available on Podacium in Python, Data, and AI?",
+      "freelanceTitle": "Freelance Regulation (ANAE)",
+      "freelanceBadge": "Law 22-23",
+      "freelancePrompt": "How can I verify my auto-entrepreneur eligibility (Law 22-23) and keep within the 5M DZD ceiling?",
+      "biTitle": "Data Analysis & KPIs",
+      "biBadge": "DuckDB",
+      "biPrompt": "Show me how to analyze datasets and generate an interactive dashboard with DuckDB.",
+      "taxTitle": "IBS Tax Deduction",
+      "taxBadge": "Art. 169 & 224",
+      "taxPrompt": "How do I claim the 26% corporate tax deduction on training investments (Articles 169 & 224 CIDTA)?"
+    },
+    "actionReview": {
+      "title": "Action Review (HITL Safety Gate)",
+      "highRisk": "High Risk",
+      "modifying": "Modifying",
+      "paramsInspection": "Transaction Parameters Inspection",
+      "authorizeAndExecute": "Authorize & Execute in Database",
+      "rejectAction": "Reject Action",
+      "rejected": "Action rejected",
+      "executing": "Confirmed action executing...",
+      "success": "Action verified and applied successfully."
+    },
+    "document": {
+      "prefix": "Document",
+      "markdown": "Markdown Document",
+      "categoryDoc": "Document • {category}",
+      "downloadMd": "Download .md",
+      "actions": {
+        "translateDarijaTitle": "Translate selected text to Algerian Darija",
+        "translateDarija": "Translate to Darija (Algerian)",
+        "applyArticle169Title": "Apply Article 169 & 224 CIDTA tax shield",
+        "applyArticle169": "Apply Tax Shield Art. 169 CIDTA",
+        "addAnpdpClauseTitle": "Add ANPDP compliance clause (Law 25-11)",
+        "addAnpdpClause": "Add ANPDP clause"
+      }
+    },
+    "dag": {
+      "completed": "Completed",
+      "running": "Running",
+      "failed": "Failed",
+      "pending": "Pending",
+      "title": "Agent DAG Orchestration",
+      "stepsProgress": "{completed} / {total} steps completed",
+      "nodeDetails": "Step Details",
+      "stepLabel": "Operation",
+      "toolExecuted": "Executed Tool",
+      "outputLogs": "Output & Context",
+      "askExplanation": "Explain this step",
+      "selectPrompt": "Select a step to inspect details."
+    },
+    "sql": {
+      "duckdbEngine": "DuckDB Engine",
+      "runSql": "Execute SQL",
+      "result": "Result",
+      "rows": "rows",
+      "resultWithCount": "Result: {count} rows"
+    },
+    "splitPaneResizeHandle": "Split pane resize handle",
+    "reasoning": {
+      "title": "Thinking Process & Tool Execution",
+      "statusThinking": "Thinking in progress...",
+      "statusCompleted": "Reasoning completed",
+      "statusFailed": "Execution failed",
+      "stepIntentAnalysis": "Query analysis & intent formulation",
+      "stepToolExecution": "Tool execution",
+      "stepSynthesis": "Response synthesis",
+      "toolInput": "Input Parameters",
+      "toolOutput": "Output",
+      "elapsed": "Duration",
+      "copyParams": "Copy parameters",
+      "copied": "Copied!",
+      "hideLogs": "Hide details",
+      "showLogs": "Show details",
+      "running": "Running",
+      "done": "Completed",
+      "failed": "Failed",
+      "logsCount": "Logs ({count})"
+    },
+    "container": {
+      "openAria": "Open Podacium Copilot",
+      "title": "Podacium Copilot",
+      "geminiVersion": "Gemini 2.5",
+      "agentSafety": "Autonomous Agent & HITL Safety",
+      "expandAria": "Expand to full composer",
+      "dockRightSideAria": "Dock to right side",
+      "dockRightAria": "Dock to right",
+      "floatingBubbleAria": "Switch to floating bubble",
+      "closeAria": "Close copilot",
+      "copied": "Copied",
+      "copy": "Copy"
+    },
+    "composer": {
+      "removeEntityAria": "Remove {label}",
+      "contextEntities": "Context Entities",
+      "attachContextTitle": "Attach entity context (@)"
+    },
+    "hitl": {
+      "action": {
+        "replayError": "Action replay prevented: This action token has already been executed or has expired.",
+        "confirmationRequired": "Confirmation Required: {toolName}",
+        "intentHash": "Intent #{id}",
+        "proposedChangesTitle": "Proposed State Changes",
+        "actionApproved": "Action approved & executed with cryptographic nonce verification.",
+        "actionRejected": "Action was rejected by user. No mutations were applied.",
+        "rejectBtn": "Reject / Edit Parameters",
+        "approveBtn": "Approve & Execute"
+      },
+      "diff": {
+        "splitViewAria": "Split view",
+        "split": "Split",
+        "unifiedViewAria": "Unified view",
+        "unified": "Unified",
+        "before": "Before",
+        "after": "After"
+      }
+    }
+  },
+  "generativeUi": {
+    "unavailableTitle": "Interactive component unavailable",
+    "unavailableDescription": "Unable to display generative component",
+    "actionConfirmation": {
+      "statusPending": "Confirmation Required (HITL)",
+      "statusExecuting": "Secure Execution in Progress...",
+      "statusConfirmed": "Action Executed Successfully",
+      "statusRejected": "Action Cancelled",
+      "statusExpired": "Validation Timeout Expired",
+      "statusFailed": "Action Failed",
+      "actionPrefix": "Action",
+      "highRisk": "High Risk",
+      "modifying": "Modifying",
+      "preparedParams": "Prepared Parameters",
+      "financialImpact": "Financial Impact",
+      "cancel": "Cancel",
+      "confirmAndExecute": "Confirm & Execute",
+      "hmacValidating": "HMAC cryptographic validation in progress...",
+      "operationSuccess": "Operation validated and executed",
+      "rejectedByUser": "Operation rejected by user.",
+      "tokenExpired": "Authorization token has expired.",
+      "biometricVerify": "Biometric verification required",
+      "biometricVerified": "Biometric identity verified",
+      "biometricAuthorize": "Authorize with Fingerprint / FaceID",
+      "biometricTokenValid": "2FA HMAC-SHA256 Token Valid",
+      "tokenValid": "2FA HMAC-SHA256 Token Valid",
+      "biometricMethods": "TouchID / FaceID / PIN",
+      "chargilyPay": "Chargily Pay Gateway:",
+      "urgentExpiry": "Expiring soon!",
+      "edahabiaBadge": "EDAHABIA",
+      "cibBadge": "CIB",
+      "chargilyPayEscrow": "Secured Escrow Payment (Law 22-23)",
+      "timeRemaining": "Time remaining",
+      "retry": "Retry"
+    },
+    "biChart": {
+      "viewTable": "View table",
+      "viewChart": "View chart"
+    },
+    "course": {
+      "viewCourse": "View course",
+      "free": "Free",
+      "recommendedCourses": "Recommended Courses ({count})"
+    },
+    "projects": {
+      "title": "Projects & Missions ({count})",
+      "viewAll": "View all",
+      "apply": "Apply",
+      "proposalsCount": "{count} proposal(s)"
+    },
+    "dashboards": {
+      "title": "BI Dashboards ({count})",
+      "biStudio": "BI Studio",
+      "public": "Public",
+      "private": "Private",
+      "openInEditor": "Open in editor"
+    },
+    "dataset": {
+      "duckdbEngine": "DuckDB Engine",
+      "indexedRows": "Indexed rows:",
+      "columns": "Columns:",
+      "queryWithSql": "Query with SQL"
+    },
+    "freelancerComparison": {
+      "project": "Project",
+      "proposedRate": "Proposed Rate",
+      "deliveryDelay": "Delivery Delay",
+      "deliveryDetails": "{days} days ({milestones} milestones)",
+      "selected": "Selected",
+      "reviewOffer": "Review this offer",
+      "reviews": "reviews"
+    }
+  },
+  "bi": {
+    "wilayaMap": {
+      "title": "58-Wilaya Commercial Density & Sales Map",
+      "subtitle": "Interactive mapping of sales velocity and orders across Algeria",
+      "metricSales": "Sales Velocity (DZD)",
+      "metricOrders": "Order Volume",
+      "metricActiveUsers": "Active Users",
+      "metricGrowth": "Growth Rate",
+      "searchPlaceholder": "Search a wilaya (e.g. 16 Algiers, 31 Oran)...",
+      "filterAll": "All regions",
+      "filterNorth": "North & Coastal",
+      "filterHighPlateaus": "High Plateaus",
+      "filterSahara": "Sahara & South",
+      "nationalAverage": "National Average",
+      "aboveAverage": "Above national average",
+      "belowAverage": "Below national average",
+      "totalRevenue": "Total Revenue",
+      "totalOrders": "Total Orders",
+      "topWilaya": "Top Wilaya",
+      "rank": "Rank",
+      "viewMap": "Map View",
+      "viewGrid": "Grid View",
+      "viewList": "Rankings View",
+      "noWilayaFound": "No wilaya found for this search",
+      "wilayaDetails": "Wilaya Details",
+      "wilayasCount": "{count} Total Wilayas",
+      "regionNorth": "NORTH & COASTAL",
+      "regionHighPlateaus": "HIGH PLATEAUS",
+      "regionSahara": "SAHARA & SOUTH",
+      "nationalBenchmark": "National Benchmark",
+      "colWilaya": "Wilaya",
+      "colRegion": "Region",
+      "wilayaCode": "Wilaya Code {code}"
+    }
+  },
+  "component": {
+    "motionStatus": {
+      "demo": {
+        "eyebrow": "Design system",
+        "title": "Motion status",
+        "subtitle": "A living dot-matrix indicator for every async moment — agent thinking, uploads, syncs and saves.",
+        "preview": "Live preview",
+        "state": "State",
+        "variant": "Variant",
+        "size": "Size",
+        "layout": "Layout",
+        "showLabel": "Show label",
+        "animatedLabel": "Rotate label",
+        "paused": "Pause motion",
+        "speed": "Frame speed",
+        "theme": "Theme",
+        "options": "Options",
+        "light": "Light",
+        "dark": "Dark",
+        "direction": "Direction",
+        "dataBinding": "Real-time binding",
+        "dataBindingDesc": "Toggle signals and watch useMotionStatus pick the right state.",
+        "gallery": "All states",
+        "usage": "Usage",
+        "copied": "Copied",
+        "signals": {
+          "loading": "Loading",
+          "fetching": "Fetching",
+          "streaming": "Streaming",
+          "tool": "Tool running",
+          "listening": "Listening",
+          "saving": "Saving",
+          "importing": "Importing",
+          "success": "Success",
+          "error": "Error"
+        }
+      },
+      "importing": "Importing",
+      "syncing": "Syncing",
+      "searching": "Searching",
+      "busy": "Busy",
+      "saving": "Saving",
+      "initializing": "Initializing",
+      "thinking": "Thinking",
+      "listening": "Listening",
+      "idle": "Ready",
+      "success": "Done",
+      "error": "Something went wrong",
+      "statusLabel": "Status: {status}"
+    },
+    "badge": {
+      "expires": "Expires {{date}}",
+      "featured": "Featured",
+      "boosted": "Boosted",
+      "premium": "Premium",
+      "verified": "Verified"
+    },
+    "checkbox": {
+      "demoTitle": "Checkbox Component",
+      "demoDescription": "A fully accessible checkbox component with support for multiple variants, sizes, and states.",
+      "tabBasic": "Basic",
+      "tabStates": "States",
+      "tabVariants": "Variants",
+      "tabSizes": "Sizes",
+      "tabRTL": "RTL",
+      "basicCheckboxes": "Basic Checkboxes",
+      "acceptTerms": "Accept terms and conditions",
+      "subscribeNewsletter": "Subscribe to newsletter",
+      "newsletterDescription": "Receive weekly updates about new courses and features.",
+      "enableNotifications": "Enable notifications",
+      "notificationsDescription": "Get notified about course updates and announcements.",
+      "labelPositions": "Label Positions",
+      "labelRight": "Label on right (default)",
+      "labelLeft": "Label on left",
+      "interactiveStates": "Interactive States",
+      "unchecked": "Unchecked",
+      "checked": "Checked",
+      "indeterminate": "Indeterminate",
+      "disabledState": "Disabled State",
+      "disabledUnchecked": "Disabled unchecked",
+      "disabledChecked": "Disabled checked",
+      "disabledIndeterminate": "Disabled indeterminate",
+      "errorState": "Error State",
+      "requiredField": "Required field *",
+      "errorRequired": "This field is required",
+      "variantExamples": "Variant Examples",
+      "variantDefault": "Default",
+      "variantOutline": "Outline",
+      "variantSoft": "Soft",
+      "sizeExamples": "Size Examples",
+      "sizeSM": "Small",
+      "sizeMD": "Medium",
+      "sizeLG": "Large",
+      "rtlSupport": "RTL Support",
+      "rtlActive": "RTL mode is active (Arabic locale)",
+      "rtlInactive": "Current locale: {currentLocale}. Switch to Arabic to see RTL layout.",
+      "rtlLabel": "قبول الشروط والأحكام",
+      "rtlLabelWithDesc": "الاشتراك في النشرة الإخبارية",
+      "rtlDescription": "تلقي تحديثات أسبوعية حول الدورات والميزات الجديدة.",
+      "rtlLabelLeft": "التسمية على اليسار",
+      "formExample": "Form Example",
+      "formAcceptTerms": "I accept the Terms of Service and Privacy Policy *",
+      "formSubscribe": "Subscribe to product updates",
+      "formSubscribeDesc": "We'll send you occasional emails about new features.",
+      "formEnableUpdates": "Enable automatic updates",
+      "formSubmit": "Submit",
+      "formSubmitted": "Form submitted successfully!",
+      "formTermsRequired": "You must accept the terms to continue"
+    }
+  }
+}

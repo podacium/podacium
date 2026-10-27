@@ -1,0 +1,126 @@
+{
+  "settings-devices": {
+    "meta": {
+      "title": "Asefrek n Wallalen",
+      "description": "Sefrek allalen iflisen u wali tidyanin n tɣellist"
+    },
+    "page": {
+      "breadcrumbHome": "Asebter agejdan",
+      "breadcrumbSettings": "Iɣewwaṛen",
+      "title": "Allalen & Taɣellist",
+      "subtitle": "Sefrek allalen-inek iflisen u sekked armud n tɣellist",
+      "deviceListTitle": "Allalen Irmaden",
+      "deviceListDesc": "Allalen i yekcmen ɣer umiḍan-inek",
+      "currentDevice": "Allal-a",
+      "primaryDevice": "Agejdan",
+      "trusted": "Aflas",
+      "untrusted": "Arflas",
+      "trustToggle": "Fles deg wallal-a",
+      "revokeTrust": "Kkes taflest",
+      "lastActive": "Armud aneggaru",
+      "firstSeen": "Anekcum amezwaru",
+      "logins": "Inekcumen",
+      "unknownDevice": "Allal arusan",
+      "noDevices": "Ulac allalen yettwajerreden",
+      "securityEvents": "Tidyanin n Tɣellist",
+      "noEvents": "Ulac tidyanin timaynutin n tɣellist",
+      "group": {
+        "today": "Ass-a",
+        "yesterday": "Iḍelli",
+        "week": "Dduṛt-a",
+        "older": "Zik"
+      },
+      "time": {
+        "justNow": "Tura kan",
+        "minutes": "{count} tsd aya",
+        "hours": "{count} ts aya"
+      },
+      "event": {
+        "NEW_DEVICE_DETECTED": "Allal amaynut yettwafa",
+        "NEW_DEVICE_DETECTED_desc": "Allal amaynut: {browser} ɣef {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "Inig ur nezmir ara yettwafa",
+        "EXCESSIVE_SUBNET_SPREAD": "Beṭṭu n umiḍan yettwafa",
+        "DEVICE_TRUSTED": "Allal yuɣal d aflas",
+        "DEVICE_REVOKED": "Taflest n wallal tettwakkes",
+        "STRIKE_ISSUED": "Alɣu yettwazen",
+        "STRIKE_TWO_REACHED": "Amiḍan yettwagdel kra",
+        "STRIKE_THREE_REACHED": "Amiḍan yettwaḥbes",
+        "ACCOUNT_SUSPENDED": "Amiḍan yettwaḥbes",
+        "ESCROW_COOLDOWN_STARTED": "Akud n tɣellist yebda",
+        "COOLDOWN_BYPASS_2FA": "Akud yezri s 2FA"
+      },
+      "eventDesc": {
+        "NEW_DEVICE_DETECTED": "Allal amaynut: {browser} ɣef {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "Anekcum yettwaḍlem seg umkan yebɛeden",
+        "EXCESSIVE_SUBNET_SPREAD": "Aṭas n yimukan n uzeṭṭa ttwafeḍen",
+        "DEVICE_TRUSTED": "Allal yettwakles d aflas",
+        "DEVICE_REVOKED": "Taflest n wallal tettwakkes",
+        "STRIKE_ISSUED": "Alɣu yettwazen ɣef tiwtilin ur nettwaqbal ara",
+        "STRIKE_TWO_REACHED": "Timmad n umiḍan ttwaḥebsent",
+        "STRIKE_THREE_REACHED": "Amiḍan yettwaḥbes ɣef uqlaqel",
+        "ACCOUNT_SUSPENDED": "Amiḍan-inek yettwaḥbes",
+        "ESCROW_COOLDOWN_STARTED": "72 ts n ukud n tɣellist i wallal arflas",
+        "COOLDOWN_BYPASS_2FA": "Akud n tɣellist yezri s usentem s sin n yimeḍranen"
+      },
+      "totalDevices": "Akk Allalen",
+      "trustedDevices": "Iflisen",
+      "activeToday": "Irmaden Ass-a",
+      "events7d": "Tidyanin (7 wussan)",
+      "trustUpdated": "Taflest n wallal tettwabeddel",
+      "trustFailed": "Afecl deg ubeddel n teflest n wallal",
+      "loadFailed": "Afecl deg usali n wallalen",
+      "makePrimary": "Err-it d Agejdan",
+      "primaryUpdated": "Allal agejdan yettwabeddel",
+      "primaryFailed": "Afecl deg ubeddel n wallal agejdan",
+      "removeButton": "Kkes",
+      "removeDevice": "Kkes allal",
+      "removeConfirmTitle": "Tebɣiḍ ad tkekkseḍ allal-a?",
+      "removeConfirmDesc": "Ayagi ad yessufeɣ allal-a seg umiḍan-inek u ad t-yekkes seg wallalen iflisen.",
+      "removeSuccess": "Allal yettwakkes s lewziq",
+      "removeFailed": "Afecl deg tukksa n wallal",
+      "cannotRemovePrimary": "Ur yezmir ara ad yettwakkes wallal agejdan",
+      "breadcrumbHome": "Asebter agejdan",
+      "breadcrumbSettings": "Iɣewwaṛen",
+      "cancel": "Sefsex"
+    },
+    "banner": {
+      "strike2": {
+        "title": "Amiḍan Yettwagdel",
+        "description": "Kra n timmad ttwaḥebsent ɣef yilɣuten n wallalen. Sali ɣer Pro akken ad ternuḍ allalen iflisen.",
+        "cta": "Sali ɣer Pro"
+      },
+      "strike3": {
+        "title": "Amiḍan Yettwaḥbes",
+        "description": "Amiḍan-inek yettwaḥbes ɣef tiwtilin n tensa. Ttxil-k ssiwel i tallelt.",
+        "cta": "Ssiwel i Tallelt"
+      }
+    },
+    "notifications": {
+      "newDevice": {
+        "title": "Allal amaynut yettwafa",
+        "body": "Allal amaynut ({device}) ikcem ɣer umiḍan-inek tura kan."
+      },
+      "impossibleTravel": {
+        "title": "Anekcum yettwaḍlem yettwafa",
+        "body": "Amiḍan-inek ikcem-it yiwen seg umkan yebɛeden aṭas deg wakud awezzlan."
+      },
+      "strike1": {
+        "title": "Alɣu n beṭṭu n umiḍan",
+        "body": "Amiḍan-inek ikcem seg waṭas n yimukan. Ttxil-k senqed allalen-inek."
+      },
+      "strike2": {
+        "title": "Amiḍan yettwagdel",
+        "body": "Kra n timmad ttwaḥebsent ɣef yilɣuten n wallalen."
+      },
+      "strike3": {
+        "title": "Amiḍan yettwaḥbes",
+        "body": "Amiḍan-inek yettwaḥbes ɣef uqlaqel n tiwtilin."
+      }
+    },
+    "toast": {
+      "trustUpdated": "Taflest n wallal tettwabeddel",
+      "loadFailed": "Afecl deg usali n wallalen",
+      "trustFailed": "Afecl deg ubeddel n teflest n wallal"
+    }
+  }
+}

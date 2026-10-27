@@ -1,0 +1,2653 @@
+{
+  "dashboard": {
+    "loading": "Loading your dashboard...",
+    "tabs": {
+      "overview": "Overview",
+      "learning": "Learning",
+      "freelancing": "Freelancing",
+      "business": "Business BI",
+      "financial": "Revenue",
+      "teaching": "Teaching",
+      "profile": "Profile Analytics"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "dashboard": "Dashboard"
+    },
+    "time": {
+      "justNow": "Just now",
+      "minutes": "m",
+      "hours": "h",
+      "days": "d"
+    },
+    "general": {
+      "user": "User",
+      "beginner": "Beginner",
+      "dashboard": "Dashboard",
+      "notSpecified": "Not specified"
+    },
+    "welcome": {
+      "title": "Welcome back, {name}!",
+      "subtitle": "Here's what's happening across your Podacium ecosystem today.",
+      "FREELANCER": "Welcome back, {name}! Ready to find your next project?",
+      "BUSINESS": "Welcome back, {name}! Your business dashboard awaits.",
+      "ADMIN": "Welcome, {name}! Platform overview at a glance."
+    },
+    "profileCompletion": {
+      "title": "Complete Your Profile",
+      "description": "Update your profile information and select your role to get personalized recommendations and unlock all features.",
+      "cta": "Go to Profile"
+    },
+    "recommendations": {
+      "common": {
+        "learnMore": "Learn More"
+      },
+      "labels": {
+        "skill_gap": "Skill Gap",
+        "skill_match": "Skill Match",
+        "collab_filter": "Peer Choice",
+        "popularity": "Popular",
+        "trending": "Trending",
+        "cross_pillar": "Cross-Pillar",
+        "geo_loc": "Local",
+        "social": "Social",
+        "price_match": "Best Value",
+        "default": "Recommended"
+      },
+      "reasons": {
+        "popularity": "Most popular among Podacium learners",
+        "collab_filter": "Popular among learners with similar goals",
+        "skill_gap": "Bridges your skill gaps and expands your capabilities",
+        "skill_match": "Strong match for your current profile & interests",
+        "trending": "Trending now in your field",
+        "cross_pillar": "Apply your course skills to real projects",
+        "geo_loc": "Trending in your region",
+        "social": "Recommended by learners you follow",
+        "price_match": "Fits your learning budget",
+        "default": "Recommended for you based on your learning journey"
+      },
+      "c_py_basics": {
+        "title": "Python Basics",
+        "description": "Intro to Python programming",
+        "reason": "Essential skill for data",
+        "action": "Start Learning"
+      },
+      "c_py_adv": {
+        "title": "Advanced Python",
+        "description": "Master decorators & generators",
+        "reason": "Level up your code",
+        "action": "View Course"
+      },
+      "c_ds_pandas": {
+        "title": "Pandas Mastery",
+        "description": "High-performance data manipulation",
+        "reason": "Crucial for analysis",
+        "action": "Enroll Now"
+      },
+      "c_alg_sme": {
+        "title": "Data for Algerian SMEs",
+        "description": "Local business analytics",
+        "reason": "Local market demand",
+        "action": "Start Now"
+      },
+      "c_viz_tab": {
+        "title": "Tableau Fundamentals",
+        "description": "Visualize your insights",
+        "reason": "High demand skill",
+        "action": "Learn Tableau"
+      },
+      "c_viz_pbi": {
+        "title": "Power BI for Business",
+        "description": "Create business dashboards",
+        "reason": "Enterprise standard",
+        "action": "Open Power BI"
+      },
+      "c_ml_intro": {
+        "title": "Intro to ML",
+        "description": "Scikit-Learn basics",
+        "reason": "Future-proof career",
+        "action": "Dive In"
+      },
+      "c_sql_boot": {
+        "title": "SQL Bootcamp",
+        "description": "Database querying mastery",
+        "reason": "Data foundation",
+        "action": "Join BootCamp"
+      },
+      "c_api_dev": {
+        "title": "FastAPI Development",
+        "description": "Build high-perf APIs",
+        "reason": "Modern backend stack",
+        "action": "Build APIs"
+      },
+      "c_free_101": {
+        "title": "Freelancing 101",
+        "description": "Start your journey",
+        "reason": "Monetize skills",
+        "action": "Get Started"
+      },
+      "c_client_nego": {
+        "title": "Client Negotiation",
+        "description": "Get paid what you're worth",
+        "reason": "Soft skill booster",
+        "action": "Master Nego"
+      },
+      "c_brand_pers": {
+        "title": "Personal Branding",
+        "description": "Stand out in the market",
+        "reason": "Attract clients",
+        "action": "Build Brand"
+      },
+      "c_time_mgmt": {
+        "title": "Time Management",
+        "description": "Maximize productivity",
+        "reason": "Essential for remote",
+        "action": "Be Productive"
+      },
+      "c_rem_work": {
+        "title": "Remote Work Best Practices",
+        "description": "Stay healthy and productive",
+        "reason": "Work from anywhere",
+        "action": "Remote Tips"
+      },
+      "c_excel_pro": {
+        "title": "Excel for Professionals",
+        "description": "Advanced formulas & VBA",
+        "reason": "Workplace essential",
+        "action": "Pro Excel"
+      },
+      "c_st_story": {
+        "title": "Data Storytelling",
+        "description": "Communicate with data",
+        "reason": "Leadership skill",
+        "action": "Tell Stories"
+      },
+      "c_cloud_fund": {
+        "title": "Cloud Fundamentals",
+        "description": "AWS/Azure/GCP basics",
+        "reason": "Infrastructure skill",
+        "action": "Cloud Intro"
+      },
+      "c_docker_dev": {
+        "title": "Docker for Developers",
+        "description": "Containerization basics",
+        "reason": "DevOps essential",
+        "action": "Ship It"
+      },
+      "c_nlp_intro": {
+        "title": "Intro to NLP",
+        "description": "Natural Language Processing",
+        "reason": "Cutting edge AI",
+        "action": "Process Text"
+      },
+      "c_big_data": {
+        "title": "Big Data with Spark",
+        "description": "Scale your analysis",
+        "reason": "Large scale engineering",
+        "action": "Go Big"
+      },
+      "p_sales_dash": {
+        "title": "Sales Dashboard Review",
+        "description": "Visualise retail data",
+        "reason": "Good entry project",
+        "action": "Start Project"
+      },
+      "p_ecom_opt": {
+        "title": "E-com Optimization",
+        "description": "Improve funnel conversion",
+        "reason": "High value impact",
+        "action": "Optimize"
+      },
+      "p_inv_sys": {
+        "title": "Inventory System",
+        "description": "Automate stock tracking",
+        "reason": "Python automation",
+        "action": "Build Script"
+      },
+      "p_real_est": {
+        "title": "Real Estate Analysis",
+        "description": "Analyze housing trends",
+        "reason": "Market analysis skill",
+        "action": "Analyze"
+      },
+      "p_cust_seg": {
+        "title": "Customer Segmentation",
+        "description": "Cluster customers via ML",
+        "reason": "Advanced ML project",
+        "action": "Segment"
+      },
+      "p_web_port": {
+        "title": "Portfolio Website",
+        "description": "Build your showcase",
+        "reason": "Show off your work",
+        "action": "Build Now"
+      },
+      "p_api_integ": {
+        "title": "Payment API Integration",
+        "description": "Integrate local payments",
+        "reason": "Technical challenge",
+        "action": "Integrate"
+      },
+      "p_bug_fix": {
+        "title": "Bug Fix Marathon",
+        "description": "Fix open source bugs",
+        "reason": "Community contribution",
+        "action": "Fix Bugs"
+      },
+      "p_data_clean": {
+        "title": "Data Cleaning Gig",
+        "description": "Clean messy excel files",
+        "reason": "Quick turnover task",
+        "action": "Clean Data"
+      },
+      "p_trans_doc": {
+        "title": "Tech Doc Translation",
+        "description": "Translate docs EN->AR",
+        "reason": "Leverage bilingualism",
+        "action": "Translate"
+      },
+      "p_chatbot_dev": {
+        "title": "Chatbot Development",
+        "description": "Build an AI assistant",
+        "reason": "AI implementation",
+        "action": "Build Bot"
+      },
+      "p_seo_audit": {
+        "title": "SEO Audit Project",
+        "description": "Optimize for search",
+        "reason": "Digital marketing",
+        "action": "Audit Now"
+      },
+      "p_app_test": {
+        "title": "App Testing Project",
+        "description": "QA for mobile apps",
+        "reason": "QA experience",
+        "action": "Start Testing"
+      },
+      "p_market_res": {
+        "title": "Market Research",
+        "description": "Analyze competitors",
+        "reason": "Strategic insight",
+        "action": "Research"
+      },
+      "p_viz_dz": {
+        "title": "Algeria Data Viz",
+        "description": "Local data viz project",
+        "reason": "Local specialization",
+        "action": "Visualize"
+      },
+      "d_alg_hous": {
+        "title": "Algiers Housing Data",
+        "description": "Prices & locations",
+        "reason": "Trending locally",
+        "action": "Get Data"
+      },
+      "d_dz_wthr": {
+        "title": "Algeria Weather 10y",
+        "description": "Historical weather data",
+        "reason": "Climate analysis",
+        "action": "Explore"
+      },
+      "d_stock_mrk": {
+        "title": "Global Stock Market",
+        "description": "Daily closing prices",
+        "reason": "Financial modeling",
+        "action": "Analyze"
+      },
+      "d_soc_media": {
+        "title": "Social Media Sentiments",
+        "description": "1M tweets dataset",
+        "reason": "NLP practice",
+        "action": "Train Model"
+      },
+      "d_retail_sales": {
+        "title": "Retail Sales History",
+        "description": "3 years of transactions",
+        "reason": "Forecasting practice",
+        "action": "Forecast"
+      },
+      "d_traffic": {
+        "title": "Urban Traffic Flows",
+        "description": "City movement patterns",
+        "reason": "Urban planning",
+        "action": "Map Flows"
+      },
+      "d_energy": {
+        "title": "Energy Consumption",
+        "description": "Household usage stats",
+        "reason": "Sustainability analysis",
+        "action": "Analyze"
+      },
+      "d_job_mkt": {
+        "title": "Tech Job Market",
+        "description": "Salaries & skills 2026",
+        "reason": "Career insights",
+        "action": "Browse"
+      },
+      "d_movie_rev": {
+        "title": "Movie Reviews",
+        "description": "Sentiment analysis data",
+        "reason": "Beginner NLP",
+        "action": "Get Reviews"
+      },
+      "d_crime_stats": {
+        "title": "Crime Statistics",
+        "description": "Safety trends analysis",
+        "reason": "Public safety project",
+        "action": "Audit"
+      },
+      "m_cv_review": {
+        "title": "CV Review",
+        "description": "Get expert feedback",
+        "reason": "Boost hireability",
+        "action": "Submit CV"
+      },
+      "m_intern_dz": {
+        "title": "Local Internships",
+        "description": "Find internships in DZ",
+        "reason": "Early career step",
+        "action": "Apply"
+      },
+      "m_webinar_dat": {
+        "title": "Data Webinar",
+        "description": "Trends in 2026",
+        "reason": "Stay updated",
+        "action": "Register"
+      },
+      "m_dz_startup": {
+        "title": "DZ Startup Hub",
+        "description": "Join the ecosystem",
+        "reason": "Networking",
+        "action": "Join Hub"
+      },
+      "m_pro_net": {
+        "title": "Pro Networking",
+        "description": "Connect with experts",
+        "reason": "Expand horizon",
+        "action": "Connect"
+      }
+    },
+    "stats": {
+      "activeCourses": {
+        "title": "Active Courses",
+        "description": "{completed} completed",
+        "completed": "completed"
+      },
+      "activeProjects": {
+        "title": "Active Projects",
+        "description": "{completed} completed",
+        "completed": "completed"
+      },
+      "totalEarnings": {
+        "title": "Total Earnings",
+        "description": "Lifetime revenue",
+        "available": "available"
+      },
+      "skillLevel": {
+        "title": "Skill Level",
+        "description": "Based on your activity",
+        "skillsTracked": "skills tracked"
+      },
+      "platformUsers": "Platform Users",
+      "revenue": "Revenue",
+      "transactions": "Transactions",
+      "hires": "Hires",
+      "projects": "Active Projects"
+    },
+    "pillars": {
+      "overview": {
+        "title": "Overview"
+      },
+      "education": {
+        "title": "Education",
+        "description": "Learning & Development",
+        "stats": {
+          "courses": "courses",
+          "progress": "progress",
+          "certificates": "certificates"
+        }
+      },
+      "freelancing": {
+        "title": "Freelancing",
+        "description": "Projects & Earnings",
+        "stats": {
+          "active": "active",
+          "completed": "completed",
+          "earnings": "earnings"
+        }
+      },
+      "business": {
+        "title": "Business Intelligence",
+        "description": "Data & Analytics",
+        "stats": {
+          "datasets": "datasets",
+          "reports": "reports",
+          "insights": "insights"
+        }
+      }
+    },
+    "sections": {
+      "aiInsights": {
+        "title": "AI Insights & Recommendations",
+        "regenerate": "Regenerate Insights"
+      },
+      "learningProgress": {
+        "title": "Learning Progress",
+        "viewAll": "View All Courses",
+        "modules": "{completed}/{total} modules",
+        "next": "Next: {lesson}"
+      },
+      "activeProjects": {
+        "title": "Active Projects",
+        "findNew": "Find New Projects",
+        "active": "active",
+        "client": "Client:",
+        "progress": "Progress:",
+        "amount": "Amount:",
+        "deadline": "Deadline:"
+      },
+      "recentDatasets": {
+        "title": "Recent Datasets",
+        "upload": "Upload Dataset",
+        "datasetsCount": "datasets"
+      },
+      "wallet": {
+        "title": "Wallet",
+        "available": "available",
+        "viewAll": "View All"
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "dashboard": "Dashboard",
+        "profile": "Profile",
+        "billing": "Billing & Plans",
+        "accountSettings": "Account Settings"
+      },
+      "recentActivities": {
+        "title": "Recent Activities"
+      },
+      "skillsOverview": {
+        "title": "Skills Overview"
+      },
+      "certificates": {
+        "title": "Certificates",
+        "earned": "{count} certificates earned"
+      }
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "startCourse": {
+        "title": "Start New Course",
+        "description": "Browse and enroll in new courses"
+      },
+      "findProjects": {
+        "title": "Find Projects",
+        "description": "Discover freelance opportunities"
+      },
+      "uploadDataset": {
+        "title": "Upload Dataset",
+        "description": "Add new data for analysis"
+      },
+      "createReport": {
+        "title": "Create Report",
+        "description": "Generate business insights"
+      },
+      "postJob": {
+        "title": "Post a Job",
+        "description": "Create a new job listing"
+      },
+      "viewAnalytics": {
+        "title": "View Analytics",
+        "description": "See platform analytics"
+      },
+      "manageUsers": {
+        "title": "Manage Users",
+        "description": "Administer user accounts"
+      },
+      "reviewReports": {
+        "title": "Review Reports",
+        "description": "Review content reports"
+      }
+    },
+    "emptyStates": {
+      "aiInsights": {
+        "title": "No AI Insights Yet",
+        "description": "Complete more activities to get personalized AI recommendations"
+      },
+      "courses": {
+        "title": "No Active Courses",
+        "description": "Start your learning journey by enrolling in courses"
+      },
+      "projects": {
+        "title": "No Active Projects",
+        "description": "Start earning by taking on freelance projects"
+      },
+      "datasets": {
+        "title": "No Datasets",
+        "description": "Upload datasets to start analyzing your data"
+      },
+      "activities": {
+        "title": "No Recent Activity",
+        "description": "Your activities will appear here"
+      },
+      "skills": {
+        "title": "No Skills Tracked",
+        "description": "Complete courses to build your skill profile"
+      },
+      "transactions": {
+        "description": "No recent transactions"
+      },
+      "proposals": {
+        "title": "No Proposals Yet",
+        "description": "Submit proposals to projects to get started"
+      },
+      "listings": {
+        "title": "No Job Listings Yet",
+        "description": "Post your first job to find talent"
+      }
+    },
+    "buttons": {
+      "exploreCourses": "Explore Courses",
+      "browseCourses": "Browse Courses",
+      "findProjects": "Find Projects",
+      "uploadDataset": "Upload Dataset",
+      "refresh": "Refresh"
+    },
+    "datasetInfo": {
+      "size": "Size:",
+      "records": "Records:",
+      "lastAccess": "Last Access:",
+      "status": "Status:"
+    },
+    "errors": {
+      "loading": {
+        "title": "Error Loading Dashboard",
+        "description": "We encountered an issue while loading your dashboard data. Please try again.",
+        "retry": "Try Again"
+      }
+    },
+    "freelancerSections": {
+      "proposals": {
+        "title": "Recent Proposals",
+        "pending": "{count} proposals pending review",
+        "submitted": "Submitted {date}"
+      },
+      "contracts": {
+        "title": "Active Contracts",
+        "client": "Client: {name}",
+        "deadline": "Deadline: {date}"
+      },
+      "earnings": {
+        "title": "Earnings Overview",
+        "thisMonth": "This Month",
+        "pending": "Pending Payments",
+        "average": "Avg Per Project"
+      }
+    },
+    "businessSections": {
+      "listings": {
+        "title": "Job Listings",
+        "active": "{count} active listings",
+        "applicants": "{count} applicants"
+      },
+      "applicants": {
+        "title": "Applicants Overview",
+        "viewAll": "View All Listings"
+      },
+      "team": {
+        "title": "Team Members",
+        "members": "{count} members",
+        "invite": "Invite Members"
+      }
+    },
+    "adminSections": {
+      "platform": {
+        "title": "Platform Metrics"
+      },
+      "users": {
+        "title": "Recent Users"
+      },
+      "revenue": {
+        "title": "Revenue Overview"
+      },
+      "alerts": {
+        "title": "System Alerts"
+      },
+      "health": {
+        "uptime": "Uptime"
+      }
+    },
+    "alerts": {
+      "acknowledged": "Acknowledged",
+      "new": "New"
+    },
+    "common": {
+      "total": "Total",
+      "joined": "Joined"
+    },
+    "profile": {
+      "breadcrumb": "Profile Performance",
+      "title": "Profile Performance",
+      "description": "Track your profile views, followers, and engagement metrics",
+      "refresh": "Refresh",
+      "loading": "Loading profile dashboard...",
+      "error": {
+        "title": "Something went wrong",
+        "retry": "Try Again"
+      },
+      "stats": {
+        "totalViews": "Total Views",
+        "totalFollows": "Total Follows",
+        "totalShares": "Total Shares",
+        "totalSearches": "Total Searches"
+      },
+      "viewTrends": {
+        "title": "Profile View Trends",
+        "description": "Daily profile views over time",
+        "empty": {
+          "title": "No View Data Yet",
+          "description": "Profile view trends will appear once you start receiving visits"
+        }
+      },
+      "followerGrowth": {
+        "title": "Follower Growth",
+        "description": "Monthly follower changes",
+        "empty": {
+          "title": "No Follower Data",
+          "description": "Follower growth metrics will appear once you start gaining followers"
+        }
+      },
+      "engagement": {
+        "title": "Engagement Overview",
+        "description": "Key engagement metrics at a glance",
+        "new": "new"
+      }
+    },
+    "business": {
+      "title": "Business Intelligence",
+      "description": "Analytics, dashboards, and insights for your business",
+      "refresh": "Refresh",
+      "newDashboard": "New Dashboard",
+      "breadcrumb": "Business Intelligence",
+      "loading": "Loading...",
+      "loadError": "Failed to Load Data",
+      "retry": "Retry",
+      "widgets": "{count} widgets",
+      "rows": "{count} rows",
+      "accuracy": "{accuracy}% acc",
+      "stats": {
+        "totalDatasets": "Total Datasets",
+        "totalModels": "Total ML Models",
+        "totalDashboards": "Total Dashboards",
+        "totalQueries": "Total Queries"
+      },
+      "dashboards": {
+        "title": "Recent Dashboards",
+        "description": "Your most recently updated dashboards",
+        "viewAll": "View All",
+        "empty": "No dashboards yet",
+        "createFirst": "Create your first dashboard"
+      },
+      "datasets": {
+        "title": "Datasets Overview",
+        "description": "Your data sources and their status",
+        "viewAll": "View All",
+        "empty": "No datasets uploaded yet"
+      },
+      "models": {
+        "title": "ML Models",
+        "description": "Trained machine learning models",
+        "viewAll": "View All",
+        "empty": "No ML models trained yet"
+      },
+      "insights": {
+        "title": "Quick Insights",
+        "totalQueries": "Total Queries",
+        "datasetsLoaded": "Datasets Loaded",
+        "modelsActive": "Models Active"
+      },
+      "reports": {
+        "title": "View Reports",
+        "description": "See all business reports"
+      },
+      "breadcrumbDashboard": "Dashboard",
+      "breadcrumbHome": "Home"
+    },
+    "financial": {
+      "breadcrumb": "Financial Overview",
+      "title": "Financial Overview",
+      "description": "Track your revenue, payouts, and earnings across all pillars",
+      "refresh": "Refresh",
+      "loading": "Loading financial dashboard...",
+      "error": {
+        "title": "Something went wrong",
+        "retry": "Try Again"
+      },
+      "stats": {
+        "totalRevenue": "Total Revenue",
+        "pendingPayouts": "Pending Payouts",
+        "availableBalance": "Available Balance",
+        "revenueByPillar": "Revenue by Pillar",
+        "pillars": "{count} pillars"
+      },
+      "revenueBreakdown": {
+        "title": "Revenue Breakdown by Pillar",
+        "description": "Earnings distribution across your activities",
+        "ofTotal": "% of total"
+      },
+      "revenueSummary": {
+        "title": "Revenue Summary",
+        "description": "Quick financial snapshot",
+        "totalRevenue": "Total Revenue",
+        "pendingPayouts": "Pending Payouts",
+        "availableBalance": "Available Balance"
+      },
+      "revenueOverTime": {
+        "title": "Revenue Over Time",
+        "description": "Monthly revenue breakdown",
+        "empty": {
+          "title": "No Revenue Data Yet",
+          "description": "Monthly revenue breakdown will appear once you start earning"
+        }
+      },
+      "payoutHistory": {
+        "title": "Payout History",
+        "description": "Recent and upcoming payouts",
+        "empty": {
+          "title": "No Payout History",
+          "description": "Your payout history will appear here once you receive your first payout"
+        }
+      },
+      "pillars": {
+        "teaching": "Teaching",
+        "freelancing": "Freelancing",
+        "business": "Business",
+        "other": "Other"
+      }
+    },
+    "freelancing": {
+      "breadcrumb": "Freelancing",
+      "title": "Freelancing Dashboard",
+      "description": "Manage your freelance projects, proposals, and earnings",
+      "refresh": "Refresh",
+      "loading": "Loading freelancing dashboard...",
+      "error": {
+        "title": "Something went wrong",
+        "retry": "Try Again"
+      },
+      "stats": {
+        "activeProjects": "Active Projects",
+        "completedProjects": "Completed Projects",
+        "totalEarnings": "Total Earnings",
+        "pendingProposals": "Pending Proposals",
+        "avgRating": "Avg Rating",
+        "responseRate": "Response Rate"
+      },
+      "earningsOverview": {
+        "title": "Earnings Overview",
+        "description": "Monthly earnings breakdown",
+        "totalEarned": "Total Earned",
+        "total": "Total",
+        "pending": "Pending",
+        "withdrawn": "Withdrawn",
+        "empty": "No earnings data yet"
+      },
+      "projectStatus": {
+        "title": "Project Status",
+        "description": "Breakdown",
+        "open": "Open",
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "recentProposals": {
+        "title": "Recent Proposals",
+        "description": "Your latest project proposals",
+        "empty": "No proposals yet",
+        "emptyHint": "Start browsing projects to submit proposals",
+        "browseProjects": "Browse Projects"
+      }
+    },
+    "learning": {
+      "breadcrumb": "Learning",
+      "title": "Learning Dashboard",
+      "description": "Track your progress, quiz scores, and learning milestones",
+      "refresh": "Refresh",
+      "error": {
+        "title": "Failed to load learning data",
+        "retry": "Try Again"
+      },
+      "stats": {
+        "coursesInProgress": "Courses In Progress",
+        "completedCourses": "Completed Courses",
+        "totalHours": "Total Hours",
+        "avgQuizScore": "Avg Quiz Score",
+        "certificates": "Certificates"
+      },
+      "courseProgress": {
+        "title": "Course Progress",
+        "courses": "{count} courses",
+        "empty": "No courses yet",
+        "browseCourses": "Browse courses",
+        "lastActivity": "Last activity: {date}"
+      },
+      "quizPerformance": {
+        "title": "Quiz Performance",
+        "empty": "No quiz data yet",
+        "emptyHint": "Complete a quiz to see your scores"
+      },
+      "quickActions": {
+        "title": "Quick Actions",
+        "browseCourses": "Browse Courses",
+        "mainDashboard": "Main Dashboard"
+      }
+    },
+    "teaching": {
+      "breadcrumb": "Teaching",
+      "title": "Teaching Dashboard",
+      "description": "Manage your courses, students, and earnings",
+      "error": {
+        "title": "Failed to Load Teaching Dashboard",
+        "retry": "Retry"
+      },
+      "stats": {
+        "totalCourses": "Total Courses",
+        "totalStudents": "Total Students",
+        "totalRevenue": "Total Revenue",
+        "avgRating": "Avg Rating",
+        "totalReviews": "Total Reviews",
+        "spendableBalance": "Spendable Balance"
+      },
+      "royalties": {
+        "monthlyTitle": "Monthly Creator Royalties",
+        "noMonthlyData": "No monthly revenue history",
+        "noMonthlyDataDesc": "Royalties will appear here as students purchase your courses.",
+        "byCourseTitle": "Revenue by Course Distribution",
+        "noCourseData": "No course revenue yet",
+        "noCourseDataDesc": "Your top performing courses will be broken down here."
+      },
+      "recentReviews": {
+        "title": "Recent Reviews",
+        "empty": "No Reviews Yet",
+        "emptyDescription": "Reviews from your students will appear here"
+      },
+      "studentEngagement": {
+        "title": "Student Engagement",
+        "completionRate": "Completion Rate",
+        "activeStudents": "Active Students",
+        "avgTimeSpent": "Avg Time Spent",
+        "empty": "No Engagement Data",
+        "emptyDescription": "Student engagement metrics will appear once you have active students"
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account settings and preferences",
+    "groups": {
+      "accountSecurity": "Account & Security",
+      "preferences": "Preferences & Look",
+      "billingUsage": "Billing & Usage",
+      "system": "System & Advanced"
+    },
+    "tabs": {
+      "account": "Account",
+      "notifications": "Notifications",
+      "security": "Security",
+      "privacy": "Privacy",
+      "appearance": "Appearance",
+      "billing": "Billing",
+      "integrations": "Integrations",
+      "usage": "Usage",
+      "data": "Data & GDPR",
+      "advanced": "Advanced",
+      "devices": "Devices",
+      "danger": "Danger Zone"
+    },
+    "buttons": {
+      "saveChanges": "Save Changes",
+      "savePreferences": "Save Preferences",
+      "updateSecurity": "Update Security",
+      "savePrivacy": "Save Privacy",
+      "saveAppearance": "Save Appearance",
+      "edit": "Edit",
+      "exportData": "Export Data"
+    },
+    "success": {
+      "accountUpdated": "Account settings updated successfully!",
+      "securityUpdated": "Security settings updated successfully!",
+      "notificationsUpdated": "Notification preferences updated successfully!",
+      "appearanceUpdated": "Appearance settings updated successfully!",
+      "privacyUpdated": "Privacy settings updated successfully!",
+      "passwordChanged": "Password changed successfully!",
+      "accountDeletionScheduled": "Account deletion scheduled successfully. You will be logged out shortly.",
+      "verificationEmailSent": "Verification email sent! Please check your inbox.",
+      "verificationCodeSent": "Verification code sent to your phone!",
+      "integrationConnected": "{integration} connected successfully!",
+      "integrationDisconnected": "{integration} disconnected successfully!"
+    },
+    "errors": {
+      "passwordMismatch": "New passwords do not match",
+      "incorrectPassword": "Current password is incorrect. Please try again.",
+      "confirmPassword": "Please enter your password to confirm account deletion",
+      "integrationConnectFailed": "Failed to connect {integration}",
+      "integrationDisconnectFailed": "Failed to disconnect {integration}",
+      "network": "Network error. Please check your connection and try again."
+    },
+    "account": {
+      "title": "Account Settings",
+      "subtitle": "Manage your public profile, contact details, and account preferences",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "e.g. Youcef Benali",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "language": "Display Language",
+      "languages": {
+        "en": "English (US)",
+        "fr": "French (France)",
+        "ar": "Arabic (Standard)",
+        "kab": "Kabyle (Taqbaylit)"
+      },
+      "timezone": "Timezone",
+      "dateFormat": "Date Format",
+      "headline": "Professional Headline",
+      "headlinePlaceholder": "e.g. Senior Full-Stack Engineer & AI Researcher",
+      "bio": "Personal Bio / Tagline",
+      "bioPlaceholder": "Brief professional summary about yourself...",
+      "saveError": "Failed to save settings",
+      "avatarUploadError": "Failed to upload avatar image",
+      "removePhoto": "Remove Photo",
+      "verifiedStatus": "Account Verified",
+      "detectTimezone": "Auto-Detect",
+      "saveSuccess": "Settings saved successfully!",
+      "emailPlaceholder": "name@company.com",
+      "phonePlaceholder": "+213 550 000 000",
+      "defaultUser": "User Profile",
+      "timezones": {
+        "utc": "UTC (Universal Time Coordinated)",
+        "algiers": "Africa/Algiers (CET, UTC+1)",
+        "paris": "Europe/Paris (CET, UTC+1)",
+        "newYork": "America/New_York (EST, UTC-5)",
+        "dubai": "Asia/Dubai (GST, UTC+4)"
+      },
+      "dateFormats": {
+        "iso": "ISO: YYYY-MM-DD (2026-08-30)",
+        "eu": "European: DD/MM/YYYY (30/08/2026)",
+        "us": "US Format: MM/DD/YYYY (08/30/2026)"
+      },
+      "timeFormat": {
+        "label": "Time Format",
+        "options": {
+          "twelve": "12-hour",
+          "twentyFour": "24-hour"
+        }
+      },
+      "newsletter": {
+        "title": "Newsletter Subscription",
+        "description": "Receive updates, news, and special offers"
+      },
+      "verification": {
+        "title": "Verification Status",
+        "email": {
+          "title": "Email Address",
+          "verified": "Your email is verified and secure",
+          "unverified": "Verify your email to secure your account"
+        },
+        "phone": {
+          "title": "Phone Number",
+          "verified": "Your phone number is verified",
+          "unverified": "Verify your phone for additional security",
+          "manualNotice": "Automatic phone verification is currently unavailable. To verify your phone number, please contact our team.",
+          "contactAdmin": "Contact podacium@podacium.com",
+          "emailSubject": "Phone Verification Request",
+          "emailBody": "Hello,\n\nI would like to verify my phone number.\n\nAccount email: {email}\nPhone number: {phone}\n\nThank you."
+        },
+        "verifyEmail": "Verify Email",
+        "verifyPhone": "Verify Phone"
+      }
+    },
+    "privacy": {
+      "title": "Privacy Settings",
+      "profile": {
+        "title": "Profile Visibility",
+        "visibility": {
+          "label": "Who can see your profile",
+          "options": {
+            "public": "Public",
+            "followers": "Followers Only",
+            "connections": "Connections Only",
+            "private": "Private"
+          }
+        },
+        "search": {
+          "label": "Search Visibility",
+          "description": "Allow your profile to appear in search results"
+        },
+        "activity": {
+          "label": "Activity Status",
+          "description": "Show when you're active on the platform"
+        }
+      },
+      "data": {
+        "title": "Data & Communications",
+        "readReceipts": {
+          "label": "Read Receipts",
+          "description": "Let others know when you've read their messages"
+        },
+        "sharing": {
+          "label": "Data Sharing",
+          "description": "Help improve our services by sharing usage data"
+        },
+        "ads": {
+          "label": "Personalized Ads",
+          "description": "See relevant advertisements based on your activity"
+        }
+      },
+      "visibility": {
+        "public": "Public",
+        "followers": "Followers Only",
+        "connections": "Connections Only",
+        "private": "Private"
+      },
+      "sections": {
+        "title": "Per-Section Visibility",
+        "description": "Control who can view each section of your profile. Sections set to Inherit follow global visibility.",
+        "section": "Section",
+        "visibility": "Visibility",
+        "visibilityOptions": {
+          "public": "Public",
+          "followers": "Followers Only",
+          "connections": "Connections Only",
+          "private": "Private"
+        },
+        "saving": "Saving...",
+        "footerNote": "Your overall profile visibility setting still applies to any section set to \"Inherit\".",
+        "listLabel": "Profile sections",
+        "bio": "Bio",
+        "bioDesc": "Your professional bio and description",
+        "headline": "Headline",
+        "headlineDesc": "Your professional headline below your name",
+        "tagline": "Tagline",
+        "taglineDesc": "Your personal tagline or motto",
+        "pronouns": "Pronouns",
+        "pronounsDesc": "Your preferred pronouns",
+        "coverImage": "Cover Image",
+        "coverImageDesc": "Your profile cover/background image",
+        "location": "Location",
+        "locationDesc": "Your city and country",
+        "socialLinks": "Social Links",
+        "socialLinksDesc": "Links to your social profiles and websites",
+        "availability": "Availability",
+        "availabilityDesc": "Your availability status for work or collaboration",
+        "timezone": "Timezone",
+        "timezoneDesc": "Your local timezone",
+        "profileViews": "Profile Views",
+        "profileViewsDesc": "Your profile view count",
+        "lastActive": "Last Active",
+        "lastActiveDesc": "When you were last active on the platform",
+        "followers": "Followers",
+        "followersDesc": "Your follower count and list",
+        "following": "Following",
+        "followingDesc": "Your following count and list",
+        "badges": "Badges",
+        "badgesDesc": "Your earned badges and achievements",
+        "skills": "Skills",
+        "skillsDesc": "Your listed skills and proficiencies",
+        "activityFeed": "Activity Feed",
+        "activityFeedDesc": "Your recent activity on the platform",
+        "usernameHistory": "Username History",
+        "usernameHistoryDesc": "Your previous usernames",
+        "loading": "Loading section visibilities...",
+        "loadError": "Failed to load section visibilities",
+        "saveError": "Failed to save visibility setting",
+        "cover_image": "Cover Image",
+        "social_links": "Social Links",
+        "profile_views": "Profile Views",
+        "last_active": "Last Active",
+        "activity_feed": "Activity Feed",
+        "username_history": "Username History"
+      },
+      "subtitle": "Configure section-level granular visibility, discoverability permissions, and online activity status",
+      "globalScope": "Global Profile Scope",
+      "globalVisibilityGroup": "Global Profile Scope",
+      "profileVisibility": "Overall Profile Visibility",
+      "profileVisibilityDesc": "Controls master accessibility for non-logged-in visitors and search engines",
+      "granularField": "Granular Field Visibility",
+      "granularFieldDesc": "Configure visibility level individually for each component of your public portfolio",
+      "perSectionGroup": "Granular Field Visibility",
+      "perSectionDesc": "Configure visibility level individually for each component of your public portfolio",
+      "discoverabilityPresence": "Discoverability & Presence",
+      "discoverabilityGroup": "Discoverability & Presence",
+      "searchIndexing": "Search Indexing",
+      "searchIndexingDesc": "Allow your public profile to be indexed by Google and platform search",
+      "searchVisibility": "Search Indexing",
+      "searchVisibilityDesc": "Allow your public profile to be indexed by Google and platform search",
+      "liveActivity": "Live Activity Presence",
+      "activityStatus": "Live Activity Presence",
+      "activityStatusDesc": "Display an online active dot to prospective clients and recruiters",
+      "saveChanges": "Save Changes",
+      "options": {
+        "public": "Public (Everyone)",
+        "followers": "Followers Only",
+        "connections": "Connections Only",
+        "private": "Private (Only Me)"
+      }
+    },
+    "notifications": {
+      "title": "Notification Channels",
+      "email": {
+        "title": "Email Notifications",
+        "account": {
+          "label": "Email Notifications",
+          "description": "Receive notifications via email for important account activities"
+        }
+      },
+      "inApp": {
+        "label": "In-App Notifications",
+        "description": "Receive notifications within the platform"
+      },
+      "sms": {
+        "label": "SMS Notifications",
+        "description": "Receive important alerts via SMS"
+      },
+      "push": {
+        "title": "Push Notifications",
+        "notifications": {
+          "label": "Push Notifications",
+          "description": "Real-time alerts on your devices"
+        }
+      },
+      "marketing": {
+        "title": "Marketing & Communications",
+        "emails": {
+          "label": "Marketing Emails",
+          "description": "Product updates and promotions"
+        },
+        "newsletter": {
+          "label": "Newsletter",
+          "description": "Weekly insights and tips"
+        }
+      },
+      "quietHours": {
+        "title": "Quiet Hours",
+        "start": "Quiet Hours Start",
+        "end": "Quiet Hours End",
+        "description": "Notifications will be silenced during these hours"
+      },
+      "digest": {
+        "title": "Email Digest",
+        "frequency": "Digest Frequency",
+        "frequencyOptions": {
+          "daily": "Daily",
+          "weekly": "Weekly",
+          "never": "Never"
+        }
+      },
+      "digestTime": {
+        "label": "Digest Time",
+        "description": "Receive a summary of notifications at this time"
+      },
+      "subtitle": "Configure your personal alerts, email digests, push notifications, and marketing communications",
+      "channelsGroup": "System & Security Alerts",
+      "emailNotifications": "Email Notifications",
+      "emailNotificationsDesc": "Receive platform alerts, course updates, and security notices via email",
+      "pushNotifications": "Push Notifications",
+      "pushNotificationsDesc": "Instant browser and device alerts for messages, contracts, and updates",
+      "smsNotifications": "SMS Notifications",
+      "smsNotificationsDesc": "Short emergency alerts for critical security events and verification",
+      "marketingGroup": "Marketing & Newsletters",
+      "marketingEmails": "Marketing Emails",
+      "marketingEmailsDesc": "Receive updates on new platform features, special promotions, and events",
+      "newsletter": "Weekly Newsletter",
+      "newsletterDesc": "Weekly digest of top platform insights, career opportunities, and articles",
+      "loadError": "Failed to load notification settings",
+      "saveError": "Failed to save notification settings",
+      "savedSuccess": "Notification preferences saved successfully",
+      "pushEnabled": "Push notifications enabled successfully!",
+      "pushDisabled": "Push notifications disabled",
+      "pushDenied": "Push notification permission was denied or not supported."
+    },
+    "security": {
+      "title": "Security Settings",
+      "authentication": {
+        "title": "Authentication",
+        "twoFactor": {
+          "label": "Two-Factor Authentication",
+          "description": "Add an extra layer of security"
+        },
+        "loginAlerts": {
+          "label": "Login Alerts",
+          "description": "Get notified of new sign-ins"
+        }
+      },
+      "sessions": {
+        "title": "Session Management",
+        "deviceManagement": {
+          "label": "Device Management",
+          "description": "Manage active devices and sessions"
+        },
+        "timeout": {
+          "label": "Session Timeout",
+          "value": "{hours} hours",
+          "description": "Automatically log out after inactivity"
+        }
+      },
+      "password": {
+        "title": "Password Management",
+        "current": {
+          "label": "Current Password",
+          "placeholder": "Enter your current password",
+          "error": "Current password is incorrect"
+        },
+        "new": {
+          "label": "New Password",
+          "placeholder": "Create a strong password"
+        },
+        "confirm": {
+          "label": "Confirm New Password",
+          "placeholder": "Confirm your new password",
+          "error": "Passwords do not match"
+        },
+        "change": "Change Password",
+        "strength": {
+          "title": "Password Strength"
+        },
+        "requirements": {
+          "length": "8+ characters",
+          "uppercase": "Uppercase letter",
+          "lowercase": "Lowercase letter",
+          "number": "Number",
+          "special": "Special character"
+        }
+      }
+    },
+    "appearance": {
+      "title": "Appearance Settings",
+      "theme": {
+        "label": "Theme",
+        "options": {
+          "light": "Light",
+          "dark": "Dark",
+          "system": "System"
+        },
+        "light": "Light Mode",
+        "dark": "Dark Mode",
+        "system": "System Default"
+      },
+      "fontSize": {
+        "label": "Font Size",
+        "options": {
+          "small": "Small",
+          "medium": "Medium",
+          "large": "Large"
+        },
+        "small": "Small",
+        "medium": "Medium",
+        "large": "Large"
+      },
+      "density": {
+        "label": "Density",
+        "options": {
+          "compact": "Compact",
+          "comfortable": "Comfortable",
+          "spacious": "Spacious"
+        },
+        "compact": "Compact",
+        "compactDesc": "Tighter UI Spacing",
+        "comfortable": "Comfortable",
+        "comfortableDesc": "Standard Balanced",
+        "spacious": "Spacious",
+        "spaciousDesc": "Relaxed & Breathable"
+      },
+      "reducedMotion": "Reduced Motion",
+      "highContrast": "High Contrast Mode",
+      "subtitle": "Customize UI theme, font sizing, spacing density, and accessibility features",
+      "themeGroup": "Color Theme",
+      "themeSavedNotice": "Theme preferences saved to profile (Dark mode release scheduled for upcoming v2 update)",
+      "light": "Light Studio",
+      "dark": "Dark Studio",
+      "system": "System Auto",
+      "fontSizeGroup": "Font Size Scale",
+      "densityGroup": "Layout Spacing Density",
+      "accessibilityGroup": "Accessibility Settings",
+      "reducedMotionDesc": "Minimize layout transitions and background motion",
+      "highContrastDesc": "Maximize visual contrast ratio for screen readability",
+      "previewTitle": "Live UI Scaling Preview",
+      "previewCardTitle": "Sample Interactive Card",
+      "previewMeta": "Font: {font} • Density: {density}",
+      "previewHeading": "Podacium Platform Workspace",
+      "previewText": "This preview reflects real-time font scaling and layout spacing across your entire dashboard.",
+      "previewPrimaryBtn": "Action Button",
+      "previewSecondaryBtn": "Secondary",
+      "loadError": "Failed to load appearance settings",
+      "saveError": "Failed to save settings"
+    },
+    "billing": {
+      "title": "Billing & Subscriptions",
+      "currentPlan": "Current Subscription Plan",
+      "recommended": "Recommended",
+      "current": "Current",
+      "interval": {
+        "monthly": "month",
+        "yearly": "year"
+      },
+      "upgrade": "Upgrade",
+      "paymentMethods": "Saved Payment Methods",
+      "history": {
+        "title": "Billing History",
+        "columns": {
+          "date": "Date",
+          "description": "Description",
+          "amount": "Amount",
+          "status": "Status"
+        },
+        "proPlan": "Pro Plan - Monthly",
+        "paid": "Paid"
+      },
+      "subtitle": "Manage your active subscription plan, payment methods, and invoice history",
+      "freePlanDesc": "You are on the Free plan. Upgrade to unlock unlimited AI features and analytics.",
+      "proPlanDesc": "You are on the Pro plan. Enjoy full access to premium features.",
+      "upgradeCTA": "Upgrade to Pro",
+      "noPaymentMethods": "No payment methods added yet",
+      "invoices": "Invoice History",
+      "noInvoices": "No invoice history found",
+      "addPaymentMethod": "Add Payment Method",
+      "freePlanTitle": "Free Plan",
+      "proPlanTitle": "Pro Plan",
+      "enterprisePlanTitle": "Enterprise Plan",
+      "freeBadge": "FREE BASIC",
+      "proBadge": "PRO TIER",
+      "loadError": "Failed to load billing information",
+      "changePlanCTA": "Manage Subscription Tier",
+      "expires": "Expires",
+      "makeDefault": "Set Default",
+      "removePaymentMethod": "Remove payment method",
+      "modalTitle": "Add Payment Method",
+      "modalDesc": "Enter your payment card details for secure tokenized processing.",
+      "cardholderName": "Cardholder Name",
+      "cardholderPlaceholder": "e.g. Youcef Benali",
+      "cardNumber": "Card Number",
+      "cardNumberPlaceholder": "4532 •••• •••• 8892",
+      "expDate": "Expiration (MM/YY)",
+      "cvc": "Security code (CVC / CVV)",
+      "setAsDefault": "Set as default payment method",
+      "addCardBtn": "Save Card",
+      "addCardError": "Failed to add payment method",
+      "errorCardholder": "Cardholder name is required",
+      "errorCardNumber": "Invalid card number",
+      "errorExpDate": "Invalid expiry date (MM/YY)",
+      "errorCardExpired": "Card is expired",
+      "errorCvc": "Invalid CVC code",
+      "switchPlanTitle": "Select Subscription Tier",
+      "switchPlanDesc": "Choose the subscription plan that best fits your workflow requirements.",
+      "plans": {
+        "freeName": "Free Basic",
+        "freePrice": "$0 / mo",
+        "freeDesc": "Essential features for individuals exploring Podacium",
+        "proName": "Pro Tier",
+        "proPrice": "$19 / mo",
+        "proDesc": "Unlimited AI features, high priority compute, & analytics",
+        "enterpriseName": "Enterprise",
+        "enterprisePrice": "$99 / mo",
+        "enterpriseDesc": "Dedicated SLA, multi-org security, & custom integrations",
+        "activePlan": "Active Plan",
+        "switchTo": "Switch to {name}"
+      },
+      "receipt": {
+        "title": "Invoice Receipt #{id}",
+        "description": "Official payment receipt issued by Podacium EdTech Platform",
+        "colDescription": "Description",
+        "colDate": "Date",
+        "colGateway": "Payment Gateway",
+        "chargilyPay": "Chargily Pay",
+        "totalPaid": "Total Amount Paid",
+        "printPdf": "Print / Save PDF",
+        "close": "Close"
+      }
+    },
+    "integrations": {
+      "title": "Podacium Connect Integration Engine",
+      "subtitle": "Delegated OAuth 2.0 PKCE connections across EdTech, Freelancing, and Business Intelligence",
+      "connected": "Connected",
+      "notConnected": "Not Connected",
+      "connect": "Connect Account",
+      "disconnect": "Disconnect",
+      "connectors": "Connectors",
+      "connectorsHeader": "10 Outbound Connectors",
+      "workflowBuilder": "Workflow DAG",
+      "wasmPreview": "WASM Transformer",
+      "dlqTitle": "DLQ Queue",
+      "dlqDesc": "Inspect and quarantine failed deliveries with 1-click re-delivery",
+      "outboundCount": "{count} Outbound Connectors",
+      "connectedGroup": "Connected Third-Party Accounts",
+      "auditLogs": "Audit Logs",
+      "syncNow": "Sync Now",
+      "workflowTitle": "Visual Workflow DAG Builder",
+      "workflowDesc": "Connect multi-step automation nodes across EdTech, Freelancing, and BI connectors",
+      "addNode": "Add Node",
+      "step": "Step {n}",
+      "wasmTitle": "WASM Sandboxed Transformer Preview",
+      "wasmDesc": "Preview user-defined JavaScript/Rust data transformations in sandboxed WASM compute environment",
+      "wasmCodeLabel": "WASM Script Transformation Code",
+      "rawInputLabel": "Raw Input Payload (JSON)",
+      "executeWasm": "Execute WASM Sandbox",
+      "outputPreview": "Transformed WASM Output Preview:",
+      "dlqInspectorTitle": "Dead Letter Queue (DLQ) Inspector",
+      "dlqInspectorDesc": "Inspect and quarantine failed deliveries with 1-click re-delivery",
+      "redeliver": "Re-Deliver Event Payload",
+      "auditLogsTitle": "Audit Logs: {provider}",
+      "noLogs": "No connector log executions recorded yet.",
+      "executeTitle": "Execute",
+      "executeDesc": "Trigger real backend API connector integration logic for",
+      "triggerDesc": "Trigger real backend API connector integration logic for",
+      "runAction": "Run Action",
+      "statusConnected": "Connected",
+      "statusNotConnected": "Not Connected",
+      "connectBtn": "Connect Account",
+      "connectedMsg": "connected successfully",
+      "disconnectedMsg": "disconnected",
+      "actionSucceeded": "Connector Action Succeeded",
+      "loadError": "Failed to load connected integrations",
+      "disconnectError": "Failed to disconnect integration",
+      "syncSuccess": "Automated background sync completed for {provider}",
+      "syncError": "Sync failed for integration",
+      "pillar": {
+        "all": "All",
+        "education": "EdTech",
+        "freelance": "Freelance",
+        "bi": "BI Hub"
+      },
+      "google": {
+        "name": "Google Drive & Workspace",
+        "desc": "Import homework files directly from Drive & export BI data reports",
+        "action": "Import Assignment File"
+      },
+      "github": {
+        "name": "GitHub Developer Engine",
+        "desc": "Verify PR branches & sync freelancer commit activity to contract milestones",
+        "action": "Sync Milestone PR"
+      },
+      "slack": {
+        "name": "Slack Team Intelligence",
+        "desc": "Send automated BI KPI snapshot block-kit reports & anomaly alerts to channel",
+        "action": "Post BI Snapshot"
+      },
+      "zoom": {
+        "name": "Zoom Virtual Classroom",
+        "desc": "Provision live webinars & interactive virtual lectures for EdTech courses",
+        "action": "Provision Live Webinar"
+      },
+      "notion": {
+        "name": "Notion Study Workspace",
+        "desc": "Export course study guides and notes directly into Notion workspace",
+        "action": "Export Study Notes"
+      },
+      "kaggle": {
+        "name": "Kaggle Dataset Hub",
+        "desc": "Ingest machine learning datasets and competition benchmarks into BI Hub",
+        "action": "Ingest ML Dataset"
+      },
+      "huggingface": {
+        "name": "HuggingFace AI Cards",
+        "desc": "Sync AI model cards, pipeline tags, and dataset metrics into project cards",
+        "action": "Sync AI Model Card"
+      },
+      "teams": {
+        "name": "Microsoft Teams Broadcast",
+        "desc": "Post Adaptive Card KPI updates to Microsoft Teams corporate channels",
+        "action": "Post Teams Adaptive Card"
+      },
+      "calendar": {
+        "name": "Google/Outlook Calendar",
+        "desc": "Sync course timetables & freelance milestone deadlines with calendar",
+        "action": "Add Calendar Lecture"
+      },
+      "chargily": {
+        "name": "BaridiMob & Chargily Escrow",
+        "desc": "CIB / Edahabia card escrow deposits & Algerian CCP BaridiMob payouts",
+        "action": "Create Escrow Checkout"
+      },
+      "connectError": "Failed to connect integration",
+      "executeError": "Failed to execute connector action"
+    },
+    "advanced": {
+      "title": "Advanced Developer Settings",
+      "subtitle": "Manage developer API keys, webhooks, system cache clearing, and debug settings",
+      "enterpriseStudio": "Enterprise Developer Platform Studio",
+      "circuitResetFailed": "Failed to reset circuit breaker",
+      "programmaticKeys": "Programmatic API Keys & Scopes",
+      "rotate": "Rotate",
+      "eventWebhooks": "Event Webhooks & Circuit Breakers",
+      "resetCircuit": "Reset Circuit",
+      "logs": "Logs",
+      "rotateSecret": "Rotate Secret",
+      "test": "Test",
+      "analyticsTitle": "API Key Usage Analytics",
+      "totalCalls": "Total Calls",
+      "errorRate": "Error Rate",
+      "avgLatency": "Avg Latency",
+      "noAnalytics": "No usage analytics recorded yet.",
+      "generateModalTitle": "Generate API Key with RBAC Scopes",
+      "saveSecretAlert": "SAVE THIS SECRET NOW!",
+      "saveSecretDesc": "This secret key will NEVER be displayed again. Store it securely in your server vault.",
+      "done": "Done",
+      "keyNameLabel": "Key Identifier Name",
+      "keyNamePlaceholder": "e.g. Production Backend Service",
+      "environmentLabel": "Environment",
+      "envProduction": "Production",
+      "envSandbox": "Sandbox / Staging",
+      "rbacLabel": "RBAC Scope Permissions",
+      "ipWhitelistLabel": "Allowed IP CIDR Whitelist (Optional, comma separated)",
+      "deliveryLogsTitle": "Webhook Delivery Logs",
+      "noDeliveryLogs": "No delivery logs recorded yet.",
+      "registerWebhookTitle": "Register Webhook Endpoint",
+      "saveSigningSecretAlert": "SAVE THIS SIGNING SECRET!",
+      "saveSigningSecretDesc": "Used to verify HMAC SHA-256 signatures (X-Podacium-Signature) on delivery.",
+      "endpointLabel": "Endpoint Label Name",
+      "endpointPlaceholder": "e.g. Accounting System Webhook",
+      "payloadUrlLabel": "Payload URL (HTTPS)",
+      "subscribedEventsLabel": "Subscribed Events",
+      "metrics": "Metrics",
+      "saveWebhook": "Save Webhook",
+      "replay": "Replay",
+      "loadError": "Failed to load developer platform infrastructure",
+      "generateKeyError": "Failed to generate API Key",
+      "keyRevokedSuccess": "API Key revoked successfully",
+      "revokeKeyError": "Failed to revoke API Key",
+      "keyRotatedSuccess": "API Key rotated successfully (7-day transition window active)",
+      "rotateKeyError": "Failed to rotate API Key",
+      "registerWebhookError": "Failed to register Webhook Endpoint",
+      "webhookRemovedSuccess": "Webhook endpoint removed",
+      "removeWebhookError": "Failed to remove Webhook Endpoint",
+      "webhookTestSuccess": "Test ping delivered successfully",
+      "testWebhookError": "Webhook dispatch failed",
+      "circuitResetSuccess": "Circuit breaker reset to CLOSED",
+      "resetCircuitError": "Failed to reset circuit breaker",
+      "secretRotatedSuccess": "Signing secret rotated! Previous secret remains active for in-flight retries.",
+      "rotateSecretError": "Failed to rotate secret",
+      "deliveryReplayedSuccess": "Webhook delivery replayed!",
+      "replayDeliveryError": "Replay failed",
+      "usage": {
+        "title": "Usage & Limits",
+        "storage": "Storage Usage",
+        "bandwidth": "Bandwidth Usage",
+        "projects": "Active Projects",
+        "collaborators": "Team Collaborators"
+      },
+      "data": {
+        "title": "Data Management",
+        "export": "Export All Data",
+        "clearCache": "Clear Cache",
+        "refresh": "Refresh Data",
+        "generateReport": "Generate Report"
+      },
+      "developer": {
+        "title": "Developer Settings",
+        "apiKey": "API Key",
+        "apiKeyPlaceholder": "Your API key",
+        "regenerate": "Regenerate Key",
+        "documentation": "View Documentation"
+      },
+      "apiKeysGroup": "Programmatic API Keys",
+      "generateKey": "Generate New Key",
+      "noApiKeys": "No programmatic API keys active",
+      "webhooksGroup": "Event Webhooks",
+      "addWebhook": "Add Endpoint",
+      "noWebhooks": "No real-time webhook endpoints configured",
+      "dataGroup": "Data Governance & Cache Operations",
+      "exportData": "Export Account Archive",
+      "exportDataDesc": "Download a machine-readable JSON export of all personal profile data, courses, and jobs",
+      "clearCache": "Purge Local Client Cache",
+      "clearCacheDesc": "Invalidate client session cache, service worker assets, and indexed responses"
+    },
+    "devices": {
+      "title": "Devices & Security",
+      "manageTitle": "Manage Your Devices",
+      "manageDesc": "View and manage all devices that have accessed your account. Review security events, trust or revoke devices, and protect your account.",
+      "manageCta": "Open Device Manager"
+    },
+    "danger": {
+      "title": "Danger Zone",
+      "export": {
+        "title": "Export Your Data",
+        "description": "Download all your data before deleting your account",
+        "button": "Export Data"
+      },
+      "delete": {
+        "title": "Permanently Delete Account",
+        "description": "This action cannot be undone. All your data will be permanently deleted.",
+        "reason": {
+          "label": "Reason for Leaving (Optional)",
+          "placeholder": "Help us improve by sharing your reason"
+        },
+        "feedback": {
+          "label": "Feedback (Optional)",
+          "placeholder": "Any suggestions for improvement?"
+        },
+        "confirmPassword": "Confirm Password",
+        "passwordPlaceholder": "Enter your password to confirm",
+        "button": "Delete Account"
+      },
+      "signOut": "Sign Out"
+    },
+    "dataPrivacy": {
+      "title": "My Data & Privacy",
+      "subtitle": "You own your data. Download it at any time or request permanent deletion.",
+      "export": {
+        "title": "Download my data",
+        "description": "Download a complete JSON archive of all data associated with your Podacium account, including your profile, enrollments, certificates, projects, proposals, wallet transactions, and support tickets.",
+        "items": {
+          "profile": "Profile & settings",
+          "enrollments": "Enrollments & certificates",
+          "projects": "Projects & proposals",
+          "contracts": "Contracts",
+          "wallet": "Wallet & transactions",
+          "support": "Support tickets",
+          "analytics": "Analytics datasets",
+          "notifications": "Notifications"
+        },
+        "redactionNotice": "Sensitive fields (passwords, TOTP secrets) are redacted from the export.",
+        "button": "Download my data",
+        "busy": "Preparing export…"
+      },
+      "overview": {
+        "title": "Your data at a glance",
+        "courses": "Courses",
+        "certificates": "Certificates",
+        "projects": "Projects",
+        "datasets": "Datasets",
+        "storage": "Storage used",
+        "completed": "completed",
+        "active": "active"
+      },
+      "deletion": {
+        "title": "Delete my account",
+        "description": "Permanently delete your Podacium account and all associated data. This action is irreversible once the 30-day grace period has elapsed.",
+        "features": {
+          "grace": "30-day grace period — cancel any time before deletion executes",
+          "email": "Confirmation email sent to your registered address",
+          "erase": "All personal data permanently erased after the grace period"
+        },
+        "status": {
+          "checking": "Checking status…",
+          "scheduled": "Deletion scheduled · {days}d remaining",
+          "none": "No deletion request pending"
+        },
+        "banner": {
+          "title": "Account deletion scheduled",
+          "body": "Your account will be permanently deleted on {date} ({days} days remaining)."
+        },
+        "timeline": {
+          "title": "Deletion timeline",
+          "daysLeft": "{n} days left",
+          "expiring": "Expiring soon",
+          "requested": "Requested {date}",
+          "scheduled": "Deletion {date}"
+        },
+        "requestButton": "Request account deletion",
+        "cancelButton": "Cancel deletion",
+        "cancelRequestButton": "Cancel deletion request",
+        "cancelling": "Cancelling…",
+        "overlay": {
+          "title": "Account Scheduled for Deletion",
+          "subtitle": "Your Podacium account has been scheduled for permanent deletion. You can cancel this request at any time within the next 30 days.",
+          "status": "Deletion scheduled",
+          "scheduledDate": "Permanent deletion on {date}",
+          "daysRemaining": "{n} days remaining",
+          "statusGood": "Good",
+          "statusWarning": "Expiring soon",
+          "statusCritical": "Critical",
+          "requestedDate": "Requested {date}",
+          "deletionDate": "Deletion {date}",
+          "whatHappens": {
+            "title": "What this means",
+            "line1": "After the grace period ends, all your data will be permanently erased.",
+            "line2": "You will lose access to courses, certificates, projects, and wallet balance.",
+            "line3": "You can cancel this request at any time to keep your account."
+          },
+          "cancelButton": "Cancel Deletion & Keep My Account",
+          "cancelling": "Cancelling…",
+          "support": "Need help?",
+          "contactSupport": "Contact Support",
+          "cancelled": {
+            "title": "Deletion Cancelled",
+            "message": "Your account deletion has been cancelled. Reloading…"
+          },
+          "logout": "Sign out"
+        }
+      },
+      "dialog": {
+        "title": "Request Account Deletion",
+        "titleFinal": "Final Confirmation",
+        "stepsLabel": "Step",
+        "warning": {
+          "title": "This action has consequences",
+          "line1": "All your personal data will be permanently erased",
+          "line2": "You will lose access to all courses and certificates",
+          "line3": "Active projects and contracts will be terminated",
+          "line4": "Wallet balance may be forfeited",
+          "graceNote": "You have a 30-day grace period after requesting deletion. You can cancel anytime before then to keep your account.",
+          "downloadPrompt": "Want to keep a copy of your data?",
+          "downloadButton": "Download my data first",
+          "acknowledge": "I understand that this action is irreversible after the grace period and my data will be permanently deleted."
+        },
+        "reason": {
+          "label": "Reason for leaving",
+          "optional": "(optional)",
+          "options": {
+            "select": "Select a reason…",
+            "notUsing": "I’m not using the platform anymore",
+            "privacy": "Privacy concerns",
+            "alternative": "Found a better alternative",
+            "expensive": "Too expensive",
+            "technical": "Technical issues",
+            "other": "Other"
+          }
+        },
+        "feedback": {
+          "label": "Additional feedback",
+          "optional": "(optional)",
+          "placeholder": "Help us improve by sharing your experience…"
+        },
+        "confirmText": {
+          "instruction": "Type “DELETE” below to confirm you want to permanently delete your account.",
+          "label": "Type “DELETE” to confirm",
+          "mismatch": "Text does not match"
+        },
+        "password": {
+          "label": "Confirm your password",
+          "placeholder": "Enter your password to confirm",
+          "warning": "This is the final step. Enter your password to confirm account deletion."
+        },
+        "keepAccount": "Keep my account",
+        "continue": "Continue",
+        "back": "Back",
+        "processing": "Processing…",
+        "confirm": "Permanently delete my account"
+      },
+      "alerts": {
+        "exportSuccess": "Your data export has been downloaded.",
+        "exportEmpty": "No data available for export. Your account may be new or empty.",
+        "exportRateLimit": "Too many requests. Please wait a moment and try again.",
+        "exportTimeout": "Export timed out. Please try again.",
+        "exportError": "Failed to export your data. Please try again.",
+        "deletionSuccess": "Your account deletion request has been received. A confirmation email has been sent to your registered address. You can cancel this request at any time within the next 30 days.",
+        "deletionBadRequest": "Invalid request. Please ensure your password is correct.",
+        "deletionError": "Failed to create deletion request. Please try again.",
+        "cancelSuccess": "Your account deletion request has been cancelled. Your account is safe.",
+        "undoCancel": "Undo",
+        "cancelError": "Failed to cancel the deletion request. Please try again."
+      },
+      "legal": "Your rights are protected under applicable data protection law.",
+      "privacyLink": "Privacy Policy",
+      "termsLink": "Terms of Service"
+    },
+    "usage": {
+      "title": "Usage & Resource Limits",
+      "subtitle": "Monitor real-time cloud storage, network bandwidth, project allocations, and team seats",
+      "resourceGroup": "Active Quota Meters",
+      "storage": "Cloud Storage",
+      "bandwidth": "Network Bandwidth",
+      "projects": "Active Projects",
+      "collaborators": "Team Collaborators",
+      "summaryGroup": "Quick Summary KPIs",
+      "atLimit": "Capacity quota reached — consider upgrading your plan",
+      "nearLimit": "Approaching resource allocation limit",
+      "loadError": "Failed to load usage metrics",
+      "loading": "Loading resource consumption metrics...",
+      "retry": "Retry"
+    }
+  },
+  "notifications": {
+    "page": {
+      "title": "Notifications",
+      "subtitle": "Manage your notifications and preferences"
+    },
+    "stats": {
+      "total": "Total",
+      "unread": "Unread",
+      "read": "Read",
+      "categories": "Categories"
+    },
+    "header": {
+      "refresh": "Refresh",
+      "selected": "{count} selected",
+      "markRead": "Mark Read",
+      "delete": "Delete"
+    },
+    "tabs": {
+      "all": "All",
+      "unread": "Unread",
+      "read": "Read",
+      "archived": "Archived"
+    },
+    "admin": {
+      "title": "Admin Notification Center",
+      "sendNow": "Send Now",
+      "schedule": "Schedule",
+      "send": "Send",
+      "scheduleIt": "Schedule it",
+      "form": {
+        "title": "Title",
+        "titlePlaceholder": "Notification title",
+        "category": "Category",
+        "message": "Message",
+        "messagePlaceholder": "Enter your notification message...",
+        "priority": "Priority",
+        "targetUsers": "Target Users",
+        "targetRole": "Target Role",
+        "sendEmail": "Send as email",
+        "scheduleFor": "Schedule For"
+      },
+      "targetOptions": {
+        "all": "All Users",
+        "role": "By Role",
+        "specific": "Specific Users"
+      },
+      "notificationsSent": "Notification sent successfully!",
+      "notificationsScheduled": "Notification scheduled successfully!"
+    },
+    "preferences": {
+      "title": "Notification Preferences",
+      "save": "Save",
+      "emailNotifications": {
+        "title": "Email Notifications",
+        "account": "Account Notifications",
+        "accountDesc": "Important updates about your account",
+        "projects": "Project Updates",
+        "projectsDesc": "Notifications about your projects",
+        "courses": "Course Updates",
+        "coursesDesc": "Learning progress and new content"
+      },
+      "pushNotifications": {
+        "title": "Push Notifications",
+        "push": "Push Notifications",
+        "pushDesc": "Real-time alerts on your devices",
+        "security": "Security Alerts",
+        "securityDesc": "Important security notifications"
+      },
+      "marketing": {
+        "title": "Marketing & Communications",
+        "marketing": "Marketing Emails",
+        "marketingDesc": "Product updates and promotions",
+        "newsletter": "Newsletter",
+        "newsletterDesc": "Weekly insights and tips"
+      },
+      "quietHours": {
+        "title": "Quiet Hours",
+        "start": "Quiet Hours Start",
+        "end": "Quiet Hours End",
+        "description": "Notifications will be silenced during these hours"
+      },
+      "digest": {
+        "title": "Daily Digest",
+        "time": "Digest Time",
+        "description": "Receive a daily summary of notifications at this time"
+      }
+    },
+    "filters": {
+      "title": "Filters",
+      "clearAll": "Clear all",
+      "category": "Category",
+      "allCategories": "All categories",
+      "priority": "Priority",
+      "allPriorities": "All priorities",
+      "status": "Status",
+      "allStatuses": "All statuses",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "toolbar": {
+      "search": "Search notifications...",
+      "viewModes": {
+        "list": "List View",
+        "grid": "Grid View"
+      },
+      "sort": {
+        "newest": "Newest First",
+        "oldest": "Oldest First",
+        "priority": "By Priority"
+      }
+    },
+    "notificationItem": {
+      "markAsRead": "Mark as read",
+      "markUnread": "Mark unread",
+      "delete": "Delete",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "priority": {
+        "urgent": "Urgent",
+        "high": "High",
+        "normal": "Normal",
+        "low": "Low"
+      },
+      "time": {
+        "justNow": "Just now",
+        "hoursAgo": "{hours}h ago",
+        "daysAgo": "{days}d ago"
+      }
+    },
+    "actions": {
+      "loadMore": "Load More",
+      "tryAgain": "Try Again"
+    },
+    "emptyStates": {
+      "noNotifications": {
+        "title": "No notifications",
+        "descriptionAll": "You're all caught up! New notifications will appear here.",
+        "descriptionUnread": "No unread notifications found.",
+        "descriptionRead": "No read notifications found.",
+        "descriptionArchived": "No archived notifications found."
+      }
+    },
+    "errors": {
+      "loading": "Error loading notifications",
+      "markingRead": "Error marking as read",
+      "deleting": "Error deleting notification",
+      "sending": "Error sending notification",
+      "scheduling": "Error scheduling notification",
+      "updatingPreferences": "Error updating preferences"
+    },
+    "success": {
+      "markedRead": "{count} notifications marked as read",
+      "deleted": "{count} notifications deleted",
+      "preferencesUpdated": "Preferences updated successfully!"
+    }
+  },
+  "profile": {
+    "title": "Profile - Podacium",
+    "metaDescription": "Manage your Podacium profile, skills, and professional presence",
+    "premium": "PREMIUM",
+    "header": {
+      "title": "Your Digital Identity",
+      "subtitle": "Craft your professional legacy with stunning visuals, interactive elements, and comprehensive analytics",
+      "joined": "Joined",
+      "followers": "followers",
+      "following": "following",
+      "follow": "Follow",
+      "following_btn": "Following",
+      "message": "Message",
+      "rating": "Rating",
+      "reviews": "Reviews",
+      "profileViews": "Views",
+      "lastActive": "Last active",
+      "projects": "Projects",
+      "earnings": "Earnings",
+      "hourlyRate": "Hourly Rate",
+      "courses": "Courses",
+      "students": "Students",
+      "courseRating": "Rating",
+      "mlModels": "ML Models",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "verifiedProfessional": "Verified Professional",
+      "cropPreview": "Preview"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "projects": "Projects",
+      "learning": "Learning",
+      "social": "Social",
+      "insights": "AI Insights",
+      "business": "Business",
+      "teaching": "Teaching",
+      "freelancing": "Freelancing",
+      "portfolio": "Portfolio",
+      "reviews": "Reviews"
+    },
+    "sections": {
+      "profileInfo": "Profile Information",
+      "quickStats": "Quick Stats",
+      "skillsOverview": "Skills Overview",
+      "comprehensiveAnalytics": "Comprehensive Analytics",
+      "profileStrength": "Profile Strength & Progress",
+      "recentActivity": "Recent Activity",
+      "projectsWork": "Projects & Work",
+      "learningJourney": "Learning Journey",
+      "certifications": "Certifications & Achievements",
+      "skillsExpertise": "Skills & Expertise",
+      "network": "Network",
+      "aiInsights": "AI-Powered Insights",
+      "pronouns": "Pronouns",
+      "availability": "Availability",
+      "credentials": "Credentials",
+      "experience": "Experience",
+      "publications": "Publications",
+      "datasets": "Datasets"
+    },
+    "roles": {
+      "student": "Student",
+      "freelancer": "Freelancer",
+      "business": "Business Professional",
+      "instructor": "Instructor"
+    },
+    "fields": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "professionalBio": "Professional Bio",
+      "bioPlaceholder": "Craft your professional story... Share your expertise, passions, and what drives you.",
+      "headlinePlaceholder": "Your professional headline",
+      "taglinePlaceholder": "Your short tagline",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+213 123 45 67 89",
+      "country": "Country",
+      "countryPlaceholder": "Your country",
+      "city": "City",
+      "cityPlaceholder": "Your city",
+      "professionalRole": "Professional Role",
+      "currentRole": "Current Role",
+      "professional": "Professional",
+      "memberSince": "Member Since",
+      "lastUpdated": "Last Updated",
+      "lastLogin": "Last Login",
+      "unknown": "Unknown",
+      "recently": "Recently",
+      "notSet": "Not set",
+      "noBio": "No bio provided yet. Tell your story and showcase your expertise!",
+      "addNewSkill": "Add a new skill...",
+      "skillsCount": "{count} of {max} skills",
+      "maxSkillsReached": "Maximum skills reached",
+      "profileSkills": "Profile Skills",
+      "moreSkills": "+{count} more",
+      "profileCompleteness": "Profile Completeness",
+      "basicInfo": "Basic Info",
+      "profilePicture": "Profile Picture",
+      "bio": "Bio",
+      "skills": "Skills",
+      "socialLinks": "Social Links",
+      "uploading": "Uploading...",
+      "dropToUpload": "Drop to upload",
+      "searchProjects": "Search projects...",
+      "unknownCourse": "Unknown Course",
+      "proficiency": "Proficiency",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "expert": "Expert",
+      "pronounsPlaceholder": "e.g. they/them, he/him, she/her",
+      "availabilityPlaceholder": "e.g. Available for hire",
+      "role": "Role",
+      "industry": "Industry",
+      "expertise": "Expertise"
+    },
+    "geo": {
+      "selectCountry": "Select a country",
+      "selectCity": "Select a city",
+      "selectCountryFirst": "Select a country first",
+      "countries": {
+        "ALGERIA": "Algeria",
+        "EGYPT": "Egypt",
+        "MOROCCO": "Morocco",
+        "TUNISIA": "Tunisia",
+        "LIBYA": "Libya"
+      },
+      "cities": {
+        "ALGIERS": "Algiers",
+        "ORAN": "Oran",
+        "CONSTANTINE": "Constantine",
+        "ANNABA": "Annaba",
+        "BLIDA": "Blida",
+        "BATNA": "Batna",
+        "DJELFA": "Djelfa",
+        "SETIF": "Setif",
+        "SIDI_BEL_ABBES": "Sidi Bel Abbes",
+        "BISKRA": "Biskra",
+        "TEBESSA": "Tebessa",
+        "EL_OUED": "El Oued",
+        "SKIKDA": "Skikda",
+        "TIARET": "Tiaret",
+        "BEJAIA": "Bejaia",
+        "TLEMCEN": "Tlemcen",
+        "OUARGLA": "Ouargla",
+        "MOSTAGANEM": "Mostaganem",
+        "MSILA": "M'Sila",
+        "GHARDAIA": "Ghardaia",
+        "CAIRO": "Cairo",
+        "ALEXANDRIA": "Alexandria",
+        "GIZA": "Giza",
+        "PORT_SAID": "Port Said",
+        "SUEZ": "Suez",
+        "CASABLANCA": "Casablanca",
+        "RABAT": "Rabat",
+        "MARRAKESH": "Marrakesh",
+        "TANGIER": "Tangier",
+        "FES": "Fes",
+        "TUNIS": "Tunis",
+        "SFAX": "Sfax",
+        "SOUSSE": "Sousse",
+        "ETTADHAMEN": "Ettadhamen",
+        "KAIROUAN": "Kairouan",
+        "TRIPOLI": "Tripoli",
+        "BENGHAZI": "Benghazi",
+        "MISRATA": "Misrata",
+        "SIRTE": "Sirte",
+        "SABHA": "Sabha",
+        "ADRAR": "Adrar",
+        "CHLEF": "Chlef",
+        "LAGHOUAT": "Laghouat",
+        "OUM_EL_BOUAGHI": "Oum El Bouaghi",
+        "BECHAR": "Bechar",
+        "BOUIRA": "Bouira",
+        "TAMANRASSET": "Tamanrasset",
+        "TIZI_OUZOU": "Tizi Ouzou",
+        "JIJEL": "Jijel",
+        "SAIDA": "Saida",
+        "GUELMA": "Guelma",
+        "MEDEA": "Medea",
+        "MASCARA": "Mascara",
+        "EL_BAYADH": "El Bayadh",
+        "ILLIZI": "Illizi",
+        "BORDJ_BOU_ARRERIDJ": "Bordj Bou Arreridj",
+        "BOUMERDES": "Boumerdes",
+        "EL_TARF": "El Tarf",
+        "TINDOUF": "Tindouf",
+        "TISSEMSILT": "Tissemsilt",
+        "KHENCHELA": "Khenchela",
+        "SOUK_AHRAS": "Souk Ahras",
+        "TIPAZA": "Tipaza",
+        "MILA": "Mila",
+        "AIN_DEFLA": "Ain Defla",
+        "NAAMA": "Naama",
+        "AIN_TEMOUCHENT": "Ain Temouchent",
+        "RELIZANE": "Relizane",
+        "TIMIMOUN": "Timimoun",
+        "BORDJ_BADJI_MOKHTAR": "Bordj Badji Mokhtar",
+        "OULED_DJELLAL": "Ouled Djellal",
+        "BENI_ABBES": "Beni Abbes",
+        "IN_SALAH": "In Salah",
+        "IN_GUEZZAM": "In Guezzam",
+        "TOUGGOURT": "Touggourt",
+        "DJANET": "Djanet",
+        "EL_MGHAIR": "El M'Ghair",
+        "EL_MENIAA": "El Meniaa",
+        "AFLOU": "Aflou",
+        "BARIKA": "Barika",
+        "EL_KANTARA": "El Kantara",
+        "BIR_EL_ATER": "Bir El Ater",
+        "EL_ARICHA": "El Aricha",
+        "KSAR_CHELLALA": "Ksar Chellala",
+        "AIN_OUSSERA": "Ain Oussera",
+        "MESSAAD": "Messaad",
+        "KSAR_EL_BOUKHARI": "Ksar El Boukhari",
+        "BOU_SAADA": "Bou Saada",
+        "EL_ABIODH_SIDI_CHEIKH": "El Abiodh Sidi Cheikh"
+      },
+      "sectors": {
+        "TECHNOLOGY_AND_SOFTWARE": "Technology & Software",
+        "BANKING_AND_FINANCIAL_SERVICES": "Banking & Financial Services",
+        "HEALTHCARE_AND_PHARMACEUTICALS": "Healthcare & Pharmaceuticals",
+        "ENERGY_AND_OIL_AND_GAS": "Energy, Oil & Gas",
+        "AUTOMOTIVE_AND_MANUFACTURING": "Automotive & Industrial Manufacturing",
+        "RETAIL_AND_CONSUMER_GOODS": "Retail, E-Commerce & Consumer Goods",
+        "TELECOMMUNICATIONS": "Telecommunications & Networks",
+        "AEROSPACE_AND_DEFENSE": "Aerospace & Defense",
+        "AGRICULTURE_AND_FOOD_PRODUCTION": "Agriculture & Agro-Food Production",
+        "TRANSPORTATION_AND_LOGISTICS": "Transportation & Logistics",
+        "EDUCATION_AND_EDTECH": "Education, Training & EdTech",
+        "CONSTRUCTION_AND_REAL_ESTATE": "Construction, BTP & Real Estate",
+        "CONSULTING_AND_PROFESSIONAL_SERVICES": "Consulting, Audit & Professional Services",
+        "MEDIA_AND_CREATIVE_INDUSTRIES": "Media, Marketing & Creative Industries",
+        "TOURISM_AND_HOSPITALITY": "Tourism, Hospitality & Events",
+        "PUBLIC_SECTOR_AND_ADMINISTRATION": "Public Sector & Administration",
+        "RENEWABLE_ENERGY_AND_CLEANTECH": "Renewable Energy & CleanTech",
+        "MINING_AND_METALLURGY": "Mining, Metallurgy & Materials",
+        "TEXTILES_AND_APPAREL": "Textiles, Leather & Apparel",
+        "NON_PROFIT_AND_NGO": "Associations, Foundations & NGOs",
+        "OTHER": "Other / Multi-Sector"
+      }
+    },
+    "stats": {
+      "certificates": "Certificates",
+      "certificatesDesc": "Professional achievements",
+      "projects": "Projects",
+      "projectsDesc": "Completed works",
+      "datasets": "Datasets",
+      "datasetsDesc": "Data collections",
+      "organizations": "Organizations",
+      "organizationsDesc": "Team memberships",
+      "coursesCompleted": "Courses Completed",
+      "coursesCompletedDesc": "Learning milestones",
+      "skills": "Skills",
+      "skillsDesc": "Expertise areas",
+      "socialLinks": "Social Links",
+      "socialLinksDesc": "Online presence",
+      "profileComplete": "Profile Complete",
+      "profileCompleteDesc": "Profile strength",
+      "engagement": "Engagement",
+      "engagementDesc": "Platform activity",
+      "influence": "Influence",
+      "influenceDesc": "Impact score",
+      "increase": "increase",
+      "decrease": "decrease",
+      "inProgress": "In Progress",
+      "averageProgress": "Average Progress",
+      "totalSkills": "Total Skills",
+      "technicalSkills": "Technical Skills",
+      "skillsCapacity": "Skills Capacity"
+    },
+    "buttons": {
+      "adding": "Adding...",
+      "add": "Add",
+      "cancel": "Cancel",
+      "editProfile": "Edit Profile",
+      "saveProfile": "Save Profile",
+      "saving": "Saving...",
+      "addLink": "Add Link",
+      "saveLinks": "Save Links",
+      "savingLinks": "Saving Links...",
+      "addFirstLink": "Add Your First Link",
+      "startProject": "Start Your First Project",
+      "viewAllCourses": "View All ({count} courses)",
+      "viewCertificate": "View Certificate",
+      "browseLearningPaths": "Browse Learning Paths",
+      "exploreCertifications": "Explore Certifications",
+      "addFirstSkill": "Add Your First Skill",
+      "unlockAiInsights": "Unlock All AI Insights - Start Free Trial",
+      "privacy": "Privacy",
+      "share": "Share",
+      "changeCover": "Change Cover",
+      "saveAvatar": "Save Photo"
+    },
+    "messages": {
+      "tryAgain": "Try again",
+      "loadError": "Failed to load data. Please try again.",
+      "currency": "DZD",
+      "rows": "{count} rows",
+      "profilePictureUpdated": "Profile picture updated successfully! 🎉",
+      "uploadError": "Failed to upload profile picture. Please try again.",
+      "profileNotLoaded": "User profile not loaded",
+      "profileUpdated": "Profile updated successfully! {links} social links saved. 🎉",
+      "skillAdded": "Skill added successfully! 🎯",
+      "skillError": "Failed to add skill. Please try again.",
+      "skillRemoved": "Skill removed successfully! 🗑️",
+      "skillRemoveError": "Failed to remove skill. Please try again.",
+      "completenessMessage": "Complete your profile to unlock better opportunities and increase your visibility.",
+      "improvementTips": "Profile Improvement Tips",
+      "addBioTip": "Add a professional bio to introduce yourself",
+      "addSkillsTip": "Add at least 3 skills to showcase your expertise",
+      "addSocialLinksTip": "Connect your social profiles to build credibility",
+      "addProfilePictureTip": "Upload a professional profile picture",
+      "profileComplete": "🎉 Your profile is complete! Keep it updated.",
+      "noActivity": "No recent activity yet",
+      "startActivityMessage": "Start learning and creating to see your activity here!",
+      "createdDate": "Created {date}",
+      "issuedDate": "Issued {date}",
+      "addedDate": "Added {date}",
+      "saveError": "Failed to save profile. Please check the console for details.",
+      "profileNotFound": "Profile not found",
+      "profileNotFoundDesc": "This profile does not exist or is private.",
+      "goHome": "Go to Home Page"
+    },
+    "activity": {
+      "certificate": "Earned certificate",
+      "project": "Created project",
+      "enrollment": "Course progress updated"
+    },
+    "sort": {
+      "name": "Sort by Name",
+      "date": "Sort by Date",
+      "progress": "Sort by Progress"
+    },
+    "emptyStates": {
+      "projects": {
+        "title": "Your Creative Canvas Awaits",
+        "description": "Transform your ideas into remarkable projects and showcase your talent to the world."
+      },
+      "learning": {
+        "title": "Begin Your Learning Journey",
+        "description": "Embark on an educational adventure that will transform your career and expand your horizons."
+      },
+      "certificates": {
+        "title": "Build Your Legacy of Excellence",
+        "description": "Earn prestigious certifications that validate your expertise and showcase your achievements."
+      },
+      "skills": {
+        "title": "No Skills Yet",
+        "description": "Start adding skills to showcase your expertise!",
+        "noCategory": "No {category} skills added yet."
+      },
+      "business": {
+        "description": "Public dashboards, datasets, and ML models will appear here."
+      },
+      "teaching": {
+        "description": "Courses taught, students, and credentials will appear here."
+      },
+      "reviews": {
+        "description": "Reviews will appear here once received."
+      },
+      "followers": {
+        "description": "People who follow this profile will appear here."
+      },
+      "following": {
+        "description": "Profiles this user follows will appear here."
+      }
+    },
+    "skills": {
+      "all": "All Skills",
+      "technical": "Technical",
+      "business": "Business",
+      "creative": "Creative",
+      "soft": "Soft Skills",
+      "design": "Design"
+    },
+    "socialLinks": {
+      "categories": {
+        "professional": "Professional",
+        "social": "Social Media",
+        "creative": "Creative & Portfolio",
+        "video": "Video & Content"
+      },
+      "addNew": "Add New Social Link",
+      "selectPlatform": "Select Platform",
+      "platform": "Platform",
+      "platformPlaceholder": "Or type custom platform...",
+      "url": "URL",
+      "urlPlaceholder": "https://...",
+      "linksCount": "{current} of {max} links added",
+      "emptyTitle": "No Social Links Yet",
+      "emptyDescription": "Connect your social media profiles and websites to build your professional network and showcase your online presence.",
+      "maxLinksWarning": "Maximum of {max} social links reached. Remove some links to add new ones."
+    },
+    "insights": {
+      "unlockPremium": "Unlock Premium AI Insights",
+      "premiumDescription": "Get personalized career guidance, skill gap analysis, and data-driven recommendations powered by advanced AI",
+      "previewTitle": "Preview of Your Potential Insights",
+      "premiumFeature": "Premium Feature",
+      "upgradeToUnlock": "Upgrade to unlock",
+      "biAnalytics": "Business Intelligence Analytics",
+      "dataVisualization": "Data Visualization Skills",
+      "dashboardCreation": "Dashboard Creation",
+      "premiumInsight": "Premium Insight",
+      "biInsight": "Your BI skills position you for 45% higher salary opportunities in data-driven roles",
+      "freelanceAnalysis": "Freelance Career Analysis",
+      "marketRate": "Market Rate",
+      "successScore": "Success Score",
+      "freelanceInsight": "Based on your portfolio, you could increase your rates by 30% for enterprise clients",
+      "learningPath": "Learning Path Optimization",
+      "recommendedCourse": "Recommended Next Course",
+      "advancedAnalytics": "Advanced Analytics",
+      "learningInsight": "Complete 2 more courses to unlock 3 new career paths with 25% higher earning potential",
+      "premiumIncludes": "What's Included in Premium AI Insights",
+      "features": {
+        "careerRoadmap": "Personalized Career Roadmap",
+        "careerRoadmapDesc": "AI-generated path based on your skills and goals",
+        "marketAnalysis": "Real-time Market Analysis",
+        "marketAnalysisDesc": "Live data on job trends and salary benchmarks",
+        "skillGap": "Skill Gap Identification",
+        "skillGapDesc": "Precise recommendations for skill development",
+        "projectMatching": "Project Opportunity Matching",
+        "projectMatchingDesc": "AI-curated freelance and project recommendations"
+      },
+      "trialOffer": "7-day free trial • Cancel anytime • Access to all premium features"
+    },
+    "viewAs": {
+      "public": "Public",
+      "follower": "Follower",
+      "followers": "Followers",
+      "self": "Self",
+      "previewPublicBanner": "Previewing your profile as a public visitor",
+      "previewFollowerBanner": "Previewing your profile as a follower",
+      "resetSelf": "Switch to Self View"
+    },
+    "completion": {
+      "title": "Profile Completion",
+      "almostDone": "Almost done! Add a few more details.",
+      "makingProgress": "Making progress! Keep filling in your profile.",
+      "goodStart": "Good start! Complete your profile to stand out.",
+      "completeProfile": "Complete your profile to get the most out of Podacium."
+    },
+    "qrCode": {
+      "share": "Share Profile",
+      "scanToView": "Scan to view {username}'s profile",
+      "download": "Download QR",
+      "linkCopied": "Link copied!",
+      "linkCopyFailed": "Failed to copy link",
+      "alt": "QR Code for {username}"
+    },
+    "phone": {
+      "countryCode": "Select country code",
+      "number": "Phone number"
+    },
+    "avatar": {
+      "cropTitle": "Upload Profile Photo",
+      "dragDrop": "Drag & drop your photo here",
+      "orClickToBrowse": "or click to browse"
+    }
+  },
+  "rec": {
+    "c_py_basics": {
+      "t": "Python Basics",
+      "d": "Introduction to Python programming language",
+      "r": "Essential skill for your career"
+    },
+    "c_py_adv": {
+      "t": "Advanced Python",
+      "d": "Master decorators, generators, and metclasses",
+      "r": "Level up your code quality"
+    },
+    "c_ds_pandas": {
+      "t": "Pandas for Data Science",
+      "d": "Data manipulation and analysis mastery",
+      "r": "Crucial for any data role"
+    },
+    "c_alg_sme": {
+      "t": "Data for Algerian SMEs",
+      "d": "Analyze local business data effectively",
+      "r": "High local market demand"
+    },
+    "c_viz_tab": {
+      "t": "Tableau Fundamentals",
+      "d": "Visualize your insights with Tableau",
+      "r": "High demand visualization skill"
+    },
+    "c_viz_pbi": {
+      "t": "Power BI for Business",
+      "d": "Create enterprise-ready dashboards",
+      "r": "Standard tool for business"
+    },
+    "c_ml_intro": {
+      "t": "Intro to Machine Learning",
+      "d": "Scikit-Learn and ML basics",
+      "r": "Future-proof your career"
+    },
+    "c_sql_boot": {
+      "t": "SQL Bootcamp",
+      "d": "Master database querying and management",
+      "r": "The foundation of data work"
+    },
+    "c_web_scrap": {
+      "t": "Web Scraping with Python",
+      "d": "Extract data from any website",
+      "r": "Gather your own datasets"
+    },
+    "c_api_dev": {
+      "t": "FastAPI Development",
+      "d": "Build high-performance APIs",
+      "r": "Modern backend stack standard"
+    },
+    "c_free_101": {
+      "t": "Freelancing 101",
+      "d": "Start your freelancing journey today",
+      "r": "Monetize your skills"
+    },
+    "c_client_nego": {
+      "t": "Client Negotiation",
+      "d": "Get paid what you are truly worth",
+      "r": "Boost your income"
+    },
+    "c_brand_pers": {
+      "t": "Personal Branding",
+      "d": "Stand out in a crowded market",
+      "r": "Attract better clients"
+    },
+    "c_time_mgmt": {
+      "t": "Time Management",
+      "d": "Maximize your productivity",
+      "r": "Essential for remote work"
+    },
+    "c_rem_work": {
+      "t": "Remote Work Best Practices",
+      "d": "Stay healthy and productive from home",
+      "r": "Work from anywhere efficiently"
+    },
+    "p_sales_dash": {
+      "t": "Sales Dashboard Review",
+      "d": "Visualise retail sales data",
+      "r": "Good entry-level project"
+    },
+    "p_ecom_opt": {
+      "t": "E-com Optimization",
+      "d": "Improve funnel conversion rates",
+      "r": "High value business impact"
+    },
+    "p_inv_sys": {
+      "t": "Inventory System Script",
+      "d": "Automate stock tracking with Python",
+      "r": "Great automation practice"
+    },
+    "p_real_est": {
+      "t": "Real Estate Analysis",
+      "d": "Analyze housing market trends",
+      "r": "Real-world market analysis"
+    },
+    "p_cust_seg": {
+      "t": "Customer Segmentation",
+      "d": "Cluster customers using ML",
+      "r": "Advanced machine learning project"
+    },
+    "p_web_port": {
+      "t": "Portfolio Website",
+      "d": "Build your professional showcase",
+      "r": "Necessary to show your work"
+    },
+    "p_api_integ": {
+      "t": "Payment API Integration",
+      "d": "Integrate local payment gateways",
+      "r": "Technical challenge"
+    },
+    "p_bug_fix": {
+      "t": "Bug Fix Marathon",
+      "d": "Fix 5 open source bugs",
+      "r": "Contribute to community"
+    },
+    "p_data_clean": {
+      "t": "Data Cleaning Gig",
+      "d": "Clean messy excel files for a client",
+      "r": "Quick turnover task"
+    },
+    "p_trans_doc": {
+      "t": "Tech Doc Translation",
+      "d": "Translate documentation EN->AR",
+      "r": "Leverage your language skills"
+    },
+    "d_alg_hous": {
+      "t": "Algiers Housing Data",
+      "d": "Real estate prices and locations",
+      "r": "Trending locally"
+    },
+    "d_dz_wthr": {
+      "t": "Algeria Weather 10y",
+      "d": "Historical weather data for 10 years",
+      "r": "Climate analysis basics"
+    },
+    "d_stock_mrk": {
+      "t": "Global Stock Market",
+      "d": "Daily closing prices for major stocks",
+      "r": "Financial modeling practice"
+    },
+    "d_soc_media": {
+      "t": "Social Media Sentiments",
+      "d": "1 million tweets dataset",
+      "r": "NLP practice material"
+    },
+    "d_retail_sales": {
+      "t": "Retail Sales History",
+      "d": "3 years of transaction history",
+      "r": "Forecasting practice"
+    },
+    "d_traffic": {
+      "t": "Urban Traffic Flows",
+      "d": "City movement patterns and density",
+      "r": "Urban planning project"
+    },
+    "d_energy": {
+      "t": "Energy Consumption",
+      "d": "Household energy usage statistics",
+      "r": "Green energy analysis"
+    },
+    "d_job_mkt": {
+      "t": "Tech Job Market",
+      "d": "Salaries and skills demand 2026",
+      "r": "Career insights"
+    },
+    "cert_bi_adv": {
+      "t": "Adv BI Certification",
+      "d": "Professional level dashboarding",
+      "r": "Serious career advancement"
+    },
+    "cert_py_pro": {
+      "t": "Python Professional",
+      "d": "Certified Pythonista status",
+      "r": "Definitive proof of skill"
+    },
+    "cert_data_eng": {
+      "t": "Data Engineering",
+      "d": "ETL, Pipelines and Warehousing",
+      "r": "High salary role qualification"
+    },
+    "cert_cloud_fund": {
+      "t": "Cloud Fundamentals",
+      "d": "AWS/Azure/GCP essentials",
+      "r": "Infrastructure knowledge"
+    }
+  },
+  "privacy": {
+    "sections": {
+      "title": "Section Visibility",
+      "description": "Control who can see each section of your profile.",
+      "section": "Section",
+      "visibility": "Visibility",
+      "bio": "Bio",
+      "bioDesc": "Your personal biography",
+      "headline": "Headline",
+      "headlineDesc": "Your professional headline",
+      "tagline": "Tagline",
+      "taglineDesc": "Your personal tagline",
+      "pronouns": "Pronouns",
+      "pronounsDesc": "Your pronouns",
+      "coverImage": "Cover Image",
+      "coverImageDesc": "Your profile cover image",
+      "location": "Location",
+      "locationDesc": "Your location",
+      "socialLinks": "Social Links",
+      "socialLinksDesc": "Your social media links",
+      "availability": "Availability",
+      "availabilityDesc": "Your availability status",
+      "timezone": "Timezone",
+      "timezoneDesc": "Your timezone",
+      "profileViews": "Profile Views",
+      "profileViewsDesc": "Your profile view count",
+      "lastActive": "Last Active",
+      "lastActiveDesc": "When you were last active",
+      "followers": "Followers",
+      "followersDesc": "Your follower count",
+      "following": "Following",
+      "followingDesc": "Who you follow",
+      "badges": "Badges",
+      "badgesDesc": "Your earned badges",
+      "skills": "Skills",
+      "skillsDesc": "Your skills and expertise",
+      "activityFeed": "Activity Feed",
+      "activityFeedDesc": "Your recent activity",
+      "footerNote": "Inherit uses the default visibility set in your privacy settings.",
+      "loadError": "Failed to load visibility settings.",
+      "saveError": "Failed to save visibility settings.",
+      "saving": "Saving..."
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "saveChanges": "Save Changes"
+    }
+  }
+}

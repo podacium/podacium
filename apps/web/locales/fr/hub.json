@@ -1,0 +1,1749 @@
+{
+  "hub": {
+    "meta": {
+      "title": "Hub Freelance | Trouvez des Projets & des Talents",
+      "description": "La première plateforme de freelancing en Algérie connectant les entreprises avec des freelancers talentueux. Trouvez des projets, embauchez des talents et développez votre carrière."
+    },
+    "hero": {
+      "badge": "Première Plateforme Freelance d'Algérie",
+      "titleLine1": "Trouvez Votre",
+      "titleHighlight": "Match Freelance Parfait",
+      "description": "Connectez-vous avec les meilleurs talents d'Algérie pour vos projets, ou développez votre carrière freelance avec des opportunités passionnantes de clients locaux et internationaux.",
+      "welcomeBack": "Bon retour, {name} !",
+      "freelancer": "Freelancer",
+      "findNext": "Trouvez Votre Prochain",
+      "project": "Projet",
+      "freelancerDescription": "Découvrez des projets passionnants qui correspondent à vos compétences et développez votre carrière en Algérie",
+      "clientDescription": "Connectez-vous avec les meilleurs talents algériens pour vos projets et donnez vie à vos idées"
+    },
+    "stats": {
+      "title": "Votre Tableau de Bord",
+      "description": "Aperçu de votre activité et performance freelance en temps réel",
+      "freelancer": {
+        "activeProposals": "Propositions Actives",
+        "activeProposalsTooltip": "Propositions en attente de réponse client",
+        "activeContracts": "Contrats Actifs",
+        "activeContractsTooltip": "Projets actuellement en cours",
+        "totalEarnings": "Gains Totaux",
+        "totalEarningsTooltip": "Gains totaux de tous les projets terminés",
+        "successRate": "Taux de Réussite",
+        "successRateTooltip": "Pourcentage de propositions acceptées"
+      },
+      "client": {
+        "activeProjects": "Projets Actifs",
+        "activeProjectsTooltip": "Projets actuellement en développement",
+        "openProjects": "Projets Ouverts",
+        "openProjectsTooltip": "Projets acceptant des propositions",
+        "totalSpent": "Dépenses Totales",
+        "totalSpentTooltip": "Montant total dépensé en travail freelance",
+        "completionRate": "Taux d'Achèvement",
+        "completionRateTooltip": "Pourcentage de projets terminés avec succès"
+      }
+    },
+    "sections": {
+      "trendingProjects": "Projets Tendances",
+      "trendingProjectsDesc": "Parcourez les dernières opportunités des entreprises algériennes",
+      "topFreelancers": "Meilleurs Freelancers Algériens",
+      "topFreelancersDesc": "Professionnels de Podacium prêts pour vos projets",
+      "howItWorks": "Comment Ça Marche",
+      "howItWorksDesc": "Étapes simples pour démarrer votre aventure freelance",
+      "recommendedProjects": "Projets Recommandés",
+      "recommendedProjectsDesc": "Projets correspondant à vos compétences et niveau d'expérience",
+      "recentActivity": "Activité Récente",
+      "recentActivityDesc": "Dernières mises à jour de votre activité freelance et projets",
+      "showingFilteredProjects": "Affichage de {showing} sur {total} projets dans \"{category}\"",
+      "trending": "Tendance",
+      "tips": "Conseils & Ressources"
+    },
+    "categories": {
+      "all": "Toutes Catégories",
+      "webDevelopment": "Développement Web",
+      "uiUxDesign": "Design UI/UX",
+      "digitalMarketing": "Marketing Digital",
+      "dataScience": "Science des Données",
+      "mobileApps": "Applications Mobiles",
+      "devopsCloud": "DevOps et Cloud",
+      "businessConsulting": "Business & Conseil"
+    },
+    "filters": {
+      "category": "Filtrer par Catégorie",
+      "showingCount": "Affichage de {showing} sur {total} projets",
+      "matchingProjects": "{count} projet(s) correspondent à votre filtre",
+      "apply": "Appliquer les Filtres",
+      "clear": "Effacer les Filtres"
+    },
+    "actions": {
+      "browseProjects": "Parcourir Projets",
+      "browseProjectsDesc": "Trouvez des projets correspondant à vos compétences et préférences",
+      "viewProposals": "Voir Propositions",
+      "viewProposalsDesc": "Vérifiez le statut de vos propositions et candidatures soumises",
+      "completeProfile": "Compléter Profil",
+      "completeProfileDesc": "Ajoutez compétences, certifications et portfolio pour vous démarquer",
+      "createProject": "Créer Projet",
+      "createProjectDesc": "Publiez un nouveau projet et trouvez le freelanceur idéal",
+      "findFreelancers": "Trouver Freelancers",
+      "findFreelancersDesc": "Parcourez des freelancers talentueux pour vos besoins de projet",
+      "viewContracts": "Voir Contrats",
+      "viewContractsDesc": "Gérez vos contrats actifs et livraisons de projets",
+      "findWork": "Trouver du Travail",
+      "viewAll": "Voir Tout",
+      "editProfile": "Modifier Profil",
+      "getStarted": "Commencer",
+      "browse": "Parcourir",
+      "manage": "Gérer"
+    },
+    "quickActions": {
+      "title": "Actions Rapides",
+      "description": "Commencez avec ces actions rapides adaptées pour vous"
+    },
+    "search": {
+      "findProjects": "Trouver Projets",
+      "findProjectsDesc": "Parcourez les projets correspondant à vos compétences et expertise. Filtrez par compétences, budget et délai.",
+      "findFreelancers": "Trouver Freelancers",
+      "findFreelancersDesc": "Découvrez des freelancers talentueux pour votre prochain projet. Filtrez par compétences, localisation et statut vérifié."
+    },
+    "roles": {
+      "asFreelancer": "En tant que Freelancer",
+      "asClient": "En tant que Client",
+      "primary": "Principal"
+    },
+    "buttons": {
+      "startFreelancing": "Commencer en Freelance",
+      "hireTalent": "Embaucher un Talent",
+      "browseAllProjects": "Parcourir Tous Projets",
+      "browseAllFreelancers": "Parcourir Tous Freelancers",
+      "clearFilter": "Effacer Filtre",
+      "viewAll": "Voir Tout",
+      "viewAllCategoryProjects": "Voir Tous Projets {category}",
+      "exploreAllCategories": "Explorer Toutes Catégories",
+      "getStartedFree": "Commencer Gratuitement",
+      "signInToContinue": "Connectez-vous pour Continuer",
+      "verifyPhone": "Vérifier Téléphone",
+      "updateRole": "Mettre à Jour Rôle",
+      "completeProfile": "Compléter Profil",
+      "getStarted": "Commencer",
+      "browseProjects": "Parcourir Projets",
+      "tryAgain": "Réessayer",
+      "postProject": "Publier un Projet",
+      "learnMore": "En Savoir Plus",
+      "viewAllActivity": "Voir Toute Activité",
+      "exploreMore": "Explorer Plus",
+      "createProject": "Créer Projet",
+      "close": "Fermer"
+    },
+    "badges": {
+      "easySecure": "Facile & Sécurisé",
+      "newProjects": "{count} nouveau(x)",
+      "activeProposals": "{count} actif(s)",
+      "profileScore": "{score}%",
+      "complete": "Complet",
+      "availableFreelancers": "{count} disponible(s)",
+      "activeContracts": "{count} actif(s)",
+      "recommended": "Recommandé",
+      "live": "En Direct",
+      "featured": "À la Une",
+      "verified": "Vérifié",
+      "new": "Nouveau",
+      "trending": "Tendance"
+    },
+    "empty": {
+      "noProjectsInCategory": "Aucun Projet Trouvé dans \"{category}\"",
+      "noProjectsMatchCategory": "Aucun projet ne correspond à la catégorie sélectionnée. Essayez une autre catégorie ou parcourez tous les projets.",
+      "noFreelancersAvailable": "Aucun Freelancer Disponible",
+      "checkBackLater": "Revenez plus tard ou explorez d'autres catégories.",
+      "noProjectsFound": "Aucun Projet Trouvé",
+      "adjustFilters": "Nous n'avons trouvé aucun projet correspondant à vos critères. Essayez d'ajuster vos filtres ou revenez plus tard pour de nouvelles opportunités.",
+      "noFreelancersFound": "Aucun Freelancer Trouvé",
+      "adjustFreelancerFilters": "Aucun freelanceur ne correspond à vos critères de recherche actuels. Essayez d'ajuster vos filtres ou explorez des ensembles de compétences différents.",
+      "noRecentActivity": "Aucune Activité Récente",
+      "startJourney": "Commencez votre aventure freelance en parcourant des projets ou en publiant votre premier projet. Votre activité apparaîtra ici."
+    },
+    "errors": {
+      "loadError": "Échec du chargement des données. Veuillez réessayer.",
+      "searchError": "Échec de la recherche. Veuillez réessayer.",
+      "unableToLoadProjects": "Impossible de Charger les Projets",
+      "unableToLoadFreelancers": "Impossible de Charger les Freelancers"
+    },
+    "verification": {
+      "verificationRequired": "Vérification Requise",
+      "completeProfileTitle": "Complétez Votre Profil pour Accéder au Hub",
+      "completeProfileDesc": "Pour accéder au Hub Freelance et libérer votre potentiel, vous devez:",
+      "phoneVerification": "Vérification Téléphonique",
+      "phoneVerificationDesc": "Vérifiez votre numéro de téléphone pour renforcer la sécurité et bâtir la confiance avec les clients. C'est obligatoire pour tous les utilisateurs du Hub.",
+      "phoneManualNotice": "La vérification automatique du téléphone est actuellement indisponible. Pour vérifier votre numéro, veuillez contacter notre équipe par e-mail avec les détails de votre compte.",
+      "contactAdmin": "Contacter podacium@podacium.com",
+      "phoneEmailSubject": "Demande de vérification de téléphone",
+      "phoneEmailBody": "Bonjour,\n\nJe souhaite vérifier mon numéro de téléphone pour mon compte freelance.\n\nE-mail du compte : {email}\n\nMerci.",
+      "profileCompletion": "Complétion du Profil",
+      "profileCompletionDesc": "Ajoutez vos compétences, portfolio et détails professionnels pour attirer de meilleures opportunités.",
+      "studentRestriction": "Les Étudiants Ne Peuvent Pas Accéder au Hub",
+      "studentRestrictionDesc": "Le Hub Freelance est conçu pour les indépendants et les entreprises. Si vous êtes indépendant ou propriétaire d'entreprise, veuillez mettre à jour votre rôle pour commencer.",
+      "roleRequirement": "Exigence de Rôle",
+      "roleRequirementDesc": "Vous devez être indépendant ou propriétaire d'entreprise pour accéder au Hub.",
+      "accessRequirements": "Exigences d'Accès au Hub",
+      "requirement1": "Être un indépendant ou propriétaire d'entreprise (pas un étudiant)",
+      "requirement2": "Vérifier votre numéro de téléphone",
+      "requirement3": "Compléter votre profil professionnel"
+    },
+    "profile": {
+      "completeProfile": "Compléter Profil",
+      "completeProfileDesc": "Votre profil n'est complété qu'à {score}%. Complétez votre profil pour obtenir plus de projets et augmenter votre visibilité.",
+      "completenessScore": "Score d'achèvement du profil",
+      "scoreIncomplete": "Votre profil est incomplet",
+      "scoreInProgress": "Votre profil est en cours d'achèvement",
+      "scoreComplete": "Votre profil est complet"
+    },
+    "activity": {
+      "contractCompleted": "Contrat Terminé",
+      "contractCompletedDesc": "Contrat pour \"{project}\" terminé avec succès",
+      "newDelivery": "Nouvelle Livraison",
+      "newDeliveryDesc": "Contrat pour \"{project}\" a une nouvelle livraison",
+      "proposalSubmitted": "Proposition Soumise",
+      "proposalSubmittedDesc": "Vous avez soumis une proposition pour \"{project}\"",
+      "completeProfile": "Complétez Votre Profil",
+      "completeProfileDesc": "Votre profil est incomplet. Ajoutez plus de détails pour obtenir de meilleures opportunités.",
+      "now": "Maintenant",
+      "minutesAgo": "Il y a {count} min",
+      "hoursAgo": "Il y a {count} h",
+      "daysAgo": "Il y a {count} j",
+      "weeksAgo": "Il y a {count} sem",
+      "project": "un projet"
+    },
+    "howItWorks": {
+      "step1Title": "Créez Votre Profil",
+      "step1Description": "Inscrivez-vous et bâtissez votre carrière avec les fonctionnalités de Podacium. Vérifiez-vous pour établir la confiance avec les clients.",
+      "step2Title": "Trouvez des Projets",
+      "step2Description": "Parcourez des milliers de projets correspondant à vos compétences. Soumettez des propositions et négociez directement avec les clients.",
+      "step3Title": "Soyez Payé en Toute Sécurité",
+      "step3Description": "Utilisez PodaPoints pour débloquer les fonctionnalités du marché. Achetez des boosts, des publications de projets et des annonces — pas de commissions sur vos gains."
+    },
+    "cta": {
+      "title": "Prêt à Commencer Votre Aventure Freelance ?",
+      "description": "Rejoignez des milliers de freelancers et entreprises algériens qui grandissent déjà ensemble.",
+      "readyToEarn": "Prêt à Commencer à Gagner ?",
+      "readyToGetStarted": "Prêt à Commencer ?",
+      "freelancerDescription": "Rejoignez des milliers de freelancers algériens qui développent leur carrière avec nous. Commencez votre aventure aujourd'hui.",
+      "clientDescription": "Trouvez le freelanceur idéal pour votre projet et donnez vie à vos idées avec les meilleurs talents algériens."
+    },
+    "tips": {
+      "freelancerTitle": "Conseils & Ressources pour Freelancers",
+      "clientTitle": "Ressources & Guides pour Clients",
+      "description": "Ressources et conseils utiles pour réussir votre aventure freelance",
+      "freelancer": {
+        "winningProposals": "Rédiger des Propositions Gagnantes",
+        "winningProposalsDesc": "Apprenez à rédiger des propositions qui se démarquent et remportent des projets régulièrement. Inclut modèles et exemples réels.",
+        "pricingStrategies": "Stratégies de Tarification",
+        "pricingStrategiesDesc": "Fixez des tarifs compétitifs et maximisez vos gains. Apprenez la tarification basée sur la valeur et tactiques de négociation.",
+        "securePayments": "Paiements & Contrats Sécurisés",
+        "securePaymentsDesc": "Assurez des transactions sécurisées et protégez votre travail avec des contrats appropriés et jalons de paiement."
+      },
+      "client": {
+        "writingBriefs": "Rédiger des Briefs Projets",
+        "writingBriefsDesc": "Créez des briefs projets clairs qui attirent les bons freelancers et fixent les attentes dès le début.",
+        "findingTalent": "Trouver & Évaluer les Talents",
+        "findingTalentDesc": "Conseils pour trouver et évaluer les meilleurs freelancers. Apprenez à examiner les portfolios et mener des entretiens.",
+        "projectManagement": "Gestion de Projet",
+        "projectManagementDesc": "Outils et techniques pour gérer efficacement les projets freelance et assurer une livraison réussie."
+      }
+    },
+    "projectSingular": "projet",
+    "projectPlural": "projets",
+    "reviews": {
+      "invalidRating": "Note invalide",
+      "submitFailed": "Échec de l'envoi de l'avis",
+      "rating": "Note",
+      "comment": "Commentaire",
+      "commentPlaceholder": "Partagez votre expérience avec ce projet...",
+      "cancel": "Annuler",
+      "saveChanges": "Enregistrer les modifications",
+      "submit": "Soumettre l'avis",
+      "timeAgo": {
+        "justNow": "À l'instant",
+        "minutes": "Il y a {count} minute",
+        "minutes_plural": "Il y a {count} minutes",
+        "hours": "Il y a {count} heure",
+        "hours_plural": "Il y a {count} heures",
+        "days": "Il y a {count} jour",
+        "days_plural": "Il y a {count} jours",
+        "months": "Il y a {count} mois",
+        "months_plural": "Il y a {count} mois",
+        "years": "Il y a {count} an",
+        "years_plural": "Il y a {count} ans"
+      },
+      "noReviews": "Pas encore d'avis",
+      "anonymousUser": "Anonyme",
+      "edited": "(modifié)",
+      "editReview": "Modifier l'avis",
+      "appeal": "Faire appel",
+      "blindReview": "Avis anonyme",
+      "title": "Avis et retours",
+      "leaveReview": "Laisser un avis",
+      "appealReasonPlaceholder": "Expliquez pourquoi cet avis enfreint les règles ou est factuellement incorrect...",
+      "appealSubmitted": "Votre recours a été soumis.",
+      "redactedMessage": "Ce message a été expurgé",
+      "underAppealMessage": "Cet avis est en appel"
+    },
+    "contractPayment": {
+      "title": "Règlement & Garantie de Livraison",
+      "badge": "Garantie de Livraison Non-Custodial",
+      "contractInfo": "Contrat #{id} • {title}",
+      "loading": "Chargement des détails de paiement...",
+      "loadError": "Échec du chargement du contrat",
+      "copiedRef": "Référence de paiement copiée !",
+      "copiedRip": "Numéro RIP / CCP copié !",
+      "paymentRecordedSuccess": "Paiement enregistré ! Le freelance a été notifié pour attester la réception.",
+      "statusUpdated": "Statut mis à jour.",
+      "paymentRecordError": "Échec de l'enregistrement du paiement",
+      "fiscalBanner": {
+        "title": "Déductibilité Fiscale PME & Conformité ANAE (Loi 22-23)",
+        "description": "En effectuant le règlement avec la référence officielle, le Kit Triple Document (Contrat signé, PV de Réception, Facture ANAE conforme CIDTA Art. 282 sexies) sera automatiquement généré. Ce kit garantit la déductibilité IBS à 100% pour votre entreprise sous l'Article 169 CIDTA."
+      },
+      "card": {
+        "title": "Coordonnées de Règlement Direct",
+        "description": "Effectuez le virement directement vers le compte BaridiMob / CCP / Bancaire du prestataire.",
+        "referenceLabel": "Référence Obligatoire (Note de Virement)",
+        "referenceHint": "À inscrire impérativement dans le motif du virement BaridiMob.",
+        "copyRefTitle": "Copier la référence",
+        "ripLabel": "BaridiMob RIP / Numéro CCP Prestataire",
+        "ripHint": "Compte vérifié par Podacium • Statut Auto-Entrepreneur actif.",
+        "copyRipTitle": "Copier le RIP",
+        "amountLabel": "Montant du jalon à régler",
+        "tvaLabel": "TVA Applicable",
+        "tvaExempt": "0% (Exonéré IFU Loi 22-23)",
+        "confirmButton": "J'ai effectué le virement BaridiMob"
+      },
+      "ondaNotice": {
+        "title": "Protection & Cession des Droits (Ordonnance n° 03-05) :",
+        "description": "Dès attestation de paiement, la clé de déchiffrement des livrables est libérée et la cession exclusive des droits patrimoniaux au client prend effet immédiatement."
+      },
+      "ocr": {
+        "title": "Vérification Automatisée du Reçu (Optionnel)",
+        "description": "Collez le texte du SMS de confirmation ou du reçu BaridiMob / CCP pour une vérification instantanée.",
+        "placeholder": "Collez le reçu ou le SMS de transaction ici (ex: Algérie Poste BaridiMob ID: BM123456...)",
+        "verifyButton": "Vérifier le reçu",
+        "verifying": "Vérification en cours...",
+        "verifiedValid": "Preuve validée ! Montant et référence conformes.",
+        "validStatus": "CONFORME",
+        "matchDetails": "N° Opération : {txn} • Montant : {amount}",
+        "verifyError": "Échec de la vérification. Veuillez vérifier le montant et la référence."
+      },
+      "stepper": {
+        "title": "Protocole Garanti Non-Custodial (Loi 22-23 ANAE)",
+        "badge": "Zéro Séquestre de Fonds",
+        "step1Title": "Dépôt & Référence",
+        "step1Desc": "Virement direct BaridiMob / CCP avec code unique",
+        "step2Title": "Coffre AES-256",
+        "step2Desc": "Livrable chiffré déposé par le prestataire",
+        "step3Title": "PV de Réception",
+        "step3Desc": "Inspection & signature bilatérale du PV",
+        "step4Title": "Déverrouillage",
+        "step4Desc": "Clé DEK libérée & Pack Fiscal Art. 169"
+      },
+      "milestonesLabel": "Jalons du contrat (Milestones)",
+      "milestoneFallback": "Jalon #{id}"
+    },
+    "taxCenter": {
+      "title": "Centre Fiscal Auto-Entrepreneur (ANAE)",
+      "subtitle": "Suivez votre chiffre d'affaires, calculez l'IFU 0.5% et exportez votre déclaration G50 officielle.",
+      "statuteBadge": "Loi 22-23 / LF 2024 Art. 282 sexies",
+      "downloadG50": "Exporter la déclaration G50",
+      "loadError": "Impossible de charger le relevé fiscal G50",
+      "loading": "Compilation du grand livre fiscal et calcul de l'IFU...",
+      "banner": {
+        "title": "Régime Fiscal Auto-Entrepreneur (Loi n° 22-23)",
+        "description": "Conformément à la Loi de Finances (LF 2024 Art. 282 sexies CIDTA), les auto-entrepreneurs certifiés bénéficient d'un taux d'imposition réduit IFU à 0.5% et d'une exonération de TVA jusqu'au plafond annuel de 5 000 000 DZD."
+      },
+      "metrics": {
+        "turnover": "Chiffre d'Affaires Annuel (CA)",
+        "turnoverHint": "Total déclaré pour l'exercice fiscal {year}",
+        "ifuTaxDue": "Impôt IFU Forfaitaire (0,5%)",
+        "ifuTaxHint": "Calculé selon l'Art. 282 sexies CIDTA",
+        "ceiling": "Plafond Annuel Légal",
+        "ceilingLimit": "Plafond {limit}"
+      },
+      "schedule": {
+        "title": "Échéancier Trimestriel du CA et de l'IFU",
+        "subtitle": "Ventilation par trimestre fiscal pour la déclaration DGI Formulaire G50",
+        "quarterLabel": "Trimestre {quarter} (T{quarter})",
+        "invoices": "factures",
+        "turnover": "Chiffre d'Affaires",
+        "ifuDue": "IFU Dû (0.5%)"
+      }
+    },
+    "taxPack": {
+      "title": "Pack Déductibilité Fiscale Entreprise (IBS)",
+      "subtitle": "Téléchargez l'archive complète des contrats, PV et factures ANAE pour déduire 100% de vos dépenses à l'IBS.",
+      "badge": "Conforme Article 169 CIDTA",
+      "downloadPack": "Exporter le Pack Fiscal",
+      "loadError": "Impossible de charger le pack fiscal entreprise",
+      "loading": "Agrégation des pièces justificatives déductibles...",
+      "banner": {
+        "title": "Garantie de Déductibilité Fiscale IBS (Article 169 CIDTA)",
+        "description": "Toutes les prestations freelance réglées sur Podacium sont adossées à des factures ANAE et PV de réception conformes, permettant à votre entreprise de déduire 100% de ces charges de son résultat imposable à l'IBS."
+      },
+      "metrics": {
+        "totalDeductible": "Charges Totales Déductibles",
+        "totalDeductibleHint": "Cumul prestations freelance et frais de service plateforme",
+        "ibsSavings19": "Économie d'IBS Estimée (19%)",
+        "ibsSavings19Hint": "Taux société de production / industrielle",
+        "ibsSavings26": "Économie d'IBS Estimée (26%)",
+        "ibsSavings26Hint": "Taux société de services / commerciale"
+      },
+      "manifest": {
+        "title": "Inventaire des Factures et Preuves Certifiées",
+        "subtitle": "Liste détaillée des justificatifs fiscaux conformes pour votre comptabilité",
+        "invoicesCount": "Factures",
+        "freelancerType": "Prestation Freelance",
+        "platformType": "Frais de Service Plateforme"
+      }
+    }
+  },
+  "contracts": {
+    "milestones": {
+      "loading": "Chargement...",
+      "title": "Jalons",
+      "contractHeader": "Contrat #{id}",
+      "noMilestones": "Aucun jalon défini.",
+      "due": "Échéance : {date}",
+      "status": "Statut :",
+      "markSubmitted": "Marquer comme soumis",
+      "approve": "Approuver",
+      "reject": "Rejeter"
+    },
+    "dispute": {
+      "loadError": "Impossible de charger le litige",
+      "accessDenied": "Accès refusé",
+      "provideReasonAndDetails": "Veuillez fournir un motif et des détails.",
+      "descriptionMinLength": "La description doit contenir au moins 20 caractères.",
+      "submitSuccess": "Litige ouvert avec succès.",
+      "submitError": "Échec de l'ouverture du litige.",
+      "loading": "Chargement du litige...",
+      "title": "Gestion des litiges",
+      "contractHeader": "Contrat #{id} — {title}",
+      "backToContract": "Retour au contrat",
+      "openDisputes": "Litiges ouverts",
+      "noDisputes": "Aucun litige ouvert pour ce contrat.",
+      "createdBy": "Créé par",
+      "you": "Vous",
+      "otherParty": "Autre partie",
+      "reportIssue": "Signaler un problème",
+      "reasonLabel": "Motif",
+      "selectReason": "Sélectionnez un motif",
+      "reasons": {
+        "nonDelivery": "Non-livraison",
+        "poorQuality": "Qualité insuffisante",
+        "incompleteRequirements": "Exigences incomplètes",
+        "other": "Autre"
+      },
+      "detailsLabel": "Détails supplémentaires",
+      "detailsPlaceholder": "Décrivez le problème en détail...",
+      "submitting": "Envoi en cours...",
+      "submitDispute": "Ouvrir un litige",
+      "notice": "L'ouverture d'un litige suspendra le paiement jusqu'à résolution."
+    },
+    "deliver": {
+      "authError": "Authentification requise. Veuillez vous reconnecter.",
+      "notFoundError": "Contrat introuvable. Il a peut-être été supprimé ou vous n'y avez pas accès.",
+      "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+      "unexpectedError": "Une erreur inattendue est survenue. Veuillez réessayer.",
+      "descriptionRequired": "Veuillez fournir une description pour votre livrable",
+      "validUrlRequired": "Veuillez saisir une URL valide commençant par http:// ou https://",
+      "pageTitle": "Livrables du contrat",
+      "deliverable": "Livrable",
+      "submittedOn": "Soumis le {date}",
+      "deliveredStatus": "Livré",
+      "description": "Description",
+      "noDescription": "Aucune description fournie",
+      "attachedFiles": "Fichiers joints",
+      "download": "Télécharger",
+      "approve": "Approuver",
+      "requestRevision": "Demander une révision",
+      "authRequired": "Authentification requise",
+      "signInTitle": "Connectez-vous pour voir les livrables",
+      "signInDesc": "Vous devez être connecté pour voir les livrables du contrat. Veuillez vous connecter pour continuer.",
+      "signInButton": "Se connecter",
+      "createAccountButton": "Créer un compte",
+      "notFoundTitle": "Contrat introuvable",
+      "notFoundHeader": "Contrat #{id} introuvable",
+      "notFoundDesc": "Le contrat que vous recherchez n'existe pas ou a été supprimé. Vous n'avez peut-être pas la permission de le consulter.",
+      "viewContracts": "Voir vos contrats",
+      "browseProjects": "Parcourir les projets",
+      "freelancerSubtitle": "Soumettez et gérez vos livrables pour ce contrat",
+      "clientSubtitle": "Examinez et gérez les livrables soumis par le freelance",
+      "freelancerView": "Vue Freelance",
+      "clientView": "Vue Client",
+      "refreshData": "Actualiser les données",
+      "backToContract": "Retour aux détails du contrat",
+      "submittedDeliverables": "Livrables soumis",
+      "freelancerDeliverablesDesc": "Vos travaux soumis pour ce contrat",
+      "clientDeliverablesDesc": "Livrables soumis par le freelance",
+      "totalBadge": "{count} au total",
+      "noDeliveriesFreelancerTitle": "Aucun livrable pour l'instant",
+      "noDeliveriesClientTitle": "Aucun livrable reçu",
+      "noDeliveriesFreelancerDesc": "Soumettez votre premier livrable pour partager votre travail avec le client.",
+      "noDeliveriesClientDesc": "Le freelance n'a pas encore soumis de livrable.",
+      "submitNewDeliverable": "Soumettre un nouveau livrable",
+      "shareWorkDesc": "Partagez votre travail avec le client",
+      "formDescriptionLabel": "Description détaillée *",
+      "formDescriptionPlaceholder": "Décrivez ce que vous livrez, y compris des notes ou des instructions...",
+      "fileUrlsLabel": "URLs de fichiers (Optionnel)",
+      "fileUrlPlaceholder": "Entrez l'URL du fichier (ex. https://example.com/file.pdf)",
+      "fileUrlsHelp": "Fournissez des liens vers tous les fichiers ou documents liés à ce livrable",
+      "submitting": "Envoi en cours...",
+      "submitDeliverable": "Soumettre le livrable",
+      "contractStatusTitle": "Statut du contrat",
+      "contractStatusDesc": "Statut actuel de ce contrat",
+      "statusLabel": "Statut",
+      "amountLabel": "Montant",
+      "roleLabel": "Votre rôle",
+      "roleFreelancer": "Freelance",
+      "roleClient": "Client",
+      "inactiveWarning": "Ce contrat n'est pas actif. Vous ne pouvez pas soumettre de nouveaux livrables.",
+      "needHelp": "Besoin d'aide ?",
+      "needHelpDesc": "Obtenez de l'aide concernant les livrables",
+      "contactSupport": "Contacter le support",
+      "messageParty": "Envoyer un message au {party}",
+      "partyClient": "Client",
+      "partyFreelancer": "Freelance"
+    },
+    "list": {
+      "negotiable": "Négociable",
+      "notSet": "Non défini",
+      "contractTitle": "Contrat #{id}",
+      "noTermsSpecified": "Aucun terme supplémentaire spécifié",
+      "amount": "Montant",
+      "duration": "Durée",
+      "flexible": "Flexible",
+      "yourRole": "Votre Rôle",
+      "freelancer": "Freelancer",
+      "client": "Client",
+      "created": "Créé",
+      "timeline": "Calendrier",
+      "to": "à",
+      "noFreelancerAssigned": "Aucun freelanceur assigné",
+      "noClientAssigned": "Aucun client assigné",
+      "viewDetails": "Voir Détails",
+      "viewContractDetails": "Voir Détails Contrat",
+      "accessDeniedMessage": "Vous n'avez pas accès aux contrats",
+      "accessRestricted": "Accès Restreint",
+      "accessDenied": "Accès Refusé",
+      "accessRequiresRoleTitle": "L'Accès aux Contrats Requiert un Rôle Freelancer ou Client",
+      "accessRequiresRoleDescription": "Pour accéder au tableau de bord des contrats, vous devez avoir un compte freelanceur ou client. Cette fonctionnalité n'est disponible que pour les utilisateurs participant à des projets freelance.",
+      "freelancerAccess": "Les freelancers peuvent voir leurs contrats actifs et accords de projet",
+      "clientAccess": "Les clients peuvent gérer les contrats pour leurs projets publiés",
+      "studentNoAccess": "Les comptes étudiants ne peuvent pas accéder à la gestion des contrats",
+      "redirectingIn": "Redirection dans",
+      "redirectMessage": "Vous serez redirigé vers la page principale du hub automatiquement",
+      "goToHubNow": "Aller au Hub Maintenant",
+      "updateProfile": "Mettre à Jour Profil",
+      "authenticationRequired": "Authentification Requise",
+      "signInToAccess": "Connectez-vous pour Accéder aux Contrats",
+      "signInDescription": "Vous devez être connecté pour voir et gérer vos contrats. Veuillez vous connecter ou créer un compte pour continuer.",
+      "signIn": "Se Connecter",
+      "createAccount": "Créer Compte",
+      "contractManagement": "Gestion des Contrats",
+      "your": "Vos",
+      "contracts": "Contrats",
+      "manageDescription": "Gérez tous vos contrats freelance en un seul endroit. Suivez la progression, voyez les détails et collaborez efficacement.",
+      "freelancerDashboard": "Tableau de Bord Freelancer",
+      "clientDashboard": "Tableau de Bord Client",
+      "errors": {
+        "authenticationRequired": "Authentification requise. Veuillez vous reconnecter.",
+        "failedToLoad": "Échec du chargement des contrats",
+        "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+        "unexpectedError": "Une erreur inattendue est survenue. Veuillez réessayer."
+      },
+      "tryAgain": "Réessayer",
+      "contractOverview": "Aperçu des Contrats",
+      "contractOverviewDescription": "Résumé de votre activité et performance contractuelle",
+      "live": "En Direct",
+      "totalContracts": "Contrats Totaux",
+      "totalContractsTooltip": "Tous les contrats dans votre compte",
+      "activeContracts": "Contrats Actifs",
+      "activeContractsTooltip": "Contrats actuellement en cours",
+      "completed": "Terminé",
+      "completedTooltip": "Contrats terminés avec succès",
+      "pendingReview": "En Attente de Revue",
+      "pendingReviewTooltip": "Contrats en attente d'approbation ou action",
+      "manageContracts": "Gérer Contrats",
+      "manageContractsDescription": "Recherchez, filtrez et gérez vos contrats efficacement",
+      "searchPlaceholder": "Recherchez contrats par nom de projet, freelanceur, client, ou termes...",
+      "refresh": "Actualiser",
+      "filterByStatus": "Filtrer par Statut",
+      "showingCount": "Affichage de {showing} sur {total} contrats",
+      "allContracts": "Tous Contrats",
+      "active": "Actif",
+      "pending": "En Attente",
+      "cancelled": "Annulé",
+      "disputed": "En Litige",
+      "yourContracts": "Vos Contrats",
+      "allContractsDescription": "Tous vos contrats à travers différents statuts",
+      "filteredContractsDescription": "Contrats avec statut : {status}",
+      "createNewContract": "Créer Nouveau Contrat",
+      "noContractsFound": "Aucun Contrat Trouvé",
+      "noContractsSearch": "Aucun contrat ne correspond à votre recherche \"{query}\". Essayez des mots-clés différents ou effacez votre recherche.",
+      "clearSearch": "Effacer Recherche",
+      "noContractsYet": "Aucun Contrat Encore",
+      "noContractsMatchFilter": "Aucun Contrat ne Correspond au Filtre",
+      "noContractsDescription": "Vous n'avez encore aucun contrat. Commencez par créer un projet ou postuler à des projets existants.",
+      "noFilteredContractsDescription": "Vous n'avez aucun contrat avec le statut \"{status}\". Essayez un filtre différent.",
+      "browseProjects": "Parcourir Projets",
+      "createProject": "Créer Projet",
+      "viewAllContracts": "Voir Tous Contrats",
+      "findNewProjects": "Trouver Nouveaux Projets",
+      "contractTipsTitle": "Conseils de Gestion des Contrats",
+      "contractTipsDescription": "Meilleures pratiques et ressources pour gérer vos contrats efficacement",
+      "learnMore": "En Savoir Plus",
+      "clearDeliverables": "Livrables Clairs",
+      "clearDeliverablesDescription": "Définissez des livrables, calendriers et critères d'acceptation clairs dans vos contrats pour éviter les malentendus.",
+      "readGuide": "Lire Guide",
+      "paymentTerms": "Conditions de Paiement",
+      "paymentTermsDescription": "Établissez des conditions de paiement, jalons et méthodes claires pour assurer des paiements ponctuels et la sécurité financière.",
+      "disputeResolution": "Résolution de Litiges",
+      "disputeResolutionDescription": "Incluez des processus de résolution de litiges clairs dans vos contrats pour gérer les conflits professionnellement et efficacement.",
+      "needHelpTitle": "Besoin d'Aide avec un Contrat ?",
+      "needHelpDescription": "Notre équipe de support est là pour vous aider avec toute question ou problème lié aux contrats. Obtenez de l'aide pour les litiges, modifications ou gestion générale des contrats.",
+      "contactSupport": "Contacter Support"
+    },
+    "detail": {
+      "pageTitle": "Détails du Contrat",
+      "header": {
+        "badge": "Détails Contrat",
+        "title": "Contrat #{id}",
+        "description": "Voir et gérer les détails, livrables et progression du contrat.",
+        "view": {
+          "freelancer": "Vue Freelancer",
+          "client": "Vue Client",
+          "admin": "Vue Admin"
+        },
+        "contractNumber": "#{id}"
+      },
+      "errors": {
+        "authenticationRequired": "Authentification requise. Veuillez vous reconnecter.",
+        "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+        "unexpectedError": "Une erreur inattendue est survenue. Veuillez réessayer.",
+        "signInToView": "Connectez-vous pour Voir le Contrat",
+        "signInDescription": "Vous devez être connecté pour voir les détails du contrat. Veuillez vous connecter pour continuer.",
+        "contractNotFound": "Contrat non trouvé. Il a peut-être été supprimé ou vous n'y avez peut-être pas accès.",
+        "notFoundDescription": "Le contrat que vous recherchez n'existe pas ou a été supprimé. Il a peut-être été supprimé, ou vous n'avez peut-être pas la permission de le voir.",
+        "accessRestricted": "Accès Restreint",
+        "accessDenied": "Accès Refusé",
+        "contractAccessRestricted": "Accès au Contrat Restreint",
+        "accessDeniedDescription": "Vous ne pouvez voir que les contrats où vous êtes soit le freelanceur soit le client. Ce contrat n'est pas associé à votre compte.",
+        "permissionRules": {
+          "freelancers": "Les freelancers peuvent voir les contrats qui leur sont assignés",
+          "clients": "Les clients peuvent voir les contrats pour leurs projets",
+          "noAccess": "Vous ne pouvez pas voir les contrats qui ne vous appartiennent pas"
+        },
+        "redirecting": "Redirection dans",
+        "redirectNotice": "Vous serez redirigé vers la page des projets automatiquement",
+        "refreshData": "Actualiser Données"
+      },
+      "buttons": {
+        "goToProjects": "Aller aux Projets",
+        "viewYourContracts": "Voir Vos Contrats",
+        "browseProjects": "Parcourir Projets",
+        "backToContracts": "Retour aux Contrats",
+        "createAccount": "Créer Compte",
+        "signIn": "Se Connecter"
+      },
+      "sections": {
+        "projectDetails": "Détails Projet",
+        "projectDescription": "Informations sur le projet associé à ce contrat",
+        "deliveries": "Livraisons",
+        "deliveriesDescriptionFreelancer": "Soumettez votre travail et suivez les livraisons",
+        "deliveriesDescriptionClient": "Revoyez et approuvez le travail livré",
+        "deliveredCount": "{count} livré(s)",
+        "partiesInvolved": "Parties Impliquées",
+        "partiesDescription": "Les personnes et rôles dans ce contrat",
+        "contractActions": "Actions Contrat",
+        "actionsDescription": "Gérez ce contrat selon votre rôle",
+        "needHelp": "Besoin d'Aide ?",
+        "helpDescription": "Obtenez du support pour ce contrat"
+      },
+      "infoCards": {
+        "contractValue": "Valeur Contrat",
+        "status": "Statut",
+        "project": "Projet",
+        "client": "Client"
+      },
+      "delivery": {
+        "delivery": "Livraison",
+        "deliveredOn": "Livré le {date}",
+        "description": "Description",
+        "noDescription": "Aucune description fournie",
+        "attachedFiles": "Fichiers Joints",
+        "download": "Télécharger",
+        "submitDelivery": "Soumettre Livraison",
+        "deliveryModal": {
+          "title": "Soumettre Livraison",
+          "description": "Soumettez votre travail pour ce contrat",
+          "deliveryDescription": "Description Livraison *",
+          "descriptionPlaceholder": "Décrivez ce que vous livrez, incluant notes ou instructions...",
+          "fileUrls": "URLs Fichiers (Optionnel)",
+          "fileUrlsPlaceholder": "Entrez URLs fichiers séparés par virgules (ex : https://example.com/file1.pdf, https://example.com/file2.zip)",
+          "fileUrlsHelp": "Fournissez des liens vers tout fichier ou document lié à cette livraison",
+          "cancel": "Annuler"
+        },
+        "noDeliveries": {
+          "freelancerTitle": "Aucune Livraison Encore",
+          "clientTitle": "Aucune Livraison Reçue",
+          "freelancerDescription": "Soumettez votre première livraison pour partager votre travail avec le client.",
+          "clientDescription": "Le freelanceur n'a soumis aucune livraison encore."
+        },
+        "firstDelivery": "Soumettre Première Livraison",
+        "approveDelivery": "Approuver Livraison",
+        "requestRevision": "Demander Révision"
+      },
+      "project": {
+        "noTitle": "Aucun Titre Projet",
+        "noDescription": "Aucune description projet disponible.",
+        "contractTerms": "Termes du Contrat",
+        "noTerms": "Aucun terme spécifique défini pour ce contrat."
+      },
+      "parties": {
+        "client": "Client",
+        "freelancer": "Freelancer",
+        "notAssigned": "Non assigné",
+        "you": "Vous"
+      },
+      "actions": {
+        "submitDelivery": "Soumettre Livraison",
+        "markAsCompleted": "Marquer comme Terminé",
+        "completing": "Terminaison...",
+        "completeContract": "Terminer Contrat",
+        "confirmComplete": "Confirmer la clôture",
+        "messageFreelancer": "Envoyer un message au freelance",
+        "cancelContract": "Annuler Contrat",
+        "confirmCancel": "Confirmer l'annulation",
+        "cancelling": "Annulation...",
+        "viewProject": "Voir Projet",
+        "contactSupport": "Contacter Support",
+        "freelancingGuide": "Guide Freelance",
+        "legalTerms": "Conditions Légales"
+      },
+      "status": {
+        "active": "Actif",
+        "completed": "Terminé",
+        "cancelled": "Annulé",
+        "pending": "En Attente",
+        "disputed": "En Litige",
+        "descriptions": {
+          "active": "Ce contrat est actuellement actif et en cours.",
+          "completed": "Ce contrat a été terminé avec succès.",
+          "cancelled": "Ce contrat a été annulé.",
+          "pending": "Ce contrat est en attente d'activation.",
+          "disputed": "Ce contrat a un litige nécessitant résolution."
+        }
+      },
+      "support": {
+        "needHelp": "Besoin de discuter ce contrat ?",
+        "needHelpDescription": "Utilisez notre système de messagerie sécurisé pour communiquer avec l'autre partie, partager des fichiers et résoudre questions ou problèmes.",
+        "openChat": "Ouvrir Chat",
+        "getSupport": "Obtenir Support"
+      },
+      "confirmation": {
+        "completeTitle": "Terminer le contrat",
+        "completeContract": "Êtes-vous sûr de vouloir marquer ce contrat comme terminé ? Cette action ne peut être annulée.",
+        "completed": "Contrat terminé avec succès",
+        "cancelTitle": "Annuler le contrat",
+        "cancelContract": "Êtes-vous sûr de vouloir annuler ce contrat ? Cette action ne peut être annulée.",
+        "cancelled": "Contrat annulé avec succès"
+      },
+      "validation": {
+        "deliveryDescriptionRequired": "Veuillez fournir une description pour votre livraison"
+      },
+      "milestoneActions": {
+        "approvedSuccess": "Jalon validé et paiement séquestré libéré avec succès.",
+        "approveError": "Erreur lors de la validation du jalon.",
+        "disputeBlockedCompleted": "Impossible d'ouvrir un litige : les fonds ont déjà été libérés au freelance.",
+        "revisionSubmitted": "Demande de révision ciblée transmise avec succès au freelance.",
+        "negotiable": "Négociable",
+        "canvasAnnotationsSaved": "Annotations du canevas enregistrées.",
+        "ipDeedModalTitle": "Acte Bilatéral de Cession de Propriété Intellectuelle (Ordonnance 03-05)"
+      },
+      "stageTracker": {
+        "budgetLabel": "Budget Jalon :",
+        "approvedReleased": "Approuvé & Libéré",
+        "inArbitration": "En Arbitrage",
+        "tacitRule": "Règle d'Acceptation Tacite (Horloge d'Inspection {days} Jours)",
+        "remainingCountdown": "Reste {days}j ({hours}h)",
+        "inspectionNotice": "Livrable soumis le {delivered}. La période d'inspection se termine le {deadline}. En l'absence d'action de votre part avant cette date, les fonds séquestrés ({amount} DZD) seront automatiquement et irrévocablement libérés au freelance.",
+        "openDispute": "Ouvrir un Litige",
+        "requestRevisions": "Demander des Révisions Ciblées",
+        "approveReleaseEscrow": "Valider & Libérer l'Escrow",
+        "approvedSuccess": "Jalon validé et paiement séquestré libéré avec succès.",
+        "antiDisputeNotice": "Protection anti-litige post-libération active (Ordonnance 03-05). Les fonds ont été crédités.",
+        "ipDeedButton": "Acte de Cession de Propriété Intellectuelle (PDF)",
+        "stages": {
+          "funded": "Séquestré (Escrow)",
+          "inDevelopment": "En Développement",
+          "submitted": "Livrable Soumis",
+          "underInspection": "Inspection ({days} Jours)",
+          "disputed": "En Litige",
+          "released": "Fonds Libérés"
+        }
+      },
+      "ipDeed": {
+        "title": "Acte Bilatéral de Cession de Propriété Intellectuelle",
+        "certifiedBadge": "Certifié ONDA & ANAE",
+        "subtitle": "Acte bilatéral de cession de propriété intellectuelle (Ordonnance 03-05 et Loi 22-23)",
+        "assignorLabel": "Le Cédant (L'Auteur)",
+        "assignorMeta": "Auto-Entrepreneur (Loi n° 22-23) • Carte ANAE : {anae}",
+        "assignorTax": "Régime IFU 0.5% • Droits moraux inaliénables réservés (Art. 21)",
+        "assigneeLabel": "Le Cessionnaire (Le Client)",
+        "assigneeMeta": "Contrat N° : PODA-CTR-{contractId}",
+        "assigneeTax": "Pleine propriété patrimoniale exclusive • Déductible IBS (Art. 169 CIDTA)",
+        "rightsGrantedTitle": "Droits Patrimoniaux Cédés (Art. 27 & 64) :",
+        "rightsGrantedBody": "Droits exclusifs d'exploitation, de reproduction, d'adaptation, de commercialisation et de distribution logicielle pour le monde entier pendant toute la durée légale d'auteur (vie + 50 ans).",
+        "considerationTitle": "Contrepartie Forfaitaire Libératoire (Art. 65) :",
+        "considerationBody": "Rémunération forfaitaire de {amount} DZD réglée intégralement par la libération définitive des fonds séquestrés (Escrow Release).",
+        "integritySeal": "Signatures Bilatérales & Scellé d'Intégrité (Loi n° 15-04)",
+        "timestampedAt": "Horodaté le {date}",
+        "deliverableHash": "Empreinte des Livrables (SHA-256) :",
+        "assignorSignature": "Signature Cédant (L'Auteur) :",
+        "assigneeSignature": "Signature Cessionnaire (Le Client) :",
+        "platformSeal": "Scellé Cryptographique Plateforme Ed25519 :",
+        "copy": "Copier",
+        "copied": "Copié",
+        "legalNotice": "Document juridique bilingue officiel avec force probante équivalente à l'acte sous seing privé.",
+        "downloadPdf": "Télécharger l'Acte (PDF Certifié)"
+      },
+      "revisions": {
+        "modalTitle": "Demande de Révision Ciblée",
+        "milestoneHeader": "Jalon #{milestoneId} : {milestoneTitle}",
+        "description": "Les demandes de révision structurées garantissent un traitement clair et professionnel par le freelance au lieu de signalements informels. Sélectionnez les critères applicables et détaillez vos observations.",
+        "pinsAttached": "📌 {count} annotation(s) visuelle(s) du canevas de revue sont associées à ce jalon.",
+        "criteriaLabel": "Critères Nécessitant un Ajustement *",
+        "criteria": {
+          "codeQuality": "Qualité & Architecture du Code",
+          "codeQualityDesc": "Refactorisation nécessaire, modularité, conformité aux conventions ou tests manquants.",
+          "designConformity": "Conformité Design & UI/UX",
+          "designConformityDesc": "Écarts par rapport à la maquette Figma, comportement responsive ou accessibilité.",
+          "securityPerformance": "Sécurité & Performance",
+          "securityPerformanceDesc": "Temps de chargement excessif, gestion d'erreurs ou vulnérabilité identifiée.",
+          "missingRequirements": "Exigences du Cahier des Charges Manquantes",
+          "missingRequirementsDesc": "Fonctionnalités convenues dans le jalon non implémentées ou incomplètes.",
+          "documentation": "Documentation & Livrables Techniques",
+          "documentationDesc": "Instructions de déploiement, variables d'environnement ou documentation d'API absentes."
+        },
+        "expectedDetailsLabel": "Détails précis de l'ajustement attendu :",
+        "detailsPlaceholder": "Ex: Le bouton de validation sur mobile (écran < 375px) déborde du conteneur...",
+        "generalCommentLabel": "Commentaire Général & Contexte Additionnel (Optionnel)",
+        "generalCommentPlaceholder": "Consignes globales ou liens vers des ressources utiles...",
+        "cancel": "Annuler",
+        "submitting": "Envoi en cours...",
+        "submit": "Transmettre la Demande de Révision",
+        "errorSelectCriterion": "Veuillez sélectionner au moins un critère de révision précis.",
+        "errorMinCharacters": "Veuillez fournir une explication détaillée d'au moins 10 caractères pour : \"{criterion}\"."
+      },
+      "reviewCanvas": {
+        "title": "Canevas de Revue Visuelle",
+        "toResolve": "{count} à traiter",
+        "prevPage": "Page précédente (Flèche gauche)",
+        "pageIndicator": "Page {current} sur {total}",
+        "nextPage": "Page suivante (Flèche droite)",
+        "zoomOut": "Zoom arrière (-)",
+        "zoomIn": "Zoom avant (+)",
+        "resetZoom": "Réinitialiser zoom 100% (0)",
+        "hideResolved": "Masquer Résolues",
+        "showAll": "Afficher Tout",
+        "pinModeActive": "Mode Épingles Actif",
+        "activatePinMode": "Activer Mode Annotation",
+        "requestRevisions": "Demander Révisions",
+        "pdfDocument": "Document PDF : {name}",
+        "pdfInstructions": "Le document est disponible pour inspection interactive. Cliquez sur le canevas pour déposer des annotations précises.",
+        "openPdfFullscreen": "Ouvrir le PDF en plein écran",
+        "previewTitle": "Aperçu du Livrable de Jalon #{milestoneId}",
+        "clickToAddPin": "💡 Cliquez n'importe où sur cette zone pour ajouter une épingle d'ajustement.",
+        "pinHeader": "Épingle #{index} • {author}",
+        "resolved": "Résolu",
+        "markResolved": "Marquer résolu",
+        "statusResolved": "✓ Résolue",
+        "statusPending": "⏳ En attente",
+        "deletePin": "Supprimer",
+        "newAnnotation": "Nouvelle Annotation",
+        "annotationPlaceholder": "Décrivez précisément l'ajustement requis à cet endroit...",
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "annotationsList": "Liste des Annotations ({count})",
+        "noAnnotationsTitle": "Aucune annotation",
+        "noAnnotationsDesc": "Cliquez sur l'aperçu du livrable pour pointer des corrections spécifiques.",
+        "reviewTipTitle": "Astuce Revue :",
+        "reviewTipDesc": "Chaque annotation conserve ses coordonnées relatives exactes pour faciliter le travail du freelance."
+      }
+    }
+  },
+  "freelancers": {
+    "list": {
+      "badgePremium": "Pool de Talents Premium",
+      "badgeBrowse": "Parcourir Meilleurs Talents",
+      "title": "Trouvez Votre",
+      "titleHighlight": "Freelancer Idéal",
+      "description": "Connectez-vous avec les meilleurs talents freelance d'Algérie.\nParcourez les professionnels vérifiés à travers toutes compétences et industries.",
+      "freelancersCount": "Freelancers",
+      "projectsCompleted": "Projets Terminés",
+      "searchPlaceholder": "Recherchez freelancers par compétences, localisation, ou nom...",
+      "searchButton": "Rechercher",
+      "searching": "Recherche en cours...",
+      "searchTry": "Essayez :",
+      "filtersSorting": "Filtres & Tri",
+      "filtersActive": "Actif",
+      "browseByCategory": "Parcourir par Catégorie",
+      "browseByCategoryDesc": "Trouvez des freelancers spécialisés dans des compétences et industries spécifiques",
+      "allFreelancers": "Tous Freelancers",
+      "webDevelopment": "Développement Web",
+      "uiUxDesign": "Design UI/UX",
+      "mobileApps": "Applications Mobiles",
+      "dataScience": "Science des Données",
+      "devopsCloud": "DevOps et Cloud",
+      "digitalMarketing": "Marketing Digital",
+      "contentWriting": "Rédaction de Contenu",
+      "availableFreelancers": "Freelancers Disponibles",
+      "showingCategory": "Affichage de {count} freelancers {category}",
+      "showingTotal": "Affichage de {showing} sur {total} freelancers",
+      "sortBy": "Trier par :",
+      "sortRelevance": "Pertinence",
+      "sortRating": "Meilleure Note",
+      "sortProjects": "Plus de Projets",
+      "sortRate": "Taux Horaire",
+      "sortTrust": "Score Confiance",
+      "sortNewest": "Plus Récents",
+      "viewGrid": "Grille",
+      "viewList": "Liste",
+      "activeFilters": "Filtres Actifs",
+      "activeFiltersCount": "{count}",
+      "clearAll": "Tout Effacer",
+      "filterSkills": "Compétences : {skills}",
+      "filterRate": "Taux : {min} - {max} DA",
+      "filterLocation": "Localisation : {location}",
+      "filterPhoneVerified": "Téléphone Vérifié",
+      "filterHasCertifications": "A des Certifications",
+      "filterMinProjects": "Projets Min : {count}+",
+      "filterTrustScore": "Score Confiance : {score}%+",
+      "sortedBy": "Trié par : {sort}",
+      "filtersPanel": {
+        "title": "Filtres & Tri",
+        "sortBy": "Trier Par",
+        "skills": "Compétences",
+        "clearAll": "Tout effacer",
+        "showingSkills": "Affichage de {showing} sur {total} compétences. Recherchez des compétences spécifiques ci-dessus.",
+        "hourlyRate": "Taux Horaire (DA)",
+        "minimum": "Minimum",
+        "maximum": "Maximum",
+        "location": "Localisation",
+        "locationPlaceholder": "Ville ou pays...",
+        "verificationRequirements": "Exigences Vérification",
+        "phoneVerifiedOnly": "Téléphone Vérifié Uniquement",
+        "hasCertifications": "A des Certifications",
+        "minCompletedProjects": "Projets Terminés Minimum",
+        "minTrustScore": "Score Confiance Minimum",
+        "viewMode": "Mode Affichage",
+        "resetAll": "Tout Réinitialiser",
+        "applyFilters": "Appliquer Filtres",
+        "applying": "Application en cours..."
+      },
+      "mostInDemandSkills": "Compétences les Plus Demandées",
+      "mostInDemandSkillsDesc": "Compétences actuellement tendance parmi les freelancers algériens",
+      "skillFreelancers": "{count} freelances disponibles",
+      "popularSkills": "Compétences populaires (affichage de {showing} sur {total})",
+      "viewAllSkills": "Voir Toutes {count} Compétences",
+      "clearSkills": "Effacer les Compétences",
+      "whyChooseTitle": "Pourquoi Choisir des Freelancers Algériens ?",
+      "whyChooseDesc": "Découvrez les avantages uniques de travailler avec des talents d'Algérie",
+      "benefits": {
+        "culturalUnderstanding": {
+          "title": "Compréhension Culturelle",
+          "desc": "Langue et contexte culturel partagés pour une meilleure communication et collaboration."
+        },
+        "timeZone": {
+          "title": "Avantage Fuseau Horaire",
+          "desc": "Fuseaux horaires proches pour collaboration en temps réel avec clients européens et africains."
+        },
+        "costEffective": {
+          "title": "Rentable",
+          "desc": "Travail de haute qualité à des tarifs compétitifs par rapport aux marchés internationaux."
+        },
+        "verifiedTalent": {
+          "title": "Talent Vérifié",
+          "desc": "Tous les freelancers vérifiés avec confirmation téléphone et identité."
+        }
+      },
+      "cta": {
+        "title": "Prêt à Trouver Votre Freelancer Idéal ?",
+        "description": "Rejoignez des milliers d'entreprises ayant trouvé le succès avec des talents algériens. Créez un compte pour commencer à embaucher aujourd'hui.",
+        "signUpFree": "Inscription Gratuite",
+        "signInToHire": "Connectez-vous pour Embaucher"
+      },
+      "errors": {
+        "loadError": "Échec du chargement des données initiales. Veuillez actualiser la page.",
+        "freelancersError": "Échec du chargement des freelancers. Veuillez réessayer.",
+        "tryAgain": "Réessayer"
+      },
+      "noResults": {
+        "title": "Aucun Freelancer Trouvé",
+        "description": "Nous n'avons trouvé aucun freelanceur correspondant à vos critères de recherche. Essayez d'ajuster vos filtres ou termes de recherche.",
+        "resetFilters": "Réinitialiser Tous Filtres",
+        "adjustFilters": "Ajuster Filtres"
+      },
+      "pagination": {
+        "showing": "Affichage",
+        "to": "à",
+        "of": "sur",
+        "freelancers": "freelancers",
+        "page": "Page",
+        "ofPages": "sur"
+      },
+      "loading": {
+        "freelancers": "Chargement Freelancers...",
+        "initialData": "Chargement données initiales...",
+        "searching": "Recherche en cours...",
+        "applyingFilters": "Application filtres en cours..."
+      }
+    },
+    "detail": {
+      "meta": {
+        "title": "{name} - Profil Freelancer | Podacium",
+        "description": "Voir le profil freelance de {name} sur Podacium. Voir compétences, portfolio, avis et embauchez pour vos projets."
+      },
+      "breadcrumb": {
+        "hub": "Hub",
+        "freelancers": "Freelancers",
+        "profile": "Profil"
+      },
+      "header": {
+        "verified": "Vérifié",
+        "locationNotSpecified": "Localisation non spécifiée"
+      },
+      "stats": {
+        "avgRating": "Note Moy.",
+        "avgRatingTooltip": "Note moyenne client",
+        "projects": "Projets",
+        "projectsTooltip": "Total projets terminés",
+        "onTimeDelivery": "À Temps",
+        "onTimeDeliveryTooltip": "Projets livrés à temps",
+        "certificates": "Certificats",
+        "certificatesTooltip": "Certificats professionnels obtenus",
+        "high": "Élevé",
+        "onTime": "À Temps"
+      },
+      "tabs": {
+        "overview": "Aperçu",
+        "portfolio": "Portfolio",
+        "experience": "Expérience",
+        "reviews": "Avis"
+      },
+      "sections": {
+        "aboutMe": {
+          "title": "À Propos de Moi",
+          "defaultBio": "Bonjour, je suis {name}, {title} passionné."
+        },
+        "skills": {
+          "title": "Compétences & Expertise",
+          "description": "Technologies et outils principaux avec lesquels je travaille",
+          "noSkills": "Aucune compétence listée encore."
+        },
+        "portfolio": {
+          "title": "Projets Récents",
+          "description": "Projets récents sur lesquels j'ai travaillé"
+        },
+        "experience": {
+          "title": "Expérience",
+          "description": "Expérience professionnelle et parcours",
+          "professionalSummary": "Résumé Professionnel",
+          "projectsCompleted": "Projets Terminés",
+          "certifications": "Certifications",
+          "trustScore": "Score Confiance"
+        },
+        "reviews": {
+          "title": "Avis et Retours",
+          "description": "Ce que les autres clients disent de leur travail avec {name}"
+        }
+      },
+      "sidebars": {
+        "verification": {
+          "title": "Vérification",
+          "phoneVerified": "Téléphone Vérifié",
+          "certificatesCount": "{count} Certificats",
+          "verified": "Vérifié",
+          "notVerified": "Non Vérifié"
+        },
+        "availability": {
+          "title": "Disponibilité"
+        },
+        "contact": {
+          "title": "Contact"
+        }
+      },
+      "buttons": {
+        "hireName": "Embaucher {name}",
+        "sendMessage": "Envoyer Message",
+        "hireNow": "Embaucher Maintenant",
+        "viewDetails": "Voir Détails",
+        "processing": "Traitement en cours..."
+      },
+      "actions": {
+        "viewDetails": "Voir Détails"
+      },
+      "availability": {
+        "available": "Disponible pour travail",
+        "busy": "Occupé",
+        "away": "Absent",
+        "offline": "Hors Ligne",
+        "availableForNewProjects": "Disponible pour nouveaux projets"
+      },
+      "projectsCompleted": "{count} projets terminés",
+      "certificatesCount": "{count} Certificats",
+      "defaultTitle": "Freelancer Professionnel",
+      "titles": {
+        "dataAnalyst": "Analyste Données",
+        "frontendDeveloper": "Développeur Frontend",
+        "backendDeveloper": "Développeur Backend",
+        "fullStackDeveloper": "Développeur Full Stack",
+        "uiUxDesigner": "Designer UI/UX",
+        "mobileDeveloper": "Développeur Mobile"
+      },
+      "tooltips": {
+        "shareProfile": "Partager profil",
+        "saveToFavorites": "Sauvegarder favoris"
+      },
+      "contactModal": {
+        "title": "Contacter {name}",
+        "messageLabel": "Votre Message",
+        "messagePlaceholder": "Bonjour {name}, je voudrais discuter d'un projet...",
+        "budgetLabel": "Budget",
+        "budgetPlaceholder": "ex : 1 000 - 2 000 $",
+        "timelineLabel": "Calendrier",
+        "timelinePlaceholder": "ex : 2-4 semaines",
+        "cancel": "Annuler",
+        "sendMessage": "Envoyer Message"
+      },
+      "errors": {
+        "profileUnavailable": "Profil Indisponible",
+        "profileUnavailableDesc": "Nous n'avons pas pu trouver le profil freelanceur que vous recherchez. Ceci pourrait être dû à :",
+        "reason1": "Le profil a été supprimé/rendu privé",
+        "reason2": "Problème temporaire avec notre service",
+        "reason3": "L'URL pourrait être incorrecte ou obsolète",
+        "browseFreelancers": "Parcourir Meilleurs Freelancers",
+        "exploreTalentPool": "Explorer Pool Talents",
+        "tryLoadingAgain": "Essayer Chargement Nouveau",
+        "refreshProfile": "Actualiser Profil",
+        "needHelp": "Besoin d'Aide ?",
+        "getSupport": "Obtenir Support",
+        "searchFreelancers": "Rechercher Freelancers"
+      },
+      "emptyStates": {
+        "noProjects": {
+          "title": "Aucun Projet Listé",
+          "description": "{name} n'a pas encore ajouté de projets à son portfolio."
+        },
+        "noReviews": {
+          "title": "Aucun Avis Encore",
+          "description": "{name} n'a pas encore reçu d'avis."
+        }
+      },
+      "share": {
+        "title": "{name} - Profil Freelancer",
+        "text": "Consultez le profil de {name} sur Podacium"
+      },
+      "cta": {
+        "title": "Prêt à Travailler avec {name} ?",
+        "description": "Envoyez un message pour discuter de vos exigences projet ou embauchez directement pour commencer."
+      }
+    },
+    "reviews": {
+      "title": "Avis et Retours",
+      "leaveReview": "Laisser un Avis",
+      "editReview": "Modifier l'Avis",
+      "noReviews": "Aucun avis pour le moment.",
+      "blindReview": "Évaluation à l'aveugle - Cachée jusqu'à ce que vous laissiez un avis ou après 14 jours.",
+      "rating": "Note Globale",
+      "comment": "Commentaire",
+      "submit": "Soumettre l'Avis",
+      "submitting": "Soumission...",
+      "saveChanges": "Enregistrer",
+      "appeal": "Contester cet Avis",
+      "appealTitle": "Soumettre une Contestation",
+      "appealReason": "Raison de la contestation",
+      "appealReasonPlaceholder": "Expliquez pourquoi cet avis enfreint les règles ou est factuellement incorrect...",
+      "submitAppeal": "Soumettre la Contestation",
+      "appealSubmitted": "Votre contestation a été soumise.",
+      "invalidRating": "Veuillez sélectionner une note globale valide.",
+      "submitFailed": "Échec de la soumission de l'avis.",
+      "commentPlaceholder": "Partagez votre expérience de travail sur ce contrat...",
+      "cancel": "Annuler",
+      "anonymousUser": "Utilisateur Anonyme",
+      "edited": "(Modifié)",
+      "redactedMessage": "Cet avis a été supprimé par les administrateurs.",
+      "underAppealMessage": "Cet avis est actuellement en cours de contestation.",
+      "timeAgo": {
+        "justNow": "à l'instant",
+        "minutes": "il y a {count} minute",
+        "minutes_plural": "il y a {count} minutes",
+        "hours": "il y a {count} heure",
+        "hours_plural": "il y a {count} heures",
+        "days": "il y a {count} jour",
+        "days_plural": "il y a {count} jours",
+        "months": "il y a {count} mois",
+        "months_plural": "il y a {count} mois",
+        "years": "il y a {count} an",
+        "years_plural": "il y a {count} ans"
+      },
+      "reviewSubmitted": "Merci ! Votre avis a été soumis.",
+      "reviewEdited": "Votre avis a été mis à jour.",
+      "editWindowExpired": "La période de 48 heures pour modifier cet avis a expiré.",
+      "clientSubRatings": {
+        "requirements_clarity": "Clarté des Exigences",
+        "communication": "Communication",
+        "fairness": "Équité Exigences",
+        "payment_promptness": "Rapidité Paiement"
+      },
+      "freelancerSubRatings": {
+        "work_quality": "Qualité du Travail",
+        "communication": "Communication",
+        "timeliness": "Respect des Délais",
+        "professionalism": "Professionnalisme"
+      }
+    }
+  },
+  "projects": {
+    "list": {
+      "badgeBrowse": "Parcourir Projets",
+      "title": "Trouvez Votre",
+      "titleHighlight": "Projet Idéal",
+      "description": "Découvrez les projets freelance de Podacium correspondant à vos compétences.",
+      "filterTip": "Filtrez par catégorie, budget et calendrier pour trouver la correspondance parfaite.",
+      "searchPlaceholder": "Recherchez par titre projet, compétences, ou mots-clés...",
+      "totalProjects": "Projets Totaux",
+      "open": "Ouverts",
+      "inProgress": "En Cours",
+      "completed": "Terminés",
+      "signUpToApply": "Inscrivez-vous pour Postuler",
+      "filtersTitle": "Filtres",
+      "clearAll": "Tout Effacer",
+      "statusFilterTitle": "Statut Projet",
+      "statusOpen": "Ouvert",
+      "statusInProgress": "En Cours",
+      "statusCompleted": "Terminé",
+      "skillsFilterTitle": "Compétences",
+      "moreSkills": "+{count} compétences supplémentaires",
+      "applyFilters": "Appliquer Filtres",
+      "showFilters": "Afficher Filtres",
+      "availableProjects": "Projets Disponibles",
+      "showingAll": "Affichage tous {count} projets",
+      "showingFiltered": "Affichage de {showing} sur {total} projets",
+      "newProject": "Nouveau Projet",
+      "signUpToCreate": "Inscrivez-vous pour Créer",
+      "noProjectsFound": "Aucun Projet Trouvé",
+      "noProjectsSearch": "Aucun projet ne correspond à vos critères de recherche actuels. Essayez d'ajuster vos filtres ou termes de recherche.",
+      "noProjectsAvailable": "Il n'y a aucun projet disponible pour le moment. Revenez plus tard pour de nouvelles opportunités.",
+      "clearFilters": "Effacer Filtres",
+      "createFirstProject": "Créer Premier Projet",
+      "signUpToCreateProjects": "Inscrivez-vous pour Créer Projets",
+      "loadMoreProjects": "Charger Plus Projets",
+      "activeFiltersTitle": "Filtres Actifs",
+      "noFiltersApplied": "Aucun filtre appliqué",
+      "tipsTitle": "Conseils pour Trouver de Super Projets",
+      "tipsDescription": "Tirez le meilleur parti de vos opportunités freelance avec ces conseils d'expert",
+      "expertAdvice": "Conseil Expert",
+      "tip1Title": "Ciblez Vos Compétences",
+      "tip1Description": "Utilisez des filtres pour trouver des projets correspondant exactement à votre expertise. Les clients préfèrent les spécialistes démontrant une expérience pertinente.",
+      "tip2Title": "Créez des Propositions Solides",
+      "tip2Description": "Personnalisez chaque proposition. Expliquez comment vos compétences spécifiques résolvent le problème client et ce qui fait de vous le meilleur choix.",
+      "tip3Title": "Vérifiez l'Historique Client",
+      "tip3Description": "Examinez profils clients, projets précédents et évaluations. Les clients établis avec de bonnes évaluations sont des partenaires plus fiables.",
+      "ctaTitle": "Prêt à Commencer Votre Aventure Freelance ?",
+      "ctaDescription": "Inscrivez-vous maintenant pour postuler à des projets, créer vos propres projets, bâtir votre portfolio et développer votre carrière avec les meilleurs freelancers algériens.",
+      "ctaFeature1": "Parcourir tous projets",
+      "ctaFeature2": "Soumettre propositions",
+      "ctaFeature3": "Créer projets",
+      "ctaFeature4": "Suivre progression",
+      "signUpFree": "Inscription Gratuite",
+      "signInToAccess": "Connectez-vous pour Accéder"
+    },
+    "new": {
+      "meta": {
+        "title": "Créer Nouveau Projet | Hub Freelance Podacium",
+        "description": "Publiez vos exigences projet et trouvez le freelanceur idéal sur la première plateforme freelance d'Algérie."
+      },
+      "header": {
+        "badge": "Créer Projet",
+        "titleLine1": "Créez Votre",
+        "titleHighlight": "Prochain Projet",
+        "descriptionLine1": "Publiez vos exigences projet et trouvez le freelanceur idéal pour vos besoins.",
+        "descriptionLine2": "Soyez précis pour attirer les meilleurs talents sur Podacium."
+      },
+      "form": {
+        "title": {
+          "label": "Titre Projet",
+          "placeholder": "Entrez un titre clair et descriptif pour votre projet",
+          "description": "Soyez précis sur ce dont vous avez besoin. Exemple : 'Développement App Mobile pour Plateforme E-commerce'"
+        },
+        "description": {
+          "label": "Description Projet",
+          "placeholder": "Décrivez votre projet en détail. Quels sont les exigences, objectifs et livrables ?",
+          "description": "Incluez exigences techniques, calendrier prévu et autres détails pertinents. Max 5000 caractères."
+        },
+        "skills": {
+          "label": "Compétences Requises",
+          "description": "Ajoutez les compétences requises pour ce projet. Appuyez sur Entrée ou virgule pour ajouter une compétence.",
+          "placeholder": "Ajouter compétences (ex : React, Node.js, Design UI/UX)",
+          "popularSkills": "Compétences Populaires",
+          "popularSkillsList": {
+            "1": "React",
+            "2": "Node.js",
+            "3": "Python",
+            "4": "UI/UX",
+            "5": "App Mobile",
+            "6": "Design Web",
+            "7": "Base Données",
+            "8": "DevOps"
+          },
+          "removeSkill": "Supprimer {skill}"
+        }
+      },
+      "budget": {
+        "title": "Plage Budget",
+        "minPlaceholder": "Minimum",
+        "maxPlaceholder": "Maximum",
+        "description": "Laisser vide pour budget négociable"
+      },
+      "tips": {
+        "title": "Conseils pour Obtenir de Meilleures Propositions",
+        "list": {
+          "1": "Soyez précis sur exigences et livrables",
+          "2": "Définissez une plage budget réaliste pour travail qualité",
+          "3": "Listez toutes compétences requises pour attirer freelancers qualifiés",
+          "4": "Mentionnez clairement vos attentes calendrier"
+        }
+      },
+      "buttons": {
+        "backToProjects": "Retour Projets",
+        "cancel": "Annuler",
+        "saveDraft": "Sauvegarder Brouillon",
+        "createProject": "Créer Projet",
+        "creating": "Création en cours..."
+      },
+      "infoCards": {
+        "securePlatform": {
+          "title": "Plateforme Sécurisée",
+          "description": "Toutes les fonctionnalités du marché sont achetées avec PodaPoints. Pas de commissions de plateforme — vous ne payez que pour les fonctionnalités que vous utilisez activement."
+        },
+        "qualityFreelancers": {
+          "title": "Freelancers Qualitatifs",
+          "description": "Accès aux meilleurs freelancers vérifiés d'Algérie avec antécédents prouvés et compétences vérifiées par Podacium."
+        },
+        "directCommunication": {
+          "title": "Communication Directe",
+          "description": "Communiquez directement avec les freelancers, suivez progression et gérez livrables en un seul endroit."
+        }
+      },
+      "support": {
+        "title": "Besoin d'Aide Création Projet ?",
+        "description": "Notre équipe est là pour vous aider à rédiger la description projet parfaite et trouver les meilleurs talents.",
+        "liveSupport": {
+          "title": "Support Direct",
+          "description": "Chattez avec notre équipe support",
+          "button": "Démarrer Chat Direct"
+        },
+        "templates": {
+          "title": "Modèles Projet",
+          "description": "Utilisez nos modèles éprouvés",
+          "button": "Parcourir Modèles"
+        }
+      },
+      "success": {
+        "title": "Succès !",
+        "created": "Projet créé avec succès ! Redirection...",
+        "savedDraft": "Projet sauvegardé brouillon. Vous pouvez continuer édition plus tard."
+      },
+      "errors": {
+        "title": "Erreur",
+        "accessDeniedTitle": "Accès Refusé",
+        "accessDeniedMessage": "Vous devez être connecté en tant que client pour créer des projets.",
+        "accessFailed": "Échec vérification permissions accès. Veuillez réessayer.",
+        "createFailed": "Échec création projet. Veuillez réessayer.",
+        "validationFix": "Veuillez corriger les erreurs validation ci-dessous."
+      },
+      "postGate": {
+        "title": "Aucun Post Projet Restant",
+        "description": "Achetez un post projet pour continuer. 200 PodaPoints par post.",
+        "buyButton": "Acheter des Posts Projet",
+        "remaining": "{count} posts projet restants",
+        "lastPost": "Ceci est votre dernier post projet",
+        "insufficient": "Aucun post projet restant. Achetez-en plus depuis Facturation."
+      },
+      "validation": {
+        "titleRequired": "Titre projet requis",
+        "titleMinLength": "Titre doit avoir au moins 5 caractères",
+        "titleMaxLength": "Titre doit avoir moins de 200 caractères",
+        "descriptionMaxLength": "Description doit avoir moins de 5000 caractères",
+        "skillsRequired": "Au moins une compétence requise",
+        "skillsMaxLength": "Maximum 20 compétences autorisées",
+        "budgetMinNegative": "Budget minimum ne peut être négatif",
+        "budgetMaxNegative": "Budget maximum ne peut être négatif",
+        "budgetMaxLessThanMin": "Budget maximum doit être supérieur au minimum"
+      }
+    },
+    "detail": {
+      "meta": {
+        "title": "{title} - Détails Projet | Hub Freelance Podacium",
+        "description": "Voir détails projet, exigences et postuler en freelanceur ou gérer propositions en client sur la première plateforme freelance d'Algérie."
+      },
+      "errors": {
+        "loadError": "Échec chargement détails projet. Veuillez réessayer.",
+        "loadErrorTitle": "Échec Chargement Projet",
+        "submitError": "Échec soumission proposition. Veuillez réessayer.",
+        "searchError": "Échec recherche. Veuillez réessayer."
+      },
+      "empty": {
+        "notFoundTitle": "Projet Non Trouvé",
+        "notFoundDescription": "Le projet que vous recherchez n'existe pas ou a été supprimé."
+      },
+      "sections": {
+        "projectDetails": "Détails Projet",
+        "requiredSkills": "Compétences Requises",
+        "skillsDescription": "Compétences nécessaires pour ce projet",
+        "applicationStatus": "Statut Votre Candidature",
+        "clientInfo": "Informations Client",
+        "projectOwner": "Propriétaire Projet",
+        "projectTimeline": "Calendrier Projet",
+        "quickActions": "Actions Rapides",
+        "recentProposals": "Propositions Récentes"
+      },
+      "stats": {
+        "status": "Statut",
+        "skillsRequired": "Compétences Requises",
+        "skills": "compétences",
+        "posted": "Publié",
+        "proposals": "Propositions",
+        "received": "reçues",
+        "ownersOnly": "Visible propriétaires seulement"
+      },
+      "status": {
+        "open": "Ouvert",
+        "in_progress": "En Cours",
+        "completed": "Terminé",
+        "cancelled": "Annulé"
+      },
+      "buttons": {
+        "backToProjects": "Retour Projets",
+        "applyToProject": "Postuler au Projet",
+        "viewProposals": "Voir Propositions ({count})",
+        "signUpToApply": "Inscrivez-vous pour Postuler",
+        "viewContract": "Voir Contrat",
+        "applyNow": "Postuler Maintenant",
+        "reviewProposals": "Revoir Propositions ({count})",
+        "browseMoreProjects": "Parcourir Plus Projets",
+        "viewClientProfile": "Voir Profil Client",
+        "viewAll": "Voir Tout",
+        "tryAgain": "Réessayer",
+        "browseProjects": "Parcourir Projets",
+        "browseAvailableProjects": "Parcourir Projets Disponibles",
+        "signIn": "Se Connecter",
+        "browseFreelancers": "Parcourir les Freelancers"
+      },
+      "noDescription": "Aucune description fournie.",
+      "noDetailedDescription": "Aucune description détaillée fournie.",
+      "clientInfoNotAvailable": "Informations client non disponibles",
+      "phoneVerified": "Téléphone Vérifié",
+      "statusLabel": "Statut",
+      "postedLabel": "Publié",
+      "lastUpdatedLabel": "Dernière Mise à Jour",
+      "postedOn": "Publié le {date}",
+      "proposalSubmitted": "Proposition Soumise",
+      "proposalPending": "Proposition En Attente",
+      "proposalRejected": "Proposition Rejetée",
+      "proposalsReceived": "{count} proposition(s) reçue(s)",
+      "anonymous": "Anonyme",
+      "notAFreelancer": "Pas un Freelancer",
+      "onlyFreelancersCanApply": "Seuls les freelancers peuvent postuler aux projets",
+      "authenticationRequired": "Authentification Requise",
+      "signInToApply": "Connectez-vous pour postuler à ce projet",
+      "notEligibleToApply": "Non Éligible pour Postuler",
+      "projectNotOpen": "Le projet n'est pas ouvert aux candidatures",
+      "ownProject": "Vous ne pouvez pas postuler à votre propre projet",
+      "noPriceSet": "Aucun prix défini",
+      "proposalModal": {
+        "title": "Soumettre Proposition",
+        "applyFor": "Postuler pour : {title}",
+        "messageLabel": "Message Proposition",
+        "messagePlaceholder": "Décrivez votre approche, expérience pertinente et pourquoi vous êtes le meilleur choix pour ce projet...",
+        "messageHelp": "Soyez précis sur comment vous apporterez de la valeur au client",
+        "budgetLabel": "Budget Proposé (Optionnel)",
+        "budgetHelp": "En centimes, écrivez 1000000 centimes par exemple au lieu de 10000.00 DZD.",
+        "timelineLabel": "Calendrier Estimé (Jours)",
+        "cancel": "Annuler",
+        "submitting": "Soumission en cours...",
+        "submitProposal": "Soumettre Proposition"
+      },
+      "projectNotAcceptingProposals": "Ce projet n'accepte pas de nouvelles propositions",
+      "cannotApply": "Vous ne pouvez pas postuler à ce projet"
+    },
+    "proposals": {
+      "title": "Propositions pour \"{title}\"",
+      "description": "Revoir et gérer toutes propositions soumises pour votre projet",
+      "anonymousFreelancer": "Anonyme",
+      "noBioProvided": "Aucune biographie fournie",
+      "moreSkills": "+{count} supplémentaires",
+      "proposedBudget": "Budget Proposé",
+      "currencyDZD": "DZD{amount}",
+      "submittedOn": "Soumis le {date}",
+      "proposalMessage": "Message Proposition",
+      "freelancerDetails": "Détails Freelancer",
+      "phoneVerified": "Téléphone Vérifié",
+      "certificatesCount": "{count} certificat(s)",
+      "viewFullProfile": "Voir Profil Complet",
+      "freelancer": "Freelancer",
+      "actions": "Actions",
+      "acceptedMessage": "Vous avez accepté cette proposition. Un contrat a été créé.",
+      "rejectedMessage": "Cette proposition a été rejetée.",
+      "status": {
+        "pending": "En Attente",
+        "accepted": "Accepté",
+        "rejected": "Rejeté"
+      },
+      "buttons": {
+        "acceptProposal": "Accepter Proposition",
+        "reject": "Rejeter",
+        "refresh": "Actualiser",
+        "viewProject": "Voir Projet",
+        "tryAgain": "Réessayer",
+        "backToProject": "Retour Projet",
+        "showAll": "Afficher Toutes Propositions",
+        "browseAllProjects": "Parcourir Tous les Projets"
+      },
+      "navigation": {
+        "backToProject": "Retour Projet"
+      },
+      "stats": {
+        "totalProposals": "Propositions Totales",
+        "pending": "En Attente",
+        "accepted": "Acceptées",
+        "rejected": "Rejetées"
+      },
+      "filters": {
+        "all": "Toutes",
+        "pending": "En Attente",
+        "accepted": "Acceptées",
+        "rejected": "Rejetées"
+      },
+      "empty": {
+        "noProposals": "Aucune Proposition Encore",
+        "noProposalsDescription": "Personne n'a soumis de proposition pour votre projet encore. Partagez votre projet pour attirer des freelancers.",
+        "noFilteredProposals": "Aucune proposition {filter}",
+        "noFilteredProposalsDescription": "Il n'y a aucune proposition {filter} à afficher. Essayez un filtre différent."
+      },
+      "errors": {
+        "loadError": "Échec chargement propositions",
+        "acceptError": "Échec acceptation proposition",
+        "rejectError": "Échec rejet proposition",
+        "failedToLoad": "Échec Chargement Propositions",
+        "accessDenied": "Accès Refusé",
+        "accessDeniedDescription": "Vous n'avez pas la permission de voir les propositions pour ce projet."
+      },
+      "tips": {
+        "title": "Conseils pour Examiner Propositions",
+        "badge": "Conseil Expert",
+        "reviewMessages": {
+          "title": "Examinez Messages Soigneusement",
+          "description": "Recherchez propositions démontrant compréhension exigences projet et fournissant solutions spécifiques."
+        },
+        "checkExperience": {
+          "title": "Vérifiez Expérience",
+          "description": "Examinez profils freelancers, certificats et travaux passés pour s'assurer expérience pertinente."
+        },
+        "respondPromptly": {
+          "title": "Répondez Promptement",
+          "description": "Bons freelancers ont opportunités multiples. Répondez propositions prometteuses sous 1-2 jours."
+        }
+      },
+      "modals": {
+        "accept": {
+          "title": "Accepter Proposition",
+          "description": "Créer contrat avec {name}",
+          "contractTerms": "Termes Contrat",
+          "termsPlaceholder": "Spécifiez termes contrat...",
+          "termsHelp": "Ces termes feront partie contrat légalement contraignant",
+          "contractAmount": "Montant Contrat (Optionnel)",
+          "amountPlaceholder": "Laisser vide pour utiliser montant proposition",
+          "amountHelp": "En centimes (100 = DZD1.00). Laisser vide pour utiliser montant proposition.",
+          "startDate": "Date Début (Optionnel)",
+          "endDate": "Date Fin (Optionnel)",
+          "defaultTerms": "J'accepte travailler sur ce projet avec les termes proposés.",
+          "creatingContract": "Création Contrat en cours...",
+          "acceptAndCreate": "Accepter & Créer Contrat"
+        },
+        "reject": {
+          "title": "Rejeter Proposition",
+          "description": "Proposition de {name}",
+          "confirmTitle": "Êtes-vous sûr de vouloir rejeter cette proposition ?",
+          "confirmDescription": "Cette action ne peut être annulée. Le freelanceur sera notifié que sa proposition est rejetée.",
+          "rejecting": "Rejet en cours...",
+          "yesReject": "Oui, Rejeter Proposition"
+        },
+        "buttons": {
+          "cancel": "Annuler"
+        }
+      }
+    }
+  },
+  "proposals": {
+    "header": {
+      "badge": "Gestion Propositions",
+      "title": "Vos",
+      "titleHighlight": "Propositions",
+      "description": "Suivez, gérez et suivez toutes vos propositions soumises en un seul endroit"
+    },
+    "stats": {
+      "title": "Aperçu Propositions",
+      "description": "Suivez performance et métriques succès propositions",
+      "totalProposals": "Propositions Totales",
+      "pendingReview": "En Attente Revue",
+      "accepted": "Acceptées",
+      "rejected": "Rejetées",
+      "totalValue": "Valeur Totale",
+      "tooltips": {
+        "totalProposals": "Toutes propositions soumises",
+        "pendingReview": "Propositions attendant décision client",
+        "accepted": "Propositions converties en contrats",
+        "rejected": "Propositions refusées",
+        "totalValue": "Valeur totale propositions acceptées"
+      }
+    },
+    "sections": {
+      "proposalsList": {
+        "title": "Vos Propositions",
+        "description": "Gérez et suivez toutes propositions soumises"
+      },
+      "tips": {
+        "title": "Conseils & Meilleures Pratiques Propositions",
+        "description": "Améliorez taux succès propositions avec ces conseils experts",
+        "personalizeMessage": {
+          "title": "Personnalisez Votre Message",
+          "description": "Toujours adresser client par nom et référencer détails projet spécifiques. Montrez avoir lu et compris exigences."
+        },
+        "clearPricing": {
+          "title": "Tarification Claire",
+          "description": "Détailez tarification clairement. Expliquez inclus et justifiez tarifs avec expérience et valeur fournie."
+        },
+        "realisticTimeline": {
+          "title": "Calendrier Réaliste",
+          "description": "Fournissez calendrier réaliste avec jalons. Clients apprécient transparence sur attentes livrables."
+        }
+      }
+    },
+    "filters": {
+      "filterBy": "Filtrer par :",
+      "all": "Toutes",
+      "pending": "En Attente",
+      "accepted": "Acceptées",
+      "rejected": "Rejetées",
+      "activeFilter": "Propositions {status}",
+      "showingCount": "Affichage de {showing} sur {total} propositions",
+      "clear": "Effacer Filtre"
+    },
+    "search": {
+      "placeholder": "Recherchez propositions par titre projet, nom client, ou message..."
+    },
+    "buttons": {
+      "viewProject": "Voir Projet",
+      "withdraw": "Retirer",
+      "refresh": "Actualiser",
+      "refreshing": "Actualisation en cours...",
+      "findMoreProjects": "Trouver Plus Projets",
+      "viewAllProjects": "Voir Tous Projets",
+      "clearSearch": "Effacer Recherche",
+      "browseAllProjects": "Parcourir Tous Projets",
+      "findProjects": "Trouver Projets",
+      "goToHub": "Aller au Hub",
+      "updateProfile": "Mettre à Jour Profil",
+      "browseProjects": "Parcourir Projets",
+      "learnFreelancing": "Apprendre Freelance",
+      "cancel": "Annuler",
+      "confirmWithdraw": "Retirer la proposition"
+    },
+    "cta": {
+      "title": "Prêt à trouver plus d'opportunités ?",
+      "description": "Parcourez des centaines de projets passionnants et soumettez des propositions pour développer votre activité."
+    },
+    "status": {
+      "pending": "En Attente de Revue",
+      "accepted": "Acceptée",
+      "rejected": "Rejetée"
+    },
+    "emptyStates": {
+      "noMatching": {
+        "title": "Aucune Proposition Correspondante",
+        "description": "Aucune proposition trouvée correspondant à \"{query}\". Essayez d'ajuster termes recherche ou effacez recherche."
+      },
+      "noStatus": {
+        "title": "Aucune proposition {status}",
+        "description": "Vous n'avez aucune proposition {status} actuellement. Vérifiez autres statuts propositions ou parcourez nouveaux projets."
+      },
+      "noProposals": {
+        "title": "Aucune Proposition Encore",
+        "description": "Vous n'avez soumis aucune proposition encore. Commencez en parcourant projets disponibles et soumettant première proposition."
+      }
+    },
+    "permissionError": {
+      "accessRestricted": "Accès Restreint",
+      "title": "Accès Freelancer Requis",
+      "description": "Vous devez être inscrit en freelanceur pour voir et gérer propositions. Vous serez redirigé vers hub dans 5 secondes.",
+      "currentRole": "Rôle Actuel",
+      "notSet": "Non défini",
+      "hint": "Pour accéder propositions, vous avez besoin compte freelanceur. Contactez support si vous pensez erreur."
+    },
+    "errors": {
+      "sessionExpired": "Session expirée. Veuillez vous reconnecter.",
+      "failedToLoad": "Échec chargement propositions : {message}",
+      "genericError": "Échec chargement propositions. Veuillez réessayer.",
+      "withdrawFailed": "Échec retrait proposition. Veuillez réessayer."
+    },
+    "confirmations": {
+      "withdraw": "Êtes-vous sûr de vouloir retirer cette proposition ? Cette action ne peut être annulée.",
+      "withdrawTitle": "Retirer la proposition",
+      "withdrawDescription": "Êtes-vous sûr de vouloir retirer cette proposition ? Cette action est irréversible."
+    },
+    "success": {
+      "withdrawn": "Proposition retirée avec succès"
+    },
+    "currency": "DA",
+    "negotiable": "Négociable",
+    "untitledProject": "Projet Sans Titre",
+    "noMessage": "Aucun message proposition fourni",
+    "projectOwner": "Propriétaire Projet",
+    "submittedOn": "Soumis le"
+  },
+  "portfolioForm": {
+    "editTitle": "Modifier l'élément du portfolio",
+    "newTitle": "Nouvel élément du portfolio",
+    "titleLabel": "Titre *",
+    "titlePlaceholder": "Mon super projet",
+    "descLabel": "Description",
+    "descPlaceholder": "Décrivez votre travail...",
+    "tagsLabel": "Tags",
+    "tagsPlaceholder": "react, conception, web",
+    "tagsHint": "Séparés par des virgules",
+    "mediaUrlsLabel": "URLs des médias",
+    "mediaUrlsPlaceholder": "https://exemple.com/image.png, https://...",
+    "mediaUrlsHint": "URLs d'images ou vidéos séparées par des virgules",
+    "links": "Liens",
+    "urlPlaceholder": "https://...",
+    "labelPlaceholder": "Libellé (ex. Démo en direct)",
+    "removeLink": "Supprimer le lien",
+    "addLink": "Ajouter un lien",
+    "saveChanges": "Enregistrer les modifications",
+    "createItem": "Créer l'élément",
+    "saveError": "Échec de l'enregistrement de l'élément de portfolio. Veuillez réessayer.",
+    "cancel": "Annuler"
+  },
+  "portfolioGrid": {
+    "deleteConfirm": "Supprimer cet élément du portfolio ?",
+    "emptyTitle": "Aucun élément de portfolio pour l'instant",
+    "emptySubtitle": "Mettez en valeur votre travail en ajoutant votre premier projet.",
+    "addItem": "Ajouter un élément au portfolio",
+    "edit": "Modifier",
+    "delete": "Supprimer"
+  }
+}

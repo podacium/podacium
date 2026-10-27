@@ -1,0 +1,821 @@
+{
+  "compcourse": {
+    "accessControl": {
+      "contentLocked": "Contenu Verrouillé",
+      "lockedMessage": "Vous devez vous inscrire à ce cours pour accéder à ce contenu."
+    },
+    "analytics": {
+      "title": "Analytiques d'Apprentissage",
+      "subtitle": "Suivez votre progression et vos performances",
+      "updated": "Mis à jour à l'instant",
+      "lessonProgress": "Progression des Leçons",
+      "timeSpent": "Temps Passé",
+      "completion": "Achèvement",
+      "engagement": "Engagement",
+      "personalizedRecommendations": "Recommandations Personnalisées",
+      "recommendations": {
+        "focusAreas": "Domaines de Concentration",
+        "focusAreasSubtitle": "Basé sur les résultats des quiz",
+        "focusAreasDescription": "Revoyez les concepts des leçons pour une meilleure compréhension",
+        "studySchedule": "Planning d'Étude",
+        "studyScheduleSubtitle": "Apprentissage optimisé",
+        "studyScheduleDescription": "Étudiez 45 minutes par jour pour une meilleure rétention",
+        "nextSteps": "Prochaines Étapes",
+        "nextStepsSubtitle": "Continuez à apprendre",
+        "nextStepsDescription": "Complétez 2 leçons supplémentaires pour débloquer les sujets avancés"
+      },
+      "units": {
+        "lessons": "leçons",
+        "inProgress": "en cours"
+      }
+    },
+    "certificate": {
+      "title": "Plateforme d'Apprentissage Podacium",
+      "type": "Certificat d'Achèvement",
+      "presentedTo": "Ce certificat est fièrement présenté à",
+      "forCompleting": "pour avoir réussi à compléter le cours",
+      "withGrade": "avec une note finale de",
+      "duration": "Durée",
+      "completionDate": "Date d'Achèvement",
+      "certificateId": "ID du Certificat",
+      "instructor": "Instructeur",
+      "issuingAuthority": "Autorité Émettrice",
+      "verification": "Vérifiez ce certificat sur :",
+      "issuedOn": "Émis le",
+      "validIndefinitely": "Valable indéfiniment",
+      "verificationDescription": "Ce certificat peut être vérifié en ligne en utilisant l'ID du certificat ou l'URL de vérification.",
+      "verifyOnline": "Vérifier le Certificat en Ligne",
+      "aboutCertificate": "À propos de votre Certificat",
+      "certificateDetails": "Détails du Certificat",
+      "actions": {
+        "downloadPdf": "Télécharger PDF",
+        "printCertificate": "Imprimer le Certificat",
+        "shareAchievement": "Partager la Réussite"
+      },
+      "generating": "Génération du certificat...",
+      "generatingDescription": "Veuillez patienter pendant que nous préparons votre certificat d'achèvement.",
+      "generateError": "Échec de la génération du certificat. Veuillez réessayer."
+    },
+    "quiz": {
+      "loading": "Chargement du Quiz",
+      "loadingDescription": "Préparation de votre évaluation...",
+      "error": "Erreur du Quiz",
+      "error_submit": "Échec de l'envoi de l'évaluation. Veuillez réessayer.",
+      "error_start": "Échec du démarrage de l'évaluation. Veuillez réessayer.",
+      "tryAgain": "Réessayer",
+      "knowledgeCheck": "Vérification des Connaissances",
+      "description": "Testez votre compréhension du matériel avec ce quiz interactif.",
+      "questions": "Questions",
+      "totalPoints": "Points Totaux",
+      "timeLimit": "Limite de Temps",
+      "attemptsRemaining": "{count} tentatives restantes",
+      "startQuiz": "Commencer le Quiz",
+      "question": "Question {current} sur {total}",
+      "points": "{points} points attribués",
+      "checkAnswer": "Vérifier la Réponse",
+      "nextQuestion": "Question Suivante",
+      "finishQuiz": "Terminer le Quiz",
+      "finish": "Terminer",
+      "passed": "Quiz Réussi !",
+      "failed": "Quiz Non Réussi",
+      "passedMessage": "Félicitations ! Vous avez réussi le quiz.",
+      "failedMessage": "Vous devez obtenir au moins 70% pour réussir. Vous pouvez réessayer le quiz.",
+      "pointsScored": "Points Obtenus",
+      "percentage": "Pourcentage",
+      "passingScore": "70% (Réussite)",
+      "retryQuiz": "Réessayer le Quiz ({attempts} tentatives restantes)",
+      "reviewQuestions": "Réviser les Questions",
+      "questionReview": "Révision des Questions",
+      "questionNumber": "Question n° {number}",
+      "explanation": "Explication :",
+      "true": "Vrai",
+      "false": "Faux",
+      "fillBlankPlaceholder": "Tapez votre réponse ici...",
+      "noQuestions": "Aucune Question Disponible",
+      "noQuestionsDescription": "Ce quiz ne contient pas encore de questions."
+    },
+    "resources": {
+      "title": "Ressources de la Leçon",
+      "noResources": "Aucune Ressource Disponible",
+      "noResourcesDescription": "Les ressources seront ajoutées à cette leçon bientôt.",
+      "resourceCount": "{count} ressources",
+      "preview": "Aperçu",
+      "copyLink": "Copier le lien",
+      "download": "Télécharger",
+      "downloading": "Téléchargement en cours...",
+      "locked": "Verrouillé",
+      "downloadAll": "Télécharger Toutes les Ressources",
+      "downloadAllDescription": "Obtenez toutes les ressources de la leçon en un seul package",
+      "usageGuidelines": "Directives d'Utilisation",
+      "guidelines": [
+        "Les ressources sont destinées à un usage d'apprentissage personnel uniquement",
+        "Ne redistribuez pas et ne partagez pas les matériaux protégés par le droit d'auteur",
+        "Citez de manière appropriée si utilisé dans votre propre travail",
+        "Contactez le support pour les demandes de licence"
+      ]
+    },
+    "video": {
+      "loading": "Chargement de la vidéo...",
+      "fetchingDuration": "Récupération de la durée de la vidéo...",
+      "playbackError": "Erreur de Lecture",
+      "retry": "Réessayer",
+      "buffering": "Chargement en cours...",
+      "keyboardShortcuts": "Raccourcis Clavier",
+      "speed": "Vitesse",
+      "quality": "Qualité",
+      "autoAbr": "Automatique (ABR)",
+      "autoOriginal": "Automatique (HD Original)",
+      "speedBoost": "Accélération 2.0x",
+      "enableCaptions": "Activer les sous-titres",
+      "disableCaptions": "Désactiver les sous-titres",
+      "captionsLanguage": "Langue des sous-titres",
+      "pictureInPicture": "Image dans l'image",
+      "settingsTitle": "Paramètres de lecture",
+      "audioTrack": "Piste audio",
+      "theaterMode": "Mode cinéma",
+      "normalSpeed": "Normale (1.0x)",
+      "providers": {
+        "title": "Sélectionnez l'hébergeur vidéo",
+        "youtube": "YouTube (Gratuit Non Répertorié)",
+        "vimeo": "Vimeo (Non Répertorié)",
+        "dailymotion": "Dailymotion (Privé)",
+        "bunny": "Diffusion Bunny Stream (HLS)",
+        "cloudflare": "Cloudflare Stream",
+        "aws": "Traitement AWS MediaConvert",
+        "badges": {
+          "free": "Gratuit",
+          "freePro": "Gratuit / Pro",
+          "private": "Privé",
+          "cdn": "Réseau CDN",
+          "enterprise": "Entreprise"
+        },
+        "descriptions": {
+          "youtube": "Hébergement gratuit pour les cours publics et non répertoriés",
+          "vimeo": "Diffusion privée restreinte au domaine avec contrôle d'accès",
+          "dailymotion": "Téléversement vidéo privé avec référencement masqué",
+          "bunny": "Diffusion ultra-rapide en périphérie avec encodage HLS en direct",
+          "cloudflare": "Démarrage instantané avec sécurité par jeton signé RS256",
+          "aws": "Distribution personnalisée d'entreprise utilisant S3 et CloudFront"
+        }
+      },
+      "uploader": {
+        "smartRoutingTitle": "Acheminement Cloud Automatisé",
+        "smartRoutingDesc": "Stockage routé automatiquement selon le prix du cours et l'aperçu",
+        "dragDrop": "Glissez-déposez la vidéo ici, ou cliquez pour parcourir",
+        "browseFiles": "Parcourir les fichiers",
+        "supportedFormats": "MP4, MOV, WebM ou MKV jusqu'à 5 Go",
+        "targetProvider": "Hébergeur vidéo cible",
+        "startUpload": "Démarrer l'envoi",
+        "cancelUpload": "Annuler l'envoi",
+        "pauseUpload": "Suspendre l'envoi",
+        "resumeUpload": "Reprendre l'envoi",
+        "uploading": "Envoi vers {provider}...",
+        "uploadProgress": "{progress}% envoyé",
+        "speed": "Vitesse d'envoi",
+        "speedValue": "{speed} Mo/s",
+        "eta": "Temps restant",
+        "etaValue": "{eta} restant",
+        "etaCalculating": "Calcul du temps restant...",
+        "stages": {
+          "init": "Initialisation de la session d'envoi...",
+          "uploading": "Envoi des fragments vidéo ({current}/{total})...",
+          "processing": "Traitement et encodage vidéo HLS...",
+          "finalizing": "Finalisation et enregistrement..."
+        },
+        "success": "Vidéo envoyée avec succès !",
+        "invalidFormat": "Format de fichier invalide. Veuillez sélectionner une vidéo MP4, MOV ou WebM.",
+        "intentError": "Échec de création de l'intention d'envoi",
+        "uploadError": "Une erreur inattendue est survenue pendant l'envoi de la vidéo.",
+        "targetProviderNote": "Fournisseur cible : {provider}. Aucun copier-coller d'URL nécessaire.",
+        "startUploadTo": "Démarrer l'envoi vers {provider}",
+        "errors": {
+          "invalidFormat": "Format de fichier non pris en charge. Veuillez choisir MP4, MOV ou WebM.",
+          "fileTooLarge": "Le fichier dépasse la taille maximale de {maxSize}.",
+          "networkError": "Connexion réseau perdue. Veuillez réessayer...",
+          "generic": "Échec de l'envoi de la vidéo. Vérifiez votre connexion et réessayez."
+        }
+      },
+      "shortcuts": {
+        "title": "Raccourcis Clavier",
+        "playPause": "Espace/Entrée/K: Lecture/Pause",
+        "seek": "←/→: Avancer/Reculer de 5s",
+        "volume": "↑/↓ : Volume sonore",
+        "seekBackward": "← / J: Reculer de 5s",
+        "seekForward": "→ / L: Avancer de 5s",
+        "volumeUp": "↑: Augmenter le volume (+5%)",
+        "volumeDown": "↓: Diminuer le volume (-5%)",
+        "fullscreen": "F: Plein Écran",
+        "mute": "M: Couper / Réactiver le son",
+        "captions": "C: Activer / Désactiver les sous-titres",
+        "pip": "P: Mode Image dans l'image",
+        "theater": "T: Mode Cinéma",
+        "jumpPercent": "0 – 9: Sauter à 0% – 90%",
+        "speedBoostHint": "Appui long: Vitesse 2.0x temporaire",
+        "doubleTapHint": "Double-clic Gauche/Droite: ±10s"
+      },
+      "controls": {
+        "replay": "Revoir",
+        "play": "Lire",
+        "pause": "Pause",
+        "volume": "Volume",
+        "settings": "Paramètres",
+        "enterFullscreen": "Plein écran",
+        "exitFullscreen": "Quitter le plein écran"
+      },
+      "dataSaver": "Économiseur de données 4G",
+      "dataSaverActive": "360p (Actif)",
+      "dataSaverDisabled": "Désactivé"
+    },
+    "transcript": {
+      "title": "Transcription interactive",
+      "cues": "{count} répliques",
+      "searchPlaceholder": "Rechercher dans la transcription...",
+      "loading": "Chargement de la transcription...",
+      "empty": "Aucune ligne de transcription trouvée"
+    }
+  },
+  "comphub": {
+    "freelancerCard": {
+      "defaultName": "Freelancer",
+      "defaultBio": "Freelancer expérimenté prêt pour votre projet",
+      "noBio": "Aucune biographie disponible. Ce freelancer est prêt à prendre en charge de nouveaux projets et à fournir un travail de haute qualité.",
+      "role": "{role} • {count} projets terminés",
+      "verified": "Vérifié",
+      "stats": {
+        "projects": "Projets",
+        "earnings": "Gains",
+        "rating": "Note",
+        "trust": "Confiance"
+      },
+      "certifications": "{count} certifications vérifiées"
+    },
+    "projectCard": {
+      "recently": "Récemment",
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "daysAgo": "il y a {days} jours",
+      "weeksAgo": "il y a {weeks} semaines",
+      "monthsAgo": "il y a {months} mois",
+      "noDescription": "Aucune description disponible",
+      "budgetNegotiable": "Prix négociable",
+      "applied": "Candidaté",
+      "stats": {
+        "budget": "Budget",
+        "posted": "Publié",
+        "type": "Type",
+        "project": "Projet"
+      },
+      "byOwner": "Par {name}"
+    },
+    "proposalForm": {
+      "title": "Soumettre une Proposition",
+      "forProject": "pour \"{title}\"",
+      "validation": {
+        "messageRequired": "Veuillez saisir un message de proposition",
+        "messageMinLength": "Le message de proposition doit contenir au moins 10 caractères",
+        "minAmount": "Le montant minimum de la proposition est de 10 DA (1000 centimes)",
+        "estimatedDaysRange": "Les jours estimés doivent être compris entre 1 et 365"
+      },
+      "submitError": "Échec de la soumission de la proposition. Veuillez réessayer.",
+      "fileTooLarge": "Le fichier {name} est trop volumineux. Taille maximale : {maxSize}.",
+      "fileTypeNotSupported": "Le type de fichier {name} n'est pas pris en charge. Veuillez télécharger des fichiers PDF, DOC, JPG ou PNG.",
+      "labels": {
+        "message": "Message de Proposition *",
+        "amount": "Montant Proposé (DA) *",
+        "estimatedDays": "Délai Estimé (Jours)",
+        "attachments": "Pièces Jointes (Optionnel)"
+      },
+      "placeholders": {
+        "message": "Décrivez votre approche, votre expérience et pourquoi vous êtes le bon choix pour ce projet..."
+      },
+      "hints": {
+        "minCharacters": "Minimum 10 caractères",
+        "minAmount": "Minimum 10 DA (1000 centimes)",
+        "estimatedDaysRange": "Optionnel, 1-365 jours",
+        "uploadFiles": "Cliquez pour télécharger des fichiers ou faites glisser-déposer",
+        "fileTypesAndSize": "PDF, DOC, JPG, PNG jusqu'à 10 Mo chacun"
+      },
+      "selectedFiles": "Fichiers Sélectionnés",
+      "tips": {
+        "title": "Conseils pour une proposition réussie",
+        "specificApproach": "Soyez spécifique sur votre approche du projet",
+        "highlightExperience": "Mettez en avant l'expérience et les compétences pertinentes",
+        "realisticTimeline": "Fournissez un délai et un budget réalistes",
+        "askQuestions": "Posez des questions de clarification si nécessaire",
+        "marketExperience": "Mentionnez toute expérience pertinente du marché algérien"
+      },
+      "buttons": {
+        "cancel": "Annuler",
+        "submit": "Soumettre la Proposition",
+        "submitting": "Soumission en cours..."
+      }
+    },
+    "searchFilters": {
+      "placeholders": {
+        "search": "Rechercher des projets, freelancers, compétences..."
+      },
+      "buttons": {
+        "hideFilters": "Masquer les Filtres",
+        "moreFilters": "Plus de Filtres",
+        "hide": "Masquer",
+        "browse": "Parcourir",
+        "clearAll": "Tout Effacer",
+        "applyFilters": "Appliquer les Filtres",
+        "searching": "Recherche en cours..."
+      },
+      "labels": {
+        "skills": "Compétences",
+        "status": "Statut",
+        "verification": "Vérification",
+        "certificates": "Certificats"
+      },
+      "status": {
+        "all": "Tous les Statuts",
+        "open": "Ouvert",
+        "inProgress": "En Cours",
+        "completed": "Terminé"
+      },
+      "filters": {
+        "phoneVerified": "Téléphone Vérifié",
+        "hasCertificates": "A des Certificats",
+        "any": "Tous"
+      }
+    },
+    "statusBadge": {
+      "project": {
+        "open": "Ouvert",
+        "inProgress": "En Cours",
+        "completed": "Terminé",
+        "cancelled": "Annulé"
+      },
+      "proposal": {
+        "pending": "En Attente",
+        "accepted": "Accepté",
+        "rejected": "Rejeté"
+      },
+      "contract": {
+        "active": "Actif",
+        "completed": "Terminé",
+        "cancelled": "Annulé"
+      }
+    },
+    "trustBadges": {
+      "phoneVerified": "Téléphone Vérifié",
+      "emailVerified": "Email Vérifié",
+      "skillPassport": "Passeport Compétences Vérifié",
+      "certificatesCount": "{count} certifications vérifiées",
+      "certificate": "certifications",
+      "projectsCount": "{count} projets",
+      "project": "projets",
+      "trusted": "De Confiance"
+    }
+  },
+  "video": {
+    "hlsError": "Erreur de lecture HLS",
+    "loadError": "Échec du chargement de la vidéo",
+    "subtitles": "Sous-titres",
+    "arabic": "Arabe"
+  },
+  "copilot": {
+    "studioTitle": "Studio PoDalil (بودليل)",
+    "studioSubtitle": "Cockpit Bimodal • Chat Stream & Live Canvas",
+    "tool": "Outil",
+    "resizeShortcut": "⌘[ / ⌘] Redimensionner",
+    "emptyTitle": "Que souhaitez-vous accomplir aujourd'hui ?",
+    "emptyDescription": "Explorez le catalogue de cours, analysez vos données DuckDB, préparez des devis freelance ou calculez votre déduction fiscale (Art. 169 CIDTA).",
+    "inputPlaceholder": "Posez votre question ou demandez une action...",
+    "canvasReady": "Live Canvas Prêt",
+    "canvasReadyDescription": "Demandez à PoDalil de formuler des requêtes DuckDB, d'analyser vos données, de concevoir un programme de formation ou de rédiger un contrat. Les artefacts enrichis s'afficheront directement ici.",
+    "copied": "Copié",
+    "copy": "Copier",
+    "preview": "Aperçu",
+    "edit": "Modifier",
+    "badgePro": "Pro",
+    "resetSession": "Nouvelle session",
+    "resetSessionTooltip": "Réinitialiser la session",
+    "commandShortcut": "K pour commandes",
+    "greetingTitle": "Bonjour ! Comment puis-je vous propulser aujourd'hui ?",
+    "greetingSubtitle": "Posez une question, demandez une analyse ou déléguez des opérations across l'EdTech, le freelancing et la Business Intelligence en Algérie.",
+    "agentName": "Agent Podacium",
+    "inputHintSend": "Entrée pour envoyer",
+    "inputHintNewline": "Maj + Entrée pour saut de ligne",
+    "stop": "Arrêter",
+    "send": "Envoyer",
+    "scan": "Scanner",
+    "records": "{count} enregistrements",
+    "copyResponseTooltip": "Copier la réponse",
+    "tabs": {
+      "discussion": "Discussion",
+      "canvas": "Canevas"
+    },
+    "canvas": {
+      "copyTooltip": "Copier le contenu de l'artefact",
+      "scanTooltip": "Scanner un reçu (OCR)",
+      "features": {
+        "sqlTitle": "Requêtes SQL",
+        "sqlDesc": "Édition & exécution DuckDB sécurisée",
+        "docsTitle": "Documents Légaux",
+        "docsDesc": "Triple kit facture & proforma ANAE",
+        "biTitle": "Visualisations BI",
+        "biDesc": "Tableaux de données et métriques",
+        "hitlTitle": "Validation HITL",
+        "hitlDesc": "Revue sécurisée des actions sensibles"
+      },
+      "actions": {
+        "translateToDarija": "Traduire en Darija",
+        "applyArticle169TaxShield": "Appliquer le bouclier fiscal Article 169",
+        "apply19Tva": "Appliquer la TVA 19%",
+        "convertToDzd": "Convertir en DZD",
+        "liveVoiceConcierge": "Concierge vocal en direct",
+        "cameraInvoiceScanner": "Scanner de facture par caméra",
+        "workflowDagStepper": "Progression du flux de travail DAG",
+        "apply19TvaTitle": "Appliquer TVA 19% sur cette cellule",
+        "convertToDzdTitle": "Convertir la valeur en DZD",
+        "filterTop5Title": "Filtrer le Top 5 basé sur cette colonne",
+        "filterTop5": "Filtrer Top 5"
+      }
+    },
+    "cameraOcr": {
+      "title": "Scanner de Reçu Fiscal & CCP",
+      "subtitle": "BaridiMob • EDAHABIA • CCP • Facture Proforma",
+      "toggleTorch": "Activer la torche",
+      "switchCamera": "Changer de caméra",
+      "close": "Fermer",
+      "capturedReceiptAlt": "Reçu capturé",
+      "docTypeLabel": "Type de document :",
+      "cameraUnavailable": "Accès Caméra Non Disponible",
+      "retry": "Réessayer",
+      "uploadPhoto": "Importer une photo",
+      "alignReceipt": "Alignez le reçu ou le bordereau CCP",
+      "stampVisible": "Tampon postal & Montant visibles",
+      "retake": "Reprendre la photo",
+      "extracting": "Extraction OCR en cours...",
+      "submitted": "Reçu transmis à l'IA",
+      "analyzeWithOcr": "Analyser avec ocr_receipt_scan",
+      "gallery": "Galerie",
+      "takePhoto": "Prendre la photo du reçu"
+    },
+    "voice": {
+      "startSession": "Activer la voix en direct (Gemini Live)",
+      "stopSession": "Arrêter la session vocale en direct",
+      "active": "Voix Active",
+      "live": "Voix Directe",
+      "mute": "Couper le micro",
+      "unmute": "Réactiver le micro",
+      "bargeInTitle": "Interrompre (Barge-in)",
+      "bargeIn": "Barge-in"
+    },
+    "livingCanvas": {
+      "actions": {
+        "translateToDarija": "Traduire en Darija",
+        "applyArticle169TaxShield": "Appliquer le bouclier fiscal Article 169",
+        "apply19Tva": "Appliquer la TVA 19%",
+        "convertToDzd": "Convertir en DZD",
+        "liveVoiceConcierge": "Concierge vocal en direct",
+        "cameraInvoiceScanner": "Scanner de facture par caméra",
+        "workflowDagStepper": "Progression du flux de travail DAG",
+        "apply19TvaTitle": "Appliquer TVA 19% sur cette cellule",
+        "convertToDzdTitle": "Convertir la valeur en DZD",
+        "filterTop5Title": "Filtrer le Top 5 basé sur cette colonne",
+        "filterTop5": "Filtrer Top 5"
+      }
+    },
+    "prompts": {
+      "edtechTitle": "Formations IA & Tech",
+      "edtechBadge": "EdTech",
+      "edtechPrompt": "Quelles sont les meilleures formations certifiantes disponibles sur Podacium en Python, Data et IA ?",
+      "freelanceTitle": "Régulation Freelance (ANAE)",
+      "freelanceBadge": "Loi 22-23",
+      "freelancePrompt": "Comment vérifier mon éligibilité au statut Auto-entrepreneur (Loi 22-23) et respecter le plafond de 5M DZD ?",
+      "biTitle": "Analyse de Données & KPIs",
+      "biBadge": "DuckDB",
+      "biPrompt": "Montre-moi comment analyser mes jeux de données et générer un tableau de bord interactif avec DuckDB.",
+      "taxTitle": "Déduction Fiscale IBS",
+      "taxBadge": "Art. 169 & 224",
+      "taxPrompt": "Comment bénéficier de la déduction de 26% IBS sur mes investissements de formation (Articles 169 & 224 CIDTA) ?"
+    },
+    "actionReview": {
+      "title": "Revue Approfondie d'Action (HITL Safety Gate)",
+      "highRisk": "Risque Élevé",
+      "modifying": "Modifiant",
+      "paramsInspection": "Inspection des Paramètres de la Transaction",
+      "authorizeAndExecute": "Autoriser & Exécuter dans la Base de Données",
+      "rejectAction": "Rejeter l'action",
+      "rejected": "Action rejetée",
+      "executing": "Exécution de l'action confirmée...",
+      "success": "Action validée et appliquée avec succès."
+    },
+    "document": {
+      "prefix": "Document",
+      "markdown": "Document Markdown",
+      "categoryDoc": "Document : {category}",
+      "downloadMd": "Télécharger .md",
+      "actions": {
+        "translateDarijaTitle": "Traduire le texte sélectionné en Darija algérien",
+        "translateDarija": "Traduire en Darija (Algérien)",
+        "applyArticle169Title": "Appliquer le bouclier fiscal Art. 169 & 224 CIDTA",
+        "applyArticle169": "Appliquer Bouclier Fiscal Art. 169 CIDTA",
+        "addAnpdpClauseTitle": "Ajouter clause ANPDP conformité Loi 25-11",
+        "addAnpdpClause": "Ajouter clause ANPDP"
+      }
+    },
+    "dag": {
+      "completed": "Terminé",
+      "running": "En cours",
+      "failed": "Échoué",
+      "pending": "En attente",
+      "title": "Orchestration DAG de l'Agent",
+      "stepsProgress": "{completed} / {total} étapes terminées",
+      "nodeDetails": "Détails de l'Étape",
+      "stepLabel": "Opération",
+      "toolExecuted": "Outil exécuté",
+      "outputLogs": "Sortie & Contexte",
+      "askExplanation": "Expliquer cette étape",
+      "selectPrompt": "Sélectionnez une étape pour inspecter les détails."
+    },
+    "sql": {
+      "duckdbEngine": "Moteur DuckDB",
+      "runSql": "Exécuter SQL",
+      "result": "Résultat",
+      "rows": "lignes",
+      "resultWithCount": "Résultat : {count} lignes"
+    },
+    "splitPaneResizeHandle": "Poignée de redimensionnement du volet partagé",
+    "reasoning": {
+      "title": "Processus de Réflexion & Exécution",
+      "statusThinking": "Réflexion en cours...",
+      "statusCompleted": "Réflexion terminée",
+      "statusFailed": "Échec de l'exécution",
+      "stepIntentAnalysis": "Analyse de la requête et intention",
+      "stepToolExecution": "Exécution de l'outil",
+      "stepSynthesis": "Synthèse de la réponse",
+      "toolInput": "Paramètres d'entrée",
+      "toolOutput": "Résultat",
+      "elapsed": "Durée",
+      "copyParams": "Copier les paramètres",
+      "copied": "Copié !",
+      "hideLogs": "Masquer les détails",
+      "showLogs": "Afficher les détails",
+      "running": "En cours",
+      "done": "Terminé",
+      "failed": "Échoué",
+      "logsCount": "Journaux ({count})"
+    },
+    "container": {
+      "openAria": "Ouvrir Podacium Copilot",
+      "title": "Copilote Podacium",
+      "geminiVersion": "Modèle Gemini 2.5",
+      "agentSafety": "Agent autonome & Sécurité HITL",
+      "expandAria": "Agrandir le compositeur",
+      "dockRightSideAria": "Ancrer à droite",
+      "dockRightAria": "Ancrer à droite",
+      "floatingBubbleAria": "Passer à la bulle flottante",
+      "closeAria": "Fermer le copilote",
+      "copied": "Copié",
+      "copy": "Copier"
+    },
+    "composer": {
+      "removeEntityAria": "Supprimer {label}",
+      "contextEntities": "Entités contextuelles",
+      "attachContextTitle": "Attacher un contexte d'entité (@)"
+    },
+    "hitl": {
+      "action": {
+        "replayError": "Rejeu d'action empêché : ce jeton d'action a déjà été exécuté ou a expiré.",
+        "confirmationRequired": "Confirmation requise : {toolName}",
+        "intentHash": "Intention n°{id}",
+        "proposedChangesTitle": "Changements d'état proposés",
+        "actionApproved": "Action approuvée et exécutée avec vérification cryptographique du nonce.",
+        "actionRejected": "L'action a été rejetée par l'utilisateur. Aucune modification appliquée.",
+        "rejectBtn": "Rejeter / Modifier les paramètres",
+        "approveBtn": "Approuver et exécuter"
+      },
+      "diff": {
+        "splitViewAria": "Vue scindée",
+        "split": "Scindé",
+        "unifiedViewAria": "Vue unifiée",
+        "unified": "Unifié",
+        "before": "Avant",
+        "after": "Après"
+      }
+    }
+  },
+  "generativeUi": {
+    "unavailableTitle": "Composant interactif indisponible",
+    "unavailableDescription": "Impossible d'afficher le composant génératif",
+    "actionConfirmation": {
+      "statusPending": "Confirmation Requise (HITL)",
+      "statusExecuting": "Exécution Sécurisée en Cours...",
+      "statusConfirmed": "Action Exécutée avec Succès",
+      "statusRejected": "Action Annulée",
+      "statusExpired": "Délai de Validation Expiré",
+      "statusFailed": "Échec de l'action",
+      "actionPrefix": "Action",
+      "highRisk": "Risque Élevé",
+      "modifying": "Modifiant",
+      "preparedParams": "Paramètres Préparés",
+      "financialImpact": "Impact Financier",
+      "cancel": "Annuler",
+      "confirmAndExecute": "Confirmer & Exécuter",
+      "hmacValidating": "Validation cryptographique HMAC en cours...",
+      "operationSuccess": "Opération validée et exécutée",
+      "rejectedByUser": "Opération rejetée par l'utilisateur.",
+      "tokenExpired": "Le jeton d'autorisation a expiré.",
+      "biometricVerify": "Vérification biométrique requise",
+      "biometricVerified": "Identité biométrique validée",
+      "biometricAuthorize": "Autoriser par empreinte / FaceID",
+      "biometricTokenValid": "Jeton 2FA HMAC-SHA256 Valide",
+      "tokenValid": "Jeton HMAC-SHA256 2FA Valide",
+      "biometricMethods": "Empreinte / Reconnaissance faciale / PIN",
+      "chargilyPay": "Passerelle Chargily Pay :",
+      "urgentExpiry": "Expire bientôt !",
+      "edahabiaBadge": "EDAHABIA",
+      "cibBadge": "CIB",
+      "chargilyPayEscrow": "Paiement Sécurisé & Garanti (Loi 22-23)",
+      "timeRemaining": "Temps restant",
+      "retry": "Réessayer"
+    },
+    "biChart": {
+      "viewTable": "Voir tableau",
+      "viewChart": "Voir graphique"
+    },
+    "course": {
+      "viewCourse": "Voir le cours",
+      "free": "Gratuit",
+      "recommendedCourses": "Formations recommandées ({count})"
+    },
+    "projects": {
+      "title": "Projets & Missions ({count})",
+      "viewAll": "Voir tout",
+      "apply": "Postuler",
+      "proposalsCount": "{count} proposition(s)"
+    },
+    "dashboards": {
+      "title": "Tableaux de Bord BI ({count})",
+      "biStudio": "Studio BI",
+      "public": "Public",
+      "private": "Privé",
+      "openInEditor": "Ouvrir dans l'éditeur"
+    },
+    "dataset": {
+      "duckdbEngine": "Moteur DuckDB",
+      "indexedRows": "Lignes indexées :",
+      "columns": "Colonnes :",
+      "queryWithSql": "Interroger avec SQL"
+    },
+    "freelancerComparison": {
+      "project": "Projet",
+      "proposedRate": "Tarif Proposé",
+      "deliveryDelay": "Délai",
+      "deliveryDetails": "{days} jours ({milestones} jalons)",
+      "selected": "Sélectionné",
+      "reviewOffer": "Examiner cette offre",
+      "reviews": "avis"
+    }
+  },
+  "bi": {
+    "wilayaMap": {
+      "title": "Densité Commerciale & Ventes par Wilaya (58 Wilayas)",
+      "subtitle": "Cartographie interactive de la vélocité des ventes et commandes à travers l'Algérie",
+      "metricSales": "Vélocité des Ventes (DZD)",
+      "metricOrders": "Volume de Commandes",
+      "metricActiveUsers": "Utilisateurs Actifs",
+      "metricGrowth": "Taux de Croissance",
+      "searchPlaceholder": "Rechercher une wilaya (ex: 16 Alger, 31 Oran)...",
+      "filterAll": "Toutes les régions",
+      "filterNorth": "Nord & Littoral",
+      "filterHighPlateaus": "Hauts Plateaux",
+      "filterSahara": "Sahara & Sud",
+      "nationalAverage": "Moyenne nationale",
+      "aboveAverage": "Au-dessus de la moyenne",
+      "belowAverage": "En-dessous de la moyenne",
+      "totalRevenue": "Chiffre d'Affaires Total",
+      "totalOrders": "Total Commandes",
+      "topWilaya": "Wilaya en Tête",
+      "rank": "Rang",
+      "viewMap": "Vue Carte",
+      "viewGrid": "Vue Grille",
+      "viewList": "Vue Classement",
+      "noWilayaFound": "Aucune wilaya trouvée pour cette recherche",
+      "wilayaDetails": "Détails de la Wilaya",
+      "wilayasCount": "{count} Wilayas au total",
+      "regionNorth": "NORD & LITTORAL",
+      "regionHighPlateaus": "HAUTS PLATEAUX",
+      "regionSahara": "SAHARA & SUD",
+      "nationalBenchmark": "Benchmark National",
+      "colWilaya": "Wilaya",
+      "colRegion": "Région",
+      "wilayaCode": "Wilaya n° {code}"
+    }
+  },
+  "component": {
+    "motionStatus": {
+      "demo": {
+        "eyebrow": "Système de design",
+        "title": "Statut animé",
+        "subtitle": "Un indicateur matriciel vivant pour chaque moment asynchrone — réflexion de l’agent, imports, synchronisations et enregistrements.",
+        "preview": "Aperçu en direct",
+        "state": "État",
+        "variant": "Variante",
+        "size": "Taille",
+        "layout": "Disposition",
+        "showLabel": "Afficher le libellé",
+        "animatedLabel": "Faire tourner le libellé",
+        "paused": "Suspendre l’animation",
+        "speed": "Vitesse des images",
+        "theme": "Thème",
+        "options": "Options",
+        "light": "Clair",
+        "dark": "Sombre",
+        "direction": "Direction",
+        "dataBinding": "Liaison en temps réel",
+        "dataBindingDesc": "Activez des signaux et observez useMotionStatus choisir le bon état.",
+        "gallery": "Tous les états",
+        "usage": "Utilisation",
+        "copied": "Copié",
+        "signals": {
+          "loading": "Chargement",
+          "fetching": "Récupération",
+          "streaming": "Diffusion",
+          "tool": "Outil en cours",
+          "listening": "Écoute",
+          "saving": "Enregistrement",
+          "importing": "Importation",
+          "success": "Succès",
+          "error": "Erreur"
+        }
+      },
+      "importing": "Importation",
+      "syncing": "Synchronisation",
+      "searching": "Recherche",
+      "busy": "Occupé",
+      "saving": "Enregistrement",
+      "initializing": "Initialisation",
+      "thinking": "Réflexion",
+      "listening": "Écoute",
+      "idle": "Prêt",
+      "success": "Terminé",
+      "error": "Une erreur est survenue",
+      "statusLabel": "Statut : {status}"
+    },
+    "badge": {
+      "expires": "Expire le {{date}}",
+      "featured": "En vedette",
+      "boosted": "Booster",
+      "premium": "Premium",
+      "verified": "Vérifié"
+    },
+    "checkbox": {
+      "demoTitle": "Composant Checkbox",
+      "demoDescription": "Un composant case à cocher entièrement accessible avec support pour plusieurs variantes, tailles et états.",
+      "tabBasic": "Base",
+      "tabStates": "États",
+      "tabVariants": "Variantes",
+      "tabSizes": "Tailles",
+      "tabRTL": "RTL",
+      "basicCheckboxes": "Cases à Cocher de Base",
+      "acceptTerms": "Accepter les termes et conditions",
+      "subscribeNewsletter": "S'abonner à la newsletter",
+      "newsletterDescription": "Recevez des mises à jour hebdomadaires sur les nouveaux cours et fonctionnalités.",
+      "enableNotifications": "Activer les notifications",
+      "notificationsDescription": "Soyez notifié des mises à jour de cours et annonces.",
+      "labelPositions": "Positions de l'étiquette",
+      "labelRight": "Étiquette à droite (défaut)",
+      "labelLeft": "Étiquette à gauche",
+      "interactiveStates": "États Interactifs",
+      "unchecked": "Non coché",
+      "checked": "Coché",
+      "indeterminate": "Indéterminé",
+      "disabledState": "État Désactivé",
+      "disabledUnchecked": "Désactivé non coché",
+      "disabledChecked": "Désactivé coché",
+      "disabledIndeterminate": "Désactivé indéterminé",
+      "errorState": "État d'Erreur",
+      "requiredField": "Champ requis *",
+      "errorRequired": "Ce champ est requis",
+      "variantExamples": "Exemples de Variantes",
+      "variantDefault": "Défaut",
+      "variantOutline": "Contour",
+      "variantSoft": "Doux",
+      "sizeExamples": "Exemples de Tailles",
+      "sizeSM": "Petit",
+      "sizeMD": "Moyen",
+      "sizeLG": "Grand",
+      "rtlSupport": "Support RTL",
+      "rtlActive": "Mode RTL actif (locale arabe)",
+      "rtlInactive": "Locale actuelle : {currentLocale}. Passez à l'arabe pour voir la mise en page RTL.",
+      "rtlLabel": "Accepter les termes et conditions",
+      "rtlLabelWithDesc": "S'abonner à la newsletter",
+      "rtlDescription": "Recevez des mises à jour hebdomadaires sur les nouveaux cours et fonctionnalités.",
+      "rtlLabelLeft": "Étiquette à gauche",
+      "formExample": "Exemple de Formulaire",
+      "formAcceptTerms": "J'accepte les Conditions d'Utilisation et la Politique de Confidentialité *",
+      "formSubscribe": "S'abonner aux mises à jour produit",
+      "formSubscribeDesc": "Nous vous enverrons occasionnellement des emails sur les nouvelles fonctionnalités.",
+      "formEnableUpdates": "Activer les mises à jour automatiques",
+      "formSubmit": "Soumettre",
+      "formSubmitted": "Formulaire soumis avec succès !",
+      "formTermsRequired": "Vous devez accepter les termes pour continuer"
+    }
+  }
+}

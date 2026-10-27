@@ -1,0 +1,116 @@
+{
+  "settings-security": {
+    "meta": {
+      "title": "Paramètres de sécurité",
+      "description": "Gérez la sécurité de votre compte et l'authentification à deux facteurs"
+    },
+    "page": {
+      "home": "Accueil",
+      "settings": "Paramètres",
+      "title": "Paramètres de sécurité",
+      "subtitle": "Gérez la sécurité de votre compte et configurez l'authentification à deux facteurs",
+      "mfaSection": "Authentification à deux facteurs",
+      "mfaDesc": "Ajoutez une couche de sécurité supplémentaire à votre compte",
+      "statusEnabled": "L'authentification à deux facteurs est activée",
+      "statusDisabled": "L'authentification à deux facteurs est désactivée",
+      "noMethods": "Aucune méthode MFA configurée",
+      "activeMethods": "Méthodes actives",
+      "totp": {
+        "title": "Application d'authentification",
+        "desc": "Utilisez Google Authenticator, Microsoft Authenticator ou toute application TOTP",
+        "setup": "Configurer l'application",
+        "scanQR": "Scannez ce QR code avec votre application d'authentification",
+        "qrCodeAlt": "QR Code TOTP",
+        "orEnterKey": "Ou saisissez cette clé manuellement :",
+        "revealKey": "Afficher la clé secrète",
+        "hideKey": "Masquer la clé secrète",
+        "clickToCopy": "Cliquer pour copier",
+        "copied": "Copié dans le presse-papiers",
+        "enterCode": "Entrez le code à 6 chiffres de l'application",
+        "codePlaceholder": "000000",
+        "verify": "Vérifier et activer",
+        "enabled": "L'application d'authentification est active",
+        "disable": "Désactiver l'application",
+        "success": "Application d'authentification activée"
+      },
+      "email": {
+        "title": "Code par email",
+        "desc": "Recevez un code à usage unique par email lors de la connexion",
+        "setup": "Configurer le code par email",
+        "sendCode": "Envoyer le code de vérification",
+        "codeSent": "Un code de vérification a été envoyé à votre adresse email",
+        "enterCode": "Entrez le code à 6 chiffres",
+        "verify": "Vérifier et activer",
+        "enabled": "Le code par email est actif",
+        "disable": "Désactiver le code par email",
+        "success": "Code par email activé avec succès"
+      },
+      "webauthn": {
+        "title": "Clé d'accès (biométrie)",
+        "desc": "Utilisez votre empreinte digitale, visage ou code PIN pour une authentification sécurisée",
+        "setup": "Enregistrer une clé d'accès",
+        "registering": "Vérification de votre appareil...",
+        "notSupported": "Les clés d'accès ne sont pas supportées sur cet appareil ou navigateur",
+        "cancelled": "Enregistrement de la clé d'accès annulé",
+        "enabled": "La clé d'accès est active",
+        "disable": "Supprimer la clé d'accès",
+        "success": "Clé d'accès enregistrée avec succès",
+        "noPlatformBiometrics": "Aucun capteur biométrique intégré (Touch ID/Windows Hello) détecté sur cet ordinateur.",
+        "openOnMobile": "Configurer depuis un mobile",
+        "mobileQrPrompt": "Scannez ce QR code avec l'appareil photo de votre téléphone pour ouvrir cette page et enregistrer votre empreinte en 1 clic :",
+        "bluetoothNotice": "Note : L'association d'un téléphone depuis un PC via QR code nécessite l'activation du Bluetooth sur les deux appareils."
+      },
+      "backupCodes": {
+        "title": "Codes de secours",
+        "desc": "Utilisez ces codes à usage unique pour vous connecter si vous perdez l'accès à votre application",
+        "remaining": "{count} codes restants",
+        "generate": "Générer des codes de secours",
+        "regenerate": "Régénérer les codes",
+        "regenerateConfirm": "Cela invalidera tous vos codes de secours existants. Continuer ?",
+        "saveWarning": "Conservez ces codes dans un endroit sûr. Vous ne pourrez plus les voir après.",
+        "copy": "Copier",
+        "download": "Télécharger",
+        "downloaded": "Assurez-vous d'avoir sauvegardé ces codes",
+        "generated": "Codes de secours générés avec succès",
+        "noCodes": "Aucun code de secours généré"
+      },
+      "disable": {
+        "title": "Désactiver l'authentification à deux facteurs",
+        "confirm": "Entrez votre mot de passe pour désactiver toutes les méthodes 2FA",
+        "passwordPlaceholder": "Mot de passe actuel",
+        "cancel": "Annuler",
+        "submit": "Désactiver la 2FA",
+        "success": "Authentification à deux facteurs désactivée"
+      },
+      "generalPrefs": {
+        "title": "Préférences de sécurité",
+        "desc": "Gérez les alertes de connexion, la gestion multi-appareils et le délai d'expiration des sessions.",
+        "loginAlerts": "Alertes de connexion",
+        "loginAlertsDesc": "Recevez des alertes email lors de connexions depuis un nouvel appareil",
+        "deviceMgmt": "Gestion des appareils",
+        "deviceMgmtDesc": "Suivez les sessions de navigateur actives et les appareils de confiance",
+        "sessionTimeout": "Expiration de session"
+      },
+      "securityPrefsSaved": "Préférences de sécurité enregistrées avec succès"
+    },
+    "toast": {
+      "enabled": "Authentification à deux facteurs activée",
+      "disabled": "Authentification à deux facteurs désactivée",
+      "codeSent": "Code de vérification envoyé par email",
+      "invalidCode": "Code de vérification invalide",
+      "backupCodesCopied": "Codes de secours copiés dans le presse-papier",
+      "backupCodesGenerated": "Nouveaux codes de secours générés",
+      "passkeyRegistered": "Clé d'accès enregistrée avec succès",
+      "passkeyFailed": "Échec de l'enregistrement de la clé d'accès",
+      "emailOtpSent": "Code de vérification envoyé",
+      "emailOtpVerified": "Code email vérifié avec succès"
+    },
+    "errors": {
+      "invalidPassword": "Mot de passe invalide",
+      "codeRequired": "Le code de vérification est requis",
+      "setupFirst": "Veuillez d'abord configurer la méthode",
+      "emailNotAvailable": "Le service d'envoi d'emails est temporairement indisponible. Veuillez réessayer plus tard.",
+      "generic": "Une erreur est survenue. Veuillez réessayer."
+    }
+  }
+}

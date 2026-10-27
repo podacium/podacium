@@ -1,0 +1,2653 @@
+{
+  "dashboard": {
+    "loading": "جاري تحميل لوحة التحكم الخاصة بك...",
+    "tabs": {
+      "overview": "نظرة عامة",
+      "learning": "التعليم",
+      "freelancing": "الفريلانس",
+      "business": "ذكاء الأعمال",
+      "financial": "الإيرادات",
+      "teaching": "التدريس",
+      "profile": "تحليلات الملف"
+    },
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "dashboard": "لوحة التحكم"
+    },
+    "time": {
+      "justNow": "الآن",
+      "minutes": "د",
+      "hours": "س",
+      "days": "ي"
+    },
+    "general": {
+      "user": "المستخدم",
+      "beginner": "مبتدئ",
+      "dashboard": "لوحة التحكم",
+      "notSpecified": "غير محدد"
+    },
+    "welcome": {
+      "title": "مرحباً بعودتك، {name}!",
+      "subtitle": "إليك ما يحدث في نظام Podacium اليوم.",
+      "FREELANCER": "مرحباً بعودتك، {name}! مستعد للعثور على مشروعك القادم؟",
+      "BUSINESS": "مرحباً بعودتك، {name}! لوحة أعمالك في انتظارك.",
+      "ADMIN": "مرحباً، {name}! نظرة عامة على المنصة."
+    },
+    "profileCompletion": {
+      "title": "أكمل ملفك الشخصي",
+      "description": "حدّث معلومات ملفك الشخصي واختر دورك للحصول على توصيات مخصصة والوصول إلى جميع الميزات.",
+      "cta": "الذهاب إلى الملف الشخصي"
+    },
+    "recommendations": {
+      "common": {
+        "learnMore": "عرض التفاصيل"
+      },
+      "labels": {
+        "skill_gap": "سد الفجوة المهنية",
+        "skill_match": "تطابق المهارات",
+        "collab_filter": "خيار زملائك",
+        "popularity": "الأكثر رواجاً",
+        "trending": "الرائج الآن",
+        "cross_pillar": "متعدد المجالات",
+        "geo_loc": "مكتسب محلياً",
+        "social": "توصية تفاعلية",
+        "price_match": "أفضل قيمة",
+        "default": "موصى به"
+      },
+      "reasons": {
+        "popularity": "الأكثر رواجاً وإقبالاً بين متعلمي بوداسيوم",
+        "collab_filter": "شائع بين المتعلمين الذين يملكون أهدافاً مشابهة لأهدافك",
+        "skill_gap": "يساعدك على سد الفجوات وتطوير مهاراتك بشكل متكامل",
+        "skill_match": "يتوافق بشكل ممتاز مع اهتماماتك وملفك الشخصي الحالي",
+        "trending": "الرائج والمطلوب حالياً في مجالك المهني",
+        "cross_pillar": "طبّق مهاراتك التعلمية مباشرة في مشاريع عملية واقعية",
+        "geo_loc": "الأكثر طلباً ورواجاً في منطقتك الجغرافية",
+        "social": "موصى به من قبل المتعلمين والخبراء الذين تتابعهم",
+        "price_match": "يناسب ميزانيتك وخياراتك التعلمية",
+        "default": "موصى به خصيصاً لك بناءً على مسارك التعلمي"
+      },
+      "c_py_basics": {
+        "title": "أساسيات لغة بايثون",
+        "description": "مقدمة في برمجة بايثون",
+        "reason": "مهارة أساسية للبيانات",
+        "action": "ابدأ التعلم"
+      },
+      "c_py_adv": {
+        "title": "بايثون المتقدمة",
+        "description": "أتقن المنسقات والمولدات",
+        "reason": "ارفع مستوى كودك",
+        "action": "عرض الدورة"
+      },
+      "c_ds_pandas": {
+        "title": "إتقان مكتبة بانداس",
+        "description": "معالجة بيانات عالية الأداء",
+        "reason": "ضروري للتحليل",
+        "action": "سجل الآن"
+      },
+      "c_alg_sme": {
+        "title": "البيانات للمؤسسات الجزائرية",
+        "description": "تحليلات الأعمال المحلية",
+        "reason": "طلب السوق المحلي",
+        "action": "ابدأ الآن"
+      },
+      "c_viz_tab": {
+        "title": "أساسيات تابلو",
+        "description": "تصور رؤاك وبياناتك",
+        "reason": "مهارة عالية الطلب",
+        "action": "تعلم تابلو"
+      },
+      "c_viz_pbi": {
+        "title": "باور بي آي للأعمال",
+        "description": "إنشاء لوحات معلومات للأعمال",
+        "reason": "معيار الشركات",
+        "action": "افتح باور بي آي"
+      },
+      "c_ml_intro": {
+        "title": "مقدمة في تعلم الآلة",
+        "description": "أساسيات Scikit-Learn",
+        "reason": "مهنة مستقبلية",
+        "action": "ابدأ الآن"
+      },
+      "c_sql_boot": {
+        "title": "معسكر SQL",
+        "description": "إتقان استعلامات قواعد البيانات",
+        "reason": "أساس البيانات",
+        "action": "انضم للمعسكر"
+      },
+      "c_api_dev": {
+        "title": "تطوير FastAPI",
+        "description": "بناء واجهات برمجية عالية الأداء",
+        "reason": "تقنية خلفية حديثة",
+        "action": "ابنِ واجهاتك"
+      },
+      "c_free_101": {
+        "title": "أساسيات العمل الحر",
+        "description": "ابدأ رحلتك المهنية",
+        "reason": "استثمر مهاراتك",
+        "action": "ابدأ الآن"
+      },
+      "c_client_nego": {
+        "title": "التفاوض مع العملاء",
+        "description": "احصل على ما تستحق",
+        "reason": "تعزيز المهارات الناعمة",
+        "action": "أتقن التفاوض"
+      },
+      "c_brand_pers": {
+        "title": "العلامة الشخصية",
+        "description": "تميز في السوق",
+        "reason": "اجذب العملاء",
+        "action": "ابنِ علامتك"
+      },
+      "c_time_mgmt": {
+        "title": "إدارة الوقت",
+        "description": "ارفع إنتاجيتك لأقصى حد",
+        "reason": "ضروري للعمل عن بعد",
+        "action": "كن منتجاً"
+      },
+      "c_rem_work": {
+        "title": "أفضل ممارسات العمل عن بعد",
+        "description": "حافظ على صحتك وإنتاجيتك",
+        "reason": "اعمل من أي مكان",
+        "action": "نصائح العمل عن بعد"
+      },
+      "c_excel_pro": {
+        "title": "إكسيل للمحترفين",
+        "description": "صيغ متقدمة وVBA",
+        "reason": "ضروري في مكان العمل",
+        "action": "إكسيل برو"
+      },
+      "c_st_story": {
+        "title": "سرد القصص بالبيانات",
+        "description": "تواصل بفعالية عبر البيانات",
+        "reason": "مهارة قيادية",
+        "action": "اسرد قصتك"
+      },
+      "c_cloud_fund": {
+        "title": "أساسيات الحوسبة السحابية",
+        "description": "أساسيات AWS/Azure/GCP",
+        "reason": "مهارة البنية التحتية",
+        "action": "مقدمة السحاب"
+      },
+      "c_docker_dev": {
+        "title": "دوكر للمطورين",
+        "description": "أساسيات الحاويات",
+        "reason": "ضروري للعمليات البرمجية",
+        "action": "ابدأ التشغيل"
+      },
+      "c_nlp_intro": {
+        "title": "مقدمة في معالجة اللغات",
+        "description": "معالجة اللغات الطبيعية",
+        "reason": "ذكاء اصطناعي متطور",
+        "action": "عالج النصوص"
+      },
+      "c_big_data": {
+        "title": "البيانات الضخمة مع سبارك",
+        "description": "وسع نطاق تحليلك",
+        "reason": "هندسة واسعة النطاق",
+        "action": "انطلق للأكبر"
+      },
+      "p_sales_dash": {
+        "title": "مراجعة لوحة المبيعات",
+        "description": "تصور بيانات التجزئة",
+        "reason": "مشروع دخول جيد",
+        "action": "ابدأ المشروع"
+      },
+      "p_ecom_opt": {
+        "title": "تحسين التجارة الإلكترونية",
+        "description": "تحسين معدل التحويل",
+        "reason": "تأثير عالي القيمة",
+        "action": "حسن الآن"
+      },
+      "p_inv_sys": {
+        "title": "نظام المخزون",
+        "description": "أتمتة تتبع المخزون",
+        "reason": "أتمتة باستخدام بايثون",
+        "action": "ابنِ السكريبت"
+      },
+      "p_real_est": {
+        "title": "تحليل العقارات",
+        "description": "تحليل اتجاهات الإسكان",
+        "reason": "مهارة تحليل السوق",
+        "action": "حلل الآن"
+      },
+      "p_cust_seg": {
+        "title": "تقسيم العملاء",
+        "description": "تصنيف العملاء عبر تعلم الآلة",
+        "reason": "مشروع تعلم آلة متقدم",
+        "action": "قسم الآن"
+      },
+      "p_web_port": {
+        "title": "موقع معرض الأعمال",
+        "description": "ابنِ واجهتك المهنية",
+        "reason": "اعرض أعمالك",
+        "action": "ابنِ الآن"
+      },
+      "p_api_integ": {
+        "title": "ربط واجهة الدفع",
+        "description": "ربط المدفوعات المحلية",
+        "reason": "تحدي تقني",
+        "action": "اربط الآن"
+      },
+      "p_bug_fix": {
+        "title": "ماراثون إصلاح الأخطاء",
+        "description": "إصلاح أخطاء المصادر المفتوحة",
+        "reason": "مساهمة مجتمعية",
+        "action": "أصلح الآن"
+      },
+      "p_data_clean": {
+        "title": "تنظيف البيانات",
+        "description": "تنظيف ملفات إكسيل غير المنظمة",
+        "reason": "مهمة سريعة الإنجاز",
+        "action": "نظف البيانات"
+      },
+      "p_trans_doc": {
+        "title": "ترجمة الوثائق التقنية",
+        "description": "ترجمة من الإنجليزية للعربية",
+        "reason": "استثمر ثنائية اللغة",
+        "action": "ترجم الآن"
+      },
+      "p_chatbot_dev": {
+        "title": "تطوير بوت دردشة",
+        "description": "ابنِ مساعد ذكاء اصطناعي",
+        "reason": "تطبيق ذكاء اصطناعي",
+        "action": "ابنِ البوت"
+      },
+      "p_seo_audit": {
+        "title": "مشروع تدقيق SEO",
+        "description": "تحسين محركات البحث",
+        "reason": "تسويق رقمي",
+        "action": "دقق الآن"
+      },
+      "p_app_test": {
+        "title": "مشروع اختبار التطبيقات",
+        "description": "ضمان جودة تطبيقات الجوال",
+        "reason": "خبرة في ضمان الجودة",
+        "action": "ابدأ الاختبار"
+      },
+      "p_market_res": {
+        "title": "أبحاث السوق",
+        "description": "تحليل المنافسين",
+        "reason": "رؤية استراتيجية",
+        "action": "ابحث الآن"
+      },
+      "p_viz_dz": {
+        "title": "تصور بيانات الجزائر",
+        "description": "مشروع تصور بيانات محلي",
+        "reason": "تخصص محلي",
+        "action": "صور البيانات"
+      },
+      "d_alg_hous": {
+        "title": "بيانات سكن الجزائر",
+        "description": "الأسعار والمواقع",
+        "reason": "رائج محلياً",
+        "action": "احصل على البيانات"
+      },
+      "d_dz_wthr": {
+        "title": "طقس الجزائر 10 سنوات",
+        "description": "بيانات الطقس التاريخية",
+        "reason": "تحليل المناخ",
+        "action": "استكشف"
+      },
+      "d_stock_mrk": {
+        "title": "سوق الأسهم العالمي",
+        "description": "أسعار الإغلاق اليومية",
+        "reason": "نمذجة مالية",
+        "action": "حلل الآن"
+      },
+      "d_soc_media": {
+        "title": "مشاعر التواصل الاجتماعي",
+        "description": "مجموعة بيانات مليون تغريدة",
+        "reason": "ممارسة NLP",
+        "action": "درب النموذج"
+      },
+      "d_retail_sales": {
+        "title": "سجل مبيعات التجزئة",
+        "description": "3 سنوات من المعاملات",
+        "reason": "ممارسة التنبؤ",
+        "action": "تنبأ الآن"
+      },
+      "d_traffic": {
+        "title": "تدفقات المرور الحضرية",
+        "description": "أنماط الحركة في المدينة",
+        "reason": "تخطيط حضري",
+        "action": "ارسم الخرائط"
+      },
+      "d_energy": {
+        "title": "استهلاك الطاقة",
+        "description": "إحصائيات استخدام المنازل",
+        "reason": "تحليل الاستدامة",
+        "action": "حلل الآن"
+      },
+      "d_job_mkt": {
+        "title": "سوق وظائف التقنية",
+        "description": "الرواتب والمهارات 2026",
+        "reason": "رؤى مهنية",
+        "action": "تصفح الآن"
+      },
+      "d_movie_rev": {
+        "title": "مراجعات الأفلام",
+        "description": "بيانات تحليل المشاعر",
+        "reason": "مستوى مبتدئ NLP",
+        "action": "احصل على المراجعات"
+      },
+      "d_crime_stats": {
+        "title": "إحصائيات الجريمة",
+        "description": "تحليل اتجاهات السلامة",
+        "reason": "مشروع سلامة عامة",
+        "action": "دقق الآن"
+      },
+      "m_cv_review": {
+        "title": "مراجعة السيرة الذاتية",
+        "description": "احصل على تقييم خبير",
+        "reason": "عزز فرص توظيفك",
+        "action": "أرسل السيرة"
+      },
+      "m_intern_dz": {
+        "title": "تدريب محلي",
+        "description": "ابحث عن تدريب في الجزائر",
+        "reason": "خطوة مهنية مبكرة",
+        "action": "قدم الآن"
+      },
+      "m_webinar_dat": {
+        "title": "ندوة البيانات",
+        "description": "اتجاهات عام 2026",
+        "reason": "ابقَ على اطلاع",
+        "action": "سجل الآن"
+      },
+      "m_dz_startup": {
+        "title": "مركز الشركات الناشئة",
+        "description": "انضم إلى النظام البيئي",
+        "reason": "تواصل مهني",
+        "action": "انضم للمركز"
+      },
+      "m_pro_net": {
+        "title": "شبكة المحترفين",
+        "description": "تواصل مع الخبراء",
+        "reason": "وسع آفاقك",
+        "action": "تواصل الآن"
+      }
+    },
+    "stats": {
+      "activeCourses": {
+        "title": "الدورات النشطة",
+        "description": "{completed} مكتمل",
+        "completed": "مكتمل"
+      },
+      "activeProjects": {
+        "title": "المشاريع النشطة",
+        "description": "{completed} مكتمل",
+        "completed": "مكتمل"
+      },
+      "totalEarnings": {
+        "title": "إجمالي الأرباح",
+        "description": "الإيرادات طوال فترة العضوية",
+        "available": "متاح"
+      },
+      "skillLevel": {
+        "title": "مستوى المهارة",
+        "description": "بناءً على نشاطك",
+        "skillsTracked": "مهارة يتم تتبعها"
+      },
+      "platformUsers": "مستخدمي المنصة",
+      "revenue": "الإيرادات",
+      "transactions": "المعاملات",
+      "hires": "التعيينات",
+      "projects": "المشاريع النشطة"
+    },
+    "pillars": {
+      "overview": {
+        "title": "نظرة عامة"
+      },
+      "education": {
+        "title": "التعليم",
+        "description": "التعلم والتطوير",
+        "stats": {
+          "courses": "دورات",
+          "progress": "تقدم",
+          "certificates": "شهادات"
+        }
+      },
+      "freelancing": {
+        "title": "العمل الحر",
+        "description": "المشاريع والأرباح",
+        "stats": {
+          "active": "نشط",
+          "completed": "مكتمل",
+          "earnings": "أرباح"
+        }
+      },
+      "business": {
+        "title": "ذكاء الأعمال",
+        "description": "البيانات والتحليلات",
+        "stats": {
+          "datasets": "مجموعات البيانات",
+          "reports": "تقارير",
+          "insights": "رؤى"
+        }
+      }
+    },
+    "sections": {
+      "aiInsights": {
+        "title": "رؤى الذكاء الاصطناعي والتوصيات",
+        "regenerate": "إعادة توليد الرؤى"
+      },
+      "learningProgress": {
+        "title": "تقدم التعلم",
+        "viewAll": "عرض جميع الدورات",
+        "modules": "{completed}/{total} وحدة",
+        "next": "التالي: {lesson}"
+      },
+      "activeProjects": {
+        "title": "المشاريع النشطة",
+        "findNew": "العثور على مشاريع جديدة",
+        "active": "نشط",
+        "client": "العميل:",
+        "progress": "التقدم:",
+        "amount": "المبلغ:",
+        "deadline": "الموعد النهائي:"
+      },
+      "recentDatasets": {
+        "title": "مجموعات البيانات الحديثة",
+        "upload": "رفع مجموعة بيانات",
+        "datasetsCount": "مجموعة بيانات"
+      },
+      "wallet": {
+        "title": "المحفظة",
+        "available": "متاح",
+        "viewAll": "عرض الكل"
+      },
+      "quickLinks": {
+        "title": "روابط سريعة",
+        "dashboard": "لوحة التحكم",
+        "profile": "الملف الشخصي",
+        "billing": "الفواتير والخطط",
+        "accountSettings": "إعدادات الحساب"
+      },
+      "recentActivities": {
+        "title": "الأنشطة الحديثة"
+      },
+      "skillsOverview": {
+        "title": "نظرة عامة على المهارات"
+      },
+      "certificates": {
+        "title": "الشهادات",
+        "earned": "تم الحصول على {count} شهادات"
+      }
+    },
+    "quickActions": {
+      "title": "إجراءات سريعة",
+      "startCourse": {
+        "title": "بدء دورة جديدة",
+        "description": "تصفح والتحق بدورات جديدة"
+      },
+      "findProjects": {
+        "title": "العثور على مشاريع",
+        "description": "اكتشف فرص العمل الحر"
+      },
+      "uploadDataset": {
+        "title": "رفع مجموعة بيانات",
+        "description": "أضف بيانات جديدة للتحليل"
+      },
+      "createReport": {
+        "title": "إنشاء تقرير",
+        "description": "توليد رؤى الأعمال"
+      },
+      "postJob": {
+        "title": "نشر وظيفة",
+        "description": "إنشاء إعلان وظيفة جديد"
+      },
+      "viewAnalytics": {
+        "title": "عرض التحليلات",
+        "description": "اطلع على تحليلات المنصة"
+      },
+      "manageUsers": {
+        "title": "إدارة المستخدمين",
+        "description": "إدارة حسابات المستخدمين"
+      },
+      "reviewReports": {
+        "title": "مراجعة التقارير",
+        "description": "مراجعة تقارير المحتوى"
+      }
+    },
+    "emptyStates": {
+      "aiInsights": {
+        "title": "لا توجد رؤى ذكاء اصطناعي بعد",
+        "description": "أكمل المزيد من الأنشطة للحصول على توصيات ذكاء اصطناعي مخصصة"
+      },
+      "courses": {
+        "title": "لا توجد دورات نشطة",
+        "description": "ابدأ رحلة التعلم الخاصة بك من خلال الالتحاق بالدورات"
+      },
+      "projects": {
+        "title": "لا توجد مشاريع نشطة",
+        "description": "ابدأ في كسب المال من خلال العمل على مشاريع العمل الحر"
+      },
+      "datasets": {
+        "title": "لا توجد مجموعات بيانات",
+        "description": "ارفع مجموعات البيانات لبدء تحليل بياناتك"
+      },
+      "activities": {
+        "title": "لا توجد أنشطة حديثة",
+        "description": "ستظهر أنشطتك هنا"
+      },
+      "skills": {
+        "title": "لا توجد مهارات يتم تتبعها",
+        "description": "أكمل الدورات لبناء ملف المهارات الخاص بك"
+      },
+      "transactions": {
+        "description": "لا توجد معاملات حديثة"
+      },
+      "proposals": {
+        "title": "لا توجد مقترحات بعد",
+        "description": "قدّم مقترحات للمشاريع لبدء العمل"
+      },
+      "listings": {
+        "title": "لا توجد إعلانات وظائف بعد",
+        "description": "انشر وظيفتك الأولى للعثور على المواهب"
+      }
+    },
+    "buttons": {
+      "exploreCourses": "استكشاف الدورات",
+      "browseCourses": "تصفح الدورات",
+      "findProjects": "العثور على مشاريع",
+      "uploadDataset": "رفع مجموعة بيانات",
+      "refresh": "تحديث"
+    },
+    "datasetInfo": {
+      "size": "الحجم:",
+      "records": "السجلات:",
+      "lastAccess": "آخر وصول:",
+      "status": "الحالة:"
+    },
+    "errors": {
+      "loading": {
+        "title": "خطأ في تحميل لوحة التحكم",
+        "retry": "حاول مرة أخرى",
+        "description": "واجهنا مشكلة أثناء تحميل بيانات لوحة التحكم الخاصة بك. يرجى المحاولة مرة أخرى."
+      }
+    },
+    "freelancerSections": {
+      "proposals": {
+        "title": "المقترحات الحديثة",
+        "pending": "هناك {count} مقترحات بانتظار المراجعة",
+        "submitted": "تم التقديم {date}"
+      },
+      "contracts": {
+        "title": "العقود النشطة",
+        "client": "العميل: {name}",
+        "deadline": "الموعد النهائي: {date}"
+      },
+      "earnings": {
+        "title": "نظرة عامة على الأرباح",
+        "thisMonth": "هذا الشهر",
+        "pending": "المدفوعات المعلقة",
+        "average": "المتوسط لكل مشروع"
+      }
+    },
+    "businessSections": {
+      "listings": {
+        "title": "إعلانات الوظائف",
+        "active": "{count} إعلانات نشطة",
+        "applicants": "{count} متقدم"
+      },
+      "applicants": {
+        "title": "نظرة عامة على المتقدمين",
+        "viewAll": "عرض جميع الإعلانات"
+      },
+      "team": {
+        "title": "أعضاء الفريق",
+        "members": "{count} أعضاء",
+        "invite": "دعوة أعضاء"
+      }
+    },
+    "adminSections": {
+      "platform": {
+        "title": "مقاييس المنصة"
+      },
+      "users": {
+        "title": "المستخدمون الجدد"
+      },
+      "revenue": {
+        "title": "نظرة عامة على الإيرادات"
+      },
+      "alerts": {
+        "title": "تنبيهات النظام"
+      },
+      "health": {
+        "uptime": "وقت التشغيل"
+      }
+    },
+    "alerts": {
+      "acknowledged": "تم الإقرار",
+      "new": "جديد"
+    },
+    "common": {
+      "total": "المجموع",
+      "joined": "انضم"
+    },
+    "profile": {
+      "breadcrumb": "أداء الملف الشخصي",
+      "title": "أداء الملف الشخصي",
+      "description": "تتبع مشاهدات ملفك الشخصي والمتابعين ومقاييس التفاعل",
+      "refresh": "تحديث",
+      "loading": "جاري تحميل لوحة الملف الشخصي...",
+      "error": {
+        "title": "حدث خطأ ما",
+        "retry": "حاول مرة أخرى"
+      },
+      "stats": {
+        "totalViews": "إجمالي المشاهدات",
+        "totalFollows": "إجمالي المتابعات",
+        "totalShares": "إجمالي المشاركات",
+        "totalSearches": "إجمالي عمليات البحث"
+      },
+      "viewTrends": {
+        "title": "اتجاهات مشاهدة الملف الشخصي",
+        "description": "المشاهدات اليومية للملف الشخصي عبر الوقت",
+        "empty": {
+          "title": "لا توجد بيانات مشاهدة بعد",
+          "description": "ستظهر اتجاهات مشاهدة الملف الشخصي بمجرد بدء تلقي الزيارات"
+        }
+      },
+      "followerGrowth": {
+        "title": "نمو المتابعين",
+        "description": "التغيرات الشهرية في المتابعين",
+        "empty": {
+          "title": "لا توجد بيانات متابعين",
+          "description": "ستظهر مقاييس نمو المتابعين بمجرد بدء اكتساب المتابعين"
+        }
+      },
+      "engagement": {
+        "title": "نظرة عامة على التفاعل",
+        "description": "مقاييس التفاعل الرئيسية في لمحة",
+        "new": "جديد"
+      }
+    },
+    "business": {
+      "title": "ذكاء الأعمال",
+      "description": "تحليلات ولوحات بيانات ورؤى لأعمالك",
+      "refresh": "تحديث",
+      "newDashboard": "لوحة بيانات جديدة",
+      "breadcrumb": "ذكاء الأعمال",
+      "loading": "جاري التحميل...",
+      "loadError": "فشل تحميل البيانات",
+      "retry": "إعادة المحاولة",
+      "widgets": "{count} عناصر واجهة",
+      "rows": "{count} صفوف",
+      "accuracy": "{accuracy}% دقة",
+      "stats": {
+        "totalDatasets": "إجمالي مجموعات البيانات",
+        "totalModels": "إجمالي نماذج التعلم الآلي",
+        "totalDashboards": "إجمالي لوحات البيانات",
+        "totalQueries": "إجمالي الاستعلامات"
+      },
+      "dashboards": {
+        "title": "لوحات البيانات الأخيرة",
+        "description": "أحدث لوحات البيانات التي تم تحديثها",
+        "viewAll": "عرض الكل",
+        "empty": "لا توجد لوحات بيانات بعد",
+        "createFirst": "أنشئ أول لوحة بيانات لك"
+      },
+      "datasets": {
+        "title": "نظرة عامة على مجموعات البيانات",
+        "description": "مصادر بياناتك وحالتها",
+        "viewAll": "عرض الكل",
+        "empty": "لم يتم رفع أي مجموعات بيانات بعد"
+      },
+      "models": {
+        "title": "نماذج التعلم الآلي",
+        "description": "نماذج تعلم آلي مدربة",
+        "viewAll": "عرض الكل",
+        "empty": "لم يتم تدريب أي نماذج تعلم آلي بعد"
+      },
+      "insights": {
+        "title": "رؤى سريعة",
+        "totalQueries": "إجمالي الاستعلامات",
+        "datasetsLoaded": "مجموعات البيانات المحملة",
+        "modelsActive": "النماذج النشطة"
+      },
+      "reports": {
+        "title": "عرض التقارير",
+        "description": "عرض جميع تقارير الأعمال"
+      },
+      "breadcrumbDashboard": "لوحة البيانات",
+      "breadcrumbHome": "الرئيسية"
+    },
+    "financial": {
+      "breadcrumb": "النظرة المالية",
+      "title": "النظرة المالية",
+      "description": "تتبع إيراداتك ومستحقاتك وأرباحك عبر جميع الركائز",
+      "refresh": "تحديث",
+      "loading": "جاري تحميل لوحة البيانات المالية...",
+      "error": {
+        "title": "حدث خطأ ما",
+        "retry": "حاول مرة أخرى"
+      },
+      "stats": {
+        "totalRevenue": "إجمالي الإيرادات",
+        "pendingPayouts": "المستحقات المعلقة",
+        "availableBalance": "الرصيد المتاح",
+        "revenueByPillar": "الإيرادات حسب الركيزة",
+        "pillars": "{count} ركائز"
+      },
+      "revenueBreakdown": {
+        "title": "توزيع الإيرادات حسب الركيزة",
+        "description": "توزيع الأرباح عبر أنشطتك",
+        "ofTotal": "% من الإجمالي"
+      },
+      "revenueSummary": {
+        "title": "ملخص الإيرادات",
+        "description": "لمحة مالية سريعة",
+        "totalRevenue": "إجمالي الإيرادات",
+        "pendingPayouts": "المستحقات المعلقة",
+        "availableBalance": "الرصيد المتاح"
+      },
+      "revenueOverTime": {
+        "title": "الإيرادات عبر الوقت",
+        "description": "توزيع الإيرادات الشهرية",
+        "empty": {
+          "title": "لا توجد بيانات إيرادات بعد",
+          "description": "سيظهر التوزيع الشهري للإيرادات بمجرد بدء الربح"
+        }
+      },
+      "payoutHistory": {
+        "title": "سجل المدفوعات",
+        "description": "المدفوعات الأخيرة والقادمة",
+        "empty": {
+          "title": "لا يوجد سجل مدفوعات",
+          "description": "سيظهر سجل مدفوعاتك هنا بمجرد استلام أول دفعة"
+        }
+      },
+      "pillars": {
+        "teaching": "التدريس",
+        "freelancing": "العمل الحر",
+        "business": "الأعمال",
+        "other": "أخرى"
+      }
+    },
+    "freelancing": {
+      "breadcrumb": "العمل الحر",
+      "title": "لوحة العمل الحر",
+      "description": "إدارة مشاريعك الحرة ومقترحاتك وأرباحك",
+      "refresh": "تحديث",
+      "loading": "جاري تحميل لوحة العمل الحر...",
+      "error": {
+        "title": "حدث خطأ ما",
+        "retry": "حاول مرة أخرى"
+      },
+      "stats": {
+        "activeProjects": "المشاريع النشطة",
+        "completedProjects": "المشاريع المكتملة",
+        "totalEarnings": "إجمالي الأرباح",
+        "pendingProposals": "المقترحات المعلقة",
+        "avgRating": "متوسط التقييم",
+        "responseRate": "معدل الاستجابة"
+      },
+      "earningsOverview": {
+        "title": "نظرة عامة على الأرباح",
+        "description": "توزيع الأرباح الشهرية",
+        "totalEarned": "الإجمالي المكتسب",
+        "total": "الإجمالي",
+        "pending": "معلق",
+        "withdrawn": "تم السحب",
+        "empty": "لا توجد بيانات أرباح بعد"
+      },
+      "projectStatus": {
+        "title": "حالة المشروع",
+        "description": "توزيع",
+        "open": "مفتوح",
+        "inProgress": "قيد التنفيذ",
+        "completed": "مكتمل",
+        "cancelled": "ملغي"
+      },
+      "recentProposals": {
+        "title": "المقترحات الأخيرة",
+        "description": "أحدث مقترحات مشاريعك",
+        "empty": "لا توجد مقترحات بعد",
+        "emptyHint": "ابدأ بتصفح المشاريع لتقديم المقترحات",
+        "browseProjects": "تصفح المشاريع"
+      }
+    },
+    "learning": {
+      "breadcrumb": "التعلم",
+      "title": "لوحة التعلم",
+      "description": "تتبع تقدمك ونتائج الاختبارات وإنجازات التعلم",
+      "refresh": "تحديث",
+      "error": {
+        "title": "فشل تحميل بيانات التعلم",
+        "retry": "حاول مرة أخرى"
+      },
+      "stats": {
+        "coursesInProgress": "الدورات قيد التنفيذ",
+        "completedCourses": "الدورات المكتملة",
+        "totalHours": "إجمالي الساعات",
+        "avgQuizScore": "متوسط درجة الاختبار",
+        "certificates": "الشهادات"
+      },
+      "courseProgress": {
+        "title": "تقدم الدورة",
+        "courses": "{count} دورات",
+        "empty": "لا توجد دورات بعد",
+        "browseCourses": "تصفح الدورات",
+        "lastActivity": "آخر نشاط: {date}"
+      },
+      "quizPerformance": {
+        "title": "أداء الاختبارات",
+        "empty": "لا توجد بيانات اختبارات بعد",
+        "emptyHint": "أكمل اختباراً لترى نتائجك"
+      },
+      "quickActions": {
+        "title": "إجراءات سريعة",
+        "browseCourses": "تصفح الدورات",
+        "mainDashboard": "لوحة التحكم الرئيسية"
+      }
+    },
+    "teaching": {
+      "breadcrumb": "التدريس",
+      "title": "لوحة التدريس",
+      "description": "إدارة دوراتك وطلابك وأرباحك",
+      "error": {
+        "title": "فشل تحميل لوحة التدريس",
+        "retry": "إعادة المحاولة"
+      },
+      "stats": {
+        "totalCourses": "إجمالي الدورات",
+        "totalStudents": "إجمالي الطلاب",
+        "totalRevenue": "إجمالي الإيرادات",
+        "avgRating": "متوسط التقييم",
+        "totalReviews": "إجمالي المراجعات",
+        "spendableBalance": "الرصيد القابل للسحب"
+      },
+      "royalties": {
+        "monthlyTitle": "عائدات منشئ المحتوى الشهرية",
+        "noMonthlyData": "لا يوجد سجل إيرادات شهري",
+        "noMonthlyDataDesc": "ستظهر العائدات هنا بمجرد شراء الطلاب لدوراتك التدريبية.",
+        "byCourseTitle": "توزيع الإيرادات حسب الدورة",
+        "noCourseData": "لا توجد إيرادات للدورات بعد",
+        "noCourseDataDesc": "سيتم تفصيل أداء دوراتك الأكثر نجاحًا هنا."
+      },
+      "recentReviews": {
+        "title": "المراجعات الأخيرة",
+        "empty": "لا توجد مراجعات بعد",
+        "emptyDescription": "ستظهر مراجعات طلابك هنا"
+      },
+      "studentEngagement": {
+        "title": "تفاعل الطلاب",
+        "completionRate": "معدل الإكمال",
+        "activeStudents": "الطلاب النشطون",
+        "avgTimeSpent": "متوسط الوقت المستغرق",
+        "empty": "لا توجد بيانات تفاعل",
+        "emptyDescription": "ستظهر مقاييس تفاعل الطلاب بمجرد وجود طلاب نشطين"
+      }
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "subtitle": "إدارة إعدادات وتفضيلات حسابك",
+    "groups": {
+      "accountSecurity": "الحساب والأمان",
+      "preferences": "التفضيلات والمظهر",
+      "billingUsage": "الفواتير والاستخدام",
+      "system": "النظام والمتقدم"
+    },
+    "tabs": {
+      "account": "الحساب الشخصي",
+      "notifications": "قنوات التنبيهات",
+      "security": "الأمان والكلمة السرية",
+      "privacy": "الخصوصية والظهور",
+      "appearance": "المظهر واللغة",
+      "billing": "الاشتراك والبطاقات",
+      "integrations": "التطبيقات والربط",
+      "usage": "حدود الاستخدام",
+      "data": "البيانات والملفات",
+      "advanced": "إعدادات متقدمة",
+      "devices": "الأجهزة والجلسات",
+      "danger": "منطقة الخطر"
+    },
+    "buttons": {
+      "saveChanges": "حفظ التغييرات",
+      "savePreferences": "حفظ التفضيلات",
+      "updateSecurity": "تحديث الأمان",
+      "savePrivacy": "حفظ الخصوصية",
+      "saveAppearance": "حفظ المظهر",
+      "edit": "تعديل",
+      "exportData": "تصدير البيانات"
+    },
+    "success": {
+      "accountUpdated": "تم تحديث إعدادات الحساب بنجاح!",
+      "securityUpdated": "تم تحديث إعدادات الأمان بنجاح!",
+      "notificationsUpdated": "تم تحديث تفضيلات الإشعارات بنجاح!",
+      "appearanceUpdated": "تم تحديث إعدادات المظهر بنجاح!",
+      "privacyUpdated": "تم تحديث إعدادات الخصوصية بنجاح!",
+      "passwordChanged": "تم تغيير كلمة المرور بنجاح!",
+      "accountDeletionScheduled": "تم جدولة حذف الحساب بنجاح. سيتم تسجيل خروجك قريباً.",
+      "verificationEmailSent": "تم إرسال بريد التحقق! يرجى التحقق من صندوق الوارد.",
+      "verificationCodeSent": "تم إرسال رمز التحقق إلى هاتفك!",
+      "integrationConnected": "تم توصيل {integration} بنجاح!",
+      "integrationDisconnected": "تم فصل {integration} بنجاح!"
+    },
+    "errors": {
+      "passwordMismatch": "كلمات المرور الجديدة غير متطابقة",
+      "incorrectPassword": "كلمة المرور الحالية غير صحيحة. يرجى المحاولة مرة أخرى.",
+      "confirmPassword": "الرجاء إدخال كلمة المرور الخاصة بك لتأكيد حذف الحساب",
+      "integrationConnectFailed": "فشل في توصيل {integration}",
+      "integrationDisconnectFailed": "فشل في فصل {integration}",
+      "network": "خطأ في الشبكة. يرجى التحقق من اتصالك والمحاولة مرة أخرى."
+    },
+    "account": {
+      "title": "إعدادات الحساب",
+      "subtitle": "إدارة معلوماتك الشخصية وبيانات التواصل وتفضيلات الحساب",
+      "fullName": "الاسم الكامل",
+      "fullNamePlaceholder": "مثال: يوسف بن علي",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "language": "اللغة",
+      "languages": {
+        "en": "الإنجليزية (الولايات المتحدة)",
+        "fr": "الفرنسية (فرنسا)",
+        "ar": "العربية (الفصحى)",
+        "kab": "القبائلية (تقبايليت)"
+      },
+      "timezone": "المنطقة الزمنية",
+      "dateFormat": "تنسيق التاريخ",
+      "headline": "المسمى المهني",
+      "headlinePlaceholder": "مثال: مهندس برمجيات أول وباحث في الذكاء الاصطناعي",
+      "bio": "النبذة الشخصية",
+      "bioPlaceholder": "نبذة مهنية موجزة عن مهاراتك وخبراتك...",
+      "saveError": "فشل حفظ الإعدادات",
+      "avatarUploadError": "فشل رفع الصورة الشخصية",
+      "removePhoto": "إزالة الصورة",
+      "verifiedStatus": "حساب موثق",
+      "detectTimezone": "كشف تلقائي",
+      "saveSuccess": "تم حفظ الإعدادات بنجاح!",
+      "emailPlaceholder": "name@company.com",
+      "phonePlaceholder": "+213 550 000 000",
+      "defaultUser": "الملف الشخصي للمستخدم",
+      "timezones": {
+        "utc": "التوقيت العالمي المنسق (UTC)",
+        "algiers": "إفريقيا/الجزائر (CET, UTC+1)",
+        "paris": "أوروبا/باريس (CET, UTC+1)",
+        "newYork": "أمريكا/نيويورك (EST, UTC-5)",
+        "dubai": "آسيا/دبي (GST, UTC+4)"
+      },
+      "dateFormats": {
+        "iso": "تنسيق ISO: سنة-شهر-يوم (2026-08-30)",
+        "eu": "التنسيق الأوروبي: يوم/شهر/سنة (30/08/2026)",
+        "us": "التنسيق الأمريكي: شهر/يوم/سنة (08/30/2026)"
+      },
+      "timeFormat": {
+        "label": "تنسيق الوقت",
+        "options": {
+          "twelve": "12 ساعة",
+          "twentyFour": "24 ساعة"
+        }
+      },
+      "newsletter": {
+        "title": "الاشتراك في النشرة الإخبارية",
+        "description": "تلقي التحديثات والأخبار والعروض الخاصة"
+      },
+      "verification": {
+        "title": "حالة التحقق",
+        "email": {
+          "title": "عنوان البريد الإلكتروني",
+          "verified": "تم التحقق من بريدك الإلكتروني وهو آمن",
+          "unverified": "تحقق من بريدك الإلكتروني لتأمين حسابك"
+        },
+        "phone": {
+          "title": "رقم الهاتف",
+          "verified": "تم التحقق من رقم هاتفك",
+          "unverified": "تحقق من هاتفك لأمان إضافي",
+          "manualNotice": "التحقق التلقائي من الهاتف غير متاح حالياً. للتحقق من رقم هاتفك، يرجى التواصل مع فريقنا.",
+          "contactAdmin": "تواصل مع podacium@podacium.com",
+          "emailSubject": "طلب التحقق من رقم الهاتف",
+          "emailBody": "مرحباً،\n\nأرغب في التحقق من رقم هاتفي.\n\nالبريد الإلكتروني للحساب: {email}\nرقم الهاتف: {phone}\n\nشكراً."
+        },
+        "verifyEmail": "تحقق من البريد الإلكتروني",
+        "verifyPhone": "تحقق من الهاتف"
+      }
+    },
+    "privacy": {
+      "title": "إعدادات الخصوصية",
+      "profile": {
+        "title": "ظهور الملف الشخصي",
+        "visibility": {
+          "label": "من يمكنه رؤية ملفك الشخصي",
+          "options": {
+            "public": "عام",
+            "followers": "المتابعون فقط",
+            "connections": "الاتصالات فقط",
+            "private": "خاص"
+          }
+        },
+        "search": {
+          "label": "ظهور البحث",
+          "description": "السماح بظهور ملفك الشخصي في نتائج البحث"
+        },
+        "activity": {
+          "label": "حالة النشاط",
+          "description": "إظهار وقت نشاطك على المنصة"
+        }
+      },
+      "data": {
+        "title": "البيانات والاتصالات",
+        "readReceipts": {
+          "label": "إشعارات القراءة",
+          "description": "السماح للآخرين بمعرفة متى قرأت رسائلهم"
+        },
+        "sharing": {
+          "label": "مشاركة البيانات",
+          "description": "ساعد في تحسين خدماتنا من خلال مشاركة بيانات الاستخدام"
+        },
+        "ads": {
+          "label": "إعلانات مخصصة",
+          "description": "رؤية إعلانات ذات صلة بناءً على نشاطك"
+        }
+      },
+      "visibility": {
+        "public": "عام",
+        "followers": "المتابعون فقط",
+        "connections": "الاتصالات فقط",
+        "private": "خاص"
+      },
+      "sections": {
+        "title": "الرؤية حسب القسم",
+        "description": "تحكم في من يمكنه رؤية كل قسم من ملفك الشخصي. الأقسام المضبوطة على \"توريث\" تتبع إعداد الرؤية العام.",
+        "section": "القسم",
+        "visibility": "الرؤية",
+        "visibilityOptions": {
+          "public": "عام",
+          "followers": "المتابعون فقط",
+          "connections": "الاتصالات فقط",
+          "private": "خاص"
+        },
+        "saving": "جاري الحفظ...",
+        "footerNote": "لا يزال إعداد رؤية ملفك الشخصي العام ساريًا على أي قسم مضبوط على \"توريث\".",
+        "listLabel": "أقسام الملف الشخصي",
+        "bio": "السيرة الذاتية",
+        "bioDesc": "سيرتك الذاتية المهنية",
+        "headline": "العنوان الرئيسي",
+        "headlineDesc": "عنوانك المهني أسفل اسمك",
+        "tagline": "الشعار الشخصي",
+        "taglineDesc": "شعارك الشخصي",
+        "pronouns": "الضمائر",
+        "pronounsDesc": "الضمائر التي تفضلها",
+        "coverImage": "صورة الغلاف",
+        "coverImageDesc": "صورة غلاف ملفك الشخصي",
+        "location": "الموقع الجغرافي",
+        "locationDesc": "مدينتك وبلدك",
+        "socialLinks": "روابط التواصل",
+        "socialLinksDesc": "روابط لملفاتك الشخصية على وسائل التواصل",
+        "availability": "حالة التوفر للعمل",
+        "availabilityDesc": "حالة توفرك للعمل أو التعاون",
+        "timezone": "المنطقة الزمنية",
+        "timezoneDesc": "منطقتك الزمنية المحلية",
+        "profileViews": "مشاهدات الملف",
+        "profileViewsDesc": "عدد مشاهدات ملفك الشخصي",
+        "lastActive": "آخر نشاط",
+        "lastActiveDesc": "آخر مرة كنت فيها نشطًا على المنصة",
+        "followers": "المتابعون",
+        "followersDesc": "عدد المتابعين وقائمتهم",
+        "following": "المتابَعون",
+        "followingDesc": "عدد المتابَعين وقائمتهم",
+        "badges": "الشارات والجوائز",
+        "badgesDesc": "شاراتك وإنجازاتك",
+        "skills": "المهارات والخبرات",
+        "skillsDesc": "مهاراتك وكفاءاتك المدرجة",
+        "activityFeed": "خلاصة النشاط",
+        "activityFeedDesc": "نشاطك الأخير على المنصة",
+        "usernameHistory": "تاريخ اسم المستخدم",
+        "usernameHistoryDesc": "أسماء المستخدمين السابقة",
+        "loading": "جاري تحميل رؤية الأقسام...",
+        "loadError": "فشل تحميل رؤية الأقسام",
+        "saveError": "فشل حفظ إعداد الرؤية",
+        "cover_image": "صورة الغلاف",
+        "social_links": "روابط التواصل الاجتماعي",
+        "profile_views": "مشاهدات الملف الشخصي",
+        "last_active": "تاريخ آخر نشاط",
+        "activity_feed": "سجل النشاط العام",
+        "username_history": "سجل أسماء المستخدمين"
+      },
+      "subtitle": "تهيئة مستوى الظهور لكل عنصر، وإذونات الاستكشاف، وحالة النشاط عبر الإنترنت",
+      "globalScope": "نطاق الملف الشخصي العام",
+      "globalVisibilityGroup": "نطاق الملف الشخصي العام",
+      "profileVisibility": "الظهور العام للملف الشخصي",
+      "profileVisibilityDesc": "التحكم في وصول الزوار غير المسجلين ومحركات البحث لملفك الشخصي",
+      "granularField": "رؤية العناصر التفصيلية",
+      "granularFieldDesc": "تخصيص مستوى الظهور لكل مكون في معرض أعمالك العام بشكل منفصل",
+      "perSectionGroup": "رؤية العناصر التفصيلية",
+      "perSectionDesc": "تخصيص مستوى الظهور لكل مكون في معرض أعمالك العام بشكل منفصل",
+      "discoverabilityPresence": "الاستكشاف والوجود الحقيقي",
+      "discoverabilityGroup": "الاستكشاف والوجود الحقيقي",
+      "searchIndexing": "أرشفة محركات البحث",
+      "searchIndexingDesc": "السماح لمحركات البحث مثل Google والمنصة بأرشفة ملفك الشخصي",
+      "searchVisibility": "أرشفة محركات البحث",
+      "searchVisibilityDesc": "السماح لمحركات البحث مثل Google والمنصة بأرشفة ملفك الشخصي",
+      "liveActivity": "مؤشر النشاط المباشر",
+      "activityStatus": "مؤشر النشاط المباشر",
+      "activityStatusDesc": "إظهار نقطة خضراء متصلة للعملاء وأصحاب العمل المحتملين",
+      "saveChanges": "حفظ التغييرات",
+      "options": {
+        "public": "عام (الجميع)",
+        "followers": "المتابعون فقط",
+        "connections": "جهات الاتصال فقط",
+        "private": "خاص (أنا فقط)"
+      }
+    },
+    "notifications": {
+      "title": "قنوات التنبيهات",
+      "email": {
+        "title": "إشعارات البريد الإلكتروني",
+        "account": {
+          "label": "إشعارات البريد الإلكتروني",
+          "description": "تلقي إشعارات عبر البريد الإلكتروني للأنشطة المهمة"
+        }
+      },
+      "inApp": {
+        "label": "إشعارات داخل التطبيق",
+        "description": "تلقي إشعارات داخل واجهة المنصة"
+      },
+      "sms": {
+        "label": "إشعارات الرسائل القصيرة",
+        "description": "تلقي تنبيهات مهمة عبر الرسائل النصية"
+      },
+      "push": {
+        "title": "الإشعارات الفورية",
+        "notifications": {
+          "label": "الإشعارات الفورية",
+          "description": "تنبيهات فورية على أجهزتك"
+        }
+      },
+      "marketing": {
+        "title": "التسويق والاتصالات",
+        "emails": {
+          "label": "رسائل البريد التسويقية",
+          "description": "تحديثات المنتجات والعروض الترويجية"
+        },
+        "newsletter": {
+          "label": "النشرة الإخبارية",
+          "description": "رؤى ونصائح أسبوعية"
+        }
+      },
+      "quietHours": {
+        "title": "ساعات الهدوء",
+        "start": "بداية ساعات الهدوء",
+        "end": "نهاية ساعات الهدوء",
+        "description": "سيتم إسكات الإشعارات خلال هذه الساعات"
+      },
+      "digest": {
+        "title": "الملخص البريدي",
+        "frequency": "تكرار الملخص",
+        "frequencyOptions": {
+          "daily": "يومي",
+          "weekly": "أسبوعي",
+          "never": "أبداً"
+        }
+      },
+      "digestTime": {
+        "label": "وقت الملخص",
+        "description": "تلقي ملخص إشعاراتك في هذا الوقت"
+      },
+      "subtitle": "تخصيص التنبيهات الشخصية والرسائل الإخبارية والتنبيهات المباشرة والتسويقية",
+      "channelsGroup": "تنبيهات النظام والأمان",
+      "emailNotifications": "تنبيهات البريد الإلكتروني",
+      "emailNotificationsDesc": "استلام تنبيهات المنصة وتحديثات الدورات والإشعارات الأمنية عبر البريد الإلكتروني",
+      "pushNotifications": "تنبيهات الشاشة المباشرة (Push)",
+      "pushNotificationsDesc": "إشعارات فورية على المتصفح والجهاز للرسائل والعروض والتحديثات الحية",
+      "smsNotifications": "رسائل نصية قصيرة (SMS)",
+      "smsNotificationsDesc": "تنبيهات طوارئ قصيرة للتحقق من الحساب والأمان عالي الأهمية",
+      "marketingGroup": "التسويق والنشرات الإخبارية",
+      "marketingEmails": "رسائل التسويق والعروض",
+      "marketingEmailsDesc": "تلقي معلومات حول الميزات الجديدة والعروض الخاصة والأحداث الحصرية",
+      "newsletter": "النشرة الإخبارية الأسبوعية",
+      "newsletterDesc": "ملخص أسبوعي لأبرز التحليلات والفرص التعليمية والمهنية على بوداسيوم",
+      "loadError": "فشل تحميل إعدادات التنبيهات",
+      "saveError": "فشل حفظ إعدادات التنبيهات",
+      "savedSuccess": "تم حفظ تفضيلات التنبيهات بنجاح",
+      "pushEnabled": "تم تفعيل الإشعارات الفورية بنجاح!",
+      "pushDisabled": "تم تعطيل الإشعارات الفورية",
+      "pushDenied": "تم رفض إذن الإشعارات الفورية أو أنها غير مدعومة."
+    },
+    "security": {
+      "title": "إعدادات الأمان",
+      "authentication": {
+        "title": "المصادقة",
+        "twoFactor": {
+          "label": "المصادقة الثنائية",
+          "description": "أضف طبقة أمان إضافية"
+        },
+        "loginAlerts": {
+          "label": "تنبيهات تسجيل الدخول",
+          "description": "احصل على إشعارات بتسجيلات الدخول الجديدة"
+        }
+      },
+      "sessions": {
+        "title": "إدارة الجلسات",
+        "deviceManagement": {
+          "label": "إدارة الأجهزة",
+          "description": "إدارة الأجهزة والجلسات النشطة"
+        },
+        "timeout": {
+          "label": "مهلة الجلسة",
+          "value": "{hours} ساعات",
+          "description": "تسجيل الخروج تلقائياً بعد عدم النشاط"
+        }
+      },
+      "password": {
+        "title": "إدارة كلمة المرور",
+        "current": {
+          "label": "كلمة المرور الحالية",
+          "placeholder": "أدخل كلمة المرور الحالية",
+          "error": "كلمة المرور الحالية غير صحيحة"
+        },
+        "new": {
+          "label": "كلمة المرور الجديدة",
+          "placeholder": "أنشئ كلمة مرور قوية"
+        },
+        "confirm": {
+          "label": "تأكيد كلمة المرور الجديدة",
+          "placeholder": "أكد كلمة المرور الجديدة",
+          "error": "كلمات المرور غير متطابقة"
+        },
+        "change": "تغيير كلمة المرور",
+        "strength": {
+          "title": "قوة كلمة المرور"
+        },
+        "requirements": {
+          "length": "8+ أحرف",
+          "uppercase": "حرف كبير",
+          "lowercase": "حرف صغير",
+          "number": "رقم",
+          "special": "حرف خاص"
+        }
+      }
+    },
+    "appearance": {
+      "title": "إعدادات المظهر",
+      "theme": {
+        "label": "السمة",
+        "options": {
+          "light": "فاتح",
+          "dark": "داكن",
+          "system": "النظام"
+        },
+        "light": "الوضع الفاتح",
+        "dark": "الوضع الداكن",
+        "system": "الافتراضي للنظام"
+      },
+      "fontSize": {
+        "label": "حجم الخط",
+        "options": {
+          "small": "صغير",
+          "medium": "متوسط",
+          "large": "كبير"
+        },
+        "small": "صغير",
+        "medium": "متوسط",
+        "large": "كبير"
+      },
+      "density": {
+        "label": "الكثافة",
+        "options": {
+          "compact": "مضغوط",
+          "comfortable": "مريح",
+          "spacious": "فسيح"
+        },
+        "compact": "مدمج",
+        "compactDesc": "تباعد أصغر لاستعراض مزيد من المحتوى",
+        "comfortable": "مريح",
+        "comfortableDesc": "توازن قياسي للتصفح اليومي",
+        "spacious": "فسيح",
+        "spaciousDesc": "تباعد واسع لراحة العين"
+      },
+      "reducedMotion": "تقليل الحركة",
+      "highContrast": "وضع التباين العالي",
+      "subtitle": "تخصيص مظهر المنصة وحجم الخط وكثافة العرض وإمكانية الوصول",
+      "themeGroup": "نمط الألوان والمظهر",
+      "themeSavedNotice": "تم حفظ تفضيلات المظهر في الملف الشخصي (إطلاق الوضع الداكن مجدول في التحديث القادم)",
+      "light": "الاستوديو الفاتح",
+      "dark": "الاستوديو الداكن",
+      "system": "تلقائي حسب النظام",
+      "fontSizeGroup": "مقياس حجم الخط",
+      "densityGroup": "كثافة تباعد الواجهة",
+      "accessibilityGroup": "إعدادات إمكانية الوصول",
+      "reducedMotionDesc": "تقليل الحركات المعقدة والانتقالات",
+      "highContrastDesc": "زيادة نسبة التباين البصري لتحسين القراءة",
+      "previewTitle": "معاينة مباشرة لتحجيم الواجهة",
+      "previewCardTitle": "بطاقة تفاعلية نموذجية",
+      "previewMeta": "الخط: {font} • الكثافة: {density}",
+      "previewHeading": "مساحة عمل منصة بوداسيوم",
+      "previewText": "تعكس هذه المعاينة في الوقت الفعلي تحجيم الخطوط وتباعد التخطيط عبر كامل لوحة التحكم.",
+      "previewPrimaryBtn": "زر الإجراء",
+      "previewSecondaryBtn": "ثانوي",
+      "loadError": "فشل تحميل إعدادات المظهر",
+      "saveError": "فشل حفظ الإعدادات"
+    },
+    "billing": {
+      "title": "الفواتير والاشتراك",
+      "currentPlan": "خطة الاشتراك الحالية",
+      "recommended": "موصى به",
+      "current": "حالي",
+      "interval": {
+        "monthly": "شهر",
+        "yearly": "سنة"
+      },
+      "upgrade": "الترقية",
+      "paymentMethods": "طرق الدفع المسجلة",
+      "history": {
+        "title": "سجل الفواتير",
+        "columns": {
+          "date": "التاريخ",
+          "description": "الوصف",
+          "amount": "المبلغ",
+          "status": "الحالة"
+        },
+        "proPlan": "الخطة الاحترافية - شهرية",
+        "paid": "مدفوع"
+      },
+      "subtitle": "إدارة خطتك، طرق الدفع، وسجل الفواتير",
+      "freePlanDesc": "أنت حالياً على الخطة المجانية. قم بالترقية لفتح جميع ميزات الذكاء الاصطناعي والتحليلات.",
+      "proPlanDesc": "أنت على الخطة الاحترافية. استمتع بالوصول الكامل لجميع الميزات الممتازة.",
+      "upgradeCTA": "الترقية إلى الخطة الاحترافية",
+      "noPaymentMethods": "لم يتم إضافة أي طرق دفع حتى الآن",
+      "invoices": "سجل الفواتير والمدفوعات",
+      "noInvoices": "لم يتم العثور على سجل فواتير سابق",
+      "addPaymentMethod": "إضافة طريقة دفع",
+      "freePlanTitle": "الخطة المجانية",
+      "proPlanTitle": "الخطة الاحترافية",
+      "enterprisePlanTitle": "خطة المؤسسات",
+      "freeBadge": "أساسي مجاني",
+      "proBadge": "فئة احترافية",
+      "loadError": "فشل تحميل بيانات الفواتير والاشتراك",
+      "changePlanCTA": "إدارة فئة الاشتراك",
+      "expires": "تنتهي في",
+      "makeDefault": "تعيين كافتراضي",
+      "removePaymentMethod": "إزالة وسيلة الدفع",
+      "modalTitle": "إضافة وسيلة دفع",
+      "modalDesc": "أدخل بيانات بطاقتك الائتمانية لمعالجة آمنة ومشفرة.",
+      "cardholderName": "اسم حامل البطاقة",
+      "cardholderPlaceholder": "مثال: يوسف بن علي",
+      "cardNumber": "رقم البطاقة",
+      "cardNumberPlaceholder": "4532 •••• •••• 8892",
+      "expDate": "تاريخ الانتهاء (شهر/سنة)",
+      "cvc": "رمز الأمان CVC / CVV",
+      "setAsDefault": "تعيين كوسيلة دفع افتراضية",
+      "addCardBtn": "حفظ البطاقة",
+      "addCardError": "فشل إضافة وسيلة الدفع",
+      "errorCardholder": "اسم حامل البطاقة مطلوب",
+      "errorCardNumber": "رقم البطاقة غير صالح",
+      "errorExpDate": "تاريخ الانتهاء غير صالح (شهر/سنة)",
+      "errorCardExpired": "البطاقة منتهية الصلاحية",
+      "errorCvc": "رمز الأمان CVC غير صالح",
+      "switchPlanTitle": "اختر فئة الاشتراك",
+      "switchPlanDesc": "اختر خطة الاشتراك الأكثر ملاءمة لاحتياجات عملك وتطلعاتك.",
+      "plans": {
+        "freeName": "الأساسية المجانية",
+        "freePrice": "0$ / شهرياً",
+        "freeDesc": "الميزات الأساسية للأفراد لاستكشاف منصة بوداسيوم",
+        "proName": "الفئة الاحترافية",
+        "proPrice": "19$ / شهرياً",
+        "proDesc": "ميزات ذكاء اصطناعي غير محدودة وأولوية حوسبة وتحليلات متقدمة",
+        "enterpriseName": "المؤسسات",
+        "enterprisePrice": "99$ / شهرياً",
+        "enterpriseDesc": "اتفاقية مستوى خدمة مخصصة وأمان متقدم وتكاملات مخصصة",
+        "activePlan": "الخطة الحالية",
+        "switchTo": "التبديل إلى {name}"
+      },
+      "receipt": {
+        "title": "إيصال الفاتورة #{id}",
+        "description": "إيصال دفع رسمي صادر عن منصة بوداسيوم للتعليم والعمل الحر",
+        "colDescription": "الوصف",
+        "colDate": "التاريخ",
+        "colGateway": "بوابة الدفع",
+        "chargilyPay": "شارجيلي باي",
+        "totalPaid": "إجمالي المبلغ المدفوع",
+        "printPdf": "طباعة / حفظ PDF",
+        "close": "إغلاق"
+      }
+    },
+    "integrations": {
+      "title": "محرك تكاملات Podacium Connect",
+      "subtitle": "اتصالات OAuth 2.0 PKCE المفوّضة عبر مجالات التعليم والعمل الحر وذكاء الأعمال",
+      "connected": "متصل",
+      "notConnected": "غير متصل",
+      "connect": "ربط الحساب",
+      "disconnect": "قطع الاتصال",
+      "connectors": "الموصلات",
+      "connectorsHeader": "10 موصلات صادرة",
+      "workflowBuilder": "مخطط سير العمل",
+      "wasmPreview": "محول WASM",
+      "dlqTitle": "طابور الرسائل المتعثرة",
+      "dlqDesc": "فحص وحجر عمليات التسليم الفاشلة مع إمكانية إعادة الإرسال بنقرة واحدة",
+      "outboundCount": "{count} موصلات صادرة",
+      "connectedGroup": "حسابات الطرف الثالث المتصلة",
+      "auditLogs": "سجلات التدقيق",
+      "syncNow": "مزامنة الآن",
+      "workflowTitle": "منشئ سير العمل المرئي DAG",
+      "workflowDesc": "ربط عقد الأتمتة متعددة الخطوات عبر موصلات التعليم والعمل الحر وذكاء الأعمال",
+      "addNode": "إضافة عقدة",
+      "step": "الخطوة {n}",
+      "wasmTitle": "معاينة محول WASM المعزول",
+      "wasmDesc": "معاينة تحويلات بيانات JavaScript/Rust المعرفة من قبل المستخدم في بيئة حوسبة WASM معزولة",
+      "wasmCodeLabel": "كود برمجة تحويل WASM",
+      "rawInputLabel": "حمولة الإدخال الأولية (JSON)",
+      "executeWasm": "تنفيذ في بيئة WASM المعزولة",
+      "outputPreview": "معاينة مخرجات WASM المحولة:",
+      "dlqInspectorTitle": "مفتش طابور الرسائل المتعثرة (DLQ)",
+      "dlqInspectorDesc": "فحص وحجر عمليات التسليم الفاشلة مع إمكانية إعادة الإرسال بنقرة واحدة",
+      "redeliver": "إعادة إرسال حمولة الحدث",
+      "auditLogsTitle": "سجلات التدقيق: {provider}",
+      "noLogs": "لم يتم تسجيل أي عمليات تنفيذ للموصل بعد.",
+      "executeTitle": "تنفيذ",
+      "executeDesc": "تشغيل منطق تكامل موصل واجهة برمجة التطبيقات الخلفية الفعلي لـ",
+      "triggerDesc": "تشغيل منطق تكامل موصل واجهة برمجة التطبيقات الخلفية الفعلي لـ",
+      "runAction": "تشغيل الإجراء",
+      "statusConnected": "متصل",
+      "statusNotConnected": "غير متصل",
+      "connectBtn": "ربط الحساب",
+      "connectedMsg": "تم الاتصال بنجاح",
+      "disconnectedMsg": "تم قطع الاتصال",
+      "actionSucceeded": "نجح إجراء الموصل",
+      "loadError": "فشل تحميل التكاملات المتصلة",
+      "disconnectError": "فشل قطع اتصال التكامل",
+      "syncSuccess": "اكتملت المزامنة الخلفية التلقائية لـ {provider}",
+      "syncError": "فشلت المزامنة للتكامل",
+      "pillar": {
+        "all": "الكل",
+        "education": "التعليم الرقمي",
+        "freelance": "العمل الحر",
+        "bi": "ذكاء الأعمال"
+      },
+      "google": {
+        "name": "Google Drive ومساحة العمل",
+        "desc": "استيراد ملفات الواجبات مباشرة من Drive وتصدير تقارير بيانات ذكاء الأعمال",
+        "action": "استيراد ملف الواجب"
+      },
+      "github": {
+        "name": "محرك مطوري GitHub",
+        "desc": "التحقق من فروع PR ومزامنة نشاط إيداع المستقل مع مراحل العقد",
+        "action": "مزامنة PR المرحلة"
+      },
+      "slack": {
+        "name": "ذكاء فريق Slack",
+        "desc": "إرسال تقارير لقطات مؤشرات الأداء وتنبيهات الشذوذ التلقائية إلى القناة",
+        "action": "نشر لقطة ذكاء الأعمال"
+      },
+      "zoom": {
+        "name": "فصول Zoom الافتراضية",
+        "desc": "توفير ندوات مباشرة ومحاضرات تفاعلية لدورات التعليم الرقمي",
+        "action": "توفير ندوة مباشرة"
+      },
+      "notion": {
+        "name": "مساحة دراسة Notion",
+        "desc": "تصدير أدلة وملاحظات الدراسة مباشرة إلى مساحة عمل Notion",
+        "action": "تصدير ملاحظات الدراسة"
+      },
+      "kaggle": {
+        "name": "مركز مجموعات بيانات Kaggle",
+        "desc": "استيعاب مجموعات بيانات تعلم الآلة ومعايير المسابقات في مركز ذكاء الأعمال",
+        "action": "استيعاب مجموعة بيانات ML"
+      },
+      "huggingface": {
+        "name": "بطاقات نماذج HuggingFace",
+        "desc": "مزامنة بطاقات نماذج الذكاء الاصطناعي وعلامات المسار ومقاييس البيانات مع بطاقات المشاريع",
+        "action": "مزامنة بطاقة نموذج AI"
+      },
+      "teams": {
+        "name": "بث Microsoft Teams",
+        "desc": "نشر تحديثات مؤشرات الأداء التكيفية في قنوات Teams للشركات",
+        "action": "نشر بطاقة Teams التكيفية"
+      },
+      "calendar": {
+        "name": "تقويم Google / Outlook",
+        "desc": "مزامنة جداول الدورات والمواعيد النهائية لمراحل العمل الحر مع التقويم",
+        "action": "إضافة محاضرة إلى التقويم"
+      },
+      "chargily": {
+        "name": "ضمان بريدي موب و Chargily",
+        "desc": "إيداعات الضمان ببطاقة CIB / الذهبية ومدفوعات بريدي موب عبر CCP الجزائر",
+        "action": "إنشاء دفع الضمان"
+      },
+      "connectError": "فشل الاتصال بالتكامل",
+      "executeError": "فشل تنفيذ إجراء الموصل"
+    },
+    "advanced": {
+      "title": "إعدادات المطور المتقدمة",
+      "subtitle": "إدارة مفاتيح API، خطافات الويب (Webhooks)، تفريغ التخزين المؤقت، وأدوات التصحيح",
+      "enterpriseStudio": "استوديو منصة المطورين للمؤسسات",
+      "circuitResetFailed": "فشل إعادة تعيين قاطع الدائرة",
+      "programmaticKeys": "مفاتيح API البرمجية والصلاحيات",
+      "rotate": "تدوير",
+      "eventWebhooks": "خطافات الويب وقواطع الدوائر",
+      "resetCircuit": "إعادة تعيين القاطع",
+      "logs": "السجلات",
+      "rotateSecret": "تدوير المفتاح السري",
+      "test": "اختبار",
+      "analyticsTitle": "تحليلات استخدام مفاتيح API",
+      "totalCalls": "إجمالي الطلبات",
+      "errorRate": "معدل الأخطاء",
+      "avgLatency": "متوسط الاستجابة",
+      "noAnalytics": "لا توجد تحليلات استخدام مسجلة حتى الآن.",
+      "generateModalTitle": "إنشاء مفتاح API بصلاحيات RBAC",
+      "saveSecretAlert": "احفظ هذا المفتاح السري الآن!",
+      "saveSecretDesc": "لن يتم عرض هذا المفتاح السري مرة أخرى إطلاقاً. احفظه بأمان في خزينة خادمك.",
+      "done": "تم",
+      "keyNameLabel": "اسم معرّف المفتاح",
+      "keyNamePlaceholder": "مثال: خدمة الخادم للإنتاج",
+      "environmentLabel": "البيئة",
+      "envProduction": "الإنتاج",
+      "envSandbox": "بيئة الاختبار / التجربة",
+      "rbacLabel": "صلاحيات نطاق RBAC",
+      "ipWhitelistLabel": "القائمة البيضاء لعناوين IP (اختياري، مفصولة بفواصل)",
+      "deliveryLogsTitle": "سجلات تسليم خطافات الويب",
+      "noDeliveryLogs": "لا توجد سجلات تسليم مسجلة بعد.",
+      "registerWebhookTitle": "تسجيل نقطة نهاية Webhook",
+      "saveSigningSecretAlert": "احفظ مفتاح التوقيع السري!",
+      "saveSigningSecretDesc": "يُستخدم للتحقق من تواقيع HMAC SHA-256 (X-Podacium-Signature) عند التسليم.",
+      "endpointLabel": "اسم تسمية نقطة النهاية",
+      "endpointPlaceholder": "مثال: خطاف ويب لنظام المحاسبة",
+      "payloadUrlLabel": "رابط الحمولة (HTTPS)",
+      "subscribedEventsLabel": "الأحداث المشترك بها",
+      "metrics": "المقاييس",
+      "saveWebhook": "حفظ نقطة الويب هوك",
+      "replay": "إعادة الإرسال",
+      "loadError": "فشل تحميل بنية منصة المطورين",
+      "generateKeyError": "فشل توليد مفتاح واجهة برمجة التطبيقات",
+      "keyRevokedSuccess": "تم إلغاء مفتاح واجهة برمجة التطبيقات بنجاح",
+      "revokeKeyError": "فشل إلغاء مفتاح واجهة برمجة التطبيقات",
+      "keyRotatedSuccess": "تم تدوير مفتاح واجهة برمجة التطبيقات بنجاح (فترة انتقال نشطة لمدة 7 أيام)",
+      "rotateKeyError": "فشل تدوير مفتاح واجهة برمجة التطبيقات",
+      "registerWebhookError": "فشل تسجيل نقطة نهاية الويب هوك",
+      "webhookRemovedSuccess": "تمت إزالة نقطة نهاية الويب هوك",
+      "removeWebhookError": "فشل إزالة نقطة نهاية الويب هوك",
+      "webhookTestSuccess": "تم تسليم إشعار الاختبار بنجاح",
+      "testWebhookError": "فشل إرسال إشعار الويب هوك",
+      "circuitResetSuccess": "تمت إعادة تعيين قاطع الدائرة إلى وضع الإغلاق",
+      "resetCircuitError": "فشل إعادة تعيين قاطع الدائرة",
+      "secretRotatedSuccess": "تم تدوير سر التوقيع! يظل السر السابق صالحاً للطلبات قيد المعالجة.",
+      "rotateSecretError": "فشل تدوير السر",
+      "deliveryReplayedSuccess": "تمت إعادة إرسال الويب هوك بنجاح!",
+      "replayDeliveryError": "فشلت إعادة الإرسال",
+      "usage": {
+        "title": "الاستخدام والحدود",
+        "storage": "المساحة التخزينية",
+        "bandwidth": "حركة البيانات",
+        "projects": "المشاريع النشطة",
+        "collaborators": "أعضاء الفريق"
+      },
+      "data": {
+        "title": "إدارة البيانات",
+        "export": "تصدير كل البيانات",
+        "clearCache": "مسح التخزين المؤقت",
+        "refresh": "تحديث البيانات",
+        "generateReport": "إنشاء تقرير"
+      },
+      "developer": {
+        "title": "إعدادات المطورين",
+        "apiKey": "مفتاح API",
+        "apiKeyPlaceholder": "مفتاح API الخاص بك",
+        "regenerate": "إعادة توليد المفتاح",
+        "documentation": "عرض التوثيق"
+      },
+      "apiKeysGroup": "مفاتيح واجهة برمجة التطبيقات (API)",
+      "generateKey": "توليد مفتاح جديد",
+      "noApiKeys": "لا توجد مفاتيح API برمجية نشطة",
+      "webhooksGroup": "خطافات الويب في الوقت الفعلي",
+      "addWebhook": "إضافة نقطة نهاية",
+      "noWebhooks": "لم يتم إعداد أي نقاط نهاية Webhook حتى الآن",
+      "dataGroup": "حوكمة البيانات وعمليات الذاكرة المؤقتة",
+      "exportData": "تصدير أرشيف الحساب",
+      "exportDataDesc": "تنزيل نسخة JSON قابلة للقراءة آلياً لجميع بيانات ملفك الشخصي والتعليم والمشاريع",
+      "clearCache": "تفريغ الذاكرة المؤقتة للعميل",
+      "clearCacheDesc": "إلغاء تخزين الجلسة وأصول Service Worker والاستجابات المفهرسة"
+    },
+    "devices": {
+      "title": "الأجهزة والأمان",
+      "manageTitle": "إدارة أجهزتك",
+      "manageDesc": "عرض وإدارة جميع الأجهزة التي وصلت إلى حسابك. مراجعة الأحداث الأمنية وتوثيق أو إلغاء توثيق الأجهزة.",
+      "manageCta": "فتح مدير الأجهزة"
+    },
+    "danger": {
+      "title": "منطقة الخطر",
+      "export": {
+        "title": "تصدير بياناتك",
+        "description": "قم بتنزيل جميع بياناتك قبل حذف حسابك",
+        "button": "تصدير البيانات"
+      },
+      "delete": {
+        "title": "حذف الحساب بشكل دائم",
+        "description": "لا يمكن التراجع عن هذا الإجراء. سيتم حذف جميع بياناتك بشكل دائم.",
+        "reason": {
+          "label": "سبب المغادرة (اختياري)",
+          "placeholder": "ساعدنا في التحسين من خلال مشاركة سببك"
+        },
+        "feedback": {
+          "label": "ملاحظات (اختياري)",
+          "placeholder": "أي اقتراحات للتحسين؟"
+        },
+        "confirmPassword": "تأكيد كلمة المرور",
+        "passwordPlaceholder": "أدخل كلمة المرور للتأكيد",
+        "button": "حذف الحساب"
+      },
+      "signOut": "تسجيل الخروج"
+    },
+    "dataPrivacy": {
+      "title": "بياناتي والخصوصية",
+      "subtitle": "أنت تملك بياناتك. قم بتنزيلها في أي وقت أو اطلب الحذف الدائم.",
+      "export": {
+        "title": "تنزيل بياناتي",
+        "description": "قم بتنزيل أرشيف JSON كامل لجميع البيانات المرتبطة بحسابك في Podacium، بما في ذلك ملفك الشخصي والمسجلات والشهادات والمشاريع والمقترحات ومعاملات المحفظة وتذاكر الدعم.",
+        "items": {
+          "profile": "الملف الشخصي والإعدادات",
+          "enrollments": "المسجلات والشهادات",
+          "projects": "المشاريع والمقترحات",
+          "contracts": "العقود",
+          "wallet": "المحفظة والمعاملات",
+          "support": "تذاكر الدعم",
+          "analytics": "مجموعات البيانات التحليلية",
+          "notifications": "الإشعارات"
+        },
+        "redactionNotice": "يتم تنقيح الحقول الحساسة (كلمات المرور، أسرار TOTP) من التصدير.",
+        "button": "تنزيل بياناتي",
+        "busy": "جارٍ تحضير التصدير…"
+      },
+      "overview": {
+        "title": "بياناتك في لمحة",
+        "courses": "الدورات",
+        "certificates": "الشهادات",
+        "projects": "المشاريع",
+        "datasets": "مجموعات البيانات",
+        "storage": "مساحة التخزين المستخدمة",
+        "completed": "مكتمل",
+        "active": "نشط"
+      },
+      "deletion": {
+        "title": "حذف حسابي",
+        "description": "احذف حسابك في Podacium وجميع البيانات المرتبطة به بشكل دائم. هذا الإجراء لا رجعة فيه بعد انتهاء فترة السماح البالغة 30 يوماً.",
+        "features": {
+          "grace": "فترة سماح 30 يوماً — يمكنك الإلغاء في أي وقت قبل تنفيذ الحذف",
+          "email": "سيتم إرسال بريد إلكتروني تأكيدي إلى عنوانك المسجل",
+          "erase": "سيتم مسح جميع البيانات الشخصية بشكل دائم بعد فترة السماح"
+        },
+        "status": {
+          "checking": "جارٍ التحقق من الحالة…",
+          "scheduled": "تمت جدولة الحذف · {days} يوم متبقي",
+          "none": "لا توجد طلبات حذف معلقة"
+        },
+        "banner": {
+          "title": "تمت جدولة حذف الحساب",
+          "body": "سيتم حذف حسابك نهائياً في {date} ({days} أيام متبقية)."
+        },
+        "timeline": {
+          "title": "الجدول الزمني للحذف",
+          "daysLeft": "{n} أيام متبقية",
+          "expiring": "ينتهي قريباً",
+          "requested": "تم الطلب في {date}",
+          "scheduled": "الحذف في {date}"
+        },
+        "requestButton": "طلب حذف الحساب",
+        "cancelButton": "إلغاء الحذف",
+        "cancelRequestButton": "إلغاء طلب الحذف",
+        "cancelling": "جارٍ الإلغاء…",
+        "overlay": {
+          "title": "الحساب مجدول للحذف",
+          "subtitle": "تمت جدولة حسابك في Podacium للحذف الدائم. يمكنك إلغاء هذا الطلب في أي وقت خلال الثلاثين يوماً القادمة.",
+          "status": "تمت جدولة الحذف",
+          "scheduledDate": "الحذف الدائم في {date}",
+          "daysRemaining": "{n} أيام متبقية",
+          "statusGood": "جيد",
+          "statusWarning": "سينتهي قريباً",
+          "statusCritical": "حرج",
+          "requestedDate": "تم الطلب في {date}",
+          "deletionDate": "الحذف في {date}",
+          "whatHappens": {
+            "title": "ماذا يعني هذا",
+            "line1": "بعد انتهاء فترة السماح، سيتم مسح جميع بياناتك بشكل دائم.",
+            "line2": "ستفقد الوصول إلى الدورات والشهادات والمشاريع ورصيد المحفظة.",
+            "line3": "يمكنك إلغاء هذا الطلب في أي وقت للاحتفاظ بحسابك."
+          },
+          "cancelButton": "إلغاء الحذف والاحتفاظ بحسابي",
+          "cancelling": "جارٍ الإلغاء…",
+          "support": "هل تحتاج مساعدة؟",
+          "contactSupport": "اتصل بالدعم",
+          "cancelled": {
+            "title": "تم إلغاء الحذف",
+            "message": "تم إلغاء حذف حسابك. جارٍ إعادة التحميل…"
+          },
+          "logout": "تسجيل الخروج"
+        }
+      },
+      "dialog": {
+        "title": "طلب حذف الحساب",
+        "titleFinal": "التأكيد النهائي",
+        "stepsLabel": "خطوة",
+        "warning": {
+          "title": "هذا الإجراء له عواقب",
+          "line1": "سيتم مسح جميع بياناتك الشخصية بشكل دائم",
+          "line2": "ستفقد الوصول إلى جميع الدورات والشهادات",
+          "line3": "سيتم إنهاء المشاريع والعقود النشطة",
+          "line4": "قد يتم فقدان رصيد المحفظة",
+          "graceNote": "لديك فترة سماح مدتها 30 يوماً بعد طلب الحذف. يمكنك الإلغاء في أي وقت قبل ذلك.",
+          "downloadPrompt": "هل تريد الاحتفاظ بنسخة من بياناتك؟",
+          "downloadButton": "تنزيل بياناتي أولاً",
+          "acknowledge": "أتفهم أن هذا الإجراء لا رجعة فيه بعد فترة السماح وأن بياناتي سيتم حذفها نهائياً."
+        },
+        "reason": {
+          "label": "سبب المغادرة",
+          "optional": "(اختياري)",
+          "options": {
+            "select": "اختر سبباً…",
+            "notUsing": "لم أعد أستخدم المنصة",
+            "privacy": "مخاوف تتعلق بالخصوصية",
+            "alternative": "وجدت بديلاً أفضل",
+            "expensive": "مكلف جداً",
+            "technical": "مشاكل تقنية",
+            "other": "أخرى"
+          }
+        },
+        "feedback": {
+          "label": "ملاحظات إضافية",
+          "optional": "(اختياري)",
+          "placeholder": "ساعدنا في التحسين من خلال مشاركة تجربتك…"
+        },
+        "confirmText": {
+          "instruction": "اكتب “DELETE” أدناه لتأكيد رغبتك في حذف حسابك نهائياً.",
+          "label": "اكتب “DELETE” للتأكيد",
+          "mismatch": "النص غير متطابق"
+        },
+        "password": {
+          "label": "تأكيد كلمة المرور",
+          "placeholder": "أدخل كلمة المرور للتأكيد",
+          "warning": "هذه هي الخطوة النهائية. أدخل كلمة المرور لتأكيد حذف الحساب."
+        },
+        "keepAccount": "الاحتفاظ بحسابي",
+        "continue": "متابعة",
+        "back": "رجوع",
+        "processing": "جارٍ المعالجة…",
+        "confirm": "حذف حسابي نهائياً"
+      },
+      "alerts": {
+        "exportSuccess": "تم تنزيل تصدير بياناتك.",
+        "exportEmpty": "لا توجد بيانات للتصدير. قد يكون حسابك جديداً أو فارغاً.",
+        "exportRateLimit": "عدد كبير جداً من الطلبات. يرجى الانتظار قليلاً.",
+        "exportTimeout": "انتهت مهلة التصدير. يرجى المحاولة مرة أخرى.",
+        "exportError": "فشل تصدير بياناتك. يرجى المحاولة مرة أخرى.",
+        "deletionSuccess": "تم استلام طلب حذف حسابك. تم إرسال بريد إلكتروني تأكيدي إلى عنوانك المسجل. يمكنك إلغاء هذا الطلب في أي وقت خلال الثلاثين يوماً القادمة.",
+        "deletionBadRequest": "طلب غير صالح. يرجى التأكد من صحة كلمة المرور.",
+        "deletionError": "فشل إنشاء طلب الحذف. يرجى المحاولة مرة أخرى.",
+        "cancelSuccess": "تم إلغاء طلب حذف حسابك. حسابك آمن.",
+        "undoCancel": "تراجع",
+        "cancelError": "فشل إلغاء طلب الحذف. يرجى المحاولة مرة أخرى."
+      },
+      "legal": "حقوقك محمية بموجب قانون حماية البيانات المعمول به.",
+      "privacyLink": "سياسة الخصوصية",
+      "termsLink": "شروط الخدمة"
+    },
+    "usage": {
+      "title": "استهلاك الموارد والحدود",
+      "subtitle": "متابعة التخزين السحابي وحركة البيانات والمشاريع والأعضاء",
+      "resourceGroup": "مقاييس الحصص النشطة",
+      "storage": "التخزين السحابي",
+      "bandwidth": "حركة البيانات (الباندويدث)",
+      "projects": "المشاريع النشطة",
+      "collaborators": "الأعضاء المشاركون",
+      "summaryGroup": "ملخص الأداء والإحصائيات السريعة",
+      "atLimit": "تم الوصول إلى الحد الأقصى للحصة — يرجى ترقية باقتك",
+      "nearLimit": "أنت تقترب من الحد المسموح به للموارد",
+      "loadError": "فشل تحميل مؤشرات الاستخدام",
+      "loading": "جارٍ تحميل مؤشرات استهلاك الموارد...",
+      "retry": "إعادة المحاولة"
+    }
+  },
+  "notifications": {
+    "page": {
+      "title": "الإشعارات",
+      "subtitle": "إدارة إشعاراتك وتفضيلاتك"
+    },
+    "stats": {
+      "total": "الإجمالي",
+      "unread": "غير مقروء",
+      "read": "مقروء",
+      "categories": "الفئات"
+    },
+    "header": {
+      "refresh": "تحديث",
+      "selected": "{count} محددة",
+      "markRead": "تحديد كمقروء",
+      "delete": "حذف"
+    },
+    "tabs": {
+      "all": "الكل",
+      "unread": "غير مقروء",
+      "read": "مقروء",
+      "archived": "مؤرشف"
+    },
+    "admin": {
+      "title": "مركز إشعارات المسؤول",
+      "sendNow": "إرسال الآن",
+      "schedule": "جدولة",
+      "send": "إرسال",
+      "scheduleIt": "جدولتها",
+      "form": {
+        "title": "العنوان",
+        "titlePlaceholder": "عنوان الإشعار",
+        "category": "الفئة",
+        "message": "الرسالة",
+        "messagePlaceholder": "أدخل رسالة الإشعار...",
+        "priority": "الأولوية",
+        "targetUsers": "المستخدمون المستهدفون",
+        "targetRole": "الدور المستهدف",
+        "sendEmail": "إرسال كبريد إلكتروني",
+        "scheduleFor": "الجدولة لـ"
+      },
+      "targetOptions": {
+        "all": "جميع المستخدمين",
+        "role": "حسب الدور",
+        "specific": "مستخدمون محددون"
+      },
+      "notificationsSent": "تم إرسال الإشعار بنجاح!",
+      "notificationsScheduled": "تم جدولة الإشعار بنجاح!"
+    },
+    "preferences": {
+      "title": "تفضيلات الإشعارات",
+      "save": "حفظ",
+      "emailNotifications": {
+        "title": "إشعارات البريد الإلكتروني",
+        "account": "إشعارات الحساب",
+        "accountDesc": "تحديثات مهمة حول حسابك",
+        "projects": "تحديثات المشاريع",
+        "projectsDesc": "إشعارات حول مشاريعك",
+        "courses": "تحديثات الدورات",
+        "coursesDesc": "تقدم التعلم والمحتوى الجديد"
+      },
+      "pushNotifications": {
+        "title": "إشعارات الدفع",
+        "push": "إشعارات الدفع",
+        "pushDesc": "تنبيهات فورية على أجهزتك",
+        "security": "تنبيهات الأمان",
+        "securityDesc": "إشعارات أمنية مهمة"
+      },
+      "marketing": {
+        "title": "التسويق والاتصالات",
+        "marketing": "رسائل البريد التسويقية",
+        "marketingDesc": "تحديثات المنتجات والعروض الترويجية",
+        "newsletter": "النشرة الإخبارية",
+        "newsletterDesc": "رؤى ونصائح أسبوعية"
+      },
+      "quietHours": {
+        "title": "ساعات الهدوء",
+        "start": "بداية ساعات الهدوء",
+        "end": "نهاية ساعات الهدوء",
+        "description": "سيتم إسكات الإشعارات خلال هذه الساعات"
+      },
+      "digest": {
+        "title": "الملخص اليومي",
+        "time": "وقت الملخص",
+        "description": "تلقي ملخصاً يومياً للإشعارات في هذا الوقت"
+      }
+    },
+    "filters": {
+      "title": "الفلاتر",
+      "clearAll": "مسح الكل",
+      "category": "الفئة",
+      "allCategories": "جميع الفئات",
+      "priority": "الأولوية",
+      "allPriorities": "جميع الأولويات",
+      "status": "الحالة",
+      "allStatuses": "جميع الحالات",
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء"
+    },
+    "toolbar": {
+      "search": "بحث في الإشعارات...",
+      "viewModes": {
+        "list": "عرض القائمة",
+        "grid": "عرض الشبكة"
+      },
+      "sort": {
+        "newest": "الأحدث أولاً",
+        "oldest": "الأقدم أولاً",
+        "priority": "حسب الأولوية"
+      }
+    },
+    "notificationItem": {
+      "markAsRead": "تحديد كمقروء",
+      "markUnread": "تحديد كغير مقروء",
+      "delete": "حذف",
+      "showMore": "عرض المزيد",
+      "showLess": "عرض أقل",
+      "priority": {
+        "urgent": "عاجل",
+        "high": "عالية",
+        "normal": "عادية",
+        "low": "منخفضة"
+      },
+      "time": {
+        "justNow": "الآن",
+        "hoursAgo": "قبل {hours} ساعة",
+        "daysAgo": "قبل {days} يوم"
+      }
+    },
+    "actions": {
+      "loadMore": "تحميل المزيد",
+      "tryAgain": "حاول مرة أخرى"
+    },
+    "emptyStates": {
+      "noNotifications": {
+        "title": "لا توجد إشعارات",
+        "descriptionAll": "لقد انتهيت من كل شيء! ستظهر الإشعارات الجديدة هنا.",
+        "descriptionUnread": "لم يتم العثور على إشعارات غير مقروءة.",
+        "descriptionRead": "لم يتم العثور على إشعارات مقروءة.",
+        "descriptionArchived": "لم يتم العثور على إشعارات مؤرشفة."
+      }
+    },
+    "errors": {
+      "loading": "خطأ في تحميل الإشعارات",
+      "markingRead": "خطأ في تحديد كمقروء",
+      "deleting": "خطأ في الحذف",
+      "sending": "خطأ في الإرسال",
+      "scheduling": "خطأ في الجدولة",
+      "updatingPreferences": "خطأ في تحديث التفضيلات"
+    },
+    "success": {
+      "markedRead": "تم تحديد {count} إشعار كمقروء",
+      "deleted": "تم حذف {count} إشعار",
+      "preferencesUpdated": "تم تحديث التفضيلات بنجاح!"
+    }
+  },
+  "profile": {
+    "title": "الملف الشخصي - Podacium",
+    "metaDescription": "إدارة ملفك الشخصي في Podacium ومهاراتك ووجودك المهني",
+    "premium": "بريميوم",
+    "header": {
+      "title": "هويتك الرقمية",
+      "subtitle": "اصنع إرثك المهني بصور مذهلة وعناصر تفاعلية وتحليلات شاملة",
+      "joined": "انضم",
+      "followers": "متابعون",
+      "following": "يتابع",
+      "follow": "متابعة",
+      "following_btn": "متابَع",
+      "message": "رسالة",
+      "rating": "التقييم",
+      "reviews": "المراجعات",
+      "profileViews": "المشاهدات",
+      "lastActive": "آخر نشاط",
+      "projects": "المشاريع",
+      "earnings": "الأرباح",
+      "hourlyRate": "السعر بالساعة",
+      "courses": "الدورات",
+      "students": "الطلاب",
+      "courseRating": "التقييم",
+      "mlModels": "نماذج التعلم الآلي",
+      "showMore": "عرض المزيد",
+      "showLess": "عرض أقل",
+      "verifiedProfessional": "محترف موثق",
+      "cropPreview": "معاينة"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "projects": "المشاريع",
+      "learning": "رحلة التعلم",
+      "social": "الشبكة",
+      "insights": "رؤى الذكاء الاصطناعي",
+      "business": "الأعمال",
+      "teaching": "التدريس",
+      "freelancing": "العمل الحر",
+      "portfolio": "المحفظة",
+      "reviews": "المراجعات"
+    },
+    "sections": {
+      "profileInfo": "معلومات الملف الشخصي",
+      "quickStats": "إحصائيات سريعة",
+      "skillsOverview": "نظرة عامة على المهارات",
+      "comprehensiveAnalytics": "تحليلات شاملة",
+      "profileStrength": "قوة الملف الشخصي والتقدم",
+      "recentActivity": "النشاط الأخير",
+      "projectsWork": "المشاريع والعمل",
+      "learningJourney": "رحلة التعلم",
+      "certifications": "الشهادات والإنجازات",
+      "skillsExpertise": "المهارات والخبرة",
+      "network": "الشبكة",
+      "aiInsights": "رؤى مدعومة بالذكاء الاصطناعي",
+      "pronouns": "الضمائر",
+      "availability": "التوفر",
+      "credentials": "المؤهلات",
+      "experience": "الخبرة",
+      "publications": "المنشورات",
+      "datasets": "مجموعات البيانات"
+    },
+    "roles": {
+      "student": "طالب",
+      "freelancer": "مستقل",
+      "business": "محترف أعمال",
+      "instructor": "مدرّس"
+    },
+    "fields": {
+      "fullName": "الاسم الكامل",
+      "fullNamePlaceholder": "أدخل اسمك الكامل",
+      "professionalBio": "السيرة الذاتية المهنية",
+      "bioPlaceholder": "اصنع قصتك المهنية... شارك خبراتك وشغفك وما يدفعك.",
+      "headlinePlaceholder": "عنوانك المهني",
+      "taglinePlaceholder": "شعارك القصير",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "بريدك@example.com",
+      "phone": "الهاتف",
+      "phonePlaceholder": "+213 123 45 67 89",
+      "country": "البلد",
+      "countryPlaceholder": "بلدك",
+      "city": "المدينة",
+      "cityPlaceholder": "مدينتك",
+      "professionalRole": "الدور المهني",
+      "currentRole": "الدور الحالي",
+      "professional": "مهني",
+      "memberSince": "عضو منذ",
+      "lastUpdated": "آخر تحديث",
+      "lastLogin": "آخر تسجيل دخول",
+      "unknown": "غير معروف",
+      "recently": "مؤخراً",
+      "notSet": "غير محدد",
+      "noBio": "لا توجد سيرة ذاتية حتى الآن. اروِ قصتك واظهر خبراتك!",
+      "addNewSkill": "إضافة مهارة جديدة...",
+      "skillsCount": "{count} من {max} مهارة",
+      "maxSkillsReached": "تم الوصول إلى الحد الأقصى للمهارات",
+      "profileSkills": "مهارات الملف الشخصي",
+      "moreSkills": "+{count} أخرى",
+      "profileCompleteness": "اكتمال الملف الشخصي",
+      "basicInfo": "المعلومات الأساسية",
+      "profilePicture": "صورة الملف الشخصي",
+      "bio": "السيرة الذاتية",
+      "skills": "المهارات",
+      "socialLinks": "روابط التواصل الاجتماعي",
+      "uploading": "جاري الرفع...",
+      "dropToUpload": "اسحب للإفلات للرفع",
+      "searchProjects": "بحث في المشاريع...",
+      "unknownCourse": "دورة غير معروفة",
+      "proficiency": "الكفاءة",
+      "advanced": "متقدم",
+      "intermediate": "متوسط",
+      "expert": "خبير",
+      "pronounsPlaceholder": "مثال: هم/هم، هو/هي",
+      "availabilityPlaceholder": "مثال: متاح للتوظيف",
+      "role": "الدور",
+      "industry": "المجال",
+      "expertise": "الخبرات"
+    },
+    "geo": {
+      "selectCountry": "اختر بلداً",
+      "selectCity": "اختر مدينة",
+      "selectCountryFirst": "اختر البلد أولاً",
+      "countries": {
+        "ALGERIA": "الجزائر",
+        "EGYPT": "مصر",
+        "MOROCCO": "المغرب",
+        "TUNISIA": "تونس",
+        "LIBYA": "ليبيا"
+      },
+      "cities": {
+        "ALGIERS": "الجزائر العاصمة",
+        "ORAN": "وهران",
+        "CONSTANTINE": "قسنطينة",
+        "ANNABA": "عنابة",
+        "BLIDA": "البليدة",
+        "BATNA": "باتنة",
+        "DJELFA": "الجلفة",
+        "SETIF": "سطيف",
+        "SIDI_BEL_ABBES": "سيدي بلعباس",
+        "BISKRA": "بسكرة",
+        "TEBESSA": "تبسة",
+        "EL_OUED": "الوادي",
+        "SKIKDA": "سكيكدة",
+        "TIARET": "تيارت",
+        "BEJAIA": "بجاية",
+        "TLEMCEN": "تلمسان",
+        "OUARGLA": "ورقلة",
+        "MOSTAGANEM": "مستغانم",
+        "MSILA": "المسيلة",
+        "GHARDAIA": "غرداية",
+        "CAIRO": "القاهرة",
+        "ALEXANDRIA": "الإسكندرية",
+        "GIZA": "الجيزة",
+        "PORT_SAID": "بورسعيد",
+        "SUEZ": "السويس",
+        "CASABLANCA": "الدار البيضاء",
+        "RABAT": "الرباط",
+        "MARRAKESH": "مراكش",
+        "TANGIER": "طنجة",
+        "FES": "فاس",
+        "TUNIS": "تونس العاصمة",
+        "SFAX": "صفاقس",
+        "SOUSSE": "سوسة",
+        "ETTADHAMEN": "التضامن",
+        "KAIROUAN": "القيروان",
+        "TRIPOLI": "طرابلس",
+        "BENGHAZI": "بنغازي",
+        "MISRATA": "مصراتة",
+        "SIRTE": "سرت",
+        "SABHA": "سبها",
+        "ADRAR": "أدرار",
+        "CHLEF": "الشلف",
+        "LAGHOUAT": "الأغواط",
+        "OUM_EL_BOUAGHI": "أم البواقي",
+        "BECHAR": "بشار",
+        "BOUIRA": "البويرة",
+        "TAMANRASSET": "تمنراست",
+        "TIZI_OUZOU": "تيزي وزو",
+        "JIJEL": "جيجل",
+        "SAIDA": "سعيدة",
+        "GUELMA": "قالمة",
+        "MEDEA": "المدية",
+        "MASCARA": "معسكر",
+        "EL_BAYADH": "البيض",
+        "ILLIZI": "إليزي",
+        "BORDJ_BOU_ARRERIDJ": "برج بوعريريج",
+        "BOUMERDES": "بومرداس",
+        "EL_TARF": "الطارف",
+        "TINDOUF": "تندوف",
+        "TISSEMSILT": "تيسمسيلت",
+        "KHENCHELA": "خنشلة",
+        "SOUK_AHRAS": "سوق أهراس",
+        "TIPAZA": "تيبازة",
+        "MILA": "ميلة",
+        "AIN_DEFLA": "عين الدفلى",
+        "NAAMA": "النعامة",
+        "AIN_TEMOUCHENT": "عين تموشنت",
+        "RELIZANE": "غليزان",
+        "TIMIMOUN": "تيميمون",
+        "BORDJ_BADJI_MOKHTAR": "برج باجي مختار",
+        "OULED_DJELLAL": "أولاد جلال",
+        "BENI_ABBES": "بني عباس",
+        "IN_SALAH": "عين صالح",
+        "IN_GUEZZAM": "عين قزام",
+        "TOUGGOURT": "تقرت",
+        "DJANET": "جانت",
+        "EL_MGHAIR": "المغير",
+        "EL_MENIAA": "المنيعة",
+        "AFLOU": "أفلو",
+        "BARIKA": "بريكة",
+        "EL_KANTARA": "القنطرة",
+        "BIR_EL_ATER": "بئر العاتر",
+        "EL_ARICHA": "العريشة",
+        "KSAR_CHELLALA": "قصر الشلالة",
+        "AIN_OUSSERA": "عين وسارة",
+        "MESSAAD": "مسعد",
+        "KSAR_EL_BOUKHARI": "قصر البخاري",
+        "BOU_SAADA": "بوسعادة",
+        "EL_ABIODH_SIDI_CHEIKH": "الأبيض سيدي الشيخ"
+      },
+      "sectors": {
+        "TECHNOLOGY_AND_SOFTWARE": "التكنولوجيا والبرمجيات",
+        "BANKING_AND_FINANCIAL_SERVICES": "البنوك والخدمات المالية",
+        "HEALTHCARE_AND_PHARMACEUTICALS": "الرعاية الصحية والصيدلة",
+        "ENERGY_AND_OIL_AND_GAS": "الطاقة والمحروقات والغاز",
+        "AUTOMOTIVE_AND_MANUFACTURING": "الصناعة والتصنيع الميكانيكي",
+        "RETAIL_AND_CONSUMER_GOODS": "التجارة والتوزيع والتجارة الإلكترونية",
+        "TELECOMMUNICATIONS": "الاتصالات والشبكات",
+        "AEROSPACE_AND_DEFENSE": "الفضاء والدفاع",
+        "AGRICULTURE_AND_FOOD_PRODUCTION": "الفلاحة والصناعات الغذائية",
+        "TRANSPORTATION_AND_LOGISTICS": "النقل واللوجستيك وسلاسل الإمداد",
+        "EDUCATION_AND_EDTECH": "التعليم والتكوين وتكنولوجيا التعليم",
+        "CONSTRUCTION_AND_REAL_ESTATE": "البناء والأشغال العمومية والعقار",
+        "CONSULTING_AND_PROFESSIONAL_SERVICES": "الاستشارات والتدقيق والخدمات المهنية",
+        "MEDIA_AND_CREATIVE_INDUSTRIES": "الإعلام والتسويق والصناعات الإبداعية",
+        "TOURISM_AND_HOSPITALITY": "السياحة والفندقة وتنظيم الفعاليات",
+        "PUBLIC_SECTOR_AND_ADMINISTRATION": "القطاع العام والإدارة",
+        "RENEWABLE_ENERGY_AND_CLEANTECH": "الطاقات المتجددة والتكنولوجيا النظيفة",
+        "MINING_AND_METALLURGY": "المناجم والتعدين والمواد",
+        "TEXTILES_AND_APPAREL": "النسيج والجلود والألبسة",
+        "NON_PROFIT_AND_NGO": "الجمعيات والمؤسسات غير الربحية",
+        "OTHER": "أخرى / متعدد القطاعات"
+      }
+    },
+    "stats": {
+      "certificates": "الشهادات",
+      "certificatesDesc": "الإنجازات المهنية",
+      "projects": "المشاريع",
+      "projectsDesc": "الأعمال المكتملة",
+      "datasets": "مجموعات البيانات",
+      "datasetsDesc": "مجموعات البيانات",
+      "organizations": "المنظمات",
+      "organizationsDesc": "عضوية الفريق",
+      "coursesCompleted": "الدورات المكتملة",
+      "coursesCompletedDesc": "معالم التعلم",
+      "skills": "المهارات",
+      "skillsDesc": "مجالات الخبرة",
+      "socialLinks": "روابط التواصل الاجتماعي",
+      "socialLinksDesc": "الوجود على الإنترنت",
+      "profileComplete": "اكتمال الملف الشخصي",
+      "profileCompleteDesc": "قوة الملف الشخصي",
+      "engagement": "المشاركة",
+      "engagementDesc": "نشاط المنصة",
+      "influence": "التأثير",
+      "influenceDesc": "درجة التأثير",
+      "increase": "زيادة",
+      "decrease": "انخفاض",
+      "inProgress": "قيد التقدم",
+      "averageProgress": "متوسط التقدم",
+      "totalSkills": "إجمالي المهارات",
+      "technicalSkills": "المهارات التقنية",
+      "skillsCapacity": "سعة المهارات"
+    },
+    "buttons": {
+      "adding": "جاري الإضافة...",
+      "add": "إضافة",
+      "cancel": "إلغاء",
+      "editProfile": "تعديل الملف الشخصي",
+      "saveProfile": "حفظ الملف الشخصي",
+      "saving": "جاري الحفظ...",
+      "addLink": "إضافة رابط",
+      "saveLinks": "حفظ الروابط",
+      "savingLinks": "جاري حفظ الروابط...",
+      "addFirstLink": "أضف رابطك الأول",
+      "startProject": "ابدأ مشروعك الأول",
+      "viewAllCourses": "عرض الكل ({count} دورات)",
+      "viewCertificate": "عرض الشهادة",
+      "browseLearningPaths": "تصفح مسارات التعلم",
+      "exploreCertifications": "استكشاف الشهادات",
+      "addFirstSkill": "أضف مهارتك الأولى",
+      "unlockAiInsights": "افتح جميع رؤى الذكاء الاصطناعي - ابدأ النسخة التجريبية المجانية",
+      "privacy": "الخصوصية",
+      "share": "مشاركة",
+      "changeCover": "تغيير الغلاف",
+      "saveAvatar": "حفظ الصورة"
+    },
+    "messages": {
+      "tryAgain": "حاول مرة أخرى",
+      "loadError": "فشل تحميل البيانات. يرجى المحاولة مرة أخرى.",
+      "currency": "د.ج",
+      "rows": "{count} صفوف",
+      "profilePictureUpdated": "تم تحديث صورة الملف الشخصي بنجاح! 🎉",
+      "uploadError": "فشل تحميل صورة الملف الشخصي. يرجى المحاولة مرة أخرى.",
+      "profileNotLoaded": "لم يتم تحميل ملف المستخدم الشخصي",
+      "profileUpdated": "تم تحديث الملف الشخصي بنجاح! تم حفظ {links} روابط اجتماعية. 🎉",
+      "skillAdded": "تمت إضافة المهارة بنجاح! 🎯",
+      "skillError": "فشل إضافة المهارة. يرجى المحاولة مرة أخرى.",
+      "skillRemoved": "تمت إزالة المهارة بنجاح! 🗑️",
+      "skillRemoveError": "فشل إزالة المهارة. يرجى المحاولة مرة أخرى.",
+      "completenessMessage": "أكمل ملفك الشخصي لفتح فرص أفضل وزيادة ظهورك.",
+      "improvementTips": "نصائح لتحسين الملف الشخصي",
+      "addBioTip": "أضف سيرة ذاتية مهنية لتقدم نفسك",
+      "addSkillsTip": "أضف 3 مهارات على الأقل لعرض خبراتك",
+      "addSocialLinksTip": "اربط ملفاتك الاجتماعية لبناء مصداقيتك",
+      "addProfilePictureTip": "ارفع صورة ملف شخصي احترافية",
+      "profileComplete": "🎉 ملفك الشخصي مكتمل! حافظ على تحديثه.",
+      "noActivity": "لا توجد أنشطة حديثة حتى الآن",
+      "startActivityMessage": "ابدأ التعلم والإبداع لترى نشاطك هنا!",
+      "createdDate": "تم الإنشاء في {date}",
+      "issuedDate": "تم الإصدار في {date}",
+      "addedDate": "تمت الإضافة في {date}",
+      "saveError": "فشل حفظ الملف الشخصي. يرجى التحقق من وحدة التحكم للتفاصيل.",
+      "profileNotFound": "الملف الشخصي غير موجود",
+      "profileNotFoundDesc": "هذا الملف الشخصي غير موجود أو خاص.",
+      "goHome": "انتقل إلى الصفحة الرئيسية"
+    },
+    "activity": {
+      "certificate": "حصل على شهادة",
+      "project": "أنشأ مشروعاً",
+      "enrollment": "تم تحديث تقدم الدورة"
+    },
+    "sort": {
+      "name": "ترتيب حسب الاسم",
+      "date": "ترتيب حسب التاريخ",
+      "progress": "ترتيب حسب التقدم"
+    },
+    "emptyStates": {
+      "projects": {
+        "title": "لوحتك الإبداعية تنتظرك",
+        "description": "حول أفكارك إلى مشاريع رائعة وعرض موهبتك للعالم."
+      },
+      "learning": {
+        "title": "ابدأ رحلة التعلم الخاصة بك",
+        "description": "انطلق في مغامرة تعليمية ستغير مسارك المهني وتوسع آفاقك."
+      },
+      "certificates": {
+        "title": "ابنِ إرثك من التميز",
+        "description": "احصل على شهادات مرموقة تثبت خبرتك وتعرض إنجازاتك."
+      },
+      "skills": {
+        "title": "لا توجد مهارات حتى الآن",
+        "description": "ابدأ بإضافة مهارات لعرض خبراتك!",
+        "noCategory": "لم تتم إضافة أي مهارات {category} حتى الآن."
+      },
+      "business": {
+        "description": "لوحات البيانات العامة ومجموعات البيانات ونماذج التعلم الآلي ستظهر هنا."
+      },
+      "teaching": {
+        "description": "الدروس التي تم تدريسها والطلاب والمؤهلات ستظهر هنا."
+      },
+      "reviews": {
+        "description": "ستظهر المراجعات هنا بمجرد استلامها."
+      },
+      "followers": {
+        "description": "الأشخاص الذين يتابعون هذا الملف الشخصي سيظهرون هنا."
+      },
+      "following": {
+        "description": "الملفات الشخصية التي يتابعها هذا المستخدم ستظهر هنا."
+      }
+    },
+    "skills": {
+      "all": "جميع المهارات",
+      "technical": "تقني",
+      "business": "أعمال",
+      "creative": "إبداعي",
+      "soft": "مهارات ناعمة",
+      "design": "تصميم"
+    },
+    "socialLinks": {
+      "categories": {
+        "professional": "مهني",
+        "social": "وسائل التواصل الاجتماعي",
+        "creative": "إبداعي ومحفظة أعمال",
+        "video": "فيديو ومحتوى"
+      },
+      "addNew": "إضافة رابط اجتماعي جديد",
+      "selectPlatform": "اختر المنصة",
+      "platform": "المنصة",
+      "platformPlaceholder": "أو اكتب منصة مخصصة...",
+      "url": "الرابط",
+      "urlPlaceholder": "https://...",
+      "linksCount": "{current} من {max} روابط مضافة",
+      "emptyTitle": "لا توجد روابط اجتماعية حتى الآن",
+      "emptyDescription": "اربط ملفات التواصل الاجتماعي ومواقع الويب الخاصة بك لبناء شبكتك المهنية وعرض وجودك على الإنترنت.",
+      "maxLinksWarning": "تم الوصول إلى الحد الأقصى لـ {max} روابط اجتماعية. قم بإزالة بعض الروابط لإضافة جديدة."
+    },
+    "insights": {
+      "unlockPremium": "افتح رؤى الذكاء الاصطناعي بريميوم",
+      "premiumDescription": "احصل على توجيه مهني مخصص، تحليل فجوات المهارات، وتوصيات تعتمد على البيانات مدعومة بالذكاء الاصطناعي المتقدم",
+      "previewTitle": "معاينة رؤىك المحتملة",
+      "premiumFeature": "ميزة بريميوم",
+      "upgradeToUnlock": "قم بالترقية لفتح",
+      "biAnalytics": "تحليلات ذكاء الأعمال",
+      "dataVisualization": "مهارات تصور البيانات",
+      "dashboardCreation": "إنشاء لوحات التحكم",
+      "premiumInsight": "رؤية بريميوم",
+      "biInsight": "تضعك مهاراتك في ذكاء الأعمال في موقف يحقق فرص راتب أعلى بنسبة 45% في الأدوار المعتمدة على البيانات",
+      "freelanceAnalysis": "تحليل مهنة العمل الحر",
+      "marketRate": "سعر السوق",
+      "successScore": "درجة النجاح",
+      "freelanceInsight": "بناءً على محفظتك، يمكنك زيادة أسعارك بنسبة 30% للعملاء المؤسسيين",
+      "learningPath": "تحسين مسار التعلم",
+      "recommendedCourse": "الدورة التالية الموصى بها",
+      "advancedAnalytics": "تحليلات متقدمة",
+      "learningInsight": "أكمل دورتين إضافيتين لفتح 3 مسارات مهنية جديدة بإمكانية ربح أعلى بنسبة 25%",
+      "premiumIncludes": "ما المضمن في رؤى الذكاء الاصطناعي بريميوم",
+      "features": {
+        "careerRoadmap": "خارطة طريق مهنية مخصصة",
+        "careerRoadmapDesc": "مسار تم إنشاؤه بالذكاء الاصطناعي بناءً على مهاراتك وأهدافك",
+        "marketAnalysis": "تحليل السوق في الوقت الفعلي",
+        "marketAnalysisDesc": "بيانات حية عن اتجاهات الوظائف ومعايير الرواتب",
+        "skillGap": "تحديد فجوات المهارات",
+        "skillGapDesc": "توصيات دقيقة لتطوير المهارات",
+        "projectMatching": "تطابق فرص المشاريع",
+        "projectMatchingDesc": "توصيات العمل الحر والمشاريع المنسقة بالذكاء الاصطناعي"
+      },
+      "trialOffer": "نسخة تجريبية مجانية لمدة 7 أيام • إلغاء في أي وقت • الوصول إلى جميع الميزات المميزة"
+    },
+    "viewAs": {
+      "public": "عام",
+      "follower": "متابع",
+      "followers": "المتابعون",
+      "self": "شخصي",
+      "previewPublicBanner": "معاينة ملفك الشخصي كزائر عام",
+      "previewFollowerBanner": "معاينة ملفك الشخصي كمتابع",
+      "resetSelf": "التبديل إلى العرض الشخصي"
+    },
+    "completion": {
+      "title": "اكتمال الملف الشخصي",
+      "almostDone": "كدت تنتهي! أضف المزيد من التفاصيل.",
+      "makingProgress": "تقدّم ملحوظ! استمر في ملء ملفك الشخصي.",
+      "goodStart": "بداية جيدة! أكمل ملفك الشخصي لتتميز.",
+      "completeProfile": "أكمل ملفك الشخصي للاستفادة القصوى من Podacium."
+    },
+    "qrCode": {
+      "share": "مشاركة الملف الشخصي",
+      "scanToView": "امسح الرمز لعرض ملف {username} الشخصي",
+      "download": "تنزيل QR",
+      "linkCopied": "تم نسخ الرابط!",
+      "linkCopyFailed": "فشل نسخ الرابط",
+      "alt": "رمز QR لـ {username}"
+    },
+    "phone": {
+      "countryCode": "اختر رمز الدولة",
+      "number": "رقم الهاتف"
+    },
+    "avatar": {
+      "cropTitle": "رفع صورة الملف الشخصي",
+      "dragDrop": "اسحب وأفلت صورتك هنا",
+      "orClickToBrowse": "أو انقر للتصفح"
+    }
+  },
+  "rec": {
+    "c_py_basics": {
+      "t": "أساسيات بايثون",
+      "d": "مقدمة في لغة برمجة بايثون",
+      "r": "مهارة أساسية لمسارك"
+    },
+    "c_py_adv": {
+      "t": "بايثون المتقدمة",
+      "d": "أتقن الديكوريتورز والمولدات والميتا كلاس",
+      "r": "ارفع جودة كودك"
+    },
+    "c_ds_pandas": {
+      "t": "بانداس لعلم البيانات",
+      "d": "إتقان معالجة وتحليل البيانات",
+      "r": "حاسم لأي دور بيانات"
+    },
+    "c_alg_sme": {
+      "t": "بيانات للشركات الجزائرية",
+      "d": "حلل بيانات الأعمال المحلية بفعالية",
+      "r": "طلب عالي في السوق المحلي"
+    },
+    "c_viz_tab": {
+      "t": "أساسيات تابلو",
+      "d": "صور رؤاك باستخدام تابلو",
+      "r": "مهارة تصور مطلوبة بشدة"
+    },
+    "c_viz_pbi": {
+      "t": "باور بي آي للأعمال",
+      "d": "أنشئ لوحات تحكم جاهزة للمؤسسات",
+      "r": "أداة قياسية للأعمال"
+    },
+    "c_ml_intro": {
+      "t": "مقدمة في تعلم الآلة",
+      "d": "أساسيات Scikit-Learn وتعلم الآلة",
+      "r": "أمن مستقبلك المهني"
+    },
+    "c_sql_boot": {
+      "t": "معسكر تدريب SQL",
+      "d": "أتقن الاستعلام وإدارة قواعد البيانات",
+      "r": "أساس العمل على البيانات"
+    },
+    "c_web_scrap": {
+      "t": "الكشط الشبكي ببايثون",
+      "d": "استخرج البيانات من أي موقع ويب",
+      "r": "اجمع مجموعات بياناتك الخاصة"
+    },
+    "c_api_dev": {
+      "t": "تطوير FastAPI",
+      "d": "ابنِ واجهات برمجة تطبيقات عالية الأداء",
+      "r": "معيار الباك إند الحديث"
+    },
+    "c_free_101": {
+      "t": "العمل الحر 101",
+      "d": "ابدأ رحلة العمل الحر اليوم",
+      "r": "حول مهاراتك إلى مال"
+    },
+    "c_client_nego": {
+      "t": "التفاوض مع العملاء",
+      "d": "احصل على الأجر الذي تستحقه حقاً",
+      "r": "عزز دخلك"
+    },
+    "c_brand_pers": {
+      "t": "العلامة التجارية الشخصية",
+      "d": "تميز في سوق مزدحم",
+      "r": "اجذب عملاء أفضل"
+    },
+    "c_time_mgmt": {
+      "t": "إدارة الوقت",
+      "d": "عظم إنتاجيتك",
+      "r": "ضروري للعمل عن بعد"
+    },
+    "c_rem_work": {
+      "t": "أفضل ممارسات العمل عن بعد",
+      "d": "ابق بصحة وإنتاجية من المنزل",
+      "r": "اعمل من أي مكان"
+    },
+    "p_sales_dash": {
+      "t": "مراجعة لوحة مبيعات",
+      "d": "تصور بيانات مبيعات التجزئة",
+      "r": "مشروع جيد للمبتدئين"
+    },
+    "p_ecom_opt": {
+      "t": "تحسين التجارة الإلكترونية",
+      "d": "حسن معدلات تحويل المسار",
+      "r": "تأثير تجاري عالي القيمة"
+    },
+    "p_inv_sys": {
+      "t": "سكربت نظام المخزون",
+      "d": "أتمت تتبع المخزون ببايثون",
+      "r": "ممارسة أتمتة ممتازة"
+    },
+    "p_real_est": {
+      "t": "تحليل العقارات",
+      "d": "حلل اتجاهات سوق الإسكان",
+      "r": "تحليل سوق واقعي"
+    },
+    "p_cust_seg": {
+      "t": "تقسيم العملاء",
+      "d": "جمع العملاء باستخدام تعلم الآلة",
+      "r": "مشروع تعلم آلة متقدم"
+    },
+    "p_web_port": {
+      "t": "موقع المعرض الشخصي",
+      "d": "ابنِ واجهتك المهنية",
+      "r": "ضروري لعرض أعمالك"
+    },
+    "p_api_integ": {
+      "t": "تكامل بوابة الدفع",
+      "d": "اربط بوابات الدفع المحلية",
+      "r": "تحدي تقني"
+    },
+    "p_bug_fix": {
+      "t": "ماراثون إصلاح الأخطاء",
+      "d": "أصلح 5 أخطاء مفتوحة المصدر",
+      "r": "ساهم في المجتمع"
+    },
+    "p_data_clean": {
+      "t": "مهمة تنظيف البيانات",
+      "d": "نظف ملفات إكسل فوضوية لعميل",
+      "r": "مهمة سريعة الدوران"
+    },
+    "p_trans_doc": {
+      "t": "ترجمة وثائق تقنية",
+      "d": "ترجم الوثائق من الإنجليزية للعربية",
+      "r": "استفد من مهاراتك اللغوية"
+    },
+    "d_alg_hous": {
+      "t": "بيانات إسكان الجزائر",
+      "d": "أسعار العقارات والمواقع",
+      "r": "رائج محلياً"
+    },
+    "d_dz_wthr": {
+      "t": "طقس الجزائر 10 سنوات",
+      "d": "بيانات طقس تاريخية لـ 10 سنوات",
+      "r": "أساسيات تحليل المناخ"
+    },
+    "d_stock_mrk": {
+      "t": "سوق الأسهم العالمي",
+      "d": "أسعار الإغلاق اليومية للأسهم الكبرى",
+      "r": "ممارسة النمذجة المالية"
+    },
+    "d_soc_media": {
+      "t": "مشاعر التواصل الاجتماعي",
+      "d": "مجموعة بيانات مليون تغريدة",
+      "r": "مادة ممارسة معالجة اللغات"
+    },
+    "d_retail_sales": {
+      "t": "تاريخ مبيعات التجزئة",
+      "d": "تاريخ معاملات لـ 3 سنوات",
+      "r": "ممارسة التنبؤ"
+    },
+    "d_traffic": {
+      "t": "تدفقات المرور الحضري",
+      "d": "أنماط الحركة والكثافة الحضرية",
+      "r": "مشروع تخطيط عمراني"
+    },
+    "d_energy": {
+      "t": "استهلاك الطاقة",
+      "d": "إحصائيات استخدام الطاقة المنزلية",
+      "r": "تحليل الطاقة الخضراء"
+    },
+    "d_job_mkt": {
+      "t": "سوق وظائف التقنية",
+      "d": "الرواتب والطلب على المهارات 2026",
+      "r": "رؤى مهنية"
+    },
+    "cert_bi_adv": {
+      "t": "شهادة ذكاء أعمال متقدمة",
+      "d": "لوحات تحكم بمستوى احترافي",
+      "r": "تقدم مهني جاد"
+    },
+    "cert_py_pro": {
+      "t": "محترف بايثون",
+      "d": "حالة مبرمج بايثون معتمد",
+      "r": "دليل قاطع على المهارة"
+    },
+    "cert_data_eng": {
+      "t": "هندسة البيانات",
+      "d": "ETL وخطوط الأنابيب والمستودعات",
+      "r": "مؤهل لدور عالي الراتب"
+    },
+    "cert_cloud_fund": {
+      "t": "أساسيات السحابة",
+      "d": "أساسيات AWS/Azure/GCP",
+      "r": "معرفة البنية التحتية"
+    }
+  },
+  "privacy": {
+    "sections": {
+      "title": "رؤية الأقسام",
+      "description": "تحكم في من يمكنه رؤية كل قسم من ملفك الشخصي.",
+      "section": "القسم",
+      "visibility": "مستوى الرؤية",
+      "bio": "النبذة التعريفية",
+      "bioDesc": "نبذتك الشخصية",
+      "headline": "المسمى المهني",
+      "headlineDesc": "المسمى المهني الرئيسي",
+      "tagline": "الشعار الشخصي",
+      "taglineDesc": "شعارك الشخصي القصير",
+      "pronouns": "الضمائر",
+      "pronounsDesc": "ضمائر التعريف",
+      "coverImage": "صورة الغلاف",
+      "coverImageDesc": "صورة غلاف ملفك الشخصي",
+      "location": "الموقع",
+      "locationDesc": "موقعك الجغرافي",
+      "socialLinks": "روابط التواصل",
+      "socialLinksDesc": "روابط حساباتك على التواصل الاجتماعي",
+      "availability": "حالة التوفر",
+      "availabilityDesc": "حالة توفرك للعمل",
+      "timezone": "المنطقة الزمنية",
+      "timezoneDesc": "منطقتك الزمنية",
+      "profileViews": "مشاهدات الملف الشخصي",
+      "profileViewsDesc": "عدد مشاهدات ملفك الشخصي",
+      "lastActive": "آخر ظهور",
+      "lastActiveDesc": "تاريخ آخر نشاط لك",
+      "followers": "المتابعون",
+      "followersDesc": "عدد متابعيك",
+      "following": "تتابعهم",
+      "followingDesc": "الأشخاص الذين تتابعهم",
+      "badges": "الشارات",
+      "badgesDesc": "الشارات التي حصلت عليها",
+      "skills": "المهارات",
+      "skillsDesc": "مهاراتك وخبراتك",
+      "activityFeed": "شريط النشاط",
+      "activityFeedDesc": "نشاطاتك الأخيرة على المنصة",
+      "footerNote": "خيار التوريث يستخدم مستوى الرؤية الافتراضي المحدد في إعدادات الخصوصية.",
+      "loadError": "فشل تحميل إعدادات الرؤية.",
+      "saveError": "فشل حفظ إعدادات الرؤية.",
+      "saving": "جاري الحفظ..."
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "saveChanges": "حفظ التغييرات"
+    }
+  }
+}

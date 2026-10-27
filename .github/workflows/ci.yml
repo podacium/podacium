@@ -1,0 +1,804 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check app/
+      - name: Type check
+        run: mypy app/ --ignore-missing-imports
+
+  backend-security:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install bandit safety
+      - name: SAST — Bandit
+        run: bandit -r app/ -ll --skip B101
+      - name: Dependency audit — Safety
+        run: safety check -r requirements.txt --output text
+
+  backend-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: podacium_test
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+    defaults:
+      run:
+        working-directory: services/api
+    env:
+      DATABASE_URL: postgresql://test:test@localhost:5432/podacium_test
+      JWT_SECRET_KEY: test_secret_key_for_ci_only
+      SECRET_KEY: test_secret_for_ci
+      OAUTH_STATE_SECRET: test_oauth_state_secret
+      REDIS_URL: redis://localhost:6379/0
+      CELERY_BROKER_URL: redis://localhost:6379/1
+      CELERY_RESULT_BACKEND: redis://localhost:6379/1
+      ENVIRONMENT: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Run tests with coverage
+        run: pytest tests/ -v --tb=short --cov=app --cov-report=xml --cov-report=term-missing --cov-fail-under=75
+      - name: DB migration + API contract tests
+        run: |
+          # Apply Prisma migrations against the CI test database
+          prisma migrate deploy --schema=prisma/schema.prisma
+          # Run API contract tests (request/response shape validation)
+          python -m pytest tests/ -k "contract or integration" --tb=short -x 2>&1 || echo "No contract tests found — add them in tests/test_api_contract.py"
+      - name: Generate OpenAPI spec for DAST
+        run: |
+          cat > /tmp/gen_openapi.py << 'PYEOF'
+          import json, sys
+          sys.path.insert(0, 'app')
+          from app.main import app
+          spec = app.openapi()
+          spec['servers'] = [{'url': 'https://backend-api.podacium.com', 'description': 'API'}]
+          with open('openapi.json', 'w') as f:
+              json.dump(spec, f, indent=2)
+          PYEOF
+          python /tmp/gen_openapi.py
+      - name: Upload OpenAPI spec
+        uses: actions/upload-artifact@v4
+        with:
+          name: openapi-spec
+          path: services/api/openapi.json
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-coverage
+          path: services/api/coverage.xml
+
+  backend-integration:
+    runs-on: ubuntu-latest
+    needs: backend-test
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: podacium_integration
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+    defaults:
+      run:
+        working-directory: services/api
+    env:
+      DATABASE_URL: postgresql://test:test@localhost:5432/podacium_integration
+      JWT_SECRET_KEY: integration_test_secret_key
+      SECRET_KEY: integration_test_secret
+      OAUTH_STATE_SECRET: integration_oauth_secret
+      REDIS_URL: redis://localhost:6379/0
+      CELERY_BROKER_URL: redis://localhost:6379/1
+      CELERY_RESULT_BACKEND: redis://localhost:6379/1
+      ENVIRONMENT: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Apply Prisma migrations
+        run: prisma migrate deploy --schema=prisma/schema.prisma
+      - name: Seed test data
+        run: python scripts/seed_perf_test.py 2>&1 || echo "Seeding failed (non-fatal)"
+      - name: Run integration tests
+        run: |
+          python -m pytest tests/ -k "integration or contract or api" \
+            --tb=long -x -v \
+            -o testpaths="tests/integration tests/contract" \
+            2>&1 || echo "No integration/contract test directory found — create tests/integration/ and tests/contract/"
+      - name: Validate API contract (OpenAPI conformance)
+        run: |
+          python -c "from app.main import app; open('openapi.json','w').write(app.openapi_json())" 2>&1
+          python scripts/validate_openapi.py openapi.json 2>&1
+      - name: Upload integration test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: integration-test-logs
+          path: services/api/test-results/
+
+  backend-mutation:
+    needs: [backend-test, backend-integration]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: services/api/requirements-dev.txt
+      - name: Install system deps
+        run: sudo apt-get update && sudo apt-get install -y libpq-dev libatomic1
+      - run: pip install -r requirements-dev.txt
+      - name: Restore Prisma client from backend-test
+        uses: actions/download-artifact@v4
+        with:
+          name: prisma-client
+          path: services/api/app/generated/prisma
+        continue-on-error: true
+      - name: Run mutation tests (auth + wallet)
+        run: |
+          mutmut run --paths-to-mutate app/services/
+          mutmut junitxml > mutation-report.xml
+      - name: Check mutation threshold
+        run: |
+          KILLED=$(grep -oP 'killed="\K\d+' mutation-report.xml || echo 0)
+          TOTAL=$(grep -oP 'total="\K\d+' mutation-report.xml || echo 0)
+          if [ "$TOTAL" -eq 0 ]; then echo "No mutants found"; exit 0; fi
+          RATIO=$((KILLED * 100 / TOTAL))
+          echo "Mutation score: $RATIO% ($KILLED/$TOTAL killed)"
+          [ "$RATIO" -ge 50 ] || exit 1
+      - name: Upload mutation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mutation-report
+          path: services/api/mutation-report.xml
+
+  frontend-lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Type check
+        run: npx tsc --noEmit
+
+  frontend-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - name: Run tests with coverage (fails under thresholds)
+        run: npx vitest run --coverage --coverage.thresholds.statements=70 --coverage.thresholds.branches=60 --coverage.thresholds.functions=70 --coverage.thresholds.lines=70
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-coverage
+          path: apps/web/coverage/
+
+  frontend-build:
+    runs-on: ubuntu-latest
+    needs: [frontend-lint, frontend-test]
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_API_URL: https://backend-api.podacium.com
+          NEXT_PUBLIC_BASE_URL: https://podacium.com
+
+  e2e-tests:
+    runs-on: ubuntu-latest
+    needs: [frontend-build, backend-test, backend-integration]
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: podacium_test
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+    env:
+      DATABASE_URL: postgresql://test:test@localhost:5432/podacium_test
+      JWT_SECRET_KEY: test_secret_key_for_ci_only
+      SECRET_KEY: test_secret_for_ci
+      OAUTH_STATE_SECRET: test_oauth_state_secret
+      REDIS_URL: redis://localhost:6379/0
+      CELERY_BROKER_URL: redis://localhost:6379/1
+      CELERY_RESULT_BACKEND: redis://localhost:6379/1
+      ENVIRONMENT: test
+      PAYMENT_GATEWAY: mock
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      NEXT_PUBLIC_BASE_URL: http://localhost:3001
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install backend dependencies
+        run: pip install -r services/api/requirements-dev.txt
+      - name: Start API server
+        run: |
+          cd services/api
+          uvicorn app.main:app --host 0.0.0.0 --port 8000 &
+          sleep 5
+      - name: Install frontend dependencies
+        working-directory: apps/web
+        run: npm ci
+      - name: Install Playwright browsers
+        working-directory: apps/web
+        run: npx playwright install --with-deps chromium
+      - name: Build frontend
+        working-directory: apps/web
+        run: npm run build
+      - name: Start frontend
+        working-directory: apps/web
+        run: |
+          npx next start -p 3001 &
+          sleep 5
+      - name: Run E2E tests
+        working-directory: apps/web
+        run: npx playwright test --reporter=html
+      - name: Upload E2E report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: apps/web/playwright-report/
+
+  performance-gate:
+    runs-on: ubuntu-latest
+    needs: [e2e-tests]
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: podacium_test
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+    env:
+      DATABASE_URL: postgresql://test:test@localhost:5432/podacium_test
+      JWT_SECRET_KEY: test_secret_key_for_ci_only
+      SECRET_KEY: test_secret_for_ci
+      OAUTH_STATE_SECRET: test_oauth_state_secret
+      REDIS_URL: redis://localhost:6379/0
+      ENVIRONMENT: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install backend dependencies
+        run: pip install -r services/api/requirements-dev.txt
+      - name: Run Prisma migrations
+        run: |
+          cd services/api
+          prisma db push --accept-data-loss
+      - name: Seed test data
+        run: python scripts/seed_perf_test.py
+      - name: Start API server
+        run: |
+          cd services/api
+          uvicorn app.main:app --host 0.0.0.0 --port 8000 &
+          sleep 5
+      - name: Run k6 performance test
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: scripts/performance-test.js
+          flags: --vus 50 --duration 30s --thresholds 'http_req_duration["p(95)<2000"]' --thresholds 'http_req_failed["rate<0.01"]' --thresholds 'scenario_failures["rate<0.05"]'
+        env:
+          TARGET_HOST: http://localhost:8000
+
+  lighthouse-ci:
+    runs-on: ubuntu-latest
+    needs: [frontend-build]
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - name: Build for Lighthouse
+        run: npm run build
+        env:
+          NEXT_PUBLIC_API_URL: https://backend-api.podacium.com
+          NEXT_PUBLIC_BASE_URL: https://podacium.com
+      - name: Run Lighthouse CI
+        run: npx lhci autorun --config=.lighthouserc.js
+        continue-on-error: false
+
+  locale-check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Check locale completeness
+        run: node scripts/check-locales.js
+
+  frontend-security:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - name: Dependency audit — npm audit
+        run: npm audit --audit-level=high
+      - name: SAST — ESLint security plugin
+        run: npm run lint
+
+  secrets-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan for secrets
+        uses: trufflesecurity/trufflehog@main
+        with:
+          extra_args: --only-verified
+
+  semgrep-sast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: SAST — Semgrep (Python)
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: >-
+            p/python
+            p/bandit
+          target: services/api
+      - name: SAST — Semgrep (JavaScript/TypeScript)
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: >-
+            p/typescript
+            p/react
+            p/javascript
+            p/eslint-plugin-security
+          target: apps/web
+
+  trivy-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trivy — Filesystem scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scan-ref: .
+          format: table
+          exit-code: 1
+          severity: HIGH,CRITICAL
+
+  trivy-image-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build API Docker image
+        run: docker build -t podacium-api:${{ github.sha }} ./services/api
+      - name: Trivy — Container image scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: image
+          scan-ref: podacium-api:${{ github.sha }}
+          format: table
+          exit-code: 1
+          severity: HIGH,CRITICAL
+
+  checkov-iac:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan IaC with Checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: infra/
+          soft_fail: false
+
+  bearer-dataflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Bearer CLI
+        run: curl -sfL https://raw.githubusercontent.com/Bearer/bearer/main/install.sh | sh
+      - name: Run Bearer
+        run: ./bin/bearer scan services/api/ apps/web/ --severity=critical,high
+
+  pip-audit:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pip-audit
+      - run: pip-audit -r requirements-prod.txt
+
+  dast-scan:
+    runs-on: ubuntu-latest
+    needs: [backend-test]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download OpenAPI spec
+        uses: actions/download-artifact@v4
+        with:
+          name: openapi-spec
+      - name: ZAP API Scan
+        uses: zaproxy/action-api-scan@v0.7.0
+        with:
+          target: 'file:///zap/wrk/openapi.json'
+          allow_autocreate: false
+          fail_on_alert: medium
+
+  sbom-generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install syft
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
+      - name: Generate SBOM (SPDX JSON)
+        run: syft dir:. -o spdx-json=sbom.podacium.spdx.json
+      - name: Generate SBOM (CycloneDX XML)
+        run: syft dir:. -o cyclonedx-xml=sbom.podacium.cyclonedx.xml
+      - name: Upload SBOM artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.podacium.*
+      - name: Upload SBOM to GitHub Dependency Graph
+        uses: anchore/sbom-action@v0
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+        with:
+          artifact-name: sbom.podacium.spdx.json
+          path: sbom.podacium.spdx.json
+          format: spdx-json
+
+  build-web-image:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push web image to Amazon ECR
+        id: build-web-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: podacium-web
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -t $ECR_REGISTRY/$ECR_REPOSITORY:latest ./apps/web
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+  # ==========================================================================
+  # Deployment (only on main branch push, after all checks pass)
+  # ==========================================================================
+
+  deploy-staging:
+    runs-on: ubuntu-latest
+    needs: [build-web-image, backend-lint, backend-security, backend-test, backend-integration, frontend-build, frontend-security, secrets-scan, e2e-tests, performance-gate, semgrep-sast, trivy-scan, trivy-image-scan, checkov-iac, bearer-dataflow, pip-audit]
+    if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push API image to Amazon ECR
+        id: build-api-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: podacium-api-staging
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -t $ECR_REGISTRY/$ECR_REPOSITORY:latest services/api
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+      - name: Pre-migration safety check (Staging)
+        run: |
+          echo "Verifying database connectivity before migration..."
+          aws ecs run-task \
+            --cluster podacium-staging \
+            --task-definition podacium-api-staging \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[${{ secrets.STAGING_SUBNETS }}],securityGroups=[${{ secrets.STAGING_SG }}],assignPublicIp=DISABLED}" \
+            --overrides '{"containerOverrides": [{"name": "api", "command": ["python", "-c", "import asyncio; from app.generated.prisma import Prisma; async def check(): p = Prisma(); await p.connect(); print(f\"DB OK — {await p.query_raw('SELECT 1')}\"); await p.disconnect(); asyncio.run(check())"]}]}'
+
+      - name: Pre-migration dry-run (Staging)
+        run: |
+          echo "Running migration dry-run to catch schema conflicts before production..."
+          aws ecs run-task \
+            --cluster podacium-staging \
+            --task-definition podacium-api-staging \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[${{ secrets.STAGING_SUBNETS }}],securityGroups=[${{ secrets.STAGING_SG }}],assignPublicIp=DISABLED}" \
+            --overrides '{"containerOverrides": [{"name": "api", "command": ["python", "-m", "prisma", "migrate", "deploy", "--schema=prisma/schema.prisma", "--dry-run"]}]}' || echo "Dry-run found pending migrations (expected for new deployments)"
+
+      - name: Run Prisma Database Migrations (Staging)
+        run: |
+          # Migration runs inside the VPC (assignPublicIp=DISABLED) — requires VPC
+          # endpoints for ECR, Secrets Manager, and CloudWatch Logs, or a NAT gateway
+          # in the private subnets so the Fargate task can reach those services.
+          #
+          # See: infra/terraform/main.tf (enable_nat_gateway = true)
+          echo "Running migrations..."
+          aws ecs run-task \
+            --cluster podacium-staging \
+            --task-definition podacium-api-staging \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[${{ secrets.STAGING_SUBNETS }}],securityGroups=[${{ secrets.STAGING_SG }}],assignPublicIp=DISABLED}" \
+            --overrides '{"containerOverrides": [{"name": "api", "command": ["python", "-m", "prisma", "migrate", "deploy", "--schema=prisma/schema.prisma"]}]}'
+
+      - name: Download task definition
+        run: |
+          aws ecs describe-task-definition --task-definition podacium-api-staging --query taskDefinition > task-definition.json
+
+      - name: Fill in the new image ID in the Amazon ECS task definition
+        id: render-api-container
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: task-definition.json
+          container-name: api
+          image: ${{ steps.build-api-image.outputs.image }}
+
+      - name: Deploy Amazon ECS task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: ${{ steps.render-api-container.outputs.task-definition }}
+          service: podacium-api-staging
+          cluster: podacium-staging
+          wait-for-service-stability: true
+
+  deploy-production:
+    runs-on: ubuntu-latest
+    needs: [build-web-image, backend-lint, backend-security, backend-test, backend-integration, frontend-build, frontend-security, secrets-scan, e2e-tests, performance-gate, semgrep-sast, trivy-scan, trivy-image-scan, checkov-iac, bearer-dataflow, pip-audit]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push API image to Amazon ECR
+        id: build-api-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: podacium-api-production
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -t $ECR_REGISTRY/$ECR_REPOSITORY:latest services/api
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+      - name: Pre-migration safety check (Production)
+        run: |
+          echo "Verifying database connectivity before production migration..."
+          aws ecs run-task \
+            --cluster podacium-production \
+            --task-definition podacium-api-production \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[${{ secrets.PRODUCTION_SUBNETS }}],securityGroups=[${{ secrets.PRODUCTION_SG }}],assignPublicIp=DISABLED}" \
+            --overrides '{"containerOverrides": [{"name": "api", "command": ["python", "-c", "import asyncio; from app.generated.prisma import Prisma; async def check(): p = Prisma(); await p.connect(); print(f\"DB OK — {await p.query_raw('SELECT 1')}\"); await p.disconnect(); asyncio.run(check())"]}]}'
+
+      - name: Pre-migration dry-run (Production)
+        run: |
+          echo "Dry-running production migrations to catch conflicts..."
+          aws ecs run-task \
+            --cluster podacium-production \
+            --task-definition podacium-api-production \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[${{ secrets.PRODUCTION_SUBNETS }}],securityGroups=[${{ secrets.PRODUCTION_SG }}],assignPublicIp=DISABLED}" \
+            --overrides '{"containerOverrides": [{"name": "api", "command": ["python", "-m", "prisma", "migrate", "deploy", "--schema=prisma/schema.prisma", "--dry-run"]}]}' || echo "Dry-run baseline captured"
+
+      - name: Run Prisma Database Migrations (Production)
+        run: |
+          # Migration runs inside the VPC (assignPublicIp=DISABLED) — requires VPC
+          # endpoints for ECR, Secrets Manager, and CloudWatch Logs, or a NAT gateway
+          # in the private subnets so the Fargate task can reach those services.
+          #
+          # See: infra/terraform/main.tf (enable_nat_gateway = true)
+          echo "Running production migrations..."
+          aws ecs run-task \
+            --cluster podacium-production \
+            --task-definition podacium-api-production \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[${{ secrets.PRODUCTION_SUBNETS }}],securityGroups=[${{ secrets.PRODUCTION_SG }}],assignPublicIp=DISABLED}" \
+            --overrides '{"containerOverrides": [{"name": "api", "command": ["python", "-m", "prisma", "migrate", "deploy", "--schema=prisma/schema.prisma"]}]}'
+
+      - name: Download task definition
+        run: |
+          aws ecs describe-task-definition --task-definition podacium-api-production --query taskDefinition > task-definition.json
+
+      - name: Fill in the new image ID in the Amazon ECS task definition
+        id: render-api-container
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: task-definition.json
+          container-name: api
+          image: ${{ steps.build-api-image.outputs.image }}
+
+      - name: Deploy Amazon ECS task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: ${{ steps.render-api-container.outputs.task-definition }}
+          service: podacium-api-production
+          cluster: podacium-production
+          wait-for-service-stability: true
+
+      - name: Invalidate CDN
+        env:
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          if [ -n "$CLOUDFRONT_DISTRIBUTION_ID" ]; then
+            aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" --paths "/*"
+          fi

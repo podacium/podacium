@@ -1,0 +1,126 @@
+{
+  "settings-devices": {
+    "meta": {
+      "title": "Gestion des Appareils",
+      "description": "Gérez vos appareils de confiance et consultez les événements de sécurité"
+    },
+    "page": {
+      "breadcrumbHome": "Accueil",
+      "breadcrumbSettings": "Paramètres",
+      "title": "Appareils & Sécurité",
+      "subtitle": "Gérez vos appareils de confiance et consultez l'activité de sécurité",
+      "deviceListTitle": "Appareils Actifs",
+      "deviceListDesc": "Appareils qui ont accédé à votre compte",
+      "currentDevice": "Cet appareil",
+      "primaryDevice": "Principal",
+      "trusted": "Approuvé",
+      "untrusted": "Non approuvé",
+      "trustToggle": "Approuver cet appareil",
+      "revokeTrust": "Révoquer l'approbation",
+      "lastActive": "Dernière activité",
+      "firstSeen": "Première apparition",
+      "logins": "Connexions",
+      "unknownDevice": "Appareil inconnu",
+      "noDevices": "Aucun appareil enregistré",
+      "securityEvents": "Événements de Sécurité",
+      "noEvents": "Aucun événement récent",
+      "group": {
+        "today": "Aujourd'hui",
+        "yesterday": "Hier",
+        "week": "Cette semaine",
+        "older": "Plus ancien"
+      },
+      "time": {
+        "justNow": "À l'instant",
+        "minutes": "il y a {count} min",
+        "hours": "il y a {count} h"
+      },
+      "event": {
+        "NEW_DEVICE_DETECTED": "Nouvel appareil détecté",
+        "NEW_DEVICE_DETECTED_desc": "Nouvel appareil : {browser} sur {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "Déplacement impossible détecté",
+        "EXCESSIVE_SUBNET_SPREAD": "Partage de compte détecté",
+        "DEVICE_TRUSTED": "Appareil approuvé",
+        "DEVICE_REVOKED": "Approbation révoquée",
+        "STRIKE_ISSUED": "Avertissement émis",
+        "STRIKE_TWO_REACHED": "Compte restreint",
+        "STRIKE_THREE_REACHED": "Compte suspendu",
+        "ACCOUNT_SUSPENDED": "Compte suspendu",
+        "ESCROW_COOLDOWN_STARTED": "Délai de sécurité commencé",
+        "COOLDOWN_BYPASS_2FA": "Délai contourné via 2FA"
+      },
+      "eventDesc": {
+        "NEW_DEVICE_DETECTED": "Nouvel appareil : {browser} sur {platform}",
+        "GEO_IMPOSSIBLE_TRAVEL": "Connexion suspecte depuis un emplacement distant",
+        "EXCESSIVE_SUBNET_SPREAD": "Plusieurs réseaux détectés",
+        "DEVICE_TRUSTED": "Appareil marqué comme approuvé",
+        "DEVICE_REVOKED": "Approbation de l'appareil révoquée",
+        "STRIKE_ISSUED": "Avertissement pour violation de la politique",
+        "STRIKE_TWO_REACHED": "Fonctionnalités du compte restreintes",
+        "STRIKE_THREE_REACHED": "Compte suspendu pour violations",
+        "ACCOUNT_SUSPENDED": "Le compte a été suspendu",
+        "ESCROW_COOLDOWN_STARTED": "Délai de sécurité de 72h pour appareil non approuvé",
+        "COOLDOWN_BYPASS_2FA": "Délai contourné via l'authentification à deux facteurs"
+      },
+      "totalDevices": "Total Appareils",
+      "trustedDevices": "Approuvés",
+      "activeToday": "Actif Aujourd'hui",
+      "events7d": "Événements (7j)",
+      "trustUpdated": "Confiance de l'appareil mise à jour",
+      "trustFailed": "Échec de la mise à jour",
+      "loadFailed": "Échec du chargement",
+      "makePrimary": "Définir principal",
+      "primaryUpdated": "Appareil principal mis à jour",
+      "primaryFailed": "Échec de la mise à jour de l'appareil principal",
+      "removeButton": "Supprimer",
+      "removeDevice": "Supprimer l'appareil",
+      "removeConfirmTitle": "Supprimer l'appareil ?",
+      "removeConfirmDesc": "Cela déconnectera cet appareil et le retirera de vos appareils de confiance.",
+      "removeSuccess": "Appareil supprimé avec succès",
+      "removeFailed": "Échec de la suppression de l'appareil",
+      "cannotRemovePrimary": "Impossible de supprimer l'appareil principal",
+      "breadcrumbHome": "Accueil",
+      "breadcrumbSettings": "Paramètres",
+      "cancel": "Annuler"
+    },
+    "banner": {
+      "strike2": {
+        "title": "Compte Restreint",
+        "description": "Certaines fonctionnalités sont verrouillées en raison d'avertissements multiples. Passez à Pro pour ajouter des appareils autorisés.",
+        "cta": "Passer à Pro"
+      },
+      "strike3": {
+        "title": "Compte Suspendu",
+        "description": "Votre compte a été suspendu pour violation des règles. Veuillez contacter le support.",
+        "cta": "Contacter le Support"
+      }
+    },
+    "notifications": {
+      "newDevice": {
+        "title": "Nouvel appareil détecté",
+        "body": "Un nouvel appareil ({device}) vient d'accéder à votre compte."
+      },
+      "impossibleTravel": {
+        "title": "Connexion suspecte détectée",
+        "body": "Votre compte a été accédé depuis un emplacement distant dans un délai impossible."
+      },
+      "strike1": {
+        "title": "Avertissement de partage de compte",
+        "body": "Votre compte a été accédé depuis plusieurs emplacements."
+      },
+      "strike2": {
+        "title": "Compte restreint",
+        "body": "Certaines fonctionnalités sont verrouillées."
+      },
+      "strike3": {
+        "title": "Compte suspendu",
+        "body": "Votre compte a été suspendu pour violation des règles."
+      }
+    },
+    "toast": {
+      "trustUpdated": "Confiance de l'appareil mise à jour",
+      "loadFailed": "Échec du chargement des appareils",
+      "trustFailed": "Échec de la mise à jour de la confiance"
+    }
+  }
+}

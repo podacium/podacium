@@ -1,0 +1,2159 @@
+{
+  "learn": {
+    "meta": {
+      "title": "Ammas n Ulmad Amaḍlan | Issin Timusniwin u Ḥrez Tamahilt-inek",
+      "description": "Tafelwit-inek tameddant n ulmad s tmiwa, ibriden, aḍfar n usfurret d yisemrasen udmawanen",
+      "keywords": "ammas n ulmad, timsirin s srid, asnefled n tmusni, asimɣer n tmahilt, asfurret n ulmad"
+    },
+    "branding": {
+      "pillar1": "Almad",
+      "pillar2": "Amahil Ililelli",
+      "pillar3": "Tusna n Tnezzut (BI)"
+    },
+    "nav": {
+      "breadcrumb": {
+        "home": "Axxam",
+        "learn": "Lmed"
+      }
+    },
+    "quickActions": {
+      "modules": "Snirem Tiɣerɣar",
+      "modulesDesc": "Af timsirin timyiyin",
+      "paths": "Ibriden n Ulmad",
+      "pathsDesc": "Inigen yettwasuddsen",
+      "progress": "Asfurret-iw",
+      "progressDesc": "Ḍfer almad-inek"
+    },
+    "landing": {
+      "hero": {
+        "title": "Issin Timusniwin-inek s",
+        "highlight": "Podacium",
+        "subtitle": "Tawwurt-inek ɣer tmesras n yimusnawen d yibriden n ulmad yettwasuddsen i usnerni n tmahilt-inek.",
+        "cta": "Bdu Almad",
+        "badge": "Asegmi n Podacium"
+      },
+      "choices": {
+        "courses": {
+          "title": "Snirem Timsirin",
+          "desc": "Kcem ɣer tmiwa timyiyin iwakken ad talmeḍ timusniwin s tazzla-inek.",
+          "action": "Wali Timsirin"
+        },
+        "paths": {
+          "title": "Ibriden n Ulmad",
+          "desc": "Ḍfer inigen yettwasuddsen iwakken ad taweḍ ɣer tmusni tameddant.",
+          "action": "Wali Ibriden"
+        }
+      },
+      "features": {
+        "title": "Acuɣer ara tlmeḍ s Podacium?",
+        "subtitle": "Simɣer tamahilt-inek s ugbur yettwasenqden",
+        "items": {
+          "expert": {
+            "title": "Agbur n Yimusnawen",
+            "desc": "Lmed sɣur imusnawen yesɛan tarmit n tidet deg ulzuz"
+          },
+          "interactive": {
+            "title": "Almad Amiddaw",
+            "desc": "Ikayaden d yisenfaren n tidet i usentem n tmusni"
+          },
+          "certified": {
+            "title": "Awi Aselkin",
+            "desc": "Awi aselkin yettwasenqden mi tfukkeḍ iwakken ad teskeneḍ tarmit-inek"
+          }
+        }
+      },
+      "stats": {
+        "learners": {
+          "label": "Inelmaden Irmaden"
+        },
+        "courses": {
+          "label": "Timsirin n Yimusnawen"
+        },
+        "paths": {
+          "label": "Ibriden n Tmahilt"
+        },
+        "lessons": {
+          "label": "Timiwa Timiddawin"
+        },
+        "satisfaction": {
+          "label": "Asemrek n Yinelmaden"
+        }
+      },
+      "howItWorks": {
+        "title": "Amek i Tetteddu",
+        "subtitle": "Bdu abrid-inek deg kraḍ n yisurifen fessusen",
+        "steps": {
+          "discover": {
+            "title": "Afen",
+            "desc": "Snirem umuɣ-nneɣ neɣ sekyer tamusni-inek iwakken ad tafeḍ abrid-inek"
+          },
+          "learn": {
+            "title": "Lmed",
+            "desc": "Ddu d ugbur amiddaw d yisenfaren n umahil"
+          },
+          "certify": {
+            "title": "Awi Aselkin",
+            "desc": "Awi aselkin yettwasenqden i uskan n wayen i d-tewwiḍ"
+          }
+        }
+      },
+      "audience": {
+        "title": "I Wanwa Tensa-ya?",
+        "subtitle": "Podacium tettwahegga i yinelmaden deg yal aswir",
+        "segments": {
+          "students": {
+            "title": "Inelmaden",
+            "desc": "Bnu timusniwin tizwaranin u heggi iman-ik i umahil-inek amezwaru."
+          },
+          "professionals": {
+            "title": "Imusnawen",
+            "desc": "Simɣer timusniwin-inek iwakken ad tkemmleḍ deg tmahilt u ad tiliḍ d amezwaru."
+          },
+          "teams": {
+            "title": "Tirbaɛin",
+            "desc": "Sileɣ ixeddamen-inek s yibriden n ulmad udmawanen."
+          }
+        }
+      },
+      "featured": {
+        "title": "Timsirin Tizwaranin",
+        "subtitle": "Snirem agbur yettwafernen s wazal ameqran i k-iwatan",
+        "viewCourse": "Wali Tamsirt",
+        "beginnerLevel": "Amezwaru",
+        "new": "Amaynut",
+        "lessons": "timsirin",
+        "duration": "2t 15sd"
+      },
+      "faq": {
+        "title": "Isteqsiyen i d-Yettuɣalen Aṭas",
+        "subtitle": "Isteqsiyen imatuten ɣef tensa-nneɣ n ulmad",
+        "items": [
+          {
+            "question": "Eɛni agbur d baṭel?",
+            "answer": "Nefka timsirin tizmimin baṭel d yibriden unzifen s uxxalas. Tzemreḍ ad twaliḍ aṭas n tmesras mebla axxalas."
+          },
+          {
+            "question": "Ad awiɣ aselkin?",
+            "answer": "Ih, iselkinen yettwasenqden ttwunefken mi tfukkeḍ timsirin d yibriden n ulmad."
+          },
+          {
+            "question": "Zemreɣ ad lmadeɣ s tazzla-iw?",
+            "answer": "S tidet. Akk agbur-nneɣ yettwaglam akken ad tlmmdeḍ melmi i k-yewata deg wakud-inek."
+          },
+          {
+            "question": "Tella tallelt ma ufiɣ ugur?",
+            "answer": "Ih, inelmaden n Premium sɛan anekcum ɣer yiseqsiyen d uselmad d yisenburen n tmetti."
+          },
+          {
+            "question": "Zemreɣ ad lmadeɣ ɣef tilifun?",
+            "answer": "Ih akk. Tansa-nneɣ temcabi d tilifunat d tfelwin. Tzemreḍ ad twaliḍ ividyuten, ad teɣreḍ iḍrisen u ad txedmeḍ ikayaden seg yal allal."
+          },
+          {
+            "question": "Llant tewtilin n unekcum i tmesras?",
+            "answer": "Timsirin n yimaynuten ur sɛint ara tiwtilin. Timsirin tunzifin sɛant timusniwin i yettwasutren yettwalsen deg yisebtar-nsent."
+          },
+          {
+            "question": "Acḥal n tikwal i yettwabeddel ugbur?",
+            "answer": "Agbur n tmesras yettwasekked u yettwabeddel dima akken ad imcabi d ulzuz. Mi tjerreḍ, tettwaliḍ akk ibeddilen baṭel."
+          },
+          {
+            "question": "Amek i tettheggi Podacium aswir-iw?",
+            "answer": "Mi ara tjerreḍ, tzemreḍ ad twaliḍ ibriden i k-d-nettsemres s lehsab n yiswiyen d tarmit-inek."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Twejdeḍ ad Tebduḍ Abrid-inek?",
+        "subtitle": "Rnu ɣer tmetti n yinelmaden ass-a u beddel tamahilt-inek.",
+        "primary": "Bdu Baṭel",
+        "secondary": "Wali Ahilen n Tkebbaniyin"
+      }
+    },
+    "hero": {
+      "badge": "Ammas Amaḍlan n Ulmad",
+      "title": {
+        "main": "Amaḍal-inek",
+        "highlight": "Udmawan n Ulmad"
+      },
+      "description": {
+        "main": "Afen, lmed u ḍfer asfurret-inek deg tmesras d yibriden n ulmad.",
+        "authenticated": " Isemrasen udmawanen s tallelt n IA i usimɣer n tmahilt-inek.",
+        "unauthenticated": " Jerred iwakken ad teḍfreḍ asfurret-inek u ad tafeḍ isemrasen udmawanen."
+      },
+      "features": [
+        "Ibriden n ulmad udmawanen",
+        "Aḍfar n usfurret & tasleḍt",
+        "Isemrasen ifazen",
+        "Aselkin n tmusni"
+      ]
+    },
+    "stats": {
+      "user": [
+        {
+          "label": "Akk Ijerriḍen",
+          "description": "Inigen irmaden n ulmad"
+        },
+        {
+          "label": "Timiwa Yekfan",
+          "description": "Timusniwin yettwaḥerzen"
+        },
+        {
+          "label": "Tisaɛin n Ulmad",
+          "description": "Akud akerzan"
+        },
+        {
+          "label": "Iselkinen Yettwawwin",
+          "description": "Arrazen yeldin"
+        }
+      ],
+      "public": [
+        {
+          "label": "Inelmaden Irmaden",
+          "description": "Rnu ɣer tmetti-nneɣ"
+        },
+        {
+          "label": "Timsirin Yellan",
+          "description": "Bdu almad ass-a"
+        },
+        {
+          "label": "Ibriden n Ulmad",
+          "description": "Asnefled yettwasuddsen n tmusni"
+        },
+        {
+          "label": "Asemrek Alemmas",
+          "description": "Yebna ɣef tmuɣli n yinelmaden"
+        }
+      ]
+    },
+    "auth": {
+      "signIn": "Kcem",
+      "cta": "iwakken ad teḍfreḍ asfurret-inek u ad tafeḍ isemrasen udmawanen",
+      "progress": {
+        "title": "Ḍfer Asfurret-inek",
+        "description": "Snulfu amiḍan neɣ kcem iwakken ad teḍfreḍ abrid-inek n ulmad, ad twaliḍ asfurret u ad tafeḍ isemrasen."
+      }
+    },
+    "tabs": [
+      "Amatu",
+      "Tiɣerɣar",
+      "Ibriden",
+      "Asfurret-iw"
+    ],
+    "search": {
+      "placeholder": {
+        "modules": "Nadi tiɣerɣar...",
+        "paths": "Nadi ibriden...",
+        "content": "Nadi agbur n ulmad..."
+      },
+      "results": "Nufa <1>{modules}</1> n tɣerɣar d <3>{paths}</3> n yibriden yemcaban d \"{query}\""
+    },
+    "labels": {
+      "sortBy": "Fren s",
+      "skillFocus": "Astehzi n Tmusni",
+      "allSkills": "Akk Timusniwin",
+      "durationRange": "Tanzagt",
+      "features": "Timmad",
+      "match": "amcabi",
+      "modules": "tiɣerɣar",
+      "learners": "inelmaden",
+      "popular": "Yettwasen",
+      "inProgress": "deg uselkem",
+      "learningContent": "Agbur n Ulmad",
+      "complete": "yekfa",
+      "progressUpdated": "Asfurret yettwabeddel",
+      "newEnrollment": "Ajerred amaynut",
+      "progress": "Asfurret",
+      "randomSelection": "Afran Agacuran",
+      "randomlySelected": "yettwafernen s ugacur",
+      "enrolled": "ittwajerred",
+      "more": "ugar",
+      "featured": "Amezwaru",
+      "unknown": "Arusan",
+      "there": "dina",
+      "learningActivity": "Armud n Ulmad",
+      "general": "Amatu",
+      "hours": "ts",
+      "minutes": "tsd",
+      "all": "Akk",
+      "free": "Baṭel",
+      "lessons": "Timsirin"
+    },
+    "sortOptions": {
+      "popularity": "Widak Yettwasnen Aṭas",
+      "recent": "Widak d-Yernan Tura",
+      "progress": "Asfurret",
+      "duration": "Tanzagt",
+      "rating": "Asemrek Afellay"
+    },
+    "filterOptions": {
+      "duration": {
+        "any": "Yal Tanzagt",
+        "under1h": "Ddaw n 1 tsaɛet",
+        "1to5h": "Gar 1 d 5 tsaɛin",
+        "5to10h": "Gar 5 d 10 tsaɛin",
+        "over10h": "Ugar n 10 tsaɛin"
+      },
+      "features": {
+        "certification": "Aselkin Yella",
+        "handsOn": "Isenfaren n Ufus",
+        "interactive": "Ikayaden Imiddawen"
+      }
+    },
+    "buttons": {
+      "shuffle": "Sgacur",
+      "hideFilters": "Ffer Isizdigen",
+      "showFilters": "Ugar n Yisizdigen",
+      "clearAll": "Sfeḍ akk",
+      "clearSearch": "Sfeḍ anadi",
+      "explore": "Snirem",
+      "continue": "Kemmel",
+      "continuePath": "Kemmel Abrid",
+      "enrollNow": "Jerred Tura",
+      "startLearning": "Bdu Almad",
+      "startPath": "Bdu Abrid",
+      "explorePath": "Snirem Abrid",
+      "loading": "Asali deg uselkem...",
+      "loadMoreModules": "Rnu-d Tiɣerɣar",
+      "loadMorePaths": "Rnu-d Ibriden",
+      "clearAllFilters": "Sfeḍ Akk Isizdigen",
+      "createAccount": "Snulfu Amiḍan",
+      "getHelp": "Sutter Tallelt",
+      "browseCourses": "Snirem Timsirin Timyiyin",
+      "viewCertificate": "Wali Aselkin",
+      "continueLearning": "Kemmel Almad",
+      "goToDashboard": "Ddu ɣer Tfelwit",
+      "createFreeAccount": "Snulfu Amiḍan Baṭel"
+    },
+    "overview": {
+      "recommendations": {
+        "title": "Isemrasen i Kečč",
+        "subtitle": "Ibriden n ulmad udmawanen yebnan ɣef wayen tebɣiḍ d usfurret-inek",
+        "defaultDescription": "Issin tamusni-ya s ubrid-nneɣ n ulmad",
+        "viewPath": "Wali Abrid Ačuran"
+      },
+      "featured": {
+        "title": "Agbur Amezwaru",
+        "subtitle": "Ibriden d tmiwa yettwasnen i d-tefren tmetti-nneɣ",
+        "defaultDescription": "Issin tamusni-ya s ubrid-nneɣ n ulmad"
+      },
+      "continue": {
+        "title": "Kemmel Almad",
+        "subtitle": "Kemmel seg wanda tebdiḍ deg tmesras-inek tiramadin"
+      },
+      "recentActivity": {
+        "title": "Armud Amaynut"
+      }
+    },
+    "modules": {
+      "searchResults": "Igmaren n Unadi",
+      "availableModules": "Tiɣerɣar Yellan",
+      "searchDescription": "Tiɣerɣar yemcaban d wayen i tnudaḍ",
+      "defaultDescription": "Snirem u jerred deg tmesras timyiyin iwakken ad tebnuḍ timusniwin",
+      "showingCount": "Sken {count} {random} seg {total} n tɣerɣar",
+      "limitedResults": "{count} n yiferdisen kan i yemcaban d yisizdigen-inek",
+      "noDescription": "Ulac aglam"
+    },
+    "paths": {
+      "searchResults": "Igmaren n Unadi",
+      "learningPaths": "Ibriden n Ulmad",
+      "searchDescription": "Ibriden yemcaban d wayen i tnudaḍ",
+      "defaultDescription": "Inigen yettwasuddsen iwakken ad tawḍeḍ ɣer tmusni tameddant",
+      "showingCount": "Sken {count} {random} seg {total} n yibriden",
+      "limitedResults": "{count} n yiferdisen kan i yemcaban d yisizdigen-inek",
+      "defaultPathDescription": "Abrid n ulmad ameddud iwakken ad tawieḍ timusniwin timaynutin"
+    },
+    "progress": {
+      "title": "Asfurret n Ulmad",
+      "subtitle": "Ḍfer abrid-inek u wali acḥal i d-tewwiḍ",
+      "dayStreak": "ussan msedfaren",
+      "enrolled": "Ittwajerred",
+      "activeModules": "Tiɣerɣar Tirammadin",
+      "completed": "yekfa",
+      "learningPaths": "Ibriden n Ulmad",
+      "hours": "Tisaɛin",
+      "totalLearningTime": "Akud Amakku n Ulmad",
+      "avgModuleProgress": "Asfurret Alemmas n Tɣerɣart",
+      "certificates": "Iselkinen",
+      "earned": "Yettwawwi",
+      "avgPathProgress": "Asfurret Alemmas n Ubrid",
+      "skillDevelopment": {
+        "title": "Asnefled n Tmusniwin",
+        "subtitle": "Timusniwin ɣef wacu i txeddmeḍ tura deg ugbur-inek",
+        "courses": "timsirin",
+        "viewAll": "Wali akk {count} n tmusniwin →"
+      },
+      "timeline": {
+        "title": "Azemz n Ulmad",
+        "subtitle": "Irmuden d warrazen-inek imaynuten",
+        "completed": "Yekfa s lewziq! 🎉",
+        "progressUpdated": "Asfurret yettwabeddel ɣer {progress}%"
+      },
+      "tips": {
+        "title": "Tisektiwin n Ulmad",
+        "subtitle": "Simɣer tazmert-inek deg ulmad",
+        "items": [
+          {
+            "tip": "Tuqqna d tamenzut",
+            "description": "Ɛreḍ ad tlmmdeḍ 30 n tseddarin yal ass iwakken ad teṭṭfeḍ abrid."
+          },
+          {
+            "tip": "Sdukkel tazwart d umahil",
+            "description": "Snes ayen tlemmdeḍ deg yisenfaren d yikayaden."
+          },
+          {
+            "tip": "Steɛfu kra",
+            "description": "Seqdec tarrayt n Pomodoro: 25 n tseddarin n uselkem, 5 n tseddarin n usteɛfu."
+          },
+          {
+            "tip": "Sbedd iswiyen ibanen",
+            "description": "Sbedd ayen tebɣiḍ ad tawḍeḍ yal dduṛt iwakken ad tǧehdeḍ."
+          },
+          {
+            "tip": "Ales tiɣuri dima",
+            "description": "Uɣal ɣer tmiwa yezrin iwakken ad tṣeḥḥiḍ tigzi-inek."
+          },
+          {
+            "tip": "Rnu ɣer yisgura",
+            "description": "Mmeslay d yinelmaden nniḍen iwakken ad tawieḍ timuɣliwin yemxalafen."
+          }
+        ]
+      }
+    },
+    "timeframes": {
+      "week": "Dduṛt-a",
+      "month": "Aggur-a",
+      "year": "Aseggas-a"
+    },
+    "pagination": {
+      "show12": "Sken 12 deg usebter",
+      "show24": "Sken 24 deg usebter",
+      "show48": "Sken 48 deg usebter"
+    },
+    "emptyStates": {
+      "modules": {
+        "title": "Ulac tiɣerɣar yettwafen",
+        "searchMessage": "Ulac tiɣerɣar yemcaban d unadi-inek \"{query}\". Ɛreḍ awalen nniḍen neɣ sfeḍ isizdigen.",
+        "noFilters": "Ulac tiɣerɣar yellan s yisizdigen-a. Beddel afran-inek."
+      },
+      "paths": {
+        "title": "Ulac ibriden n ulmad yettwafen",
+        "searchMessage": "Ulac ibriden yemcaban d unadi-inek \"{query}\". Ɛreḍ awalen nniḍen neɣ sfeḍ isizdigen.",
+        "noFilters": "Ulac ibriden yellan s yisizdigen-a. Beddel afran-inek."
+      }
+    },
+    "messages": {
+      "loadError": "Afecl deg usali n ugbur n ulmad. Ales aɛreḍ ticki.",
+      "userDataError": "Kra n timmad tudmawanin zemrent ad xusent.",
+      "userDataErrorTitle": "Timmad Tudmawanin D Timectuḥin",
+      "searchError": "Anadi ur yezri ara. Ales aɛreḍ.",
+      "loadMoreError": "Afecl deg usali n ugbur nniḍen. Ales aɛreḍ.",
+      "enrollError": "Afecl deg ujerred. Ales aɛreḍ.",
+      "errorTitle": "Tella-d tuccḍa",
+      "loadingUserData": "Asali n yisefta udmawanen..."
+    },
+    "footer": {
+      "authenticated": {
+        "title": "Kemmel abrid-inek n ulmad, {name}!",
+        "description": "Tettawḍeḍ ɣer sdat! Snirem timusniwin timaynutin, kfu timsirin-inek neɣ wali isemrasen udmawanen."
+      },
+      "unauthenticated": {
+        "title": "Twejdeḍ ad tesnerniḍ almad-inek?",
+        "description": "Rnu ɣer yinelmaden yettbeddilen timahit-nsen s tensa-nneɣ tameddant. Snulfu amiḍan iwakken ad teḍfreḍ asfurret-inek."
+      }
+    },
+    "certificate": {
+      "downloadSuccess": "Aselkin yettwazdem s lewziq",
+      "downloadError": "Afecl deg uzdam n uselkin",
+      "shareSuccess": "Aselkin yettwabḍa s lewziq",
+      "shareError": "Afecl deg ubḍu n uselkin",
+      "linkCopied": "Aseysey yettwasenɣel ɣer tkatut",
+      "copyError": "Afecl deg usenɣel n useysey",
+      "notFoundDescription": "Aselkin-a ulac-it neɣ yettwakkes. Senqed ID u ales aɛreḍ.",
+      "title": "Aselkin n Usmed",
+      "issuedTo": "Yettunefk i",
+      "header": "Aselkin",
+      "certifiedThat": "Nettwekkid dakken",
+      "completionDescription": "yekfa s lewziq",
+      "dateIssued": "Azemz n Tuzna",
+      "instructor": "Aselmad",
+      "verificationId": "ID n Usenqed",
+      "downloadPdf": "Zdem-d PDF",
+      "shareLinkedIn": "Bḍu deg LinkedIn",
+      "verifyLink": "Senɣel Aseysey n Usenqed",
+      "verificationTitle": "Senqed Aselkin",
+      "verificationDescription": "Senqed tidet n uselkin n usmed n Podacium",
+      "verifyOnline": "Senqed s Srid",
+      "certificateDetails": "Talqayt n Uselkin",
+      "certificateId": "ID n Uselkin",
+      "issueDate": "Azemz n Tuffɣa",
+      "certificateType": "Tawsit n Uselkin",
+      "moduleType": "Aselkin n Tmesrit",
+      "pathType": "Aselkin n Ubrid n Ulmad",
+      "status": "Addad",
+      "valid": "Iṣeḥḥa",
+      "notFound": "Aselkin ur yettwacqerḥ ara",
+      "issuer": "Podacium",
+      "expertTeam": "Tarbaɛt n yimuzzag n Podacium",
+      "qrCodeAlt": "Tangalt QR n usefqed"
+    },
+    "preview": {
+      "badge": "Taskant tabaṭelt",
+      "watchingBanner": "Tettwaliḍ aselmed n teskant tabaṭelt",
+      "enrollPrompt": "Kcem ɣer urmud akk →",
+      "enjoyedTitle": "Iɛǧeb-ak weskan-agi abaṭel?",
+      "enjoyedDesc": "Kcem tura akken ad tawḍeḍ ɣer urmud akk, ikwizen, tiɣbula yettwazdamen, d uselkin unsib!",
+      "enrollNow": "Kcem tura",
+      "previewThisCourse": "Sken armud-agi",
+      "modalTitle": "Tazwart n urmud"
+    }
+  },
+  "paths": {
+    "badges": {
+      "featured": "Amezwaru"
+    },
+    "meta": {
+      "title": "Ibriden n Ulmad | Issin Abrid n Tmahilt-inek",
+      "description": "Snirem ibriden n ulmad imeddiyen i k-yettawin seg unelmad amaynut ar umusnaw deg taɣult-inek",
+      "keywords": "ibriden n ulmad, asnefled n tmahilt, asfurret n tmusni, timsirin s srid"
+    },
+    "hero": {
+      "badge": "Inigen n Ulmad Yettwasuddsen",
+      "title": {
+        "line1": "Issin Tamahilt-inek s",
+        "highlight": "Yibriden n Ulmad"
+      },
+      "description": "Inigen yettwasuddsen sɣur-nneɣ iwakken ad nerr imaynuten d imusnawen. Ḍfer ikarḍiwen s yiswiyen ibanen.",
+      "features": [
+        "Ikarḍiwen n yimusnawen",
+        "Asnefled amsedfar n tmusni",
+        "Isenfaren n ulzuz",
+        "Asentem deg ulzuz"
+      ]
+    },
+    "stats": [
+      {
+        "label": "Ijerriḍen",
+        "description": "Inigen irmaden n ulmad"
+      },
+      {
+        "label": "Timiwa Yekfan",
+        "description": "Timusniwin yettwaḥerzen"
+      },
+      {
+        "label": "Tisaɛin n Ulmad",
+        "description": "Akud akerzan"
+      },
+      {
+        "label": "Iselkinen Yettwawwin",
+        "description": "Arrazen yeldin"
+      }
+    ],
+    "recommendations": {
+      "title": "Isemrasen i Kečč",
+      "subtitle": "Yebna ɣef umezruy d wayen tebɣiḍ deg ulmad",
+      "match": "amcabi",
+      "defaultDescription": "Issin tamusni-ya s ubrid-nneɣ yettwasuddsen"
+    },
+    "search": {
+      "placeholder": "Nadi ibriden n ulmad s uzwel, aglam neɣ timusniwin...",
+      "results": "Nufa <1>{paths}</1> n yibriden d <3>{modules}</3> n tɣerɣar yemcaban d \"{query}\""
+    },
+    "filters": {
+      "sortBy": "Fren s",
+      "durationRange": "Tanzagt",
+      "enrollmentStatus": "Addad n Ujerred",
+      "features": "Timmad",
+      "categories": "Taggayin",
+      "levels": "Iswiren"
+    },
+    "filterOptions": {
+      "duration": [
+        "Yal Tanzagt",
+        "Ddaw n 10 tsaɛin",
+        "Gar 10 d 30 tsaɛin",
+        "Gar 30 d 50 tsaɛin",
+        "Ugar n 50 tsaɛin"
+      ],
+      "status": {
+        "enrolled": "Ibriden Ittwajerreden",
+        "notEnrolled": "Ur Ittwajerred Ara"
+      },
+      "features": {
+        "certification": "Aselkin Yella",
+        "handsOn": "Isenfaren n Ufus"
+      }
+    },
+    "sortOptions": [
+      {
+        "value": "popularity",
+        "label": "Widak Yettwasnen Aṭas"
+      },
+      {
+        "value": "recent",
+        "label": "Widak d-Yernan Tura"
+      },
+      {
+        "value": "progress",
+        "label": "Asfurret"
+      },
+      {
+        "value": "duration",
+        "label": "Tanzagt"
+      }
+    ],
+    "activeEnrollments": {
+      "title": "Ibriden-inek n Ulmad Irmaden",
+      "subtitle": "deg uselkem",
+      "defaultTitle": "Abrid n Ulmad"
+    },
+    "results": {
+      "searchResults": "Igmaren n Unadi",
+      "header": "Ibriden n Ulmad Yellan",
+      "searchDescription": "Ibriden yemcaban d wayen i tnudaḍ",
+      "description": "Inigen n ulmad imeddiyen i usimɣer n tmahilt-inek",
+      "showing": "Sken {current} seg {total} n yibriden",
+      "filtered": "(yettwasizdeg)"
+    },
+    "pagination": [
+      "Sken 12 deg usebter",
+      "Sken 24 deg usebter",
+      "Sken 48 deg usebter"
+    ],
+    "pathCard": {
+      "featured": "Amezwaru",
+      "popular": "Yettwasen",
+      "topRated": "Asemrek Afellay",
+      "enrolled": "Ittwajerred",
+      "continue": "Kemmel",
+      "explore": "Snirem",
+      "save": "Sekles",
+      "share": "Bḍu",
+      "noDescription": "Ulac aglam yellan",
+      "defaultDescription": "Abrid n ulmad ameddud i usnefled n tmusniwin timaynutin d usimɣer n tmahilt-inek",
+      "detailedDescription": "Inig n ulmad ameddud yettwasuddsen iwakken ad k-yawi seg unelmad amaynut ɣer umusnaw deg taɣult-inek.",
+      "featuredModules": "Tiɣerɣar Tizwaranin",
+      "skillsYoullLearn": "Timusniwin ara Talmeḍ"
+    },
+    "emptyState": {
+      "title": "Ulac ibriden n ulmad yettwafen",
+      "searchMessage": "Ulac ibriden yemcaban d unadi-inek \"{query}\". Ɛreḍ awalen nniḍen neɣ sfeḍ isizdigen.",
+      "noFilters": "Ulac ibriden n ulmad yellan s yisizdigen-a. Beddel afran-inek."
+    },
+    "popularModules": {
+      "title": "Tiɣerɣar Timyiyin Yettwasnen",
+      "subtitle": "Bdu s tmesras-a yesɛan asemrek afellay",
+      "defaultDescription": "Issin timusniwin tigejdanin s tmesrit-a tameddant",
+      "viewAll": "Wali Akk Timsirin"
+    },
+    "faq": {
+      "title": "Isteqsiyen i d-Yettuɣalen Aṭas",
+      "subtitle": "Af tiririyin ɣef yiseqsiyen imatuten ɣef yibriden n ulmad",
+      "items": [
+        {
+          "question": "D acu n umgired yellan gar ubrid n ulmad d tmesras timyiyin?",
+          "answer": "Ibriden n ulmad d imsedfaren n tmesras yettwasuddsen iwakken ad k-awin seg unelmad amaynut ɣer umusnaw deg yiwet n taɣult. Fkanten inig yettwaḍefren s yiswiyen ibanen, ma d timsirin timyiyin lhint i tmusniwin neɣ isental unzifen."
+        },
+        {
+          "question": "Acḥal n wakud i ilaqen iwakken ad yekfu ubrid n ulmad?",
+          "answer": "Ibriden-nneɣ ttwaselcamen s tazzla-inek. Ihi akud yemxalaf ɣef lehsab n lewɛara n ubrid, maca kra n yibriden ttaken-d akud yettwasekkren yebnan ɣef tazzla talemmast n ulmad."
+        },
+        {
+          "question": "Eɛni ad awiɣ aselkin mi ara fakeɣ abrid n ulmad?",
+          "answer": "Ih! Mi tfukkeḍ akk tiɣerɣar yettwasutren deg ubrid n ulmad, ad tawiḍ aselkin yettwasenqden i tzemreḍ ad tebḍuḍ deg LinkedIn d tensiwin nniḍen n yimusnawen."
+        },
+        {
+          "question": "Eɛni zemreɣ ad xedmeɣ timsirin deg ubrid s yal amsedfar i bɣiɣ?",
+          "answer": "Ɣas akken tesɛiḍ tilelli, nemlellak-ak ad teḍfreḍ amsedfar i d-nefka acku yal tamsirt tebna ɣef tmusni n tin yezrin. Kra n tɣerɣar tunzifin zemrent ad sutrent timusniwin tizwaranin."
+        },
+        {
+          "question": "D acu ara yeḍrun ma yella ur zmireɣ ara ad fakeɣ abrid n ulmad?",
+          "answer": "Tzemreḍ ad tḥebseḍ u ad tkemmleḍ deg yal akud. Asfurret-inek yettwaḥrez i lebda. Tzemreḍ daɣen ad tbeddleḍ gar yibriden n ulmad neɣ ad telḥuḍ d tmesras timyiyin gar ubrid."
+        },
+        {
+          "question": "Llant tewtilin n tazwara i yibriden n ulmad?",
+          "answer": "Tuget n yibriden n yimaynuten ur sɛint ara tiwtilin. Ibriden ilemmasen d yinzifen zemren ad sutren timusniwin tigejdanin. Yal abrid yeskan-d s wudem ubayyin akk tiwtilin send ad tjerreḍ."
+        },
+        {
+          "question": "Amek i d-tsemres Podacium ibriden n ulmad i yiswiyen-iw n tmahilt?",
+          "answer": "Podacium tettsemres ibriden n ulmad yebnan ɣef umezruy-inek n ulmad d wayen i k-yeɛǧben deg tmahilt. Isemrasen ttemcabin mi ara tkennfeḍ tiɣerɣar, u tzemreḍ ad tbeddleḍ abrid-inek neɣ ad tekseḍ isumaren deg yal akud."
+        },
+        {
+          "question": "Eɛni zemreɣ ad waliɣ agbur n ubrid send ad jerreɣ?",
+          "answer": "Yal abrid n ulmad yesɛa asebter n tmuɣli talqayant i d-yesskanayen akk tiɣerɣar, iswiyen n ulmad d wakud yettwarejwan. Tzemreḍ ad tseqdceḍ ahil ačuran send ad tjerreḍ iwakken ad twaliḍ ma yemcabi d yiswiyen-inek."
+        }
+      ]
+    },
+    "buttons": {
+      "clear": "Sfeḍ",
+      "filters": "Isizdigen",
+      "clearAll": "Sfeḍ akk",
+      "hideFilters": "Ffer Isizdigen",
+      "showFilters": "Ugar n Yisizdigen",
+      "continue": "Kemmel",
+      "continuePath": "Kemmel Abrid",
+      "continueLearning": "Kemmel Almad",
+      "enrollNow": "Jerred Tura",
+      "startFree": "Bdu Baṭel",
+      "startLearningPath": "Bdu Abrid n Ulmad",
+      "save": "Sekles",
+      "share": "Bḍu",
+      "loadMorePaths": "Rnu-d Ibriden",
+      "loading": "Asali deg uselkem...",
+      "browseCourses": "Snirem Timsirin Timyiyin",
+      "getRecommendations": "Awi Isemrasen",
+      "explore": "Snirem",
+      "exploreCourse": "Snirem Tamsirt",
+      "viewAll": "Wali Akk",
+      "clearSearch": "Sfeḍ Anadi",
+      "previous": "Uɣal",
+      "next": "Ddu",
+      "clearAllFilters": "Sfeḍ Akk Isizdigen",
+      "tryAgain": "Ales Aɛreḍ",
+      "clearFilters": "Sfeḍ Isizdigen"
+    },
+    "empty": {
+      "title": "Ulac ibriden yettwafen",
+      "noFilters": "Ulac ibriden n ulmad yellan s yisizdigen-a."
+    },
+    "labels": {
+      "learningPath": "Abrid n Ulmad",
+      "modules": "tiɣerɣar",
+      "enrolled": "ittwajerred",
+      "lessons": "timsirin",
+      "complete": "yekfa",
+      "progress": "Asfurret",
+      "skills": "timusniwin",
+      "na": "Ulac",
+      "duration": "Tanzagt",
+      "unknown": "Arusan",
+      "general": "Amatu",
+      "minutes": "tsd",
+      "more": "ugar",
+      "moreSkills": "n tmusniwin nniḍen",
+      "yourProgress": "Asfurret-inek",
+      "readyToEnroll": "Yewjed i ujerred",
+      "certificateUponCompletion": "Aselkin mi ara yekfu",
+      "includes": "Yegber",
+      "avgDuration": "Tanzagt Talemmast",
+      "rating": "Asemrek",
+      "totalLessons": "Akk Timsirin"
+    },
+    "levels": {
+      "beginner": "Amezwaru",
+      "intermediate": "Alemmas",
+      "advanced": "Anzif"
+    },
+    "messages": {
+      "loadError": "Afecl deg usali n yibriden n ulmad. Ales aɛreḍ ticki.",
+      "searchError": "Anadi ur yezri ara. Ales aɛreḍ.",
+      "enrollError": "Afecl deg ujerred deg ubrid. Ales aɛreḍ.",
+      "loadMoreError": "Afecl deg usali n yibriden nniḍen. Ales aɛreḍ.",
+      "errorTitle": "Tella-d tuccḍa"
+    },
+    "pricing": {
+      "title": "Azal",
+      "free": "Baṭel",
+      "paid": "S Uxxalas"
+    },
+    "loadFailed": "Ur yezmir ara ad d-yessali ibran. Ttxil-k rnu ɛreḍ tikkelt nniḍen."
+  },
+  "courses": {
+    "meta": {
+      "title": "Tiɣerɣar n Tmesras | Tansa n Ulmad",
+      "description": "Snirem tiɣerɣar n ulmad timeddiyin s tɣara tamuqrant d tirmit fessusen"
+    },
+    "hero": {
+      "title": "Snirem Tiɣerɣar n Ulmad",
+      "description": "Af timsirin timeddiyin i k-yettawin ɣer tmusniwin timaynutin d usnerni n tmahilt"
+    },
+    "search": {
+      "placeholder": "Nadi timsirin s uzwel, aglam neɣ timusniwin...",
+      "results": "Nufa {modules} n tɣerɣar d {paths} n yibriden"
+    },
+    "filters": {
+      "path": "Abrid n Ulmad",
+      "allPaths": "Akk Ibriden"
+    },
+    "buttons": {
+      "listView": "Tabyart",
+      "gridView": "Tafelwit",
+      "clear": "Sfeḍ",
+      "clearSearch": "Sfeḍ anadi",
+      "startCourse": "Bdu Tamsirt",
+      "continue": "Kemmel",
+      "save": "Sekles",
+      "share": "Bḍu",
+      "previous": "Uɣal",
+      "next": "Ddu",
+      "clearAllFilters": "Sfeḍ Akk Isizdigen",
+      "browseLearningPaths": "Snirem Ibriden n Ulmad",
+      "viewAll": "Wali Akk",
+      "explorePath": "Snirem Abrid",
+      "filters": "Isizdigen"
+    },
+    "sections": {
+      "searchResults": "Igmaren n Unadi",
+      "availableModules": "Tiɣerɣar Yellan",
+      "learningPaths": "Ibriden n Ulmad"
+    },
+    "count": {
+      "modules": "{count} n tɣerɣar"
+    },
+    "noDescription": "Ulac aglam yellan",
+    "badges": {
+      "featured": "Amezwaru",
+      "new": "Amaynut"
+    },
+    "labels": {
+      "lessons": "timsirin",
+      "modules": "tiɣerɣar",
+      "enrolled": "ittwajerred",
+      "progress": "Asfurret",
+      "avgDuration": "Tanzagt Talemmast",
+      "level": "Aswir",
+      "category": "Taggayt",
+      "allCategories": "Akk Taggayin",
+      "allLevels": "Akk Iswiren",
+      "general": "Amatu"
+    },
+    "levels": {
+      "beginner": "Amezwaru",
+      "intermediate": "Alemmas",
+      "advanced": "Anzif"
+    },
+    "results": {
+      "showing": "Sken {current} seg {total} n tmesras",
+      "filtered": "(yettwasizdeg)"
+    },
+    "pricing": {
+      "free": "Baṭel"
+    },
+    "pagination": {
+      "page": "Asebter {current} seg {total}"
+    },
+    "empty": {
+      "title": "Ulac timsirin yettwafen",
+      "searchMessage": "Ulac timsirin yemcaban d unadi-inek \"{query}\". Ɛreḍ awalen nniḍen neɣ sfeḍ isizdigen.",
+      "noFilters": "Ulac timsirin yellan s yisizdigen-a. Beddel afran-inek."
+    },
+    "paths": {
+      "defaultDescription": "Abrid n ulmad ameddud iwakken ad tawieḍ timusniwin timaynutin",
+      "modulesCount": "{count} n tɣerɣar",
+      "enrolledCount": "{count} ttwajerren",
+      "progress": "{progress}% yekfa"
+    },
+    "messages": {
+      "loadError": "Afecl deg usali n tmesras. Ales aɛreḍ ticki.",
+      "searchError": "Anadi ur yezri ara. Ales aɛreḍ."
+    }
+  },
+  "path": {
+    "hero": {
+      "badge": "Abrid n Ulmad",
+      "stats": {
+        "duration": "Tanzagt Tamakut",
+        "modules": "Tiɣerɣar",
+        "enrolled": "Ittwajerred",
+        "level": "Aswir",
+        "completion": "Akud Yettwarejwan",
+        "rating": "Asemrek",
+        "selfPaced": "S tazzla-nek"
+      },
+      "progress": "Asfurret-inek deg Ubrid",
+      "features": [
+        "Abrid n ulmad asurif s usurif",
+        "{count} n tɣerɣar timeddiyin",
+        "Aselkin n usmed n ubrid",
+        "Anekcum ɣef tilifun d uselkim",
+        "Taɣerɣart tamezwarut teldi i tmuɣli",
+        "Akk tiɣerɣar medlent alamma tjerred"
+      ],
+      "actions": {
+        "continue": "Kemmel Almad",
+        "enrollFree": "Jerred Baṭel",
+        "enrollNow": "Jerred Tura",
+        "signIn": "Kcem iwakken ad tjerreḍ",
+        "bookmark": "Sekles",
+        "bookmarked": "Yettwasekles",
+        "share": "Bḍu",
+        "guarantee": "30 n wussan n ṭḍamana n uxxalas • Aselkin yella",
+        "viewCertificate": "Wali Aselkin"
+      }
+    },
+    "social": {
+      "bookmarked": "Abrid yettwasekles deg tebnaqt",
+      "unbookmarked": "Abrid yettwakkes seg tebnaqt",
+      "linkCopied": "Aseysey yettwasenɣel ɣer tkatut!"
+    },
+    "tabs": {
+      "overview": "Amatu",
+      "modules": "Tiɣerɣar",
+      "progress": "Asfurret",
+      "resources": "Iɣbula"
+    },
+    "overview": {
+      "title": "Aglam n Ubrid",
+      "noDescription": "Ulac aglam alqayan yellan i ubrid-a n ulmad.",
+      "modulesPreview": {
+        "title": "Tiɣerɣar deg Ubrid-a",
+        "viewAll": "Wali Akk {count} n Tɣerɣar"
+      }
+    },
+    "modules": {
+      "header": {
+        "title": "Tiɣerɣar n Ubrid n Ulmad",
+        "description": "Ḍfer tiɣerɣar-a s umseḍfer akken ad tfakkeḍ abrid n ulmad",
+        "totalDuration": "Tanzagt Tamakut"
+      },
+      "curriculum": "Ahil",
+      "enrollToAccess": "Jerred iwakken ad tkecmeḍ ɣer akk tɣerɣar u ad teḍfreḍ asfurret-inek",
+      "minutes": "tsd",
+      "badges": {
+        "startHere": "Bdu Dagi",
+        "new": "Amaynut"
+      },
+      "sections": {
+        "description": "Aglam",
+        "skills": "Timusniwin Yettwafen",
+        "prerequisites": "Tiwtilin n Tazwara",
+        "yourProgress": "Asfurret-inek"
+      },
+      "actions": {
+        "viewCourse": "Wali Tamsirt",
+        "reviewCourse": "Ales Asekyer n Tmesrit",
+        "continueLearning": "Kemmel Almad",
+        "preview": "Tamuɣli",
+        "locked": "Yettwamdel",
+        "enrollInCourse": "Jerred deg Tmesrit",
+        "individualPrice": "Azal n tmesrit tayyunt"
+      },
+      "status": {
+        "completed": "Yekfa",
+        "inProgress": "Deg uselkem",
+        "preview": "Tamuɣli",
+        "locked": "Yettwamdel",
+        "available": "Yella"
+      },
+      "empty": {
+        "title": "Ulac Tiɣerɣar Yellan",
+        "description": "Tiɣerɣar ad rnunt ɣer ubrid-a n ulmad deg kra n wakud."
+      }
+    },
+    "progress": {
+      "header": {
+        "title": "Asfurret-inek n Ulmad",
+        "description": "Ḍfer asfurret-inek deg ubrid n ulmad"
+      },
+      "milestones": "Iswiyen n Usfurret",
+      "enrollPrompt": {
+        "title": "Jerred iwakken ad teḍfreḍ Asfurret",
+        "description": "Jerred deg ubrid-a n ulmad iwakken ad tebduḍ aḍfar n usfurret-inek, ad tawieḍ arrazen u ad twaliḍ tisleḍyin n ulmad-inek."
+      },
+      "analytics": {
+        "title": "Tasleḍt n Ulmad",
+        "timeline": "Azemz n Usfurret",
+        "modulesCompleted": "Tiɣerɣar Yekfan",
+        "learningTime": "Akud n Ulmad",
+        "timeDistribution": "Abeṭṭo n Wakud",
+        "modulePerformance": "Tarmit n Tɣerɣart",
+        "completed": "Yekfa",
+        "remaining": "Ayen d-yegran"
+      },
+      "completion": "Asmed n Ubrid",
+      "overall": "Amatu"
+    },
+    "resources": {
+      "title": "Iɣbula n Ulmad",
+      "certificate": {
+        "title": "Aselkin n Usmed n Ubrid",
+        "description": "Awi aselkin mi ara tfakkeḍ akk tiɣerɣar deg ubrid-a n ulmad",
+        "progress": "Asfurret",
+        "modules": "Tiɣerɣar",
+        "status": "Addad",
+        "ready": "Yewjed",
+        "inProgress": "Deg uselkem",
+        "completeRemaining": "Kfu akk {count} n tɣerɣar d-yegran iwakken ad tawiḍ aselkin-inek",
+        "download": "Zdem-d Aselkin",
+        "congratulations": "Ambeṛrek fell-ak!",
+        "view": "Wali Aselkin",
+        "copyLink": "Senɣel Aseysey",
+        "generate": "Sires Aselkin",
+        "linkCopied": "Aseɣwen yettwanɣel ɣer tebqult!"
+      },
+      "downloadable": {
+        "title": "Iɣbula Yettwazdamen"
+      },
+      "community": {
+        "title": "Timetti & Tallelt",
+        "forum": "Asqerdec n Tmetti",
+        "forumDescription": "Qqen d yinelmaden nniḍen, steqsi u bḍu timuɣliwin-inek",
+        "studyGroups": "Tirbaɛin n Ulmad",
+        "studyGroupsDescription": "Rnu ɣer terbaɛin n ulmad u ddu deg yisenfaren",
+        "qa": "Tallelt n Yiseqsiyen & Tiririyin",
+        "qaDescription": "Awi tallelt sɣur yiselmaden d yallalen n uselmed",
+        "liveSessions": "Timiwa s Srid",
+        "liveSessionsDescription": "Rnu ɣer tmiwa n yiseqsiyen/tiririyin s srid d yinaragen"
+      },
+      "enrollPrompt": {
+        "title": "Jerred iwakken ad tkecmeḍ ɣer Yiɣbula",
+        "description": "Jerred deg ubrid-a n ulmad iwakken ad tkecmeḍ ɣer yiɣbula yettwazdamen, iselkinen d tallelt n tmetti.",
+        "button": "Jerred Tura i Wakken ad Tkecmeḍ ɣer Yiɣbula"
+      }
+    },
+    "sidebar": {
+      "stats": {
+        "title": "Tidaddanin n Ubrid",
+        "totalModules": "Akk Tiɣerɣar",
+        "totalDuration": "Tanzagt Tamakut",
+        "estCompletion": "Akud Yettwarejwan",
+        "enrolled": "Ittwajerred",
+        "updated": "Yettwabeddel",
+        "level": "Aswir",
+        "mixedLevels": "Iswiren Yexlden"
+      },
+      "prerequisites": {
+        "title": "Tiwtilin n Tazwara"
+      },
+      "whatYouGet": {
+        "title": "D acu ara Tawiḍ"
+      },
+      "requirements": {
+        "title": "Tiwtilin"
+      },
+      "featuredPaths": {
+        "title": "Ibriden n Ulmad Izwaranen"
+      },
+      "relatedPaths": "Ibriden n Ulmad Yemcaban"
+    },
+    "buttons": {
+      "continueLearning": "Kemmel Almad",
+      "enrollNow": "Jerred Tura",
+      "signIn": "Kcem iwakken ad tjerreḍ",
+      "bookmark": "Sekles",
+      "share": "Bḍu",
+      "viewAllModules": "Wali Akk {count} n Tɣerɣar",
+      "download": "Zdem-d",
+      "shareCertificate": "Bḍu",
+      "getHelp": "Awi Tallelt",
+      "browsePaths": "Snirem Ibriden n Ulmad",
+      "tryAgain": "Ales Aɛreḍ"
+    },
+    "labels": {
+      "modules": "tiɣerɣar",
+      "lessons": "timsirin",
+      "progress": "Asfurret",
+      "status": "Addad",
+      "timeSpent": "Akud Yezrin",
+      "lastAccessed": "Tikkelt Taneggarut",
+      "never": "Ur yelli ara",
+      "module": "Taɣerɣart",
+      "of": "seg",
+      "streak": "Taseddart",
+      "days": "ussan",
+      "pace": "Tazzla",
+      "pace_ahead": "Ɣer sdat n uzemz",
+      "pace_behind": "Ɣer deffir n uzemz",
+      "pace_on-track": "Deg webrid"
+    },
+    "messages": {
+      "enrollmentSuccess": "Ajerred deg ubrid n ulmad yedda s lewziq! Akk tiɣerɣar llant tura.",
+      "moduleAutoEnrolled": "✅ Ajerred awurman deg tɣerɣart i d-iteddun: {title}",
+      "failedAutoEnroll": "Afecl deg ujerred awurman deg tɣerɣart i d-iteddun: {error}",
+      "bookmarkToggle": "Asekles yettwabeddel: {state}",
+      "linkCopied": "Aseysey yettwasenɣel ɣer tkatut!",
+      "failedToCopy": "Afecl deg usenɣel n useysey. Ales aɛreḍ."
+    },
+    "errors": {
+      "loadError": "Tuccḍa deg Usali n Ubrid n Ulmad",
+      "notFound": "Abrid n Ulmad Ulac-it",
+      "notFoundDescription": "Abrid n ulmad i tettnadiḍ ulac-it neɣ yettwakkes.",
+      "enrollmentError": "Afecl deg ujerred deg ubrid n ulmad. Ales aɛreḍ.",
+      "moduleEnrollmentError": "Afecl deg ujerred deg tɣerɣart. Ales aɛreḍ.",
+      "moduleLocked": "Ttxil-k kfu tiɣerɣar yezrin iwakken ad teldiḍ taɣerɣart-a."
+    },
+    "enrollmentCta": {
+      "title": {
+        "unauthenticated": "Rnu ɣer wagimen n yinelmaden",
+        "authenticated": "Bdu inig-inek n ulmad ass-a"
+      },
+      "description": {
+        "unauthenticated": "Jerred iwakken ad tkecmeḍ ɣer ubrid-a n ulmad u ad teldiḍ akk tiɣerɣar",
+        "authenticated": "Jerred tura iwakken ad tawiḍ anekcum i lebda ɣer akk tɣerɣar d yiɣbula"
+      },
+      "save": "Ḥrez {savings} DA",
+      "enrollWithPrice": "Jerred Tura - {price} DA",
+      "noPayment": "Ulac axxalas i yettwasutren",
+      "oneTimePayment": "Axxalas amyiwen • Anekcum i lebda ɣer akk tɣerɣar",
+      "noPaymentRequired": "Ulac axxalas i yettwasutren • Anekcum i lebda",
+      "enrolling": "Ajerred deg uselkem...",
+      "errors": {
+        "enrollFailed": "Afecl deg ujerred. Ales aɛreḍ."
+      }
+    }
+  },
+  "course": {
+    "tabs": {
+      "video": "Amɣar n Saraba",
+      "quiz": "Anagraw n Ukayad",
+      "resources": "Iɣbula",
+      "analytics": "Tasleḍt",
+      "certificate": "Aselkin",
+      "actions": "Ifecka & Anmetti",
+      "reviews": "Timuɣliwin",
+      "title": "Ticcucin n tunigin n urmud"
+    },
+    "meta": {
+      "title": "Talqayt n Tmesrit | Tansa n Ulmad",
+      "description": "Snirem agbur n tmesrit, timsirin u ḍfer asfurret-inek n ulmad"
+    },
+    "header": {
+      "title": "Ifatusen n tmeɣri",
+      "defaultCategory": "Tamsirt",
+      "noDescription": "Ulac aglam yellan",
+      "instructor": "Aselmad",
+      "duration": "Tanzagt",
+      "students": "Inelmaden",
+      "rating": "Asemrek",
+      "level": "Amezwaru"
+    },
+    "hero": {
+      "title": "Issin Timusniwin-inek",
+      "description": "Bdu inig-inek n ulmad s tmiwa timeddiyin d umahil n tidet"
+    },
+    "progress": {
+      "label": "Asfurret",
+      "yourProgress": "Asfurret-inek"
+    },
+    "sync": {
+      "syncing": "Amtawi deg uselkem...",
+      "status": {
+        "online": "Amtawi awurman yermed",
+        "offline": "Meqqar ulac tuqqna - Asekles deg udeg",
+        "syncing": "Amtawi ɣer taffa n yisefta...",
+        "error": "Tuccḍa deg umtawi - Aɛraweḍ"
+      },
+      "pending": "yettraǧu",
+      "last": "Aneggeru",
+      "autoSyncing": "Amtawi awurman yal 30 n tsinin"
+    },
+    "actions": {
+      "syncNow": "Mtawi Tura",
+      "signInToEnroll": "Kcem iwakken ad tjerreḍ",
+      "enrollFree": "Jerred Baṭel",
+      "enrollNow": "Jerred Tura",
+      "browseCourses": "Snirem Timsirin",
+      "tryAgain": "Ales Aɛreḍ",
+      "continueLearning": "Kemmel Almad",
+      "startLearning": "Bdu Almad",
+      "enrollNowToStart": "Jerred Tura iwakken ad tebduḍ Almad",
+      "login": "Kcem",
+      "signUp": "Jerred",
+      "jumpToIncomplete": "Ddu ɣer tmesrit tamezwarut ur nekfi ara →",
+      "markComplete": "Rch-it Yekfa",
+      "cta": {
+        "unauthenticated": {
+          "title": "Rnu ɣer wagimen n yinelmaden",
+          "description": "Jerred iwakken ad tkecmeḍ ɣer tmesrit-a u ad teldiḍ akk timmad"
+        },
+        "authenticated": {
+          "title": "Bdu inig-inek n ulmad ass-a",
+          "description": "Jerred tura iwakken ad tawiḍ anekcum i lebda ɣer akk timsirin d yiɣbula"
+        }
+      },
+      "enrolling": "Ajerred deg uselkem..."
+    },
+    "errors": {
+      "enrollFailed": "Afecl deg ujerred. Ales aɛreḍ."
+    },
+    "badges": {
+      "new": "Amaynut",
+      "premium": "Premium"
+    },
+    "currency": {
+      "da": "DA"
+    },
+    "pricing": {
+      "oneTimePayment": "Axxalas amyiwen",
+      "features": "Axxalas amyiwen • Anekcum i lebda",
+      "save": "Ḥrez",
+      "free": "Baṭel",
+      "freeDescription": "Ulac axxalas i yettwasutren • Anekcum i lebda",
+      "guarantee": "30 n wussan n ṭḍamana n uxxalas"
+    },
+    "features": {
+      "lifetimeAccess": "Anekcum ačuran i lebda",
+      "certificate": "Aselkin n usmed",
+      "mobileDesktop": "Anekcum ɣef tilifun d uselkim",
+      "downloadableResources": "Iɣbula yettwazdamen",
+      "instructorSupport": "Tallelt tusridt seg uselmad"
+    },
+    "curriculum": {
+      "title": "Ahil n Tmesrit",
+      "lesson": "tamsirt",
+      "lessons": "timsirin",
+      "enrolled": "ittwajerred",
+      "of": "seg",
+      "complete": "yekfa",
+      "moduleObjectives": "Iswiyen n Ulmad n Tɣerɣart",
+      "courseCompleted": "Tamsirt Tekfa!"
+    },
+    "lessons": {
+      "objectives": {
+        "label": "Iswiyen n Ulmad"
+      },
+      "keyTakeaways": {
+        "label": "Tigziwin Tigejdanin"
+      },
+      "more": "ugar",
+      "status": {
+        "completed": "Yekfa"
+      },
+      "videoNotAvailable": {
+        "title": "Saraba Ulac-it",
+        "description": "Agbur-a n saraba ur yelli ara akka tura."
+      },
+      "locked": {
+        "title": "Tamsirt Tettwamdel",
+        "description": "Kfu tamsirt tezrin u zri akayad-is iwakken ad teldiḍ agbur-a.",
+        "quizRequired": "Akayad d Amelzim",
+        "quizRequiredDescription": "Ilaq ad tezriḍ akayad n tmesrit tezrin akken ad tkemmleḍ."
+      },
+      "completion": {
+        "title": "Tamsirt Tekfa!",
+        "quizPrompt": "Xdem akayad iwakken ad teldiḍ tamsirt i d-iteddun.",
+        "nextLessonLocked": "Kfu akayad akken ad tkecmeḍ ɣer tmesrit i d-iteddun.",
+        "quizButton": "Bdu Akayad"
+      },
+      "milestones": {
+        "title": "Iswiyen n Usfurret",
+        "of": "seg",
+        "completed": "yekfa",
+        "notReached": "Ur yewwiḍ ara"
+      },
+      "resources": {
+        "title": "Iɣbula n Tmesrit"
+      },
+      "active": "Armad",
+      "resumeFrom": "Kemmel seg",
+      "videoLoading": {
+        "title": "Aheggi n useysey n saraba yettwaḥerzen...",
+        "description": "Ttxil-k arǧu mi ara nheggi tamsirt-inek s tɣellist."
+      },
+      "videoError": {
+        "title": "Tuccḍa deg Saraba"
+      },
+      "transcoding": {
+        "title": "Abeddel n Tsekka deg Uselkem",
+        "description": "Saraba-inek yella deg ubeddel n tsekka ɣer deqs n tmuɣliwin i tɣuri yelhan. Aya yettdem gar 1 d 3 n tseddarin."
+      },
+      "transcodingFailed": {
+        "title": "Ugur deg Ubeddel n Tsekka",
+        "description": "Yella-d wugur deg usefrek n saraba-ya. Aɛraweḍ n tuqqna tusridt ɣer tɣuri."
+      },
+      "prev": "Aselmed yezrin",
+      "next": "Aselmed d-iteddun"
+    },
+    "sidebar": {
+      "instructor": "Aselmad",
+      "instructorDefaultBio": "Aselmad n Tmusni",
+      "details": "Talqayt n Tmesrit",
+      "level": "Aswir",
+      "allLevels": "Akk Iswiren",
+      "duration": "Tanzagt",
+      "lessons": "Timsirin",
+      "enrolled": "Ittwajerred",
+      "updated": "Yettwabeddel",
+      "languages": "Tutlayin",
+      "prerequisites": "Tiwtilin n Tazwara",
+      "whatYouGet": "D acu ara Tawiḍ",
+      "requirements": "Tiwtilin"
+    },
+    "navigation": {
+      "previousLesson": "Tamsirt Tezrin",
+      "nextLesson": "Tamsirt i d-Iteddun"
+    },
+    "states": {
+      "noLessons": "Ulac timsirin yellan yakan",
+      "error": {
+        "title": "Tuccḍa deg Usali n Tmesrit"
+      },
+      "notFound": {
+        "title": "Tamsirt Ulac-itt",
+        "description": "Tamsirt i tettnadiḍ ulac-itt neɣ tettwakkes."
+      },
+      "noLessonsAvailable": {
+        "title": "Ulac Timsirin Yellan",
+        "description": "Timsirin ad rnunt ɣer tmesrit-a deg kra n wakud."
+      },
+      "notEnrolled": {
+        "title": "Jerred iwakken ad Tkecmeḍ ɣer Ugbur n Tmesrit",
+        "description": "Jerred deg tmesrit-a iwakken ad teldiḍ akk timsirin, ividyuten d yiɣbula."
+      },
+      "unauthenticated": {
+        "title": "Kcem iwakken ad Tkecmeḍ ɣer Ugbur n Tmesrit",
+        "description": "Kcem iwakken ad tjerreḍ u ad teldiḍ akk timsirin, ividyuten d yiɣbula."
+      },
+      "lockedTitle": "Ldi Anekcum Ačuran",
+      "lockedDescription": "Agbur-a d uzzig i yinelmaden yettwajerreden. Jerred tura iwakken ad teldiḍ akk timsirin, ikayaden imiddawen d yiɣbula yettwazdamen.",
+      "noData": "Isefta ur llin ara akka tura",
+      "trainingOngoing": "Asileɣ deg uselkem...",
+      "loading": "Asali deg uselkem..."
+    },
+    "messages": {
+      "loadError": "Afecl deg usali n yisefta n tmesrit",
+      "searchError": "Anadi ur yezri ara",
+      "enrollError": "Afecl deg ujerred deg tmesrit"
+    },
+    "quiz": {
+      "lockedTitle": "Akayad Yettwamdel",
+      "lockedDescription": "Ilaq ad tfakkeḍ tamsirt n saraba uqbel ad teldiḍ akayad-a. Kemmel tawalat akken ad tawiḍ tamusni i ilaqen i usentem!",
+      "progressPercentage": "{percentage}% n saraba yettwala",
+      "title": "Akayad n Tɣerɣart",
+      "stats": "Agmuḍ n uzray: 80% • Tira d-yegran: 3",
+      "prevQuestion": "Asteqsi Yezrin",
+      "nextQuestion": "Asteqsi i d-Iteddun",
+      "defaultQuestion": "D acu i d aswir agejdan n tɣerɣart-a?",
+      "shortAnswerPlaceholder": "Aru tiririt-inek dagi...",
+      "shortAnswerHint": "Eǧǧ tiririt-inek d tamezzyant u d tuseddit.",
+      "passed": "Ambeṛrek fell-ak! Tzemreḍ-as!",
+      "failed": "Ur tezriḍ ara akayad",
+      "savedOffline": "Tiririyin ttwaḥerzent beṛṛa n tuqqna",
+      "passedMessage": "Amahil ifazen! Tfukkeḍ akayad-a s lewziq.",
+      "failedMessage": "Ilaq ad talesed tiɣuri n ugbur u ad tɛerḍeḍ tikkelt nniḍen.",
+      "savedOfflineMessage": "Tiririyin-inek ttwaḥerzent deg wemkan yerna ad ttusirwent s wudem awurman ɣer uqeddac ticki tuɣal-d tuqqna.",
+      "score": "Agmuḍ",
+      "correct": "Iṣeḥḥa",
+      "passedCanRetake": "Tzemreḍ ad taleseḍ akayad-a iwakken ad tnerniḍ agmuḍ-inek.",
+      "attemptHistory": "Amezruy n Tira",
+      "attempt": "Taremt",
+      "retake": "Ales Akayad",
+      "tryAgain": "Ales Aɛreḍ",
+      "questions": "Isteqsiyen",
+      "minutes": "Tiseddarin",
+      "previousAttempts": "Tesɛiḍ tiram yezrin. Tzemreḍ ad taleseḍ i usnerni n ugmuḍ-inek.",
+      "start": "Bdu Akayad",
+      "question": "Asteqsi",
+      "of": "seg",
+      "points": "tiqqitin",
+      "hint": "Tamsirt / Tawaṭfa",
+      "answered": "yettwarra",
+      "submit": "Azen",
+      "submitting": "Tuzna deg uselkem...",
+      "questionNavigator": "Amsedfer n Yiseqsiyen",
+      "cooldownError": "Ttxil-k ddem kra n wakud i tmuɣli n ugbur n tmesrit send taremt i d-iteddun",
+      "cooldownSubtitle": "Asteɛfu alemmas gar tiram yesseǧhad tigzi u k-iɛawwen ad teḥrzeḍ ayen telmdeḍ. Ad tizmireḍ ad taleseḍ akayad ticki.",
+      "true": "D Tidet",
+      "false": "D Lekdeb",
+      "characters": "isekkilen",
+      "types": {
+        "multipleChoice": "Afran Agetwalan",
+        "multipleSelect": "Afran agtuyan",
+        "trueFalse": "Tidet / Lekdeb",
+        "codeOutput": "Tuffɣa n tengalt",
+        "shortAnswer": "Tiririt Tamezzyant",
+        "unknown": "Tawsit Tarusant",
+        "fillInBlank": "Ččar ifrura",
+        "essay": "Tadiwent"
+      },
+      "codeOutputPlaceholder": "Sekcem tuffɣa yetturaǧun n tdiwent...",
+      "questionReview": "Aselken n yisteqsiyen d usefhem",
+      "yourAnswer": "Tiririt-ik",
+      "noAnswer": "Ulac",
+      "explanation": "Asefhem",
+      "unsupportedQuestionType": "Tawsit-a n usteqsi ur tettwaddel ara deg lqem-a.",
+      "fillBlankPlaceholder": "Aru tiririt-inek dagi...",
+      "essayPlaceholder": "Aru tadiwent-inek dagi...",
+      "fillBlankHint": "Ččar awal ameqqran neɣ taremalt ixuṣṣen.",
+      "essayHint": "Efk-d asefhem lqayen s wawalen-ik.",
+      "essayNote": "Isteqsiyen n tadiwent ttwaweznen weḥd-nsen ur tteddun ara deg ugmuḍ."
+    },
+    "resources": {
+      "title": "Iɣbula n Tmesrit",
+      "subtitle": "Zdem-d iferdisen n tallelt i tmesrit-a",
+      "accessGranted": "Anekcum Yettunefk",
+      "proTitle": "Azdam n Yimaslaḍen Pro",
+      "proDescription": "Am unelmad, tesɛiḍ anekcum i lebda ɣer yiɣbula-ya. Iferdisen imaynuten tternun dima iwakken ad teqqimeḍ ɣer sdat.",
+      "seeAllLibrary": "Wali Akk Tamkarḍit",
+      "download": "Zdem-d",
+      "open": "Ldi deg yiccer amaynut",
+      "noResources": "Ulac iɣbula yellan i tmesrit-a",
+      "related": "Iɣbula Yemcaban",
+      "relatedSubtitle": "Iferdisen nniḍen i ukemmel n ulmad",
+      "usageNotice": "Tamawt n Useqdec",
+      "usageDescription": "Iɣbula-ya lhan kan i ulmad udmawan. Ttxil-k ur bḍu ara neɣ ur sedmer ara iferdisen-a mebla tasiregt.",
+      "defaultName": "Aɣbalu",
+      "defaultType": "Afaylu",
+      "size": {
+        "bytes": "Ibyten",
+        "kb": "KB",
+        "mb": "MB",
+        "gb": "GB"
+      }
+    },
+    "analytics": {
+      "title": "Tasleḍt n Ulmad-inek",
+      "timeSpent": "Akud Yezrin",
+      "hours": "tisaɛin",
+      "weekTrend": "{percentage}% dduṛt-a",
+      "quizAverage": "Talemmast n Yikayaden",
+      "rank": "Deg 10% imezwura n tneɣrit",
+      "streak": "Taseddart n Ulmad",
+      "days": "ussan",
+      "personalBest": "Agmuḍ afellay udmawan!",
+      "progressBreakdown": "Abeṭṭo n Usfurret",
+      "journeyDescription": "Inig-inek deg tɣerɣart",
+      "totalProgress": "Asfurret Amakku",
+      "skillsAcquired": "Timusniwin Yettwawwin",
+      "milestones": "Iswiyen n Usfurret"
+    },
+    "certificate": {
+      "title": "Aselkin n Usmed",
+      "lockedTitle": "Aselkin Yettwamdel",
+      "lockedDescription": "Kfu akk timsirin u ɛeddi akayad aneggaru n tɣerɣart iwakken ad tawiḍ aselkin-inek unṣib n usmed.",
+      "header": "Aselkin n Usmed",
+      "certifiedThat": "nettwekkid dakken",
+      "completionDescription": "yekfa s lewziq akk tiwtilin d yikayaden n tɣerɣart",
+      "dateIssued": "Azemz n Tuzna",
+      "instructor": "Aselmad",
+      "verificationId": "ID n Usenqed",
+      "downloadPdf": "Zdem-d PDF",
+      "shareLinkedIn": "Bḍu deg LinkedIn",
+      "verifyLink": "Senɣel Aseysey n Usenqed",
+      "downloadSuccess": "Aselkin yettwazdem s lewziq!",
+      "downloadError": "Afecl deg uzdam n uselkin. Ales aɛreḍ.",
+      "shareSuccess": "Alday n usqerdec n LinkedIn...",
+      "shareError": "Afecl deg ubḍu deg LinkedIn.",
+      "linkCopied": "Aseysey yettwasenɣel ɣer tkatut!",
+      "copyError": "Afecl deg usenɣel n useysey.",
+      "purchaseTitle": "Aɣ Aselkin",
+      "purchaseDescription": "Ahil-inek n tura ur yegbir ara iselkinen, maca tzemreḍ ad taɣeḍ yiwen i tmesrit-a. Awi aselkin yettwasenqden i uskan n wayen i d-tewwiḍ.",
+      "purchaseButton": "Aɣ Aselkin — 1,500 DZD",
+      "issuedTo": "Yettunefk i",
+      "notFound": "Aselkin Ulac-it",
+      "notFoundDescription": "Aselkin i tettnadiḍ ulac-it neɣ yettwakkes.",
+      "verificationTitle": "Senqed Aselkin-a",
+      "verificationDescription": "Yal yiwen yezmer ad isenqed tidet n uselkin-a s useysey n usenqed ddaw-a.",
+      "verifyOnline": "Senqed s Srid",
+      "certificateDetails": "Talqayt n Uselkin",
+      "certificateId": "ID n Uselkin",
+      "issueDate": "Azemz n Tuffɣa",
+      "certificateType": "Tawsit",
+      "moduleType": "Taɣerɣart n Tmesrit",
+      "pathType": "Abrid n Ulmad",
+      "status": "Addad",
+      "valid": "Iṣeḥḥa",
+      "processing": "Asefrek deg uselkem...",
+      "expertTeam": "Tarbaɛt n yimuzzag n Podacium"
+    },
+    "social": {
+      "share": "Bḍu Tamsirt",
+      "bookmark": "Sekles",
+      "bookmarked": "Yettwasekles",
+      "unbookmarked": "Tamsirt tettwakkes seg tebnaqt",
+      "support": "Sutter Tallelt",
+      "review": "Aru Tamawt",
+      "yourInstructor": "Aselmad-inek",
+      "instructor": "Aselmad",
+      "studentsTaught": "{count} n yinelmaden yelmed aseggas-a",
+      "instructorBio": "Iselmaden-nneɣ d ineflayen d iselmaden imusnawen yesɛan deqs n yiseggasen n termit deg taɣult.",
+      "viewProfile": "Wali Amaɣnu n Uselmad",
+      "instructorProfileUnavailable": "Amaɣnu n uselmad ulac-it",
+      "linkCopied": "Aseysey yettwasenɣel ɣer tkatut!",
+      "failedToCopy": "Afecl deg usenɣel n useysey. Ales aɛreḍ.",
+      "bookmarkToggle": "Asekles yettwabeddel",
+      "careerLeap": "Asnerni deg Tmahilt",
+      "careerPathDescription": "Taɣerɣart-a d aḥric seg Ubrid n Tmahilt Fullstack. Inelmaden ifukken abrid-a ttawin 25% ugar n yiqeḍɛan deg tmahilt.",
+      "partOfPath": "Taɣerɣart-a d aḥric seg ubrid n ulmad {path}. Kfu-tt iwakken ad tissineḍ ahil ačuran.",
+      "explorePath": "Snirem Abrid n Tmahilt",
+      "wishlist": "Rnu ɣer Tebnaqt n Yiswiren",
+      "gift": "Fk Tarakna n Tmesrit",
+      "giftMessage": "Fkiɣ-ak tamsirt-a d tarakna ɣef Podacium!",
+      "giftLinkCopied": "Aseysey n terakna yettwasenɣel ɣer tkatut!",
+      "unbookmark": "Kkes ticreḍt"
+    },
+    "reviews": {
+      "title": "Timuɣliwin",
+      "writeReview": "Aru Tamawt",
+      "noReviewsYet": "Ulac timuɣliwin akka tura. Ili-k d amezwaru ara ibḍun tmuɣli-s!",
+      "reviewSubmitted": "Tamawt-inek tettwazen.",
+      "ratingRequired": "Ttxil-k fren itri n usemrek send ad tazneḍ.",
+      "deleteReview": "Kkes Tamawt",
+      "reviewDeleted": "Tamawt-inek tettwakkes.",
+      "noRating": "Ulac asemrek akka tura",
+      "comment": "Bḍu tarmit-inek (s ufrayan)",
+      "submit": "Azen Tamawt",
+      "cancel": "Sefsex",
+      "loadMore": "Rnu-d Timuɣliwin",
+      "enrollFirst": "Jerred deg tmesrit-a iwakken ad tizmireḍ ad taruḍ tamawt",
+      "completeLessonFirst": "Kfu ɣas yiwet n tmesrit akken ad teldiḍ tazmert n tira n tmuɣli",
+      "reviewCount": "{count} n tmuɣli",
+      "reviewsCount": "{count} n timuɣliwin",
+      "submitError": "Ur yezmir ara ad yazen rray. Ttxil-k ɛreḍ tikkelt nniḍen.",
+      "rateStar": "Sismel {count} n yitran"
+    }
+  },
+  "verify": {
+    "brand": "Podacium",
+    "breadcrumb": "Asenqed n Uselkin",
+    "meta": {
+      "title": "Asenqed n Uselkin | Podacium",
+      "description": "Senqed tidet n uselkin n usmed n Podacium"
+    },
+    "loading": "Asenqed n uselkin deg uselkem...",
+    "trust": {
+      "badge": "Aselkin Yettwasenqden",
+      "subtitle": "Yettunefk sɣur Podacium — tansa tagejdant i tusna n tnezzut d usegmi n tesnatwilt",
+      "publiclyVerifiable": "Yettwasenqad s Wudem Azayez",
+      "issuedByPlatform": "Yettunefk sɣur Tansa n Podacium",
+      "cryptographicallySigned": "Yettwazmel s Tkrubtografut"
+    },
+    "qr": {
+      "title": "Senqed s QR"
+    },
+    "share": {
+      "linkedin": "Rnu ɣer LinkedIn",
+      "copyLink": "Senɣel Aseysey",
+      "linkCopied": "Aseysey Yettwasenɣel!",
+      "openPublicLink": "Ldi Aseysey Azayez",
+      "linkedInOpened": "Alday n LinkedIn deg uselkem..."
+    },
+    "notFound": {
+      "title": "Aselkin Ulac-it",
+      "description": "Aselkin-a ulac-it neɣ yettwakkes. Ttxil-k senqed ID u ales aɛreḍ.",
+      "backHome": "Uɣal ɣer Usnubeg"
+    },
+    "certificate": {
+      "title": "Aselkin n Usmed",
+      "certifies": "Nettwekkid dakken",
+      "completed": "yekfa s lewziq",
+      "with": "s wazal ameqran deg tensa n Podacium."
+    },
+    "details": {
+      "heading": "Talqayt n Uselkin",
+      "certId": "ID n Uselkin",
+      "type": "Tawsit n Warraz",
+      "issued": "Azemz n Tuzna",
+      "completed": "Yekfa Asseg",
+      "status": "Addad",
+      "statusValid": "Iṣeḥḥa & D Aḥeqqani",
+      "typeModule": "Aselkin n Tmesrit",
+      "typePath": "Aselkin n Ubrid n Ulmad",
+      "skills": "Timusniwin Yettwaskanen"
+    },
+    "actions": {
+      "heading": "D acu i d-iteddun?",
+      "discoverPlatform": "Issin Podacium",
+      "discoverDesc": "Snirem akk ifecka-nneɣ i yimsexdamen ilelliyen, inelmaden d yimusnawen n yisefta.",
+      "browseCourses": "Snirem Akk Timsirin",
+      "browseDesc": "Af tamsirt-inek i d-iteddun u kemmel asnefled n tmusniwin-inek.",
+      "takeCourse": "Ḍfer Tamsirt-a",
+      "takeDesc": "Jerred u awi aselkin-inek n usmed."
+    },
+    "footer": {
+      "poweredBy": "Yettwaselkem sɣur",
+      "tagline": "Tansa i ulmad amusnaw aṣaḍuf yettwasenqden."
+    },
+    "proofOfWork": {
+      "title": "Inza n Umahil d Usenqed Usnan",
+      "rubricScore": "Agmuḍ n usenqed: {score}/100",
+      "capstoneProject": "Asenfar n taggara yettwasenqden",
+      "viewCode": "Tangalt d ijeṛṛben iwurmanen",
+      "ondaRegistration": "Asekles deg ONDA (Izerfan n umyaru)",
+      "complianceDisclaimer": "Aselkin yettunefk seld asenqed n isenfaren ilawen d usenqed uzzig n tengalt ilmend n ilugan n ONDA d Podacium Academy."
+    }
+  },
+  "instructor": {
+    "curriculum": {
+      "lessons": "timsirin",
+      "dragToReorder": "Zuɣer iwakken ad talseḍ asemres",
+      "autosaveSaved": "Yettwasekles",
+      "autosaveSaving": "Asider n usekles...",
+      "autosaveUnsaved": "Ibeddilen ur nettwasekles ara"
+    },
+    "manage": {
+      "title": "Tiɣerɣar-iw",
+      "breadcrumb": {
+        "home": "Axxam",
+        "learn": "Lmed",
+        "modules": "Tiɣerɣar-iw"
+      },
+      "total": "Amatu",
+      "subtitle": "Sefrek timsirin-inek u ḍfer addad n usufeɣ-nsent.",
+      "createModule": "Snulfu Taɣerɣart",
+      "noModules": "Ulac tiɣerɣar akka tura",
+      "noModulesDesc": "Snulfu taɣerɣart-inek tamezwarut iwakken ad tebduḍ aselmed.",
+      "instructorDenied": "Ilaq-ak amiḍan n uselmad iwakken ad tsefrekeḍ timsirin.",
+      "lessons": "{count} n tmesrit",
+      "lessonsPlural": "{count} n tmesras",
+      "enrolled": "{count} ttwajerren",
+      "submitForReview": "Azen i Usekyer",
+      "submitting": "Tuzna deg uselkem...",
+      "awaitingReview": "Ttraǧu asekyer n unebbal...",
+      "edit": "Ẓreg",
+      "submitDisabled": "Rnu ɣas yiwet n tmesrit d tamezwarut",
+      "submitSuccess": "Taɣerɣart tettwazen i usekyer! Anebbal ad tt-isekyer deg kra n wakud.",
+      "submitFail": "Afecl deg tuzna i usekyer",
+      "allModules": "Akk Tiɣerɣar",
+      "noModulesFilter": "Ulac taɣerɣart yemcaban d waddad-a",
+      "loadFail": "Afecl deg usali n tɣerɣar-inek",
+      "statuses": {
+        "draft": "Arewway",
+        "inReview": "Deg usekyer",
+        "published": "Yeffeɣ",
+        "archived": "Yettwaḥrez"
+      },
+      "feedback": {
+        "label": "Iwenniten:",
+        "ariaLabel": "Iwenniten n tɣerɣart"
+      },
+      "pagination": {
+        "previous": "Uɣal",
+        "next": "Ddu",
+        "page": "Asebter {current} seg {total}"
+      },
+      "submitDisabledDesc": "Rnu ɣas yiwet n tmesrit yesɛan agbur send ad tazneḍ i usekyer.",
+      "cancel": "Sefsex",
+      "loading": "Asali deg uselkem...",
+      "viewAllModules": "Ẓer akk timsirin"
+    },
+    "create": {
+      "newModule": "Snulfu Taɣerɣart Tamaynut",
+      "breadcrumb": {
+        "home": "Axxam",
+        "learn": "Lmed",
+        "modules": "Tiɣerɣar-iw"
+      },
+      "newModuleSubtitle": "Heggi agbur d telqayt n tmesrit-inek",
+      "editModule": "Ẓreg Taɣerɣart",
+      "editModuleSubtitle": "Beddel agbur d telqayt n tmesrit-inek",
+      "basicInfo": "Talɣut Tamezwarut",
+      "media": "Midyat",
+      "details": "Talqayt n Tmesrit",
+      "skillsAndTags": "Timusniwin & Tibzimin",
+      "pricing": "Azal",
+      "courseId": "ID n Tmesrit",
+      "courseIdHint": "Asulay asuf (amd.: javascript-essentials)",
+      "courseIdPlaceholder": "amd.: javascript-essentials",
+      "titleField": "Azwel",
+      "titlePlaceholder": "Sekcem azwel n tmesrit",
+      "shortDescription": "Aglam Amezzyan",
+      "shortDescriptionPlaceholder": "Agzul fessusen ɣef tmesrit",
+      "fullDescription": "Aglam Ačuran",
+      "fullDescriptionPlaceholder": "Aglam alqayan n tmesrit...",
+      "thumbnailUrl": "URL n Tugna",
+      "thumbnailPlaceholder": "https://example.com/thumbnail.jpg",
+      "duration": "Tanzagt (tiseddarin)",
+      "durationHint": "Tanzagt tamakut n tmesrit s tseddarin",
+      "durationPlaceholder": "120",
+      "level": "Aswir",
+      "levelBeginner": "Amezwaru",
+      "levelIntermediate": "Alemmas",
+      "levelAdvanced": "Anzif",
+      "effort": "Ussis Yettwarejwan",
+      "effortPlaceholder": "amd.: 5 n tsaɛin/dduṛt",
+      "skills": "Timusniwin",
+      "skillPlaceholder": "Rnu tamusni",
+      "tags": "Tibzimin",
+      "tagPlaceholder": "Rnu tabzimt",
+      "featured": "Rch-it d Amezwaru",
+      "pricePlaceholder": "0",
+      "create": "Snulfu Taɣerɣart",
+      "save": "Sekles Ibeddilen",
+      "cancel": "Sefsex",
+      "createSuccess": "Taɣerɣart tettwasnulfu s lewziq",
+      "createSuccessHint": "Tura tzemreḍ ad ternuḍ timsirin u ad tazneḍ i usekyer n unebbal.",
+      "saveSuccess": "Taɣerɣart tettwabeddel s lewziq",
+      "createFail": "Afecl deg usnulfu n tɣerɣart",
+      "saveFail": "Afecl deg ubeddel n tɣerɣart",
+      "loadFail": "Afecl deg usali n tɣerɣart",
+      "errors": {
+        "required": "ID n tmesrit d uzwel d imelzimen",
+        "notFound": "Taɣerɣart ulac-itt",
+        "titleRequired": "Azwel d amelzim",
+        "requiredId": "ID n tmesrit d amelzim",
+        "requiredTitle": "Azwel d amelzim"
+      },
+      "featuredHint": "Timsirin tizwaranin tteffɣent-d deg usebter n usnubeg",
+      "price": "Azal",
+      "priceHint": "Eǧǧ-it d ilem i tmesrit baṭel",
+      "currency": "Adrim",
+      "thumbnailHint": "S ufrayan — senṭeḍ URL n tugna i tkart n tmesrit",
+      "addSkill": "Rnu tamusni",
+      "addTag": "Rnu tabzimt",
+      "remove": "Kkes",
+      "skillHint": "Aru tamusni u tekki Enter neɣ tekki +",
+      "tagHint": "Aru tabzimt u tekki Enter neɣ tekki +",
+      "resetToTitle": "Welleh ɣer uzwel"
+    },
+    "moduleDetail": {
+      "title": "Talqayt n Tɣerɣart",
+      "subtitle": "Sefrek timsirin d ugbur n tɣerɣart-a",
+      "addLesson": "Rnu Tamsirt",
+      "noLessons": "Ulac timsirin akka tura",
+      "noLessonsDesc": "Rnu tamsirt-inek tamezwarut iwakken ad tebduḍ.",
+      "lessonsList": "Timsirin",
+      "moduleInfo": "Talɣut n Tɣerɣart",
+      "backToManage": "Uɣal ɣer Tɣerɣar-iw",
+      "deleteLesson": "Kkes Tamsirt",
+      "confirmDeleteLesson": "Eɛni tettsentmeḍ tebɣiḍ ad tekkseḍ tamsirt-a?",
+      "lessonDeleted": "Tamsirt tettwakkes s lewziq",
+      "lessonDeletedFail": "Afecl deg ukkas n tmesrit",
+      "reorderLessons": "Ales Asuddes n Tmesras",
+      "reorderSaved": "Asuddes n tmesras yettwasekles",
+      "reorderFail": "Afecl deg usekles n usuddes n tmesras",
+      "reorderSaveLabel": "Sekles Asuddes",
+      "savingOrder": "Asekles deg uselkem...",
+      "loadFail": "Afecl deg usali n tɣerɣart",
+      "noModule": "Ulac taɣerɣart yettwafernen.",
+      "notFound": "Taɣerɣart ulac-itt.",
+      "quizComingSoon": "Amasdag n yikayaden ad d-yas deg kra n wakud.",
+      "addQuiz": "Rnu Akayad",
+      "editQuiz": "Ẓreg Akayad",
+      "quizSaved": "Akayad yettwasekles",
+      "quizSaveFail": "Afecl deg usekles n ukayad",
+      "quizRequiresLessons": "Rnu timsirin d tamezwarut",
+      "quizRequiresLessonsDesc": "Ilaq ad tesnulfuḍ ɣas yiwet n tmesrit send ad ternuḍ akayad ɣer tɣerɣart-a.",
+      "deleteWarning": "Tigawt-a ur tettarra ara ɣer deffir.",
+      "quizSelectLesson": "Fren tamsirt iwakken ad tsefrekeḍ akayad-is:",
+      "quizExists": "Akayad yettwafk",
+      "quizNone": "Ulac akayad",
+      "transcodingStatus": {
+        "processing": "Aselkem n saraba...",
+        "ready": "HD Yewjed",
+        "failed": "Afecl deg uselkem"
+      },
+      "providers": {
+        "aws": "AWS S3",
+        "bunny": "Bunny Stream",
+        "cloudflare": "Cloudflare Stream",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "dailymotion": "Dailymotion"
+      },
+      "lessons": "iselmaden"
+    },
+    "lessonEditor": {
+      "title": "Amaẓrag n Tmesrit",
+      "videoUploadInProgress": "Ttxil-k rǧu alamma yekfa uceyeɛ n uvidyu uqbel asekles",
+      "breadcrumb": {
+        "home": "Axxam",
+        "learn": "Lmed",
+        "modules": "Tiɣerɣar-iw"
+      },
+      "details": "Talqayt",
+      "video": "Saraba",
+      "quiz": "Akayad",
+      "lessonId": "ID n Tmesrit",
+      "lessonIdHint": "Asulay asuf (amd.: intro-to-variables)",
+      "module": "Taɣerɣart",
+      "selectModule": "Fren taɣerɣart",
+      "titleField": "Azwel",
+      "titlePlaceholder": "Sekcem azwel n tmesrit",
+      "description": "Aglam",
+      "descriptionPlaceholder": "Glem d acu ara lemden yinelmaden...",
+      "order": "Amseḍfer",
+      "type": "Tawsit n Tmesrit",
+      "difficulty": "Lewɛara",
+      "duration": "Tanzagt (tiseddarin)",
+      "estimatedTime": "Akud Yettwarejwan (tsd)",
+      "objectives": "Iswiyen n Ulmad",
+      "objectivePlaceholder": "Inelmaden ad izmiren ad...",
+      "takeaways": "Tigziwin Tigejdanin",
+      "takeawayPlaceholder": "Taqsiṭ tagejdant i usekles...",
+      "tags": "Tibzimin",
+      "tagPlaceholder": "Rnu tabzimt",
+      "instructorNotes": "Iwenniten n Uselmad",
+      "instructorNotesPlaceholder": "Iwenniten i yiselmaden...",
+      "freePreviewLabel": "Tasurift n tmuɣli baṭel",
+      "freePreviewBadge": "Amsenfal",
+      "freePreviewDescription": "Sireg inebgawen ur yettwaqeblen ara ad walin tasurift-a baṭel uqbel ad aɣen taɣuri.",
+      "videoUrl": "URL n Saraba",
+      "uploadLocalFile": "Sali-d Afaylu n Saraba",
+      "enterVideoUrl": "URL n Saraba / Abrid Adeggan",
+      "videoUrlHelp": "Sekcem URL n web, abrid n uḥraz Supabase neɣ abrid n saraba adeggan (amd. /videos/python/01-welcome.mp4).",
+      "dragDropVideo": "Zuɣer u sers afaylu n saraba dagi, neɣ tekki i unadi",
+      "chooseVideoFile": "Fren Afaylu n Saraba",
+      "uploadingStatus": "Asali n saraba ɣer uqeddac...",
+      "transcodingStatus": "Asali yekfa — asefrek n yisurifen n saraba...",
+      "invalidVideoType": "Ttxil-k fren afaylu n saraba iṣeḥḥan (MP4, MOV, MKV, WebM).",
+      "moduleRequired": "Fren taɣerɣart d tamezwarut.",
+      "saveBeforeUpload": "Sekles tamsirt d tamezwarut, sakin sali-d saraba-s.",
+      "uploadVideo": "Sali saraba (MP4 / MOV / MKV / WebM, alamma d 2 GB)",
+      "uploading": "Asali deg uselkem…",
+      "uploadVideoBtn": "Sali afaylu n saraba",
+      "videoProcessing": "Saraba yettwasali — aselkem ɣer HD deg uselkem. Tzemreḍ ad tkemmleḍ taẓrigt.",
+      "autoDetectedDuration": "Yettwaf s wudem awurman: {time}",
+      "videoUploadSuccess": "Saraba yettwasali s lewziq.",
+      "videoUploadFail": "Afecl deg usali n saraba.",
+      "livePreview": "Taskant tasreṭmant n saraba",
+      "validVideoUrl": "Asarag n saraba yettwasentked s lewziq",
+      "detectedProvider": {
+        "youtube": "Tavidyut n YouTube",
+        "vimeo": "Tavidyut n Vimeo",
+        "dailymotion": "Tavidyut n Dailymotion",
+        "cloudflare": "Asarag Cloudflare",
+        "bunny": "Asarag Bunny",
+        "hls": "Asarag amhazan HLS (.m3u8)",
+        "mp4": "Afaylu usrid n saraba (.mp4)"
+      },
+      "thumbnailUrl": "URL n Tugna",
+      "transcript": "Aḍris n Tmesrit",
+      "transcriptPlaceholder": "Aḍris n saraba...",
+      "save": "Sekles Tamsirt",
+      "cancel": "Sefsex",
+      "creating": "Asnulfu deg uselkem...",
+      "updating": "Asekles deg uselkem...",
+      "createSuccess": "Tamsirt tettwasnulfu s lewziq",
+      "updateSuccess": "Tamsirt tettwabeddel s lewziq",
+      "createFail": "Afecl deg usnulfu n tmesrit",
+      "updateFail": "Afecl deg ubeddel n tmesrit",
+      "errors": {
+        "lesson": {
+          "validation_failed": "Ttxil-k senqed isefta n tmesrit u ales aɛreḍ.",
+          "create_failed": "Afecl deg usnulfu n tmesrit. Ales aɛreḍ."
+        },
+        "required": "Azel yettwasra",
+        "requiredTitle": "Ttxil-k sekcem azwel i uselmed qbel."
+      },
+      "types": {
+        "text": "Aḍris",
+        "video": "Saraba",
+        "quiz": "Akayad",
+        "interactive": "Amiddaw"
+      },
+      "difficulties": {
+        "beginner": "Amezwaru",
+        "intermediate": "Alemmas",
+        "advanced": "Anzif"
+      },
+      "quizSettings": {
+        "title": "Iɣewwaren n Ukayad",
+        "quizTitle": "Azwel n Ukayad",
+        "quizTitlePlaceholder": "Akayad n Tmesrit",
+        "passingScore": "Agmuḍ n Uzray (%)",
+        "timeLimit": "Tallit Tamaynut (tiseddarin)",
+        "allowRetake": "Sireg Tiram Nniḍen",
+        "shuffleQuestions": "Sgacur Isteqsiyen",
+        "questions": "Isteqsiyen",
+        "addQuestion": "Rnu Asteqsi",
+        "addFirstQuestion": "Rnu Asteqsi-inek Amezwaru",
+        "noQuestions": "Ulac isteqsiyen yernan akka tura",
+        "questionText": "Asteqsi",
+        "questionPlaceholder": "Sekcem asteqsi-inek...",
+        "multipleChoice": "Afran Agetwalan",
+        "trueFalse": "Tidet/Lekdeb",
+        "shortAnswer": "Tiririt Tamezzyant",
+        "option": "Tafrant",
+        "true": "D Tidet",
+        "false": "D Lekdeb",
+        "correctAnswer": "Tiririt Iṣeḥḥan",
+        "correctAnswerPlaceholder": "Sekcem tiririt iṣeḥḥan",
+        "explanation": "Asegzi",
+        "explanationPlaceholder": "Glem acuɣer i teṣḥa...",
+        "points": "Tiqqitin",
+        "create": "Snulfu Tamsirt",
+        "errors": {
+          "required": "ID n tmesrit, azwel d tɣerɣart d imelzimen",
+          "failed": "Afecl deg usnulfu n tmesrit"
+        },
+        "addOption": "Rnu tafrant",
+        "optionPlaceholder": "Tafrant {n}",
+        "createSubtitle": "Snulfu tamsirt tamaynut",
+        "editSubtitle": "Ẓreg agbur n tmesrit",
+        "loadFail": "Afecl deg usali n tmesrit",
+        "saveSuccess": "Tamsirt tettwasekles s lewziq",
+        "saveFail": "Afecl deg usekles n tmesrit",
+        "createSuccess": "Tamsirt tettwasnulfu s lewziq",
+        "createFail": "Afecl deg usnulfu n tmesrit",
+        "createSuccessHint": "Rnu timsirin nniḍen neɣ azen taɣerɣart-inek i usekyer."
+      },
+      "createSubtitle": "Snulfu tamsirt tamaynut",
+      "editSubtitle": "Ẓreg agbur n tmesrit",
+      "quizTitle": "Azwel n Ukayad",
+      "quizTitlePlaceholder": "Akayad n Tmesrit",
+      "passingScore": "Agmuḍ n Uzray (%)",
+      "timeLimit": "Tallit Tamaynut (tiseddarin)",
+      "allowRetake": "Sireg Tiram Nniḍen",
+      "shuffleQuestions": "Sgacur Isteqsiyen",
+      "questions": "Isteqsiyen",
+      "addQuestion": "Rnu Asteqsi",
+      "addFirstQuestion": "Rnu Asteqsi-inek Amezwaru",
+      "noQuestions": "Ulac isteqsiyen yernan akka tura",
+      "questionText": "Asteqsi",
+      "questionPlaceholder": "Sekcem asteqsi-inek...",
+      "multipleChoice": "Afran Agetwalan",
+      "trueFalse": "Tidet/Lekdeb",
+      "shortAnswer": "Tiririt Tamezzyant",
+      "option": "Tafrant",
+      "true": "D Tidet",
+      "false": "D Lekdeb",
+      "correctAnswer": "Tiririt Iṣeḥḥan",
+      "correctAnswerPlaceholder": "Sekcem tiririt iṣeḥḥan",
+      "explanation": "Asegzi",
+      "explanationPlaceholder": "Glem acuɣer i teṣḥa...",
+      "points": "Tiqqitin",
+      "create": "Snulfu Tamsirt",
+      "addOption": "Rnu tafrant",
+      "optionPlaceholder": "Tafrant {n}",
+      "loadFail": "Afecl deg usali n tmesrit",
+      "saveSuccess": "Tamsirt tettwasekles s lewziq",
+      "saveFail": "Afecl deg usekles n tmesrit",
+      "createSuccessHint": "Rnu timsirin nniḍen neɣ azen taɣerɣart-inek i usekyer.",
+      "videoFormatsHint": "MP4, MOV, MKV, WebM — alamma 2 GB",
+      "mb": "MAT •",
+      "durationSaved": "Tanzagt tettwasekles",
+      "videoPlaceholder": "amd. https://... neɣ /videos/python/01-welcome.mp4",
+      "youtubePreview": "Tazwart n YouTube",
+      "vimeoPreview": "Tazwart n Vimeo",
+      "dailymotionPreview": "Tazwart n Dailymotion",
+      "transcodingComplete": "100% Aselket"
+    },
+    "preview": {
+      "badge": "Tamuɣli Baṭel",
+      "watchingBanner": "Tettwaliḍ tasurift n tmuɣli baṭel",
+      "enrollPrompt": "Kcem ɣer teɣuri timmadit →",
+      "enjoyedTitle": "Tḥemleḍ tamuɣli-ya baṭel?",
+      "enjoyedDesc": "Kcem tura iwakken ad tafeḍ akk tisurifin, ikayaden, tezmert n usider d uselkin unsib!",
+      "enrollNow": "Kcem Tura",
+      "previewThisCourse": "Wali Taɣuri-ya",
+      "modalTitle": "Tamuɣli n Teɣuri",
+      "markedSuccess": "Tasurift tettwarkeḍ d tamuɣli baṭel",
+      "disabledSuccess": "Tamuɣli baṭel tessexsi",
+      "updateFail": "Ur yezmir ara ad ibeddel addad n tmuɣli baṭel",
+      "setPreview": "Sbadu tamuɣli",
+      "enablePreviewTooltip": "Tekki iwakken ad ternuḍ tamuɣli baṭel",
+      "disablePreviewTooltip": "Tekki iwakken ad tsexxsiḍ tamuɣli baṭel"
+    },
+    "bulkUpload": {
+      "dropzoneTitle": "Sers aṭas n yifuyla n usaru dagi (Asnulfu awurman)",
+      "dropzoneDesc": "Yeqbel MP4, MOV, MKV. Ismawen am \"01 - Tazwart.mp4\" ttwafrayen s wudem awurman.",
+      "selectFiles": "Fren Ifuyla n Usaru",
+      "queueTitle": "Adras n usali",
+      "uploadingActive": "Asali n 3 n yisura deg yiwen n wakud...",
+      "startBatch": "Bdu asali s tugget",
+      "statusDone": "Yemmed",
+      "statusFailed": "Ur yeddi ara",
+      "readyCount": "yewjed",
+      "validVideoToast": "Ttxil-k fren ifuyla n usaru imeɣta (MP4, MOV, MKV, WebM)",
+      "uploadSuccess": "Asali n ddeqs n yisura yemmed s lferḥ!",
+      "uploadFailed": "Asali ur yeddi ara",
+      "hide": "Ffer asali s tugget"
+    },
+    "lessonSheet": {
+      "editTitle": "Ẓreg Tasurift",
+      "createTitle": "Rnu Tasurift Tamaynut",
+      "subtitle": "Amasdag n Teɣri • Aẓrag Adeggan Imiren",
+      "contentTab": "Agbur d Usaru",
+      "pedagogyTab": "Iswiwen d Tiwsiwin",
+      "quizTab": "Akayad & Aselken",
+      "titleLabel": "Azwel n Tsurift",
+      "titlePlaceholder": "Amedya: Asebded n Prisma d useggem n Schema",
+      "freePreviewLabel": "Tasurift n tmuɣli baṭel",
+      "freePreviewDesc": "Iselmaden zemren ad walin tasurift-a deg usebter n teɣri uqbel ad aɣen.",
+      "typeLabel": "Tawsit n ugbur",
+      "orderLabel": "Amḍan n usemres",
+      "durationLabel": "Tanzagt (Tidqiqin)",
+      "durationPlaceholder": "Amedya: 15",
+      "descriptionLabel": "Aglam n tsurift (Markdown yettwaqbel)",
+      "videoSectionTitle": "Agbur n usaru d usezri",
+      "saveButton": "Sekles Tasurift",
+      "savingButton": "Asekles...",
+      "cancelButton": "Semmet",
+      "lessonUpdated": "Tasurift tettwabeddel",
+      "lessonCreated": "Tasurift tettwaxleq",
+      "saveFailed": "Ur yezmir ara ad isekles tasurift",
+      "loadFailed": "Ur yezmir ara ad d-yawi ifuyla n tsurift",
+      "titleRequired": "Ttxil-k sekcem azwel n tsurift",
+      "draftCreated": "Arewway n tsurift yettwaxleq",
+      "addLessonFail": "Ur yezmir ara ad yernu tasurift",
+      "lessonType": "Tawsit n tsurift",
+      "videoLecture": "Tasurift n usaru",
+      "textArticle": "Taɣuri / Amagrad",
+      "quiz": "Akayad amsulles",
+      "autoDetected": "Yettwafra s wudem awurman deg usali",
+      "videoFile": "Afaylu n usaru (MP4, MOV, WebM)",
+      "dropVideo": "Fren neɣ sers afaylu n usaru",
+      "routedDirectly": "Yettwazen s wudem awurman s leḥsab n ssuma n teɣri.",
+      "uploadingVideo": "Asali n usaru...",
+      "notesAndDescription": "Aglam n tsurift & Tiwsiwin",
+      "editRaw": "Ẓreg aḍris",
+      "previewFormat": "Tamuɣli n umasal",
+      "descriptionPlaceholder": "D acu ara lemden deg tsurift-a?",
+      "noDescription": "Ulac aglam yettunefken.",
+      "learningObjectives": "Iswiwen n ulmad",
+      "objectivePlaceholder": "Amedya: Issin asneknew n JWT",
+      "keyTakeaways": "Tineqqiḍin tigejdanin",
+      "takeawayPlaceholder": "Amedya: Dima sdel inagan n tɣimit",
+      "instructorNotes": "Iwenniten usligen n uselmad",
+      "instructorNotesPlaceholder": "Tiwsiwin tusligin i uselmad",
+      "add": "Rnu",
+      "editInDrawer": "Beddel aselmed deg uselkim"
+    },
+    "quiz": {
+      "enableTitle": "Aselken & Akayad n Tsurift",
+      "enableSubtitle": "Rnu akayad n tmusni i tsurift-a. Aselken awurman d yiswiren n unekcum.",
+      "settingsTitle": "Tawila n Ukayad",
+      "questionsCount": "Isteqsiyen",
+      "totalPoints": "Tineqqiḍin s umata",
+      "titleLabel": "Azwel n Ukayad",
+      "quizSuffix": "Asenqed n tmusni",
+      "titlePlaceholder": "Amedya: Asenqed n tmusni n yixf 1",
+      "instructionsLabel": "Tiwsiwin i yinelmaden (Awurman)",
+      "instructionsPlaceholder": "Tiwsiwin neɣ ayen yetturaǧun seg yinelmaden uqbel akayad...",
+      "passScoreLabel": "Tineqqiḍt n usebded i unekcum",
+      "timeLimitLabel": "Akud n ukayad (Tidqiqin)",
+      "noLimit": "Ulac talast n wakud",
+      "minutesShort": "tsdt",
+      "allowRetake": "Sireg tulsa n ukayad ma yeɣli",
+      "shuffleQuestions": "Smexleḍ amsegraw n yisteqsiyen",
+      "questionsHeading": "Isteqsiyen & Tiririyin",
+      "noQuestionsPrompt": "Ulac isteqsiyen deg ukayad-a yakan.",
+      "noQuestionsHelper": "Rnu isteqsiyen s waṭas n tiririyin, tidet/skidd, neɣ tiririt tameẓyant ddaw-a.",
+      "typeSingle": "Tiririt taywunt",
+      "typeMulti": "Tiririyin tugtin",
+      "typeTrueFalse": "Tidet / Skidd",
+      "typeCodeOutput": "Tuffɣa n tengalt",
+      "typeFillBlank": "Taččart n yilmawen",
+      "typeShortAnswer": "Tiririt tameẓyant",
+      "moveUp": "Sali d asawen",
+      "moveDown": "Sers d akessar",
+      "deleteQuestion": "Kkes asteqsi",
+      "questionPrompt": "Aḍris n usteqsi",
+      "questionPromptPlaceholder": "Amedya: Anwa awal n tsarut yettusxedmen i tbadut n twuri deg Python?",
+      "acceptedAnswer": "Tiririt tusligt yettwaqblen / Awal n tsarut",
+      "acceptedAnswerPlaceholder": "Amedya: def",
+      "correctAnswerLabel": "Tiririt tameɣtut",
+      "true": "Tidet",
+      "false": "Skidd",
+      "answerChoices": "Ifran (Fren tiririt tameɣtut)",
+      "addChoice": "Rnu afran",
+      "markedCorrect": "Yettwafren d tiririt tameɣtut",
+      "markCorrect": "Senned akken ad t-terreḍ d tiririt tameɣtut",
+      "optionPlaceholder": "Afran",
+      "explanationLabel": "Asegzi (Yettwaskan i unelmad deffir usumer)",
+      "explanationPlaceholder": "Efk-d asegzi n tɣuri neɣ tamselyut i d-yeskanayen acuɣer tiririt-a d tameɣtut...",
+      "addSingleChoice": "+ Tiririt taywunt",
+      "addMultiSelect": "+ Tiririyin tugtin",
+      "addTrueFalse": "+ Tidet / Skidd",
+      "addShortAnswer": "+ Tiririt tameẓyant",
+      "noQuizTitle": "Ulac akayad yettwarzan",
+      "noQuizDesc": "Tasurift-a d asaru/taɣuri kan tura. Rmed afrir n ukayad afella akken ad ternuḍ isteqsiyen.",
+      "enableButton": "Rmed akayad i tsurift-a"
+    },
+    "details": {
+      "badgeHeadline": "Azwel Agejdan n Teɣri",
+      "primaryIdentifier": "Akalaf & Imusnawen n unadi",
+      "chars": "isekkilen",
+      "titleHelp": "Azwel ara walin yinelmaden deg tkarḍiwin d yimusnawen n unadi. Eǧǧ-it ddaw 60 n yisekkilen.",
+      "titlePlaceholder": "Amedya: Python i usleḍ d useknu n yisefta",
+      "badgeHook": "Aglam Awezlan / Tajennant",
+      "cardSnippet": "1 neɣ 2 n tefyar tusligin",
+      "shortDescHelp": "Adu-zwel deg tkarḍa n teɣri d usebter n uznuzu. Glem ayen ara yelmed deg ddaw 160 n yisekkilen.",
+      "shortDescPlaceholder": "Amedya: Issin Python seg wadda u sekles iskripten i usizdeg d useknu n yisefta n tdamsa n Dzayer.",
+      "badgeSyllabus": "Ahil n Teɣri & Aglam Ummid",
+      "writeMarkdown": "Aru s Markdown",
+      "previewMarkdown": "Tamuɣli",
+      "fullDescHelp": "Ahil lqayen n teɣri, ilugan, isenfaṛen imellilen d wid i wumi tettwazen. Yettwaskan deg usebter n uznuzu.",
+      "fullDescPlaceholder": "### Tamuɣli tamatut\nPython yuɣal d amenzay deg umahil n yisefta...\n\n### D acu ara tlemdeḍ\n- Sizdeg isefta n tidet\n- Rnu tibladin timsullisin\n\n### Ayen ilaqen uqbel\nUlac tussna n usnulfu ilaqen uqbel.",
+      "emptyMarkdownPreview": "Ulac aglam lqayen yuran yakan.",
+      "courseAttributes": "Ssuma & Aswir",
+      "difficultyLevel": "Aswir n tewɛent",
+      "priceLabel": "Ssuma n teɣri (DZD)",
+      "freeCourseCheckbox": "Taɣri Baṭel",
+      "levels": {
+        "beginner": "Amzwaru",
+        "intermediate": "Alemmas",
+        "advanced": "Ameqran",
+        "allLevels": "Akk iswiren"
+      },
+      "coverImageTitle": "Tugna n tduli n teɣri (16:9)",
+      "coverImageHelp": "Sekcem tansa n tugna n teɣri (1280x720 tettwasumer).",
+      "livePreviewHeading": "Tamuɣli Tusridt n Teɣri",
+      "previewCardTab": "Takarḍa n Ukalaf",
+      "previewHeroTab": "Agelmus n Uznuzu",
+      "headlineField": "Azwel n Teɣri",
+      "previewEmptyTitle": "Azwel n teɣri war isem",
+      "theHookField": "Tajennant (Adu-zwel)",
+      "previewEmptyDesc": "Tafyirt-ik tawezlant n 1-2 n tefyar i d-yesskanayen ifadden ara d-tefkeḍ ad tban dagi.",
+      "free": "Baṭel",
+      "curriculum": "AHIL",
+      "instructorPreview": "Astudyu n Uselmad",
+      "enrollFree": "Jerred Baṭel",
+      "courseCoverRatio": "Tawlaft n urmud 16:9"
+    },
+    "errors": {
+      "lesson": {
+        "validation_failed": "Ttxil-k senqed isefta n tmesrit u ales aɛreḍ.",
+        "create_failed": "Afecl deg usnulfu n tmesrit. Ales aɛreḍ."
+      }
+    },
+    "levels": {
+      "beginner": "Amzwaru",
+      "intermediate": "Alemmas",
+      "advanced": "Anaẓi",
+      "allLevels": "Akk iswiren"
+    }
+  },
+  "errors": {
+    "secureLoadFailed": "Ur yezmir ara ad d-yessali avidyu s wudem aɣelsan."
+  },
+  "classroom": {
+    "arrete1275": "Asun 1275",
+    "resetTitle": "Ales ɣer tanafa tamenzut",
+    "resetBtn": "Ales",
+    "running": "Aselkem...",
+    "runTests": "Selkem ikayaden",
+    "submitCapstone": "Azen asenfar amezwaru",
+    "exitFullscreen": "Ffeɣ seg ugdil ačuran",
+    "fullscreen": "Agdil ačuran",
+    "curriculumMilestone": "Aseqqar n uselmed",
+    "estimatedEffort": "Azal n wakud: ~{minutes} tesdatin",
+    "pedagogicalRequirements": "Isutar ifedagugiyen",
+    "progressiveHints": "Tinfusin timazzalin ({revealed}/3 reẓment)",
+    "unlockNextHint": "Rẓem tanfust d-iteddun",
+    "hint1Title": "Tanfust 1: Tasertit tamadwant",
+    "hint2Title": "Tanfust 2: Talɣawit tamessit",
+    "hint3Title": "Tanfust 3: Tasendast n tifrat",
+    "stuckPrompt": "Tḥelṣeḍ deg usenfar-agi? Ssed \"Rẓem tanfust d-iteddun\" i wakken ad twaliḍ tinfusin mebla ma tesrewteḍ tifrat.",
+    "dragResizeDesc": "Zuɣer i wakken ad tbeddleḍ tehri n uglam",
+    "pythonSandboxed": "(Python 3.11 • Aglawan yemxallafen)",
+    "copyCode": "Nɣel tangalt ɣer tseddast",
+    "copied": "Yettwanɣel",
+    "copy": "Nɣel",
+    "dragResizeEditor": "Zuɣer i wakken ad tbeddleḍ tiddi n umaẓrag",
+    "testCases": "Ikayaden ({passed}/{total})",
+    "xtermOutput": "Uffiɣ n xterm",
+    "sandboxMetrics": "Isektiyen n uselkem",
+    "antiCheatActive": "Aseḥbiber mgal tukerḍa urmisen",
+    "testItem": "Akayad {index}: {name}",
+    "executionLatency": "Akud n uselkem",
+    "latencyTarget": "Aswir: < 500ms • Tasut n FastAPI tebded",
+    "memoryQuota": "{memory} MAT / 128 MAT",
+    "cgroupsQuota": "Aselkem n Cgroups v2 yemxallafen",
+    "astWinnowing": "Akayad n tukerḍa s uselken AST",
+    "similarityPercent": "{similarity}% n tmeyyift",
+    "mossHashes": "Isallen n MOSS (Asɣel n ukemmel: < 85%)",
+    "credentialStatus": "Addad n uselkin W3C",
+    "eligibleBadge": "Yuklal Open Badge v3",
+    "pendingTests": "Ikayaden ttraǧun",
+    "startupPassportReady": "Apaspuṛ n tnezzut MESRS Asun 1275 yewjed"
+  },
+  "video": {
+    "player": {
+      "availableOffline": "Yella mebla internet",
+      "videoPlayerAria": "Ameɣri n uvidyu",
+      "tamperAlert": "Alɣu n tɣellist: aḥbas n tɣuri"
+    },
+    "uploader": {
+      "tusHeader": "Asali TUS v1.0.0 i zemren ad ikemmel s Multi-CDN",
+      "supportedFormats": "MP4, MOV, WebM, MKV ar 5 GB • Yettkemmil ɣef 4G n Lezzayer",
+      "startUpload": "Bdu asali ({provider})",
+      "resumeUpload": "Kemmel asali",
+      "pauseUpload": "Sbedd asali",
+      "paused": "Yebded",
+      "speed": "Arured: {speed}",
+      "chunk": "Aḥric {current}/{total}",
+      "retryBackoff": "Tebded tdukli n uẓeṭṭa. Aɛraweḍ s ukud (armud {attempt})"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+# =============================================================================
+# Podacium — Local dev infrastructure (Docker)
+# =============================================================================
+# IMPORTANT: This compose file runs INFRASTRUCTURE ONLY (PostgreSQL + Redis).
+#
+# The application tiers run as native processes, NOT containers, matching the
+# production EC2 VPS (pm2):
+#   - API (FastAPI)   -> make dev-api   (uvicorn on :8000)
+#   - Web (Next.js)   -> make dev-web   (next dev on :3001)
+#
+# Do NOT re-add `web` / `api` / celery containers here — the apps are managed
+# by pm2 in production (see ecosystem.config.js) and natively in dev.
+# =============================================================================
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: tamwheel-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-tamwheel}
+      POSTGRES_USER: ${POSTGRES_USER:-tamwheel}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-localdev_only}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tamwheel"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: tamwheel-redis
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-}
+    command: >
+      sh -c 'if [ -n "$$REDIS_PASSWORD" ]; then
+               exec redis-server --requirepass "$$REDIS_PASSWORD";
+             else
+               exec redis-server;
+             fi'
+    ports:
+      - "127.0.0.1:6379:6379"
+    healthcheck:
+      test: ["CMD-SHELL", "if [ -n \"$$REDIS_PASSWORD\" ]; then redis-cli -a \"$$REDIS_PASSWORD\" ping; else redis-cli ping; fi"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  pgdata:

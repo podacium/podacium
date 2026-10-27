@@ -1,0 +1,74 @@
+groups:
+  - name: podacium-api
+    rules:
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.01
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate ({{ $value | humanizePercentage }})"
+          description: "API error rate is above 1% for 5 minutes"
+          runbook: "docs/runbooks/on-call.md#p1-high-error-rate-1"
+
+      - alert: HighLatencyP99
+        expr: histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m])) > 0.5
+        for: 5m
+        labels:
+          severity: high
+        annotations:
+          summary: "High p99 latency ({{ $value }}s)"
+          description: "API p99 latency is above 500ms"
+          runbook: "docs/runbooks/on-call.md#p2-high-latency-p99--500ms"
+
+      - alert: CeleryTaskFailures
+        expr: increase(celery_task_failed_total[5m]) > 10
+        for: 5m
+        labels:
+          severity: high
+        annotations:
+          summary: "Celery task failures ({{ $value }} in 5m)"
+          runbook: "docs/runbooks/on-call.md#p2-celery-task-failures"
+
+      - alert: DatabaseConnectionPoolExhausted
+        expr: pg_stat_activity_count > 90
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Database connection pool near exhaustion ({{ $value }}/100)"
+
+      - alert: RedisMemoryHigh
+        expr: redis_memory_used_bytes / redis_memory_max_bytes > 0.9
+        for: 5m
+        labels:
+          severity: high
+        annotations:
+          summary: "Redis memory usage above 90%"
+
+      - alert: DiskSpaceLow
+        expr: node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"} < 0.1
+        for: 5m
+        labels:
+          severity: high
+        annotations:
+          summary: "Disk space below 10%"
+
+      - alert: PrismaPoolWaitingQueries
+        expr: prisma_pool_waiting_queries > 5
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Prisma queries waiting for a DB connection ({{ $value }})"
+          description: "More than 5 Prisma queries have been waiting for a connection for 2 minutes — the pool may be exhausted under load."
+          runbook: "docs/runbooks/on-call.md#p1-database-connection-pool-exhausted"
+
+      - alert: LiveKitRoomsHigh
+        expr: livekit_rooms_active > 100
+        for: 10m
+        labels:
+          severity: high
+        annotations:
+          summary: "High number of active LiveKit rooms ({{ $value }})"
+          description: "Over 100 concurrently active LiveKit rooms — verify cluster capacity before the next spike."

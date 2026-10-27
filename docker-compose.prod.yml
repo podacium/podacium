@@ -1,0 +1,350 @@
+# =============================================================================
+# Podacium — Production Docker Compose (INFRA ONLY: cached infra / Celery)
+# =============================================================================
+# IMPORTANT: In production the `web` (Next.js) and `api` (FastAPI) tiers are
+# NOT run as Docker containers. They run under pm2 on the EC2 VPS:
+#   - podacium-api  -> uvicorn on :8000 (services/api, venv312)
+#   - podacium-web  -> next start on :3000 (apps/web)
+# See ecosystem.config.js and docs/runbooks/deployment.md.
+#
+# This file manages the supporting infrastructure (PostgreSQL, Redis, optional
+# Celery worker/beat). The api/web service blocks below are commented out and
+# kept for reference only. Do not `docker compose up` them in production.
+#
+# Setup for infra:
+#   1. cp .env.prod.example .env.prod          # Fill in real values
+#   2. cp secrets/db_password.txt.example secrets/db_password.txt  # Real password
+#   3. chmod 600 .env.prod secrets/db_password.txt
+#   4. docker compose -f docker-compose.prod.yml up -d postgres redis
+# =============================================================================
+
+services:
+  # ── Caddy Reverse Proxy (Automatic Let's Encrypt TLS) ──────────────────────
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      DOMAIN: ${DOMAIN:-podacium.com}
+      API_DOMAIN: ${API_DOMAIN:-backend-api.podacium.com}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+          cpus: "0.25"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ── Coraza WAF (Web Application Firewall) ──────────────────────────────────
+  # Inline WAF that inspects all API traffic through OWASP CRS rules.
+  # Blocks SQLi, XSS, path traversal, command injection, and data leaks.
+  # Caddy reverse-proxies API traffic through coraza-waf before reaching FastAPI.
+  coraza-waf:
+    image: ghcr.io/corazawaf/coraza-proxy:latest
+    restart: unless-stopped
+    volumes:
+      - ./infra/coraza/coraza.conf:/etc/coraza/coraza.conf:ro
+    environment:
+      CORAZA_CONFIG: /etc/coraza/coraza.conf
+    networks:
+      - podacium
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: "0.5"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ── Celery Worker ──────────────────────────────────────────────────────────
+  celery-worker:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    command: celery -A app.core.celery worker -Q celery,heavy_processing,notifications_high,notifications_default --loglevel=info --pool=prefork --concurrency=2 --max-tasks-per-child=50 --max-memory-per-child=30000 --time-limit=3600 --soft-time-limit=3300 --without-gossip --without-mingle --without-heartbeat
+    env_file:
+      - .env.prod
+    environment:
+      # Override DATABASE_URL: .env.prod uses localhost (for host-based API),
+      # but Docker containers resolve 'postgres' via Docker DNS.
+      DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?schema=public
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_NAME: podacium
+      DB_USER: podacium
+      PYTHONUNBUFFERED: "1"
+    healthcheck:
+      disable: true
+    secrets:
+      - db_password
+    depends_on:
+      - redis
+      - postgres
+    restart: unless-stopped
+    networks:
+      - podacium
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "0.5"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ── Celery Worker 2 (auto-scaling replica) ───────────────────────────────────
+  celery-worker-2:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    command: celery -A app.core.celery worker -Q celery,heavy_processing,notifications_high,notifications_default --loglevel=info --pool=prefork --concurrency=2 --max-tasks-per-child=50 --max-memory-per-child=30000 --time-limit=3600 --soft-time-limit=3300 --without-gossip --without-mingle --without-heartbeat
+    env_file:
+      - .env.prod
+    environment:
+      DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?schema=public
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_NAME: podacium
+      DB_USER: podacium
+      PYTHONUNBUFFERED: "1"
+    healthcheck:
+      disable: true
+    secrets:
+      - db_password
+    depends_on:
+      - redis
+      - postgres
+    restart: unless-stopped
+    networks:
+      - podacium
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "0.5"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ── Celery Beat (Periodic Task Scheduler) ──────────────────────────────────
+  celery-beat:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    command: celery -A app.tasks.celery_beat.celery_app beat --loglevel=info
+    env_file:
+      - .env.prod
+    environment:
+      DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?schema=public
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_NAME: podacium
+      DB_USER: podacium
+      PYTHONUNBUFFERED: "1"
+    depends_on:
+      - redis
+      - postgres
+    restart: unless-stopped
+    networks:
+      - podacium
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: "0.25"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+
+  # ── API (FastAPI / Uvicorn) ─────────────────────────────────────────────────
+  # ⚠️ DISABLED — the API runs under pm2 (podacium-api) in production via the
+  # process manager (see ecosystem.config.js + docs/runbooks/deployment.md).
+  # Keep this block for reference / a containerized fallback, but DO NOT
+  # `docker compose up api` in production.
+  # api:
+  #   build:
+  #     context: ./services/api
+  #     dockerfile: Dockerfile
+  #   command: >
+  #     sh -c "prisma generate --schema=./prisma/schema.prisma &&
+  #            python -m app.startup &&
+  #            uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4"
+  #   env_file:
+  #     - .env.prod
+  #   environment:
+  #     DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?schema=public
+  #     DB_HOST: postgres
+  #     DB_PORT: "5432"
+  #     DB_NAME: podacium
+  #     DB_USER: podacium
+  #     PYTHONUNBUFFERED: "1"
+  #   secrets:
+  #     - db_password
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #     redis:
+  #       condition: service_healthy
+  #   restart: unless-stopped
+  #   networks:
+  #     - podacium
+  #   healthcheck:
+  #     test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')"]
+  #     interval: 30s
+  #     timeout: 10s
+  #     retries: 3
+  #     start_period: 40s
+
+  # ── Web (Next.js) ───────────────────────────────────────────────────────────
+  # ⚠️ DISABLED — the web tier runs under pm2 (pod (podacium-web): `next start` on
+  # port 3000). See ecosystem.config.js + docs/runbooks/deployment.md.
+  # web:
+  #   build:
+  #     context: ./apps/web
+  #     dockerfile: Dockerfile
+  #   env_file:
+  #     - .env.prod
+  #   environment:
+  #     NODE_ENV: production
+  #     PORT: 3000
+  #   depends_on:
+  #     - api
+  #   restart: unless-stopped
+  #   networks:
+  #     - podacium
+  #   healthcheck:
+  #     test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
+  #     interval: 30s
+  #     timeout: 10s
+  #     retries: 3
+  #     start_period: 60s
+
+  # ── PostgreSQL 16 ──────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${DB_NAME:-podacium}
+      POSTGRES_USER: ${DB_USER:-podacium}
+      # Reads ONLY the password from the dedicated secret file.
+      # This file contains a single line with the raw password — NOT a .env file.
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-podacium}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - podacium
+    deploy:
+      resources:
+        limits:
+          memory: 384M
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ── Redis 7 ────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    command: >
+      redis-server
+      --maxmemory 128mb
+      --maxmemory-policy allkeys-lru
+      --requirepass ${REDIS_PASSWORD:?FATAL: REDIS_PASSWORD must be set in production}
+      --save 900 1
+      --save 300 10
+      --appendonly yes
+      --appendfsync everysec
+    ports:
+      - "127.0.0.1:6379:6379"
+    environment:
+      REDISCLI_AUTH: ${REDIS_PASSWORD:-}
+    healthcheck:
+      test: ["CMD", "redis-cli", "--no-auth-warning", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - podacium
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  podacium:
+    driver: bridge
+
+volumes:
+  pgdata:
+    driver: local
+  caddy_data:
+    driver: local
+  caddy_config:
+    driver: local
+
+secrets:
+  db_password:
+    # This file must exist on the production server but is NEVER committed to git.
+    # Create it: cp secrets/db_password.txt.example secrets/db_password.txt
+    # Then: chmod 600 secrets/db_password.txt
+    # The file must contain ONLY the raw password — no newlines, no comments.
+    file: ./secrets/db_password.txt

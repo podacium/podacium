@@ -1,0 +1,36 @@
+{
+    "search": {
+        "title": "البحث في بوداسيوم",
+        "subtitle": "ابحث عن الدورات والمشاريع والمستقلين في بوداسيوم",
+        "placeholder": "ابحث...",
+        "searchButton": "بحث",
+        "noResults": "لم يتم العثور على نتائج",
+        "tryDifferent": "جرّب مصطلح بحث مختلفاً أو غيّر التصفية",
+        "resultsFound": "تم العثور على {total} نتائج لـ \"{query}\"",
+        "resultsCount": "تم العثور على",
+        "filterAll": "الكل",
+        "tryAgain": "حاول مجدداً",
+        "viewAllResults": "عرض جميع النتائج",
+        "matchPercent": "{pct}% تطابق",
+        "types": {
+            "module": "وحدة",
+            "project": "مشروع",
+            "user": "مستقل",
+            "modules": "الوحدات",
+            "projects": "المشاريع",
+            "users": "المستقلون"
+        }
+    },
+    "meta": {
+        "search": {
+            "title": "البحث — بوداسيوم",
+            "description": "ابحث عن الدورات والمستقلين والمشاريع في بوداسيوم."
+        }
+    },
+    "breadcrumbs": {
+        "search": "البحث"
+    },
+    "tryAgain": "إعادة المحاولة",
+    "filterAll": "الكل",
+    "matchPercent": "تطابق بنسبة {percent}%"
+}

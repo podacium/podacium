@@ -1,0 +1,61 @@
+repos:
+  # Prevent secrets from being committed
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: detect-private-key
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+      - id: no-commit-to-branch
+        args: ['--branch', 'main']
+      - id: check-merge-conflict
+
+  # Block .env files and files containing secrets from being committed
+  - repo: local
+    hooks:
+      - id: no-env-files
+        name: Block .env files
+        entry: bash -c 'for f in "$@"; do case "$f" in *.env|*.env.*|.env) echo "BLOCKED: $f — never commit .env files"; exit 1;; esac; done'
+        language: system
+        types: [file]
+
+      - id: no-secrets-in-code
+        name: Block files containing secret patterns
+        entry: bash -c 'for f in "$@"; do if grep -qEi "(SECRET_KEY|API_KEY|CLIENT_SECRET|ACCESS_TOKEN|PRIVATE_KEY|PASSWORD|SERVICE_ROLE_KEY|STORAGE_KEY)\\s*[=:]\\s*[\"'"'"']?[A-Za-z0-9+/=_-]{16,}" "$f" 2>/dev/null; then echo "BLOCKED: $f contains what looks like a secret value"; exit 1; fi; done'
+        language: system
+        types: [text]
+        exclude: '(\.example$|\.md$|\.txt$|node_modules|\.git)'
+
+      - id: no-env-local
+        name: Block .env.local files
+        entry: bash -c 'for f in "$@"; do basename="$(basename "$f")"; if echo "$basename" | grep -qE "^\.env"; then echo "BLOCKED: $f"; exit 1; fi; done'
+        language: system
+        types: [file]
+
+  # Python linting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.4
+    hooks:
+      - id: ruff
+        args: ['--fix']
+        files: ^services/api/
+
+  # Secret scanning with detect-secrets
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+
+  # Gitleaks secret scanning (complement to TruffleHog)
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.2
+    hooks:
+      - id: gitleaks
+
+  # TruffleHog for comprehensive secret detection
+  - repo: https://github.com/trufflesecurity/trufflehog
+    rev: v3.63.0
+    hooks:
+      - id: trufflehog
+        entry: trufflehog git file://. --since-commit HEAD --only-verified --fail

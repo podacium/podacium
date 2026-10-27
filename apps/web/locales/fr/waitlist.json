@@ -1,0 +1,141 @@
+{
+  "waitlist": {
+    "meta": {
+      "title": "Rejoindre la liste d'attente — Podacium",
+      "description": "Soyez parmi les premiers à accéder à la plateforme numérique algérienne tout-en-un pour apprendre, freelancer et analyser."
+    },
+    "hero": {
+      "badge": "Accès anticipé — Places limitées",
+      "headline": "Votre avenir numérique commence ici",
+      "subheadline": "Soyez parmi les premiers à rejoindre la plateforme algérienne tout-en-un pour l'apprentissage, le freelancing et l'analyse d'entreprise.",
+      "countdown": "Lancement dans"
+    },
+    "form": {
+      "title": "Réservez votre place",
+      "subtitle": "Rejoignez les Algériens avant-gardistes déjà sur la liste",
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "ex. Amine Benali",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "ex. amine@example.com",
+      "terms": "J'accepte les conditions d'utilisation et la politique de confidentialité",
+      "submit": "Rejoindre la liste d'attente",
+      "submitting": "Inscription en cours…",
+      "success": "Vous êtes sur la liste !",
+      "errors": {
+        "nameRequired": "Veuillez entrer votre nom",
+        "nameInvalid": "Le nom doit contenir 2 à 80 caractères",
+        "emailRequired": "Veuillez entrer votre e-mail",
+        "emailInvalid": "Veuillez entrer un e-mail valide",
+        "emailDisposable": "Les adresses e-mail jetables ne sont pas autorisées",
+        "duplicateEmail": "Vous êtes déjà sur la liste d'attente ! Partagez votre lien de parrainage ci-dessous.",
+        "invalidReferral": "Code de parrainage invalide",
+        "selfReferral": "Vous ne pouvez pas vous parrainer vous-même",
+        "rateLimited": "Trop de tentatives. Veuillez réessayer plus tard.",
+        "serverError": "Une erreur est survenue. Veuillez réessayer.",
+        "termsRequired": "Veuillez accepter les conditions d'utilisation"
+      },
+      "referralLabel": "Code de parrainage (optionnel)",
+      "referralPlaceholder": "ex. ABC12345",
+      "referralValid": "Invité par {name} — vous avez un promo !",
+      "referralInvalid": "Ce code n'existe pas. Vérifiez et réessayez.",
+      "referralValidating": "Vérification du code…"
+    },
+    "dashboard": {
+      "title": "Bienvenue dans le futur, {name} !",
+      "position": "Vous êtes #{position} dans la file",
+      "referral": {
+        "title": "Parrainez et montez dans la liste",
+        "subtitle": "Partagez votre lien et avancez dans la file. Plus vous invitez d'amis, plus tôt vous aurez accès.",
+        "linkLabel": "Votre lien de parrainage",
+        "copy": "Copier le lien",
+        "copied": "Copié !",
+        "shareTitle": "Partager sur",
+        "progress": "{count} / {goal} parrainages",
+        "nextReward": "Prochaine récompense à {goal} parrainages",
+        "milestones": {
+          "freeMonth": "Mois gratuit",
+          "freeYear": "Année gratuite",
+          "earlyAccess": "Accès anticipé",
+          "badge": "Badge exclusif"
+        }
+      }
+    },
+    "leaderboard": {
+      "title": "Meilleurs parrains",
+      "rank": "#",
+      "name": "Nom",
+      "referrals": "Parrainages",
+      "empty": "Soyez le premier à parrainer un ami !"
+    },
+    "countdown": {
+      "days": "Jours",
+      "hours": "Heures",
+      "minutes": "Minutes",
+      "seconds": "Secondes",
+      "totalGoal": "{count} / {goal} inscrits",
+      "live": "Nous sommes en ligne !"
+    },
+    "why": {
+      "title": "Pourquoi Podacium ?",
+      "cards": {
+        "learn": {
+          "title": "Apprenez avec intention",
+          "desc": "Des parcours structurés et des cours adaptés au marché algérien et aux standards internationaux."
+        },
+        "earn": {
+          "title": "Gagnez à votre rythme",
+          "desc": "Connectez-vous avec des clients, mettez en valeur vos compétences et soyez payé — la première marketplace freelance dédiée en Algérie."
+        },
+        "analyze": {
+          "title": "Analysez & Décidez",
+          "desc": "Des outils de business intelligence conçus pour les PME : suivez les tendances, comparez vos concurrents et agissez sur de vraies données."
+        },
+        "local": {
+          "title": "Fait pour l'Algérie",
+          "desc": "Trilingue (AR / FR / EN), entièrement compatible RTL, pensé pour les réalités du marché algérien."
+        }
+      }
+    },
+    "footer": {
+      "tagline": "Apprendre. Travailler. Analyser. Grandir. — Tout en un seul endroit."
+    },
+    "email": {
+      "confirmed": "Vérifiez votre boîte de réception pour la confirmation",
+      "resend": "Renvoyer l'e-mail"
+    },
+    "admin": {
+      "title": "Gestion de la liste d'attente",
+      "stats": {
+        "total": "Total inscriptions",
+        "pending": "En attente",
+        "verified": "Vérifié",
+        "converted": "Converti",
+        "bounced": "Rejeté",
+        "unsubscribed": "Désabonné",
+        "conversionRate": "Taux de conversion",
+        "avgReferrals": "Moy. parrainages/utilisateur"
+      },
+      "table": {
+        "name": "Nom",
+        "email": "E-mail",
+        "referrals": "Parrainages",
+        "status": "Statut",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "confirmDelete": "Supprimer cette inscription ?",
+      "empty": "Aucune inscription trouvée",
+      "filters": {
+        "all": "Tous",
+        "pending": "En attente",
+        "verified": "Vérifié",
+        "converted": "Converti",
+        "bounced": "Rebondi",
+        "unsubscribed": "Désabonné",
+        "search": "Rechercher par nom ou e-mail…",
+        "export": "Exporter CSV"
+      },
+      "pageOf": "Page {page} sur {totalPages}"
+    }
+  }
+}

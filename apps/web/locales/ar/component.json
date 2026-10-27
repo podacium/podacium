@@ -1,0 +1,821 @@
+{
+  "compcourse": {
+    "accessControl": {
+      "contentLocked": "المحتوى مقفل",
+      "lockedMessage": "يجب أن تسجل في هذه الدورة للوصول إلى هذا المحتوى."
+    },
+    "analytics": {
+      "title": "التحليلات التعليمية",
+      "subtitle": "تابع تقدمك وأداءك",
+      "updated": "تم التحديث الآن",
+      "lessonProgress": "تقدم الدروس",
+      "timeSpent": "الوقت المستغرق",
+      "completion": "الإكمال",
+      "engagement": "الانخراط",
+      "personalizedRecommendations": "توصيات مخصصة",
+      "recommendations": {
+        "focusAreas": "مجالات التركيز",
+        "focusAreasSubtitle": "بناءً على نتائج الاختبارات",
+        "focusAreasDescription": "راجع مفاهيم الدروس لفهم أفضل",
+        "studySchedule": "جدول الدراسة",
+        "studyScheduleSubtitle": "تعلم مُحسن",
+        "studyScheduleDescription": "ادرس 45 دقيقة يوميًا لأفضل استبقاء",
+        "nextSteps": "الخطوات التالية",
+        "nextStepsSubtitle": "استمر في التعلم",
+        "nextStepsDescription": "أكمل درسين إضافيين لفتح المواضيع المتقدمة"
+      },
+      "units": {
+        "lessons": "درس",
+        "inProgress": "قيد التقدم"
+      }
+    },
+    "certificate": {
+      "title": "منصة بوداسيوم للتعلم",
+      "type": "شهادة إتمام",
+      "presentedTo": "تُمنح هذه الشهادة بكل فخر إلى",
+      "forCompleting": "لإكمال الدورة بنجاح",
+      "withGrade": "بدرجة نهائية قدرها",
+      "duration": "المدة",
+      "completionDate": "تاريخ الإكمال",
+      "certificateId": "معرف الشهادة",
+      "instructor": "المدرب",
+      "issuingAuthority": "الجهة المانحة",
+      "verification": "تحقق من هذه الشهادة على:",
+      "issuedOn": "تم الإصدار في",
+      "validIndefinitely": "سارية المفعول إلى أجل غير مسمى",
+      "verificationDescription": "يمكن التحقق من هذه الشهادة عبر الإنترنت باستخدام معرف الشهادة أو رابط التحقق.",
+      "verifyOnline": "تحقق من الشهادة عبر الإنترنت",
+      "aboutCertificate": "حول شهادتك",
+      "certificateDetails": "تفاصيل الشهادة",
+      "actions": {
+        "downloadPdf": "تحميل PDF",
+        "printCertificate": "طباعة الشهادة",
+        "shareAchievement": "مشاركة الإنجاز"
+      },
+      "generating": "جاري إنشاء الشهادة...",
+      "generatingDescription": "يرجى الانتظار بينما نقوم بإعداد شهادة إتمام الدورة.",
+      "generateError": "فشل إنشاء الشهادة. يرجى المحاولة مرة أخرى."
+    },
+    "quiz": {
+      "loading": "جارٍ تحميل الاختبار",
+      "loadingDescription": "جارٍ إعداد تقييمك...",
+      "error": "خطأ في الاختبار",
+      "error_submit": "فشل إرسال محاولة الاختبار. يرجى المحاولة مرة أخرى.",
+      "error_start": "فشل بدء محاولة الاختبار. يرجى المحاولة مرة أخرى.",
+      "tryAgain": "حاول مرة أخرى",
+      "knowledgeCheck": "فحص المعرفة",
+      "description": "اختبر فهمك للمادة من خلال هذا الاختبار التفاعلي.",
+      "questions": "الأسئلة",
+      "totalPoints": "إجمالي النقاط",
+      "timeLimit": "الحد الزمني",
+      "attemptsRemaining": "{count} محاولة متبقية",
+      "startQuiz": "بدء الاختبار",
+      "question": "سؤال {current} من {total}",
+      "points": "{points} نقطة",
+      "checkAnswer": "تحقق من الإجابة",
+      "nextQuestion": "السؤال التالي",
+      "finishQuiz": "إنهاء الاختبار",
+      "finish": "إنهاء",
+      "passed": "نجحت في الاختبار!",
+      "failed": "لم تنجح في الاختبار",
+      "passedMessage": "مبروك! لقد أكملت الاختبار بنجاح.",
+      "failedMessage": "تحتاج إلى تحقيق 70% على الأقل لاجتياز الاختبار. يمكنك إعادة المحاولة.",
+      "pointsScored": "النقاط المكتسبة",
+      "percentage": "النسبة المئوية",
+      "passingScore": "70% (النجاح)",
+      "retryQuiz": "إعادة الاختبار ({attempts} محاولة متبقية)",
+      "reviewQuestions": "مراجعة الأسئلة",
+      "questionReview": "مراجعة الأسئلة",
+      "questionNumber": "السؤال {number}",
+      "explanation": "التوضيح:",
+      "true": "صحيح",
+      "false": "خطأ",
+      "fillBlankPlaceholder": "اكتب إجابتك هنا...",
+      "noQuestions": "لا توجد أسئلة متاحة",
+      "noQuestionsDescription": "لا توجد أي أسئلة في هذا الاختبار بعد."
+    },
+    "resources": {
+      "title": "موارد الدرس",
+      "noResources": "لا توجد موارد متاحة",
+      "noResourcesDescription": "سيتم إضافة الموارد إلى هذا الدرس قريبًا.",
+      "resourceCount": "{count} من الموارد",
+      "preview": "معاينة",
+      "copyLink": "نسخ الرابط",
+      "download": "تحميل",
+      "downloading": "جارٍ التحميل...",
+      "locked": "مقفل",
+      "downloadAll": "تحميل جميع الموارد",
+      "downloadAllDescription": "احصل على جميع موارد الدرس في حزمة واحدة",
+      "usageGuidelines": "إرشادات الاستخدام",
+      "guidelines": [
+        "الموارد مخصصة لأغراض التعلم الشخصي فقط",
+        "لا تعيد توزيع أو تشارك المواد المحمية بحقوق الطبع والنشر",
+        "استشهد بشكل مناسب إذا استخدمت في عملك الخاص",
+        "اتصل بالدعم لاستفسارات الترخيص"
+      ]
+    },
+    "video": {
+      "loading": "جارٍ تحميل الفيديو...",
+      "fetchingDuration": "جارٍ جلب مدة الفيديو...",
+      "playbackError": "خطأ في التشغيل",
+      "retry": "إعادة المحاولة",
+      "buffering": "جارٍ التحميل...",
+      "keyboardShortcuts": "اختصارات لوحة المفاتيح",
+      "speed": "السرعة",
+      "quality": "الجودة",
+      "autoAbr": "تلقائي (أوتوماتيكي)",
+      "autoOriginal": "تلقائي (HD الأصلي)",
+      "speedBoost": "تسريع 2.0x",
+      "enableCaptions": "تفعيل الترجمة",
+      "disableCaptions": "إيقاف الترجمة",
+      "captionsLanguage": "لغة الترجمة والشرح",
+      "pictureInPicture": "صورة داخل صورة",
+      "settingsTitle": "إعدادات التشغيل",
+      "audioTrack": "المسار الصوتي",
+      "theaterMode": "وضع المسرح",
+      "normalSpeed": "عادي (1.0x)",
+      "providers": {
+        "title": "اختر مزود استضافة الفيديو",
+        "youtube": "يوتيوب (مجاني غير مدرج)",
+        "vimeo": "فيميو (غير مدرج)",
+        "dailymotion": "ديلي موشن (خاص)",
+        "bunny": "باني ستريم (HLS)",
+        "cloudflare": "كلود فلير ستريم",
+        "aws": "AWS ميديا كونفرت",
+        "badges": {
+          "free": "مجاني",
+          "freePro": "مجاني / احترافي",
+          "private": "خاص",
+          "cdn": "شبكة CDN",
+          "enterprise": "مؤسساتي"
+        },
+        "descriptions": {
+          "youtube": "استضافة مجانية للدورات العامة وغير المدرجة",
+          "vimeo": "بث خاص مقيد بالنطاق مع التحكم في الوصول",
+          "dailymotion": "رفع فيديو خاص مع إخفاء القائمة",
+          "bunny": "توصيل فائق السرعة عبر الحافة العالمية مع ترميز HLS مباشر",
+          "cloudflare": "بدء فوري في أجزاء من الثانية مع أمان رمز RS256 الموقع",
+          "aws": "توصيل مخصص للمؤسسات باستخدام S3 وشبكة CloudFront"
+        }
+      },
+      "uploader": {
+        "smartRoutingTitle": "التوجيه السحابي التلقائي",
+        "smartRoutingDesc": "توجيه التخزين تلقائياً بناءً على سعر الدورة وحالة المعاينة المجانية",
+        "dragDrop": "اسحب وفلت فيديو الدرس هنا، أو انقر للتصفح",
+        "browseFiles": "تصفح الملفات",
+        "supportedFormats": "MP4 أو MOV أو WebM أو MKV حتى 5 جيجابايت",
+        "targetProvider": "مزود الفيديو المستهدف",
+        "startUpload": "بدء الرفع",
+        "cancelUpload": "إلغاء الرفع",
+        "pauseUpload": "إيقاف مؤقت",
+        "resumeUpload": "استئناف الرفع",
+        "uploading": "جارٍ الرفع إلى {provider}...",
+        "uploadProgress": "تم رفع {progress}%",
+        "speed": "سرعة الرفع",
+        "speedValue": "{speed} ميجابايت/ث",
+        "eta": "الوقت المتبقي",
+        "etaValue": "متبقي {eta}",
+        "etaCalculating": "جاري حساب الوقت المتبقي...",
+        "stages": {
+          "init": "تهيئة جلسة الرفع...",
+          "uploading": "رفع أجزاء الفيديو ({current}/{total})...",
+          "processing": "معالجة وترميز فيديو HLS...",
+          "finalizing": "إنهاء وحفظ الفيديو..."
+        },
+        "success": "تم رفع الفيديو بنجاح!",
+        "invalidFormat": "صيغة الملف غير صالحة. يرجى اختيار فيديو بصيغة MP4 أو MOV أو WebM.",
+        "intentError": "فشل في إنشاء طلب الرفع",
+        "uploadError": "حدث خطأ غير متوقع أثناء رفع الفيديو.",
+        "targetProviderNote": "المزود المستهدف: {provider}. لا يلزم نسخ ولصق الروابط.",
+        "startUploadTo": "بدء الرفع إلى {provider}",
+        "errors": {
+          "invalidFormat": "تنسيق الملف غير مدعوم. يرجى اختيار MP4 أو MOV أو WebM.",
+          "fileTooLarge": "يتجاوز حجم الملف الحد الأقصى البالغ {maxSize}.",
+          "networkError": "انقطع الاتصال بالشبكة. يرجى المحاولة مرة أخرى...",
+          "generic": "فشل رفع الفيديو. تحقق من اتصالك وحاول مجدداً."
+        }
+      },
+      "shortcuts": {
+        "title": "اختصارات لوحة المفاتيح",
+        "playPause": "مسافة/Enter/K: تشغيل/إيقاف مؤقت",
+        "seek": "←/→: تقدم/تراجع 5 ثوانٍ",
+        "volume": "↑/↓: مستوى الصوت",
+        "seekBackward": "← / J: ترجيع 5 ثوانٍ",
+        "seekForward": "→ / L: تقديم 5 ثوانٍ",
+        "volumeUp": "↑: رفع الصوت (+5%)",
+        "volumeDown": "↓: خفض الصوت (-5%)",
+        "fullscreen": "F: ملء الشاشة",
+        "mute": "M: كتم الصوت",
+        "captions": "C: تبديل التسميات التوضيحية",
+        "pip": "P: وضع صورة داخل صورة",
+        "theater": "T: وضع المسرح",
+        "jumpPercent": "0 – 9: الانتقال إلى 0% – 90%",
+        "speedBoostHint": "ضغط مطول: تسريع مؤقت 2.0x",
+        "doubleTapHint": "نقر مزدوج يمين/يسار: تقديم/تأخير 10 ثواني"
+      },
+      "controls": {
+        "replay": "إعادة التشغيل",
+        "play": "تشغيل",
+        "pause": "إيقاف مؤقت",
+        "volume": "مستوى الصوت",
+        "settings": "الإعدادات",
+        "enterFullscreen": "ملء الشاشة",
+        "exitFullscreen": "إنهاء ملء الشاشة"
+      },
+      "dataSaver": "توفير بيانات 4G",
+      "dataSaverActive": "360p (مفعل)",
+      "dataSaverDisabled": "معطل"
+    },
+    "transcript": {
+      "title": "النص التفاعلي",
+      "cues": "{count} مقطع",
+      "searchPlaceholder": "البحث في نص الفيديو...",
+      "loading": "جاري تحميل النص...",
+      "empty": "لم يتم العثور على أسطر في النص"
+    }
+  },
+  "comphub": {
+    "freelancerCard": {
+      "defaultName": "مستقل",
+      "defaultBio": "مستقل ذو خبرة جاهز لمشروعك",
+      "noBio": "لا توجد سيرة ذاتية متاحة. هذا المستقل جاهز لتولي مشاريع جديدة وتقديم عمل عالي الجودة.",
+      "role": "{role} • {count} من المشاريع المكتملة",
+      "verified": "تم التحقق",
+      "stats": {
+        "projects": "المشاريع",
+        "earnings": "الأرباح",
+        "rating": "التقييم",
+        "trust": "الثقة"
+      },
+      "certifications": "{count} من الشهادات"
+    },
+    "projectCard": {
+      "recently": "مؤخراً",
+      "today": "اليوم",
+      "yesterday": "أمس",
+      "daysAgo": "منذ {days} أيام",
+      "weeksAgo": "منذ {weeks} أسابيع",
+      "monthsAgo": "منذ {months} أشهر",
+      "noDescription": "لا توجد وصف متاح",
+      "budgetNegotiable": "السعر قابل للتفاوض",
+      "applied": "تم التقديم",
+      "stats": {
+        "budget": "الميزانية",
+        "posted": "تاريخ النشر",
+        "type": "النوع",
+        "project": "مشروع"
+      },
+      "byOwner": "بواسطة {name}"
+    },
+    "proposalForm": {
+      "title": "إرسال عرض",
+      "forProject": "لمشروع \"{title}\"",
+      "validation": {
+        "messageRequired": "الرجاء إدخال رسالة العرض",
+        "messageMinLength": "يجب أن تحتوي رسالة العرض على 10 أحرف على الأقل",
+        "minAmount": "الحد الأدنى لمبلغ العرض هو 10 دج (1000 سنتيم)",
+        "estimatedDaysRange": "يجب أن تكون الأيام المقدرة بين 1 و 365 يوم"
+      },
+      "submitError": "فشل في إرسال العرض. يرجى المحاولة مرة أخرى.",
+      "fileTooLarge": "الملف {name} كبير جداً. الحجم الأقصى: {maxSize}.",
+      "fileTypeNotSupported": "نوع الملف {name} غير مدعوم. يرجى رفع ملفات PDF, DOC, JPG, أو PNG.",
+      "labels": {
+        "message": "رسالة العرض *",
+        "amount": "المبلغ المقترح (دج) *",
+        "estimatedDays": "المدة المقدرة (أيام)",
+        "attachments": "المرفقات (اختياري)"
+      },
+      "placeholders": {
+        "message": "صف نهجك، خبرتك، ولماذا أنت الأنسب لهذا المشروع..."
+      },
+      "hints": {
+        "minCharacters": "10 أحرف على الأقل",
+        "minAmount": "10 دج كحد أدنى (1000 سنتيم)",
+        "estimatedDaysRange": "اختياري، من 1 إلى 365 يوم",
+        "uploadFiles": "انقر لرفع الملفات أو اسحب وأفلت",
+        "fileTypesAndSize": "PDF, DOC, JPG, PNG بحد أقصى 10 ميجابايت لكل ملف"
+      },
+      "selectedFiles": "الملفات المحددة",
+      "tips": {
+        "title": "نصائح لعرض ناجح",
+        "specificApproach": "كن محدداً بشأن نهجك في المشروع",
+        "highlightExperience": "سلط الضوء على الخبرات والمهارات ذات الصلة",
+        "realisticTimeline": "قدم مدة وميزانية واقعية",
+        "askQuestions": "اطرح أسئلة توضيحية إذا لزم الأمر",
+        "marketExperience": "اذكر أي خبرة ذات صلة بالسوق الجزائرية"
+      },
+      "buttons": {
+        "cancel": "إلغاء",
+        "submit": "إرسال العرض",
+        "submitting": "جاري الإرسال..."
+      }
+    },
+    "searchFilters": {
+      "placeholders": {
+        "search": "ابحث عن مشاريع، مستقلين، مهارات..."
+      },
+      "buttons": {
+        "hideFilters": "إخفاء الفلاتر",
+        "moreFilters": "المزيد من الفلاتر",
+        "hide": "إخفاء",
+        "browse": "تصفح",
+        "clearAll": "مسح الكل",
+        "applyFilters": "تطبيق الفلاتر",
+        "searching": "جاري البحث..."
+      },
+      "labels": {
+        "skills": "المهارات",
+        "status": "الحالة",
+        "verification": "التحقق",
+        "certificates": "الشهادات"
+      },
+      "status": {
+        "all": "جميع الحالات",
+        "open": "مفتوح",
+        "inProgress": "قيد التنفيذ",
+        "completed": "مكتمل"
+      },
+      "filters": {
+        "phoneVerified": "تم التحقق من الهاتف",
+        "hasCertificates": "لديه شهادات",
+        "any": "الجميع"
+      }
+    },
+    "statusBadge": {
+      "project": {
+        "open": "مفتوح",
+        "inProgress": "قيد التنفيذ",
+        "completed": "مكتمل",
+        "cancelled": "ملغي"
+      },
+      "proposal": {
+        "pending": "قيد الانتظار",
+        "accepted": "مقبول",
+        "rejected": "مرفوض"
+      },
+      "contract": {
+        "active": "نشط",
+        "completed": "مكتمل",
+        "cancelled": "ملغي"
+      }
+    },
+    "trustBadges": {
+      "phoneVerified": "التحقق من الهاتف",
+      "emailVerified": "التحقق من البريد",
+      "skillPassport": "جواز المهارات موثق",
+      "certificatesCount": "{count} من الشهادات",
+      "certificate": "شهادات",
+      "projectsCount": "{count} من المشاريع",
+      "project": "مشاريع",
+      "trusted": "موثوق"
+    }
+  },
+  "video": {
+    "hlsError": "خطأ في تشغيل بث HLS",
+    "loadError": "تعذر تحميل الفيديو",
+    "subtitles": "الترجمة",
+    "arabic": "العربية"
+  },
+  "copilot": {
+    "studioTitle": "استوديو بودليل (PoDalil Studio)",
+    "studioSubtitle": "قمرة قيادة ثنائية • تدفق المحادثة واللوحة الحية",
+    "tool": "الأداة",
+    "resizeShortcut": "⌘[ / ⌘] تغيير الحجم",
+    "emptyTitle": "ما الذي ترغب في تحقيقه اليوم؟",
+    "emptyDescription": "استكشف كتالوج الدورات، حلل بيانات DuckDB، أعد عروض الأسعار المستقلة أو احسب الإعفاء الجبائي (المادة 169 CIDTA).",
+    "inputPlaceholder": "اطرح سؤالك أو اطلب إجراءً...",
+    "canvasReady": "اللوحة الحية جاهزة",
+    "canvasReadyDescription": "اطلب من بودليل صياغة استعلامات DuckDB، أو تحليل البيانات، أو تصميم برنامج تدريبي أو تحرير عقد. ستظهر المخرجات هنا مباشرة.",
+    "copied": "تم النسخ",
+    "copy": "نسخ",
+    "preview": "معاينة",
+    "edit": "تعديل",
+    "badgePro": "النسخة المتقدمة",
+    "resetSession": "جلسة جديدة",
+    "resetSessionTooltip": "إعادة ضبط الجلسة",
+    "commandShortcut": "K للأوامر",
+    "greetingTitle": "مرحبًا! كيف يمكنني مساعدتك اليوم؟",
+    "greetingSubtitle": "اطرح سؤالاً، اطلب تحليلاً أو فوض عمليات عبر التعليم، العمل الحر والذكاء التجاري في الجزائر.",
+    "agentName": "وكيل بوداسيوم",
+    "inputHintSend": "إدخال للإرسال",
+    "inputHintNewline": "Shift + Enter لسطر جديد",
+    "stop": "إيقاف",
+    "send": "إرسال",
+    "scan": "مسح ضوئي",
+    "records": "{count} سجلات",
+    "copyResponseTooltip": "نسخ الإجابة",
+    "tabs": {
+      "discussion": "محادثة",
+      "canvas": "لوحة العمل"
+    },
+    "canvas": {
+      "copyTooltip": "نسخ محتوى هذا الملف",
+      "scanTooltip": "مسح الإيصال بالكاميرا (OCR)",
+      "features": {
+        "sqlTitle": "استعلامات SQL",
+        "sqlDesc": "تحرير وتنفيذ آمن عبر DuckDB",
+        "docsTitle": "وثائق قانونية",
+        "docsDesc": "طقم الفاتورة والبرو فورما المعتمد من ANAE",
+        "biTitle": "تصورات بيانية BI",
+        "biDesc": "جداول بيانات ومؤشرات أداء",
+        "hitlTitle": "تحقق العنصر البشري (HITL)",
+        "hitlDesc": "مراجعة آمنة للعمليات الحساسة"
+      },
+      "actions": {
+        "translateToDarija": "ترجمة إلى الدارجة الجزائرية",
+        "applyArticle169TaxShield": "تطبيق الدرع الضريبي للمادة 169",
+        "apply19Tva": "تطبيق الرسم على القيمة المضافة 19% (TVA)",
+        "convertToDzd": "تحويل إلى الدينار الجزائري (DZD)",
+        "liveVoiceConcierge": "المساعد الصوتي المباشر",
+        "cameraInvoiceScanner": "ماسح الفواتير بالكاميرا",
+        "workflowDagStepper": "متتبع خطوات تدفق العمل (DAG)",
+        "apply19TvaTitle": "تطبيق الرسم على القيمة المضافة 19% على هذه الخلية",
+        "convertToDzdTitle": "تحويل القيمة إلى الدينار الجزائري",
+        "filterTop5Title": "تصفية أفضل 5 عناصر بناءً على هذا العمود",
+        "filterTop5": "تصفية أفضل 5"
+      }
+    },
+    "cameraOcr": {
+      "title": "ماسح الإيصالات الجبائية والبريدية CCP",
+      "subtitle": "بريدي موب • الذهبية • صك بريدي • فاتورة شكلية",
+      "toggleTorch": "تشغيل الفلاش",
+      "switchCamera": "تبديل الكاميرا",
+      "close": "إغلاق",
+      "capturedReceiptAlt": "الإيصال الملتقط",
+      "docTypeLabel": "نوع الوثيقة:",
+      "cameraUnavailable": "الوصول إلى الكاميرا غير متاح",
+      "retry": "إعادة المحاولة",
+      "uploadPhoto": "رفع صورة",
+      "alignReceipt": "حاذِ الإيصال أو صك البريد CCP",
+      "stampVisible": "الختم البريدي والمبلغ واضحان",
+      "retake": "إعادة التقاط الصورة",
+      "extracting": "جارٍ استخراج البيانات عبر OCR...",
+      "submitted": "تم إرسال الإيصال إلى الذكاء الاصطناعي",
+      "analyzeWithOcr": "تحليل الإيصال بواسطة ocr_receipt_scan",
+      "gallery": "معرض الصور",
+      "takePhoto": "التقاط صورة الإيصال"
+    },
+    "voice": {
+      "startSession": "بدء الجلسة الصوتية المباشرة (Gemini Live)",
+      "stopSession": "إيقاف الجلسة الصوتية المباشرة",
+      "active": "الصوت نشط",
+      "live": "صوت مباشر",
+      "mute": "كتم الميكروفون",
+      "unmute": "إلغاء كتم الميكروفون",
+      "bargeInTitle": "مقاطعة الوكيل (Barge-in)",
+      "bargeIn": "مقاطعة"
+    },
+    "livingCanvas": {
+      "actions": {
+        "translateToDarija": "ترجمة إلى الدارجة الجزائرية",
+        "applyArticle169TaxShield": "تطبيق الدرع الضريبي للمادة 169",
+        "apply19Tva": "تطبيق الرسم على القيمة المضافة 19% (TVA)",
+        "convertToDzd": "تحويل إلى الدينار الجزائري (DZD)",
+        "liveVoiceConcierge": "المساعد الصوتي المباشر",
+        "cameraInvoiceScanner": "ماسح الفواتير بالكاميرا",
+        "workflowDagStepper": "متتبع خطوات تدفق العمل (DAG)",
+        "apply19TvaTitle": "تطبيق الرسم على القيمة المضافة 19% على هذه الخلية",
+        "convertToDzdTitle": "تحويل القيمة إلى الدينار الجزائري",
+        "filterTop5Title": "تصفية أفضل 5 عناصر بناءً على هذا العمود",
+        "filterTop5": "تصفية أفضل 5"
+      }
+    },
+    "prompts": {
+      "edtechTitle": "تكوينات الذكاء الاصطناعي والتقنية",
+      "edtechBadge": "التعليم التقني",
+      "edtechPrompt": "ما هي أفضل التكوينات المعتمدة المتاحة على بوداسيوم في بايثون، البيانات والذكاء الاصطناعي؟",
+      "freelanceTitle": "تنظيم العمل الحر (ANAE)",
+      "freelanceBadge": "قانون 22-23",
+      "freelancePrompt": "كيف أتحقق من أهليتي لصفة المقاول الذاتي (قانون 22-23) والالتزام بسقف 5 ملايين دج؟",
+      "biTitle": "تحليل البيانات والمؤشرات",
+      "biBadge": "محرك DuckDB",
+      "biPrompt": "أرني كيف يمكنني تحليل مجموعات البيانات وإنشاء لوحة تحكم تفاعلية باستخدام DuckDB.",
+      "taxTitle": "الخصم الضريبي على الشركات (IBS)",
+      "taxBadge": "المادتان 169 و 224",
+      "taxPrompt": "كيف أستفيد من خصم 26% من ضريبة أرباح الشركات IBS على استثماراتي في التكوين (المادتان 169 و 224 من قانون الضرائب المباشرة)؟"
+    },
+    "actionReview": {
+      "title": "مراجعة دقيقة للإجراء (بوابة أمان HITL)",
+      "highRisk": "خطر مرتفع",
+      "modifying": "تعديلي",
+      "paramsInspection": "فحص معايير المعاملة",
+      "authorizeAndExecute": "تفويض وتنفيذ في قاعدة البيانات",
+      "rejectAction": "رفض الإجراء",
+      "rejected": "تم رفض الإجراء",
+      "executing": "جارٍ تنفيذ الإجراء المؤكد...",
+      "success": "تم التحقق من الإجراء وتطبيقه بنجاح."
+    },
+    "document": {
+      "prefix": "مستند",
+      "markdown": "مستند ماركداون",
+      "categoryDoc": "مستند • {category}",
+      "downloadMd": "تحميل .md",
+      "actions": {
+        "translateDarijaTitle": "ترجمة النص المحدد إلى الدارجة الجزائرية",
+        "translateDarija": "ترجمة إلى الدارجة (جزائرية)",
+        "applyArticle169Title": "تطبيق الدرع الضريبي للمادتين 169 و 224 من قانون الضرائب",
+        "applyArticle169": "تطبيق الدرع الضريبي للمادة 169 CIDTA",
+        "addAnpdpClauseTitle": "إضافة بند مطابقة حماية البيانات ANPDP (القانون 25-11)",
+        "addAnpdpClause": "إضافة بند ANPDP"
+      }
+    },
+    "dag": {
+      "completed": "مكتمل",
+      "running": "قيد التنفيذ",
+      "failed": "فشل",
+      "pending": "قيد الانتظار",
+      "title": "تنسيق مهام الوكيل عبر DAG",
+      "stepsProgress": "تم إنجاز {completed} من أصل {total} خطوات",
+      "nodeDetails": "تفاصيل الخطوة",
+      "stepLabel": "العملية",
+      "toolExecuted": "الأداة المنفذة",
+      "outputLogs": "المخرجات والسياق",
+      "askExplanation": "شرح هذه الخطوة",
+      "selectPrompt": "اختر خطوة لمعاينة التفاصيل."
+    },
+    "sql": {
+      "duckdbEngine": "محرك DuckDB",
+      "runSql": "تنفيذ SQL",
+      "result": "النتيجة",
+      "rows": "صفوف",
+      "resultWithCount": "النتيجة: {count} صفوف"
+    },
+    "splitPaneResizeHandle": "مقبض تغيير حجم الجزء المقسم",
+    "reasoning": {
+      "title": "عملية التفكير وتنفيذ الأدوات",
+      "statusThinking": "جاري التفكير...",
+      "statusCompleted": "اكتمل التفكير",
+      "statusFailed": "فشل التنفيذ",
+      "stepIntentAnalysis": "تحليل الطلب وتحديد النية",
+      "stepToolExecution": "تنفيذ الأداة",
+      "stepSynthesis": "توليف الإجابة",
+      "toolInput": "معايير الإدخال",
+      "toolOutput": "النتيجة",
+      "elapsed": "المدة",
+      "copyParams": "نسخ المعايير",
+      "copied": "تم النسخ!",
+      "hideLogs": "إخفاء التفاصيل",
+      "showLogs": "عرض التفاصيل",
+      "running": "قيد التشغيل",
+      "done": "مكتمل",
+      "failed": "فشل",
+      "logsCount": "السجلات ({count})"
+    },
+    "container": {
+      "openAria": "فتح مساعد بوداسيوم",
+      "title": "مساعد بوداسيوم الذكي",
+      "geminiVersion": "جيميني 2.5",
+      "agentSafety": "وكيل ذكي مستقل مع حماية المراجعة البشرية (HITL)",
+      "expandAria": "توسيع إلى محرر كامل",
+      "dockRightSideAria": "تثبيت في الجانب الأيمن",
+      "dockRightAria": "تثبيت لليمين",
+      "floatingBubbleAria": "التبديل إلى النافذة العائمة",
+      "closeAria": "إغلاق المساعد",
+      "copied": "تم النسخ",
+      "copy": "نسخ"
+    },
+    "composer": {
+      "removeEntityAria": "إزالة {label}",
+      "contextEntities": "كيانات السياق",
+      "attachContextTitle": "إرفاق سياق الكيان (@)"
+    },
+    "hitl": {
+      "action": {
+        "replayError": "تم منع إعادة الإجراء: تم تنفيذ رمز الإجراء مسبقًا أو انتهت صلاحيته.",
+        "confirmationRequired": "تأكيد مطلوب: {toolName}",
+        "intentHash": "النية رقم {id}",
+        "proposedChangesTitle": "تغييرات الحالة المقترحة",
+        "actionApproved": "تمت الموافقة على الإجراء وتنفيذه مع التحقق التشفيري.",
+        "actionRejected": "تم رفض الإجراء من طرف المستخدم. لم يتم تطبيق أي تعديلات.",
+        "rejectBtn": "رفض / تعديل المعلمات",
+        "approveBtn": "موافقة وتنفيذ"
+      },
+      "diff": {
+        "splitViewAria": "عرض منقسم",
+        "split": "منقسم",
+        "unifiedViewAria": "عرض موحد",
+        "unified": "موحد",
+        "before": "قبل",
+        "after": "بعد"
+      }
+    }
+  },
+  "generativeUi": {
+    "unavailableTitle": "المكون التفاعلي غير متاح",
+    "unavailableDescription": "تعذر عرض المكون التوليدي",
+    "actionConfirmation": {
+      "statusPending": "الموافقة مطلوبة (HITL)",
+      "statusExecuting": "جارٍ التنفيذ الآمن...",
+      "statusConfirmed": "تم تنفيذ الإجراء بنجاح",
+      "statusRejected": "تم إلغاء الإجراء",
+      "statusExpired": "انتهت صلاحية مهلة التأكيد",
+      "statusFailed": "فشل الإجراء",
+      "actionPrefix": "إجراء",
+      "highRisk": "خطر مرتفع",
+      "modifying": "تعديلي",
+      "preparedParams": "المعايير المجهزة",
+      "financialImpact": "الأثر المالي",
+      "cancel": "إلغاء",
+      "confirmAndExecute": "تأكيد وتنفيذ",
+      "hmacValidating": "جارٍ التحقق التشفيري عبر HMAC...",
+      "operationSuccess": "تم التحقق من العملية وتنفيذها",
+      "rejectedByUser": "تم رفض العملية من قبل المستخدم.",
+      "tokenExpired": "انتهت صلاحية رمز التفويض.",
+      "biometricVerify": "مطلوب التحقق البيومتري",
+      "biometricVerified": "تم التحقق من الهوية البيومترية",
+      "biometricAuthorize": "المصادقة بالبصمة / FaceID",
+      "biometricTokenValid": "رمز 2FA HMAC-SHA256 صالح",
+      "tokenValid": "رمز HMAC-SHA256 2FA صالح",
+      "biometricMethods": "بصمة الإصبع / التعرف على الوجه / رمز PIN",
+      "chargilyPay": "بوابة شارجيلي باي:",
+      "urgentExpiry": "ينتهي قريباً!",
+      "edahabiaBadge": "الذهبية",
+      "cibBadge": "CIB",
+      "chargilyPayEscrow": "دفع آمن ومضمون بضمان الحراسة (القانون 22-23)",
+      "timeRemaining": "الوقت المتبقي",
+      "retry": "إعادة المحاولة"
+    },
+    "biChart": {
+      "viewTable": "عرض الجدول",
+      "viewChart": "عرض الرسم البياني"
+    },
+    "course": {
+      "viewCourse": "عرض الدورة",
+      "free": "مجاني",
+      "recommendedCourses": "الدورات الموصى بها ({count})"
+    },
+    "projects": {
+      "title": "المشاريع والفرص ({count})",
+      "viewAll": "عرض الكل",
+      "apply": "تقديم عرض",
+      "proposalsCount": "{count} عرض"
+    },
+    "dashboards": {
+      "title": "لوحات معلومات ذكاء الأعمال ({count})",
+      "biStudio": "استوديو ذكاء الأعمال",
+      "public": "عام",
+      "private": "خاص",
+      "openInEditor": "فتح في المحرر"
+    },
+    "dataset": {
+      "duckdbEngine": "محرك DuckDB",
+      "indexedRows": "الصفوف المفهرسة:",
+      "columns": "الأعمدة:",
+      "queryWithSql": "استعلام بواسطة SQL"
+    },
+    "freelancerComparison": {
+      "project": "المشروع",
+      "proposedRate": "السعر المقترح",
+      "deliveryDelay": "أجل التسليم",
+      "deliveryDetails": "{days} يوم ({milestones} مراحل)",
+      "selected": "محدد",
+      "reviewOffer": "معاينة هذا العرض",
+      "reviews": "تقييمات"
+    }
+  },
+  "bi": {
+    "wilayaMap": {
+      "title": "خريطة الكثافة التجارية والمبيعات عبر 58 ولاية",
+      "subtitle": "تخطيط تفاعلي لسرعة المبيعات والطلبات عبر الجزائر",
+      "metricSales": "سرعة المبيعات (دج)",
+      "metricOrders": "حجم الطلبات",
+      "metricActiveUsers": "المستخدمون النشطون",
+      "metricGrowth": "معدل النمو",
+      "searchPlaceholder": "البحث عن ولاية (مثال: 16 الجزائر، 31 وهران)...",
+      "filterAll": "جميع المناطق",
+      "filterNorth": "الشمال والساحل",
+      "filterHighPlateaus": "الهضاب العليا",
+      "filterSahara": "الصحراء والجنوب",
+      "nationalAverage": "المعدل الوطني",
+      "aboveAverage": "أعلى من المعدل الوطني",
+      "belowAverage": "أقل من المعدل الوطني",
+      "totalRevenue": "إجمالي الإيرادات",
+      "totalOrders": "إجمالي الطلبات",
+      "topWilaya": "الولاية الأولى",
+      "rank": "الترتيب",
+      "viewMap": "عرض الخريطة",
+      "viewGrid": "عرض الشبكة",
+      "viewList": "عرض الترتيب",
+      "noWilayaFound": "لم يتم العثور على أي ولاية لهذا البحث",
+      "wilayaDetails": "تفاصيل الولاية",
+      "wilayasCount": "{count} ولاية إجمالاً",
+      "regionNorth": "الشمال والساحل",
+      "regionHighPlateaus": "الهضاب العليا",
+      "regionSahara": "الصحراء والجنوب",
+      "nationalBenchmark": "المعيار الوطني",
+      "colWilaya": "الولاية",
+      "colRegion": "المنطقة",
+      "wilayaCode": "ولاية رقم {code}"
+    }
+  },
+  "component": {
+    "motionStatus": {
+      "demo": {
+        "eyebrow": "نظام التصميم",
+        "title": "حالة متحركة",
+        "subtitle": "مؤشر نقطي حي لكل لحظة غير متزامنة — تفكير الوكيل، الاستيراد، المزامنة والحفظ.",
+        "preview": "معاينة مباشرة",
+        "state": "الحالة",
+        "variant": "الطراز",
+        "size": "الحجم",
+        "layout": "التخطيط",
+        "showLabel": "إظهار التسمية",
+        "animatedLabel": "تدوير التسمية",
+        "paused": "إيقاف الحركة مؤقتًا",
+        "speed": "سرعة الإطارات",
+        "theme": "المظهر",
+        "options": "خيارات",
+        "light": "فاتح",
+        "dark": "داكن",
+        "direction": "الاتجاه",
+        "dataBinding": "ربط فوري",
+        "dataBindingDesc": "فعّل الإشارات وشاهد useMotionStatus يختار الحالة المناسبة.",
+        "gallery": "كل الحالات",
+        "usage": "الاستخدام",
+        "copied": "تم النسخ",
+        "signals": {
+          "loading": "تحميل",
+          "fetching": "جلب",
+          "streaming": "بث",
+          "tool": "أداة قيد التشغيل",
+          "listening": "استماع",
+          "saving": "حفظ",
+          "importing": "استيراد",
+          "success": "نجاح",
+          "error": "خطأ"
+        }
+      },
+      "importing": "جارٍ الاستيراد",
+      "syncing": "جارٍ المزامنة",
+      "searching": "جارٍ البحث",
+      "busy": "مشغول",
+      "saving": "جارٍ الحفظ",
+      "initializing": "جارٍ التهيئة",
+      "thinking": "جارٍ التفكير",
+      "listening": "يستمع",
+      "idle": "جاهز",
+      "success": "تم",
+      "error": "حدث خطأ ما",
+      "statusLabel": "الحالة: {status}"
+    },
+    "badge": {
+      "expires": "ينتهي في {{date}}",
+      "featured": "مميز",
+      "boosted": "مُروَّج",
+      "premium": "بريميوم",
+      "verified": "موثق"
+    },
+    "checkbox": {
+      "demoTitle": "مكون خانة الاختيار",
+      "demoDescription": "مكون خانة اختيار يمكن الوصول إليه بالكامل مع دعم متغيرات وأحجام وحالات متعددة.",
+      "tabBasic": "أساسي",
+      "tabStates": "الحالات",
+      "tabVariants": "المتغيرات",
+      "tabSizes": "الأحجام",
+      "tabRTL": "RTL",
+      "basicCheckboxes": "خانات اختيار أساسية",
+      "acceptTerms": "قبول الشروط والأحكام",
+      "subscribeNewsletter": "الاشتراك في النشرة الإخبارية",
+      "newsletterDescription": "تلقي تحديثات أسبوعية حول الدورات والميزات الجديدة.",
+      "enableNotifications": "تمكين الإشعارات",
+      "notificationsDescription": "الحصول على إشعارات حول تحديثات الدورات والإعلانات.",
+      "labelPositions": "مواقع التسمية",
+      "labelRight": "التسمية على اليمين (افتراضي)",
+      "labelLeft": "التسمية على اليسار",
+      "interactiveStates": "الحالات التفاعلية",
+      "unchecked": "غير محدد",
+      "checked": "محدد",
+      "indeterminate": "غير محدد",
+      "disabledState": "حالة معطلة",
+      "disabledUnchecked": "معطل غير محدد",
+      "disabledChecked": "معطل محدد",
+      "disabledIndeterminate": "معطل غير محدد",
+      "errorState": "حالة خطأ",
+      "requiredField": "حقل مطلوب *",
+      "errorRequired": "هذا الحقل مطلوب",
+      "variantExamples": "أمثلة المتغيرات",
+      "variantDefault": "افتراضي",
+      "variantOutline": "مخطط",
+      "variantSoft": "ناعم",
+      "sizeExamples": "أمثلة الأحجام",
+      "sizeSM": "صغير",
+      "sizeMD": "متوسط",
+      "sizeLG": "كبير",
+      "rtlSupport": "دعم RTL",
+      "rtlActive": "وضع RTL نشط (اللغة العربية)",
+      "rtlInactive": "اللغة الحالية: {currentLocale}. التبديل إلى العربية لرؤية تخطيط RTL.",
+      "rtlLabel": "قبول الشروط والأحكام",
+      "rtlLabelWithDesc": "الاشتراك في النشرة الإخبارية",
+      "rtlDescription": "تلقي تحديثات أسبوعية حول الدورات والميزات الجديدة.",
+      "rtlLabelLeft": "التسمية على اليسار",
+      "formExample": "مثال نموذج",
+      "formAcceptTerms": "أقبل شروط الخدمة وسياسة الخصوصية *",
+      "formSubscribe": "الاشتراك في تحديثات المنتج",
+      "formSubscribeDesc": "سنرسل لك رسائل بريد إلكتروني من حين لآخر حول الميزات الجديدة.",
+      "formEnableUpdates": "تمكين التحديثات التلقائية",
+      "formSubmit": "إرسال",
+      "formSubmitted": "تم إرسال النموذج بنجاح!",
+      "formTermsRequired": "يجب قبول الشروط للمتابعة"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "settings-security": {
+    "meta": {
+      "title": "Iɣewwaren n Tɣellist",
+      "description": "Sefrek taɣellist n umiḍan-inek d usentem s sin n yimeḍranen"
+    },
+    "page": {
+      "home": "Axxam",
+      "settings": "Iɣewwaren",
+      "title": "Iɣewwaren n Tɣellist",
+      "subtitle": "Sefrek taɣellist n umiḍan-inek u sbedd asentem s sin n yimeḍranen",
+      "mfaSection": "Asentem s Sin n Yimeḍranen (2FA)",
+      "mfaDesc": "Rnu aswir nniḍen n tɣellist i umiḍan-inek",
+      "statusEnabled": "Asentem s sin n yimeḍranen yermed",
+      "statusDisabled": "Asentem s sin n yimeḍranen yensa",
+      "noMethods": "Ulac tarrayt n 2FA yettwasbedden",
+      "activeMethods": "Tarrayin Tirammadin",
+      "totp": {
+        "title": "Asnas n Usentem (Authenticator)",
+        "desc": "Seqdec Google Authenticator, Microsoft Authenticator, neɣ asnas n TOTP",
+        "setup": "Sbedd Asnas n Usentem",
+        "scanQR": "Sken tangalt-a QR s usnas-inek n usentem",
+        "qrCodeAlt": "Tangalt QR n TOTP",
+        "orEnterKey": "Neɣ sekcem tasarut-a s ufus:",
+        "revealKey": "Sken tasarut tuffirt",
+        "hideKey": "Ffer tasarut tuffirt",
+        "clickToCopy": "Tekki iwakken ad tsenɣleḍ",
+        "copied": "Yettwasenɣel ɣer tkatut",
+        "enterCode": "Sekcem tangalt n 6 n wuṭṭunen seg usnas-inek",
+        "codePlaceholder": "000000",
+        "verify": "Senqed & Rmed",
+        "enabled": "Asnas n usentem yermed",
+        "disable": "Sens Asnas n Usentem",
+        "success": "Asnas n usentem yermed s lewziq"
+      },
+      "email": {
+        "title": "OTP s E-mail",
+        "desc": "Awi-d tangalt n yiwet n tikelt s e-mail mi ara tkecmeḍ",
+        "setup": "Sbedd OTP s E-mail",
+        "sendCode": "Azen tangalt n usenqed",
+        "codeSent": "Tangalt n usenqed tettwazen ɣer tansa-inek e-mail",
+        "enterCode": "Sekcem tangalt n 6 n wuṭṭunen",
+        "verify": "Senqed & Rmed",
+        "enabled": "OTP s e-mail yermed",
+        "disable": "Sens OTP s E-mail",
+        "success": "OTP s e-mail yermed s lewziq"
+      },
+      "webauthn": {
+        "title": "Tasarut n Unekcum (Passkey)",
+        "desc": "Seqdec aḍad-inek, udem neɣ PIN n wallal i usentem yettwaḥerzen",
+        "setup": "Jerred Tasarut n Unekcum",
+        "registering": "Asenqed n wallal-inek...",
+        "notSupported": "Tisarura n unekcum ur ttwaqbalent ara deg wallal-a neɣ iminig-a",
+        "cancelled": "Ajerred n tsarut yettwasefsex",
+        "enabled": "Tasarut n unekcum termed",
+        "disable": "Kkes Tasarut n Unekcum",
+        "success": "Tasarut n unekcum tettwajerred s lewziq",
+        "noPlatformBiometrics": "Ulac amsawal abiymitri (Touch ID/Windows Hello) deg uselkim-a.",
+        "openOnMobile": "Sbedd seg tiliɣri tamezdayt",
+        "mobileQrPrompt": "Sken tangalt-a n QR s tkamirat n tiliɣri-inek i wakken ad telliḍ asebter-a srid deg tiliɣri-k u ad tjerwedeḍ s uḍad/udem deg yiwen n usiti:",
+        "bluetoothNotice": "Tamawt: Aqqan n tiliɣri seg uselkim s QR yesra asermed n Bluetooth deg sin n wallalen."
+      },
+      "backupCodes": {
+        "title": "Tingalin n Tallelt",
+        "desc": "Seqdec tingalin-a n usemres amyiwen i unekcum ma tesruḥeḍ anekcum ɣer usnas",
+        "remaining": "{count} n tengalin i d-yegran",
+        "generate": "Snulfu Tingalin n Tallelt",
+        "regenerate": "Ales Asnulfu n Tengalin",
+        "regenerateConfirm": "Ayagi ad yesfeḍ akk tingalin-inek yellan yakan. Tebɣiḍ ad tkemmleḍ?",
+        "saveWarning": "Sekles tingalin-a deg umkan yettwaḥerzen. Ur tetzmireḍ ara ad tent-twaliḍ tikelt nniḍen.",
+        "copy": "Senɣel",
+        "download": "Zdem",
+        "downloaded": "Ḍmen dakken tsekleseḍ tingalin-a",
+        "generated": "Tingalin n tallelt ttwasnulfant s lewziq",
+        "noCodes": "Ulac tingalin n tallelt yettwasnulfun"
+      },
+      "disable": {
+        "title": "Sens Asentem s Sin n Yimeḍranen",
+        "confirm": "Sekcem awal-inek uffir iwakken ad tsenseḍ akk tarrayin n 2FA",
+        "passwordPlaceholder": "Awal uffir n tura",
+        "cancel": "Sefsex",
+        "submit": "Sens 2FA",
+        "success": "Asentem s sin n yimeḍranen yensa"
+      },
+      "generalPrefs": {
+        "title": "Ismanyen n Tɣellist",
+        "desc": "Sefrek ilɣuten n unekcum, asefrek n waṭas n wallalen, d wakud n umdel n tɣimit.",
+        "loginAlerts": "Ilɣuten n Unekcum",
+        "loginAlertsDesc": "Awi ilɣuten s e-mail ɣef unekcum seg wallalen ur nettwasen ara",
+        "deviceMgmt": "Asefrek n Wallalen",
+        "deviceMgmtDesc": "Ḍfer tiɣimin tirammadin d wallalen iflisen",
+        "sessionTimeout": "Akud n Tɣimit"
+      },
+      "securityPrefsSaved": "Ismanyen n tɣellist ttwasfeḍen s lewziq"
+    },
+    "toast": {
+      "enabled": "Asentem s sin n yimeḍranen yermed",
+      "disabled": "Asentem s sin n yimeḍranen yensa",
+      "codeSent": "Tangalt n usenqed tettwazen ɣer e-mail-inek",
+      "invalidCode": "Tangalt n usenqed d tasekrikabt",
+      "backupCodesCopied": "Tingalin n tallelt ttwasenɣlent ɣer tkatut",
+      "backupCodesGenerated": "Tingalin timaynutin n tallelt ttwasnulfant",
+      "passkeyRegistered": "Tasarut n unekcum tettwajerred s lewziq",
+      "passkeyFailed": "Afecl deg ujerred n tsarut n unekcum",
+      "emailOtpSent": "Tangalt n usenqed tettwazen",
+      "emailOtpVerified": "OTP s e-mail yettwasenqed s lewziq"
+    },
+    "errors": {
+      "invalidPassword": "Awal uffir d asekrikab",
+      "codeRequired": "Tangalt n usenqed d tamelzimt",
+      "setupFirst": "Ttxil-k sbedd tarrayt uqbel",
+      "emailNotAvailable": "Tameẓla n e-mail teḥbes kra. Ales aɛreḍ ticki.",
+      "generic": "Tella-d tuccḍa. Ales aɛreḍ."
+    }
+  }
+}

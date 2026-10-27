@@ -1,0 +1,36 @@
+{
+    "search": {
+        "title": "Search Podacium",
+        "subtitle": "Find courses, projects, and freelancers across Podacium",
+        "placeholder": "Search...",
+        "searchButton": "Search",
+        "noResults": "No results found",
+        "tryDifferent": "Try a different search term or filter",
+        "resultsFound": "Found {total} results for \"{query}\"",
+        "resultsCount": "Found",
+        "filterAll": "All",
+        "tryAgain": "Try again",
+        "viewAllResults": "View all results",
+        "matchPercent": "{pct}% match",
+        "types": {
+            "module": "Module",
+            "project": "Project",
+            "user": "Freelancer",
+            "modules": "Modules",
+            "projects": "Projects",
+            "users": "Freelancers"
+        }
+    },
+    "meta": {
+        "search": {
+            "title": "Search — Podacium",
+            "description": "Search for courses, freelancers, and projects across Podacium."
+        }
+    },
+    "breadcrumbs": {
+        "search": "Search"
+    },
+    "tryAgain": "Try again",
+    "filterAll": "All",
+    "matchPercent": "{percent}% match"
+}

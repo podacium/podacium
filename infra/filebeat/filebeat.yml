@@ -1,0 +1,15 @@
+filebeat.inputs:
+  - type: container
+    paths:
+      - /var/lib/docker/containers/*/*.log
+    processors:
+      - add_docker_metadata: ~
+      - decode_json_fields:
+          fields: ["message"]
+          target: "json"
+
+output.elasticsearch:
+  hosts: ['${ELASTICSEARCH_HOST:localhost:9200}']
+  index: "podacium-logs-%{+yyyy.MM.dd}"
+
+logging.level: info

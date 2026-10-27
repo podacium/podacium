@@ -1,0 +1,1749 @@
+{
+  "hub": {
+    "meta": {
+      "title": "مركز العمل الحر | ابحث عن مشاريع ومواهب",
+      "description": "المنصة الرائدة للعمل الحر في الجزائر التي تربط الشركات بأصحاب المواهب. ابحث عن مشاريع، وظِّف مواهب، وطوِّر مسيرتك المهنية."
+    },
+    "hero": {
+      "badge": "المنصة الرائدة للعمل الحر في الجزائر",
+      "titleLine1": "اعثر على",
+      "titleHighlight": "الطرف الحر المثالي",
+      "description": "تواصل مع أفضل المواهب في الجزائر لمشاريعك، أو طوِّر مسيرتك في العمل الحر من خلال فرص مثيرة من عملاء محليين ودوليين.",
+      "welcomeBack": "أهلاً بعودتك، {name}!",
+      "freelancer": "المستقل الخاص بك",
+      "findNext": "ابحث عن",
+      "project": "مشروعك القادم",
+      "freelancerDescription": "اكتشف مشاريع مثيرة تتناسب مع مهاراتك وطوِّر مسيرتك المهنية في الجزائر",
+      "clientDescription": "تواصل مع أفضل المواهب الجزائرية لمشاريعك وحوِّل أفكارك إلى واقع"
+    },
+    "stats": {
+      "title": "لوحة التحكم الخاصة بك",
+      "description": "نظرة عامة على نشاطك وأدائك في العمل الحر في الوقت الفعلي",
+      "freelancer": {
+        "activeProposals": "العروض النشطة",
+        "activeProposalsTooltip": "عروض تنتظر رد العميل",
+        "activeContracts": "العقود النشطة",
+        "activeContractsTooltip": "المشاريع قيد التنفيذ حالياً",
+        "totalEarnings": "إجمالي الأرباح",
+        "totalEarningsTooltip": "إجمالي الأرباح من جميع المشاريع المكتملة",
+        "successRate": "معدل النجاح",
+        "successRateTooltip": "نسبة العروض المقبولة"
+      },
+      "client": {
+        "activeProjects": "المشاريع النشطة",
+        "activeProjectsTooltip": "المشاريع قيد التطوير حالياً",
+        "openProjects": "المشاريع المفتوحة",
+        "openProjectsTooltip": "المشاريع التي تقبل العروض",
+        "totalSpent": "إجمالي المنصرف",
+        "totalSpentTooltip": "إجمالي المبلغ المنفق على العمل الحر",
+        "completionRate": "معدل الإنجاز",
+        "completionRateTooltip": "نسبة المشاريع المكتملة بنجاح"
+      }
+    },
+    "sections": {
+      "trendingProjects": "المشاريع الرائجة",
+      "trendingProjectsDesc": "تصفح أحدث الفرص من الشركات الجزائرية",
+      "topFreelancers": "أفضل المستقلين الجزائريين",
+      "topFreelancersDesc": "محترفو بوداسيوم جاهزون لمشاريعك",
+      "howItWorks": "كيف يعمل",
+      "howItWorksDesc": "خطوات بسيطة لبدء رحلتك في العمل الحر",
+      "recommendedProjects": "المشاريع الموصى بها",
+      "recommendedProjectsDesc": "مشاريع تتناسب مع مهاراتك ومستوى خبرتك",
+      "recentActivity": "النشاط الأخير",
+      "recentActivityDesc": "أحدث التحديثات من نشاطك ومشاريعك في العمل الحر",
+      "showingFilteredProjects": "عرض {showing} من أصل {total} مشروع في فئة \"{category}\"",
+      "trending": "رائج",
+      "tips": "نصائح وموارد"
+    },
+    "categories": {
+      "all": "جميع الفئات",
+      "webDevelopment": "تطوير الويب",
+      "uiUxDesign": "تصميم واجهة المستخدم/التجربة",
+      "digitalMarketing": "التسويق الرقمي",
+      "dataScience": "علم البيانات",
+      "mobileApps": "تطبيقات الجوال",
+      "devopsCloud": "DevOps والسحابة",
+      "businessConsulting": "الأعمال والاستشارات"
+    },
+    "filters": {
+      "category": "تصفية حسب الفئة",
+      "showingCount": "عرض {showing} من أصل {total} مشروع",
+      "matchingProjects": "{count} مشروع يطابق عامل التصفية",
+      "apply": "تطبيق عوامل التصفية",
+      "clear": "مسح عوامل التصفية"
+    },
+    "actions": {
+      "browseProjects": "تصفح المشاريع",
+      "browseProjectsDesc": "ابحث عن مشاريع تتناسب مع مهاراتك وتفضيلاتك",
+      "viewProposals": "عرض العروض",
+      "viewProposalsDesc": "تحقق من حالة العروض والتطبيقات المقدمة",
+      "completeProfile": "أكمل ملفك الشخصي",
+      "completeProfileDesc": "أضف مهارات وشهادات ومحفظة أعمال لتميز نفسك",
+      "createProject": "إنشاء مشروع",
+      "createProjectDesc": "انشر مشروعاً جديداً واعثر على المستقل المثالي",
+      "findFreelancers": "البحث عن مستقلين",
+      "findFreelancersDesc": "تصفح المستقلين الموهوبين لاحتياجات مشروعك",
+      "viewContracts": "عرض العقود",
+      "viewContractsDesc": "إدارة عقودك النشطة وتسليمات المشاريع",
+      "findWork": "ابحث عن عمل",
+      "viewAll": "عرض الكل",
+      "editProfile": "تعديل الملف الشخصي",
+      "getStarted": "ابدأ الآن",
+      "browse": "تصفح",
+      "manage": "إدارة"
+    },
+    "quickActions": {
+      "title": "إجراءات سريعة",
+      "description": "ابدأ بهذه الإجراءات السريعة المخصصة لك"
+    },
+    "search": {
+      "findProjects": "البحث عن مشاريع",
+      "findProjectsDesc": "تصفح المشاريع التي تتناسب مع مهاراتك وخبراتك. قم بالتصفية حسب المهارات والميزانية والجدول الزمني.",
+      "findFreelancers": "البحث عن مستقلين",
+      "findFreelancersDesc": "اكتشف مستقلين موهوبين لمشروعك القادم. قم بالتصفية حسب المهارات والموقع وحالة التحقق."
+    },
+    "roles": {
+      "asFreelancer": "كمستقل",
+      "asClient": "كعميل",
+      "primary": "الرئيسي"
+    },
+    "buttons": {
+      "startFreelancing": "ابدأ العمل الحر",
+      "hireTalent": "وظِّف موهبة",
+      "browseAllProjects": "تصفح جميع المشاريع",
+      "browseAllFreelancers": "تصفح جميع المستقلين",
+      "clearFilter": "مسح عامل التصفية",
+      "viewAll": "عرض الكل",
+      "viewAllCategoryProjects": "عرض جميع مشاريع {category}",
+      "exploreAllCategories": "استكشف جميع الفئات",
+      "getStartedFree": "ابدأ مجاناً",
+      "signInToContinue": "تسجيل الدخول للمتابعة",
+      "verifyPhone": "تحقق من الهاتف",
+      "updateRole": "تحديث الدور",
+      "completeProfile": "أكمل ملفك الشخصي",
+      "getStarted": "ابدأ الآن",
+      "browseProjects": "تصفح المشاريع",
+      "tryAgain": "حاول مرة أخرى",
+      "postProject": "انشر مشروعاً",
+      "learnMore": "اعرف المزيد",
+      "viewAllActivity": "عرض كل النشاط",
+      "exploreMore": "استكشف المزيد",
+      "createProject": "إنشاء مشروع",
+      "close": "إغلاق"
+    },
+    "badges": {
+      "easySecure": "سهل وآمن",
+      "newProjects": "جديد {count}",
+      "activeProposals": "نشط {count}",
+      "profileScore": "{score}%",
+      "complete": "مكتمل",
+      "availableFreelancers": "متاح {count}",
+      "activeContracts": "نشط {count}",
+      "recommended": "موصى به",
+      "live": "مباشر",
+      "featured": "مميز",
+      "verified": "تم التحقق",
+      "new": "جديد",
+      "trending": "رائج"
+    },
+    "empty": {
+      "noProjectsInCategory": "لم يتم العثور على مشاريع في \"{category}\"",
+      "noProjectsMatchCategory": "لا توجد مشاريع تطابق الفئة المحددة. جرب فئة أخرى أو تصفح جميع المشاريع.",
+      "noFreelancersAvailable": "لا يوجد مستقلون متاحون",
+      "checkBackLater": "ارجع لاحقاً أو استكشف فئات أخرى.",
+      "noProjectsFound": "لم يتم العثور على مشاريع",
+      "adjustFilters": "لم نتمكن من العثور على أي مشاريع تطابق معاييرك. حاول تعديل عوامل التصفية أو ارجع لاحقاً لفرص جديدة.",
+      "noFreelancersFound": "لم يتم العثور على مستقلين",
+      "adjustFreelancerFilters": "لا يوجد مستقلون يطابقون معايير البحث الحالية. حاول تعديل عوامل التصفية أو استكشف مجموعات مهارات مختلفة.",
+      "noRecentActivity": "لا يوجد نشاط حديث",
+      "startJourney": "ابدأ رحلتك في العمل الحر من خلال تصفح المشاريع أو نشر مشروعك الأول. سيظهر نشاطك هنا."
+    },
+    "errors": {
+      "loadError": "فشل تحميل البيانات. يرجى المحاولة مرة أخرى.",
+      "searchError": "فشل البحث. يرجى المحاولة مرة أخرى.",
+      "unableToLoadProjects": "تعذر تحميل المشاريع",
+      "unableToLoadFreelancers": "تعذر تحميل المستقلين"
+    },
+    "verification": {
+      "verificationRequired": "التحقق مطلوب",
+      "completeProfileTitle": "أكمل ملفك الشخصي للوصول إلى المركز",
+      "completeProfileDesc": "للوصول إلى مركز العمل الحر وإطلاق إمكانياتك، تحتاج إلى:",
+      "phoneVerification": "التحقق من الهاتف",
+      "phoneVerificationDesc": "تحقق من رقم هاتفك لتعزيز الأمان وبناء الثقة مع العملاء. هذا مطلوب لجميع مستخدمي المركز.",
+      "phoneManualNotice": "التحقق التلقائي من الهاتف غير متاح حالياً. للتحقق من رقم هاتفك، يرجى التواصل مع فريقنا عبر البريد الإلكتروني مع تفاصيل حسابك.",
+      "contactAdmin": "تواصل مع podacium@podacium.com",
+      "phoneEmailSubject": "طلب التحقق من رقم الهاتف",
+      "phoneEmailBody": "مرحباً،\n\nأرغب في التحقق من رقم هاتفي لحسابي في العمل الحر.\n\nالبريد الإلكتروني للحساب: {email}\n\nشكراً.",
+      "profileCompletion": "إكمال الملف الشخصي",
+      "profileCompletionDesc": "أضف مهاراتك ومحفظة أعمالك وتفاصيلك المهنية لجذب فرص أفضل.",
+      "studentRestriction": "الطلاب لا يستطيعون الوصول إلى المركز",
+      "studentRestrictionDesc": "مركز العمل الحر مصمم للعاملين بالعمل الحر والشركات. إذا كنت عاملاً بالعمل الحر أو صاحب عمل، يرجى تحديث دورك للبدء.",
+      "roleRequirement": "متطلب الدور",
+      "roleRequirementDesc": "يجب أن تكون عاملاً بالعمل الحر أو صاحب عمل للوصول إلى المركز.",
+      "accessRequirements": "متطلبات الوصول إلى المركز",
+      "requirement1": "أن تكون عاملاً بالعمل الحر أو صاحب عمل (وليس طالباً)",
+      "requirement2": "التحقق من رقم هاتفك",
+      "requirement3": "إكمال ملفك الشخصي المهني"
+    },
+    "profile": {
+      "completeProfile": "أكمل ملفك الشخصي",
+      "completeProfileDesc": "ملفك الشخصي مكتمل بنسبة {score}% فقط. أكمل ملفك الشخصي للحصول على المزيد من المشاريع وزيادة ظهورك.",
+      "completenessScore": "درجة اكتمال الملف الشخصي",
+      "scoreIncomplete": "ملفك الشخصي غير مكتمل",
+      "scoreInProgress": "ملفك الشخصي قيد الإكمال",
+      "scoreComplete": "ملفك الشخصي مكتمل"
+    },
+    "activity": {
+      "contractCompleted": "تم إكمال العقد",
+      "contractCompletedDesc": "تم إكمال العقد لمشروع \"{project}\" بنجاح",
+      "newDelivery": "تسليم جديد",
+      "newDeliveryDesc": "العقد لمشروع \"{project}\" به تسليم جديد",
+      "proposalSubmitted": "تم تقديم عرض",
+      "proposalSubmittedDesc": "لقد قدمت عرضاً لمشروع \"{project}\"",
+      "completeProfile": "أكمل ملفك الشخصي",
+      "completeProfileDesc": "ملفك الشخصي غير مكتمل. أضف المزيد من التفاصيل للحصول على فرص أفضل.",
+      "now": "الآن",
+      "minutesAgo": "منذ {count} دقيقة",
+      "hoursAgo": "منذ {count} ساعة",
+      "daysAgo": "منذ {count} يوم",
+      "weeksAgo": "منذ {count} أسبوع",
+      "project": "مشروع"
+    },
+    "howItWorks": {
+      "step1Title": "أنشئ ملفك الشخصي",
+      "step1Description": "اشترك وابنِ مسيرتك المهنية بميزات بوداسيوم. احصل على التحقق لبناء الثقة مع العملاء.",
+      "step2Title": "ابحث عن مشاريع",
+      "step2Description": "تصفح آلاف المشاريع التي تطابق مهاراتك. قدم عروض وتفاوض مباشرة مع العملاء.",
+      "step3Title": "احصل على أموالك بأمان",
+      "step3Description": "استخدم PodaPoints لفتح ميزات السوق. اشترِ الترقيات وإعلانات المشاريع والإدراجات — لا عمولات على أرباحك."
+    },
+    "cta": {
+      "title": "هل أنت مستعد لبدء رحلتك في العمل الحر؟",
+      "description": "انضم إلى آلاف المستقلين والشركات الجزائرية الذين ينمون معاً بالفعل.",
+      "readyToEarn": "مستعد للبدء في كسب المال؟",
+      "readyToGetStarted": "مستعد للبدء؟",
+      "freelancerDescription": "انضم إلى آلاف المستقلين الجزائريين الذين يطورون مسيرتهم المهنية معنا. ابدأ رحلتك اليوم.",
+      "clientDescription": "اعثر على المستقل المثالي لمشروعك وحوِّل أفكارك إلى واقع مع أفضل المواهب الجزائرية."
+    },
+    "tips": {
+      "freelancerTitle": "نصائح وموارد للمستقلين",
+      "clientTitle": "موارد وأدلة للعملاء",
+      "description": "موارد ونصائح مفيدة للنجاح في رحلتك في العمل الحر",
+      "freelancer": {
+        "winningProposals": "كتابة عروض رابحة",
+        "winningProposalsDesc": "تعلم كيفية كتابة عروض تبرز وتفوز بالمشاريع باستمرار. يتضمن قوالب وأمثلة حقيقية.",
+        "pricingStrategies": "استراتيجيات التسعير",
+        "pricingStrategiesDesc": "حدد أسعاراً تنافسية وضاعف أرباحك. تعرف على التسعير القائم على القيمة وتكتيكات التفاوض.",
+        "securePayments": "مدفوعات وعقود آمنة",
+        "securePaymentsDesc": "ضمن معاملات آمنة وحمِ عملك بعقود مناسبة ومعالم دفع."
+      },
+      "client": {
+        "writingBriefs": "كتابة موجزات المشاريع",
+        "writingBriefsDesc": "أنشئ موجزات مشاريع واضحة تجذب المستقلين المناسبين وتحدد التوقعات من البداية.",
+        "findingTalent": "البحث عن المواهب وفحصها",
+        "findingTalentDesc": "نصائح للعثور على أفضل المستقلين وفحصهم. تعلم كيفية مراجعة محافظ الأعمال وإجراء المقابلات.",
+        "projectManagement": "إدارة المشاريع",
+        "projectManagementDesc": "أدوات وتقنيات لإدارة مشاريع العمل الحر بفعالية وضمان التسليم الناجح."
+      }
+    },
+    "projectSingular": "مشروع",
+    "projectPlural": "مشاريع",
+    "reviews": {
+      "invalidRating": "قيمة التقييم غير صالحة",
+      "submitFailed": "فشل إرسال المراجعة",
+      "rating": "التقييم",
+      "comment": "تعليق",
+      "commentPlaceholder": "شارك تجربتك مع هذا المشروع...",
+      "cancel": "إلغاء",
+      "saveChanges": "حفظ التغييرات",
+      "submit": "إرسال المراجعة",
+      "timeAgo": {
+        "justNow": "الآن",
+        "minutes": "منذ {count} دقيقة",
+        "minutes_plural": "منذ {count} دقائق",
+        "hours": "منذ {count} ساعة",
+        "hours_plural": "منذ {count} ساعات",
+        "days": "منذ {count} يوم",
+        "days_plural": "منذ {count} أيام",
+        "months": "منذ {count} شهر",
+        "months_plural": "منذ {count} أشهر",
+        "years": "منذ {count} سنة",
+        "years_plural": "منذ {count} سنوات"
+      },
+      "noReviews": "لا توجد مراجعات بعد",
+      "anonymousUser": "مجهول",
+      "edited": "(تم التعديل)",
+      "editReview": "تعديل المراجعة",
+      "appeal": "استئناف",
+      "blindReview": "مراجعة عمياء",
+      "title": "المراجعات والتقييمات",
+      "leaveReview": "ترك مراجعة",
+      "appealReasonPlaceholder": "اشرح سبب انتهاك هذه المراجعة للسياسات أو كونها غير صحيحة واقعياً...",
+      "appealSubmitted": "تم تقديم طلب الاستئناف الخاص بك.",
+      "redactedMessage": "تم حجب هذه الرسالة",
+      "underAppealMessage": "هذه المراجعة قيد الاستئناف"
+    },
+    "contractPayment": {
+      "title": "الدفع وضمان التسليم",
+      "badge": "ضمان التسليم المباشر الآمن",
+      "contractInfo": "عقد رقم #{id} • {title}",
+      "loading": "جاري تحميل تفاصيل الدفع...",
+      "loadError": "تعذر تحميل بيانات العقد",
+      "copiedRef": "تم نسخ رمز المعاملة المرجعي بنجاح!",
+      "copiedRip": "تم نسخ رقم الحساب الجاري RIP / CCP بنجاح!",
+      "paymentRecordedSuccess": "تم تسجيل الدفع! تم إشعار المستقل لتأكيد الاستلام.",
+      "statusUpdated": "تم تحديث الحالة بنجاح.",
+      "paymentRecordError": "فشل في تسجيل حالة الدفع",
+      "fiscalBanner": {
+        "title": "الخصم الضريبي للشركات والامتثال لوكالة ANAE (القانون 22-23)",
+        "description": "من خلال التسوية برمز المعاملة الرسمي، يتم تلقائيًا إنشاء حزمة الوثائق الثلاثية (العقد الموقع، محضر الاستلام، فاتورة المقاول الذاتي وفق المادة 282 مكرر 6 من قانون الضرائب). تضمن هذه الحزمة خصمًا بنسبة 100% من ضريبة أرباح الشركات IBS وفقًا للمادة 169."
+      },
+      "card": {
+        "title": "بيانات التحويل المباشر",
+        "description": "قم بالتحويل مباشرة إلى حساب بريدي موب / الحساب البريدي الجاري / البنكي للمستقل.",
+        "referenceLabel": "الرمز المرجعي الإلزامي (ملاحظة التحويل)",
+        "referenceHint": "يجب كتابة هذا الرمز في خانة سبب التحويل على تطبيق بريدي موب.",
+        "copyRefTitle": "نسخ الرمز المرجعي",
+        "ripLabel": "رقم الحساب البريدي الجاري RIP / CCP للمستقل",
+        "ripHint": "حساب موثق من طرف بوداسيوم • بطاقة المقاول الذاتي مفعلة.",
+        "copyRipTitle": "نسخ رقم الحساب RIP",
+        "amountLabel": "المبلغ المستحق لهذه المرحلة",
+        "tvaLabel": "الرسم على القيمة المضافة TVA",
+        "tvaExempt": "0% (معفى ضريبياً وفق قانون المقاول الذاتي 22-23)",
+        "confirmButton": "لقد قمت بإجراء التحويل عبر بريدي موب"
+      },
+      "ondaNotice": {
+        "title": "حماية وتنازل حقوق الملكية الفكرية (الأمر رقم 03-05):",
+        "description": "بمجرد تأكيد استلام المبلغ، يتم تحرير مفتاح فك تشفير الملفات والتنازل الحصري عن كافة الحقوق المالية للمشروع لصالح العميل فورًا."
+      },
+      "ocr": {
+        "title": "التحقق الآلي من الإيصال (اختياري)",
+        "description": "الصق نص رسالة بريدي موب / CCP أو وصل التحويل للتحقق الفوري والآلي من العملية.",
+        "placeholder": "الصق نص الوصل أو رسالة SMS هنا (مثال: بريد الجزائر بريدي موب ID: BM123456...)",
+        "verifyButton": "التحقق من الإيصال",
+        "verifying": "جاري التحقق...",
+        "verifiedValid": "تم التحقق بنجاح! المبلغ ورقم المرجع متطابقان تمامًا.",
+        "validStatus": "مطابق وموثق",
+        "matchDetails": "رقم المعاملة: {txn} • المبلغ: {amount}",
+        "verifyError": "فشل التحقق من الإيصال. يرجى التأكد من صحة المبلغ والرمز المرجعي."
+      },
+      "stepper": {
+        "title": "بروتوكول الضمان اللامركزي غير الاحتجازي (قانون 22-23 المقاول الذاتي)",
+        "badge": "بدون احتجاز للأموال",
+        "step1Title": "الإيداع والمرجع",
+        "step1Desc": "تحويل مباشر عبر بريدي موب / الحساب البريدي الجاري برمز فريد",
+        "step2Title": "خزينة التشفير AES-256",
+        "step2Desc": "تسليم مشفر مودع من قبل المستقل",
+        "step3Title": "محضر الاستلام",
+        "step3Desc": "معاينة وتوقيع ثنائي لمحضر الاستلام",
+        "step4Title": "تحرير المفتاح والإنهاء",
+        "step4Desc": "تحرير مفتاح التشفير DEK وتوليد الحزمة الضريبية للمادة 169"
+      },
+      "milestonesLabel": "مراحل العقد (Milestones)",
+      "milestoneFallback": "المرحلة #{id}"
+    },
+    "taxCenter": {
+      "title": "المركز الجبائي للمقاول الذاتي (ANAE)",
+      "subtitle": "تتبع رقم الأعمال السنوي، احتساب الضريبة الجزافية الوحيدة 0.5%، واستخراج تصريح G50 الرسمي.",
+      "statuteBadge": "قانون 22-23 / ق.م 2024 مادة 282 مكرر 6",
+      "downloadG50": "تحميل تصريح G50 الجبائي",
+      "loadError": "تعذر تحميل الكشف الجبائي G50",
+      "loading": "جاري تجميع السجل الجبائي واحتساب الضريبة...",
+      "banner": {
+        "title": "النظام الجبائي القانوني للمقاول الذاتي (القانون رقم 22-23)",
+        "description": "وفقاً لأحكام قانون المالية (المادة 282 مكرر من قانون الضرائب المباشرة)، يستفيد المقاول الذاتي الرقمي من نسبة ضريبة مخفضة 0.5% وإعفاء تام من الرسم على القيمة المضافة (TVA) حتى سقف 5,000,000 دج سنوياً."
+      },
+      "metrics": {
+        "turnover": "رقم الأعمال السنوي (CA)",
+        "turnoverHint": "إجمالي المعاملات المصرح بها للسنة المالية {year}",
+        "ifuTaxDue": "ضريبة IFU الجزافية (0.5%)",
+        "ifuTaxHint": "محسوبة وفقًا للمادة 282 مكرر من CIDTA",
+        "ceiling": "السقف القانوني السنوي",
+        "ceilingLimit": "الحد الأقصى {limit}"
+      },
+      "schedule": {
+        "title": "الجدول الفصلي لرقم الأعمال والضريبة",
+        "subtitle": "تفصيل فصلي مخصص للتصريح الجبائي لدى مصلحة الضرائب (استمارة G50)",
+        "quarterLabel": "الفصل {quarter} (ف{quarter})",
+        "invoices": "فواتير",
+        "turnover": "رقم الأعمال",
+        "ifuDue": "الضريبة المستحقة (0.5%)"
+      }
+    },
+    "taxPack": {
+      "title": "حزمة الخصم الضريبي للشركات (IBS)",
+      "subtitle": "تحميل ملف الفواتير وعقود الإنجاز المعتمدة لخصم 100% من نفقات الخدمات المستقلة من الضريبة على أرباح الشركات.",
+      "badge": "مطابق للمادة 169 من قانون الضرائب",
+      "downloadPack": "تحميل الحزمة الجبائية كاملة",
+      "loadError": "تعذر تحميل حزمة الخصم الجبائي",
+      "loading": "جاري تجميع الوثائق المحاسبية القابلة للخصم...",
+      "banner": {
+        "title": "ضمان الخصم الجبائي للشركات (المادة 169 CIDTA)",
+        "description": "جميع المدفوعات المنفذة عبر بوداسيوم مرفقة بفواتير مقاول ذاتي معتمدة ومحاضر تسليم رسمية، مما يتيح لشركتكم خصم 100% من هذه الأعباء من النتيجة الجبائية الخاضعة لضريبة أرباح الشركات (IBS)."
+      },
+      "metrics": {
+        "totalDeductible": "إجمالي الأعباء القابلة للخصم",
+        "totalDeductibleHint": "مجموع أتعاب المستقلين وعمولات الخدمة للبلاتفورم",
+        "ibsSavings19": "التوفير الضريبي المقدر (19%)",
+        "ibsSavings19Hint": "نسبة الشركات الإنتاجية / الصناعية",
+        "ibsSavings26": "التوفير الضريبي المقدر (26%)",
+        "ibsSavings26Hint": "نسبة الشركات الخدمية / التجارية"
+      },
+      "manifest": {
+        "title": "سجل الفواتير ومحاضر التسليم الموثقة",
+        "subtitle": "قائمة مفصلة بالوثائق المحاسبية المعتمدة لقسم المحاسبة والضرائب",
+        "invoicesCount": "فواتير",
+        "freelancerType": "خدمة المستقل",
+        "platformType": "رسوم المنصة"
+      }
+    }
+  },
+  "contracts": {
+    "milestones": {
+      "loading": "جاري التحميل...",
+      "title": "المراحل",
+      "contractHeader": "عقد #{id}",
+      "noMilestones": "لم يتم تحديد مراحل.",
+      "due": "تاريخ الاستحقاق: {date}",
+      "status": "الحالة:",
+      "markSubmitted": "تحديد كمُقدَّم",
+      "approve": "قبول",
+      "reject": "رفض"
+    },
+    "dispute": {
+      "loadError": "تعذر تحميل النزاع",
+      "accessDenied": "تم رفض الوصول",
+      "provideReasonAndDetails": "يرجى تقديم سبب وتفاصيل.",
+      "descriptionMinLength": "يجب أن يحتوي الوصف على 20 حرفاً على الأقل.",
+      "submitSuccess": "تم فتح النزاع بنجاح.",
+      "submitError": "فشل فتح النزاع.",
+      "loading": "جارٍ تحميل النزاع...",
+      "title": "إدارة النزاعات",
+      "contractHeader": "العقد #{id} — {title}",
+      "backToContract": "العودة إلى العقد",
+      "openDisputes": "النزاعات المفتوحة",
+      "noDisputes": "لا توجد نزاعات مفتوحة لهذا العقد.",
+      "createdBy": "تم الإنشاء بواسطة",
+      "you": "أنت",
+      "otherParty": "الطرف الآخر",
+      "reportIssue": "الإبلاغ عن مشكلة",
+      "reasonLabel": "السبب",
+      "selectReason": "اختر سبباً",
+      "reasons": {
+        "nonDelivery": "عدم التسليم",
+        "poorQuality": "جودة رديئة",
+        "incompleteRequirements": "متطلبات غير مكتملة",
+        "other": "أخرى"
+      },
+      "detailsLabel": "تفاصيل إضافية",
+      "detailsPlaceholder": "صف المشكلة بالتفصيل...",
+      "submitting": "جارٍ الإرسال...",
+      "submitDispute": "فتح نزاع",
+      "notice": "سيؤدي فتح النزاع إلى تعليق الدفع حتى تتم التسوية."
+    },
+    "deliver": {
+      "authError": "المصادقة مطلوبة. يرجى تسجيل الدخول مرة أخرى.",
+      "notFoundError": "العقد غير موجود. ربما تم حذفه أو ليس لديك حق الوصول.",
+      "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+      "unexpectedError": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
+      "descriptionRequired": "يرجى تقديم وصف للتسليم الخاص بك",
+      "validUrlRequired": "يرجى إدخال عنوان URL صالح يبدأ بـ http:// أو https://",
+      "pageTitle": "مخرجات العقد",
+      "deliverable": "المخرج",
+      "submittedOn": "تم الإرسال في {date}",
+      "deliveredStatus": "تم التسليم",
+      "description": "الوصف",
+      "noDescription": "لا يوجد وصف مقدم",
+      "attachedFiles": "الملفات المرفقة",
+      "download": "تنزيل",
+      "approve": "قبول",
+      "requestRevision": "طلب تعديل",
+      "authRequired": "مطلوب تسجيل الدخول",
+      "signInTitle": "تسجيل الدخول لعرض المخرجات",
+      "signInDesc": "تحتاج إلى تسجيل الدخول لعرض مخرجات العقد. يرجى تسجيل الدخول للمتابعة.",
+      "signInButton": "تسجيل الدخول",
+      "createAccountButton": "إنشاء حساب",
+      "notFoundTitle": "العقد غير موجود",
+      "notFoundHeader": "العقد #{id} غير موجود",
+      "notFoundDesc": "العقد الذي تبحث عنه غير موجود أو تمت إزالته. قد يكون قد تم حذفه أو ليس لديك إذن بعرضه.",
+      "viewContracts": "عرض عقودك",
+      "browseProjects": "تصفح المشاريع",
+      "freelancerSubtitle": "إرسال وإدارة مخرجاتك لهذا العقد",
+      "clientSubtitle": "مراجعة وإدارة المخرجات المقدمة من المستقل",
+      "freelancerView": "عرض المستقل",
+      "clientView": "عرض العميل",
+      "refreshData": "تحديث البيانات",
+      "backToContract": "العودة إلى تفاصيل العقد",
+      "submittedDeliverables": "المخرجات المقدمة",
+      "freelancerDeliverablesDesc": "عملك المرسل لهذا العقد",
+      "clientDeliverablesDesc": "المخرجات المقدمة من قبل المستقل",
+      "totalBadge": "{count} إجمالي",
+      "noDeliveriesFreelancerTitle": "لا توجد تسليمات بعد",
+      "noDeliveriesClientTitle": "لم يتم استلام أي تسليمات",
+      "noDeliveriesFreelancerDesc": "أرسل أول مخرج لك لمشاركة عملك مع العميل.",
+      "noDeliveriesClientDesc": "لم يقدم المستقل أي تسليمات حتى الآن.",
+      "submitNewDeliverable": "إرسال مخرج جديد",
+      "shareWorkDesc": "شارك عملك مع العميل",
+      "formDescriptionLabel": "الوصف *",
+      "formDescriptionPlaceholder": "صف ما تقوم بتسليمه، بما في ذلك أي ملاحظات أو تعليمات...",
+      "fileUrlsLabel": "روابط الملفات (اختياري)",
+      "fileUrlPlaceholder": "أدخل رابط الملف (مثال: https://example.com/file.pdf)",
+      "fileUrlsHelp": "قدم روابط لأي ملفات أو مستندات متعلقة بهذا المخرج",
+      "submitting": "جارٍ الإرسال...",
+      "submitDeliverable": "إرسال المخرج",
+      "contractStatusTitle": "حالة العقد",
+      "contractStatusDesc": "الحالة الحالية لهذا العقد",
+      "statusLabel": "الحالة",
+      "amountLabel": "المبلغ",
+      "roleLabel": "دورك",
+      "roleFreelancer": "مستقل",
+      "roleClient": "عميل",
+      "inactiveWarning": "هذا العقد غير نشط. لا يمكنك تقديم مخرجات جديدة.",
+      "needHelp": "هل تحتاج إلى مساعدة؟",
+      "needHelpDesc": "احصل على الدعم بخصوص المخرجات",
+      "contactSupport": "الاتصال بالدعم",
+      "messageParty": "مراسلة {party}",
+      "partyClient": "العميل",
+      "partyFreelancer": "المستقل"
+    },
+    "list": {
+      "negotiable": "قابل للتفاوض",
+      "notSet": "غير محدد",
+      "contractTitle": "عقد #{id}",
+      "noTermsSpecified": "لا توجد شروط إضافية محددة",
+      "amount": "المبلغ",
+      "duration": "المدة",
+      "flexible": "مرن",
+      "yourRole": "دورك",
+      "freelancer": "مستقل",
+      "client": "عميل",
+      "created": "تم الإنشاء",
+      "timeline": "الجدول الزمني",
+      "to": "إلى",
+      "noFreelancerAssigned": "لم يتم تعيين مستقل",
+      "noClientAssigned": "لم يتم تعيين عميل",
+      "viewDetails": "عرض التفاصيل",
+      "viewContractDetails": "عرض تفاصيل العقد",
+      "accessDeniedMessage": "ليس لديك صلاحية الوصول إلى العقود",
+      "accessRestricted": "الوصول مقيد",
+      "accessDenied": "تم رفض الوصول",
+      "accessRequiresRoleTitle": "الوصول إلى العقود يتطلب دور مستقل أو عميل",
+      "accessRequiresRoleDescription": "للوصول إلى لوحة تحكم العقود، تحتاج إلى حساب مستقل أو عميل. هذه الميزة متاحة فقط للمستخدمين الذين يشاركون في مشاريع العمل الحر.",
+      "freelancerAccess": "يمكن للمستقلين عرض عقودهم النشطة واتفاقيات المشاريع",
+      "clientAccess": "يمكن للعملاء إدارة العقود للمشاريع المنشورة",
+      "studentNoAccess": "حسابات الطلاب لا يمكنها الوصول إلى إدارة العقود",
+      "redirectingIn": "إعادة التوجيه خلال",
+      "redirectMessage": "سيتم إعادة توجيهك إلى صفحة المركز الرئيسي تلقائياً",
+      "goToHubNow": "اذهب إلى المركز الآن",
+      "updateProfile": "تحديث الملف الشخصي",
+      "authenticationRequired": "المصادقة مطلوبة",
+      "signInToAccess": "سجل الدخول للوصول إلى العقود",
+      "signInDescription": "يجب أن تكون مسجلاً الدخول لعرض وإدارة عقودك. يرجى تسجيل الدخول أو إنشاء حساب للمتابعة.",
+      "signIn": "تسجيل الدخول",
+      "createAccount": "إنشاء حساب",
+      "contractManagement": "إدارة العقود",
+      "your": "عقودك",
+      "contracts": "Contracts",
+      "manageDescription": "إدارة جميع عقود العمل الحر الخاصة بك في مكان واحد. تتبع التقدم وعرض التفاصيل وتعاون بفعالية.",
+      "freelancerDashboard": "لوحة تحكم المستقل",
+      "clientDashboard": "لوحة تحكم العميل",
+      "errors": {
+        "authenticationRequired": "المصادقة مطلوبة. يرجى تسجيل الدخول مرة أخرى.",
+        "failedToLoad": "فشل تحميل العقود",
+        "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+        "unexpectedError": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى."
+      },
+      "tryAgain": "حاول مرة أخرى",
+      "contractOverview": "نظرة عامة على العقود",
+      "contractOverviewDescription": "ملخص لنشاط وأداء عقودك",
+      "live": "مباشر",
+      "totalContracts": "إجمالي العقود",
+      "totalContractsTooltip": "جميع العقود في حسابك",
+      "activeContracts": "العقود النشطة",
+      "activeContractsTooltip": "العقود قيد التنفيذ حالياً",
+      "completed": "مكتمل",
+      "completedTooltip": "العقود المكتملة بنجاح",
+      "pendingReview": "قيد المراجعة",
+      "pendingReviewTooltip": "العقود المنتظرة للموافقة أو الإجراء",
+      "manageContracts": "إدارة العقود",
+      "manageContractsDescription": "ابحث وصفِّ وأدر عقودك بكفاءة",
+      "searchPlaceholder": "ابحث في العقود باسم المشروع، مستقل، عميل، أو شروط...",
+      "refresh": "تحديث",
+      "filterByStatus": "تصفية حسب الحالة",
+      "showingCount": "عرض {showing} من أصل {total} عقد",
+      "allContracts": "جميع العقود",
+      "active": "نشط",
+      "pending": "قيد الانتظار",
+      "cancelled": "ملغي",
+      "disputed": "قيد النزاع",
+      "yourContracts": "عقودك",
+      "allContractsDescription": "جميع عقودك عبر حالات مختلفة",
+      "filteredContractsDescription": "عقود بالحالة: {status}",
+      "createNewContract": "إنشاء عقد جديد",
+      "noContractsFound": "لم يتم العثور على عقود",
+      "noContractsSearch": "لا توجد عقود تطابق استعلام البحث \"{query}\". جرب كلمات رئيسية مختلفة أو امسح بحثك.",
+      "clearSearch": "مسح البحث",
+      "noContractsYet": "لا توجد عقود بعد",
+      "noContractsMatchFilter": "لا توجد عقود تطابق عامل التصفية",
+      "noContractsDescription": "ليس لديك أي عقود بعد. ابدأ بإنشاء مشروع أو التقدم إلى مشاريع موجودة.",
+      "noFilteredContractsDescription": "ليس لديك أي عقود بالحالة \"{status}\". جرب عامل تصفية مختلف.",
+      "browseProjects": "تصفح المشاريع",
+      "createProject": "إنشاء مشروع",
+      "viewAllContracts": "عرض جميع العقود",
+      "findNewProjects": "ابحث عن مشاريع جديدة",
+      "contractTipsTitle": "نصائح إدارة العقود",
+      "contractTipsDescription": "أفضل الممارسات والموارد لإدارة عقودك بفعالية",
+      "learnMore": "اعرف المزيد",
+      "clearDeliverables": "تسليمات واضحة",
+      "clearDeliverablesDescription": "حدد تسليمات وجداول زمنية ومعايير قبول واضحة في عقودك لتجنب سوء الفهم.",
+      "readGuide": "اقرأ الدليل",
+      "paymentTerms": "شروط الدفع",
+      "paymentTermsDescription": "أنشئ شروط دفع ومعالم وطرق دفع واضحة لضمان المدفوعات في الوقت المناسب والأمان المالي.",
+      "disputeResolution": "حل النزاعات",
+      "disputeResolutionDescription": "تضمن عمليات حل نزاعات واضحة في عقودك للتعامل مع الصراعات باحترافية وفعالية.",
+      "needHelpTitle": "هل تحتاج مساعدة بشأن عقد؟",
+      "needHelpDescription": "فريق الدعم لدينا هنا لمساعدتك في أي أسئلة أو مشكلات متعلقة بالعقود. احصل على المساعدة في النزاعات أو التعديلات أو إدارة العقود العامة.",
+      "contactSupport": "اتصل بالدعم"
+    },
+    "detail": {
+      "pageTitle": "تفاصيل العقد",
+      "header": {
+        "badge": "تفاصيل العقد",
+        "title": "عقد #{id}",
+        "description": "عرض وإدارة تفاصيل العقد والتسليمات والتقدم.",
+        "view": {
+          "freelancer": "عرض المستقل",
+          "client": "عرض العميل",
+          "admin": "عرض المسؤول"
+        },
+        "contractNumber": "#{id}"
+      },
+      "errors": {
+        "authenticationRequired": "المصادقة مطلوبة. يرجى تسجيل الدخول مرة أخرى.",
+        "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+        "unexpectedError": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
+        "signInToView": "سجل الدخول لعرض العقد",
+        "signInDescription": "يجب أن تكون مسجلاً الدخول لعرض تفاصيل العقد. يرجى تسجيل الدخول للمتابعة.",
+        "contractNotFound": "العقد غير موجود. ربما تم حذفه أو قد لا يكون لديك وصول.",
+        "notFoundDescription": "العقد الذي تبحث عنه غير موجود أو تمت إزالته. ربما تم حذفه، أو قد لا يكون لديك إذن لعرضه.",
+        "accessRestricted": "الوصول مقيد",
+        "accessDenied": "تم رفض الوصول",
+        "contractAccessRestricted": "الوصول إلى العقد مقيد",
+        "accessDeniedDescription": "يمكنك فقط عرض العقود حيث تكون إما المستقل أو العميل. هذا العقد غير مرتبط بحسابك.",
+        "permissionRules": {
+          "freelancers": "يمكن للمستقلين عرض العقود المعينة لهم",
+          "clients": "يمكن للعملاء عرض عقود مشاريعهم",
+          "noAccess": "لا يمكنك عرض العقود التي لا تنتمي إليك"
+        },
+        "redirecting": "إعادة التوجيه خلال",
+        "redirectNotice": "سيتم إعادة توجيهك إلى صفحة المشاريع تلقائياً",
+        "refreshData": "تحديث البيانات"
+      },
+      "buttons": {
+        "goToProjects": "اذهب إلى المشاريع",
+        "viewYourContracts": "عرض عقودك",
+        "browseProjects": "تصفح المشاريع",
+        "backToContracts": "العودة إلى العقود",
+        "createAccount": "إنشاء حساب",
+        "signIn": "تسجيل الدخول"
+      },
+      "sections": {
+        "projectDetails": "تفاصيل المشروع",
+        "projectDescription": "معلومات حول المشروع المرتبط بهذا العقد",
+        "deliveries": "التسليمات",
+        "deliveriesDescriptionFreelancer": "قدِّم عملك وتتبع التسليمات",
+        "deliveriesDescriptionClient": "راجع ووافق على العمل المسلَّم",
+        "deliveredCount": "تم تسليم {count}",
+        "partiesInvolved": "الأطراف المشاركة",
+        "partiesDescription": "الأشخاص والأدوار في هذا العقد",
+        "contractActions": "إجراءات العقد",
+        "actionsDescription": "إدارة هذا العقد بناءً على دورك",
+        "needHelp": "هل تحتاج مساعدة؟",
+        "helpDescription": "احصل على الدعم بشأن هذا العقد"
+      },
+      "infoCards": {
+        "contractValue": "قيمة العقد",
+        "status": "الحالة",
+        "project": "المشروع",
+        "client": "العميل"
+      },
+      "delivery": {
+        "delivery": "التسليم",
+        "deliveredOn": "تم التسليم في {date}",
+        "description": "الوصف",
+        "noDescription": "لم يتم تقديم وصف",
+        "attachedFiles": "الملفات المرفقة",
+        "download": "تحميل",
+        "submitDelivery": "تقديم التسليم",
+        "deliveryModal": {
+          "title": "تقديم التسليم",
+          "description": "قدِّم عملك لهذا العقد",
+          "deliveryDescription": "وصف التسليم *",
+          "descriptionPlaceholder": "صف ما تقوم بتسليمه، بما في ذلك أي ملاحظات أو تعليمات...",
+          "fileUrls": "روابط الملفات (اختياري)",
+          "fileUrlsPlaceholder": "أدخل روابط الملفات مفصولة بفواصل (مثال: https://example.com/file1.pdf, https://example.com/file2.zip)",
+          "fileUrlsHelp": "قدِّم روابط لأي ملفات أو مستندات متعلقة بهذا التسليم",
+          "cancel": "إلغاء"
+        },
+        "noDeliveries": {
+          "freelancerTitle": "لا توجد تسليمات بعد",
+          "clientTitle": "لم يتم استلام أي تسليمات",
+          "freelancerDescription": "قدِّم تسليمك الأول لمشاركة عملك مع العميل.",
+          "clientDescription": "لم يقدم المستقل أي تسليمات بعد."
+        },
+        "firstDelivery": "تقديم أول تسليم",
+        "approveDelivery": "الموافقة على التسليم",
+        "requestRevision": "طلب مراجعة"
+      },
+      "project": {
+        "noTitle": "لا يوجد عنوان للمشروع",
+        "noDescription": "لا يوجد وصف للمشروع متاح.",
+        "contractTerms": "شروط العقد",
+        "noTerms": "لم يتم تحديد شروط محددة لهذا العقد."
+      },
+      "parties": {
+        "client": "عميل",
+        "freelancer": "مستقل",
+        "notAssigned": "غير معين",
+        "you": "أنت"
+      },
+      "actions": {
+        "submitDelivery": "تقديم التسليم",
+        "markAsCompleted": "تعيين كمكتمل",
+        "completing": "جارٍ الإكمال...",
+        "completeContract": "إكمال العقد",
+        "confirmComplete": "تأكيد الإكمال",
+        "messageFreelancer": "مراسلة المستقل",
+        "cancelContract": "إلغاء العقد",
+        "confirmCancel": "تأكيد الإلغاء",
+        "cancelling": "جارٍ الإلغاء...",
+        "viewProject": "عرض المشروع",
+        "contactSupport": "اتصل بالدعم",
+        "freelancingGuide": "دليل العمل الحر",
+        "legalTerms": "الشروط القانونية"
+      },
+      "status": {
+        "active": "نشط",
+        "completed": "مكتمل",
+        "cancelled": "ملغي",
+        "pending": "قيد الانتظار",
+        "disputed": "قيد النزاع",
+        "descriptions": {
+          "active": "هذا العقد نشط حالياً وقيد التنفيذ.",
+          "completed": "تم إكمال هذا العقد بنجاح.",
+          "cancelled": "تم إلغاء هذا العقد.",
+          "pending": "هذا العقد قيد الانتظار للتفعيل.",
+          "disputed": "هذا العقد به نزاع يحتاج إلى حل."
+        }
+      },
+      "support": {
+        "needHelp": "هل تحتاج إلى مناقشة هذا العقد؟",
+        "needHelpDescription": "استخدم نظام المراسلة الآمن الخاص بنا للتواصل مع الطرف الآخر، ومشاركة الملفات، وحل أي أسئلة أو مشكلات.",
+        "openChat": "افتح الدردشة",
+        "getSupport": "احصل على الدعم"
+      },
+      "confirmation": {
+        "completeTitle": "إكمال العقد",
+        "completeContract": "هل أنت متأكد أنك تريد تعيين هذا العقد كمكتمل؟ لا يمكن التراجع عن هذا الإجراء.",
+        "completed": "تم إكمال العقد بنجاح",
+        "cancelTitle": "إلغاء العقد",
+        "cancelContract": "هل أنت متأكد أنك تريد إلغاء هذا العقد؟ لا يمكن التراجع عن هذا الإجراء.",
+        "cancelled": "تم إلغاء العقد بنجاح"
+      },
+      "validation": {
+        "deliveryDescriptionRequired": "يرجى تقديم وصف لتسليمك"
+      },
+      "milestoneActions": {
+        "approvedSuccess": "تم اعتماد المرحلة وتحرير دفعة الضمان بنجاح.",
+        "approveError": "حدث خطأ أثناء اعتماد المرحلة.",
+        "disputeBlockedCompleted": "تعذر فتح نزاع: لقد تم تحرير الأموال بالفعل للمستقل.",
+        "revisionSubmitted": "تم إرسال طلب المراجعة المستهدف إلى المستقل بنجاح.",
+        "negotiable": "قابل للتفاوض",
+        "canvasAnnotationsSaved": "تم حفظ تعليقات مساحة العمل بنجاح.",
+        "ipDeedModalTitle": "عقد التنازل الثنائي عن الملكية الفكرية (الأمر 03-05)"
+      },
+      "stageTracker": {
+        "budgetLabel": "ميزانية المرحلة:",
+        "approvedReleased": "معتمد ومحرر",
+        "inArbitration": "في التحكيم",
+        "tacitRule": "قاعدة القبول الضمني (مهلة المعاينة {days} يوماً)",
+        "remainingCountdown": "متبقي {days} يوم ({hours} س)",
+        "inspectionNotice": "تم تسليم العمل في {delivered}. تنتهي فترة المعاينة في {deadline}. في حال عدم اتخاذ أي إجراء قبل هذا الموعد، سيتم تحرير أموال الضمان ({amount} د.ج) تلقائياً وبشكل نهائي للمستقل.",
+        "openDispute": "فتح نزاع",
+        "requestRevisions": "طلب تعديلات محددة",
+        "approveReleaseEscrow": "الموافقة وتحرير الضمان",
+        "approvedSuccess": "تمت الموافقة على المرحلة وتحرير أموال الضمان بنجاح.",
+        "antiDisputeNotice": "الحماية ضد النزاعات بعد التحرير نشطة (الأمر 03-05). تم إيداع الأموال.",
+        "ipDeedButton": "عقد التنازل عن الملكية الفكرية (PDF)",
+        "stages": {
+          "funded": "الضمان مودع (Escrow)",
+          "inDevelopment": "قيد التطوير",
+          "submitted": "تم تسليم العمل",
+          "underInspection": "المعاينة ({days} أيام)",
+          "disputed": "قيد النزاع",
+          "released": "تم تحرير الأموال"
+        }
+      },
+      "ipDeed": {
+        "title": "عقد ثنائي للتنازل عن حقوق الملكية الفكرية",
+        "certifiedBadge": "معتمد من ONDA و ANAE",
+        "subtitle": "عقد ثنائي للتنازل عن حقوق الملكية الفكرية (الأمر 03-05 والقانون 22-23)",
+        "assignorLabel": "المتنازل (المؤلف)",
+        "assignorMeta": "مقاول ذاتي (القانون رقم 22-23) • بطاقة ANAE: {anae}",
+        "assignorTax": "نظام الضريبة الجزافية الوحيدة IFU 0.5% • الحقوق المعنوية غير قابلة للتصرف محفوظة (المادة 21)",
+        "assigneeLabel": "المتنازل له (العميل)",
+        "assigneeMeta": "رقم العقد: PODA-CTR-{contractId}",
+        "assigneeTax": "ملكية مالية حصرية كاملة • قابلة للخصم من ضريبة IBS (المادة 169 CIDTA)",
+        "rightsGrantedTitle": "الحقوق المالية المتنازل عنها (المادتان 27 و 64):",
+        "rightsGrantedBody": "حقوق حصرية للاستغلال وإعادة الإنتاج والتكييف والتسويق وتوزيع البرمجيات في جميع أنحاء العالم طوال المدة القانونية لحماية حق المؤلف (مدى الحياة + 50 عاماً).",
+        "considerationTitle": "المقابل المالي الجزافي المبرئ للذمة (المادة 65):",
+        "considerationBody": "مكافأة جزافية قدرها {amount} د.ج مسددة بالكامل من خلال التحرير النهائي لأموال الضمان.",
+        "integritySeal": "التوقيعات الثنائية وختم السلامة الرقمية (القانون رقم 15-04)",
+        "timestampedAt": "تم الختم الزمني في {date}",
+        "deliverableHash": "البصمة الرقمية للمخرجات (SHA-256):",
+        "assignorSignature": "توقيع المتنازل (المؤلف):",
+        "assigneeSignature": "توقيع المتنازل له (العميل):",
+        "platformSeal": "الختم التشفيري لمنصة بوداسيوم Ed25519:",
+        "copy": "نسخ",
+        "copied": "تم النسخ",
+        "legalNotice": "وثيقة قانونية ثنائية اللغة رسمية ذات حجية إثبات تعادل المحررات العرفية.",
+        "downloadPdf": "تحميل العقد (PDF معتمد)"
+      },
+      "revisions": {
+        "modalTitle": "طلب مراجعة مستهدف",
+        "milestoneHeader": "المرحلة #{milestoneId}: {milestoneTitle}",
+        "description": "تضمن طلبات المراجعة المنظمة تعاملاً واضحاً واحترافياً من قِبل المستقل بدلاً من الملاحظات العشوائية. حدد المعايير المعنية وفصّل ملاحظاتك بدقة.",
+        "pinsAttached": "📌 {count} ملاحظة بصرية من لوحة المراجعة مرتبطة بهذه المرحلة.",
+        "criteriaLabel": "المعايير التي تتطلب تعديلاً *",
+        "criteria": {
+          "codeQuality": "جودة وبنية الشيفرة البرمجية",
+          "codeQualityDesc": "إعادة هيكلة مطلوبة، نمطية، توافق مع المعايير البرمجية أو اختبارات ناقصة.",
+          "designConformity": "مطابقة التصميم وتجربة المستخدم UI/UX",
+          "designConformityDesc": "فروقات عن تصاميم Figma، التجاوب مع مختلف الشاشات أو سهولة الوصول.",
+          "securityPerformance": "الأمان والأداء",
+          "securityPerformanceDesc": "بطء غير مبرر في التحميل، معالجة استثناءات غير متكاملة أو ثغرة مكتشفة.",
+          "missingRequirements": "متطلبات غير منجزة من دفتر الشروط",
+          "missingRequirementsDesc": "وظائف متفق عليها في المرحلة لم تُنفذ أو لا تزال ناقصة.",
+          "documentation": "التوثيق والمخرجات التقنية",
+          "documentationDesc": "تعليمات النشر والتشغيل، متغيرات البيئة أو توثيق واجهة برمجة التطبيقات API مفقودة."
+        },
+        "expectedDetailsLabel": "التفاصيل الدقيقة للتعديل المطلوب:",
+        "detailsPlaceholder": "مثال: زر التأكيد على الهواتف (شاشة < 375px) يخرج عن حدود الإطار...",
+        "generalCommentLabel": "ملاحظة عامة وسياق إضافي (اختياري)",
+        "generalCommentPlaceholder": "إرشادات عامة أو روابط لموارد مفيدة...",
+        "cancel": "إلغاء",
+        "submitting": "جارٍ الإرسال...",
+        "submit": "إرسال طلب المراجعة",
+        "errorSelectCriterion": "يرجى اختيار معيار مراجعة دقيق واحد على الأقل.",
+        "errorMinCharacters": "يرجى تقديم شرح مفصل لا يقل عن 10 أحرف لمعيار: \"{criterion}\"."
+      },
+      "reviewCanvas": {
+        "title": "لوحة المراجعة البصرية",
+        "toResolve": "{count} بحاجة لمعالجة",
+        "prevPage": "الصفحة السابقة (السهم الأيسر)",
+        "pageIndicator": "الصفحة {current} / {total}",
+        "nextPage": "الصفحة التالية (السهم الأيمن)",
+        "zoomOut": "تصغير (-)",
+        "zoomIn": "تكبير (+)",
+        "resetZoom": "إعادة ضبط التكبير 100% (0)",
+        "hideResolved": "إخفاء الملاحظات المعالجة",
+        "showAll": "عرض الكل",
+        "pinModeActive": "وضع تثبيت الملاحظات مفعّل",
+        "activatePinMode": "تفعيل وضع الملاحظات",
+        "requestRevisions": "طلب مراجعات",
+        "pdfDocument": "مستند PDF: {name}",
+        "pdfInstructions": "المستند جاهز للفحص التفاعلي. انقر على أي موضع باللوحة لإسقاط ملاحظة دقيقة.",
+        "openPdfFullscreen": "فتح ملف PDF بملء الشاشة",
+        "previewTitle": "معاينة مخرجات المرحلة #{milestoneId}",
+        "clickToAddPin": "💡 انقر في أي مكان في هذه المساحة لإضافة دبوس ملاحظة.",
+        "pinHeader": "ملاحظة #{index} • {author}",
+        "resolved": "تمت المعالجة",
+        "markResolved": "تحديد كمعالج",
+        "statusResolved": "✓ تمت المعالجة",
+        "statusPending": "⏳ قيد الانتظار",
+        "deletePin": "حذف",
+        "newAnnotation": "ملاحظة جديدة",
+        "annotationPlaceholder": "صف التعديل المطلوب بدقة في هذا الموضع...",
+        "cancel": "إلغاء",
+        "save": "حفظ",
+        "annotationsList": "قائمة الملاحظات ({count})",
+        "noAnnotationsTitle": "لا توجد ملاحظات",
+        "noAnnotationsDesc": "انقر على معاينة المخرجات لتحديد التعديلات المطلوبة بدقة.",
+        "reviewTipTitle": "نصيحة المراجعة:",
+        "reviewTipDesc": "تحتفظ كل ملاحظة بنسب إحداثياتها النسبية الدقيقة لتسهيل عمل المستقل."
+      }
+    }
+  },
+  "freelancers": {
+    "list": {
+      "badgePremium": "مجموعة المواهب المميزة",
+      "badgeBrowse": "تصفح أفضل المواهب",
+      "title": "اعثر على",
+      "titleHighlight": "المستقل المثالي",
+      "description": "تواصل مع أفضل مواهب العمل الحر في الجزائر.\nتصفح المحترفين الموثوقين عبر جميع المهارات والصناعات.",
+      "freelancersCount": "مستقلين",
+      "projectsCompleted": "المشاريع المكتملة",
+      "searchPlaceholder": "ابحث عن مستقلين بالمهارات أو الموقع أو الاسم...",
+      "searchButton": "بحث",
+      "searching": "جارٍ البحث...",
+      "searchTry": "جرب:",
+      "filtersSorting": "التصفية والترتيب",
+      "filtersActive": "نشط",
+      "browseByCategory": "تصفح حسب الفئة",
+      "browseByCategoryDesc": "ابحث عن مستقلين متخصصين في مهارات وصناعات محددة",
+      "allFreelancers": "جميع المستقلين",
+      "webDevelopment": "تطوير الويب",
+      "uiUxDesign": "تصميم واجهة المستخدم/التجربة",
+      "mobileApps": "تطبيقات الجوال",
+      "dataScience": "علم البيانات",
+      "devopsCloud": "DevOps والسحابة",
+      "digitalMarketing": "التسويق الرقمي",
+      "contentWriting": "كتابة المحتوى",
+      "availableFreelancers": "المستقلون المتاحون",
+      "showingCategory": "عرض {count} من مستقلين {category}",
+      "showingTotal": "عرض {showing} من أصل {total} مستقل",
+      "sortBy": "الترتيب حسب:",
+      "sortRelevance": "الأكثر صلة",
+      "sortRating": "أعلى تقييم",
+      "sortProjects": "أكثر المشاريع",
+      "sortRate": "السعر بالساعة",
+      "sortTrust": "درجة الثقة",
+      "sortNewest": "الأحدث",
+      "viewGrid": "شبكة",
+      "viewList": "قائمة",
+      "activeFilters": "عوامل التصفية النشطة",
+      "activeFiltersCount": "{count}",
+      "clearAll": "مسح الكل",
+      "filterSkills": "المهارات: {skills}",
+      "filterRate": "السعر: {min} - {max} دج",
+      "filterLocation": "الموقع: {location}",
+      "filterPhoneVerified": "تم التحقق من الهاتف",
+      "filterHasCertifications": "لديه شهادات",
+      "filterMinProjects": "الحد الأدنى للمشاريع: {count}+",
+      "filterTrustScore": "درجة الثقة: {score}%+",
+      "sortedBy": "مرتب حسب: {sort}",
+      "filtersPanel": {
+        "title": "التصفية والترتيب",
+        "sortBy": "الترتيب حسب",
+        "skills": "المهارات",
+        "clearAll": "مسح الكل",
+        "showingSkills": "عرض {showing} من أصل {total} مهارة. ابحث عن مهارات محددة أعلاه.",
+        "hourlyRate": "السعر بالساعة (دج)",
+        "minimum": "الحد الأدنى",
+        "maximum": "الحد الأقصى",
+        "location": "الموقع",
+        "locationPlaceholder": "مدينة أو دولة...",
+        "verificationRequirements": "متطلبات التحقق",
+        "phoneVerifiedOnly": "تم التحقق من الهاتف فقط",
+        "hasCertifications": "لديه شهادات",
+        "minCompletedProjects": "الحد الأدنى للمشاريع المكتملة",
+        "minTrustScore": "الحد الأدنى لدرجة الثقة",
+        "viewMode": "وضع العرض",
+        "resetAll": "إعادة تعيين الكل",
+        "applyFilters": "تطبيق عوامل التصفية",
+        "applying": "جارٍ التطبيق..."
+      },
+      "mostInDemandSkills": "المهارات الأكثر طلباً",
+      "mostInDemandSkillsDesc": "المهارات التي تشهد رواجاً حالياً بين المستقلين الجزائريين",
+      "skillFreelancers": "{count} مستقل",
+      "popularSkills": "المهارات الشائعة (عرض {showing} من {total})",
+      "viewAllSkills": "عرض جميع {count} مهارة",
+      "clearSkills": "مسح المهارات",
+      "whyChooseTitle": "لماذا تختار مستقلين جزائريين؟",
+      "whyChooseDesc": "اكتشف المزايا الفريدة للعمل مع مواهب من الجزائر",
+      "benefits": {
+        "culturalUnderstanding": {
+          "title": "الفهم الثقافي",
+          "desc": "اللغة المشتركة والسياق الثقافي لتحسين التواصل والتعاون."
+        },
+        "timeZone": {
+          "title": "ميزة المنطقة الزمنية",
+          "desc": "المناطق الزمنية القريبة للتعاون في الوقت الفعلي مع العملاء الأوروبيين والأفارقة."
+        },
+        "costEffective": {
+          "title": "فعال من حيث التكلفة",
+          "desc": "عمل عالي الجودة بأسعار تنافسية مقارنة بالأسواق الدولية."
+        },
+        "verifiedTalent": {
+          "title": "مواهب موثوقة",
+          "desc": "جميع المستقلين موثوقون بتأكيد الهاتف والهوية."
+        }
+      },
+      "cta": {
+        "title": "هل أنت مستعد للعثور على المستقل المثالي؟",
+        "description": "انضم إلى آلاف الشركات التي وجدت النجاح مع المواهب الجزائرية. أنشئ حساباً للبدء في التوظيف اليوم.",
+        "signUpFree": "اشترك مجاناً",
+        "signInToHire": "سجل الدخول للتوظيف"
+      },
+      "errors": {
+        "loadError": "فشل تحميل البيانات الأولية. يرجى تحديث الصفحة.",
+        "freelancersError": "فشل تحميل المستقلين. يرجى المحاولة مرة أخرى.",
+        "tryAgain": "حاول مرة أخرى"
+      },
+      "noResults": {
+        "title": "لم يتم العثور على مستقلين",
+        "description": "لم نتمكن من العثور على أي مستقلين يطابقون معايير البحث. حاول تعديل عوامل التصفية أو مصطلحات البحث.",
+        "resetFilters": "إعادة تعيين جميع عوامل التصفية",
+        "adjustFilters": "تعديل عوامل التصفية"
+      },
+      "pagination": {
+        "showing": "عرض",
+        "to": "إلى",
+        "of": "من أصل",
+        "freelancers": "مستقل",
+        "page": "الصفحة",
+        "ofPages": "من"
+      },
+      "loading": {
+        "freelancers": "جارٍ تحميل المستقلين...",
+        "initialData": "جارٍ تحميل البيانات الأولية...",
+        "searching": "جارٍ البحث...",
+        "applyingFilters": "جارٍ تطبيق عوامل التصفية..."
+      }
+    },
+    "detail": {
+      "meta": {
+        "title": "{name} - ملف المستقل | بوداسيوم",
+        "description": "عرض ملف العمل الحر لـ {name} على بوداسيوم. انظر المهارات والمحفظة والتقييمات ووظِّف لمشاريعك."
+      },
+      "breadcrumb": {
+        "hub": "المركز",
+        "freelancers": "المستقلون",
+        "profile": "الملف الشخصي"
+      },
+      "header": {
+        "verified": "تم التحقق",
+        "locationNotSpecified": "لم يتم تحديد الموقع"
+      },
+      "stats": {
+        "avgRating": "متوسط التقييم",
+        "avgRatingTooltip": "متوسط تقييم العملاء",
+        "projects": "المشاريع",
+        "projectsTooltip": "إجمالي المشاريع المكتملة",
+        "onTimeDelivery": "في الوقت المحدد",
+        "onTimeDeliveryTooltip": "المشاريع المسلَّمة في الوقت المحدد",
+        "certificates": "الشهادات",
+        "certificatesTooltip": "الشهادات المهنية المكتسبة",
+        "high": "مرتفع",
+        "onTime": "في الوقت المحدد"
+      },
+      "tabs": {
+        "overview": "نظرة عامة",
+        "portfolio": "المحفظة",
+        "experience": "الخبرة",
+        "reviews": "التقييمات"
+      },
+      "sections": {
+        "aboutMe": {
+          "title": "عنّي",
+          "defaultBio": "مرحباً، أنا {name}، {title} شغوف."
+        },
+        "skills": {
+          "title": "المهارات والخبرة",
+          "description": "التقنيات والأدوات الأساسية التي أعمل بها",
+          "noSkills": "لم يتم إدراج مهارات بعد."
+        },
+        "portfolio": {
+          "title": "المشاريع الحديثة",
+          "description": "المشاريع الحديثة التي عملت عليها"
+        },
+        "experience": {
+          "title": "الخبرة",
+          "description": "الخبرة المهنية والخلفية",
+          "professionalSummary": "ملخص مهني",
+          "projectsCompleted": "المشاريع المكتملة",
+          "certifications": "الشهادات",
+          "trustScore": "درجة الثقة"
+        },
+        "reviews": {
+          "title": "التقييمات والملاحظات",
+          "description": "ما يقوله العملاء الآخرون عن عملهم مع {name}"
+        }
+      },
+      "sidebars": {
+        "verification": {
+          "title": "التحقق",
+          "phoneVerified": "تم التحقق من الهاتف",
+          "certificatesCount": "{count} شهادة",
+          "verified": "تم التحقق",
+          "notVerified": "غير موثوق"
+        },
+        "availability": {
+          "title": "التوافر"
+        },
+        "contact": {
+          "title": "اتصال"
+        }
+      },
+      "buttons": {
+        "hireName": "وظِّف {name}",
+        "sendMessage": "إرسال رسالة",
+        "hireNow": "وظِّف الآن",
+        "viewDetails": "عرض التفاصيل",
+        "processing": "جارٍ المعالجة..."
+      },
+      "actions": {
+        "viewDetails": "عرض التفاصيل"
+      },
+      "availability": {
+        "available": "متاح للعمل",
+        "busy": "مشغول",
+        "away": "غير متاح",
+        "offline": "غير متصل",
+        "availableForNewProjects": "متاح لمشاريع جديدة"
+      },
+      "projectsCompleted": "تم إكمال {count} مشروع",
+      "certificatesCount": "{count} شهادة",
+      "defaultTitle": "مستقل محترف",
+      "titles": {
+        "dataAnalyst": "محلل بيانات",
+        "frontendDeveloper": "مطور واجهة أمامية",
+        "backendDeveloper": "مطور واجهة خلفية",
+        "fullStackDeveloper": "مطور كامل المكدس",
+        "uiUxDesigner": "مصمم واجهة المستخدم/التجربة",
+        "mobileDeveloper": "مطور تطبيقات جوال"
+      },
+      "tooltips": {
+        "shareProfile": "مشاركة الملف الشخصي",
+        "saveToFavorites": "حفظ في المفضلة"
+      },
+      "contactModal": {
+        "title": "اتصل بـ {name}",
+        "messageLabel": "رسالتك",
+        "messagePlaceholder": "مرحباً {name}، أود مناقشة مشروع...",
+        "budgetLabel": "الميزانية",
+        "budgetPlaceholder": "مثال: 1,000 - 2,000 دولار",
+        "timelineLabel": "الجدول الزمني",
+        "timelinePlaceholder": "مثال: 2-4 أسابيع",
+        "cancel": "إلغاء",
+        "sendMessage": "إرسال رسالة"
+      },
+      "errors": {
+        "profileUnavailable": "الملف الشخصي غير متاح",
+        "profileUnavailableDesc": "لم نتمكن من العثور على ملف المستقل الذي تبحث عنه. قد يكون هذا بسبب:",
+        "reason1": "تمت إزالة الملف الشخصي/جعله خاصاً",
+        "reason2": "هناك مشكلة مؤقتة في خدمتنا",
+        "reason3": "قد يكون الرابط غير صحيح أو قديم",
+        "browseFreelancers": "تصفح أفضل المستقلين",
+        "exploreTalentPool": "استكشف مجموعة المواهب",
+        "tryLoadingAgain": "حاول التحميل مرة أخرى",
+        "refreshProfile": "تحديث الملف الشخصي",
+        "needHelp": "هل تحتاج مساعدة؟",
+        "getSupport": "احصل على الدعم",
+        "searchFreelancers": "ابحث عن مستقلين"
+      },
+      "emptyStates": {
+        "noProjects": {
+          "title": "لا توجد مشاريع مدرجة",
+          "description": "لم يضف {name} أي مشاريع إلى محفظة أعماله بعد."
+        },
+        "noReviews": {
+          "title": "لا توجد تقييمات بعد",
+          "description": "لم يتلقَ {name} أي تقييمات حتى الآن."
+        }
+      },
+      "share": {
+        "title": "{name} - ملف المستقل",
+        "text": "اطلع على ملف {name} على بوداسيوم"
+      },
+      "cta": {
+        "title": "هل أنت مستعد للعمل مع {name}؟",
+        "description": "أرسل رسالة لمناقشة متطلبات مشروعك أو وظِّف مباشرة للبدء."
+      }
+    },
+    "reviews": {
+      "title": "التقييمات والآراء",
+      "leaveReview": "ترك تقييم",
+      "editReview": "تعديل التقييم",
+      "noReviews": "لا توجد تقييمات بعد.",
+      "blindReview": "تقييم محجوب - مخفي حتى تترك تقييماً أو يمر 14 يوماً.",
+      "rating": "التقييم العام",
+      "comment": "Comment",
+      "submit": "إرسال التقييم",
+      "submitting": "Submitting...",
+      "saveChanges": "حفظ التغييرات",
+      "appeal": "الطعن في هذا التقييم",
+      "appealTitle": "تقديم طعن",
+      "appealReason": "سبب الطعن",
+      "appealReasonPlaceholder": "اشرح سبب انتهاك هذا التقييم للسياسات أو عدم صحته من الناحية الواقعية...",
+      "submitAppeal": "إرسال الطعن",
+      "appealSubmitted": "تم إرسال طعنك بنجاح.",
+      "invalidRating": "يرجى تحديد تقييم عام صالح.",
+      "submitFailed": "فشل إرسال التقييم.",
+      "commentPlaceholder": "شارك تجربتك في العمل على هذا العقد...",
+      "cancel": "Cancel",
+      "anonymousUser": "مستخدم مجهول",
+      "edited": "(Edited)",
+      "redactedMessage": "تمت إزالة هذا التقييم بواسطة المسؤولين.",
+      "underAppealMessage": "هذا التقييم قيد المراجعة والطعن حالياً.",
+      "timeAgo": {
+        "justNow": "الآن",
+        "minutes": "منذ {count} دقيقة",
+        "minutes_plural": "منذ {count} دقائق",
+        "hours": "منذ {count} ساعة",
+        "hours_plural": "منذ {count} ساعات",
+        "days": "منذ {count} يوم",
+        "days_plural": "منذ {count} أيام",
+        "months": "منذ {count} شهر",
+        "months_plural": "منذ {count} أشهر",
+        "years": "منذ {count} سنة",
+        "years_plural": "منذ {count} سنوات"
+      },
+      "reviewSubmitted": "شكراً لك! تم إرسال تقييمك بنجاح.",
+      "reviewEdited": "تم تحديث تقييمك بنجاح.",
+      "editWindowExpired": "انتهت صلاحية فترة الـ 48 ساعة لتعديل هذا التقييم.",
+      "clientSubRatings": {
+        "requirements_clarity": "وضوح المتطلبات",
+        "communication": "Communication",
+        "fairness": "Fairness",
+        "payment_promptness": "سرعة الدفع"
+      },
+      "freelancerSubRatings": {
+        "work_quality": "جودة العمل",
+        "communication": "Communication",
+        "timeliness": "Timeliness",
+        "professionalism": "Professionalism"
+      }
+    }
+  },
+  "projects": {
+    "list": {
+      "badgeBrowse": "تصفح المشاريع",
+      "title": "اعثر على",
+      "titleHighlight": "المشروع المثالي",
+      "description": "اكتشف مشاريع العمل الحر لـ بوداسيوم التي تطابق مهاراتك.",
+      "filterTip": "صفِّ حسب الفئة والميزانية والجدول الزمني للعثور على المناسب تماماً.",
+      "searchPlaceholder": "ابحث بعنوان المشروع أو المهارات أو الكلمات الرئيسية...",
+      "totalProjects": "إجمالي المشاريع",
+      "open": "مفتوح",
+      "inProgress": "قيد التنفيذ",
+      "completed": "مكتمل",
+      "signUpToApply": "اشترك للتقديم",
+      "filtersTitle": "عوامل التصفية",
+      "clearAll": "مسح الكل",
+      "statusFilterTitle": "حالة المشروع",
+      "statusOpen": "مفتوح",
+      "statusInProgress": "قيد التنفيذ",
+      "statusCompleted": "مكتمل",
+      "skillsFilterTitle": "المهارات",
+      "moreSkills": "+{count} مهارات إضافية",
+      "applyFilters": "تطبيق عوامل التصفية",
+      "showFilters": "إظهار عوامل التصفية",
+      "availableProjects": "المشاريع المتاحة",
+      "showingAll": "عرض جميع {count} مشروع",
+      "showingFiltered": "عرض {showing} من أصل {total} مشروع",
+      "newProject": "مشروع جديد",
+      "signUpToCreate": "اشترك للإنشاء",
+      "noProjectsFound": "لم يتم العثور على مشاريع",
+      "noProjectsSearch": "لا توجد مشاريع تطابق معايير البحث الحالية. حاول تعديل عوامل التصفية أو مصطلحات البحث.",
+      "noProjectsAvailable": "لا توجد مشاريع متاحة حالياً. ارجع لاحقاً لفرص جديدة.",
+      "clearFilters": "مسح عوامل التصفية",
+      "createFirstProject": "أنشئ أول مشروع",
+      "signUpToCreateProjects": "اشترك لإنشاء مشاريع",
+      "loadMoreProjects": "تحميل المزيد من المشاريع",
+      "activeFiltersTitle": "عوامل التصفية النشطة",
+      "noFiltersApplied": "لم يتم تطبيق أي عوامل تصفية",
+      "tipsTitle": "نصائح للعثور على مشاريع رائعة",
+      "tipsDescription": "استفد إلى أقصى حد من فرص العمل الحر مع هذه النصائح الخبيرة",
+      "expertAdvice": "نصيحة خبير",
+      "tip1Title": "استهدف مهاراتك",
+      "tip1Description": "استخدم عوامل التصفية للعثور على مشاريع تطابق خبرتك بالضبط. يفضل العملاء المتخصصين الذين يمكنهم إظهار الخبرة ذات الصلة.",
+      "tip2Title": "صمِّم عروضاً قوية",
+      "tip2Description": "خصِّص كل عرض. اشرح كيف تحل مهاراتك المحددة مشكلة العميل وما الذي يجعلك الأنسب.",
+      "tip3Title": "تحقق من تاريخ العميل",
+      "tip3Description": "راجع ملفات العملاء والمشاريع السابقة والتقييمات. العملاء المؤسسون ذوو التقييمات الجيدة هم شركاء أكثر موثوقية.",
+      "ctaTitle": "هل أنت مستعد لبدء رحلتك في العمل الحر؟",
+      "ctaDescription": "اشترك الآن للتقدم للمشاريع وإنشاء مشاريعك الخاصة وبناء محفظة أعمالك وتطوير مسيرتك المهنية مع أفضل المستقلين الجزائريين.",
+      "ctaFeature1": "تصفح جميع المشاريع",
+      "ctaFeature2": "تقديم العروض",
+      "ctaFeature3": "إنشاء مشاريع",
+      "ctaFeature4": "تتبع التقدم",
+      "signUpFree": "اشترك مجاناً",
+      "signInToAccess": "سجل الدخول للوصول"
+    },
+    "new": {
+      "meta": {
+        "title": "إنشاء مشروع جديد | مركز العمل الحر في بوداسيوم",
+        "description": "انشر متطلبات مشروعك واعثر على المستقل المثالي على المنصة الرائدة للعمل الحر في الجزائر."
+      },
+      "header": {
+        "badge": "إنشاء مشروع",
+        "titleLine1": "أنشئ",
+        "titleHighlight": "مشروعك القادم",
+        "descriptionLine1": "انشر متطلبات مشروعك واعثر على المستقل المثالي لاحتياجاتك.",
+        "descriptionLine2": "كن محدداً لجذب أفضل المواهب على بوداسيوم."
+      },
+      "form": {
+        "title": {
+          "label": "عنوان المشروع",
+          "placeholder": "أدخل عنواناً واضحاً ووصفياً لمشروعك",
+          "description": "كن محدداً فيما تحتاج. مثال: 'تطوير تطبيق جوال لمنصة التجارة الإلكترونية'"
+        },
+        "description": {
+          "label": "وصف المشروع",
+          "placeholder": "صف مشروعك بالتفصيل. ما هي المتطلبات والأهداف والتسليمات؟",
+          "description": "تضمن المتطلبات الفنية والجدول الزمني المتوقع وأي تفاصيل أخرى ذات صلة. الحد الأقصى 5000 حرف."
+        },
+        "skills": {
+          "label": "المهارات المطلوبة",
+          "description": "أضف المهارات المطلوبة لهذا المشروع. اضغط Enter أو فاصلة لإضافة مهارة.",
+          "placeholder": "أضف مهارات (مثال: React، Node.js، تصميم واجهة المستخدم/التجربة)",
+          "popularSkills": "المهارات الشائعة",
+          "popularSkillsList": {
+            "1": "React",
+            "2": "Node.js",
+            "3": "Python",
+            "4": "UI/UX",
+            "5": "تطبيق جوال",
+            "6": "تصميم الويب",
+            "7": "قاعدة بيانات",
+            "8": "DevOps"
+          },
+          "removeSkill": "إزالة {skill}"
+        }
+      },
+      "budget": {
+        "title": "نطاق الميزانية",
+        "minPlaceholder": "الحد الأدنى",
+        "maxPlaceholder": "الحد الأقصى",
+        "description": "اتركه فارغاً لميزانية قابلة للتفاوض"
+      },
+      "tips": {
+        "title": "نصائح للحصول على عروض أفضل",
+        "list": {
+          "1": "كن محدداً بشأن المتطلبات والتسليمات",
+          "2": "حدد نطاق ميزانية واقعي لعمل عالي الجودة",
+          "3": "اذكر جميع المهارات المطلوبة لجذب مستقلين مؤهلين",
+          "4": "اذكر توقعاتك للجدول الزمني بوضوح"
+        }
+      },
+      "buttons": {
+        "backToProjects": "العودة إلى المشاريع",
+        "cancel": "إلغاء",
+        "saveDraft": "حفظ كمسودة",
+        "createProject": "إنشاء مشروع",
+        "creating": "جارٍ الإنشاء..."
+      },
+      "infoCards": {
+        "securePlatform": {
+          "title": "منصة آمنة",
+          "description": "جميع ميزات السوق تُشترى باستخدام PodaPoints. لا عمولات منصة — تدفع فقط مقابل الميزات التي تستخدمها بنشاط."
+        },
+        "qualityFreelancers": {
+          "title": "مستقلون ذوو جودة",
+          "description": "الوصول إلى أفضل المستقلين الموثوقين في الجزائر بسجلات مثبتة ومهارات تم فحصها من قبل بوداسيوم."
+        },
+        "directCommunication": {
+          "title": "تواصل مباشر",
+          "description": "تواصل مباشرة مع المستقلين، وتتبع التقدم، وأدر التسليمات كلها في مكان واحد."
+        }
+      },
+      "support": {
+        "title": "هل تحتاج مساعدة في إنشاء مشروعك؟",
+        "description": "فريقنا هنا لمساعدتك في صياغة وصف المشروع المثالي والعثور على أفضل المواهب.",
+        "liveSupport": {
+          "title": "الدعم المباشر",
+          "description": "دردش مع فريق الدعم",
+          "button": "ابدأ الدردشة المباشرة"
+        },
+        "templates": {
+          "title": "قوالب المشاريع",
+          "description": "استخدم قوالبنا المثبتة",
+          "button": "تصفح القوالب"
+        }
+      },
+      "success": {
+        "title": "نجاح!",
+        "created": "تم إنشاء المشروع بنجاح! جارٍ إعادة التوجيه...",
+        "savedDraft": "تم حفظ المشروع كمسودة. يمكنك متابعة التعديل لاحقاً."
+      },
+      "errors": {
+        "title": "خطأ",
+        "accessDeniedTitle": "تم رفض الوصول",
+        "accessDeniedMessage": "يجب أن تكون مسجلاً الدخول كعميل لإنشاء مشاريع.",
+        "accessFailed": "فشل التحقق من أذونات الوصول. يرجى المحاولة مرة أخرى.",
+        "createFailed": "فشل إنشاء المشروع. يرجى المحاولة مرة أخرى.",
+        "validationFix": "يرجى إصلاح أخطاء التحقق أدناه."
+      },
+      "postGate": {
+        "title": "لا توجد منشورات مشروع متبقية",
+        "description": "اشتر منشور مشروع للمتابعة. 200 بودابوينت لكل منشور.",
+        "buyButton": "شراء منشورات مشروع",
+        "remaining": "{count} منشور(ات) مشروع متبقية",
+        "lastPost": "هذا هو آخر منشور مشروع لك",
+        "insufficient": "لا توجد منشورات مشروع متبقية. اشتر المزيد من الفواتير."
+      },
+      "validation": {
+        "titleRequired": "عنوان المشروع مطلوب",
+        "titleMinLength": "يجب أن يكون العنوان 5 أحرف على الأقل",
+        "titleMaxLength": "يجب أن يكون العنوان أقل من 200 حرف",
+        "descriptionMaxLength": "يجب أن يكون الوصف أقل من 5000 حرف",
+        "skillsRequired": "مهارة واحدة على الأقل مطلوبة",
+        "skillsMaxLength": "الحد الأقصى 20 مهارة مسموح بها",
+        "budgetMinNegative": "لا يمكن أن تكون الميزانية الدنيا سلبية",
+        "budgetMaxNegative": "لا يمكن أن تكون الميزانية القصوى سلبية",
+        "budgetMaxLessThanMin": "يجب أن تكون الميزانية القصوى أكبر من الحد الأدنى"
+      }
+    },
+    "detail": {
+      "meta": {
+        "title": "{title} - تفاصيل المشروع | مركز العمل الحر في بوداسيوم",
+        "description": "عرض تفاصيل المشروع والمتطلبات والتقديم كمستقل أو إدارة العروض كعميل على المنصة الرائدة للعمل الحر في الجزائر."
+      },
+      "errors": {
+        "loadError": "فشل تحميل تفاصيل المشروع. يرجى المحاولة مرة أخرى.",
+        "loadErrorTitle": "فشل تحميل المشروع",
+        "submitError": "فشل تقديم العرض. يرجى المحاولة مرة أخرى.",
+        "searchError": "فشل البحث. يرجى المحاولة مرة أخرى."
+      },
+      "empty": {
+        "notFoundTitle": "المشروع غير موجود",
+        "notFoundDescription": "المشروع الذي تبحث عنه غير موجود أو تمت إزالته."
+      },
+      "sections": {
+        "projectDetails": "تفاصيل المشروع",
+        "requiredSkills": "المهارات المطلوبة",
+        "skillsDescription": "المهارات المطلوبة لهذا المشروع",
+        "applicationStatus": "حالة طلبك",
+        "clientInfo": "معلومات العميل",
+        "projectOwner": "صاحب المشروع",
+        "projectTimeline": "الجدول الزمني للمشروع",
+        "quickActions": "إجراءات سريعة",
+        "recentProposals": "العروض الحديثة"
+      },
+      "stats": {
+        "status": "الحالة",
+        "skillsRequired": "المهارات المطلوبة",
+        "skills": "مهارات",
+        "posted": "نشر",
+        "proposals": "العروض",
+        "received": "مستلمة",
+        "ownersOnly": "يراه المالكون فقط"
+      },
+      "status": {
+        "open": "مفتوح",
+        "in_progress": "قيد التنفيذ",
+        "completed": "مكتمل",
+        "cancelled": "ملغي"
+      },
+      "buttons": {
+        "backToProjects": "العودة إلى المشاريع",
+        "applyToProject": "التقديم على المشروع",
+        "viewProposals": "عرض العروض ({count})",
+        "signUpToApply": "اشترك للتقديم",
+        "viewContract": "عرض العقد",
+        "applyNow": "قدم الآن",
+        "reviewProposals": "مراجعة العروض ({count})",
+        "browseMoreProjects": "تصفح المزيد من المشاريع",
+        "viewClientProfile": "عرض ملف العميل",
+        "viewAll": "عرض الكل",
+        "tryAgain": "حاول مرة أخرى",
+        "browseProjects": "تصفح المشاريع",
+        "signIn": "تسجيل الدخول",
+        "browseFreelancers": "تصفح العاملين الأحرار",
+        "browseAvailableProjects": "تصفح المشاريع المتاحة"
+      },
+      "noDescription": "لم يتم تقديم وصف.",
+      "noDetailedDescription": "لم يتم تقديم وصف تفصيلي.",
+      "clientInfoNotAvailable": "معلومات العميل غير متاحة",
+      "phoneVerified": "تم التحقق من الهاتف",
+      "statusLabel": "الحالة",
+      "postedLabel": "نشر",
+      "lastUpdatedLabel": "آخر تحديث",
+      "postedOn": "نشر في {date}",
+      "proposalSubmitted": "تم تقديم العرض",
+      "proposalPending": "العرض قيد الانتظار",
+      "proposalRejected": "تم رفض العرض",
+      "proposalsReceived": "تم استلام {count} عرض",
+      "anonymous": "مجهول",
+      "noPriceSet": "لم يتم تعيين سعر",
+      "notAFreelancer": "لست عاملاً حراً",
+      "onlyFreelancersCanApply": "يُمكن فقط للعاملين الأحرار التقديم على المشاريع",
+      "authenticationRequired": "مطلوب مصادقة",
+      "signInToApply": "سجّل الدخول للتقديم على هذا المشروع",
+      "notEligibleToApply": "غير مؤهل للتقديم",
+      "projectNotOpen": "المشروع غير مفتوح للتقديمات",
+      "ownProject": "لا يُمكنك التقديم على مشروعك الخاص",
+      "proposalModal": {
+        "title": "تقديم عرض",
+        "applyFor": "التقدم لـ: {title}",
+        "messageLabel": "رسالة العرض",
+        "messagePlaceholder": "صف نهجك والخبرة ذات الصلة ولماذا أنت الأنسب لهذا المشروع...",
+        "messageHelp": "كن محدداً بشأن كيفية تقديم القيمة للعميل",
+        "budgetLabel": "الميزانية المقترحة (اختياري)",
+        "budgetHelp": "بالسنتيم، اكتب 1000000 سنتيم على سبيل المثال بدلاً من 10000.00 دج.",
+        "timelineLabel": "الجدول الزمني المقدر (أيام)",
+        "cancel": "إلغاء",
+        "submitting": "جارٍ التقديم...",
+        "submitProposal": "تقديم العرض"
+      },
+      "projectNotAcceptingProposals": "هذا المشروع لا يقبل عروضاً جديدة",
+      "cannotApply": "لا يمكنك التقديم على هذا المشروع"
+    },
+    "proposals": {
+      "title": "العروض لمشروع \"{title}\"",
+      "description": "مراجعة وإدارة جميع العروض المقدمة لمشروعك",
+      "anonymousFreelancer": "مجهول",
+      "noBioProvided": "لم يتم تقديم سيرة ذاتية",
+      "moreSkills": "+{count} إضافية",
+      "proposedBudget": "الميزانية المقترحة",
+      "currencyDZD": "دج{amount}",
+      "submittedOn": "تم التقديم في {date}",
+      "proposalMessage": "رسالة العرض",
+      "freelancerDetails": "تفاصيل المستقل",
+      "phoneVerified": "تم التحقق من الهاتف",
+      "certificatesCount": "{count} شهادة",
+      "viewFullProfile": "عرض الملف الشخصي الكامل",
+      "freelancer": "مستقل",
+      "actions": "الإجراءات",
+      "acceptedMessage": "لقد قبلت هذا العرض. تم إنشاء عقد.",
+      "rejectedMessage": "تم رفض هذا العرض.",
+      "status": {
+        "pending": "قيد الانتظار",
+        "accepted": "مقبول",
+        "rejected": "مرفوض"
+      },
+      "buttons": {
+        "acceptProposal": "قبول العرض",
+        "reject": "رفض",
+        "refresh": "تحديث",
+        "viewProject": "عرض المشروع",
+        "tryAgain": "حاول مرة أخرى",
+        "backToProject": "العودة إلى المشروع",
+        "showAll": "إظهار جميع العروض",
+        "browseAllProjects": "تصفح جميع المشاريع"
+      },
+      "navigation": {
+        "backToProject": "العودة إلى المشروع"
+      },
+      "stats": {
+        "totalProposals": "إجمالي العروض",
+        "pending": "قيد الانتظار",
+        "accepted": "مقبول",
+        "rejected": "مرفوض"
+      },
+      "filters": {
+        "all": "الكل",
+        "pending": "قيد الانتظار",
+        "accepted": "مقبول",
+        "rejected": "مرفوض"
+      },
+      "empty": {
+        "noProposals": "لا توجد عروض بعد",
+        "noProposalsDescription": "لم يقدم أحد عروضاً لمشروعك بعد. شارك مشروعك لجذب المستقلين.",
+        "noFilteredProposals": "لا توجد عروض {filter}",
+        "noFilteredProposalsDescription": "لا توجد عروض {filter} لعرضها. جرب عامل تصفية مختلف."
+      },
+      "errors": {
+        "loadError": "فشل تحميل العروض",
+        "acceptError": "فشل قبول العرض",
+        "rejectError": "فشل رفض العرض",
+        "failedToLoad": "فشل تحميل العروض",
+        "accessDenied": "تم رفض الوصول",
+        "accessDeniedDescription": "ليس لديك إذن لعرض العروض لهذا المشروع."
+      },
+      "tips": {
+        "title": "نصائح لمراجعة العروض",
+        "badge": "نصيحة خبير",
+        "reviewMessages": {
+          "title": "راجع الرسائل بعناية",
+          "description": "ابحث عن عروض تظهر فهماً لمتطلبات مشروعك وتقدم حلولاً محددة."
+        },
+        "checkExperience": {
+          "title": "تحقق من الخبرة",
+          "description": "راجع ملفات المستقلين والشهادات والأعمال السابقة للتأكد من أن لديهم الخبرة ذات الصلة."
+        },
+        "respondPromptly": {
+          "title": "رد بسرعة",
+          "description": "المستقلون الجيدون لديهم فرص متعددة. رد على العروض الواعدة خلال 1-2 يوم."
+        }
+      },
+      "modals": {
+        "accept": {
+          "title": "قبول العرض",
+          "description": "إنشاء عقد مع {name}",
+          "contractTerms": "شروط العقد",
+          "termsPlaceholder": "حدد شروط العقد...",
+          "termsHelp": "ستكون هذه الشروط جزءاً من العقد الملزم قانونياً",
+          "contractAmount": "مبلغ العقد (اختياري)",
+          "amountPlaceholder": "اتركه فارغاً لاستخدام مبلغ العرض",
+          "amountHelp": "بالسنتيم (100 = 1.00 دج). اتركه فارغاً لاستخدام مبلغ العرض.",
+          "startDate": "تاريخ البدء (اختياري)",
+          "endDate": "تاريخ الانتهاء (اختياري)",
+          "defaultTerms": "أوافق على العمل على هذا المشروع بالشروط المقترحة.",
+          "creatingContract": "جارٍ إنشاء العقد...",
+          "acceptAndCreate": "قبول وإنشاء العقد"
+        },
+        "reject": {
+          "title": "رفض العرض",
+          "description": "عرض من {name}",
+          "confirmTitle": "هل أنت متأكد أنك تريد رفض هذا العرض؟",
+          "confirmDescription": "لا يمكن التراجع عن هذا الإجراء. سيتم إخطار المستقل بأن عرضه مرفوض.",
+          "rejecting": "جارٍ الرفض...",
+          "yesReject": "نعم، رفض العرض"
+        },
+        "buttons": {
+          "cancel": "إلغاء"
+        }
+      }
+    }
+  },
+  "proposals": {
+    "header": {
+      "badge": "إدارة العروض",
+      "title": "عروضك",
+      "titleHighlight": "Proposals",
+      "description": "تتبع وإدارة ومتابعة جميع العروض المقدمة في مكان واحد"
+    },
+    "stats": {
+      "title": "نظرة عامة على العروض",
+      "description": "تتبع أداء عروضك ومقاييس النجاح",
+      "totalProposals": "إجمالي العروض",
+      "pendingReview": "قيد المراجعة",
+      "accepted": "مقبول",
+      "rejected": "مرفوض",
+      "totalValue": "القيمة الإجمالية",
+      "tooltips": {
+        "totalProposals": "جميع العروض التي قدمتها",
+        "pendingReview": "عروض تنتظر قرار العميل",
+        "accepted": "عروض تحولت إلى عقود",
+        "rejected": "عروض تم رفضها",
+        "totalValue": "القيمة الإجمالية للعروض المقبولة"
+      }
+    },
+    "sections": {
+      "proposalsList": {
+        "title": "عروضك",
+        "description": "إدارة وتتبع جميع العروض المقدمة"
+      },
+      "tips": {
+        "title": "نصائح وأفضل ممارسات للعروض",
+        "description": "حسِّن معدل نجاح عروضك مع هذه النصائح الخبيرة",
+        "personalizeMessage": {
+          "title": "خَصِّص رسالتك",
+          "description": "دائماً خاطب العميل باسمه واشِر إلى تفاصيل مشروعه المحددة. أظهر أنك قرأت وفهمت متطلباته."
+        },
+        "clearPricing": {
+          "title": "تسعير واضح",
+          "description": "فكِّك تسعيرك بوضوح. اشرح ما هو مدرج وبرر أسعارك بخبرتك والقيمة التي ستقدمها."
+        },
+        "realisticTimeline": {
+          "title": "جدول زمني واقعي",
+          "description": "قدِّم جدولاً زمنياً واقعياً مع معالم. يقدر العملاء الشفافية حول متى يمكنهم توقع التسليمات."
+        }
+      }
+    },
+    "filters": {
+      "filterBy": "تصفية حسب:",
+      "all": "الكل",
+      "pending": "قيد الانتظار",
+      "accepted": "مقبول",
+      "rejected": "مرفوض",
+      "activeFilter": "عروض {status}",
+      "showingCount": "عرض {showing} من أصل {total} عرض",
+      "clear": "مسح عامل التصفية"
+    },
+    "search": {
+      "placeholder": "ابحث في العروض بعنوان المشروع أو اسم العميل أو الرسالة..."
+    },
+    "buttons": {
+      "viewProject": "عرض المشروع",
+      "withdraw": "سحب",
+      "refresh": "تحديث",
+      "refreshing": "جارٍ التحديث...",
+      "findMoreProjects": "ابحث عن المزيد من المشاريع",
+      "viewAllProjects": "عرض جميع المشاريع",
+      "clearSearch": "مسح البحث",
+      "browseAllProjects": "تصفح جميع المشاريع",
+      "findProjects": "ابحث عن مشاريع",
+      "goToHub": "اذهب إلى المركز",
+      "updateProfile": "تحديث الملف الشخصي",
+      "browseProjects": "تصفح المشاريع",
+      "learnFreelancing": "تعلم العمل الحر",
+      "cancel": "إلغاء",
+      "confirmWithdraw": "سحب العرض"
+    },
+    "cta": {
+      "title": "جاهز للعثور على المزيد من الفرص؟",
+      "description": "تصفح مئات المشاريع المميزة وقدم عروضاً لتنمية عملك الحر."
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "accepted": "مقبول",
+      "rejected": "مرفوض"
+    },
+    "emptyStates": {
+      "noMatching": {
+        "title": "لا توجد عروض مطابقة",
+        "description": "لم يتم العثور على عروض تطابق \"{query}\". حاول تعديل مصطلحات البحث أو امسح البحث."
+      },
+      "noStatus": {
+        "title": "لا توجد عروض {status}",
+        "description": "ليس لديك أي عروض {status} في الوقت الحالي. تحقق من حالات عروضك الأخرى أو تصفح لمشاريع جديدة."
+      },
+      "noProposals": {
+        "title": "لا توجد عروض بعد",
+        "description": "لم تقدم أي عروض بعد. ابدأ بتصفح المشاريع المتاحة وتقديم عرضك الأول."
+      }
+    },
+    "permissionError": {
+      "accessRestricted": "الوصول مقيد",
+      "title": "يتطلب الوصول كمستقل",
+      "description": "يجب أن تكون مسجلاً كمستقل لعرض وإدارة العروض. سيتم إعادة توجيهك إلى المركز خلال 5 ثوانٍ.",
+      "currentRole": "الدور الحالي",
+      "notSet": "غير معين",
+      "hint": "للوصول إلى العروض، تحتاج إلى حساب مستقل. يرجى الاتصال بالدعم إذا كنت تعتقد أن هذا خطأ."
+    },
+    "errors": {
+      "sessionExpired": "انتهت الجلسة. يرجى تسجيل الدخول مرة أخرى.",
+      "failedToLoad": "فشل تحميل العروض: {message}",
+      "genericError": "فشل تحميل العروض. يرجى المحاولة مرة أخرى.",
+      "withdrawFailed": "فشل سحب العرض. يرجى المحاولة مرة أخرى."
+    },
+    "confirmations": {
+      "withdraw": "هل أنت متأكد أنك تريد سحب هذا العرض؟ لا يمكن التراجع عن هذا الإجراء.",
+      "withdrawTitle": "سحب العرض",
+      "withdrawDescription": "هل أنت متأكد أنك تريد سحب هذا العرض؟ لا يمكن التراجع عن هذا الإجراء."
+    },
+    "success": {
+      "withdrawn": "تم سحب العرض بنجاح"
+    },
+    "currency": "دج",
+    "negotiable": "قابل للتفاوض",
+    "untitledProject": "مشروع بدون عنوان",
+    "noMessage": "لم يتم تقديم رسالة عرض",
+    "projectOwner": "صاحب المشروع",
+    "submittedOn": "تم التقديم في"
+  },
+  "portfolioForm": {
+    "editTitle": "تعديل عنصر معرض الأعمال",
+    "newTitle": "عنصر معرض أعمال جديد",
+    "titleLabel": "العنوان *",
+    "titlePlaceholder": "مشروعي الرائع",
+    "descLabel": "الوصف",
+    "descPlaceholder": "صف عملك...",
+    "tagsLabel": "الوسوم",
+    "tagsPlaceholder": "رياكت، تصميم، ويب",
+    "tagsHint": "مفصولة بفواصل",
+    "mediaUrlsLabel": "روابط الوسائط",
+    "mediaUrlsPlaceholder": "https://example.com/image.png، https://...",
+    "mediaUrlsHint": "روابط الصور أو الفيديوهات مفصولة بفواصل",
+    "links": "الروابط",
+    "urlPlaceholder": "https://...",
+    "labelPlaceholder": "التسمية (مثال: عرض حي)",
+    "removeLink": "إزالة الرابط",
+    "addLink": "إضافة رابط",
+    "saveChanges": "حفظ التغييرات",
+    "createItem": "إنشاء عنصر",
+    "saveError": "فشل حفظ عنصر المحفظة. يرجى المحاولة مرة أخرى.",
+    "cancel": "إلغاء"
+  },
+  "portfolioGrid": {
+    "deleteConfirm": "هل أنت متأكد من حذف هذا العنصر؟",
+    "emptyTitle": "لا توجد عناصر في معرض الأعمال بعد",
+    "emptySubtitle": "اعرض مهاراتك بإضافة مشروعك الأول.",
+    "addItem": "إضافة عنصر لمعرض الأعمال",
+    "edit": "تعديل",
+    "delete": "حذف"
+  }
+}

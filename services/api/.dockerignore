@@ -1,0 +1,15 @@
+__pycache__
+*.pyc
+*.pyo
+.env
+.env.*
+!.env.example
+podacium/
+venv/
+.pytest_cache
+.coverage
+*.log
+uploads/
+storage/datasets/
+*.bak
+*.tmp

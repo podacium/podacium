@@ -1,0 +1,86 @@
+{
+  "totalDecisions": 0,
+  "modelDistribution": {
+    "haiku": 0,
+    "sonnet": 0,
+    "opus": 0,
+    "inherit": 0
+  },
+  "avgComplexity": 0.5,
+  "avgConfidence": 0.8,
+  "circuitBreakerTrips": 2,
+  "lastUpdated": "2026-07-27T15:53:19.733Z",
+  "learningHistory": [
+    {
+      "task": "P0 INFRASTRUCTURE: Fix Celery workers - debug Prisma binary permissions in container, ensure engine ",
+      "model": "opus",
+      "complexity": 0.6223619047619047,
+      "outcome": "failure",
+      "timestamp": "2026-07-27T15:53:19.576Z"
+    },
+    {
+      "task": "P0 INFRASTRUCTURE: Deploy Coraza WAF with OWASP CRS rules. Fix Nginx rate limiting - add missing lim",
+      "model": "opus",
+      "complexity": 0.3854571428571429,
+      "outcome": "failure",
+      "timestamp": "2026-07-27T15:53:19.733Z"
+    }
+  ],
+  "version": 2,
+  "priors": {
+    "low": {
+      "haiku": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "sonnet": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "opus": {
+        "alpha": 1,
+        "beta": 2
+      },
+      "inherit": {
+        "alpha": 1,
+        "beta": 1
+      }
+    },
+    "med": {
+      "haiku": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "sonnet": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "opus": {
+        "alpha": 1,
+        "beta": 2
+      },
+      "inherit": {
+        "alpha": 1,
+        "beta": 1
+      }
+    },
+    "high": {
+      "haiku": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "sonnet": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "opus": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "inherit": {
+        "alpha": 1,
+        "beta": 1
+      }
+    }
+  }
+}

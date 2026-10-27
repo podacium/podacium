@@ -1,0 +1,141 @@
+{
+  "waitlist": {
+    "meta": {
+      "title": "Join the Waitlist \u2014 Podacium",
+      "description": "Be the first to access Algeria's all-in-one digital platform for learning, freelancing, and business intelligence."
+    },
+    "hero": {
+      "badge": "Early Access \u2014 Limited Spots",
+      "headline": "Your Digital Future Starts Here",
+      "subheadline": "Be among the first to join Algeria's all-in-one platform for learning, freelancing, and business intelligence.",
+      "countdown": "Launching in"
+    },
+    "form": {
+      "title": "Secure Your Spot",
+      "subtitle": "Join forward-thinking Algerians already on the list",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "e.g. Amine Benali",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "e.g. amine@example.com",
+      "referralLabel": "Referral Code (optional)",
+      "referralPlaceholder": "e.g. ABC12345",
+      "referralValid": "Invited by {name} \u2014 you got a promo!",
+      "referralInvalid": "This code doesn't exist. Please check and try again.",
+      "referralValidating": "Checking code\u2026",
+      "terms": "I agree to the Terms of Service and Privacy Policy",
+      "submit": "Join the Waitlist",
+      "submitting": "Joining\u2026",
+      "success": "You\u2019re on the list!",
+      "errors": {
+        "nameRequired": "Please enter your name",
+        "nameInvalid": "Name must be 2\u201380 characters",
+        "emailRequired": "Please enter your email",
+        "emailInvalid": "Please enter a valid email",
+        "emailDisposable": "Disposable email addresses are not allowed",
+        "duplicateEmail": "You\u2019re already on the waitlist! Share your referral link below.",
+        "invalidReferral": "Invalid referral code",
+        "selfReferral": "You cannot refer yourself",
+        "rateLimited": "Too many attempts. Please try again later.",
+        "serverError": "Something went wrong. Please try again.",
+        "termsRequired": "Please accept the terms"
+      }
+    },
+    "dashboard": {
+      "title": "Welcome to the Future, {name}!",
+      "position": "You are #{position} in line",
+      "referral": {
+        "title": "Refer & Climb the List",
+        "subtitle": "Share your link and move up the queue. The more friends you invite, the earlier you get access.",
+        "linkLabel": "Your referral link",
+        "copy": "Copy Link",
+        "copied": "Copied!",
+        "shareTitle": "Share on",
+        "progress": "{count} / {goal} referrals",
+        "nextReward": "Next reward at {goal} referrals",
+        "milestones": {
+          "freeMonth": "Free Month",
+          "freeYear": "Free Year",
+          "earlyAccess": "Early Access",
+          "badge": "Exclusive Badge"
+        }
+      }
+    },
+    "leaderboard": {
+      "title": "Top Referrers",
+      "rank": "#",
+      "name": "Name",
+      "referrals": "Referrals",
+      "empty": "Be the first to refer a friend!"
+    },
+    "countdown": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "totalGoal": "{count} / {goal} registered",
+      "live": "We are live!"
+    },
+    "why": {
+      "title": "Why Podacium?",
+      "cards": {
+        "learn": {
+          "title": "Learn with Purpose",
+          "desc": "Structured courses and guided paths tailored to the Algerian job market and global standards."
+        },
+        "earn": {
+          "title": "Earn on Your Terms",
+          "desc": "Connect with clients, showcase your skills, and get paid — Algeria's first dedicated freelance marketplace."
+        },
+        "analyze": {
+          "title": "Analyze & Decide",
+          "desc": "Business intelligence tools built for SMEs: track trends, benchmark competitors, and act on real data."
+        },
+        "local": {
+          "title": "Built for Algeria",
+          "desc": "Trilingual (AR / FR / EN), fully RTL-ready, and designed around the realities of the Algerian market."
+        }
+      }
+    },
+    "footer": {
+      "tagline": "Learn. Work. Analyze. Grow. \u2014 All in one place."
+    },
+    "email": {
+      "confirmed": "Check your inbox for confirmation",
+      "resend": "Resend email"
+    },
+    "admin": {
+      "title": "Waitlist Management",
+      "stats": {
+        "total": "Total Signups",
+        "pending": "Pending",
+        "verified": "Verified",
+        "converted": "Converted",
+        "bounced": "Bounced",
+        "unsubscribed": "Unsubscribed",
+        "conversionRate": "Conversion Rate",
+        "avgReferrals": "Avg Referrals/User"
+      },
+      "table": {
+        "name": "Name",
+        "email": "Email",
+        "referrals": "Referrals",
+        "status": "Status",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "confirmDelete": "Delete this waitlist entry?",
+      "empty": "No waitlist entries found",
+      "filters": {
+        "all": "All",
+        "pending": "Pending",
+        "verified": "Verified",
+        "converted": "Converted",
+        "bounced": "Bounced",
+        "unsubscribed": "Unsubscribed",
+        "search": "Search by name or email\u2026",
+        "export": "Export CSV"
+      },
+      "pageOf": "Page {page} of {totalPages}"
+    }
+  }
+}

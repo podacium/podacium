@@ -1,0 +1,1694 @@
+{
+  "about": {
+    "hero": {
+      "badge": "Academic Innovation • Incubated at HSE Oran",
+      "title": "Building the Future of Work and Learning in Algeria",
+      "description": "Podacium unites learning, work, and business intelligence into one accessible, data-first ecosystem optimized for emerging markets, starting in Algeria.",
+      "buttons": {
+        "explorePlatform": "Explore the Ecosystem",
+        "originStory": "Our Origin Story",
+        "exploreLearning": "Explore Learning",
+        "exploreHub": "Explore Hub",
+        "exploreBI": "Explore BI"
+      },
+      "quote": "\"Learn, Earn, and Grow in the direction of your data.\""
+    },
+    "missionVision": {
+      "heroBadge": "Transforming Algeria's Digital Economy",
+      "title": "From Problems to Solutions",
+      "subtitle": "An AI-powered ecosystem solving Algeria's economic challenges through integrated education, work, and intelligence.",
+      "mission": {
+        "title": "Mission",
+        "subtitle": "Democratize access to education, work, and insights",
+        "features": [
+          "Localized & affordable for Algerian markets",
+          "Powered by responsible AI",
+          "Connect learning with real opportunity"
+        ]
+      },
+      "vision": {
+        "title": "Vision",
+        "subtitle": "Africa's largest AI economic ecosystem",
+        "features": [
+          "Millions learn, earn, and grow through data",
+          "AI-powered economic operating system",
+          "Starting in Algeria, expanding across Africa"
+        ]
+      }
+    },
+    "problems": {
+      "0": {
+        "problem": "Skill Mismatch",
+        "solution": "Localized education matching demands"
+      },
+      "1": {
+        "problem": "Limited Opportunities",
+        "solution": "Local opportunities for freelance income"
+      },
+      "2": {
+        "problem": "Digital Divide",
+        "solution": "Functionalities for connectivity challenges"
+      },
+      "3": {
+        "problem": "SME Stagnation",
+        "solution": "Digitization tools helping businesses grow"
+      },
+      "4": {
+        "problem": "Talent Drain",
+        "solution": "Data literacy to create local-opportunity"
+      },
+      "title": "Addressing Algeria's Economic Challenges"
+    },
+    "pillars": {
+      "title": "Three Pillars, One Ecosystem",
+      "education": {
+        "title": "Education (ED)",
+        "description": "Democratize access to quality, relevant education tailored for Algerian markets with offline-first design.",
+        "features": [
+          "Localized, skill-based micro-courses",
+          "Future AI Tutor integration",
+          "Direct learning → earning pathways"
+        ]
+      },
+      "freelancing": {
+        "title": "Freelancing (FL)",
+        "description": "Create meaningful work opportunities connecting local talent with global and local markets.",
+        "features": [
+          "Secure escrow payments system",
+          "Talent verification & reputation system",
+          "Direct student-to-freelancer pipeline"
+        ]
+      },
+      "businessIntelligence": {
+        "title": "Business Intelligence (BI)",
+        "description": "Empower micro-SMEs with data-driven decision making through simplified, accessible analytics tools.",
+        "features": [
+          "Simplified dashboards for everyone",
+          "AI-driven business recommendations",
+          "Direct FL marketplace integration"
+        ]
+      },
+      "integration": {
+        "education": {
+          "label": "Education",
+          "subtitle": "Skills"
+        },
+        "freelancing": {
+          "label": "Freelancing",
+          "subtitle": "Income"
+        },
+        "businessIntelligence": {
+          "label": "Business Intelligence",
+          "subtitle": "Insights"
+        },
+        "description": "A circular ecosystem where learning creates earning, experience generates insights, and data improves education."
+      }
+    },
+    "stats": {
+      "title": "Our Vision by 2030",
+      "subtitle": "Tangible impact across Algeria's economic landscape",
+      "empoweredUsers": {
+        "value": "200K+",
+        "label": "Empowered Users"
+      },
+      "transformedSMEs": {
+        "value": "10K+",
+        "label": "Transformed SMEs"
+      },
+      "talentRetention": {
+        "value": "50%",
+        "label": "Talent Retention"
+      },
+      "economicContribution": {
+        "value": "GDP+",
+        "label": "Economic Contribution"
+      }
+    },
+    "team": {
+      "linkedInProfile": "{name} LinkedIn Profile",
+      "header": {
+        "badge": "The Founding Team",
+        "title": "Architects of Algeria's Digital Future",
+        "description": "Data scientists and operators from HSE Oran combining deep technical rigor with firsthand understanding of emerging market economic challenges."
+      },
+      "labels": {
+        "profile": "Profile",
+        "parcours": "Academic & Professional Track",
+        "education": "Education",
+        "highlights": "Key Contributions",
+        "viewParcours": "View Full Background",
+        "close": "Close",
+        "hseAlum": "HSE Oran Data Science Alum",
+        "connectLinkedIn": "Connect on LinkedIn"
+      },
+      "founders": {
+        "0": {
+          "name": "Zakarya Roubhi",
+          "role": "CEO & Chief Technology Officer",
+          "bio": "Visionary architect behind Podacium's AI-first ecosystem. Combines deep technical expertise with economic theory to build platforms that solve real-world challenges in emerging markets.",
+          "visible": true,
+          "parcours": {
+            "education": [
+              "Master in Data Science for Business & Economics, HSE Oran"
+            ],
+            "highlights": [
+              "Originator of Podacium concept",
+              "Lead of Podacium's MVP development",
+              "Led teams as a previous warehouse manager",
+              "Architected Podacium's three-pillar ecosystem"
+            ]
+          }
+        },
+        "1": {
+          "name": "Mohamed Redha Habib",
+          "role": "COO & Chief Human Resources Officer",
+          "bio": "Operations strategist focused on scaling impact while maintaining cultural authenticity. Builds systems that empower teams and create sustainable growth in challenging markets.",
+          "visible": true,
+          "parcours": {
+            "education": [
+              "Master in Data Science for Business & Economics, HSE Oran"
+            ],
+            "highlights": [
+              "Scaled operations for Podacium's MVP launch",
+              "Implemented HR systems for remote teams",
+              "Established compliance frameworks for Algerian regulations",
+              "Built Podacium's organizational culture from the ground up"
+            ]
+          }
+        },
+        "2": {
+          "name": "Ahmed Merhab",
+          "role": "CMO & DPO",
+          "bio": "Data visionary building localized intelligence systems. Creates AI solutions that understand Algerian context while maintaining global technical standards.",
+          "visible": true,
+          "parcours": {
+            "education": [
+              "Master in Data Science for Business & Economics, HSE Oran"
+            ],
+            "highlights": [
+              "Leading development of Podacium's AI prototypes",
+              "Built localized dashboards models for Algerian users",
+              "Established data governance policies for Podacium",
+              "Led the feasibility study for Podacium's products"
+            ]
+          }
+        }
+      }
+    },
+    "roadmap": {
+      "header": {
+        "badge": "Our Journey",
+        "title": "Roadmap & Vision Timeline",
+        "description": "Follow our progress as we build Algeria's AI-powered economic ecosystem."
+      },
+      "phases": {
+        "0": {
+          "year": "2025",
+          "title": "Foundation & Preparation",
+          "description": "Establishing the vision, architecture, and initial build of the Podacium platform.",
+          "milestones": {
+            "0": {
+              "title": "Vision & Concept",
+              "description": "Defining the three-pillar ecosystem vision"
+            },
+            "1": {
+              "title": "Strategic Planning",
+              "description": "Roadmap development and feature prioritization"
+            },
+            "2": {
+              "title": "Core Architecture",
+              "description": "Technical foundation for all platform pillars"
+            },
+            "3": {
+              "title": "Early Platform Build",
+              "description": "Initial development of core features"
+            },
+            "4": {
+              "title": "Task Division & Setup",
+              "description": "Team structure and development processes"
+            }
+          }
+        },
+        "1": {
+          "year": "2026",
+          "title": "Core Launch & Community Building",
+          "description": "Launching the education platform and introducing freelancing opportunities for learners.",
+          "milestones": {
+            "0": {
+              "title": "Core Learning Features",
+              "description": "Complete LMS with course delivery system"
+            },
+            "1": {
+              "title": "Community Building",
+              "description": "Establishing learner and educator networks"
+            },
+            "2": {
+              "title": "Education Platform Launch",
+              "description": "Public release with full course catalog"
+            },
+            "3": {
+              "title": "Freelancing Platform Beta",
+              "description": "Project-based earning opportunities"
+            },
+            "4": {
+              "title": "Certificate System",
+              "description": "Verified digital credentials for skills"
+            }
+          }
+        },
+        "2": {
+          "year": "2027",
+          "title": "Integration & Expansion",
+          "description": "Adding business intelligence tools, AI features, and expanding regionally.",
+          "milestones": {
+            "0": {
+              "title": "BI Pillar Integration",
+              "description": "Business intelligence tools for SMEs"
+            },
+            "1": {
+              "title": "Cross-Platform Integration",
+              "description": "Seamless experience across all pillars"
+            },
+            "2": {
+              "title": "AI Learning Assistant",
+              "description": "Personalized learning recommendations"
+            },
+            "3": {
+              "title": "Mobile-First Evolution",
+              "description": "Optimized mobile web experience"
+            },
+            "4": {
+              "title": "Regional Expansion",
+              "description": "Launch in North African markets"
+            },
+            "5": {
+              "title": "Multi-language Support",
+              "description": "Arabic and French interfaces"
+            }
+          }
+        },
+        "3": {
+          "year": "2028",
+          "title": "Advanced Features & Growth",
+          "description": "Launching native mobile apps and advanced AI capabilities for businesses.",
+          "milestones": {
+            "0": {
+              "title": "Mobile Applications",
+              "description": "Native iOS and Android apps"
+            },
+            "1": {
+              "title": "Public Partnerships",
+              "description": "Collaborations with institutions"
+            },
+            "2": {
+              "title": "AI Business Layer",
+              "description": "Decision-making tools for enterprises"
+            },
+            "3": {
+              "title": "Advanced AI Features",
+              "description": "Enhanced automation and personalization"
+            },
+            "4": {
+              "title": "Scaled Growth",
+              "description": "Expanding user base and platform capabilities"
+            }
+          }
+        },
+        "4": {
+          "year": "2029+",
+          "title": "Pan-African Ecosystem",
+          "description": "Becoming a unified platform for learning, opportunities, and business growth across Africa.",
+          "milestones": {
+            "0": {
+              "title": "Pan-African Presence",
+              "description": "Expansion across multiple African regions"
+            },
+            "1": {
+              "title": "Three-Dimensional AI Tools",
+              "description": "Advanced AI across all platform pillars"
+            },
+            "2": {
+              "title": "Institutional Partnerships",
+              "description": "University and government collaborations"
+            },
+            "3": {
+              "title": "Advanced Credentialing",
+              "description": "Blockchain-verified skills and certifications"
+            },
+            "4": {
+              "title": "Integrated Ecosystem",
+              "description": "Complete synergy between learning, earning, and business growth"
+            }
+          }
+        }
+      },
+      "currentFocus": {
+        "badge": "Current Focus",
+        "description": "We're actively working on completing milestones and building towards our next phase of growth.",
+        "complete": "Complete"
+      },
+      "states": {
+        "completed": "Completed",
+        "inProgress": "In Progress",
+        "upcoming": "Upcoming",
+        "planned": "Planned"
+      },
+      "more": "+{n} more",
+      "keyMilestones": "Key Milestones",
+      "overallProgress": "Overall Progress",
+      "milestonesCompleted": "Milestones Completed"
+    },
+    "contact": {
+      "badge": "Get In Touch",
+      "title": "Connect With the Podacium Team",
+      "description": "Have questions, partnership ideas, or want to join our mission? We'd love to hear from you.",
+      "email": {
+        "title": "Email Us",
+        "description": "For partnerships, media, and general inquiries",
+        "address": "podacium@podacium.com",
+        "ariaLabel": "Send email to podacium@podacium.com",
+        "subtitle": "General & Media Inquiries"
+      },
+      "location": {
+        "title": "Visit Our Hub",
+        "description": "Incubated at HSE Oran, Algeria",
+        "address": "Higher School of Economics, Oran",
+        "ariaLabel": "Open HSE Oran location on Google Maps",
+        "subtitle": "Campus Headquarters",
+        "name": "HSE Oran, Algeria"
+      }
+    },
+    "cta": {
+      "badge": "Your Journey Starts Here",
+      "title": "Join Algeria's Digital Transformation",
+      "description": "Whether you're a learner, freelancer, business owner, or investor, there's a place for you in the Podacium ecosystem.",
+      "buttons": {
+        "signup": "Start Your Free Account",
+        "continueLearning": "Continue Learning",
+        "goToFreelanceHub": "Go to Freelance Hub",
+        "accessBusinessIntelligence": "Access Business Intelligence",
+        "dashboard": "Dashboard",
+        "profile": "Profile",
+        "partnerWithUs": "Partner With Us",
+        "joinOurTeam": "Join Our Team"
+      },
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "talent": {
+        "title": "For Learners & Freelancers",
+        "description": "Build verifiable digital skills, earn recognized Skill Passports, and unlock protected freelance gigs across Algeria and international markets."
+      },
+      "business": {
+        "title": "For Businesses & Institutions",
+        "description": "Commission vetted Algerian talent with 100% escrow protection, leverage labor intelligence data, or partner on regional economic development.",
+        "note": "Institutional partnerships, university incubators & corporate pilots."
+      },
+      "loggedIn": {
+        "greeting": "Welcome back, {name}!",
+        "roles": {
+          "STUDENT": {
+            "badge": "Active Learner",
+            "title": "Ready to Advance Your Skills?",
+            "description": "Continue your enrolled courses, level up your Skill Passport, and unlock upcoming freelance opportunities.",
+            "primaryBtn": "Continue Learning",
+            "secondaryBtn": "Go to Dashboard"
+          },
+          "FREELANCER": {
+            "badge": "Verified Freelancer",
+            "title": "Find Your Next Protected Client Gig",
+            "description": "Browse open client projects with 100% escrow protection and submit competitive proposals.",
+            "primaryBtn": "Browse Marketplace",
+            "secondaryBtn": "Freelancer Dashboard"
+          },
+          "BUSINESS": {
+            "badge": "Enterprise Partner",
+            "title": "Hire Verified Talent & Scale",
+            "description": "Post new projects, commission vetted talent with 100% escrow, and access real-time labor market analytics.",
+            "primaryBtn": "Post a Project / Hire",
+            "secondaryBtn": "Business Intelligence"
+          },
+          "ADMIN": {
+            "badge": "Platform Administrator",
+            "title": "Podacium Administration",
+            "description": "Manage ecosystem operations, verify credentials, monitor escrow, and track platform health.",
+            "primaryBtn": "Admin Console",
+            "secondaryBtn": "User Dashboard"
+          },
+          "INSTRUCTOR": {
+            "badge": "Verified Instructor",
+            "title": "Manage Courses & Cohorts",
+            "description": "Update your educational curriculum, inspect student assignments, and mentor upcoming talents.",
+            "primaryBtn": "Course Studio",
+            "secondaryBtn": "Instructor Dashboard"
+          },
+          "DEFAULT": {
+            "badge": "Verified Member",
+            "title": "Welcome to Your Podacium Workspace",
+            "description": "You are signed in. Jump straight into your personal workspace to continue your learning and work journey.",
+            "primaryBtn": "Go to Dashboard",
+            "secondaryBtn": "My Profile"
+          }
+        }
+      }
+    },
+    "trust": {
+      "badge": "Academic Pedigree & Institutional Trust",
+      "title": "Built on Academic Rigor and Sovereign Infrastructure",
+      "subtitle": "Incubated under national innovation frameworks, secured by domestic payment rails, and fully compliant with Algerian data regulations.",
+      "items": [
+        {
+          "id": "hse",
+          "name": "HSE Oran Incubateur",
+          "badge": "Academic Birthplace",
+          "description": "Born under Ministerial Decree 1275 at the Higher School of Economics, Oran",
+          "category": "academic"
+        },
+        {
+          "id": "decree",
+          "name": "Decree 1275 / Startup.dz",
+          "badge": "National Framework",
+          "description": "Official Algerian university startup innovation accreditation program",
+          "category": "framework"
+        },
+        {
+          "id": "payments",
+          "name": "Chargily Pay & SATIM",
+          "badge": "Domestic Payments",
+          "description": "Bank-grade infrastructure supporting Edahabia and CIB card transactions",
+          "category": "payment"
+        },
+        {
+          "id": "privacy",
+          "name": "Law 18-07 Sovereign Compliance",
+          "badge": "Data Sovereignty",
+          "description": "Full compliance with Algerian personal data protection and privacy statutes",
+          "category": "compliance"
+        }
+      ]
+    },
+    "flywheel": {
+      "badge": "The Circular Flywheel",
+      "title": "Three Integrated Pillars, One Continuous Loop",
+      "subtitle": "How learning creates earning, experience generates insights, and market data refines education.",
+      "filtersAria": "Pillar Filters",
+      "closedLoopTitle": "The Closed-Loop Economic Model",
+      "tabs": {
+        "all": "The Full Loop",
+        "learn": "1. Learn (Education)",
+        "earn": "2. Earn (Freelance Hub)",
+        "scale": "3. Scale (Business Intelligence)"
+      },
+      "learn": {
+        "title": "Learn • Education (ED)",
+        "badge": "Skill Ingestion",
+        "description": "Democratizing relevant, localized digital education with an offline-first architecture tailored for Algerian students and professionals.",
+        "features": [
+          "Localized, skill-based micro-courses matching Algerian job market demand",
+          "Skill Passport digital credentials recognized by regional employers",
+          "Direct bridge into live freelance opportunities and client gigs"
+        ],
+        "ctaText": "Explore Courses",
+        "ctaLink": "/learn"
+      },
+      "earn": {
+        "title": "Earn • Freelancing (FL)",
+        "badge": "Marketplace Execution",
+        "description": "A protected marketplace connecting vetted Algerian talent with local businesses, diaspora clients, and regional contracts.",
+        "features": [
+          "100% escrow payment protection — funds secured before work starts",
+          "Transparent client and talent verification reputation system",
+          "Direct student-to-freelancer pipeline with zero early commissions"
+        ],
+        "ctaText": "Join Freelance Hub",
+        "ctaLink": "/hub"
+      },
+      "scale": {
+        "title": "Scale • Business Intelligence (BI)",
+        "badge": "Marketplace Intelligence",
+        "description": "Actionable labor market data and business analytics empowering micro-SMEs to hire strategically and optimize growth.",
+        "features": [
+          "Regional skill shortage and competitive wage benchmarks across 58 wilayas",
+          "AI-assisted business recommendation and hiring forecast tools",
+          "Direct marketplace integration to commission vetted talent seamlessly"
+        ],
+        "ctaText": "Access Intelligence",
+        "ctaLink": "/bi"
+      },
+      "loopDescription": "A circular economic engine: Education supplies verified talent, Freelancing validates market execution and generates employment data, and Business Intelligence reveals market demand to train the next cohort."
+    },
+    "security": {
+      "badge": "Zero-Compromise Security",
+      "title": "Engineered for Trust in Emerging Markets",
+      "subtitle": "Eliminating risk for both talent and businesses through bank-grade escrow, verified credentials, and sovereign data compliance.",
+      "escrow": {
+        "title": "100% Guaranteed Escrow Protection",
+        "badge": "Payment Safety",
+        "description": "Project funds are locked in secure escrow before work begins and released only upon milestone approval. Freelancers never chase unpaid invoices, and businesses never pay for undelivered work."
+      },
+      "verification": {
+        "title": "Verified Skill Passports",
+        "badge": "Authentic Talent",
+        "description": "Portfolios and competencies are tied to actual course completion and verified Algerian identity, eliminating fake bids and phantom talent."
+      },
+      "privacy": {
+        "title": "National Data Sovereignty",
+        "badge": "Legal Compliance",
+        "description": "Full compliance with Algerian Law 18-07 protects personal information, business analytics, and transaction records within sovereign regulatory standards."
+      }
+    },
+    "journey": {
+      "badge": "Strategic Roadmap",
+      "title": "Our Journey & Horizon Milestones",
+      "subtitle": "From university research to Algeria's premier talent and intelligence ecosystem.",
+      "timelineAria": "Company Journey Milestones",
+      "milestones": [
+        {
+          "year": "2024",
+          "title": "Research & Academic Incubation",
+          "subtitle": "HSE Oran Incubator",
+          "description": "Concept formulation under Decree 1275, market feasibility research in Algerian wilayas, and foundational architecture design.",
+          "status": "completed",
+          "tags": [
+            "Decree 1275",
+            "Feasibility Study",
+            "Architecture"
+          ]
+        },
+        {
+          "year": "2025",
+          "title": "Core Build & Alpha Cohorts",
+          "subtitle": "Three-Pillar Engine",
+          "description": "Core platform MVP development, offline-first learning system, and closed alpha testing with university student cohorts.",
+          "status": "completed",
+          "tags": [
+            "LMS Engine",
+            "Student Alpha",
+            "Escrow Prototype"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "Public Launch & Freelance Beta",
+          "subtitle": "National Scale & Digital Payments",
+          "description": "Nationwide release of the Education platform, launch of the escrow-protected Freelancing Beta, and CIB/Edahabia integration via Chargily.",
+          "status": "current",
+          "tags": [
+            "Public Launch",
+            "Chargily Pay",
+            "Freelance Beta"
+          ]
+        },
+        {
+          "year": "2027+",
+          "title": "Enterprise BI & Regional Scale",
+          "subtitle": "Pan-African Vision",
+          "description": "Enterprise Business Intelligence layer, native mobile applications, and expansion across North African cross-border markets.",
+          "status": "upcoming",
+          "tags": [
+            "Enterprise BI",
+            "Mobile Apps",
+            "Regional Expansion"
+          ]
+        }
+      ],
+      "exploreActive": "Explore Live Beta",
+      "changelogNotice": "Looking for weekly product releases and engineering updates?",
+      "changelogLink": "Follow our journey on LinkedIn",
+      "status": {
+        "completed": "Completed",
+        "current": "Active Horizon",
+        "upcoming": "Upcoming"
+      }
+    },
+    "vision": {
+      "badge": "Our 2030 Horizon",
+      "title": "Target Impact Commitments",
+      "subtitle": "Long-term economic impact goals we are actively building toward for Algeria and the region.",
+      "targets": [
+        {
+          "value": "200K+",
+          "label": "Empowered Learners",
+          "detail": "Target skilled youth across all 58 wilayas",
+          "color": "blue"
+        },
+        {
+          "value": "10K+",
+          "label": "Digitized SMEs",
+          "detail": "Target businesses powered by our BI & talent",
+          "color": "green"
+        },
+        {
+          "value": "50%",
+          "label": "Talent Retention Target",
+          "detail": "Reversing regional brain drain through local opportunity",
+          "color": "purple"
+        },
+        {
+          "value": "GDP+",
+          "label": "Economic Contribution",
+          "detail": "Accelerating Algeria's formal digital gig economy",
+          "color": "indigo"
+        }
+      ]
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Pricing | Podacium - Learn, Earn & Grow",
+      "description": "Fair, growth-aligned pricing for North Africa's premier learning and earning platform. Start free, pay as you grow, scale when ready.",
+      "keywords": "pricing, education, freelancing, business intelligence, North Africa, learning platform"
+    },
+    "hero": {
+      "badge": "Growth-Aligned Pricing",
+      "title": "Pricing That Grows",
+      "titleHighlight": "With You",
+      "subtitle": "Three pillars for one mission: Your success. Choose the pricing model that matches your journey with us."
+    },
+    "common": {
+      "soon": "Soon",
+      "cancelAnytime": "Cancel anytime • No long-term commitment",
+      "free": "Free",
+      "currency": "DZD",
+      "features": "Features",
+      "billing": {
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "perMonth": "/month",
+        "perYear": "/year",
+        "abbrYear": "yr",
+        "abbrMonth": "mo",
+        "savePercent": "Save {percent}%",
+        "youSave": "Save {amount} {currency}",
+        "save": "Save",
+        "off": "off"
+      },
+      "trialDays": "{days}-day free trial",
+      "mostPopular": "Most Popular",
+      "recommended": "Recommended",
+      "pillars": {
+        "education": "Education",
+        "freelancing": "Freelancing",
+        "business": "Business Intelligence"
+      },
+      "trust": [
+        "No hidden fees",
+        "30-day guarantee",
+        "Pay only when you earn",
+        "Cancel anytime"
+      ],
+      "success": {
+        "title": "Success!",
+        "description": "You've successfully selected the {plan} plan. Redirecting you to complete the process..."
+      },
+      "errors": {
+        "failedSelection": "Failed to process your selection. Please try again.",
+        "tryAgain": "Try Again"
+      },
+      "acceptedPayments": "Accepted Domestic & International Payment Methods",
+      "paymentMethods": {
+        "edahabia": "EDAHABIA (Algeria Post)",
+        "cib": "CIB (Interbank Card)",
+        "satim": "Chargily Pay & SATIM",
+        "visa": "Visa / Mastercard (EUR/USD)"
+      }
+    },
+    "education": {
+      "title": "Education Pricing",
+      "subtitle": "Learn & Grow",
+      "description": "Start free, advance with subscriptions. Pay for 10 months, get 12.",
+      "cta": "Get {tier}",
+      "plans": {
+        "starter": "Starter",
+        "starterDesc": "For curious learners who want to explore and build skills",
+        "plus": "Plus",
+        "plusDesc": "For career changers and professionals doing self-directed upskilling",
+        "pro": "Pro",
+        "proDesc": "For intensive learners and career switchers. Includes mentor access"
+      },
+      "features": {
+        "0": [
+          "Access to curated free courses",
+          "Platform onboarding & exploration",
+          "No time limits or trials",
+          "Community discussions access",
+          "Basic course materials"
+        ],
+        "1": [
+          "Lifetime access to purchased courses",
+          "Downloadable resources & materials",
+          "Course completion certificates",
+          "Direct instructor Q&A access",
+          "Hands-on projects & exercises",
+          "Priority course support"
+        ],
+        "2": [
+          "Curated sequence of 5+ courses",
+          "20% discount vs buying individually",
+          "Job-ready skill development",
+          "Path completion certification",
+          "Progress tracking & analytics",
+          "Study group access"
+        ],
+        "coursesPerMonth": "courses/mo",
+        "skillPassport": "Skill Passport access",
+        "tracking": "Course completion tracking",
+        "certificates": "Certificates included",
+        "mentor": "Mentor access & live Q&A",
+        "priority": "Priority support 24/7"
+      },
+      "tiers": [
+        {
+          "tier": "Free Learning",
+          "price": "Free",
+          "period": "forever",
+          "description": "Start your learning journey with zero risk"
+        },
+        {
+          "tier": "Course Pro",
+          "price": "Flexible",
+          "period": "/course",
+          "description": "Purchase individual courses for deep learning"
+        },
+        {
+          "tier": "Learning Path",
+          "price": "Flexible",
+          "period": "/path",
+          "description": "Structured learning journeys for mastery"
+        }
+      ],
+      "faq": {
+        "0": {
+          "question": "Can I try courses before paying?",
+          "answer": "Yes! All our free courses are available without any payment. For paid courses, you can preview the first lesson and see the course curriculum before purchasing."
+        },
+        "1": {
+          "question": "Do I keep access to courses I purchase?",
+          "answer": "Absolutely. When you purchase a course individually (Course Pro), you get lifetime access to that course, including all future updates."
+        },
+        "2": {
+          "question": "What's the difference between buying courses and subscription?",
+          "answer": "Purchasing courses gives you lifetime access to those specific courses. Subscription gives you access to all subscription courses while your subscription is active, but you lose access if you cancel."
+        },
+        "3": {
+          "question": "Are learning paths worth it?",
+          "answer": "Learning paths offer 20% savings compared to buying courses individually, plus curated progression and additional resources. They're ideal for mastering complete skill sets."
+        },
+        "title": "Education FAQs",
+        "description": "Everything you need to know about our education plans"
+      },
+      "subscription": {
+        "title": "Learning Subscription",
+        "description": "Instead of paying per course or per path, get unlimited access with a subscription",
+        "tiers": {
+          "starter": {
+            "name": "Starter Subscription",
+            "monthlyPrice": "1,900 DZD",
+            "yearlyPrice": "17,900 DZD",
+            "description": "For curious learners who want to explore skills"
+          },
+          "plus": {
+            "name": "Plus Subscription",
+            "monthlyPrice": "3,400 DZD",
+            "yearlyPrice": "31,900 DZD",
+            "description": "For learners who want to validate skills with certificates"
+          },
+          "pro": {
+            "name": "Pro Subscription",
+            "monthlyPrice": "5,400 DZD",
+            "yearlyPrice": "49,900 DZD",
+            "description": "For intensive learners and career switchers"
+          }
+        },
+        "features": {
+          "starter": [
+            "Access to subscription courses",
+            "Up to 5 active courses at a time",
+            "Monthly billing, cancel anytime",
+            "No certificates",
+            "No ownership after cancellation",
+            "Standard learning support"
+          ],
+          "plus": [
+            "Access to subscription courses",
+            "Course completion certificates",
+            "Up to 7 active courses at a time",
+            "Monthly billing, cancel anytime",
+            "No ownership after cancellation",
+            "Priority learning support"
+          ],
+          "pro": [
+            "Access to subscription courses",
+            "Course completion certificates",
+            "Up to 10 active courses at a time",
+            "Monthly billing, cancel anytime",
+            "Exclusive advanced content",
+            "Premium 24/7 learning support"
+          ]
+        },
+        "savings": {
+          "starter": "Save 4,900 DZD with yearly billing",
+          "plus": "Save 8,900 DZD with yearly billing",
+          "pro": "Save 14,900 DZD with yearly billing"
+        },
+        "equivalent": "Equivalent to 1,492 DZD/month",
+        "cta": "Get {tier} Subscription"
+      },
+      "ctaObj": {
+        "0": {
+          "text": "Start Learning Free"
+        },
+        "1": {
+          "text": "Browse Paid Courses"
+        },
+        "2": {
+          "text": "Explore Learning Paths"
+        },
+        "title": "Ready to Start Learning?",
+        "description": "Join thousands of learners across North Africa who are transforming their careers with our education platform.",
+        "buttons": {
+          "startFree": "Start Learning Free",
+          "browseCourses": "Browse Paid Courses"
+        }
+      },
+      "notes": {
+        "skillPassportTitle": "What is the Skill Passport?",
+        "skillPassportDesc": "The Skill Passport is your verified digital credential that proves your skills to employers and clients. It combines course completions, assessment results, and freelance work history into one portable credential that Algerian employers recognize. Only available with a paid subscription.",
+        "skillPassportBullets": [
+          "Verified digital credential that proves your skills to employers and clients",
+          "Combines course completions, assessment results, and freelance work history",
+          "Portable credential recognized by Algerian employers",
+          "Only available with a paid subscription"
+        ]
+      }
+    },
+    "freelancing": {
+      "title": "Freelancing Pricing",
+      "subtitle": "Pay for What You Use",
+      "description": "No platform commissions. Purchase features with PodaPoints — you only pay for the services you need.",
+      "features": {
+        "title": "Feature-Based Pricing",
+        "description": "Unlock marketplace features with PodaPoints instead of paying commissions on every project.",
+        "items": [
+          "Post Projects — 200 PodaPoints per post",
+          "Featured Project Listing — 500 PodaPoints for 7 days",
+          "Freelancer Boost — 200 PodaPoints per boost",
+          "Featured Freelancer — 500 PodaPoints for 7 days",
+          "Skill Passport Badge — 500 PodaPoints (lifetime)"
+        ]
+      },
+      "benefits": {
+        "podapoints": "PodaPoints Payments",
+        "podapointsDesc": "1 PodaPoint = 1 DZD — purchase once, use anytime",
+        "flexibility": "Pay Per Feature",
+        "flexibilityDesc": "No commissions on earnings — only pay for services you actively use",
+        "expiry": "365-Day Validity",
+        "expiryDesc": "Points expire 365 days after purchase — plan ahead with confidence"
+      },
+      "podaPointsTitle": "Unlock Features with PodaPoints",
+      "podaPointsCta": "Go to Billing →",
+      "podaPoints": {
+        "projectPost": "Post a Project",
+        "featuredProject": "Featured Project",
+        "boost": "Freelancer Boost",
+        "skillPassport": "Skill Passport"
+      },
+      "oldTiers": [
+        {
+          "tier": "Post a Project",
+          "price": "200",
+          "period": "PodaPoints",
+          "description": "Post a freelance project and find talent"
+        },
+        {
+          "tier": "Featured Project",
+          "price": "500",
+          "period": "PodaPoints / 7 days",
+          "description": "Get your project featured for maximum visibility"
+        },
+        {
+          "tier": "Freelancer Boost",
+          "price": "200",
+          "period": "PodaPoints",
+          "description": "Boost your freelancer profile visibility"
+        },
+        {
+          "tier": "Featured Freelancer",
+          "price": "500",
+          "period": "PodaPoints / 7 days",
+          "description": "Featured in search results for 7 days"
+        },
+        {
+          "tier": "Skill Passport",
+          "price": "500",
+          "period": "PodaPoints",
+          "description": "Verified skills badge for your profile"
+        }
+      ],
+      "faq": {
+        "0": {
+          "question": "How does feature pricing work?",
+          "answer": "There are no commissions on projects. Instead, you purchase features using PodaPoints (1 PodaPoint = 1 DZD). For example, posting a project costs 200 PodaPoints, and featuring a freelancer listing costs 500 PodaPoints. You only pay for the specific services you use."
+        },
+        "1": {
+          "question": "Are there any hidden fees?",
+          "answer": "No hidden fees. No commissions, no subscription fees for freelancing. You only pay for the features you choose to use with PodaPoints. Payment processing fees may apply depending on your payment method."
+        },
+        "2": {
+          "question": "What are PodaPoints and how do I get them?",
+          "answer": "PodaPoints are the platform currency (1 PodaPoint = 1 DZD). You can purchase them through your wallet using CIB or Dahabia cards via Chargily Pay. Points expire 365 days after purchase."
+        },
+        "3": {
+          "question": "Can I work with teams or agencies?",
+          "answer": "Yes! Our Business subscription plans include team management tools, advanced analytics, and priority support. Subscribe monthly or annually to unlock premium features."
+        },
+        "title": "Freelancing FAQs",
+        "description": "Common questions about freelancing on Podacium"
+      },
+      "cta": {
+        "0": {
+          "text": "Start Freelancing"
+        },
+        "1": {
+          "text": "It's Time to Grow"
+        },
+        "2": {
+          "text": "Become Pro"
+        },
+        "3": {
+          "text": "Contact Sales"
+        },
+        "title": "Ready to Start Earning?",
+        "description": "Join our marketplace of talented freelancers. No commissions — just pay for the features you need with PodaPoints.",
+        "buttons": {
+          "startFree": "Start Freelancing Free",
+          "upgrade": "Upgrade to Growth"
+        }
+      },
+      "notes": {
+        "howItWorksTitle": "How does freelancing payment work?",
+        "howItWorksDesc": "There are no subscription fees for freelancing. Build your profile and apply to projects for free. Purchase features like project posts, featured listings, and boosts using PodaPoints when you need them — no commissions on your earnings.",
+        "howItWorksBullets": [
+          "No subscription fees or commissions — freelancing is completely free to join",
+          "Business owners purchase project posts and features with PodaPoints",
+          "Earn 100% of your project value — no commissions deducted",
+          "Freelancers receive earnings directly — no upfront costs"
+        ]
+      }
+    },
+    "business": {
+      "title": "Business Intelligence",
+      "subtitle": "Analyze & Decide",
+      "description": "Data-driven decisions for Algerian SMEs. See what the market is doing before your competitors.",
+      "cta": {
+        "0": {
+          "text": "Get Started Free"
+        },
+        "1": {
+          "text": "Start Growing"
+        },
+        "2": {
+          "text": "Scale Up"
+        },
+        "3": {
+          "text": "Contact Enterprise"
+        },
+        "title": "Ready to Make Smarter Decisions?",
+        "description": "Transform your data into actionable insights with our powerful business intelligence platform.",
+        "buttons": {
+          "startTrial": "Start Free BI Trial",
+          "tryGrowth": "Try Growth Plan"
+        },
+        "startTrial": "Start Free BI Trial"
+      },
+      "plans": {
+        "starter": "Starter",
+        "starterDesc": "Essential analytics for small teams getting started with data",
+        "growth": "Growth",
+        "growthDesc": "Advanced analytics for growing organizations across wilayas",
+        "pro": "Pro",
+        "proDesc": "Full dashboard, custom reports, hiring forecasts, and exports"
+      },
+      "features": {
+        "0": [
+          "Basic dashboards & visualizations",
+          "Up to 1GB data storage",
+          "Manual data exploration",
+          "Single user access",
+          "Basic report generation"
+        ],
+        "1": [
+          "Advanced analytics & forecasting",
+          "Up to 10 team members",
+          "10GB data storage",
+          "Report sharing & collaboration",
+          "Goal tracking & KPIs",
+          "Priority email support"
+        ],
+        "2": [
+          "Algorithms-powered predictive insights",
+          "Up to 50 team members",
+          "100GB data storage",
+          "Real-time data processing",
+          "Advanced security & compliance",
+          "24/7 phone & chat support"
+        ],
+        "3": [
+          "Custom models & algorithms",
+          "Unlimited team members",
+          "Unlimited data storage",
+          "On-premise deployment options",
+          "Enterprise security & governance",
+          "Dedicated technical account manager"
+        ],
+        "datasets": "datasets",
+        "dashboards": "dashboards",
+        "cityLevel": "City-level insights",
+        "wilayaLevel": "Wilaya-level comparison",
+        "weeklyDigest": "Weekly email digest",
+        "salaryBenchmarks": "Salary benchmarks",
+        "customReports": "Custom reports & exports",
+        "hiringForecasts": "Hiring forecasts",
+        "apiAccess": "API access",
+        "dedicatedManager": "Dedicated account manager"
+      },
+      "tiers": [
+        {
+          "tier": "Starter",
+          "price": "Free",
+          "period": "forever",
+          "description": "Basic analytics for individuals & small teams"
+        },
+        {
+          "tier": "Growth",
+          "price": "DZD 3,500",
+          "period": "/month",
+          "description": "Advanced analytics for growing teams"
+        },
+        {
+          "tier": "Scale",
+          "price": "DZD 8,000",
+          "period": "/month",
+          "description": "Enterprise analytics for data-driven organizations"
+        },
+        {
+          "tier": "Elite",
+          "price": "Custom",
+          "period": "enterprise",
+          "description": "Custom BI solutions for large enterprises"
+        }
+      ],
+      "faq": {
+        "0": {
+          "question": "Can I start with the free plan and upgrade later?",
+          "answer": "Absolutely! You can start with our free Starter plan and upgrade at any time. Your data will be preserved when you upgrade, and we offer pro-rated billing for mid-cycle upgrades."
+        },
+        "1": {
+          "question": "What kind of data sources do you support?",
+          "answer": "We support CSV/Excel uploads, database connections (MySQL, PostgreSQL, MongoDB), API integrations, and cloud storage (Google Drive, Dropbox). Enterprise plans include custom data source integrations."
+        },
+        "2": {
+          "question": "Is my data secure?",
+          "answer": "Yes. All data is encrypted in transit and at rest. We comply with industry security standards and offer additional security features in our Scale and Elite plans for regulated industries."
+        },
+        "3": {
+          "question": "Do you offer training and onboarding?",
+          "answer": "Yes! All plans include documentation and video tutorials. Growth and above include email support, while Scale and Elite include personalized onboarding sessions and dedicated support."
+        },
+        "title": "Business Intelligence FAQs",
+        "description": "Questions regarding our business solutions"
+      },
+      "storage": {
+        "title": "Scale Your Data Intelligence",
+        "description": "Each plan is designed to match your organization's data maturity and growth stage.",
+        "plans": [
+          {
+            "plan": "Starter",
+            "storage": "1GB",
+            "users": "1 User"
+          },
+          {
+            "plan": "Growth",
+            "storage": "10GB",
+            "users": "10 Users"
+          },
+          {
+            "plan": "Scale",
+            "storage": "100GB",
+            "users": "50 Users"
+          },
+          {
+            "plan": "Elite",
+            "storage": "Unlimited",
+            "users": "Unlimited"
+          }
+        ]
+      },
+      "algorithms": {
+        "title": "BI Algorithms & Features Comparison",
+        "description": "Advanced algorithms and features available at each tier. Scale your business intelligence capabilities as you grow.",
+        "feature": "Algorithm / Feature",
+        "basic": "Basic Features",
+        "standard": "Standard Algorithms",
+        "advanced": "Advanced Analytics",
+        "enterprise": "Enterprise AI",
+        "headers": {
+          "feature": "Feature",
+          "starter": "Starter",
+          "growth": "Growth",
+          "scale": "Scale",
+          "enterprise": "Enterprise"
+        },
+        "features": {
+          "0": "Basic descriptive statistics",
+          "1": "Trend analysis & forecasting",
+          "2": "Customer segmentation (RFM)",
+          "3": "Predictive analytics models",
+          "4": "Anomaly detection",
+          "5": "Natural Language Processing (NLP)",
+          "6": "Custom ML model deployment",
+          "7": "Real-time recommendations"
+        },
+        "benefits": {
+          "0": {
+            "title": "Basic Foundation",
+            "desc": "Essential analytics to get started"
+          },
+          "1": {
+            "title": "Advanced Insights",
+            "desc": "Predictive analytics & forecasting"
+          },
+          "2": {
+            "title": "Enterprise Power",
+            "desc": "AI-driven decisions at scale"
+          },
+          "3": {
+            "title": "Custom Solutions",
+            "desc": "Fully tailored ML capabilities"
+          }
+        }
+      }
+    }
+  },
+  "partners": {
+    "hero": {
+      "badge": "Powering Algeria's AI Ecosystem",
+      "title": {
+        "prefix": "Join Our Ecosystem of",
+        "highlight": "Innovators"
+      },
+      "description": "We collaborate with universities, businesses, and innovators to empower learners, support local talent, and shape Algeria's data-driven future.",
+      "buttons": {
+        "becomePartner": "Become a Partner",
+        "emailUs": "Email Us"
+      }
+    },
+    "benefitsSection": {
+      "title": {
+        "prefix": "Why Partner with",
+        "highlight": "Podacium",
+        "suffix": "?"
+      },
+      "description": "Join forces with Algeria's leading tech platform and unlock exclusive benefits that drive growth and impact."
+    },
+    "partnershipTypesSection": {
+      "title": "Types of Partnerships",
+      "description": "We work with diverse organizations to create maximum impact across Algeria's AI ecosystem."
+    },
+    "currentPartnersSection": {
+      "title": "Our Esteemed Partners",
+      "description": "Meet the forward-thinking organizations already shaping Algeria's AI future with us.",
+      "comingSoon": {
+        "badge": "More Partners Coming Soon",
+        "description": "We're actively expanding our partner network. Your organization could be next!"
+      }
+    },
+    "partnershipTypes": {
+      "university": {
+        "title": "Universities & Education",
+        "description": "Co-create curriculum, research projects, and student opportunities in AI and data science.",
+        "benefits": [
+          "Access to cutting-edge AI learning content",
+          "Student internship and project placements",
+          "Joint research initiatives",
+          "Faculty development programs"
+        ]
+      },
+      "business": {
+        "title": "Businesses & Enterprises",
+        "description": "Access talent pipelines, upskill your workforce, and co-develop AI solutions.",
+        "benefits": [
+          "Direct access to verified AI talent",
+          "Customized training programs",
+          "Data consulting and BI solutions",
+          "Early access to new platform features"
+        ]
+      },
+      "innovator": {
+        "title": "Innovators & Startups",
+        "description": "Join our ecosystem to scale your AI solutions and access our user base.",
+        "benefits": [
+          "Platform integration opportunities",
+          "Go-to-market support",
+          "Technical mentorship",
+          "Investor networking"
+        ]
+      },
+      "government": {
+        "title": "Government & NGOs",
+        "description": "Collaborate on digital transformation initiatives and community impact projects.",
+        "benefits": [
+          "Large-scale training programs",
+          "Community impact initiatives",
+          "Policy advisory support",
+          "Digital literacy campaigns"
+        ]
+      }
+    },
+    "benefits": {
+      "talentPipeline": {
+        "title": "Talent Pipeline",
+        "description": "Direct access to our top AI and data science talents"
+      },
+      "brandVisibility": {
+        "title": "Brand Visibility",
+        "description": "Featured across our platform reaching all of our clients"
+      },
+      "technologyAccess": {
+        "title": "Technology Access",
+        "description": "Early access to our tools and platform features"
+      },
+      "marketInsights": {
+        "title": "Market Insights",
+        "description": "Data-driven insights into Algeria's tech landscape"
+      },
+      "communityImpact": {
+        "title": "Community Impact",
+        "description": "Contribute to Algeria's digital transformation journey"
+      },
+      "revenueShare": {
+        "title": "Revenue Share",
+        "description": "Earn through co-created content, and joint ventures"
+      }
+    },
+    "currentPartners": {
+      "eseOran": {
+        "name": "Higher School of Economics (ESEconomie Oran)",
+        "description": "Collaborating on AI and data science programs, research, and student opportunities",
+        "established": "Partner since 2025"
+      }
+    },
+    "form": {
+      "badge": "Partner With Us",
+      "title": "Interested in Partnering?",
+      "description": {
+        "prefix": "Fill out the form below or email us directly at"
+      },
+      "success": {
+        "title": "Partnership Inquiry Sent!",
+        "description": "Thank you for your interest in partnering with Podacium. Our team will review your inquiry and get back to you within 2 business days.",
+        "button": "Send Another Inquiry"
+      },
+      "labels": {
+        "name": "Full Name *",
+        "email": "Email Address *",
+        "organization": "Organization *",
+        "phone": "Phone Number (Optional)",
+        "partnerType": "Type of Partnership *",
+        "message": "Tell us about your partnership interest *"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "email": "john@organization.com",
+        "organization": "Your Company or Institution",
+        "phone": "+213 (0) XXX XX XX XX",
+        "message": "How would you like to collaborate with Podacium? What are your goals and expectations?"
+      },
+      "options": {
+        "university": "University / Education",
+        "business": "Business / Enterprise",
+        "ngo": "Government / NGO",
+        "investor": "Investor",
+        "other": "Other"
+      },
+      "buttons": {
+        "submit": "Submit Partnership Inquiry",
+        "submitting": "Submitting...",
+        "emailDirectly": "Email Directly"
+      },
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "organizationRequired": "Organization name is required",
+        "messageRequired": "Message is required",
+        "messageTooShort": "Please provide more details (min 20 characters)"
+      },
+      "emailSubject": "Partnership Inquiry - {type}",
+      "emailSubjectFull": "Partnership Inquiry from {organization}",
+      "emailOrganization": "Organization",
+      "emailPhone": "Phone",
+      "emailPhoneNotProvided": "Not provided",
+      "emailMessage": "Message",
+      "defaultOrganization": "My Business",
+      "responseTime": "We typically respond to partnership inquiries within 2 business days."
+    },
+    "contact": {
+      "email": "podaciumpartners@gmail.com",
+      "emailLabel": "Email for partnerships",
+      "location": "Higher School of Economics, Oran",
+      "locationLabel": "Based in"
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Get In Touch",
+      "title": {
+        "prefix": "Contact",
+        "highlight": "Podacium"
+      },
+      "description": "Have questions, partnership ideas, or want to join our mission? We're here to help you learn, earn, and grow with data."
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "We'll get back to you within 24 hours",
+      "defaultSubject": "Contact Form Submission",
+      "success": {
+        "title": "Message Sent Successfully!",
+        "description": "Thank you for contacting Podacium. We'll get back to you soon.",
+        "button": "Send another message"
+      },
+      "labels": {
+        "name": "Full Name *",
+        "email": "Email Address *",
+        "phone": "Phone Number (Optional)",
+        "category": "Inquiry Type",
+        "subject": "Subject (Optional)",
+        "message": "Your Message *"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "phone": "+213 (0) XXX XX XX XX",
+        "subject": "How can we help you?",
+        "message": "Tell us about your inquiry..."
+      },
+      "categories": {
+        "general": "General Inquiry",
+        "support": "Technical Support",
+        "partnership": "Partnership",
+        "technical": "Technical Question",
+        "feedback": "Feedback & Suggestions"
+      },
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "messageRequired": "Message is required",
+        "messageTooShort": "Message must be at least 10 characters"
+      },
+      "buttons": {
+        "submit": "Send Message",
+        "submitting": "Sending..."
+      }
+    },
+    "contactMethods": {
+      "email": {
+        "title": "Email Us",
+        "description": "For general inquiries and support",
+        "value": "podacium@podacium.com"
+      },
+      "visit": {
+        "title": "Visit Us",
+        "description": "Incubated at HSE Oran",
+        "value": "Higher School of Economics, Oran"
+      },
+      "call": {
+        "title": "Call Us",
+        "description": "Available during business hours",
+        "value": "+213 (0) 792 91 38 73"
+      }
+    },
+    "social": {
+      "title": "Connect With Us",
+      "subtitle": "Follow our journey across platforms",
+      "footer": "Join our community to transform Algeria's digital economy."
+    },
+    "socialLinks": {
+      "whatsapp": {
+        "name": "Whatsapp",
+        "action": "Chat with us on WhatsApp"
+      },
+      "youtube": {
+        "name": "YouTube",
+        "action": "Subscribe to our YouTube channel"
+      },
+      "github": {
+        "name": "GitHub",
+        "action": "Explore our projects on GitHub"
+      },
+      "facebook": {
+        "name": "Facebook",
+        "action": "Follow us on Facebook"
+      },
+      "instagram": {
+        "name": "Instagram",
+        "action": "Follow us on Instagram"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "action": "Connect with us on LinkedIn"
+      },
+      "twitter": {
+        "name": "X (Twitter)",
+        "action": "Follow us on X (Twitter)"
+      },
+      "email": {
+        "name": "Email",
+        "action": "Send us an email"
+      }
+    },
+    "faq": {
+      "0": {
+        "question": "How quickly will I get a response?",
+        "answer": "We typically respond within 24 hours on business days."
+      },
+      "1": {
+        "question": "Do you offer technical support?",
+        "answer": "Yes, technical support is available for all our platform users."
+      },
+      "2": {
+        "question": "Can I partner with Podacium?",
+        "answer": "We're always open to partnerships. Please select 'Partnership' as your inquiry type."
+      },
+      "title": "Frequently Asked Questions",
+      "link": "Learn more about Podacium"
+    },
+    "authenticated": {
+      "title": "You're logged in as {name}",
+      "description": "Your contact information has been pre-filled. Need help with your account or platform features?",
+      "buttons": {
+        "dashboard": "Go to Dashboard",
+        "continueLearning": "Continue Learning"
+      }
+    }
+  },
+  "careers": {
+    "meta": {
+      "title": "Careers | Join Podacium - Build Algeria's AI Future",
+      "description": "Join our mission to transform Algeria's digital economy. Work on cutting-edge AI, education, and business intelligence platforms. Remote opportunities available.",
+      "keywords": "careers, jobs, employment, AI, tech jobs Algeria, remote work Algeria, software engineering, data science, product design"
+    },
+    "hero": {
+      "badge": "We're Hiring",
+      "title": {
+        "prefix": "Join Podacium.",
+        "highlight": "Shape the Future"
+      },
+      "description": "We're building Algeria's most inclusive data and AI ecosystem. Come innovate, teach, grow or code with us.",
+      "buttons": {
+        "viewRoles": "View Open Roles",
+        "generalInquiry": "General Inquiry"
+      },
+      "quote": "\"Build technology that builds Algeria's future.\""
+    },
+    "whyWork": {
+      "cultureBadge": "Our Culture",
+      "title": {
+        "prefix": "Why",
+        "highlight": "Work at Podacium"
+      },
+      "description": "We're more than a company. We're a mission-driven collective building Algeria's digital future from the ground up."
+    },
+    "values": {
+      "0": {
+        "title": "Impact-Driven Work",
+        "description": "Every line of code, every design decision directly impacts Algeria's digital economy. Your work changes lives."
+      },
+      "1": {
+        "title": "Continuous Learning",
+        "description": "We invest in your growth. Regular workshops, conference budgets, and access to all Podacium courses."
+      },
+      "2": {
+        "title": "Flexible & Remote-First",
+        "description": "Work from anywhere in Algeria. Flexible hours that respect your life outside work."
+      },
+      "3": {
+        "title": "Build the Future",
+        "description": "You're not just building features—you're architecting Algeria's AI-powered economic ecosystem."
+      }
+    },
+    "perks": {
+      "0": "Flexible Hours",
+      "1": "Learning Budget",
+      "2": "Remote Work",
+      "3": "Fast Growth",
+      "description": "Plus competitive compensation, equity opportunities, and the chance to build something that matters for millions of Algerians."
+    },
+    "openRoles": {
+      "badge": "Open Positions",
+      "title": {
+        "prefix": "Join Our",
+        "highlight": "Growing Team"
+      },
+      "description": "We're looking for passionate builders who want to solve real problems for Algerian learners, freelancers, and businesses."
+    },
+    "roles": {
+      "categories": {
+        "engineering": "Engineering",
+        "qualityAssurance": "Quality Assurance",
+        "infrastructure": "Infrastructure",
+        "aiResearch": "AI Research"
+      },
+      "description": "Role Description",
+      "requirements": "Key Requirements",
+      "moreRequirements": "+{count} more",
+      "connectOn": "Or connect on",
+      "applicationOptions": "Application Options",
+      "openRoles": {
+        "0": {
+          "title": "Backend Developer",
+          "description": "Build robust APIs, manage databases, and implement server-side logic for our AI/ML integrations and platform services. You'll work with Python, FastAPI, PostgreSQL, and cloud infrastructure.",
+          "requirements": [
+            "2+ years experience with Python and FastAPI/Django",
+            "Strong understanding of REST APIs and database design",
+            "Experience with PostgreSQL, Redis, or similar",
+            "Knowledge of cloud platforms (AWS, GCP, or Azure)",
+            "Familiarity with Docker and CI/CD pipelines",
+            "Understanding of security best practices"
+          ]
+        },
+        "1": {
+          "title": "Frontend Developer",
+          "description": "Create beautiful, responsive UIs for our learning platform, dashboards, and user interfaces. Work with Next.js, React, TypeScript, and modern design systems.",
+          "requirements": [
+            "2+ years experience with React and TypeScript",
+            "Proficiency with Next.js and modern CSS frameworks",
+            "Experience with state management (Zustand, Redux)",
+            "Strong eye for UI/UX and responsive design",
+            "Knowledge of animation libraries (Framer Motion)",
+            "Experience with testing frameworks"
+          ]
+        },
+        "2": {
+          "title": "QA / Tester",
+          "description": "Ensure our platform works flawlessly across all devices and scenarios. Develop testing strategies, write test cases, and work closely with developers to maintain quality.",
+          "requirements": [
+            "Experience with manual and automated testing",
+            "Knowledge of testing frameworks (Jest, Cypress, Playwright)",
+            "Understanding of Agile/Scrum methodologies",
+            "Attention to detail and excellent documentation skills",
+            "Ability to reproduce and document bugs clearly",
+            "Experience with mobile and cross-browser testing"
+          ]
+        },
+        "3": {
+          "title": "DevOps / Cloud Engineer",
+          "description": "Manage our deployment pipelines, cloud infrastructure, monitoring, and security. Ensure our platform is scalable, reliable, and secure for Algerian users.",
+          "requirements": [
+            "Experience with cloud platforms (AWS preferred)",
+            "Knowledge of containerization (Docker, Kubernetes)",
+            "CI/CD pipeline setup and maintenance",
+            "Infrastructure as Code (Terraform, CloudFormation)",
+            "Monitoring and logging tools experience",
+            "Security best practices and compliance"
+          ]
+        },
+        "4": {
+          "title": "AI/ML Engineer",
+          "description": "Fine-tune our AI tutor, build recommendation engines, and implement NLP features. Work part-time or freelance to enhance our AI capabilities.",
+          "requirements": [
+            "Experience with Python ML stack (PyTorch, TensorFlow)",
+            "Knowledge of NLP and recommendation systems",
+            "Experience with model deployment and serving",
+            "Understanding of MLOps practices",
+            "Ability to work independently on research problems",
+            "Portfolio of ML projects or publications"
+          ]
+        }
+      }
+    },
+    "noMatch": {
+      "title": "Can't find the perfect role?",
+      "description": "We're always looking for talented people who believe in our mission. If you're passionate about education, technology, and Algeria's future, we'd love to hear from you—even if your exact role isn't listed.",
+      "buttons": {
+        "sendApplication": "Send General Application",
+        "learnAbout": "Learn About Podacium"
+      },
+      "footnote": "Include your CV, portfolio, and why you want to join Podacium."
+    },
+    "process": {
+      "badge": "Application Process",
+      "title": {
+        "prefix": "How to",
+        "highlight": "Join Our Team"
+      },
+      "steps": {
+        "0": {
+          "title": "Apply",
+          "description": "Send your application to podaciumcareers@gmail.com with your CV and portfolio."
+        },
+        "1": {
+          "title": "Screening",
+          "description": "Our team reviews your application and skills match."
+        },
+        "2": {
+          "title": "Interview",
+          "description": "Technical and cultural fit conversations with the team."
+        },
+        "3": {
+          "title": "Welcome!",
+          "description": "Join Podacium and start building Algeria's future."
+        }
+      }
+    },
+    "contact": {
+      "questionsBadge": "Questions?",
+      "title": "Get In Touch With Our Team",
+      "description": "Have questions about roles, culture, or the application process? We're here to help.",
+      "email": "Email",
+      "emailTitle": "Careers Email",
+      "emailDescription": "For all job-related inquiries",
+      "emailAddress": "podaciumcareers@gmail.com",
+      "emailAriaLabel": "Send email to podaciumcareers@gmail.com",
+      "locationTitle": "Visit Our Hub",
+      "locationDescription": "Based at HSE Oran, Algeria",
+      "locationAddress": "Higher School of Economics, Oran",
+      "locationAriaLabel": "Open HSE Oran location on Google Maps"
+    },
+    "cta": {
+      "readyBadge": "Ready to Apply?",
+      "title": "Start Your Podacium Journey Today",
+      "description": "Whether you're a developer, designer, or AI enthusiast, there's a place for you in Algeria's fastest-growing tech ecosystem.",
+      "buttons": {
+        "applyNow": "Apply Now",
+        "dashboard": "Dashboard",
+        "learn": "Learn",
+        "partner": "Partner With Us"
+      }
+    },
+    "buttons": {
+      "applyViaEmail": "Apply via Email",
+      "connectLinkedIn": "Connect on LinkedIn"
+    }
+  }
+}

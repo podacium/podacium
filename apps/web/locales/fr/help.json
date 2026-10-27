@@ -1,0 +1,319 @@
+{
+  "help": {
+    "meta": {
+      "title": "Centre d'aide - Podacium",
+      "description": "Obtenez de l'aide et du support pour les plateformes d'apprentissage, de hub freelance et de business intelligence de Podacium"
+    },
+    "hero": {
+      "badge": "Centre d'aide",
+      "title": "Comment pouvons-nous",
+      "titleHighlight": "vous aider ?",
+      "subtitle": "Trouvez des réponses aux questions courantes, obtenez de l'aide et apprenez à tirer le meilleur parti de Podacium.",
+      "searchPlaceholder": "Rechercher de l'aide...",
+      "clearSearch": "Effacer la recherche"
+    },
+    "categories": {
+      "all": "Tous les sujets",
+      "account": "Compte",
+      "learning": "Apprentissage",
+      "hub": "Hub freelance",
+      "bi": "Informatique décisionnelle",
+      "billing": "Facturation"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "subtitle": "Trouvez des réponses rapides aux questions les plus courantes sur Podacium."
+    },
+    "support": {
+      "title": "Contactez-nous",
+      "subtitle": "Vous ne trouvez pas ce que vous cherchez ? Notre équipe de support est là pour vous aider.",
+      "liveChat": {
+        "title": "Chat en direct",
+        "description": "Discutez avec notre équipe de support en temps réel pendant les heures de travail.",
+        "action": "Démarrer le chat"
+      },
+      "email": {
+        "title": "Support par email",
+        "description": "Envoyez-nous un email et nous vous répondrons dans les 24 heures.",
+        "action": "Envoyer un email"
+      },
+      "docs": {
+        "title": "Documentation",
+        "description": "Parcourez notre documentation complète et nos guides.",
+        "action": "Voir la documentation"
+      },
+      "community": {
+        "title": "Forum communautaire",
+        "description": "Connectez-vous avec d'autres utilisateurs et partagez des connaissances.",
+        "action": "Rejoindre la communauté"
+      }
+    },
+    "contactForm": {
+      "title": "Envoyez-nous un message",
+      "subtitle": "Remplissez le formulaire ci-dessous et notre équipe de support vous répondra dans les 24 heures.",
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Entrez votre nom",
+      "emailLabel": "Adresse email",
+      "emailPlaceholder": "Entrez votre email",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Sélectionnez un sujet",
+      "subjects": {
+        "select": "Sélectionnez un sujet",
+        "account": "Problèmes de compte",
+        "learning": "Plateforme d'apprentissage",
+        "hub": "Hub freelance",
+        "bi": "Informatique décisionnelle",
+        "billing": "Facturation et paiements",
+        "technical": "Support technique",
+        "other": "Autre"
+      },
+      "messageLabel": "Message",
+      "messagePlaceholder": "Décrivez votre problème ou question en détail...",
+      "attachFiles": "Je souhaite joindre des captures d'écran ou des fichiers pour aider à expliquer mon problème",
+      "submit": "Envoyer le message",
+      "emailUs": "Envoyez-nous un e-mail",
+      "liveChat": "Chat en direct",
+      "availableHours": "Disponible de 9h à 18h",
+      "submitting": "Envoi en cours..."
+    },
+    "proTips": {
+      "badge": "Conseils pro",
+      "title": "Obtenez de l'aide plus rapidement",
+      "includeDetails": {
+        "title": "Inclure les détails",
+        "description": "Fournissez votre email de compte, les URL pertinentes et les étapes pour reproduire les problèmes."
+      },
+      "businessHours": {
+        "title": "Vérifiez les heures de travail",
+        "description": "Le chat en direct est disponible du lundi au vendredi, de 9h à 18h (heure d'Algérie)."
+      },
+      "checkStatus": {
+        "title": "Vérifiez le statut",
+        "description": "Visitez notre page de statut pour vérifier s'il y a des problèmes de service en cours."
+      }
+    },
+    "faqs": [
+      {
+        "category": "account",
+        "question": "Comment créer un compte sur Podacium ?",
+        "answer": "Cliquez sur le bouton 'Commencer' ou 'S'inscrire' sur la page d'accueil. Vous pouvez vous inscrire en utilisant votre adresse email, votre numéro de téléphone ou vos comptes sociaux (Google, GitHub ou LinkedIn). Choisissez votre rôle (étudiant, freelance ou entreprise) et complétez votre profil pour obtenir des recommandations personnalisées."
+      },
+      {
+        "category": "account",
+        "question": "Comment vérifier mon email ou mon numéro de téléphone ?",
+        "answer": "Après l'inscription, vous recevrez un email ou SMS de vérification contenant un code. Entrez ce code sur la page de vérification pour confirmer vos informations de contact. Si vous n'avez pas reçu le code, vous pouvez en demander un nouveau depuis la page de vérification ou vos paramètres de compte."
+      },
+      {
+        "category": "account",
+        "question": "Comment réinitialiser mon mot de passe ?",
+        "answer": "Cliquez sur 'Mot de passe oublié' sur la page de connexion et entrez votre adresse email enregistrée. Vous recevrez un lien de réinitialisation du mot de passe. Suivez le lien pour créer un nouveau mot de passe. Pour des raisons de sécurité, le lien expire après 24 heures."
+      },
+      {
+        "category": "account",
+        "question": "Puis-je changer mon rôle de compte après l'inscription ?",
+        "answer": "Oui, vous pouvez mettre à jour votre rôle principal dans les paramètres de votre profil. Accédez à Paramètres, puis Profil, et sélectionnez votre rôle préféré. Votre tableau de bord et vos recommandations seront mis à jour en fonction de votre rôle sélectionné."
+      },
+      {
+        "category": "account",
+        "question": "Comment Podacium protège-t-il mes données personnelles ?",
+        "answer": "Podacium prend la protection des données très au sérieux. Nous sommes conformes au RGPD et aux réglementations algériennes sur la protection des données. Vos informations personnelles sont chiffrées au repos et en transit, nous ne partageons jamais vos données avec des tiers sans consentement, et vous pouvez demander une exportation ou une suppression complète des données à tout moment depuis vos Paramètres de confidentialité."
+      },
+      {
+        "category": "learning",
+        "question": "Comment m'inscrire à un cours ?",
+        "answer": "Parcourez les cours disponibles dans la section Apprentissage. Cliquez sur un cours pour voir les détails, puis cliquez sur 'S'inscrire' ou 'Commencer l'apprentissage'. Certains cours sont gratuits, tandis que d'autres nécessitent un abonnement ou un paiement unique. Une fois inscrit, vous pouvez accéder immédiatement à tous les matériels du cours."
+      },
+      {
+        "category": "learning",
+        "question": "Comment fonctionnent les parcours d'apprentissage ?",
+        "answer": "Les parcours d'apprentissage sont des séquences structurées de cours conçues pour vous aider à maîtriser une compétence ou un parcours de carrière spécifique. Inscrivez-vous à un parcours pour obtenir un ordre recommandé de cours, suivre vos progrès généraux et obtenir un certificat d'achèvement du parcours lorsque vous terminez tous les cours."
+      },
+      {
+        "category": "learning",
+        "question": "Comment obtenir un certificat ?",
+        "answer": "Terminez toutes les leçons et évaluations requises dans un cours ou un parcours d'apprentissage. Une fois terminé, vous pouvez générer un certificat vérifié depuis la page du cours. Les certificats peuvent être partagés sur votre profil, téléchargés en PDF ou partagés directement sur LinkedIn."
+      },
+      {
+        "category": "learning",
+        "question": "Puis-je télécharger les matériels de cours pour un visionnage hors ligne ?",
+        "answer": "Oui, de nombreux cours proposent des ressources téléchargeables telles que des PDF, des fichiers de code et des matériels complémentaires. Recherchez la section 'Ressources' dans chaque cours. Le contenu vidéo nécessite une connexion Internet pour le streaming."
+      },
+      {
+        "category": "learning",
+        "question": "Podacium propose-t-il des ateliers en direct ou des webinaires ?",
+        "answer": "Oui. Podacium organise régulièrement des ateliers en direct, des webinaires et des sessions de questions-réponses avec des experts de l'industrie. Ils sont inclus avec les abonnements premium et couvrent des sujets allant du développement de carrière aux compétences techniques. Les enregistrements sont disponibles pour un visionnage à la demande si vous ne pouvez pas assister en direct."
+      },
+      {
+        "category": "learning",
+        "question": "Comment suivre ma progression d'apprentissage et mes analyses ?",
+        "answer": "Votre tableau de bord d'apprentissage affiche des analyses détaillées, y compris les leçons terminées, les scores aux quiz, le temps passé et la progression des compétences. Vous pouvez définir des objectifs d'apprentissage hebdomadaires, suivre vos séquences et comparer votre progression par rapport aux étapes du parcours d'apprentissage. Toutes les données sont synchronisées entre les appareils en temps réel."
+      },
+      {
+        "category": "hub",
+        "question": "Comment publier un projet en tant que client ?",
+        "answer": "Accédez à la section Hub et cliquez sur 'Publier un projet' ou 'Créer un projet'. Remplissez les détails du projet, y compris le titre, la description, la catégorie, la fourchette de budget et la date limite. Révisez et publiez votre projet pour commencer à recevoir des propositions de freelances."
+      },
+      {
+        "category": "hub",
+        "question": "Comment soumettre une proposition en tant que freelance ?",
+        "answer": "Parcourez les projets disponibles dans la section Hub. Cliquez sur un projet correspondant à vos compétences, puis cliquez sur 'Soumettre une proposition'. Rédigez une lettre de motivation convaincante, définissez votre budget et calendrier proposés, et joignez des échantillons de portfolio pertinents. Le client examinera votre proposition et pourra vous contacter pour une discussion ultérieure."
+      },
+      {
+        "category": "hub",
+        "question": "Comment fonctionnent les contrats et les jalons ?",
+        "answer": "Une fois que le client accepte votre proposition, un contrat est créé. Le client peut configurer des jalons avec des livrables et des paiements spécifiques. Soumettez votre travail pour chaque jalon, et le client l'examinera et l'approuvera. Le paiement est libéré à l'approbation de chaque jalon."
+      },
+      {
+        "category": "hub",
+        "question": "Comment recevoir les paiements pour le travail terminé ?",
+        "answer": "Les paiements sont traités via la plateforme Podacium. Configurez votre mode de paiement dans les Paramètres sous Facturation. Lorsqu'un client approuve votre jalon ou projet, les fonds sont transférés vers votre portefeuille Podacium. Vous pouvez retirer vers votre compte bancaire ou d'autres modes de paiement pris en charge."
+      },
+      {
+        "category": "hub",
+        "question": "Que faire si j'ai un litige avec un client ou un freelance ?",
+        "answer": "Si vous rencontrez un problème avec un contrat, utilisez la fonction de résolution des litiges sur la page du contrat. Décrivez le problème en détail et soumettez-le. Notre équipe de support examinera le cas et travaillera avec les deux parties pour parvenir à une résolution équitable. Documentez toutes les communications et livrables pour soutenir votre cas."
+      },
+      {
+        "category": "hub",
+        "question": "Les entreprises peuvent-elles embaucher des freelances pour des projets d'équipe ?",
+        "answer": "Oui. Les entreprises peuvent publier des projets d'équipe nécessitant plusieurs freelances avec des compétences différentes. La plateforme prend en charge la formation d'équipes basée sur les projets, le suivi des jalons entre les contributeurs et la facturation consolidée. Les clients Entreprise bénéficient également d'un gestionnaire de compte dédié pour les besoins de recrutement à grande échelle."
+      },
+      {
+        "category": "bi",
+        "question": "Comment charger un ensemble de données ?",
+        "answer": "Accédez à la section BI, puis Ensembles de données. Cliquez sur 'Charger un ensemble de données' et sélectionnez votre fichier (formats CSV, Excel ou JSON pris en charge). Fournissez un nom, une description et des balises pour votre ensemble de données. Une fois chargé, vous pouvez analyser les données, créer des visualisations et partager avec les membres de l'équipe."
+      },
+      {
+        "category": "bi",
+        "question": "Comment créer un tableau de bord ?",
+        "answer": "Accédez à BI > Tableaux de bord et cliquez sur 'Créer un tableau de bord'. Ajoutez des widgets en sélectionnant des types de visualisations et en les connectant à vos ensembles de données. Personnalisez la mise en page, ajoutez des filtres et configurez les paramètres de rafraîchissement. Enregistrez et partagez votre tableau de bord avec les membres de l'organisation."
+      },
+      {
+        "category": "bi",
+        "question": "Comment fonctionnent les organisations dans Podacium BI ?",
+        "answer": "Les organisations permettent aux équipes de collaborer sur des ensembles de données, des tableaux de bord et des rapports. Créez une organisation et invitez des membres de l'équipe par email. Définissez les rôles et permissions des membres. Tous les membres de l'organisation peuvent accéder aux ressources partagées en fonction de leur niveau d'autorisation."
+      },
+      {
+        "category": "bi",
+        "question": "Puis-je partager des tableaux de bord avec des parties prenantes externes ?",
+        "answer": "Oui. Les tableaux de bord peuvent être partagés via des liens publics avec protection par mot de passe optionnelle, intégrés dans des sites web ou présentations, ou exportés en tant que rapports PDF. Vous contrôlez les permissions d'accès et pouvez définir des dates d'expiration pour les liens partagés afin de garantir la sécurité des données."
+      },
+      {
+        "category": "billing",
+        "question": "Quels plans d'abonnement sont disponibles ?",
+        "answer": "Podacium propose plusieurs plans : Gratuit (accès de base), Starter Étudiant, Plus Étudiant et Pro Étudiant pour les apprenants ; BI Growth et BI Scale pour les entreprises. Chaque plan comprend différentes fonctionnalités et limites. Visitez la page Tarifs pour des comparaisons de plans détaillées."
+      },
+      {
+        "category": "billing",
+        "question": "Comment mettre à niveau ou annuler mon abonnement ?",
+        "answer": "Accédez à Paramètres > Facturation pour voir votre plan actuel. Cliquez sur 'Mettre à niveau' pour sélectionner un niveau supérieur, ou 'Annuler l'abonnement' pour rétrograder vers le plan gratuit. Les mises à niveau prennent effet immédiatement avec une facturation au prorata. Les annulations prennent effet à la fin de votre période de facturation actuelle."
+      },
+      {
+        "category": "billing",
+        "question": "Quels modes de paiement sont acceptés ?",
+        "answer": "Podacium accepte les principales cartes de crédit et de débit, les virements bancaires et les modes de paiement régionaux selon votre emplacement. Tous les paiements sont traités en toute sécurité via nos partenaires de paiement. Les modes de paiement peuvent être gérés dans Paramètres > Facturation."
+      },
+      {
+        "category": "billing",
+        "question": "Quelle est la politique de remboursement ?",
+        "answer": "Nous proposons des remboursements dans les 14 jours suivant l'achat pour les abonnements si vous n'avez pas utilisé intensivement les fonctionnalités premium. Pour les achats de cours individuels, les remboursements sont disponibles dans les 7 jours si vous avez terminé moins de 25% du cours. Consultez notre page de Politique de remboursement pour plus de détails."
+      },
+      {
+        "category": "billing",
+        "question": "Proposez-vous une facturation entreprise ou équipe ?",
+        "answer": "Oui. Les plans Entreprise incluent la facturation consolidée pour les équipes, des rôles utilisateur personnalisés, un gestionnaire de compte dédié, un support prioritaire et des intégrations personnalisées. Contactez notre équipe commerciale pour un devis personnalisé. Les plans annuels Entreprise offrent également des économies significatives par rapport aux abonnements individuels."
+      }
+    ],
+    "clearSearch": "Effacer la recherche",
+    "openHelp": "Ouvrir l'assistance et le centre d'aide",
+    "closeHelp": "Fermer l'aide",
+    "greetingNamed": "Bonjour {name} 👋",
+    "greetingGuest": "Bonjour 👋",
+    "subtitle": "Comment pouvons-nous vous aider aujourd'hui ?",
+    "searchPlaceholder": "Rechercher des articles d'aide & FAQ...",
+    "matchingArticles": "Réponses suggérées",
+    "noMatchingFaq": "Aucune réponse directe trouvée",
+    "tryDifferentOrAsk": "Posez votre question à notre équipe ou lancez un chat",
+    "openTicketAction": "Ouvrir un ticket d'assistance →",
+    "assistantTitle": "Discuter avec notre assistant",
+    "onlineBadge": "En ligne",
+    "assistantDesc": "Assistant IA · Agents disponibles",
+    "ticketTitle": "Ouvrir un ticket d'assistance",
+    "ticketDesc": "Demande formelle · Réponse SLA 24h",
+    "browseCenter": "Explorer le centre d'aide",
+    "browseCenterDesc": "Parcourir tous les guides et FAQ",
+    "viewMyTickets": "Voir mes tickets ouverts",
+    "wasHelpfulPrompt": "Cette réponse vous a-t-elle été utile ?",
+    "yes": "Oui",
+    "no": "Non",
+    "stillNeedHelp": "Besoin d'aide supplémentaire ? Contactez notre support.",
+    "createTicketAction": "Créer un ticket d'assistance →",
+    "signInToTicketTitle": "Connectez-vous pour envoyer un ticket",
+    "signInToTicketDesc": "Un compte est nécessaire afin d'associer votre ticket et vous avertir de nos réponses.",
+    "ticketTopic": "Catégorie",
+    "ticketSubject": "Sujet",
+    "ticketSubjectPlaceholder": "ex. Problème de paiement avec EDAHABIA",
+    "ticketDetails": "Détails",
+    "ticketDetailsPlaceholder": "Veuillez décrire le problème rencontré, les étapes à reproduire...",
+    "includeContext": "Inclure l'URL et les infos système",
+    "submitting": "Envoi en cours...",
+    "submitTicket": "Envoyer le ticket",
+    "ticketCreatedTitle": "Ticket envoyé avec succès !",
+    "ticketCreatedDesc": "Votre ticket {number} a été bien reçu. Notre équipe répondra sous 24 heures.",
+    "viewAllTickets": "Voir mes tickets",
+    "myRecentTickets": "Mes tickets récents",
+    "newTicket": "Nouveau",
+    "noTicketsYet": "Vous n'avez aucun ticket de support actif.",
+    "formSubjectMin": "Le sujet doit comporter au moins 3 caractères",
+    "formMessageMin": "Le message doit comporter au moins 10 caractères",
+    "ticketSubmitFailed": "Échec de l'envoi du ticket. Veuillez réessayer.",
+    "aiChatTitle": "Assistant IA Podacium",
+    "aiChatSubtitle": "Réponses instantanées · Politiques officielles",
+    "aiChatGreeting": "Bonjour ! Je suis l'assistant Podacium. Comment puis-je vous aider aujourd'hui concernant les cours, les paiements EDAHABIA/CIB ou le freelancing ?",
+    "aiPlaceholder": "Posez votre question sur les cours, paiements, escrow...",
+    "aiEscalateButton": "Transférer à un agent humain",
+    "aiEscalatePrompt": "Besoin d'une assistance spécialisée ? Ouvrez un ticket directement avec notre équipe.",
+    "aiChipPayment": "Payer par EDAHABIA",
+    "aiChipCertificate": "Certificats LinkedIn",
+    "aiChipEscrow": "Garantie Escrow",
+    "aiDisclaimer": "Les réponses sont basées sur la documentation officielle de Podacium.",
+    "aiSending": "Réflexion en cours...",
+    "aiFailed": "Impossible de joindre l'assistant IA. Veuillez ouvrir un ticket ci-dessous.",
+    "aiJumpToBottom": "Derniers messages",
+    "aiFinishedSpeaking": "L'assistant a répondu",
+    "aiTranscriptHeader": "--- Transcription Assistant IA ---",
+    "aiAdditionalDetails": "[Détails complémentaires] :",
+    "aiHelpful": "Utile",
+    "aiUnhelpful": "Inutile",
+    "aiSend": "Envoyer",
+    "aiAssistantName": "Assistant Podacium",
+    "aiNewChat": "Nouvelle conversation",
+    "aiStop": "Arrêter la génération",
+    "aiStopped": "Réponse interrompue",
+    "aiCopy": "Copier la réponse",
+    "aiCopied": "Copié",
+    "aiFeedbackThanks": "Merci !",
+    "aiSuggestedTopics": "Questions fréquentes",
+    "aiEscalateShort": "Transmettre à notre équipe",
+    "aiPrivacyNote": "Ne partagez jamais vos numéros de carte, code CVV ou mots de passe.",
+    "aiInputHint": "Entrée pour envoyer · Maj + Entrée pour un saut de ligne",
+    "aiAskAbout": "Demander à l'assistant : « {query} »",
+    "aiAskPlaceholder": "Posez n'importe quelle question sur Podacium…",
+    "aiPrefilledNotice": "Nous avons joint votre conversation : notre équipe ne vous demandera pas de vous répéter.",
+    "aiPreparingTicket": "Préparation de votre ticket…",
+    "askAiInstead": "Demander à l'assistant IA",
+    "otherWays": "Autres moyens d'obtenir de l'aide",
+    "statusOpen": "Ouvert",
+    "statusInProgress": "En cours",
+    "statusWaiting": "En attente de votre réponse",
+    "statusResolved": "Résolu",
+    "statusClosed": "Fermé",
+    "launcher": {
+      "tabs": {
+        "assistance": "Assistance",
+        "copilotPro": "PoDalil Pro",
+        "studio": "Studio"
+      }
+    }
+  }
+}

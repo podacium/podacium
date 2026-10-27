@@ -1,0 +1,696 @@
+{
+  "hero": {
+    "badge": "Now with AI copilot",
+    "headline": {
+      "part1": "Learn the skill.",
+      "part2": "Prove it with real work.",
+      "part3": "Get paid in Algeria."
+    },
+    "subtitle": "Podacium joins courses, a commission-free freelance hub and live business dashboards — so every certificate becomes a portfolio, and every project becomes income.",
+    "pillarsAriaLabel": "Platform pillars",
+    "trust": {
+      "title": "Built for how Algeria works",
+      "items": {
+        "languages": "Courses in Arabic, French, English and Kabyle",
+        "certificates": "Verified certificates employers can check",
+        "payments": "CIB and Dahabia payments supported",
+        "commission": "No commission on your freelance earnings"
+      }
+    },
+    "dashboard": {
+      "ariaLabel": "Interactive preview of the Podacium talent workspace: active courses, verified Open Badges, secured client escrow and DZD payouts",
+      "userTitle": "Amine K. • Full-Stack Developer",
+      "userStatus": "Active Workspace",
+      "overview": "Talent Workspace",
+      "period": "Last 12 weeks",
+      "search": "Search lessons, missions, contracts…",
+      "weeklyChart": "Earnings & Progress Momentum",
+      "currency": "+32% this month",
+      "topChannels": "Validated Skill Matrix",
+      "nav": {
+        "learning": "My Courses",
+        "freelancing": "Client Missions",
+        "bi": "Skill Matrix",
+        "hub": "Escrow Wallet"
+      },
+      "kpi": {
+        "courses": "Courses in progress",
+        "learners": "Verified Open Badges",
+        "earnings": "Secured in escrow",
+        "satisfaction": "Paid out earnings"
+      },
+      "sources": {
+        "organic": "Next.js & TypeScript",
+        "referral": "FastAPI & Python",
+        "paid": "PostgreSQL & Prisma",
+        "email": "Docker & Cloud Deploy"
+      },
+      "activity": {
+        "course": "Open Badge v3 Issued: Full-Stack Web Architecture",
+        "freelancer": "Escrow Milestone 2/3 Secured: E-Commerce Mobile App",
+        "project": "Payout completed to BaridiMob / EDAHABIA"
+      }
+    },
+    "title": "Podacium helps you",
+    "animatedWords": {
+      "learn": "Learn.",
+      "earn": "Earn.",
+      "grow": "Grow.",
+      "analyze": "Analyze.",
+      "connect": "Connect."
+    },
+    "description": "Transform how you learn, analyze, and collaborate with data through our integrated platform.",
+    "cta": {
+      "primary": "Start learning free",
+      "secondary": "See how it works",
+      "startLearning": "Start by Learning",
+      "learnAboutUs": "Learn About Us"
+    },
+    "benefits": {
+      "noCreditCard": "No credit card required",
+      "freeTrial": "14-day free trial"
+    },
+    "aiEngineActive": "AI Engine Active",
+    "talentSignal": "Talent Signal",
+    "effectStats": [
+      {
+        "label": "Skill Validation",
+        "before": "64%",
+        "after": "94%",
+        "color": "text-emerald-500"
+      },
+      {
+        "label": "Market Readiness",
+        "before": "C-",
+        "after": "A+",
+        "color": "text-blue-500"
+      },
+      {
+        "label": "Profile Visibility",
+        "before": "STAGNANT",
+        "after": "ACTIVE",
+        "color": "text-indigo-500"
+      }
+    ],
+    "pillars": {
+      "title": "Platform Pillars",
+      "learning": "Learning",
+      "freelancing": "Freelancing",
+      "bi": "BI Analytics",
+      "hub": "Talent Hub"
+    }
+  },
+  "pillars": {
+    "learn": {
+      "title": "Learn",
+      "subtitle": "AI-Powered Learning Platform",
+      "description": "Master in-demand data skills through interactive courses, personalized learning paths, and AI-assisted education.",
+      "features": [
+        "Interactive Courses",
+        "Personalized Learning Paths",
+        "AI Tutor (Coming Soon)",
+        "Skill Assessments"
+      ],
+      "metrics": {
+        "growthRate": "Growth Rate"
+      },
+      "hubLabel": "Talent Hub"
+    },
+    "bi": {
+      "title": "BI",
+      "subtitle": "Business Intelligence & Analytics",
+      "description": "Transform raw data into actionable insights with advanced analytics, predictive modeling, and intelligent dashboards.",
+      "features": [
+        "Interactive Dashboards",
+        "Predictive Analytics",
+        "Automated Reporting",
+        "Data Visualization"
+      ],
+      "metrics": {
+        "growthRate": "Growth Rate"
+      }
+    },
+    "hub": {
+      "title": "Hub",
+      "subtitle": "Talent Network & Marketplace",
+      "description": "Connect with top professionals, find perfect project matches, and build your career through meaningful collaborations.",
+      "features": [
+        "Smart Talent Matching",
+        "Project Marketplace",
+        "Skill Verification",
+        "Collaboration Tools"
+      ],
+      "talentProfiles": [
+        {
+          "skill": "Developer"
+        },
+        {
+          "skill": "Analyst"
+        },
+        {
+          "skill": "Designer"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Web App",
+          "budget": "$5K"
+        },
+        {
+          "title": "Data Dash",
+          "budget": "$3.5K"
+        },
+        {
+          "title": "Mobile App",
+          "budget": "$8K"
+        },
+        {
+          "title": "AI Model",
+          "budget": "$12K"
+        }
+      ],
+      "hubLabel": "Talent Hub"
+    },
+    "cta": {
+      "explore": "Explore",
+      "clickHint": "Click to explore"
+    },
+    "navigation": {
+      "previous": "Previous pillar",
+      "next": "Next pillar"
+    },
+    "autoRotate": {
+      "auto": "Auto",
+      "manual": "Manual"
+    },
+    "indicators": {
+      "switchTo": "Switch to",
+      "goToSlide": "Go to slide"
+    },
+    "swipeHint": "Swipe to navigate"
+  },
+  "ai": {
+    "comingSoon": "COMING SOON",
+    "title": {
+      "part1": "Podacium",
+      "part2": "Neural Suite"
+    },
+    "description": "Advanced AI systems for learning, analysis, and collaboration. Currently in neural training with launch scheduled for Q2 2027.",
+    "tutor": {
+      "title": "Tutor AI",
+      "description": "Adaptive learning intelligence that personalizes education",
+      "features": [
+        "Real-time learning pattern analysis",
+        "Personalized curriculum generation",
+        "Cognitive performance tracking",
+        "Automated knowledge gap detection"
+      ]
+    },
+    "analyst": {
+      "title": "Analyst AI",
+      "description": "Predictive intelligence for data-driven decision making",
+      "features": [
+        "Automated pattern recognition",
+        "Real-time forecasting models",
+        "Natural language data querying",
+        "Intelligent report synthesis"
+      ]
+    },
+    "matchmaker": {
+      "title": "Matchmaker AI",
+      "description": "Neural matching for optimal talent-project synergy",
+      "features": [
+        "Skill compatibility analysis",
+        "Project success prediction",
+        "Team chemistry optimization",
+        "Continuous learning from outcomes"
+      ]
+    },
+    "neuralAI": "Neural AI",
+    "progress": {
+      "training": "Training progress"
+    },
+    "neuralNetwork": "Neural Network",
+    "launchTimeline": "Launching Q2 2027",
+    "neuralCapabilities": "Neural Capabilities",
+    "notifyAtLaunch": "You'll be notified at launch",
+    "neuralInterfacePreview": "Neural Interface Preview",
+    "previewDescription": "Experience a simulation of {title}'s capabilities",
+    "sampleInteraction": "Sample Interaction",
+    "sampleQuestion": "How can I improve my learning efficiency?",
+    "systemStatus": "System Status",
+    "trainingActive": "Training Active",
+    "stats": {
+      "neuralTrainingAccuracy": "Neural Training Accuracy",
+      "expectedLaunch": "Q2 2027",
+      "expectedLaunchLabel": "Expected Launch"
+    }
+  },
+  "combined": {
+    "joinCommunity": "Join Our Community",
+    "title": {
+      "part1": "Stay Ahead with",
+      "part2": "Podacium"
+    },
+    "newsletter": "Newsletter",
+    "premiumAccess": "Premium Access",
+    "newsletterCard": {
+      "title": "Subscribe to Our Newsletter",
+      "description": "Join professionals receiving insights, recommendations, and exclusive content directly in your inbox.",
+      "benefits": [
+        {
+          "title": "Weekly Digest",
+          "description": "Curated content every Monday"
+        },
+        {
+          "title": "No Spam Promise",
+          "description": "Quality content only, unsubscribe anytime"
+        }
+      ],
+      "success": {
+        "title": "Welcome aboard!",
+        "message": "Check your email {email} to confirm your subscription."
+      },
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "clearEmail": "Clear email",
+      "subscribing": "Subscribing...",
+      "subscribe": "Subscribe to Newsletter",
+      "privacyNotice": {
+        "part1": "By subscribing, you agree to our",
+        "part2": "Privacy Policy"
+      }
+    },
+    "pricingCard": {
+      "title": "Unlock Full Potential",
+      "description": "Access all Podacium features including advanced AI tools, unlimited analytics, and premium support.",
+      "benefits": [
+        {
+          "title": "Three pillars access",
+          "description": "All our offers included"
+        },
+        {
+          "title": "Advanced Analytics",
+          "description": "with Priority Support"
+        }
+      ],
+      "cta": {
+        "title": "Ready to Level Up?",
+        "button": "View All Plans"
+      },
+      "stats": {
+        "plans": {
+          "count": "3",
+          "label": "Plans"
+        },
+        "trial": {
+          "count": "14-Day",
+          "label": "Trial"
+        },
+        "support": {
+          "count": "24/7",
+          "label": "Support"
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about Podacium's platform, pricing, and features.",
+    "categories": {
+      "all": "All Topics",
+      "general": "General",
+      "billing": "Billing & Plans",
+      "technical": "Technical",
+      "accounts": "Accounts"
+    },
+    "questions": {
+      "general": {
+        "0": {
+          "question": "What is Podacium and how does it work?",
+          "answer": "Podacium is an all-in-one platform combining online education, a freelance marketplace, and business intelligence tools. Learners take courses and earn certificates, freelancers find projects and get paid securely, and businesses analyze data and discover talent — all in one ecosystem."
+        },
+        "1": {
+          "question": "How does the three-pillar platform work?",
+          "answer": "Podacium has three integrated pillars: Learn (online courses with verified certificates), Hub (freelance marketplace with PodaPoints feature payments), and BI (business intelligence dashboards and data analytics). Progress and skills flow across pillars, so learning achievements strengthen your freelancer profile, and BI insights inform business decisions."
+        },
+        "2": {
+          "question": "Is Podacium available in Arabic, French, and English?",
+          "answer": "Yes. The entire platform is available in English, French, and Arabic. You can switch languages at any time, and all course content, platform UI, and support are localized for each language."
+        },
+        "3": {
+          "question": "Who can benefit from Podacium?",
+          "answer": "Students and professionals looking to upskill, freelancers seeking projects and clients, businesses needing talent and data analytics, and organizations wanting to track team development — all find value on Podacium."
+        },
+        "4": {
+          "question": "Do I need technical skills to get started?",
+          "answer": "Not at all. Podacium is designed for all skill levels. Beginners can start with foundational courses, and personalized recommendations help you find the right path based on your goals and current experience."
+        },
+        "5": {
+          "question": "How does the recommendation system work?",
+          "answer": "The system analyzes your learning history, career goals, and platform activity to recommend personalized courses, projects, and BI tools. Recommendations improve over time as you interact with more content, delivering increasingly relevant suggestions for your growth."
+        },
+        "6": {
+          "question": "Can I use Podacium on mobile devices?",
+          "answer": "Yes. Podacium is fully responsive and works on all devices including smartphones and tablets. You can take courses, browse freelance projects, and view BI dashboards from any device. A dedicated mobile app is also in development for an enhanced on-the-go experience."
+        }
+      },
+      "billing": {
+        "0": {
+          "question": "How much does Podacium cost?",
+          "answer": "Podacium offers free basic access with options to upgrade. Course pricing starts from 500 DZD, Learn subscriptions from 1,500 DZD/month, and BI Pro from 3,000 DZD/month. The Freelance Hub uses PodaPoints for feature purchases with no project commissions. Annual plans save up to 25%."
+        },
+        "1": {
+          "question": "What payment methods do you accept?",
+          "answer": "We accept all major Algerian bank cards (CIB/Dahabia), international credit cards (Visa, Mastercard), and mobile payment solutions. Enterprise clients can also pay by bank transfer or invoice."
+        },
+        "2": {
+          "question": "Is there a free trial?",
+          "answer": "Yes. New users get a 14-day free trial with full access to all Pro features across Learn, Hub, and BI. No credit card is required, and you can cancel anytime during the trial period at no cost."
+        },
+        "3": {
+          "question": "Can I cancel or change my plan anytime?",
+          "answer": "Absolutely. You can upgrade, downgrade, or cancel your subscription at any time from your account settings. Monthly plans change immediately, and annual plans receive prorated refunds. There are no long-term commitments."
+        },
+        "4": {
+          "question": "Do you offer regional pricing for Algeria and MENA countries?",
+          "answer": "Yes. Podacium offers region-specific pricing in Algerian Dinar (DZD) with rates designed to be accessible for the MENA market. We accept local payment methods including CIB and Dahabia cards, and offer annual plans that save up to 25% compared to monthly billing."
+        }
+      },
+      "technical": {
+        "0": {
+          "question": "How does progress tracking work across devices?",
+          "answer": "Your progress syncs automatically in real time across all your devices. Start a course on your laptop, continue on your phone, and pick up where you left off — your video position, quiz scores, and completed lessons are always up to date."
+        },
+        "1": {
+          "question": "Can I earn verified certificates?",
+          "answer": "Yes. Upon completing a course or learning path, you receive a verified certificate that can be shared on LinkedIn, added to your portfolio, or used to strengthen your freelancer profile on Podacium Hub."
+        },
+        "2": {
+          "question": "How secure is my data on Podacium?",
+          "answer": "We apply enterprise-grade security: end-to-end encryption in transit and at rest, regular security audits, and strict access controls. Your personal information, project data, and payment details are protected at all times."
+        },
+        "3": {
+          "question": "Can I export my data?",
+          "answer": "Yes. You can export your course progress, certificates, BI dashboards, and reports as CSV, PDF, or PNG. Dataset downloads are available in CSV, Excel, and JSON formats."
+        },
+        "4": {
+          "question": "How does the freelance marketplace payment system work?",
+          "answer": "Podacium uses a feature-based pricing model with PodaPoints. Instead of commissions, you purchase features like project posts (200 PodaPoints) or featured listings (500 PodaPoints). There are no platform commissions on your earnings — you only pay for the services you actively use."
+        },
+        "5": {
+          "question": "Does Podacium offer API access for integration with other tools?",
+          "answer": "Yes. Podacium provides a RESTful API for developers and businesses who want to integrate platform features into their existing workflows. API access is available on paid plans and includes comprehensive documentation, SDK examples, and dedicated support for enterprise integrations."
+        },
+        "6": {
+          "question": "How does Podacium ensure platform security and data protection?",
+          "answer": "Security is foundational at Podacium. We employ end-to-end encryption for all data in transit and at rest, conduct regular third-party security audits, and enforce strict access controls. Our infrastructure is hosted in secure data centers with 24/7 monitoring and automated threat detection."
+        }
+      },
+      "accounts": {
+        "0": {
+          "question": "How do I create an account?",
+          "answer": "Click 'Get Started' and sign up with your email address or Google account. Choose your role (Learner, Freelancer, or Business) and complete your profile. The whole process takes under two minutes, and basic access is free."
+        },
+        "1": {
+          "question": "How do I reset my password?",
+          "answer": "Click 'Forgot Password' on the login page, enter your email address, and we will send you a secure reset link. The link expires after one hour for security. If you do not receive the email, check your spam folder."
+        },
+        "2": {
+          "question": "Can I have multiple roles on the same account?",
+          "answer": "Yes. You can be a learner taking courses, a freelancer bidding on projects, and a business owner hiring talent — all from the same account. Your dashboard adapts to show the tools relevant to each role."
+        },
+        "3": {
+          "question": "How do I contact support?",
+          "answer": "You can reach our support team via the live chat widget on any page, email us at support@podacium.com, or visit the Help Center. Enterprise clients get dedicated account managers with priority response times."
+        },
+        "4": {
+          "question": "How do I permanently delete my account and data?",
+          "answer": "You can request account deletion from your Settings page under Privacy. Once confirmed, your personal data, course progress, and account information will be permanently erased within 30 days. Projects and contracts you are actively engaged in must be completed or transferred before deletion."
+        },
+        "5": {
+          "question": "Does Podacium support two-factor authentication (2FA)?",
+          "answer": "Yes. Podacium supports two-factor authentication via authenticator apps (Google Authenticator, Authy) and SMS codes. Enabling 2FA adds an extra layer of security to your account and is highly recommended for freelancers and business users handling sensitive data."
+        }
+      }
+    },
+    "contact": {
+      "title": "Still have questions?",
+      "description": "Our support team is here to help you get the most out of Podacium — whether it's technical help, pricing, or integration guidance.",
+      "button": "Contact Support"
+    }
+  },
+  "variation1": {
+    "title": {
+      "part1": "Master your craft",
+      "part2": "Earn real experience",
+      "part3": "Scale your success"
+    },
+    "description": "Podacium transforms contextual learning into high-fidelity visibility for the modern workforce. Learn, analyze, and connect.",
+    "cta": {
+      "startLearning": "Start by Learning",
+      "learnAboutUs": "Understand Podacium"
+    },
+    "benefits": {
+      "freeTrial": "14-day free trial",
+      "noCreditCard": "No credit card required"
+    },
+    "stats": {
+      "builders": "A community of Creators"
+    },
+    "features": {
+      "learn": {
+        "title": "Learn Platform",
+        "description": "AI-powered courses & certifications"
+      },
+      "bi": {
+        "title": "BI Analytics",
+        "description": "Advanced analytics & dashboards"
+      },
+      "hub": {
+        "title": "Talent Hub",
+        "description": "Freelancer matching & projects"
+      },
+      "ai": {
+        "title": "AI Assistant",
+        "description": "Smart insights & automation"
+      }
+    }
+  },
+  "video": {
+    "title": "Understand how Podacium works in under 2 minutes",
+    "description": "Learn why skills alone are not enough and how we turn data into opportunities.",
+    "play": "Play the 2-minute intro",
+    "unavailable": "This video can’t be played here right now. You can watch it directly on Vimeo.",
+    "watchOnVimeo": "Watch on Vimeo",
+    "retry": "Try again",
+    "steps": {
+      "capture": {
+        "title": "Capture",
+        "desc": "High-fidelity learning data."
+      },
+      "validate": {
+        "title": "Validate",
+        "desc": "Skill-linked project assessment."
+      },
+      "signal": {
+        "title": "Signal",
+        "desc": "Market-ready visibility."
+      }
+    }
+  },
+  "layers": {
+    "education": {
+      "label": "Layer 01: Education",
+      "features": {
+        "micro": {
+          "title": "Contextual Micro-courses",
+          "desc": "Short, targeted learning modules that fit into active workflows."
+        },
+        "paths": {
+          "title": "Structured Paths",
+          "desc": "Defined routes from novice to market-ready skill levels."
+        },
+        "validation": {
+          "title": "Skill Validation",
+          "desc": "Assessments and mini-projects that capture real performance data."
+        }
+      },
+      "stats": {
+        "accuracy": "Validation Accuracy",
+        "behavioral": "Behavioral skill capture metrics"
+      },
+      "subtitle": "The intake layer for high-fidelity data.",
+      "description": "Learning is just the input. We capture every interaction, assessment, and project completion to build your unique skill signature."
+    },
+    "freelancing": {
+      "label": "Layer 02: Freelancing",
+      "readiness": {
+        "title": "Readiness",
+        "desc": "Skills linked automatically to profiles."
+      },
+      "reputation": {
+        "title": "Reputation",
+        "desc": "Flowing directly from learning outcomes."
+      },
+      "cta": "Explore the Talent Hub",
+      "description": "We don’t just offer a marketplace; we offer readiness indicators. Your learning data generates signals that match you with complex tasks and professional visibility."
+    },
+    "bi": {
+      "label": "Layer 03: Business Intelligence",
+      "features": {
+        "supply": {
+          "title": "Skill Supply Signals",
+          "desc": "Real-time visibility into emerging skill clusters within the workforce."
+        },
+        "performance": {
+          "title": "Performance Indicators",
+          "desc": "Data-driven metrics based on actual task completion."
+        },
+        "insights": {
+          "title": "Organizational Insights",
+          "desc": "High-level aggregation of human capital readiness."
+        }
+      },
+      "infrastructure": {
+        "title": "The Infrastructure for Retention",
+        "description": "Our BI layer is designed for organizational activation. It provides the data necessary to retain talent.",
+        "dashboard": "Organizational Dashboard (Early Access)"
+      },
+      "subtitle": "Compounding value through supply signals.",
+      "description": "The multi-layer system aggregates learning behavior and task performance into organizational insights. We don’t guess skill supply; we see it.",
+      "stats": {
+        "connectivity": "Cluster Connectivity",
+        "velocity": "Skill Growth Velocity",
+        "retention": "Retention Prediction"
+      }
+    },
+    "activation": {
+      "title": "Ready to enter the platform flywheel?"
+    }
+  },
+  "activation": {
+    "cta": {
+      "module": "Start Your First Module",
+      "docs": "Platform Documentation",
+      "joinWaitlist": "Join the Waitlist"
+    },
+    "benefits": {
+      "noCard": "No credit card required",
+      "market": "Algerian Market Focused",
+      "infra": "Multi-service Infrastructure"
+    }
+  },
+  "variation2": {
+    "title": {
+      "part1": "Transform Your",
+      "part2": "Data Journey",
+      "part3": "With Podacium"
+    },
+    "description": "From learning essential data skills to deploying advanced analytics and connecting with opportunities - Podacium provides the complete ecosystem for your data career.",
+    "cta": {
+      "getStarted": "Get Started Free",
+      "watchDemo": "Watch Demo"
+    },
+    "benefits": {
+      "freeTrial": "Free 14-day trial",
+      "noCreditCard": "No credit card needed"
+    },
+    "features": {
+      "learn": {
+        "title": "Learn & Grow",
+        "description": "AI-powered educational platform"
+      },
+      "bi": {
+        "title": "Analyze & Decide",
+        "description": "Business intelligence tools"
+      },
+      "hub": {
+        "title": "Connect & Collaborate",
+        "description": "Talent network & projects"
+      },
+      "ai": {
+        "title": "Automate & Scale",
+        "description": "AI-driven intelligence"
+      }
+    }
+  },
+  "features": {
+    "title": "Advanced Capabilities",
+    "description": "Leverage cutting-edge features designed for modern data workflows and team collaboration",
+    "items": {
+      "collaboration": {
+        "title": "Real-time Collaboration",
+        "description": "Work together on dashboards, reports, and projects with real-time editing and commenting features."
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "Bank-level security with encryption, regular audits, and advanced access controls for your data."
+      },
+      "api": {
+        "title": "API Integration",
+        "description": "Comprehensive REST API for custom integrations, automation, and extending platform capabilities."
+      }
+    }
+  },
+  "metadata": {
+    "title": "Podacium - AI-Powered Data Education, Analytics & Talent Platform",
+    "description": "Master data skills with AI-powered learning, transform insights with business intelligence tools, and connect with top data talent through Podacium's integrated platform.",
+    "organization": {
+      "name": "Podacium",
+      "url": "https://podacium.com",
+      "logo": "https://podacium.com/logo.png",
+      "description": "AI-powered platform for data education, business intelligence, and talent matching",
+      "social": {
+        "twitter": "https://twitter.com/podacium",
+        "linkedin": "https://linkedin.com/company/podacium"
+      },
+      "contact": {
+        "telephone": "+1-555-123-4567",
+        "contactType": "customer service"
+      }
+    }
+  },
+  "postLoginModal": {
+    "title": "Welcome! What would you like to do?",
+    "subtitle": "Get started with your profile or dashboard",
+    "footerNote": "You can always access these options later from your account menu",
+    "close": "Maybe Later",
+    "options": {
+      "profile": {
+        "title": "Complete Your Profile",
+        "description": "Add your personal informations",
+        "ariaLabel": "Navigate to profile page to complete personal information"
+      },
+      "dashboard": {
+        "title": "Go to Dashboard",
+        "description": "View your progress",
+        "ariaLabel": "Navigate to dashboard page to view user statistics"
+      },
+      "stay": {
+        "title": "Stay on Homepage",
+        "description": "Continue exploring",
+        "ariaLabel": "Close modal and stay on homepage"
+      }
+    }
+  },
+  "oauth": {
+    "completingLogin": "Completing OAuth login...",
+    "pleaseWait": "Please wait",
+    "loginFailed": "OAuth login failed: {message}",
+    "processingError": "Failed to process OAuth"
+  },
+  "errors": {
+    "subscriptionFailed": "Subscription failed",
+    "subscriptionFailedDetail": "Subscription failed. Please try again.",
+    "animationContextError": "useAnimationContext must be used within an AnimationProvider"
+  },
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel"
+  },
+  "trustHero": {
+    "aiEngineActive": "AI Engine Active",
+    "talentSignal": "Talent Signal"
+  }
+}
