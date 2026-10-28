@@ -104769,5 +104769,11 @@
         "scheme": "bearer"
       }
     }
-  }
+  },
+  "servers": [
+    {
+      "url": "https://api.tamwheel.dz",
+      "description": "TamWheel Production API"
+    }
+  ]
 }
