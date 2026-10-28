@@ -3,6 +3,9 @@ TamWheel Sovereign Ethical Agentic Venture OS — Programmatic Sharia & Istihaq 
 Consolidates and re-exports:
 - ShariaComplianceEngine from app.services.sharia_compliance
 - IstihaqEngine from app.services.istihaq_engine
+- MusharakahMutanaqisahEngine from app.services.musharakah_engine
+- MicroSukukRevenueShareEngine from app.services.sukuk_engine
+- TathirCharityRoutingService from app.services.tathir_routing
 Preserves 100% backward compatibility for all existing imports and tests.
 """
 
@@ -20,7 +23,6 @@ from app.services.sharia_compliance import (
     FinancialStatement,
     RatioScreenResult,
     TathirAssessment,
-    ShariaScreeningResult,
     ShariaCertificate,
     ShariaComplianceEngine,
     sharia_compliance_engine,
@@ -50,16 +52,54 @@ from app.services.istihaq_engine import (
     istihaq_engine,
 )
 
+# Re-export Musharakah Mutanaqisah
+from app.services.musharakah_engine import (
+    PaymentFrequency,
+    AssetCategory,
+    BuyoutTranche,
+    MusharakahScheduleRequest,
+    MusharakahScheduleResponse,
+    EarlyBuyoutCalculationRequest,
+    EarlyBuyoutCalculationResponse,
+    MusharakahMutanaqisahEngine,
+    musharakah_engine,
+)
+
+# Re-export Micro-Sukuk
+from app.services.sukuk_engine import (
+    SukukContractType,
+    SukukStatus,
+    SukukDistributionEntry,
+    IssueSukukRequest,
+    SukukIssuance,
+    RecordDistributionRequest,
+    MicroSukukRevenueShareEngine,
+    sukuk_engine,
+)
+
+# Re-export Tathir Charity Routing
+from app.services.tathir_routing import (
+    CharitySector,
+    AccreditedCharity,
+    TathirDisbursementRequest,
+    TathirReceipt,
+    TathirCharityRoutingService,
+    tathir_routing_service,
+)
+
 
 class ShariaEngine:
     """
-    Unified gateway for Sharia Compliance Screening and Istihaq Calculations.
-    Delegates to sharia_compliance_engine and istihaq_engine.
+    Unified gateway for Sharia Compliance Screening, Istihaq Calculations,
+    Musharakah Buyouts, Micro-Sukuk Revenue Sharing, and Tathir Charity Routing.
     """
 
     def __init__(self) -> None:
         self.compliance_engine = sharia_compliance_engine
         self.istihaq_engine = istihaq_engine
+        self.musharakah_engine = musharakah_engine
+        self.sukuk_engine = sukuk_engine
+        self.tathir_routing = tathir_routing_service
 
     def screen_financials(self, statement: FinancialStatement) -> ShariaScreeningResult:
         return self.compliance_engine.screen_financials(statement)
