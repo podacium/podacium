@@ -31,6 +31,11 @@ class CharitySector(str, enum.Enum):
     ORPHAN_CHILD_WELFARE = "ORPHAN_CHILD_WELFARE"
 
 
+class ReceiptStatus(str, enum.Enum):
+    DISBURSED = "DISBURSED"
+    PENDING = "PENDING"
+
+
 class AccreditedCharity(BaseModel):
     charity_id: str
     official_name: str
@@ -64,6 +69,8 @@ class TathirReceipt(BaseModel):
     charity_arabic_name: str
     sector: CharitySector
     amount_dzd: float
+    status: ReceiptStatus = ReceiptStatus.DISBURSED
+    is_tax_deductible: bool = False
     source_description: str
     purification_standard: str = "AAOIFI Shariah Standard No. 21 (Clause 3/4 - Tathir)"
     non_tax_deductibility_declaration: str = (
@@ -137,6 +144,9 @@ class TathirCharityRoutingService:
 
     def __init__(self) -> None:
         self._charities: Dict[str, AccreditedCharity] = {c.charity_id: c for c in ACCREDITED_CHARITIES}
+        # Alias common IDs
+        if "CHARITY-ELBARAKA-003" in self._charities:
+            self._charities["el-baraka-association-dz"] = self._charities["CHARITY-ELBARAKA-003"]
         self._receipts: Dict[str, TathirReceipt] = {}
 
     def get_accredited_charities(self) -> List[AccreditedCharity]:

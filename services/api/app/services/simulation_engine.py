@@ -162,6 +162,9 @@ class DoubleEntrySimulationLedger:
         """
         with self._sync_lock:
             data = self._accounts.get(account, {"debit": 0, "credit": 0})
+            # Asset pools holding collected fees maintain debit-normal balance
+            if account == "SYSTEM:TOUIZA_LIQUIDITY_FEE_POOL" or account.startswith("SYSTEM:FEE_"):
+                return data["debit"] - data["credit"]
             if account.startswith("SYSTEM:"):
                 return data["credit"] - data["debit"]
             return data["debit"] - data["credit"]

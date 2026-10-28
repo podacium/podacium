@@ -87,11 +87,48 @@ from app.services.tathir_routing import (
     tathir_routing_service,
 )
 
+# Re-export AAOIFI FAS 9 Zakat Engine
+from app.services.zakat_engine import (
+    ZakatCalculationMethod,
+    YearType,
+    NisabBenchmark,
+    InvestorType,
+    WorkingCapitalAssetsInput,
+    WorkingCapitalLiabilitiesInput,
+    InvestedCapitalComponentsInput,
+    CompanyZakatRequest,
+    CompanyZakatAssessment,
+    InvestorZakatRequest,
+    InvestorZakatAssessment,
+    NisabEvaluation,
+    ZakatEngine,
+    zakat_engine,
+)
+
+# Re-export AAOIFI Standard No. 8 Murabaha Engine
+from app.services.murabaha_engine import (
+    MurabahaStage,
+    MurabahaAssetCategory,
+    PossessionType,
+    AmortizationFrequency,
+    InstallmentStatus,
+    InstallmentTranche,
+    MurabahaPurchaseOrderRequest,
+    GoodsPossessionConfirmationRequest,
+    MurabahaSaleExecutionRequest,
+    RecordInstallmentPaymentRequest,
+    ApplyLatePenaltyRequest,
+    MurabahaFacility,
+    MurabahaEngine,
+    murabaha_engine,
+)
+
 
 class ShariaEngine:
     """
     Unified gateway for Sharia Compliance Screening, Istihaq Calculations,
-    Musharakah Buyouts, Micro-Sukuk Revenue Sharing, and Tathir Charity Routing.
+    Musharakah Buyouts, Micro-Sukuk Revenue Sharing, Tathir Charity Routing,
+    AAOIFI FAS 9 Zakat Calculations, and AAOIFI Standard No. 8 Murabaha Facilities.
     """
 
     def __init__(self) -> None:
@@ -100,6 +137,8 @@ class ShariaEngine:
         self.musharakah_engine = musharakah_engine
         self.sukuk_engine = sukuk_engine
         self.tathir_routing = tathir_routing_service
+        self.zakat_engine = zakat_engine
+        self.murabaha_engine = murabaha_engine
 
     def screen_financials(self, statement: FinancialStatement) -> ShariaScreeningResult:
         return self.compliance_engine.screen_financials(statement)
@@ -130,6 +169,26 @@ class ShariaEngine:
 
     def calculate_istihaq(self, req: IstihaqCalculationRequest) -> IstihaqCalculationResult:
         return self.istihaq_engine.calculate_istihaq(req)
+
+    def calculate_company_zakat(self, req: CompanyZakatRequest) -> CompanyZakatAssessment:
+        return self.zakat_engine.calculate_company_zakat(req)
+
+    def calculate_investor_zakat(self, req: InvestorZakatRequest) -> InvestorZakatAssessment:
+        return self.zakat_engine.calculate_investor_zakat(req)
+
+    def evaluate_nisab(
+        self,
+        zakat_base_dzd: float,
+        benchmark: NisabBenchmark = NisabBenchmark.GOLD_85G,
+        custom_gold_price: Optional[float] = None,
+        custom_silver_price: Optional[float] = None,
+    ) -> NisabEvaluation:
+        return self.zakat_engine.evaluate_nisab(
+            zakat_base_dzd=zakat_base_dzd,
+            benchmark=benchmark,
+            custom_gold_price=custom_gold_price,
+            custom_silver_price=custom_silver_price,
+        )
 
 
 sharia_engine = ShariaEngine()
