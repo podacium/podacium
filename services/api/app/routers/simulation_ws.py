@@ -39,6 +39,9 @@ from app.services.stage_queue_manager import (
 from app.services.slide_synchronizer import (
     slide_deck_synchronizer,
 )
+from app.services.pitch_canvas_sync import pitch_canvas_sync
+from app.services.arena_qa_engine import arena_qa_engine, QuestionState
+from app.services.live_term_sheet_room import live_term_sheet_engine
 
 logger = logging.getLogger(__name__)
 
@@ -513,6 +516,288 @@ async def handle_arena_socket(
                 room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
                 deck_session = slide_deck_synchronizer.get_or_create_session(room_id=room)
                 await websocket.send_text(json.dumps(deck_session.get_state()))
+
+            # 9. SYNCHRONIZED DECK CANVAS & MULTI-USER LASER POINTER
+            elif action in ("canvas_pointer", "deck:pointer_update"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                canvas_session = pitch_canvas_sync.get_or_create_session(room_id=room)
+                x = float(data.get("x", 0.5))
+                y = float(data.get("y", 0.5))
+                active = bool(data.get("active", True))
+                color = data.get("color")
+                slide_idx = data.get("slide_index")
+                ptr_evt = canvas_session.update_pointer(
+                    user_id=user_id or 1,
+                    username=sender_name,
+                    x=x,
+                    y=y,
+                    active=active,
+                    color=color,
+                    slide_index=slide_idx,
+                )
+                await simulation_manager.broadcast_to_room(room, ptr_evt)
+
+            elif action in ("canvas_annotate", "deck:add_annotation"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                canvas_session = pitch_canvas_sync.get_or_create_session(room_id=room)
+                ann = canvas_session.add_annotation(
+                    author_id=user_id or 1,
+                    author_name=sender_name,
+                    annotation_type=data.get("annotation_type", "PEN_STROKE"),
+                    data=data.get("data", {}),
+                    slide_index=data.get("slide_index"),
+                    color=data.get("color", "#E8632E"),
+                    stroke_width=float(data.get("stroke_width", 2.5)),
+                    is_ephemeral=bool(data.get("is_ephemeral", False)),
+                    ttl_sec=float(data.get("ttl_sec", 5.0)),
+                )
+                evt = {
+                    "type": "deck:annotation_added",
+                    "room_id": room,
+                    "annotation": ann.to_dict(),
+                    "timestamp": time.time(),
+                }
+                await simulation_manager.broadcast_to_room(room, evt)
+
+            elif action in ("canvas_bookmark", "deck:add_bookmark"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                canvas_session = pitch_canvas_sync.get_or_create_session(room_id=room)
+                bm = canvas_session.add_bookmark(
+                    slide_index=int(data.get("slide_index", 0)),
+                    label=data.get("label", "Key Slide Bookmark"),
+                    user_id=user_id or 1,
+                    username=sender_name,
+                    timestamp_sec=data.get("timestamp_sec"),
+                    note=data.get("note"),
+                )
+                evt = {
+                    "type": "deck:bookmark_added",
+                    "room_id": room,
+                    "bookmark": bm.to_dict(),
+                    "timestamp": time.time(),
+                }
+                await simulation_manager.broadcast_to_room(room, evt)
+
+            elif action in ("get_canvas_state", "deck:get_canvas_state"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                canvas_session = pitch_canvas_sync.get_or_create_session(room_id=room)
+                await websocket.send_text(json.dumps(canvas_session.get_canvas_state()))
+
+            # 10. LIVE ARENA Q&A WITH PRIORITY QUEUE RANKING
+            elif action in ("qa_submit", "qa:submit"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                startup_id = data.get("startup_id", room.replace("startup:", ""))
+                content = data.get("content", "")
+                academy_tier = data.get("academy_tier", "NONE")
+                reputation_weight = float(data.get("reputation_weight", 1.0))
+                slide_ref = data.get("slide_reference")
+                category = data.get("category", "UNIT_ECONOMICS")
+
+                try:
+                    q = arena_qa_engine.submit_question(
+                        room_id=room,
+                        startup_id=startup_id,
+                        author_id=user_id or 1,
+                        author_name=sender_name,
+                        content=content,
+                        academy_tier=academy_tier,
+                        reputation_weight=reputation_weight,
+                        slide_reference=slide_ref,
+                        category=category,
+                    )
+                    evt = {
+                        "type": "qa:question_submitted",
+                        "room_id": room,
+                        "question": q.to_dict(),
+                        "timestamp": time.time(),
+                    }
+                    await simulation_manager.broadcast_to_room(room, evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("qa_upvote", "qa:upvote"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                question_id = data.get("question_id", "")
+                try:
+                    q = arena_qa_engine.upvote_question(
+                        room_id=room,
+                        question_id=question_id,
+                        user_id=user_id or 1,
+                    )
+                    evt = {
+                        "type": "qa:question_upvoted",
+                        "room_id": room,
+                        "question_id": question_id,
+                        "upvotes": q.upvotes,
+                        "priority_score": q.priority_score,
+                        "question": q.to_dict(),
+                        "timestamp": time.time(),
+                    }
+                    await simulation_manager.broadcast_to_room(room, evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("qa_moderate", "qa:moderate"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                question_id = data.get("question_id", "")
+                approved = bool(data.get("approved", True))
+                reason = data.get("reason")
+                try:
+                    q = arena_qa_engine.moderate_question(
+                        room_id=room,
+                        question_id=question_id,
+                        approved=approved,
+                        moderator_id=user_id or 1,
+                        reason=reason,
+                    )
+                    evt = {
+                        "type": "qa:question_moderated",
+                        "room_id": room,
+                        "question": q.to_dict(),
+                        "timestamp": time.time(),
+                    }
+                    await simulation_manager.broadcast_to_room(room, evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("qa_promote", "qa:promote"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                question_id = data.get("question_id", "")
+                try:
+                    q = arena_qa_engine.promote_to_stage(room_id=room, question_id=question_id)
+                    evt = {
+                        "type": "qa:question_promoted",
+                        "room_id": room,
+                        "question": q.to_dict(),
+                        "timestamp": time.time(),
+                    }
+                    await simulation_manager.broadcast_to_room(room, evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("qa_answer", "qa:answer"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                question_id = data.get("question_id", "")
+                notes = data.get("answer_notes")
+                try:
+                    q = arena_qa_engine.answer_question(
+                        room_id=room,
+                        question_id=question_id,
+                        answer_notes=notes,
+                    )
+                    evt = {
+                        "type": "qa:question_answered",
+                        "room_id": room,
+                        "question": q.to_dict(),
+                        "timestamp": time.time(),
+                    }
+                    await simulation_manager.broadcast_to_room(room, evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("get_qa_list", "qa:get_list"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                state_filter = data.get("state")
+                sort_by = data.get("sort_by", "priority_score")
+                q_list = arena_qa_engine.list_questions(room_id=room, state=state_filter, sort_by=sort_by)
+                await websocket.send_text(json.dumps({
+                    "type": "qa:list_sync",
+                    "room_id": room,
+                    "questions": q_list,
+                }))
+
+            # 11. LIVE DEAL TERM SHEET COLLABORATIVE ROOM
+            elif action in ("termsheet_open", "termsheet:open"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                startup_id = data.get("startup_id", room.replace("startup:", ""))
+                session = live_term_sheet_engine.get_or_create_room(
+                    room_id=room,
+                    startup_id=startup_id,
+                    startup_name=data.get("startup_name", "TamWheel Venture"),
+                    founder_id=int(data.get("founder_id", user_id or 1)),
+                    founder_name=data.get("founder_name", sender_name),
+                    investor_id=int(data.get("investor_id", 999)),
+                    investor_name=data.get("investor_name", "Lead Shark"),
+                    initial_valuation_dzd=int(data.get("initial_valuation_dzd", 50_000_000)),
+                    initial_ticket_dzd=int(data.get("initial_ticket_dzd", 10_000_000)),
+                )
+                evt = {
+                    "type": "termsheet:opened",
+                    "room_id": room,
+                    "state": session.get_state(),
+                    "timestamp": time.time(),
+                }
+                await simulation_manager.broadcast_to_room(room, evt)
+
+            elif action in ("termsheet_update", "termsheet:update"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                session = live_term_sheet_engine.get_or_create_room(room_id=room)
+                try:
+                    updated_state = session.update_terms(
+                        actor_id=user_id or 1,
+                        actor_name=sender_name,
+                        actor_role=data.get("actor_role", "INVESTOR"),
+                        valuation_pre_money_dzd=data.get("valuation_pre_money_dzd"),
+                        ticket_size_dzd=data.get("ticket_size_dzd"),
+                        board_seats=data.get("board_seats"),
+                        liquidation_preference=data.get("liquidation_preference"),
+                        sharia_covenants=data.get("sharia_covenants"),
+                    )
+                    evt = {
+                        "type": "termsheet:updated",
+                        "room_id": room,
+                        "state": updated_state,
+                        "timestamp": time.time(),
+                    }
+                    await simulation_manager.broadcast_to_room(room, evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("termsheet_initial", "termsheet:initial"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                session = live_term_sheet_engine.get_or_create_room(room_id=room)
+                clause_id = data.get("clause_id")
+                party = data.get("party", "INVESTOR")
+                initials = data.get("initials", "SH")
+
+                try:
+                    if clause_id:
+                        init_evt = session.initial_clause(
+                            clause_id=clause_id,
+                            user_id=user_id or 1,
+                            username=sender_name,
+                            party=party,
+                            initials=initials,
+                        )
+                    else:
+                        init_evt = session.initial_all_clauses(
+                            user_id=user_id or 1,
+                            username=sender_name,
+                            party=party,
+                            initials=initials,
+                        )
+                    await simulation_manager.broadcast_to_room(room, init_evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("termsheet_seal_khatm", "termsheet:seal_khatm"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                session = live_term_sheet_engine.get_or_create_room(room_id=room)
+                reflection_sec = float(data.get("reflection_hold_duration_sec", 3.0))
+
+                try:
+                    khatm_evt = session.trigger_khatm_ceremony(
+                        user_id=user_id or 1,
+                        reflection_hold_duration_sec=reflection_sec,
+                    )
+                    await simulation_manager.broadcast_to_room(room, khatm_evt)
+                except Exception as e:
+                    await websocket.send_text(json.dumps({"error": str(e), "action": action}))
+
+            elif action in ("get_termsheet_state", "termsheet:get_state"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                session = live_term_sheet_engine.get_or_create_room(room_id=room)
+                await websocket.send_text(json.dumps(session.get_state()))
 
             else:
                 await websocket.send_text(json.dumps({
