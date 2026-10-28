@@ -70,6 +70,13 @@ class AuthService:
             user = await prisma.user.create(data=user_data_dict)
             logger.info(f"User created successfully with ID: {user.id}")
 
+            # Issue mandatory 50,000 DZD Virtual Starter Grant (Pillar 2: Simulation League)
+            try:
+                from app.services.simulation_engine import simulation_engine
+                await simulation_engine.grant_starter_balance(user.id)
+            except Exception as e:
+                logger.warning(f"Failed to issue virtual starter grant for user {user.id}: {e}")
+
             # Create user settings with locale preference
             try:
                 await prisma.usersettings.create(
@@ -505,6 +512,14 @@ class AuthService:
 
         user = await prisma.user.create(data=user_data)
         logger.info(f"OAuth user created with ID: {user.id}")
+
+        # Issue mandatory 50,000 DZD Virtual Starter Grant (Pillar 2: Simulation League)
+        try:
+            from app.services.simulation_engine import simulation_engine
+            await simulation_engine.grant_starter_balance(user.id)
+        except Exception as e:
+            logger.warning(f"Failed to issue virtual starter grant for OAuth user {user.id}: {e}")
+
         return user
 
     @staticmethod
