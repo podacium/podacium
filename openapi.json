@@ -4957,6 +4957,581 @@
         }
       }
     },
+    "/api/v1/safes/simulate": {
+      "post": {
+        "tags": [
+          "SAFE & Convertible Notes",
+          "SAFE & Convertible Notes"
+        ],
+        "summary": "Simulate Safe Conversion",
+        "description": "Simulate SAFE & Convertible Note conversion across scenarios (Equity Financing, Liquidity, Dissolution).\nUses Hamilton-Hare Largest Remainder Method for exact integer shares.",
+        "operationId": "simulate_safe_conversion_api_v1_safes_simulate_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SafeConversionSimulationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SafeConversionSimulationResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/safes/calculate-interest": {
+      "post": {
+        "tags": [
+          "SAFE & Convertible Notes",
+          "SAFE & Convertible Notes"
+        ],
+        "summary": "Calculate Note Interest",
+        "description": "Calculate accrued interest for convertible promissory notes.",
+        "operationId": "calculate_note_interest_api_v1_safes_calculate_interest_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterestCalculationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InterestCalculationResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/safes/hamilton-hare-allocation": {
+      "post": {
+        "tags": [
+          "SAFE & Convertible Notes",
+          "SAFE & Convertible Notes"
+        ],
+        "summary": "Run Hamilton Hare Allocation",
+        "description": "Run discrete integer share allocation using Hamilton-Hare largest remainder method.",
+        "operationId": "run_hamilton_hare_allocation_api_v1_safes_hamilton_hare_allocation_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HamiltonHareRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HamiltonHareResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/side-letters/startups/{startup_id}": {
+      "post": {
+        "tags": [
+          "Institutional Side Letters & CNRC",
+          "Institutional Side Letters & CNRC"
+        ],
+        "summary": "Create Side Letter",
+        "description": "Register a new institutional side letter with investor covenants.",
+        "operationId": "create_side_letter_api_v1_side_letters_startups__startup_id__post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SideLetterCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SideLetterModel"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Institutional Side Letters & CNRC",
+          "Institutional Side Letters & CNRC"
+        ],
+        "summary": "List Side Letters",
+        "description": "List all registered side letters for a startup.",
+        "operationId": "list_side_letters_api_v1_side_letters_startups__startup_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SideLetterModel"
+                  },
+                  "title": "Response List Side Letters Api V1 Side Letters Startups  Startup Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/side-letters/startups/{startup_id}/{side_letter_id}": {
+      "get": {
+        "tags": [
+          "Institutional Side Letters & CNRC",
+          "Institutional Side Letters & CNRC"
+        ],
+        "summary": "Get Side Letter",
+        "description": "Retrieve details of a specific side letter.",
+        "operationId": "get_side_letter_api_v1_side_letters_startups__startup_id___side_letter_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "side_letter_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Side Letter Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SideLetterModel"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/side-letters/startups/{startup_id}/audit/conflicts": {
+      "get": {
+        "tags": [
+          "Institutional Side Letters & CNRC",
+          "Institutional Side Letters & CNRC"
+        ],
+        "summary": "Audit Statuts Conflicts",
+        "description": "Audit all registered side letters against Algerian Law 22-09 SPAS bylaws.",
+        "operationId": "audit_statuts_conflicts_api_v1_side_letters_startups__startup_id__audit_conflicts_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatutsConflictReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/side-letters/startups/{startup_id}/elect-mfn": {
+      "post": {
+        "tags": [
+          "Institutional Side Letters & CNRC",
+          "Institutional Side Letters & CNRC"
+        ],
+        "summary": "Elect Mfn Terms",
+        "description": "Allow an investor to elect more favorable covenants via their MFN clause.",
+        "operationId": "elect_mfn_terms_api_v1_side_letters_startups__startup_id__elect_mfn_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MfnElectionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MfnElectionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/side-letters/startups/{startup_id}/export-cnrc": {
+      "post": {
+        "tags": [
+          "Institutional Side Letters & CNRC",
+          "Institutional Side Letters & CNRC"
+        ],
+        "summary": "Export Cnrc Filing Manifest",
+        "description": "Generate formal Shareholder Register & Capital Modification Declaration\nformatted for official filing with the Algerian CNRC under Law 22-09.",
+        "operationId": "export_cnrc_filing_manifest_api_v1_side_letters_startups__startup_id__export_cnrc_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CnrcExportRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CnrcFilingExportResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/vdr/startups/{startup_id}/documents": {
       "post": {
         "tags": [
@@ -6764,7 +7339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ForensicAuditRequest"
+                "$ref": "#/components/schemas/app__schemas__diligence__ForensicAuditRequest"
               }
             }
           }
@@ -6775,7 +7350,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ForensicAuditResponse"
+                  "$ref": "#/components/schemas/app__schemas__diligence__ForensicAuditResponse"
                 }
               }
             }
@@ -7170,6 +7745,226 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/LiquidityDiagnosticResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/forensics/fraud/audit": {
+      "post": {
+        "tags": [
+          "Forensic Accounting & Fraud Detection",
+          "forensics",
+          "fraud-detection"
+        ],
+        "summary": "Conduct comprehensive forensic accounting audit",
+        "description": "Perform deep corporate forensic accounting audit:\n- Cross-check declared revenue vs statutory Algerian G50 VAT / TAP turnover\n- Cross-check declared payroll and headcount vs CNAS social security filings (34.5% rule)\n- Detect circular transaction round-tripping cycles and unverified phantom suppliers\n- Reconcile bank statement ledger mathematical integrity against claimed runway\n- Compute composite Fraud Risk Score [0.0, 100.0] and prioritized red-flag matrix",
+        "operationId": "conduct_forensic_fraud_audit_api_v1_forensics_fraud_audit_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/app__schemas__forensic_fraud__ForensicAuditRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/app__schemas__forensic_fraud__ForensicAuditResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/forensics/fraud/circular-check": {
+      "post": {
+        "tags": [
+          "Forensic Accounting & Fraud Detection",
+          "forensics",
+          "fraud-detection"
+        ],
+        "summary": "Detect circular round-tripping transaction cycles",
+        "description": "Analyze directed transaction graph for closed round-tripping cycles (A -> B -> C -> A)\nand unverified phantom suppliers with missing or invalid tax IDs (NIF).",
+        "operationId": "check_circular_transactions_api_v1_forensics_fraud_circular_check_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CircularCheckRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CircularCheckResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/forensics/fraud/reconcile-cash": {
+      "post": {
+        "tags": [
+          "Forensic Accounting & Fraud Detection",
+          "forensics",
+          "fraud-detection"
+        ],
+        "summary": "Reconcile bank statement cash burn and runway",
+        "description": "Verify bank statement monthly continuity and calculate true net burn rate vs claimed runway.",
+        "operationId": "reconcile_cash_statements_api_v1_forensics_fraud_reconcile_cash_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CashReconciliationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CashReconciliationResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/deck-audit/analyze": {
+      "post": {
+        "tags": [
+          "Pitch Deck Diligence & Exaggeration Auditor",
+          "diligence",
+          "deck-auditing"
+        ],
+        "summary": "Perform comprehensive pitch deck slide-by-slide audit",
+        "description": "Audit investor pitch deck for exaggeration and credibility:\n- Slices pitch deck into archetypes (Problem, Solution, TAM/SAM/SOM, Moat, Traction, Team, Financials)\n- Flags impossible market sizes against official Algerian ONS statistics & national GDP ceiling\n- Evaluates moat defensibility (INAPI IP, Decree 20-254 Startup Label, switching costs vs buzzwords)\n- Computes Claim Provenance Index based on primary verifiable documentation\n- Delivers slide-by-slide integrity scores, red flags, strengths, and recommendations",
+        "operationId": "analyze_pitch_deck_api_v1_diligence_deck_audit_analyze_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeckAuditRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeckAuditResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/deck-audit/tam-check": {
+      "post": {
+        "tags": [
+          "Pitch Deck Diligence & Exaggeration Auditor",
+          "diligence",
+          "deck-auditing"
+        ],
+        "summary": "Validate TAM/SAM/SOM market sizing against official ONS data",
+        "description": "Benchmark claimed TAM/SAM/SOM figures against empirical Algerian ONS economic ceilings.\nIdentifies top-down market sizing fallacies and calculates inflation multiples.",
+        "operationId": "check_tam_benchmarks_api_v1_diligence_deck_audit_tam_check_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TAMCheckRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TAMCheckResponse"
                 }
               }
             }
@@ -42748,6 +43543,562 @@
         }
       }
     },
+    "/api/v1/amm/pools": {
+      "get": {
+        "tags": [
+          "Bonding Curve AMM & Continuous Liquidity",
+          "Bonding Curve AMM & Continuous Liquidity"
+        ],
+        "summary": "List all AMM bonding curve liquidity pools",
+        "description": "Returns real-time continuous bonding curve pool metrics for all draftable fantasy startups:\n- Circulating supply\n- Current spot price in DZD (Sim)\n- AMM reserve pool balance\n- Cumulative volume and trade count",
+        "operationId": "list_amm_pools_api_v1_amm_pools_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/PoolStateResponse"
+                  },
+                  "type": "array",
+                  "title": "Response List Amm Pools Api V1 Amm Pools Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/amm/pools/{startup_id}": {
+      "get": {
+        "tags": [
+          "Bonding Curve AMM & Continuous Liquidity",
+          "Bonding Curve AMM & Continuous Liquidity"
+        ],
+        "summary": "Get AMM bonding curve pool state for a startup",
+        "description": "Retrieves real-time continuous bonding curve pool metrics for a specific startup.",
+        "operationId": "get_amm_pool_state_api_v1_amm_pools__startup_id__get",
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Startup Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PoolStateResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/amm/quote": {
+      "post": {
+        "tags": [
+          "Bonding Curve AMM & Continuous Liquidity",
+          "Bonding Curve AMM & Continuous Liquidity"
+        ],
+        "summary": "Quote exact integral cost and slippage on the continuous bonding curve",
+        "description": "Computes exact continuous calculus integral:\n- BUY: Integral of P(s) ds from S to S + delta_shares\n- SELL: Integral of P(s) ds from S - delta_shares to S minus protocol fee\nEvaluates price impact and execution slippage.",
+        "operationId": "get_bonding_curve_quote_api_v1_amm_quote_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondingCurveQuoteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BondingCurveQuoteResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/amm/trade": {
+      "post": {
+        "tags": [
+          "Bonding Curve AMM & Continuous Liquidity",
+          "Bonding Curve AMM & Continuous Liquidity"
+        ],
+        "summary": "Execute atomic continuous bonding curve trade (BUY or SELL)",
+        "description": "Executes an atomic trade on the continuous bonding curve:\n- Enforces slippage tolerance protection.\n- Anti-front-running delay window to mitigate sandwich attacks.\n- Settles transaction directly onto the Double-Entry Virtual Currency Ledger\n  (Debit AMM Reserve / Credit User Cash on Buy, and vice versa on Sell).\n- Preserves zero-sum invariant across the sovereign sandbox.",
+        "operationId": "execute_bonding_curve_trade_api_v1_amm_trade_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BondingCurveTradeRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BondingCurveTradeResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/amm/holdings": {
+      "get": {
+        "tags": [
+          "Bonding Curve AMM & Continuous Liquidity",
+          "Bonding Curve AMM & Continuous Liquidity"
+        ],
+        "summary": "Get current user fantasy share holdings across all startups",
+        "description": "Returns fantasy share quantities owned by the current authenticated user.",
+        "operationId": "get_user_fantasy_holdings_api_v1_amm_holdings_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fantasy/season/leaderboard": {
+      "get": {
+        "tags": [
+          "Season Rewards & Touiza Distribution",
+          "Season Rewards & Touiza Distribution"
+        ],
+        "summary": "Top 100 Individual Analysts Touiza Leaderboard",
+        "description": "Returns ranked standings for the season, including:\n- Gold Touiza Trophy (Rank 1): 50,000 DZD Virtual Bonus + Partner Badge\n- Silver Touiza Trophy (Rank 2-10): 25,000 DZD Virtual Bonus + Senior Analyst Badge\n- Bronze Touiza Trophy (Rank 11-50): 10,000 DZD Virtual Bonus + Analyst Badge\n- Touiza Honor Roll (Rank 51-100): 5,000 DZD Virtual Bonus + Scout Badge",
+        "operationId": "get_season_analysts_leaderboard_api_v1_fantasy_season_leaderboard_get",
+        "parameters": [
+          {
+            "name": "seasonId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Season ID (defaults to active season)",
+              "title": "Seasonid"
+            },
+            "description": "Season ID (defaults to active season)"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "description": "Rank limit (max 100)",
+              "default": 100,
+              "title": "Limit"
+            },
+            "description": "Rank limit (max 100)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnalystSeasonStanding"
+                  },
+                  "title": "Response Get Season Analysts Leaderboard Api V1 Fantasy Season Leaderboard Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fantasy/season/wilaya-cup": {
+      "get": {
+        "tags": [
+          "Season Rewards & Touiza Distribution",
+          "Season Rewards & Touiza Distribution"
+        ],
+        "summary": "58-Wilaya Sovereign Cup standings and prize allocation",
+        "description": "Returns ranked standings across all 58 Algerian Wilayas under Decree 19-12:\n- 1,000,000 DZD Touiza Grand Prize Pool awarded to the champion regional cohort.",
+        "operationId": "get_wilaya_cup_standings_api_v1_fantasy_season_wilaya_cup_get",
+        "parameters": [
+          {
+            "name": "seasonId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Season ID (defaults to active season)",
+              "title": "Seasonid"
+            },
+            "description": "Season ID (defaults to active season)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WilayaCupStanding"
+                  },
+                  "title": "Response Get Wilaya Cup Standings Api V1 Fantasy Season Wilaya Cup Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fantasy/season/dividends": {
+      "post": {
+        "tags": [
+          "Season Rewards & Touiza Distribution",
+          "Season Rewards & Touiza Distribution"
+        ],
+        "summary": "Declare and distribute simulated startup revenue dividends",
+        "description": "Executes automated dividend distribution for a profitable startup:\n- Finds all fantasy shareholders holding shares in the startup's AMM pool.\n- Calculates virtual dividend payout per user (shares * dividendPerShareDzd).\n- Records atomic double-entry journal entries crediting user cash balances.",
+        "operationId": "declare_startup_dividends_api_v1_fantasy_season_dividends_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DividendDeclarationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DividendPayoutReceipt"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Season Rewards & Touiza Distribution",
+          "Season Rewards & Touiza Distribution"
+        ],
+        "summary": "List historical startup dividend distributions",
+        "description": "Returns all historical startup dividend declarations and payout receipts.",
+        "operationId": "list_dividend_distributions_api_v1_fantasy_season_dividends_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DividendPayoutReceipt"
+                  },
+                  "title": "Response List Dividend Distributions Api V1 Fantasy Season Dividends Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fantasy/season/distribute": {
+      "post": {
+        "tags": [
+          "Season Rewards & Touiza Distribution",
+          "Season Rewards & Touiza Distribution"
+        ],
+        "summary": "Execute comprehensive season-end tournament settlement and payouts",
+        "description": "Executes complete end-of-season tournament prize distribution:\n1. Distributes Top 100 Individual Analysts Touiza bonuses.\n2. Distributes 1,000,000 DZD 58-Wilaya Sovereign Cup Grand Prize.\n3. Records cryptographic double-entry journal entries in the simulation ledger.",
+        "operationId": "distribute_season_rewards_api_v1_fantasy_season_distribute_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "seasonId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Target season ID",
+              "title": "Seasonid"
+            },
+            "description": "Target season ID"
+          },
+          {
+            "name": "include_relations",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Include Relations"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SeasonDistributionReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fantasy/season/report": {
+      "get": {
+        "tags": [
+          "Season Rewards & Touiza Distribution",
+          "Season Rewards & Touiza Distribution"
+        ],
+        "summary": "Get season distribution report",
+        "description": "Retrieves distribution report for a settled season.",
+        "operationId": "get_season_distribution_report_api_v1_fantasy_season_report_get",
+        "parameters": [
+          {
+            "name": "seasonId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Target season ID",
+              "title": "Seasonid"
+            },
+            "description": "Target season ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SeasonDistributionReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/hq/startups/{startup_id}": {
       "get": {
         "tags": [
@@ -44966,6 +46317,520 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/HalkaInvestmentProposal"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/syndicates/capital-calls/commitments": {
+      "post": {
+        "tags": [
+          "Syndicate Capital Calls & Drawdowns",
+          "Syndicate Capital Calls & Drawdowns"
+        ],
+        "summary": "Register LP binding capital commitment",
+        "operationId": "register_lp_commitment_api_v1_syndicates_capital_calls_commitments_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterCommitmentRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LPCommitment"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/syndicates/capital-calls/commitments/{spv_id}": {
+      "get": {
+        "tags": [
+          "Syndicate Capital Calls & Drawdowns",
+          "Syndicate Capital Calls & Drawdowns"
+        ],
+        "summary": "Get SPV commitments and dry powder summary",
+        "operationId": "get_spv_commitments_api_v1_syndicates_capital_calls_commitments__spv_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "spv_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Spv Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Spv Commitments Api V1 Syndicates Capital Calls Commitments  Spv Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/syndicates/capital-calls/notices": {
+      "post": {
+        "tags": [
+          "Syndicate Capital Calls & Drawdowns",
+          "Syndicate Capital Calls & Drawdowns"
+        ],
+        "summary": "Issue a tranche-based Capital Call Notice",
+        "operationId": "create_capital_call_notice_api_v1_syndicates_capital_calls_notices_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCallNoticeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/app__services__capital_call_engine__CapitalCallNotice"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/syndicates/capital-calls/notices/{notice_id}": {
+      "get": {
+        "tags": [
+          "Syndicate Capital Calls & Drawdowns",
+          "Syndicate Capital Calls & Drawdowns"
+        ],
+        "summary": "Get Capital Call Notice details",
+        "operationId": "get_capital_call_notice_api_v1_syndicates_capital_calls_notices__notice_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "notice_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Notice Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/app__services__capital_call_engine__CapitalCallNotice"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/syndicates/capital-calls/notices/{notice_id}/payments": {
+      "post": {
+        "tags": [
+          "Syndicate Capital Calls & Drawdowns",
+          "Syndicate Capital Calls & Drawdowns"
+        ],
+        "summary": "Record wire remittance settlement from LP",
+        "operationId": "record_lp_payment_api_v1_syndicates_capital_calls_notices__notice_id__payments_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "notice_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Notice Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecordPaymentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/app__services__capital_call_engine__CapitalCallNotice"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/syndicates/capital-calls/notices/{notice_id}/delinquencies/evaluate": {
+      "post": {
+        "tags": [
+          "Syndicate Capital Calls & Drawdowns",
+          "Syndicate Capital Calls & Drawdowns"
+        ],
+        "summary": "Evaluate delinquent LPs and apply Sharia Waqf penalty",
+        "operationId": "evaluate_delinquencies_api_v1_syndicates_capital_calls_notices__notice_id__delinquencies_evaluate_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "notice_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Notice Id"
+            }
+          },
+          {
+            "name": "annualized_penalty_rate_pct",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "default": 8.0,
+              "title": "Annualized Penalty Rate Pct"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Evaluate Delinquencies Api V1 Syndicates Capital Calls Notices  Notice Id  Delinquencies Evaluate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/syndicates/capital-calls/notices/{notice_id}/delinquencies/cure": {
+      "post": {
+        "tags": [
+          "Syndicate Capital Calls & Drawdowns",
+          "Syndicate Capital Calls & Drawdowns"
+        ],
+        "summary": "Execute step-in cure with secondary haircut transfer",
+        "operationId": "cure_delinquent_lp_api_v1_syndicates_capital_calls_notices__notice_id__delinquencies_cure_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "notice_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Notice Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CureDelinquentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DelinquentResolution"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/syndicates/financial-statements/compile": {
+      "post": {
+        "tags": [
+          "Syndicate SCF Financial Statements",
+          "Syndicate SCF Financial Statements"
+        ],
+        "summary": "Compile Algerian SCF Financial Statements & NAV",
+        "description": "Generates compliant Balance Sheet (Classes 1, 2, 4, 5), Income Statement, and NAV per unit for Syndicate SPVs under Law 22-09 SPAS & Law 07-11 SCF.",
+        "operationId": "compile_financial_statements_api_v1_syndicates_financial_statements_compile_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompileFinancialStatementsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SPVFinancialReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/syndicates/financial-statements/{report_id}": {
+      "get": {
+        "tags": [
+          "Syndicate SCF Financial Statements",
+          "Syndicate SCF Financial Statements"
+        ],
+        "summary": "Get certified SCF financial report",
+        "operationId": "get_financial_report_api_v1_syndicates_financial_statements__report_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SPVFinancialReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/syndicates/financial-statements/spv/{spv_id}": {
+      "get": {
+        "tags": [
+          "Syndicate SCF Financial Statements",
+          "Syndicate SCF Financial Statements"
+        ],
+        "summary": "List all financial reports for an SPV",
+        "operationId": "list_spv_financial_reports_api_v1_syndicates_financial_statements_spv__spv_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "spv_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Spv Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SPVFinancialReport"
+                  },
+                  "title": "Response List Spv Financial Reports Api V1 Syndicates Financial Statements Spv  Spv Id  Get"
                 }
               }
             }
@@ -50965,6 +52830,72 @@
         ],
         "title": "AnalystLevel"
       },
+      "AnalystSeasonStanding": {
+        "properties": {
+          "rank": {
+            "type": "integer",
+            "title": "Rank"
+          },
+          "userId": {
+            "type": "integer",
+            "title": "Userid"
+          },
+          "userName": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Username",
+            "default": "Anonymous Analyst"
+          },
+          "totalPoints": {
+            "type": "number",
+            "title": "Totalpoints"
+          },
+          "trophy": {
+            "type": "string",
+            "title": "Trophy"
+          },
+          "badge": {
+            "type": "string",
+            "title": "Badge"
+          },
+          "rewardDzd": {
+            "type": "integer",
+            "title": "Rewarddzd"
+          },
+          "isPaid": {
+            "type": "boolean",
+            "title": "Ispaid",
+            "default": false
+          },
+          "journalEntryId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Journalentryid"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rank",
+          "userId",
+          "totalPoints",
+          "trophy",
+          "badge",
+          "rewardDzd"
+        ],
+        "title": "AnalystSeasonStanding"
+      },
       "AnnualShariaAuditReport": {
         "properties": {
           "report_id": {
@@ -52082,6 +54013,87 @@
         ],
         "title": "BackerSquad"
       },
+      "BankDetails": {
+        "properties": {
+          "bank_name": {
+            "type": "string",
+            "title": "Bank Name",
+            "default": "Banque Nationale d'Alg\u00e9rie (BNA) - Agence Alger Centre 00100"
+          },
+          "rib_20_digit": {
+            "type": "string",
+            "title": "Rib 20 Digit",
+            "default": "00100012312345678904"
+          },
+          "swift_bic": {
+            "type": "string",
+            "title": "Swift Bic",
+            "default": "BNPADZALXXX"
+          },
+          "iban": {
+            "type": "string",
+            "title": "Iban",
+            "default": "DZ5000100012312345678904"
+          },
+          "beneficiary_name": {
+            "type": "string",
+            "title": "Beneficiary Name",
+            "default": "SPAS TamWheel Ventures Fund I Holding"
+          },
+          "account_currency": {
+            "type": "string",
+            "title": "Account Currency",
+            "default": "DZD"
+          },
+          "settlement_reference_prefix": {
+            "type": "string",
+            "title": "Settlement Reference Prefix",
+            "default": "CALL-TR"
+          }
+        },
+        "type": "object",
+        "title": "BankDetails"
+      },
+      "BankStatementMonth": {
+        "properties": {
+          "period": {
+            "type": "string",
+            "title": "Period",
+            "description": "Statement month (YYYY-MM)"
+          },
+          "openingBalanceDzd": {
+            "type": "number",
+            "title": "Openingbalancedzd",
+            "description": "Opening bank balance in DZD"
+          },
+          "totalDepositsDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Totaldepositsdzd",
+            "description": "Total cash inflows / credits"
+          },
+          "totalWithdrawalsDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Totalwithdrawalsdzd",
+            "description": "Total cash outflows / debits"
+          },
+          "closingBalanceDzd": {
+            "type": "number",
+            "title": "Closingbalancedzd",
+            "description": "Closing bank balance in DZD"
+          }
+        },
+        "type": "object",
+        "required": [
+          "period",
+          "openingBalanceDzd",
+          "totalDepositsDzd",
+          "totalWithdrawalsDzd",
+          "closingBalanceDzd"
+        ],
+        "title": "BankStatementMonth"
+      },
       "BaridiMobOrderRequest": {
         "properties": {
           "amount_dzd": {
@@ -52499,6 +54511,253 @@
           "file"
         ],
         "title": "Body_upload_lesson_subtitles_api_v1_admin_lessons__lesson_id__subtitles_post"
+      },
+      "BondingCurveQuoteRequest": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid",
+            "description": "Target startup ID"
+          },
+          "sharesAmount": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Sharesamount",
+            "description": "Number of shares to quote"
+          },
+          "action": {
+            "type": "string",
+            "title": "Action",
+            "description": "BUY | SELL",
+            "default": "BUY"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "sharesAmount"
+        ],
+        "title": "BondingCurveQuoteRequest"
+      },
+      "BondingCurveQuoteResponse": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "action": {
+            "type": "string",
+            "title": "Action"
+          },
+          "sharesAmount": {
+            "type": "integer",
+            "title": "Sharesamount"
+          },
+          "currentSupply": {
+            "type": "integer",
+            "title": "Currentsupply"
+          },
+          "newSupply": {
+            "type": "integer",
+            "title": "Newsupply"
+          },
+          "currentSpotPrice": {
+            "type": "number",
+            "title": "Currentspotprice"
+          },
+          "newSpotPrice": {
+            "type": "number",
+            "title": "Newspotprice"
+          },
+          "totalCostOrRefund": {
+            "type": "number",
+            "title": "Totalcostorrefund"
+          },
+          "netRefund": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Netrefund"
+          },
+          "protocolFee": {
+            "type": "number",
+            "title": "Protocolfee"
+          },
+          "avgExecutionPrice": {
+            "type": "number",
+            "title": "Avgexecutionprice"
+          },
+          "priceImpactPct": {
+            "type": "number",
+            "title": "Priceimpactpct"
+          },
+          "slippagePct": {
+            "type": "number",
+            "title": "Slippagepct"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "action",
+          "sharesAmount",
+          "currentSupply",
+          "newSupply",
+          "currentSpotPrice",
+          "newSpotPrice",
+          "totalCostOrRefund",
+          "protocolFee",
+          "avgExecutionPrice",
+          "priceImpactPct",
+          "slippagePct"
+        ],
+        "title": "BondingCurveQuoteResponse"
+      },
+      "BondingCurveTradeRequest": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid",
+            "description": "Target startup ID"
+          },
+          "action": {
+            "type": "string",
+            "title": "Action",
+            "description": "BUY | SELL"
+          },
+          "sharesAmount": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Sharesamount",
+            "description": "Number of shares to trade"
+          },
+          "maxSlippagePct": {
+            "type": "number",
+            "maximum": 50.0,
+            "minimum": 0.1,
+            "title": "Maxslippagepct",
+            "description": "Maximum acceptable slippage %",
+            "default": 2.5
+          },
+          "expectedAvgPrice": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expectedavgprice",
+            "description": "Optional client expected execution price"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "action",
+          "sharesAmount"
+        ],
+        "title": "BondingCurveTradeRequest"
+      },
+      "BondingCurveTradeResponse": {
+        "properties": {
+          "tradeId": {
+            "type": "string",
+            "title": "Tradeid"
+          },
+          "userId": {
+            "type": "integer",
+            "title": "Userid"
+          },
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "action": {
+            "type": "string",
+            "title": "Action"
+          },
+          "sharesAmount": {
+            "type": "integer",
+            "title": "Sharesamount"
+          },
+          "totalCostOrRefund": {
+            "type": "integer",
+            "title": "Totalcostorrefund"
+          },
+          "netRefund": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Netrefund"
+          },
+          "protocolFee": {
+            "type": "integer",
+            "title": "Protocolfee"
+          },
+          "avgExecutionPrice": {
+            "type": "number",
+            "title": "Avgexecutionprice"
+          },
+          "slippagePct": {
+            "type": "number",
+            "title": "Slippagepct"
+          },
+          "currentSpotPrice": {
+            "type": "number",
+            "title": "Currentspotprice"
+          },
+          "newSupply": {
+            "type": "integer",
+            "title": "Newsupply"
+          },
+          "newUserShares": {
+            "type": "integer",
+            "title": "Newusershares"
+          },
+          "journalEntryId": {
+            "type": "string",
+            "title": "Journalentryid"
+          },
+          "entryHash": {
+            "type": "string",
+            "title": "Entryhash"
+          },
+          "timestamp": {
+            "type": "string",
+            "title": "Timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "tradeId",
+          "userId",
+          "startupId",
+          "action",
+          "sharesAmount",
+          "totalCostOrRefund",
+          "protocolFee",
+          "avgExecutionPrice",
+          "slippagePct",
+          "currentSpotPrice",
+          "newSupply",
+          "newUserShares",
+          "journalEntryId",
+          "entryHash",
+          "timestamp"
+        ],
+        "title": "BondingCurveTradeResponse"
       },
       "BountyStatus": {
         "type": "string",
@@ -53397,6 +55656,53 @@
         ],
         "title": "BuyoutTranche"
       },
+      "CNASDeclaration": {
+        "properties": {
+          "period": {
+            "type": "string",
+            "title": "Period",
+            "description": "CNAS reporting period (e.g. '2026-Q1')"
+          },
+          "activeEmployeesCount": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Activeemployeescount",
+            "description": "Number of declared active salaried employees"
+          },
+          "declaredGrossSalaryDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Declaredgrosssalarydzd",
+            "description": "Total gross wages declared on CNAS slip"
+          },
+          "contributionsPaidDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Contributionspaiddzd",
+            "description": "Total social security contributions paid (34.5%)",
+            "default": 0.0
+          },
+          "cnasSlipRef": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cnasslipref",
+            "description": "CNAS borderau reference number"
+          }
+        },
+        "type": "object",
+        "required": [
+          "period",
+          "activeEmployeesCount",
+          "declaredGrossSalaryDzd"
+        ],
+        "title": "CNASDeclaration"
+      },
       "CalculateTrendingResponse": {
         "properties": {
           "success": {
@@ -53424,6 +55730,19 @@
           "message"
         ],
         "title": "CalculateTrendingResponse"
+      },
+      "CallNoticeStatus": {
+        "type": "string",
+        "enum": [
+          "DRAFT",
+          "ISSUED",
+          "PARTIALLY_PAID",
+          "FULLY_PAID",
+          "OVERDUE",
+          "DELINQUENT",
+          "RESOLVED"
+        ],
+        "title": "CallNoticeStatus"
       },
       "CampaignCreateRequest": {
         "properties": {
@@ -53618,6 +55937,49 @@
         },
         "type": "object",
         "title": "CancelSubscriptionRequest"
+      },
+      "CapTableComparisonEntry": {
+        "properties": {
+          "stakeholder_name": {
+            "type": "string",
+            "title": "Stakeholder Name"
+          },
+          "share_class": {
+            "type": "string",
+            "title": "Share Class"
+          },
+          "pre_shares": {
+            "type": "integer",
+            "title": "Pre Shares"
+          },
+          "pre_ownership_percent": {
+            "type": "number",
+            "title": "Pre Ownership Percent"
+          },
+          "post_shares": {
+            "type": "integer",
+            "title": "Post Shares"
+          },
+          "post_ownership_percent": {
+            "type": "number",
+            "title": "Post Ownership Percent"
+          },
+          "dilution_percent": {
+            "type": "number",
+            "title": "Dilution Percent"
+          }
+        },
+        "type": "object",
+        "required": [
+          "stakeholder_name",
+          "share_class",
+          "pre_shares",
+          "pre_ownership_percent",
+          "post_shares",
+          "post_ownership_percent",
+          "dilution_percent"
+        ],
+        "title": "CapTableComparisonEntry"
       },
       "CapTableSimulateRequest": {
         "properties": {
@@ -53858,46 +56220,6 @@
         ],
         "title": "CapTableSummaryResponse"
       },
-      "CapitalCallNotice": {
-        "properties": {
-          "notice_id": {
-            "type": "string",
-            "title": "Notice Id"
-          },
-          "round_name": {
-            "type": "string",
-            "title": "Round Name",
-            "default": "Series A Financing"
-          },
-          "total_pro_rata_check_dzd": {
-            "type": "number",
-            "title": "Total Pro Rata Check Dzd"
-          },
-          "payment_deadline_days": {
-            "type": "integer",
-            "title": "Payment Deadline Days",
-            "default": 10
-          },
-          "payment_instructions": {
-            "type": "string",
-            "title": "Payment Instructions"
-          },
-          "per_member_allocations": {
-            "additionalProperties": {
-              "type": "number"
-            },
-            "type": "object",
-            "title": "Per Member Allocations"
-          }
-        },
-        "type": "object",
-        "required": [
-          "total_pro_rata_check_dzd",
-          "payment_instructions",
-          "per_member_allocations"
-        ],
-        "title": "CapitalCallNotice"
-      },
       "CarryWaterfallRequest": {
         "properties": {
           "exit_proceeds_dzd": {
@@ -54061,6 +56383,81 @@
           "lp_net_annual_irr_pct"
         ],
         "title": "CarryWaterfallResult"
+      },
+      "CashReconciliationRequest": {
+        "properties": {
+          "bankStatements": {
+            "items": {
+              "$ref": "#/components/schemas/BankStatementMonth"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Bankstatements"
+          },
+          "claimedMonthlyBurnDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedmonthlyburndzd"
+          },
+          "claimedRunwayMonths": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedrunwaymonths"
+          }
+        },
+        "type": "object",
+        "required": [
+          "bankStatements",
+          "claimedMonthlyBurnDzd",
+          "claimedRunwayMonths"
+        ],
+        "title": "CashReconciliationRequest"
+      },
+      "CashReconciliationResponse": {
+        "properties": {
+          "isReconciled": {
+            "type": "boolean",
+            "title": "Isreconciled"
+          },
+          "reconciliationScore": {
+            "type": "number",
+            "title": "Reconciliationscore"
+          },
+          "actualAverageMonthlyBurnDzd": {
+            "type": "number",
+            "title": "Actualaveragemonthlyburndzd"
+          },
+          "calculatedRunwayMonths": {
+            "type": "number",
+            "title": "Calculatedrunwaymonths"
+          },
+          "claimedVsCalculatedRunwayDeltaMonths": {
+            "type": "number",
+            "title": "Claimedvscalculatedrunwaydeltamonths"
+          },
+          "ledgerDiscrepancyTotalDzd": {
+            "type": "number",
+            "title": "Ledgerdiscrepancytotaldzd"
+          },
+          "redFlags": {
+            "items": {
+              "$ref": "#/components/schemas/ForensicRedFlag"
+            },
+            "type": "array",
+            "title": "Redflags"
+          }
+        },
+        "type": "object",
+        "required": [
+          "isReconciled",
+          "reconciliationScore",
+          "actualAverageMonthlyBurnDzd",
+          "calculatedRunwayMonths",
+          "claimedVsCalculatedRunwayDeltaMonths",
+          "ledgerDiscrepancyTotalDzd",
+          "redFlags"
+        ],
+        "title": "CashReconciliationResponse"
       },
       "CastVoteRequest": {
         "properties": {
@@ -54450,6 +56847,112 @@
         ],
         "title": "ChipActivateRequest"
       },
+      "CircularCheckRequest": {
+        "properties": {
+          "transactions": {
+            "items": {
+              "$ref": "#/components/schemas/TransactionEdge"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Transactions"
+          },
+          "targetEntity": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Targetentity"
+          }
+        },
+        "type": "object",
+        "required": [
+          "transactions"
+        ],
+        "title": "CircularCheckRequest"
+      },
+      "CircularCheckResponse": {
+        "properties": {
+          "cyclesFound": {
+            "type": "integer",
+            "title": "Cyclesfound"
+          },
+          "circularLoops": {
+            "items": {
+              "$ref": "#/components/schemas/CircularLoopResult"
+            },
+            "type": "array",
+            "title": "Circularloops"
+          },
+          "phantomSuppliers": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Phantomsuppliers"
+          },
+          "circularRiskScore": {
+            "type": "number",
+            "title": "Circularriskscore"
+          }
+        },
+        "type": "object",
+        "required": [
+          "cyclesFound",
+          "circularLoops",
+          "phantomSuppliers",
+          "circularRiskScore"
+        ],
+        "title": "CircularCheckResponse"
+      },
+      "CircularLoopResult": {
+        "properties": {
+          "cycleEntities": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Cycleentities",
+            "description": "Ordered list of entities in the detected cycle"
+          },
+          "totalCycleVolumeDzd": {
+            "type": "number",
+            "title": "Totalcyclevolumedzd",
+            "description": "Total cumulative DZD volume across the cycle"
+          },
+          "cycleLength": {
+            "type": "integer",
+            "title": "Cyclelength",
+            "description": "Number of hops in the cycle"
+          },
+          "edgesInvolved": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Edgesinvolved",
+            "description": "Transaction IDs in the circular loop"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Human-readable forensic summary"
+          }
+        },
+        "type": "object",
+        "required": [
+          "cycleEntities",
+          "totalCycleVolumeDzd",
+          "cycleLength",
+          "edgesInvolved",
+          "description"
+        ],
+        "title": "CircularLoopResult"
+      },
       "City": {
         "type": "string",
         "enum": [
@@ -54565,6 +57068,49 @@
         ],
         "title": "ClaimBountyRequest"
       },
+      "ClaimedFinancials": {
+        "properties": {
+          "annualDeclaredRevenueDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Annualdeclaredrevenuedzd",
+            "description": "Pitch deck or self-reported annual revenue"
+          },
+          "claimedMonthlyPayrollDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedmonthlypayrolldzd",
+            "description": "Claimed monthly wage bill"
+          },
+          "claimedHeadcount": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Claimedheadcount",
+            "description": "Claimed total team headcount"
+          },
+          "claimedMonthlyBurnDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedmonthlyburndzd",
+            "description": "Claimed net monthly cash burn"
+          },
+          "claimedRunwayMonths": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedrunwaymonths",
+            "description": "Claimed runway in months"
+          }
+        },
+        "type": "object",
+        "required": [
+          "annualDeclaredRevenueDzd",
+          "claimedMonthlyPayrollDzd",
+          "claimedHeadcount",
+          "claimedMonthlyBurnDzd",
+          "claimedRunwayMonths"
+        ],
+        "title": "ClaimedFinancials"
+      },
       "ClickwrapNDAAgreement": {
         "properties": {
           "accepted": {
@@ -54602,6 +57148,137 @@
           "nda_hash"
         ],
         "title": "ClickwrapNDAAgreement"
+      },
+      "CnrcExportRequest": {
+        "properties": {
+          "company_legal_name": {
+            "type": "string",
+            "title": "Company Legal Name"
+          },
+          "commercial_register_num": {
+            "type": "string",
+            "title": "Commercial Register Num"
+          },
+          "tax_id_num": {
+            "type": "string",
+            "title": "Tax Id Num"
+          },
+          "nominal_value_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Nominal Value Dzd",
+            "default": "1000.00"
+          },
+          "founder_name": {
+            "type": "string",
+            "title": "Founder Name",
+            "default": "Fondateur Principal"
+          },
+          "founder_nin": {
+            "type": "string",
+            "title": "Founder Nin",
+            "default": "198016010012345678"
+          },
+          "conversion_simulation_request": {
+            "$ref": "#/components/schemas/SafeConversionSimulationRequest"
+          }
+        },
+        "type": "object",
+        "required": [
+          "company_legal_name",
+          "commercial_register_num",
+          "tax_id_num",
+          "conversion_simulation_request"
+        ],
+        "title": "CnrcExportRequest"
+      },
+      "CnrcFilingExportResponse": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "company_legal_name": {
+            "type": "string",
+            "title": "Company Legal Name"
+          },
+          "commercial_register_num": {
+            "type": "string",
+            "title": "Commercial Register Num"
+          },
+          "tax_id_num": {
+            "type": "string",
+            "title": "Tax Id Num"
+          },
+          "legal_form": {
+            "type": "string",
+            "title": "Legal Form",
+            "default": "SPAS (Soci\u00e9t\u00e9 par Actions Simplifi\u00e9e - Loi 22-09)"
+          },
+          "capital_social_initial_dzd": {
+            "type": "string",
+            "title": "Capital Social Initial Dzd"
+          },
+          "capital_social_nouveau_dzd": {
+            "type": "string",
+            "title": "Capital Social Nouveau Dzd"
+          },
+          "augmentation_capital_dzd": {
+            "type": "string",
+            "title": "Augmentation Capital Dzd"
+          },
+          "actions_total_nouvelles": {
+            "type": "integer",
+            "title": "Actions Total Nouvelles"
+          },
+          "valeur_nominale_action_dzd": {
+            "type": "string",
+            "title": "Valeur Nominale Action Dzd"
+          },
+          "shareholders_register": {
+            "items": {
+              "$ref": "#/components/schemas/CnrcShareholderFilingItem"
+            },
+            "type": "array",
+            "title": "Shareholders Register"
+          },
+          "notarial_pv_extract_text": {
+            "type": "string",
+            "title": "Notarial Pv Extract Text"
+          },
+          "export_timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Export Timestamp"
+          },
+          "filing_hash_sha256": {
+            "type": "string",
+            "title": "Filing Hash Sha256"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "company_legal_name",
+          "commercial_register_num",
+          "tax_id_num",
+          "capital_social_initial_dzd",
+          "capital_social_nouveau_dzd",
+          "augmentation_capital_dzd",
+          "actions_total_nouvelles",
+          "valeur_nominale_action_dzd",
+          "shareholders_register",
+          "notarial_pv_extract_text",
+          "export_timestamp",
+          "filing_hash_sha256"
+        ],
+        "title": "CnrcFilingExportResponse"
       },
       "CnrcFilingManifest": {
         "properties": {
@@ -54661,6 +57338,54 @@
         ],
         "title": "CnrcFilingManifest"
       },
+      "CnrcShareholderFilingItem": {
+        "properties": {
+          "shareholder_name": {
+            "type": "string",
+            "title": "Shareholder Name"
+          },
+          "nationality": {
+            "type": "string",
+            "title": "Nationality",
+            "default": "Alg\u00e9rienne"
+          },
+          "national_id_or_nif": {
+            "type": "string",
+            "title": "National Id Or Nif"
+          },
+          "shares_count": {
+            "type": "integer",
+            "title": "Shares Count"
+          },
+          "capital_nominal_dzd": {
+            "type": "string",
+            "title": "Capital Nominal Dzd"
+          },
+          "ownership_percentage": {
+            "type": "number",
+            "title": "Ownership Percentage"
+          },
+          "voting_rights_count": {
+            "type": "integer",
+            "title": "Voting Rights Count"
+          },
+          "share_class": {
+            "type": "string",
+            "title": "Share Class",
+            "default": "ORDINAIRE"
+          }
+        },
+        "type": "object",
+        "required": [
+          "shareholder_name",
+          "national_id_or_nif",
+          "shares_count",
+          "capital_nominal_dzd",
+          "ownership_percentage",
+          "voting_rights_count"
+        ],
+        "title": "CnrcShareholderFilingItem"
+      },
       "CoSignProposalRequest": {
         "properties": {
           "member_id": {
@@ -54673,6 +57398,18 @@
           "member_id"
         ],
         "title": "CoSignProposalRequest"
+      },
+      "CommitmentStatus": {
+        "type": "string",
+        "enum": [
+          "SOFT_COMMITMENT",
+          "BINDING_SUBSCRIPTION",
+          "PARTIALLY_CALLED",
+          "FULLY_CALLED",
+          "DEFAULTED",
+          "CANCELLED"
+        ],
+        "title": "CommitmentStatus"
       },
       "CommunityScoreRequest": {
         "properties": {
@@ -55352,6 +58089,113 @@
           "updatedAt"
         ],
         "title": "CompanyReviewResponse"
+      },
+      "CompileFinancialStatementsRequest": {
+        "properties": {
+          "spv_id": {
+            "type": "string",
+            "title": "Spv Id"
+          },
+          "spv_name": {
+            "type": "string",
+            "title": "Spv Name"
+          },
+          "fiscal_year": {
+            "type": "integer",
+            "title": "Fiscal Year"
+          },
+          "total_spv_units": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Spv Units"
+          },
+          "paid_in_capital_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Paid In Capital Dzd"
+          },
+          "bank_escrow_cash_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Bank Escrow Cash Dzd",
+            "default": 0.0
+          },
+          "portfolio_investments": {
+            "items": {
+              "$ref": "#/components/schemas/PortfolioInvestment-Input"
+            },
+            "type": "array",
+            "title": "Portfolio Investments"
+          },
+          "called_capital_receivable_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Called Capital Receivable Dzd",
+            "default": 0.0
+          },
+          "management_fees_expense_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Management Fees Expense Dzd",
+            "default": 0.0
+          },
+          "audit_and_legal_expense_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Audit And Legal Expense Dzd",
+            "default": 0.0
+          },
+          "carried_interest_provision_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Carried Interest Provision Dzd",
+            "default": 0.0
+          },
+          "realized_dividends_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Realized Dividends Dzd",
+            "default": 0.0
+          },
+          "realized_exit_capital_gains_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Realized Exit Capital Gains Dzd",
+            "default": 0.0
+          },
+          "cumulative_distributions_paid_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Cumulative Distributions Paid Dzd",
+            "default": 0.0
+          },
+          "statutory_reserves_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Statutory Reserves Dzd",
+            "default": 0.0
+          },
+          "retained_earnings_dzd": {
+            "type": "number",
+            "title": "Retained Earnings Dzd",
+            "default": 0.0
+          },
+          "accounts_payable_audit_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Accounts Payable Audit Dzd",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "spv_id",
+          "spv_name",
+          "fiscal_year",
+          "total_spv_units",
+          "paid_in_capital_dzd"
+        ],
+        "title": "CompileFinancialStatementsRequest"
       },
       "Complete2FARequest": {
         "properties": {
@@ -56260,6 +59104,15 @@
         "title": "ConversationType",
         "description": "Conversation types for different business pillars"
       },
+      "ConversionScenario": {
+        "type": "string",
+        "enum": [
+          "EQUITY_FINANCING",
+          "LIQUIDITY_EVENT",
+          "DISSOLUTION"
+        ],
+        "title": "ConversionScenario"
+      },
       "ConvertibleConversionItem": {
         "properties": {
           "instrumentType": {
@@ -56552,6 +59405,20 @@
         ],
         "title": "CoursePurchaseRequest"
       },
+      "CovenantType": {
+        "type": "string",
+        "enum": [
+          "INFORMATION_RIGHTS",
+          "PRO_RATA_RIGHTS",
+          "BOARD_OBSERVER",
+          "ADVISORY_BOARD_SEAT",
+          "MOST_FAVORED_NATION",
+          "SHARIA_COMPLIANCE",
+          "KEY_PERSON_COVENANT",
+          "RESTRICTED_TRANSFERS"
+        ],
+        "title": "CovenantType"
+      },
       "CreateAppealRequest": {
         "properties": {
           "targetType": {
@@ -56668,6 +59535,91 @@
           "post_money_valuation_dzd"
         ],
         "title": "CreateBountyRequest"
+      },
+      "CreateCallNoticeRequest": {
+        "properties": {
+          "spv_id": {
+            "type": "string",
+            "title": "Spv Id"
+          },
+          "spv_name": {
+            "type": "string",
+            "title": "Spv Name"
+          },
+          "total_call_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Call Amount Dzd"
+          },
+          "tranche_title": {
+            "type": "string",
+            "title": "Tranche Title"
+          },
+          "purpose_description": {
+            "type": "string",
+            "title": "Purpose Description"
+          },
+          "tranche_number": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Tranche Number",
+            "default": 1
+          },
+          "due_date_business_days": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Due Date Business Days",
+            "default": 10
+          },
+          "grace_period_days": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Grace Period Days",
+            "default": 5
+          },
+          "domestic_rib": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Domestic Rib"
+          },
+          "swift_bic": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Swift Bic"
+          },
+          "iban": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Iban"
+          }
+        },
+        "type": "object",
+        "required": [
+          "spv_id",
+          "spv_name",
+          "total_call_amount_dzd",
+          "tranche_title",
+          "purpose_description"
+        ],
+        "title": "CreateCallNoticeRequest"
       },
       "CreateDiasporaPairRequest": {
         "properties": {
@@ -57351,6 +60303,34 @@
         ],
         "title": "CrossBorderMirrorResponse"
       },
+      "CureDelinquentRequest": {
+        "properties": {
+          "delinquent_lp_id": {
+            "type": "string",
+            "title": "Delinquent Lp Id"
+          },
+          "curing_lp_contributions": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Curing Lp Contributions"
+          },
+          "haircut_discount_pct": {
+            "type": "number",
+            "maximum": 90.0,
+            "minimum": 0.0,
+            "title": "Haircut Discount Pct",
+            "default": 30.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "delinquent_lp_id",
+          "curing_lp_contributions"
+        ],
+        "title": "CureDelinquentRequest"
+      },
       "DCFScenarioInputs": {
         "properties": {
           "projected5YearFcffDzd": {
@@ -57752,6 +60732,235 @@
         "title": "DealOffer",
         "description": "Standardized term sheet proposal vector.\nSupports both new attribute naming and legacy aliases for backward compatibility."
       },
+      "DeckAuditRequest": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "deckTitle": {
+            "type": "string",
+            "title": "Decktitle"
+          },
+          "sector": {
+            "type": "string",
+            "title": "Sector",
+            "description": "Sector (e.g. Agritech, Fintech, Healthtech, Logistics, E-Commerce, SaaS)"
+          },
+          "targetMarketGeo": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Targetmarketgeo",
+            "description": "Target geography (ALGERIA, MENA, GLOBAL)",
+            "default": "ALGERIA"
+          },
+          "slides": {
+            "items": {
+              "$ref": "#/components/schemas/DeckSlide"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Slides"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "deckTitle",
+          "sector",
+          "slides"
+        ],
+        "title": "DeckAuditRequest"
+      },
+      "DeckAuditResponse": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "deckTitle": {
+            "type": "string",
+            "title": "Decktitle"
+          },
+          "overallIntegrityScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Overallintegrityscore"
+          },
+          "provenanceIndex": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Provenanceindex",
+            "description": "Percentage of claims backed by primary verification"
+          },
+          "verifiedClaimsRatio": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Verifiedclaimsratio"
+          },
+          "tamAnalysis": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TAMAnalysis"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "moatAnalysis": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MoatAnalysis"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "slideResults": {
+            "items": {
+              "$ref": "#/components/schemas/SlideAuditResult"
+            },
+            "type": "array",
+            "title": "Slideresults"
+          },
+          "summary": {
+            "type": "string",
+            "title": "Summary"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "deckTitle",
+          "overallIntegrityScore",
+          "provenanceIndex",
+          "verifiedClaimsRatio",
+          "slideResults",
+          "summary"
+        ],
+        "title": "DeckAuditResponse"
+      },
+      "DeckClaim": {
+        "properties": {
+          "claimId": {
+            "type": "string",
+            "title": "Claimid",
+            "description": "Unique claim identifier"
+          },
+          "statement": {
+            "type": "string",
+            "title": "Statement",
+            "description": "Verbatim founder claim from slide"
+          },
+          "evidenceProvided": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidenceprovided",
+            "description": "Description of document or reference provided"
+          },
+          "evidenceType": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidencetype",
+            "description": "Type: CONTRACT, INAPI_PATENT, BANK_SLIP, MOU, NONE",
+            "default": "NONE"
+          },
+          "status": {
+            "$ref": "#/components/schemas/EvidenceStatus",
+            "default": "EVIDENCE_UNSUBSTANTIATED"
+          },
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence",
+            "default": 0.8
+          }
+        },
+        "type": "object",
+        "required": [
+          "claimId",
+          "statement"
+        ],
+        "title": "DeckClaim"
+      },
+      "DeckSlide": {
+        "properties": {
+          "slideNumber": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Slidenumber",
+            "description": "Slide index in pitch deck"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Slide headline title"
+          },
+          "archetype": {
+            "$ref": "#/components/schemas/SlideArchetype",
+            "description": "Slide category"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content",
+            "description": "Text content or transcription of slide"
+          },
+          "claims": {
+            "items": {
+              "$ref": "#/components/schemas/DeckClaim"
+            },
+            "type": "array",
+            "title": "Claims",
+            "description": "Extracted claims to audit"
+          },
+          "metrics": {
+            "type": "object",
+            "title": "Metrics",
+            "description": "Key numerical metrics found on slide"
+          }
+        },
+        "type": "object",
+        "required": [
+          "slideNumber",
+          "title",
+          "archetype",
+          "content"
+        ],
+        "title": "DeckSlide"
+      },
+      "DefaultRemedyType": {
+        "type": "string",
+        "enum": [
+          "NON_DEFAULTING_LP_CURE",
+          "HAIRCUT_SECONDARY_TRANSFER",
+          "FORFEITURE_AND_CANCELLATION"
+        ],
+        "title": "DefaultRemedyType"
+      },
       "DeletionRequestCreate": {
         "properties": {
           "password": {
@@ -57827,6 +61036,74 @@
           "message"
         ],
         "title": "DeletionRequestResponse"
+      },
+      "DelinquentResolution": {
+        "properties": {
+          "resolution_id": {
+            "type": "string",
+            "title": "Resolution Id"
+          },
+          "notice_id": {
+            "type": "string",
+            "title": "Notice Id"
+          },
+          "delinquent_lp_id": {
+            "type": "string",
+            "title": "Delinquent Lp Id"
+          },
+          "delinquent_lp_name": {
+            "type": "string",
+            "title": "Delinquent Lp Name"
+          },
+          "shortfall_amount_dzd": {
+            "type": "number",
+            "title": "Shortfall Amount Dzd"
+          },
+          "penalty_amount_dzd": {
+            "type": "number",
+            "title": "Penalty Amount Dzd"
+          },
+          "remedy_type": {
+            "$ref": "#/components/schemas/DefaultRemedyType"
+          },
+          "haircut_percentage": {
+            "type": "number",
+            "title": "Haircut Percentage",
+            "default": 30.0
+          },
+          "cured_by_lps": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Cured By Lps"
+          },
+          "units_transferred": {
+            "type": "integer",
+            "title": "Units Transferred",
+            "default": 0
+          },
+          "resolved_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Resolved At"
+          },
+          "audit_notes": {
+            "type": "string",
+            "title": "Audit Notes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "notice_id",
+          "delinquent_lp_id",
+          "delinquent_lp_name",
+          "shortfall_amount_dzd",
+          "penalty_amount_dzd",
+          "remedy_type",
+          "audit_notes"
+        ],
+        "title": "DelinquentResolution"
       },
       "DeliverableTokenRequest": {
         "properties": {
@@ -58603,6 +61880,104 @@
           "provider"
         ],
         "title": "DisconnectIntegrationResponse"
+      },
+      "DividendDeclarationRequest": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid",
+            "description": "Startup declaring virtual dividends"
+          },
+          "dividendPerShareDzd": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Dividendpersharedzd",
+            "description": "Dividend per fantasy share held in DZD"
+          },
+          "gmvMilestoneDzd": {
+            "type": "integer",
+            "minimum": 100000.0,
+            "title": "Gmvmilestonedzd",
+            "description": "Achieved simulated GMV milestone"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description",
+            "description": "Optional dividend distribution note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "dividendPerShareDzd",
+          "gmvMilestoneDzd"
+        ],
+        "title": "DividendDeclarationRequest"
+      },
+      "DividendPayoutReceipt": {
+        "properties": {
+          "declarationId": {
+            "type": "string",
+            "title": "Declarationid"
+          },
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "startupName": {
+            "type": "string",
+            "title": "Startupname"
+          },
+          "dividendPerShareDzd": {
+            "type": "integer",
+            "title": "Dividendpersharedzd"
+          },
+          "totalSharesEligible": {
+            "type": "integer",
+            "title": "Totalshareseligible"
+          },
+          "totalPayoutDzd": {
+            "type": "integer",
+            "title": "Totalpayoutdzd"
+          },
+          "recipientsCount": {
+            "type": "integer",
+            "title": "Recipientscount"
+          },
+          "journalEntryId": {
+            "type": "string",
+            "title": "Journalentryid"
+          },
+          "entryHash": {
+            "type": "string",
+            "title": "Entryhash"
+          },
+          "declaredAt": {
+            "type": "string",
+            "title": "Declaredat"
+          }
+        },
+        "type": "object",
+        "required": [
+          "declarationId",
+          "startupId",
+          "startupName",
+          "dividendPerShareDzd",
+          "totalSharesEligible",
+          "totalPayoutDzd",
+          "recipientsCount",
+          "journalEntryId",
+          "entryHash",
+          "declaredAt"
+        ],
+        "title": "DividendPayoutReceipt"
       },
       "DocumentVerificationStatus": {
         "type": "string",
@@ -59519,6 +62894,15 @@
         ],
         "title": "EventTriggerRequest"
       },
+      "EvidenceStatus": {
+        "type": "string",
+        "enum": [
+          "EVIDENCE_VERIFIED",
+          "EVIDENCE_PARTIAL",
+          "EVIDENCE_UNSUBSTANTIATED"
+        ],
+        "title": "EvidenceStatus"
+      },
       "ExecuteConfirmedActionRequest": {
         "properties": {
           "intent_id": {
@@ -60406,97 +63790,112 @@
         ],
         "title": "FinancialStatement"
       },
-      "ForensicAuditRequest": {
-        "properties": {
-          "ledgerEntries": {
-            "anyOf": [
-              {
-                "items": {
-                  "type": "number"
-                },
-                "type": "array"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Ledgerentries",
-            "description": "List of expense/revenue transaction amounts in DZD for Benford analysis"
-          },
-          "founders": {
-            "anyOf": [
-              {
-                "items": {
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Founders",
-            "description": "Founder names, NINs, and emails"
-          },
-          "jurors": {
-            "anyOf": [
-              {
-                "items": {
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Jurors",
-            "description": "Jury reviewers and referee rosters"
-          },
-          "vendors": {
-            "anyOf": [
-              {
-                "items": {
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Vendors",
-            "description": "Designated S4E contractors and suppliers"
-          }
-        },
-        "type": "object",
-        "title": "ForensicAuditRequest"
+      "FiscalYearStatus": {
+        "type": "string",
+        "enum": [
+          "OPEN",
+          "CLOSING",
+          "AUDITED",
+          "CERTIFIED_BY_COMMISSAIRE"
+        ],
+        "title": "FiscalYearStatus"
       },
-      "ForensicAuditResponse": {
+      "ForensicFraudScoreBreakdown": {
         "properties": {
-          "startupId": {
-            "type": "string",
-            "title": "Startupid"
+          "taxInconsistencyScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Taxinconsistencyscore",
+            "description": "Tax mismatch risk score (0-100)"
           },
-          "benfordAnalysis": {
-            "$ref": "#/components/schemas/BenfordAnalysisResponse"
+          "payrollMismatchScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Payrollmismatchscore",
+            "description": "Payroll / CNAS mismatch risk score (0-100)"
           },
-          "conflictAnalysis": {
-            "$ref": "#/components/schemas/ConflictGraphResponse"
+          "circularLoopScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Circularloopscore",
+            "description": "Circular transaction / round-tripping score (0-100)"
           },
-          "auditedAt": {
-            "type": "string",
-            "title": "Auditedat"
+          "cashReconciliationScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Cashreconciliationscore",
+            "description": "Cash burn & bank ledger divergence score (0-100)"
+          },
+          "overallFraudScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Overallfraudscore",
+            "description": "Composite weighted fraud risk score (0-100)"
+          },
+          "riskLevel": {
+            "$ref": "#/components/schemas/FraudRiskLevel"
           }
         },
         "type": "object",
         "required": [
-          "startupId",
-          "benfordAnalysis",
-          "conflictAnalysis",
-          "auditedAt"
+          "taxInconsistencyScore",
+          "payrollMismatchScore",
+          "circularLoopScore",
+          "cashReconciliationScore",
+          "overallFraudScore",
+          "riskLevel"
         ],
-        "title": "ForensicAuditResponse"
+        "title": "ForensicFraudScoreBreakdown"
+      },
+      "ForensicRedFlag": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code",
+            "description": "Unique alphanumeric flag code (e.g. FLG_TAX_UNDERREPORT_CRIT)"
+          },
+          "category": {
+            "$ref": "#/components/schemas/RedFlagCategory"
+          },
+          "severity": {
+            "$ref": "#/components/schemas/RedFlagSeverity"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Short flag title"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Detailed explanation of the discrepancy"
+          },
+          "evidence": {
+            "type": "object",
+            "title": "Evidence",
+            "description": "Numerical proof and metadata"
+          },
+          "suggestedRemediation": {
+            "type": "string",
+            "title": "Suggestedremediation",
+            "description": "Prescribed action for auditors or founders"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "category",
+          "severity",
+          "title",
+          "description",
+          "suggestedRemediation"
+        ],
+        "title": "ForensicRedFlag"
       },
       "FounderCopilotSynthesis": {
         "properties": {
@@ -60598,6 +63997,16 @@
           "proof_hash"
         ],
         "title": "FounderProofPayload"
+      },
+      "FraudRiskLevel": {
+        "type": "string",
+        "enum": [
+          "LOW_RISK",
+          "MODERATE_RISK",
+          "HIGH_RISK",
+          "CRITICAL_FRAUD_ALERT"
+        ],
+        "title": "FraudRiskLevel"
       },
       "FreelancerProfileUpdate": {
         "properties": {
@@ -60825,6 +64234,72 @@
         },
         "type": "object",
         "title": "FreelancerProfileUpdate"
+      },
+      "G50TaxDeclaration": {
+        "properties": {
+          "period": {
+            "type": "string",
+            "title": "Period",
+            "description": "Tax period (e.g. '2026-01' or '2026-Q1')"
+          },
+          "turnoverReportedDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Turnoverreporteddzd",
+            "description": "Taxable Turnover (Chiffre d'affaires) reported on G50"
+          },
+          "tvaCollectedDzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Tvacollecteddzd",
+            "description": "TVA collected on sales (typically 19% or 9%)",
+            "default": 0.0
+          },
+          "tapReportedDzd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tapreporteddzd",
+            "description": "Taxe sur l'Activit\u00e9 Professionnelle (TAP)",
+            "default": 0.0
+          },
+          "submissionDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Submissiondate",
+            "description": "Official filing date at Direction des Imp\u00f4ts"
+          },
+          "receiptNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Receiptnumber",
+            "description": "Official G50 receipt number"
+          }
+        },
+        "type": "object",
+        "required": [
+          "period",
+          "turnoverReportedDzd"
+        ],
+        "title": "G50TaxDeclaration"
       },
       "GenerateCertificateRequest": {
         "properties": {
@@ -61149,6 +64624,66 @@
           "DISSOLVED"
         ],
         "title": "HalkaStatus"
+      },
+      "HamiltonHareRequest": {
+        "properties": {
+          "allocations": {
+            "items": {
+              "prefixItems": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array",
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "type": "array",
+            "title": "Allocations"
+          }
+        },
+        "type": "object",
+        "required": [
+          "allocations"
+        ],
+        "title": "HamiltonHareRequest"
+      },
+      "HamiltonHareResponse": {
+        "properties": {
+          "allocated": {
+            "items": {
+              "prefixItems": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array",
+              "maxItems": 3,
+              "minItems": 3
+            },
+            "type": "array",
+            "title": "Allocated"
+          },
+          "total_integer_shares": {
+            "type": "integer",
+            "title": "Total Integer Shares"
+          }
+        },
+        "type": "object",
+        "required": [
+          "allocated",
+          "total_integer_shares"
+        ],
+        "title": "HamiltonHareResponse"
       },
       "HandoffDossierRequest": {
         "properties": {
@@ -61620,6 +65155,84 @@
           "integrations"
         ],
         "title": "IntegrationsListResponse"
+      },
+      "InterestCalculationRequest": {
+        "properties": {
+          "principal_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Principal Dzd"
+          },
+          "annual_interest_rate": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Annual Interest Rate"
+          },
+          "interest_type": {
+            "$ref": "#/components/schemas/InterestType"
+          },
+          "issuance_date": {
+            "type": "string",
+            "title": "Issuance Date"
+          },
+          "conversion_date": {
+            "type": "string",
+            "title": "Conversion Date"
+          }
+        },
+        "type": "object",
+        "required": [
+          "principal_dzd",
+          "annual_interest_rate",
+          "interest_type",
+          "issuance_date",
+          "conversion_date"
+        ],
+        "title": "InterestCalculationRequest"
+      },
+      "InterestCalculationResponse": {
+        "properties": {
+          "principal_dzd": {
+            "type": "string",
+            "title": "Principal Dzd"
+          },
+          "accrued_interest_dzd": {
+            "type": "string",
+            "title": "Accrued Interest Dzd"
+          },
+          "total_amount_dzd": {
+            "type": "string",
+            "title": "Total Amount Dzd"
+          }
+        },
+        "type": "object",
+        "required": [
+          "principal_dzd",
+          "accrued_interest_dzd",
+          "total_amount_dzd"
+        ],
+        "title": "InterestCalculationResponse"
+      },
+      "InterestType": {
+        "type": "string",
+        "enum": [
+          "NONE",
+          "SIMPLE",
+          "COMPOUND"
+        ],
+        "title": "InterestType"
       },
       "InvestorPledge": {
         "properties": {
@@ -62127,6 +65740,209 @@
         },
         "type": "object",
         "title": "KycSubmitRequest"
+      },
+      "LPCapitalCallItem": {
+        "properties": {
+          "item_id": {
+            "type": "string",
+            "title": "Item Id"
+          },
+          "lp_id": {
+            "type": "string",
+            "title": "Lp Id"
+          },
+          "lp_name": {
+            "type": "string",
+            "title": "Lp Name"
+          },
+          "lp_email": {
+            "type": "string",
+            "title": "Lp Email"
+          },
+          "is_diaspora": {
+            "type": "boolean",
+            "title": "Is Diaspora",
+            "default": false
+          },
+          "committed_amount_dzd": {
+            "type": "number",
+            "title": "Committed Amount Dzd"
+          },
+          "pro_rata_share_pct": {
+            "type": "number",
+            "title": "Pro Rata Share Pct"
+          },
+          "call_amount_dzd": {
+            "type": "number",
+            "title": "Call Amount Dzd"
+          },
+          "paid_amount_dzd": {
+            "type": "number",
+            "title": "Paid Amount Dzd",
+            "default": 0.0
+          },
+          "payment_status": {
+            "$ref": "#/components/schemas/LPPaymentStatus",
+            "default": "PENDING"
+          },
+          "payment_reference": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Payment Reference"
+          },
+          "paid_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Paid At"
+          },
+          "days_overdue": {
+            "type": "integer",
+            "title": "Days Overdue",
+            "default": 0
+          },
+          "default_penalty_dzd": {
+            "type": "number",
+            "title": "Default Penalty Dzd",
+            "default": 0.0
+          },
+          "penalty_charity_destination": {
+            "type": "string",
+            "title": "Penalty Charity Destination",
+            "default": "TamWheel Waqf Innovation Endowment (\u062d\u0633\u0627\u0628 \u0648\u0642\u0641 \u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a)"
+          },
+          "balance_remaining_dzd": {
+            "type": "number",
+            "title": "Balance Remaining Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "lp_id",
+          "lp_name",
+          "lp_email",
+          "committed_amount_dzd",
+          "pro_rata_share_pct",
+          "call_amount_dzd",
+          "balance_remaining_dzd"
+        ],
+        "title": "LPCapitalCallItem"
+      },
+      "LPCommitment": {
+        "properties": {
+          "commitment_id": {
+            "type": "string",
+            "title": "Commitment Id"
+          },
+          "spv_id": {
+            "type": "string",
+            "title": "Spv Id"
+          },
+          "lp_id": {
+            "type": "string",
+            "title": "Lp Id"
+          },
+          "lp_name": {
+            "type": "string",
+            "title": "Lp Name"
+          },
+          "lp_email": {
+            "type": "string",
+            "title": "Lp Email"
+          },
+          "is_diaspora": {
+            "type": "boolean",
+            "title": "Is Diaspora",
+            "default": false
+          },
+          "residence_country": {
+            "type": "string",
+            "title": "Residence Country",
+            "default": "DZ"
+          },
+          "committed_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Committed Amount Dzd"
+          },
+          "called_amount_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Called Amount Dzd",
+            "default": 0.0
+          },
+          "paid_amount_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Paid Amount Dzd",
+            "default": 0.0
+          },
+          "units_held": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Units Held",
+            "default": 0
+          },
+          "voting_rights_active": {
+            "type": "boolean",
+            "title": "Voting Rights Active",
+            "default": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/CommitmentStatus",
+            "default": "BINDING_SUBSCRIPTION"
+          },
+          "subscribed_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Subscribed At"
+          },
+          "uncalled_dry_powder_dzd": {
+            "type": "number",
+            "title": "Uncalled Dry Powder Dzd",
+            "readOnly": true
+          },
+          "outstanding_called_due_dzd": {
+            "type": "number",
+            "title": "Outstanding Called Due Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "spv_id",
+          "lp_id",
+          "lp_name",
+          "lp_email",
+          "committed_amount_dzd",
+          "uncalled_dry_powder_dzd",
+          "outstanding_called_due_dzd"
+        ],
+        "title": "LPCommitment"
+      },
+      "LPPaymentStatus": {
+        "type": "string",
+        "enum": [
+          "PENDING",
+          "PAID",
+          "LATE",
+          "DEFAULTED",
+          "CURED"
+        ],
+        "title": "LPPaymentStatus"
       },
       "LabelDiagnosticRequest": {
         "properties": {
@@ -63443,6 +67259,16 @@
         "title": "MarkAsReadRequest",
         "description": "Schema for marking conversation as read"
       },
+      "MarketInflationStatus": {
+        "type": "string",
+        "enum": [
+          "PLAUSIBLE",
+          "MODERATELY_STRETCHED",
+          "EXTREMELY_INFLATED",
+          "IMPOSSIBLE_METRIC"
+        ],
+        "title": "MarketInflationStatus"
+      },
       "MemberInviteRequest": {
         "properties": {
           "email": {
@@ -64157,6 +67983,61 @@
         ],
         "title": "MfaCodeRequest"
       },
+      "MfnElectionRequest": {
+        "properties": {
+          "source_side_letter_id": {
+            "type": "string",
+            "title": "Source Side Letter Id"
+          },
+          "target_side_letter_id": {
+            "type": "string",
+            "title": "Target Side Letter Id"
+          },
+          "adopted_covenant_types": {
+            "items": {
+              "$ref": "#/components/schemas/CovenantType"
+            },
+            "type": "array",
+            "title": "Adopted Covenant Types"
+          }
+        },
+        "type": "object",
+        "required": [
+          "source_side_letter_id",
+          "target_side_letter_id",
+          "adopted_covenant_types"
+        ],
+        "title": "MfnElectionRequest"
+      },
+      "MfnElectionResponse": {
+        "properties": {
+          "side_letter_id": {
+            "type": "string",
+            "title": "Side Letter Id"
+          },
+          "updated_covenants_count": {
+            "type": "integer",
+            "title": "Updated Covenants Count"
+          },
+          "new_terms_summary": {
+            "type": "string",
+            "title": "New Terms Summary"
+          },
+          "effective_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Effective Date"
+          }
+        },
+        "type": "object",
+        "required": [
+          "side_letter_id",
+          "updated_covenants_count",
+          "new_terms_summary",
+          "effective_date"
+        ],
+        "title": "MfnElectionResponse"
+      },
       "MilestoneAllocation": {
         "properties": {
           "milestone_id": {
@@ -64505,6 +68386,56 @@
           "inviteCode"
         ],
         "title": "MiniLeagueJoinRequest"
+      },
+      "MoatAnalysis": {
+        "properties": {
+          "moatTier": {
+            "$ref": "#/components/schemas/MoatDefensibilityTier"
+          },
+          "score": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Score"
+          },
+          "dimensions": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Dimensions",
+            "description": "Scores across IP, Network Effects, Regulation, Switching Costs"
+          },
+          "buzzwordsDetected": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Buzzwordsdetected"
+          },
+          "critique": {
+            "type": "string",
+            "title": "Critique"
+          }
+        },
+        "type": "object",
+        "required": [
+          "moatTier",
+          "score",
+          "dimensions",
+          "critique"
+        ],
+        "title": "MoatAnalysis"
+      },
+      "MoatDefensibilityTier": {
+        "type": "string",
+        "enum": [
+          "GENUINE_DEFENSIBLE_MOAT",
+          "MODERATE_DEFENSIBILITY",
+          "WEAK_MOAT",
+          "BUZZWORD_ILLUSION"
+        ],
+        "title": "MoatDefensibilityTier"
       },
       "ModuleResponse": {
         "properties": {
@@ -69952,6 +73883,200 @@
         ],
         "title": "Polygon2D"
       },
+      "PoolStateResponse": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "startupName": {
+            "type": "string",
+            "title": "Startupname"
+          },
+          "curveType": {
+            "type": "string",
+            "title": "Curvetype"
+          },
+          "circulatingSupply": {
+            "type": "integer",
+            "title": "Circulatingsupply"
+          },
+          "spotPrice": {
+            "type": "number",
+            "title": "Spotprice"
+          },
+          "reserveBalanceDzd": {
+            "type": "integer",
+            "title": "Reservebalancedzd"
+          },
+          "totalVolumeDzd": {
+            "type": "integer",
+            "title": "Totalvolumedzd"
+          },
+          "tradesCount": {
+            "type": "integer",
+            "title": "Tradescount"
+          },
+          "p0": {
+            "type": "number",
+            "title": "P0"
+          },
+          "slopeM": {
+            "type": "number",
+            "title": "Slopem"
+          },
+          "exponentK": {
+            "type": "number",
+            "title": "Exponentk"
+          },
+          "feeRate": {
+            "type": "number",
+            "title": "Feerate"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "startupName",
+          "curveType",
+          "circulatingSupply",
+          "spotPrice",
+          "reserveBalanceDzd",
+          "totalVolumeDzd",
+          "tradesCount",
+          "p0",
+          "slopeM",
+          "exponentK",
+          "feeRate"
+        ],
+        "title": "PoolStateResponse"
+      },
+      "PortfolioInvestment-Input": {
+        "properties": {
+          "investment_id": {
+            "type": "string",
+            "title": "Investment Id"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "equity_shares_count": {
+            "type": "integer",
+            "title": "Equity Shares Count"
+          },
+          "acquisition_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Acquisition Date"
+          },
+          "acquisition_cost_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Acquisition Cost Dzd"
+          },
+          "current_fair_value_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Current Fair Value Dzd"
+          },
+          "cumulative_impairment_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Cumulative Impairment Dzd",
+            "default": 0.0
+          },
+          "ownership_percentage": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Ownership Percentage"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "startup_name",
+          "equity_shares_count",
+          "acquisition_cost_dzd",
+          "current_fair_value_dzd",
+          "ownership_percentage"
+        ],
+        "title": "PortfolioInvestment"
+      },
+      "PortfolioInvestment-Output": {
+        "properties": {
+          "investment_id": {
+            "type": "string",
+            "title": "Investment Id"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "equity_shares_count": {
+            "type": "integer",
+            "title": "Equity Shares Count"
+          },
+          "acquisition_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Acquisition Date"
+          },
+          "acquisition_cost_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Acquisition Cost Dzd"
+          },
+          "current_fair_value_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Current Fair Value Dzd"
+          },
+          "cumulative_impairment_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Cumulative Impairment Dzd",
+            "default": 0.0
+          },
+          "ownership_percentage": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Ownership Percentage"
+          },
+          "net_book_value_dzd": {
+            "type": "number",
+            "title": "Net Book Value Dzd",
+            "readOnly": true
+          },
+          "unrealized_gain_loss_dzd": {
+            "type": "number",
+            "title": "Unrealized Gain Loss Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "startup_name",
+          "equity_shares_count",
+          "acquisition_cost_dzd",
+          "current_fair_value_dzd",
+          "ownership_percentage",
+          "net_book_value_dzd",
+          "unrealized_gain_loss_dzd"
+        ],
+        "title": "PortfolioInvestment"
+      },
       "PresenceHeartbeatRequest": {
         "properties": {
           "thread_id": {
@@ -70005,6 +74130,72 @@
         },
         "type": "object",
         "title": "PriceRebalanceRequest"
+      },
+      "PricedRoundTerms": {
+        "properties": {
+          "round_name": {
+            "type": "string",
+            "title": "Round Name",
+            "default": "Series Seed"
+          },
+          "pre_money_valuation_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Pre Money Valuation Dzd"
+          },
+          "new_capital_invested_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "New Capital Invested Dzd"
+          },
+          "new_share_price_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "New Share Price Dzd"
+          },
+          "expand_option_pool_percent": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Expand Option Pool Percent",
+            "default": "0.0"
+          },
+          "round_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Round Date"
+          }
+        },
+        "type": "object",
+        "required": [
+          "pre_money_valuation_dzd",
+          "new_capital_invested_dzd",
+          "new_share_price_dzd"
+        ],
+        "title": "PricedRoundTerms"
       },
       "PrivacySettingsResponse": {
         "properties": {
@@ -70391,7 +74582,7 @@
             "title": "Effective Dilution With Pool Pct"
           },
           "capital_call_notice": {
-            "$ref": "#/components/schemas/CapitalCallNotice"
+            "$ref": "#/components/schemas/app__services__syndicate_engine__CapitalCallNotice"
           }
         },
         "type": "object",
@@ -72303,6 +76494,41 @@
         ],
         "title": "RecordDistributionRequest"
       },
+      "RecordPaymentRequest": {
+        "properties": {
+          "lp_id": {
+            "type": "string",
+            "title": "Lp Id"
+          },
+          "amount_paid_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Amount Paid Dzd"
+          },
+          "payment_reference": {
+            "type": "string",
+            "title": "Payment Reference"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lp_id",
+          "amount_paid_dzd",
+          "payment_reference"
+        ],
+        "title": "RecordPaymentRequest"
+      },
+      "RedFlagCategory": {
+        "type": "string",
+        "enum": [
+          "TAX_INCONSISTENCY",
+          "PAYROLL_MISMATCH",
+          "CIRCULAR_TRANSACTION",
+          "CASH_RECONCILIATION",
+          "PHANTOM_SUPPLIER"
+        ],
+        "title": "RedFlagCategory"
+      },
       "RedFlagItem": {
         "properties": {
           "pillar": {
@@ -72330,6 +76556,16 @@
           "actionRequired"
         ],
         "title": "RedFlagItem"
+      },
+      "RedFlagSeverity": {
+        "type": "string",
+        "enum": [
+          "LOW",
+          "MEDIUM",
+          "HIGH",
+          "CRITICAL"
+        ],
+        "title": "RedFlagSeverity"
       },
       "RefereeApprovalPayload": {
         "properties": {
@@ -72475,6 +76711,56 @@
           "reason"
         ],
         "title": "RefundTriggerRequest"
+      },
+      "RegisterCommitmentRequest": {
+        "properties": {
+          "spv_id": {
+            "type": "string",
+            "title": "Spv Id"
+          },
+          "lp_id": {
+            "type": "string",
+            "title": "Lp Id"
+          },
+          "lp_name": {
+            "type": "string",
+            "title": "Lp Name"
+          },
+          "lp_email": {
+            "type": "string",
+            "title": "Lp Email"
+          },
+          "committed_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Committed Amount Dzd"
+          },
+          "is_diaspora": {
+            "type": "boolean",
+            "title": "Is Diaspora",
+            "default": false
+          },
+          "residence_country": {
+            "type": "string",
+            "title": "Residence Country",
+            "default": "DZ"
+          },
+          "units_allocated": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Units Allocated",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "required": [
+          "spv_id",
+          "lp_id",
+          "lp_name",
+          "lp_email",
+          "committed_amount_dzd"
+        ],
+        "title": "RegisterCommitmentRequest"
       },
       "RegisterFatwaRequest": {
         "properties": {
@@ -72625,6 +76911,40 @@
         ],
         "title": "RejectModuleRequest",
         "description": "Request body for rejecting a module."
+      },
+      "ReminderScheduleItem": {
+        "properties": {
+          "day_number": {
+            "type": "integer",
+            "title": "Day Number"
+          },
+          "reminder_title": {
+            "type": "string",
+            "title": "Reminder Title"
+          },
+          "scheduled_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Scheduled Date"
+          },
+          "is_sent": {
+            "type": "boolean",
+            "title": "Is Sent",
+            "default": false
+          },
+          "recipient_count": {
+            "type": "integer",
+            "title": "Recipient Count",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "required": [
+          "day_number",
+          "reminder_title",
+          "scheduled_date"
+        ],
+        "title": "ReminderScheduleItem"
       },
       "ResendVerificationRequest": {
         "properties": {
@@ -73262,6 +77582,401 @@
         ],
         "title": "S4EBounty"
       },
+      "SCFBalanceSheet": {
+        "properties": {
+          "class_1_equity": {
+            "$ref": "#/components/schemas/SCFClass1EquityLiabilities"
+          },
+          "class_2_non_current_assets": {
+            "$ref": "#/components/schemas/SCFClass2NonCurrentAssets"
+          },
+          "class_4_third_parties": {
+            "$ref": "#/components/schemas/SCFClass4ThirdPartyAccounts"
+          },
+          "class_5_financial": {
+            "$ref": "#/components/schemas/SCFClass5FinancialAccounts"
+          },
+          "total_actif_net_dzd": {
+            "type": "number",
+            "title": "Total Actif Net Dzd",
+            "readOnly": true
+          },
+          "total_passif_et_capitaux_propres_dzd": {
+            "type": "number",
+            "title": "Total Passif Et Capitaux Propres Dzd",
+            "readOnly": true
+          },
+          "bilan_equilibre": {
+            "type": "boolean",
+            "title": "Bilan Equilibre",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "class_1_equity",
+          "class_2_non_current_assets",
+          "class_4_third_parties",
+          "class_5_financial",
+          "total_actif_net_dzd",
+          "total_passif_et_capitaux_propres_dzd",
+          "bilan_equilibre"
+        ],
+        "title": "SCFBalanceSheet",
+        "description": "Bilan Comptable Syst\u00e8me Comptable Financier (SCF) Alg\u00e9rien"
+      },
+      "SCFClass1EquityLiabilities": {
+        "properties": {
+          "compte_101_capital_souscrit_appele_verse_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 101 Capital Souscrit Appele Verse Dzd",
+            "default": 0.0
+          },
+          "compte_104_primes_emission_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 104 Primes Emission Dzd",
+            "default": 0.0
+          },
+          "compte_106_reserves_legales_statutaires_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 106 Reserves Legales Statutaires Dzd",
+            "default": 0.0
+          },
+          "compte_110_report_a_nouveau_dzd": {
+            "type": "number",
+            "title": "Compte 110 Report A Nouveau Dzd",
+            "default": 0.0
+          },
+          "compte_120_resultat_net_exercice_dzd": {
+            "type": "number",
+            "title": "Compte 120 Resultat Net Exercice Dzd",
+            "default": 0.0
+          },
+          "compte_168_provision_carried_interest_gp_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 168 Provision Carried Interest Gp Dzd",
+            "default": 0.0
+          },
+          "total_capitaux_propres_dzd": {
+            "type": "number",
+            "title": "Total Capitaux Propres Dzd",
+            "readOnly": true
+          },
+          "total_passif_non_courant_dzd": {
+            "type": "number",
+            "title": "Total Passif Non Courant Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_capitaux_propres_dzd",
+          "total_passif_non_courant_dzd"
+        ],
+        "title": "SCFClass1EquityLiabilities",
+        "description": "Class 1: Comptes de capitaux (Equity, Reserves, Carried Interest Provisions)"
+      },
+      "SCFClass2NonCurrentAssets": {
+        "properties": {
+          "compte_261_titres_de_participation_cout_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 261 Titres De Participation Cout Dzd",
+            "default": 0.0
+          },
+          "compte_271_titres_participatifs_safes_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 271 Titres Participatifs Safes Dzd",
+            "default": 0.0
+          },
+          "compte_296_depreciation_titres_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 296 Depreciation Titres Dzd",
+            "default": 0.0
+          },
+          "total_actif_non_courant_net_dzd": {
+            "type": "number",
+            "title": "Total Actif Non Courant Net Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_actif_non_courant_net_dzd"
+        ],
+        "title": "SCFClass2NonCurrentAssets",
+        "description": "Class 2: Actifs financiers non courants (Titres de participation, d\u00e9pr\u00e9ciations)"
+      },
+      "SCFClass4ThirdPartyAccounts": {
+        "properties": {
+          "compte_456_creances_lps_capital_appele_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 456 Creances Lps Capital Appele Dzd",
+            "default": 0.0
+          },
+          "compte_467_autres_debiteurs_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 467 Autres Debiteurs Dzd",
+            "default": 0.0
+          },
+          "compte_401_dettes_fournisseurs_audit_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 401 Dettes Fournisseurs Audit Dzd",
+            "default": 0.0
+          },
+          "compte_457_dividendes_distributions_a_payer_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 457 Dividendes Distributions A Payer Dzd",
+            "default": 0.0
+          },
+          "compte_444_dettes_fiscales_ibs_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 444 Dettes Fiscales Ibs Dzd",
+            "default": 0.0
+          },
+          "total_creances_courantes_dzd": {
+            "type": "number",
+            "title": "Total Creances Courantes Dzd",
+            "readOnly": true
+          },
+          "total_passif_courant_dzd": {
+            "type": "number",
+            "title": "Total Passif Courant Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_creances_courantes_dzd",
+          "total_passif_courant_dzd"
+        ],
+        "title": "SCFClass4ThirdPartyAccounts",
+        "description": "Class 4: Comptes de tiers (Cr\u00e9ances LPs, Dettes fournisseurs, Fiscalit\u00e9)"
+      },
+      "SCFClass5FinancialAccounts": {
+        "properties": {
+          "compte_512_banques_comptes_sequestres_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 512 Banques Comptes Sequestres Dzd",
+            "default": 0.0
+          },
+          "compte_518_interets_courus_a_recevoir_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 518 Interets Courus A Recevoir Dzd",
+            "default": 0.0
+          },
+          "compte_530_caisse_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Compte 530 Caisse Dzd",
+            "default": 0.0
+          },
+          "total_tresorerie_dzd": {
+            "type": "number",
+            "title": "Total Tresorerie Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_tresorerie_dzd"
+        ],
+        "title": "SCFClass5FinancialAccounts",
+        "description": "Class 5: Comptes financiers (Comptes bancaires de s\u00e9questre, tr\u00e9sorerie)"
+      },
+      "SCFIncomeStatement": {
+        "properties": {
+          "compte_761_produits_de_participations_dividendes_dzd": {
+            "type": "number",
+            "title": "Compte 761 Produits De Participations Dividendes Dzd",
+            "default": 0.0
+          },
+          "compte_762_plus_values_cession_titres_dzd": {
+            "type": "number",
+            "title": "Compte 762 Plus Values Cession Titres Dzd",
+            "default": 0.0
+          },
+          "compte_768_autres_produits_financiers_dzd": {
+            "type": "number",
+            "title": "Compte 768 Autres Produits Financiers Dzd",
+            "default": 0.0
+          },
+          "compte_622_honoraires_gestion_management_fees_dzd": {
+            "type": "number",
+            "title": "Compte 622 Honoraires Gestion Management Fees Dzd",
+            "default": 0.0
+          },
+          "compte_623_frais_audit_commissariat_loi_22_09_dzd": {
+            "type": "number",
+            "title": "Compte 623 Frais Audit Commissariat Loi 22 09 Dzd",
+            "default": 0.0
+          },
+          "compte_658_autres_charges_gestion_dzd": {
+            "type": "number",
+            "title": "Compte 658 Autres Charges Gestion Dzd",
+            "default": 0.0
+          },
+          "compte_686_dotations_aux_depreciations_financieres_dzd": {
+            "type": "number",
+            "title": "Compte 686 Dotations Aux Depreciations Financieres Dzd",
+            "default": 0.0
+          },
+          "total_produits_financiers_dzd": {
+            "type": "number",
+            "title": "Total Produits Financiers Dzd",
+            "readOnly": true
+          },
+          "total_charges_exercice_dzd": {
+            "type": "number",
+            "title": "Total Charges Exercice Dzd",
+            "readOnly": true
+          },
+          "resultat_net_exercice_dzd": {
+            "type": "number",
+            "title": "Resultat Net Exercice Dzd",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_produits_financiers_dzd",
+          "total_charges_exercice_dzd",
+          "resultat_net_exercice_dzd"
+        ],
+        "title": "SCFIncomeStatement",
+        "description": "Compte de R\u00e9sultat (Class 6 Charges & Class 7 Produits)"
+      },
+      "SPVFinancialReport": {
+        "properties": {
+          "report_id": {
+            "type": "string",
+            "title": "Report Id"
+          },
+          "spv_id": {
+            "type": "string",
+            "title": "Spv Id"
+          },
+          "spv_name": {
+            "type": "string",
+            "title": "Spv Name"
+          },
+          "fiscal_year": {
+            "type": "integer",
+            "title": "Fiscal Year"
+          },
+          "reporting_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Reporting Date"
+          },
+          "status": {
+            "$ref": "#/components/schemas/FiscalYearStatus",
+            "default": "AUDITED"
+          },
+          "statutory_auditor_name": {
+            "type": "string",
+            "title": "Statutory Auditor Name",
+            "default": "Cabinet de Commissariat aux Comptes Agr\u00e9\u00e9 (Alger)"
+          },
+          "legal_form": {
+            "type": "string",
+            "title": "Legal Form",
+            "default": "Soci\u00e9t\u00e9 Par Actions Simplifi\u00e9e (SPAS - Loi 22-09)"
+          },
+          "balance_sheet": {
+            "$ref": "#/components/schemas/SCFBalanceSheet"
+          },
+          "income_statement": {
+            "$ref": "#/components/schemas/SCFIncomeStatement"
+          },
+          "investments_portfolio": {
+            "items": {
+              "$ref": "#/components/schemas/PortfolioInvestment-Output"
+            },
+            "type": "array",
+            "title": "Investments Portfolio"
+          },
+          "total_spv_units": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Spv Units"
+          },
+          "cumulative_distributions_paid_dzd": {
+            "type": "number",
+            "title": "Cumulative Distributions Paid Dzd",
+            "default": 0.0
+          },
+          "net_asset_value_scf_dzd": {
+            "type": "number",
+            "title": "Net Asset Value Scf Dzd",
+            "readOnly": true
+          },
+          "nav_per_unit_dzd": {
+            "type": "number",
+            "title": "Nav Per Unit Dzd",
+            "readOnly": true
+          },
+          "fair_value_nav_dzd": {
+            "type": "number",
+            "title": "Fair Value Nav Dzd",
+            "readOnly": true
+          },
+          "fair_value_nav_per_unit_dzd": {
+            "type": "number",
+            "title": "Fair Value Nav Per Unit Dzd",
+            "readOnly": true
+          },
+          "tvpi": {
+            "type": "number",
+            "title": "Tvpi",
+            "description": "Total Value to Paid-In capital (TVPI = DPI + RVPI).",
+            "readOnly": true
+          },
+          "dpi": {
+            "type": "number",
+            "title": "Dpi",
+            "description": "Distributed to Paid-In capital.",
+            "readOnly": true
+          },
+          "rvpi": {
+            "type": "number",
+            "title": "Rvpi",
+            "description": "Residual Value to Paid-In capital.",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "spv_id",
+          "spv_name",
+          "fiscal_year",
+          "balance_sheet",
+          "income_statement",
+          "total_spv_units",
+          "net_asset_value_scf_dzd",
+          "nav_per_unit_dzd",
+          "fair_value_nav_dzd",
+          "fair_value_nav_per_unit_dzd",
+          "tvpi",
+          "dpi",
+          "rvpi"
+        ],
+        "title": "SPVFinancialReport",
+        "description": "Annual Financial Statements and Net Asset Value (NAV) report for Syndicate SPVs."
+      },
       "SPVStatus": {
         "type": "string",
         "enum": [
@@ -73426,6 +78141,362 @@
           "ENTERPRISE_OS"
         ],
         "title": "SaaSTier"
+      },
+      "SafeConversionResultItem": {
+        "properties": {
+          "safe_id": {
+            "type": "string",
+            "title": "Safe Id"
+          },
+          "investor_name": {
+            "type": "string",
+            "title": "Investor Name"
+          },
+          "safe_type": {
+            "$ref": "#/components/schemas/SafeType"
+          },
+          "original_principal_dzd": {
+            "type": "string",
+            "title": "Original Principal Dzd"
+          },
+          "accrued_interest_dzd": {
+            "type": "string",
+            "title": "Accrued Interest Dzd"
+          },
+          "total_converting_amount_dzd": {
+            "type": "string",
+            "title": "Total Converting Amount Dzd"
+          },
+          "effective_conversion_price_dzd": {
+            "type": "string",
+            "title": "Effective Conversion Price Dzd"
+          },
+          "conversion_mechanism_chosen": {
+            "type": "string",
+            "title": "Conversion Mechanism Chosen"
+          },
+          "unrounded_shares": {
+            "type": "number",
+            "title": "Unrounded Shares"
+          },
+          "integer_shares_issued": {
+            "type": "integer",
+            "title": "Integer Shares Issued"
+          },
+          "remainder": {
+            "type": "number",
+            "title": "Remainder"
+          },
+          "post_conversion_ownership_percent": {
+            "type": "number",
+            "title": "Post Conversion Ownership Percent"
+          }
+        },
+        "type": "object",
+        "required": [
+          "safe_id",
+          "investor_name",
+          "safe_type",
+          "original_principal_dzd",
+          "accrued_interest_dzd",
+          "total_converting_amount_dzd",
+          "effective_conversion_price_dzd",
+          "conversion_mechanism_chosen",
+          "unrounded_shares",
+          "integer_shares_issued",
+          "remainder",
+          "post_conversion_ownership_percent"
+        ],
+        "title": "SafeConversionResultItem"
+      },
+      "SafeConversionSimulationRequest": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "existing_pre_round_shares": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Existing Pre Round Shares"
+          },
+          "instruments": {
+            "items": {
+              "$ref": "#/components/schemas/SafeInstrumentModel"
+            },
+            "type": "array",
+            "title": "Instruments"
+          },
+          "scenario": {
+            "$ref": "#/components/schemas/ConversionScenario",
+            "default": "EQUITY_FINANCING"
+          },
+          "round_terms": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PricedRoundTerms"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "liquidity_event_valuation_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Liquidity Event Valuation Dzd"
+          },
+          "apply_mfn_automatically": {
+            "type": "boolean",
+            "title": "Apply Mfn Automatically",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "existing_pre_round_shares",
+          "instruments"
+        ],
+        "title": "SafeConversionSimulationRequest"
+      },
+      "SafeConversionSimulationResponse": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "scenario": {
+            "$ref": "#/components/schemas/ConversionScenario"
+          },
+          "pre_money_valuation_dzd": {
+            "type": "string",
+            "title": "Pre Money Valuation Dzd"
+          },
+          "post_money_valuation_dzd": {
+            "type": "string",
+            "title": "Post Money Valuation Dzd"
+          },
+          "round_share_price_dzd": {
+            "type": "string",
+            "title": "Round Share Price Dzd"
+          },
+          "total_new_shares_from_safes": {
+            "type": "integer",
+            "title": "Total New Shares From Safes"
+          },
+          "total_new_shares_from_priced_round": {
+            "type": "integer",
+            "title": "Total New Shares From Priced Round"
+          },
+          "total_post_shares": {
+            "type": "integer",
+            "title": "Total Post Shares"
+          },
+          "safe_conversions": {
+            "items": {
+              "$ref": "#/components/schemas/SafeConversionResultItem"
+            },
+            "type": "array",
+            "title": "Safe Conversions"
+          },
+          "cap_table_before_vs_after": {
+            "items": {
+              "$ref": "#/components/schemas/CapTableComparisonEntry"
+            },
+            "type": "array",
+            "title": "Cap Table Before Vs After"
+          },
+          "conservation_verified": {
+            "type": "boolean",
+            "title": "Conservation Verified"
+          },
+          "summary_report": {
+            "type": "string",
+            "title": "Summary Report"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "scenario",
+          "pre_money_valuation_dzd",
+          "post_money_valuation_dzd",
+          "round_share_price_dzd",
+          "total_new_shares_from_safes",
+          "total_new_shares_from_priced_round",
+          "total_post_shares",
+          "safe_conversions",
+          "cap_table_before_vs_after",
+          "conservation_verified",
+          "summary_report"
+        ],
+        "title": "SafeConversionSimulationResponse"
+      },
+      "SafeInstrumentModel": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "investor_id": {
+            "type": "string",
+            "title": "Investor Id"
+          },
+          "investor_name": {
+            "type": "string",
+            "title": "Investor Name"
+          },
+          "safe_type": {
+            "$ref": "#/components/schemas/SafeType"
+          },
+          "principal_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Principal Dzd"
+          },
+          "principal_foreign_currency": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Principal Foreign Currency"
+          },
+          "currency": {
+            "type": "string",
+            "title": "Currency",
+            "default": "DZD"
+          },
+          "valuation_cap_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Valuation Cap Dzd"
+          },
+          "valuation_floor_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Valuation Floor Dzd"
+          },
+          "discount_rate": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Discount Rate",
+            "default": "0.0"
+          },
+          "interest_rate_annual": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Interest Rate Annual",
+            "default": "0.0"
+          },
+          "interest_type": {
+            "$ref": "#/components/schemas/InterestType",
+            "default": "NONE"
+          },
+          "issuance_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Issuance Date"
+          },
+          "maturity_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Maturity Date"
+          },
+          "has_mfn_clause": {
+            "type": "boolean",
+            "title": "Has Mfn Clause",
+            "default": false
+          },
+          "target_share_class": {
+            "type": "string",
+            "title": "Target Share Class",
+            "default": "PREFERENCE_A"
+          },
+          "is_sharia_compliant": {
+            "type": "boolean",
+            "title": "Is Sharia Compliant",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "investor_id",
+          "investor_name",
+          "safe_type",
+          "principal_dzd"
+        ],
+        "title": "SafeInstrumentModel"
+      },
+      "SafeType": {
+        "type": "string",
+        "enum": [
+          "POST_MONEY_SAFE",
+          "PRE_MONEY_SAFE",
+          "CONVERTIBLE_NOTE",
+          "BSA_AIR_ALGERIA"
+        ],
+        "title": "SafeType"
       },
       "ScfEntryItem": {
         "properties": {
@@ -73977,6 +79048,80 @@
           "title"
         ],
         "title": "SearchResultItem"
+      },
+      "SeasonDistributionReport": {
+        "properties": {
+          "seasonId": {
+            "type": "string",
+            "title": "Seasonid"
+          },
+          "seasonName": {
+            "type": "string",
+            "title": "Seasonname"
+          },
+          "totalAnalysts": {
+            "type": "integer",
+            "title": "Totalanalysts"
+          },
+          "topAnalystsRewardsDzd": {
+            "type": "integer",
+            "title": "Topanalystsrewardsdzd"
+          },
+          "wilayaCupChampionWilaya": {
+            "type": "string",
+            "title": "Wilayacupchampionwilaya"
+          },
+          "wilayaCupPrizePoolDzd": {
+            "type": "integer",
+            "title": "Wilayacupprizepooldzd"
+          },
+          "totalDividendsDistributedDzd": {
+            "type": "integer",
+            "title": "Totaldividendsdistributeddzd"
+          },
+          "grandTotalDistributedDzd": {
+            "type": "integer",
+            "title": "Grandtotaldistributeddzd"
+          },
+          "top10Analysts": {
+            "items": {
+              "$ref": "#/components/schemas/AnalystSeasonStanding"
+            },
+            "type": "array",
+            "title": "Top10Analysts"
+          },
+          "wilayaStandings": {
+            "items": {
+              "$ref": "#/components/schemas/WilayaCupStanding"
+            },
+            "type": "array",
+            "title": "Wilayastandings"
+          },
+          "journalEntriesCount": {
+            "type": "integer",
+            "title": "Journalentriescount"
+          },
+          "distributedAt": {
+            "type": "string",
+            "title": "Distributedat"
+          }
+        },
+        "type": "object",
+        "required": [
+          "seasonId",
+          "seasonName",
+          "totalAnalysts",
+          "topAnalystsRewardsDzd",
+          "wilayaCupChampionWilaya",
+          "wilayaCupPrizePoolDzd",
+          "totalDividendsDistributedDzd",
+          "grandTotalDistributedDzd",
+          "top10Analysts",
+          "wilayaStandings",
+          "journalEntriesCount",
+          "distributedAt"
+        ],
+        "title": "SeasonDistributionReport"
       },
       "SeatAllocateRequest": {
         "properties": {
@@ -75205,6 +80350,233 @@
           "QUESTIONABLE"
         ],
         "title": "ShariaVerdict"
+      },
+      "SideLetterCovenant": {
+        "properties": {
+          "covenant_type": {
+            "$ref": "#/components/schemas/CovenantType"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "threshold_shares_required": {
+            "type": "integer",
+            "title": "Threshold Shares Required",
+            "default": 0
+          },
+          "reporting_frequency_days": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reporting Frequency Days"
+          },
+          "is_statutory_compliant": {
+            "type": "boolean",
+            "title": "Is Statutory Compliant",
+            "default": true
+          },
+          "specific_terms": {
+            "type": "object",
+            "title": "Specific Terms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "covenant_type",
+          "description"
+        ],
+        "title": "SideLetterCovenant"
+      },
+      "SideLetterCreateRequest": {
+        "properties": {
+          "investor_id": {
+            "type": "string",
+            "title": "Investor Id"
+          },
+          "investor_name": {
+            "type": "string",
+            "title": "Investor Name"
+          },
+          "execution_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Execution Date"
+          },
+          "covenants": {
+            "items": {
+              "$ref": "#/components/schemas/SideLetterCovenant"
+            },
+            "type": "array",
+            "title": "Covenants"
+          },
+          "legal_signatories": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Legal Signatories"
+          }
+        },
+        "type": "object",
+        "required": [
+          "investor_id",
+          "investor_name",
+          "covenants",
+          "legal_signatories"
+        ],
+        "title": "SideLetterCreateRequest"
+      },
+      "SideLetterModel": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "investor_id": {
+            "type": "string",
+            "title": "Investor Id"
+          },
+          "investor_name": {
+            "type": "string",
+            "title": "Investor Name"
+          },
+          "execution_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Execution Date"
+          },
+          "status": {
+            "$ref": "#/components/schemas/SideLetterStatus",
+            "default": "ACTIVE"
+          },
+          "covenants": {
+            "items": {
+              "$ref": "#/components/schemas/SideLetterCovenant"
+            },
+            "type": "array",
+            "title": "Covenants"
+          },
+          "legal_signatories": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Legal Signatories"
+          },
+          "statuts_conflict_notes": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Statuts Conflict Notes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "startup_id",
+          "investor_id",
+          "investor_name",
+          "covenants",
+          "legal_signatories"
+        ],
+        "title": "SideLetterModel"
+      },
+      "SideLetterStatus": {
+        "type": "string",
+        "enum": [
+          "DRAFT",
+          "ACTIVE",
+          "SUPERSEDED",
+          "TERMINATED"
+        ],
+        "title": "SideLetterStatus"
+      },
+      "SlideArchetype": {
+        "type": "string",
+        "enum": [
+          "PROBLEM",
+          "SOLUTION",
+          "TAM_SAM_SOM",
+          "MOAT",
+          "TRACTION",
+          "TEAM",
+          "FINANCIAL_PROJECTIONS",
+          "OTHER"
+        ],
+        "title": "SlideArchetype"
+      },
+      "SlideAuditResult": {
+        "properties": {
+          "slideNumber": {
+            "type": "integer",
+            "title": "Slidenumber"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "archetype": {
+            "$ref": "#/components/schemas/SlideArchetype"
+          },
+          "integrityScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Integrityscore"
+          },
+          "redFlags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Redflags"
+          },
+          "strengths": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Strengths"
+          },
+          "recommendation": {
+            "type": "string",
+            "title": "Recommendation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "slideNumber",
+          "title",
+          "archetype",
+          "integrityScore",
+          "recommendation"
+        ],
+        "title": "SlideAuditResult"
       },
       "SocialCaptionSet": {
         "properties": {
@@ -76603,6 +81975,45 @@
         ],
         "title": "StatutoryPrivacyNoticeResponse"
       },
+      "StatutsConflictReport": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "has_conflicts": {
+            "type": "boolean",
+            "title": "Has Conflicts"
+          },
+          "conflicts_count": {
+            "type": "integer",
+            "title": "Conflicts Count"
+          },
+          "flagged_covenants": {
+            "items": {
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Flagged Covenants"
+          },
+          "recommendations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Recommendations"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "has_conflicts",
+          "conflicts_count",
+          "flagged_covenants",
+          "recommendations"
+        ],
+        "title": "StatutsConflictReport"
+      },
       "StepUpRequest": {
         "properties": {
           "code": {
@@ -77698,6 +83109,139 @@
         ],
         "title": "SyndicateSPV"
       },
+      "TAMAnalysis": {
+        "properties": {
+          "claimedTamUsd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedtamusd"
+          },
+          "claimedSamUsd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedsamusd"
+          },
+          "claimedSomUsd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedsomusd"
+          },
+          "benchmarkReference": {
+            "type": "string",
+            "title": "Benchmarkreference",
+            "description": "Benchmark source (ONS, World Bank, Central Bank)"
+          },
+          "benchmarkTamUsd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Benchmarktamusd"
+          },
+          "inflationFactor": {
+            "type": "number",
+            "title": "Inflationfactor",
+            "description": "Ratio of claimed market to empirical economic ceiling"
+          },
+          "inflationStatus": {
+            "$ref": "#/components/schemas/MarketInflationStatus"
+          },
+          "critique": {
+            "type": "string",
+            "title": "Critique"
+          }
+        },
+        "type": "object",
+        "required": [
+          "claimedTamUsd",
+          "claimedSamUsd",
+          "claimedSomUsd",
+          "benchmarkReference",
+          "benchmarkTamUsd",
+          "inflationFactor",
+          "inflationStatus",
+          "critique"
+        ],
+        "title": "TAMAnalysis"
+      },
+      "TAMCheckRequest": {
+        "properties": {
+          "sector": {
+            "type": "string",
+            "title": "Sector"
+          },
+          "targetMarketGeo": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Targetmarketgeo",
+            "default": "ALGERIA"
+          },
+          "claimedTamUsd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedtamusd"
+          },
+          "claimedSamUsd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedsamusd"
+          },
+          "claimedSomUsd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Claimedsomusd"
+          }
+        },
+        "type": "object",
+        "required": [
+          "sector",
+          "claimedTamUsd",
+          "claimedSamUsd",
+          "claimedSomUsd"
+        ],
+        "title": "TAMCheckRequest"
+      },
+      "TAMCheckResponse": {
+        "properties": {
+          "sector": {
+            "type": "string",
+            "title": "Sector"
+          },
+          "targetMarketGeo": {
+            "type": "string",
+            "title": "Targetmarketgeo"
+          },
+          "benchmarkTamUsd": {
+            "type": "number",
+            "title": "Benchmarktamusd"
+          },
+          "inflationFactor": {
+            "type": "number",
+            "title": "Inflationfactor"
+          },
+          "inflationStatus": {
+            "$ref": "#/components/schemas/MarketInflationStatus"
+          },
+          "critique": {
+            "type": "string",
+            "title": "Critique"
+          }
+        },
+        "type": "object",
+        "required": [
+          "sector",
+          "targetMarketGeo",
+          "benchmarkTamUsd",
+          "inflationFactor",
+          "inflationStatus",
+          "critique"
+        ],
+        "title": "TAMCheckResponse"
+      },
       "TathirAssessment": {
         "properties": {
           "tainted_revenue_dzd": {
@@ -78545,6 +84089,87 @@
           "MULTI_KEY_AUDIT"
         ],
         "title": "TrancheVerificationType"
+      },
+      "TransactionEdge": {
+        "properties": {
+          "transactionId": {
+            "type": "string",
+            "title": "Transactionid",
+            "description": "Unique invoice or transaction identifier"
+          },
+          "sourceEntity": {
+            "type": "string",
+            "title": "Sourceentity",
+            "description": "Originating entity (payor / customer)"
+          },
+          "targetEntity": {
+            "type": "string",
+            "title": "Targetentity",
+            "description": "Receiving entity (payee / vendor)"
+          },
+          "amountDzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Amountdzd",
+            "description": "Transaction amount in Algerian Dinars"
+          },
+          "invoiceDate": {
+            "type": "string",
+            "title": "Invoicedate",
+            "description": "Invoice date (YYYY-MM-DD)"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description",
+            "description": "Invoice description / service rendered"
+          },
+          "isRelatedParty": {
+            "type": "boolean",
+            "title": "Isrelatedparty",
+            "description": "Whether entity shares founders/directors/relatives",
+            "default": false
+          },
+          "sourceNif": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sourcenif",
+            "description": "Num\u00e9ro d'Identification Fiscale (NIF) of source"
+          },
+          "targetNif": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Targetnif",
+            "description": "Num\u00e9ro d'Identification Fiscale (NIF) of target"
+          }
+        },
+        "type": "object",
+        "required": [
+          "transactionId",
+          "sourceEntity",
+          "targetEntity",
+          "amountDzd",
+          "invoiceDate"
+        ],
+        "title": "TransactionEdge"
       },
       "TransactionResponse": {
         "properties": {
@@ -83192,6 +88817,49 @@
         ],
         "title": "WebhookTestTransformResponse"
       },
+      "WilayaCupStanding": {
+        "properties": {
+          "rank": {
+            "type": "integer",
+            "title": "Rank"
+          },
+          "wilayaCode": {
+            "type": "integer",
+            "title": "Wilayacode"
+          },
+          "wilayaName": {
+            "type": "string",
+            "title": "Wilayaname"
+          },
+          "totalPoints": {
+            "type": "number",
+            "title": "Totalpoints"
+          },
+          "analystsCount": {
+            "type": "integer",
+            "title": "Analystscount"
+          },
+          "allocatedPrizeDzd": {
+            "type": "integer",
+            "title": "Allocatedprizedzd"
+          },
+          "isChampion": {
+            "type": "boolean",
+            "title": "Ischampion",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "rank",
+          "wilayaCode",
+          "wilayaName",
+          "totalPoints",
+          "analystsCount",
+          "allocatedPrizeDzd"
+        ],
+        "title": "WilayaCupStanding"
+      },
       "WilayaMilestone": {
         "properties": {
           "milestoneId": {
@@ -83912,6 +89580,225 @@
         ],
         "title": "SubscriptionPlan"
       },
+      "app__schemas__diligence__ForensicAuditRequest": {
+        "properties": {
+          "ledgerEntries": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ledgerentries",
+            "description": "List of expense/revenue transaction amounts in DZD for Benford analysis"
+          },
+          "founders": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Founders",
+            "description": "Founder names, NINs, and emails"
+          },
+          "jurors": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Jurors",
+            "description": "Jury reviewers and referee rosters"
+          },
+          "vendors": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Vendors",
+            "description": "Designated S4E contractors and suppliers"
+          }
+        },
+        "type": "object",
+        "title": "ForensicAuditRequest"
+      },
+      "app__schemas__diligence__ForensicAuditResponse": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "benfordAnalysis": {
+            "$ref": "#/components/schemas/BenfordAnalysisResponse"
+          },
+          "conflictAnalysis": {
+            "$ref": "#/components/schemas/ConflictGraphResponse"
+          },
+          "auditedAt": {
+            "type": "string",
+            "title": "Auditedat"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "benfordAnalysis",
+          "conflictAnalysis",
+          "auditedAt"
+        ],
+        "title": "ForensicAuditResponse"
+      },
+      "app__schemas__forensic_fraud__ForensicAuditRequest": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid",
+            "description": "Target startup ID"
+          },
+          "companyName": {
+            "type": "string",
+            "title": "Companyname",
+            "description": "Legal company name"
+          },
+          "nif": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Nif",
+            "description": "Company NIF (Num\u00e9ro d'Identification Fiscale)"
+          },
+          "claimedFinancials": {
+            "$ref": "#/components/schemas/ClaimedFinancials"
+          },
+          "g50Declarations": {
+            "items": {
+              "$ref": "#/components/schemas/G50TaxDeclaration"
+            },
+            "type": "array",
+            "title": "G50Declarations"
+          },
+          "cnasDeclarations": {
+            "items": {
+              "$ref": "#/components/schemas/CNASDeclaration"
+            },
+            "type": "array",
+            "title": "Cnasdeclarations"
+          },
+          "transactions": {
+            "items": {
+              "$ref": "#/components/schemas/TransactionEdge"
+            },
+            "type": "array",
+            "title": "Transactions"
+          },
+          "bankStatements": {
+            "items": {
+              "$ref": "#/components/schemas/BankStatementMonth"
+            },
+            "type": "array",
+            "title": "Bankstatements"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "companyName",
+          "claimedFinancials"
+        ],
+        "title": "ForensicAuditRequest"
+      },
+      "app__schemas__forensic_fraud__ForensicAuditResponse": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "auditTimestamp": {
+            "type": "string",
+            "title": "Audittimestamp"
+          },
+          "scoreBreakdown": {
+            "$ref": "#/components/schemas/ForensicFraudScoreBreakdown"
+          },
+          "redFlags": {
+            "items": {
+              "$ref": "#/components/schemas/ForensicRedFlag"
+            },
+            "type": "array",
+            "title": "Redflags"
+          },
+          "circularLoopsDetected": {
+            "items": {
+              "$ref": "#/components/schemas/CircularLoopResult"
+            },
+            "type": "array",
+            "title": "Circularloopsdetected"
+          },
+          "taxDiscrepancyDzd": {
+            "type": "number",
+            "title": "Taxdiscrepancydzd"
+          },
+          "payrollDiscrepancyDzd": {
+            "type": "number",
+            "title": "Payrolldiscrepancydzd"
+          },
+          "runwayDiscrepancyMonths": {
+            "type": "number",
+            "title": "Runwaydiscrepancymonths"
+          },
+          "summary": {
+            "type": "string",
+            "title": "Summary"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "auditTimestamp",
+          "scoreBreakdown",
+          "redFlags",
+          "circularLoopsDetected",
+          "taxDiscrepancyDzd",
+          "payrollDiscrepancyDzd",
+          "runwayDiscrepancyMonths",
+          "summary",
+          "status"
+        ],
+        "title": "ForensicAuditResponse"
+      },
       "app__schemas__payment__SubscriptionPlan": {
         "type": "string",
         "enum": [
@@ -84245,6 +90132,113 @@
         ],
         "title": "PhoneVerificationResponse"
       },
+      "app__services__capital_call_engine__CapitalCallNotice": {
+        "properties": {
+          "notice_id": {
+            "type": "string",
+            "title": "Notice Id"
+          },
+          "spv_id": {
+            "type": "string",
+            "title": "Spv Id"
+          },
+          "spv_name": {
+            "type": "string",
+            "title": "Spv Name"
+          },
+          "tranche_number": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Tranche Number",
+            "default": 1
+          },
+          "tranche_title": {
+            "type": "string",
+            "title": "Tranche Title"
+          },
+          "purpose_description": {
+            "type": "string",
+            "title": "Purpose Description"
+          },
+          "total_call_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Call Amount Dzd"
+          },
+          "total_called_so_far_dzd": {
+            "type": "number",
+            "title": "Total Called So Far Dzd",
+            "default": 0.0
+          },
+          "issue_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Issue Date"
+          },
+          "due_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Due Date"
+          },
+          "grace_period_days": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Grace Period Days",
+            "default": 5
+          },
+          "bank_details_domestic": {
+            "$ref": "#/components/schemas/BankDetails"
+          },
+          "bank_details_international": {
+            "$ref": "#/components/schemas/BankDetails"
+          },
+          "reminder_schedule": {
+            "items": {
+              "$ref": "#/components/schemas/ReminderScheduleItem"
+            },
+            "type": "array",
+            "title": "Reminder Schedule"
+          },
+          "status": {
+            "$ref": "#/components/schemas/CallNoticeStatus",
+            "default": "ISSUED"
+          },
+          "lp_items": {
+            "items": {
+              "$ref": "#/components/schemas/LPCapitalCallItem"
+            },
+            "type": "array",
+            "title": "Lp Items"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "total_collected_dzd": {
+            "type": "number",
+            "title": "Total Collected Dzd",
+            "readOnly": true
+          },
+          "collection_rate_pct": {
+            "type": "number",
+            "title": "Collection Rate Pct",
+            "readOnly": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "spv_id",
+          "spv_name",
+          "tranche_title",
+          "purpose_description",
+          "total_call_amount_dzd",
+          "due_date",
+          "total_collected_dzd",
+          "collection_rate_pct"
+        ],
+        "title": "CapitalCallNotice"
+      },
       "app__services__dealmaker_swarm__NegotiationRound": {
         "properties": {
           "round_number": {
@@ -84361,6 +90355,46 @@
           "concession_summary"
         ],
         "title": "NegotiationRound"
+      },
+      "app__services__syndicate_engine__CapitalCallNotice": {
+        "properties": {
+          "notice_id": {
+            "type": "string",
+            "title": "Notice Id"
+          },
+          "round_name": {
+            "type": "string",
+            "title": "Round Name",
+            "default": "Series A Financing"
+          },
+          "total_pro_rata_check_dzd": {
+            "type": "number",
+            "title": "Total Pro Rata Check Dzd"
+          },
+          "payment_deadline_days": {
+            "type": "integer",
+            "title": "Payment Deadline Days",
+            "default": 10
+          },
+          "payment_instructions": {
+            "type": "string",
+            "title": "Payment Instructions"
+          },
+          "per_member_allocations": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Per Member Allocations"
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_pro_rata_check_dzd",
+          "payment_instructions",
+          "per_member_allocations"
+        ],
+        "title": "CapitalCallNotice"
       }
     },
     "securitySchemes": {
