@@ -24,6 +24,10 @@ from app.schemas.diligence import (
     FactGuardAuditRequest,
     FactGuardAuditResponse,
     BayanCardMetadataResponse,
+    ForensicAuditRequest,
+    ForensicAuditResponse,
+    ConflictGraphResponse,
+    DDMResponse,
 )
 
 logger = logging.getLogger("tamwheel.routers.diligence")
@@ -203,3 +207,65 @@ async def get_factguard_status(startup_id: str):
     Retrieve latest FactGuard AI audit report, verified badges, and video overlay timestamps for a startup.
     """
     return await diligence_service.get_factguard_status(startup_id=startup_id)
+
+
+# =============================================================================
+# 5. FORENSIC FINANCIAL AUDIT & CONFLICT GRAPH
+# =============================================================================
+
+@router.post(
+    "/diligence/{startup_id}/forensic-audit",
+    response_model=ForensicAuditResponse,
+)
+async def run_forensic_audit(
+    startup_id: str,
+    audit_in: ForensicAuditRequest,
+    current_user: dict = Depends(get_current_active_user),
+):
+    """
+    Run forensic financial anomaly detection:
+    - Benford's Law First-Digit conformity test (Chi-Square & p-value) on revenue/expense items
+    - Graph-based conflict of interest and related-party transaction detector
+    """
+    return await diligence_service.run_forensic_audit(
+        startup_id=startup_id,
+        data=audit_in,
+    )
+
+
+@router.get(
+    "/diligence/{startup_id}/conflict-graph",
+    response_model=ConflictGraphResponse,
+)
+async def get_conflict_graph(
+    startup_id: str,
+    current_user: dict = Depends(get_current_active_user),
+):
+    """
+    Retrieve knowledge graph representation of corporate interlocks, family ties, and vendor transactions.
+    """
+    return await diligence_service.get_conflict_graph(startup_id=startup_id)
+
+
+# =============================================================================
+# 6. AUTOMATED DUE DILIGENCE MEMORANDUM (DDM)
+# =============================================================================
+
+@router.get(
+    "/diligence/{startup_id}/ddm",
+    response_model=DDMResponse,
+)
+async def get_due_diligence_memorandum(
+    startup_id: str,
+    format: str = Query("json", pattern="^(json|markdown)$"),
+):
+    """
+    Generate institutional Due Diligence Memorandum (DDM) adhering to Sequoia / Y Combinator standards.
+    Returns structured JSON with all 8 diligence sections and Red Flag Matrix,
+    or rendered Markdown report.
+    """
+    from fastapi.responses import PlainTextResponse
+    ddm = await diligence_service.generate_ddm(startup_id=startup_id)
+    if format == "markdown":
+        return PlainTextResponse(content=ddm.markdownReport or "", media_type="text/markdown")
+    return ddm

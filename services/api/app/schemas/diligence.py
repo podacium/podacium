@@ -168,3 +168,79 @@ class BayanCardMetadataResponse(BaseModel):
     qrPayload: str
     socialCaptions: SocialCaptionSet
     brandTokens: Dict[str, str]
+
+
+
+# =============================================================================
+# FORENSIC AUDIT & DUE DILIGENCE MEMORANDUM (DDM) SCHEMAS
+# =============================================================================
+
+class ForensicAuditRequest(BaseModel):
+    ledgerEntries: Optional[List[float]] = Field(None, description="List of expense/revenue transaction amounts in DZD for Benford analysis")
+    founders: Optional[List[Dict[str, Any]]] = Field(None, description="Founder names, NINs, and emails")
+    jurors: Optional[List[Dict[str, Any]]] = Field(None, description="Jury reviewers and referee rosters")
+    vendors: Optional[List[Dict[str, Any]]] = Field(None, description="Designated S4E contractors and suppliers")
+
+
+class BenfordAnalysisResponse(BaseModel):
+    sampleSize: int
+    observedCounts: Dict[str, int]
+    observedFrequencies: Dict[str, float]
+    expectedFrequencies: Dict[str, float]
+    chiSquareStat: float
+    pValue: float
+    mad: float
+    conformity: str
+    isAnomalous: bool
+    anomalousDigits: List[int]
+    diagnosticNotes: str
+
+
+class ConflictItemResponse(BaseModel):
+    id: str
+    conflictType: str
+    severity: str
+    involvedParties: List[str]
+    description: str
+    remedyRecommendation: str
+
+
+class ConflictGraphResponse(BaseModel):
+    startupName: str
+    overallSeverity: str
+    statusFlag: str
+    conflictRiskScore: float
+    totalConflictsCount: int
+    criticalCount: int
+    majorCount: int
+    moderateCount: int
+    conflicts: List[ConflictItemResponse]
+    graph: Dict[str, Any]
+    auditedAt: str
+
+
+class ForensicAuditResponse(BaseModel):
+    startupId: str
+    benfordAnalysis: BenfordAnalysisResponse
+    conflictAnalysis: ConflictGraphResponse
+    auditedAt: str
+
+
+class RedFlagItem(BaseModel):
+    pillar: str
+    severity: str
+    issue: str
+    actionRequired: str
+
+
+class DDMResponse(BaseModel):
+    metadata: Dict[str, Any]
+    section1_executive_summary: Dict[str, Any]
+    section2_founding_team: Dict[str, Any]
+    section3_market_opportunity: Dict[str, Any]
+    section4_product_and_moat: Dict[str, Any]
+    section5_traction_and_economics: Dict[str, Any]
+    section6_forensic_and_factguard_audit: Dict[str, Any]
+    section7_red_flag_matrix: List[RedFlagItem]
+    section8_final_ic_verdict: Dict[str, Any]
+    markdownReport: Optional[str] = None

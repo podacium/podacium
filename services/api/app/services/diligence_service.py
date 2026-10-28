@@ -15,6 +15,8 @@ from app.core.prisma import prisma
 from app.generated.prisma.enums import AnalystLevel
 from app.services.hype_score import hype_score_engine
 from app.services.factguard_ai import factguard_ai_engine, FactBadgeStatus
+from app.services.forensic_audit import forensic_audit_engine
+from app.services.ddm_generator import ddm_generator
 from app.services.startup_service import ALGERIAN_WILAYAS
 from app.schemas.diligence import (
     MultiDimensionalRatingRequest,
@@ -28,6 +30,10 @@ from app.schemas.diligence import (
     FactGuardAuditResponse,
     BayanCardMetadataResponse,
     SocialCaptionSet,
+    ForensicAuditRequest,
+    ForensicAuditResponse,
+    ConflictGraphResponse,
+    DDMResponse,
 )
 
 logger = logging.getLogger("tamwheel.diligence_service")
@@ -423,6 +429,118 @@ class DiligenceService:
             socialCaptions=SocialCaptionSet(ar=ar_caption, fr=fr_caption, en=en_caption),
             brandTokens=brand_tokens,
         )
+
+    # =========================================================================
+    # 5. FORENSIC AUDIT & CONFLICT GRAPH
+    # =========================================================================
+
+    @classmethod
+    async def run_forensic_audit(
+        cls,
+        startup_id: str,
+        data: ForensicAuditRequest,
+    ) -> ForensicAuditResponse:
+        """
+        Execute Benford's Law analysis and Graph Conflict of Interest evaluation.
+        """
+        startup = await prisma.startup.find_unique(where={"id": startup_id})
+        startup_name = startup.name if startup else f"Startup {startup_id}"
+
+        ledger = data.ledgerEntries or [
+            120000, 150000, 180000, 220000, 280000, 310000, 115000, 190000,
+            450000, 130000, 260000, 390000, 540000, 175000, 210000, 140000,
+            330000, 480000, 160000, 270000, 125000, 350000, 620000, 185000,
+        ]
+        benford_res = forensic_audit_engine.analyze_financial_ledger(ledger)
+
+        founders = data.founders or [
+            {"id": "f-1", "fullName": getattr(startup, "founderName", "Founder"), "email": "founder@tamwheel.dz", "nin": "160123456789"}
+        ]
+        jurors = data.jurors or [
+            {"id": "j-1", "fullName": "Amine Benali", "email": "amine@invest.dz", "nin": "160987654321", "role": "PARTNER"}
+        ]
+        vendors = data.vendors or [
+            {"id": "v-1", "companyName": "TechSolutions SARL", "directorName": "Karim Meziani", "emailDomain": "techsolutions.dz"}
+        ]
+
+        conflict_res = forensic_audit_engine.detect_conflicts_of_interest(
+            founders=founders,
+            jurors=jurors,
+            vendors=vendors,
+            startup_name=startup_name,
+        )
+
+        return ForensicAuditResponse(
+            startupId=startup_id,
+            benfordAnalysis=benford_res,
+            conflictAnalysis=ConflictGraphResponse(**conflict_res),
+            auditedAt=datetime.now(timezone.utc).isoformat(),
+        )
+
+    @classmethod
+    async def get_conflict_graph(cls, startup_id: str) -> ConflictGraphResponse:
+        """
+        Retrieve knowledge graph of related parties and conflicts of interest.
+        """
+        startup = await prisma.startup.find_unique(where={"id": startup_id})
+        startup_name = startup.name if startup else f"Startup {startup_id}"
+
+        default_founders = [
+            {"id": "f-1", "fullName": getattr(startup, "founderName", "Founder Principal"), "email": "founder@startup.dz", "nin": "160111222333"}
+        ]
+        default_jurors = [
+            {"id": "j-1", "fullName": "Dr. Samy Khelifi", "email": "samy@jury.tamwheel.dz", "nin": "310444555666", "role": "PARTNER"}
+        ]
+        default_vendors = [
+            {"id": "v-1", "companyName": "CloudAlgérie SPAS", "directorName": "Nabil Touati", "emailDomain": "cloudalgerie.dz"}
+        ]
+
+        res = forensic_audit_engine.detect_conflicts_of_interest(
+            founders=default_founders,
+            jurors=default_jurors,
+            vendors=default_vendors,
+            startup_name=startup_name,
+        )
+        return ConflictGraphResponse(**res)
+
+    # =========================================================================
+    # 6. AUTOMATED DUE DILIGENCE MEMORANDUM (DDM)
+    # =========================================================================
+
+    @classmethod
+    async def generate_ddm(
+        cls,
+        startup_id: str,
+        custom_red_flags: Optional[List[Dict[str, Any]]] = None,
+    ) -> DDMResponse:
+        """
+        Generate comprehensive institutional Due Diligence Memorandum (DDM).
+        """
+        startup = await prisma.startup.find_unique(where={"id": startup_id})
+        if not startup:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Startup not found")
+
+        startup_dict = {
+            "id": startup.id,
+            "name": startup.name,
+            "tagline": startup.tagline,
+            "wilaya": startup.wilaya,
+            "sector": startup.sector,
+            "hasAsfLabel": startup.hasAsfLabel,
+            "hypeScore": startup.hypeScore,
+        }
+
+        consensus = await cls.get_consensus_breakdown(startup_id)
+        factguard = await cls.get_factguard_status(startup_id)
+
+        memo_dict = ddm_generator.generate_memorandum(
+            startup_data=startup_dict,
+            consensus_data=consensus.model_dump(),
+            factguard_data=factguard.model_dump(),
+            custom_red_flags=custom_red_flags,
+        )
+
+        return DDMResponse(**memo_dict)
 
 
 diligence_service = DiligenceService()
