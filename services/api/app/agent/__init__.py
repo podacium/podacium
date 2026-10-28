@@ -14,6 +14,14 @@ from app.agent.schemas import (
     ToolDefinition,
 )
 
+from app.agent.dealmakers import (
+    DealmakerSwarm,
+    AlMuassisAgent,
+    AlMuhaqqiqAgent,
+    AlMuqawilAgent,
+    AlMizanAgent,
+)
+
 __all__ = [
     "ChatMessage",
     "ChatCompletionRequest",
@@ -22,4 +30,9 @@ __all__ = [
     "StreamingChunk",
     "ToolCall",
     "ToolDefinition",
+    "DealmakerSwarm",
+    "AlMuassisAgent",
+    "AlMuhaqqiqAgent",
+    "AlMuqawilAgent",
+    "AlMizanAgent",
 ]
