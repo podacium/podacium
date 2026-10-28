@@ -685,6 +685,10 @@ async def get_current_user_optional(
     return await get_current_user(request, credentials=credentials)
 
 
+# Alias for backward compatibility across routers
+get_optional_current_user = get_current_user_optional
+
+
 def require_permission(permission: str):
     """
     Attribute-Based Access Control (ABAC) dependency factory.
