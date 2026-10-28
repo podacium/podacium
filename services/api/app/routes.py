@@ -55,6 +55,8 @@ from app.routers import (
     sharia,
     bounties,
     simulation_ws,
+    simulation,
+    fantasy,
     curriculum,
     diagnostic,
     diligence,
@@ -121,6 +123,8 @@ _ROUTERS = [
     (sharia.router, "Sharia & AI Swarms"),
     (bounties.router, "S4E Bounties & Istihaq Escrow"),
     (dealmaking.router, "Dealmaker Swarm & MAUT Negotiation"),
+    (simulation.router, "Simulation League & Double-Entry Ledger"),
+    (fantasy.router, "Fantasy Startup League"),
 ]
 
 # In LICENSED_PSP mode, mount custodial payout endpoints

@@ -1,7 +1,13 @@
 """
-TamWheel Sovereign Ethical Agentic Venture OS — Real-Time Multiplayer Simulation WebSocket Router.
-Broadcasts live pledge alerts, hype score shifts, sentiment reactions, and leaderboard updates.
-Supports multiplayer rooms: global feed, startup-specific watch parties, and tournament leagues.
+TamWheel Sovereign Ethical Agentic Venture OS — Real-Time Multiplayer Simulation & Pitch Arena WebSocket Router.
+Pillar 6: Realtime Multiplayer Watch Party & Live Pitch Arena WebSockets.
+- Synchronized video/room playback clock (delta < 250ms broadcast state).
+- Live reaction emoji stream: 🚀 (Moon), 🧐 (Skeptical), 💡 (Genius), 🚩 (Red Flag), 🇩🇿 (Local Pride).
+- Real-time rolling sentiment radar: Computes instant crowd sentiment percentage [0-100%];
+  triggers "Hype Alarm" if sentiment drops < 35% during pitch.
+- Pitch Arena Stage state machine:
+  LOBBY -> PITCH_ACTIVE (3 min) -> GRILLING_ACTIVE (5 min) -> FLASH_ALLOCATION (60 sec) -> CLOSED.
+- 60-second Flash Allocation broadcast window: Pushes live simulated pledges into the crowd ticker in real-time.
 """
 
 from __future__ import annotations
@@ -18,10 +24,18 @@ from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Query
 from websockets.exceptions import ConnectionClosed
 
 from app.core.security import verify_token
+from app.services.arena_service import (
+    ArenaStage,
+    ArenaSession,
+    arena_service,
+    REACTION_CONFIG,
+    MAX_DRIFT_TOLERANCE_MS,
+    HYPE_ALARM_THRESHOLD_PCT,
+)
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter(tags=["simulation_websocket"])
+router = APIRouter(tags=["simulation_websocket", "pitch_arena_websocket"])
 
 
 # =============================================================================
@@ -30,17 +44,18 @@ router = APIRouter(tags=["simulation_websocket"])
 
 class SimulationConnectionManager:
     """
-    Manages active WebSocket connections subscribed to real-time venture simulation events.
+    Manages active WebSocket connections subscribed to real-time venture simulation events,
+    interactive watch parties, and live pitch arenas.
     """
 
     def __init__(self):
-        # connection -> set of subscribed rooms (e.g. "global", "startup:<id>", "league")
+        # connection -> set of subscribed rooms (e.g. "global", "startup:<id>", "arena:<id>", "league")
         self.connection_rooms: Dict[WebSocket, Set[str]] = {}
         # room -> set of active WebSockets
         self.room_subscribers: Dict[str, Set[WebSocket]] = {
             "global": set(),
         }
-        # connection -> metadata dict (client_id, user_id, username)
+        # connection -> metadata dict (client_id, user_id, username, connected_at)
         self.connection_meta: Dict[WebSocket, Dict[str, Any]] = {}
         self._lock = asyncio.Lock()
 
@@ -61,7 +76,7 @@ class SimulationConnectionManager:
                 "username": username or f"Backer-{client_id[:6]}",
                 "connected_at": time.time(),
             }
-        logger.info(f"Simulation WS connected: client={client_id}, user={user_id}")
+        logger.info(f"Arena/Simulation WS connected: client={client_id}, user={user_id}")
 
     async def disconnect(self, websocket: WebSocket):
         async with self._lock:
@@ -72,7 +87,7 @@ class SimulationConnectionManager:
                     if not self.room_subscribers[room] and room != "global":
                         del self.room_subscribers[room]
             meta = self.connection_meta.pop(websocket, {})
-        logger.info(f"Simulation WS disconnected: client={meta.get('client_id')}")
+        logger.info(f"Arena/Simulation WS disconnected: client={meta.get('client_id')}")
 
     async def subscribe_room(self, websocket: WebSocket, room: str):
         async with self._lock:
@@ -135,6 +150,7 @@ class SimulationConnectionManager:
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
         await self.broadcast_to_room(f"startup:{startup_id}", event)
+        await self.broadcast_to_room(f"arena:{startup_id}", event)
         await self.broadcast_to_room("global", event)
 
     async def broadcast_hype_score(
@@ -154,6 +170,7 @@ class SimulationConnectionManager:
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
         await self.broadcast_to_room(f"startup:{startup_id}", event)
+        await self.broadcast_to_room(f"arena:{startup_id}", event)
         await self.broadcast_to_room("global", event)
 
     async def broadcast_leaderboard_update(
@@ -186,24 +203,24 @@ class SimulationConnectionManager:
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
         await self.broadcast_to_room(f"startup:{startup_id}", event)
+        await self.broadcast_to_room(f"arena:{startup_id}", event)
 
 
 simulation_manager = SimulationConnectionManager()
 
 
 # =============================================================================
-# WEBSOCKET ROUTE
+# UNIFIED WEBSOCKET DISPATCHER (SIMULATION & ARENA)
 # =============================================================================
 
-@router.websocket("/ws/simulation")
-@router.websocket("/api/v1/ws/simulation")
-async def simulation_websocket_endpoint(
+async def handle_arena_socket(
     websocket: WebSocket,
-    token: Optional[str] = Query(None),
+    token: Optional[str] = None,
+    startup_param: Optional[str] = None,
 ):
     """
-    Real-time multiplayer WebSocket for TamWheel Venture Simulation & Live Pitch Watch Parties.
-    Supports anonymous retail observers and authenticated backers.
+    Core WebSocket message processing loop handling watch party sync,
+    reaction streams, rolling sentiment radar, and flash allocations.
     """
     user_id: Optional[int] = None
     username: Optional[str] = None
@@ -215,19 +232,28 @@ async def simulation_websocket_endpoint(
                 user_id = int(payload["sub"])
                 username = payload.get("email", f"User-{user_id}")
         except Exception:
-            # Allow fallback to guest connection for read-only simulation stream
             pass
 
     client_id = str(uuid.uuid4())
     await simulation_manager.connect(websocket, client_id, user_id, username)
 
-    # Send initial welcome handshake
+    # Auto-subscribe to room if provided
+    initial_rooms = ["global"]
+    if startup_param:
+        room_name = f"startup:{startup_param}"
+        await simulation_manager.subscribe_room(websocket, room_name)
+        initial_rooms.append(room_name)
+
+    # Initial welcome handshake with synchronized clock base
+    now_epoch = time.time()
     await websocket.send_text(
         json.dumps({
             "type": "simulation:welcome",
             "client_id": client_id,
             "user_id": user_id,
-            "channels": ["global"],
+            "channels": initial_rooms,
+            "server_timestamp": now_epoch,
+            "max_drift_tolerance_ms": MAX_DRIFT_TOLERANCE_MS,
             "timestamp": datetime.now(timezone.utc).isoformat(),
         })
     )
@@ -242,21 +268,32 @@ async def simulation_websocket_endpoint(
                 continue
 
             action = data.get("action")
+            meta = simulation_manager.connection_meta.get(websocket, {})
+            sender_name = meta.get("username", username or "Anonymous Scout")
 
-            if action == "ping":
+            # 1. PING / NTP-STYLE CLOCK SYNC (< 250ms drift)
+            if action in ("ping", "sync_clock"):
+                client_time = data.get("client_time", 0.0)
+                server_time = time.time()
                 await websocket.send_text(json.dumps({
-                    "type": "pong",
-                    "timestamp": time.time(),
+                    "type": "pong" if action == "ping" else "arena:clock_sync_ack",
+                    "client_time": client_time,
+                    "server_timestamp": server_time,
+                    "max_drift_tolerance_ms": MAX_DRIFT_TOLERANCE_MS,
+                    "timestamp": server_time,
                 }))
 
+            # 2. ROOM SUBSCRIPTION
             elif action == "subscribe":
                 room = data.get("room")
                 if room:
                     await simulation_manager.subscribe_room(websocket, room)
-                    await websocket.send_text(json.dumps({
-                        "type": "subscribed",
-                        "room": room,
-                    }))
+                    # Send current room arena state if available
+                    session = arena_service.get_room(room)
+                    resp: Dict[str, Any] = {"type": "subscribed", "room": room}
+                    if session:
+                        resp["arena_state"] = session.get_clock_sync_payload()
+                    await websocket.send_text(json.dumps(resp))
 
             elif action == "unsubscribe":
                 room = data.get("room")
@@ -267,18 +304,90 @@ async def simulation_websocket_endpoint(
                         "room": room,
                     }))
 
+            # 3. VIDEO PLAYBACK CLOCK SYNCHRONIZATION
+            elif action == "sync_video":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                session = arena_service.get_or_create_room(room, startup_id=data.get("startup_id"))
+                position = float(data.get("position_sec", 0.0))
+                playback_state = data.get("playback_state", "PLAYING")
+                rate = float(data.get("playback_rate", 1.0))
+
+                sync_payload = session.update_video_state(position, playback_state, rate)
+                await simulation_manager.broadcast_to_room(room, sync_payload)
+
+            # 4. ARENA STAGE STATE MACHINE (LOBBY -> PITCH -> GRILLING -> FLASH -> CLOSED)
+            elif action in ("advance_stage", "set_stage"):
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                session = arena_service.get_or_create_room(room, startup_id=data.get("startup_id"))
+
+                if action == "set_stage":
+                    target_stage = ArenaStage(data.get("stage", "LOBBY"))
+                    transition_payload = session.set_stage(target_stage)
+                else:
+                    transition_payload = session.advance_stage()
+
+                await simulation_manager.broadcast_to_room(room, transition_payload)
+                await simulation_manager.broadcast_to_room(
+                    room,
+                    session.get_clock_sync_payload()
+                )
+
+            # 5. LIVE REACTION EMOJI STREAM & ROLLING SENTIMENT RADAR
             elif action == "reaction":
                 startup_id = data.get("startup_id")
                 emoji = data.get("emoji", "🚀")
+                room = data.get("room", f"startup:{startup_id}") if startup_id else "global"
+
+                session = arena_service.get_or_create_room(room, startup_id=startup_id)
+                rx_event, alarm_event = session.add_reaction(emoji, sender_name)
+
+                # Broadcast live reaction to room and startup channel
+                await simulation_manager.broadcast_to_room(room, rx_event)
+                if startup_id and room != f"startup:{startup_id}":
+                    await simulation_manager.broadcast_to_room(f"startup:{startup_id}", rx_event)
+
+                # Legacy event format support
+                await simulation_manager.broadcast_reaction(
+                    startup_id=startup_id or "global",
+                    user_name=sender_name,
+                    emoji=emoji,
+                    audience_sentiment_score=rx_event["audience_sentiment_score"],
+                )
+
+                # If Hype Alarm was triggered (sentiment < 35%), broadcast alert
+                if alarm_event:
+                    await simulation_manager.broadcast_to_room(room, alarm_event)
+                    await simulation_manager.broadcast_to_room("global", alarm_event)
+
+            # 6. 60-SECOND FLASH ALLOCATION WINDOW
+            elif action in ("pledge", "flash_pledge"):
+                startup_id = data.get("startup_id")
+                amount = int(data.get("amount_dzd", 5000))
+                equity_pct = data.get("equity_share_pct")
+                wilaya = data.get("wilaya")
+                room = data.get("room", f"startup:{startup_id}") if startup_id else "global"
+
+                session = arena_service.get_or_create_room(room, startup_id=startup_id)
+                pledge_event = session.record_flash_pledge(
+                    backer_name=sender_name,
+                    amount_dzd=amount,
+                    equity_share_pct=equity_pct,
+                    wilaya=wilaya,
+                )
+
+                # Broadcast flash pledge into room & global ticker
+                await simulation_manager.broadcast_to_room(room, pledge_event)
+                await simulation_manager.broadcast_to_room("global", pledge_event)
+
+                # Update simulation ledger alert
                 if startup_id:
-                    meta = simulation_manager.connection_meta.get(websocket, {})
-                    sender_name = meta.get("username", "Anonymous Scout")
-                    # Broadcast emoji to the room
-                    await simulation_manager.broadcast_reaction(
+                    await simulation_manager.broadcast_pledge(
                         startup_id=startup_id,
-                        user_name=sender_name,
-                        emoji=emoji,
-                        audience_sentiment_score=88.5,
+                        startup_name=session.startup_name,
+                        backer_name=sender_name,
+                        amount_dzd=amount,
+                        equity_share_pct=equity_pct,
+                        new_hype_score=session.current_sentiment_score,
                     )
 
             else:
@@ -289,5 +398,28 @@ async def simulation_websocket_endpoint(
     except (WebSocketDisconnect, ConnectionClosed):
         await simulation_manager.disconnect(websocket)
     except Exception as e:
-        logger.error(f"Error in simulation websocket loop: {e}")
+        logger.error(f"Error in arena websocket loop: {e}")
         await simulation_manager.disconnect(websocket)
+
+
+# =============================================================================
+# ROUTE ENDPOINTS
+# =============================================================================
+
+@router.websocket("/ws/simulation")
+@router.websocket("/api/v1/ws/simulation")
+async def simulation_websocket_endpoint(
+    websocket: WebSocket,
+    token: Optional[str] = Query(None),
+):
+    await handle_arena_socket(websocket, token=token)
+
+
+@router.websocket("/ws/arena")
+@router.websocket("/api/v1/ws/arena")
+async def arena_websocket_endpoint(
+    websocket: WebSocket,
+    token: Optional[str] = Query(None),
+    startup_id: Optional[str] = Query(None),
+):
+    await handle_arena_socket(websocket, token=token, startup_param=startup_id)
