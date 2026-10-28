@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "TamWheel API",
-    "description": "TamWheel \u2014 Sovereign Ethical Agentic Venture & Economic Operating System API",
+    "description": "TamWheel — Sovereign Ethical Agentic Venture & Economic Operating System API",
     "version": "1.0.0"
   },
   "paths": {
@@ -13,7 +13,7 @@
           "authentication"
         ],
         "summary": "Register",
-        "description": "Register a new user.\n\n\ud83d\udd12 No auto-login \u2014 user must verify their email before first login.\nVerification email is sent in the background.",
+        "description": "Register a new user.\n\n🔒 No auto-login — user must verify their email before first login.\nVerification email is sent in the background.",
         "operationId": "register_api_v1_auth_register_post",
         "requestBody": {
           "content": {
@@ -139,7 +139,7 @@
           "authentication"
         ],
         "summary": "Resend Verification",
-        "description": "Resend email verification link.\n\n\ud83d\udd12 Rate-limited per-email (3/hour) and per-IP (10/hour).\n\ud83d\udd12 Always returns the same response to prevent user enumeration.",
+        "description": "Resend email verification link.\n\n🔒 Rate-limited per-email (3/hour) and per-IP (10/hour).\n🔒 Always returns the same response to prevent user enumeration.",
         "operationId": "resend_verification_api_v1_auth_resend_verification_post",
         "requestBody": {
           "content": {
@@ -180,7 +180,7 @@
           "authentication"
         ],
         "summary": "Forgot Password",
-        "description": "Request password reset email.\n\n\ud83d\udd12 Always returns the same response to prevent user enumeration.\n\ud83d\udd12 Always creates a token (even for non-existent emails \u2014 immediately discarded)\n   to maintain consistent timing.",
+        "description": "Request password reset email.\n\n🔒 Always returns the same response to prevent user enumeration.\n🔒 Always creates a token (even for non-existent emails — immediately discarded)\n   to maintain consistent timing.",
         "operationId": "forgot_password_api_v1_auth_forgot_password_post",
         "requestBody": {
           "content": {
@@ -262,7 +262,7 @@
           "authentication"
         ],
         "summary": "Complete 2Fa Login",
-        "description": "Complete 2FA-required login by verifying the TOTP code.\n\n\ud83d\udd12 Validates the temp token (issued during /login when 2FA is enabled):\n   - Checks signature + type\n   - Enforces 5-minute max TTL (via JWT exp)\n   - Verifies IP and User-Agent binding\n   - Single-use via blocklist (prevents replay)\n\nOn success, issues real full-scope tokens and sets cookies.",
+        "description": "Complete 2FA-required login by verifying the TOTP code.\n\n🔒 Validates the temp token (issued during /login when 2FA is enabled):\n   - Checks signature + type\n   - Enforces 5-minute max TTL (via JWT exp)\n   - Verifies IP and User-Agent binding\n   - Single-use via blocklist (prevents replay)\n\nOn success, issues real full-scope tokens and sets cookies.",
         "operationId": "complete_2fa_login_api_v1_auth_complete_2fa_login_post",
         "requestBody": {
           "content": {
@@ -406,7 +406,7 @@
           "authentication"
         ],
         "summary": "Logout",
-        "description": "Logout user \u2014 invalidates the current access token server-side (permanently).",
+        "description": "Logout user — invalidates the current access token server-side (permanently).",
         "operationId": "logout_api_v1_auth_logout_post",
         "security": [
           {
@@ -1838,7 +1838,7 @@
           "users"
         ],
         "summary": "Get User Skills",
-        "description": "Get user skills \u2014 self or admin access only.",
+        "description": "Get user skills — self or admin access only.",
         "operationId": "get_user_skills_api_v1_users__user_id__skills_get",
         "security": [
           {
@@ -1948,7 +1948,7 @@
           "users"
         ],
         "summary": "Get User Public Profile",
-        "description": "Get public profile for any user \u2014 privacy-enforced.\n\nEnforces profile_visibility and per-section visibility settings.\nReturns 404 if profile is PRIVATE, blocked, or not found.",
+        "description": "Get public profile for any user — privacy-enforced.\n\nEnforces profile_visibility and per-section visibility settings.\nReturns 404 if profile is PRIVATE, blocked, or not found.",
         "operationId": "get_user_public_profile_api_v1_users__user_id__public_get",
         "security": [
           {
@@ -2054,7 +2054,7 @@
           "users"
         ],
         "summary": "Get User Stats",
-        "description": "Get user statistics \u2014 requires authentication. Non-admin users can only view their own stats.",
+        "description": "Get user statistics — requires authentication. Non-admin users can only view their own stats.",
         "operationId": "get_user_stats_api_v1_users__user_id__stats_get",
         "security": [
           {
@@ -2938,7 +2938,7 @@
           "venture-core"
         ],
         "summary": "Pledge To Campaign",
-        "description": "Execute an investment commitment in the TamWheel Simulation League.\nGoverned by COSOB Regulation 23-01 CIP compliance rules:\n- Minimum ticket verification (>= 5,000 DZD default)\n- 20% retail investor campaign allocation cap\n- 150% campaign overfunding cap\n- Mandatory biometric/national KYC verification for high-ticket commitments (>= 145,000 DZD)\n- Enforces statutory 4-day reflection period flag (droit de r\u00e9tractation)",
+        "description": "Execute an investment commitment in the TamWheel Simulation League.\nGoverned by COSOB Regulation 23-01 CIP compliance rules:\n- Minimum ticket verification (>= 5,000 DZD default)\n- 20% retail investor campaign allocation cap\n- 150% campaign overfunding cap\n- Mandatory biometric/national KYC verification for high-ticket commitments (>= 145,000 DZD)\n- Enforces statutory 4-day reflection period flag (droit de rétractation)",
         "operationId": "pledge_to_campaign_api_v1_campaigns__campaign_id__pledge_post",
         "security": [
           {
@@ -3563,7 +3563,7 @@
           "Cap Table & Law 22-09 SPAS Engine"
         ],
         "summary": "Create Share Class",
-        "description": "Register a new statutory share class (Actions Ordinaires, Actions de Pr\u00e9f\u00e9rence A/B, BSPCE)\nunder Law 22-09 Articles 715 bis 133+.",
+        "description": "Register a new statutory share class (Actions Ordinaires, Actions de Préférence A/B, BSPCE)\nunder Law 22-09 Articles 715 bis 133+.",
         "operationId": "create_share_class_api_v1_startups__startup_id__cap_table_share_classes_post",
         "security": [
           {
@@ -5141,7 +5141,7 @@
           "Cross-Border HoldCo/OpCo Mirroring",
           "Cross-Border HoldCo/OpCo Mirroring"
         ],
-        "summary": "File Foreign Direct Investment (FDI) notice under Banque d'Alg\u00e9rie Regulation 07-01",
+        "summary": "File Foreign Direct Investment (FDI) notice under Banque d'Algérie Regulation 07-01",
         "description": "Records capital importation in foreign currency and computes DZD retrocession attestation.",
         "operationId": "record_fdi_filing_api_v1_cap_table_holdco_mirror_fdi_filing_post",
         "security": [
@@ -9013,7 +9013,7 @@
           "Executive Vetting & Officer Disqualification"
         ],
         "summary": "Comprehensive background and disqualification audit for executive officer",
-        "description": "Execute exhaustive executive officer diligence:\n- Validate 18-digit Algerian National Identification Number (NIN)\n- Cross-check CNRC Disqualification Register (Fichier National des Fraudeurs - Law 04-08)\n- Check commercial court insolvency, liquidation, and manager liability rulings\n- Verify SPA 5-mandate limit (Art. 615) and SARL G\u00e9rant non-compete obligations (Art. 569)\n- Generate risk score, verdict, and condition precedents",
+        "description": "Execute exhaustive executive officer diligence:\n- Validate 18-digit Algerian National Identification Number (NIN)\n- Cross-check CNRC Disqualification Register (Fichier National des Fraudeurs - Law 04-08)\n- Check commercial court insolvency, liquidation, and manager liability rulings\n- Verify SPA 5-mandate limit (Art. 615) and SARL Gérant non-compete obligations (Art. 569)\n- Generate risk score, verdict, and condition precedents",
         "operationId": "vet_executive_officer_api_v1_diligence_executives_vet_post",
         "requestBody": {
           "content": {
@@ -9056,7 +9056,7 @@
           "Executive Vetting & Officer Disqualification"
         ],
         "summary": "Instant check against CNRC Official Disqualification Register",
-        "description": "Check if individual has an active managing ban (Interdiction de g\u00e9rer),\npersonal bankruptcy (Faillite personnelle), or tax fraud blacklisting.",
+        "description": "Check if individual has an active managing ban (Interdiction de gérer),\npersonal bankruptcy (Faillite personnelle), or tax fraud blacklisting.",
         "operationId": "check_officer_disqualification_api_v1_diligence_executives_disqualification_check_post",
         "requestBody": {
           "content": {
@@ -10293,7 +10293,7 @@
           "Content Moderation"
         ],
         "summary": "Submit module for admin review",
-        "description": "Instructor submits their module for admin approval. Module must be in DRAFT status with at least one lesson, a title (\u22653 chars), and a description (\u226510 chars).",
+        "description": "Instructor submits their module for admin approval. Module must be in DRAFT status with at least one lesson, a title (≥3 chars), and a description (≥10 chars).",
         "operationId": "submit_module_for_review_api_v1_education_modules__module_id__submit_review_post",
         "security": [
           {
@@ -16572,7 +16572,7 @@
           "Invoices"
         ],
         "summary": "Generate Milestone Kit",
-        "description": "Generate or retrieve the Triple Document Kit (Contrat, PV R\u00e9ception, Facture ANAE) for a completed milestone.",
+        "description": "Generate or retrieve the Triple Document Kit (Contrat, PV Réception, Facture ANAE) for a completed milestone.",
         "operationId": "generate_milestone_kit_api_v1_invoices_generate_milestone_kit_post",
         "security": [
           {
@@ -16916,7 +16916,7 @@
           "Invoices"
         ],
         "summary": "Generate Deliverable Download Token",
-        "description": "Generate a signed time-limited HMAC token for accessing unlocked milestone deliverables post-PV de R\u00e9ception.",
+        "description": "Generate a signed time-limited HMAC token for accessing unlocked milestone deliverables post-PV de Réception.",
         "operationId": "generate_deliverable_download_token_api_v1_invoices_deliverables_download_token_post",
         "security": [
           {
@@ -16974,7 +16974,7 @@
           "Invoices"
         ],
         "summary": "Download Unlocked Deliverable",
-        "description": "Redeem signed HMAC token to stream decrypted milestone deliverable post-PV de R\u00e9ception.",
+        "description": "Redeem signed HMAC token to stream decrypted milestone deliverable post-PV de Réception.",
         "operationId": "download_unlocked_deliverable_api_v1_invoices_deliverables_download_get",
         "security": [
           {
@@ -19209,7 +19209,7 @@
           "settings"
         ],
         "summary": "Request Data Export",
-        "description": "Request data export \u2014 creates a DataExport record for async processing.",
+        "description": "Request data export — creates a DataExport record for async processing.",
         "operationId": "request_data_export_api_v1_settings_advanced_export_data_post",
         "security": [
           {
@@ -22875,7 +22875,7 @@
           "wallets"
         ],
         "summary": "Deposit To Wallet",
-        "description": "Initiate deposit to wallet.\n\nDisabled in NON_CUSTODIAL mode \u2014 the platform does not hold customer fiat.\nPodaPoints are bought through POST /wallets/poda-points/purchase, which is\na plain product sale routed through Chargily.",
+        "description": "Initiate deposit to wallet.\n\nDisabled in NON_CUSTODIAL mode — the platform does not hold customer fiat.\nPodaPoints are bought through POST /wallets/poda-points/purchase, which is\na plain product sale routed through Chargily.",
         "operationId": "deposit_to_wallet_api_v1_wallets_deposit_post",
         "security": [
           {
@@ -23840,7 +23840,7 @@
           "wallets"
         ],
         "summary": "Purchase Poda Points",
-        "description": "Purchase PodaPoints \u2014 redirects to Chargily checkout",
+        "description": "Purchase PodaPoints — redirects to Chargily checkout",
         "operationId": "purchase_poda_points_api_v1_wallets_poda_points_purchase_post",
         "security": [
           {
@@ -23976,7 +23976,7 @@
           "features"
         ],
         "summary": "Purchase Feature",
-        "description": "Buy a feature with PodaPoints.\n\nAll validation (purchasability, price consistency, quantity bounds) happens\nbefore any points are debited, and the debit + grant share one database\ntransaction \u2014 see ``FeatureService.purchase_with_points``.",
+        "description": "Buy a feature with PodaPoints.\n\nAll validation (purchasability, price consistency, quantity bounds) happens\nbefore any points are debited, and the debit + grant share one database\ntransaction — see ``FeatureService.purchase_with_points``.",
         "operationId": "purchase_feature_api_v1_features_purchase_post",
         "security": [
           {
@@ -25990,7 +25990,7 @@
           "onboarding"
         ],
         "summary": "Skip Onboarding",
-        "description": "Skip onboarding \u2014 marks it as completed with all-null answers.",
+        "description": "Skip onboarding — marks it as completed with all-null answers.",
         "operationId": "skip_onboarding_api_v1_onboarding_skip_post",
         "security": [
           {
@@ -35691,7 +35691,7 @@
           "profiles"
         ],
         "summary": "Get Own Profile",
-        "description": "Get own profile \u2014 all sections, no privacy filtering.",
+        "description": "Get own profile — all sections, no privacy filtering.",
         "operationId": "get_own_profile_api_v1_profiles_me_get",
         "security": [
           {
@@ -38576,7 +38576,7 @@
           "Initial Data"
         ],
         "summary": "Check Email",
-        "description": "Check if an email is available for registration.\n\nSECURITY: Rate-limited to prevent email enumeration. Does NOT reveal\nwhether an email is already registered \u2014 always returns available=true\nto prevent attackers from discovering registered accounts via this endpoint.\nRegistration will report conflicts natively.",
+        "description": "Check if an email is available for registration.\n\nSECURITY: Rate-limited to prevent email enumeration. Does NOT reveal\nwhether an email is already registered — always returns available=true\nto prevent attackers from discovering registered accounts via this endpoint.\nRegistration will report conflicts natively.",
         "operationId": "check_email_api_v1_auth_check_email_post",
         "requestBody": {
           "content": {
@@ -46177,7 +46177,7 @@
           "Viral Growth & Brag Engine"
         ],
         "summary": "List active and achieved Wilaya collective milestone grant challenges",
-        "description": "Returns collective regional challenges:\n'If 50 backers from S\u00e9tif back X, unlock 500k DZD non-dilutive grant'.",
+        "description": "Returns collective regional challenges:\n'If 50 backers from Sétif back X, unlock 500k DZD non-dilutive grant'.",
         "operationId": "list_wilaya_milestones_api_v1_viral_milestones_get",
         "parameters": [
           {
@@ -48193,11 +48193,11 @@
     "/api/v1/squads/create": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Create a new Backer Squad",
-        "description": "Initializes a collaborative investment squad with a 3\u201325 member limit.",
+        "description": "Initializes a collaborative investment squad with a 3–25 member limit.",
         "operationId": "create_backer_squad_api_v1_squads_create_post",
         "requestBody": {
           "content": {
@@ -48241,8 +48241,8 @@
     "/api/v1/squads/{squad_id}": {
       "get": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Get Backer Squad details",
         "operationId": "get_backer_squad_api_v1_squads__squad_id__get",
@@ -48289,8 +48289,8 @@
     "/api/v1/squads/{squad_id}/members": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Add member to Backer Squad",
         "operationId": "invite_squad_member_api_v1_squads__squad_id__members_post",
@@ -48347,8 +48347,8 @@
     "/api/v1/squads/{squad_id}/invite": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Invite member to Backer Squad",
         "operationId": "invite_squad_member_api_v1_squads__squad_id__invite_post",
@@ -48405,8 +48405,8 @@
     "/api/v1/squads/{squad_id}/deposit": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Deposit funds into squad pooled balance",
         "operationId": "deposit_to_squad_pool_api_v1_squads__squad_id__deposit_post",
@@ -48464,8 +48464,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}": {
       "get": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Get collaborative diligence canvas for a startup",
         "operationId": "get_squad_canvas_api_v1_squads__squad_id__canvas__startup_id__get",
@@ -48531,8 +48531,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/sticky-notes": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Add sticky note to diligence canvas (plural)",
         "operationId": "add_canvas_sticky_note_api_v1_squads__squad_id__canvas__startup_id__sticky_notes_post",
@@ -48598,8 +48598,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/sticky-note": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Add sticky note to diligence canvas",
         "operationId": "add_canvas_sticky_note_api_v1_squads__squad_id__canvas__startup_id__sticky_note_post",
@@ -48665,8 +48665,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/risk-pins": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Drop risk pin on diligence canvas (plural)",
         "operationId": "add_canvas_risk_pin_api_v1_squads__squad_id__canvas__startup_id__risk_pins_post",
@@ -48732,8 +48732,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/risk-pin": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Drop risk pin on diligence canvas",
         "operationId": "add_canvas_risk_pin_api_v1_squads__squad_id__canvas__startup_id__risk_pin_post",
@@ -48799,8 +48799,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/conviction-votes": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Submit individual conviction score to canvas (plural)",
         "operationId": "submit_canvas_conviction_vote_api_v1_squads__squad_id__canvas__startup_id__conviction_votes_post",
@@ -48866,8 +48866,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/conviction-vote": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Submit individual conviction score to canvas",
         "operationId": "submit_canvas_conviction_vote_api_v1_squads__squad_id__canvas__startup_id__conviction_vote_post",
@@ -48933,8 +48933,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/diaspora-pairs": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Pair diaspora expat with local Wilaya ground auditor (plural)",
         "operationId": "pair_diaspora_to_wilaya_api_v1_squads__squad_id__canvas__startup_id__diaspora_pairs_post",
@@ -49000,8 +49000,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/diaspora-pair": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Pair diaspora expat with local Wilaya ground auditor",
         "operationId": "pair_diaspora_to_wilaya_api_v1_squads__squad_id__canvas__startup_id__diaspora_pair_post",
@@ -49067,8 +49067,8 @@
     "/api/v1/squads/{squad_id}/proposals": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Propose pooled investment allocation for consensus voting",
         "operationId": "propose_squad_allocation_api_v1_squads__squad_id__proposals_post",
@@ -49125,8 +49125,8 @@
     "/api/v1/squads/{squad_id}/votes/{proposal_id}/cast": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Cast consensus vote on squad proposal (squad scoped)",
         "operationId": "cast_squad_proposal_vote_api_v1_squads__squad_id__votes__proposal_id__cast_post",
@@ -49199,8 +49199,8 @@
     "/api/v1/squads/proposals/{proposal_id}/vote": {
       "post": {
         "tags": [
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
-          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
+          "Backer Squads (الشلل الاستثمارية)",
+          "Backer Squads (الشلل الاستثمارية)"
         ],
         "summary": "Cast consensus vote on squad proposal",
         "operationId": "cast_squad_proposal_vote_api_v1_squads_proposals__proposal_id__vote_post",
@@ -49273,8 +49273,8 @@
     "/api/v1/halka/create": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
+          "Halka Family Syndicates (حلقة العائلة)",
+          "Halka Family Syndicates (حلقة العائلة)"
         ],
         "summary": "Create a new Halka Family Syndicate",
         "description": "Initializes a multi-generational kinship syndicate with a designated Amin elder.",
@@ -49321,8 +49321,8 @@
     "/api/v1/halka/{halka_id}": {
       "get": {
         "tags": [
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
+          "Halka Family Syndicates (حلقة العائلة)",
+          "Halka Family Syndicates (حلقة العائلة)"
         ],
         "summary": "Get Halka Family Syndicate details",
         "operationId": "get_halka_api_v1_halka__halka_id__get",
@@ -49369,8 +49369,8 @@
     "/api/v1/halka/{halka_id}/members": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
+          "Halka Family Syndicates (حلقة العائلة)",
+          "Halka Family Syndicates (حلقة العائلة)"
         ],
         "summary": "Add a family member to the Halka",
         "description": "Registers a family member (e.g. Al-Shabab youth researcher or family contributor).",
@@ -49428,8 +49428,8 @@
     "/api/v1/halka/{halka_id}/proposals": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
+          "Halka Family Syndicates (حلقة العائلة)",
+          "Halka Family Syndicates (حلقة العائلة)"
         ],
         "summary": "Submit an investment proposal for the Halka",
         "description": "Submits an investment proposal requiring family member co-signatures before reaching the Amin.",
@@ -49487,8 +49487,8 @@
     "/api/v1/halka/proposals/{proposal_id}": {
       "get": {
         "tags": [
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
+          "Halka Family Syndicates (حلقة العائلة)",
+          "Halka Family Syndicates (حلقة العائلة)"
         ],
         "summary": "Get proposal details",
         "operationId": "get_halka_proposal_api_v1_halka_proposals__proposal_id__get",
@@ -49535,8 +49535,8 @@
     "/api/v1/halka/proposals/{proposal_id}/co-sign": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
+          "Halka Family Syndicates (حلقة العائلة)",
+          "Halka Family Syndicates (حلقة العائلة)"
         ],
         "summary": "Co-sign an investment proposal",
         "description": "Allows kinship members to co-sign an investment proposal to qualify it for Amin review.",
@@ -49594,8 +49594,8 @@
     "/api/v1/halka/proposals/{proposal_id}/amin-decision": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
-          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
+          "Halka Family Syndicates (حلقة العائلة)",
+          "Halka Family Syndicates (حلقة العائلة)"
         ],
         "summary": "Amin elder decision gate",
         "description": "Allows the designated Amin elder to grant final approval or veto to protect family honor (Nif) and avoid disgrace (Hchouma). On approval, triggers the Haptic Khatm ceremony.",
@@ -50325,7 +50325,7 @@
           "Syndicate LP Portal & PCCAS"
         ],
         "summary": "Generate Algerian Tax Statement (Bordereau G50 / IBS)",
-        "description": "Generates compliant Algerian tax reporting with breakdown of tax-exempt return of capital, taxable dividends, capital gains, and Retenue \u00e0 la Source (RAS) under Law 22-09 SPAS & CIDTA.",
+        "description": "Generates compliant Algerian tax reporting with breakdown of tax-exempt return of capital, taxable dividends, capital gains, and Retenue à la Source (RAS) under Law 22-09 SPAS & CIDTA.",
         "operationId": "generate_tax_package_api_v1_syndicates_lp_portal_tax_package_generate_post",
         "requestBody": {
           "content": {
@@ -55034,7 +55034,7 @@
           "Shared Insights"
         ],
         "summary": "Get Shared Insight",
-        "description": "Get a publicly shared BI insight by token.\nNo authentication required \u2014 anyone with the link can view it.\nTokens expire after 7 days.",
+        "description": "Get a publicly shared BI insight by token.\nNo authentication required — anyone with the link can view it.\nTokens expire after 7 days.",
         "operationId": "get_shared_insight_api_v1_shared__token__get",
         "parameters": [
           {
@@ -55402,7 +55402,7 @@
           "health"
         ],
         "summary": "Root",
-        "description": "API root \u2014 version info.",
+        "description": "API root — version info.",
         "operationId": "root__get",
         "responses": {
           "200": {
@@ -60206,7 +60206,7 @@
           "bank_name": {
             "type": "string",
             "title": "Bank Name",
-            "default": "Banque Nationale d'Alg\u00e9rie (BNA) - Agence Alger Centre 00100"
+            "default": "Banque Nationale d'Algérie (BNA) - Agence Alger Centre 00100"
           },
           "rib_20_digit": {
             "type": "string",
@@ -60292,12 +60292,12 @@
           "commercialRegisterNumber": {
             "type": "string",
             "title": "Commercialregisternumber",
-            "description": "Num\u00e9ro du Registre de Commerce (RC)"
+            "description": "Numéro du Registre de Commerce (RC)"
           },
           "roleHeld": {
             "type": "string",
             "title": "Roleheld",
-            "description": "Executive position held (G\u00e9rant, PDG, Administrateur)"
+            "description": "Executive position held (Gérant, PDG, Administrateur)"
           },
           "insolvencyType": {
             "$ref": "#/components/schemas/InsolvencyStatus",
@@ -63638,7 +63638,7 @@
           "legal_form": {
             "type": "string",
             "title": "Legal Form",
-            "default": "SPAS (Soci\u00e9t\u00e9 par Actions Simplifi\u00e9e - Loi 22-09)"
+            "default": "SPAS (Société par Actions Simplifiée - Loi 22-09)"
           },
           "capital_social_initial_dzd": {
             "type": "string",
@@ -63766,7 +63766,7 @@
           "nationality": {
             "type": "string",
             "title": "Nationality",
-            "default": "Alg\u00e9rienne"
+            "default": "Algérienne"
           },
           "national_id_or_nif": {
             "type": "string",
@@ -66785,7 +66785,7 @@
           "amin_relation": {
             "type": "string",
             "title": "Amin Relation",
-            "default": "Elder Uncle (\u0627\u0644\u0639\u0645 \u0627\u0644\u0623\u0643\u0628\u0631)"
+            "default": "Elder Uncle (العم الأكبر)"
           },
           "initial_vault_deposit_dzd": {
             "type": "number",
@@ -68446,7 +68446,7 @@
               }
             ],
             "title": "Code",
-            "description": "Cost Center Code / Centre de co\u00fbt"
+            "description": "Cost Center Code / Centre de coût"
           },
           "description": {
             "anyOf": [
@@ -69169,7 +69169,7 @@
           "role": {
             "type": "string",
             "title": "Role",
-            "description": "Role title (e.g. 'G\u00e9rant', 'Administrateur', 'PDG')"
+            "description": "Role title (e.g. 'Gérant', 'Administrateur', 'PDG')"
           },
           "appointmentDate": {
             "anyOf": [
@@ -69599,7 +69599,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Muhaqqiq (\u0627\u0644\u0645\u062d\u0642\u0642 - Due Diligence Analyst)"
+            "default": "Al-Muhaqqiq (المحقق - Due Diligence Analyst)"
           },
           "ltv_to_cac_ratio": {
             "type": "number",
@@ -70812,8 +70812,8 @@
           "intendedRoleInStartup": {
             "type": "string",
             "title": "Intendedroleinstartup",
-            "description": "Role to assume (G\u00e9rant, PDG, Administrateur, CTO)",
-            "default": "G\u00e9rant"
+            "description": "Role to assume (Gérant, PDG, Administrateur, CTO)",
+            "default": "Gérant"
           },
           "targetStartupSector": {
             "anyOf": [
@@ -71152,7 +71152,7 @@
             "type": "string",
             "title": "Commercial Bank Domiciliation",
             "description": "Algerian primary authorized intermediary bank handling foreign exchange",
-            "default": "Banque Nationale d'Alg\u00e9rie (BNA) - Agence Alger Centre"
+            "default": "Banque Nationale d'Algérie (BNA) - Agence Alger Centre"
           },
           "aapi_investment_code": {
             "anyOf": [
@@ -72199,7 +72199,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Mu'assis (\u0627\u0644\u0645\u0624\u0633\u0633 - Founder Co-Pilot)"
+            "default": "Al-Mu'assis (المؤسس - Founder Co-Pilot)"
           },
           "growth_narrative": {
             "type": "string",
@@ -72659,7 +72659,7 @@
               }
             ],
             "title": "Tapreporteddzd",
-            "description": "Taxe sur l'Activit\u00e9 Professionnelle (TAP)",
+            "description": "Taxe sur l'Activité Professionnelle (TAP)",
             "default": 0.0
           },
           "submissionDate": {
@@ -72672,7 +72672,7 @@
               }
             ],
             "title": "Submissiondate",
-            "description": "Official filing date at Direction des Imp\u00f4ts"
+            "description": "Official filing date at Direction des Impôts"
           },
           "receiptNumber": {
             "anyOf": [
@@ -73539,7 +73539,7 @@
           "blessing_invocation": {
             "type": "string",
             "title": "Blessing Invocation",
-            "default": "\u0628\u0627\u0631\u064e\u0643\u064e \u0627\u0644\u0644\u0647\u064f \u0644\u0643\u064f\u0645 \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0648\u062d\u064e\u0641\u0650\u0638\u064e \u0645\u0627\u0644\u064e \u0648\u0639\u0650\u0632\u0651\u064e\u0629\u064e \u0627\u0644\u0639\u0627\u0626\u0644\u0629"
+            "default": "بارَكَ اللهُ لكُم في هذا الاستثمار وحَفِظَ مالَ وعِزَّةَ العائلة"
           },
           "stamped_at": {
             "type": "string",
@@ -75688,7 +75688,7 @@
           "penalty_charity_destination": {
             "type": "string",
             "title": "Penalty Charity Destination",
-            "default": "TamWheel Waqf Innovation Endowment (\u062d\u0633\u0627\u0628 \u0648\u0642\u0641 \u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a)"
+            "default": "TamWheel Waqf Innovation Endowment (حساب وقف الابتكار الجزائري)"
           },
           "balance_remaining_dzd": {
             "type": "number",
@@ -76286,7 +76286,7 @@
             "type": "number",
             "minimum": 0.0,
             "title": "Non Taxable Return Of Capital Dzd",
-            "description": "Remboursement d'apport - Art. 104 CIDTA (Exon\u00e9r\u00e9)"
+            "description": "Remboursement d'apport - Art. 104 CIDTA (Exonéré)"
           },
           "taxable_dividends_dzd": {
             "type": "number",
@@ -76298,7 +76298,7 @@
             "type": "number",
             "minimum": 0.0,
             "title": "Taxable Realized Capital Gains Dzd",
-            "description": "Plus-values de cession de valeurs mobili\u00e8res"
+            "description": "Plus-values de cession de valeurs mobilières"
           },
           "withholding_rate_dividends_pct": {
             "type": "number",
@@ -76742,7 +76742,7 @@
           "jurisdiction": {
             "type": "string",
             "title": "Jurisdiction",
-            "default": "Algeria \u2014 Commercial Code (Law 22-09 SPAS Nominee)"
+            "default": "Algeria — Commercial Code (Law 22-09 SPAS Nominee)"
           },
           "conversion_trigger": {
             "type": "string",
@@ -77850,7 +77850,7 @@
           "proposedNewRole": {
             "type": "string",
             "title": "Proposednewrole",
-            "default": "G\u00e9rant"
+            "default": "Gérant"
           },
           "targetEntityType": {
             "$ref": "#/components/schemas/CorporateEntityType",
@@ -78998,7 +78998,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Muqawil (\u0627\u0644\u0645\u0642\u0627\u0648\u0644 - Milestone & Escrow Agent)"
+            "default": "Al-Muqawil (المقاول - Milestone & Escrow Agent)"
           },
           "technical_feasibility_score": {
             "type": "number",
@@ -82882,7 +82882,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
+            "description": "Numéro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -82895,7 +82895,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
+            "description": "Numéro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -82921,7 +82921,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
+            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -83136,7 +83136,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
+            "description": "Numéro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -83149,7 +83149,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
+            "description": "Numéro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -83175,7 +83175,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
+            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -83922,7 +83922,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
+            "description": "Numéro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -83935,7 +83935,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
+            "description": "Numéro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -83961,7 +83961,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
+            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -85018,7 +85018,7 @@
               }
             ],
             "title": "Bopinumber",
-            "description": "BOPI publication gazette number (e.g. 'BOPI N\u00b0 342/2024')"
+            "description": "BOPI publication gazette number (e.g. 'BOPI N° 342/2024')"
           },
           "bopiPublicationDate": {
             "anyOf": [
@@ -87458,7 +87458,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
+            "description": "Numéro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -87471,7 +87471,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
+            "description": "Numéro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -87497,7 +87497,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
+            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -88964,7 +88964,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Mizan (\u0627\u0644\u0645\u064a\u0632\u0627\u0646 - Tournament & Referee Agent)"
+            "default": "Al-Mizan (الميزان - Tournament & Referee Agent)"
           },
           "jadara_index_score": {
             "type": "number",
@@ -90061,7 +90061,7 @@
           "bilan_equilibre"
         ],
         "title": "SCFBalanceSheet",
-        "description": "Bilan Comptable Syst\u00e8me Comptable Financier (SCF) Alg\u00e9rien"
+        "description": "Bilan Comptable Système Comptable Financier (SCF) Algérien"
       },
       "SCFClass1EquityLiabilities": {
         "properties": {
@@ -90149,7 +90149,7 @@
           "total_actif_non_courant_net_dzd"
         ],
         "title": "SCFClass2NonCurrentAssets",
-        "description": "Class 2: Actifs financiers non courants (Titres de participation, d\u00e9pr\u00e9ciations)"
+        "description": "Class 2: Actifs financiers non courants (Titres de participation, dépréciations)"
       },
       "SCFClass4ThirdPartyAccounts": {
         "properties": {
@@ -90200,7 +90200,7 @@
           "total_passif_courant_dzd"
         ],
         "title": "SCFClass4ThirdPartyAccounts",
-        "description": "Class 4: Comptes de tiers (Cr\u00e9ances LPs, Dettes fournisseurs, Fiscalit\u00e9)"
+        "description": "Class 4: Comptes de tiers (Créances LPs, Dettes fournisseurs, Fiscalité)"
       },
       "SCFClass5FinancialAccounts": {
         "properties": {
@@ -90233,7 +90233,7 @@
           "total_tresorerie_dzd"
         ],
         "title": "SCFClass5FinancialAccounts",
-        "description": "Class 5: Comptes financiers (Comptes bancaires de s\u00e9questre, tr\u00e9sorerie)"
+        "description": "Class 5: Comptes financiers (Comptes bancaires de séquestre, trésorerie)"
       },
       "SCFIncomeStatement": {
         "properties": {
@@ -90295,7 +90295,7 @@
           "resultat_net_exercice_dzd"
         ],
         "title": "SCFIncomeStatement",
-        "description": "Compte de R\u00e9sultat (Class 6 Charges & Class 7 Produits)"
+        "description": "Compte de Résultat (Class 6 Charges & Class 7 Produits)"
       },
       "SPVFinancialReport": {
         "properties": {
@@ -90327,12 +90327,12 @@
           "statutory_auditor_name": {
             "type": "string",
             "title": "Statutory Auditor Name",
-            "default": "Cabinet de Commissariat aux Comptes Agr\u00e9\u00e9 (Alger)"
+            "default": "Cabinet de Commissariat aux Comptes Agréé (Alger)"
           },
           "legal_form": {
             "type": "string",
             "title": "Legal Form",
-            "default": "Soci\u00e9t\u00e9 Par Actions Simplifi\u00e9e (SPAS - Loi 22-09)"
+            "default": "Société Par Actions Simplifiée (SPAS - Loi 22-09)"
           },
           "balance_sheet": {
             "$ref": "#/components/schemas/SCFBalanceSheet"
@@ -90958,7 +90958,7 @@
           "producer_name": {
             "type": "string",
             "title": "Producer Name",
-            "description": "Producer legal name (e.g. Coop\u00e9rative Agricole Tolga Biskra)"
+            "description": "Producer legal name (e.g. Coopérative Agricole Tolga Biskra)"
           },
           "commodity_type": {
             "$ref": "#/components/schemas/SalamCommodityType",
@@ -91008,7 +91008,7 @@
           "warehouse_depot_wilaya": {
             "type": "string",
             "title": "Warehouse Depot Wilaya",
-            "description": "Algerian Wilaya of depot (e.g. Biskra, Blida, S\u00e9tif)"
+            "description": "Algerian Wilaya of depot (e.g. Biskra, Blida, Sétif)"
           },
           "advance_payment_reference": {
             "type": "string",
@@ -96056,7 +96056,7 @@
           "sharia_supervisory_seal": {
             "type": "string",
             "title": "Sharia Supervisory Seal",
-            "default": "Tamwheel Sovereign Sharia Protocol \u2014 AAOIFI Standard No. 17 Compliant"
+            "default": "Tamwheel Sovereign Sharia Protocol — AAOIFI Standard No. 17 Compliant"
           },
           "created_at": {
             "type": "string",
@@ -96777,14 +96777,14 @@
             "maxLength": 20,
             "minLength": 9,
             "title": "Nif",
-            "description": "Num\u00e9ro d'Identification Fiscale"
+            "description": "Numéro d'Identification Fiscale"
           },
           "nis": {
             "type": "string",
             "maxLength": 20,
             "minLength": 5,
             "title": "Nis",
-            "description": "Num\u00e9ro d'Identification Statistique"
+            "description": "Numéro d'Identification Statistique"
           },
           "training_title": {
             "type": "string",
@@ -97640,7 +97640,7 @@
               }
             ],
             "title": "Sourcenif",
-            "description": "Num\u00e9ro d'Identification Fiscale (NIF) of source"
+            "description": "Numéro d'Identification Fiscale (NIF) of source"
           },
           "targetNif": {
             "anyOf": [
@@ -97652,7 +97652,7 @@
               }
             ],
             "title": "Targetnif",
-            "description": "Num\u00e9ro d'Identification Fiscale (NIF) of target"
+            "description": "Numéro d'Identification Fiscale (NIF) of target"
           }
         },
         "type": "object",
@@ -101073,7 +101073,7 @@
             "type": "string",
             "minLength": 4,
             "title": "Engineer License",
-            "description": "Professional engineering chamber / Ordre des Ing\u00e9nieurs license ID"
+            "description": "Professional engineering chamber / Ordre des Ingénieurs license ID"
           },
           "measured_progress_pct": {
             "type": "number",
@@ -103874,7 +103874,7 @@
               }
             ],
             "title": "Nif",
-            "description": "Company NIF (Num\u00e9ro d'Identification Fiscale)"
+            "description": "Company NIF (Numéro d'Identification Fiscale)"
           },
           "claimedFinancials": {
             "$ref": "#/components/schemas/ClaimedFinancials"
