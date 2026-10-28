@@ -53,8 +53,12 @@ from app.routers import (
     agent_actions,
     scim,
     sharia,
+    bounties,
     simulation_ws,
     curriculum,
+    diagnostic,
+    diligence,
+    dealmaking,
 )
 from app.routers import billing_routers
 from app.routers.shared import router as shared_router
@@ -72,6 +76,8 @@ _ROUTERS = [
     (users.router, "Users"),
     (startups.router, "Startups & Simulation"),
     (curriculum.router, "Financial Literacy & Curriculum"),
+    (diagnostic.router, "Startup Label Diagnostic Decree 20-254"),
+    (diligence.router, "Community Diligence & FactGuard"),
     (api_keys.router, "Developer API Keys"),
     (webhooks.router, "Developer Webhooks"),
     (content_moderation.router, "Content Moderation"),
@@ -111,6 +117,8 @@ _ROUTERS = [
     (ai_support.router, "Support AI Assistant"),
     (mail.router, "Corporate Mail Suite"),
     (sharia.router, "Sharia & AI Swarms"),
+    (bounties.router, "S4E Bounties & Istihaq Escrow"),
+    (dealmaking.router, "Dealmaker Swarm & MAUT Negotiation"),
 ]
 
 # In LICENSED_PSP mode, mount custodial payout endpoints

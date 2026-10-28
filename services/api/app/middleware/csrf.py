@@ -82,6 +82,8 @@ CSRF_EXEMPT_PREFIXES = (
     "/api/agent/chat",
     "/api/v1/sharia/",
     "/api/sharia/",
+    "/api/v1/bounties",
+    "/api/bounties",
     "/api/v1/swarm/",
     "/api/swarm/",
     "/ws",
