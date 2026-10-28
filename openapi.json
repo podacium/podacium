@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "TamWheel API",
-    "description": "TamWheel — Sovereign Ethical Agentic Venture & Economic Operating System API",
+    "description": "TamWheel \u2014 Sovereign Ethical Agentic Venture & Economic Operating System API",
     "version": "1.0.0"
   },
   "paths": {
@@ -13,7 +13,7 @@
           "authentication"
         ],
         "summary": "Register",
-        "description": "Register a new user.\n\n🔒 No auto-login — user must verify their email before first login.\nVerification email is sent in the background.",
+        "description": "Register a new user.\n\n\ud83d\udd12 No auto-login \u2014 user must verify their email before first login.\nVerification email is sent in the background.",
         "operationId": "register_api_v1_auth_register_post",
         "requestBody": {
           "content": {
@@ -139,7 +139,7 @@
           "authentication"
         ],
         "summary": "Resend Verification",
-        "description": "Resend email verification link.\n\n🔒 Rate-limited per-email (3/hour) and per-IP (10/hour).\n🔒 Always returns the same response to prevent user enumeration.",
+        "description": "Resend email verification link.\n\n\ud83d\udd12 Rate-limited per-email (3/hour) and per-IP (10/hour).\n\ud83d\udd12 Always returns the same response to prevent user enumeration.",
         "operationId": "resend_verification_api_v1_auth_resend_verification_post",
         "requestBody": {
           "content": {
@@ -180,7 +180,7 @@
           "authentication"
         ],
         "summary": "Forgot Password",
-        "description": "Request password reset email.\n\n🔒 Always returns the same response to prevent user enumeration.\n🔒 Always creates a token (even for non-existent emails — immediately discarded)\n   to maintain consistent timing.",
+        "description": "Request password reset email.\n\n\ud83d\udd12 Always returns the same response to prevent user enumeration.\n\ud83d\udd12 Always creates a token (even for non-existent emails \u2014 immediately discarded)\n   to maintain consistent timing.",
         "operationId": "forgot_password_api_v1_auth_forgot_password_post",
         "requestBody": {
           "content": {
@@ -262,7 +262,7 @@
           "authentication"
         ],
         "summary": "Complete 2Fa Login",
-        "description": "Complete 2FA-required login by verifying the TOTP code.\n\n🔒 Validates the temp token (issued during /login when 2FA is enabled):\n   - Checks signature + type\n   - Enforces 5-minute max TTL (via JWT exp)\n   - Verifies IP and User-Agent binding\n   - Single-use via blocklist (prevents replay)\n\nOn success, issues real full-scope tokens and sets cookies.",
+        "description": "Complete 2FA-required login by verifying the TOTP code.\n\n\ud83d\udd12 Validates the temp token (issued during /login when 2FA is enabled):\n   - Checks signature + type\n   - Enforces 5-minute max TTL (via JWT exp)\n   - Verifies IP and User-Agent binding\n   - Single-use via blocklist (prevents replay)\n\nOn success, issues real full-scope tokens and sets cookies.",
         "operationId": "complete_2fa_login_api_v1_auth_complete_2fa_login_post",
         "requestBody": {
           "content": {
@@ -406,7 +406,7 @@
           "authentication"
         ],
         "summary": "Logout",
-        "description": "Logout user — invalidates the current access token server-side (permanently).",
+        "description": "Logout user \u2014 invalidates the current access token server-side (permanently).",
         "operationId": "logout_api_v1_auth_logout_post",
         "security": [
           {
@@ -1838,7 +1838,7 @@
           "users"
         ],
         "summary": "Get User Skills",
-        "description": "Get user skills — self or admin access only.",
+        "description": "Get user skills \u2014 self or admin access only.",
         "operationId": "get_user_skills_api_v1_users__user_id__skills_get",
         "security": [
           {
@@ -1948,7 +1948,7 @@
           "users"
         ],
         "summary": "Get User Public Profile",
-        "description": "Get public profile for any user — privacy-enforced.\n\nEnforces profile_visibility and per-section visibility settings.\nReturns 404 if profile is PRIVATE, blocked, or not found.",
+        "description": "Get public profile for any user \u2014 privacy-enforced.\n\nEnforces profile_visibility and per-section visibility settings.\nReturns 404 if profile is PRIVATE, blocked, or not found.",
         "operationId": "get_user_public_profile_api_v1_users__user_id__public_get",
         "security": [
           {
@@ -2054,7 +2054,7 @@
           "users"
         ],
         "summary": "Get User Stats",
-        "description": "Get user statistics — requires authentication. Non-admin users can only view their own stats.",
+        "description": "Get user statistics \u2014 requires authentication. Non-admin users can only view their own stats.",
         "operationId": "get_user_stats_api_v1_users__user_id__stats_get",
         "security": [
           {
@@ -2938,7 +2938,7 @@
           "venture-core"
         ],
         "summary": "Pledge To Campaign",
-        "description": "Execute an investment commitment in the TamWheel Simulation League.\nGoverned by COSOB Regulation 23-01 CIP compliance rules:\n- Minimum ticket verification (>= 5,000 DZD default)\n- 20% retail investor campaign allocation cap\n- 150% campaign overfunding cap\n- Mandatory biometric/national KYC verification for high-ticket commitments (>= 145,000 DZD)\n- Enforces statutory 4-day reflection period flag (droit de rétractation)",
+        "description": "Execute an investment commitment in the TamWheel Simulation League.\nGoverned by COSOB Regulation 23-01 CIP compliance rules:\n- Minimum ticket verification (>= 5,000 DZD default)\n- 20% retail investor campaign allocation cap\n- 150% campaign overfunding cap\n- Mandatory biometric/national KYC verification for high-ticket commitments (>= 145,000 DZD)\n- Enforces statutory 4-day reflection period flag (droit de r\u00e9tractation)",
         "operationId": "pledge_to_campaign_api_v1_campaigns__campaign_id__pledge_post",
         "security": [
           {
@@ -3563,7 +3563,7 @@
           "Cap Table & Law 22-09 SPAS Engine"
         ],
         "summary": "Create Share Class",
-        "description": "Register a new statutory share class (Actions Ordinaires, Actions de Préférence A/B, BSPCE)\nunder Law 22-09 Articles 715 bis 133+.",
+        "description": "Register a new statutory share class (Actions Ordinaires, Actions de Pr\u00e9f\u00e9rence A/B, BSPCE)\nunder Law 22-09 Articles 715 bis 133+.",
         "operationId": "create_share_class_api_v1_startups__startup_id__cap_table_share_classes_post",
         "security": [
           {
@@ -5141,7 +5141,7 @@
           "Cross-Border HoldCo/OpCo Mirroring",
           "Cross-Border HoldCo/OpCo Mirroring"
         ],
-        "summary": "File Foreign Direct Investment (FDI) notice under Banque d'Algérie Regulation 07-01",
+        "summary": "File Foreign Direct Investment (FDI) notice under Banque d'Alg\u00e9rie Regulation 07-01",
         "description": "Records capital importation in foreign currency and computes DZD retrocession attestation.",
         "operationId": "record_fdi_filing_api_v1_cap_table_holdco_mirror_fdi_filing_post",
         "security": [
@@ -8834,6 +8834,436 @@
         }
       }
     },
+    "/api/v1/diligence/sanctions/screen": {
+      "post": {
+        "tags": [
+          "AML/CFT Sanctions & Adverse Media Screening",
+          "AML/CFT Sanctions & Adverse Media Screening"
+        ],
+        "summary": "Screen entity against international & Algerian sanctions lists",
+        "description": "Automated sanctions screening:\n- Checks UN, OFAC SDN, EU, and Algerian National Terrorism / CTRF Freeze List\n- Phonetic name fuzzy matching for Algerian transliterations (Mohamed / Mouhamed / Mohamed Cherif)\n- PEP detection under Law 05-01 / Law 23-01\n- Automated adverse media scanning for white-collar crimes",
+        "operationId": "screen_sanctions_api_v1_diligence_sanctions_screen_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SanctionsScreeningRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SanctionsScreeningResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/sanctions/fuzzy-match": {
+      "post": {
+        "tags": [
+          "AML/CFT Sanctions & Adverse Media Screening",
+          "AML/CFT Sanctions & Adverse Media Screening"
+        ],
+        "summary": "Phonetic & fuzzy similarity score between two Maghreb names",
+        "description": "Compute multi-factor name similarity:\n- Jaro-Winkler prefix-weighted distance\n- Levenshtein edit distance\n- Token permutation set ratio\n- Maghreb phonetic soundex skeleton match",
+        "operationId": "fuzzy_match_names_api_v1_diligence_sanctions_fuzzy_match_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FuzzyMatchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FuzzyMatchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/sanctions/pep-check": {
+      "post": {
+        "tags": [
+          "AML/CFT Sanctions & Adverse Media Screening",
+          "AML/CFT Sanctions & Adverse Media Screening"
+        ],
+        "summary": "Politically Exposed Persons (PEP) status check",
+        "description": "Check PEP status under Algerian Law 05-01 / Law 23-01:\n- National PEPs (Ministers, Walis, MPs, Generals, Senior Judges, SOE PDGs)\n- Relatives and Close Associates (RCA) with cooling-off period calculation",
+        "operationId": "check_pep_api_v1_diligence_sanctions_pep_check_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PEPScreeningRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PEPScreeningResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/sanctions/adverse-media": {
+      "post": {
+        "tags": [
+          "AML/CFT Sanctions & Adverse Media Screening",
+          "AML/CFT Sanctions & Adverse Media Screening"
+        ],
+        "summary": "Adverse media & financial crime scanning",
+        "description": "Scan media records and legal gazettes for white-collar crimes, bribery,\ntax evasion, customs fraud, and commercial defaults.",
+        "operationId": "scan_adverse_media_api_v1_diligence_sanctions_adverse_media_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdverseMediaScanRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdverseMediaScanResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/executives/vet": {
+      "post": {
+        "tags": [
+          "Executive Vetting & Officer Disqualification",
+          "Executive Vetting & Officer Disqualification"
+        ],
+        "summary": "Comprehensive background and disqualification audit for executive officer",
+        "description": "Execute exhaustive executive officer diligence:\n- Validate 18-digit Algerian National Identification Number (NIN)\n- Cross-check CNRC Disqualification Register (Fichier National des Fraudeurs - Law 04-08)\n- Check commercial court insolvency, liquidation, and manager liability rulings\n- Verify SPA 5-mandate limit (Art. 615) and SARL G\u00e9rant non-compete obligations (Art. 569)\n- Generate risk score, verdict, and condition precedents",
+        "operationId": "vet_executive_officer_api_v1_diligence_executives_vet_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecutiveVettingRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExecutiveVettingResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/executives/disqualification-check": {
+      "post": {
+        "tags": [
+          "Executive Vetting & Officer Disqualification",
+          "Executive Vetting & Officer Disqualification"
+        ],
+        "summary": "Instant check against CNRC Official Disqualification Register",
+        "description": "Check if individual has an active managing ban (Interdiction de g\u00e9rer),\npersonal bankruptcy (Faillite personnelle), or tax fraud blacklisting.",
+        "operationId": "check_officer_disqualification_api_v1_diligence_executives_disqualification_check_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisqualificationCheckRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DisqualificationCheckResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/executives/mandates-check": {
+      "post": {
+        "tags": [
+          "Executive Vetting & Officer Disqualification",
+          "Executive Vetting & Officer Disqualification"
+        ],
+        "summary": "Check corporate mandate limits and conflict of interest",
+        "description": "Audit concurrent directorship mandates across Algerian SPA and SARL entities.\nChecks statutory compliance with Articles 615 and 569 of Algerian Commercial Code.",
+        "operationId": "check_officer_mandates_api_v1_diligence_executives_mandates_check_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MandatesCheckRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MandatesCheckResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/inapi/verify-patent": {
+      "post": {
+        "tags": [
+          "INAPI Patent & Industrial IP Verification",
+          "INAPI Patent & Industrial IP Verification"
+        ],
+        "summary": "Verify patent number syntax, BOPI gazette publication, and annuity maintenance",
+        "description": "Validate claimed patent against official INAPI criteria:\n- Number syntax (DZ/P/YYYY/XXXXXX, legacy DZ/YYYY/XXXX, P/YYYY/XXXXXX)\n- IPC classification validity\n- Paris Convention 12-month priority period\n- 20-year statutory term & 6-month late surcharge grace period\n- Issue verified IP Moat Badges",
+        "operationId": "verify_patent_claim_api_v1_diligence_inapi_verify_patent_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatentVerificationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PatentVerificationResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/inapi/verify-trademark": {
+      "post": {
+        "tags": [
+          "INAPI Patent & Industrial IP Verification",
+          "INAPI Patent & Industrial IP Verification"
+        ],
+        "summary": "Verify trademark registration, Nice classification, and 10-year term renewal",
+        "description": "Validate claimed trademark against official INAPI criteria:\n- Number formatting (DZ/M/YYYY/XXXXXX)\n- Nice Classification classes (Classes 1-45), checking for tech classes (9, 35, 36, 38, 42)\n- 10-year term and renewal status under Ordinance 03-06",
+        "operationId": "verify_trademark_claim_api_v1_diligence_inapi_verify_trademark_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrademarkVerificationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrademarkVerificationResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/diligence/inapi/audit-portfolio": {
+      "post": {
+        "tags": [
+          "INAPI Patent & Industrial IP Verification",
+          "INAPI Patent & Industrial IP Verification"
+        ],
+        "summary": "Audit complete IP portfolio and compute defensibility IP Moat Index",
+        "description": "Conduct thorough intellectual property portfolio audit:\n- Verifies all claimed patents and trademarks\n- Computes defensibility IP Moat Index [0.0 - 100.0]\n- Categorizes into Moat Tier (DEEP_TECH_TIER_1, DEEP_TECH_DEFENSIBLE, MODEST, UNPROTECTED)\n- Generates verified badges for founder profiles and data rooms",
+        "operationId": "audit_ip_portfolio_api_v1_diligence_inapi_audit_portfolio_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IPOldPortfolioAuditRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IPOldPortfolioAuditResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/api-keys": {
       "post": {
         "tags": [
@@ -9863,7 +10293,7 @@
           "Content Moderation"
         ],
         "summary": "Submit module for admin review",
-        "description": "Instructor submits their module for admin approval. Module must be in DRAFT status with at least one lesson, a title (≥3 chars), and a description (≥10 chars).",
+        "description": "Instructor submits their module for admin approval. Module must be in DRAFT status with at least one lesson, a title (\u22653 chars), and a description (\u226510 chars).",
         "operationId": "submit_module_for_review_api_v1_education_modules__module_id__submit_review_post",
         "security": [
           {
@@ -16142,7 +16572,7 @@
           "Invoices"
         ],
         "summary": "Generate Milestone Kit",
-        "description": "Generate or retrieve the Triple Document Kit (Contrat, PV Réception, Facture ANAE) for a completed milestone.",
+        "description": "Generate or retrieve the Triple Document Kit (Contrat, PV R\u00e9ception, Facture ANAE) for a completed milestone.",
         "operationId": "generate_milestone_kit_api_v1_invoices_generate_milestone_kit_post",
         "security": [
           {
@@ -16486,7 +16916,7 @@
           "Invoices"
         ],
         "summary": "Generate Deliverable Download Token",
-        "description": "Generate a signed time-limited HMAC token for accessing unlocked milestone deliverables post-PV de Réception.",
+        "description": "Generate a signed time-limited HMAC token for accessing unlocked milestone deliverables post-PV de R\u00e9ception.",
         "operationId": "generate_deliverable_download_token_api_v1_invoices_deliverables_download_token_post",
         "security": [
           {
@@ -16544,7 +16974,7 @@
           "Invoices"
         ],
         "summary": "Download Unlocked Deliverable",
-        "description": "Redeem signed HMAC token to stream decrypted milestone deliverable post-PV de Réception.",
+        "description": "Redeem signed HMAC token to stream decrypted milestone deliverable post-PV de R\u00e9ception.",
         "operationId": "download_unlocked_deliverable_api_v1_invoices_deliverables_download_get",
         "security": [
           {
@@ -18779,7 +19209,7 @@
           "settings"
         ],
         "summary": "Request Data Export",
-        "description": "Request data export — creates a DataExport record for async processing.",
+        "description": "Request data export \u2014 creates a DataExport record for async processing.",
         "operationId": "request_data_export_api_v1_settings_advanced_export_data_post",
         "security": [
           {
@@ -22445,7 +22875,7 @@
           "wallets"
         ],
         "summary": "Deposit To Wallet",
-        "description": "Initiate deposit to wallet.\n\nDisabled in NON_CUSTODIAL mode — the platform does not hold customer fiat.\nPodaPoints are bought through POST /wallets/poda-points/purchase, which is\na plain product sale routed through Chargily.",
+        "description": "Initiate deposit to wallet.\n\nDisabled in NON_CUSTODIAL mode \u2014 the platform does not hold customer fiat.\nPodaPoints are bought through POST /wallets/poda-points/purchase, which is\na plain product sale routed through Chargily.",
         "operationId": "deposit_to_wallet_api_v1_wallets_deposit_post",
         "security": [
           {
@@ -23410,7 +23840,7 @@
           "wallets"
         ],
         "summary": "Purchase Poda Points",
-        "description": "Purchase PodaPoints — redirects to Chargily checkout",
+        "description": "Purchase PodaPoints \u2014 redirects to Chargily checkout",
         "operationId": "purchase_poda_points_api_v1_wallets_poda_points_purchase_post",
         "security": [
           {
@@ -23546,7 +23976,7 @@
           "features"
         ],
         "summary": "Purchase Feature",
-        "description": "Buy a feature with PodaPoints.\n\nAll validation (purchasability, price consistency, quantity bounds) happens\nbefore any points are debited, and the debit + grant share one database\ntransaction — see ``FeatureService.purchase_with_points``.",
+        "description": "Buy a feature with PodaPoints.\n\nAll validation (purchasability, price consistency, quantity bounds) happens\nbefore any points are debited, and the debit + grant share one database\ntransaction \u2014 see ``FeatureService.purchase_with_points``.",
         "operationId": "purchase_feature_api_v1_features_purchase_post",
         "security": [
           {
@@ -25560,7 +25990,7 @@
           "onboarding"
         ],
         "summary": "Skip Onboarding",
-        "description": "Skip onboarding — marks it as completed with all-null answers.",
+        "description": "Skip onboarding \u2014 marks it as completed with all-null answers.",
         "operationId": "skip_onboarding_api_v1_onboarding_skip_post",
         "security": [
           {
@@ -35261,7 +35691,7 @@
           "profiles"
         ],
         "summary": "Get Own Profile",
-        "description": "Get own profile — all sections, no privacy filtering.",
+        "description": "Get own profile \u2014 all sections, no privacy filtering.",
         "operationId": "get_own_profile_api_v1_profiles_me_get",
         "security": [
           {
@@ -38146,7 +38576,7 @@
           "Initial Data"
         ],
         "summary": "Check Email",
-        "description": "Check if an email is available for registration.\n\nSECURITY: Rate-limited to prevent email enumeration. Does NOT reveal\nwhether an email is already registered — always returns available=true\nto prevent attackers from discovering registered accounts via this endpoint.\nRegistration will report conflicts natively.",
+        "description": "Check if an email is available for registration.\n\nSECURITY: Rate-limited to prevent email enumeration. Does NOT reveal\nwhether an email is already registered \u2014 always returns available=true\nto prevent attackers from discovering registered accounts via this endpoint.\nRegistration will report conflicts natively.",
         "operationId": "check_email_api_v1_auth_check_email_post",
         "requestBody": {
           "content": {
@@ -41204,6 +41634,946 @@
             "HTTPBearer": []
           }
         ]
+      }
+    },
+    "/api/v1/sharia/salam/contracts": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Initiate Salam forward sale contract with advance capital disbursement",
+        "description": "Executes a Sharia-compliant forward commodity pre-financing contract under AAOIFI Standard No. 9. Verifies immediate spot payment of advance capital (Ra's Mal al-Salam) and precise contractual specification of fungible goods in Dhimmah (quantity, quality standard, grade, delivery date and warehouse depot).",
+        "operationId": "create_salam_contract_endpoint_api_v1_sharia_salam_contracts_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalamContractRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalamFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "List active Salam pre-financing facilities",
+        "operationId": "list_salam_contracts_endpoint_api_v1_sharia_salam_contracts_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "producer_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by agricultural producer ID",
+              "title": "Producer Id"
+            },
+            "description": "Filter by agricultural producer ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SalamFacility"
+                  },
+                  "title": "Response List Salam Contracts Endpoint Api V1 Sharia Salam Contracts Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/salam/contracts/{contract_id}": {
+      "get": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Get Salam facility details",
+        "operationId": "get_salam_contract_endpoint_api_v1_sharia_salam_contracts__contract_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "contract_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Contract Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalamFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/salam/contracts/{contract_id}/inspect": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Record commodity delivery, laboratory grading, and physical inspection",
+        "description": "Verifies physical delivery (Qabd & Taslim) at the designated warehouse depot. Applies AAOIFI Standard No. 9 rules: superior quality is accepted with no price surcharge; inferior quality may be rejected or accepted with negotiated Sharia price adjustment (Muqassah).",
+        "operationId": "inspect_salam_delivery_endpoint_api_v1_sharia_salam_contracts__contract_id__inspect_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "contract_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Contract Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalamInspectionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalamFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/salam/contracts/{contract_id}/parallel": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Execute Parallel Salam (Salam Muwazi) for non-speculative liquidation",
+        "description": "Executes an independent secondary forward sale under AAOIFI Standard No. 9 Clause 4/1. The parallel contract is strictly uncoupled from the primary contract to ensure non-bilateral risk independence.",
+        "operationId": "execute_parallel_salam_endpoint_api_v1_sharia_salam_contracts__contract_id__parallel_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "contract_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Contract Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParallelSalamRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalamFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/salam/contracts/{contract_id}/wikalah": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Liquidate commodity via agency sale (Wikalah bi al-Bay')",
+        "description": "Authorizes commodity broker / agent to sell delivered goods at spot market price with an agreed fee.",
+        "operationId": "liquidate_salam_wikalah_endpoint_api_v1_sharia_salam_contracts__contract_id__wikalah_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "contract_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Contract Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WikalahLiquidationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalamFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/salam/contracts/{contract_id}/delay-remedy": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Apply Sharia delay remedy (respite for hardship or charity penalty for procrastination)",
+        "description": "Enforces non-interest Sharia delay remedies under AAOIFI Standard No. 9: mandatory extension for genuine hardship (Mu'sir) per Qur'an 2:280, or 100% charity penalty routing (Tathir) for unjustified procrastination (Mumathil), or mutual dissolution (Iqalah).",
+        "operationId": "apply_salam_delay_remedy_endpoint_api_v1_sharia_salam_contracts__contract_id__delay_remedy_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "contract_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Contract Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalamDelayRemedyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SalamFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Create Istisna'a manufacturing progress financing contract",
+        "description": "Registers a manufacturing / construction progress financing facility under AAOIFI Standard No. 10. Defines asset specifications (Al-Masnu'), milestone schedule, warranty retention fund (Kafalat al-Siyanah), and defect liability warranty period.",
+        "operationId": "create_istisnaa_contract_endpoint_api_v1_sharia_istisnaa_contracts_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IstisnaaContractRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "List Istisna'a manufacturing facilities",
+        "operationId": "list_istisnaa_contracts_endpoint_api_v1_sharia_istisnaa_contracts_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by client startup ID",
+              "title": "Startup Id"
+            },
+            "description": "Filter by client startup ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IstisnaaFacility"
+                  },
+                  "title": "Response List Istisnaa Contracts Endpoint Api V1 Sharia Istisnaa Contracts Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}": {
+      "get": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Get Istisna'a facility details",
+        "operationId": "get_istisnaa_contract_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}/wip/certify": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Certify Work-in-Progress (WIP) milestone by accredited engineer",
+        "description": "Validates engineering inspection, technical audit, and progress percentage before milestone disbursement.",
+        "operationId": "certify_istisnaa_wip_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__wip_certify_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WIPCertificationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}/milestones/disburse": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Disburse certified milestone tranche to manufacturer",
+        "description": "Releases capital tranche for an engineer-certified milestone.",
+        "operationId": "disburse_istisnaa_milestone_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__milestones_disburse_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisburseMilestoneRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}/provisional-acceptance": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Grant provisional acceptance upon hardware delivery & activate Defect Liability Period",
+        "description": "Confirms physical delivery and functional commissioning, activating the warranty retention fund (Kafalat al-Siyanah).",
+        "operationId": "provisional_acceptance_istisnaa_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__provisional_acceptance_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProvisionalAcceptanceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}/defects": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Report latent defect claim during Defect Liability Period",
+        "operationId": "report_istisnaa_defect_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__defects_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DefectReportRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DefectClaim"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}/defects/resolve": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Resolve defect claim (manufacturer repair or retention fund deduction)",
+        "operationId": "resolve_istisnaa_defect_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__defects_resolve_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResolveDefectRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}/liquidated-damages": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Assess Sharia liquidated damages (Shart Jaza'i) for unexcused delay",
+        "description": "Under AAOIFI Standard No. 10 Clause 3/6, liquidated damages are permissible strictly to cover verified actual direct loss.",
+        "operationId": "apply_istisnaa_liquidated_damages_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__liquidated_damages_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LiquidatedDamagesRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/istisnaa/contracts/{facility_id}/final-acceptance": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Grant Final Acceptance Certificate & release warranty retention fund",
+        "description": "Releases the remaining Kafalat al-Siyanah retention fund to the manufacturer once all warranty obligations are discharged.",
+        "operationId": "grant_istisnaa_final_acceptance_endpoint_api_v1_sharia_istisnaa_contracts__facility_id__final_acceptance_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "facility_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Facility Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinalAcceptanceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IstisnaaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/v1/bounties": {
@@ -44807,7 +46177,7 @@
           "Viral Growth & Brag Engine"
         ],
         "summary": "List active and achieved Wilaya collective milestone grant challenges",
-        "description": "Returns collective regional challenges:\n'If 50 backers from Sétif back X, unlock 500k DZD non-dilutive grant'.",
+        "description": "Returns collective regional challenges:\n'If 50 backers from S\u00e9tif back X, unlock 500k DZD non-dilutive grant'.",
         "operationId": "list_wilaya_milestones_api_v1_viral_milestones_get",
         "parameters": [
           {
@@ -46823,11 +48193,11 @@
     "/api/v1/squads/create": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Create a new Backer Squad",
-        "description": "Initializes a collaborative investment squad with a 3–25 member limit.",
+        "description": "Initializes a collaborative investment squad with a 3\u201325 member limit.",
         "operationId": "create_backer_squad_api_v1_squads_create_post",
         "requestBody": {
           "content": {
@@ -46871,8 +48241,8 @@
     "/api/v1/squads/{squad_id}": {
       "get": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Get Backer Squad details",
         "operationId": "get_backer_squad_api_v1_squads__squad_id__get",
@@ -46919,8 +48289,8 @@
     "/api/v1/squads/{squad_id}/members": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Add member to Backer Squad",
         "operationId": "invite_squad_member_api_v1_squads__squad_id__members_post",
@@ -46977,8 +48347,8 @@
     "/api/v1/squads/{squad_id}/invite": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Invite member to Backer Squad",
         "operationId": "invite_squad_member_api_v1_squads__squad_id__invite_post",
@@ -47035,8 +48405,8 @@
     "/api/v1/squads/{squad_id}/deposit": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Deposit funds into squad pooled balance",
         "operationId": "deposit_to_squad_pool_api_v1_squads__squad_id__deposit_post",
@@ -47094,8 +48464,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}": {
       "get": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Get collaborative diligence canvas for a startup",
         "operationId": "get_squad_canvas_api_v1_squads__squad_id__canvas__startup_id__get",
@@ -47161,8 +48531,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/sticky-notes": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Add sticky note to diligence canvas (plural)",
         "operationId": "add_canvas_sticky_note_api_v1_squads__squad_id__canvas__startup_id__sticky_notes_post",
@@ -47228,8 +48598,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/sticky-note": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Add sticky note to diligence canvas",
         "operationId": "add_canvas_sticky_note_api_v1_squads__squad_id__canvas__startup_id__sticky_note_post",
@@ -47295,8 +48665,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/risk-pins": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Drop risk pin on diligence canvas (plural)",
         "operationId": "add_canvas_risk_pin_api_v1_squads__squad_id__canvas__startup_id__risk_pins_post",
@@ -47362,8 +48732,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/risk-pin": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Drop risk pin on diligence canvas",
         "operationId": "add_canvas_risk_pin_api_v1_squads__squad_id__canvas__startup_id__risk_pin_post",
@@ -47429,8 +48799,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/conviction-votes": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Submit individual conviction score to canvas (plural)",
         "operationId": "submit_canvas_conviction_vote_api_v1_squads__squad_id__canvas__startup_id__conviction_votes_post",
@@ -47496,8 +48866,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/conviction-vote": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Submit individual conviction score to canvas",
         "operationId": "submit_canvas_conviction_vote_api_v1_squads__squad_id__canvas__startup_id__conviction_vote_post",
@@ -47563,8 +48933,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/diaspora-pairs": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Pair diaspora expat with local Wilaya ground auditor (plural)",
         "operationId": "pair_diaspora_to_wilaya_api_v1_squads__squad_id__canvas__startup_id__diaspora_pairs_post",
@@ -47630,8 +49000,8 @@
     "/api/v1/squads/{squad_id}/canvas/{startup_id}/diaspora-pair": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Pair diaspora expat with local Wilaya ground auditor",
         "operationId": "pair_diaspora_to_wilaya_api_v1_squads__squad_id__canvas__startup_id__diaspora_pair_post",
@@ -47697,8 +49067,8 @@
     "/api/v1/squads/{squad_id}/proposals": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Propose pooled investment allocation for consensus voting",
         "operationId": "propose_squad_allocation_api_v1_squads__squad_id__proposals_post",
@@ -47755,8 +49125,8 @@
     "/api/v1/squads/{squad_id}/votes/{proposal_id}/cast": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Cast consensus vote on squad proposal (squad scoped)",
         "operationId": "cast_squad_proposal_vote_api_v1_squads__squad_id__votes__proposal_id__cast_post",
@@ -47829,8 +49199,8 @@
     "/api/v1/squads/proposals/{proposal_id}/vote": {
       "post": {
         "tags": [
-          "Backer Squads (الشلل الاستثمارية)",
-          "Backer Squads (الشلل الاستثمارية)"
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)",
+          "Backer Squads (\u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629)"
         ],
         "summary": "Cast consensus vote on squad proposal",
         "operationId": "cast_squad_proposal_vote_api_v1_squads_proposals__proposal_id__vote_post",
@@ -47903,8 +49273,8 @@
     "/api/v1/halka/create": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (حلقة العائلة)",
-          "Halka Family Syndicates (حلقة العائلة)"
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
         ],
         "summary": "Create a new Halka Family Syndicate",
         "description": "Initializes a multi-generational kinship syndicate with a designated Amin elder.",
@@ -47951,8 +49321,8 @@
     "/api/v1/halka/{halka_id}": {
       "get": {
         "tags": [
-          "Halka Family Syndicates (حلقة العائلة)",
-          "Halka Family Syndicates (حلقة العائلة)"
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
         ],
         "summary": "Get Halka Family Syndicate details",
         "operationId": "get_halka_api_v1_halka__halka_id__get",
@@ -47999,8 +49369,8 @@
     "/api/v1/halka/{halka_id}/members": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (حلقة العائلة)",
-          "Halka Family Syndicates (حلقة العائلة)"
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
         ],
         "summary": "Add a family member to the Halka",
         "description": "Registers a family member (e.g. Al-Shabab youth researcher or family contributor).",
@@ -48058,8 +49428,8 @@
     "/api/v1/halka/{halka_id}/proposals": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (حلقة العائلة)",
-          "Halka Family Syndicates (حلقة العائلة)"
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
         ],
         "summary": "Submit an investment proposal for the Halka",
         "description": "Submits an investment proposal requiring family member co-signatures before reaching the Amin.",
@@ -48117,8 +49487,8 @@
     "/api/v1/halka/proposals/{proposal_id}": {
       "get": {
         "tags": [
-          "Halka Family Syndicates (حلقة العائلة)",
-          "Halka Family Syndicates (حلقة العائلة)"
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
         ],
         "summary": "Get proposal details",
         "operationId": "get_halka_proposal_api_v1_halka_proposals__proposal_id__get",
@@ -48165,8 +49535,8 @@
     "/api/v1/halka/proposals/{proposal_id}/co-sign": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (حلقة العائلة)",
-          "Halka Family Syndicates (حلقة العائلة)"
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
         ],
         "summary": "Co-sign an investment proposal",
         "description": "Allows kinship members to co-sign an investment proposal to qualify it for Amin review.",
@@ -48224,8 +49594,8 @@
     "/api/v1/halka/proposals/{proposal_id}/amin-decision": {
       "post": {
         "tags": [
-          "Halka Family Syndicates (حلقة العائلة)",
-          "Halka Family Syndicates (حلقة العائلة)"
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)",
+          "Halka Family Syndicates (\u062d\u0644\u0642\u0629 \u0627\u0644\u0639\u0627\u0626\u0644\u0629)"
         ],
         "summary": "Amin elder decision gate",
         "description": "Allows the designated Amin elder to grant final approval or veto to protect family honor (Nif) and avoid disgrace (Hchouma). On approval, triggers the Haptic Khatm ceremony.",
@@ -48955,7 +50325,7 @@
           "Syndicate LP Portal & PCCAS"
         ],
         "summary": "Generate Algerian Tax Statement (Bordereau G50 / IBS)",
-        "description": "Generates compliant Algerian tax reporting with breakdown of tax-exempt return of capital, taxable dividends, capital gains, and Retenue à la Source (RAS) under Law 22-09 SPAS & CIDTA.",
+        "description": "Generates compliant Algerian tax reporting with breakdown of tax-exempt return of capital, taxable dividends, capital gains, and Retenue \u00e0 la Source (RAS) under Law 22-09 SPAS & CIDTA.",
         "operationId": "generate_tax_package_api_v1_syndicates_lp_portal_tax_package_generate_post",
         "requestBody": {
           "content": {
@@ -53664,7 +55034,7 @@
           "Shared Insights"
         ],
         "summary": "Get Shared Insight",
-        "description": "Get a publicly shared BI insight by token.\nNo authentication required — anyone with the link can view it.\nTokens expire after 7 days.",
+        "description": "Get a publicly shared BI insight by token.\nNo authentication required \u2014 anyone with the link can view it.\nTokens expire after 7 days.",
         "operationId": "get_shared_insight_api_v1_shared__token__get",
         "parameters": [
           {
@@ -54032,7 +55402,7 @@
           "health"
         ],
         "summary": "Root",
-        "description": "API root — version info.",
+        "description": "API root \u2014 version info.",
         "operationId": "root__get",
         "responses": {
           "200": {
@@ -57157,6 +58527,165 @@
         "type": "object",
         "title": "AdvancedSettingsUpdate"
       },
+      "AdverseMediaArticle": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Article or legal publication headline"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "description": "Media outlet, Joradp, or registry source"
+          },
+          "publicationDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Publicationdate",
+            "description": "Publication date (YYYY-MM-DD)"
+          },
+          "category": {
+            "$ref": "#/components/schemas/AdverseMediaCategory",
+            "description": "Class of adverse finding"
+          },
+          "severity": {
+            "$ref": "#/components/schemas/AdverseMediaSeverity",
+            "description": "Severity of adverse risk"
+          },
+          "snippet": {
+            "type": "string",
+            "title": "Snippet",
+            "description": "Excerpt or snippet containing the matched keywords"
+          },
+          "sentimentScore": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": -1.0,
+            "title": "Sentimentscore",
+            "description": "Sentiment polarity (-1.0 negative to +1.0 positive)"
+          },
+          "keywordsMatched": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Keywordsmatched",
+            "description": "Specific crime or dispute keywords detected"
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "source",
+          "category",
+          "severity",
+          "snippet",
+          "sentimentScore"
+        ],
+        "title": "AdverseMediaArticle"
+      },
+      "AdverseMediaCategory": {
+        "type": "string",
+        "enum": [
+          "MONEY_LAUNDERING_FINANCIAL_CRIME",
+          "BRIBERY_PUBLIC_CORRUPTION",
+          "TAX_EVASION_CUSTOMS_FRAUD",
+          "COMMERCIAL_DISPUTE_INSOLVENCY",
+          "ILLEGAL_CAPITAL_FLIGHT"
+        ],
+        "title": "AdverseMediaCategory"
+      },
+      "AdverseMediaScanRequest": {
+        "properties": {
+          "entityName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Entityname",
+            "description": "Name of founder, executive, or company"
+          },
+          "additionalKeywords": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Additionalkeywords",
+            "description": "Specific terms to include"
+          },
+          "customCorpus": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Customcorpus",
+            "description": "Optional extra media feeds or articles to scan"
+          }
+        },
+        "type": "object",
+        "required": [
+          "entityName"
+        ],
+        "title": "AdverseMediaScanRequest"
+      },
+      "AdverseMediaScanResponse": {
+        "properties": {
+          "entityName": {
+            "type": "string",
+            "title": "Entityname"
+          },
+          "overallSeverity": {
+            "$ref": "#/components/schemas/AdverseMediaSeverity"
+          },
+          "articlesFlagged": {
+            "items": {
+              "$ref": "#/components/schemas/AdverseMediaArticle"
+            },
+            "type": "array",
+            "title": "Articlesflagged"
+          },
+          "totalArticlesAnalyzed": {
+            "type": "integer",
+            "title": "Totalarticlesanalyzed"
+          },
+          "riskSummary": {
+            "type": "string",
+            "title": "Risksummary"
+          }
+        },
+        "type": "object",
+        "required": [
+          "entityName",
+          "overallSeverity",
+          "articlesFlagged",
+          "totalArticlesAnalyzed",
+          "riskSummary"
+        ],
+        "title": "AdverseMediaScanResponse"
+      },
+      "AdverseMediaSeverity": {
+        "type": "string",
+        "enum": [
+          "CLEAN",
+          "LOW",
+          "MEDIUM",
+          "HIGH",
+          "CRITICAL"
+        ],
+        "title": "AdverseMediaSeverity"
+      },
       "AgentChatRequest": {
         "properties": {
           "message": {
@@ -58677,7 +60206,7 @@
           "bank_name": {
             "type": "string",
             "title": "Bank Name",
-            "default": "Banque Nationale d'Algérie (BNA) - Agence Alger Centre 00100"
+            "default": "Banque Nationale d'Alg\u00e9rie (BNA) - Agence Alger Centre 00100"
           },
           "rib_20_digit": {
             "type": "string",
@@ -58752,6 +60281,61 @@
           "closingBalanceDzd"
         ],
         "title": "BankStatementMonth"
+      },
+      "BankruptcyHistoryRecord": {
+        "properties": {
+          "companyName": {
+            "type": "string",
+            "title": "Companyname",
+            "description": "Name of insolvent legal entity"
+          },
+          "commercialRegisterNumber": {
+            "type": "string",
+            "title": "Commercialregisternumber",
+            "description": "Num\u00e9ro du Registre de Commerce (RC)"
+          },
+          "roleHeld": {
+            "type": "string",
+            "title": "Roleheld",
+            "description": "Executive position held (G\u00e9rant, PDG, Administrateur)"
+          },
+          "insolvencyType": {
+            "$ref": "#/components/schemas/InsolvencyStatus",
+            "description": "Court decree nature"
+          },
+          "judgmentDate": {
+            "type": "string",
+            "title": "Judgmentdate",
+            "description": "Date of court ruling"
+          },
+          "lookbackYears": {
+            "type": "number",
+            "title": "Lookbackyears",
+            "description": "Years elapsed since judgment"
+          },
+          "managerLiabilityDecreed": {
+            "type": "boolean",
+            "title": "Managerliabilitydecreed",
+            "description": "Whether court decreed personal manager liability / comblement de passif",
+            "default": false
+          },
+          "isWithinLookbackWindow": {
+            "type": "boolean",
+            "title": "Iswithinlookbackwindow",
+            "description": "True if within the 5-year commercial diligence window",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "companyName",
+          "commercialRegisterNumber",
+          "roleHeld",
+          "insolvencyType",
+          "judgmentDate",
+          "lookbackYears"
+        ],
+        "title": "BankruptcyHistoryRecord"
       },
       "BanqueAlgerieFilingStatus": {
         "type": "string",
@@ -60374,6 +61958,82 @@
         ],
         "title": "CNASDeclaration"
       },
+      "CNRCDisqualificationRecord": {
+        "properties": {
+          "recordId": {
+            "type": "string",
+            "title": "Recordid",
+            "description": "CNRC disqualification register docket number"
+          },
+          "status": {
+            "$ref": "#/components/schemas/CNRCRegisterStatus",
+            "description": "Registration status"
+          },
+          "disqualificationType": {
+            "$ref": "#/components/schemas/DisqualificationType",
+            "description": "Type of disqualification"
+          },
+          "courtName": {
+            "type": "string",
+            "title": "Courtname",
+            "description": "Issuing tribunal / cour de justice"
+          },
+          "judgmentDate": {
+            "type": "string",
+            "title": "Judgmentdate",
+            "description": "Date of sentence or decree (YYYY-MM-DD)"
+          },
+          "expiryDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expirydate",
+            "description": "Expiry date of ban, or None if perpetual"
+          },
+          "legalBasis": {
+            "type": "string",
+            "title": "Legalbasis",
+            "description": "Statutory reference (e.g. 'Loi 04-08 Art. 34 / Code de Commerce Art. 805')"
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Notes",
+            "description": "Official court or CNRC commentary"
+          }
+        },
+        "type": "object",
+        "required": [
+          "recordId",
+          "status",
+          "disqualificationType",
+          "courtName",
+          "judgmentDate",
+          "legalBasis"
+        ],
+        "title": "CNRCDisqualificationRecord"
+      },
+      "CNRCRegisterStatus": {
+        "type": "string",
+        "enum": [
+          "AUCUNE_INSCRIPTION",
+          "INSCRIT_INTERDIT",
+          "REHABILITE",
+          "SUSPENDU_SOUS_RECOURS"
+        ],
+        "title": "CNRCRegisterStatus"
+      },
       "CalculatePerformanceRequest": {
         "properties": {
           "beginning_balance_dzd": {
@@ -61978,7 +63638,7 @@
           "legal_form": {
             "type": "string",
             "title": "Legal Form",
-            "default": "SPAS (Société par Actions Simplifiée - Loi 22-09)"
+            "default": "SPAS (Soci\u00e9t\u00e9 par Actions Simplifi\u00e9e - Loi 22-09)"
           },
           "capital_social_initial_dzd": {
             "type": "string",
@@ -62106,7 +63766,7 @@
           "nationality": {
             "type": "string",
             "title": "Nationality",
-            "default": "Algérienne"
+            "default": "Alg\u00e9rienne"
           },
           "national_id_or_nif": {
             "type": "string",
@@ -64643,6 +66303,17 @@
         ],
         "title": "CorporateDocumentResponse"
       },
+      "CorporateEntityType": {
+        "type": "string",
+        "enum": [
+          "SPA",
+          "SARL",
+          "EURL",
+          "SNC",
+          "OFFSHORE"
+        ],
+        "title": "CorporateEntityType"
+      },
       "Country": {
         "type": "string",
         "enum": [
@@ -65114,7 +66785,7 @@
           "amin_relation": {
             "type": "string",
             "title": "Amin Relation",
-            "default": "Elder Uncle (العم الأكبر)"
+            "default": "Elder Uncle (\u0627\u0644\u0639\u0645 \u0627\u0644\u0623\u0643\u0628\u0631)"
           },
           "initial_vault_deposit_dzd": {
             "type": "number",
@@ -66481,6 +68152,103 @@
         ],
         "title": "DefaultRemedyType"
       },
+      "DefectClaim": {
+        "properties": {
+          "defect_id": {
+            "type": "string",
+            "title": "Defect Id"
+          },
+          "defect_description": {
+            "type": "string",
+            "title": "Defect Description"
+          },
+          "severity": {
+            "$ref": "#/components/schemas/DefectSeverity"
+          },
+          "estimated_repair_cost_dzd": {
+            "type": "number",
+            "title": "Estimated Repair Cost Dzd"
+          },
+          "reported_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Reported At"
+          },
+          "status": {
+            "$ref": "#/components/schemas/DefectStatus",
+            "default": "REPORTED"
+          },
+          "rectified_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rectified At"
+          },
+          "deduction_applied_dzd": {
+            "type": "number",
+            "title": "Deduction Applied Dzd",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "defect_id",
+          "defect_description",
+          "severity",
+          "estimated_repair_cost_dzd"
+        ],
+        "title": "DefectClaim"
+      },
+      "DefectReportRequest": {
+        "properties": {
+          "defect_description": {
+            "type": "string",
+            "minLength": 5,
+            "title": "Defect Description",
+            "description": "Description of latent defect or performance malfunction"
+          },
+          "severity": {
+            "$ref": "#/components/schemas/DefectSeverity",
+            "default": "MINOR"
+          },
+          "estimated_repair_cost_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Estimated Repair Cost Dzd",
+            "description": "Estimated cost to repair or replace defective components"
+          }
+        },
+        "type": "object",
+        "required": [
+          "defect_description",
+          "estimated_repair_cost_dzd"
+        ],
+        "title": "DefectReportRequest"
+      },
+      "DefectSeverity": {
+        "type": "string",
+        "enum": [
+          "MINOR",
+          "MAJOR",
+          "CRITICAL"
+        ],
+        "title": "DefectSeverity"
+      },
+      "DefectStatus": {
+        "type": "string",
+        "enum": [
+          "REPORTED",
+          "RECTIFIED_BY_MANUFACTURER",
+          "DEDUCTED_FROM_RETENTION"
+        ],
+        "title": "DefectStatus"
+      },
       "DeletionRequestCreate": {
         "properties": {
           "password": {
@@ -66678,7 +68446,7 @@
               }
             ],
             "title": "Code",
-            "description": "Cost Center Code / Centre de coût"
+            "description": "Cost Center Code / Centre de co\u00fbt"
           },
           "description": {
             "anyOf": [
@@ -67375,6 +69143,87 @@
         "title": "DirectConversationCreate",
         "description": "Schema for creating a direct 1-to-1 conversation"
       },
+      "DirectorshipMandate": {
+        "properties": {
+          "companyName": {
+            "type": "string",
+            "title": "Companyname",
+            "description": "Commercial entity name"
+          },
+          "companyRcNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Companyrcnumber",
+            "description": "CNRC registration number"
+          },
+          "entityType": {
+            "$ref": "#/components/schemas/CorporateEntityType",
+            "description": "Corporate form (SPA, SARL, etc.)"
+          },
+          "role": {
+            "type": "string",
+            "title": "Role",
+            "description": "Role title (e.g. 'G\u00e9rant', 'Administrateur', 'PDG')"
+          },
+          "appointmentDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Appointmentdate",
+            "description": "Date mandate began"
+          },
+          "isCurrent": {
+            "type": "boolean",
+            "title": "Iscurrent",
+            "description": "Whether currently active",
+            "default": true
+          },
+          "sector": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sector",
+            "description": "Industry sector (e.g. 'Fintech', 'Logistics')"
+          },
+          "isDirectCompetitor": {
+            "type": "boolean",
+            "title": "Isdirectcompetitor",
+            "description": "Whether competitor to target startup",
+            "default": false
+          },
+          "sharesOwnedPercentage": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Sharesownedpercentage",
+            "description": "Equity holding percentage",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "companyName",
+          "entityType",
+          "role"
+        ],
+        "title": "DirectorshipMandate"
+      },
       "DisburseGrantRequest": {
         "properties": {
           "recipient_project": {
@@ -67411,6 +69260,28 @@
         ],
         "title": "DisburseGrantRequest"
       },
+      "DisburseMilestoneRequest": {
+        "properties": {
+          "milestone_index": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Milestone Index",
+            "description": "Milestone number to disburse"
+          },
+          "payment_reference": {
+            "type": "string",
+            "minLength": 4,
+            "title": "Payment Reference",
+            "description": "Bank transfer or escrow payment release reference"
+          }
+        },
+        "type": "object",
+        "required": [
+          "milestone_index",
+          "payment_reference"
+        ],
+        "title": "DisburseMilestoneRequest"
+      },
       "DisconnectIntegrationResponse": {
         "properties": {
           "success": {
@@ -67440,6 +69311,66 @@
           "provider"
         ],
         "title": "DisconnectIntegrationResponse"
+      },
+      "DisqualificationCheckRequest": {
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Fullname"
+          },
+          "nationalId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Nationalid"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fullName"
+        ],
+        "title": "DisqualificationCheckRequest"
+      },
+      "DisqualificationCheckResponse": {
+        "properties": {
+          "candidateName": {
+            "type": "string",
+            "title": "Candidatename"
+          },
+          "isDisqualified": {
+            "type": "boolean",
+            "title": "Isdisqualified"
+          },
+          "record": {
+            "$ref": "#/components/schemas/CNRCDisqualificationRecord"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidateName",
+          "isDisqualified",
+          "record"
+        ],
+        "title": "DisqualificationCheckResponse"
+      },
+      "DisqualificationType": {
+        "type": "string",
+        "enum": [
+          "INTERDICTION_DE_GERER",
+          "FAILLITE_PERSONNELLE",
+          "INFRACTION_FISCALE_MAJEURE",
+          "FRAUDE_DOUANIERE",
+          "CHEQUE_SANS_PROVISION",
+          "FAUX_ET_USAGE_DE_FAUX",
+          "NONE"
+        ],
+        "title": "DisqualificationType"
       },
       "DividendDeclarationRequest": {
         "properties": {
@@ -67668,7 +69599,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Muhaqqiq (المحقق - Due Diligence Analyst)"
+            "default": "Al-Muhaqqiq (\u0627\u0644\u0645\u062d\u0642\u0642 - Due Diligence Analyst)"
           },
           "ltv_to_cac_ratio": {
             "type": "number",
@@ -68813,6 +70744,196 @@
         ],
         "title": "ExecuteConfirmedActionResponse"
       },
+      "ExecutiveVerdict": {
+        "type": "string",
+        "enum": [
+          "APPROVED",
+          "FLAGGED_CONDITIONAL",
+          "DISQUALIFIED"
+        ],
+        "title": "ExecutiveVerdict"
+      },
+      "ExecutiveVettingRequest": {
+        "properties": {
+          "officerId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Officerid",
+            "description": "Internal user or officer identifier"
+          },
+          "fullName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Fullname",
+            "description": "Full legal name (e.g. 'Kamel Benabderrahmane')"
+          },
+          "nationalIdNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Nationalidnumber",
+            "description": "18-digit Algerian NIN or biometric passport number"
+          },
+          "dateOfBirth": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dateofbirth",
+            "description": "YYYY-MM-DD"
+          },
+          "wilayaOfBirth": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wilayaofbirth",
+            "description": "Wilaya code 01-58 or name"
+          },
+          "intendedRoleInStartup": {
+            "type": "string",
+            "title": "Intendedroleinstartup",
+            "description": "Role to assume (G\u00e9rant, PDG, Administrateur, CTO)",
+            "default": "G\u00e9rant"
+          },
+          "targetStartupSector": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Targetstartupsector",
+            "description": "Industry sector of the target venture"
+          },
+          "targetStartupEntityType": {
+            "$ref": "#/components/schemas/CorporateEntityType",
+            "default": "SARL"
+          },
+          "knownMandates": {
+            "items": {
+              "$ref": "#/components/schemas/DirectorshipMandate"
+            },
+            "type": "array",
+            "title": "Knownmandates",
+            "description": "Claimed or discovered corporate directorships"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fullName"
+        ],
+        "title": "ExecutiveVettingRequest"
+      },
+      "ExecutiveVettingResponse": {
+        "properties": {
+          "vettingId": {
+            "type": "string",
+            "title": "Vettingid",
+            "description": "Unique executive background audit identifier"
+          },
+          "officerName": {
+            "type": "string",
+            "title": "Officername",
+            "description": "Name of vetted officer"
+          },
+          "ninValidated": {
+            "type": "boolean",
+            "title": "Ninvalidated",
+            "description": "Whether NIN follows official 18-digit Algerian format"
+          },
+          "overallVerdict": {
+            "$ref": "#/components/schemas/ExecutiveVerdict",
+            "description": "APPROVED, FLAGGED_CONDITIONAL, or DISQUALIFIED"
+          },
+          "executiveRiskScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Executiveriskscore",
+            "description": "Composite executive risk index [0, 100]"
+          },
+          "cnrcDisqualificationRecord": {
+            "$ref": "#/components/schemas/CNRCDisqualificationRecord",
+            "description": "Fichier National des Fraudeurs check"
+          },
+          "bankruptcyHistory": {
+            "items": {
+              "$ref": "#/components/schemas/BankruptcyHistoryRecord"
+            },
+            "type": "array",
+            "title": "Bankruptcyhistory",
+            "description": "Prior insolvencies"
+          },
+          "activeMandatesCount": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Activemandatescount",
+            "description": "Total active directorships"
+          },
+          "spaMandatesCount": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Spamandatescount",
+            "description": "Active SPA mandates (max 5 statutory limit)"
+          },
+          "governanceConflicts": {
+            "items": {
+              "$ref": "#/components/schemas/GovernanceConflictFlag"
+            },
+            "type": "array",
+            "title": "Governanceconflicts",
+            "description": "Statutory governance conflicts detected"
+          },
+          "covenantsAndMitigations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Covenantsandmitigations",
+            "description": "Conditions precedent for term sheet execution"
+          },
+          "timestamp": {
+            "type": "string",
+            "title": "Timestamp",
+            "description": "ISO 8601 vetting timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "vettingId",
+          "officerName",
+          "ninValidated",
+          "overallVerdict",
+          "executiveRiskScore",
+          "cnrcDisqualificationRecord",
+          "activeMandatesCount",
+          "spaMandatesCount",
+          "timestamp"
+        ],
+        "title": "ExecutiveVettingResponse"
+      },
       "ExpertReview": {
         "properties": {
           "review_id": {
@@ -69031,7 +71152,7 @@
             "type": "string",
             "title": "Commercial Bank Domiciliation",
             "description": "Algerian primary authorized intermediary bank handling foreign exchange",
-            "default": "Banque Nationale d'Algérie (BNA) - Agence Alger Centre"
+            "default": "Banque Nationale d'Alg\u00e9rie (BNA) - Agence Alger Centre"
           },
           "aapi_investment_code": {
             "anyOf": [
@@ -69609,6 +71730,27 @@
         ],
         "title": "FileResponse"
       },
+      "FinalAcceptanceRequest": {
+        "properties": {
+          "client_signoff_confirmed": {
+            "type": "boolean",
+            "title": "Client Signoff Confirmed",
+            "description": "Confirmation that all defect claims have been cured"
+          },
+          "supervising_engineer_signoff": {
+            "type": "string",
+            "minLength": 3,
+            "title": "Supervising Engineer Signoff",
+            "description": "Name and signature of supervising engineer"
+          }
+        },
+        "type": "object",
+        "required": [
+          "client_signoff_confirmed",
+          "supervising_engineer_signoff"
+        ],
+        "title": "FinalAcceptanceRequest"
+      },
       "FinancialQuizRequest": {
         "properties": {
           "moduleIndex": {
@@ -70057,7 +72199,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Mu'assis (المؤسس - Founder Co-Pilot)"
+            "default": "Al-Mu'assis (\u0627\u0644\u0645\u0624\u0633\u0633 - Founder Co-Pilot)"
           },
           "growth_narrative": {
             "type": "string",
@@ -70390,6 +72532,102 @@
         "type": "object",
         "title": "FreelancerProfileUpdate"
       },
+      "FuzzyMatchDetail": {
+        "properties": {
+          "tokenSimilarity": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Tokensimilarity",
+            "description": "Token set ratio"
+          },
+          "levenshteinRatio": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Levenshteinratio",
+            "description": "Normalized Levenshtein ratio"
+          },
+          "jaroWinklerScore": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Jarowinklerscore",
+            "description": "Jaro-Winkler prefix-weighted score"
+          },
+          "phoneticMatch": {
+            "type": "boolean",
+            "title": "Phoneticmatch",
+            "description": "Whether Algerian transliteration phonetic roots match"
+          },
+          "compositeScore": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Compositescore",
+            "description": "Weighted composite match score [0.0, 1.0]"
+          }
+        },
+        "type": "object",
+        "required": [
+          "tokenSimilarity",
+          "levenshteinRatio",
+          "jaroWinklerScore",
+          "phoneticMatch",
+          "compositeScore"
+        ],
+        "title": "FuzzyMatchDetail"
+      },
+      "FuzzyMatchRequest": {
+        "properties": {
+          "queryName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Queryname",
+            "description": "Name to match (e.g. 'Mohamed Cherif')"
+          },
+          "targetName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Targetname",
+            "description": "Candidate name to test against (e.g. 'Mouhamed Cherif')"
+          }
+        },
+        "type": "object",
+        "required": [
+          "queryName",
+          "targetName"
+        ],
+        "title": "FuzzyMatchRequest"
+      },
+      "FuzzyMatchResponse": {
+        "properties": {
+          "queryNormalized": {
+            "type": "string",
+            "title": "Querynormalized"
+          },
+          "targetNormalized": {
+            "type": "string",
+            "title": "Targetnormalized"
+          },
+          "matchDetails": {
+            "$ref": "#/components/schemas/FuzzyMatchDetail"
+          },
+          "isMatch": {
+            "type": "boolean",
+            "title": "Ismatch",
+            "description": "True if compositeScore >= 0.75 or phonetic match"
+          }
+        },
+        "type": "object",
+        "required": [
+          "queryNormalized",
+          "targetNormalized",
+          "matchDetails",
+          "isMatch"
+        ],
+        "title": "FuzzyMatchResponse"
+      },
       "G50TaxDeclaration": {
         "properties": {
           "period": {
@@ -70421,7 +72659,7 @@
               }
             ],
             "title": "Tapreporteddzd",
-            "description": "Taxe sur l'Activité Professionnelle (TAP)",
+            "description": "Taxe sur l'Activit\u00e9 Professionnelle (TAP)",
             "default": 0.0
           },
           "submissionDate": {
@@ -70434,7 +72672,7 @@
               }
             ],
             "title": "Submissiondate",
-            "description": "Official filing date at Direction des Impôts"
+            "description": "Official filing date at Direction des Imp\u00f4ts"
           },
           "receiptNumber": {
             "anyOf": [
@@ -70829,6 +73067,44 @@
           "warehouse_or_delivery_ref"
         ],
         "title": "GoodsPossessionConfirmationRequest"
+      },
+      "GovernanceConflictFlag": {
+        "properties": {
+          "conflictType": {
+            "type": "string",
+            "title": "Conflicttype",
+            "description": "NATURE_OF_CONFLICT: SPA_MANDATE_LIMIT_EXCEEDED, SARL_COMPETITOR_GERANT, UNDISCLOSED_HOLDING"
+          },
+          "severity": {
+            "type": "string",
+            "title": "Severity",
+            "description": "HIGH, MEDIUM, or CRITICAL"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Detailed explanation of the governance or statutory clash"
+          },
+          "statutoryArticle": {
+            "type": "string",
+            "title": "Statutoryarticle",
+            "description": "Algerian Commercial Code reference (e.g. 'Art. 615', 'Art. 569')"
+          },
+          "mitigationRequired": {
+            "type": "string",
+            "title": "Mitigationrequired",
+            "description": "Required remedial action before capital disbursement"
+          }
+        },
+        "type": "object",
+        "required": [
+          "conflictType",
+          "severity",
+          "description",
+          "statutoryArticle",
+          "mitigationRequired"
+        ],
+        "title": "GovernanceConflictFlag"
       },
       "GrantStatus": {
         "type": "string",
@@ -71263,7 +73539,7 @@
           "blessing_invocation": {
             "type": "string",
             "title": "Blessing Invocation",
-            "default": "بارَكَ اللهُ لكُم في هذا الاستثمار وحَفِظَ مالَ وعِزَّةَ العائلة"
+            "default": "\u0628\u0627\u0631\u064e\u0643\u064e \u0627\u0644\u0644\u0647\u064f \u0644\u0643\u064f\u0645 \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631 \u0648\u062d\u064e\u0641\u0650\u0638\u064e \u0645\u0627\u0644\u064e \u0648\u0639\u0650\u0632\u0651\u064e\u0629\u064e \u0627\u0644\u0639\u0627\u0626\u0644\u0629"
           },
           "stamped_at": {
             "type": "string",
@@ -71299,6 +73575,143 @@
           "ESOP_RESERVE"
         ],
         "title": "HoldCoShareClass"
+      },
+      "IPMoatBadge": {
+        "type": "string",
+        "enum": [
+          "INAPI_VERIFIED_PATENT",
+          "INAPI_PENDING_EXAMINATION",
+          "INAPI_REGISTERED_TRADEMARK",
+          "INAPI_PCT_INTERNATIONAL_PHASE",
+          "INAPI_LAPSED_FEE_WARNING",
+          "INAPI_INVALID_OR_FABRICATED",
+          "INAPI_UNASSIGNED_FOUNDER_RISK"
+        ],
+        "title": "IPMoatBadge"
+      },
+      "IPMoatTier": {
+        "type": "string",
+        "enum": [
+          "IP_MOAT_DEEP_TECH_TIER_1",
+          "IP_MOAT_DEFENSIBLE",
+          "IP_MOAT_MODEST",
+          "IP_MOAT_UNPROTECTED"
+        ],
+        "title": "IPMoatTier"
+      },
+      "IPOldPortfolioAuditRequest": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "companyName": {
+            "type": "string",
+            "title": "Companyname"
+          },
+          "patents": {
+            "items": {
+              "$ref": "#/components/schemas/PatentClaimRecord"
+            },
+            "type": "array",
+            "title": "Patents"
+          },
+          "trademarks": {
+            "items": {
+              "$ref": "#/components/schemas/TrademarkClaimRecord"
+            },
+            "type": "array",
+            "title": "Trademarks"
+          },
+          "asOfDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Asofdate"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "companyName"
+        ],
+        "title": "IPOldPortfolioAuditRequest"
+      },
+      "IPOldPortfolioAuditResponse": {
+        "properties": {
+          "startupId": {
+            "type": "string",
+            "title": "Startupid"
+          },
+          "companyName": {
+            "type": "string",
+            "title": "Companyname"
+          },
+          "ipMoatIndex": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Ipmoatindex",
+            "description": "Defensibility & moat index [0, 100]"
+          },
+          "ipMoatTier": {
+            "$ref": "#/components/schemas/IPMoatTier"
+          },
+          "activePatentsCount": {
+            "type": "integer",
+            "title": "Activepatentscount"
+          },
+          "pendingPatentsCount": {
+            "type": "integer",
+            "title": "Pendingpatentscount"
+          },
+          "lapsedPatentsCount": {
+            "type": "integer",
+            "title": "Lapsedpatentscount"
+          },
+          "activeTrademarksCount": {
+            "type": "integer",
+            "title": "Activetrademarkscount"
+          },
+          "portfolioBadges": {
+            "items": {
+              "$ref": "#/components/schemas/IPMoatBadge"
+            },
+            "type": "array",
+            "title": "Portfoliobadges"
+          },
+          "criticalIpRisks": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Criticaliprisks"
+          },
+          "investorMoatSummary": {
+            "type": "string",
+            "title": "Investormoatsummary"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startupId",
+          "companyName",
+          "ipMoatIndex",
+          "ipMoatTier",
+          "activePatentsCount",
+          "pendingPatentsCount",
+          "lapsedPatentsCount",
+          "activeTrademarksCount",
+          "portfolioBadges",
+          "criticalIpRisks",
+          "investorMoatSummary"
+        ],
+        "title": "IPOldPortfolioAuditResponse"
       },
       "ImpersonateUserRequest": {
         "properties": {
@@ -71336,6 +73749,88 @@
           "initials"
         ],
         "title": "InitialClauseRequest"
+      },
+      "InsolvencyStatus": {
+        "type": "string",
+        "enum": [
+          "CLEAN",
+          "CESSATION_DES_PAIEMENTS",
+          "REGLEMENT_JUDICIAIRE",
+          "LIQUIDATION_JUDICIAIRE",
+          "FAILLITE_FRAUDULEUSE"
+        ],
+        "title": "InsolvencyStatus"
+      },
+      "InspectionOutcome": {
+        "type": "string",
+        "enum": [
+          "CONFORMANT",
+          "SUPERIOR",
+          "INFERIOR_ACCEPTABLE",
+          "DEFECTIVE_REJECTED"
+        ],
+        "title": "InspectionOutcome"
+      },
+      "InspectionRecord": {
+        "properties": {
+          "inspection_id": {
+            "type": "string",
+            "title": "Inspection Id"
+          },
+          "delivery_note_ref": {
+            "type": "string",
+            "title": "Delivery Note Ref"
+          },
+          "actual_delivered_metric_tons": {
+            "type": "number",
+            "title": "Actual Delivered Metric Tons"
+          },
+          "inspected_grade": {
+            "$ref": "#/components/schemas/QualityGrade"
+          },
+          "inspected_moisture_pct": {
+            "type": "number",
+            "title": "Inspected Moisture Pct"
+          },
+          "outcome": {
+            "$ref": "#/components/schemas/InspectionOutcome"
+          },
+          "inspector_credentials": {
+            "type": "string",
+            "title": "Inspector Credentials"
+          },
+          "inspection_notes": {
+            "type": "string",
+            "title": "Inspection Notes"
+          },
+          "price_adjustment_pct": {
+            "type": "number",
+            "title": "Price Adjustment Pct"
+          },
+          "adjusted_total_value_dzd": {
+            "type": "number",
+            "title": "Adjusted Total Value Dzd"
+          },
+          "inspected_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Inspected At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "inspection_id",
+          "delivery_note_ref",
+          "actual_delivered_metric_tons",
+          "inspected_grade",
+          "inspected_moisture_pct",
+          "outcome",
+          "inspector_credentials",
+          "inspection_notes",
+          "price_adjustment_pct",
+          "adjusted_total_value_dzd"
+        ],
+        "title": "InspectionRecord"
       },
       "InstallmentStatus": {
         "type": "string",
@@ -72609,6 +75104,397 @@
         ],
         "title": "IstihaqCalculationResult"
       },
+      "IstisnaaAssetCategory": {
+        "type": "string",
+        "enum": [
+          "SOLAR_PHOTOVOLTAIC_ARRAY",
+          "EV_CHARGING_INFRASTRUCTURE",
+          "IOT_AGRITECH_SENSORS",
+          "COLD_CHAIN_REFRIGERATION",
+          "ROBOTICS_AUTOMATION",
+          "CLEANTECH_WATER_TREATMENT"
+        ],
+        "title": "IstisnaaAssetCategory"
+      },
+      "IstisnaaContractRequest": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id",
+            "description": "Venture ordering the asset (Al-Mustasni')"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name",
+            "description": "Venture legal or brand name"
+          },
+          "manufacturer_id": {
+            "type": "string",
+            "title": "Manufacturer Id",
+            "description": "Manufacturer or fabricator contractor ID (Al-Sani')"
+          },
+          "manufacturer_name": {
+            "type": "string",
+            "title": "Manufacturer Name",
+            "description": "Manufacturer legal company name"
+          },
+          "asset_category": {
+            "$ref": "#/components/schemas/IstisnaaAssetCategory",
+            "description": "Hardware or infrastructure classification"
+          },
+          "asset_description": {
+            "type": "string",
+            "minLength": 10,
+            "title": "Asset Description",
+            "description": "Comprehensive engineering specifications of asset (Al-Masnu')"
+          },
+          "total_contract_price_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Contract Price Dzd",
+            "description": "Total agreed contract price in DZD"
+          },
+          "retention_rate_pct": {
+            "type": "number",
+            "maximum": 20.0,
+            "minimum": 2.0,
+            "title": "Retention Rate Pct",
+            "description": "Warranty retention fund percentage (Kafalat al-Siyanah)",
+            "default": 5.0
+          },
+          "defect_liability_months": {
+            "type": "integer",
+            "maximum": 36.0,
+            "minimum": 3.0,
+            "title": "Defect Liability Months",
+            "description": "Defect liability warranty duration in months",
+            "default": 12
+          },
+          "target_delivery_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Target Delivery Date",
+            "description": "Contractual delivery and commissioning deadline"
+          },
+          "milestones": {
+            "items": {
+              "$ref": "#/components/schemas/IstisnaaMilestoneSpec"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Milestones",
+            "description": "Work-in-progress milestone breakdown"
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "startup_name",
+          "manufacturer_id",
+          "manufacturer_name",
+          "asset_category",
+          "asset_description",
+          "total_contract_price_dzd",
+          "target_delivery_date",
+          "milestones"
+        ],
+        "title": "IstisnaaContractRequest"
+      },
+      "IstisnaaFacility": {
+        "properties": {
+          "facility_id": {
+            "type": "string",
+            "title": "Facility Id"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "manufacturer_id": {
+            "type": "string",
+            "title": "Manufacturer Id"
+          },
+          "manufacturer_name": {
+            "type": "string",
+            "title": "Manufacturer Name"
+          },
+          "asset_category": {
+            "$ref": "#/components/schemas/IstisnaaAssetCategory"
+          },
+          "asset_description": {
+            "type": "string",
+            "title": "Asset Description"
+          },
+          "total_contract_price_dzd": {
+            "type": "number",
+            "title": "Total Contract Price Dzd"
+          },
+          "retention_rate_pct": {
+            "type": "number",
+            "title": "Retention Rate Pct"
+          },
+          "retention_amount_dzd": {
+            "type": "number",
+            "title": "Retention Amount Dzd"
+          },
+          "defect_liability_months": {
+            "type": "integer",
+            "title": "Defect Liability Months"
+          },
+          "target_delivery_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Target Delivery Date"
+          },
+          "stage": {
+            "$ref": "#/components/schemas/IstisnaaStage"
+          },
+          "milestones": {
+            "items": {
+              "$ref": "#/components/schemas/IstisnaaMilestone"
+            },
+            "type": "array",
+            "title": "Milestones"
+          },
+          "total_disbursed_dzd": {
+            "type": "number",
+            "title": "Total Disbursed Dzd",
+            "default": 0.0
+          },
+          "retention_fund": {
+            "$ref": "#/components/schemas/RetentionFundStatus"
+          },
+          "defect_claims": {
+            "items": {
+              "$ref": "#/components/schemas/DefectClaim"
+            },
+            "type": "array",
+            "title": "Defect Claims",
+            "default": []
+          },
+          "liquidated_damages_dzd": {
+            "type": "number",
+            "title": "Liquidated Damages Dzd",
+            "default": 0.0
+          },
+          "provisional_acceptance_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Provisional Acceptance At"
+          },
+          "final_acceptance_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Final Acceptance At"
+          },
+          "sharia_standard_citation": {
+            "type": "string",
+            "title": "Sharia Standard Citation",
+            "default": "AAOIFI Shariah Standard No. 10 (Istisna'a and Parallel Istisna'a)"
+          },
+          "contract_cryptographic_seal": {
+            "type": "string",
+            "title": "Contract Cryptographic Seal"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "facility_id",
+          "startup_id",
+          "startup_name",
+          "manufacturer_id",
+          "manufacturer_name",
+          "asset_category",
+          "asset_description",
+          "total_contract_price_dzd",
+          "retention_rate_pct",
+          "retention_amount_dzd",
+          "defect_liability_months",
+          "target_delivery_date",
+          "stage",
+          "milestones",
+          "retention_fund",
+          "contract_cryptographic_seal"
+        ],
+        "title": "IstisnaaFacility"
+      },
+      "IstisnaaMilestone": {
+        "properties": {
+          "milestone_index": {
+            "type": "integer",
+            "title": "Milestone Index"
+          },
+          "milestone_name": {
+            "type": "string",
+            "title": "Milestone Name"
+          },
+          "completion_target_pct": {
+            "type": "number",
+            "title": "Completion Target Pct"
+          },
+          "tranche_amount_dzd": {
+            "type": "number",
+            "title": "Tranche Amount Dzd"
+          },
+          "status": {
+            "$ref": "#/components/schemas/MilestoneStatus",
+            "default": "PENDING"
+          },
+          "wip_certificate_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wip Certificate Ref"
+          },
+          "engineer_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Engineer Name"
+          },
+          "engineer_license": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Engineer License"
+          },
+          "certified_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Certified At"
+          },
+          "disbursed_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Disbursed At"
+          },
+          "disbursement_payment_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Disbursement Payment Ref"
+          }
+        },
+        "type": "object",
+        "required": [
+          "milestone_index",
+          "milestone_name",
+          "completion_target_pct",
+          "tranche_amount_dzd"
+        ],
+        "title": "IstisnaaMilestone"
+      },
+      "IstisnaaMilestoneSpec": {
+        "properties": {
+          "milestone_index": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Milestone Index",
+            "description": "Sequential phase number (1 to N)"
+          },
+          "milestone_name": {
+            "type": "string",
+            "minLength": 3,
+            "title": "Milestone Name",
+            "description": "Milestone title (e.g. Inverter Procurement & PCB Fabrication)"
+          },
+          "completion_target_pct": {
+            "type": "number",
+            "maximum": 100.0,
+            "exclusiveMinimum": 0.0,
+            "title": "Completion Target Pct",
+            "description": "Cumulative progress percentage"
+          },
+          "tranche_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Tranche Amount Dzd",
+            "description": "Gross disbursement amount for this milestone in DZD"
+          }
+        },
+        "type": "object",
+        "required": [
+          "milestone_index",
+          "milestone_name",
+          "completion_target_pct",
+          "tranche_amount_dzd"
+        ],
+        "title": "IstisnaaMilestoneSpec"
+      },
+      "IstisnaaStage": {
+        "type": "string",
+        "enum": [
+          "CONTRACT_SIGNED",
+          "IN_MANUFACTURING",
+          "PROVISIONAL_ACCEPTANCE",
+          "DEFECT_LIABILITY_ACTIVE",
+          "FINAL_ACCEPTANCE",
+          "TERMINATED_DEFAULT"
+        ],
+        "title": "IstisnaaStage"
+      },
       "JoinSyndicateRequest": {
         "properties": {
           "member_id": {
@@ -72802,7 +75688,7 @@
           "penalty_charity_destination": {
             "type": "string",
             "title": "Penalty Charity Destination",
-            "default": "TamWheel Waqf Innovation Endowment (حساب وقف الابتكار الجزائري)"
+            "default": "TamWheel Waqf Innovation Endowment (\u062d\u0633\u0627\u0628 \u0648\u0642\u0641 \u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a)"
           },
           "balance_remaining_dzd": {
             "type": "number",
@@ -73400,7 +76286,7 @@
             "type": "number",
             "minimum": 0.0,
             "title": "Non Taxable Return Of Capital Dzd",
-            "description": "Remboursement d'apport - Art. 104 CIDTA (Exonéré)"
+            "description": "Remboursement d'apport - Art. 104 CIDTA (Exon\u00e9r\u00e9)"
           },
           "taxable_dividends_dzd": {
             "type": "number",
@@ -73412,7 +76298,7 @@
             "type": "number",
             "minimum": 0.0,
             "title": "Taxable Realized Capital Gains Dzd",
-            "description": "Plus-values de cession de valeurs mobilières"
+            "description": "Plus-values de cession de valeurs mobili\u00e8res"
           },
           "withholding_rate_dividends_pct": {
             "type": "number",
@@ -73856,7 +76742,7 @@
           "jurisdiction": {
             "type": "string",
             "title": "Jurisdiction",
-            "default": "Algeria — Commercial Code (Law 22-09 SPAS Nominee)"
+            "default": "Algeria \u2014 Commercial Code (Law 22-09 SPAS Nominee)"
           },
           "conversion_trigger": {
             "type": "string",
@@ -73995,6 +76881,43 @@
         "type": "object",
         "title": "LinkCrmEntityRequest"
       },
+      "LiquidatedDamagesRequest": {
+        "properties": {
+          "days_overdue": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Days Overdue",
+            "description": "Number of days delivery was delayed past contractual deadline"
+          },
+          "verified_actual_direct_loss_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Verified Actual Direct Loss Dzd",
+            "description": "Documented actual direct losses incurred (excluding lost profit)"
+          },
+          "delay_justification_evaluated": {
+            "type": "boolean",
+            "title": "Delay Justification Evaluated",
+            "description": "Confirmation that delay was not caused by force majeure / excusable events"
+          }
+        },
+        "type": "object",
+        "required": [
+          "days_overdue",
+          "verified_actual_direct_loss_dzd",
+          "delay_justification_evaluated"
+        ],
+        "title": "LiquidatedDamagesRequest"
+      },
+      "LiquidationMethod": {
+        "type": "string",
+        "enum": [
+          "PARALLEL_SALAM",
+          "WIKALAH_AGENCY_SALE",
+          "DIRECT_COMMODITY_SALE"
+        ],
+        "title": "LiquidationMethod"
+      },
       "LiquidationPreferenceType": {
         "type": "string",
         "enum": [
@@ -74003,6 +76926,53 @@
           "CAPPED_PARTICIPATING"
         ],
         "title": "LiquidationPreferenceType"
+      },
+      "LiquidationRecord": {
+        "properties": {
+          "liquidation_id": {
+            "type": "string",
+            "title": "Liquidation Id"
+          },
+          "method": {
+            "$ref": "#/components/schemas/LiquidationMethod"
+          },
+          "gross_proceeds_dzd": {
+            "type": "number",
+            "title": "Gross Proceeds Dzd"
+          },
+          "costs_or_fees_dzd": {
+            "type": "number",
+            "title": "Costs Or Fees Dzd"
+          },
+          "net_proceeds_dzd": {
+            "type": "number",
+            "title": "Net Proceeds Dzd"
+          },
+          "profit_or_gain_dzd": {
+            "type": "number",
+            "title": "Profit Or Gain Dzd"
+          },
+          "transaction_hash": {
+            "type": "string",
+            "title": "Transaction Hash"
+          },
+          "liquidated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Liquidated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "liquidation_id",
+          "method",
+          "gross_proceeds_dzd",
+          "costs_or_fees_dzd",
+          "net_proceeds_dzd",
+          "profit_or_gain_dzd",
+          "transaction_hash"
+        ],
+        "title": "LiquidationRecord"
       },
       "LiquidityAuctionClearResponse": {
         "properties": {
@@ -74862,6 +77832,89 @@
           "CUSTOM"
         ],
         "title": "MailboxTypeEnum"
+      },
+      "MandatesCheckRequest": {
+        "properties": {
+          "officerName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Officername"
+          },
+          "currentMandates": {
+            "items": {
+              "$ref": "#/components/schemas/DirectorshipMandate"
+            },
+            "type": "array",
+            "title": "Currentmandates"
+          },
+          "proposedNewRole": {
+            "type": "string",
+            "title": "Proposednewrole",
+            "default": "G\u00e9rant"
+          },
+          "targetEntityType": {
+            "$ref": "#/components/schemas/CorporateEntityType",
+            "default": "SARL"
+          },
+          "targetSector": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Targetsector"
+          }
+        },
+        "type": "object",
+        "required": [
+          "officerName",
+          "currentMandates"
+        ],
+        "title": "MandatesCheckRequest"
+      },
+      "MandatesCheckResponse": {
+        "properties": {
+          "officerName": {
+            "type": "string",
+            "title": "Officername"
+          },
+          "spaMandatesCount": {
+            "type": "integer",
+            "title": "Spamandatescount"
+          },
+          "isSpaLimitExceeded": {
+            "type": "boolean",
+            "title": "Isspalimitexceeded"
+          },
+          "hasSarlConflictOfInterest": {
+            "type": "boolean",
+            "title": "Hassarlconflictofinterest"
+          },
+          "governanceConflicts": {
+            "items": {
+              "$ref": "#/components/schemas/GovernanceConflictFlag"
+            },
+            "type": "array",
+            "title": "Governanceconflicts"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "officerName",
+          "spaMandatesCount",
+          "isSpaLimitExceeded",
+          "hasSarlConflictOfInterest",
+          "governanceConflicts",
+          "status"
+        ],
+        "title": "MandatesCheckResponse"
       },
       "MarkAsReadRequest": {
         "properties": {
@@ -75945,7 +78998,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Muqawil (المقاول - Milestone & Escrow Agent)"
+            "default": "Al-Muqawil (\u0627\u0644\u0645\u0642\u0627\u0648\u0644 - Milestone & Escrow Agent)"
           },
           "technical_feasibility_score": {
             "type": "number",
@@ -76021,6 +79074,15 @@
           "participating_lps_count"
         ],
         "title": "MilestoneEvent"
+      },
+      "MilestoneStatus": {
+        "type": "string",
+        "enum": [
+          "PENDING",
+          "CERTIFIED",
+          "DISBURSED"
+        ],
+        "title": "MilestoneStatus"
       },
       "MilestoneTranche": {
         "properties": {
@@ -79820,7 +82882,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Numéro d'Identification Fiscale (15 digits)"
+            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -79833,7 +82895,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Numéro d'Identification Statistique (15 digits)"
+            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -79859,7 +82921,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
+            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -80074,7 +83136,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Numéro d'Identification Fiscale (15 digits)"
+            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -80087,7 +83149,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Numéro d'Identification Statistique (15 digits)"
+            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -80113,7 +83175,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
+            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -80860,7 +83922,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Numéro d'Identification Fiscale (15 digits)"
+            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -80873,7 +83935,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Numéro d'Identification Statistique (15 digits)"
+            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -80899,7 +83961,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
+            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -81444,6 +84506,173 @@
         "type": "object",
         "title": "OrganizationUpdate"
       },
+      "PEPHit": {
+        "properties": {
+          "isPep": {
+            "type": "boolean",
+            "title": "Ispep",
+            "description": "Whether person meets PEP statutory definitions"
+          },
+          "pepType": {
+            "$ref": "#/components/schemas/PEPType",
+            "description": "Categorization of PEP",
+            "default": "NOT_PEP"
+          },
+          "pepRoleTitle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Peproletitle",
+            "description": "Statutory office or political role held"
+          },
+          "institutionName": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Institutionname",
+            "description": "Government ministry, state organ, or SOE"
+          },
+          "riskTier": {
+            "$ref": "#/components/schemas/PEPRiskTier",
+            "description": "AML risk tier",
+            "default": "LOW"
+          },
+          "isCurrentlyInOffice": {
+            "type": "boolean",
+            "title": "Iscurrentlyinoffice",
+            "description": "Whether currently serving or in cooling-off period",
+            "default": true
+          },
+          "exitYear": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Exityear",
+            "description": "Year vacated office if former PEP"
+          },
+          "enhancedDueDiligenceMandatory": {
+            "type": "boolean",
+            "title": "Enhancedduediligencemandatory",
+            "description": "Whether Law 05-01 / 23-01 triggers mandatory EDD",
+            "default": false
+          },
+          "statutoryLegalCitation": {
+            "type": "string",
+            "title": "Statutorylegalcitation",
+            "description": "Law reference (e.g. 'Law 05-01 Art. 2 & Law 23-01')"
+          }
+        },
+        "type": "object",
+        "required": [
+          "isPep",
+          "statutoryLegalCitation"
+        ],
+        "title": "PEPHit"
+      },
+      "PEPRiskTier": {
+        "type": "string",
+        "enum": [
+          "LOW",
+          "MEDIUM",
+          "HIGH",
+          "CRITICAL"
+        ],
+        "title": "PEPRiskTier"
+      },
+      "PEPScreeningRequest": {
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Fullname",
+            "description": "Full legal name of candidate"
+          },
+          "nationalId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Nationalid",
+            "description": "Algerian NIN or national identity number"
+          },
+          "knownRoles": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Knownroles",
+            "description": "Known public positions or corporate titles"
+          },
+          "affiliations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Affiliations",
+            "description": "Known family or business ties"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fullName"
+        ],
+        "title": "PEPScreeningRequest"
+      },
+      "PEPScreeningResponse": {
+        "properties": {
+          "candidateName": {
+            "type": "string",
+            "title": "Candidatename"
+          },
+          "pepHit": {
+            "$ref": "#/components/schemas/PEPHit"
+          },
+          "recommendedMitigations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Recommendedmitigations",
+            "description": "AML governance conditions for onboarding"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidateName",
+          "pepHit"
+        ],
+        "title": "PEPScreeningResponse"
+      },
+      "PEPType": {
+        "type": "string",
+        "enum": [
+          "NOT_PEP",
+          "NATIONAL_PEP",
+          "FOREIGN_PEP",
+          "INTERNATIONAL_ORG_PEP",
+          "RCA_PEP"
+        ],
+        "title": "PEPType"
+      },
       "PaginatedThreadsResponse": {
         "properties": {
           "threads": {
@@ -81479,6 +84708,105 @@
           "has_more"
         ],
         "title": "PaginatedThreadsResponse"
+      },
+      "ParallelSalamContract": {
+        "properties": {
+          "parallel_contract_id": {
+            "type": "string",
+            "title": "Parallel Contract Id"
+          },
+          "secondary_buyer_id": {
+            "type": "string",
+            "title": "Secondary Buyer Id"
+          },
+          "secondary_buyer_name": {
+            "type": "string",
+            "title": "Secondary Buyer Name"
+          },
+          "quantity_metric_tons": {
+            "type": "number",
+            "title": "Quantity Metric Tons"
+          },
+          "selling_price_per_ton_dzd": {
+            "type": "number",
+            "title": "Selling Price Per Ton Dzd"
+          },
+          "total_selling_price_dzd": {
+            "type": "number",
+            "title": "Total Selling Price Dzd"
+          },
+          "delivery_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Delivery Date"
+          },
+          "depot_name": {
+            "type": "string",
+            "title": "Depot Name"
+          },
+          "contract_hash": {
+            "type": "string",
+            "title": "Contract Hash"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "parallel_contract_id",
+          "secondary_buyer_id",
+          "secondary_buyer_name",
+          "quantity_metric_tons",
+          "selling_price_per_ton_dzd",
+          "total_selling_price_dzd",
+          "delivery_date",
+          "depot_name",
+          "contract_hash"
+        ],
+        "title": "ParallelSalamContract"
+      },
+      "ParallelSalamRequest": {
+        "properties": {
+          "secondary_buyer_id": {
+            "type": "string",
+            "title": "Secondary Buyer Id",
+            "description": "Institutional off-taker or export distributor ID"
+          },
+          "secondary_buyer_name": {
+            "type": "string",
+            "title": "Secondary Buyer Name",
+            "description": "Off-taker company name (e.g. Groupe Agrodiv SPA)"
+          },
+          "selling_price_per_ton_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Selling Price Per Ton Dzd",
+            "description": "Selling price per metric ton in DZD"
+          },
+          "parallel_delivery_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Parallel Delivery Date",
+            "description": "Independent delivery date on or after primary delivery"
+          },
+          "parallel_depot_name": {
+            "type": "string",
+            "title": "Parallel Depot Name",
+            "description": "Designated delivery depot for secondary buyer"
+          }
+        },
+        "type": "object",
+        "required": [
+          "secondary_buyer_id",
+          "secondary_buyer_name",
+          "selling_price_per_ton_dzd",
+          "parallel_delivery_date",
+          "parallel_depot_name"
+        ],
+        "title": "ParallelSalamRequest"
       },
       "ParticipantResponse": {
         "properties": {
@@ -81657,6 +84985,261 @@
           "email"
         ],
         "title": "PasswordResetRequest"
+      },
+      "PatentClaimRecord": {
+        "properties": {
+          "patentNumber": {
+            "type": "string",
+            "title": "Patentnumber",
+            "description": "Application or Patent number (e.g. DZ/P/2023/000142)"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "Invention title (Arabic/French/English)"
+          },
+          "filingDate": {
+            "type": "string",
+            "title": "Filingdate",
+            "description": "Filing date at INAPI (YYYY-MM-DD)"
+          },
+          "ipcClassification": {
+            "type": "string",
+            "title": "Ipcclassification",
+            "description": "IPC / CIB class code (e.g. 'G06F 17/00')"
+          },
+          "bopiNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bopinumber",
+            "description": "BOPI publication gazette number (e.g. 'BOPI N\u00b0 342/2024')"
+          },
+          "bopiPublicationDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bopipublicationdate",
+            "description": "BOPI gazette issue date"
+          },
+          "priorityCountry": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Prioritycountry",
+            "description": "Country of first foreign filing under Paris Convention"
+          },
+          "priorityFilingDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Priorityfilingdate",
+            "description": "First filing date in priority country"
+          },
+          "priorityNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Prioritynumber",
+            "description": "First priority application number"
+          },
+          "pctApplicationNumber": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pctapplicationnumber",
+            "description": "WIPO / PCT application number if international"
+          },
+          "assignedToStartup": {
+            "type": "boolean",
+            "title": "Assignedtostartup",
+            "description": "Whether invention is formally assigned to the startup entity vs retained by individual founder",
+            "default": true
+          },
+          "currentAnnuityYear": {
+            "type": "integer",
+            "maximum": 20.0,
+            "minimum": 1.0,
+            "title": "Currentannuityyear",
+            "description": "Current year of patent life",
+            "default": 1
+          },
+          "lastPaidAnnuityYear": {
+            "type": "integer",
+            "maximum": 20.0,
+            "minimum": 0.0,
+            "title": "Lastpaidannuityyear",
+            "description": "Highest paid annuity year",
+            "default": 1
+          },
+          "monthsSinceFiling": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Monthssincefiling",
+            "description": "Months elapsed since filing date",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "required": [
+          "patentNumber",
+          "title",
+          "filingDate",
+          "ipcClassification"
+        ],
+        "title": "PatentClaimRecord"
+      },
+      "PatentStatus": {
+        "type": "string",
+        "enum": [
+          "GRANTED_ACTIVE",
+          "PENDING_EXAMINATION",
+          "LAPSED_UNPAID_ANNUITY",
+          "IN_GRACE_PERIOD",
+          "EXPIRED_STATUTORY_TERM",
+          "REJECTED_OR_ABANDONED",
+          "INVALID_FORMAT"
+        ],
+        "title": "PatentStatus"
+      },
+      "PatentVerificationRequest": {
+        "properties": {
+          "patent": {
+            "$ref": "#/components/schemas/PatentClaimRecord",
+            "description": "Claimed patent details"
+          },
+          "asOfDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Asofdate",
+            "description": "Evaluation date (YYYY-MM-DD), default current"
+          }
+        },
+        "type": "object",
+        "required": [
+          "patent"
+        ],
+        "title": "PatentVerificationRequest"
+      },
+      "PatentVerificationResponse": {
+        "properties": {
+          "patentNumber": {
+            "type": "string",
+            "title": "Patentnumber"
+          },
+          "isFormatValid": {
+            "type": "boolean",
+            "title": "Isformatvalid",
+            "description": "Matches official DZ/P/YYYY/XXXXXX or legacy regex"
+          },
+          "status": {
+            "$ref": "#/components/schemas/PatentStatus",
+            "description": "Active, Pending, Lapsed, or Expired"
+          },
+          "isPriorityClaimValid": {
+            "type": "boolean",
+            "title": "Ispriorityclaimvalid",
+            "description": "Within 12-month Paris Convention window if claimed"
+          },
+          "annuityStatusSummary": {
+            "type": "string",
+            "title": "Annuitystatussummary",
+            "description": "Human-readable annuity status breakdown"
+          },
+          "isAnnuityCurrent": {
+            "type": "boolean",
+            "title": "Isannuitycurrent",
+            "description": "Whether fees are fully paid"
+          },
+          "isInGracePeriod": {
+            "type": "boolean",
+            "title": "Isingraceperiod",
+            "description": "Whether 6-month surcharge grace is running"
+          },
+          "yearsRemainingOfProtection": {
+            "type": "integer",
+            "maximum": 20.0,
+            "minimum": 0.0,
+            "title": "Yearsremainingofprotection",
+            "description": "Years left before 20-year term expiration"
+          },
+          "bopiVerified": {
+            "type": "boolean",
+            "title": "Bopiverified",
+            "description": "Whether published in official gazette"
+          },
+          "assignedToCompany": {
+            "type": "boolean",
+            "title": "Assignedtocompany",
+            "description": "Whether title is held by startup entity"
+          },
+          "badgesIssued": {
+            "items": {
+              "$ref": "#/components/schemas/IPMoatBadge"
+            },
+            "type": "array",
+            "title": "Badgesissued",
+            "description": "Verified IP badges awarded"
+          },
+          "riskFlags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Riskflags",
+            "description": "Defects or warning flags"
+          }
+        },
+        "type": "object",
+        "required": [
+          "patentNumber",
+          "isFormatValid",
+          "status",
+          "isPriorityClaimValid",
+          "annuityStatusSummary",
+          "isAnnuityCurrent",
+          "isInGracePeriod",
+          "yearsRemainingOfProtection",
+          "bopiVerified",
+          "assignedToCompany"
+        ],
+        "title": "PatentVerificationResponse"
       },
       "PathPurchaseRequest": {
         "properties": {
@@ -83718,6 +87301,26 @@
         ],
         "title": "ProvisionSubAdminResponse"
       },
+      "ProvisionalAcceptanceRequest": {
+        "properties": {
+          "handover_protocol_ref": {
+            "type": "string",
+            "minLength": 4,
+            "title": "Handover Protocol Ref",
+            "description": "Provisional commissioning / handover protocol document reference"
+          },
+          "acceptance_notes": {
+            "type": "string",
+            "title": "Acceptance Notes",
+            "default": "Asset manufactured and delivered. Passed initial functional testing."
+          }
+        },
+        "type": "object",
+        "required": [
+          "handover_protocol_ref"
+        ],
+        "title": "ProvisionalAcceptanceRequest"
+      },
       "PublicDashboardCreate": {
         "properties": {
           "title": {
@@ -83855,7 +87458,7 @@
               }
             ],
             "title": "Nifnumber",
-            "description": "Numéro d'Identification Fiscale (15 digits)"
+            "description": "Num\u00e9ro d'Identification Fiscale (15 digits)"
           },
           "nisNumber": {
             "anyOf": [
@@ -83868,7 +87471,7 @@
               }
             ],
             "title": "Nisnumber",
-            "description": "Numéro d'Identification Statistique (15 digits)"
+            "description": "Num\u00e9ro d'Identification Statistique (15 digits)"
           },
           "articleImposition": {
             "anyOf": [
@@ -83894,7 +87497,7 @@
               }
             ],
             "title": "Taxregime",
-            "description": "Régime Fiscal (Réel Normal, IFU, etc.)"
+            "description": "R\u00e9gime Fiscal (R\u00e9el Normal, IFU, etc.)"
           },
           "tagline": {
             "anyOf": [
@@ -84578,6 +88181,16 @@
         ],
         "title": "PushSubscriptionCreate",
         "description": "Schema for registering a Web Push subscription."
+      },
+      "QualityGrade": {
+        "type": "string",
+        "enum": [
+          "EXTRA_PREMIUM",
+          "GRADE_1",
+          "GRADE_2",
+          "SUBSTANDARD"
+        ],
+        "title": "QualityGrade"
       },
       "QuestionAnswerRequest": {
         "properties": {
@@ -85351,7 +88964,7 @@
           "agent_name": {
             "type": "string",
             "title": "Agent Name",
-            "default": "Al-Mizan (الميزان - Tournament & Referee Agent)"
+            "default": "Al-Mizan (\u0627\u0644\u0645\u064a\u0632\u0627\u0646 - Tournament & Referee Agent)"
           },
           "jadara_index_score": {
             "type": "number",
@@ -85730,6 +89343,84 @@
           "status"
         ],
         "title": "ResolveAppealRequest"
+      },
+      "ResolveDefectRequest": {
+        "properties": {
+          "defect_id": {
+            "type": "string",
+            "title": "Defect Id",
+            "description": "ID of defect claim"
+          },
+          "resolved_by_manufacturer": {
+            "type": "boolean",
+            "title": "Resolved By Manufacturer",
+            "description": "True if manufacturer repaired defect at their own cost"
+          },
+          "actual_deduction_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Actual Deduction Dzd",
+            "description": "Cost deducted from retention fund if client repaired",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "defect_id",
+          "resolved_by_manufacturer"
+        ],
+        "title": "ResolveDefectRequest"
+      },
+      "RetentionFundStatus": {
+        "properties": {
+          "total_retention_allocated_dzd": {
+            "type": "number",
+            "title": "Total Retention Allocated Dzd"
+          },
+          "total_deductions_applied_dzd": {
+            "type": "number",
+            "title": "Total Deductions Applied Dzd"
+          },
+          "remaining_retention_balance_dzd": {
+            "type": "number",
+            "title": "Remaining Retention Balance Dzd"
+          },
+          "is_released": {
+            "type": "boolean",
+            "title": "Is Released",
+            "default": false
+          },
+          "released_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Released At"
+          },
+          "release_payment_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Release Payment Ref"
+          }
+        },
+        "type": "object",
+        "required": [
+          "total_retention_allocated_dzd",
+          "total_deductions_applied_dzd",
+          "remaining_retention_balance_dzd"
+        ],
+        "title": "RetentionFundStatus"
       },
       "ReviewBountyRequest": {
         "properties": {
@@ -86370,7 +90061,7 @@
           "bilan_equilibre"
         ],
         "title": "SCFBalanceSheet",
-        "description": "Bilan Comptable Système Comptable Financier (SCF) Algérien"
+        "description": "Bilan Comptable Syst\u00e8me Comptable Financier (SCF) Alg\u00e9rien"
       },
       "SCFClass1EquityLiabilities": {
         "properties": {
@@ -86458,7 +90149,7 @@
           "total_actif_non_courant_net_dzd"
         ],
         "title": "SCFClass2NonCurrentAssets",
-        "description": "Class 2: Actifs financiers non courants (Titres de participation, dépréciations)"
+        "description": "Class 2: Actifs financiers non courants (Titres de participation, d\u00e9pr\u00e9ciations)"
       },
       "SCFClass4ThirdPartyAccounts": {
         "properties": {
@@ -86509,7 +90200,7 @@
           "total_passif_courant_dzd"
         ],
         "title": "SCFClass4ThirdPartyAccounts",
-        "description": "Class 4: Comptes de tiers (Créances LPs, Dettes fournisseurs, Fiscalité)"
+        "description": "Class 4: Comptes de tiers (Cr\u00e9ances LPs, Dettes fournisseurs, Fiscalit\u00e9)"
       },
       "SCFClass5FinancialAccounts": {
         "properties": {
@@ -86542,7 +90233,7 @@
           "total_tresorerie_dzd"
         ],
         "title": "SCFClass5FinancialAccounts",
-        "description": "Class 5: Comptes financiers (Comptes bancaires de séquestre, trésorerie)"
+        "description": "Class 5: Comptes financiers (Comptes bancaires de s\u00e9questre, tr\u00e9sorerie)"
       },
       "SCFIncomeStatement": {
         "properties": {
@@ -86604,7 +90295,7 @@
           "resultat_net_exercice_dzd"
         ],
         "title": "SCFIncomeStatement",
-        "description": "Compte de Résultat (Class 6 Charges & Class 7 Produits)"
+        "description": "Compte de R\u00e9sultat (Class 6 Charges & Class 7 Produits)"
       },
       "SPVFinancialReport": {
         "properties": {
@@ -86636,12 +90327,12 @@
           "statutory_auditor_name": {
             "type": "string",
             "title": "Statutory Auditor Name",
-            "default": "Cabinet de Commissariat aux Comptes Agréé (Alger)"
+            "default": "Cabinet de Commissariat aux Comptes Agr\u00e9\u00e9 (Alger)"
           },
           "legal_form": {
             "type": "string",
             "title": "Legal Form",
-            "default": "Société Par Actions Simplifiée (SPAS - Loi 22-09)"
+            "default": "Soci\u00e9t\u00e9 Par Actions Simplifi\u00e9e (SPAS - Loi 22-09)"
           },
           "balance_sheet": {
             "$ref": "#/components/schemas/SCFBalanceSheet"
@@ -87244,6 +90935,630 @@
           "BSA_AIR_ALGERIA"
         ],
         "title": "SafeType"
+      },
+      "SalamCommodityType": {
+        "type": "string",
+        "enum": [
+          "BISKRA_DEGLET_NOUR_DATES",
+          "MITIDJA_CITRUS_ORANGES",
+          "SETIF_DURUM_WHEAT",
+          "KABYLIE_EXTRA_VIRGIN_OLIVE_OIL",
+          "SAHARA_TOMATO_PASTE",
+          "MASCARA_TABLE_GRAPES"
+        ],
+        "title": "SalamCommodityType"
+      },
+      "SalamContractRequest": {
+        "properties": {
+          "producer_id": {
+            "type": "string",
+            "title": "Producer Id",
+            "description": "Agricultural producer or cooperative ID"
+          },
+          "producer_name": {
+            "type": "string",
+            "title": "Producer Name",
+            "description": "Producer legal name (e.g. Coop\u00e9rative Agricole Tolga Biskra)"
+          },
+          "commodity_type": {
+            "$ref": "#/components/schemas/SalamCommodityType",
+            "description": "Agricultural commodity classification"
+          },
+          "commodity_description": {
+            "type": "string",
+            "minLength": 5,
+            "title": "Commodity Description",
+            "description": "Full descriptive specification of goods (Al-Muslam Fihi)"
+          },
+          "quantity_metric_tons": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Quantity Metric Tons",
+            "description": "Contracted volume in metric tons"
+          },
+          "unit_price_per_ton_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Unit Price Per Ton Dzd",
+            "description": "Agreed purchase price per metric ton in DZD"
+          },
+          "expected_quality_grade": {
+            "$ref": "#/components/schemas/QualityGrade",
+            "default": "GRADE_1"
+          },
+          "max_moisture_pct": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Max Moisture Pct",
+            "description": "Maximum permissible moisture content percentage",
+            "default": 14.0
+          },
+          "delivery_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Delivery Date",
+            "description": "Maturity date (Ajal) when goods must be delivered"
+          },
+          "warehouse_depot_name": {
+            "type": "string",
+            "title": "Warehouse Depot Name",
+            "description": "Designated licensed warehouse (Makan al-Taslim)"
+          },
+          "warehouse_depot_wilaya": {
+            "type": "string",
+            "title": "Warehouse Depot Wilaya",
+            "description": "Algerian Wilaya of depot (e.g. Biskra, Blida, S\u00e9tif)"
+          },
+          "advance_payment_reference": {
+            "type": "string",
+            "minLength": 4,
+            "title": "Advance Payment Reference",
+            "description": "Bank settlement reference proving 100% upfront capital disbursement"
+          }
+        },
+        "type": "object",
+        "required": [
+          "producer_id",
+          "producer_name",
+          "commodity_type",
+          "commodity_description",
+          "quantity_metric_tons",
+          "unit_price_per_ton_dzd",
+          "delivery_date",
+          "warehouse_depot_name",
+          "warehouse_depot_wilaya",
+          "advance_payment_reference"
+        ],
+        "title": "SalamContractRequest"
+      },
+      "SalamDelayRemedyRequest": {
+        "properties": {
+          "is_genuine_insolvency": {
+            "type": "boolean",
+            "title": "Is Genuine Insolvency",
+            "description": "True if producer suffered force majeure / insolvency (Mu'sir); requires mandatory respite per Qur'an 2:280"
+          },
+          "days_extension": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Days Extension",
+            "description": "Days of extension granted in case of hardship",
+            "default": 30
+          },
+          "late_penalty_dzd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Late Penalty Dzd",
+            "description": "Stipulated delay penalty if delay is unjustified procrastination (Mumathil); routes 100% to charity",
+            "default": 0.0
+          },
+          "charity_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Charity Id",
+            "description": "Accredited Algerian charity recipient",
+            "default": "CHARITY-WATER-SOLAR-005"
+          },
+          "cancel_contract_iqalah": {
+            "type": "boolean",
+            "title": "Cancel Contract Iqalah",
+            "description": "Whether buyer exercises option to cancel (Iqalah) and claim full refund of advance capital",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "is_genuine_insolvency"
+        ],
+        "title": "SalamDelayRemedyRequest"
+      },
+      "SalamFacility": {
+        "properties": {
+          "contract_id": {
+            "type": "string",
+            "title": "Contract Id"
+          },
+          "producer_id": {
+            "type": "string",
+            "title": "Producer Id"
+          },
+          "producer_name": {
+            "type": "string",
+            "title": "Producer Name"
+          },
+          "commodity_type": {
+            "$ref": "#/components/schemas/SalamCommodityType"
+          },
+          "commodity_description": {
+            "type": "string",
+            "title": "Commodity Description"
+          },
+          "quantity_metric_tons": {
+            "type": "number",
+            "title": "Quantity Metric Tons"
+          },
+          "unit_price_per_ton_dzd": {
+            "type": "number",
+            "title": "Unit Price Per Ton Dzd"
+          },
+          "advance_capital_dzd": {
+            "type": "number",
+            "title": "Advance Capital Dzd"
+          },
+          "expected_quality_grade": {
+            "$ref": "#/components/schemas/QualityGrade"
+          },
+          "max_moisture_pct": {
+            "type": "number",
+            "title": "Max Moisture Pct"
+          },
+          "delivery_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Delivery Date"
+          },
+          "warehouse_depot_name": {
+            "type": "string",
+            "title": "Warehouse Depot Name"
+          },
+          "warehouse_depot_wilaya": {
+            "type": "string",
+            "title": "Warehouse Depot Wilaya"
+          },
+          "advance_payment_reference": {
+            "type": "string",
+            "title": "Advance Payment Reference"
+          },
+          "stage": {
+            "$ref": "#/components/schemas/SalamStage"
+          },
+          "inspection": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/InspectionRecord"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "parallel_salam": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ParallelSalamContract"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "liquidation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LiquidationRecord"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "charity_penalty_receipt": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TathirReceipt"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sharia_standard_citation": {
+            "type": "string",
+            "title": "Sharia Standard Citation",
+            "default": "AAOIFI Shariah Standard No. 9 (Salam and Parallel Salam)"
+          },
+          "cryptographic_seal": {
+            "type": "string",
+            "title": "Cryptographic Seal"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "contract_id",
+          "producer_id",
+          "producer_name",
+          "commodity_type",
+          "commodity_description",
+          "quantity_metric_tons",
+          "unit_price_per_ton_dzd",
+          "advance_capital_dzd",
+          "expected_quality_grade",
+          "max_moisture_pct",
+          "delivery_date",
+          "warehouse_depot_name",
+          "warehouse_depot_wilaya",
+          "advance_payment_reference",
+          "stage",
+          "cryptographic_seal"
+        ],
+        "title": "SalamFacility"
+      },
+      "SalamInspectionRequest": {
+        "properties": {
+          "delivery_note_ref": {
+            "type": "string",
+            "title": "Delivery Note Ref",
+            "description": "Depot delivery note or warehouse receipt number"
+          },
+          "actual_delivered_metric_tons": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Actual Delivered Metric Tons",
+            "description": "Physically received quantity in metric tons"
+          },
+          "inspected_grade": {
+            "$ref": "#/components/schemas/QualityGrade",
+            "description": "Laboratory certified quality grade"
+          },
+          "inspected_moisture_pct": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Inspected Moisture Pct",
+            "description": "Measured moisture level percentage"
+          },
+          "inspector_credentials": {
+            "type": "string",
+            "title": "Inspector Credentials",
+            "description": "Accredited agricultural inspection body / agronomist license"
+          },
+          "inspection_notes": {
+            "type": "string",
+            "title": "Inspection Notes",
+            "default": "Standard quality and physical inspection completed."
+          },
+          "accept_inferior_with_discount": {
+            "type": "boolean",
+            "title": "Accept Inferior With Discount",
+            "description": "If goods are inferior, whether buyer elects to accept with Sharia price discount (Muqassah)",
+            "default": false
+          },
+          "negotiated_discount_pct": {
+            "type": "number",
+            "maximum": 50.0,
+            "minimum": 0.0,
+            "title": "Negotiated Discount Pct",
+            "description": "Agreed discount percentage if inferior goods accepted",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "delivery_note_ref",
+          "actual_delivered_metric_tons",
+          "inspected_grade",
+          "inspected_moisture_pct",
+          "inspector_credentials"
+        ],
+        "title": "SalamInspectionRequest"
+      },
+      "SalamStage": {
+        "type": "string",
+        "enum": [
+          "ADVANCE_PAID",
+          "COMMODITY_SPECIFIED",
+          "DELIVERY_PENDING",
+          "DELIVERED_ACCEPTED",
+          "DELIVERED_ADJUSTED",
+          "REJECTED",
+          "PARALLEL_SALAM_ACTIVE",
+          "LIQUIDATED",
+          "CANCELLED_REFUNDED"
+        ],
+        "title": "SalamStage"
+      },
+      "SanctionHit": {
+        "properties": {
+          "regime": {
+            "$ref": "#/components/schemas/SanctionRegime",
+            "description": "Sanctioning authority or regime"
+          },
+          "listReferenceId": {
+            "type": "string",
+            "title": "Listreferenceid",
+            "description": "Official designation ID in the sanctions list"
+          },
+          "matchedEntityName": {
+            "type": "string",
+            "title": "Matchedentityname",
+            "description": "Target name as registered in the sanctions list"
+          },
+          "queryName": {
+            "type": "string",
+            "title": "Queryname",
+            "description": "Input query name searched"
+          },
+          "matchScore": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Matchscore",
+            "description": "Composite fuzzy similarity score [0.0, 1.0]"
+          },
+          "matchConfidence": {
+            "type": "string",
+            "title": "Matchconfidence",
+            "description": "EXACT, HIGH_CONFIDENCE, or FUZZY_POSSIBLE"
+          },
+          "designationDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Designationdate",
+            "description": "Date placed on sanctions register"
+          },
+          "legalBasis": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Legalbasis",
+            "description": "Legal act, decree, or resolution number"
+          },
+          "programs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Programs",
+            "description": "Sanctions programs / reasons"
+          },
+          "countryOfOrigin": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Countryoforigin",
+            "description": "Country associated with sanctioned entity"
+          }
+        },
+        "type": "object",
+        "required": [
+          "regime",
+          "listReferenceId",
+          "matchedEntityName",
+          "queryName",
+          "matchScore",
+          "matchConfidence"
+        ],
+        "title": "SanctionHit"
+      },
+      "SanctionRegime": {
+        "type": "string",
+        "enum": [
+          "UN_CONSOLIDATED",
+          "US_OFAC_SDN",
+          "EU_FINANCIAL_SANCTIONS",
+          "ALGERIA_CTRF_NATIONAL"
+        ],
+        "title": "SanctionRegime"
+      },
+      "SanctionRiskLevel": {
+        "type": "string",
+        "enum": [
+          "CLEAN",
+          "LOW_SUSPICION",
+          "POTENTIAL_MATCH",
+          "CONFIRMED_SANCTION"
+        ],
+        "title": "SanctionRiskLevel"
+      },
+      "SanctionsScreeningRequest": {
+        "properties": {
+          "entityName": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Entityname",
+            "description": "Individual full name or legal company name"
+          },
+          "aliases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Aliases",
+            "description": "Known transliterations or trade aliases"
+          },
+          "dateOfBirth": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dateofbirth",
+            "description": "DOB in YYYY-MM-DD format if individual"
+          },
+          "nationalId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Nationalid",
+            "description": "NIN or passport number"
+          },
+          "countryCode": {
+            "type": "string",
+            "title": "Countrycode",
+            "description": "ISO 2-letter country code",
+            "default": "DZ"
+          },
+          "includeAdverseMedia": {
+            "type": "boolean",
+            "title": "Includeadversemedia",
+            "description": "Whether to execute automated adverse media scanning",
+            "default": true
+          },
+          "includePepCheck": {
+            "type": "boolean",
+            "title": "Includepepcheck",
+            "description": "Whether to execute PEP registry cross-check",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "entityName"
+        ],
+        "title": "SanctionsScreeningRequest"
+      },
+      "SanctionsScreeningResponse": {
+        "properties": {
+          "screeningId": {
+            "type": "string",
+            "title": "Screeningid",
+            "description": "Unique diligence screening audit UUID"
+          },
+          "entityQueried": {
+            "type": "string",
+            "title": "Entityqueried",
+            "description": "Normalized queried name"
+          },
+          "riskLevel": {
+            "$ref": "#/components/schemas/SanctionRiskLevel",
+            "description": "Overall screening verdict"
+          },
+          "compositeRiskScore": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Compositeriskscore",
+            "description": "Composite sanctions risk index [0, 100]"
+          },
+          "sanctionsHits": {
+            "items": {
+              "$ref": "#/components/schemas/SanctionHit"
+            },
+            "type": "array",
+            "title": "Sanctionshits",
+            "description": "Matches in international/domestic sanctions lists"
+          },
+          "pepAssessment": {
+            "$ref": "#/components/schemas/PEPHit",
+            "description": "PEP status assessment"
+          },
+          "adverseMediaSummary": {
+            "items": {
+              "$ref": "#/components/schemas/AdverseMediaArticle"
+            },
+            "type": "array",
+            "title": "Adversemediasummary",
+            "description": "Flagged negative media records"
+          },
+          "algerianFreezeListHit": {
+            "type": "boolean",
+            "title": "Algerianfreezelisthit",
+            "description": "True if matched against Algerian CTRF National Freeze List",
+            "default": false
+          },
+          "mandatoryReportingRequired": {
+            "type": "boolean",
+            "title": "Mandatoryreportingrequired",
+            "description": "Whether report must be filed with CTRF under Law 05-01",
+            "default": false
+          },
+          "recommendedAction": {
+            "type": "string",
+            "title": "Recommendedaction",
+            "description": "Compliance recommendation (e.g. BLOCK_FUNDS, ENHANCED_DUE_DILIGENCE, CLEAR)"
+          },
+          "timestamp": {
+            "type": "string",
+            "title": "Timestamp",
+            "description": "ISO 8601 screening timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "screeningId",
+          "entityQueried",
+          "riskLevel",
+          "compositeRiskScore",
+          "pepAssessment",
+          "recommendedAction",
+          "timestamp"
+        ],
+        "title": "SanctionsScreeningResponse"
       },
       "ScfEntryItem": {
         "properties": {
@@ -91741,7 +96056,7 @@
           "sharia_supervisory_seal": {
             "type": "string",
             "title": "Sharia Supervisory Seal",
-            "default": "Tamwheel Sovereign Sharia Protocol — AAOIFI Standard No. 17 Compliant"
+            "default": "Tamwheel Sovereign Sharia Protocol \u2014 AAOIFI Standard No. 17 Compliant"
           },
           "created_at": {
             "type": "string",
@@ -92462,14 +96777,14 @@
             "maxLength": 20,
             "minLength": 9,
             "title": "Nif",
-            "description": "Numéro d'Identification Fiscale"
+            "description": "Num\u00e9ro d'Identification Fiscale"
           },
           "nis": {
             "type": "string",
             "maxLength": 20,
             "minLength": 5,
             "title": "Nis",
-            "description": "Numéro d'Identification Statistique"
+            "description": "Num\u00e9ro d'Identification Statistique"
           },
           "training_title": {
             "type": "string",
@@ -93091,6 +97406,161 @@
         ],
         "title": "TournamentTier"
       },
+      "TrademarkClaimRecord": {
+        "properties": {
+          "registrationNumber": {
+            "type": "string",
+            "title": "Registrationnumber",
+            "description": "INAPI trademark number (e.g. 'DZ/M/2022/000512')"
+          },
+          "markName": {
+            "type": "string",
+            "title": "Markname",
+            "description": "Word mark, logo, or combined brand name"
+          },
+          "filingDate": {
+            "type": "string",
+            "title": "Filingdate",
+            "description": "Date of filing (YYYY-MM-DD)"
+          },
+          "niceClasses": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Niceclasses",
+            "description": "List of Nice Classification classes (1-45)"
+          },
+          "bopiGazetteRef": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bopigazetteref",
+            "description": "Publication in BOPI Marques"
+          },
+          "assignedToStartup": {
+            "type": "boolean",
+            "title": "Assignedtostartup",
+            "description": "Whether title registered under company name",
+            "default": true
+          },
+          "isRenewed": {
+            "type": "boolean",
+            "title": "Isrenewed",
+            "description": "Whether renewed if past 10-year term",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "registrationNumber",
+          "markName",
+          "filingDate",
+          "niceClasses"
+        ],
+        "title": "TrademarkClaimRecord"
+      },
+      "TrademarkStatus": {
+        "type": "string",
+        "enum": [
+          "REGISTERED_ACTIVE",
+          "PENDING_OPPOSITION",
+          "EXPIRED_RENEWAL_DUE",
+          "CANCELLED",
+          "INVALID_FORMAT"
+        ],
+        "title": "TrademarkStatus"
+      },
+      "TrademarkVerificationRequest": {
+        "properties": {
+          "trademark": {
+            "$ref": "#/components/schemas/TrademarkClaimRecord"
+          },
+          "asOfDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Asofdate"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trademark"
+        ],
+        "title": "TrademarkVerificationRequest"
+      },
+      "TrademarkVerificationResponse": {
+        "properties": {
+          "registrationNumber": {
+            "type": "string",
+            "title": "Registrationnumber"
+          },
+          "markName": {
+            "type": "string",
+            "title": "Markname"
+          },
+          "isFormatValid": {
+            "type": "boolean",
+            "title": "Isformatvalid"
+          },
+          "status": {
+            "$ref": "#/components/schemas/TrademarkStatus"
+          },
+          "niceClassesValidated": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Niceclassesvalidated"
+          },
+          "techRelevantClassesPresent": {
+            "type": "boolean",
+            "title": "Techrelevantclassespresent",
+            "description": "Contains Class 9, 36, 38, or 42"
+          },
+          "yearsRemainingOfProtection": {
+            "type": "integer",
+            "title": "Yearsremainingofprotection"
+          },
+          "badgesIssued": {
+            "items": {
+              "$ref": "#/components/schemas/IPMoatBadge"
+            },
+            "type": "array",
+            "title": "Badgesissued"
+          },
+          "riskFlags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Riskflags"
+          }
+        },
+        "type": "object",
+        "required": [
+          "registrationNumber",
+          "markName",
+          "isFormatValid",
+          "status",
+          "niceClassesValidated",
+          "techRelevantClassesPresent",
+          "yearsRemainingOfProtection",
+          "badgesIssued",
+          "riskFlags"
+        ],
+        "title": "TrademarkVerificationResponse"
+      },
       "TrancheStatus": {
         "type": "string",
         "enum": [
@@ -93170,7 +97640,7 @@
               }
             ],
             "title": "Sourcenif",
-            "description": "Numéro d'Identification Fiscale (NIF) of source"
+            "description": "Num\u00e9ro d'Identification Fiscale (NIF) of source"
           },
           "targetNif": {
             "anyOf": [
@@ -93182,7 +97652,7 @@
               }
             ],
             "title": "Targetnif",
-            "description": "Numéro d'Identification Fiscale (NIF) of target"
+            "description": "Num\u00e9ro d'Identification Fiscale (NIF) of target"
           }
         },
         "type": "object",
@@ -96585,6 +101055,56 @@
         ],
         "title": "VoucherCreateRequest"
       },
+      "WIPCertificationRequest": {
+        "properties": {
+          "milestone_index": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Milestone Index",
+            "description": "Milestone number being certified"
+          },
+          "engineer_name": {
+            "type": "string",
+            "minLength": 3,
+            "title": "Engineer Name",
+            "description": "Certified engineer or technical auditor name"
+          },
+          "engineer_license": {
+            "type": "string",
+            "minLength": 4,
+            "title": "Engineer License",
+            "description": "Professional engineering chamber / Ordre des Ing\u00e9nieurs license ID"
+          },
+          "measured_progress_pct": {
+            "type": "number",
+            "maximum": 100.0,
+            "exclusiveMinimum": 0.0,
+            "title": "Measured Progress Pct",
+            "description": "Physically verified cumulative progress percentage"
+          },
+          "quality_standards_verified": {
+            "type": "boolean",
+            "title": "Quality Standards Verified",
+            "description": "True if engineering materials comply with technical specifications"
+          },
+          "lab_inspection_report_ref": {
+            "type": "string",
+            "minLength": 3,
+            "title": "Lab Inspection Report Ref",
+            "description": "Reference to technical audit / lab report document"
+          }
+        },
+        "type": "object",
+        "required": [
+          "milestone_index",
+          "engineer_name",
+          "engineer_license",
+          "measured_progress_pct",
+          "quality_standards_verified",
+          "lab_inspection_report_ref"
+        ],
+        "title": "WIPCertificationRequest"
+      },
       "WaitlistAdminEntryResponse": {
         "properties": {
           "id": {
@@ -98111,6 +102631,41 @@
         ],
         "title": "WebhookTestTransformResponse"
       },
+      "WikalahLiquidationRequest": {
+        "properties": {
+          "agent_id": {
+            "type": "string",
+            "title": "Agent Id",
+            "description": "Commodity broker or trading agent ID"
+          },
+          "agent_name": {
+            "type": "string",
+            "title": "Agent Name",
+            "description": "Broker entity name"
+          },
+          "minimum_gross_sale_price_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Minimum Gross Sale Price Dzd",
+            "description": "Authorized reserve sale price in DZD"
+          },
+          "agency_fee_pct": {
+            "type": "number",
+            "maximum": 15.0,
+            "minimum": 0.0,
+            "title": "Agency Fee Pct",
+            "description": "Agreed agency commission fee percentage",
+            "default": 2.5
+          }
+        },
+        "type": "object",
+        "required": [
+          "agent_id",
+          "agent_name",
+          "minimum_gross_sale_price_dzd"
+        ],
+        "title": "WikalahLiquidationRequest"
+      },
       "WilayaCupStanding": {
         "properties": {
           "rank": {
@@ -99319,7 +103874,7 @@
               }
             ],
             "title": "Nif",
-            "description": "Company NIF (Numéro d'Identification Fiscale)"
+            "description": "Company NIF (Num\u00e9ro d'Identification Fiscale)"
           },
           "claimedFinancials": {
             "$ref": "#/components/schemas/ClaimedFinancials"

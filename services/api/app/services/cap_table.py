@@ -1670,3 +1670,7 @@ cap_table_engine = CapTableEngine()
 secondary_liquidity_engine = SecondaryLiquidityEngine()
 dual_entity_cap_table_mirror = DualEntityCapTableMirror()
 esop_vesting_engine = ESOPVestingEngine()
+
+from app.services.holdco_mirror_engine import HoldCoMirrorEngine, holdco_mirror_engine
+from app.services.esop_recycling_engine import EsopRecyclingEngine, esop_recycling_engine
+
