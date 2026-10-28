@@ -23,6 +23,7 @@ from app.services.curriculum_engine import (
     RETAKE_COOLDOWN_SECONDS,
 )
 from app.services.label_diagnostic import label_diagnostic_engine
+from app.services.academy_certificate import academy_certificate_generator
 
 logger = logging.getLogger(__name__)
 
@@ -379,4 +380,101 @@ async def evaluate_startup_label_diagnostic(
         gapAnalysis=result["gapAnalysis"],
         recommendations=result["recommendations"],
         actionPlan=result["actionPlan"],
+    )
+
+
+# =============================================================================
+# ESE ORAN ACADEMY CRYPTOGRAPHIC CERTIFICATES
+# =============================================================================
+
+class CertificateIssueResponse(BaseModel):
+    certificateId: str
+    claims: Dict[str, Any]
+    accreditationHash: str
+    signature: str
+    publicKey: str
+    verificationUrl: str
+    qrCodeDataUrl: str
+    verifiableCredential: Dict[str, Any]
+    status: str
+
+
+class CertificateVerifyResponse(BaseModel):
+    isValid: bool
+    certificateId: Optional[str] = None
+    recipientName: Optional[str] = None
+    program: Optional[str] = None
+    issuedAt: Optional[str] = None
+    accreditationAuthority: Optional[str] = None
+    status: Optional[str] = None
+    reason: Optional[str] = None
+
+
+@router.post("/certificate/issue", response_model=CertificateIssueResponse)
+async def issue_graduation_certificate(
+    current_user: dict = Depends(get_current_active_user),
+):
+    """
+    Issues a cryptographically signed graduation certificate (DARIJA-ACADEMY-CERT-YYYY-XXXX)
+    under ESE Oran accreditation once all 5 curriculum modules are completed.
+    """
+    quiz_records = await prisma.financialquizresult.find_many(
+        where={"userId": current_user.id, "passed": True}
+    )
+
+    passed_modules = {r.moduleIndex: r.score for r in quiz_records}
+    if len(passed_modules) < 5:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                f"Cannot issue certificate: Citizen has completed {len(passed_modules)}/5 modules. "
+                "All 5 ESE Oran modules must be passed (>= 80%) before graduation."
+            ),
+        )
+
+    avg_score = sum(passed_modules.values()) / max(1, len(passed_modules))
+    recipient_name = getattr(current_user, "fullName", None) or getattr(current_user, "email", f"Citizen-{current_user.id}")
+
+    cert = academy_certificate_generator.issue_certificate(
+        user_id=current_user.id,
+        recipient_name=recipient_name,
+        average_score=avg_score,
+        wilaya=getattr(current_user, "wilaya", 31),
+    )
+
+    return CertificateIssueResponse(**cert)
+
+
+@router.get("/certificate/{certificate_id}", response_model=CertificateVerifyResponse)
+async def verify_graduation_certificate(certificate_id: str):
+    """
+    Public endpoint to cryptographically verify an ESE Oran graduation certificate.
+    Validates Ed25519 signature and SHA-256 accreditation hash against tamper attempts.
+    """
+    cert = academy_certificate_generator.get_certificate_by_id(certificate_id)
+    if not cert:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Certificate '{certificate_id}' not found in registry",
+        )
+
+    verification = academy_certificate_generator.verify_certificate(cert)
+    return CertificateVerifyResponse(**verification)
+
+
+@router.get("/certificate/user/latest", response_model=CertificateIssueResponse)
+async def get_my_latest_certificate(
+    current_user: dict = Depends(get_current_active_user),
+):
+    """
+    Retrieves the authenticated citizen's latest issued graduation certificate.
+    """
+    # Scan generator's store for user's certificate
+    for cert in academy_certificate_generator._in_memory_cert_store.values():
+        if cert.get("claims", {}).get("recipientUserId") == current_user.id:
+            return CertificateIssueResponse(**cert)
+
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail="No certificate issued yet for this account. Complete all 5 modules first.",
     )

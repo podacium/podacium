@@ -32,6 +32,13 @@ from app.services.arena_service import (
     MAX_DRIFT_TOLERANCE_MS,
     HYPE_ALARM_THRESHOLD_PCT,
 )
+from app.services.stage_queue_manager import (
+    stage_queue_manager,
+    SpeakerRole,
+)
+from app.services.slide_synchronizer import (
+    slide_deck_synchronizer,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -389,6 +396,123 @@ async def handle_arena_socket(
                         equity_share_pct=equity_pct,
                         new_hype_score=session.current_sentiment_score,
                     )
+
+            # 7. LIVE STAGE SPEAKER QUEUE & ARBITRATION (HOT-SEAT)
+            elif action == "raise_hand":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                hand_event = stage_queue_manager.raise_hand(
+                    room_id=room,
+                    user_id=user_id or int(time.time() % 100000),
+                    username=sender_name,
+                    avatar_url=data.get("avatar_url"),
+                    wilaya=data.get("wilaya"),
+                )
+                await simulation_manager.broadcast_to_room(room, hand_event)
+
+            elif action == "lower_hand":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                lower_event = stage_queue_manager.lower_hand(
+                    room_id=room,
+                    user_id=int(data.get("user_id", user_id or 0)),
+                )
+                await simulation_manager.broadcast_to_room(room, lower_event)
+
+            elif action == "approve_speaker":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                target_uid = int(data.get("target_user_id", 0))
+                duration = int(data.get("duration_sec", 180))
+                approve_event = stage_queue_manager.approve_speaker(
+                    room_id=room,
+                    user_id=target_uid,
+                    moderator_id=user_id or 1,
+                    duration_sec=duration,
+                )
+                await simulation_manager.broadcast_to_room(room, approve_event)
+
+            elif action == "deny_speaker":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                target_uid = int(data.get("target_user_id", 0))
+                deny_event = stage_queue_manager.deny_speaker(
+                    room_id=room,
+                    user_id=target_uid,
+                    moderator_id=user_id or 1,
+                    reason=data.get("reason", "Queue turn denied by moderator"),
+                )
+                await simulation_manager.broadcast_to_room(room, deny_event)
+
+            elif action == "demote_speaker":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                target_uid = int(data.get("target_user_id", 0))
+                demote_event = stage_queue_manager.demote_speaker(
+                    room_id=room,
+                    user_id=target_uid,
+                    moderator_id=user_id or 1,
+                    reason=data.get("reason", "Hot-seat turn completed"),
+                )
+                await simulation_manager.broadcast_to_room(room, demote_event)
+
+            elif action == "get_stage_queue":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                queue_state = stage_queue_manager.get_stage_state(room)
+                await websocket.send_text(json.dumps(queue_state))
+
+            elif action == "request_webrtc_token":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                req_role = data.get("role", "AUDIENCE")
+                token_str = stage_queue_manager.provision_webrtc_token(
+                    room_id=room,
+                    user_id=user_id or 999,
+                    username=sender_name,
+                    role=getattr(SpeakerRole, req_role.upper(), SpeakerRole.AUDIENCE),
+                )
+                await websocket.send_text(json.dumps({
+                    "type": "stage:webrtc_token",
+                    "room_id": room,
+                    "token": token_str,
+                    "role": req_role,
+                }))
+
+            # 8. DUAL-TRACK PITCH DECK SLIDE CASTING & POINTER
+            elif action == "slide_change":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                deck_session = slide_deck_synchronizer.get_or_create_session(
+                    room_id=room,
+                    deck_id=data.get("deck_id"),
+                    total_slides=int(data.get("total_slides", 12)),
+                )
+                slide_idx = int(data.get("slide_index", 0))
+                slide_evt = deck_session.set_slide(slide_idx, presenter_name=sender_name)
+                await simulation_manager.broadcast_to_room(room, slide_evt)
+
+            elif action == "slide_pointer":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                deck_session = slide_deck_synchronizer.get_or_create_session(room_id=room)
+                x = float(data.get("x", 0.5))
+                y = float(data.get("y", 0.5))
+                active = bool(data.get("active", True))
+                color = data.get("color")
+                ptr_evt = deck_session.update_pointer(x, y, active=active, color=color)
+                await simulation_manager.broadcast_to_room(room, ptr_evt)
+
+            elif action == "slide_annotate":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                deck_session = slide_deck_synchronizer.get_or_create_session(room_id=room)
+                annotation = data.get("annotation", {})
+                slide_idx = data.get("slide_index")
+                ann_evt = deck_session.add_annotation(annotation, slide_index=slide_idx)
+                await simulation_manager.broadcast_to_room(room, ann_evt)
+
+            elif action == "slide_clear_annotations":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                deck_session = slide_deck_synchronizer.get_or_create_session(room_id=room)
+                slide_idx = data.get("slide_index")
+                clr_evt = deck_session.clear_annotations(slide_index=slide_idx)
+                await simulation_manager.broadcast_to_room(room, clr_evt)
+
+            elif action == "get_slide_state":
+                room = data.get("room", f"startup:{data.get('startup_id', 'default')}")
+                deck_session = slide_deck_synchronizer.get_or_create_session(room_id=room)
+                await websocket.send_text(json.dumps(deck_session.get_state()))
 
             else:
                 await websocket.send_text(json.dumps({
