@@ -324,78 +324,10 @@ class StartupService:
         Simulate equity issuance, convertible instrument conversion (BSA-AIR / SAFE),
         and nominee fractional unit allocation under Algerian Commercial Code Law 22-09 (SPAS).
         Uses Largest Remainder Method (Hamilton-Hare) for indivisible legal share allocation.
+        Delegates to hardened CapTableEngine.
         """
-        pre_money = Decimal(str(req.preMoneyValuationDzd))
-        investment = Decimal(str(req.investmentAmountDzd))
-        pre_shares = Decimal(str(req.preMoneyShares))
-
-        post_money = pre_money + investment
-        share_price = (pre_money / pre_shares).quantize(Decimal("0.0001"), rounding=ROUND_HALF_UP)
-        new_shares = int((investment / share_price).quantize(Decimal("1"), rounding=ROUND_FLOOR))
-        post_round_shares = int(pre_shares) + new_shares
-
-        investor_equity_pct = float(
-            ((Decimal(new_shares) / Decimal(post_round_shares)) * Decimal("100")).quantize(
-                Decimal("0.0001"), rounding=ROUND_HALF_UP
-            )
-        )
-        founder_dilution_factor = float(
-            (pre_shares / Decimal(post_round_shares)).quantize(Decimal("0.0001"), rounding=ROUND_HALF_UP)
-        )
-
-        # Process Convertibles (BSA-AIR / SAFE)
-        conversions: List[ConvertibleConversionItem] = []
-        if req.convertibles:
-            for conv in req.convertibles:
-                principal = Decimal(str(conv.principalAmountDzd))
-                discount = Decimal(str(conv.discountRate))
-                priced_discount_price = share_price * (Decimal("1") - discount)
-
-                if conv.valuationCapDzd:
-                    cap_val = Decimal(str(conv.valuationCapDzd))
-                    cap_price = cap_val / pre_shares
-                    effective_conv_price = min(priced_discount_price, cap_price)
-                else:
-                    effective_conv_price = priced_discount_price
-
-                effective_conv_price = max(effective_conv_price, Decimal("0.0001"))
-                shares_conv = int((principal / effective_conv_price).quantize(Decimal("1"), rounding=ROUND_FLOOR))
-                dilution_pct = float(
-                    ((Decimal(shares_conv) / Decimal(post_round_shares + shares_conv)) * Decimal("100")).quantize(
-                        Decimal("0.0001"), rounding=ROUND_HALF_UP
-                    )
-                )
-
-                conversions.append(
-                    ConvertibleConversionItem(
-                        instrumentType=conv.instrumentType,
-                        principalAmountDzd=conv.principalAmountDzd,
-                        conversionPriceDzd=float(effective_conv_price.quantize(Decimal("0.0001"))),
-                        sharesIssued=shares_conv,
-                        dilutionPct=dilution_pct,
-                    )
-                )
-
-        # Process Nominee Fractional Allocation (Hamilton-Hare / Largest Remainder Method, Art. 715 bis 30)
-        nominee_resp: Optional[NomineeAllocationResponse] = None
-        if req.pledges and len(req.pledges) > 0:
-            nominee_resp = cls.allocate_nominee_units(
-                total_legal_shares=new_shares,
-                pledges=[{"investorId": p.investorId, "amountDzd": p.amountDzd} for p in req.pledges]
-            )
-
-        return CapTableSimulateResponse(
-            preMoneyValuationDzd=int(pre_money),
-            investmentAmountDzd=int(investment),
-            postMoneyValuationDzd=int(post_money),
-            sharePriceDzd=float(share_price),
-            newSharesIssued=new_shares,
-            postRoundTotalShares=post_round_shares,
-            investorEquityPct=investor_equity_pct,
-            founderDilutionFactor=founder_dilution_factor,
-            convertibleConversions=conversions,
-            nomineeAllocation=nominee_resp,
-        )
+        from app.services.cap_table import CapTableEngine
+        return CapTableEngine.simulate_dilution(req)
 
     @staticmethod
     def allocate_nominee_units(
@@ -406,74 +338,10 @@ class StartupService:
         Distribute indivisible legal shares to retail backers in a Nominee block (*Convention de Portage*)
         using the Largest Remainder Method (Hamilton-Hare Allocation) under Law 22-09 (Article 715 bis 30).
         Guarantees the Zero-Loss Invariant: sum(discretized_shares) == total_legal_shares.
+        Delegates to hardened CapTableEngine.
         """
-        if total_legal_shares <= 0 or not pledges:
-            return NomineeAllocationResponse(
-                totalNomineeShares=total_legal_shares,
-                totalNomineeAmountDzd=sum(p["amountDzd"] for p in pledges) if pledges else 0,
-                allocations=[],
-                exactZeroLossInvariantVerified=True,
-            )
-
-        total_amount = sum(Decimal(str(p["amountDzd"])) for p in pledges)
-        total_shares_dec = Decimal(str(total_legal_shares))
-
-        intermediate: List[Dict[str, Any]] = []
-        integer_sum = 0
-
-        for p in pledges:
-            inv_id = str(p["investorId"])
-            amt = Decimal(str(p["amountDzd"]))
-            # Exact fractional quota with 18 decimal precision
-            exact_quota = (amt * total_shares_dec) / total_amount
-            floor_shares = int(exact_quota.quantize(Decimal("1"), rounding=ROUND_FLOOR))
-            remainder = exact_quota - Decimal(str(floor_shares))
-            integer_sum += floor_shares
-
-            intermediate.append({
-                "investorId": inv_id,
-                "amountDzd": int(amt),
-                "exactQuota": exact_quota,
-                "discretized": floor_shares,
-                "remainder": remainder,
-            })
-
-        # Deficit distribution according to highest remainder
-        deficit = total_legal_shares - integer_sum
-        intermediate.sort(key=lambda x: x["remainder"], reverse=True)
-
-        for i in range(deficit):
-            intermediate[i % len(intermediate)]["discretized"] += 1
-
-        # Re-sort to original or investor order
-        allocations: List[NomineeBeneficialItem] = []
-        for item in intermediate:
-            shares = item["discretized"]
-            pct = float(
-                ((Decimal(shares) / total_shares_dec) * Decimal("100")).quantize(
-                    Decimal("0.0001"), rounding=ROUND_HALF_UP
-                )
-            )
-            allocations.append(
-                NomineeBeneficialItem(
-                    investorId=item["investorId"],
-                    amountDzd=item["amountDzd"],
-                    beneficialUnitsExact=float(item["exactQuota"].quantize(Decimal("0.000001"))),
-                    discretizedShares=shares,
-                    ownershipPct=pct,
-                )
-            )
-
-        # Verify zero-loss invariant
-        allocated_total = sum(a.discretizedShares for a in allocations)
-        invariant_verified = (allocated_total == total_legal_shares)
-
-        return NomineeAllocationResponse(
-            totalNomineeShares=total_legal_shares,
-            totalNomineeAmountDzd=int(total_amount),
-            allocations=allocations,
-            exactZeroLossInvariantVerified=invariant_verified,
-        )
+        from app.services.cap_table import CapTableEngine
+        return CapTableEngine.allocate_nominee_units(total_legal_shares, pledges)
 
     # -------------------------------------------------------------------------
     # 4. CAMPAIGN LIFECYCLE STATE MACHINE
