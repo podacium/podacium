@@ -64,11 +64,17 @@ from app.routers import (
     diligence,
     dealmaking,
     cap_table,
+    vdr,
     platform_mode,
     valuation,
     protection,
     escrow,
     waqf,
+    hq,
+    reels,
+    khatm,
+    squads,
+    halka,
 )
 from app.routers import billing_routers
 from app.routers.shared import router as shared_router
@@ -86,6 +92,7 @@ _ROUTERS = [
     (users.router, "Users"),
     (startups.router, "Startups & Simulation"),
     (cap_table.router, "Cap Table & Law 22-09 SPAS"),
+    (vdr.router, "Virtual Data Room (VDR)"),
     (curriculum.router, "Financial Literacy & Curriculum"),
     (diagnostic.router, "Startup Label Diagnostic Decree 20-254"),
     (diligence.router, "Community Diligence & FactGuard"),
@@ -132,9 +139,18 @@ _ROUTERS = [
     (mail.router, "Corporate Mail Suite"),
     (sharia.router, "Sharia & AI Swarms"),
     (bounties.router, "S4E Bounties & Istihaq Escrow"),
+    (escrow.router, "Smart Escrow Vaults & Multi-Key Release"),
+    (waqf.router, "Waqf Endowments & Sharia Fatwas"),
     (dealmaking.router, "Dealmaker Swarm & MAUT Negotiation"),
     (simulation.router, "Simulation League & Double-Entry Ledger"),
     (fantasy.router, "Fantasy Startup League"),
+    (offline.router, "Offline Merkle-CRDT State Channels"),
+    (viral.router, "Viral Growth & Brag Engine"),
+    (hq.router, "Founder Digital HQ 2.5D RPG"),
+    (reels.router, "Startup Reels & Swipe-to-Diligence"),
+    (khatm.router, "Sovereign Haptic Khatm Ceremony"),
+    (squads.router, "Backer Squads (الشلل الاستثمارية)"),
+    (halka.router, "Halka Family Syndicates (حلقة العائلة)"),
 ]
 
 # In LICENSED_PSP mode, mount custodial payout endpoints
