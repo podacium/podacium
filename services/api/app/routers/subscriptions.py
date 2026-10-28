@@ -665,3 +665,82 @@ async def admin_process_renewals(current_user=Depends(get_current_active_user)):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="errors.billing.failed_to_process_renewals"
         )
+
+
+# -------------------------------------------------------------------------
+# TamWheel Founder SaaS OS Subscription & Entitlement Endpoints (Section 10)
+# -------------------------------------------------------------------------
+from app.services.saas_subscription import saas_subscription_engine
+from app.schemas.saas_subscription import (
+    SaaSTier,
+    SaaSFeature,
+    SaaSPlanCatalogResponse,
+    StartupSubscriptionResponse,
+    SaaSPlanUpgradeRequest,
+    EntitlementCheckResult,
+    ValidateStakeholdersRequest,
+    ValidateStorageRequest,
+)
+
+
+@router.get("/saas/plans", response_model=SaaSPlanCatalogResponse)
+async def get_saas_plan_catalog():
+    """Retrieve full catalog of Founder SaaS OS pricing tiers (Genesis, Seed OS, Growth OS, Enterprise OS)."""
+    return saas_subscription_engine.get_plan_catalog()
+
+
+@router.get("/saas/startups/{startup_id}", response_model=StartupSubscriptionResponse)
+async def get_startup_saas_subscription(
+    startup_id: str,
+    current_user=Depends(get_current_active_user),
+):
+    """Retrieve current Founder OS subscription plan, usage limits, and renewal dates."""
+    return saas_subscription_engine.get_subscription_response(startup_id)
+
+
+@router.post("/saas/startups/{startup_id}/upgrade", response_model=StartupSubscriptionResponse)
+async def upgrade_startup_saas_subscription(
+    startup_id: str,
+    req: SaaSPlanUpgradeRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """Upgrade startup Founder OS plan tier (e.g. Genesis -> Seed OS -> Growth OS -> Enterprise OS)."""
+    return saas_subscription_engine.upgrade_subscription(
+        startup_id=startup_id,
+        target_tier=req.target_tier,
+        billing_cycle=req.billing_cycle,
+    )
+
+
+@router.get("/saas/startups/{startup_id}/entitlements/{feature}", response_model=EntitlementCheckResult)
+async def check_startup_feature_entitlement(
+    startup_id: str,
+    feature: SaaSFeature,
+    current_user=Depends(get_current_active_user),
+):
+    """Check feature entitlement status under active subscription plan."""
+    return saas_subscription_engine.validate_feature_access(startup_id, feature)
+
+
+@router.post("/saas/startups/{startup_id}/validate-stakeholders", response_model=EntitlementCheckResult)
+async def validate_startup_stakeholders(
+    startup_id: str,
+    req: ValidateStakeholdersRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """Validate whether candidate cap-table stakeholders exceed subscription limits."""
+    return saas_subscription_engine.validate_stakeholder_capacity(startup_id, req.candidate_count)
+
+
+@router.post("/saas/startups/{startup_id}/validate-storage", response_model=EntitlementCheckResult)
+async def validate_startup_storage(
+    startup_id: str,
+    req: ValidateStorageRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """Validate whether file upload exceeds subscription VDR storage or tier allowances."""
+    return saas_subscription_engine.validate_vdr_storage_capacity(
+        startup_id=startup_id,
+        additional_bytes=req.additional_bytes,
+        document_tier=req.document_tier,
+    )
