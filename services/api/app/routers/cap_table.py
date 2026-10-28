@@ -9,7 +9,12 @@ from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 
 from app.core.auth import get_current_active_user
-from app.services.cap_table import CapTableEngine
+from app.services.cap_table import (
+    CapTableEngine,
+    SecondaryLiquidityEngine,
+    DualEntityCapTableMirror,
+    ESOPVestingEngine,
+)
 from app.schemas.cap_table import (
     ShareClassModel,
     ShareClassCreateRequest,
@@ -28,6 +33,16 @@ from app.schemas.cap_table import (
     NomineeAllocationResponse,
     BsaAirGenerateRequest,
     BsaAirContractResponse,
+    LiquidityWindowCreateRequest,
+    SellerOrderRequest,
+    SellerOrderResult,
+    LiquidityAuctionClearResponse,
+    HoldCoMirrorSetupRequest,
+    HoldCoShareIssuanceRequest,
+    CrossBorderMirrorResponse,
+    EsopGrantCreateRequest,
+    EsopVestingStatusResponse,
+    EsopExerciseRequest,
 )
 
 logger = logging.getLogger(__name__)
@@ -261,3 +276,209 @@ async def generate_bsa_air_warrant_contract(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=f"Contract generation failed: {str(exc)}",
         )
+
+
+# =============================================================================
+# 6. SECONDARY LIQUIDITY & UNIFORM-PRICE DUTCH AUCTION ENDPOINTS
+# =============================================================================
+
+@router.post("/startups/{startup_id}/secondary/windows", status_code=status.HTTP_201_CREATED)
+async def create_secondary_liquidity_window(
+    startup_id: str,
+    req: LiquidityWindowCreateRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Open a quarterly secondary liquidity window for private SPAS shares.
+    Allows employees, early investors, and angels to submit tender sell orders.
+    """
+    try:
+        window = SecondaryLiquidityEngine.create_liquidity_window(startup_id, req)
+        return window
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
+
+
+@router.post("/startups/{startup_id}/secondary/windows/{window_id}/orders", response_model=SellerOrderResult, status_code=status.HTTP_201_CREATED)
+async def submit_secondary_seller_order(
+    startup_id: str,
+    window_id: str,
+    req: SellerOrderRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Submit a tender sell order into an active liquidity window.
+    Specifies shares offered, reserve price, cost basis, and CIDTA Art. 169 reinvestment status.
+    """
+    try:
+        order_res = SecondaryLiquidityEngine.submit_seller_order(window_id, req)
+        return order_res
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(exc))
+
+
+@router.post("/startups/{startup_id}/secondary/windows/{window_id}/clear", response_model=LiquidityAuctionClearResponse)
+async def clear_secondary_liquidity_auction(
+    startup_id: str,
+    window_id: str,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Execute uniform-price Dutch auction clearing for an open secondary liquidity window.
+    Determines single clearing price, applies pro-rata rationing if oversubscribed,
+    deducts 1.5% platform transaction fee and 5.0% profit carry on realized net gains.
+    """
+    try:
+        clear_res = SecondaryLiquidityEngine.clear_uniform_price_auction(window_id)
+        return clear_res
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(exc))
+
+
+@router.get("/startups/{startup_id}/secondary/windows/{window_id}")
+async def get_secondary_liquidity_window(
+    startup_id: str,
+    window_id: str,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Retrieve status, orders, and clearing results for a liquidity window.
+    """
+    window = SecondaryLiquidityEngine.get_window(window_id)
+    if not window:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Window not found")
+    return window
+
+
+# =============================================================================
+# 7. DUAL-ENTITY CROSS-BORDER HOLDCO-OPCO MIRROR ENDPOINTS
+# =============================================================================
+
+@router.post("/startups/{startup_id}/mirror/setup", response_model=CrossBorderMirrorResponse, status_code=status.HTTP_201_CREATED)
+async def setup_cross_border_mirror(
+    startup_id: str,
+    req: HoldCoMirrorSetupRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Initialize offshore HoldCo mirror (ADGM / Delaware / DIFC) holding 100% of Algerian OpCo SPAS.
+    Maps hard-currency diaspora shares to domestic beneficial units at fixed/transparent FX parity.
+    """
+    try:
+        mirror = DualEntityCapTableMirror.setup_mirror(startup_id, req)
+        return mirror
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
+
+
+@router.post("/startups/{startup_id}/mirror/shares", response_model=CrossBorderMirrorResponse, status_code=status.HTTP_201_CREATED)
+async def issue_holdco_diaspora_shares(
+    startup_id: str,
+    req: HoldCoShareIssuanceRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Issue offshore HoldCo shares to a diaspora investor and mirror the beneficial allocation on OpCo.
+    """
+    try:
+        mirror = DualEntityCapTableMirror.issue_holdco_shares(startup_id, req)
+        return mirror
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(exc))
+
+
+@router.get("/startups/{startup_id}/mirror/status", response_model=CrossBorderMirrorResponse)
+async def get_cross_border_mirror_status(
+    startup_id: str,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Retrieve cross-border HoldCo-OpCo cap table synchronization status, FX parity, and diaspora register.
+    """
+    try:
+        mirror = DualEntityCapTableMirror.get_mirror_status(startup_id)
+        return mirror
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc))
+
+
+# =============================================================================
+# 8. ESOP / BSPCE VESTING & DOUBLE-TRIGGER ACCELERATION ENDPOINTS
+# =============================================================================
+
+@router.post("/startups/{startup_id}/esop/grants", status_code=status.HTTP_201_CREATED)
+async def create_esop_grant(
+    startup_id: str,
+    req: EsopGrantCreateRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Issue an Employee Stock Option Grant (BSPCE equivalent under Law 22-09 SPAS).
+    Configured with standard 48-month vesting schedule, 12-month cliff, and acceleration protections.
+    """
+    try:
+        grant = ESOPVestingEngine.create_grant(startup_id, req)
+        return grant
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
+
+
+@router.get("/startups/{startup_id}/esop/grants/{grant_id}/vesting", response_model=EsopVestingStatusResponse)
+async def get_esop_vesting_status(
+    startup_id: str,
+    grant_id: str,
+    as_of_date: Optional[str] = Query(None, description="Simulate vesting as of date (YYYY-MM-DD)"),
+    current_fmv_dzd: Optional[float] = Query(None, description="Optional fair market value per share"),
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Calculate vesting progression, cliff status, exercisable options, and intrinsic value.
+    """
+    try:
+        status_res = ESOPVestingEngine.calculate_vesting(grant_id, as_of_date, current_fmv_dzd)
+        return status_res
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc))
+
+
+@router.post("/startups/{startup_id}/esop/grants/{grant_id}/accelerate", response_model=EsopVestingStatusResponse)
+async def trigger_esop_acceleration(
+    startup_id: str,
+    grant_id: str,
+    is_change_of_control: bool = True,
+    is_involuntary_termination: bool = False,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Trigger change-of-control acceleration (single-trigger or double-trigger) on an ESOP grant.
+    """
+    try:
+        status_res = ESOPVestingEngine.apply_acceleration(
+            grant_id, is_change_of_control, is_involuntary_termination
+        )
+        return status_res
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc))
+
+
+@router.post("/startups/{startup_id}/esop/grants/{grant_id}/exercise")
+async def exercise_esop_options(
+    startup_id: str,
+    grant_id: str,
+    req: EsopExerciseRequest,
+    current_user=Depends(get_current_active_user),
+):
+    """
+    Exercise vested options into statutory shares on the startup cap table.
+    """
+    try:
+        res = ESOPVestingEngine.exercise_options(grant_id, req)
+        return res
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))

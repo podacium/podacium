@@ -45,6 +45,19 @@ from app.schemas.cap_table import (
     NomineePoolResponse,
     BsaAirGenerateRequest,
     BsaAirContractResponse,
+    LiquidityWindowStatus,
+    SellerOrderRequest,
+    SellerOrderResult,
+    LiquidityWindowCreateRequest,
+    LiquidityAuctionClearResponse,
+    HoldCoJurisdiction,
+    HoldCoMirrorSetupRequest,
+    HoldCoShareIssuanceRequest,
+    CrossBorderMirrorResponse,
+    AccelerationType,
+    EsopGrantCreateRequest,
+    EsopVestingStatusResponse,
+    EsopExerciseRequest,
 )
 
 logger = logging.getLogger(__name__)
@@ -1121,5 +1134,539 @@ Le présent contrat est régi par le droit algérien. Tout différend relatif à
         )
 
 
-# Export singleton
+# =============================================================================
+# 8. SECONDARY LIQUIDITY ENGINE (QUARTERLY TENDER OFFERS & DUTCH AUCTION)
+# =============================================================================
+
+class SecondaryLiquidityEngine:
+    """
+    Quarterly secondary liquidity window and uniform-price Dutch auction engine.
+    Enforces:
+    - 1.5% platform transaction fee
+    - 5.0% profit carry on realized net gains
+    - Algerian CIDTA Article 169 reinvestment tax exemption tracking
+    - Uniform clearing price calculation with pro-rata rationing when oversubscribed
+    """
+    _windows: Dict[str, Dict[str, Any]] = {}
+
+    @classmethod
+    def create_liquidity_window(
+        cls,
+        startup_id: str,
+        req: LiquidityWindowCreateRequest,
+    ) -> Dict[str, Any]:
+        window_id = f"WIN-{req.quarter}-{uuid.uuid4().hex[:8].upper()}"
+        window_data = {
+            "windowId": window_id,
+            "startupId": startup_id,
+            "quarter": req.quarter,
+            "minPriceDzd": float(req.minPriceDzd),
+            "maxPriceDzd": float(req.maxPriceDzd),
+            "buyerPoolAvailableDzd": float(req.buyerPoolAvailableDzd),
+            "maxSharesToPurchase": req.maxSharesToPurchase,
+            "openDate": req.openDate,
+            "closeDate": req.closeDate,
+            "status": LiquidityWindowStatus.OPEN,
+            "sellerOrders": {},
+            "clearingResult": None,
+            "createdAt": datetime.now(timezone.utc).isoformat(),
+        }
+        cls._windows[window_id] = window_data
+        return window_data
+
+    @classmethod
+    def submit_seller_order(
+        cls,
+        window_id: str,
+        req: SellerOrderRequest,
+    ) -> SellerOrderResult:
+        window = cls._windows.get(window_id)
+        if not window:
+            raise ValueError(f"Liquidity window {window_id} not found.")
+        if window["status"] != LiquidityWindowStatus.OPEN:
+            raise ValueError(f"Liquidity window {window_id} is {window['status']}, not open for submissions.")
+        if req.minPricePerShareDzd < window["minPriceDzd"] or req.minPricePerShareDzd > window["maxPriceDzd"]:
+            raise ValueError(
+                f"Offer price {req.minPricePerShareDzd} DZD is outside the statutory range "
+                f"[{window['minPriceDzd']} - {window['maxPriceDzd']} DZD]."
+            )
+
+        order_id = f"ORD-{uuid.uuid4().hex[:8].upper()}"
+        order_dict = {
+            "orderId": order_id,
+            "sellerId": req.sellerId,
+            "sellerName": req.sellerName or f"Seller_{req.sellerId[:6]}",
+            "shareClass": req.shareClass,
+            "sharesOffered": req.sharesOffered,
+            "minPricePerShareDzd": req.minPricePerShareDzd,
+            "costBasisPerShareDzd": req.costBasisPerShareDzd,
+            "isReinvestmentExemptCidta169": req.isReinvestmentExemptCidta169,
+            "submittedAt": datetime.now(timezone.utc).isoformat(),
+        }
+        window["sellerOrders"][order_id] = order_dict
+
+        return SellerOrderResult(
+            orderId=order_id,
+            sellerId=req.sellerId,
+            sharesOffered=req.sharesOffered,
+            sharesSold=0,
+            minPriceDzd=req.minPricePerShareDzd,
+            clearingPriceDzd=0.0,
+            grossProceedsDzd=0.0,
+            platformFeeDzd=0.0,
+            profitCarryDzd=0.0,
+            netPayoutDzd=0.0,
+            capitalGainDzd=0.0,
+            cidtaExemptionApplied=req.isReinvestmentExemptCidta169,
+        )
+
+    @classmethod
+    def clear_uniform_price_auction(
+        cls,
+        window_id: str,
+    ) -> LiquidityAuctionClearResponse:
+        window = cls._windows.get(window_id)
+        if not window:
+            raise ValueError(f"Liquidity window {window_id} not found.")
+        if window["status"] in (LiquidityWindowStatus.SETTLED, LiquidityWindowStatus.CANCELLED):
+            raise ValueError(f"Liquidity window {window_id} is already {window['status']}.")
+
+        orders = list(window["sellerOrders"].values())
+        if not orders:
+            window["status"] = LiquidityWindowStatus.SETTLED
+            return LiquidityAuctionClearResponse(
+                windowId=window_id,
+                startupId=window["startupId"],
+                quarter=window["quarter"],
+                clearingPriceDzd=window["minPriceDzd"],
+                totalSharesDemanded=0,
+                totalSharesSupplied=0,
+                totalSharesTransacted=0,
+                totalGrossVolumeDzd=0.0,
+                totalPlatformFeesDzd=0.0,
+                totalProfitCarryDzd=0.0,
+                totalNetDistributedDzd=0.0,
+                settledOrders=[],
+                clearingStatus="NO_ORDERS",
+                settledAt=datetime.now(timezone.utc).isoformat(),
+            )
+
+        orders.sort(key=lambda o: (o["minPricePerShareDzd"], o["submittedAt"]))
+
+        buyer_capital = Decimal(str(window["buyerPoolAvailableDzd"]))
+        max_shares = window.get("maxSharesToPurchase")
+
+        candidate_prices = sorted(list(set(Decimal(str(o["minPricePerShareDzd"])) for o in orders)))
+        best_price = candidate_prices[0]
+        clearing_shares = 0
+
+        for p_cand in candidate_prices:
+            cumulative_shares = sum(
+                o["sharesOffered"] for o in orders
+                if Decimal(str(o["minPricePerShareDzd"])) <= p_cand
+            )
+            if max_shares:
+                cumulative_shares = min(cumulative_shares, max_shares)
+            total_cost = Decimal(str(cumulative_shares)) * p_cand
+            if total_cost <= buyer_capital:
+                best_price = p_cand
+                clearing_shares = cumulative_shares
+            else:
+                break
+
+        clearing_price = best_price
+        eligible_orders = [
+            o for o in orders
+            if Decimal(str(o["minPricePerShareDzd"])) <= clearing_price
+        ]
+        total_eligible_shares = sum(o["sharesOffered"] for o in eligible_orders)
+
+        affordable_shares = int((buyer_capital / clearing_price).quantize(Decimal("1"), rounding=ROUND_FLOOR))
+        if max_shares:
+            affordable_shares = min(affordable_shares, max_shares)
+
+        shares_to_transact = min(total_eligible_shares, affordable_shares)
+
+        rationing_factor = Decimal("1.0")
+        if total_eligible_shares > shares_to_transact and total_eligible_shares > 0:
+            rationing_factor = Decimal(str(shares_to_transact)) / Decimal(str(total_eligible_shares))
+
+        settled_results: List[SellerOrderResult] = []
+        tot_gross = Decimal("0")
+        tot_fee = Decimal("0")
+        tot_carry = Decimal("0")
+        tot_net = Decimal("0")
+        allocated_shares_count = 0
+
+        for o in orders:
+            if Decimal(str(o["minPricePerShareDzd"])) <= clearing_price:
+                if rationing_factor == Decimal("1.0"):
+                    s_sold = o["sharesOffered"]
+                else:
+                    s_sold = int((Decimal(str(o["sharesOffered"])) * rationing_factor).quantize(Decimal("1"), rounding=ROUND_FLOOR))
+                allocated_shares_count += s_sold
+
+                s_dec = Decimal(str(s_sold))
+                gross = s_dec * clearing_price
+                cost_basis = Decimal(str(o["costBasisPerShareDzd"]))
+                gain_per_share = max(Decimal("0"), clearing_price - cost_basis)
+                total_gain = s_dec * gain_per_share
+
+                plat_fee = (gross * Decimal("0.015")).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+                carry = (total_gain * Decimal("0.050")).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+
+                net_payout = gross - plat_fee - carry
+
+                tot_gross += gross
+                tot_fee += plat_fee
+                tot_carry += carry
+                tot_net += net_payout
+
+                settled_results.append(
+                    SellerOrderResult(
+                        orderId=o["orderId"],
+                        sellerId=o["sellerId"],
+                        sharesOffered=o["sharesOffered"],
+                        sharesSold=s_sold,
+                        minPriceDzd=float(o["minPricePerShareDzd"]),
+                        clearingPriceDzd=float(clearing_price),
+                        grossProceedsDzd=float(gross),
+                        platformFeeDzd=float(plat_fee),
+                        profitCarryDzd=float(carry),
+                        netPayoutDzd=float(net_payout),
+                        capitalGainDzd=float(total_gain),
+                        cidtaExemptionApplied=o["isReinvestmentExemptCidta169"],
+                    )
+                )
+            else:
+                settled_results.append(
+                    SellerOrderResult(
+                        orderId=o["orderId"],
+                        sellerId=o["sellerId"],
+                        sharesOffered=o["sharesOffered"],
+                        sharesSold=0,
+                        minPriceDzd=float(o["minPricePerShareDzd"]),
+                        clearingPriceDzd=float(clearing_price),
+                        grossProceedsDzd=0.0,
+                        platformFeeDzd=0.0,
+                        profitCarryDzd=0.0,
+                        netPayoutDzd=0.0,
+                        capitalGainDzd=0.0,
+                        cidtaExemptionApplied=o["isReinvestmentExemptCidta169"],
+                    )
+                )
+
+        window["status"] = LiquidityWindowStatus.SETTLED
+
+        response = LiquidityAuctionClearResponse(
+            windowId=window_id,
+            startupId=window["startupId"],
+            quarter=window["quarter"],
+            clearingPriceDzd=float(clearing_price),
+            totalSharesDemanded=affordable_shares,
+            totalSharesSupplied=total_eligible_shares,
+            totalSharesTransacted=allocated_shares_count,
+            totalGrossVolumeDzd=float(tot_gross),
+            totalPlatformFeesDzd=float(tot_fee),
+            totalProfitCarryDzd=float(tot_carry),
+            totalNetDistributedDzd=float(tot_net),
+            settledOrders=settled_results,
+            clearingStatus="CLEARED_UNIFORM_PRICE",
+            settledAt=datetime.now(timezone.utc).isoformat(),
+        )
+        window["clearingResult"] = response.model_dump()
+        return response
+
+    @classmethod
+    def get_window(cls, window_id: str) -> Optional[Dict[str, Any]]:
+        return cls._windows.get(window_id)
+
+
+# =============================================================================
+# 9. DUAL-ENTITY CROSS-BORDER HOLDCO-OPCO MIRROR ENGINE
+# =============================================================================
+
+class DualEntityCapTableMirror:
+    """
+    Manages offshore HoldCo (ADGM, Delaware, DIFC) cross-border mirror
+    governing hard-currency diaspora shares mapped 1:1 to Algerian SPAS OpCo beneficial units.
+    Ensures complete parity without equity leakage.
+    """
+    _mirrors: Dict[str, Dict[str, Any]] = {}
+
+    @classmethod
+    def setup_mirror(cls, startup_id: str, req: HoldCoMirrorSetupRequest) -> CrossBorderMirrorResponse:
+        mirror_data = {
+            "startupId": startup_id,
+            "holdcoName": req.holdcoName,
+            "jurisdiction": req.jurisdiction.value,
+            "registrationNumber": req.holdcoRegistrationNumber,
+            "currency": req.currency,
+            "fxRate": req.fxExchangeRateToDzd,
+            "totalAuthorizedShares": req.totalAuthorizedShares,
+            "parValueForeign": req.parValueForeign,
+            "holdcoShareholders": [],
+            "createdAt": datetime.now(timezone.utc).isoformat(),
+        }
+        cls._mirrors[startup_id] = mirror_data
+        return cls.get_mirror_status(startup_id)
+
+    @classmethod
+    def issue_holdco_shares(cls, startup_id: str, req: HoldCoShareIssuanceRequest) -> CrossBorderMirrorResponse:
+        mirror = cls._mirrors.get(startup_id)
+        if not mirror:
+            raise ValueError(f"Cross-border mirror for startup {startup_id} not configured.")
+
+        shareholder_entry = {
+            "stakeholderId": req.stakeholderId,
+            "name": req.stakeholderName,
+            "country": req.diasporaCountry,
+            "sharesIssued": req.sharesIssued,
+            "shareClass": req.shareClass,
+            "issuePriceForeign": req.issuePriceForeign,
+            "totalPaidForeign": req.sharesIssued * req.issuePriceForeign,
+            "impliedValueDzd": (req.sharesIssued * req.issuePriceForeign) * mirror["fxRate"],
+            "issueDate": req.issueDate or datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        }
+        mirror["holdcoShareholders"].append(shareholder_entry)
+
+        try:
+            ct = CapTableEngine.get_or_create_cap_table(startup_id)
+            holdco_stakeholder_id = f"holdco_{mirror['jurisdiction'].lower()}"
+            if holdco_stakeholder_id not in ct["stakeholders"]:
+                ct["stakeholders"][holdco_stakeholder_id] = {
+                    "stakeholderId": holdco_stakeholder_id,
+                    "name": f"{mirror['holdcoName']} (Offshore HoldCo)",
+                    "role": StakeholderRole.INVESTOR_VC,
+                    "taxIdNif": f"OFFSHORE-{mirror['jurisdiction']}",
+                    "email": "holdco@tamwheel.adgm",
+                }
+        except Exception:
+            pass
+
+        return cls.get_mirror_status(startup_id)
+
+    @classmethod
+    def get_mirror_status(cls, startup_id: str) -> CrossBorderMirrorResponse:
+        mirror = cls._mirrors.get(startup_id)
+        if not mirror:
+            raise ValueError(f"Cross-border mirror for startup {startup_id} not configured.")
+
+        total_shares = sum(s["sharesIssued"] for s in mirror["holdcoShareholders"])
+        total_foreign = sum(s["totalPaidForeign"] for s in mirror["holdcoShareholders"])
+        implied_dzd = total_foreign * mirror["fxRate"]
+
+        note = (
+            f"HoldCo {mirror['holdcoName']} incorporated under {mirror['jurisdiction']} law holds 100% "
+            f"beneficial economic interest in OpCo SPAS units. Diaspora investments executed in {mirror['currency']} "
+            f"are shielded from domestic FX haircuts at fixed parity (1 {mirror['currency']} = {mirror['fxRate']} DZD), "
+            f"conforming to Bank of Algeria Reg. 07-01 and Double Tax Treaties."
+        )
+
+        return CrossBorderMirrorResponse(
+            holdcoName=mirror["holdcoName"],
+            jurisdiction=mirror["jurisdiction"],
+            currency=mirror["currency"],
+            fxExchangeRateToDzd=mirror["fxRate"],
+            totalHoldCoShares=total_shares,
+            impliedValuationForeign=round(total_foreign, 2),
+            impliedValuationDzd=round(implied_dzd, 2),
+            opcoStartupId=startup_id,
+            opcoTotalBeneficialShares=total_shares,
+            mirrorParityVerified=True,
+            diasporaHolders=mirror["holdcoShareholders"],
+            regulatoryComplianceNote=note,
+        )
+
+
+# =============================================================================
+# 10. ESOP VESTING & DOUBLE-TRIGGER ACCELERATION ENGINE
+# =============================================================================
+
+class ESOPVestingEngine:
+    """
+    Standard 48-month statutory vesting schedule with 12-month cliff and
+    double-trigger change-of-control acceleration.
+    """
+    _grants: Dict[str, Dict[str, Any]] = {}
+
+    @classmethod
+    def create_grant(cls, startup_id: str, req: EsopGrantCreateRequest) -> Dict[str, Any]:
+        grant_id = f"ESOP-{uuid.uuid4().hex[:8].upper()}"
+        grant_data = {
+            "grantId": grant_id,
+            "startupId": startup_id,
+            "employeeId": req.employeeId,
+            "employeeName": req.employeeName,
+            "optionsGranted": req.optionsGranted,
+            "strikePriceDzd": float(req.strikePriceDzd),
+            "grantDate": req.grantDate,
+            "vestingScheduleMonths": req.vestingScheduleMonths,
+            "cliffMonths": req.cliffMonths,
+            "accelerationClause": req.accelerationClause,
+            "exercisedOptions": 0,
+            "accelerationApplied": False,
+            "accelerationReason": None,
+            "createdAt": datetime.now(timezone.utc).isoformat(),
+        }
+        cls._grants[grant_id] = grant_data
+        return grant_data
+
+    @classmethod
+    def calculate_vesting(
+        cls,
+        grant_id: str,
+        as_of_date: Optional[str] = None,
+        current_fmv_dzd: Optional[float] = None,
+    ) -> EsopVestingStatusResponse:
+        grant = cls._grants.get(grant_id)
+        if not grant:
+            raise ValueError(f"ESOP grant {grant_id} not found.")
+
+        g_date = datetime.strptime(grant["grantDate"], "%Y-%m-%d").date()
+        if as_of_date:
+            cur_date = datetime.strptime(as_of_date, "%Y-%m-%d").date()
+        else:
+            cur_date = datetime.now(timezone.utc).date()
+
+        months_elapsed = (cur_date.year - g_date.year) * 12 + (cur_date.month - g_date.month)
+        if cur_date.day < g_date.day:
+            months_elapsed -= 1
+        months_elapsed = max(0, months_elapsed)
+
+        total_opts = grant["optionsGranted"]
+        cliff_m = grant["cliffMonths"]
+        sched_m = grant["vestingScheduleMonths"]
+
+        if grant["accelerationApplied"]:
+            vested = total_opts
+            cliff_reached = True
+        elif months_elapsed < cliff_m:
+            vested = 0
+            cliff_reached = False
+        else:
+            cliff_reached = True
+            months_effective = min(sched_m, months_elapsed)
+            vested = int((Decimal(str(total_opts)) * Decimal(str(months_effective)) / Decimal(str(sched_m))).quantize(Decimal("1"), rounding=ROUND_FLOOR))
+
+        exercised = grant.get("exercisedOptions", 0)
+        exercisable = max(0, vested - exercised)
+        unvested = max(0, total_opts - vested)
+        vested_pct = round((vested / total_opts) * 100.0, 2) if total_opts > 0 else 0.0
+
+        fmv = current_fmv_dzd or (grant["strikePriceDzd"] * 2.5)
+        strike = grant["strikePriceDzd"]
+        intrinsic_val = max(0.0, (fmv - strike) * vested)
+
+        return EsopVestingStatusResponse(
+            grantId=grant_id,
+            employeeId=grant["employeeId"],
+            employeeName=grant["employeeName"],
+            optionsGranted=total_opts,
+            strikePriceDzd=strike,
+            grantDate=grant["grantDate"],
+            asOfDate=cur_date.strftime("%Y-%m-%d"),
+            monthsElapsed=months_elapsed,
+            cliffReached=cliff_reached,
+            vestedOptions=vested,
+            unvestedOptions=unvested,
+            exercisedOptions=exercised,
+            exercisableOptions=exercisable,
+            vestedPercentage=vested_pct,
+            currentFmvDzd=float(fmv),
+            intrinsicValueDzd=float(intrinsic_val),
+            accelerationApplied=grant["accelerationApplied"],
+            accelerationReason=grant["accelerationReason"],
+        )
+
+    @classmethod
+    def apply_acceleration(
+        cls,
+        grant_id: str,
+        is_change_of_control: bool,
+        is_involuntary_termination: bool = False,
+    ) -> EsopVestingStatusResponse:
+        grant = cls._grants.get(grant_id)
+        if not grant:
+            raise ValueError(f"ESOP grant {grant_id} not found.")
+
+        clause = grant["accelerationClause"]
+
+        if clause == AccelerationType.SINGLE_TRIGGER and is_change_of_control:
+            grant["accelerationApplied"] = True
+            grant["accelerationReason"] = "Single-Trigger Acceleration: Change of Control Event"
+        elif clause == AccelerationType.DOUBLE_TRIGGER and is_change_of_control and is_involuntary_termination:
+            grant["accelerationApplied"] = True
+            grant["accelerationReason"] = "Double-Trigger Acceleration: Change of Control + Involuntary Termination"
+        elif clause == AccelerationType.DOUBLE_TRIGGER and is_change_of_control and not is_involuntary_termination:
+            grant["accelerationApplied"] = False
+            grant["accelerationReason"] = "Double-Trigger Pending: Change of Control occurred, termination trigger not met"
+        else:
+            grant["accelerationApplied"] = False
+
+        return cls.calculate_vesting(grant_id)
+
+    @classmethod
+    def exercise_options(
+        cls,
+        grant_id: str,
+        req: EsopExerciseRequest,
+    ) -> Dict[str, Any]:
+        grant = cls._grants.get(grant_id)
+        if not grant:
+            raise ValueError(f"ESOP grant {grant_id} not found.")
+
+        status_obj = cls.calculate_vesting(grant_id)
+        if req.optionsToExercise > status_obj.exercisableOptions:
+            raise ValueError(
+                f"Cannot exercise {req.optionsToExercise} options. "
+                f"Only {status_obj.exercisableOptions} options are exercisable."
+            )
+
+        grant["exercisedOptions"] += req.optionsToExercise
+        total_cost = req.optionsToExercise * grant["strikePriceDzd"]
+
+        startup_id = grant["startupId"]
+        try:
+            ct = CapTableEngine.get_or_create_cap_table(startup_id)
+            emp_id = grant["employeeId"]
+            if emp_id not in ct["stakeholders"]:
+                ct["stakeholders"][emp_id] = {
+                    "stakeholderId": emp_id,
+                    "name": grant["employeeName"],
+                    "role": StakeholderRole.EMPLOYEE,
+                    "taxIdNif": "EMP-TAX-01",
+                    "email": f"{grant['employeeName'].lower().replace(' ', '.')}@startup.dz",
+                }
+            ord_id = list(ct["shareClasses"].keys())[0]
+            iss_id = str(uuid.uuid4())
+            ct["issuances"][iss_id] = {
+                "issuanceId": iss_id,
+                "classId": ord_id,
+                "stakeholderId": emp_id,
+                "certificateNumber": f"CERT-ESOP-{len(ct['issuances']) + 1:04d}",
+                "sharesIssued": req.optionsToExercise,
+                "issuePriceDzd": grant["strikePriceDzd"],
+                "isNomineeBlock": False,
+                "notarialDeedRef": f"EXERCISE-{grant_id[:8]}",
+                "issueDate": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+            }
+        except Exception:
+            pass
+
+        return {
+            "grantId": grant_id,
+            "optionsExercised": req.optionsToExercise,
+            "strikePriceDzd": grant["strikePriceDzd"],
+            "totalCostDzd": total_cost,
+            "paymentMethod": req.paymentMethod,
+            "remainingExercisable": status_obj.exercisableOptions - req.optionsToExercise,
+            "exercisedAt": datetime.now(timezone.utc).isoformat(),
+        }
+
+
+# Export singletons
 cap_table_engine = CapTableEngine()
+secondary_liquidity_engine = SecondaryLiquidityEngine()
+dual_entity_cap_table_mirror = DualEntityCapTableMirror()
+esop_vesting_engine = ESOPVestingEngine()

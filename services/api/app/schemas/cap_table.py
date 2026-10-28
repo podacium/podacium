@@ -338,3 +338,161 @@ class BsaAirContractResponse(BaseModel):
     governingLaw: str
     contractMarkdown: str
     statutorySummary: Dict[str, Any]
+
+
+# =============================================================================
+# SECONDARY LIQUIDITY & UNIFORM-PRICE DUTCH AUCTION SCHEMAS
+# =============================================================================
+
+class LiquidityWindowStatus(str, Enum):
+    ANNOUNCED = "ANNOUNCED"
+    OPEN = "OPEN"
+    CLOSED = "CLOSED"
+    CLEARING = "CLEARING"
+    SETTLED = "SETTLED"
+    CANCELLED = "CANCELLED"
+
+
+class SellerOrderRequest(BaseModel):
+    sellerId: str
+    sellerName: Optional[str] = None
+    shareClass: ShareClassType = ShareClassType.ORDINAIRE
+    sharesOffered: int = Field(..., gt=0)
+    minPricePerShareDzd: float = Field(..., gt=0)
+    costBasisPerShareDzd: float = Field(..., ge=0)
+    isReinvestmentExemptCidta169: bool = False
+
+
+class SellerOrderResult(BaseModel):
+    orderId: str
+    sellerId: str
+    sharesOffered: int
+    sharesSold: int
+    minPriceDzd: float
+    clearingPriceDzd: float
+    grossProceedsDzd: float
+    platformFeeDzd: float
+    profitCarryDzd: float
+    netPayoutDzd: float
+    capitalGainDzd: float
+    cidtaExemptionApplied: bool
+
+
+class LiquidityWindowCreateRequest(BaseModel):
+    quarter: str = "2026-Q4"
+    minPriceDzd: float = Field(..., gt=0)
+    maxPriceDzd: float = Field(..., gt=0)
+    buyerPoolAvailableDzd: float = Field(..., gt=0)
+    maxSharesToPurchase: Optional[int] = None
+    openDate: str
+    closeDate: str
+
+
+class LiquidityAuctionClearResponse(BaseModel):
+    windowId: str
+    startupId: str
+    quarter: str
+    clearingPriceDzd: float
+    totalSharesDemanded: int
+    totalSharesSupplied: int
+    totalSharesTransacted: int
+    totalGrossVolumeDzd: float
+    totalPlatformFeesDzd: float  # 1.5% fee
+    totalProfitCarryDzd: float   # 5.0% carry
+    totalNetDistributedDzd: float
+    settledOrders: List[SellerOrderResult]
+    clearingStatus: str
+    settledAt: str
+
+
+# =============================================================================
+# DUAL-ENTITY CROSS-BORDER HOLDCO-OPCO MIRROR SCHEMAS
+# =============================================================================
+
+class HoldCoJurisdiction(str, Enum):
+    ADGM = "ADGM"         # Abu Dhabi Global Market (Common Law)
+    DELAWARE = "DELAWARE" # Delaware C-Corp (DGCL)
+    DIFC = "DIFC"         # Dubai International Financial Centre
+
+
+class HoldCoMirrorSetupRequest(BaseModel):
+    holdcoName: str
+    jurisdiction: HoldCoJurisdiction = HoldCoJurisdiction.ADGM
+    holdcoRegistrationNumber: str
+    currency: str = "USD"
+    fxExchangeRateToDzd: float = Field(135.0, gt=0)
+    totalAuthorizedShares: int = 1000000
+    parValueForeign: float = 0.01
+
+
+class HoldCoShareIssuanceRequest(BaseModel):
+    stakeholderId: str
+    stakeholderName: str
+    diasporaCountry: str
+    sharesIssued: int = Field(..., gt=0)
+    shareClass: str = "Preferred Series Seed"
+    issuePriceForeign: float = Field(..., gt=0)
+    issueDate: Optional[str] = None
+
+
+class CrossBorderMirrorResponse(BaseModel):
+    holdcoName: str
+    jurisdiction: str
+    currency: str
+    fxExchangeRateToDzd: float
+    totalHoldCoShares: int
+    impliedValuationForeign: float
+    impliedValuationDzd: float
+    opcoStartupId: str
+    opcoTotalBeneficialShares: int
+    mirrorParityVerified: bool
+    diasporaHolders: List[Dict[str, Any]]
+    regulatoryComplianceNote: str
+
+
+# =============================================================================
+# ESOP VESTING & ACCELERATION SCHEMAS
+# =============================================================================
+
+class AccelerationType(str, Enum):
+    NONE = "NONE"
+    SINGLE_TRIGGER = "SINGLE_TRIGGER"
+    DOUBLE_TRIGGER = "DOUBLE_TRIGGER"
+
+
+class EsopGrantCreateRequest(BaseModel):
+    employeeId: str
+    employeeName: str
+    optionsGranted: int = Field(..., gt=0)
+    strikePriceDzd: float = Field(..., gt=0)
+    grantDate: str
+    vestingScheduleMonths: int = 48
+    cliffMonths: int = 12
+    accelerationClause: AccelerationType = AccelerationType.DOUBLE_TRIGGER
+
+
+class EsopVestingStatusResponse(BaseModel):
+    grantId: str
+    employeeId: str
+    employeeName: str
+    optionsGranted: int
+    strikePriceDzd: float
+    grantDate: str
+    asOfDate: str
+    monthsElapsed: int
+    cliffReached: bool
+    vestedOptions: int
+    unvestedOptions: int
+    exercisedOptions: int
+    exercisableOptions: int
+    vestedPercentage: float
+    currentFmvDzd: float
+    intrinsicValueDzd: float
+    accelerationApplied: bool
+    accelerationReason: Optional[str] = None
+
+
+class EsopExerciseRequest(BaseModel):
+    optionsToExercise: int = Field(..., gt=0)
+    paymentMethod: str = "CASH" # CASH or NET_EXERCISE
+
