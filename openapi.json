@@ -39680,6 +39680,586 @@
         ]
       }
     },
+    "/api/v1/sharia/zakat/calculate/company": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Compute corporate Zakat under AAOIFI FAS 9",
+        "description": "Executes algorithmic Zakat calculation using either the Net Asset (Working Capital) Method or the Net Invested Capital (Financing) Method, with DZD Nisab benchmarking and dual reconciliation.",
+        "operationId": "calculate_company_zakat_endpoint_api_v1_sharia_zakat_calculate_company_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompanyZakatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompanyZakatAssessment"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/sharia/zakat/calculate/investor": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Compute individual or angel investor Zakat",
+        "description": "Computes equity holder Zakat under AAOIFI Standard No. 35: long-term angel investors (Mustathmir) pay solely on proportional net zakatable working capital assets (excluding valuation markup), whereas short-term traders (Mudharib) pay on full fair market value.",
+        "operationId": "calculate_investor_zakat_endpoint_api_v1_sharia_zakat_calculate_investor_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InvestorZakatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InvestorZakatAssessment"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/v1/sharia/zakat/nisab": {
+      "get": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Evaluate Nisab threshold in DZD",
+        "description": "Evaluates whether a given wealth/asset amount in DZD exceeds the 85g gold or 595g silver Nisab threshold.",
+        "operationId": "evaluate_nisab_endpoint_api_v1_sharia_zakat_nisab_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "zakat_base_dzd",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "minimum": 0.0,
+              "description": "Wealth or asset base in DZD",
+              "title": "Zakat Base Dzd"
+            },
+            "description": "Wealth or asset base in DZD"
+          },
+          {
+            "name": "benchmark",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/NisabBenchmark",
+              "description": "GOLD_85G or SILVER_595G",
+              "default": "GOLD_85G"
+            },
+            "description": "GOLD_85G or SILVER_595G"
+          },
+          {
+            "name": "gold_price_per_gram_dzd",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0.0
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Custom 24k gold price in DZD",
+              "title": "Gold Price Per Gram Dzd"
+            },
+            "description": "Custom 24k gold price in DZD"
+          },
+          {
+            "name": "silver_price_per_gram_dzd",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0.0
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Custom pure silver price in DZD",
+              "title": "Silver Price Per Gram Dzd"
+            },
+            "description": "Custom pure silver price in DZD"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NisabEvaluation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/murabaha/orders": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Initiate Murabaha purchase order (Stage 1: Promise)",
+        "description": "Registers a client purchase order request with a binding unilateral purchase promise (Wa'd bi al-Shira') specifying third-party supplier, goods specifications, estimated cost, and agreed profit markup.",
+        "operationId": "initiate_murabaha_order_api_v1_sharia_murabaha_orders_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MurabahaPurchaseOrderRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MurabahaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "List Murabaha facilities",
+        "description": "Retrieve all or startup-specific Murabaha facilities.",
+        "operationId": "list_murabaha_orders_api_v1_sharia_murabaha_orders_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "startup_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by client startup ID",
+              "title": "Startup Id"
+            },
+            "description": "Filter by client startup ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MurabahaFacility"
+                  },
+                  "title": "Response List Murabaha Orders Api V1 Sharia Murabaha Orders Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/murabaha/orders/{order_id}": {
+      "get": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Get Murabaha facility details",
+        "description": "Get single Murabaha facility by order ID.",
+        "operationId": "get_murabaha_order_api_v1_sharia_murabaha_orders__order_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "order_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Order Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MurabahaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/murabaha/orders/{order_id}/acquire": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Confirm financier goods acquisition (Stage 2: Qabd & Daman)",
+        "description": "Confirms that the financier has purchased and acquired physical or constructive possession (Qabd) from the supplier, assuming risk of destruction (Daman) prior to execution of sale to client.",
+        "operationId": "confirm_murabaha_goods_acquisition_api_v1_sharia_murabaha_orders__order_id__acquire_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "order_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Order Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GoodsPossessionConfirmationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MurabahaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/murabaha/orders/{order_id}/execute": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Execute Murabaha sale contract (Stage 3: Bay' al-Murabaha)",
+        "description": "Executes the formal Murabaha sale contract between financier and client, disclosing cost price, profit markup, and generating the equal installment amortization schedule (transitions to REPAYING).",
+        "operationId": "execute_murabaha_sale_contract_api_v1_sharia_murabaha_orders__order_id__execute_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "order_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Order Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MurabahaSaleExecutionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MurabahaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/murabaha/orders/{order_id}/pay": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Record installment payment (Stage 4: Repayment)",
+        "description": "Records payment for an installment tranche. Once all tranches are paid, facility transitions to COMPLETED.",
+        "operationId": "record_murabaha_payment_api_v1_sharia_murabaha_orders__order_id__pay_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "order_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Order Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecordInstallmentPaymentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MurabahaFacility"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sharia/murabaha/orders/{order_id}/late-penalty": {
+      "post": {
+        "tags": [
+          "Sharia & AI Swarms"
+        ],
+        "summary": "Apply late penalty and route directly to accredited charity",
+        "description": "Enforces AAOIFI Standard No. 8 Clause 5/6: Delinquency penalty fees cannot be recognized as platform income. Late fees are channeled 100% to an accredited Algerian charity (Iltizam bi al-Tasadduq) generating an immutable TathirReceipt.",
+        "operationId": "apply_murabaha_late_penalty_api_v1_sharia_murabaha_orders__order_id__late_penalty_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "order_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Order Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplyLatePenaltyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TathirReceipt"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/swarm/analyze": {
       "post": {
         "tags": [
@@ -52820,6 +53400,14 @@
         ],
         "title": "AminDecisionRequest"
       },
+      "AmortizationFrequency": {
+        "type": "string",
+        "enum": [
+          "MONTHLY",
+          "QUARTERLY"
+        ],
+        "title": "AmortizationFrequency"
+      },
       "AnalystLevel": {
         "type": "string",
         "enum": [
@@ -53552,6 +54140,41 @@
         },
         "type": "object",
         "title": "AppearanceSettingsUpdate"
+      },
+      "ApplyLatePenaltyRequest": {
+        "properties": {
+          "installment_index": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Installment Index",
+            "description": "Delinquent installment tranche"
+          },
+          "late_fee_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Late Fee Amount Dzd",
+            "description": "Late penalty fee to cleanse"
+          },
+          "charity_id": {
+            "type": "string",
+            "title": "Charity Id",
+            "description": "Accredited Algerian charity to receive penalty funds"
+          },
+          "days_overdue": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Days Overdue",
+            "description": "Number of days elapsed past due date"
+          }
+        },
+        "type": "object",
+        "required": [
+          "installment_index",
+          "late_fee_amount_dzd",
+          "charity_id",
+          "days_overdue"
+        ],
+        "title": "ApplyLatePenaltyRequest"
       },
       "ApprovalDecisionRequest": {
         "properties": {
@@ -58089,6 +58712,233 @@
           "updatedAt"
         ],
         "title": "CompanyReviewResponse"
+      },
+      "CompanyZakatAssessment": {
+        "properties": {
+          "assessment_id": {
+            "type": "string",
+            "title": "Assessment Id"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "calculation_method": {
+            "$ref": "#/components/schemas/ZakatCalculationMethod"
+          },
+          "year_type": {
+            "$ref": "#/components/schemas/YearType"
+          },
+          "applicable_rate_pct": {
+            "type": "number",
+            "title": "Applicable Rate Pct"
+          },
+          "total_zakatable_assets_dzd": {
+            "type": "number",
+            "title": "Total Zakatable Assets Dzd"
+          },
+          "total_deductible_liabilities_dzd": {
+            "type": "number",
+            "title": "Total Deductible Liabilities Dzd"
+          },
+          "zakat_base_dzd": {
+            "type": "number",
+            "title": "Zakat Base Dzd"
+          },
+          "reconciled_invested_capital_base_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reconciled Invested Capital Base Dzd"
+          },
+          "reconciliation_variance_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reconciliation Variance Dzd"
+          },
+          "reconciled_match": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reconciled Match"
+          },
+          "nisab_evaluation": {
+            "$ref": "#/components/schemas/NisabEvaluation"
+          },
+          "hawl_completed": {
+            "type": "boolean",
+            "title": "Hawl Completed"
+          },
+          "zakat_due_dzd": {
+            "type": "number",
+            "title": "Zakat Due Dzd"
+          },
+          "total_outstanding_shares": {
+            "type": "integer",
+            "title": "Total Outstanding Shares"
+          },
+          "zakat_per_share_dzd": {
+            "type": "number",
+            "title": "Zakat Per Share Dzd"
+          },
+          "standard_citation": {
+            "type": "string",
+            "title": "Standard Citation",
+            "default": "AAOIFI FAS 9 (Zakat) & AAOIFI Shariah Standard No. 35 (Zakah)"
+          },
+          "cryptographic_seal": {
+            "type": "string",
+            "title": "Cryptographic Seal"
+          },
+          "assessed_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Assessed At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "assessment_id",
+          "startup_id",
+          "startup_name",
+          "calculation_method",
+          "year_type",
+          "applicable_rate_pct",
+          "total_zakatable_assets_dzd",
+          "total_deductible_liabilities_dzd",
+          "zakat_base_dzd",
+          "nisab_evaluation",
+          "hawl_completed",
+          "zakat_due_dzd",
+          "total_outstanding_shares",
+          "zakat_per_share_dzd",
+          "cryptographic_seal"
+        ],
+        "title": "CompanyZakatAssessment"
+      },
+      "CompanyZakatRequest": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id",
+            "description": "Unique startup ID"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name",
+            "description": "Startup name"
+          },
+          "calculation_method": {
+            "$ref": "#/components/schemas/ZakatCalculationMethod",
+            "description": "FAS 9 calculation method: NET_ASSETS, NET_INVESTED_CAPITAL, or RECONCILED_DUAL",
+            "default": "NET_ASSETS"
+          },
+          "year_type": {
+            "$ref": "#/components/schemas/YearType",
+            "description": "LUNAR_HIJRI (2.5%) or SOLAR_GREGORIAN (2.5775%)",
+            "default": "LUNAR_HIJRI"
+          },
+          "nisab_benchmark": {
+            "$ref": "#/components/schemas/NisabBenchmark",
+            "description": "GOLD_85G or SILVER_595G",
+            "default": "GOLD_85G"
+          },
+          "gold_price_per_gram_dzd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gold Price Per Gram Dzd",
+            "description": "Custom 24k gold spot price in DZD/g"
+          },
+          "silver_price_per_gram_dzd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Silver Price Per Gram Dzd",
+            "description": "Custom silver spot price in DZD/g"
+          },
+          "hawl_completed": {
+            "type": "boolean",
+            "title": "Hawl Completed",
+            "description": "Whether the 1-year Hawl period has completed",
+            "default": true
+          },
+          "total_outstanding_shares": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Outstanding Shares",
+            "description": "Total issued shares",
+            "default": 1000000
+          },
+          "current_assets": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/WorkingCapitalAssetsInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "current_liabilities": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/WorkingCapitalLiabilitiesInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "invested_capital": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/InvestedCapitalComponentsInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "startup_name"
+        ],
+        "title": "CompanyZakatRequest"
       },
       "CompileFinancialStatementsRequest": {
         "properties": {
@@ -64376,6 +65226,40 @@
         ],
         "title": "GenerateTempPasswordResponse"
       },
+      "GoodsPossessionConfirmationRequest": {
+        "properties": {
+          "supplier_invoice_ref": {
+            "type": "string",
+            "minLength": 3,
+            "title": "Supplier Invoice Ref",
+            "description": "Supplier invoice reference number"
+          },
+          "actual_cost_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Actual Cost Dzd",
+            "description": "Actual purchase cost paid to supplier in DZD"
+          },
+          "possession_type": {
+            "$ref": "#/components/schemas/PossessionType",
+            "description": "PHYSICAL or CONSTRUCTIVE (Qabd Hukmi)",
+            "default": "CONSTRUCTIVE"
+          },
+          "warehouse_or_delivery_ref": {
+            "type": "string",
+            "minLength": 3,
+            "title": "Warehouse Or Delivery Ref",
+            "description": "Warehouse receipt or electronic delivery proof reference"
+          }
+        },
+        "type": "object",
+        "required": [
+          "supplier_invoice_ref",
+          "actual_cost_dzd",
+          "warehouse_or_delivery_ref"
+        ],
+        "title": "GoodsPossessionConfirmationRequest"
+      },
       "HTTPValidationError": {
         "properties": {
           "detail": {
@@ -64930,6 +65814,102 @@
         ],
         "title": "ImpersonateUserRequest"
       },
+      "InstallmentStatus": {
+        "type": "string",
+        "enum": [
+          "PENDING",
+          "PAID",
+          "OVERDUE"
+        ],
+        "title": "InstallmentStatus"
+      },
+      "InstallmentTranche": {
+        "properties": {
+          "installment_index": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Installment Index",
+            "description": "Installment number (1 to N)"
+          },
+          "due_date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Due Date",
+            "description": "Maturity due date of tranche"
+          },
+          "installment_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Installment Amount Dzd",
+            "description": "Total equal installment amount in DZD"
+          },
+          "principal_component_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Principal Component Dzd",
+            "description": "Cost recovery principal component"
+          },
+          "profit_component_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Profit Component Dzd",
+            "description": "Agreed Murabaha markup profit component"
+          },
+          "status": {
+            "$ref": "#/components/schemas/InstallmentStatus",
+            "default": "PENDING"
+          },
+          "paid_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Paid At"
+          },
+          "payment_reference": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Payment Reference"
+          },
+          "late_fee_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Late Fee Dzd",
+            "default": 0.0
+          },
+          "charity_receipt_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Charity Receipt Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "installment_index",
+          "due_date",
+          "installment_amount_dzd",
+          "principal_component_dzd",
+          "profit_component_dzd"
+        ],
+        "title": "InstallmentTranche"
+      },
       "InstructorProfileUpdate": {
         "properties": {
           "headline": {
@@ -65234,6 +66214,67 @@
         ],
         "title": "InterestType"
       },
+      "InvestedCapitalComponentsInput": {
+        "properties": {
+          "paid_up_capital_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Paid Up Capital Dzd",
+            "description": "Issued and paid-up share capital",
+            "default": 0.0
+          },
+          "reserves_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Reserves Dzd",
+            "description": "Statutory, general, and contingency reserves",
+            "default": 0.0
+          },
+          "retained_earnings_dzd": {
+            "type": "number",
+            "title": "Retained Earnings Dzd",
+            "description": "Cumulative undistributed profits (can be negative if losses)",
+            "default": 0.0
+          },
+          "net_income_dzd": {
+            "type": "number",
+            "title": "Net Income Dzd",
+            "description": "Net profit for the current fiscal period",
+            "default": 0.0
+          },
+          "long_term_liabilities_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Long Term Liabilities Dzd",
+            "description": "Long-term financing and non-current liabilities",
+            "default": 0.0
+          },
+          "net_fixed_assets_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Net Fixed Assets Dzd",
+            "description": "Net property, plant, equipment, and amortized software/IP",
+            "default": 0.0
+          },
+          "long_term_investments_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Long Term Investments Dzd",
+            "description": "Strategic non-trading shareholdings and fixed assets",
+            "default": 0.0
+          },
+          "accumulated_losses_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Accumulated Losses Dzd",
+            "description": "Cumulative balance sheet losses",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "title": "InvestedCapitalComponentsInput",
+        "description": "Balance sheet items for Net Invested Capital Method (Financing Method).\nZakat Base = (Paid-up Capital + Reserves + Retained Earnings + Net Income + Long-Term Liabilities)\n             - (Net Fixed Assets + Long-Term Investments + Accumulated Losses)"
+      },
       "InvestorPledge": {
         "properties": {
           "investor_id": {
@@ -65273,6 +66314,220 @@
           "INSTITUTIONAL_QUALIFIED"
         ],
         "title": "InvestorSuitabilityTier"
+      },
+      "InvestorType": {
+        "type": "string",
+        "enum": [
+          "FOUNDER_OPERATOR",
+          "LONG_TERM_ANGEL",
+          "SHORT_TERM_TRADER"
+        ],
+        "title": "InvestorType"
+      },
+      "InvestorZakatAssessment": {
+        "properties": {
+          "assessment_id": {
+            "type": "string",
+            "title": "Assessment Id"
+          },
+          "investor_id": {
+            "type": "string",
+            "title": "Investor Id"
+          },
+          "investor_name": {
+            "type": "string",
+            "title": "Investor Name"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "investor_type": {
+            "$ref": "#/components/schemas/InvestorType"
+          },
+          "shares_held": {
+            "type": "integer",
+            "title": "Shares Held"
+          },
+          "total_outstanding_shares": {
+            "type": "integer",
+            "title": "Total Outstanding Shares"
+          },
+          "shareholding_pct": {
+            "type": "number",
+            "title": "Shareholding Pct"
+          },
+          "valuation_basis": {
+            "type": "string",
+            "title": "Valuation Basis"
+          },
+          "investor_zakat_base_dzd": {
+            "type": "number",
+            "title": "Investor Zakat Base Dzd"
+          },
+          "year_type": {
+            "$ref": "#/components/schemas/YearType"
+          },
+          "applicable_rate_pct": {
+            "type": "number",
+            "title": "Applicable Rate Pct"
+          },
+          "nisab_evaluation": {
+            "$ref": "#/components/schemas/NisabEvaluation"
+          },
+          "hawl_completed": {
+            "type": "boolean",
+            "title": "Hawl Completed"
+          },
+          "company_already_paid_zakat": {
+            "type": "boolean",
+            "title": "Company Already Paid Zakat"
+          },
+          "zakat_due_dzd": {
+            "type": "number",
+            "title": "Zakat Due Dzd"
+          },
+          "sharia_rationale": {
+            "type": "string",
+            "title": "Sharia Rationale"
+          },
+          "cryptographic_seal": {
+            "type": "string",
+            "title": "Cryptographic Seal"
+          },
+          "assessed_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Assessed At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "assessment_id",
+          "investor_id",
+          "investor_name",
+          "startup_id",
+          "investor_type",
+          "shares_held",
+          "total_outstanding_shares",
+          "shareholding_pct",
+          "valuation_basis",
+          "investor_zakat_base_dzd",
+          "year_type",
+          "applicable_rate_pct",
+          "nisab_evaluation",
+          "hawl_completed",
+          "company_already_paid_zakat",
+          "zakat_due_dzd",
+          "sharia_rationale",
+          "cryptographic_seal"
+        ],
+        "title": "InvestorZakatAssessment"
+      },
+      "InvestorZakatRequest": {
+        "properties": {
+          "investor_id": {
+            "type": "string",
+            "title": "Investor Id",
+            "description": "Unique investor ID"
+          },
+          "investor_name": {
+            "type": "string",
+            "title": "Investor Name",
+            "description": "Investor full name"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id",
+            "description": "Startup venture ID"
+          },
+          "investor_type": {
+            "$ref": "#/components/schemas/InvestorType",
+            "description": "LONG_TERM_ANGEL (proportional net assets) vs SHORT_TERM_TRADER (market cap) vs FOUNDER_OPERATOR"
+          },
+          "shares_held": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Shares Held",
+            "description": "Number of shares held by investor"
+          },
+          "total_outstanding_shares": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Total Outstanding Shares",
+            "description": "Total outstanding company shares"
+          },
+          "company_zakat_base_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Company Zakat Base Dzd",
+            "description": "Total company zakatable base in DZD",
+            "default": 0.0
+          },
+          "market_price_per_share_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Market Price Per Share Dzd",
+            "description": "Current market / valuation price per share in DZD",
+            "default": 0.0
+          },
+          "year_type": {
+            "$ref": "#/components/schemas/YearType",
+            "description": "LUNAR_HIJRI (2.5%) or SOLAR_GREGORIAN (2.5775%)",
+            "default": "LUNAR_HIJRI"
+          },
+          "nisab_benchmark": {
+            "$ref": "#/components/schemas/NisabBenchmark",
+            "description": "GOLD_85G or SILVER_595G",
+            "default": "GOLD_85G"
+          },
+          "gold_price_per_gram_dzd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gold Price Per Gram Dzd"
+          },
+          "silver_price_per_gram_dzd": {
+            "anyOf": [
+              {
+                "type": "number",
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Silver Price Per Gram Dzd"
+          },
+          "hawl_completed": {
+            "type": "boolean",
+            "title": "Hawl Completed",
+            "description": "Whether the 1-year Hawl has elapsed",
+            "default": true
+          },
+          "company_already_paid_zakat": {
+            "type": "boolean",
+            "title": "Company Already Paid Zakat",
+            "description": "If True, company discharged Zakat at source; avoids double taxation (Thina' al-Zakat)",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "investor_id",
+          "investor_name",
+          "startup_id",
+          "investor_type",
+          "shares_held",
+          "total_outstanding_shares"
+        ],
+        "title": "InvestorZakatRequest"
       },
       "InvitationResponse": {
         "properties": {
@@ -68705,6 +69960,350 @@
         ],
         "title": "MultiDimensionalRatingResponse"
       },
+      "MurabahaAssetCategory": {
+        "type": "string",
+        "enum": [
+          "IT_HARDWARE_SERVERS",
+          "INDUSTRIAL_EQUIPMENT",
+          "RAW_MATERIALS_INVENTORY",
+          "SOLAR_ENERGY_SYSTEMS",
+          "COMMERCIAL_VEHICLES",
+          "AGRITECH_MACHINERY"
+        ],
+        "title": "MurabahaAssetCategory"
+      },
+      "MurabahaFacility": {
+        "properties": {
+          "order_id": {
+            "type": "string",
+            "title": "Order Id"
+          },
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name"
+          },
+          "supplier_id": {
+            "type": "string",
+            "title": "Supplier Id"
+          },
+          "supplier_name": {
+            "type": "string",
+            "title": "Supplier Name"
+          },
+          "goods_description": {
+            "type": "string",
+            "title": "Goods Description"
+          },
+          "category": {
+            "$ref": "#/components/schemas/MurabahaAssetCategory"
+          },
+          "stage": {
+            "$ref": "#/components/schemas/MurabahaStage"
+          },
+          "cost_price_dzd": {
+            "type": "number",
+            "title": "Cost Price Dzd"
+          },
+          "actual_cost_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Cost Dzd"
+          },
+          "markup_rate_pct": {
+            "type": "number",
+            "title": "Markup Rate Pct"
+          },
+          "markup_amount_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Markup Amount Dzd"
+          },
+          "total_sale_price_dzd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total Sale Price Dzd"
+          },
+          "tenor_months": {
+            "type": "integer",
+            "title": "Tenor Months"
+          },
+          "amortization_frequency": {
+            "$ref": "#/components/schemas/AmortizationFrequency"
+          },
+          "unilateral_promise_confirmed": {
+            "type": "boolean",
+            "title": "Unilateral Promise Confirmed"
+          },
+          "supplier_invoice_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Supplier Invoice Ref"
+          },
+          "possession_type": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PossessionType"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "warehouse_or_delivery_ref": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Warehouse Or Delivery Ref"
+          },
+          "possession_proof_hash": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Possession Proof Hash"
+          },
+          "acquired_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Acquired At"
+          },
+          "executed_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Executed At"
+          },
+          "execution_contract_hash": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Execution Contract Hash"
+          },
+          "installments": {
+            "items": {
+              "$ref": "#/components/schemas/InstallmentTranche"
+            },
+            "type": "array",
+            "title": "Installments"
+          },
+          "total_principal_paid_dzd": {
+            "type": "number",
+            "title": "Total Principal Paid Dzd",
+            "default": 0.0
+          },
+          "total_profit_paid_dzd": {
+            "type": "number",
+            "title": "Total Profit Paid Dzd",
+            "default": 0.0
+          },
+          "total_repaid_dzd": {
+            "type": "number",
+            "title": "Total Repaid Dzd",
+            "default": 0.0
+          },
+          "total_charity_cleansed_dzd": {
+            "type": "number",
+            "title": "Total Charity Cleansed Dzd",
+            "default": 0.0
+          },
+          "charity_receipts": {
+            "items": {
+              "$ref": "#/components/schemas/TathirReceipt"
+            },
+            "type": "array",
+            "title": "Charity Receipts"
+          },
+          "sharia_standard_citation": {
+            "type": "string",
+            "title": "Sharia Standard Citation",
+            "default": "AAOIFI Shariah Standard No. 8 (Murabaha to the Purchase Orderer)"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "order_id",
+          "startup_id",
+          "startup_name",
+          "supplier_id",
+          "supplier_name",
+          "goods_description",
+          "category",
+          "stage",
+          "cost_price_dzd",
+          "markup_rate_pct",
+          "tenor_months",
+          "amortization_frequency",
+          "unilateral_promise_confirmed"
+        ],
+        "title": "MurabahaFacility"
+      },
+      "MurabahaPurchaseOrderRequest": {
+        "properties": {
+          "startup_id": {
+            "type": "string",
+            "title": "Startup Id",
+            "description": "Unique client/startup ID"
+          },
+          "startup_name": {
+            "type": "string",
+            "title": "Startup Name",
+            "description": "Client/startup legal or commercial name"
+          },
+          "supplier_id": {
+            "type": "string",
+            "title": "Supplier Id",
+            "description": "Third-party vendor/supplier ID"
+          },
+          "supplier_name": {
+            "type": "string",
+            "title": "Supplier Name",
+            "description": "Supplier company name"
+          },
+          "goods_description": {
+            "type": "string",
+            "minLength": 5,
+            "title": "Goods Description",
+            "description": "Specifications of goods/equipment/inventory"
+          },
+          "category": {
+            "$ref": "#/components/schemas/MurabahaAssetCategory",
+            "description": "Asset classification"
+          },
+          "cost_price_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Cost Price Dzd",
+            "description": "Estimated acquisition cost in DZD"
+          },
+          "markup_rate_pct": {
+            "type": "number",
+            "maximum": 100.0,
+            "exclusiveMinimum": 0.0,
+            "title": "Markup Rate Pct",
+            "description": "Agreed profit markup rate percentage (e.g. 8.5%)"
+          },
+          "tenor_months": {
+            "type": "integer",
+            "maximum": 60.0,
+            "minimum": 1.0,
+            "title": "Tenor Months",
+            "description": "Financing duration in months"
+          },
+          "amortization_frequency": {
+            "$ref": "#/components/schemas/AmortizationFrequency",
+            "description": "Repayment cadence",
+            "default": "MONTHLY"
+          },
+          "unilateral_promise_confirmed": {
+            "type": "boolean",
+            "title": "Unilateral Promise Confirmed",
+            "description": "Affirmation of unilateral binding promise to purchase (Wa'd bi al-Shira')",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "startup_id",
+          "startup_name",
+          "supplier_id",
+          "supplier_name",
+          "goods_description",
+          "category",
+          "cost_price_dzd",
+          "markup_rate_pct",
+          "tenor_months"
+        ],
+        "title": "MurabahaPurchaseOrderRequest"
+      },
+      "MurabahaSaleExecutionRequest": {
+        "properties": {
+          "client_acceptance_confirmed": {
+            "type": "boolean",
+            "title": "Client Acceptance Confirmed",
+            "description": "Client confirms acceptance of the acquired goods after inspection",
+            "default": true
+          }
+        },
+        "type": "object",
+        "title": "MurabahaSaleExecutionRequest"
+      },
+      "MurabahaStage": {
+        "type": "string",
+        "enum": [
+          "PROMISE",
+          "GOODS_ACQUIRED",
+          "SALE_EXECUTED",
+          "REPAYING",
+          "COMPLETED",
+          "DEFAULTED"
+        ],
+        "title": "MurabahaStage"
+      },
       "MusharakahScheduleRequest": {
         "properties": {
           "venture_id": {
@@ -69143,6 +70742,46 @@
           "IN_PROGRESS"
         ],
         "title": "NegotiationStatus"
+      },
+      "NisabBenchmark": {
+        "type": "string",
+        "enum": [
+          "GOLD_85G",
+          "SILVER_595G"
+        ],
+        "title": "NisabBenchmark"
+      },
+      "NisabEvaluation": {
+        "properties": {
+          "benchmark": {
+            "$ref": "#/components/schemas/NisabBenchmark"
+          },
+          "price_per_gram_dzd": {
+            "type": "number",
+            "title": "Price Per Gram Dzd"
+          },
+          "grams_standard": {
+            "type": "number",
+            "title": "Grams Standard"
+          },
+          "nisab_threshold_dzd": {
+            "type": "number",
+            "title": "Nisab Threshold Dzd"
+          },
+          "is_nisab_reached": {
+            "type": "boolean",
+            "title": "Is Nisab Reached"
+          }
+        },
+        "type": "object",
+        "required": [
+          "benchmark",
+          "price_per_gram_dzd",
+          "grams_standard",
+          "nisab_threshold_dzd",
+          "is_nisab_reached"
+        ],
+        "title": "NisabEvaluation"
       },
       "NomineeAllocationResponse": {
         "properties": {
@@ -74077,6 +75716,14 @@
         ],
         "title": "PortfolioInvestment"
       },
+      "PossessionType": {
+        "type": "string",
+        "enum": [
+          "PHYSICAL",
+          "CONSTRUCTIVE"
+        ],
+        "title": "PossessionType"
+      },
       "PresenceHeartbeatRequest": {
         "properties": {
           "thread_id": {
@@ -76493,6 +78140,35 @@
           "verified_gross_revenue_dzd"
         ],
         "title": "RecordDistributionRequest"
+      },
+      "RecordInstallmentPaymentRequest": {
+        "properties": {
+          "installment_index": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Installment Index",
+            "description": "Tranche index to pay"
+          },
+          "payment_amount_dzd": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Payment Amount Dzd",
+            "description": "Payment amount in DZD"
+          },
+          "payment_reference": {
+            "type": "string",
+            "minLength": 3,
+            "title": "Payment Reference",
+            "description": "Bank transfer or ledger transaction reference"
+          }
+        },
+        "type": "object",
+        "required": [
+          "installment_index",
+          "payment_amount_dzd",
+          "payment_reference"
+        ],
+        "title": "RecordInstallmentPaymentRequest"
       },
       "RecordPaymentRequest": {
         "properties": {
@@ -89161,6 +90837,90 @@
         ],
         "title": "WorkflowSimulateResponse"
       },
+      "WorkingCapitalAssetsInput": {
+        "properties": {
+          "cash_and_equivalents_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Cash And Equivalents Dzd",
+            "description": "Cash in bank & vault in DZD",
+            "default": 0.0
+          },
+          "short_term_investments_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Short Term Investments Dzd",
+            "description": "Liquid marketable securities / tokens held for trade",
+            "default": 0.0
+          },
+          "trade_receivables_net_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Trade Receivables Net Dzd",
+            "description": "Gross receivables minus doubtful debt allowance",
+            "default": 0.0
+          },
+          "merchandise_inventory_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Merchandise Inventory Dzd",
+            "description": "Finished goods / commercial stock at selling market value",
+            "default": 0.0
+          },
+          "work_in_progress_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Work In Progress Dzd",
+            "description": "Raw materials & WIP intended for sale at cost",
+            "default": 0.0
+          },
+          "other_zakatable_current_assets_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Other Zakatable Current Assets Dzd",
+            "description": "Other liquid commercial assets",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "title": "WorkingCapitalAssetsInput",
+        "description": "Current zakatable assets under the Net Assets / Working Capital Method.\nExcludes fixed assets, prepayments, and non-commercial infrastructure."
+      },
+      "WorkingCapitalLiabilitiesInput": {
+        "properties": {
+          "trade_payables_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Trade Payables Dzd",
+            "description": "Suppliers & vendor accounts payable",
+            "default": 0.0
+          },
+          "short_term_debts_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Short Term Debts Dzd",
+            "description": "Commercial short-term debt principal due within 1 year",
+            "default": 0.0
+          },
+          "accrued_operating_expenses_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Accrued Operating Expenses Dzd",
+            "description": "Accrued wages, rent, and operational bills due",
+            "default": 0.0
+          },
+          "other_deductible_short_term_liabilities_dzd": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Other Deductible Short Term Liabilities Dzd",
+            "description": "Other short-term operational liabilities",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "title": "WorkingCapitalLiabilitiesInput",
+        "description": "Deductible short-term liabilities due within the current zakat year.\nExcludes equity and long-term liabilities not falling due within the year."
+      },
       "XpRecordRequest": {
         "properties": {
           "trigger": {
@@ -89199,6 +90959,14 @@
           "trigger"
         ],
         "title": "XpRecordRequest"
+      },
+      "YearType": {
+        "type": "string",
+        "enum": [
+          "LUNAR_HIJRI",
+          "SOLAR_GREGORIAN"
+        ],
+        "title": "YearType"
       },
       "ZOPAContour2D": {
         "properties": {
@@ -89358,6 +91126,15 @@
           "grid_points"
         ],
         "title": "ZOPASurface3D"
+      },
+      "ZakatCalculationMethod": {
+        "type": "string",
+        "enum": [
+          "NET_ASSETS",
+          "NET_INVESTED_CAPITAL",
+          "RECONCILED_DUAL"
+        ],
+        "title": "ZakatCalculationMethod"
       },
       "app__routers__billing_routers__subscription_router__SubscriptionResponse": {
         "properties": {
