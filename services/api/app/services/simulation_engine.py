@@ -478,6 +478,60 @@ class SimulationEngine:
             ),
         }
 
+    async def get_user_portfolio_analytics(self, user_id: int):
+        """
+        Retrieves user simulation holdings and evaluates institutional portfolio analytics:
+        - Time-Weighted Return (TWR)
+        - Money-Weighted Return (MWR / IRR)
+        - Sharpe Ratio Simulator (with 3.5% sovereign risk-free rate proxy)
+        - 58-Wilaya Sovereign Diversification Index (Decree 19-12, HHI, Shannon entropy)
+        """
+        from app.services.portfolio_analytics import portfolio_analytics_engine
+
+        user = await prisma.user.find_unique(where={"id": user_id})
+        if not user:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="User not found",
+            )
+
+        pledges = await prisma.virtualpledge.find_many(
+            where={"userId": user_id},
+            include={"campaign": {"include": {"startup": True}}},
+        )
+
+        total_pledged = sum(p.amountDzd for p in pledges)
+        available_balance = max(0, self.initial_grant - total_pledged)
+
+        holdings = []
+        for p in pledges:
+            campaign = getattr(p, "campaign", None)
+            target = max(1, campaign.targetAmountDzd) if campaign else 1
+            raised = campaign.raisedAmountDzd if campaign else 0
+            progress_ratio = min(2.0, raised / target)
+            startup = getattr(campaign, "startup", None) if campaign else None
+            hype = getattr(startup, "hypeScore", 50.0) if startup else 50.0
+            hype_factor = 1.0 + (hype / 200.0)
+
+            pos_multiplier = max(0.5, 1.0 + (0.5 * (progress_ratio - 0.5)) + (0.5 * (hype_factor - 1.0)))
+            cur_val = int(p.amountDzd * pos_multiplier)
+            wilaya = getattr(startup, "wilaya", 16) if (startup and getattr(startup, "wilaya", None)) else 16
+
+            holdings.append({
+                "amount_dzd": p.amountDzd,
+                "current_value_dzd": cur_val,
+                "wilaya": wilaya,
+                "startup_id": getattr(startup, "id", None),
+                "startup_name": getattr(startup, "name", "Virtual Startup"),
+            })
+
+        return portfolio_analytics_engine.evaluate_portfolio(
+            user_id=user_id,
+            initial_grant_dzd=self.initial_grant,
+            holdings=holdings,
+            cash_balance_dzd=available_balance,
+        )
+
     async def determine_analyst_tier(self, user_id: int, roi_pct: float) -> AnalystLevel:
         """
         Evaluate user tier:

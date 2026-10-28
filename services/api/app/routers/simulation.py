@@ -240,3 +240,42 @@ async def get_regulatory_status():
             "الدينار الافتراضي مخصص للمحاكاة فقط ولا يمكن تحويله إلى أموال حقيقية، وفقاً لتعليمات بنك الجزائر وقانون العقوبات."
         ),
     )
+
+
+# =============================================================================
+# PORTFOLIO INSTITUTIONAL ANALYTICS & 58-WILAYA DIVERSIFICATION
+# =============================================================================
+
+@router.get("/analytics", summary="Get portfolio institutional analytics (TWR, MWR, Sharpe, 58-Wilaya)")
+async def get_portfolio_analytics(
+    current_user: Any = Depends(get_current_active_user),
+):
+    """
+    Evaluates institutional venture portfolio analytics for the current user:
+    - Time-Weighted Return (TWR)
+    - Money-Weighted Return (MWR / Internal Rate of Return)
+    - Sharpe Ratio Simulator (3.5% Algerian sovereign rate proxy)
+    - 58-Wilaya Sovereign Diversification Index (Decree 19-12, HHI, Shannon entropy)
+    """
+    return await simulation_engine.get_user_portfolio_analytics(current_user.id)
+
+
+@router.get("/analytics/wilayas", summary="Get 58-Wilaya diversification breakdown")
+async def get_wilaya_analytics(
+    current_user: Any = Depends(get_current_active_user),
+):
+    """
+    Returns full 58-Wilaya geographical capital allocation analysis.
+    """
+    res = await simulation_engine.get_user_portfolio_analytics(current_user.id)
+    return {
+        "score": res.wilaya_diversification_score,
+        "hhi": res.hhi_index,
+        "entropyRatio": res.shannon_entropy_ratio,
+        "activeWilayasCount": res.active_wilayas_count,
+        "totalWilayasCount": res.total_wilayas_count,
+        "allocations": [
+            a.model_dump(by_alias=True) if hasattr(a, "model_dump") else a.dict()
+            for a in res.top_wilaya_allocations
+        ],
+    }

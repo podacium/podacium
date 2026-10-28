@@ -68,6 +68,30 @@ class MiniLeagueJoinRequest(BaseModel):
     inviteCode: str = Field(..., description="Unique mini-league invite code")
 
 
+class ChipActivateRequest(BaseModel):
+    seasonId: Optional[str] = Field(None, description="Season ID (defaults to active season)")
+    gameweek: Optional[int] = Field(None, ge=1, le=12, description="Target gameweek (1-12)")
+    chipType: str = Field(..., description="Strategic chip: TRIPLE_CAPTAIN | SECTOR_SURGE | FREE_HIT")
+    targetSector: Optional[str] = Field(None, description="Designated sector (required for SECTOR_SURGE)")
+
+
+class TransferItem(BaseModel):
+    startup_out_id: str = Field(..., description="Startup to transfer out")
+    startup_in_id: str = Field(..., description="Startup to transfer in")
+
+
+class TransferExecuteRequest(BaseModel):
+    seasonId: Optional[str] = Field(None, description="Season ID (defaults to active season)")
+    gameweek: Optional[int] = Field(None, ge=1, le=12, description="Gameweek index (1-12)")
+    transfers: List[TransferItem] = Field(..., min_length=1, description="List of in/out transfer pairs")
+    bypassDeadline: Optional[bool] = Field(False, description="Emergency or test override for deadline lock")
+
+
+class PriceRebalanceRequest(BaseModel):
+    threshold: Optional[int] = Field(5, ge=1, description="Net transfer threshold triggering price delta")
+    priceStepSp: Optional[int] = Field(500, ge=100, le=5000, description="Price step adjustment in SP")
+
+
 # =============================================================================
 # TOURNAMENT SEASONS & CATALOG ENDPOINTS
 # =============================================================================
@@ -287,3 +311,111 @@ async def get_mini_league_details(
         league_id=league_id,
         gameweek=gameweek,
     )
+
+
+# =============================================================================
+# STRATEGIC CHIPS & TRANSFER MARKET ENDPOINTS
+# =============================================================================
+
+@router.post("/chips/activate", summary="Activate a strategic chip for the gameweek")
+async def activate_chip(
+    req: ChipActivateRequest,
+    current_user: Any = Depends(get_current_active_user),
+):
+    """
+    Activates a strategic chip:
+    - TRIPLE_CAPTAIN: 3.0x multiplier on Captain points.
+    - SECTOR_SURGE: +50% bonus points on all startups in designated sector.
+    - FREE_HIT: 1-gameweek temporary squad overhaul with zero transfer penalties and automated reversion.
+    Enforces single-use per season and mutual exclusivity (max 1 chip per gameweek).
+    """
+    active_season = fantasy_league_engine.get_active_season()
+    season_id = req.seasonId or active_season.season_id
+    gameweek = req.gameweek or active_season.current_gameweek
+
+    return fantasy_league_engine.activate_chip(
+        user_id=current_user.id,
+        season_id=season_id,
+        gameweek=gameweek,
+        chip_type=req.chipType,
+        target_sector=req.targetSector,
+    )
+
+
+@router.get("/chips/status", summary="Get user's available and consumed chips")
+async def get_chips_status(
+    seasonId: Optional[str] = Query(None),
+    current_user: Any = Depends(get_current_active_user),
+):
+    """
+    Returns strategic chip inventory: consumed chips, available chips, and banked free transfers.
+    """
+    active_season = fantasy_league_engine.get_active_season()
+    target_season = seasonId or active_season.season_id
+    return fantasy_league_engine.get_user_chips_status(
+        user_id=current_user.id,
+        season_id=target_season,
+    )
+
+
+@router.post("/transfers", summary="Execute squad transfers in transfer market")
+async def execute_transfers(
+    req: TransferExecuteRequest,
+    current_user: Any = Depends(get_current_active_user),
+):
+    """
+    Executes player transfers with free transfer quota (1 free per GW, banked up to 2),
+    -4 SP transfer hit penalties for extra transfers, and 1-hour broadcast deadline locking.
+    """
+    active_season = fantasy_league_engine.get_active_season()
+    season_id = req.seasonId or active_season.season_id
+    gameweek = req.gameweek or active_season.current_gameweek
+
+    transfers_dicts = [
+        t.model_dump() if hasattr(t, "model_dump") else t.dict()
+        for t in req.transfers
+    ]
+
+    return fantasy_league_engine.execute_transfers(
+        user_id=current_user.id,
+        season_id=season_id,
+        gameweek=gameweek,
+        transfers=transfers_dicts,
+        bypass_deadline=req.bypassDeadline or False,
+    )
+
+
+@router.get("/market/trends", summary="Get transfer market volume and momentum trends")
+async def get_market_trends():
+    """
+    Returns transfer market volume, net transfer momentum (transfers in - out),
+    and projected price shift pressure across catalog startups.
+    """
+    trends = fantasy_league_engine.get_market_trends()
+    return {
+        "count": len(trends),
+        "trends": trends,
+    }
+
+
+@router.post("/market/rebalance-prices", summary="Rebalance fantasy startup prices based on market momentum")
+async def rebalance_prices(
+    req: Optional[PriceRebalanceRequest] = None,
+    current_user: Any = Depends(get_current_active_user),
+):
+    """
+    Executes market momentum price adjustments:
+    Net transfers >= threshold: +price_step_sp.
+    Net transfers <= -threshold: -price_step_sp.
+    Prices clamped between 10,000 SP and 35,000 SP.
+    """
+    threshold = req.threshold if req and req.threshold is not None else 5
+    price_step = req.priceStepSp if req and req.priceStepSp is not None else 500
+    adjustments = fantasy_league_engine.rebalance_market_prices(
+        threshold=threshold,
+        price_step_sp=price_step,
+    )
+    return {
+        "adjustmentsCount": len(adjustments),
+        "adjustments": adjustments,
+    }
