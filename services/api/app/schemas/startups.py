@@ -16,12 +16,40 @@ from app.generated.prisma.enums import CampaignStatus, AnalystLevel
 # ENUMS
 # =============================================================================
 
-class ShareClassType(str, Enum):
-    ORDINAIRE = "ORDINAIRE"
-    PREFERENCE_A = "PREFERENCE_A"
-    PREFERENCE_B = "PREFERENCE_B"
-    BSPCE = "BSPCE"
-    WARRANT = "WARRANT"
+from app.schemas.cap_table import (
+    ShareClassType,
+    StakeholderRole,
+    ConvertibleInstrumentType,
+    OptionPoolTiming,
+    LiquidationPreferenceType,
+    ShareClassModel,
+    ShareClassCreateRequest,
+    StakeholderModel,
+    StakeholderCreateRequest,
+    ShareIssuanceModel,
+    ShareIssuanceCreateRequest,
+    ConvertibleInstrumentItem,
+    OptionPoolModel,
+    PledgeItem,
+    ConvertibleConversionItem,
+    NomineeBeneficialItem,
+    NomineeAllocationResponse,
+    StakeholderLedgerEntry,
+    CapTableSummaryResponse,
+    CapTableSimulateRequest,
+    CapTableSimulateResponse,
+    DilutionSimulateRequest,
+    DilutionSimulateResponse,
+    WaterfallClassPayout,
+    WaterfallStakeholderPayout,
+    WaterfallSimulateRequest,
+    WaterfallSimulateResponse,
+    CnrcFilingManifest,
+    NomineePoolRequest,
+    NomineePoolResponse,
+    BsaAirGenerateRequest,
+    BsaAirContractResponse,
+)
 
 
 class DataRoomCategory(str, Enum):
@@ -98,6 +126,8 @@ class StartupResponse(BaseModel):
     sector: str
     hasAsfLabel: bool
     hypeScore: float
+    narrativeBubbleWarning: bool = False
+    factGuardBadge: Optional[str] = None
     createdAt: datetime
     updatedAt: datetime
     campaigns: Optional[List[CampaignResponse]] = None
@@ -120,64 +150,9 @@ class CampaignTransitionRequest(BaseModel):
 
 
 # =============================================================================
-# CAP-TABLE & LAW 22-09 SPAS SCHEMAS
+# CAP-TABLE & LAW 22-09 SPAS SCHEMAS (Imported and re-exported from app.schemas.cap_table)
 # =============================================================================
 
-class ConvertibleInstrumentItem(BaseModel):
-    instrumentType: str = "BSA_AIR"
-    principalAmountDzd: int = Field(..., gt=0)
-    valuationCapDzd: Optional[int] = Field(None, gt=0)
-    discountRate: float = Field(0.20, ge=0.0, le=0.50)
-
-
-class PledgeItem(BaseModel):
-    investorId: str
-    amountDzd: int = Field(..., gt=0)
-
-
-class ConvertibleConversionItem(BaseModel):
-    instrumentType: str
-    principalAmountDzd: int
-    conversionPriceDzd: float
-    sharesIssued: int
-    dilutionPct: float
-
-
-class NomineeBeneficialItem(BaseModel):
-    investorId: str
-    amountDzd: int
-    beneficialUnitsExact: float
-    discretizedShares: int
-    ownershipPct: float
-
-
-class NomineeAllocationResponse(BaseModel):
-    totalNomineeShares: int
-    totalNomineeAmountDzd: int
-    allocations: List[NomineeBeneficialItem]
-    exactZeroLossInvariantVerified: bool
-
-
-class CapTableSimulateRequest(BaseModel):
-    preMoneyValuationDzd: int = Field(..., gt=0)
-    investmentAmountDzd: int = Field(..., gt=0)
-    preMoneyShares: int = Field(100000, gt=0)
-    shareClass: ShareClassType = ShareClassType.ORDINAIRE
-    convertibles: Optional[List[ConvertibleInstrumentItem]] = None
-    pledges: Optional[List[PledgeItem]] = None
-
-
-class CapTableSimulateResponse(BaseModel):
-    preMoneyValuationDzd: int
-    investmentAmountDzd: int
-    postMoneyValuationDzd: int
-    sharePriceDzd: float
-    newSharesIssued: int
-    postRoundTotalShares: int
-    investorEquityPct: float
-    founderDilutionFactor: float
-    convertibleConversions: List[ConvertibleConversionItem]
-    nomineeAllocation: Optional[NomineeAllocationResponse] = None
 
 
 # =============================================================================
@@ -244,6 +219,7 @@ class CommunityScoreRequest(BaseModel):
     marketScore: int = Field(..., ge=1, le=10)
     teamScore: int = Field(..., ge=1, le=10)
     tractionScore: int = Field(..., ge=1, le=10)
+    shariaScore: Optional[int] = Field(default=10, ge=1, le=10, description="Sharia & Ethics Vector (1-10)")
     feedback: Optional[str] = None
 
 
@@ -255,6 +231,7 @@ class CommunityScoreResponse(BaseModel):
     marketScore: int
     teamScore: int
     tractionScore: int
+    shariaScore: Optional[int] = 10
     feedback: Optional[str] = None
     createdAt: datetime
 

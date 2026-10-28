@@ -59,6 +59,7 @@ from app.routers import (
     diagnostic,
     diligence,
     dealmaking,
+    cap_table,
 )
 from app.routers import billing_routers
 from app.routers.shared import router as shared_router
@@ -75,6 +76,7 @@ _ROUTERS = [
     (auth.router, "Authentication"),
     (users.router, "Users"),
     (startups.router, "Startups & Simulation"),
+    (cap_table.router, "Cap Table & Law 22-09 SPAS"),
     (curriculum.router, "Financial Literacy & Curriculum"),
     (diagnostic.router, "Startup Label Diagnostic Decree 20-254"),
     (diligence.router, "Community Diligence & FactGuard"),

@@ -351,9 +351,11 @@ async def submit_community_score(
         market_score=score_in.marketScore,
         team_score=score_in.teamScore,
         traction_score=score_in.tractionScore,
+        sharia_score=score_in.shariaScore,
         feedback=score_in.feedback,
     )
-    return result["score"]
+    score_res = result["score"]
+    return score_res
 
 
 @router.get("/simulation/leaderboard", response_model=List[LeaderboardEntryResponse])
