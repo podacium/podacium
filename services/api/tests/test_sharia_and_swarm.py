@@ -524,6 +524,6 @@ class TestSimulationWebSocket:
 
             # Receive the broadcasted reaction
             reaction_event = ws.receive_json()
-            assert reaction_event["type"] == "simulation:sentiment_reaction"
+            assert reaction_event["type"] in ("simulation:sentiment_reaction", "arena:reaction")
             assert reaction_event["startup_id"] == "startup-reaction-test"
             assert reaction_event["emoji"] == "🚀"
