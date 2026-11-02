@@ -190,7 +190,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y libpq-dev libatomic1
       - run: pip install -r requirements-dev.txt
       - name: Restore Prisma client from backend-test
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: prisma-client
           path: services/api/app/generated/prisma
@@ -556,7 +556,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Download OpenAPI spec
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: openapi-spec
       - name: ZAP API Scan
